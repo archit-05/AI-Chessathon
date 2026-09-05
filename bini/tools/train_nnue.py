@@ -51,7 +51,8 @@ def king_table(nb: int) -> np.ndarray:
 
 
 def features_from_pieces(pieces: np.ndarray, stm: np.ndarray, kb: np.ndarray, nb: int) -> tuple[np.ndarray, np.ndarray]:
-    """Return (idx_stm, idx_nstm) int64 [N, 32], padded with nb*768 (an all-zero embedding row)."""
+    """Return (idx_stm, idx_nstm) int64 [N, 64]: one feature index per square, empty squares
+    carry the padding index nb*768 (an all-zero embedding row), so no packing is needed."""
     n = pieces.shape[0]
     sq = np.broadcast_to(np.arange(64, dtype=np.int64), (n, 64))
     code = pieces.astype(np.int64)
@@ -66,13 +67,11 @@ def features_from_pieces(pieces: np.ndarray, stm: np.ndarray, kb: np.ndarray, nb
         own = (colour == persp).astype(np.int64)
         kind = ptype * 2 + (1 - own)
         ksq = kw if persp == 0 else (kbk ^ 56)
-        kid = kb[ksq]                                   # [N]
+        kid = kb[ksq]
         s = sq ^ 56 if persp == 1 else sq
         s = s ^ ((kid & 1) * 7)[:, None]
         idx = (kid >> 1)[:, None] * 768 + kind * 64 + s
-        idx = np.where(present, idx, pad)
-        order = np.argsort(~present, axis=1, kind="stable")
-        views.append(np.take_along_axis(idx, order, axis=1)[:, :32])
+        views.append(np.where(present, idx, pad))
     white_view, black_view = views
     stm_b = stm.astype(bool)[:, None]
     return np.where(stm_b, black_view, white_view), np.where(stm_b, white_view, black_view)
