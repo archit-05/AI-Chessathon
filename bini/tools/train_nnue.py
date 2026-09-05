@@ -101,9 +101,13 @@ def chunk_files(data_dir: Path) -> list[Path]:
     return sorted(data_dir.glob("chunk_*.npz"))
 
 
-def load_chunk(path: Path) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+def load_chunk(path: Path, quiet_only: bool = False) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
     z = np.load(path)
-    return z["pieces"], z["stm"], z["cp"].astype(np.float32)
+    pieces, stm, cp = z["pieces"], z["stm"], z["cp"].astype(np.float32)
+    if quiet_only and "quiet" in z.files:
+        keep = z["quiet"] == 1
+        pieces, stm, cp = pieces[keep], stm[keep], cp[keep]
+    return pieces, stm, cp
 
 
 def targets(stm: np.ndarray, cp: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
@@ -156,6 +160,7 @@ def main() -> None:
     ap.add_argument("--lr", type=float, default=2e-3)
     ap.add_argument("--resume")
     ap.add_argument("--buckets", type=int, default=8)
+    ap.add_argument("--quiet-only", action="store_true", help="train only on positions whose best move is quiet")
     ap.add_argument("--hidden", type=int, default=512)
     a = ap.parse_args()
 
@@ -167,7 +172,7 @@ def main() -> None:
     val_file, train_files = files[-1], files[:-1][: a.chunks]
     print(f"{len(train_files)} training chunks, validation chunk {val_file.name}", flush=True)
 
-    vp, vs, vc = load_chunk(val_file)
+    vp, vs, vc = load_chunk(val_file, a.quiet_only)
     vp, vs, vc = vp[:200_000], vs[:200_000], vc[:200_000]
     v_cp, v_t = targets(vs, vc)
     kb = king_table(a.buckets)
@@ -178,7 +183,7 @@ def main() -> None:
     if a.resume:
         model.load_state_dict(torch.load(a.resume, map_location=device))
     opt = torch.optim.Adam(model.parameters(), lr=a.lr)
-    per_chunk = 1_000_000 // a.batch
+    per_chunk = int((770_000 if a.quiet_only else 1_000_000) // a.batch)
     total_steps = per_chunk * len(train_files) * a.epochs
     sched = torch.optim.lr_scheduler.OneCycleLR(opt, max_lr=a.lr, total_steps=total_steps + 10, pct_start=0.03)
     rng = np.random.default_rng(0)
@@ -190,7 +195,7 @@ def main() -> None:
         t0 = time.perf_counter()
         tot, cnt = 0.0, 0
         for ci, fi in enumerate(order):
-            pieces, stm, cp = load_chunk(train_files[fi])
+            pieces, stm, cp = load_chunk(train_files[fi], a.quiet_only)
             _, tgt = targets(stm, cp)
             perm = rng.permutation(len(cp))
             for b in range(len(cp) // a.batch):
