@@ -359,3 +359,9 @@ agent; worth 20 minutes a day from any UK-student team member who enjoys puzzles
   in 2–5 s, both colours clean, no fallback. Compile risk closed; the 512-hidden net adds a few
   seconds at most. Overnight: quiet-filtered data (170M lines), NNUE v2 training (8 epochs),
   v1-vs-HCE gate running as the pipeline check, v2 gate at dawn.
+- **Sun 6 Sept, 00:45 — overnight run launched.** Data: 166M Lichess positions (38 + 128 chunks)
+  with the quiet flag, ~128M quiet used. NNUE v2 (8 king buckets, 512 hidden) training 8 epochs,
+  ~50 min/epoch, expected done ~07:30. Concurrently: v1-vs-HCE gate rerun (100 games) and the
+  centipawn-loss analysis of the top five's public games (tools/scrape_games.py, tools/cpl.py).
+  Partial v1 gate before the restart: +15 =3 −11 (+48 ±134) — the plain net is only marginally
+  better than the hand-crafted eval, hence the v2 changes.
