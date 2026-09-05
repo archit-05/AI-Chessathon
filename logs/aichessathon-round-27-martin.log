@@ -1,0 +1,109 @@
+AI CHESSATHON MATCH LOG
+=======================
+
+MATCH
+  Round          Rated 27
+  Team           Opus Carlsen
+  Colour         Black
+  Opponent       Martin
+  Opening        English Symmetrical
+  Start FEN      r1bqk2r/pp1pppbp/2n2np1/2p5/2P5/2NP1NP1/PP2PPBP/R1BQK2R b KQkq - 0 6
+  You moved      First
+  Machine        w-107c3c
+  Finished       2026-09-05 18:23:57 UTC
+  Match ID       2a2890ea-06f5-4c96-805c-dd323fb07d03
+
+INIT
+  Ready in       0.5 s
+  Budget         90.0 s
+  Used           1 percent
+
+CLOCK
+  Base           120.0 s plus 0.5 s per move
+  Moves          34
+  Time used      104.5 s
+  Slowest        10.0 s on move 6
+  Fastest        0.0 s on move 34
+  Average        3.1 s
+  Left at end    32.5 s
+
+RESULT
+  Lost by checkmate
+  Game lasted 183.1 s
+
+MOVES
+    #  move          time     clock left
+    1  Qc7           2.0 s      118.5 s
+    2  Nd8           3.6 s      115.4 s
+    3  Ng4           2.8 s      113.1 s
+    4  Qc6           8.1 s      105.5 s
+    5  Kf8           2.3 s      103.8 s
+    6  Bxb2         10.0 s       94.3 s
+    7  h6            2.1 s       92.8 s
+    8  g5            2.2 s       91.1 s
+    9  gxf4          4.9 s       86.7 s
+   10  Qe6           4.1 s       83.1 s
+   11  Rb8           1.7 s       81.8 s
+   12  Kg7           1.5 s       80.8 s
+   13  Nc6           5.9 s       75.4 s
+   14  bxc6          3.5 s       72.4 s
+   15  cxd5          3.8 s       69.1 s
+   16  f6            1.2 s       68.4 s
+   17  d6            2.0 s       66.9 s
+   18  Qd7           1.2 s       66.1 s
+   19  dxc5          3.0 s       63.6 s
+   20  dxc4          1.5 s       62.6 s
+   21  Re8           1.6 s       61.5 s
+   22  Rg8           2.0 s       59.9 s
+   23  Re8           1.8 s       58.6 s
+   24  Kh8           1.6 s       57.4 s
+   25  Kh7           1.8 s       56.2 s
+   26  Kh8           4.8 s       51.8 s
+   27  Rd8           6.7 s       45.6 s
+   28  h5            2.0 s       44.0 s
+   29  e6            3.2 s       41.3 s
+   30  Rg8+          3.3 s       38.5 s
+   31  Rd8           5.1 s       33.8 s
+   32  Ra8           2.8 s       31.5 s
+   33  Kg8           0.0 s       32.0 s
+   34  Kh8           0.0 s       32.5 s
+
+OUTPUT
+  1,867 bytes on stderr
+
+  v1.0 d5 d8c7 score 100cp 89888n 2040ms clock 120000ms
+  v1.0 d5 c6d8 score 100cp 164955n 3577ms clock 118457ms
+  v1.0 d5 f6g4 score 220cp 130942n 2751ms clock 115378ms
+  v1.0 d6 c7c6 score -70cp 342669n 8079ms clock 113124ms
+  v1.0 d5 e8f8 score 100cp 98205n 2251ms clock 105544ms
+  v1.0 d6 g7b2 score -220cp 378968n 9958ms clock 103791ms
+  v1.0 d5 h7h6 score -90cp 94311n 2066ms clock 94331ms
+  v1.0 d5 g6g5 score -220cp 95872n 2183ms clock 92763ms
+  v1.0 d6 g5f4 score -420cp 199710n 4855ms clock 91078ms
+  v1.0 d6 c6e6 score -420cp 169773n 4135ms clock 86721ms
+  v1.0 d5 a8b8 score -200cp 67114n 1739ms clock 83084ms
+  v1.0 d5 f8g7 score -200cp 70494n 1548ms clock 81841ms
+  v1.0 d6 d8c6 score -930cp 309812n 5892ms clock 80791ms
+  v1.0 d6 b7c6 score -930cp 144622n 3531ms clock 75398ms
+  v1.0 d6 c6d5 score -930cp 172654n 3787ms clock 72366ms
+  v1.0 d5 f7f6 score -630cp 50340n 1204ms clock 69077ms
+  v1.0 d6 d7d6 score -1030cp 91384n 1978ms clock 68370ms
+  v1.0 d5 e6d7 score -730cp 56953n 1247ms clock 66891ms
+  v1.0 d6 d6c5 score -1030cp 147399n 3048ms clock 66142ms
+  v1.0 d6 d5c4 score -1130cp 89026n 1508ms clock 63593ms
+  v1.0 d6 h8e8 score -1130cp 92505n 1606ms clock 62583ms
+  v1.0 d6 e8g8 score -1130cp 102346n 2040ms clock 61476ms
+  v1.0 d6 g8e8 score -1130cp 113795n 1833ms clock 59934ms
+  v1.0 d6 g7h8 score -1130cp 88417n 1648ms clock 58598ms
+  v1.0 d6 h8h7 score -1130cp 115480n 1793ms clock 57448ms
+  v1.0 d6 h7h8 score -1300cp 317801n 4815ms clock 56153ms
+  v1.0 d5 e8d8 score -1130cp 412672n 6740ms clock 51836ms
+  v1.0 d6 h6h5 score -1630cp 117331n 2047ms clock 45594ms
+  v1.0 d6 e7e6 score -1600cp 157508n 3234ms clock 44045ms
+  v1.0 d6 d8g8 score -1630cp 167210n 3332ms clock 41310ms
+  v1.0 d5 g8d8 score -1630cp 303104n 5138ms clock 38476ms
+  v1.0 d6 d8a8 score -29994cp 182116n 2829ms clock 33837ms
+  v1.0 d4 h8g8 score -29996cp 2380n 39ms clock 31506ms
+  v1.0 d2 g8h8 score -29998cp 56n 1ms clock 31965ms
+
+Email hello@aichessathon.com with this file if anything here is unclear.

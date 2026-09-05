@@ -1,0 +1,15 @@
+# environments and caches
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# training data (regenerate with bini/tools/stream_lichess.py) and large binaries
+data/lichess/
+data/test_out/
+*.npz
+data/*.zst
+*.pt
+
+# local artefacts
+submission.zip

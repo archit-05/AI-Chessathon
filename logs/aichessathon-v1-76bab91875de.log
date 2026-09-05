@@ -1,0 +1,47 @@
+[14:11:21Z] building
+[14:11:21Z] upload expands to 24,521 bytes
+[14:11:21Z] docker build
+Sending build context to Docker daemon  34.35kB
+
+Step 1/2 : FROM aichessathon/agent-base:latest
+ ---> eeaf64b96a67
+Step 2/2 : COPY . /agent
+ ---> 669e3448813f
+Successfully built 669e3448813f
+Successfully tagged aichessathon/agent:c29f961c-f517-4e77-837a-2520f3f73222
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+[14:11:28Z] pushed aichessathon.azurecr.io/agents:c29f961c-f517-4e77-837a-2520f3f73222
+[14:11:28Z] image aichessathon.azurecr.io/agents@sha256:669e3448813f8199d11d12c82f9f98199a44231b0961c6225bd66a062a5b4d79
+[14:11:28Z] smoke
+[14:11:28Z] your process is suspended while your opponent moves, so anything you compute between your own moves does not run
+[14:11:28Z] smoke game: 20 plies as white from r1bqk2r/pp2bppp/2n1pn2/2p5/2Pp4/1P1P1NP1/P3PPBP/RNBQ1RK1 w kq - 1 8
+[14:11:49Z] ready in 0.6 s of the 90 s init budget
+[14:11:49Z] played 8 moves, slowest 5.0 s
+[14:11:49Z] game ended white by checkmate
+[14:11:49Z] your agent wrote to stderr
+v1.0 d5 c1g5 score 100cp 100492n 2573ms clock 120000ms
+v1.0 d6 c4d5 score 790cp 120365n 4982ms clock 117925ms
+v1.0 d5 d5c6 score 1210cp 106518n 3896ms clock 113440ms
+v1.0 d5 f3e5 score 1540cp 89402n 3262ms clock 110041ms
+v1.0 d5 e5f7 score 1650cp 80406n 2328ms clock 107277ms
+v1.0 d5 g5e7 score 1980cp 66750n 1993ms clock 105448ms
+v1.0 d2 e7d8 score 29997cp 217n 8ms clock 103953ms
+v1.0 d1 c6c7 score 29999cp 40n 1ms clock 104442ms
+[14:11:49Z] smoke game: 20 plies as black from rnbqk2r/p3nppp/1p2p3/2ppP3/P2P4/2P2N2/2P2PPP/R1BQKB1R b KQkq - 0 8
+[14:12:42Z] ready in 0.7 s of the 90 s init budget
+[14:12:42Z] played 10 moves, slowest 9.3 s
+[14:12:42Z] game ended draw by ply_cap
+[14:12:42Z] your agent wrote to stderr
+v1.0 d6 c8d7 score -110cp 197732n 6160ms clock 120000ms
+v1.0 d6 c5d4 score -10cp 211256n 6921ms clock 114338ms
+v1.0 d6 d4c3 score 90cp 325377n 9252ms clock 107915ms
+v1.0 d5 d8c7 score 290cp 78087n 1851ms clock 99159ms
+v1.0 d5 e8f8 score 290cp 221086n 4871ms clock 97806ms
+v1.0 d6 d5e4 score 1090cp 139957n 6740ms clock 93433ms
+v1.0 d5 e4d3 score 1520cp 47595n 1799ms clock 87190ms
+v1.0 d5 c7e5 score 1720cp 169512n 3646ms clock 85889ms
+v1.0 d5 d3c2 score 1820cp 202521n 4299ms clock 82741ms
+v1.0 d5 e7d5 score 1950cp 157368n 5749ms clock 78939ms
+[14:12:42Z] valid

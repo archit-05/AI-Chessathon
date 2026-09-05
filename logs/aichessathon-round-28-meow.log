@@ -1,0 +1,97 @@
+AI CHESSATHON MATCH LOG
+=======================
+
+MATCH
+  Round          Rated 28
+  Team           Opus Carlsen
+  Colour         White
+  Opponent       meow
+  Opening        Scotch Game
+  Start FEN      r1bqk2r/pppp1ppp/1bn2n2/8/4P3/1NN2P2/PPP3PP/R1BQKB1R b KQkq - 4 7
+  You moved      Second
+  Machine        w-a530fa
+  Finished       2026-09-05 19:26:46 UTC
+  Match ID       eea5f32a-98f4-43dd-a57b-a242ce70e1d3
+
+INIT
+  Ready in       0.6 s
+  Budget         90.0 s
+  Used           1 percent
+
+CLOCK
+  Base           120.0 s plus 0.5 s per move
+  Moves          28
+  Time used      91.4 s
+  Slowest        9.0 s on move 1
+  Fastest        0.9 s on move 19
+  Average        3.3 s
+  Left at end    42.6 s
+
+RESULT
+  Drawn by threefold repetition
+  Game lasted 167.2 s
+
+MOVES
+    #  move          time     clock left
+    1  Bg5           9.0 s      111.5 s
+    2  Nd5           4.2 s      107.8 s
+    3  Nxb6          3.3 s      105.0 s
+    4  Bh4           7.5 s       98.0 s
+    5  Be2           4.3 s       94.1 s
+    6  g3            1.6 s       93.1 s
+    7  Nxc5          1.8 s       91.8 s
+    8  c3            4.2 s       88.1 s
+    9  Bg5           4.4 s       84.2 s
+   10  Rxa2          7.7 s       77.0 s
+   11  Qc1           2.4 s       75.1 s
+   12  Bf4           2.3 s       73.2 s
+   13  Qd2           8.4 s       65.3 s
+   14  Kf2           1.5 s       64.3 s
+   15  Qe3           3.5 s       61.3 s
+   16  g4            4.6 s       57.2 s
+   17  g5            2.2 s       55.5 s
+   18  Rg1           5.0 s       51.0 s
+   19  Bxc7          0.9 s       50.6 s
+   20  Kxe3          1.0 s       50.1 s
+   21  Rd1           1.8 s       48.9 s
+   22  Kf2           2.5 s       46.8 s
+   23  Bb8           1.7 s       45.6 s
+   24  f4            1.4 s       44.7 s
+   25  Rd3           1.1 s       44.1 s
+   26  Rd5           1.0 s       43.6 s
+   27  Rd3           1.0 s       43.1 s
+   28  Rd5           1.0 s       42.6 s
+
+OUTPUT
+  1,505 bytes on stderr
+
+  v1.0 d5 c1g5 score 0cp 376225n 9001ms clock 120000ms
+  v1.0 d5 c3d5 score 320cp 193099n 4197ms clock 111497ms
+  v1.0 d5 d5b6 score 230cp 157170n 3307ms clock 107798ms
+  v1.0 d5 g5h4 score 110cp 323490n 7513ms clock 104990ms
+  v1.0 d5 f1e2 score 0cp 168324n 4346ms clock 97974ms
+  v1.0 d5 g2g3 score 10cp 59370n 1554ms clock 94126ms
+  v1.0 d5 b3c5 score 10cp 86221n 1799ms clock 93067ms
+  v1.0 d5 c2c3 score 10cp 184707n 4175ms clock 91766ms
+  v1.0 d5 h4g5 score -90cp 172440n 4396ms clock 88088ms
+  v1.0 d6 a1a2 score -190cp 304402n 7697ms clock 84190ms
+  v1.0 d5 d1c1 score -90cp 104067n 2421ms clock 76991ms
+  v1.0 d5 g5f4 score -90cp 88757n 2319ms clock 75069ms
+  v1.0 d6 c1d2 score -290cp 382725n 8409ms clock 73248ms
+  v1.0 d5 e1f2 score -90cp 53806n 1489ms clock 65337ms
+  v1.0 d5 d2e3 score -90cp 151014n 3527ms clock 64346ms
+  v1.0 d5 g3g4 score -70cp 193146n 4619ms clock 61317ms
+  v1.0 d5 g4g5 score -100cp 80127n 2194ms clock 57197ms
+  v1.0 d5 h1g1 score -190cp 195650n 5019ms clock 55501ms
+  v1.0 d5 f4c7 score -490cp 43248n 910ms clock 50980ms
+  v1.0 d5 f2e3 score -590cp 37677n 956ms clock 50567ms
+  v1.0 d5 g1d1 score -490cp 79457n 1750ms clock 50109ms
+  v1.0 d5 e3f2 score -590cp 106474n 2531ms clock 48858ms
+  v1.0 d5 c7b8 score -590cp 85535n 1680ms clock 46825ms
+  v1.0 d5 f3f4 score -590cp 70363n 1434ms clock 45643ms
+  v1.0 d5 d1d3 score -590cp 58685n 1118ms clock 44708ms
+  v1.0 d5 d3d5 score -590cp 54381n 1005ms clock 44088ms
+  v1.0 d5 d5d3 score -590cp 51757n 990ms clock 43582ms
+  v1.0 d5 d3d5 score -590cp 54277n 990ms clock 43090ms
+
+Email hello@aichessathon.com with this file if anything here is unclear.

@@ -1,0 +1,150 @@
+AI CHESSATHON MATCH LOG
+=======================
+
+MATCH
+  Round          Rated 26
+  Team           Opus Carlsen
+  Colour         Black
+  Opponent       Team2
+  Opening        Petroff Defence
+  Start FEN      rnbqkb1r/ppp2ppp/8/3p4/3Pn3/5N2/PPPN1PPP/R1BQKB1R b KQkq - 1 6
+  You moved      First
+  Machine        w-6c1e7e
+  Finished       2026-09-05 17:25:49 UTC
+  Match ID       0492e9d9-98c9-4547-aa88-05163ce41d7d
+
+INIT
+  Ready in       0.5 s
+  Budget         90.0 s
+  Used           1 percent
+
+CLOCK
+  Base           120.0 s plus 0.5 s per move
+  Moves          55
+  Time used      128.8 s
+  Slowest        9.2 s on move 6
+  Fastest        0.0 s on move 36
+  Average        2.3 s
+  Left at end    18.7 s
+
+RESULT
+  Drawn by threefold repetition
+  Game lasted 261.0 s
+
+MOVES
+    #  move          time     clock left
+    1  Nxd2          2.0 s      118.5 s
+    2  Rg8           6.5 s      112.5 s
+    3  Bb4+          3.9 s      109.0 s
+    4  Bd6           2.4 s      107.1 s
+    5  Bf4+          3.2 s      104.5 s
+    6  Bxc1          9.2 s       95.8 s
+    7  Kf8           1.7 s       94.6 s
+    8  Rh8           6.9 s       88.2 s
+    9  Qd7           2.7 s       86.0 s
+   10  Nc6           3.1 s       83.3 s
+   11  Nxe5          4.4 s       79.5 s
+   12  Qe7           3.9 s       76.1 s
+   13  g6            1.9 s       74.7 s
+   14  fxg6          2.4 s       72.8 s
+   15  Bf5+          4.5 s       68.8 s
+   16  Rb8           2.4 s       66.9 s
+   17  b6            4.6 s       62.8 s
+   18  Rg8           2.7 s       60.6 s
+   19  Kg7           1.9 s       59.3 s
+   20  Rgd8          2.5 s       57.2 s
+   21  Bxe6          4.1 s       53.6 s
+   22  Kf6           4.5 s       49.6 s
+   23  Qd6           0.8 s       49.3 s
+   24  Qd1+          3.2 s       46.6 s
+   25  Rd2+          4.3 s       42.9 s
+   26  Qxd2+         2.1 s       41.3 s
+   27  Bxa2+         0.9 s       40.9 s
+   28  Qd1+          1.3 s       40.1 s
+   29  Qc2+          0.7 s       40.0 s
+   30  Qxc3+         0.7 s       39.8 s
+   31  Qa1+          0.7 s       39.5 s
+   32  Qd1+          1.0 s       39.0 s
+   33  Qd4+          1.0 s       38.5 s
+   34  Qf2+          1.0 s       38.1 s
+   35  Qd4           1.6 s       37.0 s
+   36  Kg7           0.0 s       37.5 s
+   37  Kg8           0.8 s       37.2 s
+   38  Qc4+          3.0 s       34.6 s
+   39  Rd8+          3.7 s       31.4 s
+   40  Qc3+          0.7 s       31.2 s
+   41  Rd2+          0.8 s       30.9 s
+   42  Rxe2+         1.6 s       29.8 s
+   43  Qc4+          1.7 s       28.6 s
+   44  Qb3+          1.8 s       27.2 s
+   45  Qb4+          1.8 s       26.0 s
+   46  Qe4+          1.5 s       24.9 s
+   47  Qf3+          2.5 s       22.9 s
+   48  Qf2+          2.0 s       21.4 s
+   49  Qc5+          1.2 s       20.8 s
+   50  Qc4+          1.1 s       20.1 s
+   51  Qd3+          1.3 s       19.4 s
+   52  Qe2+          1.1 s       18.8 s
+   53  Qh2+          0.5 s       18.8 s
+   54  Qe2+          0.6 s       18.7 s
+   55  Qh2+          0.5 s       18.7 s
+
+OUTPUT
+  2,824 bytes on stderr
+
+  v1.0 d5 e4d2 score 0cp 101615n 2039ms clock 120000ms
+  v1.0 d5 h8g8 score 0cp 289737n 6504ms clock 118459ms
+  v1.0 d5 f8b4 score 0cp 177056n 3943ms clock 112453ms
+  v1.0 d5 b4d6 score 0cp 108213n 2369ms clock 109009ms
+  v1.0 d5 d6f4 score 0cp 142309n 3167ms clock 107139ms
+  v1.0 d6 f4c1 score 0cp 318919n 9188ms clock 104469ms
+  v1.0 d5 e8f8 score 0cp 90990n 1665ms clock 95779ms
+  v1.0 d6 g8h8 score -100cp 299731n 6927ms clock 94613ms
+  v1.0 d5 d8d7 score 120cp 129036n 2713ms clock 88185ms
+  v1.0 d5 b8c6 score 220cp 135575n 3135ms clock 85970ms
+  v1.0 d6 c6e5 score 230cp 196740n 4380ms clock 83334ms
+  v1.0 d5 d7e7 score 170cp 159191n 3892ms clock 79452ms
+  v1.0 d5 g7g6 score 130cp 93829n 1856ms clock 76058ms
+  v1.0 d5 f7g6 score 30cp 101337n 2403ms clock 74700ms
+  v1.0 d5 c8f5 score 130cp 212060n 4505ms clock 72795ms
+  v1.0 d5 a8b8 score 130cp 98404n 2355ms clock 68789ms
+  v1.0 d5 b7b6 score 130cp 214021n 4584ms clock 66931ms
+  v1.0 d5 h8g8 score 130cp 108779n 2699ms clock 62845ms
+  v1.0 d5 f8g7 score 100cp 78583n 1877ms clock 60644ms
+  v1.0 d5 g8d8 score 200cp 105532n 2537ms clock 59266ms
+  v1.0 d5 f5e6 score 130cp 185633n 4113ms clock 57226ms
+  v1.0 d5 g7f6 score 130cp 191035n 4487ms clock 53612ms
+  v1.0 d4 e7d6 score 130cp 29960n 775ms clock 49623ms
+  v1.0 d5 d6d1 score 230cp 123601n 3211ms clock 49346ms
+  v1.0 d5 d8d2 score 400cp 166676n 4260ms clock 46633ms
+  v1.0 d5 d1d2 score 230cp 90103n 2099ms clock 42871ms
+  v1.0 d4 e6a2 score 230cp 35447n 850ms clock 41271ms
+  v1.0 d4 d2d1 score 400cp 56182n 1302ms clock 40919ms
+  v1.0 d4 d1c2 score 0cp 31103n 652ms clock 40115ms
+  v1.0 d4 c2c3 score 0cp 29030n 692ms clock 39961ms
+  v1.0 d4 c3a1 score 0cp 35424n 744ms clock 39767ms
+  v1.0 d4 a1d1 score 0cp 45357n 1019ms clock 39522ms
+  v1.0 d4 d1d4 score 0cp 44244n 979ms clock 39001ms
+  v1.0 d4 d4f2 score -100cp 44509n 951ms clock 38521ms
+  v1.0 d5 f2d4 score -100cp 64235n 1596ms clock 38068ms
+  v1.0 d5 g7g8 score -100cp 29240n 779ms clock 37469ms
+  v1.0 d5 d4c4 score 0cp 134813n 3046ms clock 37189ms
+  v1.0 d5 b8d8 score 400cp 156480n 3693ms clock 34641ms
+  v1.0 d4 c4c3 score 400cp 35592n 713ms clock 31446ms
+  v1.0 d4 d8d2 score 0cp 39065n 820ms clock 31231ms
+  v1.0 d5 d2e2 score 0cp 75694n 1625ms clock 30910ms
+  v1.0 d5 c3c4 score 0cp 72627n 1691ms clock 29784ms
+  v1.0 d5 c4b3 score 0cp 85647n 1844ms clock 28591ms
+  v1.0 d5 b3b4 score 0cp 79238n 1783ms clock 27245ms
+  v1.0 d5 b4e4 score 0cp 67860n 1527ms clock 25960ms
+  v1.0 d5 e4f3 score 0cp 95531n 2515ms clock 24932ms
+  v1.0 d5 f3f2 score 0cp 77958n 1979ms clock 22914ms
+  v1.0 d5 f2c5 score 0cp 55560n 1176ms clock 21434ms
+  v1.0 d5 c5c4 score 0cp 50446n 1121ms clock 20757ms
+  v1.0 d5 c4d3 score 0cp 56393n 1276ms clock 20134ms
+  v1.0 d5 d3e2 score 0cp 51013n 1048ms clock 19357ms
+  v1.0 d5 e2h2 score 0cp 26189n 539ms clock 18807ms
+  v1.0 d5 h2e2 score 0cp 24946n 581ms clock 18766ms
+  v1.0 d5 e2h2 score 0cp 23535n 462ms clock 18684ms
+
+Email hello@aichessathon.com with this file if anything here is unclear.

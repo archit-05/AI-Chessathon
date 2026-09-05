@@ -1,0 +1,145 @@
+AI CHESSATHON MATCH LOG
+=======================
+
+MATCH
+  Round          Rated 25
+  Team           Opus Carlsen
+  Colour         White
+  Opponent       Brownies
+  Opening        Two Knights Defence
+  Start FEN      r1bqk2r/ppppbppp/2n2n2/4p3/2B1P3/2NP1N2/PPP2PPP/R1BQK2R b KQkq - 2 5
+  You moved      Second
+  Machine        w-53f6ad
+  Finished       2026-09-05 16:25:46 UTC
+  Match ID       d4704bd1-1faf-4e04-896f-4d484a93d3b1
+
+INIT
+  Ready in       0.5 s
+  Budget         90.0 s
+  Used           1 percent
+
+CLOCK
+  Base           120.0 s plus 0.5 s per move
+  Moves          52
+  Time used      129.1 s
+  Slowest        8.5 s on move 5
+  Fastest        0.3 s on move 51
+  Average        2.5 s
+  Left at end    16.9 s
+
+RESULT
+  Drawn by threefold repetition
+  Game lasted 256.2 s
+
+MOVES
+    #  move          time     clock left
+    1  Kf1           4.7 s      115.8 s
+    2  Qd2           5.1 s      111.2 s
+    3  Ng5           3.0 s      108.7 s
+    4  Nf3           1.6 s      107.5 s
+    5  gxf3          8.5 s       99.6 s
+    6  Nb5           2.8 s       97.3 s
+    7  exd5          4.4 s       93.4 s
+    8  Bxb5          7.1 s       86.7 s
+    9  Bc4           7.6 s       79.7 s
+   10  Rg1           2.6 s       77.5 s
+   11  Rg2           4.7 s       73.3 s
+   12  Qe2           4.2 s       69.5 s
+   13  Kxe2          1.6 s       68.5 s
+   14  Bg5           1.9 s       67.1 s
+   15  Bd5           2.5 s       65.1 s
+   16  Bc4           6.8 s       58.8 s
+   17  Bd5           1.5 s       57.9 s
+   18  Bc6           3.7 s       54.7 s
+   19  Bf3           6.1 s       49.1 s
+   20  Bd2           2.0 s       47.6 s
+   21  h3            6.2 s       41.8 s
+   22  Rg5           2.6 s       39.8 s
+   23  Rg2           1.8 s       38.4 s
+   24  dxe4          1.2 s       37.8 s
+   25  Bxe4          1.0 s       37.2 s
+   26  Be3           1.7 s       36.1 s
+   27  Bxa7          0.5 s       36.0 s
+   28  Kd2           0.9 s       35.7 s
+   29  Rh1           0.6 s       35.6 s
+   30  Kc1           1.6 s       34.5 s
+   31  Rg4           2.1 s       32.8 s
+   32  Rgh4          2.4 s       30.9 s
+   33  R4h2          1.1 s       30.4 s
+   34  Rd1           2.0 s       28.8 s
+   35  Rf1           1.8 s       27.5 s
+   36  Bd4           1.9 s       26.1 s
+   37  Bc3           1.3 s       25.3 s
+   38  Bd2           1.0 s       24.9 s
+   39  Kb1           1.1 s       24.2 s
+   40  Rxf8          0.6 s       24.1 s
+   41  Rh1           0.8 s       23.8 s
+   42  Be1           0.7 s       23.7 s
+   43  Rh3           0.6 s       23.6 s
+   44  Rh1           0.8 s       23.3 s
+   45  b3            0.6 s       23.3 s
+   46  Rg1           0.7 s       23.1 s
+   47  Rg2           2.5 s       21.1 s
+   48  Rg1           2.7 s       18.9 s
+   49  Rh1           1.6 s       17.8 s
+   50  Ka1           1.2 s       17.2 s
+   51  Kb1           0.3 s       17.4 s
+   52  Ka1           1.0 s       16.9 s
+
+OUTPUT
+  2,792 bytes on stderr
+
+  v1.0 d5 e1f1 score 100cp 242861n 4719ms clock 120000ms
+  v1.0 d5 d1d2 score 100cp 253053n 5114ms clock 115779ms
+  v1.0 d5 f3g5 score 10cp 141059n 2978ms clock 111163ms
+  v1.0 d5 g5f3 score 10cp 74387n 1645ms clock 108683ms
+  v1.0 d6 g2f3 score -90cp 370790n 8477ms clock 107536ms
+  v1.0 d5 c3b5 score 10cp 106754n 2791ms clock 99557ms
+  v1.0 d6 e4d5 score -90cp 179597n 4398ms clock 97263ms
+  v1.0 d6 c4b5 score -90cp 320816n 7118ms clock 93363ms
+  v1.0 d6 b5c4 score -190cp 315249n 7592ms clock 86744ms
+  v1.0 d5 h1g1 score -190cp 108954n 2646ms clock 79650ms
+  v1.0 d5 g1g2 score -200cp 203141n 4729ms clock 77501ms
+  v1.0 d5 d2e2 score 0cp 187732n 4225ms clock 73271ms
+  v1.0 d6 f1e2 score -90cp 63699n 1563ms clock 69544ms
+  v1.0 d5 c1g5 score 130cp 90729n 1876ms clock 68479ms
+  v1.0 d5 c4d5 score 130cp 132786n 2503ms clock 67101ms
+  v1.0 d5 d5c4 score 10cp 318653n 6750ms clock 65096ms
+  v1.0 d5 c4d5 score 10cp 71774n 1490ms clock 58845ms
+  v1.0 d5 d5c6 score 130cp 177773n 3662ms clock 57853ms
+  v1.0 d5 c6f3 score 10cp 293411n 6071ms clock 54689ms
+  v1.0 d5 g5d2 score 10cp 92645n 2043ms clock 49117ms
+  v1.0 d4 h2h3 score -90cp 271360n 6223ms clock 47572ms
+  v1.0 d5 g2g5 score 10cp 136333n 2566ms clock 41848ms
+  v1.0 d5 g5g2 score 10cp 105422n 1846ms clock 39780ms
+  v1.0 d5 d3e4 score -220cp 46738n 1154ms clock 38433ms
+  v1.0 d5 f3e4 score -250cp 41970n 1026ms clock 37776ms
+  v1.0 d5 d2e3 score -250cp 78887n 1664ms clock 37249ms
+  v1.0 d4 e3a7 score -320cp 22472n 542ms clock 36083ms
+  v1.0 d5 e2d2 score -420cp 37933n 868ms clock 36039ms
+  v1.0 d4 a1h1 score -430cp 23821n 578ms clock 35669ms
+  v1.0 d5 d2c1 score -420cp 69673n 1622ms clock 35589ms
+  v1.0 d5 g2g4 score -430cp 102972n 2122ms clock 34465ms
+  v1.0 d5 g4h4 score -430cp 110875n 2402ms clock 32841ms
+  v1.0 d5 h4h2 score -430cp 54726n 1082ms clock 30937ms
+  v1.0 d5 h1d1 score -420cp 96704n 2029ms clock 30354ms
+  v1.0 d5 d1f1 score -320cp 79538n 1836ms clock 28823ms
+  v1.0 d5 a7d4 score -320cp 84421n 1898ms clock 27486ms
+  v1.0 d5 d4c3 score -320cp 62414n 1258ms clock 26085ms
+  v1.0 d5 c3d2 score -320cp 36788n 962ms clock 25326ms
+  v1.0 d5 c1b1 score -320cp 55593n 1138ms clock 24862ms
+  v1.0 d5 f1f8 score -320cp 21889n 589ms clock 24222ms
+  v1.0 d5 h2h1 score -320cp 41292n 807ms clock 24132ms
+  v1.0 d5 d2e1 score -320cp 31791n 663ms clock 23823ms
+  v1.0 d5 h1h3 score -320cp 29194n 598ms clock 23659ms
+  v1.0 d5 h3h1 score -320cp 37265n 755ms clock 23558ms
+  v1.0 d5 b2b3 score -320cp 25117n 550ms clock 23301ms
+  v1.0 d5 h1g1 score -320cp 36348n 698ms clock 23249ms
+  v1.0 d6 g1g2 score -420cp 122477n 2450ms clock 23050ms
+  v1.0 d6 g2g1 score -600cp 141720n 2670ms clock 21098ms
+  v1.0 d6 g1h1 score -720cp 92705n 1597ms clock 18926ms
+  v1.0 d6 b1a1 score -720cp 61301n 1160ms clock 17828ms
+  v1.0 d5 a1b1 score -320cp 15126n 302ms clock 17164ms
+  v1.0 d6 b1a1 score -720cp 60194n 1001ms clock 17361ms
+
+Email hello@aichessathon.com with this file if anything here is unclear.

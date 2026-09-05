@@ -1,0 +1,105 @@
+AI CHESSATHON MATCH LOG
+=======================
+
+MATCH
+  Round          Rated 24
+  Team           Opus Carlsen
+  Colour         White
+  Opponent       Thorp
+  Opening        Four Knights Game
+  Start FEN      r1bq1rk1/pppp1ppp/2n2n2/1B2p3/4P3/2P2N1P/PPP2PP1/R1BQ1RK1 b - - 0 7
+  You moved      Second
+  Machine        w-ea5cae
+  Finished       2026-09-05 15:18:12 UTC
+  Match ID       6a8e7087-c001-490f-ae41-c8ab59a81d4c
+
+INIT
+  Ready in       0.5 s
+  Budget         90.0 s
+  Used           1 percent
+
+CLOCK
+  Base           120.0 s plus 0.5 s per move
+  Moves          33
+  Time used      96.6 s
+  Slowest        9.3 s on move 3
+  Fastest        0.0 s on move 24
+  Average        2.9 s
+  Left at end    39.9 s
+
+RESULT
+  Lost by checkmate
+  Game lasted 158.9 s
+
+MOVES
+    #  move          time     clock left
+    1  Re1           2.1 s      118.4 s
+    2  Bxc6          2.2 s      116.8 s
+    3  Nxe5          9.3 s      108.0 s
+    4  Nf3           2.0 s      106.5 s
+    5  Re3           3.3 s      103.7 s
+    6  Re1           3.3 s      100.9 s
+    7  Re3           4.0 s       97.4 s
+    8  Re1           4.0 s       94.0 s
+    9  Re3           1.9 s       92.5 s
+   10  Bxb2          9.1 s       83.9 s
+   11  Rd3           4.9 s       79.5 s
+   12  Bc1           1.5 s       78.5 s
+   13  Nh2           2.4 s       76.6 s
+   14  Rf3           2.6 s       74.5 s
+   15  Re3           3.1 s       71.9 s
+   16  Rb1           7.1 s       65.3 s
+   17  Rf3           1.6 s       64.2 s
+   18  cxd4          2.1 s       62.6 s
+   19  c4            5.2 s       57.9 s
+   20  Ra3           5.1 s       53.2 s
+   21  Qb3           0.8 s       53.0 s
+   22  Qxb7          0.9 s       52.5 s
+   23  Rxc1          1.5 s       51.5 s
+   24  Nf1           0.0 s       52.0 s
+   25  g4            4.8 s       47.8 s
+   26  Qd5+          3.5 s       44.8 s
+   27  Rxg3          5.1 s       40.3 s
+   28  Kg2           0.7 s       40.1 s
+   29  Qf7           1.1 s       39.5 s
+   30  f4            1.3 s       38.6 s
+   31  Kh2           0.3 s       38.9 s
+   32  Kg3           0.0 s       39.4 s
+   33  Kh4           0.0 s       39.9 s
+
+OUTPUT
+  1,683 bytes on stderr
+
+  v1.0 d5 f1e1 score 220cp 117071n 2051ms clock 120000ms
+  v1.0 d5 b5c6 score 220cp 120113n 2178ms clock 118447ms
+  v1.0 d6 f3e5 score -100cp 406349n 9260ms clock 116768ms
+  v1.0 d5 e5f3 score 100cp 106211n 1967ms clock 108006ms
+  v1.0 d5 e1e3 score 100cp 169576n 3322ms clock 106537ms
+  v1.0 d5 e3e1 score 100cp 162081n 3328ms clock 103713ms
+  v1.0 d5 e1e3 score 100cp 190593n 3961ms clock 100883ms
+  v1.0 d5 e3e1 score 100cp 180814n 3965ms clock 97420ms
+  v1.0 d5 e1e3 score 100cp 92697n 1918ms clock 93953ms
+  v1.0 d6 c1b2 score -320cp 405719n 9145ms clock 92533ms
+  v1.0 d5 e3d3 score 100cp 222137n 4918ms clock 83886ms
+  v1.0 d5 b2c1 score 100cp 64007n 1451ms clock 79467ms
+  v1.0 d5 f3h2 score 100cp 119829n 2446ms clock 78514ms
+  v1.0 d5 d3f3 score 100cp 123162n 2557ms clock 76567ms
+  v1.0 d5 f3e3 score 100cp 133134n 3144ms clock 74508ms
+  v1.0 d5 a1b1 score 100cp 294427n 7057ms clock 71862ms
+  v1.0 d5 e3f3 score 100cp 69279n 1649ms clock 65303ms
+  v1.0 d5 c3d4 score 200cp 89927n 2084ms clock 64152ms
+  v1.0 d5 c2c4 score 120cp 236787n 5186ms clock 62566ms
+  v1.0 d5 f3a3 score 70cp 192104n 5135ms clock 57879ms
+  v1.0 d4 d1b3 score -200cp 32436n 770ms clock 53242ms
+  v1.0 d5 b3b7 score -520cp 45266n 927ms clock 52970ms
+  v1.0 d6 b1c1 score -520cp 69646n 1500ms clock 52541ms
+  v1.0 d5 g2g4 score -820cp 212906n 4750ms clock 52038ms
+  v1.0 d5 b7d5 score -1420cp 158134n 3459ms clock 47787ms
+  v1.0 d5 a3g3 score -1500cp 207416n 5066ms clock 44826ms
+  v1.0 d5 g1g2 score -1820cp 33853n 676ms clock 40258ms
+  v1.0 d4 d5f7 score -1820cp 51196n 1105ms clock 40081ms
+  v1.0 d5 f2f4 score -29994cp 83511n 1334ms clock 39474ms
+  v1.0 d4 g2h2 score -29994cp 16359n 266ms clock 38638ms
+  v1.0 d3 h2g3 score -29996cp 593n 11ms clock 38871ms
+
+Email hello@aichessathon.com with this file if anything here is unclear.
