@@ -335,6 +335,7 @@ def qsearch(bb, st, pcs, mv, ub, ui, acc, scores, info, tlim, w1, w2, b2, alpha,
 
     in_chk = in_check(bb, st)
     best = -INF
+    stand = 0
     if not in_chk:
         stand = evaluate(bb, st, pcs, acc, info, w2, b2)
         if stand >= beta:
