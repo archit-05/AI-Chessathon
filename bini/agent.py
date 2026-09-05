@@ -22,16 +22,14 @@ os.environ.setdefault("NUMBA_CACHE_DIR", "/tmp/numba_cache")
 
 _T_IMPORT = time.perf_counter()
 
-import numpy as np  # noqa: E402
+import bini_board as B  # noqa: E402  (tables only, ~1 s; the jitted engine is imported in _build)
 
-import bini_board as B  # noqa: E402
-import bini_engine as E  # noqa: E402
-import bini_search as S  # noqa: E402
-
+VERSION = "bini-2.0"
 INCREMENT_MS = 500
 RESERVE_MS = 1500          # never plan to dip below this
 MIN_THINK_MS = 8
-COMPILE_JOIN_S = 75.0      # hedge: hand back control before the init budget even if compiling
+# hedge: hand back control (ready line) before the init budget even if still compiling
+COMPILE_JOIN_S = float(os.environ.get("BINI_JOIN_S", "75"))
 
 
 class GameState:
@@ -87,17 +85,30 @@ class GameState:
 
 
 _state = GameState()
-_engine: E.Engine | None = None
+_engine = None
+_S = None
 _ready = threading.Event()
 _compile_seconds = 0.0
+_build_error: str | None = None
 
 
 def _build() -> None:
-    global _engine, _compile_seconds
-    eng = E.Engine(use_nnue=True)
-    _compile_seconds = E.warm_up(eng)
-    _engine = eng
-    _ready.set()
+    """Import and compile the jitted engine. Runs in a thread so the ready line is never late."""
+    global _engine, _S, _compile_seconds, _build_error
+    try:
+        t0 = time.perf_counter()
+        import bini_engine as E  # noqa: PLC0415 - heavy import (numba compile) deliberately deferred
+        import bini_search as S  # noqa: PLC0415
+
+        eng = E.Engine(use_nnue=True)
+        E.warm_up(eng)
+        _compile_seconds = time.perf_counter() - t0
+        _S = S
+        _engine = eng
+        _ready.set()
+    except Exception as exc:  # noqa: BLE001 - the fallback engine then plays the whole game
+        _build_error = repr(exc)
+        print(f"{VERSION} BUILD FAILED: {exc!r}", file=sys.stderr, flush=True)
 
 
 def _fallback_move(board: chess.Board, budget_s: float) -> str:
@@ -165,10 +176,14 @@ def get_move(fen: str, time_left_ms: int) -> str:
     uci = None
     try:
         if not _ready.is_set():
-            # still compiling (should not happen): wait a little, then use the fallback
-            _ready.wait(timeout=max(0.0, min(hard / 1000.0 * 0.5, 2.0)))
+            # Still compiling (should not happen on the platform). Waiting lets the compile run
+            # at full speed and is worth far more than a starved fallback move, so give it a large
+            # share of the clock; the fallback only plays if it is still not done afterwards.
+            _ready.wait(timeout=max(0.0, min(0.35 * time_left_ms / 1000.0, 45.0)))
+            soft, hard = _budget(int(time_left_ms - (time.perf_counter() - t0) * 1000.0), _state.move_number)
         if _ready.is_set() and _engine is not None:
             eng = _engine
+            S = _S
             if _state.move_number == 0:
                 eng.new_game()
             eng.set_position(fen, _state.keys)
@@ -177,11 +192,11 @@ def get_move(fen: str, time_left_ms: int) -> str:
             if chess.Move.from_uci(cand) in board.legal_moves:
                 uci = cand
                 spent = (time.perf_counter() - t0) * 1000.0
-                print(f"{E.VERSION} m{_state.move_number + 1} d{depth} {cand} {score}cp {int(eng.info[S.I_NODES])}n {spent:.0f}ms left {time_left_ms}ms", file=sys.stderr, flush=True)
+                print(f"{VERSION} m{_state.move_number + 1} d{depth} {cand} {score}cp {int(eng.info[S.I_NODES])}n {spent:.0f}ms left {time_left_ms}ms", file=sys.stderr, flush=True)
             else:
-                print(f"{E.VERSION} ILLEGAL candidate {cand} in {fen}", file=sys.stderr, flush=True)
+                print(f"{VERSION} ILLEGAL candidate {cand} in {fen}", file=sys.stderr, flush=True)
     except Exception as exc:  # noqa: BLE001 - any engine failure falls through to the fallback
-        print(f"{E.VERSION} engine error: {exc!r}", file=sys.stderr, flush=True)
+        print(f"{VERSION} engine error: {exc!r}", file=sys.stderr, flush=True)
     if uci is None:
         remaining = min(1.5, (hard - (time.perf_counter() - t0) * 1000.0) / 1000.0, 0.08 * time_left_ms / 1000.0)
         remaining = max(0.01, remaining)
@@ -199,6 +214,6 @@ _thread.join(timeout=COMPILE_JOIN_S)
 gc.collect()
 gc.freeze()
 if _ready.is_set():
-    print(f"{E.VERSION} ready: import+compile {time.perf_counter() - _T_IMPORT:.1f}s (compile {_compile_seconds:.1f}s), nnue={'on' if _engine is not None and _engine.use_nnue else 'off'}", file=sys.stderr, flush=True)
-else:
-    print(f"{E.VERSION} WARNING: still compiling after {COMPILE_JOIN_S:.0f}s, fallback engine active", file=sys.stderr, flush=True)
+    print(f"{VERSION} ready: import+compile {time.perf_counter() - _T_IMPORT:.1f}s (compile {_compile_seconds:.1f}s), nnue={'on' if _engine is not None and _engine.use_nnue else 'off'}", file=sys.stderr, flush=True)
+elif _build_error is None:
+    print(f"{VERSION} WARNING: still compiling after {COMPILE_JOIN_S:.0f}s, fallback engine active until it finishes", file=sys.stderr, flush=True)
