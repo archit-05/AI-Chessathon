@@ -333,3 +333,18 @@ agent; worth 20 minutes a day from any UK-student team member who enjoys puzzles
   chosen at export and shipped in the file; search/engine rewired; trainer generalised (multiple
   data directories, --buckets, --hidden). Stockfish 19 installed locally as a fixed-strength
   sparring partner (sparring/sf, never shipped). Second data stream (100M more positions) running.
+
+## 14. Decisions from the strategy review (Sat 5 Sept, 23:50)
+
+1. **Measure before anything else.** Calibration ladder vs Stockfish at fixed UCI_Elo (1800, 2000,
+   2200, 2400, 2600; 100 games each, 10 s + 0.1 s) as soon as the CPU is free; build Loki 3.0 and
+   Zagreus locally if they compile, since Loki's ladder rating (1729) maps our score directly onto
+   the ladder. Every gate from now on is games against a fixed-strength reference, 300+ games for
+   a decision between two nets.
+2. **Training data quality.** Re-stream with a quiet-position flag (drop positions where
+   Stockfish's best move is a capture or promotion, or the side to move is in check), 160M+
+   positions, ~10 epochs of the king-bucket 512 net. The one-cycle schedule already anneals.
+3. **Two uploads, not one.** Sunday: the hand-crafted build, to read compile time and nodes/s on
+   the EPYC ("Ready in" line). Thursday afternoon: the final. Friday morning rollback-only.
+4. **Book on Monday**, singular extensions and eval-dependent time saving when the calibration
+   numbers say where the Elo is. Fixed contempt tuned in the arena; no opponent modelling.

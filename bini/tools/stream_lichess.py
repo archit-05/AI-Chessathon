@@ -5,7 +5,9 @@
 
 Each chunk: pieces uint8[N, 64] (0 empty, 1..6 white P N B R Q K, 7..12 black), stm uint8[N]
 (0 white, 1 black), cp int16[N] (white's point of view, clipped to +-3000, mates = +-3000),
-depth uint8[N]. Only the deepest evaluation of each position is kept, and only if depth >= 12.
+depth uint8[N], quiet uint8[N] (1 when Stockfish's best move is neither a capture nor a
+promotion; NNUE trains best on such positions). Only the deepest evaluation of each position is
+kept, and only if depth >= 12.
 """
 
 from __future__ import annotations
@@ -28,6 +30,7 @@ def parse_batch(lines: list[str]) -> tuple[np.ndarray, np.ndarray, np.ndarray, n
     stm = np.zeros(len(lines), dtype=np.uint8)
     cps = np.zeros(len(lines), dtype=np.int16)
     depths = np.zeros(len(lines), dtype=np.uint8)
+    quiet = np.zeros(len(lines), dtype=np.uint8)
     n = 0
     for line in lines:
         try:
@@ -61,11 +64,24 @@ def parse_batch(lines: list[str]) -> tuple[np.ndarray, np.ndarray, np.ndarray, n
             stm[n] = 0 if fen[1] == "w" else 1
             cps[n] = cp
             depths[n] = min(255, best["depth"])
+            # quiet: best move is not a capture (destination empty and not an en-passant
+            # capture) and not a promotion
+            q = 1
+            line = pv.get("line", "")
+            if line:
+                bm = line.split()[0]
+                to_sq = (ord(bm[2]) - 97) + (int(bm[3]) - 1) * 8
+                from_sq = (ord(bm[0]) - 97) + (int(bm[1]) - 1) * 8
+                if len(bm) > 4 or row[to_sq] != 0:
+                    q = 0
+                elif row[from_sq] in (1, 7) and (from_sq & 7) != (to_sq & 7):
+                    q = 0  # pawn moving diagonally onto an empty square = en passant
+            quiet[n] = q
             n += 1
         except Exception:  # noqa: BLE001 - a malformed line is skipped, never fatal
             pieces[n] = 0
             continue
-    return pieces[:n], stm[:n], cps[:n], depths[:n]
+    return pieces[:n], stm[:n], cps[:n], depths[:n], quiet[:n]
 
 
 def main() -> None:
@@ -75,17 +91,17 @@ def main() -> None:
     kept = 0
     seen = 0
     chunk_id = 0
-    buf_p, buf_s, buf_c, buf_d = [], [], [], []
+    buf_p, buf_s, buf_c, buf_d, buf_q = [], [], [], [], []
     buffered = 0
 
     def flush() -> None:
-        nonlocal chunk_id, buf_p, buf_s, buf_c, buf_d, buffered
+        nonlocal chunk_id, buf_p, buf_s, buf_c, buf_d, buf_q, buffered
         if buffered == 0:
             return
-        np.savez(out / f"chunk_{chunk_id:04d}.npz", pieces=np.concatenate(buf_p), stm=np.concatenate(buf_s), cp=np.concatenate(buf_c), depth=np.concatenate(buf_d))
+        np.savez(out / f"chunk_{chunk_id:04d}.npz", pieces=np.concatenate(buf_p), stm=np.concatenate(buf_s), cp=np.concatenate(buf_c), depth=np.concatenate(buf_d), quiet=np.concatenate(buf_q))
         print(f"chunk {chunk_id} written ({buffered} positions, {kept} kept of {seen} seen)", file=sys.stderr, flush=True)
         chunk_id += 1
-        buf_p, buf_s, buf_c, buf_d = [], [], [], []
+        buf_p, buf_s, buf_c, buf_d, buf_q = [], [], [], [], []
         buffered = 0
 
     with Pool(6) as pool:
@@ -98,8 +114,8 @@ def main() -> None:
                 pending.append(pool.apply_async(parse_batch, (batch,)))
                 batch = []
                 if len(pending) >= 12:
-                    p, s, c, dd = pending.pop(0).get()
-                    buf_p.append(p); buf_s.append(s); buf_c.append(c); buf_d.append(dd)
+                    p, s, c, dd, qq = pending.pop(0).get()
+                    buf_p.append(p); buf_s.append(s); buf_c.append(c); buf_d.append(dd); buf_q.append(qq)
                     buffered += len(c)
                     kept += len(c)
                     if buffered >= CHUNK:
@@ -109,8 +125,8 @@ def main() -> None:
         if batch:
             pending.append(pool.apply_async(parse_batch, (batch,)))
         for r in pending:
-            p, s, c, dd = r.get()
-            buf_p.append(p); buf_s.append(s); buf_c.append(c); buf_d.append(dd)
+            p, s, c, dd, qq = r.get()
+            buf_p.append(p); buf_s.append(s); buf_c.append(c); buf_d.append(dd); buf_q.append(qq)
             buffered += len(c)
             kept += len(c)
         flush()

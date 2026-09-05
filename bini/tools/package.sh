@@ -4,7 +4,7 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 rm -f submission.zip
-zip -q -X submission.zip agent.py bini_*.py nnue.safetensors
+zip -q -X submission.zip agent.py bini_*.py $(ls nnue.safetensors 2>/dev/null)
 echo "submission.zip:"; unzip -l submission.zip
 python3 - <<'PY'
 import zipfile
