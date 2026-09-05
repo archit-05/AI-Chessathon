@@ -1,48 +1,155 @@
-AGENT FAILURE: init
-[Event "?"]
-[Site "?"]
-[Date "????.??.??"]
-[Round "?"]
-[White "?"]
-[Black "?"]
-[Result "1-0"]
-[FEN "rn1qk2r/pp3ppp/2p1pn2/5b2/PbBP4/2N1PN2/1P3PPP/R1BQK2R w KQkq - 1 8"]
-[SetUp "1"]
-[Termination "init"]
+[1/60] +0 =0 -1  score 0.0%  elo -2400 ±659  last: black by checkmate
+DRAW (threefold_repetition) stderr tail:
+s left 2024ms
+bini-2.0 m37 d14 f7g7 -345cp 45161n 67ms left 2013ms
+bini-2.0 m38 d14 g7h6 -364cp 57083n 109ms left 2045ms
+bini-2.0 m39 d13 h6g7 -385cp 59024n 90ms left 2025ms
+bini-2.0 m40 d15 g7h6 -390cp 65759n 73ms left 2026ms
+bini-2.0 m41 d16 h6h5 -370cp 64226n 144ms left 2051ms
+bini-2.0 m42 d15 h5h4 -272cp 64169n 102ms left 2004ms
+bini-2.0 m43 d15 h4h5 -266cp 60950n 90ms left 2001ms
+bini-2.0 m44 d14 h5h6 -285cp 86861n 147ms left 2005ms
+bini-2.0 m45 d14 h6h5 -263cp 62502n 111ms left 1945ms
+bini-2.0 m46 d36 h5h6 -20cp 43791n 84ms left 1922ms
+bini-2.0 m47 d33 h6h5 -20cp 40745n 68ms left 1933ms
 
-1-0
-stderr tail:
+[2/60] +0 =1 -1  score 25.0%  elo -191 ±1351  last: draw by threefold_repetition
+[3/60] +0 =1 -2  score 16.7%  elo -280 ±1231  last: white by checkmate
+[4/60] +1 =1 -2  score 37.5%  elo -89 ±1350  last: black by checkmate
+[5/60] +2 =1 -2  score 50.0%  elo -0 ±473  last: white by checkmate
+[6/60] +3 =1 -2  score 58.3%  elo +58 ±455  last: black by checkmate
+[7/60] +4 =1 -2  score 64.3%  elo +102 ±611  last: white by checkmate
+[8/60] +5 =1 -2  score 68.8%  elo +137 ±1248  last: black by checkmate
+[9/60] +6 =1 -2  score 72.2%  elo +166 ±1225  last: black by checkmate
+[10/60] +6 =1 -3  score 65.0%  elo +108 ±300  last: white by checkmate
+[11/60] +7 =1 -3  score 68.2%  elo +132 ±302  last: white by checkmate
+DRAW (threefold_repetition) stderr tail:
+bini-2.0 ready: import+compile 38.7s (compile 37.7s), nnue=off
+bini-2.0 m1 d10 b8c6 -19cp 152984n 443ms left 10000ms
+bini-2.0 m2 d12 c5c4 4cp 100375n 332ms left 9652ms
+bini-2.0 m3 d12 g8h7 219cp 210684n 516ms left 9407ms
+bini-2.0 m4 d19 h7g6 -137cp 159327n 422ms left 8989ms
+bini-2.0 m6 d18 h7g8 -376cp 85363n 322ms left 8760ms
+bini-2.0 m7 d22 f8e8 -398cp 246825n 491ms left 8523ms
+bini-2.0 m9 d14 b7b5 -241cp 613258n 1406ms left 8220ms
+bini-2.0 m10 d15 c6d4 -442cp 385951n 744ms left 6911ms
+bini-2.0 m11 d14 c8d7 -910cp 279058n 545ms left 6266ms
 
-[1/60] +0 =0 -1  score 0.0%  elo -2400 ±659  last: white by init
-AGENT FAILURE: init
-[Event "?"]
-[Site "?"]
-[Date "????.??.??"]
-[Round "?"]
-[White "?"]
-[Black "?"]
-[Result "1-0"]
-[FEN "r1bqkb1r/pp1n2pp/2n1pp2/3pP3/3P4/3B4/PP1NNPPP/R1BQK2R w KQkq - 0 9"]
-[SetUp "1"]
-[Termination "init"]
+[12/60] +7 =2 -3  score 66.7%  elo +120 ±265  last: draw by threefold_repetition
+[13/60] +7 =2 -4  score 61.5%  elo +82 ±226  last: white by checkmate
+[14/60] +8 =2 -4  score 64.3%  elo +102 ±223  last: white by checkmate
+DRAW (threefold_repetition) stderr tail:
+2012ms
+bini-2.0 m63 d14 d5d6 -1092cp 219217n 220ms left 1897ms
+bini-2.0 m64 d14 d6c6 -1086cp 116294n 113ms left 1776ms
+bini-2.0 m65 d14 c6d7 -1091cp 87891n 83ms left 1760ms
+bini-2.0 m66 d14 d7e8 -1093cp 87963n 92ms left 1776ms
+bini-2.0 m67 d17 e8f7 -29992cp 70357n 61ms left 1783ms
+bini-2.0 m68 d64 f7e7 -29994cp 48393n 38ms left 1822ms
+bini-2.0 m69 d64 e7d8 -29996cp 3629n 4ms left 1883ms
+bini-2.0 m70 d64 d8e8 -29996cp 7503n 8ms left 1978ms
+bini-2.0 m71 d64 e8d8 -29996cp 5213n 6ms left 2069ms
+bini-2.0 m72 d64 d8e8 -20cp 128n 2ms left 2162ms
+bini-2.0 m73 d64 e8f8 -29994cp 82425n 67ms left 2259ms
 
-1-0
-stderr tail:
+[15/60] +8 =3 -4  score 63.3%  elo +95 ±210  last: draw by threefold_repetition
+[16/60] +8 =3 -5  score 59.4%  elo +66 ±193  last: white by checkmate
+[17/60] +9 =3 -5  score 61.8%  elo +83 ±190  last: black by checkmate
+DRAW (fifty_moves) stderr tail:
+78ms left 2146ms
+bini-2.0 m198 d17 c4b3 10cp 222986n 230ms left 2168ms
+bini-2.0 m199 d16 b3c2 12cp 75721n 66ms left 2037ms
+bini-2.0 m200 d14 c2b1 11cp 61884n 66ms left 2071ms
+bini-2.0 m201 d14 b1e4 9cp 67041n 77ms left 2104ms
+bini-2.0 m202 d13 e4d5 11cp 278528n 320ms left 2125ms
+bini-2.0 m203 d13 d5f3 -20cp 148619n 173ms left 1902ms
+bini-2.0 m204 d14 f3e4 -20cp 92750n 97ms left 1828ms
+bini-2.0 m205 d17 e6e5 -20cp 71972n 72ms left 1829ms
+bini-2.0 m206 d20 e4d5 -20cp 69880n 63ms left 1857ms
+bini-2.0 m207 d26 e5e4 -20cp 81860n 69ms left 1892ms
+bini-2.0 m208 d49 e4f5 -20cp 57328n 70ms left 1923ms
 
-[2/60] +0 =0 -2  score 0.0%  elo -2400 ±629  last: white by init
-AGENT FAILURE: init
-[Event "?"]
-[Site "?"]
-[Date "????.??.??"]
-[Round "?"]
-[White "?"]
-[Black "?"]
-[Result "0-1"]
-[FEN "rnb2rk1/pppnqppp/4p3/3pP3/3P1P2/2N5/PPP3PP/R2QKBNR w KQ - 1 8"]
-[SetUp "1"]
-[Termination "init"]
+[18/60] +9 =4 -5  score 61.1%  elo +79 ±182  last: draw by fifty_moves
+[19/60] +10 =4 -5  score 63.2%  elo +94 ±180  last: black by checkmate
+[20/60] +11 =4 -5  score 65.0%  elo +108 ±178  last: black by checkmate
+[21/60] +12 =4 -5  score 66.7%  elo +120 ±176  last: white by checkmate
+DRAW (threefold_repetition) stderr tail:
+6n 111ms left 1601ms
+bini-2.0 m60 d9 d7d8 -77cp 60609n 119ms left 1589ms
+bini-2.0 m61 d12 d8c7 -180cp 77204n 111ms left 1555ms
+bini-2.0 m62 d12 f6e6 -91cp 40777n 57ms left 1543ms
+bini-2.0 m63 d12 e6d7 -89cp 38409n 56ms left 1586ms
+bini-2.0 m64 d12 c7d6 -78cp 51824n 87ms left 1628ms
+bini-2.0 m65 d13 d6f6 -106cp 71875n 103ms left 1641ms
+bini-2.0 m66 d12 d7d6 -92cp 34049n 64ms left 1637ms
+bini-2.0 m67 d12 d6e5 -91cp 80618n 106ms left 1672ms
+bini-2.0 m68 d14 f6d6 -94cp 48276n 63ms left 1664ms
+bini-2.0 m70 d51 f6d6 -20cp 63192n 58ms left 1798ms
+bini-2.0 m71 d14 e5e6 -169cp 73231n 127ms left 1840ms
 
-0-1
-stderr tail:
+[22/60] +12 =5 -5  score 65.9%  elo +115 ±169  last: draw by threefold_repetition
+DRAW (threefold_repetition) stderr tail:
+5836n 63ms left 1800ms
+bini-2.0 m45 d19 d1e2 -20cp 38211n 57ms left 1837ms
+bini-2.0 m46 d21 e2f1 -20cp 59071n 74ms left 1879ms
+bini-2.0 m47 d23 f1g1 -20cp 76853n 104ms left 1904ms
+bini-2.0 m48 d26 g1g2 -20cp 63792n 77ms left 1900ms
+bini-2.0 m49 d27 g2g1 -20cp 62015n 94ms left 1922ms
+bini-2.0 m50 d28 g1h1 -20cp 52873n 70ms left 1927ms
+bini-2.0 m51 d28 h1g2 -20cp 75636n 114ms left 1956ms
+bini-2.0 m52 d27 g2h1 -20cp 54807n 149ms left 1941ms
+bini-2.0 m53 d23 h1h2 -20cp 74818n 104ms left 1889ms
+bini-2.0 m54 d23 h2g3 -20cp 57852n 83ms left 1884ms
+bini-2.0 m55 d24 g3g2 -20cp 69961n 120ms left 1901ms
 
-[3/60] +0 =0 -3  score 0.0%  elo -2400 ±611  last: black by init
+[23/60] +12 =6 -5  score 65.2%  elo +109 ±163  last: draw by threefold_repetition
+DRAW (threefold_repetition) stderr tail:
+09ms left 8288ms
+bini-2.0 m4 d12 d8a5 -4cp 695728n 1288ms left 7879ms
+bini-2.0 m5 d11 a7a6 -15cp 296874n 526ms left 6689ms
+bini-2.0 m6 d12 d5c3 34cp 190546n 329ms left 6263ms
+bini-2.0 m7 d13 d6d5 -9cp 280766n 542ms left 6032ms
+bini-2.0 m8 d13 a5c3 2cp 134531n 313ms left 5589ms
+bini-2.0 m9 d10 c3a5 16cp 189185n 386ms left 5375ms
+bini-2.0 m10 d11 g7g6 50cp 261108n 471ms left 5088ms
+bini-2.0 m11 d11 g8h7 266cp 157879n 318ms left 4716ms
+bini-2.0 m12 d12 h7g8 -20cp 138286n 262ms left 4496ms
+bini-2.0 m13 d20 f7g6 -20cp 186227n 300ms left 4333ms
+bini-2.0 m17 d15 h8g8 -264cp 221461n 481ms left 4419ms
+
+[24/60] +12 =7 -5  score 64.6%  elo +104 ±158  last: draw by threefold_repetition
+DRAW (threefold_repetition) stderr tail:
+ni-2.0 m36 d17 h2f2 -1668cp 53770n 120ms left 2042ms
+bini-2.0 m38 d15 f1g2 -1710cp 28597n 81ms left 2104ms
+bini-2.0 m39 d15 g2f3 -2075cp 79494n 135ms left 2122ms
+bini-2.0 m40 d14 f3e3 -2359cp 85683n 127ms left 2086ms
+bini-2.0 m42 d15 f3g3 -29990cp 87480n 130ms left 2157ms
+bini-2.0 m43 d14 b4b5 -29990cp 52029n 91ms left 2125ms
+bini-2.0 m44 d12 b5a6 -29990cp 45989n 83ms left 2129ms
+bini-2.0 m45 d49 a6a7 -29994cp 81236n 69ms left 2141ms
+bini-2.0 m46 d13 g3h2 -29992cp 43663n 70ms left 2171ms
+bini-2.0 m47 d56 h2g3 -20cp 53650n 69ms left 2200ms
+bini-2.0 m48 d40 g3h2 -29994cp 78614n 70ms left 2231ms
+
+[25/60] +12 =8 -5  score 64.0%  elo +100 ±153  last: draw by threefold_repetition
+[26/60] +13 =8 -5  score 65.4%  elo +110 ±152  last: black by checkmate
+[27/60] +14 =8 -5  score 66.7%  elo +120 ±151  last: white by checkmate
+[28/60] +15 =8 -5  score 67.9%  elo +130 ±150  last: white by checkmate
+[29/60] +16 =8 -5  score 69.0%  elo +139 ±149  last: white by checkmate
+[30/60] +17 =8 -5  score 70.0%  elo +147 ±148  last: black by checkmate
+[31/60] +18 =8 -5  score 71.0%  elo +155 ±147  last: white by checkmate
+DRAW (threefold_repetition) stderr tail:
+ft 2722ms
+bini-2.0 m35 d14 c6a6 -490cp 82685n 113ms left 2546ms
+bini-2.0 m36 d16 d8c7 -467cp 81883n 120ms left 2531ms
+bini-2.0 m37 d16 c7b8 -500cp 47947n 121ms left 2511ms
+bini-2.0 m38 d16 b8c7 -519cp 67810n 111ms left 2487ms
+bini-2.0 m39 d15 a6a7 -519cp 77756n 109ms left 2475ms
+bini-2.0 m40 d17 c7b7 -565cp 69489n 86ms left 2466ms
+bini-2.0 m41 d50 b7c7 -20cp 71994n 77ms left 2479ms
+bini-2.0 m42 d15 a7a8 -601cp 60119n 85ms left 2501ms
+bini-2.0 m43 d15 a8a7 -556cp 113450n 148ms left 2515ms
+bini-2.0 m44 d42 a7a8 -20cp 91838n 98ms left 2466ms
+bini-2.0 m45 d13 a8a7 -578cp 153530n 209ms left 2468ms
+
+[32/60] +18 =9 -5  score 70.3%  elo +150 ±143  last: draw by threefold_repetition

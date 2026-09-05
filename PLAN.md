@@ -348,3 +348,9 @@ agent; worth 20 minutes a day from any UK-student team member who enjoys puzzles
    the EPYC ("Ready in" line). Thursday afternoon: the final. Friday morning rollback-only.
 4. **Book on Monday**, singular extensions and eval-dependent time saving when the calibration
    numbers say where the Elo is. Fixed contempt tuned in the arena; no opponent modelling.
+- **Sat 5 Sept, 23:25 — first calibration.** Hand-crafted build vs Stockfish 19 at UCI_Elo 2000:
+  8/8 wins. At UCI_Elo 2400 (10 s + 0.1 s, 32 games, stream paused): +18 =9 −5, 70%, ≈ +150 Elo,
+  no failures. Local finding: under heavy CPU load the compile can exceed the hedge and the
+  fallback then starves on the GIL behind the compiling thread, so the hedge protects against an
+  *init* loss only; compile time itself must stay well inside the budget (measured quiet ~15–25 s,
+  to be confirmed by the first validation log). `submission_hce_*.zip` packaged for that upload.
