@@ -313,3 +313,12 @@ agent; worth 20 minutes a day from any UK-student team member who enjoys puzzles
   null-move zugzwang case; a verification search was added). First harness game vs greedy: clean
   win by mate, protocol and clock fine. Lichess evaluation stream running (60M positions);
   training script validated end to end on a 300k sample (MPS, loss falling).
+- **Sat 5 Sept, 22:00–23:00.** Git repository created and pushed (github.com/archit-05/AI-Chessathon).
+  Torture arena exposed two real defects, both fixed: the emergency clock budget assumed the
+  0.5 s increment (now spends a fraction of the remaining clock whatever the increment), and
+  repetition detection ran after the quiescence dispatch (now first). Under heavy local CPU
+  contention (training + arena) the compile exceeded the 75 s join and the fallback engine played
+  as designed; local arenas now run with 3 workers while training runs. NNUE incremental
+  accumulators verified exactly against a reference on ~4,000 positions; NNUE forward pass is
+  170 ns vs 372 ns for the hand-crafted eval. 59.4M Lichess positions streamed; NNUE v1 training
+  running (6 epochs, ~40 min each on the M2).

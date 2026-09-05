@@ -26,11 +26,13 @@ from harness.referee import play_match  # noqa: E402
 from harness.sandbox import local  # noqa: E402
 
 
-def one_game(args: tuple[str, str, int, int, str, bool]) -> tuple[bool, str, str, str]:
+def one_game(args: tuple[str, str, int, int, str, bool]) -> tuple[bool, str, str, str, str]:
     agent, opponent, base_ms, inc_ms, fen, agent_white = args
     white, black = (agent, opponent) if agent_white else (opponent, agent)
-    outcome = play_match(local(Path(white)), local(Path(black)), base_ms, inc_ms, start_fen=fen)
-    return agent_white, outcome.result, outcome.termination, outcome.pgn
+    w, b = local(Path(white)), local(Path(black))
+    outcome = play_match(w, b, base_ms, inc_ms, start_fen=fen)
+    ours = w if agent_white else b
+    return agent_white, outcome.result, outcome.termination, outcome.pgn, ours.stderr_tail
 
 
 def elo(score: float, n: int) -> tuple[float, float]:
@@ -75,9 +77,13 @@ def main() -> None:
         futs = [ex.submit(one_game, j) for j in jobs]
         done = 0
         for f in as_completed(futs):
-            agent_white, result, term, pgn = f.result()
+            agent_white, result, term, pgn, err = f.result()
             done += 1
             terms[term] = terms.get(term, 0) + 1
+            if "still compiling" in err:
+                print("NOTE: agent ran on the fallback (compile exceeded the join timeout)", flush=True)
+            if "engine error" in err or "ILLEGAL" in err:
+                print("AGENT STDERR:\n" + err[-1500:], flush=True)
             if result in ("draw", "void"):
                 d += 1
             elif (result == "white") == agent_white:
@@ -86,7 +92,9 @@ def main() -> None:
                 l += 1
                 if term in ("crash", "illegal", "flag", "init"):
                     failures += 1
-                    print(f"AGENT FAILURE: {term}\n{pgn[:400]}", flush=True)
+                    print(f"AGENT FAILURE: {term}\n{pgn[:400]}\nstderr tail:\n{err[-1200:]}", flush=True)
+            if result == "draw":
+                print(f"DRAW ({term}) stderr tail:\n{err[-600:]}", flush=True)
             if term in ("crash", "illegal", "flag", "init") and ((result == "white") == agent_white):
                 pass  # opponent failed
             pgns.append(pgn)

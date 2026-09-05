@@ -183,7 +183,8 @@ def get_move(fen: str, time_left_ms: int) -> str:
     except Exception as exc:  # noqa: BLE001 - any engine failure falls through to the fallback
         print(f"{E.VERSION} engine error: {exc!r}", file=sys.stderr, flush=True)
     if uci is None:
-        remaining = max(0.05, min(1.5, (hard - (time.perf_counter() - t0) * 1000.0) / 1000.0))
+        remaining = min(1.5, (hard - (time.perf_counter() - t0) * 1000.0) / 1000.0, 0.08 * time_left_ms / 1000.0)
+        remaining = max(0.01, remaining)
         uci = _fallback_move(board, remaining)
         if chess.Move.from_uci(uci) not in board.legal_moves:
             uci = legal[0].uci()
