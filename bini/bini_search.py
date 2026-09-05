@@ -41,7 +41,7 @@ from bini_board import (
     unmake_null,
 )
 from bini_eval import SEE_VALUE, evaluate_hce
-from bini_nnue import nnue_copy, nnue_eval, nnue_move_piece, nnue_push
+from bini_nnue import nnue_after_make, nnue_copy, nnue_eval
 
 U64 = np.uint64
 
@@ -100,33 +100,6 @@ def evaluate(bb, st, pcs, acc, info, w2, b2):
     if info[I_USE_NNUE] != 0:
         return nnue_eval(bb, st, acc, w2, b2)
     return evaluate_hce(bb, st, pcs)
-
-
-@njit(cache=False, boundscheck=False)
-def nnue_after_make(st, pcs, acc, ui, mv, w1):
-    """Update the accumulator stack for the move just made (st[S_PLY] already incremented)."""
-    ply = st[S_PLY] - 1
-    side = 1 - st[S_SIDE]
-    frm = mv & 63
-    to = (mv >> 6) & 63
-    promo = (mv >> 12) & 7
-    landed = pcs[to]
-    moved = (PAWN + side * 6) if promo != 0 else landed
-    captured = ui[ply, 0]
-    capsq = to
-    if mv & MF_EP:
-        capsq = to - 8 if side == WHITE else to + 8
-    nnue_push(acc, ply, side, mv, moved, captured, landed if promo != 0 else 0, capsq, w1)
-    if mv & MF_CASTLE:
-        rook = 4 + side * 6
-        if to == 6:
-            nnue_move_piece(acc, ply + 1, rook, 7, 5, w1)
-        elif to == 2:
-            nnue_move_piece(acc, ply + 1, rook, 0, 3, w1)
-        elif to == 62:
-            nnue_move_piece(acc, ply + 1, rook, 63, 61, w1)
-        else:
-            nnue_move_piece(acc, ply + 1, rook, 56, 59, w1)
 
 
 @njit(cache=False, boundscheck=False)
@@ -322,7 +295,7 @@ def check_time(info, tlim):
 
 
 @njit(cache=False, boundscheck=False)
-def qsearch(bb, st, pcs, mv, ub, ui, acc, scores, info, tlim, w1, w2, b2, alpha, beta):
+def qsearch(bb, st, pcs, mv, ub, ui, acc, scores, info, tlim, w1, b1, w2, b2, alpha, beta):
     info[I_NODES] += 1
     check_time(info, tlim)
     if info[I_ABORT] != 0:
@@ -372,8 +345,8 @@ def qsearch(bb, st, pcs, mv, ub, ui, acc, scores, info, tlim, w1, w2, b2, alpha,
             continue
         legal += 1
         if info[I_USE_NNUE] != 0:
-            nnue_after_make(st, pcs, acc, ui, m, w1)
-        score = -qsearch(bb, st, pcs, mv, ub, ui, acc, scores, info, tlim, w1, w2, b2, -beta, -alpha)
+            nnue_after_make(bb, st, pcs, acc, ui, m, w1, b1)
+        score = -qsearch(bb, st, pcs, mv, ub, ui, acc, scores, info, tlim, w1, b1, w2, b2, -beta, -alpha)
         unmake(bb, st, pcs, ub, ui)
         if info[I_ABORT] != 0:
             return 0
@@ -394,7 +367,7 @@ def qsearch(bb, st, pcs, mv, ub, ui, acc, scores, info, tlim, w1, w2, b2, alpha,
 
 
 @njit(cache=False, boundscheck=False)
-def search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, counters, scores, info, tlim, hist, w1, w2, b2, depth, alpha, beta, do_null, age):
+def search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, counters, scores, info, tlim, hist, w1, b1, w2, b2, depth, alpha, beta, do_null, age):
     ply = st[S_PLY]
     root = ply == 0
     pv_node = beta - alpha > 1
@@ -407,7 +380,7 @@ def search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, coun
     if in_chk and depth <= 0:
         depth = 1  # check extension at the frontier
     if depth <= 0:
-        return qsearch(bb, st, pcs, mv, ub, ui, acc, scores, info, tlim, w1, w2, b2, alpha, beta)
+        return qsearch(bb, st, pcs, mv, ub, ui, acc, scores, info, tlim, w1, b1, w2, b2, alpha, beta)
 
     info[I_NODES] += 1
     check_time(info, tlim)
@@ -461,7 +434,7 @@ def search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, coun
                 make_null(bb, st, ub, ui)
                 if info[I_USE_NNUE] != 0:
                     nnue_copy(acc, ply)
-                score = -search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, counters, scores, info, tlim, hist, w1, w2, b2, depth - 1 - r, -beta, -beta + 1, False, age)
+                score = -search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, counters, scores, info, tlim, hist, w1, b1, w2, b2, depth - 1 - r, -beta, -beta + 1, False, age)
                 unmake_null(bb, st, ub, ui)
                 if info[I_ABORT] != 0:
                     return 0
@@ -471,7 +444,7 @@ def search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, coun
                     # verification: at useful depth, confirm without a null move (zugzwang,
                     # mate threats the reduced search cannot see)
                     if depth >= 6:
-                        v = search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, counters, scores, info, tlim, hist, w1, w2, b2, depth - r, beta - 1, beta, False, age)
+                        v = search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, counters, scores, info, tlim, hist, w1, b1, w2, b2, depth - r, beta - 1, beta, False, age)
                         if info[I_ABORT] != 0:
                             return 0
                         if v >= beta:
@@ -530,7 +503,7 @@ def search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, coun
             continue
         legal += 1
         if info[I_USE_NNUE] != 0:
-            nnue_after_make(st, pcs, acc, ui, m, w1)
+            nnue_after_make(bb, st, pcs, acc, ui, m, w1, b1)
         if quiet:
             quiets_tried += 1
         gives_check = in_check(bb, st)
@@ -539,7 +512,7 @@ def search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, coun
             new_depth += 1
         score = 0
         if legal == 1:
-            score = -search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, counters, scores, info, tlim, hist, w1, w2, b2, new_depth, -beta, -alpha, True, age)
+            score = -search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, counters, scores, info, tlim, hist, w1, b1, w2, b2, new_depth, -beta, -alpha, True, age)
         else:
             r = 0
             if quiet and depth >= 3 and legal >= (4 if pv_node else 2) and not in_chk and not gives_check:
@@ -556,11 +529,11 @@ def search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, coun
                     r = new_depth - 1
                 if r < 0:
                     r = 0
-            score = -search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, counters, scores, info, tlim, hist, w1, w2, b2, new_depth - r, -alpha - 1, -alpha, True, age)
+            score = -search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, counters, scores, info, tlim, hist, w1, b1, w2, b2, new_depth - r, -alpha - 1, -alpha, True, age)
             if r > 0 and score > alpha and info[I_ABORT] == 0:
-                score = -search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, counters, scores, info, tlim, hist, w1, w2, b2, new_depth, -alpha - 1, -alpha, True, age)
+                score = -search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, counters, scores, info, tlim, hist, w1, b1, w2, b2, new_depth, -alpha - 1, -alpha, True, age)
             if score > alpha and score < beta and info[I_ABORT] == 0:
-                score = -search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, counters, scores, info, tlim, hist, w1, w2, b2, new_depth, -beta, -alpha, True, age)
+                score = -search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, counters, scores, info, tlim, hist, w1, b1, w2, b2, new_depth, -beta, -alpha, True, age)
         unmake(bb, st, pcs, ub, ui)
         if info[I_ABORT] != 0:
             return 0

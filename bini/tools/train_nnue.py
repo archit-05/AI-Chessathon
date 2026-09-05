@@ -1,14 +1,15 @@
-"""Train the Bini NNUE (768 -> 2x256 -> 1) on Lichess-evaluated positions and export int16 weights.
+"""Train the Bini NNUE and export int16 weights (see bini_nnue.py for the exact feature scheme).
 
-    python tools/train_nnue.py --data ../data/lichess --out nnue.safetensors --epochs 6
+    python tools/train_nnue.py --data ../data/lichess --out nnue.safetensors --buckets 8 --hidden 512
 
-Architecture (must match bini_nnue.py):
-  two perspectives share W1 (768 x H) and b1; hidden = clipped_relu(acc) in [0, 1];
-  out_cp = CP_SCALE * (W2_stm . hidden_stm + W2_nstm . hidden_nstm + b2), centipawns for the side
-  to move; loss = MSE(sigmoid(out_cp/400), sigmoid(cp/400)).
+Two perspectives share the input layer; per perspective the own king square selects one of
+--buckets king buckets plus a horizontal mirror (buckets=1 means the plain 768-feature net).
+out_cp = CP_SCALE * (W2 . [relu1(acc_stm), relu1(acc_nstm)] + b2); loss = MSE(sigmoid(out/400),
+sigmoid(cp/400)) on the side to move's view.
 
-Quantisation: W1, b1 scaled by QA=255 (clipped relu ceiling); W2 by QB*CP_SCALE; b2 by
-QA*QB*CP_SCALE. The integer forward pass (sum + b2) // (QA*QB) is then centipawns.
+Quantisation: W1, b1 x QA=255 (clipped ReLU ceiling); W2 x QB*CP_SCALE with QB the largest power
+of two that keeps int16 unsaturated; b2 = [bias x QA*QB*CP_SCALE, QA*QB] so the integer forward
+pass (sum + b2[0]) // b2[1] is centipawns.
 """
 
 from __future__ import annotations
@@ -24,48 +25,70 @@ import numpy as np
 import torch
 import torch.nn as nn
 
-H = 256
 QA = 255
-QB = 32
 CP_SCALE = 400.0
 
 
-def features_from_pieces(pieces: np.ndarray, stm: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
-    """Return (idx_stm, idx_nstm) int64 [N, 32] padded with 768 (an all-zero embedding row)."""
+def king_table(nb: int) -> np.ndarray:
+    t = np.zeros(64, dtype=np.int64)
+    if nb == 1:
+        return t
+    assert nb == 8
+    for sq in range(64):
+        r, f = divmod(sq, 8)
+        mirror = 1 if f >= 4 else 0
+        ff = f ^ 7 if mirror else f
+        if r == 0:
+            bucket = 0 if ff < 2 else 1
+        elif r == 1:
+            bucket = 2 if ff < 2 else 3
+        elif r <= 3:
+            bucket = 4 if ff < 2 else 5
+        else:
+            bucket = 6 if ff < 2 else 7
+        t[sq] = bucket * 2 + mirror
+    return t
+
+
+def features_from_pieces(pieces: np.ndarray, stm: np.ndarray, kb: np.ndarray, nb: int) -> tuple[np.ndarray, np.ndarray]:
+    """Return (idx_stm, idx_nstm) int64 [N, 32], padded with nb*768 (an all-zero embedding row)."""
     n = pieces.shape[0]
     sq = np.broadcast_to(np.arange(64, dtype=np.int64), (n, 64))
     code = pieces.astype(np.int64)
     present = code > 0
-    colour = (code > 6).astype(np.int64)          # 0 white, 1 black
-    ptype = code - 1 - colour * 6                   # 0..5
-    out = []
+    colour = (code > 6).astype(np.int64)
+    ptype = code - 1 - colour * 6
+    kw = np.argmax(code == 6, axis=1)
+    kbk = np.argmax(code == 12, axis=1)
+    pad = nb * 768
+    views = []
     for persp in (0, 1):
-        # perspective: 0 = white's view, 1 = black's view
         own = (colour == persp).astype(np.int64)
         kind = ptype * 2 + (1 - own)
-        s = np.where(persp == 1, sq ^ 56, sq)
-        idx = kind * 64 + s
-        idx = np.where(present, idx, 768)
-        # pack the present ones first (stable), pad with 768
+        ksq = kw if persp == 0 else (kbk ^ 56)
+        kid = kb[ksq]                                   # [N]
+        s = sq ^ 56 if persp == 1 else sq
+        s = s ^ ((kid & 1) * 7)[:, None]
+        idx = (kid >> 1)[:, None] * 768 + kind * 64 + s
+        idx = np.where(present, idx, pad)
         order = np.argsort(~present, axis=1, kind="stable")
-        packed = np.take_along_axis(idx, order, axis=1)[:, :32]
-        out.append(packed)
-    white_view, black_view = out
+        views.append(np.take_along_axis(idx, order, axis=1)[:, :32])
+    white_view, black_view = views
     stm_b = stm.astype(bool)[:, None]
-    idx_stm = np.where(stm_b, black_view, white_view)
-    idx_nstm = np.where(stm_b, white_view, black_view)
-    return idx_stm, idx_nstm
+    return np.where(stm_b, black_view, white_view), np.where(stm_b, white_view, black_view)
 
 
 class NNUE(nn.Module):
-    def __init__(self) -> None:
+    def __init__(self, nb: int, hidden: int) -> None:
         super().__init__()
-        self.ft = nn.EmbeddingBag(769, H, mode="sum", padding_idx=768)
-        self.b1 = nn.Parameter(torch.zeros(H))
-        self.out = nn.Linear(2 * H, 1)
+        self.nb, self.hidden = nb, hidden
+        n_in = nb * 768
+        self.ft = nn.EmbeddingBag(n_in + 1, hidden, mode="sum", padding_idx=n_in)
+        self.b1 = nn.Parameter(torch.zeros(hidden))
+        self.out = nn.Linear(2 * hidden, 1)
         nn.init.normal_(self.ft.weight, std=0.02)
         with torch.no_grad():
-            self.ft.weight[768].zero_()
+            self.ft.weight[n_in].zero_()
 
     def forward(self, idx_stm: torch.Tensor, idx_nstm: torch.Tensor) -> torch.Tensor:
         a = torch.clamp(self.ft(idx_stm) + self.b1, 0.0, 1.0)
@@ -90,15 +113,18 @@ def targets(stm: np.ndarray, cp: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
 
 
 def export(model: NNUE, path: Path) -> None:
-    w1 = model.ft.weight.detach().cpu().numpy()[:768]              # [768, H]
+    n_in = model.nb * 768
+    w1 = model.ft.weight.detach().cpu().numpy()[:n_in]             # [nb*768, H]
     b1 = model.b1.detach().cpu().numpy()
     w2 = model.out.weight.detach().cpu().numpy()[0]                  # [2H]
     b2 = model.out.bias.detach().cpu().numpy()[0]
     q_w1 = np.clip(np.round(w1 * QA), -32767, 32767).astype(np.int16)
     q_b1 = np.round(b1 * QA).astype(np.int32)
-    assert np.abs(w2).max() * QB * CP_SCALE < 32767, "output weights would saturate int16; lower QB"
-    q_w2 = np.clip(np.round(w2 * QB * CP_SCALE), -32767, 32767).astype(np.int16)
-    q_b2 = np.array([np.round(b2 * QA * QB * CP_SCALE)], dtype=np.int32)
+    qb = 64
+    while qb > 1 and np.abs(w2).max() * qb * CP_SCALE >= 32000:
+        qb //= 2
+    q_w2 = np.clip(np.round(w2 * qb * CP_SCALE), -32767, 32767).astype(np.int16)
+    q_b2 = np.array([np.round(b2 * QA * qb * CP_SCALE), QA * qb], dtype=np.int32)
     tensors = {"w1": q_w1, "b1": q_b1, "w2": q_w2, "b2": q_b2}
     dt = {np.dtype(np.int16): "I16", np.dtype(np.int32): "I32"}
     header = {}
@@ -109,7 +135,7 @@ def export(model: NNUE, path: Path) -> None:
         header[name] = {"dtype": dt[arr.dtype], "shape": list(arr.shape), "data_offsets": [off, off + len(raw)]}
         blobs.append(raw)
         off += len(raw)
-    header["__metadata__"] = {"arch": f"768x{H}x2->1", "qa": str(QA), "qb": str(QB), "cp_scale": str(CP_SCALE)}
+    header["__metadata__"] = {"arch": f"{model.nb}x768x{model.hidden}x2->1", "buckets": str(model.nb), "hidden": str(model.hidden), "qa": str(QA), "qb": str(qb), "cp_scale": str(CP_SCALE)}
     hjson = json.dumps(header).encode("utf-8")
     hjson += b" " * ((8 - len(hjson) % 8) % 8)
     with path.open("wb") as fh:
@@ -117,23 +143,25 @@ def export(model: NNUE, path: Path) -> None:
         fh.write(hjson)
         for b in blobs:
             fh.write(b)
-    print(f"exported {path} ({path.stat().st_size / 1e6:.2f} MB); |w1|max {np.abs(w1).max():.3f} |w2|max {np.abs(w2).max():.3f}")
+    print(f"exported {path} ({path.stat().st_size / 1e6:.2f} MB); qb {qb} |w1|max {np.abs(w1).max():.3f} |w2|max {np.abs(w2).max():.3f}")
 
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--data", required=True)
+    ap.add_argument("--data", required=True, nargs="+", help="one or more chunk directories")
     ap.add_argument("--out", default="nnue.safetensors")
     ap.add_argument("--chunks", type=int, default=1000, help="max training chunks (1M positions each)")
     ap.add_argument("--epochs", type=int, default=6)
     ap.add_argument("--batch", type=int, default=16384)
     ap.add_argument("--lr", type=float, default=2e-3)
     ap.add_argument("--resume")
+    ap.add_argument("--buckets", type=int, default=8)
+    ap.add_argument("--hidden", type=int, default=512)
     a = ap.parse_args()
 
     device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
     print("device", device, flush=True)
-    files = chunk_files(Path(a.data))
+    files = [f for d in a.data for f in chunk_files(Path(d))]
     if len(files) < 2:
         raise SystemExit("need at least two chunks (one is held out for validation)")
     val_file, train_files = files[-1], files[:-1][: a.chunks]
@@ -142,10 +170,11 @@ def main() -> None:
     vp, vs, vc = load_chunk(val_file)
     vp, vs, vc = vp[:200_000], vs[:200_000], vc[:200_000]
     v_cp, v_t = targets(vs, vc)
-    fs, fn = features_from_pieces(vp, vs)
+    kb = king_table(a.buckets)
+    fs, fn = features_from_pieces(vp, vs, kb, a.buckets)
     v_fs, v_fn, v_tt = torch.from_numpy(fs).to(device), torch.from_numpy(fn).to(device), torch.from_numpy(v_t).to(device)
 
-    model = NNUE().to(device)
+    model = NNUE(a.buckets, a.hidden).to(device)
     if a.resume:
         model.load_state_dict(torch.load(a.resume, map_location=device))
     opt = torch.optim.Adam(model.parameters(), lr=a.lr)
@@ -166,7 +195,7 @@ def main() -> None:
             perm = rng.permutation(len(cp))
             for b in range(len(cp) // a.batch):
                 idx = perm[b * a.batch : (b + 1) * a.batch]
-                fs, fn = features_from_pieces(pieces[idx], stm[idx])
+                fs, fn = features_from_pieces(pieces[idx], stm[idx], kb, a.buckets)
                 fs_t = torch.from_numpy(fs).to(device)
                 fn_t = torch.from_numpy(fn).to(device)
                 tt = torch.from_numpy(tgt[idx]).to(device)

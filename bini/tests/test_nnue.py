@@ -21,18 +21,22 @@ import bini_search as S  # noqa: E402
 
 def reference_eval(w1, b1, w2, b2, board: chess.Board) -> int:
     acc = [b1.astype(np.int64).copy(), b1.astype(np.int64).copy()]
-    for sq, piece in board.piece_map().items():
-        colour = 0 if piece.color == chess.WHITE else 1
-        t = piece.piece_type - 1
-        for p in range(2):
-            kind = t * 2 + (0 if colour == p else 1)
+    kings = {0: board.king(chess.WHITE), 1: board.king(chess.BLACK)}
+    for p in range(2):
+        ksq = kings[p] if p == 0 else kings[p] ^ 56
+        kid = int(N.KB_TABLE[ksq])
+        for sq, piece in board.piece_map().items():
+            colour = 0 if piece.color == chess.WHITE else 1
+            kind = (piece.piece_type - 1) * 2 + (0 if colour == p else 1)
             s = sq if p == 0 else sq ^ 56
-            acc[p] += w1[kind * 64 + s].astype(np.int64)
+            if kid & 1:
+                s ^= 7
+            acc[p] += w1[(kid >> 1) * 768 + kind * 64 + s].astype(np.int64)
     stm = 0 if board.turn == chess.WHITE else 1
     h_stm = np.clip(acc[stm], 0, N.QA)
     h_n = np.clip(acc[1 - stm], 0, N.QA)
     total = int(np.dot(h_stm, w2[:N.HIDDEN].astype(np.int64)) + np.dot(h_n, w2[N.HIDDEN:].astype(np.int64)) + int(b2[0]))
-    return total // N.OUT_SCALE
+    return total // int(b2[1])
 
 
 def main() -> None:
@@ -54,7 +58,7 @@ def main() -> None:
             mv = B.uci_to_move(eng.bb, eng.st, eng.pcs, m.uci())
             assert mv != 0
             assert B.make(eng.bb, eng.st, eng.pcs, mv, eng.ub, eng.ui)
-            S.nnue_after_make(eng.st, eng.pcs, eng.acc, eng.ui, mv, eng.w1)
+            N.nnue_after_make(eng.bb, eng.st, eng.pcs, eng.acc, eng.ui, mv, eng.w1, eng.b1)
             board.push(m)
             inc = int(N.nnue_eval(eng.bb, eng.st, eng.acc, eng.w2, eng.b2))
             ref = reference_eval(eng.w1, eng.b1, eng.w2, eng.b2, board)

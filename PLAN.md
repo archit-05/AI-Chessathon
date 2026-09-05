@@ -38,11 +38,17 @@ locked builds Friday afternoon; London knockout Saturday 12 Sept.
 | Local probe | numba compiles 4 non-trivial functions in 1.0 s; 572k pseudo-positions/s with slow (loop) sliding attacks | scratchpad/numba_probe.py |
 | Local probe | python-chess raw perft = 189k nodes/s on M2 with **no** eval, so the v1 route is capped ~50k nps | probe |
 
-Read: the top of the ladder is roughly CCRL 2150–2250 blitz. A numba bitboard engine with a
-strong evaluation lands at CCRL 2400–2700 blitz on this hardware. That is a 250–500 Elo gap over
-first place, which converts to roughly 80–95% expected score against the current leaders and
-near 100% against the rest of the field. That gap, not a marginal edge, is the goal, because the
-Swiss is 13 rounds and the knockout is 2-game mini-matches where a single draw pair can decide.
+Read (revised 5 Sept, 23:30, after Archit's leaderboard analysis): the ladder is deflated
+and non-linearly so. House bots sit far below their CCRL ratings on it (Loki 3.0: 1729 ladder vs
+2428 CCRL; Zagreus 5.0: 1677 vs 2168; Rustic Alpha 3: 1603 vs 1792), and the leaders sit 400–500
+ladder points *above* Loki. Whatever the exact mapping, the top five are a tier of their own
+(2107–2216), all handle every opening type, none flag or crash, and they draw 20–30% of their
+mutual games. They are much stronger than "PST engines"; AlphaFish in particular looks like an
+experienced engine author's own engine. Consequences: the hand-crafted evaluation gets us into
+the top 20–30, not the top 5; the NNUE's quality is the deciding factor; repetition handling and
+time management are table stakes; and the target is depth 14+ in middlegames with a strong net,
+not depth 10 with tables. The engine as built (1.1M nodes/s, depth 16–17 from the opening) has
+the search side of that; the network is what the rest of the schedule is spent on.
 
 ## 2. What the five games tell us about v1 (and about the field)
 
@@ -161,10 +167,10 @@ Texel-tuned tables fitted on the Lichess data, so every number in the zip is our
 at the final is clean.
 
 **Stage 2 — NNUE (day 3–5, the target).**
-- Features: 768 = (piece type × colour × square), computed from **both** perspectives (side to
-  move first), i.e. two accumulators of 256 each. Weights: 768×256 int16 (~400 KB) + 512 output
-  weights + biases. Stretch: king-bucketed features (HalfKA-lite, 64×768 inputs ≈ 25 MB int16)
-  once the plain net is proven.
+- Features (v2, decided 5 Sept 23:30): king-relative. Per perspective the own king square picks
+  one of 8 king buckets and a horizontal mirror, then each piece is (bucket, kind, square'):
+  8×768 = 6,144 inputs → 512 hidden per perspective, int16, ~6.3 MB. v1 (plain 768→256) is the
+  same code with 1 bucket and is kept as the baseline to beat.
 - Inference in numba: incremental accumulator updates in make/unmake (add/remove 1–3 rows of 256),
   clipped ReLU, one 512-length int32 dot product. Cost ≈ 1 µs a node, so nps drops maybe 20–30%
   versus HCE and the eval is worth hundreds of Elo more than that.
@@ -322,3 +328,8 @@ agent; worth 20 minutes a day from any UK-student team member who enjoys puzzles
   accumulators verified exactly against a reference on ~4,000 positions; NNUE forward pass is
   170 ns vs 372 ns for the hand-crafted eval. 59.4M Lichess positions streamed; NNUE v1 training
   running (6 epochs, ~40 min each on the M2).
+- **Sat 5 Sept, 23:00–00:00.** Leaderboard calibration re-read (section 1). NNUE v2 architecture
+  implemented: king-bucketed features, shape read from the weights file at import, output scale
+  chosen at export and shipped in the file; search/engine rewired; trainer generalised (multiple
+  data directories, --buckets, --hidden). Stockfish 19 installed locally as a fixed-strength
+  sparring partner (sparring/sf, never shipped). Second data stream (100M more positions) running.
