@@ -354,3 +354,8 @@ agent; worth 20 minutes a day from any UK-student team member who enjoys puzzles
   fallback then starves on the GIL behind the compiling thread, so the hedge protects against an
   *init* loss only; compile time itself must stay well inside the budget (measured quiet ~15–25 s,
   to be confirmed by the first validation log). `submission_hce_*.zip` packaged for that upload.
+- **Sat 5 Sept, 23:35 — platform numbers (validation log of the hand-crafted upload).** Compile
+  30.5 s and 32.6 s in the two smoke games (58 s headroom), ~850k nodes/s on the EPYC, depth 15–22
+  in 2–5 s, both colours clean, no fallback. Compile risk closed; the 512-hidden net adds a few
+  seconds at most. Overnight: quiet-filtered data (170M lines), NNUE v2 training (8 epochs),
+  v1-vs-HCE gate running as the pipeline check, v2 gate at dawn.
