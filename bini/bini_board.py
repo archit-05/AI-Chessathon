@@ -406,77 +406,31 @@ def gen_moves(bb, st, pcs, mv, base, captures_only):
             t &= t - ONE
             n = _add(mv, n, frm, ep, 0, MF_EP | MF_CAPTURE)
 
-    # ---- knights
-    t = bb[us_off + 1]
-    while t:
-        frm = lsb(t)
-        t &= t - ONE
-        a = KNIGHT_ATT[frm]
-        c = a & occ_them
-        while c:
-            to = lsb(c)
-            c &= c - ONE
-            n = _add(mv, n, frm, to, 0, MF_CAPTURE)
-        if not captures_only:
-            q = a & empty
-            while q:
-                to = lsb(q)
-                q &= q - ONE
-                n = _add(mv, n, frm, to, 0, 0)
-
-    # ---- bishops
-    t = bb[us_off + 2]
-    while t:
-        frm = lsb(t)
-        t &= t - ONE
-        a = bishop_att(frm, occ)
-        c = a & occ_them
-        while c:
-            to = lsb(c)
-            c &= c - ONE
-            n = _add(mv, n, frm, to, 0, MF_CAPTURE)
-        if not captures_only:
-            q = a & empty
-            while q:
-                to = lsb(q)
-                q &= q - ONE
-                n = _add(mv, n, frm, to, 0, 0)
-
-    # ---- rooks
-    t = bb[us_off + 3]
-    while t:
-        frm = lsb(t)
-        t &= t - ONE
-        a = rook_att(frm, occ)
-        c = a & occ_them
-        while c:
-            to = lsb(c)
-            c &= c - ONE
-            n = _add(mv, n, frm, to, 0, MF_CAPTURE)
-        if not captures_only:
-            q = a & empty
-            while q:
-                to = lsb(q)
-                q &= q - ONE
-                n = _add(mv, n, frm, to, 0, 0)
-
-    # ---- queens
-    t = bb[us_off + 4]
-    while t:
-        frm = lsb(t)
-        t &= t - ONE
-        a = rook_att(frm, occ) | bishop_att(frm, occ)
-        c = a & occ_them
-        while c:
-            to = lsb(c)
-            c &= c - ONE
-            n = _add(mv, n, frm, to, 0, MF_CAPTURE)
-        if not captures_only:
-            q = a & empty
-            while q:
-                to = lsb(q)
-                q &= q - ONE
-                n = _add(mv, n, frm, to, 0, 0)
+    # ---- knights, bishops, rooks, queens
+    for pt in range(1, 5):
+        t = bb[us_off + pt]
+        while t:
+            frm = lsb(t)
+            t &= t - ONE
+            if pt == 1:
+                a = KNIGHT_ATT[frm]
+            elif pt == 2:
+                a = bishop_att(frm, occ)
+            elif pt == 3:
+                a = rook_att(frm, occ)
+            else:
+                a = rook_att(frm, occ) | bishop_att(frm, occ)
+            c = a & occ_them
+            while c:
+                to = lsb(c)
+                c &= c - ONE
+                n = _add(mv, n, frm, to, 0, MF_CAPTURE)
+            if not captures_only:
+                q = a & empty
+                while q:
+                    to = lsb(q)
+                    q &= q - ONE
+                    n = _add(mv, n, frm, to, 0, 0)
 
     # ---- king
     ksq = lsb(bb[us_off + 5])
@@ -838,7 +792,11 @@ def warm_up() -> None:
     ub, ui = new_undo()
     mv = new_move_stack()
     set_fen(bb, st, pcs, "r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 1")
-    perft(bb, st, pcs, mv, ub, ui, 2)
+    n = gen_moves(bb, st, pcs, mv, 0, False)
+    for i in range(n):
+        if make(bb, st, pcs, mv[i], ub, ui):
+            unmake(bb, st, pcs, ub, ui)
+    gen_moves(bb, st, pcs, mv, 0, True)
     make_null(bb, st, ub, ui)
     unmake_null(bb, st, ub, ui)
     attackers_to(bb, 28, bb[14])

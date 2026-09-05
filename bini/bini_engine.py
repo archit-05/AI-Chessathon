@@ -120,7 +120,7 @@ class Engine:
             while depth <= max_depth:
                 info[S.I_ROOT_MOVE] = 0
                 info[S.I_ROOT_DONE] = 0
-                score = S.search(self.bb, self.st, self.pcs, self.mv, self.ub, self.ui, self.acc, self.tt_key, self.tt_data, self.killers, self.history, self.counters, self.scores, info, self.tlim, self.hist, self.w1, self.b1, self.w2, self.b2, depth, alpha, beta, True, self.age)
+                score = S.search(self.bb, self.st, self.pcs, self.mv, self.ub, self.ui, self.acc, self.tt_key, self.tt_data, self.killers, self.history, self.counters, self.scores, info, self.tlim, self.hist, self.w1, self.b1, self.w2, self.b2, depth, alpha, beta, self.age)
                 self.st[B.S_PLY] = 0
                 if info[S.I_ABORT]:
                     # trust a fully searched, alpha-raising root move from the aborted iteration

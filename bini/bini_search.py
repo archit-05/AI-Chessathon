@@ -14,7 +14,7 @@ import math
 import time
 
 import numpy as np
-from numba import njit, objmode
+from numba import njit, objmode, types
 
 from bini_board import (
     BLACK,
@@ -51,7 +51,7 @@ INF = 32000
 DRAW = 0
 
 # info[] slots
-I_NODES, I_ABORT, I_ROOT_MOVE, I_ROOT_SCORE, I_ROOT_DONE, I_SELDEPTH, I_ROOT_SIDE, I_CONTEMPT, I_USE_NNUE, I_TT_HITS, I_HIST_N, I_ROOT_MOVES, I_NMP_OFF = range(13)
+I_NODES, I_ABORT, I_ROOT_MOVE, I_ROOT_SCORE, I_ROOT_DONE, I_SELDEPTH, I_ROOT_SIDE, I_CONTEMPT, I_USE_NNUE, I_TT_HITS, I_HIST_N, I_ROOT_MOVES, I_NMP_OFF, I_NO_NULL = range(14)
 INFO_SIZE = 16
 
 TT_EXACT, TT_LOWER, TT_UPPER = 1, 2, 3
@@ -74,6 +74,21 @@ LMP_TABLE = np.array([0, 5, 8, 12, 18, 26], dtype=np.int64)
 FUTILITY_MARGIN = np.array([0, 110, 200, 300, 420], dtype=np.int64)
 RFP_MARGIN = 75
 HISTORY_MAX = 1 << 20
+
+
+# Explicit signatures for the two recursive functions: numba then compiles each once instead of
+# iterating type inference through the recursion, which is where most of the compile time went.
+_U1 = types.uint64[::1]
+_I1 = types.int64[::1]
+_I2 = types.int64[:, ::1]
+_ACC = types.int32[:, :, ::1]
+_F1 = types.float64[::1]
+_W1 = types.int16[:, ::1]
+_B1 = types.int32[::1]
+_W2 = types.int16[::1]
+_B2 = types.int32[::1]
+QSEARCH_SIG = types.int64(_U1, _I1, _I1, _I1, _U1, _I2, _ACC, _I1, _I1, _F1, _W1, _B1, _W2, _B2, types.int64, types.int64)
+SEARCH_SIG = types.int64(_U1, _I1, _I1, _I1, _U1, _I2, _ACC, _U1, _I1, _I2, _I1, _I1, _I1, _I1, _F1, _U1, _W1, _B1, _W2, _B2, types.int64, types.int64, types.int64, types.int64)
 
 
 def new_tt() -> tuple[np.ndarray, np.ndarray]:
@@ -289,12 +304,39 @@ def check_time(info, tlim):
             info[I_ABORT] = 1
 
 
+@njit(cache=False, boundscheck=False)
+def score_moves(bb, pcs, mv, scores, history, base, n, side, ttm, k0, k1, cm):
+    """Ordering scores: TT move, good captures (SEE >= 0) by MVV-LVA, killers, counter-move,
+    quiet history; losing captures and underpromotions last."""
+    for i in range(n):
+        m = mv[base + i]
+        if m == ttm:
+            s = 2000000000
+        elif (m & MF_CAPTURE) or ((m >> 12) & 7) != 0:
+            promo = (m >> 12) & 7
+            if promo != 0 and promo != 5:
+                s = -5000000 + mvv_lva(pcs, m)
+            elif see(bb, pcs, m) >= 0:
+                s = 1000000000 + mvv_lva(pcs, m)
+            else:
+                s = -1000000 + mvv_lva(pcs, m)
+        elif m == k0:
+            s = 900000000
+        elif m == k1:
+            s = 890000000
+        elif m == cm:
+            s = 880000000
+        else:
+            s = history[side * 4096 + (m & 4095)]
+        scores[base + i] = s
+
+
 # ----------------------------------------------------------------------------------------------
 # quiescence
 # ----------------------------------------------------------------------------------------------
 
 
-@njit(cache=False, boundscheck=False)
+@njit(QSEARCH_SIG, cache=False, boundscheck=False)
 def qsearch(bb, st, pcs, mv, ub, ui, acc, scores, info, tlim, w1, b1, w2, b2, alpha, beta):
     info[I_NODES] += 1
     check_time(info, tlim)
@@ -366,11 +408,13 @@ def qsearch(bb, st, pcs, mv, ub, ui, acc, scores, info, tlim, w1, b1, w2, b2, al
 # ----------------------------------------------------------------------------------------------
 
 
-@njit(cache=False, boundscheck=False)
-def search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, counters, scores, info, tlim, hist, w1, b1, w2, b2, depth, alpha, beta, do_null, age):
+@njit(SEARCH_SIG, cache=False, boundscheck=False)
+def search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, counters, scores, info, tlim, hist, w1, b1, w2, b2, depth, alpha, beta, age):
     ply = st[S_PLY]
     root = ply == 0
     pv_node = beta - alpha > 1
+    do_null = info[I_NO_NULL] == 0
+    info[I_NO_NULL] = 0
     if not root:
         # draws by rule, checked before anything else so frontier nodes see them too
         if st[S_HALF] >= 100 or is_repetition(bb, st, ub, hist, info[I_HIST_N]):
@@ -434,7 +478,8 @@ def search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, coun
                 make_null(bb, st, ub, ui)
                 if info[I_USE_NNUE] != 0:
                     nnue_copy(acc, ply)
-                score = -search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, counters, scores, info, tlim, hist, w1, b1, w2, b2, depth - 1 - r, -beta, -beta + 1, False, age)
+                info[I_NO_NULL] = 1
+                score = -search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, counters, scores, info, tlim, hist, w1, b1, w2, b2, depth - 1 - r, -beta, -beta + 1, age)
                 unmake_null(bb, st, ub, ui)
                 if info[I_ABORT] != 0:
                     return 0
@@ -444,7 +489,8 @@ def search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, coun
                     # verification: at useful depth, confirm without a null move (zugzwang,
                     # mate threats the reduced search cannot see)
                     if depth >= 6:
-                        v = search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, counters, scores, info, tlim, hist, w1, b1, w2, b2, depth - r, beta - 1, beta, False, age)
+                        info[I_NO_NULL] = 1
+                        v = search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, counters, scores, info, tlim, hist, w1, b1, w2, b2, depth - r, beta - 1, beta, age)
                         if info[I_ABORT] != 0:
                             return 0
                         if v >= beta:
@@ -460,27 +506,7 @@ def search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, coun
     cm = counters[side * 4096 + (prev_mv & 4095)] if prev_mv != 0 else 0
     k0 = killers[ply, 0]
     k1 = killers[ply, 1]
-    for i in range(n):
-        m = mv[base + i]
-        if m == ttm:
-            s = 2000000000
-        elif (m & MF_CAPTURE) or ((m >> 12) & 7) != 0:
-            promo = (m >> 12) & 7
-            if promo != 0 and promo != 5:
-                s = -5000000 + mvv_lva(pcs, m)  # underpromotions last
-            elif see(bb, pcs, m) >= 0:
-                s = 1000000000 + mvv_lva(pcs, m)
-            else:
-                s = -1000000 + mvv_lva(pcs, m)
-        elif m == k0:
-            s = 900000000
-        elif m == k1:
-            s = 890000000
-        elif m == cm:
-            s = 880000000
-        else:
-            s = history[side * 4096 + (m & 4095)]
-        scores[base + i] = s
+    score_moves(bb, pcs, mv, scores, history, base, n, side, ttm, k0, k1, cm)
 
     best = -INF
     best_move = 0
@@ -512,7 +538,7 @@ def search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, coun
             new_depth += 1
         score = 0
         if legal == 1:
-            score = -search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, counters, scores, info, tlim, hist, w1, b1, w2, b2, new_depth, -beta, -alpha, True, age)
+            score = -search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, counters, scores, info, tlim, hist, w1, b1, w2, b2, new_depth, -beta, -alpha, age)
         else:
             r = 0
             if quiet and depth >= 3 and legal >= (4 if pv_node else 2) and not in_chk and not gives_check:
@@ -529,11 +555,11 @@ def search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, coun
                     r = new_depth - 1
                 if r < 0:
                     r = 0
-            score = -search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, counters, scores, info, tlim, hist, w1, b1, w2, b2, new_depth - r, -alpha - 1, -alpha, True, age)
+            score = -search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, counters, scores, info, tlim, hist, w1, b1, w2, b2, new_depth - r, -alpha - 1, -alpha, age)
             if r > 0 and score > alpha and info[I_ABORT] == 0:
-                score = -search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, counters, scores, info, tlim, hist, w1, b1, w2, b2, new_depth, -alpha - 1, -alpha, True, age)
+                score = -search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, counters, scores, info, tlim, hist, w1, b1, w2, b2, new_depth, -alpha - 1, -alpha, age)
             if score > alpha and score < beta and info[I_ABORT] == 0:
-                score = -search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, counters, scores, info, tlim, hist, w1, b1, w2, b2, new_depth, -beta, -alpha, True, age)
+                score = -search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, counters, scores, info, tlim, hist, w1, b1, w2, b2, new_depth, -beta, -alpha, age)
         unmake(bb, st, pcs, ub, ui)
         if info[I_ABORT] != 0:
             return 0
