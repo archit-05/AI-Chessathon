@@ -412,3 +412,8 @@ Not doing: opponent-specific behaviour or untestable sharpness terms.
 Schedule: Sun batch-1 gate → v2.1, stream 150M more, start v3 tonight; Mon v3 gate, batch 2,
 conversion + endgame suite, book; Tue own-search fine-tune, SF 2600/2800 ladder; Wed freeze,
 1,000-game regression, package; Thu final upload (afternoon); Fri rollback only.
+- **Sun 6 Sept, 08:17 — batch 1 gated.** Singular extensions + multi-cut, IIR (non-PV),
+  quiescence TT, decided-position time saving: +80 =76 −44 vs v2 over 200 games, 59.0%,
+  ≈ +63 ±49, 0 failures. Packaged as `submission_v2.1_*.zip`. Self-play draws: 31 fifty-move,
+  32 threefold — the conversion package (mop-up on the net, fifty-move scaling, position-aware
+  contempt; endgame suite 11/11 vs Stockfish's defence) is now gating against this build.

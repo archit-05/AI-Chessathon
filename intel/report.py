@@ -103,6 +103,10 @@ def rnd(g):
     return f"R{g['round']}"
 
 
+def plural(n, word):
+    return f"{n} {word}" + ("" if n == 1 else "s")
+
+
 def result_word(g):
     return {1.0: "win", 0.5: "draw", 0.0: "loss"}.get(g["score"], "void")
 
@@ -149,7 +153,7 @@ def quality(team):
     q["site_tags"] = tags
     # blunders while level or ahead (tactical oversights rather than desperation)
     q["blunders_not_losing"] = sum(1 for g, m in counted if m["loss"] >= BLUNDER and m["cp_before"] >= -100)
-    worst = sorted(((m["loss"], g, m) for g, m in own_moves(team) if m["loss"] >= 100), key=lambda x: -x[0])[:3]
+    worst = sorted(((m["loss"], g, m) for g, m in own_moves(team) if m["loss"] >= 100 and (m["cp_before"] < 1000 or m["cp_after"] < 300)), key=lambda x: -x[0])[:3]
     q["worst"] = [(g, m) for _, g, m in worst]
     return q
 
@@ -327,10 +331,11 @@ def style(team):
         mv = g["moves"]
         for i, m in enumerate(mv[:-1]):
             nxt = mv[i + 1]
-            gave = nxt["mat_before"] - m["mat_before"]
-            if gave <= -2 and m["loss"] <= 60 and m["counted"]:
-                horizon = mv[i + 2 : i + 8]
-                recovered = any(h["mat_before"] >= m["mat_before"] - 0.5 for h in horizon) or any(h["cp_before"] >= m["cp_before"] + 150 for h in horizon)
+            gave = nxt["mat_before"] - m["mat_before"]          # after the opponent's reply
+            still = nxt["mat_after"] - m["mat_before"]          # after their own next move too
+            if gave <= -2 and still <= -2 and m["loss"] <= 60 and m["counted"] and m["n"] > 1:
+                horizon = mv[i + 2 : i + 10]
+                recovered = any(h["mat_before"] >= m["mat_before"] - 1 for h in horizon) or (g["score"] == 1.0 and any(h["cp_before"] >= m["cp_before"] + 150 for h in horizon))
                 if recovered:
                     sacs.append((g, m, gave))
     s["sacs"] = sacs
@@ -434,10 +439,10 @@ def recommendations(team) -> list[str]:
         recs.append(f"When we are worse, steer for repetitions: they accepted threefolds while ahead in {rs}. Keep our own contempt positive so we never return the favour.")
     if d["rep_behind"] and not d["rep_ahead"]:
         recs.append(f"They only repeat when worse ({len(d['rep_behind'])} games), so when ahead avoid any repetition and keep pieces on; do not expect gifts.")
-    if c["missed"]:
+    if len(c["missed"]) >= 2 and len(c["missed"]) >= 0.2 * c["winning_games"]:
         recs.append(f"Their conversion is leaky ({len(c['missed'])} of {c['winning_games']} won positions not won): when losing, keep material on and make them prove technique; the fifty-move and repetition rules are our friends.")
-    elif c["winning_games"] >= 5:
-        recs.append(f"They convert everything ({c['winning_games']} won positions, all won): do not rely on swindles, avoid going -300 at all.")
+    elif c["winning_games"] >= 5 and len(c["missed"]) <= 1:
+        recs.append(f"They convert ({c['winning_games'] - len(c['missed'])} of {c['winning_games']} won positions turned into wins): do not rely on swindles; the game is decided before -300.")
     p = q["phase"]
     if p[3]["mean"] is not None and p[1]["mean"] is not None and p[3]["mean"] >= 1.5 * max(p[1]["mean"], 5):
         recs.append(f"Head for long games: their loss per move rises from {p[1]['mean']} cp early to {p[3]['mean']} cp after move 40. Avoid early mass exchanges only if we are not better; otherwise simplify into a queenless middlegame and outplay them late.")
@@ -451,7 +456,7 @@ def recommendations(team) -> list[str]:
     if q["blunders_not_losing"] >= 3:
         recs.append(f"Tactics work: {q['blunders_not_losing']} blunders (>= {BLUNDER} cp) came from level or better positions, so they can be out-calculated. Keep the position sharp.")
     elif q["blunder_pct"] is not None and q["blunder_pct"] <= 0.5:
-        recs.append(f"Do not gamble on tactics: only {q['blunders']} blunders in {q['n']} measured moves. Play solid, avoid speculative sacrifices, and wait for the endgame.")
+        recs.append(f"Do not gamble on tactics: only {plural(q['blunders'], 'blunder')} in {q['n']} measured moves. Play solid, avoid speculative sacrifices, and wait for the endgame.")
     if o["under"]:
         fams = ", ".join(f"{fam} ({rec(gs)})" for fam, gs in o["under"])
         recs.append(f"Opening families where they score badly: {fams}. Nothing to choose here (positions are assigned), but expect our best chances there.")
@@ -541,7 +546,7 @@ def render_dossier(team, targets_by_uuid, ladder):
         if t["q3"] - t["q1"] <= 0.5:
             flags.append("near-fixed time per move")
         if t["ratio"] and t["ratio"][2] <= 1.4 * t["ratio"][0] and t["ratio"][1] >= 0.6 * t["ratio"][0] and t["q3"] - t["q1"] > 0.5:
-            flags.append(f"spends a fixed ~{t['ratio'][0]:.0f}% of the remaining clock per move, so it gets slower-thinking as the game goes on")
+            flags.append(f"spends a fixed ~{t['ratio'][0]:.0f}% of the remaining clock per move, so its thinking time shrinks as the game goes on")
         if t["final_mean"] is not None and t["final_mean"] >= 40:
             flags.append(f"leaves ~{t['final_mean']:.0f} s unused")
         if len(t["under5"]) >= 2:
