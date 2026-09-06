@@ -2,10 +2,10 @@
  "uuid": "e152b64e-0c6d-4341-b02b-09c09b098f8c",
  "bot": "ChessML",
  "team": "ChessML",
- "rating": 1925,
- "rank": 32,
- "record": "12-11-7",
- "rated_rounds": 31,
+ "rating": 1930,
+ "rank": 26,
+ "record": "12-12-8",
+ "rated_rounds": 32,
  "history": [
   [
    1,
@@ -130,9 +130,33 @@
   [
    31,
    1925
+  ],
+  [
+   32,
+   1930
   ]
  ],
  "games": [
+  {
+   "game": "0fd4e2bb-7dee-4c31-8ca5-a4fe66f0164f",
+   "kind": "Rated",
+   "round": 33,
+   "colour": "White",
+   "opponent": "pheanup",
+   "opponent_uuid": "0a121c61-60a7-4926-a0e7-024dffa6b185",
+   "verdict": "loss",
+   "opening": "Nimzo-Indian Defence"
+  },
+  {
+   "game": "6328ccc4-46ca-4a75-a902-86361b34bb31",
+   "kind": "Rated",
+   "round": 32,
+   "colour": "Black",
+   "opponent": "Solo Man",
+   "opponent_uuid": "1324cfd4-b352-45e9-9224-44ee141ae158",
+   "verdict": "draw",
+   "opening": "Dutch Stonewall"
+  },
   {
    "game": "ce1cdb80-1432-4a3b-83a1-03961254d3f5",
    "kind": "Rated",
@@ -444,5 +468,5 @@
    "opening": "English Symmetrical"
   }
  ],
- "fetched_at": "2026-09-06T08:03:20Z"
+ "fetched_at": "2026-09-06T09:10:55Z"
 }

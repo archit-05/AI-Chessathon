@@ -2,10 +2,10 @@
  "uuid": "074b8493-99e7-42f1-976a-e1e48fc4add5",
  "bot": "ChittyChittyBangBang",
  "team": "ChessNotCheckers",
- "rating": 1892,
- "rank": 33,
- "record": "18-3-9",
- "rated_rounds": 30,
+ "rating": 1922,
+ "rank": 27,
+ "record": "19-3-11",
+ "rated_rounds": 32,
  "history": [
   [
    1,
@@ -126,9 +126,47 @@
   [
    30,
    1892
+  ],
+  [
+   31,
+   1968
+  ],
+  [
+   32,
+   1922
   ]
  ],
  "games": [
+  {
+   "game": "5f41ca1a-50ac-477c-b7a0-58be38041868",
+   "kind": "Rated",
+   "round": 33,
+   "colour": "Black",
+   "opponent": "checkers",
+   "opponent_uuid": "9e5e613a-ca80-4fd9-aa68-76f184ef7bac",
+   "verdict": "loss",
+   "opening": "Ruy Lopez, Closed"
+  },
+  {
+   "game": "ced92157-c08e-4330-8baf-0abb81574626",
+   "kind": "Rated",
+   "round": 32,
+   "colour": "Black",
+   "opponent": "Gijs Smit",
+   "opponent_uuid": "3f0e0e44-cdce-485f-b5b6-3691e34f9f44",
+   "verdict": "loss",
+   "opening": "English Symmetrical"
+  },
+  {
+   "game": "c588f64d-8c73-4787-a8e2-69a89070f48b",
+   "kind": "Rated",
+   "round": 31,
+   "colour": "White",
+   "opponent": "TensorTortoise",
+   "opponent_uuid": "8768954e-ab4c-4352-8aae-40071a4ad7c5",
+   "verdict": "win",
+   "opening": "Italian Game"
+  },
   {
    "game": "079dba6c-ccbc-4d6a-ac6d-5c8ac83f9975",
    "kind": "Rated",
@@ -430,5 +468,5 @@
    "opening": "London System"
   }
  ],
- "fetched_at": "2026-09-06T05:37:58Z"
+ "fetched_at": "2026-09-06T09:12:08Z"
 }

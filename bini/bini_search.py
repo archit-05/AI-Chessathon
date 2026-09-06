@@ -11,6 +11,7 @@ All mutable state is passed in as numpy arrays; nothing jitted touches Python ob
 from __future__ import annotations
 
 import math
+import os
 import time
 
 import numpy as np
@@ -51,11 +52,12 @@ INF = 32000
 DRAW = 0
 
 # info[] slots
-I_NODES, I_ABORT, I_ROOT_MOVE, I_ROOT_SCORE, I_ROOT_DONE, I_SELDEPTH, I_ROOT_SIDE, I_CONTEMPT, I_USE_NNUE, I_TT_HITS, I_HIST_N, I_ROOT_MOVES, I_NMP_OFF, I_NO_NULL = range(14)
-INFO_SIZE = 16
+I_NODES, I_ABORT, I_ROOT_MOVE, I_ROOT_SCORE, I_ROOT_DONE, I_SELDEPTH, I_ROOT_SIDE, I_CONTEMPT, I_USE_NNUE, I_TT_HITS, I_HIST_N, I_ROOT_MOVES, I_NMP_OFF, I_NO_NULL, I_SINGULAR, I_MULTICUT, I_QS_TTCUT, I_EXCL_NODES = range(18)
+INFO_SIZE = 24
 
 TT_EXACT, TT_LOWER, TT_UPPER = 1, 2, 3
-TT_BITS = 23  # 2^23 entries * 16 bytes = 128 MB
+# 2^23 entries * 16 bytes = 128 MB on the platform; local test runs may shrink it (BINI_TT_BITS)
+TT_BITS = int(os.environ.get("BINI_TT_BITS", "23"))
 TT_SIZE = 1 << TT_BITS
 TT_MASK = U64(TT_SIZE - 1)
 
@@ -358,6 +360,7 @@ def qsearch(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, scores, info, tlim, w
         s = tt_score(data, ply)
         f = tt_flag(data)
         if f == TT_EXACT or (f == TT_LOWER and s >= beta) or (f == TT_UPPER and s <= alpha):
+            info[I_QS_TTCUT] += 1
             return s
     best = -INF
     stand = 0
@@ -439,6 +442,8 @@ def search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, coun
     do_null = info[I_NO_NULL] == 0
     info[I_NO_NULL] = 0
     excluded = killers[ply, 2]
+    if excluded != 0:
+        info[I_EXCL_NODES] += 1
     if not root:
         # draws by rule, checked before anything else so frontier nodes see them too
         if st[S_HALF] >= 100 or is_repetition(bb, st, ub, hist, info[I_HIST_N]):
@@ -539,7 +544,9 @@ def search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, coun
                 return 0
             if v < sb:
                 singular = 1
+                info[I_SINGULAR] += 1
             elif sb >= beta:
+                info[I_MULTICUT] += 1
                 return sb
 
     # move generation and ordering

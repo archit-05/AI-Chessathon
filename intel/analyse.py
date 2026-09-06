@@ -199,6 +199,68 @@ def analyse_game(ev: Evaluator, gid: str, pgn: str) -> dict:
     return {"game": gid, "plies": plies, "final_cp": prev["cp"], "start_fen": game.headers.get("FEN", chess.STARTING_FEN)}
 
 
+def analyse_game_site(gid: str, pgn: str, evals: dict) -> dict | None:
+    """Per-ply facts for both sides from the site's own per-position evaluations (no engine)."""
+    cp, best = evals.get("cp") or [], evals.get("best") or []
+    game = chess.pgn.read_game(io.StringIO(pgn))
+    board = game.board()
+    inc = INC_MS / 1000.0
+    clocks = {chess.WHITE: BASE_MS / 1000.0, chess.BLACK: BASE_MS / 1000.0}
+    plies = []
+    node = game
+    ply = 0
+    while node.variations:
+        node = node.variations[0]
+        mv = node.move
+        if ply + 1 >= len(cp) or cp[ply] is None or cp[ply + 1] is None:
+            return None  # evaluation missing: leave this game to the engine pass
+        mover = board.turn
+        san = board.san(mv)
+        capture = board.is_capture(mv)
+        mat_before = material(board)
+        tot_before = total_material(board)
+        clk = node.clock()
+        spent = None
+        if clk is not None:
+            spent = round(clocks[mover] - clk + inc, 3)
+            clocks[mover] = clk
+        board.push(mv)
+        before, after = int(cp[ply]), int(cp[ply + 1])
+        sign = 1 if mover == chess.WHITE else -1
+        b = best[ply] if ply < len(best) else None
+        plies.append(
+            {
+                "ply": ply + 1,
+                "mover": "white" if mover == chess.WHITE else "black",
+                "san": san,
+                "uci": mv.uci(),
+                "cp_before": before,
+                "cp_after": after,
+                "mate_before": (1 if before > 0 else -1) * (MATE_CP - abs(before)) if abs(before) >= MATE_CP - 500 else None,
+                "loss": max(0, min(1000, sign * before - sign * after)),
+                "best": b or None,
+                "is_best": bool(b) and b == mv.uci(),
+                "nodes": 0,
+                "source": "site",
+                "capture": capture,
+                "check": board.is_check(),
+                "mat_before": mat_before,
+                "mat_after": material(board),
+                "tot_before": tot_before,
+                "tot_after": total_material(board),
+                "time": spent,
+                "clock": round(clk, 3) if clk is not None else None,
+            }
+        )
+        ply += 1
+    return {"game": gid, "plies": plies, "final_cp": int(cp[ply]) if ply < len(cp) and cp[ply] is not None else (plies[-1]["cp_after"] if plies else 0),
+            "start_fen": game.headers.get("FEN", chess.STARTING_FEN), "source": "site", "engine": f"{evals.get('engine', '')} depth {evals.get('depth', '')}"}
+
+
+def usable(p: dict) -> bool:
+    return p.get("source") == "site" or p["nodes"] >= SF_NODES
+
+
 def team_view(analysis: dict, colour: str, verdicts: list) -> dict:
     """The team's own moves plus game-level summaries from the team's point of view."""
     sign = 1 if colour == "white" else -1
@@ -215,7 +277,7 @@ def team_view(analysis: dict, colour: str, verdicts: list) -> dict:
         if p["mover"] != colour:
             if p["time"] is not None:
                 opp_times.append(p["time"])
-            if abs(p["cp_before"]) <= 800 and p["nodes"] >= SF_NODES:
+            if abs(p["cp_before"]) <= 800 and usable(p):
                 opp_losses.append(p["loss"])
                 if p["loss"] >= 200:
                     opp_blunders += 1
@@ -231,7 +293,7 @@ def team_view(analysis: dict, colour: str, verdicts: list) -> dict:
                 "cp_before": sign * p["cp_before"],
                 "cp_after": sign * p["cp_after"],
                 "loss": p["loss"],
-                "counted": abs(p["cp_before"]) <= 800 and p["nodes"] >= SF_NODES,
+                "counted": abs(p["cp_before"]) <= 800 and usable(p),
                 "is_best": p["is_best"],
                 "capture": p["capture"],
                 "check": p["check"],
@@ -275,7 +337,9 @@ def write_team(t: dict, scrape: dict, analyses: dict, dry: bool) -> int:
             done += 1
         out_games.append(og)
     out = {k: v for k, v in scrape.items() if k != "games"}
+    sources = {analyses[g["game"]].get("source", "sf") for g in scrape["games"] if g["game"] in analyses}
     out.update({"sf_nodes": SF_NODES, "sf_nodes_decided": SF_NODES_DECIDED, "decided_cp": DECIDED_CP,
+                "eval_source": "site" if sources == {"site"} else ("sf" if sources == {"sf"} else "mixed"),
                 "analysed_games": done, "games": out_games})
     if not dry:
         dump_json(team_files(t["slug"])["json"], out)
@@ -286,6 +350,8 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry", action="store_true", help="count positions, no engine")
     ap.add_argument("--teams", default="", help="comma-separated bot names to analyse")
+    ap.add_argument("--source", choices=("site", "sf"), default="site",
+                    help="site = the page's embedded Stockfish 16 depth-16 evaluations (no engine, seconds); sf = our own Stockfish pass")
     a = ap.parse_args()
     targets = load_json(TARGETS)["targets"]
     only = {t.strip() for t in a.teams.split(",") if t.strip()}
@@ -319,27 +385,38 @@ def main() -> None:
     order = sorted(index, key=lambda gid: prio[gid])
     print(f"{len(order)} games to analyse in priority order", flush=True)
 
-    ev = Evaluator(dry=a.dry)
+    ev = Evaluator(dry=a.dry or a.source == "site")
     analyses: dict[str, dict] = {}
     done_by_team: dict[str, int] = {}
+    missing = 0
     try:
         for i, gid in enumerate(order, 1):
             gdata = load_json(CACHE_GAMES / f"{gid}.json")
             if not gdata:
                 continue
             t0 = time.time()
-            analyses[gid] = analyse_game(ev, gid, gdata["pgn"])
+            if a.source == "site":
+                an = analyse_game_site(gid, gdata["pgn"], gdata.get("evals") or {})
+                if an is None:
+                    missing += 1
+                    continue
+                analyses[gid] = an
+            else:
+                analyses[gid] = analyse_game(ev, gid, gdata["pgn"])
             ev.flush()
             for t, sc, g in index[gid]:
                 done_by_team[t["slug"]] = write_team(t, sc, analyses, a.dry)
             owners = ", ".join(f"{t['bot']} R{g['round']}" for t, _, g in index[gid])
-            print(f"[{i}/{len(order)}] {owners}: {len(analyses[gid]['plies'])} plies in {time.time() - t0:.0f}s; "
-                  f"{ev.new} new evals, {(time.time() - ev.t0) / 60:.1f} min", flush=True)
+            if a.source == "sf" or i % 50 == 0:
+                print(f"[{i}/{len(order)}] {owners}: {len(analyses[gid]['plies'])} plies in {time.time() - t0:.0f}s; "
+                      f"{ev.new} new evals, {(time.time() - ev.t0) / 60:.1f} min", flush=True)
     finally:
         ev.close()
     for t in targets:
         if t["slug"] in scrapes:
             print(f"{t['rank']:>3} {t['bot']:<20} analysed {done_by_team.get(t['slug'], 0)}/{len(scrapes[t['slug']]['games'])} games")
+    if missing:
+        print(f"{missing} game(s) had no embedded evaluation and were skipped")
     if a.dry:
         print(f"positions needing evaluation: {ev.new}")
 

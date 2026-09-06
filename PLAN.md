@@ -426,3 +426,9 @@ conversion + endgame suite, book; Tue own-search fine-tune, SF 2600/2800 ladder;
   nodes/s (R31: 689k), depth 14–22, forced mate from move 22, 76 s left. v2.1 ready for upload
   after the 10:00 game. Conversion gate rerunning on 2 workers (the first run was polluted by
   memory starvation: 33 fallback games, 7 flags).
+- **Sun 6 Sept, 10:15 — v2.1 battery (in progress).** Init ×10 under local load: 32–36 s
+  typical, mean 40.0 s, outliers 49.8 s and 68.7 s on load spikes (26–35); platform reference for
+  v2 was 29.2/29.6 s on a dedicated core. Torture rerun (2 workers, small tables): 26/26 clean,
+  0 fallback games. Position sets (sharp/winning/marginal/puzzles/drawn) building; tactics gate,
+  real-clock pressure games vs Stockfish and strong-defence conversion sets chained behind them.
+  Next-build item: skip compiling the hand-crafted evaluator when the net is loaded.

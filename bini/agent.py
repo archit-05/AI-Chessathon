@@ -192,7 +192,7 @@ def get_move(fen: str, time_left_ms: int) -> str:
             if chess.Move.from_uci(cand) in board.legal_moves:
                 uci = cand
                 spent = (time.perf_counter() - t0) * 1000.0
-                print(f"{VERSION} m{_state.move_number + 1} d{depth} {cand} {score}cp {int(eng.info[S.I_NODES])}n {spent:.0f}ms left {time_left_ms}ms", file=sys.stderr, flush=True)
+                print(f"{VERSION} m{_state.move_number + 1} d{depth} {cand} {score}cp {int(eng.info[S.I_NODES])}n {spent:.0f}ms left {time_left_ms}ms sx{int(eng.info[S.I_SINGULAR])}/{int(eng.info[S.I_MULTICUT])}/{int(eng.info[S.I_QS_TTCUT])}", file=sys.stderr, flush=True)
             else:
                 print(f"{VERSION} ILLEGAL candidate {cand} in {fen}", file=sys.stderr, flush=True)
     except Exception as exc:  # noqa: BLE001 - any engine failure falls through to the fallback

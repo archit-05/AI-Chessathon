@@ -15,6 +15,7 @@ Idempotent: game pages are immutable once final and are fetched only once.
 from __future__ import annotations
 
 import html
+import json
 import re
 import sys
 import time
@@ -175,6 +176,33 @@ def parse_review(page: str) -> dict:
     return {"source": clean(src.group(1)) if src else "", "sides": out}  # sides[0] = White, sides[1] = Black
 
 
+def parse_evals(page: str) -> dict | None:
+    """The site's per-position analysis embedded in the page payload: {"cp": [...], "best": [...], "depth", "engine"}.
+
+    cp is from White's view with mates as +-(10000 - n); index 0 is the start position, index i the
+    position after ply i; best[i] is the engine's first choice in that position (UCI, '' at the end)."""
+    i = page.find('\\"evals\\":')
+    if i < 0:
+        return None
+    frag = page[i:i + 200_000].replace('\\"', '"')
+    j = frag.find("{")
+    depth = 0
+    for k in range(j, len(frag)):
+        if frag[k] == "{":
+            depth += 1
+        elif frag[k] == "}":
+            depth -= 1
+            if depth == 0:
+                try:
+                    obj = json.loads(frag[j:k + 1])
+                except json.JSONDecodeError:
+                    return None
+                if isinstance(obj.get("cp"), list):
+                    return {"cp": obj["cp"], "best": obj.get("best") or [], "depth": obj.get("depth"), "engine": obj.get("engine", "")}
+                return None
+    return None
+
+
 def parse_game(page: str, gid: str) -> dict | None:
     m = re.search(r'href="(data:application/x-chess-pgn;charset=utf-8,[^"]+)"', page)
     if not m:
@@ -197,6 +225,7 @@ def parse_game(page: str, gid: str) -> dict | None:
         "black_uuid": sides[1] if len(sides) > 1 else None,
         "site_verdicts": [[san, v] for v, san in verdicts],
         "review": parse_review(page),
+        "evals": parse_evals(page),
         "fetched_at": now(),
     }
 
@@ -204,7 +233,7 @@ def parse_game(page: str, gid: str) -> dict | None:
 def get_game(gid: str) -> dict | None:
     path = CACHE_GAMES / f"{gid}.json"
     cached = load_json(path)
-    if cached and "review" in cached:
+    if cached and "review" in cached and "evals" in cached:
         sides = (cached["review"] or {}).get("sides")
         if isinstance(sides, dict):  # older cache format: name-keyed, insertion order = White, Black
             cached["review"]["sides"] = [{"name": k, **v} for k, v in sides.items()]

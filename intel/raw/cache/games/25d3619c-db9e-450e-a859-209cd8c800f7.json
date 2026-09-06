@@ -1,0 +1,212 @@
+{
+ "game": "25d3619c-db9e-450e-a859-209cd8c800f7",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.06\"]\n[Round \"33\"]\n[White \"Something\"]\n[Black \"Gijs Smit\"]\n[Result \"1/2-1/2\"]\n[FEN \"r1bqk2r/pp1n1ppp/2pbpn2/3p4/2PP4/2N1PN2/PP2BPPP/R1BQ1RK1 b kq - 4 7\"]\n[SetUp \"1\"]\n[Termination \"threefold_repetition\"]\n\n7... O-O { [%clk 0:01:56.817] } 8. Qc2 { [%clk 0:01:56.233] } 8... e5 { [%clk 0:01:55.54] } 9. cxd5 { [%clk 0:01:52.588] } 9... cxd5 { [%clk 0:01:51.204] } 10. dxe5 { [%clk 0:01:49.069] } 10... Nxe5 { [%clk 0:01:49.88] } 11. Rd1 { [%clk 0:01:45.66] } 11... Be6 { [%clk 0:01:48.275] } 12. Bd2 { [%clk 0:01:42.385] } 12... Rc8 { [%clk 0:01:45.528] } 13. Be1 { [%clk 0:01:39.215] } 13... Bb8 { [%clk 0:01:41.801] } 14. Rac1 { [%clk 0:01:36.143] } 14... Qd6 { [%clk 0:01:40.712] } 15. g3 { [%clk 0:01:33.166] } 15... a6 { [%clk 0:01:39.281] } 16. Qb3 { [%clk 0:01:30.296] } 16... Qd7 { [%clk 0:01:38.007] } 17. Nd4 { [%clk 0:01:27.513] } 17... Bh3 { [%clk 0:01:36.133] } 18. Nf3 { [%clk 0:01:24.843] } 18... Be6 { [%clk 0:01:35.075] } 19. Nd4 { [%clk 0:01:22.249] } 19... Bh3 { [%clk 0:01:33.363] } 20. Nf3 { [%clk 0:01:19.754] } 1/2-1/2\n",
+ "opening": "Semi-Slav Defence",
+ "termination_text": "Threefold repetition",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 33\u00b7Final",
+ "white_uuid": "051edd6e-9a85-47c0-8c8f-4b3a87a2ec30",
+ "black_uuid": "3f0e0e44-cdce-485f-b5b6-3691e34f9f44",
+ "site_verdicts": [
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "Qc2",
+   "best"
+  ],
+  [
+   "e5",
+   "excellent"
+  ],
+  [
+   "cxd5",
+   "excellent"
+  ],
+  [
+   "cxd5",
+   "best"
+  ],
+  [
+   "dxe5",
+   "best"
+  ],
+  [
+   "Nxe5",
+   "best"
+  ],
+  [
+   "Rd1",
+   "best"
+  ],
+  [
+   "Be6",
+   "excellent"
+  ],
+  [
+   "Bd2",
+   "good"
+  ],
+  [
+   "Rc8",
+   "best"
+  ],
+  [
+   "Be1",
+   "best"
+  ],
+  [
+   "Bb8",
+   "good"
+  ],
+  [
+   "Rac1",
+   "good"
+  ],
+  [
+   "Qd6",
+   "best"
+  ],
+  [
+   "g3",
+   "best"
+  ],
+  [
+   "a6",
+   "best"
+  ],
+  [
+   "Qb3",
+   "good"
+  ],
+  [
+   "Qd7",
+   "good"
+  ],
+  [
+   "Nd4",
+   "excellent"
+  ],
+  [
+   "Bh3",
+   "good"
+  ],
+  [
+   "Nf3",
+   "excellent"
+  ],
+  [
+   "Be6",
+   "best"
+  ],
+  [
+   "Nd4",
+   "excellent"
+  ],
+  [
+   "Bh3",
+   "good"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "FloridaChuds",
+    "accuracy": 95.6,
+    "acpl": 12,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 5,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Patzer 1.2",
+    "accuracy": 96.4,
+    "acpl": 12,
+    "tally": {
+     "brilliant": 0,
+     "best": 7,
+     "excellent": 2,
+     "good": 4,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   18,
+   22,
+   23,
+   19,
+   24,
+   22,
+   22,
+   18,
+   13,
+   17,
+   -16,
+   -8,
+   -7,
+   20,
+   -14,
+   -2,
+   -9,
+   0,
+   -47,
+   -14,
+   -23,
+   7,
+   0,
+   -7,
+   -24,
+   0,
+   0
+  ],
+  "best": [
+   "e8g8",
+   "d1c2",
+   "d8e7",
+   "d4e5",
+   "c6d5",
+   "d4e5",
+   "d7e5",
+   "f1d1",
+   "e5f3",
+   "e3e4",
+   "a8c8",
+   "d2e1",
+   "a7a6",
+   "f3e5",
+   "d8d6",
+   "g2g3",
+   "a7a6",
+   "f3e5",
+   "d6e7",
+   "b3a4",
+   "b8a7",
+   "c3a4",
+   "h3e6",
+   "b3a4",
+   "b8a7",
+   "c3a4",
+   "h3e6"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-06T09:10:21Z"
+}

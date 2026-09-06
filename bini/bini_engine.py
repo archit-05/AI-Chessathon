@@ -97,6 +97,10 @@ class Engine:
         info[S.I_ABORT] = 0
         info[S.I_SELDEPTH] = 0
         info[S.I_TT_HITS] = 0
+        info[S.I_SINGULAR] = 0
+        info[S.I_MULTICUT] = 0
+        info[S.I_QS_TTCUT] = 0
+        info[S.I_EXCL_NODES] = 0
         # history ages between moves so old knowledge fades
         self.history //= 2
 
