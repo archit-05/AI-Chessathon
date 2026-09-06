@@ -488,3 +488,8 @@ conversion + endgame suite, book; Tue own-search fine-tune, SF 2600/2800 ladder;
   working copy, unshipped; the compile trim (skip HCE when the net is loaded, −7%) carries forward
   into the next build. Next gate: search batch 2 (capture + continuation history, history-driven
   reductions) on the v2.1 base, 150 games. v3 finishes ~16:15, then a 300-game gate vs v2.1.
+- **Sun 6 Sept, 15:15 — R37 confirms the time defect.** v2 (still on the platform) drew R37 as
+  White vs ChEKmate (1652) by threefold after 66 moves with the clock at 63/31/12 s at moves
+  20/40/60 and 6 s at the end; level material, one site-tagged inaccuracy. This is the failure
+  the v2.1 pressure test found and fixed (predictive iteration start, 2.2x hard cap, 50-move
+  horizon). Ladder 6-1-4 on v2, 1638, rank 121; bot renamed "BINI Sahur".
