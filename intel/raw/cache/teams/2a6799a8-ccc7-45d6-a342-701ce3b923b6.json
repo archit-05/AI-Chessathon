@@ -2,10 +2,10 @@
  "uuid": "2a6799a8-ccc7-45d6-a342-701ce3b923b6",
  "bot": "Mesh Potato",
  "team": "MeshPotato",
- "rating": 1784,
- "rank": 55,
- "record": "14-6-11",
- "rated_rounds": 31,
+ "rating": 1779,
+ "rank": 59,
+ "record": "15-6-12",
+ "rated_rounds": 33,
  "history": [
   [
    1,
@@ -130,9 +130,37 @@
   [
    31,
    1784
+  ],
+  [
+   32,
+   1843
+  ],
+  [
+   33,
+   1779
   ]
  ],
  "games": [
+  {
+   "game": "059a5cf1-96e7-44d7-9e22-9079937f2937",
+   "kind": "Rated",
+   "round": 33,
+   "colour": "Black",
+   "opponent": "CheckmateGPT",
+   "opponent_uuid": "75c703fc-cfc9-40a6-b414-f6ec4cc93d83",
+   "verdict": "loss",
+   "opening": "Ruy Lopez, Closed"
+  },
+  {
+   "game": "ea5de6e7-aa47-4598-bb25-35668d451913",
+   "kind": "Rated",
+   "round": 32,
+   "colour": "Black",
+   "opponent": "Imperial Knights",
+   "opponent_uuid": "b9ca5fee-1a73-4740-b94a-912e0c727462",
+   "verdict": "win",
+   "opening": "Sicilian Taimanov"
+  },
   {
    "game": "f88268cc-5fbc-4cd2-a9f6-cdfafb6a012f",
    "kind": "Rated",
@@ -444,5 +472,5 @@
    "opening": "Caro-Kann Advance"
   }
  ],
- "fetched_at": "2026-09-06T07:54:42Z"
+ "fetched_at": "2026-09-06T09:28:41Z"
 }

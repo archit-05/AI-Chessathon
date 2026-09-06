@@ -2,10 +2,10 @@
  "uuid": "2e84d6ba-24da-4b6f-baa3-9af4f10179ee",
  "bot": "OptiFish",
  "team": "NotLLM",
- "rating": 1675,
- "rank": 95,
- "record": "13-7-11",
- "rated_rounds": 31,
+ "rating": 1603,
+ "rank": 129,
+ "record": "13-7-13",
+ "rated_rounds": 33,
  "history": [
   [
    1,
@@ -130,9 +130,37 @@
   [
    31,
    1675
+  ],
+  [
+   32,
+   1645
+  ],
+  [
+   33,
+   1603
   ]
  ],
  "games": [
+  {
+   "game": "0ba29e06-ccda-4c65-a702-caaf44d2ed4d",
+   "kind": "Rated",
+   "round": 33,
+   "colour": "White",
+   "opponent": "Defense",
+   "opponent_uuid": "b9800604-af3c-4f05-addf-11114b400ac0",
+   "verdict": "loss",
+   "opening": "Sicilian Sveshnikov"
+  },
+  {
+   "game": "6554b110-8d82-4571-aa2a-d12be941a534",
+   "kind": "Rated",
+   "round": 32,
+   "colour": "Black",
+   "opponent": "Gambit",
+   "opponent_uuid": "e9f8c904-d9a9-4bfb-acf8-451b5aa2e2f4",
+   "verdict": "loss",
+   "opening": "Semi-Slav Defence"
+  },
   {
    "game": "aca84500-2531-4b65-8de0-500e3ffa1472",
    "kind": "Rated",
@@ -444,5 +472,5 @@
    "opening": "Sicilian Sveshnikov"
   }
  ],
- "fetched_at": "2026-09-06T08:03:48Z"
+ "fetched_at": "2026-09-06T09:30:14Z"
 }

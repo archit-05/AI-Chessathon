@@ -1,0 +1,212 @@
+{
+ "game": "492c05d6-0551-4e89-a11b-50f3d530f7e7",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.06\"]\n[Round \"31\"]\n[White \"Team7347\"]\n[Black \"CPAE\"]\n[Result \"1-0\"]\n[FEN \"r1bqk2r/pppp1ppp/5n2/4p3/Bb1nP3/2NP1N2/PPP2PPP/R1BQK2R b KQkq - 2 6\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n6... Bxc3+ { [%clk 0:01:58.05] } 7. bxc3 { [%clk 0:01:54.983] } 7... Nxf3+ { [%clk 0:01:56.09] } 8. gxf3 { [%clk 0:01:50.478] } 8... O-O { [%clk 0:01:54.119] } 9. Rg1 { [%clk 0:01:45.972] } 9... d5 { [%clk 0:01:52.138] } 10. Ba3 { [%clk 0:01:41.47] } 10... c5 { [%clk 0:01:50.145] } 11. Bxc5 { [%clk 0:01:36.994] } 11... Be6 { [%clk 0:01:48.141] } 12. Qd2 { [%clk 0:01:32.742] } 12... Qa5 { [%clk 0:01:46.125] } 13. Qg5 { [%clk 0:01:28.702] } 13... Qxc3+ { [%clk 0:01:44.098] } 14. Ke2 { [%clk 0:01:24.864] } 14... Ne8 { [%clk 0:01:42.059] } 15. Qe7 { [%clk 0:01:21.216] } 15... Nc7 { [%clk 0:01:40.007] } 16. Rxg7+ { [%clk 0:01:20.905] } 16... Kh8 { [%clk 0:01:37.942] } 17. Rgg1 { [%clk 0:01:20.332] } 17... Qxd3+ { [%clk 0:01:35.864] } 18. cxd3 { [%clk 0:01:20.825] } 18... Na6 { [%clk 0:01:33.773] } 19. Qf6# { [%clk 0:01:21.321] } 1-0\n",
+ "opening": "Four Knights Game",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 31\u00b7Final",
+ "white_uuid": "1f20a852-ae0c-44f5-aed7-8be8a5e699b0",
+ "black_uuid": "3c1ea435-b36e-4dfc-b33a-4df31ae9df49",
+ "site_verdicts": [
+  [
+   "Bxc3+",
+   "inaccuracy"
+  ],
+  [
+   "bxc3",
+   "best"
+  ],
+  [
+   "Nxf3+",
+   "best"
+  ],
+  [
+   "gxf3",
+   "good"
+  ],
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "Rg1",
+   "excellent"
+  ],
+  [
+   "d5",
+   "inaccuracy"
+  ],
+  [
+   "Ba3",
+   "excellent"
+  ],
+  [
+   "c5",
+   "best"
+  ],
+  [
+   "Bxc5",
+   "mistake"
+  ],
+  [
+   "Be6",
+   "blunder"
+  ],
+  [
+   "Qd2",
+   "best"
+  ],
+  [
+   "Qa5",
+   "inaccuracy"
+  ],
+  [
+   "Qg5",
+   "mistake"
+  ],
+  [
+   "Qxc3+",
+   "good"
+  ],
+  [
+   "Ke2",
+   "best"
+  ],
+  [
+   "Ne8",
+   "mistake"
+  ],
+  [
+   "Qe7",
+   "best"
+  ],
+  [
+   "Nc7",
+   "blunder"
+  ],
+  [
+   "Rxg7+",
+   "best"
+  ],
+  [
+   "Kh8",
+   "best"
+  ],
+  [
+   "Rgg1",
+   "excellent"
+  ],
+  [
+   "Qxd3+",
+   "best"
+  ],
+  [
+   "cxd3",
+   "best"
+  ],
+  [
+   "Na6",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Team7347",
+    "accuracy": 91.8,
+    "acpl": 28,
+    "tally": {
+     "brilliant": 0,
+     "best": 7,
+     "excellent": 3,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 2,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "CPAE",
+    "accuracy": 77.8,
+    "acpl": 140,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 1,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 3,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 2
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -13,
+   60,
+   59,
+   61,
+   25,
+   26,
+   6,
+   98,
+   77,
+   76,
+   -52,
+   242,
+   255,
+   350,
+   187,
+   231,
+   291,
+   513,
+   537,
+   9995,
+   9996,
+   9996,
+   9997,
+   9997,
+   9998,
+   9999,
+   10000
+  ],
+  "best": [
+   "b7b5",
+   "b2c3",
+   "d4f3",
+   "d1f3",
+   "e8g8",
+   "d3d4",
+   "f6h5",
+   "c1h6",
+   "c7c5",
+   "d1d2",
+   "d8a5",
+   "d1d2",
+   "h7h6",
+   "g1g7",
+   "e6g4",
+   "e1e2",
+   "f6g4",
+   "g5e7",
+   "c3c5",
+   "g1g7",
+   "g8h8",
+   "g7h7",
+   "c3d3",
+   "c2d3",
+   "e6g4",
+   "e7f6",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-06T09:30:09Z"
+}

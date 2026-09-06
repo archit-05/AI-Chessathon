@@ -16,6 +16,7 @@ from collections import Counter
 
 from common import CACHE_GAMES, HERE, LEADERBOARD, NOTES, OUR_TEAM, SF_NODES, TARGETS, TOP_N, load_json
 from report import AHEAD, BLUNDER, CONVERT, compute, eval_label, f, finalize, h2h, league_row, load_team, mean, pct, rec, recommendations, table, wrap
+from ladder import report as ladder_report
 
 FOCUS = 10  # teams that get a full reverse-engineering block
 SERIES = HERE / "strategy"  # numbered archive: Strategy_1.txt, Strategy_2.txt, ...
@@ -324,6 +325,12 @@ def main():
     L.append("E. THE CURATED OPENINGS")
     for line in openings_facts():
         L.extend(wrap(line))
+    L.append("")
+    L.append("F0. WHO IS CLIMBING (whole leaderboard; hourly detail in intel/ladder/)")
+    try:
+        L.extend(ladder_report(lb, top=10, detail=5, since=30))
+    except Exception as exc:  # network or parse trouble must not break the report
+        L.append(f"  ladder movement unavailable: {exc}")
     L.append("")
     L.append("F. OUR OWN GAMES")
     L.extend(our_status(ours))

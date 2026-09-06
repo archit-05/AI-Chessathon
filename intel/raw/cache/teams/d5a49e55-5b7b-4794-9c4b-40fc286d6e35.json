@@ -2,10 +2,10 @@
  "uuid": "d5a49e55-5b7b-4794-9c4b-40fc286d6e35",
  "bot": "HAL9000",
  "team": "HAL9000",
- "rating": 1642,
- "rank": 110,
- "record": "14-3-14",
- "rated_rounds": 31,
+ "rating": 1649,
+ "rank": 113,
+ "record": "15-3-15",
+ "rated_rounds": 33,
  "history": [
   [
    1,
@@ -130,9 +130,37 @@
   [
    31,
    1642
+  ],
+  [
+   32,
+   1596
+  ],
+  [
+   33,
+   1649
   ]
  ],
  "games": [
+  {
+   "game": "f43cc787-0263-4f66-a0dd-b5bd59ce06c0",
+   "kind": "Rated",
+   "round": 33,
+   "colour": "Black",
+   "opponent": "Left Right",
+   "opponent_uuid": "e58ec8c3-93a2-4e05-9025-81642e76cc62",
+   "verdict": "win",
+   "opening": "Caro-Kann Advance"
+  },
+  {
+   "game": "197350cf-8eb1-4907-88ed-ab8ade447a2a",
+   "kind": "Rated",
+   "round": 32,
+   "colour": "Black",
+   "opponent": "Pwn",
+   "opponent_uuid": "39630436-64b8-4445-aa23-e545dde7a28f",
+   "verdict": "loss",
+   "opening": "Reti Opening"
+  },
   {
    "game": "aac072ea-4c12-4b3b-8c58-1c5d5245c47f",
    "kind": "Rated",
@@ -444,5 +472,5 @@
    "opening": "Sicilian Classical"
   }
  ],
- "fetched_at": "2026-09-06T07:54:20Z"
+ "fetched_at": "2026-09-06T09:29:54Z"
 }

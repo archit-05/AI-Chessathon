@@ -1,0 +1,98 @@
+{
+ "game": "34715efd-c086-4ec9-a005-cef18f444cf4",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.06\"]\n[Round \"33\"]\n[White \"Magnus\"]\n[Black \"Team7347\"]\n[Result \"0-1\"]\n[FEN \"rn1qk2r/pp2ppbp/6p1/2p5/3PP1b1/2P1BN2/P4PPP/2RQKB1R b Kkq - 3 9\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n9... cxd4 { [%clk 0:01:54.956] } 10. Ng5 { [%clk 0:02:00.499] } 10... Bxd1 { [%clk 0:01:50.453] } 11. Nxh7 { [%clk 0:02:00.998] } 11... dxe3 { [%clk 0:01:45.951] } 12. Nf8 { [%clk 0:02:01.496] } 12... Qd2# { [%clk 0:01:46.447] } 0-1\n",
+ "opening": "Grunfeld Defence",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 33\u00b7Final",
+ "white_uuid": "2c34bb06-ba13-42a2-927e-bb2d9573f1a1",
+ "black_uuid": "1f20a852-ae0c-44f5-aed7-8be8a5e699b0",
+ "site_verdicts": [
+  [
+   "cxd4",
+   "excellent"
+  ],
+  [
+   "Ng5",
+   "blunder"
+  ],
+  [
+   "Bxd1",
+   "best"
+  ],
+  [
+   "Nxh7",
+   "inaccuracy"
+  ],
+  [
+   "dxe3",
+   "excellent"
+  ],
+  [
+   "Nf8",
+   "mistake"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "burger",
+    "accuracy": 49.1,
+    "acpl": 660,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 0,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "Team7347",
+    "accuracy": 99.3,
+    "acpl": 8,
+    "tally": {
+     "brilliant": 0,
+     "best": 2,
+     "excellent": 2,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   57,
+   68,
+   -647,
+   -647,
+   -911,
+   -889,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "e8g8",
+   "c3d4",
+   "g4d1",
+   "f1b5",
+   "d8a5",
+   "f1b5",
+   "d8d2",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-06T09:30:07Z"
+}

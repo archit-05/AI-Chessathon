@@ -32,14 +32,25 @@ FILES
                                management, draw behaviour, endgame conversion, openings, style,
                                likely engine profile, how to play them, analyst notes
   STRATEGY.txt                 the latest strategic report: reverse-engineered profile of each top-10
-                               system, the bar the top five set, what it means for our build, the
-                               curated openings, our own games, head-to-head; ends with the
+                               system, where the top ten leak points, the bar the top five set, what
+                               it means for our build, the curated openings, who is climbing across
+                               the whole ladder, our own games, head-to-head; ends with the
                                hand-written synthesis from notes/strategy.txt
   strategy/Strategy_N.txt      the numbered series of those reports (one per scheduled or full
                                refresh, about every three hours); each opens with a diff against
                                Strategy N-1 (rank/rating/record moves, fresh-upload flags, CPL
                                becoming measurable, Stockfish coverage).  Strategy_N.json holds the
                                rows used for the diff.
+  ladder/hourly_<stamp>.txt    hourly snapshot (snapshot.py): top-12 table, rating jumps, our games,
+                               then whole-leaderboard movement: biggest gains over the last round,
+                               the last three rounds and since yesterday's close, biggest falls,
+                               fresh-upload flags, new teams, "climbing a lot" (100+ over three
+                               rounds or 150+ since yesterday's close) and details on the climbers
+                               (identity, rating by round, last three games with site ACPL, time use)
+  raw/ladder/leaderboard_<stamp>.json   every leaderboard row at every hourly snapshot (all teams)
+  ladder.py                    the whole-leaderboard movement report; --seed fetches every team page
+                               once so rating-by-round is known for all teams
+  snapshot.py                  hourly snapshot (compact part for the engine session + ladder movement)
   refresh.sh                   the one-command refresh (see above); --auto is what the schedule runs
   scrape.py                    leaderboard + team pages + game pages -> raw/
   analyse.py                   Stockfish evaluation of every position -> raw/<Bot>.json

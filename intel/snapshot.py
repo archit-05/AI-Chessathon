@@ -16,7 +16,8 @@ from datetime import datetime
 import chess
 import chess.pgn
 
-from common import LEADERBOARD, OUR_TEAM, RAW, dump_json, load_json
+from common import HERE, LEADERBOARD, OUR_TEAM, RAW, dump_json, load_json
+from ladder import archive_leaderboard, report as ladder_report
 
 STATE = RAW / "snapshot_state.json"
 from scrape import BASE, fetch, game_facts, get_game, get_team, now, parse_leaderboard
@@ -73,6 +74,7 @@ def main() -> None:
     ap.add_argument("--grades", default="", help="bots whose last games get a grade split")
     ap.add_argument("--last", type=int, default=10)
     ap.add_argument("--jump", type=int, default=80)
+    ap.add_argument("--no-ladder", action="store_true", help="compact snapshot only (no whole-ladder movement section)")
     a = ap.parse_args()
 
     rows = parse_leaderboard(fetch(f"{BASE}/leaderboard"))
@@ -151,7 +153,17 @@ def main() -> None:
             moves = sum(tot.values())
             errs = tot.get("mistake", 0) + tot.get("miss", 0) + tot.get("blunder", 0)
             out.append(f"  {r['bot'][:18]:<18} {n:>2} games {moves:>4} moves  {fmt_split(tot):<22} errors/100 moves {100 * errs / moves if moves else 0:.1f}")
-    print("\n".join(out))
+    if not a.no_ladder:
+        archive_leaderboard(rows)
+        out.append("")
+        out.append("----- ladder movement (whole leaderboard) -----")
+        out.extend(ladder_report(rows, top=8, detail=5, since=a.since_round - 1))
+    text = "\n".join(out)
+    print(text)
+    if not a.no_ladder:
+        stamp = datetime.now().strftime("%Y%m%d_%H%M")
+        (HERE / "ladder").mkdir(exist_ok=True)
+        (HERE / "ladder" / f"hourly_{stamp}.txt").write_text(text + "\n")
     if rounds_seen:
         dump_json(STATE, {"last_round": max(rounds_seen), "when": datetime.now().strftime("%Y-%m-%d %H:%M")})
 
