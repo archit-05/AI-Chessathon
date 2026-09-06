@@ -2,10 +2,10 @@
  "uuid": "0a121c61-60a7-4926-a0e7-024dffa6b185",
  "bot": "test_bot",
  "team": "pheanup",
- "rating": 2176,
- "rank": 6,
- "record": "15-1-5",
- "rated_rounds": 29,
+ "rating": 2265,
+ "rank": 5,
+ "record": "15-3-5",
+ "rated_rounds": 31,
  "history": [
   [
    5,
@@ -122,9 +122,37 @@
   [
    33,
    2176
+  ],
+  [
+   34,
+   2267
+  ],
+  [
+   35,
+   2265
   ]
  ],
  "games": [
+  {
+   "game": "ddb76d6a-4513-4ead-b935-94144a9b876e",
+   "kind": "Rated",
+   "round": 36,
+   "colour": "White",
+   "opponent": "Gijs Smit",
+   "opponent_uuid": "3f0e0e44-cdce-485f-b5b6-3691e34f9f44",
+   "verdict": "draw",
+   "opening": "Sicilian Sveshnikov"
+  },
+  {
+   "game": "6c63b304-bf04-4c9d-8f89-938de65fe0bd",
+   "kind": "Rated",
+   "round": 35,
+   "colour": "White",
+   "opponent": "FuzzyBot",
+   "opponent_uuid": "3241cef5-6b1c-41f2-b275-f0e50fc52ed5",
+   "verdict": "draw",
+   "opening": "Sicilian Closed"
+  },
   {
    "game": "0b720190-eea8-4fe4-80c3-719bd9764691",
    "kind": "Rated",
@@ -426,5 +454,5 @@
    "opening": "London System"
   }
  ],
- "fetched_at": "2026-09-06T10:18:14Z"
+ "fetched_at": "2026-09-06T12:21:24Z"
 }

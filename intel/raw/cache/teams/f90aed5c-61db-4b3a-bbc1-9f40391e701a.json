@@ -2,22 +2,22 @@
  "uuid": "f90aed5c-61db-4b3a-bbc1-9f40391e701a",
  "bot": "a1",
  "team": "OMI",
- "rating": 1866,
- "rank": 40,
- "record": "14-2-11",
- "rated_rounds": 27,
+ "rating": 1897,
+ "rank": 31,
+ "record": "15-0-13",
+ "rated_rounds": 29,
  "history": [
   [
    7,
-   1583
+   1573
   ],
   [
    8,
-   1495
+   1489
   ],
   [
    9,
-   1445
+   1447
   ],
   [
    10,
@@ -25,7 +25,7 @@
   ],
   [
    11,
-   1480
+   1483
   ],
   [
    12,
@@ -33,90 +33,128 @@
   ],
   [
    13,
-   1473
+   1479
   ],
   [
    14,
-   1484
+   1476
   ],
   [
    15,
-   1521
+   1512
   ],
   [
    16,
-   1448
+   1447
   ],
   [
    17,
-   1522
+   1517
   ],
   [
    18,
-   1639
+   1629
   ],
   [
    19,
-   1694
+   1663
   ],
   [
    20,
-   1762
+   1721
   ],
   [
    21,
-   1854
+   1808
   ],
   [
    22,
-   1913
+   1861
   ],
   [
    23,
-   1978
+   1917
   ],
   [
    24,
-   1874
+   1834
   ],
   [
    25,
-   1765
+   1737
   ],
   [
    26,
-   1835
+   1798
   ],
   [
    27,
-   1828
+   1821
   ],
   [
    28,
-   1729
+   1723
   ],
   [
    29,
-   1850
+   1827
   ],
   [
    30,
-   1941
+   1901
   ],
   [
    31,
-   1949
+   1919
   ],
   [
    32,
-   1906
+   1887
   ],
   [
    33,
-   1866
+   1860
+  ],
+  [
+   34,
+   1955
+  ],
+  [
+   35,
+   1897
   ]
  ],
  "games": [
+  {
+   "game": "a4d83b1b-2bbc-44af-bfa6-26956bc43cc6",
+   "kind": "Rated",
+   "round": 36,
+   "colour": "White",
+   "opponent": "Neural Gambit",
+   "opponent_uuid": "2d7385e9-dffa-4216-aeca-dd844e18c7db",
+   "verdict": "loss",
+   "opening": "Sicilian Closed"
+  },
+  {
+   "game": "97964143-a6f5-4a8b-bdf0-f44001446bef",
+   "kind": "Rated",
+   "round": 35,
+   "colour": "White",
+   "opponent": "AlphaBeta",
+   "opponent_uuid": "1f234cf3-2829-4107-8a5f-2d0e15e978da",
+   "verdict": "loss",
+   "opening": "Sicilian Closed"
+  },
+  {
+   "game": "52b6a1dc-a3e0-483a-ad95-5ba104e71022",
+   "kind": "Rated",
+   "round": 34,
+   "colour": "Black",
+   "opponent": "ChessNotCheckers",
+   "opponent_uuid": "074b8493-99e7-42f1-976a-e1e48fc4add5",
+   "verdict": "win",
+   "opening": "Queen's Indian Defence"
+  },
   {
    "game": "6ec039c0-e7cf-4efc-9811-49f8d0ba0431",
    "kind": "Rated",
@@ -184,7 +222,7 @@
    "colour": "White",
    "opponent": "ChEKmate",
    "opponent_uuid": "f173ad36-42a6-4832-ae7f-f0880d9504b6",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "Reti Opening"
   },
   {
@@ -314,7 +352,7 @@
    "colour": "Black",
    "opponent": "Shallow Blue 2.0",
    "opponent_uuid": "16436a48-3e9c-40e7-915c-53ba083b3fb4",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "English Symmetrical"
   },
   {
@@ -388,5 +426,5 @@
    "opening": "Sicilian Sveshnikov"
   }
  ],
- "fetched_at": "2026-09-06T09:28:14Z"
+ "fetched_at": "2026-09-06T12:24:15Z"
 }

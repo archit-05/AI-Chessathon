@@ -2,66 +2,66 @@
  "uuid": "23113ce3-33c5-4683-8057-07d3a2e33bf9",
  "bot": "John Chess",
  "team": "Magnus CarlSON \ud83d\ude2d",
- "rating": 1431,
- "rank": 209,
- "record": "6-7-8",
- "rated_rounds": 21,
+ "rating": 1475,
+ "rank": 192,
+ "record": "7-0-9",
+ "rated_rounds": 23,
  "history": [
   [
    13,
-   1422
+   1428
   ],
   [
    14,
-   1487
+   1478
   ],
   [
    15,
-   1504
+   1472
   ],
   [
    16,
-   1393
+   1380
   ],
   [
    17,
-   1286
+   1302
   ],
   [
    18,
-   1381
+   1379
   ],
   [
    19,
-   1440
+   1428
   ],
   [
    20,
-   1511
-  ],
-  [
-   21,
-   1523
-  ],
-  [
-   22,
    1484
   ],
   [
+   21,
+   1485
+  ],
+  [
+   22,
+   1457
+  ],
+  [
    23,
-   1460
+   1439
   ],
   [
    24,
-   1417
+   1405
   ],
   [
    25,
-   1392
+   1393
   ],
   [
    26,
-   1347
+   1358
   ],
   [
    27,
@@ -69,30 +69,58 @@
   ],
   [
    28,
-   1305
+   1312
   ],
   [
    29,
-   1323
+   1308
   ],
   [
    30,
-   1385
+   1383
   ],
   [
    31,
-   1376
+   1375
   ],
   [
    32,
-   1364
+   1368
   ],
   [
    33,
-   1431
+   1455
+  ],
+  [
+   34,
+   1532
+  ],
+  [
+   35,
+   1475
   ]
  ],
  "games": [
+  {
+   "game": "b37fc3ce-4ac1-45b4-91e9-7f64346c3b14",
+   "kind": "Rated",
+   "round": 35,
+   "colour": "White",
+   "opponent": "Opus Carlsen",
+   "opponent_uuid": "f0286356-626d-4dd2-86ab-fd6d779063cb",
+   "verdict": "loss",
+   "opening": "Reti Opening"
+  },
+  {
+   "game": "1181b39e-722d-49c9-82da-6e462cb6fb47",
+   "kind": "Rated",
+   "round": 34,
+   "colour": "White",
+   "opponent": "Prophylaxis",
+   "opponent_uuid": "2658b7a0-8c20-4fcb-91ab-1fad8d05c0d7",
+   "verdict": "win",
+   "opening": "Caro-Kann Advance"
+  },
   {
    "game": "ed90f1fc-3ddd-4b89-a268-54f304e0face",
    "kind": "Rated",
@@ -110,7 +138,7 @@
    "colour": "Black",
    "opponent": "En Passant",
    "opponent_uuid": "e5f4f3b3-9448-4e01-a69a-ece311b0f38a",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "Ruy Lopez, Closed"
   },
   {
@@ -120,7 +148,7 @@
    "colour": "White",
    "opponent": "e=mc^2",
    "opponent_uuid": "3f2c6106-702b-4a60-8eb5-5f5fe3886d0a",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "English Symmetrical"
   },
   {
@@ -140,7 +168,7 @@
    "colour": "White",
    "opponent": "Columbia Trader",
    "opponent_uuid": "304ddb9d-4871-480e-a93c-4005a5feadf4",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "Pirc Defence"
   },
   {
@@ -160,7 +188,7 @@
    "colour": "Black",
    "opponent": "Chessify",
    "opponent_uuid": "2837cf75-e0e4-4d1d-8942-6d451aff5f0a",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "Reti Opening"
   },
   {
@@ -180,7 +208,7 @@
    "colour": "White",
    "opponent": "What the fork",
    "opponent_uuid": "316a1575-5bae-420c-af1c-67a187016631",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "Ruy Lopez, Closed"
   },
   {
@@ -220,7 +248,7 @@
    "colour": "White",
    "opponent": "while True: win()",
    "opponent_uuid": "0065d170-1082-42d7-a4a3-af54b0df2019",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "Caro-Kann Exchange"
   },
   {
@@ -280,7 +308,7 @@
    "colour": "White",
    "opponent": "bussin_csv",
    "opponent_uuid": "ee0b493e-f326-4049-9487-3bbbdcd40301",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "Queen's Gambit Accepted"
   },
   {
@@ -304,5 +332,5 @@
    "opening": "Pirc Defence"
   }
  ],
- "fetched_at": "2026-09-06T09:31:50Z"
+ "fetched_at": "2026-09-06T12:24:20Z"
 }

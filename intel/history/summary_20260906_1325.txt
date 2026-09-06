@@ -1,0 +1,461 @@
+AI CHESSATHON TOP-20 INTEL SUMMARY  (2026-09-06 13:25; leaderboard fetched 2026-09-06T12:20:11Z)
+====================================================================================================
+CPL = our mean centipawn loss per own move from site evaluations: Stockfish 16, depth 16, one per
+  position, positions inside +-800 only;
+sACPL = the site's own review ACPL (all positions, mean per game); Bl% = moves losing >= 200 cp; CPL
+  and Bl% show n/a under 200 moves;
+Void = games played to a result that the site voided afterwards (repetition and fifty-move endings
+  since 6 Sept ~11:00); they count for move
+quality, clocks and draw behaviour but not for Record or Draw%;
+s/mv = mean seconds per own move; RepA = draws by repetition while more than +150; NonC = games at
+  +300 or better not won; * = provisional rating.
+
+LEAGUE TABLE
+  # Bot                Rating   Record   CPL sACPL   Bl%  s/mv Draw% RepA NonC Void
+-----------------------------------------------------------------------------------
+  1 AlphaFish            2642   20-2-1   8.7    18   0.1  1.70    30    1    2    5  *
+  2 Capablanca           2385   23-2-4  11.9    18   0.4  1.84    28    0    1    6  *
+  3 SoberElwood          2362   20-3-4  11.2    18   0.4  1.71    41    0    4    8
+  4 Anchoa               2332   18-3-5  11.1    23   0.4  1.72    38    0    0    7  *
+  5 test_bot             2265   15-3-5  11.7    23   0.2  2.15    43    0    0    7  *
+  6 Fuzzydafool          2229   15-2-9  18.9    30   0.8  2.08    42    0    1    9  *
+  7 Danya's Disciple     2204  15-1-10  18.1    33   1.0  2.02    42    2    2   10  *
+  8 Patzer 1.2           2194   20-4-4  13.7    23   0.7  1.71    43    0    1    8
+  9 Mate in One          2190   21-4-3   9.8    17   0.0  1.97    43    0    0    8
+ 10 checkers             2162   20-6-7  13.6    21   0.7  1.74    27    0    0    3  *
+ 11 AI Fellow            2155   18-4-4   9.7    28   0.2  1.99    46    3    5    8
+ 12 Loss Preventer       2117  18-2-13  18.4    26   0.7  1.89    12    0    0    2  *
+ 13 ms                   2114   20-3-7  14.1    24   0.3  2.10    23    0    1    4
+ 14 make_no_mistakes     2077   15-5-9  13.4    26   0.6  1.95    38    1    2    6  *
+ 15 Blank Shooter        2063   17-3-9  15.7    26   0.2  2.09    34    1    0    7  *
+ 16 Dark Sister          2060  15-5-11  19.0    26   1.0  1.78    26    0    0    3  *
+ 17 Cornelius            2053   12-4-8  12.9    28   0.4  1.70    33    1    3    4  *
+ 18 lyra                 2035   13-3-8  13.2    30   0.6  1.87    54    0    2   10
+ 19 Fried Liver          2018    6-1-6  17.9    30   0.9  2.24    23    0    0    2  *
+ 20 Magnus Claudeson     2009  17-1-11  16.5    31   0.4  1.85    24    2    2    6  *
+  Evaluations still incomplete for: Capablanca (35/36 games), SoberElwood (35/36 games), Anchoa
+    (33/36 games), test_bot (30/32 games), Fuzzydafool (35/36 games), AI Fellow (34/36 games), Loss
+    Preventer (35/36 games), ms (34/36 games), make_no_mistakes (35/36 games), Dark Sister (34/36
+    games), Fried Liver (15/17 games), Magnus Claudeson (35/36 games). Re-run ./refresh.sh to
+    finish.
+
+OUR ROW
+142 BINI Alpha           1580    5-0-4  45.1    61   4.8  2.60    33    0    1    3  *
+  Pairing: our 8 rated opponents were rated -6 relative to us on average at the time (range -88 to
+    +47); current ranks 67, 196, 282, 247, 290, 228, 220, 215, 192. Pairings track rating, so a
+    fresh build climbs through weaker teams first.
+
+KEY FINDINGS
+  1. Move quality spread: AlphaFish loses 8.7 cp per move, Dark Sister 19.0 cp; our current build
+  measures 45.1 cp. Blunder rates run 0.0-1.0%.
+  2. Free half points: AlphaFish (1), Danya's Disciple (2), AI Fellow (3), make_no_mistakes (1),
+  Blank Shooter (1), Cornelius (1), Magnus Claudeson (2) accepted repetitions while more than +150.
+  Against them, when worse, aim for repetition.
+  3. Time trouble is real for test_bot (13 games under 5 s), Fuzzydafool (16 games under 5 s), Mate
+  in One (6 games under 5 s), AI Fellow (18 games under 5 s), ms (10 games under 5 s), Dark Sister
+  (3 games under 5 s), Fried Liver (7 games under 5 s). Long, complicated games punish them.
+  4. Clock left unused by AlphaFish (31 s), SoberElwood (36 s), Anchoa (42 s), Danya's Disciple (30
+  s), Patzer 1.2 (40 s), checkers (34 s), Loss Preventer (41 s), Cornelius (30 s): their depth is
+  capped by a per-move budget, so our deeper search in critical moments is a real edge.
+  5. Leaky conversion: AlphaFish (2 of 22 winning positions not won), SoberElwood (4 of 24 winning
+  positions not won), Danya's Disciple (2 of 17 winning positions not won), AI Fellow (5 of 23
+  winning positions not won), make_no_mistakes (2 of 17 winning positions not won), Cornelius (3 of
+  15 winning positions not won), lyra (2 of 15 winning positions not won), Magnus Claudeson (2 of 19
+  winning positions not won). Keep lost positions alive.
+  (further observations)
+  6. Endgame fade: Loss Preventer (10.8 -> 26.1 cp), Fried Liver (11.5 -> 19.9 cp) lose far more per
+  move after own move 40.
+  7. New builds in the last five rounds (provisional ratings): AlphaFish, Capablanca, Anchoa,
+  test_bot, Fuzzydafool, Danya's Disciple, checkers, Loss Preventer, make_no_mistakes, Blank
+  Shooter, Dark Sister, Cornelius, Fried Liver, Magnus Claudeson. Their older games may not describe
+  the bot we will face.
+  8. Drawishness: lyra 54.0%, AI Fellow 46.0%, test_bot 43.0% draw most often; threefold is the
+  dominant draw type across the field.
+
+LOSSES OF THE LEADER (AlphaFish, 20-2-1)
+  R10 as black vs Oyinda (#177, rated 1577 at the time): lost by checkmate after 102 plies, Reti
+    Opening.
+    Loss per move 12.4 cp (0 blunders) vs opponent 24.8 cp (0 blunders); best moment +821, first
+      clearly worse at own move 45 (clock 30 s).
+    Decisive own error: 44.a5 lost 1000 cp from +821; final clock 31.8 s; game
+      https://aichessathon.com/game/3121cf00-a8d0-43d5-b61d-052b8f95ee85
+
+HEAD-TO-HEAD AMONG THE TOP 20
+  Alp=AlphaFish; Cap=Capablanca; Sob=SoberElwood; Anc=Anchoa; tes=test_bot; Fuz=Fuzzydafool;
+    Dan=Danya's Disciple; Pat=Patzer 1.2; Mat=Mate in One; che=checkers; AIF=AI Fellow; Los=Loss
+    Preventer; ms=ms; mak=make_no_mistakes; Bla=Blank Shooter; Dar=Dark Sister; Cor=Cornelius;
+    lyr=lyra; Fri=Fried Liver; Mag=Magnus Claudeson
+         Alp Cap Sob Anc tes Fuz Dan Pat Mat che AIF Los  ms mak Bla Dar Cor lyr Fri Mag
+Alp        -   W  WD  WW   W   .   .   W   W   W   D   W   W   W   .   W   .   W   W   W
+Cap        L   -   D  WD   W   W   W   .   L   W   .   W   L   W   W   L   W   .   .   W
+Sob       LD   D   -   D   W   L   .   W   .   W   .   L   W   W   W   W   .   .   W   W
+Anc       LL  LD   D   -   L   W   W   W   .   L   .   .   .   .   W   W   .   .   W   .
+tes        L   L   L   W   -   D   W   D   L   D   .   W   L   .   .   W   W   .   .   .
+Fuz        .   L   W   L   D   -  LW   L   .   D   W   L   W   .   .   .   .   L   .   .
+Dan        .   L   .   L   L  WL   -   .  LD   W   L   W   .   L   W   .   .   .   .   W
+Pat        L   .   L   L   D   W   .   -   L  WD   D  WW   W   W   W   .   W   .   D   .
+Mat        L   W   .   .   W   .  WD   W   -   L   D  WD   L   .   W   W   D   W   W   .
+che        L   L   L   W   D   D   L  LD   W   -  WD   D   .   W   D   .   .   W   L   .
+AIF        D   .   .   .   .   L   W   D   D  LD   -  WW   .  LW   .   W   .   W   .   .
+Los        L   L   W   .   L   W   L  LL  LD   D  LL   -   L   L   W   .   W   W   .   .
+ms         L   W   L   .   W   L   .   L   W   .   .   W   -  DL   W   D   D   W   W   .
+mak        L   L   L   .   .   .   W   L   .   L  WL   W  DW   -  LD   D   .   .   .   W
+Bla        .   L   L   L   .   .   L   L   L   D   .   L   L  WD   -  WD   .  WW   .   .
+Dar        L   W   L   L   L   .   .   .   L   .   L   .   D   D  LD   -   W   .   .   L
+Cor        .   L   .   .   L   .   .   L   D   .   .   L   D   .   .   L   -   D   L   .
+lyr        L   .   .   .   .   W   .   .   L   L   L   L   L   .  LL   .   D   -   .   .
+Fri        L   .   L   L   .   .   .   D   L   W   .   .   L   .   .   .   W   .   -   L
+Mag        L   L   L   .   .   .   L   .   .   .   .   .   .   L   .   W   .   .   W   -
+  Row's result vs column, oldest game first (W/D/L). Games between top-20 teams:
+  R1 Capablanca (white) vs Loss Preventer: Capablanca won by checkmate, Reti Opening, 113 plies
+    (loss/move 5.7 vs 19.2)
+  R2 Capablanca (black) vs ms: ms won by checkmate, Pirc Defence, 116 plies (loss/move 44.6 vs 17.4)
+  R3 SoberElwood (white) vs Magnus Claudeson: SoberElwood won by checkmate, Nimzo-Indian Defence,
+    104 plies (loss/move 8.2 vs 22.1)
+  R3 Danya's Disciple (white) vs make_no_mistakes: make_no_mistakes won by checkmate, Grunfeld
+    Defence, 83 plies (loss/move 60.7 vs 13.7)
+  R4 SoberElwood (white) vs Fuzzydafool: Fuzzydafool won by flag, Four Knights Game, 69 plies
+    (loss/move 12.9 vs 29.9)
+  R4 Anchoa (white) vs Dark Sister: Anchoa won by checkmate, French Classical, 72 plies (loss/move
+    18.6 vs 39.3)
+  R4 checkers (white) vs make_no_mistakes: checkers won by checkmate, Petroff Defence, 136 plies
+    (loss/move 10.9 vs 21.4)
+  R5 Anchoa (black) vs Blank Shooter: Anchoa won by checkmate, Grunfeld Defence, 111 plies
+    (loss/move 16.7 vs 61.2)
+  R5 Patzer 1.2 (black) vs checkers: Patzer 1.2 won by checkmate, Sicilian Closed, 133 plies
+    (loss/move 14.4 vs 48.5)
+  R5 Mate in One (white) vs AI Fellow: draw by insufficient_material, Sicilian Dragon, 104 plies
+    (loss/move 10.4 vs 10.0)
+  R6 Fuzzydafool (white) vs lyra: lyra won by checkmate, King's Indian Classical, 68 plies
+    (loss/move 65.7 vs 12.4)
+  R6 Blank Shooter (white) vs Dark Sister: Blank Shooter won by checkmate, Sicilian Closed, 100
+    plies (loss/move 6.4 vs 18.0)
+  R7 Capablanca (black) vs Dark Sister: Dark Sister won by checkmate, Petroff Defence, 177 plies
+    (loss/move 32.1 vs 21.5)
+  R7 Anchoa (white) vs checkers: checkers won by checkmate, Scotch Game, 110 plies (loss/move 22.9
+    vs 9.0)
+  R7 Patzer 1.2 (white) vs ms: Patzer 1.2 won by checkmate, French Tarrasch, 104 plies (loss/move
+    21.4 vs 27.8)
+  R8 Capablanca (white) vs Danya's Disciple: Capablanca won by checkmate, English Symmetrical, 140
+    plies (loss/move 10.6 vs 20.4)
+  R8 Patzer 1.2 (white) vs Mate in One: Mate in One won by checkmate, Sicilian Sveshnikov, 101 plies
+    (loss/move 22.2 vs 7.0)
+  R8 make_no_mistakes (white) vs Blank Shooter: Blank Shooter won by checkmate, Sicilian Sveshnikov,
+    107 plies (loss/move 34.4 vs 20.4)
+  R10 SoberElwood (white) vs Patzer 1.2: SoberElwood won by checkmate, Sicilian Najdorf, 150 plies
+    (loss/move 13.8 vs 23.8)
+  R10 Mate in One (white) vs lyra: Mate in One won by checkmate, Ruy Lopez, Closed, 204 plies
+    (loss/move 7.3 vs 14.6)
+  R10 ms (black) vs Blank Shooter: ms won by checkmate, Petroff Defence, 197 plies (loss/move 11.5
+    vs 16.8)
+  R10 Dark Sister (white) vs Magnus Claudeson: Magnus Claudeson won by checkmate, French Tarrasch,
+    160 plies (loss/move 54.2 vs 19.6)
+  R11 Capablanca (black) vs Magnus Claudeson: Capablanca won by checkmate, Caro-Kann Classical, 119
+    plies (loss/move 12.3 vs 33.8)
+  R11 SoberElwood (black) vs checkers: SoberElwood won by checkmate, French Classical, 142 plies
+    (loss/move 8.8 vs 21.1)
+  R11 Anchoa (black) vs Patzer 1.2: Anchoa won by checkmate, Reti Opening, 115 plies (loss/move 13.3
+    vs 28.8)
+  R11 Mate in One (black) vs ms: ms won by checkmate, French Classical, 131 plies (loss/move 22.9 vs
+    12.1)
+  R12 SoberElwood (white) vs ms: SoberElwood won by checkmate, French Classical, 93 plies (loss/move
+    16.4 vs 31.9)
+  R12 test_bot (white) vs Mate in One: Mate in One won by checkmate, Ruy Lopez, Closed, 61 plies
+    (loss/move 41.4 vs 9.4)
+  R12 Patzer 1.2 (black) vs Blank Shooter: Patzer 1.2 won by checkmate, Sicilian Taimanov, 91 plies
+    (loss/move 15.8 vs 37.3)
+  R12 checkers (white) vs lyra: checkers won by checkmate, London System, 93 plies (loss/move 6.1 vs
+    20.2)
+  R12 make_no_mistakes (black) vs Magnus Claudeson: make_no_mistakes won by checkmate, Nimzo-Indian
+    Defence, 134 plies (loss/move 16.3 vs 26.8)
+  R13 AlphaFish (black) vs Magnus Claudeson: AlphaFish won by checkmate, Sicilian Classical, 125
+    plies (loss/move 11.5 vs 25.9)
+  R13 Anchoa (white) vs test_bot: test_bot won by checkmate, Dutch Stonewall, 77 plies (loss/move
+    46.9 vs 14.1)
+  R13 checkers (black) vs AI Fellow: checkers won by checkmate, Scotch Game, 113 plies (loss/move
+    16.3 vs 27.5)
+  R13  ms (white) vs lyra: ms won by checkmate, Four Knights Game, 152 plies (loss/move 9.8 vs 33.8)
+  R14 Capablanca (black) vs Mate in One: Mate in One won by checkmate, French Classical, 74 plies
+    (loss/move 27.9 vs 10.1)
+  R14 SoberElwood (black) vs test_bot: SoberElwood won by checkmate, Petroff Defence, 120 plies
+    (loss/move 7.4 vs 17.6)
+  R14 Fuzzydafool (black) vs Patzer 1.2: Patzer 1.2 won by checkmate, Reti Opening, 107 plies
+    (loss/move 19.7 vs 8.8)
+  R14 checkers (white) vs Blank Shooter: draw by insufficient_material, French Tarrasch, 108 plies
+    (loss/move 8.2 vs 9.1)
+  R15 Capablanca (white) vs checkers: Capablanca won by checkmate, Two Knights Defence, 96 plies
+    (loss/move 15.4 vs 66.2)
+  R15 SoberElwood (white) vs Blank Shooter: SoberElwood won by checkmate, Sicilian Closed, 99 plies
+    (loss/move 9.6 vs 27.9)
+  R15  test_bot (white) vs ms: ms won by checkmate, Reti Opening, 201 plies (loss/move 16.0 vs 10.3)
+  R15 AI Fellow (black) vs lyra: AI Fellow won by checkmate, Ruy Lopez, Closed, 119 plies (loss/move
+    10.0 vs 22.7)
+  R15 Dark Sister (black) vs Cornelius: Dark Sister won by checkmate, Grunfeld Defence, 95 plies
+    (loss/move 19.6 vs 36.9)
+  R16 AlphaFish (white) vs Dark Sister: AlphaFish won by checkmate, Sicilian Closed, 66 plies
+    (loss/move 11.1 vs 50.0)
+  R16 Mate in One (black) vs Blank Shooter: Mate in One won by checkmate, Sicilian Closed, 154 plies
+    (loss/move 8.3 vs 20.2)
+  R16 checkers (white) vs Loss Preventer: draw by insufficient_material, Grunfeld Defence, 250 plies
+    (loss/move 5.4 vs 5.4)
+  R17 AlphaFish (white) vs Anchoa: AlphaFish won by checkmate, Grunfeld Defence, 122 plies
+    (loss/move 11.2 vs 38.0)
+  R17 test_bot (white) vs checkers: draw by insufficient_material, Sicilian Closed, 261 plies
+    (loss/move 4.4 vs 4.6)
+  R17 Loss Preventer (black) vs ms: ms won by checkmate, Sicilian Closed, 158 plies (loss/move 30.3
+    vs 20.2)
+  R17 Blank Shooter (black) vs lyra: Blank Shooter won by checkmate, Ruy Lopez, Closed, 74 plies
+    (loss/move 4.1 vs 66.5)
+  R18 AlphaFish (black) vs Mate in One: AlphaFish won by checkmate, London System, 173 plies
+    (loss/move 8.1 vs 16.6)
+  R18 Capablanca (black) vs Blank Shooter: Capablanca won by checkmate, Petroff Defence, 153 plies
+    (loss/move 7.8 vs 15.9)
+  R18 Patzer 1.2 (black) vs AI Fellow: draw by insufficient_material, Sicilian Closed, 189 plies
+    (loss/move 5.0 vs 4.8)
+  R19 AlphaFish (black) vs SoberElwood: AlphaFish won by checkmate, English Symmetrical, 191 plies
+    (loss/move 9.0 vs 13.5)
+  R19 Capablanca (white) vs test_bot: Capablanca won by checkmate, Ruy Lopez, Closed, 106 plies
+    (loss/move 8.2 vs 19.7)
+  R19 Fuzzydafool (black) vs checkers: draw by insufficient_material, French Tarrasch, 195 plies
+    (loss/move 5.2 vs 5.0)
+  R19 AI Fellow (white) vs Loss Preventer: AI Fellow won by checkmate, Two Knights Defence, 172
+    plies (loss/move 9.0 vs 28.4)
+  R20 AlphaFish (white) vs ms: AlphaFish won by checkmate, Nimzo-Indian Defence, 217 plies
+    (loss/move 5.8 vs 15.4)
+  R20 Anchoa (black) vs Danya's Disciple: Anchoa won by checkmate, Sicilian Dragon, 143 plies
+    (loss/move 10.9 vs 33.2)
+  R20 Loss Preventer (white) vs make_no_mistakes: make_no_mistakes won by checkmate, Sicilian
+    Closed, 159 plies (loss/move 19.4 vs 9.4)
+  R21 AlphaFish (white) vs Patzer 1.2: AlphaFish won by checkmate, Sicilian Closed, 172 plies
+    (loss/move 12.3 vs 23.1)
+  R21 Capablanca (black) vs Anchoa: Capablanca won by checkmate, French Classical, 75 plies
+    (loss/move 8.9 vs 35.4)
+  R21 test_bot (black) vs Cornelius: test_bot won by checkmate, Sicilian Closed, 143 plies
+    (loss/move 13.1 vs 24.4)
+  R21 Fuzzydafool (black) vs AI Fellow: Fuzzydafool won by checkmate, Italian Game, 141 plies
+    (loss/move 18.8 vs 32.0)
+  R21 Danya's Disciple (black) vs Loss Preventer: Danya's Disciple won by checkmate, Italian Game,
+    137 plies (loss/move 7.1 vs 19.1)
+  R22 SoberElwood (black) vs make_no_mistakes: SoberElwood won by checkmate, Sicilian Sveshnikov,
+    133 plies (loss/move 14.6 vs 36.8)
+  R22 Danya's Disciple (white) vs Mate in One: Mate in One won by checkmate, Sicilian Dragon, 79
+    plies (loss/move 59.5 vs 6.7)
+  R23 AlphaFish (black) vs checkers: AlphaFish won by checkmate, English Symmetrical, 135 plies
+    (loss/move 12.8 vs 26.9)
+  R23 Capablanca (white) vs Fuzzydafool: Capablanca won by checkmate, Caro-Kann Classical, 154 plies
+    (loss/move 7.6 vs 19.1)
+  R23 ms (white) vs make_no_mistakes: draw by insufficient_material, Sicilian Taimanov, 96 plies
+    (loss/move 5.5 vs 4.6)
+  R24 AlphaFish (white) vs AI Fellow: draw by insufficient_material, Caro-Kann Exchange, 525 plies
+    (loss/move 0.5 vs 0.4)
+  R24 SoberElwood (white) vs Loss Preventer: Loss Preventer won by checkmate, Sicilian Dragon, 147
+    plies (loss/move 28.7 vs 8.6)
+  R24 Patzer 1.2 (black) vs make_no_mistakes: Patzer 1.2 won by checkmate, Queen's Gambit Accepted,
+    131 plies (loss/move 12.2 vs 30.4)
+  R24 Cornelius (white) vs Fried Liver: Fried Liver won by checkmate, Pirc Defence, 119 plies
+    (loss/move 29.4 vs 15.5)
+  R25 AlphaFish (black) vs lyra: AlphaFish won by checkmate, French Tarrasch, 55 plies (loss/move
+    9.7 vs 69.2)
+  R25 Capablanca (black) vs make_no_mistakes: Capablanca won by checkmate, Sicilian Closed, 156
+    plies (loss/move 13.4 vs 20.5)
+  R25 Anchoa (black) vs Fuzzydafool: Anchoa won by checkmate, Nimzo-Indian Defence, 143 plies
+    (loss/move 5.7 vs 27.5)
+  R25 Danya's Disciple (black) vs checkers: Danya's Disciple won by checkmate, Reti Opening, 311
+    plies (loss/move 5.5 vs 12.7)
+  R25 Mate in One (white) vs Loss Preventer: Mate in One won by checkmate, English Symmetrical, 168
+    plies (loss/move 18.3 vs 49.3)
+  R25 AI Fellow (white) vs Dark Sister: AI Fellow won by checkmate, Sicilian Closed, 94 plies
+    (loss/move 5.9 vs 51.8)
+  R26 Anchoa (white) vs Fried Liver: Anchoa won by checkmate, Catalan Opening, 103 plies (loss/move
+    8.2 vs 44.4)
+  R26 Patzer 1.2 (white) vs Loss Preventer: Patzer 1.2 won by checkmate, Sicilian Closed, 113 plies
+    (loss/move 10.9 vs 24.1)
+  R26 AI Fellow (white) vs make_no_mistakes: make_no_mistakes won by checkmate, Pirc Defence, 163
+    plies (loss/move 12.6 vs 9.0)
+  R27 AlphaFish (white) vs test_bot: AlphaFish won by checkmate, Italian Game, 132 plies (loss/move
+    9.3 vs 36.1)
+  R27 SoberElwood (black) vs Dark Sister: SoberElwood won by checkmate, Petroff Defence, 115 plies
+    (loss/move 6.3 vs 20.6)
+  R27 Fuzzydafool (black) vs Loss Preventer: Loss Preventer won by checkmate, Pirc Defence, 62 plies
+    (loss/move 33.2 vs 3.7)
+  R27 Danya's Disciple (black) vs Blank Shooter: Danya's Disciple won by checkmate, Sicilian Closed,
+    154 plies (loss/move 18.3 vs 26.0)
+  R27 Patzer 1.2 (white) vs Cornelius: Patzer 1.2 won by checkmate, London System, 109 plies
+    (loss/move 8.3 vs 19.1)
+  R27 checkers (black) vs Fried Liver: Fried Liver won by checkmate, Ruy Lopez, Closed, 139 plies
+    (loss/move 17.2 vs 11.0)
+  R28 test_bot (black) vs Loss Preventer: test_bot won by checkmate, French Tarrasch, 179 plies
+    (loss/move 8.9 vs 17.8)
+  R28 ms (white) vs Dark Sister: draw by insufficient_material, Sicilian Classical, 359 plies
+    (loss/move 8.0 vs 7.2)
+  R29 AlphaFish (black) vs make_no_mistakes: AlphaFish won by checkmate, London System, 127 plies
+    (loss/move 12.5 vs 24.7)
+  R29 Mate in One (white) vs Fried Liver: Mate in One won by checkmate, English Symmetrical, 159
+    plies (loss/move 11.8 vs 36.4)
+  R29 Loss Preventer (white) vs Blank Shooter: Loss Preventer won by checkmate, Reti Opening, 114
+    plies (loss/move 13.5 vs 21.3)
+  R30 AlphaFish (white) vs Loss Preventer: AlphaFish won by checkmate, Nimzo-Indian Defence, 248
+    plies (loss/move 5.7 vs 12.2)
+  R30 Capablanca (black) vs Cornelius: Capablanca won by checkmate, Caro-Kann Exchange, 155 plies
+    (loss/move 10.8 vs 22.8)
+  R30 Danya's Disciple (white) vs AI Fellow: AI Fellow won by checkmate, Ruy Lopez, Closed, 53 plies
+    (loss/move 77.9 vs 8.7)
+  R30 Patzer 1.2 (black) vs Fried Liver: draw by insufficient_material, French Tarrasch, 98 plies
+    (loss/move 7.4 vs 8.0)
+  R30 Mate in One (white) vs Dark Sister: Mate in One won by checkmate, Scotch Game, 137 plies
+    (loss/move 13.7 vs 33.6)
+  R31 AlphaFish (black) vs Fried Liver: AlphaFish won by checkmate, Four Knights Game, 185 plies
+    (loss/move 11.4 vs 19.2)
+  R31 Fuzzydafool (white) vs Danya's Disciple: Danya's Disciple won by checkmate, London System, 224
+    plies (loss/move 7.6 vs 2.4)
+  R31 Mate in One (black) vs Cornelius: draw by insufficient_material, Queen's Gambit Accepted, 80
+    plies (loss/move 1.6 vs 1.6)
+  R31 Loss Preventer (white) vs lyra: Loss Preventer won by checkmate, Sicilian Closed, 61 plies
+    (loss/move 17.5 vs 52.8)
+  R31 make_no_mistakes (black) vs Dark Sister: draw by insufficient_material, Sicilian Closed, 323
+    plies (loss/move 4.6 vs 4.0)
+  R32 SoberElwood (white) vs Fried Liver: SoberElwood won by checkmate, Sicilian Taimanov, 154 plies
+    (loss/move 10.6 vs 36.6)
+  R32 test_bot (white) vs Dark Sister: test_bot won by checkmate, Sicilian Closed, 152 plies
+    (loss/move 18.7 vs 23.7)
+  R32 Loss Preventer (white) vs Cornelius: Loss Preventer won by checkmate, French Classical, 70
+    plies (loss/move 9.2 vs 57.0)
+  R33 Danya's Disciple (black) vs Magnus Claudeson: Danya's Disciple won by checkmate, French
+    Advance, 134 plies (loss/move 7.7 vs 34.3)
+  R33 ms (white) vs Cornelius: draw by insufficient_material, Petroff Defence, 115 plies (loss/move
+    8.0 vs 7.8)
+  R34 AlphaFish (white) vs Capablanca: AlphaFish won by checkmate, Petroff Defence, 202 plies
+    (loss/move 7.2 vs 23.3)
+  R34 SoberElwood (black) vs Anchoa: draw by fifty_moves, English Symmetrical, 263 plies (loss/move
+    5.1 vs 5.1)
+  R34 test_bot (black) vs Danya's Disciple: test_bot won by checkmate, Sicilian Sveshnikov, 195
+    plies (loss/move 12.6 vs 28.1)
+  R34 Fuzzydafool (white) vs ms: Fuzzydafool won by checkmate, Petroff Defence, 153 plies (loss/move
+    18.1 vs 27.1)
+  R34 Patzer 1.2 (white) vs checkers: draw by fifty_moves, Reti Opening, 236 plies (loss/move 3.4 vs
+    3.8)
+  R34 Mate in One (white) vs Loss Preventer: draw by threefold_repetition, Dutch Stonewall, 78 plies
+    (loss/move 10.7 vs 8.7)
+  R34 AI Fellow (white) vs make_no_mistakes: AI Fellow won by checkmate, Sicilian Dragon, 148 plies
+    (loss/move 7.5 vs 18.2)
+  R34 Blank Shooter (white) vs lyra: Blank Shooter won by checkmate, English Symmetrical, 152 plies
+    (loss/move 14.1 vs 40.0)
+  R35 AlphaFish (black) vs Anchoa: AlphaFish won by checkmate, Pirc Defence, 103 plies (loss/move
+    13.0 vs 26.1)
+  R35 Capablanca (white) vs SoberElwood: draw by stalemate, Dutch Stonewall, 88 plies (loss/move 4.3
+    vs 3.3)
+  R35 test_bot (white) vs Fuzzydafool: draw by threefold_repetition, Sicilian Closed, 152 plies
+    (loss/move 10.4 vs 11.3)
+  R35 Danya's Disciple (white) vs Mate in One: draw by threefold_repetition, Queen's Gambit
+    Accepted, 178 plies (loss/move 6.3 vs 4.8)
+  R35 Patzer 1.2 (black) vs Loss Preventer: Patzer 1.2 won by checkmate, London System, 101 plies
+    (loss/move 15.2 vs 47.2)
+  R35 checkers (white) vs AI Fellow: draw by threefold_repetition, Two Knights Defence, 165 plies
+    (loss/move 30.5 vs 10.8)
+  R35 ms (white) vs Fried Liver: ms won by checkmate, King's Indian Classical, 93 plies (loss/move
+    12.6 vs 29.3)
+  R35 make_no_mistakes (white) vs Blank Shooter: draw by insufficient_material, Sicilian Closed, 125
+    plies (loss/move 7.6 vs 8.5)
+  R36 AlphaFish (black) vs SoberElwood: draw by insufficient_material, French Winawer, 183 plies
+    (loss/move 27.5 vs 30.2)
+  R36 Capablanca (white) vs Anchoa: draw by threefold_repetition, Italian Game, 231 plies (loss/move
+    1.8 vs 1.6)
+  R36 test_bot (white) vs Patzer 1.2: draw by threefold_repetition, Sicilian Sveshnikov, 95 plies
+    (loss/move 3.5 vs 4.3)
+  R36 Fuzzydafool (white) vs Danya's Disciple: Fuzzydafool won by checkmate, Nimzo-Indian Defence,
+    106 plies (loss/move 12.6 vs 28.1)
+  R36 Mate in One (white) vs checkers: checkers won by checkmate, Sicilian Closed, 202 plies
+    (loss/move 11.6 vs 9.9)
+  R36 AI Fellow (white) vs Loss Preventer: AI Fellow won by checkmate, Grunfeld Defence, 174 plies
+    (loss/move 8.2 vs 15.9)
+  R36 ms (white) vs make_no_mistakes: make_no_mistakes won by checkmate, Ruy Lopez, Closed, 142
+    plies (loss/move 20.9 vs 13.8)
+  R36 Blank Shooter (white) vs Dark Sister: draw by threefold_repetition, Ruy Lopez, Closed, 107
+    plies (loss/move 9.1 vs 8.1)
+  R36 Cornelius (white) vs lyra: draw by insufficient_material, Italian Game, 302 plies (loss/move
+    1.5 vs 1.4)
+  R36 Fried Liver (black) vs Magnus Claudeson: Magnus Claudeson won by checkmate, Caro-Kann Advance,
+    110 plies (loss/move 20.5 vs 9.2)
+
+TIME MANAGEMENT (top 20)
+Bot                 mean   med   max       q1-q3   end   min  <5s inst%  swing   calm
+AlphaFish            1.7  1.51   4.4   0.83-2.46    31   5.6    1   7.5   1.37   1.68
+Capablanca          1.84  1.54  17.0   0.84-2.50    27   9.0    0  11.1   1.18   1.86
+SoberElwood         1.71  1.36  12.9   0.67-2.35    36   0.9    1   8.7   1.45   1.73
+Anchoa              1.72  1.46  10.2   0.73-2.46    42   7.2    0  14.1   1.88   1.72
+test_bot            2.15  1.45  11.6   0.63-3.20    16   1.5   13   5.1   1.75   2.13
+Fuzzydafool         2.08   1.8  13.1   0.71-2.92    19   1.0   16   9.0   1.95   2.05
+Danya's Disciple    2.02  1.76   4.8   0.96-2.96    30   7.4    0   7.8   1.63   1.99
+Patzer 1.2          1.71  1.52   8.1   0.92-2.18    40   9.5    0   5.9   1.30   1.72
+Mate in One         1.97  1.52   8.5   0.79-2.81    24   5.0    6   6.9   1.28   1.97
+checkers            1.74  1.46  11.8   0.66-2.40    34  12.5    0  11.5   1.50   1.77
+AI Fellow           1.99  1.06  11.3   0.57-2.79    10   1.3   18   6.7   1.39   1.97
+Loss Preventer      1.89  1.48  11.6   0.90-2.43    41  10.2    0   6.3   2.17   1.84
+ms                   2.1  1.63  13.6   0.64-3.14    16   4.0   10  12.1   1.69   2.10
+make_no_mistakes    1.95  1.62  11.1   0.64-2.75    28  10.6    0   9.4   2.14   1.94
+Blank Shooter       2.09  1.75  29.9   1.02-2.97    26   8.8    0   7.6   1.63   2.11
+Dark Sister         1.78  1.52  16.5   0.86-2.41    30   2.0    3   8.1   1.59   1.77
+Cornelius            1.7  1.34   9.6   0.63-2.31    30   7.7    0   7.2   1.66   1.67
+lyra                1.87  1.86   5.9   0.76-2.77    26   5.9    0   6.0   1.87   1.87
+Fried Liver         2.24  1.57  12.3   0.70-3.29    14   3.8    7   6.0   1.55   2.20
+Magnus Claudeson    1.85   1.7   4.9   0.90-2.69    29   8.5    0   5.6   1.56   1.85
+  seconds per own move; end/min = clock left at the end (mean/min); swing/calm = s per move after a
+    >100 cp swing vs otherwise
+
+DRAWS AND CONVERSION (top 20)
+Bot                draws 3fold fifty insuf  repA  repB  won+  nonC lost- saved
+AlphaFish              7     4     1     2     1     0    22     2     2     1
+Capablanca             8     6     1     0     0     0    24     1     5     1
+SoberElwood           11     6     3     1     0     1    24     4     5     2
+Anchoa                10     5     4     1     0     0    18     0     5     0
+test_bot              10     9     0     1     0     1    15     0     6     1
+Fuzzydafool           11     9     1     1     0     1    15     1    12     3
+Danya's Disciple      11    10     1     0     2     1    17     2    11     1
+Patzer 1.2            12     7     3     2     0     1    21     1     5     1
+Mate in One           12     7     3     2     0     1    21     0     4     1
+checkers               9     2     3     4     0     0    20     0     9     2
+AI Fellow             12     8     1     3     3     0    23     5     4     0
+Loss Preventer         4     3     0     1     0     1    18     0    14     1
+ms                     7     4     0     3     0     0    21     1     7     0
+make_no_mistakes      11     4     2     5     1     0    17     2     9     0
+Blank Shooter         10     8     0     2     1     0    17     0    10     1
+Dark Sister            8     3     1     4     0     1    15     0    18     7
+Cornelius              8     1     3     4     1     0    15     3     9     1
+lyra                  13     8     2     3     0     0    15     2     9     1
+Fried Liver            3     2     0     1     0     0     6     0     6     0
+Magnus Claudeson       7     3     3     1     2     0    19     2    13     2
+  repA/repB = repetition draws while ahead/behind by 150+; won+ = games that reached +300; nonC =
+    those not won; lost- = games at -300; saved = those not lost
+
+WHAT CHANGED SINCE LAST REFRESH
+Compared with history/summary_20260906_1130.txt:
+  new in the table: Dark Sister (rank 16)
+  new in the table: Cornelius (rank 17)
+  new in the table: Magnus Claudeson (rank 20)
+  dropped out: RMFE (was rank 18)
+  dropped out: zak (was rank 19)
+  dropped out: FloridaChuds (was rank 20)
+  AlphaFish: rating 2478 -> 2642, games 21 -> 23 (20-2-1), CPL 7.5 -> 8.7
+  Capablanca: rating 2429 -> 2385, games 27 -> 29 (23-2-4)
+  SoberElwood: rank 4 -> 3, rating 2338 -> 2362, games 25 -> 27 (20-3-4)
+  Anchoa: rank 3 -> 4, rating 2360 -> 2332, games 24 -> 26 (18-3-5)
+  test_bot: rank 6 -> 5, rating 2176 -> 2265, games 21 -> 23 (15-3-5)
+  Fuzzydafool: rank 13 -> 6, rating 2084 -> 2229, games 24 -> 26 (15-2-9)
+  Danya's Disciple: rank 5 -> 7, rating 2223 -> 2204, games 24 -> 26 (15-1-10)
+  Patzer 1.2: rank 9 -> 8, rating 2154 -> 2194, games 26 -> 28 (20-4-4)
+  Mate in One: rank 7 -> 9, rating 2172 -> 2190, games 26 -> 28 (21-4-3)
+  checkers: rating 2133 -> 2162, games 31 -> 33 (20-6-7)
+  AI Fellow: rating 2114 -> 2155, games 24 -> 26 (18-4-4)
+  Loss Preventer: rank 8 -> 12, rating 2162 -> 2117, games 31 -> 33 (18-2-13)
+  ms: rank 14 -> 13, rating 2082 -> 2114, games 28 -> 30 (20-3-7)
+  make_no_mistakes: rank 12 -> 14, rating 2099 -> 2077, games 27 -> 29 (15-5-9)
+  Blank Shooter: rank 16 -> 15, rating 1997 -> 2063, games 27 -> 29 (17-3-9)
+  lyra: rank 15 -> 18, rating 2018 -> 2035, games 22 -> 24 (13-3-8)
+  Fried Liver: rank 17 -> 19, rating 1973 -> 2018, games 11 -> 13 (6-1-6)
+  BINI Alpha: rank 188 -> 142, rating 1487 -> 1580, games 7 -> 9 (5-0-4), CPL 55.2 -> 45.1
+
+FILES: 01_AlphaFish.txt, 02_Capablanca.txt, 03_SoberElwood.txt, 04_Anchoa.txt, 05_test_bot.txt,
+  06_Fuzzydafool.txt, 07_Danya_s_Disciple.txt, 08_Patzer_1_2.txt, 09_Mate_in_One.txt,
+  10_checkers.txt, 11_AI_Fellow.txt, 12_Loss_Preventer.txt, 13_ms.txt, 14_make_no_mistakes.txt,
+  15_Blank_Shooter.txt, 16_Dark_Sister.txt, 17_Cornelius.txt, 18_lyra.txt, 19_Fried_Liver.txt,
+  20_Magnus_Claudeson.txt, 142_BINI_Alpha.txt

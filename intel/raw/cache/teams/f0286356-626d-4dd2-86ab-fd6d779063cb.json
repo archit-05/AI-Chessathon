@@ -2,10 +2,10 @@
  "uuid": "f0286356-626d-4dd2-86ab-fd6d779063cb",
  "bot": "BINI Alpha",
  "team": "Opus Carlsen",
- "rating": 1487,
- "rank": 188,
- "record": "4-0-4",
- "rated_rounds": 10,
+ "rating": 1580,
+ "rank": 142,
+ "record": "5-0-4",
+ "rated_rounds": 12,
  "history": [
   [
    24,
@@ -46,9 +46,37 @@
   [
    33,
    1487
+  ],
+  [
+   34,
+   1533
+  ],
+  [
+   35,
+   1580
   ]
  ],
  "games": [
+  {
+   "game": "78ce0a94-fee5-4802-bc81-c7d061d169ea",
+   "kind": "Rated",
+   "round": 36,
+   "colour": "Black",
+   "opponent": "berserker",
+   "opponent_uuid": "855b9f23-9b9b-4da6-9559-18a2b187d298",
+   "verdict": "live",
+   "opening": "Ruy Lopez, Closed"
+  },
+  {
+   "game": "b37fc3ce-4ac1-45b4-91e9-7f64346c3b14",
+   "kind": "Rated",
+   "round": 35,
+   "colour": "Black",
+   "opponent": "Magnus CarlSON \ud83d\ude2d",
+   "opponent_uuid": "23113ce3-33c5-4683-8057-07d3a2e33bf9",
+   "verdict": "win",
+   "opening": "Reti Opening"
+  },
   {
    "game": "b45c829e-3381-470f-9bd4-b95191edc58c",
    "kind": "Rated",
@@ -160,5 +188,5 @@
    "opening": "Four Knights Game"
   }
  ],
- "fetched_at": "2026-09-06T10:31:02Z"
+ "fetched_at": "2026-09-06T12:24:17Z"
 }

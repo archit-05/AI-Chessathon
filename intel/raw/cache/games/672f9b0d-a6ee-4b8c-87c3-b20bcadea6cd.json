@@ -1,0 +1,338 @@
+{
+ "game": "672f9b0d-a6ee-4b8c-87c3-b20bcadea6cd",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.06\"]\n[Round \"33\"]\n[White \"Minimax Three\"]\n[Black \"Snake\"]\n[Result \"0-1\"]\n[FEN \"rnbq1rk1/ppp1ppbp/3p1np1/6B1/3PP3/2N2N2/PPP1BPPP/R2QK2R b KQ - 5 6\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n6... a5 { [%clk 0:00:46.768] } 7. Bc4 { [%clk 0:02:00.056] } 7... h6 { [%clk 0:00:45.885] } 8. Bxf7+ { [%clk 0:02:00.162] } 8... Rxf7 { [%clk 0:00:45.022] } 9. Bh4 { [%clk 0:02:00.321] } 9... g5 { [%clk 0:00:44.177] } 10. Bg3 { [%clk 0:02:00.593] } 10... g4 { [%clk 0:00:43.352] } 11. Nd2 { [%clk 0:02:00.822] } 11... Nc6 { [%clk 0:00:42.544] } 12. d5 { [%clk 0:02:00.988] } 12... Nd4 { [%clk 0:00:41.754] } 13. Nc4 { [%clk 0:02:01.288] } 13... e5 { [%clk 0:00:40.982] } 14. O-O { [%clk 0:02:01.536] } 14... b5 { [%clk 0:00:40.226] } 15. Ne3 { [%clk 0:02:01.847] } 15... b4 { [%clk 0:00:39.487] } 16. Bxe5 { [%clk 0:02:02.138] } 16... dxe5 { [%clk 0:00:38.764] } 17. Nxg4 { [%clk 0:02:02.359] } 17... Bxg4 { [%clk 0:00:38.057] } 18. Ne2 { [%clk 0:02:02.635] } 18... Nxe2+ { [%clk 0:00:37.366] } 19. Kh1 { [%clk 0:02:03.111] } 19... Ng3+ { [%clk 0:00:36.69] } 20. hxg3 { [%clk 0:02:03.583] } 20... Bxd1 { [%clk 0:00:36.029] } 21. Rfxd1 { [%clk 0:02:04.008] } 21... Nxe4 { [%clk 0:00:35.382] } 22. d6 { [%clk 0:02:04.416] } 22... Nxf2+ { [%clk 0:00:34.75] } 23. Kg1 { [%clk 0:02:04.901] } 23... Nxd1 { [%clk 0:00:34.131] } 24. Rxd1 { [%clk 0:02:05.382] } 24... cxd6 { [%clk 0:00:33.526] } 25. Kh2 { [%clk 0:02:05.81] } 25... Rf2 { [%clk 0:00:32.935] } 26. Rd5 { [%clk 0:02:06.255] } 26... Rxc2 { [%clk 0:00:32.356] } 27. g4 { [%clk 0:02:06.715] } 27... Qh4+ { [%clk 0:00:31.79] } 28. Kg1 { [%clk 0:02:07.206] } 28... Rc1+ { [%clk 0:00:32.139] } 29. Rd1 { [%clk 0:02:07.699] } 29... Rxd1# { [%clk 0:00:32.635] } 0-1\n",
+ "opening": "Pirc Defence",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 33\u00b7Final",
+ "white_uuid": "9732317c-5dc8-4e6c-b31c-3c48389c9028",
+ "black_uuid": "a8e6af7a-b443-4138-b85e-617392f0d199",
+ "site_verdicts": [
+  [
+   "a5",
+   "excellent"
+  ],
+  [
+   "Bc4",
+   "inaccuracy"
+  ],
+  [
+   "h6",
+   "excellent"
+  ],
+  [
+   "Bxf7+",
+   "blunder"
+  ],
+  [
+   "Rxf7",
+   "best"
+  ],
+  [
+   "Bh4",
+   "good"
+  ],
+  [
+   "g5",
+   "good"
+  ],
+  [
+   "Bg3",
+   "excellent"
+  ],
+  [
+   "g4",
+   "best"
+  ],
+  [
+   "Nd2",
+   "good"
+  ],
+  [
+   "Nc6",
+   "best"
+  ],
+  [
+   "d5",
+   "best"
+  ],
+  [
+   "Nd4",
+   "best"
+  ],
+  [
+   "Nc4",
+   "excellent"
+  ],
+  [
+   "e5",
+   "excellent"
+  ],
+  [
+   "O-O",
+   "good"
+  ],
+  [
+   "b5",
+   "good"
+  ],
+  [
+   "Ne3",
+   "excellent"
+  ],
+  [
+   "b4",
+   "excellent"
+  ],
+  [
+   "Bxe5",
+   "inaccuracy"
+  ],
+  [
+   "dxe5",
+   "best"
+  ],
+  [
+   "Nxg4",
+   "good"
+  ],
+  [
+   "Bxg4",
+   "excellent"
+  ],
+  [
+   "Ne2",
+   "good"
+  ],
+  [
+   "Nxe2+",
+   "best"
+  ],
+  [
+   "Kh1",
+   "excellent"
+  ],
+  [
+   "Ng3+",
+   "good"
+  ],
+  [
+   "hxg3",
+   "excellent"
+  ],
+  [
+   "Bxd1",
+   "best"
+  ],
+  [
+   "Rfxd1",
+   "excellent"
+  ],
+  [
+   "Nxe4",
+   "best"
+  ],
+  [
+   "d6",
+   "excellent"
+  ],
+  [
+   "Nxf2+",
+   "best"
+  ],
+  [
+   "Kg1",
+   "best"
+  ],
+  [
+   "Nxd1",
+   "best"
+  ],
+  [
+   "Rxd1",
+   "best"
+  ],
+  [
+   "cxd6",
+   "excellent"
+  ],
+  [
+   "Kh2",
+   "excellent"
+  ],
+  [
+   "Rf2",
+   "excellent"
+  ],
+  [
+   "Rd5",
+   "inaccuracy"
+  ],
+  [
+   "Rxc2",
+   "miss"
+  ],
+  [
+   "g4",
+   "inaccuracy"
+  ],
+  [
+   "Qh4+",
+   "best"
+  ],
+  [
+   "Kg1",
+   "forced"
+  ],
+  [
+   "Rc1+",
+   "best"
+  ],
+  [
+   "Rd1",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Minimax Three",
+    "accuracy": 87.8,
+    "acpl": 173,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 8,
+     "good": 5,
+     "forced": 2,
+     "inaccuracy": 4,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "4_year_old_snake",
+    "accuracy": 97.8,
+    "acpl": 73,
+    "tally": {
+     "brilliant": 0,
+     "best": 13,
+     "excellent": 7,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 1,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   53,
+   65,
+   -11,
+   4,
+   -382,
+   -370,
+   -439,
+   -355,
+   -359,
+   -358,
+   -429,
+   -450,
+   -422,
+   -422,
+   -435,
+   -431,
+   -492,
+   -439,
+   -477,
+   -455,
+   -708,
+   -693,
+   -811,
+   -759,
+   -1121,
+   -1116,
+   -1206,
+   -902,
+   -947,
+   -961,
+   -1021,
+   -1030,
+   -1203,
+   -1226,
+   -1226,
+   -1235,
+   -1288,
+   -1130,
+   -1242,
+   -1239,
+   -9994,
+   -1877,
+   -9997,
+   -9998,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "h7h6",
+   "h2h3",
+   "f6e4",
+   "g5e3",
+   "f8f7",
+   "g5e3",
+   "f6h5",
+   "h4g5",
+   "g5g4",
+   "f3h4",
+   "b8c6",
+   "d4d5",
+   "c6d4",
+   "f2f4",
+   "f6h5",
+   "d5e6",
+   "f6h7",
+   "g3e5",
+   "d8e8",
+   "g3h4",
+   "d6e5",
+   "c3e2",
+   "f6g4",
+   "f2f3",
+   "d4e2",
+   "d1e2",
+   "f6e4",
+   "f2g3",
+   "g4d1",
+   "a1d1",
+   "f6e4",
+   "h1g1",
+   "e4f2",
+   "h1g1",
+   "f2d1",
+   "a1d1",
+   "d8d6",
+   "c2c3",
+   "d8g5",
+   "a2a3",
+   "d8g5",
+   "d5d3",
+   "d8h4",
+   "h2g1",
+   "c2c1",
+   "d5d1",
+   "c1d1",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-06T11:11:27Z"
+}

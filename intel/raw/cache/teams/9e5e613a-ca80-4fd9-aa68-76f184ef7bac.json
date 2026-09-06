@@ -2,10 +2,10 @@
  "uuid": "9e5e613a-ca80-4fd9-aa68-76f184ef7bac",
  "bot": "checkers",
  "team": "checkers",
- "rating": 2133,
+ "rating": 2162,
  "rank": 10,
- "record": "19-5-7",
- "rated_rounds": 33,
+ "record": "20-6-7",
+ "rated_rounds": 35,
  "history": [
   [
    1,
@@ -138,9 +138,37 @@
   [
    33,
    2133
+  ],
+  [
+   34,
+   2155
+  ],
+  [
+   35,
+   2162
   ]
  ],
  "games": [
+  {
+   "game": "70ec1344-fa94-4cad-bcc7-1cbcdb084553",
+   "kind": "Rated",
+   "round": 36,
+   "colour": "Black",
+   "opponent": "Mate in One",
+   "opponent_uuid": "3be637a8-e78d-4da4-8016-d13e00170433",
+   "verdict": "win",
+   "opening": "Sicilian Closed"
+  },
+  {
+   "game": "69d277c2-15ce-4c99-8339-22ca7c2f9693",
+   "kind": "Rated",
+   "round": 35,
+   "colour": "White",
+   "opponent": "AI Fellows",
+   "opponent_uuid": "b574c0ea-e994-4a16-9918-7fbc989c4234",
+   "verdict": "draw",
+   "opening": "Two Knights Defence"
+  },
   {
    "game": "3f03395e-cafb-408c-9a24-a3e2dd971fd0",
    "kind": "Rated",
@@ -482,5 +510,5 @@
    "opening": "Sicilian Closed"
   }
  ],
- "fetched_at": "2026-09-06T10:19:57Z"
+ "fetched_at": "2026-09-06T12:21:36Z"
 }
