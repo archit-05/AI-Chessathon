@@ -536,3 +536,10 @@ conversion + endgame suite, book; Tue own-search fine-tune, SF 2600/2800 ladder;
   the self-play gate (+34 ±40) that settles it. Next build v2.2 = time policy v2.2 + v3 net.
   Battery on the exact combination running alone (tactics, search/wrapper/NNUE suites, torture,
   real-clock pressure); batch-2 gate restarts afterwards.
+- **Sun 6 Sept, 20:20 — v2.2 battery, first pass.** Tactics 40/40 (v3 net), search/wrapper/NNUE
+  suites green, torture 30/30, but the real-clock pressure test breached the 5 s floor (4.6 s,
+  game 5: 15.8 s at move 40, 7.4 s at 60 in a lost 77-move game — the danger multiplier kept
+  spending 2x while the clock drained). Fix: below 30 s no move may cost more than clock/15 +
+  0.6·increment (hard 1.6 s at 20 s, 0.8 s at 8 s). Pressure and torture rerunning, then
+  packaging, batch-2 gate and labelling chained. Ladder: 9-2-5 on v2, rank 72 (R42 a 152-move
+  blameless draw, 20 s left).
