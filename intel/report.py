@@ -7,6 +7,7 @@ import datetime as dt
 import glob
 import json
 import os
+import pathlib
 import re
 import statistics as st
 from collections import Counter, defaultdict
@@ -112,7 +113,8 @@ def load_team(t):
     data = load_json(files["json"]) or load_json(files["scrape"])
     if not data:
         return None
-    data["analysed"] = any("moves" in g for g in data.get("games", []))
+    data["n_analysed"] = data.get("analysed_games", 0)
+    data["analysed"] = data["n_analysed"] > 0
     data["rated"] = [g for g in data["games"] if not g.get("void")]
     data["void_games"] = [g for g in data["games"] if g.get("void")]
     for g in data["games"]:
@@ -147,7 +149,7 @@ def quality(team):
     q["site_tags"] = tags
     # blunders while level or ahead (tactical oversights rather than desperation)
     q["blunders_not_losing"] = sum(1 for g, m in counted if m["loss"] >= BLUNDER and m["cp_before"] >= -100)
-    worst = sorted(((m["loss"], g, m) for g, m in counted), key=lambda x: -x[0])[:3]
+    worst = sorted(((m["loss"], g, m) for g, m in own_moves(team) if m["loss"] >= 100), key=lambda x: -x[0])[:3]
     q["worst"] = [(g, m) for _, g, m in worst]
     return q
 
@@ -189,6 +191,17 @@ def timing(team):
         band = ">60s" if c > 60 else "30-60s" if c > 30 else "10-30s" if c > 10 else "<10s"
         bands[band].append(m["time"])
     t["bands"] = {k: (mean(v, 2), len(v)) for k, v in bands.items()}
+    ratios = []
+    for g, m in moves:
+        if m["clock"] is not None and m["cp_before"] is not None and abs(m["cp_before"]) < 800 and m["time"] >= 0.05:
+            before = m["clock"] + m["time"] - 0.5
+            if before > 1:
+                ratios.append(100.0 * m["time"] / before)
+    if len(ratios) >= 8:
+        rq = st.quantiles(ratios, n=4)
+        t["ratio"] = (round(st.median(ratios), 1), round(rq[0], 1), round(rq[2], 1))
+    else:
+        t["ratio"] = None
     t["ahead"] = mean([m["time"] for _, m in moves if m["cp_before"] >= CONVERT], 2)
     t["behind"] = mean([m["time"] for _, m in moves if m["cp_before"] <= -CONVERT], 2)
     t["level"] = mean([m["time"] for _, m in moves if -CONVERT < m["cp_before"] < CONVERT], 2)
@@ -348,12 +361,16 @@ def tiers(team):
 
 
 def spikes(team):
+    """Rounds where the rating moved 100+ points; each is annotated with that round's game."""
     h = team.get("history", [])
+    by_round = {g["round"]: g for g in team["games"]}
     out = []
     for i in range(1, len(h)):
         d = h[i][1] - h[i - 1][1]
         if abs(d) >= 100:
-            out.append((h[i][0], d, h[i][1]))
+            g = by_round.get(h[i][0])
+            what = f"{result_word(g)} vs {g.get('opponent_bot') or g['opponent']}" if g else "no game that round"
+            out.append((h[i][0], d, h[i][1], what))
     return out
 
 
@@ -451,7 +468,8 @@ def render_dossier(team, targets_by_uuid, ladder):
     add = L.append
     add(f"{team['bot']}  (team: {team['team']})  -  rank {team['rank']}, rating {team['rating']}")
     add("=" * min(W, len(L[0])))
-    add(f"Generated {dt.datetime.now().strftime('%Y-%m-%d %H:%M')} from {len(rated)} rated games (rounds {rated[0]['round']}-{rated[-1]['round']})"
+    partial = f", {team['n_analysed']} of {len(team['games'])} analysed with Stockfish so far" if team["n_analysed"] < len(team["games"]) else ""
+    add(f"Generated {dt.datetime.now().strftime('%Y-%m-%d %H:%M')} from {len(rated)} rated games (rounds {rated[0]['round']}-{rated[-1]['round']}{partial})"
         + (f", {len(team['void_games'])} void game(s) ignored: {', '.join(rnd(g) for g in team['void_games'])}" if team["void_games"] else "") + ".")
     add("")
     # Identity
@@ -467,8 +485,10 @@ def render_dossier(team, targets_by_uuid, ladder):
         add(f"  Rating trajectory: entered R{h[0][0]} at {h[0][1]}, peak {peak[1]} (R{peak[0]}), now {h[-1][1]} (R{h[-1][0]}).")
         sp = team["spikes"]
         if sp:
-            add("  Jumps of 100+ between rounds (possible new upload, but early rounds also swing a lot):")
-            add("    " + "; ".join(f"R{r} {dd:+d} -> {v}" for r, dd, v in sp))
+            add("  Jumps of 100+ between rounds (a jump that does not match the game result suggests a new upload;")
+            add("  the first ten rounds swing a lot anyway):")
+            for r, dd, v, what in sp:
+                add(f"    R{r} {dd:+d} -> {v} ({what})")
         else:
             add("  No 100+ point jump between consecutive rounds.")
     add("")
@@ -513,11 +533,15 @@ def render_dossier(team, targets_by_uuid, ladder):
             + (f" ({', '.join(rnd(g) for g in t['under5'])})" if t["under5"] else ""))
         add(f"  By clock before the move: " + ", ".join(f"{k} {f(v[0])} s (n {v[1]})" for k, v in t["bands"].items()))
         add(f"  By own-move number: 1-15 {f(t['by_phase'][1])} s, 16-40 {f(t['by_phase'][2])} s, 41+ {f(t['by_phase'][3])} s; when +300 or better {f(t['ahead'])} s, level {f(t['level'])} s, -300 or worse {f(t['behind'])} s")
+        if t["ratio"]:
+            add(f"  Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median {t['ratio'][0]}%, quartiles {t['ratio'][1]}-{t['ratio'][2]}%")
         add(f"  After a >100 cp swing on the opponent's move: {f(t['swing_in'][0])} s (n {t['swing_in'][1]}) vs {f(t['calm_in'][0])} s otherwise;"
             f" on moves that themselves swing >100 cp: {f(t['swing_own'][0])} s (n {t['swing_own'][1]}) vs {f(t['calm_own'][0])} s")
         flags = []
         if t["q3"] - t["q1"] <= 0.5:
             flags.append("near-fixed time per move")
+        if t["ratio"] and t["ratio"][2] <= 1.4 * t["ratio"][0] and t["ratio"][1] >= 0.6 * t["ratio"][0] and t["q3"] - t["q1"] > 0.5:
+            flags.append(f"spends a fixed ~{t['ratio'][0]:.0f}% of the remaining clock per move, so it gets slower-thinking as the game goes on")
         if t["final_mean"] is not None and t["final_mean"] >= 40:
             flags.append(f"leaves ~{t['final_mean']:.0f} s unused")
         if len(t["under5"]) >= 2:
@@ -545,10 +569,10 @@ def render_dossier(team, targets_by_uuid, ladder):
     # Conversion
     add(f"ENDGAME CONVERSION (+{CONVERT} = winning, -{CONVERT} = losing, own point of view)")
     if team["analysed"]:
-        add(f"  Reached +{CONVERT} or better in {c['winning_games']} games, failed to win {len(c['missed'])}:")
+        add(f"  Reached +{CONVERT} or better in {c['winning_games']} games, failed to win {len(c['missed'])}" + (":" if c["missed"] else "."))
         for g, best, why in c["missed"]:
             add(f"    {rnd(g):<4} vs {(g.get('opponent_bot') or g['opponent']):<18} peak {best:+5d}, {result_word(g)} by {g['termination']}: {why}")
-        add(f"  Reached -{CONVERT} or worse in {c['losing_games']} games, escaped with a half point or more in {len(c['saved'])}:")
+        add(f"  Reached -{CONVERT} or worse in {c['losing_games']} games, escaped with a half point or more in {len(c['saved'])}" + (":" if c["saved"] else "."))
         for g, worst, why in c["saved"]:
             add(f"    {rnd(g):<4} vs {(g.get('opponent_bot') or g['opponent']):<18} low {worst:+5d}, {result_word(g)} by {g['termination']}: {why}")
     else:
@@ -595,7 +619,33 @@ def render_dossier(team, targets_by_uuid, ladder):
         add(f"ANALYST NOTES (hand-written {stamp}; numbers above are regenerated on every refresh, this text is not)")
         for line in note.read_text().rstrip().splitlines():
             add("  " + line if line.strip() else "")
-    return "\n".join(L) + "\n"
+    return finalize(L)
+
+
+def finalize(lines: list[str]) -> str:
+    out = []
+    for line in lines:
+        if len(line) <= W:
+            out.append(line)
+            continue
+        indent = len(line) - len(line.lstrip(" "))
+        out.extend(wrap_hanging(line, indent))
+    return "\n".join(out) + "\n"
+
+
+def wrap_hanging(line: str, indent: int) -> list[str]:
+    words = line.strip().split()
+    first, rest = " " * indent, " " * (indent + 2)
+    out, cur, pre = [], "", first
+    for w_ in words:
+        if len(pre) + len(cur) + len(w_) + 1 > W and cur:
+            out.append(pre + cur)
+            cur, pre = w_, rest
+        else:
+            cur = f"{cur} {w_}".strip()
+    if cur:
+        out.append(pre + cur)
+    return out
 
 
 # ----------------------------------------------------------------------------- summary
@@ -633,22 +683,22 @@ def h2h(teams):
     tops = [t for t in teams if t["rank"] <= TOP_N]
     tops.sort(key=lambda t: t["rank"])
     by_uuid = {t["uuid"]: t for t in tops}
-    short = {t["uuid"]: (t["bot"][:9]) for t in tops}
-    hdr = f"{'':<12}" + "".join(f"{short[t['uuid']]:>10}" for t in tops)
+    short = {t["uuid"]: (t["bot"][:7]) for t in tops}
+    hdr = f"{'':<9}" + "".join(f"{short[t['uuid']]:>8}" for t in tops)
     out = [hdr]
     games_list = []
     for a in tops:
         cells = []
         for b in tops:
             if a is b:
-                cells.append(f"{'-':>10}")
+                cells.append(f"{'-':>8}")
                 continue
             gs = sorted([g for g in a["rated"] if g.get("opponent_uuid") == b["uuid"]], key=lambda g: g["round"])
-            cells.append(f"{''.join({1.0: 'W', 0.5: 'D', 0.0: 'L'}[g['score']] for g in gs) or '.':>10}")
+            cells.append(f"{''.join({1.0: 'W', 0.5: 'D', 0.0: 'L'}[g['score']] for g in gs) or '.':>8}")
             for g in gs:
                 if a["rank"] < b["rank"]:
                     games_list.append((a, b, g))
-        out.append(f"{short[a['uuid']]:<12}" + "".join(cells))
+        out.append(f"{short[a['uuid']]:<9}" + "".join(cells))
     out.append("  Row's result vs column, oldest game first (W/D/L). Games between top-10 teams:")
     for a, b, g in sorted(games_list, key=lambda x: x[2]["round"]):
         res = {1.0: f"{a['bot']} won", 0.5: "draw", 0.0: f"{b['bot']} won"}[g["score"]]
@@ -715,7 +765,7 @@ def changes(rows):
     prev_files = sorted(glob.glob(str(HISTORY / "summary_*.json")))
     if not prev_files:
         return ["First refresh: nothing to compare against."]
-    prev = load_json(prev_files[-1])
+    prev = load_json(pathlib.Path(prev_files[-1]))
     stamp = os.path.basename(prev_files[-1])[8:-5]
     out = [f"Compared with history/summary_{stamp}.txt:"]
     pr = {r["uuid"]: r for r in prev["rows"]}
@@ -779,6 +829,9 @@ def main():
     L.append("")
     L.append("LEAGUE TABLE")
     L.extend(table(tops))
+    partial = [t for t in teams if t["n_analysed"] < len(t["games"])]
+    if partial:
+        L.append("  Stockfish analysis still incomplete for: " + ", ".join(f"{t['bot']} ({t['n_analysed']}/{len(t['games'])} games)" for t in partial) + ". Re-run ./refresh.sh --no-scrape to finish.")
     if ours:
         L.append("")
         L.append("OUR ROW")
@@ -832,7 +885,7 @@ def main():
     L.extend(changes(rows))
     L.append("")
     L.append("FILES: " + ", ".join(written))
-    text = "\n".join(L) + "\n"
+    text = finalize(L)
     (HERE / "00_summary.txt").write_text(text)
     HISTORY.mkdir(exist_ok=True)
     (HISTORY / f"summary_{stamp}.txt").write_text(text)

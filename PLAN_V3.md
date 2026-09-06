@@ -41,3 +41,23 @@ conversion + endgame suite, book; Tue own-search fine-tune, SF 2600/2800 ladder;
 - 65%+ against the v2 build over 300 games; conversion suite 10/10 against Stockfish's defence.
 - Site move grades on rated games at or above AlphaFish's 90% best/excellent.
 - Compile under 45 s on the EPYC, zero failures across 1,000 local games.
+
+## Refinements from the advisor directive (Sun 6 Sept, 07:40)
+
+- **Order of shipping:** batch 1 (search) → conversion package → v3 net → batch 2 → time retune.
+  Wednesday freeze is hard; anything untested by Tuesday night does not ship.
+- **Conversion package (Monday, one gate):** position-aware contempt (root eval ≥ +150 → draw
+  scored −40 for us; level → −20; ≤ −150 → +10, i.e. draws welcomed when behind), mop-up on top
+  of the net in pawnless winning positions, fifty-move-clock scaling of the score, and a
+  conversion suite against Stockfish's defence that must pass 100%. All four are implemented in
+  the working copy; gate is 200+ games vs the batch-1 build plus the suite.
+- **AlphaFish's time model** is ~4% of the remaining clock per move (4.4 s early, ~1.5 s by move
+  40). In 60+ move games its depth falls while ours need not: long, technical games favour us,
+  which is why conversion outranks middlegame sharpness. Its single loss was a promotion bug in an
+  early build, not a pattern; since round 16 it is 15-4-0 with no blunders from level positions.
+- **Site grader baseline (last 10 games each):** errors per 100 moves — AlphaFish 0.5, Capablanca
+  0.4, Mate in One 0.6, SoberJackson 0.6, Anchoa 0.7; best+excellent 89–95%. Our v1: 12.0 and
+  62%. v2's first rated games (from 08:00) are the platform read; the intel session sends
+  snapshots at 09:17 and every two hours.
+- **Priority 1 today:** if v2's site grade is below 80% best+excellent, stop everything and
+  diagnose the platform build; above 88%, weight effort toward eval v3 and conversion.

@@ -1,13 +1,17 @@
 Anchoa  (team: Lubina)  -  rank 2, rating 2386
 ==============================================
-Generated 2026-09-06 06:50 from 28 rated games (rounds 1-30), 2 void game(s) ignored: R9, R12.
+Generated 2026-09-06 06:58 from 28 rated games (rounds 1-30, 0 of 30 analysed with Stockfish so
+  far), 2 void game(s) ignored: R9, R12.
 
 IDENTITY
   Bot Anchoa; team Lubina; university Imperial; members not shown on the site.
-  Rank 2 of 299, rating 2386 (provisional: fewer than six games on the current build, i.e. a new upload in the last five rounds), record 17-7-4 in 28 rated games.
+  Rank 2 of 299, rating 2386 (provisional: fewer than six games on the current build, i.e. a new
+    upload in the last five rounds), record 17-7-4 in 28 rated games.
   Rating trajectory: entered R1 at 1575, peak 2386 (R30), now 2386 (R30).
-  Jumps of 100+ between rounds (possible new upload, but early rounds also swing a lot):
-    R13 -112 -> 1823; R19 +131 -> 1994
+  Jumps of 100+ between rounds (a jump that does not match the game result suggests a new upload;
+  the first ten rounds swing a lot anyway):
+    R13 -112 -> 1823 (loss vs test_bot)
+    R19 +131 -> 1994 (win vs SirBlunderiusThird)
 
 RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
   vs top 10 : 2-2-3 (43%) over 7 games
@@ -22,25 +26,35 @@ RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
     R20  black vs Danya's Disciple   (#8 ) win  checkmate             Sicilian Dragon
     R21  white vs Capablanca         (#3 ) loss checkmate             French Classical
 
-MOVE QUALITY (Stockfish 19, 120k nodes per position, loss clipped at 1000, positions inside +-800 only)
+MOVE QUALITY (Stockfish 19, 120k nodes per position, loss clipped at 1000, positions inside +-800
+  only)
   not analysed yet
 
 TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
   no clock data
 
 DRAW BEHAVIOUR
-  7 draws in 28 games (25.0%): threefold_repetition 4, fifty_moves 2, insufficient_material 1; 2 of them vs top-10 teams
+  7 draws in 28 games (25.0%): threefold_repetition 4, fifty_moves 2, insufficient_material 1; 2 of
+    them vs top-10 teams
 
 ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
   not analysed yet
 
 OPENINGS (curated start positions assigned by the platform)
-  By family: Sicilian 4-3-0 (79%); English 2-2-0 (75%); Petroff 2-1-0 (83%); French 1-0-1 (50%); Grunfeld 1-0-1 (50%); King's Indian 2-0-0 (100%); Catalan 2-0-0 (100%); London 1-0-0 (100%); Scotch 0-0-1 (0%); Reti 1-0-0 (100%); Dutch 0-0-1 (0%); Ruy Lopez 0-1-0 (50%); Nimzo-Indian 1-0-0 (100%)
-  Positions seen: English Symmetrical x4 2-2-0 (75%); Sicilian Closed x4 2-2-0 (75%); Petroff Defence x3 2-1-0 (83%); Catalan Opening x2 2-0-0 (100%); French Classical x2 1-0-1 (50%); Grunfeld Defence x2 1-0-1 (50%); King's Indian Classical x2 2-0-0 (100%); Dutch Stonewall loss; London System win; Nimzo-Indian Defence win; Reti Opening win; Ruy Lopez, Closed draw; Scotch Game loss; Sicilian Dragon win; Sicilian Najdorf draw; Sicilian Sveshnikov win
+  By family: Sicilian 4-3-0 (79%); English 2-2-0 (75%); Petroff 2-1-0 (83%); French 1-0-1 (50%);
+    Grunfeld 1-0-1 (50%); King's Indian 2-0-0 (100%); Catalan 2-0-0 (100%); London 1-0-0 (100%);
+    Scotch 0-0-1 (0%); Reti 1-0-0 (100%); Dutch 0-0-1 (0%); Ruy Lopez 0-1-0 (50%); Nimzo-Indian
+    1-0-0 (100%)
+  Positions seen: English Symmetrical x4 2-2-0 (75%); Sicilian Closed x4 2-2-0 (75%); Petroff
+    Defence x3 2-1-0 (83%); Catalan Opening x2 2-0-0 (100%); French Classical x2 1-0-1 (50%);
+    Grunfeld Defence x2 1-0-1 (50%); King's Indian Classical x2 2-0-0 (100%); Dutch Stonewall loss;
+    London System win; Nimzo-Indian Defence win; Reti Opening win; Ruy Lopez, Closed draw; Scotch
+    Game loss; Sicilian Dragon win; Sicilian Najdorf draw; Sicilian Sveshnikov win
   No family with 3+ games scores 20+ points below their overall average.
 
 STYLE
-  Captures on n/a% of own moves, checks on n/a%; average game 118 plies (59 own moves), longest 259 plies (R23)
+  Captures on n/a% of own moves, checks on n/a%; average game 118 plies (59 own moves), longest 259
+    plies (R23)
   Wins: 17 (17 by checkmate, 0 by opponent failure); losses: 4 (4 by checkmate, 0 by own failure)
 
 LIKELY ENGINE PROFILE

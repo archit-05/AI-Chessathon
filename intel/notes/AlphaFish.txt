@@ -1,0 +1,12 @@
+The single loss (R10, 4 Sept, as Black vs Oyinda, then 1577, now #87) is not a strength signal.
+AlphaFish was +9.6 (Stockfish) with a bishop and pawns against connected passers, allowed
+48.c8=Q and then played 48...a5?? instead of 48...Bxc8, i.e. it failed to capture a freshly
+promoted queen with the bishop that was attacking c8.  Every earlier move in the game was
+"best"/"excellent"; it had 30 s on the clock and was spending ~1.4 s a move, so this was neither
+a time scramble nor a search-depth problem.  A move-generation or board-sync bug around
+promotions in that early build (their 2nd rated game) is the most plausible explanation.  The
+current build (uploaded within the last five rounds, rating still provisional) has not repeated
+it: the games since R16 are 15 wins and 4 draws with no blunder from a level or better position.
+Do not plan around a repeat; plan around the time curve instead: it spends ~4% of the remaining
+clock per move, so it thinks 4.4 s at move 1 and ~1.5 s by move 40.  Long games push its depth
+down while ours need not fall.

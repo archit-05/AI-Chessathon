@@ -1,13 +1,18 @@
 make_no_mistakes  (team: Make_no_mistakes)  -  rank 6, rating 2177
 ==================================================================
-Generated 2026-09-06 06:50 from 29 rated games (rounds 1-30), 1 void game(s) ignored: R18.
+Generated 2026-09-06 06:58 from 29 rated games (rounds 1-30, 1 of 30 analysed with Stockfish so
+  far), 1 void game(s) ignored: R18.
 
 IDENTITY
   Bot make_no_mistakes; team Make_no_mistakes; university Oxford; members not shown on the site.
-  Rank 6 of 299, rating 2177 (provisional: fewer than six games on the current build, i.e. a new upload in the last five rounds), record 13-8-8 in 29 rated games.
+  Rank 6 of 299, rating 2177 (provisional: fewer than six games on the current build, i.e. a new
+    upload in the last five rounds), record 13-8-8 in 29 rated games.
   Rating trajectory: entered R1 at 1575, peak 2177 (R30), now 2177 (R30).
-  Jumps of 100+ between rounds (possible new upload, but early rounds also swing a lot):
-    R12 +150 -> 1780; R19 +124 -> 1978; R26 +131 -> 2064
+  Jumps of 100+ between rounds (a jump that does not match the game result suggests a new upload;
+  the first ten rounds swing a lot anyway):
+    R12 +150 -> 1780 (win vs Magnus Claudeson)
+    R19 +124 -> 1978 (win vs meowfish)
+    R26 +131 -> 2064 (win vs AI Fellow)
 
 RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
   vs top 10 : 2-2-4 (38%) over 8 games
@@ -23,29 +28,75 @@ RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
     R26  black vs AI Fellow          (#10) win  checkmate             Pirc Defence
     R29  white vs AlphaFish          (#1 ) loss checkmate             London System
 
-MOVE QUALITY (Stockfish 19, 120k nodes per position, loss clipped at 1000, positions inside +-800 only)
-  not analysed yet
+MOVE QUALITY (Stockfish 19, 120k nodes per position, loss clipped at 1000, positions inside +-800
+  only)
+  All own moves: n 46, mean loss 25.5 cp, median 8 cp, blunders (>= 200 cp) 1 = 2.2% (0 of them from
+    level or better positions)
+  own moves 1-15    : n   15, mean 5.3 cp, median 0 cp, blunders 0.0%
+  own moves 16-40   : n   25, mean 32.2 cp, median 8 cp, blunders 4.0%
+  own moves 41+     : n    6, mean 47.8 cp, median 38 cp, blunders 0.0%
+  as white          : n   46, mean 25.5 cp, median 8 cp, blunders 2.2%
+  as black          : n    0, mean n/a cp, median n/a cp, blunders n/a%
+  Worst moves: R29 57.Qxc4 (-5215 -> -9995); R29 56.Qe6+ (-1475 -> -1819); R29 32.g6 (-161 -> -464)
+  Site's own tags on their moves: blunder 0, mistake 1, miss 0, inaccuracy 4 of 63
 
 TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
-  no clock data
+  Per move: mean 2.17 s, median 2.06 s, quartiles 1.44-2.87 s, max 6.3 s; instant (<50 ms) moves
+    7.9%
+  Clock at the end: mean 29.4 s, minimum 13.0 s; games under 10 s: 0, under 5 s: 0
+  By clock before the move: >60s 2.5 s (n 31), 30-60s 2.4 s (n 16), 10-30s 1.4 s (n 16), <10s n/a s
+    (n 0)
+  By own-move number: 1-15 2.2 s, 16-40 2.5 s, 41+ 1.8 s; when +300 or better n/a s, level 2.4 s,
+    -300 or worse 1.9 s
+  Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 3.3%,
+    quartiles 1.9-4.9%
+  After a >100 cp swing on the opponent's move: 1.8 s (n 4) vs 2.2 s otherwise; on moves that
+    themselves swing >100 cp: 2.0 s (n 7) vs 2.2 s
+  Exploitable: nothing obvious
 
 DRAW BEHAVIOUR
-  8 draws in 29 games (28.0%): threefold_repetition 4, insufficient_material 2, fifty_moves 2; 2 of them vs top-10 teams
+  8 draws in 29 games (28.0%): threefold_repetition 4, insufficient_material 2, fifty_moves 2; 2 of
+    them vs top-10 teams
+  Repetition while ahead (> +150 at the final position): 0
+  Repetition while behind (< -150): 0; level repetitions: 0
 
 ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
-  not analysed yet
+  Reached +300 or better in 0 games, failed to win 0.
+  Reached -300 or worse in 1 games, escaped with a half point or more in 0.
 
 OPENINGS (curated start positions assigned by the platform)
-  By family: Sicilian 3-6-3 (50%); London 1-0-2 (33%); Petroff 1-0-1 (50%); Grunfeld 2-0-0 (100%); English 1-1-0 (75%); Italian 1-0-0 (100%); Scotch 0-0-1 (0%); Reti 0-1-0 (50%); Nimzo-Indian 1-0-0 (100%); Two Knights 1-0-0 (100%); Queen's Gambit 0-0-1 (0%); Pirc 1-0-0 (100%); French 1-0-0 (100%)
-  Positions seen: Sicilian Closed x5 3-1-1 (70%); London System x3 1-0-2 (33%); Sicilian Sveshnikov x3 0-1-2 (17%); English Symmetrical x2 1-1-0 (75%); Grunfeld Defence x2 2-0-0 (100%); Petroff Defence x2 1-0-1 (50%); Sicilian Classical x2 0-2-0 (50%); French Classical win; Italian Game win; Nimzo-Indian Defence win; Pirc Defence win; Queen's Gambit Accepted loss; Reti Opening draw; Scotch Game loss; Sicilian Najdorf draw; Sicilian Taimanov draw; Two Knights Defence win
+  By family: Sicilian 3-6-3 (50%); London 1-0-2 (33%); Petroff 1-0-1 (50%); Grunfeld 2-0-0 (100%);
+    English 1-1-0 (75%); Italian 1-0-0 (100%); Scotch 0-0-1 (0%); Reti 0-1-0 (50%); Nimzo-Indian
+    1-0-0 (100%); Two Knights 1-0-0 (100%); Queen's Gambit 0-0-1 (0%); Pirc 1-0-0 (100%); French
+    1-0-0 (100%)
+  Positions seen: Sicilian Closed x5 3-1-1 (70%); London System x3 1-0-2 (33%); Sicilian Sveshnikov
+    x3 0-1-2 (17%); English Symmetrical x2 1-1-0 (75%); Grunfeld Defence x2 2-0-0 (100%); Petroff
+    Defence x2 1-0-1 (50%); Sicilian Classical x2 0-2-0 (50%); French Classical win; Italian Game
+    win; Nimzo-Indian Defence win; Pirc Defence win; Queen's Gambit Accepted loss; Reti Opening
+    draw; Scotch Game loss; Sicilian Najdorf draw; Sicilian Taimanov draw; Two Knights Defence win
   Underperforms in: London 1-0-2 (33%)
+  First six own moves: 50% match Stockfish's first choice (moves 7-20: 79%), mean loss 8 cp, 33%
+    played instantly; first clear divergence (loss >= 20 cp) at own move 1 on average.
 
 STYLE
-  Captures on n/a% of own moves, checks on n/a%; average game 114 plies (57 own moves), longest 277 plies (R21)
+  Captures on 15.9% of own moves, checks on 1.6%; average game 114 plies (57 own moves), longest 277
+    plies (R21)
   Wins: 13 (13 by checkmate, 0 by opponent failure); losses: 8 (8 by checkmate, 0 by own failure)
+  Sacrifices (gave >= 2 pawns of material without losing eval, then recovered): 1 -> R29 34.Nf3
+  When ahead (> +150) material leaves the board at n/a pawns per own move (level: 0.76); capture
+    rate n/a% vs 17.2% level -> no deliberate simplification
 
 LIKELY ENGINE PROFILE
-  Not analysed yet (run analyse.py).
+  Mid-strength engine (mean loss 25.5 cp): plausible python alpha-beta at depth 4-7, hand-crafted
+  evaluation. Confidence low.
+  Quality drops late (phase 41+ mean 47.8 cp vs 5.3 cp in the first 15 moves): endgame evaluation or
+  horizon problems.
 
 HOW TO PLAY THEM
-  1. Analysis pending.
+  1. Head for long games: their loss per move rises from 5.3 cp early to 47.8 cp after move 40.
+  Avoid early mass exchanges only if we are not better; otherwise simplify into a queenless
+  middlegame and outplay them late.
+  2. They do not think longer in critical positions: create tactical crises rather than slow
+  squeezes, since our extra time per critical move buys real depth.
+  3. Opening families where they score badly: London (1-0-2 (33%)). Nothing to choose here
+  (positions are assigned), but expect our best chances there.

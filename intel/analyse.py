@@ -264,6 +264,24 @@ def team_view(analysis: dict, colour: str, verdicts: list) -> dict:
     }
 
 
+def write_team(t: dict, scrape: dict, analyses: dict, dry: bool) -> int:
+    """Write raw/<Bot>.json from whatever games are analysed so far; returns the number analysed."""
+    out_games, done = [], 0
+    for g in scrape["games"]:
+        og = {k: v for k, v in g.items() if k != "site_verdicts"}
+        an = analyses.get(g["game"])
+        if an is not None:
+            og.update(team_view(an, g["colour"], g.get("site_verdicts", [])))
+            done += 1
+        out_games.append(og)
+    out = {k: v for k, v in scrape.items() if k != "games"}
+    out.update({"sf_nodes": SF_NODES, "sf_nodes_decided": SF_NODES_DECIDED, "decided_cp": DECIDED_CP,
+                "analysed_games": done, "games": out_games})
+    if not dry:
+        dump_json(team_files(t["slug"])["json"], out)
+    return done
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry", action="store_true", help="count positions, no engine")
@@ -271,42 +289,57 @@ def main() -> None:
     a = ap.parse_args()
     targets = load_json(TARGETS)["targets"]
     only = {t.strip() for t in a.teams.split(",") if t.strip()}
+    targets = [t for t in targets if not only or t["bot"] in only or t["slug"] in only]
+    target_uuids = {t["uuid"] for t in targets}
+    scrapes = {t["slug"]: load_json(team_files(t["slug"])["scrape"]) for t in targets}
+    scrapes = {k: v for k, v in scrapes.items() if v}
+    leader = min(targets, key=lambda t: t["rank"])
+
+    # Priority order: the leader's losses, then games between covered teams, then teams by rank;
+    # within a class the most recent rounds first (they describe the current build best).
+    index: dict[str, list] = {}
+    prio: dict[str, tuple] = {}
+    for t in targets:
+        sc = scrapes.get(t["slug"])
+        if not sc:
+            continue
+        for g in sc["games"]:
+            if g.get("void"):
+                continue  # never rated, excluded from every statistic: not worth the engine time
+            index.setdefault(g["game"], []).append((t, sc, g))
+            if t["uuid"] == leader["uuid"] and g["score"] == 0.0:
+                cls = 0
+            elif g.get("opponent_uuid") in target_uuids:
+                cls = 1
+            else:
+                cls = 2 + (t["rank"] - 1) // 3
+            key = (cls, -(g["round"] or 0))
+            if g["game"] not in prio or key < prio[g["game"]]:
+                prio[g["game"]] = key
+    order = sorted(index, key=lambda gid: prio[gid])
+    print(f"{len(order)} games to analyse in priority order", flush=True)
+
     ev = Evaluator(dry=a.dry)
     analyses: dict[str, dict] = {}
+    done_by_team: dict[str, int] = {}
     try:
-        for t in targets:
-            if only and t["bot"] not in only and t["slug"] not in only:
+        for i, gid in enumerate(order, 1):
+            gdata = load_json(CACHE_GAMES / f"{gid}.json")
+            if not gdata:
                 continue
-            files = team_files(t["slug"])
-            scrape = load_json(files["scrape"])
-            if not scrape:
-                print(f"no scrape data for {t['bot']}", file=sys.stderr)
-                continue
-            out_games = []
             t0 = time.time()
-            for g in scrape["games"]:
-                gid = g["game"]
-                if gid not in analyses:
-                    gdata = load_json(CACHE_GAMES / f"{gid}.json")
-                    if not gdata:
-                        continue
-                    analyses[gid] = analyse_game(ev, gid, gdata["pgn"])
-                view = team_view(analyses[gid], g["colour"], g.get("site_verdicts", []))
-                og = {k: v for k, v in g.items() if k not in ("site_verdicts",)}
-                og.update(view)
-                out_games.append(og)
-            out = {k: v for k, v in scrape.items() if k != "games"}
-            out.update({"sf_nodes": SF_NODES, "sf_nodes_decided": SF_NODES_DECIDED, "decided_cp": DECIDED_CP, "games": out_games})
-            if not a.dry:
-                dump_json(files["json"], out)
+            analyses[gid] = analyse_game(ev, gid, gdata["pgn"])
             ev.flush()
-            print(
-                f"{t['rank']:>3} {t['bot']:<20} {len(out_games)} games, {ev.new} new evals so far, "
-                f"{time.time() - t0:.0f}s for this team, {(time.time() - ev.t0) / 60:.1f} min total",
-                flush=True,
-            )
+            for t, sc, g in index[gid]:
+                done_by_team[t["slug"]] = write_team(t, sc, analyses, a.dry)
+            owners = ", ".join(f"{t['bot']} R{g['round']}" for t, _, g in index[gid])
+            print(f"[{i}/{len(order)}] {owners}: {len(analyses[gid]['plies'])} plies in {time.time() - t0:.0f}s; "
+                  f"{ev.new} new evals, {(time.time() - ev.t0) / 60:.1f} min", flush=True)
     finally:
         ev.close()
+    for t in targets:
+        if t["slug"] in scrapes:
+            print(f"{t['rank']:>3} {t['bot']:<20} analysed {done_by_team.get(t['slug'], 0)}/{len(scrapes[t['slug']]['games'])} games")
     if a.dry:
         print(f"positions needing evaluation: {ev.new}")
 
