@@ -531,3 +531,8 @@ conversion + endgame suite, book; Tue own-search fine-tune, SF 2600/2800 ladder;
   suites green. Quiet real-clock centipawn loss, v2.1: 13.3 mean / 0.6% blunders over 12 games
   vs Stockfish 2400 (12-0); v3's measurement in progress. A time-policy-only candidate is packaged
   (`submission_v2.2tm_*.zip`) pending the v3 decision.
+- **Sun 6 Sept, 19:20 — v3 earns its place.** Quiet real-clock centipawn loss vs Stockfish
+  2400, identical conditions: v3 11.7 / 0.6% blunders (12-0) vs v2.1 13.3 / 0.6% (11-1-0); with
+  the self-play gate (+34 ±40) that settles it. Next build v2.2 = time policy v2.2 + v3 net.
+  Battery on the exact combination running alone (tactics, search/wrapper/NNUE suites, torture,
+  real-clock pressure); batch-2 gate restarts afterwards.
