@@ -384,3 +384,8 @@ agent; worth 20 minutes a day from any UK-student team member who enjoys puzzles
 - **Sun 6 Sept, 06:08 — final gate.** v2 (epoch 8) vs hand-crafted build, 200 games at
   10 s + 0.1 s: +143 =17 −40, 75.8%, ≈ +198 ±57 Elo, 0 failures (183 checkmates, 7 fifty-move,
   4 insufficient material, 6 threefold). Torture suite and real-clock check running.
+- **Sun 6 Sept, 06:35 — v2 handed over.** `submission_v2_0906_0507.zip`. Real clock vs SF 2400:
+  12–0, all mates; our centipawn loss 11.3 mean / median 0 / 0.3% blunders (hand-crafted: 17.3 /
+  1.3%; AlphaFish 6.3 / 0.1%; Mate in One 18.8). Torture 60/60. Next: Stockfish-labelled whole-game
+  positions (Lichess Elite) for a second training iteration; singular extensions, capture history,
+  qsearch TT probe; real-clock time-management tune; book on Monday. Each gated by games.
