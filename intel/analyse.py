@@ -51,6 +51,11 @@ def material(board: chess.Board) -> int:
     return tot
 
 
+def total_material(board: chess.Board) -> int:
+    """Material of both sides together, in pawns (78 at the start)."""
+    return sum(v * len(board.pieces(pt, c)) for pt, v in VALUES.items() for c in (chess.WHITE, chess.BLACK))
+
+
 class Evaluator:
     def __init__(self, dry: bool = False):
         self.cache: dict[str, dict] = {}
@@ -153,6 +158,7 @@ def analyse_game(ev: Evaluator, gid: str, pgn: str) -> dict:
         san = board.san(mv)
         capture = board.is_capture(mv)
         mat_before = material(board)
+        tot_before = total_material(board)
         clk = node.clock()
         spent = None
         if clk is not None:
@@ -183,6 +189,8 @@ def analyse_game(ev: Evaluator, gid: str, pgn: str) -> dict:
                 "check": board.is_check(),
                 "mat_before": mat_before,
                 "mat_after": material(board),
+                "tot_before": tot_before,
+                "tot_after": total_material(board),
                 "time": spent,
                 "clock": round(clk, 3) if clk is not None else None,
             }
@@ -198,15 +206,21 @@ def team_view(analysis: dict, colour: str, verdicts: list) -> dict:
     n = 0
     opp_losses = []
     opp_blunders = 0
+    opp_worst = None
+    opp_times = []
     vmap = {}
     for i, (san, v) in enumerate(verdicts):
         vmap[i + 1] = v
     for p in analysis["plies"]:
         if p["mover"] != colour:
+            if p["time"] is not None:
+                opp_times.append(p["time"])
             if abs(p["cp_before"]) <= 800 and p["nodes"] >= SF_NODES:
                 opp_losses.append(p["loss"])
                 if p["loss"] >= 200:
                     opp_blunders += 1
+            if opp_worst is None or p["loss"] > opp_worst["loss"]:
+                opp_worst = {"ply": p["ply"], "san": p["san"], "loss": p["loss"], "cp_before": -sign * p["cp_before"], "clock": p["clock"]}
             continue
         n += 1
         own.append(
@@ -223,6 +237,8 @@ def team_view(analysis: dict, colour: str, verdicts: list) -> dict:
                 "check": p["check"],
                 "mat_before": sign * p["mat_before"],
                 "mat_after": sign * p["mat_after"],
+                "tot_before": p["tot_before"],
+                "tot_after": p["tot_after"],
                 "time": p["time"],
                 "clock": p["clock"],
                 "verdict": vmap.get(p["ply"]),
@@ -243,6 +259,8 @@ def team_view(analysis: dict, colour: str, verdicts: list) -> dict:
         "worst_move": {"n": worst["n"], "san": worst["san"], "loss": worst["loss"], "cp_before": worst["cp_before"]} if worst else None,
         "opp_cpl_mean": round(sum(opp_losses) / len(opp_losses), 1) if opp_losses else None,
         "opp_blunders": opp_blunders,
+        "opp_worst_move": opp_worst,
+        "opp_time_mean": round(sum(opp_times) / len(opp_times), 2) if opp_times else None,
     }
 
 

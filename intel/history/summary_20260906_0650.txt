@@ -1,0 +1,107 @@
+AI CHESSATHON TOP-10 INTEL SUMMARY  (2026-09-06 06:50; leaderboard fetched 2026-09-06T05:42:01Z)
+====================================================================================================
+CPL = mean centipawn loss per own move (Stockfish 19, 120k nodes, positions inside +-800); Bl% = moves losing >= 200 cp;
+s/mv = mean seconds per own move; RepA = draws by repetition while more than +150; NonC = games at +300 or better not won; * = provisional rating.
+
+LEAGUE TABLE
+  # Bot                Rating   Record   CPL   Bl%  s/mv Draw% RepA NonC
+------------------------------------------------------------------------
+  1 AlphaFish            2478   16-5-1   n/a   n/a   n/a    23    0    0  *
+  2 Anchoa               2386   17-7-4   n/a   n/a   n/a    25    0    0  *
+  3 Capablanca           2344   20-6-3   n/a   n/a   n/a    21    0    0
+  4 Mate in One          2183   20-8-2   n/a   n/a   n/a    27    0    0
+  5 SoberJackson         2182   17-8-4   n/a   n/a   n/a    28    0    0  *
+  6 make_no_mistakes     2177   13-8-8   n/a   n/a   n/a    28    0    0  *
+  7 Patzer 1.2           2158   18-8-4   n/a   n/a   n/a    27    0    0
+  8 Danya's Disciple     2156   13-9-8   n/a   n/a   n/a    30    0    0
+  9 test_bot             2125   11-8-5   n/a   n/a   n/a    33    0    0
+ 10 AI Fellow            2101  14-10-4   n/a   n/a   n/a    36    0    0
+
+OUR ROW
+273 BINI Alpha           1269    0-3-4   n/a   n/a   n/a    43    0    0
+  Pairing: our 6 rated opponents were rated -25 relative to us on average at the time (range -64 to +36); current ranks 68, 243, 208, 156, 263, 240, 232. Pairings track rating, so a fresh build climbs through weaker teams first.
+
+KEY FINDINGS
+  1. analysis pending
+
+LOSSES OF THE LEADER (AlphaFish, 16-5-1)
+  R10 as black vs Oyinda (#87, rated 1577 at the time): lost by checkmate after 102 plies, Reti Opening.
+
+HEAD-TO-HEAD AMONG THE TOP 10
+             AlphaFish    Anchoa Capablanc Mate in O SoberJack make_no_m Patzer 1. Danya's D  test_bot AI Fellow
+AlphaFish            -         W         D         W         W         W         W         D         W         D
+Anchoa               L         -         L         D         .         D         W         W         L         .
+Capablanc            D         W         -         L         D         W         D         W         W         D
+Mate in O            L         D         W         -         D         D         W         W         W         D
+SoberJack            L         .         D         D         -         W         W         D         W         D
+make_no_m            L         D         L         D         L         -         L         W         .         W
+Patzer 1.            L         L         D         L         L         W         -         D         D         D
+Danya's D            D         L         L         L         D         L         D         -         D         L
+test_bot             L         W         L         L         L         .         D         D         -         D
+AI Fellow            D         .         D         D         D         L         D         W         D         -
+  Row's result vs column, oldest game first (W/D/L). Games between top-10 teams:
+  R3   Anchoa (white) vs Mate in One: draw by threefold_repetition, Petroff Defence, 23 plies
+  R3   make_no_mistakes (black) vs Danya's Disciple: make_no_mistakes won by checkmate, Grunfeld Defence, 83 plies
+  R5   Mate in One (white) vs AI Fellow: draw by insufficient_material, Sicilian Dragon, 104 plies
+  R8   Capablanca (white) vs Danya's Disciple: Capablanca won by checkmate, English Symmetrical, 140 plies
+  R8   Mate in One (black) vs Patzer 1.2: Mate in One won by checkmate, Sicilian Sveshnikov, 101 plies
+  R9   test_bot (white) vs AI Fellow: draw by threefold_repetition, French Tarrasch, 49 plies
+  R10  SoberJackson (white) vs Patzer 1.2: SoberJackson won by checkmate, Sicilian Najdorf, 150 plies
+  R11  Anchoa (black) vs Patzer 1.2: Anchoa won by checkmate, Reti Opening, 115 plies
+  R12  Mate in One (black) vs test_bot: Mate in One won by checkmate, Ruy Lopez, Closed, 61 plies
+  R13  Anchoa (white) vs test_bot: test_bot won by checkmate, Dutch Stonewall, 77 plies
+  R13  Mate in One (black) vs SoberJackson: draw by fifty_moves, Ruy Lopez, Closed, 224 plies
+  R14  Capablanca (black) vs Mate in One: Mate in One won by checkmate, French Classical, 74 plies
+  R14  SoberJackson (black) vs test_bot: SoberJackson won by checkmate, Petroff Defence, 120 plies
+  R16  Anchoa (white) vs make_no_mistakes: draw by fifty_moves, Sicilian Najdorf, 210 plies
+  R16  Capablanca (white) vs SoberJackson: draw by threefold_repetition, Sicilian Sveshnikov, 173 plies
+  R16  Patzer 1.2 (white) vs test_bot: draw by threefold_repetition, English Symmetrical, 273 plies
+  R17  AlphaFish (white) vs Anchoa: AlphaFish won by checkmate, Grunfeld Defence, 122 plies
+  R17  Capablanca (white) vs Patzer 1.2: draw by threefold_repetition, Caro-Kann Advance, 117 plies
+  R17  SoberJackson (white) vs AI Fellow: draw by threefold_repetition, Nimzo-Indian Defence, 168 plies
+  R18  AlphaFish (black) vs Mate in One: AlphaFish won by checkmate, London System, 173 plies
+  R18  Patzer 1.2 (black) vs AI Fellow: draw by insufficient_material, Sicilian Closed, 189 plies
+  R19  AlphaFish (black) vs SoberJackson: AlphaFish won by checkmate, English Symmetrical, 191 plies
+  R19  Capablanca (white) vs test_bot: Capablanca won by checkmate, Ruy Lopez, Closed, 106 plies
+  R20  Anchoa (black) vs Danya's Disciple: Anchoa won by checkmate, Sicilian Dragon, 143 plies
+  R20  Capablanca (white) vs AI Fellow: draw by threefold_repetition, Nimzo-Indian Defence, 50 plies
+  R21  AlphaFish (white) vs Patzer 1.2: AlphaFish won by checkmate, Sicilian Closed, 172 plies
+  R21  Anchoa (white) vs Capablanca: Capablanca won by checkmate, French Classical, 75 plies
+  R21  Mate in One (white) vs make_no_mistakes: draw by threefold_repetition, Sicilian Classical, 277 plies
+  R22  AlphaFish (white) vs Capablanca: draw by fifty_moves, Ruy Lopez, Closed, 227 plies
+  R22  Mate in One (black) vs Danya's Disciple: Mate in One won by checkmate, Sicilian Dragon, 79 plies
+  R22  SoberJackson (black) vs make_no_mistakes: SoberJackson won by checkmate, Sicilian Sveshnikov, 133 plies
+  R23  Patzer 1.2 (white) vs Danya's Disciple: draw by threefold_repetition, Italian Game, 53 plies
+  R24  AlphaFish (white) vs AI Fellow: draw by insufficient_material, Caro-Kann Exchange, 525 plies
+  R24  make_no_mistakes (white) vs Patzer 1.2: Patzer 1.2 won by checkmate, Queen's Gambit Accepted, 131 plies
+  R25  Capablanca (black) vs make_no_mistakes: Capablanca won by checkmate, Sicilian Closed, 156 plies
+  R26  SoberJackson (black) vs Danya's Disciple: draw by threefold_repetition, Caro-Kann Exchange, 85 plies
+  R26  make_no_mistakes (black) vs AI Fellow: make_no_mistakes won by checkmate, Pirc Defence, 163 plies
+  R27  AlphaFish (white) vs test_bot: AlphaFish won by checkmate, Italian Game, 132 plies
+  R28  AlphaFish (black) vs Danya's Disciple: draw by threefold_repetition, French Advance, 10 plies
+  R29  AlphaFish (black) vs make_no_mistakes: AlphaFish won by checkmate, London System, 127 plies
+  R29  Danya's Disciple (white) vs test_bot: draw by threefold_repetition, Queen's Gambit Accepted, 45 plies
+  R30  Danya's Disciple (white) vs AI Fellow: AI Fellow won by checkmate, Ruy Lopez, Closed, 53 plies
+
+TIME MANAGEMENT (top 10)
+Bot                 mean   med   max       q1-q3   end   min  <5s inst%  swing   calm
+  seconds per own move; end/min = clock left at the end (mean/min); swing/calm = s per move after a >100 cp swing vs otherwise
+
+DRAWS AND CONVERSION (top 10)
+Bot                draws 3fold fifty insuf  repA  repB  won+  nonC lost- saved
+AlphaFish              5     3     1     1     0     0     0     0     0     0
+Anchoa                 7     4     2     1     0     0     0     0     0     0
+Capablanca             6     5     1     0     0     0     0     0     0     0
+Mate in One            8     5     2     1     0     0     0     0     0     0
+SoberJackson           8     6     2     0     0     0     0     0     0     0
+make_no_mistakes       8     4     2     2     0     0     0     0     0     0
+Patzer 1.2             8     5     1     2     0     0     0     0     0     0
+Danya's Disciple       9     9     0     0     0     0     0     0     0     0
+test_bot               8     7     0     1     0     0     0     0     0     0
+AI Fellow             10     6     1     3     0     0     0     0     0     0
+  repA/repB = repetition draws while ahead/behind by 150+; won+ = games that reached +300; nonC = those not won; lost- = games at -300; saved = those not lost
+
+WHAT CHANGED SINCE LAST REFRESH
+First refresh: nothing to compare against.
+
+FILES: 01_AlphaFish.txt, 02_Anchoa.txt, 03_Capablanca.txt, 04_Mate_in_One.txt, 05_SoberJackson.txt, 06_make_no_mistakes.txt, 07_Patzer_1_2.txt, 08_Danya_s_Disciple.txt, 09_test_bot.txt, 10_AI_Fellow.txt, 273_BINI_Alpha.txt

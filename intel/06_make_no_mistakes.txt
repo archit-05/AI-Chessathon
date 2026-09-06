@@ -1,0 +1,51 @@
+make_no_mistakes  (team: Make_no_mistakes)  -  rank 6, rating 2177
+==================================================================
+Generated 2026-09-06 06:50 from 29 rated games (rounds 1-30), 1 void game(s) ignored: R18.
+
+IDENTITY
+  Bot make_no_mistakes; team Make_no_mistakes; university Oxford; members not shown on the site.
+  Rank 6 of 299, rating 2177 (provisional: fewer than six games on the current build, i.e. a new upload in the last five rounds), record 13-8-8 in 29 rated games.
+  Rating trajectory: entered R1 at 1575, peak 2177 (R30), now 2177 (R30).
+  Jumps of 100+ between rounds (possible new upload, but early rounds also swing a lot):
+    R12 +150 -> 1780; R19 +124 -> 1978; R26 +131 -> 2064
+
+RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
+  vs top 10 : 2-2-4 (38%) over 8 games
+  vs 11-50  : 6-5-2 (65%) over 13 games
+  vs rest   : 5-1-2 (69%) over 8 games
+  Games vs other top-10 teams:
+    R3   black vs Danya's Disciple   (#8 ) win  checkmate             Grunfeld Defence
+    R16  black vs Anchoa             (#2 ) draw fifty_moves           Sicilian Najdorf
+    R21  black vs Mate in One        (#4 ) draw threefold_repetition  Sicilian Classical
+    R22  white vs SoberJackson       (#5 ) loss checkmate             Sicilian Sveshnikov
+    R24  white vs Patzer 1.2         (#7 ) loss checkmate             Queen's Gambit Accepted
+    R25  white vs Capablanca         (#3 ) loss checkmate             Sicilian Closed
+    R26  black vs AI Fellow          (#10) win  checkmate             Pirc Defence
+    R29  white vs AlphaFish          (#1 ) loss checkmate             London System
+
+MOVE QUALITY (Stockfish 19, 120k nodes per position, loss clipped at 1000, positions inside +-800 only)
+  not analysed yet
+
+TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
+  no clock data
+
+DRAW BEHAVIOUR
+  8 draws in 29 games (28.0%): threefold_repetition 4, insufficient_material 2, fifty_moves 2; 2 of them vs top-10 teams
+
+ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
+  not analysed yet
+
+OPENINGS (curated start positions assigned by the platform)
+  By family: Sicilian 3-6-3 (50%); London 1-0-2 (33%); Petroff 1-0-1 (50%); Grunfeld 2-0-0 (100%); English 1-1-0 (75%); Italian 1-0-0 (100%); Scotch 0-0-1 (0%); Reti 0-1-0 (50%); Nimzo-Indian 1-0-0 (100%); Two Knights 1-0-0 (100%); Queen's Gambit 0-0-1 (0%); Pirc 1-0-0 (100%); French 1-0-0 (100%)
+  Positions seen: Sicilian Closed x5 3-1-1 (70%); London System x3 1-0-2 (33%); Sicilian Sveshnikov x3 0-1-2 (17%); English Symmetrical x2 1-1-0 (75%); Grunfeld Defence x2 2-0-0 (100%); Petroff Defence x2 1-0-1 (50%); Sicilian Classical x2 0-2-0 (50%); French Classical win; Italian Game win; Nimzo-Indian Defence win; Pirc Defence win; Queen's Gambit Accepted loss; Reti Opening draw; Scotch Game loss; Sicilian Najdorf draw; Sicilian Taimanov draw; Two Knights Defence win
+  Underperforms in: London 1-0-2 (33%)
+
+STYLE
+  Captures on n/a% of own moves, checks on n/a%; average game 114 plies (57 own moves), longest 277 plies (R21)
+  Wins: 13 (13 by checkmate, 0 by opponent failure); losses: 8 (8 by checkmate, 0 by own failure)
+
+LIKELY ENGINE PROFILE
+  Not analysed yet (run analyse.py).
+
+HOW TO PLAY THEM
+  1. Analysis pending.

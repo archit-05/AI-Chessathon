@@ -389,3 +389,26 @@ agent; worth 20 minutes a day from any UK-student team member who enjoys puzzles
   1.3%; AlphaFish 6.3 / 0.1%; Mate in One 18.8). Torture 60/60. Next: Stockfish-labelled whole-game
   positions (Lichess Elite) for a second training iteration; singular extensions, capture history,
   qsearch TT probe; real-clock time-management tune; book on Monday. Each gated by games.
+
+## 15. Plan to first (Sun 6 Sept, 07:10)
+
+Evidence: site move grades — AlphaFish 90.3% best/excellent, 0.7% errors, flat 1.7 s/move (max
+4.4 s), 9/11 vs top-12, its only loss a 102-ply middlegame; places 2–6 at 85–90% / 0.9–1.6%; our v2
+centipawn loss 11.3 vs AlphaFish 6.3 and peers 18–28. v2 is likely second strongest today.
+
+Levers, by Elo per day:
+1. Evaluation v3: ~320M quiet Lichess positions + Stockfish-labelled whole-game positions, 6–8
+   epochs; then a fine-tune on positions from our own search trees labelled at depth 12. Gate:
+   300 games vs v2 + real-clock centipawn loss (target < 8).
+2. Search: batch 1 (singular/multi-cut, IIR, qsearch TT) under gate; batch 2 capture history,
+   continuation history, history-driven LMR, staged move generation (+10–20% nps).
+3. Conversion: mop-up on top of the net, halfmove-clock-aware progress bonus when winning, KPK
+   bitbase at import, a won-endgame conversion suite at the real clock; contempt re-tuned.
+4. Time: finish with 10–15 s (field: 20–40 s), spend on swings, save when decided; tuned from
+   ladder logs. AlphaFish's flat allocation is the structural edge in sharp middlegames.
+5. Book from Elite games, Monday, only if the arena says so.
+Not doing: opponent-specific behaviour or untestable sharpness terms.
+
+Schedule: Sun batch-1 gate → v2.1, stream 150M more, start v3 tonight; Mon v3 gate, batch 2,
+conversion + endgame suite, book; Tue own-search fine-tune, SF 2600/2800 ladder; Wed freeze,
+1,000-game regression, package; Thu final upload (afternoon); Fri rollback only.
