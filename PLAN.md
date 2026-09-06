@@ -466,3 +466,11 @@ conversion + endgame suite, book; Tue own-search fine-tune, SF 2600/2800 ladder;
   perft exact, 6,000-position differential ok, NNUE exact, wrapper state ok, search gate passed.
   Conversion baseline vs Stockfish 400k: winning +11 =6 −3, marginal +0 =4 −6, drawn no losses.
   Torture (alone) running, then packaging.
+- **Sun 6 Sept, 13:05 — v2.1 handed over.** `submission_v2.1_0906_1255.zip` (sha256
+  e0072c9f…c537e348), files byte-identical to the tested sources. Battery: 200-game gate +63 ±49
+  over v2; torture 60/60 + 30/30 (0 fallback, 0 failures); tactics 39/40; real-clock pressure
+  min clock 9.7 s; regression (perft, 6,000-position differential, NNUE exactness, wrapper state,
+  search gate) all green; fresh-extraction harness game vs Stockfish 2400 clean (compile 20 s
+  quiet). Contents vs v2: search batch 1 (singular extensions + multi-cut, IIR at non-PV nodes,
+  quiescence TT), decided-position time saving, predictive iteration start with a 50-move budget
+  horizon, per-move counters in the log line. Next: conversion package gate (bini_conv), v3 net.
