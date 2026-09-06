@@ -28,7 +28,7 @@ steps = [
  ("see", lambda: S.see(bb, pcs, int(mv[0]))),
  ("is_repetition/tt/mvv/pick/check_time", lambda: (S.is_repetition(bb, st, ub, eng.hist, 1), S.tt_probe(eng.tt_key, eng.tt_data, bb[15]), S.tt_store(eng.tt_key, eng.tt_data, bb[15], 0, 0, 1, 1, 1, 0), S.mvv_lva(pcs, int(mv[0])), S.pick_next(mv, eng.scores, 0, 0, 2), S.check_time(eng.info, eng.tlim))),
  ("evaluate (wrapper)", lambda: S.evaluate(bb, st, pcs, acc, eng.info, eng.w2, eng.b2)),
- ("qsearch", lambda: S.qsearch(bb, st, pcs, mv, ub, ui, acc, eng.scores, eng.info, np.array([1e18]), eng.w1, eng.b1, eng.w2, eng.b2, -100, 100)),
+ ("qsearch", lambda: S.qsearch(bb, st, pcs, mv, ub, ui, acc, eng.tt_key, eng.tt_data, eng.scores, eng.info, np.array([1e18]), eng.w1, eng.b1, eng.w2, eng.b2, -100, 100, 1)),
  ("count_legal", lambda: S.count_legal(bb, st, pcs, mv, ub, ui)),
  ("search", lambda: S.search(bb, st, pcs, mv, ub, ui, acc, eng.tt_key, eng.tt_data, eng.killers, eng.history, eng.counters, eng.scores, eng.info, np.array([1e18]), eng.hist, eng.w1, eng.b1, eng.w2, eng.b2, 2, -32000, 32000, 1)),
 ]

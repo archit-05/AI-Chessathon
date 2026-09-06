@@ -188,8 +188,8 @@ def get_game(gid: str) -> dict | None:
     if cached:
         return cached
     data = parse_game(fetch(f"{BASE}/game/{gid}"), gid)
-    if data and "Final" in data["state"]:
-        dump_json(path, data)
+    if data and ("Final" in data["state"] or "Void" in data["state"]):
+        dump_json(path, data)  # anything else is still in progress: do not cache
     return data
 
 
@@ -266,6 +266,8 @@ def game_facts(team: dict, row: dict, gdata: dict, opp_hist: list | None, ladder
         "score": score,
         "termination": hdr.get("Termination", ""),
         "termination_text": gdata["termination_text"],
+        "state": gdata["state"],
+        "void": "Void" in gdata["state"] or res == "*",
         "plies": plies,
         "own_moves": own,
         "site_verdicts": gdata.get("site_verdicts", []),

@@ -87,7 +87,7 @@ _W1 = types.int16[:, ::1]
 _B1 = types.int32[::1]
 _W2 = types.int16[::1]
 _B2 = types.int32[::1]
-QSEARCH_SIG = types.int64(_U1, _I1, _I1, _I1, _U1, _I2, _ACC, _I1, _I1, _F1, _W1, _B1, _W2, _B2, types.int64, types.int64)
+QSEARCH_SIG = types.int64(_U1, _I1, _I1, _I1, _U1, _I2, _ACC, _U1, _I1, _I1, _I1, _F1, _W1, _B1, _W2, _B2, types.int64, types.int64, types.int64)
 SEARCH_SIG = types.int64(_U1, _I1, _I1, _I1, _U1, _I2, _ACC, _U1, _I1, _I2, _I1, _I1, _I1, _I1, _F1, _U1, _W1, _B1, _W2, _B2, types.int64, types.int64, types.int64, types.int64)
 
 
@@ -96,7 +96,7 @@ def new_tt() -> tuple[np.ndarray, np.ndarray]:
 
 
 def new_search_tables() -> tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
-    killers = np.zeros((MAX_PLY + 8, 2), dtype=np.int64)
+    killers = np.zeros((MAX_PLY + 8, 4), dtype=np.int64)  # [ply, 0..1] killers, [ply, 2] excluded move (singular search)
     history = np.zeros(2 * 64 * 64, dtype=np.int64)
     counters = np.zeros(2 * 64 * 64, dtype=np.int64)
     scores = np.zeros((MAX_PLY + 8) * MOVES_PER_PLY, dtype=np.int64)
@@ -337,7 +337,7 @@ def score_moves(bb, pcs, mv, scores, history, base, n, side, ttm, k0, k1, cm):
 
 
 @njit(QSEARCH_SIG, cache=False, boundscheck=False)
-def qsearch(bb, st, pcs, mv, ub, ui, acc, scores, info, tlim, w1, b1, w2, b2, alpha, beta):
+def qsearch(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, scores, info, tlim, w1, b1, w2, b2, alpha, beta, age):
     info[I_NODES] += 1
     check_time(info, tlim)
     if info[I_ABORT] != 0:
@@ -349,6 +349,16 @@ def qsearch(bb, st, pcs, mv, ub, ui, acc, scores, info, tlim, w1, b1, w2, b2, al
         return evaluate(bb, st, pcs, acc, info, w2, b2)
 
     in_chk = in_check(bb, st)
+    # transposition table: depth-0 entries from earlier quiescence searches cut immediately
+    key = bb[15]
+    data = tt_probe(tt_key, tt_data, key)
+    ttm = 0
+    if data != 0:
+        ttm = tt_move(data)
+        s = tt_score(data, ply)
+        f = tt_flag(data)
+        if f == TT_EXACT or (f == TT_LOWER and s >= beta) or (f == TT_UPPER and s <= alpha):
+            return s
     best = -INF
     stand = 0
     if not in_chk:
@@ -358,13 +368,18 @@ def qsearch(bb, st, pcs, mv, ub, ui, acc, scores, info, tlim, w1, b1, w2, b2, al
         if stand > alpha:
             alpha = stand
         best = stand
+    alpha_orig = alpha
 
     base = ply * MOVES_PER_PLY
     n = gen_moves(bb, st, pcs, mv, base, not in_chk)
     for i in range(n):
         m = mv[base + i]
-        s = mvv_lva(pcs, m) if (m & MF_CAPTURE) or ((m >> 12) & 7) != 0 else 0
+        if m == ttm:
+            s = 2000000000
+        else:
+            s = mvv_lva(pcs, m) if (m & MF_CAPTURE) or ((m >> 12) & 7) != 0 else 0
         scores[base + i] = s
+    best_move = 0
     legal = 0
     for i in range(n):
         m = pick_next(mv, scores, base, i, n)
@@ -388,18 +403,26 @@ def qsearch(bb, st, pcs, mv, ub, ui, acc, scores, info, tlim, w1, b1, w2, b2, al
         legal += 1
         if info[I_USE_NNUE] != 0:
             nnue_after_make(bb, st, pcs, acc, ui, m, w1, b1)
-        score = -qsearch(bb, st, pcs, mv, ub, ui, acc, scores, info, tlim, w1, b1, w2, b2, -beta, -alpha)
+        score = -qsearch(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, scores, info, tlim, w1, b1, w2, b2, -beta, -alpha, age)
         unmake(bb, st, pcs, ub, ui)
         if info[I_ABORT] != 0:
             return 0
         if score > best:
             best = score
+            best_move = m
             if score > alpha:
                 alpha = score
                 if alpha >= beta:
                     break
     if in_chk and legal == 0:
         return -MATE + ply
+    if best >= beta:
+        flag = TT_LOWER
+    elif best > alpha_orig:
+        flag = TT_EXACT
+    else:
+        flag = TT_UPPER
+    tt_store(tt_key, tt_data, key, best_move, best, 0, flag, age, ply)
     return best
 
 
@@ -415,6 +438,7 @@ def search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, coun
     pv_node = beta - alpha > 1
     do_null = info[I_NO_NULL] == 0
     info[I_NO_NULL] = 0
+    excluded = killers[ply, 2]
     if not root:
         # draws by rule, checked before anything else so frontier nodes see them too
         if st[S_HALF] >= 100 or is_repetition(bb, st, ub, hist, info[I_HIST_N]):
@@ -424,7 +448,7 @@ def search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, coun
     if in_chk and depth <= 0:
         depth = 1  # check extension at the frontier
     if depth <= 0:
-        return qsearch(bb, st, pcs, mv, ub, ui, acc, scores, info, tlim, w1, b1, w2, b2, alpha, beta)
+        return qsearch(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, scores, info, tlim, w1, b1, w2, b2, alpha, beta, age)
 
     info[I_NODES] += 1
     check_time(info, tlim)
@@ -451,17 +475,19 @@ def search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, coun
     if data != 0:
         info[I_TT_HITS] += 1
         ttm = tt_move(data)
-        if not pv_node and tt_depth(data) >= depth:
+        if not pv_node and excluded == 0 and tt_depth(data) >= depth:
             s = tt_score(data, ply)
             f = tt_flag(data)
             if f == TT_EXACT or (f == TT_LOWER and s >= beta) or (f == TT_UPPER and s <= alpha):
                 return s
+    elif depth >= 4 and not root and not pv_node:
+        depth -= 1  # internal iterative reduction: no TT move at a non-PV node, search a ply shallower
 
     static = 0
     if not in_chk:
         static = evaluate(bb, st, pcs, acc, info, w2, b2)
 
-    if not pv_node and not in_chk:
+    if not pv_node and not in_chk and excluded == 0:
         # reverse futility pruning
         if depth <= 6 and static - RFP_MARGIN * depth >= beta and beta > -MATE_IN_MAX:
             return static
@@ -498,6 +524,24 @@ def search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, coun
                     else:
                         return score
 
+    # singular extension: if the TT move is much better than every alternative at reduced
+    # depth, search it one ply deeper; if even the alternatives beat beta, cut (multi-cut)
+    singular = 0
+    if not root and depth >= 7 and ttm != 0 and excluded == 0 and data != 0 and tt_depth(data) >= depth - 3:
+        f = tt_flag(data)
+        tts = tt_score(data, ply)
+        if (f == TT_LOWER or f == TT_EXACT) and tts > -MATE_IN_MAX and tts < MATE_IN_MAX:
+            sb = tts - 2 * depth
+            killers[ply, 2] = ttm
+            v = search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, counters, scores, info, tlim, hist, w1, b1, w2, b2, (depth - 1) // 2, sb - 1, sb, age)
+            killers[ply, 2] = 0
+            if info[I_ABORT] != 0:
+                return 0
+            if v < sb:
+                singular = 1
+            elif sb >= beta:
+                return sb
+
     # move generation and ordering
     base = ply * MOVES_PER_PLY
     n = gen_moves(bb, st, pcs, mv, base, False)
@@ -525,6 +569,8 @@ def search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, coun
                 continue
             if futile and m != k0 and m != k1 and m != cm:
                 continue
+        if m == excluded:
+            continue
         if not make(bb, st, pcs, m, ub, ui):
             continue
         legal += 1
@@ -534,7 +580,9 @@ def search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, coun
             quiets_tried += 1
         gives_check = in_check(bb, st)
         new_depth = depth - 1
-        if gives_check and depth <= 3 and not root:
+        if m == ttm and singular != 0:
+            new_depth += 1
+        elif gives_check and depth <= 3 and not root:
             new_depth += 1
         score = 0
         if legal == 1:
@@ -592,6 +640,8 @@ def search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, coun
     if root:
         info[I_ROOT_MOVES] = legal
     if legal == 0:
+        if excluded != 0:
+            return alpha  # only the excluded move was legal: treat as fail-low
         if in_chk:
             return -MATE + ply
         c = info[I_CONTEMPT]
@@ -602,7 +652,8 @@ def search(bb, st, pcs, mv, ub, ui, acc, tt_key, tt_data, killers, history, coun
         flag = TT_EXACT
     else:
         flag = TT_UPPER
-    tt_store(tt_key, tt_data, key, best_move, best, depth, flag, age, ply)
+    if excluded == 0:
+        tt_store(tt_key, tt_data, key, best_move, best, depth, flag, age, ply)
     return best
 
 

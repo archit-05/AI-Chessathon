@@ -163,6 +163,8 @@ class Engine:
                     factor = 0.6
                 elif stable == 0 and depth >= 6:
                     factor = 1.4
+                if abs(best_score) > 400 and stable >= 2 and depth >= 10:
+                    factor *= 0.6  # decided position: save the clock for when it is needed
                 if elapsed >= soft_ms * factor:
                     break
                 depth += 1

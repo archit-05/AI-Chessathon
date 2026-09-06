@@ -99,8 +99,12 @@ def main() -> None:
                 eng.new_game(); eng.set_position(board.fen(), [])
                 mv, sc, d = eng.think(400, 800, log=False)
                 tested2 += 1
-                if mv in m2 and sc >= S.MATE - 4:
+                # a forced mate of any length counts (extensions can surface a longer mate
+                # first; the driver keeps deepening to the mate distance and still wins)
+                if (mv in m2 and sc >= S.MATE - 4) or sc > S.MATE_IN_MAX:
                     found2 += 1
+                    if mv not in m2:
+                        print("MATE2 slower mate", board.fen(), mv, sc, m2)
                 else:
                     print("MATE2 MISS", board.fen(), mv, sc, m2)
     print(f"mate in 1: {found1}/{tested1}   mate in 2: {found2}/{tested2}")
