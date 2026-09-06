@@ -524,3 +524,6 @@ conversion + endgame suite, book; Tue own-search fine-tune, SF 2600/2800 ladder;
   0.75 instead of 0.6, a danger multiplier ×1.5 when the score fell ≥25 cp since our previous
   move, a floor of half the budget before the predictive stop, cap ×2.0. Pressure test running.
   Evaluation side of the same game is v3/v3b's job.
+- **Sun 6 Sept, 19:00 — time policy v2.2 passes the pressure test.** 10 real-clock games vs
+  full-strength Stockfish: min clock 9.4 s, unclear positions 3.0 s median (v2.1: 1.85 s),
+  decided 1.6 s, 0-4-6 (v2.1: 0-3-7). Adopted for the next build; torture + regression running.
