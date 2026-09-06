@@ -474,3 +474,7 @@ conversion + endgame suite, book; Tue own-search fine-tune, SF 2600/2800 ladder;
   quiet). Contents vs v2: search batch 1 (singular extensions + multi-cut, IIR at non-PV nodes,
   quiescence TT), decided-position time saving, predictive iteration start with a 50-move budget
   horizon, per-move counters in the log line. Next: conversion package gate (bini_conv), v3 net.
+- **Sun 6 Sept, 13:15.** Ladder 5-0 on v2 (R35 as Black, 52 moves, 36/14/1/0/0/0/0; clock 73 s
+  at move 20, 38 s at move 40, 32 s at the end — the pre-fix policy), 1580, rank 142. AlphaFish
+  2642 after beating Capablanca (R34) and Anchoa (R35). Conversion package gate vs v2.1 running
+  (150 games, 2 workers); v3 epoch 3 of 6.
