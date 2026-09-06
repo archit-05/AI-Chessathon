@@ -89,3 +89,26 @@ difference between losing to 1800s occasionally and beating them almost always, 
 realistic Monday-evening target to 2000–2150 and a top-30 rank. It is not yet the tier that beats
 AlphaFish; that is the evaluation work (v3b tonight, the sacrificial set Monday) and it is gated
 the same way.
+
+## 7. Execution log (night of 6 Sept, written as it happens)
+
+- 00:05  Working copy `bini_leap` = v2.2 files (v2.1 search + v2.2 clock + v3 net) plus A and C.
+  - A: `mtg = max(18, 34 - 0.4·n)`; low-clock caps unchanged. Budget curve: 3.8/8.4 s at move 1,
+    3.0/6.6 s at move 15 (75 s left), 2.35/5.2 s at move 30 (45 s left), 1.7/2.0 s at move 50 (25 s left).
+  - C: root guard implemented as a driver rule, not a veto: when the best root move has SEE < -150
+    and the score is not a mate, the iteration factor is forced to 2.5 (up to the hard limit) so the
+    search keeps deepening before committing. Logged as `rg<n>` on the move line. Fires for 17.Rd4 in
+    the R43 position (SEE -500).
+- 00:20  B (main-line safety: no multi-cut at PV nodes, LMR only from the 7th move at PV) built as
+  `bini_leap_b`. Regression: it plays 17.Rd4 (R43) at 2.0, 3.0 and 3.8 s while A+C avoids it at all
+  three (b2b3 +90). Same 39/40 tactics. B is DROPPED on this evidence, per the instruction to drop it
+  unless clearly positive; a second 200-game gate for it would not fit the night anyway.
+- 00:25  Suites on A+C: test_search gate 2 passed (9/11 tactics), blunders 2/2, puzzles 39/40 (98%).
+- 00:30  Top-team proxy calibrated: unrestricted Stockfish at N nodes, move loss judged by the site
+  grader (120k nodes) on 120 quiet middlegame positions: 15k nodes -> CPL 8.9, 30k -> 5.0, 60k -> 4.2.
+  The proxy for the 20 real-clock games is Stockfish at 10k nodes (about CPL 11 by extrapolation,
+  measured again from the games).
+- 00:35  Gate cadence decided: 200 games at 30 s + 0.5 s (same increment as the platform, four times
+  faster per move, 3 workers). Real clock (120 s + 0.5 s) is used for the 10 pressure games and the 20
+  proxy games. Labelling reduced to 2 workers / 1.5M positions so the gate is not starved.
+- Batch 2 (D) at 132/150: +8 +/-60. Will be excluded unless the final interval clears zero.
