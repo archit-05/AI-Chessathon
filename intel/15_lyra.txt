@@ -6,11 +6,9 @@ IDENTITY
   Bot lyra; team slopfish; university Warwick; members not shown on the site.
   Rank 15 of 311, rating 2078, record 12-12-7 in 30 rated games.
   Rating trajectory: entered R3 at 1573, peak 2078 (R32), now 2078 (R32).
-  Jumps of 100+ between rounds (a jump that does not match the game result suggests a new upload;
-  the first ten rounds swing a lot anyway):
-    R5 +106 -> 1762 (win vs The_crow)
-    R16 +124 -> 1781 (win vs bot1)
-    R19 +107 -> 1893 (win vs DolphinBot)
+  Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
+    upload): R5 +106 -> 1762 (win vs The_crow); R16 +124 -> 1781 (win vs bot1); R19 +107 -> 1893
+    (win vs DolphinBot)
   Recent form (last 5 games, R29-R33): 1-3-1 (50%), loss 10.8 cp/move, blunders 0.5% vs earlier
     (R3-R28): 11-9-6 (60%), 13.6 cp/move, 0.6%
 
@@ -45,9 +43,8 @@ MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss c
   as white          : n  950, mean 13.7 cp, median 0 cp, blunders 0.5%
   as black          : n  891, mean 12.2 cp, median 0 cp, blunders 0.7%
   Worst moves: R30 54.f5 (+569 -> +11); R10 78.Bxg4 (-43 -> -455); R13 50.Rd3+ (-6 -> -271)
-  Site's own tags on their moves: blunder 8, mistake 10, miss 2, inaccuracy 48 of 2019
-  Site's own review (Stockfish 16, depth 16): mean ACPL 22.5 over 31 games, mean accuracy 96.6% (all
-    games, not only analysed ones)
+  Site's own review (Stockfish 16, depth 16): mean ACPL 22.5 over 31 games, accuracy 96.6%; its tags
+    on their moves: 8 blunder, 10 mistake, 2 miss, 48 inaccuracy of 2019
 
 TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
   Per move: mean 1.9 s, median 1.93 s, quartiles 0.75-2.82 s, max 5.9 s; instant (<50 ms) moves 6.3%

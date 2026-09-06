@@ -7,11 +7,9 @@ IDENTITY
   Bot SoberJackson; team Sobriety; university Mixed; members not shown on the site.
   Rank 4 of 311, rating 2269, record 19-8-4 in 31 rated games.
   Rating trajectory: entered R1 at 1578, peak 2280 (R23), now 2269 (R32).
-  Jumps of 100+ between rounds (a jump that does not match the game result suggests a new upload;
-  the first ten rounds swing a lot anyway):
-    R2 +109 -> 1687 (win vs Loki 3.0)
-    R10 +119 -> 1941 (win vs Patzer 1.2)
-    R24 -118 -> 2162 (loss vs Loss Preventer)
+  Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
+    upload): R2 +109 -> 1687 (win vs Loki 3.0); R10 +119 -> 1941 (win vs Patzer 1.2); R24 -118 ->
+    2162 (loss vs Loss Preventer)
   Recent form (last 5 games, R28-R32): 3-2-0 (80%), loss 4.6 cp/move, blunders 0.2% vs earlier
     (R1-R27): 16-6-4 (73%), 13.1 cp/move, 0.4%
 
@@ -44,9 +42,8 @@ MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss c
   as white          : n 1171, mean 11.8 cp, median 0 cp, blunders 0.5%
   as black          : n  657, mean 9.3 cp, median 0 cp, blunders 0.2%
   Worst moves: R16 87.Bg7 (+9987 -> +0); R5 16.Rf5 (+387 -> +35); R5 17.Ka1 (+0 -> -295)
-  Site's own tags on their moves: blunder 3, mistake 6, miss 1, inaccuracy 33 of 2068
-  Site's own review (Stockfish 16, depth 16): mean ACPL 17.1 over 31 games, mean accuracy 97.2% (all
-    games, not only analysed ones)
+  Site's own review (Stockfish 16, depth 16): mean ACPL 17.1 over 31 games, accuracy 97.2%; its tags
+    on their moves: 3 blunder, 6 mistake, 1 miss, 33 inaccuracy of 2068
 
 TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
   Per move: mean 1.72 s, median 1.36 s, quartiles 0.72-2.32 s, max 12.9 s; instant (<50 ms) moves

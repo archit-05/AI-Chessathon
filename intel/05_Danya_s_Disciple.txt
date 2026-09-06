@@ -7,13 +7,10 @@ IDENTITY
   Rank 5 of 311, rating 2233 (provisional: fewer than six games on the current build, i.e. a new
     upload in the last five rounds), record 14-10-8 in 32 rated games.
   Rating trajectory: entered R1 at 1578, peak 2240 (R31), now 2233 (R32).
-  Jumps of 100+ between rounds (a jump that does not match the game result suggests a new upload;
-  the first ten rounds swing a lot anyway):
-    R13 +140 -> 1857 (win vs ChittyChittyBangBang)
-    R19 +108 -> 1952 (win vs Falcon)
-    R20 -108 -> 1844 (loss vs Anchoa)
-    R21 +102 -> 1946 (win vs Loss Preventer)
-    R25 +125 -> 2091 (win vs checkers)
+  Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
+    upload): R13 +140 -> 1857 (win vs ChittyChittyBangBang); R19 +108 -> 1952 (win vs Falcon); R20
+    -108 -> 1844 (loss vs Anchoa); R21 +102 -> 1946 (win vs Loss Preventer); R25 +125 -> 2091 (win
+    vs checkers)
   Recent form (last 5 games, R28-R32): 1-3-1 (50%), loss 12.3 cp/move, blunders 1.2% vs earlier
     (R1-R27): 13-7-7 (61%), 19.5 cp/move, 1.0% - the provisional flag says the last games are a new
     build
@@ -48,9 +45,8 @@ MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss c
   as white          : n  807, mean 23.9 cp, median 2 cp, blunders 1.6%
   as black          : n  796, mean 12.8 cp, median 2 cp, blunders 0.5%
   Worst moves: R30 19.Bd2 (+73 -> -319); R7 30.R7d6 (-59 -> -342); R6 16.Kf8 (-157 -> -400)
-  Site's own tags on their moves: blunder 6, mistake 12, miss 2, inaccuracy 63 of 1804
-  Site's own review (Stockfish 16, depth 16): mean ACPL 25.3 over 32 games, mean accuracy 96.4% (all
-    games, not only analysed ones)
+  Site's own review (Stockfish 16, depth 16): mean ACPL 25.3 over 32 games, accuracy 96.4%; its tags
+    on their moves: 6 blunder, 12 mistake, 2 miss, 63 inaccuracy of 1804
 
 TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
   Per move: mean 2.04 s, median 1.81 s, quartiles 0.97-3.06 s, max 4.8 s; instant (<50 ms) moves

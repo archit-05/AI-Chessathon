@@ -560,10 +560,8 @@ def render_dossier(team, targets_by_uuid, ladder):
         add(f"  Rating trajectory: entered R{h[0][0]} at {h[0][1]}, peak {peak[1]} (R{peak[0]}), now {h[-1][1]} (R{h[-1][0]}).")
         sp = team["spikes"]
         if sp:
-            add("  Jumps of 100+ between rounds (a jump that does not match the game result suggests a new upload;")
-            add("  the first ten rounds swing a lot anyway):")
-            for r, dd, v, what in sp:
-                add(f"    R{r} {dd:+d} -> {v} ({what})")
+            add("  Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new upload): "
+                + "; ".join(f"R{r} {dd:+d} -> {v} ({what})" for r, dd, v, what in sp))
         else:
             add("  No 100+ point jump between consecutive rounds.")
     fr = team["form"]
@@ -602,11 +600,10 @@ def render_dossier(team, targets_by_uuid, ladder):
             add(f"  as {col:<15}: n {p['n']:>4}, mean {f(p['mean'])} cp, median {f(p['median'], 0)} cp, blunders {f(p['bl'])}%")
         if q["worst"]:
             add("  Worst moves: " + "; ".join(f"{rnd(g)} {m['n']}.{m['san']} ({m['cp_before']:+d} -> {m['cp_after']:+d})" for g, m in q["worst"]))
-        tags = q["site_tags"]
-        if tags:
-            add(f"  Site's own tags on their moves: blunder {tags.get('blunder', 0)}, mistake {tags.get('mistake', 0)}, miss {tags.get('miss', 0)}, inaccuracy {tags.get('inaccuracy', 0)} of {sum(tags.values())}")
+    tags = q["site_tags"]
     if q.get("site_acpl") is not None:
-        add(f"  Site's own review ({q['site_src'] or 'site engine'}): mean ACPL {q['site_acpl']} over {q['site_acpl_n']} games, mean accuracy {f(q['site_acc'])}% (all games, not only analysed ones)")
+        add(f"  Site's own review ({q['site_src'] or 'site engine'}): mean ACPL {q['site_acpl']} over {q['site_acpl_n']} games, accuracy {f(q['site_acc'])}%;"
+            + (f" its tags on their moves: {tags.get('blunder', 0)} blunder, {tags.get('mistake', 0)} mistake, {tags.get('miss', 0)} miss, {tags.get('inaccuracy', 0)} inaccuracy of {sum(tags.values())}" if tags else ""))
     add("")
     # Time
     add("TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)")

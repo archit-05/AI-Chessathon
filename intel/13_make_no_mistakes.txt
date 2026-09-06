@@ -8,11 +8,9 @@ IDENTITY
   Rank 13 of 311, rating 2099 (provisional: fewer than six games on the current build, i.e. a new
     upload in the last five rounds), record 14-10-8 in 31 rated games.
   Rating trajectory: entered R1 at 1575, peak 2177 (R30), now 2099 (R32).
-  Jumps of 100+ between rounds (a jump that does not match the game result suggests a new upload;
-  the first ten rounds swing a lot anyway):
-    R12 +150 -> 1780 (win vs Magnus Claudeson)
-    R19 +124 -> 1978 (win vs meowfish)
-    R26 +131 -> 2064 (win vs AI Fellow)
+  Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
+    upload): R12 +150 -> 1780 (win vs Magnus Claudeson); R19 +124 -> 1978 (win vs meowfish); R26
+    +131 -> 2064 (win vs AI Fellow)
   Recent form (last 5 games, R29-R33): 2-2-1 (60%), loss 9.2 cp/move, blunders 0.0% vs earlier
     (R1-R28): 12-8-7 (59%), 14.8 cp/move, 0.8% - the provisional flag says the last games are a new
     build
@@ -46,9 +44,8 @@ MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss c
   as white          : n  756, mean 18.8 cp, median 3 cp, blunders 0.8%
   as black          : n 1025, mean 9.6 cp, median 0 cp, blunders 0.5%
   Worst moves: R5 8.bxc6 (+107 -> -461); R22 59.b7 (-34 -> -414); R8 33.Ne5 (-263 -> -581)
-  Site's own tags on their moves: blunder 8, mistake 16, miss 3, inaccuracy 48 of 2003
-  Site's own review (Stockfish 16, depth 16): mean ACPL 22.4 over 32 games, mean accuracy 96.2% (all
-    games, not only analysed ones)
+  Site's own review (Stockfish 16, depth 16): mean ACPL 22.4 over 32 games, accuracy 96.2%; its tags
+    on their moves: 8 blunder, 16 mistake, 3 miss, 48 inaccuracy of 2003
 
 TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
   Per move: mean 1.95 s, median 1.61 s, quartiles 0.63-2.71 s, max 11.1 s; instant (<50 ms) moves

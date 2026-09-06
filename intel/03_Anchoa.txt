@@ -8,10 +8,8 @@ IDENTITY
   Rank 3 of 311, rating 2357 (provisional: fewer than six games on the current build, i.e. a new
     upload in the last five rounds), record 18-8-4 in 30 rated games.
   Rating trajectory: entered R1 at 1575, peak 2446 (R31), now 2357 (R32).
-  Jumps of 100+ between rounds (a jump that does not match the game result suggests a new upload;
-  the first ten rounds swing a lot anyway):
-    R13 -112 -> 1823 (loss vs test_bot)
-    R19 +131 -> 1994 (win vs SirBlunderiusThird)
+  Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
+    upload): R13 -112 -> 1823 (loss vs test_bot); R19 +131 -> 1994 (win vs SirBlunderiusThird)
   Recent form (last 5 games, R28-R32): 4-1-0 (90%), loss 9.0 cp/move, blunders 0.3% vs earlier
     (R1-R27): 14-7-4 (70%), 12.7 cp/move, 0.5% - the provisional flag says the last games are a new
     build
@@ -45,9 +43,8 @@ MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss c
   as white          : n  712, mean 11.1 cp, median 0 cp, blunders 0.6%
   as black          : n  830, mean 12.5 cp, median 2 cp, blunders 0.4%
   Worst moves: R24 32.Ne4 (+938 -> +613); R13 14.Rxg7+ (+0 -> -295); R30 66.Rc4 (+479 -> +196)
-  Site's own tags on their moves: blunder 6, mistake 8, miss 2, inaccuracy 35 of 1778
-  Site's own review (Stockfish 16, depth 16): mean ACPL 19.3 over 30 games, mean accuracy 97.2% (all
-    games, not only analysed ones)
+  Site's own review (Stockfish 16, depth 16): mean ACPL 19.3 over 30 games, accuracy 97.2%; its tags
+    on their moves: 6 blunder, 8 mistake, 2 miss, 35 inaccuracy of 1778
 
 TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
   Per move: mean 1.77 s, median 1.53 s, quartiles 0.75-2.5 s, max 10.2 s; instant (<50 ms) moves

@@ -8,12 +8,9 @@ IDENTITY
   Rank 1 of 311, rating 2462 (provisional: fewer than six games on the current build, i.e. a new
     upload in the last five rounds), record 17-6-1 in 24 rated games.
   Rating trajectory: entered R9 at 1577, peak 2512 (R31), now 2462 (R32).
-  Jumps of 100+ between rounds (a jump that does not match the game result suggests a new upload;
-  the first ten rounds swing a lot anyway):
-    R16 +110 -> 1969 (win vs Dark Sister)
-    R17 +103 -> 2072 (win vs Anchoa)
-    R18 +107 -> 2179 (win vs Mate in One)
-    R19 +102 -> 2281 (win vs SoberJackson)
+  Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
+    upload): R16 +110 -> 1969 (win vs Dark Sister); R17 +103 -> 2072 (win vs Anchoa); R18 +107 ->
+    2179 (win vs Mate in One); R19 +102 -> 2281 (win vs SoberJackson)
   Recent form (last 5 games, R28-R32): 3-2-0 (80%), loss 9.1 cp/move, blunders 0.0% vs earlier
     (R9-R27): 14-4-1 (84%), 7.1 cp/move, 0.0% - the provisional flag says the last games are a new
     build
@@ -48,9 +45,8 @@ MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss c
   as white          : n  892, mean 6.2 cp, median 0 cp, blunders 0.0%
   as black          : n  597, mean 9.4 cp, median 1 cp, blunders 0.0%
   Worst moves: R10 44.a5 (+821 -> -688); R32 48.Nb6 (+870 -> +679); R21 71.Nxh4 (+197 -> +15)
-  Site's own tags on their moves: blunder 2, mistake 3, miss 4, inaccuracy 17 of 1763
-  Site's own review (Stockfish 16, depth 16): mean ACPL 17.3 over 24 games, mean accuracy 96.8% (all
-    games, not only analysed ones)
+  Site's own review (Stockfish 16, depth 16): mean ACPL 17.3 over 24 games, accuracy 96.8%; its tags
+    on their moves: 2 blunder, 3 mistake, 4 miss, 17 inaccuracy of 1763
 
 TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
   Per move: mean 1.68 s, median 1.49 s, quartiles 0.78-2.46 s, max 4.4 s; instant (<50 ms) moves

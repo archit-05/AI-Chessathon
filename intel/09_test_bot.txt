@@ -7,9 +7,8 @@ IDENTITY
   Bot test_bot; team pheanup; university KCL; members not shown on the site.
   Rank 9 of 311, rating 2181, record 14-8-5 in 26 rated games.
   Rating trajectory: entered R5 at 1577, peak 2181 (R32), now 2181 (R32).
-  Jumps of 100+ between rounds (a jump that does not match the game result suggests a new upload;
-  the first ten rounds swing a lot anyway):
-    R7 +110 -> 1684 (win vs Loki 3.0)
+  Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
+    upload): R7 +110 -> 1684 (win vs Loki 3.0)
   Recent form (last 5 games, R29-R33): 4-1-0 (90%), loss 11.5 cp/move, blunders 0.3% vs earlier
     (R5-R28): 10-7-5 (61%), 12.1 cp/move, 0.3%
 
@@ -43,9 +42,8 @@ MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss c
   as white          : n  708, mean 13.4 cp, median 2 cp, blunders 0.4%
   as black          : n  762, mean 10.7 cp, median 0 cp, blunders 0.1%
   Worst moves: R20 42.Qe1 (+0 -> -3783); R28 77.Rd3 (+910 -> +655); R25 29.Be7+ (+656 -> +419)
-  Site's own tags on their moves: blunder 0, mistake 8, miss 1, inaccuracy 36 of 1648
-  Site's own review (Stockfish 16, depth 16): mean ACPL 21.4 over 27 games, mean accuracy 97.1% (all
-    games, not only analysed ones)
+  Site's own review (Stockfish 16, depth 16): mean ACPL 21.4 over 27 games, accuracy 97.1%; its tags
+    on their moves: 0 blunder, 8 mistake, 1 miss, 36 inaccuracy of 1648
 
 TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
   Per move: mean 2.17 s, median 1.47 s, quartiles 0.63-3.24 s, max 11.6 s; instant (<50 ms) moves

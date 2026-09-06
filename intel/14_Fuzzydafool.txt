@@ -8,12 +8,9 @@ IDENTITY
   Rank 14 of 311, rating 2096 (provisional: fewer than six games on the current build, i.e. a new
     upload in the last five rounds), record 13-10-9 in 31 rated games.
   Rating trajectory: entered R1 at 1578, peak 2096 (R32), now 2096 (R32).
-  Jumps of 100+ between rounds (a jump that does not match the game result suggests a new upload;
-  the first ten rounds swing a lot anyway):
-    R11 +158 -> 1705 (win vs Loki 3.0)
-    R12 +113 -> 1818 (win vs Mesh Potato)
-    R27 -100 -> 1873 (loss vs Loss Preventer)
-    R28 +107 -> 1980 (win vs Imperial Larper)
+  Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
+    upload): R11 +158 -> 1705 (win vs Loki 3.0); R12 +113 -> 1818 (win vs Mesh Potato); R27 -100 ->
+    1873 (loss vs Loss Preventer); R28 +107 -> 1980 (win vs Imperial Larper)
   Recent form (last 5 games, R29-R33): 2-2-1 (60%), loss 8.8 cp/move, blunders 0.2% vs earlier
     (R1-R28): 11-8-8 (56%), 23.3 cp/move, 1.1% - the provisional flag says the last games are a new
     build
@@ -47,9 +44,8 @@ MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss c
   as white          : n 1081, mean 16.5 cp, median 1 cp, blunders 0.6%
   as black          : n  723, mean 23.7 cp, median 4 cp, blunders 1.2%
   Worst moves: R23 60.h4 (-105 -> -655); R31 95.Rxg8+ (+0 -> -510); R1 9.c6 (+404 -> +0)
-  Site's own tags on their moves: blunder 11, mistake 19, miss 1, inaccuracy 91 of 2010
-  Site's own review (Stockfish 16, depth 16): mean ACPL 26.1 over 32 games, mean accuracy 95.1% (all
-    games, not only analysed ones)
+  Site's own review (Stockfish 16, depth 16): mean ACPL 26.1 over 32 games, accuracy 95.1%; its tags
+    on their moves: 11 blunder, 19 mistake, 1 miss, 91 inaccuracy of 2010
 
 TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
   Per move: mean 2.07 s, median 1.8 s, quartiles 0.7-2.91 s, max 13.1 s; instant (<50 ms) moves 9.4%
