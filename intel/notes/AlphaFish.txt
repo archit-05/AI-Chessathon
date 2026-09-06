@@ -1,18 +1,12 @@
-Two flaws are visible in 24 games, and both are in the endgame technique, not the search.
-1. The single loss (R10, 4 Sept, as Black vs Oyinda, then 1577): AlphaFish was +9.6 with a bishop
-   and pawns against connected passers, allowed 48.c8=Q and played 48...a5?? instead of 48...Bxc8,
-   i.e. it failed to capture a freshly promoted queen with the bishop that was attacking c8.  It had
-   30 s on the clock and every earlier move was best/excellent, so this was not time or depth: a
-   move-generation or board-sync bug around promotions in that early build is the likely cause.
-2. The R32 draw (6 Sept, as Black vs zak, rank 17): a queen and a knight up (+13 material), a forced
-   mate found at own move 55 but not played (55...Ka6 was tagged a miss), then from move 58 every
-   move took 2-14 milliseconds (Qf3+, Qd5+, Qd6+, Qd4, Qd2+, Qd4, Nd5) and the game ended by
-   threefold repetition with +9991 on the board and 27 s left.  That is a mate-score / repetition
-   handling problem: once its search returns a mate score it appears to play instantly and does not
-   avoid repeating positions.  Half a point given away against a team 300 points lower.
-How to use this: against AlphaFish we will be the side that is lost far more often than not.  When
-lost, never resign into a forced mate by simplifying; keep the king running, give the checks that
-create repeated positions, and let its mate-score behaviour do the rest.  The rest of its play is
-the best on the ladder (CPL 6.5 from the site's evaluations, 0.1% blunders, 7 wins 3 draws 0 losses
-against the top ten), it does not use a book, and it spends a fixed ~4% of the remaining clock per
-move (4.4 s at move 1, ~1.5 s by move 40), so long games lower its depth while ours need not fall.
+Both visible flaws are endgame technique, not search.  (1) The only loss, R10 as Black vs Oyinda:
++9.6 with bishop and pawns against connected passers, it allowed 48.c8=Q and played 48...a5??
+instead of 48...Bxc8 with 30 s on the clock: a promotion or board-sync bug in that early build.
+(2) The R32 draw as Black vs zak (rank 17): a queen and a knight up, a forced mate found at own
+move 55 but not played, then every move from 58 on took 2-14 ms (Qf3+, Qd5+, Qd6+, Qd4, Qd2+, Qd4,
+Nd5) until threefold repetition with +9991 on the board and 27 s left.  Once its search returns
+a mate score it plays instantly and does not avoid repeating positions.
+Use: we will usually be the lost side.  Never simplify into a forced mate; keep the king running
+and give the checks that recreate positions, and let its mate-score behaviour hand over the half
+point.  Otherwise it is the best engine on the ladder (CPL 6.5, 0.1% blunders, unbeaten vs the
+top ten), has no book, and spends a fixed ~4% of the remaining clock per move (4.4 s at move 1,
+~1.5 s by move 40), so long games lower its depth while ours need not fall.
