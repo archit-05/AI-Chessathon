@@ -18,24 +18,20 @@ RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
   vs 11-20  : 3-5-0 (69%) over 8 games
   vs 21-50  : 6-1-0 (93%) over 7 games
   vs rest   : 3-0-0 (100%) over 3 games
-  Games vs other top-20 teams:
-    R9   white vs AI Fellow          (#12) draw threefold_repetition  French Tarrasch
-    R10  black vs zak                (#17) win  checkmate             Italian Game
-    R11  black vs lyra               (#15) draw threefold_repetition  Sicilian Closed
+  Games vs top-10 teams:
     R12  white vs Mate in One        (#7 ) loss checkmate             Ruy Lopez, Closed
     R13  black vs Anchoa             (#3 ) win  checkmate             Dutch Stonewall
     R14  white vs SoberJackson       (#4 ) loss checkmate             Petroff Defence
     R15  white vs ms                 (#10) loss checkmate             Reti Opening
     R16  black vs Patzer 1.2         (#8 ) draw threefold_repetition  English Symmetrical
-    R17  white vs checkers           (#11) draw insufficient_material Sicilian Closed
     R19  black vs Capablanca         (#2 ) loss checkmate             Ruy Lopez, Closed
-    R20  white vs Blank Shooter      (#18) draw threefold_repetition  Sicilian Closed
-    R21  black vs Cornelius          (#20) win  checkmate             Sicilian Closed
-    R22  black vs DolphinBot         (#19) win  checkmate             Nimzo-Indian Defence
-    R24  black vs Fuzzydafool        (#14) draw threefold_repetition  Reti Opening
     R27  black vs AlphaFish          (#1 ) loss checkmate             Italian Game
     R28  black vs Loss Preventer     (#6 ) win  checkmate             French Tarrasch
     R29  black vs Danya's Disciple   (#5 ) draw threefold_repetition  Queen's Gambit Accepted
+  Games vs ranks 11-20: R9 draw vs AI Fellow (#12, 3fold); R10 win vs zak (#17, checkmate); R11 draw
+    vs lyra (#15, 3fold); R17 draw vs checkers (#11, insuff); R20 draw vs Blank Shooter (#18,
+    3fold); R21 win vs Cornelius (#20, checkmate); R22 win vs DolphinBot (#19, checkmate); R24 draw
+    vs Fuzzydafool (#14, 3fold)
 
 MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
   positions inside +-800 only)
@@ -81,10 +77,10 @@ OPENINGS (curated start positions assigned by the platform)
   By family: Sicilian 3-3-0 (75%); Ruy Lopez 3-0-2 (60%); Dutch 1-1-0 (75%); French 1-1-0 (75%);
     Italian 1-0-1 (50%); Petroff 1-0-1 (50%); Reti 0-1-1 (25%); Nimzo-Indian 2-0-0 (100%); London
     1-0-0 (100%); English 0-1-0 (50%); Grunfeld 1-0-0 (100%); Queen's Gambit 0-1-0 (50%)
-  Positions seen: Sicilian Closed x6 3-3-0 (75%); Ruy Lopez, Closed x5 3-0-2 (60%); Dutch Stonewall
-    x2 1-1-0 (75%); French Tarrasch x2 1-1-0 (75%); Italian Game x2 1-0-1 (50%); Nimzo-Indian
-    Defence x2 2-0-0 (100%); Petroff Defence x2 1-0-1 (50%); Reti Opening x2 0-1-1 (25%); English
-    Symmetrical draw; Grunfeld Defence win; London System win; Queen's Gambit Accepted draw
+  Positions seen more than once: Sicilian Closed x6 3-3-0 (75%); Ruy Lopez, Closed x5 3-0-2 (60%);
+    Dutch Stonewall x2 1-1-0 (75%); French Tarrasch x2 1-1-0 (75%); Italian Game x2 1-0-1 (50%);
+    Nimzo-Indian Defence x2 2-0-0 (100%); Petroff Defence x2 1-0-1 (50%); Reti Opening x2 0-1-1
+    (25%); 4 positions seen once (2 won, 2 drawn, 0 lost).
   No family with 3+ games scores 20+ points below their overall average.
   First six own moves: 69% match Stockfish's first choice (moves 7-20: 66%), mean loss 8.5 cp, 0%
     played instantly; first clear divergence (loss >= 20 cp) at own move 8.4 on average.

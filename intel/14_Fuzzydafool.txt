@@ -23,22 +23,19 @@ RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
   vs 11-20  : 2-3-1 (58%) over 6 games
   vs 21-50  : 5-3-2 (65%) over 10 games
   vs rest   : 5-1-1 (79%) over 7 games
-  Games vs other top-20 teams:
+  Games vs top-10 teams:
     R4   black vs SoberJackson       (#4 ) win  flag                  Four Knights Game
-    R6   white vs lyra               (#15) loss checkmate             King's Indian Classical
-    R9   black vs make_no_mistakes   (#13) draw threefold_repetition  Sicilian Classical
     R14  black vs Patzer 1.2         (#8 ) loss checkmate             Reti Opening
     R15  white vs AlphaFish          (#1 ) draw threefold_repetition  Grunfeld Defence
-    R17  white vs DolphinBot         (#19) win  checkmate             Petroff Defence
-    R19  black vs checkers           (#11) draw insufficient_material French Tarrasch
     R20  white vs Mate in One        (#7 ) draw threefold_repetition  French Winawer
-    R21  black vs AI Fellow          (#12) win  checkmate             Italian Game
-    R22  white vs Blank Shooter      (#18) draw threefold_repetition  London System
     R23  black vs Capablanca         (#2 ) loss checkmate             Caro-Kann Classical
     R24  white vs test_bot           (#9 ) draw threefold_repetition  Reti Opening
     R25  white vs Anchoa             (#3 ) loss checkmate             Nimzo-Indian Defence
     R27  black vs Loss Preventer     (#6 ) loss checkmate             Pirc Defence
     R31  white vs Danya's Disciple   (#5 ) loss checkmate             London System
+  Games vs ranks 11-20: R6 loss vs lyra (#15, checkmate); R9 draw vs make_no_mistak (#13, 3fold);
+    R17 win vs DolphinBot (#19, checkmate); R19 draw vs checkers (#11, insuff); R21 win vs AI Fellow
+    (#12, checkmate); R22 draw vs Blank Shooter (#18, 3fold)
 
 MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
   positions inside +-800 only)
@@ -88,12 +85,10 @@ OPENINGS (curated start positions assigned by the platform)
     Nimzo-Indian 1-0-1 (50%); Ruy Lopez 2-0-0 (100%); King's Indian 0-0-2 (0%); London 0-1-1 (25%);
     Four Knights 1-0-0 (100%); Catalan 0-0-1 (0%); Grunfeld 0-1-0 (50%); Italian 1-0-0 (100%);
     Caro-Kann 0-0-1 (0%); English 0-1-0 (50%); Pirc 0-0-1 (0%)
-  Positions seen: Petroff Defence x5 4-1-0 (90%); Reti Opening x3 0-1-2 (17%); Sicilian Sveshnikov
-    x3 3-0-0 (100%); King's Indian Classical x2 0-0-2 (0%); London System x2 0-1-1 (25%);
-    Nimzo-Indian Defence x2 1-0-1 (50%); Ruy Lopez, Closed x2 2-0-0 (100%); Caro-Kann Classical
-    loss; Catalan Opening loss; English Symmetrical draw; Four Knights Game win; French Advance
-    draw; French Tarrasch draw; French Winawer draw; Grunfeld Defence draw; Italian Game win; Pirc
-    Defence loss; Sicilian Classical draw; Sicilian Closed win; Sicilian Dragon draw
+  Positions seen more than once: Petroff Defence x5 4-1-0 (90%); Reti Opening x3 0-1-2 (17%);
+    Sicilian Sveshnikov x3 3-0-0 (100%); King's Indian Classical x2 0-0-2 (0%); London System x2
+    0-1-1 (25%); Nimzo-Indian Defence x2 1-0-1 (50%); Ruy Lopez, Closed x2 2-0-0 (100%); 13
+    positions seen once (3 won, 7 drawn, 3 lost).
   Underperforms in: Reti 0-1-2 (17%)
   First six own moves: 54% match Stockfish's first choice (moves 7-20: 56%), mean loss 12.1 cp, 0%
     played instantly; first clear divergence (loss >= 20 cp) at own move 8.2 on average.

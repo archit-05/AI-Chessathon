@@ -576,12 +576,15 @@ def render_dossier(team, targets_by_uuid, ladder):
     add("RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)")
     for name, gs in team["tiers"].items():
         add(f"  vs {name:<7}: {rec(gs)} over {len(gs)} games")
-    top_games = sorted(team["tiers"]["top 10"] + team["tiers"]["11-20"], key=lambda g: g["round"])
+    top_games = sorted(team["tiers"]["top 10"], key=lambda g: g["round"])
     if top_games:
-        add(f"  Games vs other top-{TOP_N} teams:")
+        add("  Games vs top-10 teams:")
         for g in top_games:
             opp = g.get("opponent_bot") or g["opponent"]
             add(f"    {rnd(g):<4} {g['colour']:<5} vs {opp:<18} (#{g['opponent_rank_now']:<2}) {result_word(g):<4} {g['termination']:<21} {g['opening']}")
+    mid = sorted(team["tiers"]["11-20"], key=lambda g: g["round"])
+    if mid:
+        add("  Games vs ranks 11-20: " + "; ".join(f"{rnd(g)} {result_word(g)} vs {(g.get('opponent_bot') or g['opponent'])[:14]} (#{g['opponent_rank_now']}, {g['termination'].replace('threefold_repetition', '3fold').replace('insufficient_material', 'insuff')})" for g in mid))
     add("")
     # Move quality
     add(f"MOVE QUALITY ({eval_label(team)}; loss clipped at 1000; positions inside +-800 only)")
@@ -666,7 +669,10 @@ def render_dossier(team, targets_by_uuid, ladder):
     fams = sorted(o["by_fam"].items(), key=lambda kv: -len(kv[1]))
     add("  By family: " + "; ".join(f"{fam} {rec(gs)}" for fam, gs in fams))
     names = sorted(o["by_name"].items(), key=lambda kv: (-len(kv[1]), kv[0]))
-    add("  Positions seen: " + "; ".join(f"{name} x{len(gs)} {rec(gs)}" if len(gs) > 1 else f"{name} {result_word(gs[0])}" for name, gs in names))
+    repeated = [(n, gs) for n, gs in names if len(gs) > 1]
+    singles = [(n, gs) for n, gs in names if len(gs) == 1]
+    add("  Positions seen more than once: " + ("; ".join(f"{name} x{len(gs)} {rec(gs)}" for name, gs in repeated) if repeated else "none")
+        + f"; {len(singles)} positions seen once ({sum(1 for _, gs in singles if gs[0]['score'] == 1.0)} won, {sum(1 for _, gs in singles if gs[0]['score'] == 0.5)} drawn, {sum(1 for _, gs in singles if gs[0]['score'] == 0.0)} lost).")
     if o["under"]:
         add("  Underperforms in: " + ", ".join(f"{fam} {rec(gs)}" for fam, gs in o["under"]))
     else:

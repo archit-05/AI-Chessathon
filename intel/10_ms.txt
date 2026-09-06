@@ -18,22 +18,19 @@ RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
   vs 11-20  : 3-3-0 (75%) over 6 games
   vs 21-50  : 10-2-1 (85%) over 13 games
   vs rest   : 2-0-1 (67%) over 3 games
-  Games vs other top-20 teams:
+  Games vs top-10 teams:
     R2   white vs Capablanca         (#2 ) win  checkmate             Pirc Defence
     R6   white vs Anchoa             (#3 ) draw threefold_repetition  English Symmetrical
     R7   black vs Patzer 1.2         (#8 ) loss checkmate             French Tarrasch
-    R8   black vs checkers           (#11) draw threefold_repetition  Sicilian Taimanov
-    R10  black vs Blank Shooter      (#18) win  checkmate             Petroff Defence
     R11  white vs Mate in One        (#7 ) win  checkmate             French Classical
     R12  black vs SoberJackson       (#4 ) loss checkmate             French Classical
-    R13  white vs lyra               (#15) win  checkmate             Four Knights Game
     R15  black vs test_bot           (#9 ) win  checkmate             Reti Opening
     R17  white vs Loss Preventer     (#6 ) win  checkmate             Sicilian Closed
     R20  black vs AlphaFish          (#1 ) loss checkmate             Nimzo-Indian Defence
-    R23  white vs make_no_mistakes   (#13) draw insufficient_material Sicilian Taimanov
     R24  black vs Danya's Disciple   (#5 ) draw threefold_repetition  Scotch Game
-    R30  black vs zak                (#17) win  checkmate             Sicilian Closed
-    R33  white vs Cornelius          (#20) draw insufficient_material Petroff Defence
+  Games vs ranks 11-20: R8 draw vs checkers (#11, 3fold); R10 win vs Blank Shooter (#18, checkmate);
+    R13 win vs lyra (#15, checkmate); R23 draw vs make_no_mistak (#13, insuff); R30 win vs zak (#17,
+    checkmate); R33 draw vs Cornelius (#20, insuff)
 
 MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
   positions inside +-800 only)
@@ -80,12 +77,10 @@ OPENINGS (curated start positions assigned by the platform)
     Pirc 2-0-0 (100%); London 2-0-0 (100%); Reti 2-0-0 (100%); Scotch 0-2-0 (50%); King's Indian
     1-0-0 (100%); Four Knights 1-0-0 (100%); Italian 0-0-1 (0%); Nimzo-Indian 0-0-1 (0%); Caro-Kann
     1-0-0 (100%)
-  Positions seen: English Symmetrical x4 2-1-1 (62%); Sicilian Closed x4 4-0-0 (100%); Petroff
-    Defence x3 2-1-0 (83%); Sicilian Taimanov x3 1-2-0 (67%); French Classical x2 1-0-1 (50%);
-    London System x2 2-0-0 (100%); Pirc Defence x2 2-0-0 (100%); Reti Opening x2 2-0-0 (100%);
-    Scotch Game x2 0-2-0 (50%); Caro-Kann Exchange win; Four Knights Game win; French Tarrasch loss;
-    Italian Game loss; King's Indian Classical win; Nimzo-Indian Defence loss; Sicilian Classical
-    draw
+  Positions seen more than once: English Symmetrical x4 2-1-1 (62%); Sicilian Closed x4 4-0-0
+    (100%); Petroff Defence x3 2-1-0 (83%); Sicilian Taimanov x3 1-2-0 (67%); French Classical x2
+    1-0-1 (50%); London System x2 2-0-0 (100%); Pirc Defence x2 2-0-0 (100%); Reti Opening x2 2-0-0
+    (100%); Scotch Game x2 0-2-0 (50%); 7 positions seen once (3 won, 1 drawn, 3 lost).
   Underperforms in: French 1-0-2 (33%)
   First six own moves: 62% match Stockfish's first choice (moves 7-20: 57%), mean loss 11.1 cp, 0%
     played instantly; first clear divergence (loss >= 20 cp) at own move 6.2 on average.

@@ -16,24 +16,20 @@ RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
   vs 11-20  : 5-3-0 (81%) over 8 games
   vs 21-50  : 8-3-0 (86%) over 11 games
   vs rest   : 4-1-0 (90%) over 5 games
-  Games vs other top-20 teams:
-    R5   black vs checkers           (#11) win  checkmate             Sicilian Closed
+  Games vs top-10 teams:
     R7   white vs ms                 (#10) win  checkmate             French Tarrasch
     R8   white vs Mate in One        (#7 ) loss checkmate             Sicilian Sveshnikov
-    R9   black vs lyra               (#15) draw threefold_repetition  Semi-Slav Defence
     R10  black vs SoberJackson       (#4 ) loss checkmate             Sicilian Najdorf
     R11  white vs Anchoa             (#3 ) loss checkmate             Reti Opening
-    R12  black vs Blank Shooter      (#18) win  checkmate             Sicilian Taimanov
-    R14  white vs Fuzzydafool        (#14) win  checkmate             Reti Opening
     R16  white vs test_bot           (#9 ) draw threefold_repetition  English Symmetrical
     R17  black vs Capablanca         (#2 ) draw threefold_repetition  Caro-Kann Advance
-    R18  black vs AI Fellow          (#12) draw insufficient_material Sicilian Closed
     R21  black vs AlphaFish          (#1 ) loss checkmate             Sicilian Closed
     R23  white vs Danya's Disciple   (#5 ) draw threefold_repetition  Italian Game
-    R24  black vs make_no_mistakes   (#13) win  checkmate             Queen's Gambit Accepted
     R26  white vs Loss Preventer     (#6 ) win  checkmate             Sicilian Closed
-    R27  white vs Cornelius          (#20) win  checkmate             London System
-    R31  white vs Magnus Claudeson   (#16) draw fifty_moves           Sicilian Taimanov
+  Games vs ranks 11-20: R5 win vs checkers (#11, checkmate); R9 draw vs lyra (#15, 3fold); R12 win
+    vs Blank Shooter (#18, checkmate); R14 win vs Fuzzydafool (#14, checkmate); R18 draw vs AI
+    Fellow (#12, insuff); R24 win vs make_no_mistak (#13, checkmate); R27 win vs Cornelius (#20,
+    checkmate); R31 draw vs Magnus Claudes (#16, fifty_moves)
 
 MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
   positions inside +-800 only)
@@ -80,12 +76,11 @@ OPENINGS (curated start positions assigned by the platform)
     (83%); Nimzo-Indian 2-0-0 (100%); Semi-Slav 0-2-0 (50%); Reti 1-0-1 (50%); English 1-1-0 (75%);
     Queen's Gambit 1-1-0 (75%); King's Indian 1-0-0 (100%); Scotch 1-0-0 (100%); Italian 0-1-0
     (50%); London 1-0-0 (100%)
-  Positions seen: Sicilian Closed x4 2-1-1 (62%); French Tarrasch x3 2-1-0 (83%); Sicilian Taimanov
-    x3 2-1-0 (83%); Two Knights Defence x3 2-1-0 (83%); Caro-Kann Classical x2 2-0-0 (100%); English
-    Symmetrical x2 1-1-0 (75%); Nimzo-Indian Defence x2 2-0-0 (100%); Queen's Gambit Accepted x2
-    1-1-0 (75%); Reti Opening x2 1-0-1 (50%); Semi-Slav Defence x2 0-2-0 (50%); Caro-Kann Advance
-    draw; Italian Game draw; King's Indian Classical win; London System win; Scotch Game win;
-    Sicilian Classical win; Sicilian Najdorf loss; Sicilian Sveshnikov loss
+  Positions seen more than once: Sicilian Closed x4 2-1-1 (62%); French Tarrasch x3 2-1-0 (83%);
+    Sicilian Taimanov x3 2-1-0 (83%); Two Knights Defence x3 2-1-0 (83%); Caro-Kann Classical x2
+    2-0-0 (100%); English Symmetrical x2 1-1-0 (75%); Nimzo-Indian Defence x2 2-0-0 (100%); Queen's
+    Gambit Accepted x2 1-1-0 (75%); Reti Opening x2 1-0-1 (50%); Semi-Slav Defence x2 0-2-0 (50%); 8
+    positions seen once (4 won, 2 drawn, 2 lost).
   No family with 3+ games scores 20+ points below their overall average.
   First six own moves: 57% match Stockfish's first choice (moves 7-20: 62%), mean loss 7.9 cp, 0%
     played instantly; first clear divergence (loss >= 20 cp) at own move 8.5 on average.

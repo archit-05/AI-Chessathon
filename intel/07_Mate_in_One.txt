@@ -15,24 +15,20 @@ RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
   vs 11-20  : 2-6-0 (62%) over 8 games
   vs 21-50  : 10-2-0 (92%) over 12 games
   vs rest   : 4-0-0 (100%) over 4 games
-  Games vs other top-20 teams:
+  Games vs top-10 teams:
     R3   black vs Anchoa             (#3 ) draw threefold_repetition  Petroff Defence
-    R5   white vs AI Fellow          (#12) draw insufficient_material Sicilian Dragon
     R8   black vs Patzer 1.2         (#8 ) win  checkmate             Sicilian Sveshnikov
-    R9   white vs checkers           (#11) draw fifty_moves           French Advance
-    R10  white vs lyra               (#15) win  checkmate             Ruy Lopez, Closed
     R11  black vs ms                 (#10) loss checkmate             French Classical
     R12  black vs test_bot           (#9 ) win  checkmate             Ruy Lopez, Closed
     R13  black vs SoberJackson       (#4 ) draw fifty_moves           Ruy Lopez, Closed
     R14  white vs Capablanca         (#2 ) win  checkmate             French Classical
-    R16  black vs Blank Shooter      (#18) win  checkmate             Sicilian Closed
     R18  white vs AlphaFish          (#1 ) loss checkmate             London System
-    R20  black vs Fuzzydafool        (#14) draw threefold_repetition  French Winawer
-    R21  white vs make_no_mistakes   (#13) draw threefold_repetition  Sicilian Classical
     R22  black vs Danya's Disciple   (#5 ) win  checkmate             Sicilian Dragon
     R25  white vs Loss Preventer     (#6 ) win  checkmate             English Symmetrical
-    R31  black vs Cornelius          (#20) draw insufficient_material Queen's Gambit Accepted
-    R32  black vs DolphinBot         (#19) draw fifty_moves           Nimzo-Indian Defence
+  Games vs ranks 11-20: R5 draw vs AI Fellow (#12, insuff); R9 draw vs checkers (#11, fifty_moves);
+    R10 win vs lyra (#15, checkmate); R16 win vs Blank Shooter (#18, checkmate); R20 draw vs
+    Fuzzydafool (#14, 3fold); R21 draw vs make_no_mistak (#13, 3fold); R31 draw vs Cornelius (#20,
+    insuff); R32 draw vs DolphinBot (#19, fifty_moves)
 
 MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
   positions inside +-800 only)
@@ -79,13 +75,11 @@ OPENINGS (curated start positions assigned by the platform)
     Petroff 1-1-0 (75%); London 1-0-1 (50%); English 2-0-0 (100%); Reti 1-0-0 (100%); Italian 1-0-0
     (100%); King's Indian 1-0-0 (100%); Scotch 1-0-0 (100%); Queen's Gambit 0-1-0 (50%);
     Nimzo-Indian 0-1-0 (50%)
-  Positions seen: Ruy Lopez, Closed x3 2-1-0 (83%); Sicilian Classical x3 2-1-0 (83%); Caro-Kann
-    Exchange x2 1-1-0 (75%); English Symmetrical x2 2-0-0 (100%); French Classical x2 1-0-1 (50%);
-    French Winawer x2 1-1-0 (75%); London System x2 1-0-1 (50%); Petroff Defence x2 1-1-0 (75%);
-    Sicilian Closed x2 2-0-0 (100%); Sicilian Dragon x2 1-1-0 (75%); Caro-Kann Classical win; French
-    Advance draw; Italian Game win; King's Indian Classical win; Nimzo-Indian Defence draw; Queen's
-    Gambit Accepted draw; Reti Opening win; Scotch Game win; Sicilian Najdorf win; Sicilian
-    Sveshnikov win; Sicilian Taimanov draw
+  Positions seen more than once: Ruy Lopez, Closed x3 2-1-0 (83%); Sicilian Classical x3 2-1-0
+    (83%); Caro-Kann Exchange x2 1-1-0 (75%); English Symmetrical x2 2-0-0 (100%); French Classical
+    x2 1-0-1 (50%); French Winawer x2 1-1-0 (75%); London System x2 1-0-1 (50%); Petroff Defence x2
+    1-1-0 (75%); Sicilian Closed x2 2-0-0 (100%); Sicilian Dragon x2 1-1-0 (75%); 11 positions seen
+    once (7 won, 4 drawn, 0 lost).
   No family with 3+ games scores 20+ points below their overall average.
   First six own moves: 64% match Stockfish's first choice (moves 7-20: 60%), mean loss 7.3 cp, 6%
     played instantly; first clear divergence (loss >= 20 cp) at own move 9.3 on average.

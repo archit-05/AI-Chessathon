@@ -23,24 +23,20 @@ RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
   vs 11-20  : 4-4-0 (75%) over 8 games
   vs 21-50  : 3-0-0 (100%) over 3 games
   vs rest   : 3-0-1 (75%) over 4 games
-  Games vs other top-20 teams:
-    R13  black vs Magnus Claudeson   (#16) win  checkmate             Sicilian Classical
-    R15  black vs Fuzzydafool        (#14) draw threefold_repetition  Grunfeld Defence
+  Games vs top-10 teams:
     R17  white vs Anchoa             (#3 ) win  checkmate             Grunfeld Defence
     R18  black vs Mate in One        (#7 ) win  checkmate             London System
     R19  black vs SoberJackson       (#4 ) win  checkmate             English Symmetrical
     R20  white vs ms                 (#10) win  checkmate             Nimzo-Indian Defence
     R21  white vs Patzer 1.2         (#8 ) win  checkmate             Sicilian Closed
     R22  white vs Capablanca         (#2 ) draw fifty_moves           Ruy Lopez, Closed
-    R23  black vs checkers           (#11) win  checkmate             English Symmetrical
-    R24  white vs AI Fellow          (#12) draw insufficient_material Caro-Kann Exchange
-    R25  black vs lyra               (#15) win  checkmate             French Tarrasch
-    R26  white vs Blank Shooter      (#18) draw threefold_repetition  Ruy Lopez, Closed
     R27  white vs test_bot           (#9 ) win  checkmate             Italian Game
     R28  black vs Danya's Disciple   (#5 ) draw threefold_repetition  French Advance
-    R29  black vs make_no_mistakes   (#13) win  checkmate             London System
     R30  white vs Loss Preventer     (#6 ) win  checkmate             Nimzo-Indian Defence
-    R32  black vs zak                (#17) draw threefold_repetition  Sicilian Classical
+  Games vs ranks 11-20: R13 win vs Magnus Claudes (#16, checkmate); R15 draw vs Fuzzydafool (#14,
+    3fold); R23 win vs checkers (#11, checkmate); R24 draw vs AI Fellow (#12, insuff); R25 win vs
+    lyra (#15, checkmate); R26 draw vs Blank Shooter (#18, 3fold); R29 win vs make_no_mistak (#13,
+    checkmate); R32 draw vs zak (#17, 3fold)
 
 MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
   positions inside +-800 only)
@@ -87,11 +83,10 @@ OPENINGS (curated start positions assigned by the platform)
   By family: Sicilian 6-1-0 (93%); Caro-Kann 1-1-0 (75%); Grunfeld 1-1-0 (75%); London 2-0-0 (100%);
     English 2-0-0 (100%); Nimzo-Indian 2-0-0 (100%); Ruy Lopez 0-2-0 (50%); French 1-1-0 (75%); Reti
     0-0-1 (0%); Italian 1-0-0 (100%); Four Knights 1-0-0 (100%)
-  Positions seen: Sicilian Closed x4 4-0-0 (100%); English Symmetrical x2 2-0-0 (100%); Grunfeld
-    Defence x2 1-1-0 (75%); London System x2 2-0-0 (100%); Nimzo-Indian Defence x2 2-0-0 (100%); Ruy
-    Lopez, Closed x2 0-2-0 (50%); Sicilian Classical x2 1-1-0 (75%); Caro-Kann Classical win;
-    Caro-Kann Exchange draw; Four Knights Game win; French Advance draw; French Tarrasch win;
-    Italian Game win; Reti Opening loss; Sicilian Alapin win
+  Positions seen more than once: Sicilian Closed x4 4-0-0 (100%); English Symmetrical x2 2-0-0
+    (100%); Grunfeld Defence x2 1-1-0 (75%); London System x2 2-0-0 (100%); Nimzo-Indian Defence x2
+    2-0-0 (100%); Ruy Lopez, Closed x2 0-2-0 (50%); Sicilian Classical x2 1-1-0 (75%); 8 positions
+    seen once (5 won, 2 drawn, 1 lost).
   No family with 3+ games scores 20+ points below their overall average.
   First six own moves: 66% match Stockfish's first choice (moves 7-20: 67%), mean loss 5.8 cp, 1%
     played instantly; first clear divergence (loss >= 20 cp) at own move 10.3 on average.

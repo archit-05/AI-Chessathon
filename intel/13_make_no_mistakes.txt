@@ -22,12 +22,8 @@ RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
   vs 11-20  : 2-2-2 (50%) over 6 games
   vs 21-50  : 4-4-1 (67%) over 9 games
   vs rest   : 6-1-1 (81%) over 8 games
-  Games vs other top-20 teams:
+  Games vs top-10 teams:
     R3   black vs Danya's Disciple   (#5 ) win  checkmate             Grunfeld Defence
-    R4   black vs checkers           (#11) loss checkmate             Petroff Defence
-    R8   white vs Blank Shooter      (#18) loss checkmate             Sicilian Sveshnikov
-    R9   white vs Fuzzydafool        (#14) draw threefold_repetition  Sicilian Classical
-    R12  black vs Magnus Claudeson   (#16) win  checkmate             Nimzo-Indian Defence
     R16  black vs Anchoa             (#3 ) draw fifty_moves           Sicilian Najdorf
     R20  black vs Loss Preventer     (#6 ) win  checkmate             Sicilian Closed
     R21  black vs Mate in One        (#7 ) draw threefold_repetition  Sicilian Classical
@@ -35,9 +31,10 @@ RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
     R23  black vs ms                 (#10) draw insufficient_material Sicilian Taimanov
     R24  white vs Patzer 1.2         (#8 ) loss checkmate             Queen's Gambit Accepted
     R25  white vs Capablanca         (#2 ) loss checkmate             Sicilian Closed
-    R26  black vs AI Fellow          (#12) win  checkmate             Pirc Defence
-    R27  black vs lyra               (#15) draw fifty_moves           Sicilian Sveshnikov
     R29  white vs AlphaFish          (#1 ) loss checkmate             London System
+  Games vs ranks 11-20: R4 loss vs checkers (#11, checkmate); R8 loss vs Blank Shooter (#18,
+    checkmate); R9 draw vs Fuzzydafool (#14, 3fold); R12 win vs Magnus Claudes (#16, checkmate); R26
+    win vs AI Fellow (#12, checkmate); R27 draw vs lyra (#15, fifty_moves)
 
 MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
   positions inside +-800 only)
@@ -84,12 +81,10 @@ OPENINGS (curated start positions assigned by the platform)
     English 1-1-0 (75%); Reti 0-2-0 (50%); Italian 1-0-0 (100%); Scotch 0-0-1 (0%); Nimzo-Indian
     1-0-0 (100%); Two Knights 1-0-0 (100%); Queen's Gambit 0-0-1 (0%); Pirc 1-0-0 (100%); French
     1-0-0 (100%); Ruy Lopez 1-0-0 (100%)
-  Positions seen: Sicilian Closed x6 3-2-1 (67%); London System x3 1-0-2 (33%); Sicilian Sveshnikov
-    x3 0-1-2 (17%); English Symmetrical x2 1-1-0 (75%); Grunfeld Defence x2 2-0-0 (100%); Petroff
-    Defence x2 1-0-1 (50%); Reti Opening x2 0-2-0 (50%); Sicilian Classical x2 0-2-0 (50%); French
-    Classical win; Italian Game win; Nimzo-Indian Defence win; Pirc Defence win; Queen's Gambit
-    Accepted loss; Ruy Lopez, Closed win; Scotch Game loss; Sicilian Najdorf draw; Sicilian Taimanov
-    draw; Two Knights Defence win
+  Positions seen more than once: Sicilian Closed x6 3-2-1 (67%); London System x3 1-0-2 (33%);
+    Sicilian Sveshnikov x3 0-1-2 (17%); English Symmetrical x2 1-1-0 (75%); Grunfeld Defence x2
+    2-0-0 (100%); Petroff Defence x2 1-0-1 (50%); Reti Opening x2 0-2-0 (50%); Sicilian Classical x2
+    0-2-0 (50%); 10 positions seen once (6 won, 2 drawn, 2 lost).
   Underperforms in: London 1-0-2 (33%)
   First six own moves: 52% match Stockfish's first choice (moves 7-20: 65%), mean loss 11.6 cp, 17%
     played instantly; first clear divergence (loss >= 20 cp) at own move 7.2 on average.

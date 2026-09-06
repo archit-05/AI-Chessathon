@@ -18,25 +18,21 @@ RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
   vs 11-20  : 7-2-0 (89%) over 9 games
   vs 21-50  : 5-1-1 (79%) over 7 games
   vs rest   : 6-0-0 (100%) over 6 games
-  Games vs other top-20 teams:
+  Games vs top-10 teams:
     R1   white vs Loss Preventer     (#6 ) win  checkmate             Reti Opening
     R2   black vs ms                 (#10) loss checkmate             Pirc Defence
     R8   white vs Danya's Disciple   (#5 ) win  checkmate             English Symmetrical
-    R10  white vs DolphinBot         (#19) win  checkmate             Caro-Kann Exchange
-    R11  black vs Magnus Claudeson   (#16) win  checkmate             Caro-Kann Classical
     R14  black vs Mate in One        (#7 ) loss checkmate             French Classical
-    R15  white vs checkers           (#11) win  checkmate             Two Knights Defence
     R16  white vs SoberJackson       (#4 ) draw threefold_repetition  Sicilian Sveshnikov
     R17  white vs Patzer 1.2         (#8 ) draw threefold_repetition  Caro-Kann Advance
-    R18  black vs Blank Shooter      (#18) win  checkmate             Petroff Defence
     R19  white vs test_bot           (#9 ) win  checkmate             Ruy Lopez, Closed
-    R20  white vs AI Fellow          (#12) draw threefold_repetition  Nimzo-Indian Defence
     R21  black vs Anchoa             (#3 ) win  checkmate             French Classical
     R22  black vs AlphaFish          (#1 ) draw fifty_moves           Ruy Lopez, Closed
-    R23  white vs Fuzzydafool        (#14) win  checkmate             Caro-Kann Classical
-    R25  black vs make_no_mistakes   (#13) win  checkmate             Sicilian Closed
-    R26  white vs lyra               (#15) draw threefold_repetition  Nimzo-Indian Defence
-    R30  black vs Cornelius          (#20) win  checkmate             Caro-Kann Exchange
+  Games vs ranks 11-20: R10 win vs DolphinBot (#19, checkmate); R11 win vs Magnus Claudes (#16,
+    checkmate); R15 win vs checkers (#11, checkmate); R18 win vs Blank Shooter (#18, checkmate); R20
+    draw vs AI Fellow (#12, 3fold); R23 win vs Fuzzydafool (#14, checkmate); R25 win vs
+    make_no_mistak (#13, checkmate); R26 draw vs lyra (#15, 3fold); R30 win vs Cornelius (#20,
+    checkmate)
 
 MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
   positions inside +-800 only)
@@ -83,12 +79,11 @@ OPENINGS (curated start positions assigned by the platform)
     (67%); French 2-0-1 (67%); Reti 2-0-0 (100%); King's Indian 1-1-0 (75%); Nimzo-Indian 0-2-0
     (50%); Pirc 0-0-1 (0%); English 1-0-0 (100%); Slav 1-0-0 (100%); Two Knights 1-0-0 (100%);
     Grunfeld 1-0-0 (100%)
-  Positions seen: Caro-Kann Exchange x3 3-0-0 (100%); Petroff Defence x3 2-0-1 (67%); Ruy Lopez,
-    Closed x3 2-1-0 (83%); Caro-Kann Classical x2 2-0-0 (100%); French Classical x2 1-0-1 (50%);
-    King's Indian Classical x2 1-1-0 (75%); Nimzo-Indian Defence x2 0-2-0 (50%); Reti Opening x2
-    2-0-0 (100%); Sicilian Sveshnikov x2 1-1-0 (75%); Caro-Kann Advance draw; English Symmetrical
-    win; French Advance win; Grunfeld Defence win; Pirc Defence loss; Sicilian Classical win;
-    Sicilian Closed win; Sicilian Taimanov win; Slav Defence win; Two Knights Defence win
+  Positions seen more than once: Caro-Kann Exchange x3 3-0-0 (100%); Petroff Defence x3 2-0-1 (67%);
+    Ruy Lopez, Closed x3 2-1-0 (83%); Caro-Kann Classical x2 2-0-0 (100%); French Classical x2 1-0-1
+    (50%); King's Indian Classical x2 1-1-0 (75%); Nimzo-Indian Defence x2 0-2-0 (50%); Reti Opening
+    x2 2-0-0 (100%); Sicilian Sveshnikov x2 1-1-0 (75%); 10 positions seen once (8 won, 1 drawn, 1
+    lost).
   No family with 3+ games scores 20+ points below their overall average.
   First six own moves: 62% match Stockfish's first choice (moves 7-20: 65%), mean loss 9.2 cp, 0%
     played instantly; first clear divergence (loss >= 20 cp) at own move 7.1 on average.

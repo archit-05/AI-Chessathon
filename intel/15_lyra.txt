@@ -19,24 +19,21 @@ RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
   vs 11-20  : 2-2-3 (43%) over 7 games
   vs 21-50  : 8-2-0 (90%) over 10 games
   vs rest   : 2-2-0 (75%) over 4 games
-  Games vs other top-20 teams:
-    R6   black vs Fuzzydafool        (#14) win  checkmate             King's Indian Classical
+  Games vs top-10 teams:
     R9   white vs Patzer 1.2         (#8 ) draw threefold_repetition  Semi-Slav Defence
     R10  black vs Mate in One        (#7 ) loss checkmate             Ruy Lopez, Closed
     R11  white vs test_bot           (#9 ) draw threefold_repetition  Sicilian Closed
-    R12  black vs checkers           (#11) loss checkmate             London System
     R13  black vs ms                 (#10) loss checkmate             Four Knights Game
     R14  white vs Anchoa             (#3 ) draw threefold_repetition  English Symmetrical
-    R15  white vs AI Fellow          (#12) loss checkmate             Ruy Lopez, Closed
-    R17  white vs Blank Shooter      (#18) loss checkmate             Ruy Lopez, Closed
-    R19  white vs DolphinBot         (#19) win  checkmate             Reti Opening
     R20  black vs SoberJackson       (#4 ) draw threefold_repetition  King's Indian Classical
     R25  white vs AlphaFish          (#1 ) loss checkmate             French Tarrasch
     R26  black vs Capablanca         (#2 ) draw threefold_repetition  Nimzo-Indian Defence
-    R27  white vs make_no_mistakes   (#13) draw fifty_moves           Sicilian Sveshnikov
-    R30  white vs Magnus Claudeson   (#16) draw threefold_repetition  King's Indian Classical
     R31  black vs Loss Preventer     (#6 ) loss checkmate             Sicilian Closed
     R32  black vs Danya's Disciple   (#5 ) draw fifty_moves           Italian Game
+  Games vs ranks 11-20: R6 win vs Fuzzydafool (#14, checkmate); R12 loss vs checkers (#11,
+    checkmate); R15 loss vs AI Fellow (#12, checkmate); R17 loss vs Blank Shooter (#18, checkmate);
+    R19 win vs DolphinBot (#19, checkmate); R27 draw vs make_no_mistak (#13, fifty_moves); R30 draw
+    vs Magnus Claudes (#16, 3fold)
 
 MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
   positions inside +-800 only)
@@ -84,12 +81,10 @@ OPENINGS (curated start positions assigned by the platform)
     2-0-0 (100%); French 1-0-1 (50%); Nimzo-Indian 0-2-0 (50%); Caro-Kann 1-1-0 (75%); Semi-Slav
     0-1-0 (50%); London 0-0-1 (0%); Four Knights 0-0-1 (0%); English 0-1-0 (50%); Reti 1-0-0 (100%);
     Pirc 0-1-0 (50%); Scotch 1-0-0 (100%); Italian 0-1-0 (50%)
-  Positions seen: King's Indian Classical x4 2-2-0 (75%); Sicilian Closed x4 1-2-1 (50%); Ruy Lopez,
-    Closed x3 0-0-3 (0%); Sicilian Sveshnikov x3 2-1-0 (83%); Nimzo-Indian Defence x2 0-2-0 (50%);
-    Two Knights Defence x2 2-0-0 (100%); Caro-Kann Classical draw; Caro-Kann Exchange win; English
-    Symmetrical draw; Four Knights Game loss; French Classical win; French Tarrasch loss; Italian
-    Game draw; London System loss; Pirc Defence draw; Reti Opening win; Scotch Game win; Semi-Slav
-    Defence draw; Sicilian Najdorf win
+  Positions seen more than once: King's Indian Classical x4 2-2-0 (75%); Sicilian Closed x4 1-2-1
+    (50%); Ruy Lopez, Closed x3 0-0-3 (0%); Sicilian Sveshnikov x3 2-1-0 (83%); Nimzo-Indian Defence
+    x2 0-2-0 (50%); Two Knights Defence x2 2-0-0 (100%); 13 positions seen once (5 won, 5 drawn, 3
+    lost).
   Underperforms in: Ruy Lopez 0-0-3 (0%)
   First six own moves: 56% match Stockfish's first choice (moves 7-20: 62%), mean loss 9.0 cp, 18%
     played instantly; first clear divergence (loss >= 20 cp) at own move 7.7 on average.

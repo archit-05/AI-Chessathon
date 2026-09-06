@@ -21,15 +21,14 @@ RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
   vs 11-20  : 1-0-2 (33%) over 3 games
   vs 21-50  : 4-2-2 (62%) over 8 games
   vs rest   : 6-4-1 (73%) over 11 games
-  Games vs other top-20 teams:
+  Games vs top-10 teams:
     R10  white vs test_bot           (#9 ) loss checkmate             Italian Game
-    R14  white vs DolphinBot         (#19) loss checkmate             Caro-Kann Classical
     R23  black vs Loss Preventer     (#6 ) loss checkmate             Semi-Slav Defence
-    R25  black vs Cornelius          (#20) loss checkmate             Sicilian Dragon
     R30  white vs ms                 (#10) loss checkmate             Sicilian Closed
-    R31  black vs Blank Shooter      (#18) win  checkmate             Sicilian Closed
     R32  white vs AlphaFish          (#1 ) draw threefold_repetition  Sicilian Classical
     R33  black vs Capablanca         (#2 ) loss checkmate             Sicilian Dragon
+  Games vs ranks 11-20: R14 loss vs DolphinBot (#19, checkmate); R25 loss vs Cornelius (#20,
+    checkmate); R31 win vs Blank Shooter (#18, checkmate)
 
 MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
   positions inside +-800 only)
@@ -76,11 +75,9 @@ OPENINGS (curated start positions assigned by the platform)
   By family: Sicilian 6-4-5 (53%); Two Knights 2-0-1 (67%); Nimzo-Indian 1-1-0 (75%); Reti 1-0-0
     (100%); Italian 0-0-1 (0%); Scotch 0-1-0 (50%); Caro-Kann 0-0-1 (0%); Ruy Lopez 0-1-0 (50%);
     Semi-Slav 0-0-1 (0%); French 1-0-0 (100%)
-  Positions seen: Sicilian Closed x5 3-1-1 (70%); Sicilian Dragon x3 1-0-2 (33%); Sicilian Najdorf
-    x3 1-1-1 (50%); Sicilian Taimanov x3 1-1-1 (50%); Two Knights Defence x3 2-0-1 (67%);
-    Nimzo-Indian Defence x2 1-1-0 (75%); Caro-Kann Classical loss; French Tarrasch win; Italian Game
-    loss; Reti Opening win; Ruy Lopez, Closed draw; Scotch Game draw; Semi-Slav Defence loss;
-    Sicilian Classical draw
+  Positions seen more than once: Sicilian Closed x5 3-1-1 (70%); Sicilian Dragon x3 1-0-2 (33%);
+    Sicilian Najdorf x3 1-1-1 (50%); Sicilian Taimanov x3 1-1-1 (50%); Two Knights Defence x3 2-0-1
+    (67%); Nimzo-Indian Defence x2 1-1-0 (75%); 8 positions seen once (2 won, 3 drawn, 3 lost).
   No family with 3+ games scores 20+ points below their overall average.
   First six own moves: 40% match Stockfish's first choice (moves 7-20: 46%), mean loss 16.4 cp, 0%
     played instantly; first clear divergence (loss >= 20 cp) at own move 4.0 on average.

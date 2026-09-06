@@ -21,15 +21,14 @@ RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
   vs 11-20  : 0-1-1 (25%) over 2 games
   vs 21-50  : 5-1-4 (55%) over 10 games
   vs rest   : 9-3-2 (75%) over 14 games
-  Games vs other top-20 teams:
+  Games vs top-10 teams:
     R3   black vs SoberJackson       (#4 ) loss checkmate             Nimzo-Indian Defence
     R11  white vs Capablanca         (#2 ) loss checkmate             Caro-Kann Classical
-    R12  white vs make_no_mistakes   (#13) loss checkmate             Nimzo-Indian Defence
     R13  white vs AlphaFish          (#1 ) loss checkmate             Sicilian Classical
-    R30  black vs lyra               (#15) draw threefold_repetition  King's Indian Classical
     R31  black vs Patzer 1.2         (#8 ) draw fifty_moves           Sicilian Taimanov
     R32  black vs Anchoa             (#3 ) draw fifty_moves           French Tarrasch
     R33  white vs Danya's Disciple   (#5 ) loss checkmate             French Advance
+  Games vs ranks 11-20: R12 loss vs make_no_mistak (#13, checkmate); R30 draw vs lyra (#15, 3fold)
 
 MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
   positions inside +-800 only)
@@ -80,12 +79,11 @@ OPENINGS (curated start positions assigned by the platform)
     (50%); French 1-1-1 (50%); Pirc 2-0-0 (100%); Two Knights 1-0-1 (50%); King's Indian 0-1-1
     (25%); London 0-0-1 (0%); Italian 0-0-1 (0%); Grunfeld 1-0-0 (100%); Petroff 1-0-0 (100%);
     Catalan 0-0-1 (0%); Reti 1-0-0 (100%)
-  Positions seen: English Symmetrical x4 2-2-0 (75%); Caro-Kann Classical x3 1-1-1 (50%);
-    Nimzo-Indian Defence x3 0-0-3 (0%); Sicilian Taimanov x3 1-2-0 (67%); French Tarrasch x2 1-1-0
-    (75%); King's Indian Classical x2 0-1-1 (25%); Pirc Defence x2 2-0-0 (100%); Sicilian Classical
-    x2 1-0-1 (50%); Two Knights Defence x2 1-0-1 (50%); Catalan Opening loss; French Advance loss;
-    Grunfeld Defence win; Italian Game loss; London System loss; Petroff Defence win; Reti Opening
-    win; Sicilian Closed win; Sicilian Sveshnikov win
+  Positions seen more than once: English Symmetrical x4 2-2-0 (75%); Caro-Kann Classical x3 1-1-1
+    (50%); Nimzo-Indian Defence x3 0-0-3 (0%); Sicilian Taimanov x3 1-2-0 (67%); French Tarrasch x2
+    1-1-0 (75%); King's Indian Classical x2 0-1-1 (25%); Pirc Defence x2 2-0-0 (100%); Sicilian
+    Classical x2 1-0-1 (50%); Two Knights Defence x2 1-0-1 (50%); 9 positions seen once (5 won, 0
+    drawn, 4 lost).
   Underperforms in: Nimzo-Indian 0-0-3 (0%)
   First six own moves: 52% match Stockfish's first choice (moves 7-20: 52%), mean loss 14.6 cp, 0%
     played instantly; first clear divergence (loss >= 20 cp) at own move 4.4 on average.

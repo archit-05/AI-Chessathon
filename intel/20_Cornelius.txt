@@ -15,18 +15,17 @@ RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
   vs 11-20  : 1-1-1 (50%) over 3 games
   vs 21-50  : 2-2-3 (43%) over 7 games
   vs rest   : 7-0-0 (100%) over 7 games
-  Games vs other top-20 teams:
-    R18  black vs DolphinBot         (#19) loss checkmate             Reti Opening
+  Games vs top-10 teams:
     R21  white vs test_bot           (#9 ) loss checkmate             Sicilian Closed
     R23  black vs Anchoa             (#3 ) draw fifty_moves           Sicilian Closed
-    R25  white vs zak                (#17) win  checkmate             Sicilian Dragon
     R27  black vs Patzer 1.2         (#8 ) loss checkmate             London System
-    R28  black vs AI Fellow          (#12) draw fifty_moves           Ruy Lopez, Closed
     R29  black vs SoberJackson       (#4 ) draw fifty_moves           Nimzo-Indian Defence
     R30  white vs Capablanca         (#2 ) loss checkmate             Caro-Kann Exchange
     R31  white vs Mate in One        (#7 ) draw insufficient_material Queen's Gambit Accepted
     R32  black vs Loss Preventer     (#6 ) loss checkmate             French Classical
     R33  black vs ms                 (#10) draw insufficient_material Petroff Defence
+  Games vs ranks 11-20: R18 loss vs DolphinBot (#19, checkmate); R25 win vs zak (#17, checkmate);
+    R28 draw vs AI Fellow (#12, fifty_moves)
 
 MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
   positions inside +-800 only)
@@ -76,11 +75,9 @@ OPENINGS (curated start positions assigned by the platform)
     Grunfeld 1-0-1 (50%); Semi-Slav 1-0-0 (100%); English 1-0-0 (100%); Scotch 1-0-0 (100%); Pirc
     0-0-1 (0%); London 0-0-1 (0%); Nimzo-Indian 0-1-0 (50%); Queen's Gambit 0-1-0 (50%); French
     0-0-1 (0%); Petroff 0-1-0 (50%)
-  Positions seen: Sicilian Closed x5 2-2-1 (60%); Grunfeld Defence x2 1-0-1 (50%); Reti Opening x2
-    1-0-1 (50%); Ruy Lopez, Closed x2 0-1-1 (25%); Caro-Kann Advance win; Caro-Kann Classical draw;
-    Caro-Kann Exchange loss; English Symmetrical win; French Classical loss; London System loss;
-    Nimzo-Indian Defence draw; Petroff Defence draw; Pirc Defence loss; Queen's Gambit Accepted
-    draw; Scotch Game win; Semi-Slav Defence win; Sicilian Dragon win; Sicilian Najdorf win
+  Positions seen more than once: Sicilian Closed x5 2-2-1 (60%); Grunfeld Defence x2 1-0-1 (50%);
+    Reti Opening x2 1-0-1 (50%); Ruy Lopez, Closed x2 0-1-1 (25%); 14 positions seen once (6 won, 4
+    drawn, 4 lost).
   No family with 3+ games scores 20+ points below their overall average.
   First six own moves: 54% match Stockfish's first choice (moves 7-20: 57%), mean loss 13.0 cp, 0%
     played instantly; first clear divergence (loss >= 20 cp) at own move 5.5 on average.

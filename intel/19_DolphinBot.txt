@@ -17,20 +17,17 @@ RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
   vs 11-20  : 2-0-5 (29%) over 7 games
   vs 21-50  : 3-2-1 (67%) over 6 games
   vs rest   : 9-2-0 (91%) over 11 games
-  Games vs other top-20 teams:
-    R8   white vs AI Fellow          (#12) loss checkmate             Queen's Indian Defence
+  Games vs top-10 teams:
     R10  black vs Capablanca         (#2 ) loss checkmate             Caro-Kann Exchange
     R11  black vs Danya's Disciple   (#5 ) draw threefold_repetition  Reti Opening
-    R14  black vs zak                (#17) win  checkmate             Caro-Kann Classical
-    R17  black vs Fuzzydafool        (#14) loss checkmate             Petroff Defence
-    R18  white vs Cornelius          (#20) win  checkmate             Reti Opening
-    R19  black vs lyra               (#15) loss checkmate             Reti Opening
-    R21  black vs Blank Shooter      (#18) loss checkmate             Sicilian Najdorf
     R22  white vs test_bot           (#9 ) loss checkmate             Nimzo-Indian Defence
     R24  white vs Anchoa             (#3 ) loss checkmate             Petroff Defence
-    R28  black vs checkers           (#11) loss checkmate             Sicilian Closed
     R32  white vs Mate in One        (#7 ) draw fifty_moves           Nimzo-Indian Defence
     R33  black vs AlphaFish          (#1 ) loss checkmate             Semi-Slav Defence
+  Games vs ranks 11-20: R8 loss vs AI Fellow (#12, checkmate); R14 win vs zak (#17, checkmate); R17
+    loss vs Fuzzydafool (#14, checkmate); R18 win vs Cornelius (#20, checkmate); R19 loss vs lyra
+    (#15, checkmate); R21 loss vs Blank Shooter (#18, checkmate); R28 loss vs checkers (#11,
+    checkmate)
 
 MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
   positions inside +-800 only)
@@ -80,12 +77,10 @@ OPENINGS (curated start positions assigned by the platform)
     (67%); Petroff 1-0-2 (33%); Dutch 0-1-1 (25%); London 2-0-0 (100%); English 2-0-0 (100%); Ruy
     Lopez 1-1-0 (75%); French 1-0-0 (100%); Queen's Indian 0-0-1 (0%); Queen's Gambit 0-1-0 (50%);
     King's Indian 1-0-0 (100%); Semi-Slav 0-0-1 (0%)
-  Positions seen: Reti Opening x4 1-2-1 (50%); Nimzo-Indian Defence x3 1-1-1 (50%); Petroff Defence
-    x3 1-0-2 (33%); Dutch Stonewall x2 0-1-1 (25%); English Symmetrical x2 2-0-0 (100%); London
-    System x2 2-0-0 (100%); Ruy Lopez, Closed x2 1-1-0 (75%); Sicilian Sveshnikov x2 2-0-0 (100%);
-    Caro-Kann Advance win; Caro-Kann Classical win; Caro-Kann Exchange loss; French Tarrasch win;
-    King's Indian Classical win; Queen's Gambit Accepted draw; Queen's Indian Defence loss;
-    Semi-Slav Defence loss; Sicilian Closed loss; Sicilian Najdorf loss
+  Positions seen more than once: Reti Opening x4 1-2-1 (50%); Nimzo-Indian Defence x3 1-1-1 (50%);
+    Petroff Defence x3 1-0-2 (33%); Dutch Stonewall x2 0-1-1 (25%); English Symmetrical x2 2-0-0
+    (100%); London System x2 2-0-0 (100%); Ruy Lopez, Closed x2 1-1-0 (75%); Sicilian Sveshnikov x2
+    2-0-0 (100%); 10 positions seen once (4 won, 1 drawn, 5 lost).
   Underperforms in: Petroff 1-0-2 (33%)
   First six own moves: 51% match Stockfish's first choice (moves 7-20: 53%), mean loss 11.6 cp, 0%
     played instantly; first clear divergence (loss >= 20 cp) at own move 4.1 on average.
