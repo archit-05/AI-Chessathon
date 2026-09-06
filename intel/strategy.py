@@ -159,15 +159,16 @@ def leaks(focus) -> list[str]:
         d, c, tt = t["d"], t["c"], t["t"]
         items = []
         for g in d["rep_ahead"]:
-            items.append(f"repeated while +{g['final_cp']} in {g['url'].rsplit('/', 1)[0] and 'R' + str(g['round'])} vs {(g.get('opponent_bot') or g['opponent'])[:14]}")
+            items.append(f"repeated while +{g['final_cp']} in R{g['round']} vs {(g.get('opponent_bot') or g['opponent'])[:14]}")
         for g, best, why in c["missed"]:
             if g["termination"] == "threefold_repetition" and g in d["rep_ahead"]:
                 continue
             items.append(f"R{g['round']} vs {(g.get('opponent_bot') or g['opponent'])[:14]}: peak {best:+d}, {why}")
-        instant_mate = [(g, m) for g in t["rated"] for m in g["moves"] if m["cp_before"] >= 9000 and m["time"] is not None and m["time"] < 0.02]
+        # playing a found mate instantly is normal; it is a leak only when the game was then not won
+        instant_mate = [(g, m) for g in t["rated"] if g["score"] < 1.0 for m in g["moves"] if m["cp_before"] >= 9000 and m["time"] is not None and m["time"] < 0.02]
         if instant_mate:
             rounds = sorted({g["round"] for g, _ in instant_mate})
-            items.append(f"{len(instant_mate)} moves played in under 20 ms while holding a mate score (R{', R'.join(map(str, rounds[:5]))}{', ...' if len(rounds) > 5 else ''})")
+            items.append(f"held a mate score, played {len(instant_mate)} moves in under 20 ms and still did not win (R{', R'.join(map(str, rounds))})")
         if tt.get("under5"):
             items.append(f"clock under 5 s in {len(tt['under5'])} of {len(t['rated'])} games")
         if not items:
