@@ -23,10 +23,16 @@ or lookup table of engine moves is used or shipped. The plan, decisions and buil
 
 `tools/stream_lichess.py` streams positions and Stockfish evaluations from
 `lichess_db_eval.jsonl.zst` (Creative Commons CC0), keeping the deepest evaluation per position
-(depth >= 12). `tools/train_nnue.py` trains the network in PyTorch on the M2 GPU with an MSE
-loss on sigmoid(cp/400) from the side to move's view, then quantises to int16 (input layer x255,
-output layer x32x400) and writes `nnue.safetensors`. `tests/test_nnue.py` checks that the numba
-integer forward pass with incremental updates matches a reference implementation exactly.
+(depth >= 12) and flagging quiet positions (best move neither a capture nor a promotion).
+`tools/train_nnue.py` trains the network in PyTorch on the M2 GPU: 8 king buckets x 768
+piece-square features per perspective (6,144 inputs), 512 hidden units, one-cycle schedule, MSE
+loss on sigmoid(cp/400) from the side to move's view, 8 epochs over ~128M quiet positions. Export
+quantises to int16 (input layer x255, output layer x QB x 400 with QB chosen so nothing saturates)
+and writes `nnue.safetensors` (6.3 MB). `tests/test_nnue.py` checks that the numba integer
+forward pass with incremental updates matches a reference implementation exactly, and
+`tests/test_train_consistency.py` checks the PyTorch model and the engine agree to within
+quantisation error. The shipped net (v2, 6 Sept 2026) scored 75.8% over 200 games against the
+same engine with the hand-crafted evaluation.
 
 ## Verify locally
 
