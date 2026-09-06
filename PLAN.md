@@ -498,3 +498,6 @@ conversion + endgame suite, book; Tue own-search fine-tune, SF 2600/2800 ladder;
   153 cp (v2: 0.01161 / 175 cp on its own chunk). Consistency 2.1 cp, incremental exact,
   evaluations well scaled (queen +962, rook −488, KQvK +1689). Gate vs v2.1: 300 games at
   10 s + 0.1 s, 3 workers, running alone. Batch 2 (capture/continuation history) gates after it.
+- **Sun 6 Sept, 16:25.** Ladder 7-1 since the v2 upload (R38 win at 1.1 s/move with 97 s left,
+  consistent with v2.1's clock policy now on the platform), 1717, rank 87. v3 gate vs v2.1 at
+  61 games: +24 =24 −13, 59.0% (+63 ±91), 0 fallback.
