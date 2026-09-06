@@ -493,3 +493,8 @@ conversion + endgame suite, book; Tue own-search fine-tune, SF 2600/2800 ladder;
   20/40/60 and 6 s at the end; level material, one site-tagged inaccuracy. This is the failure
   the v2.1 pressure test found and fixed (predictive iteration start, 2.2x hard cap, 50-move
   horizon). Ladder 6-1-4 on v2, 1638, rank 121; bot renamed "BINI Sahur".
+- **Sun 6 Sept, 16:20 — v3 trained.** 6 epochs (1 + 5 resumed) over ~155M quiet positions
+  (all 205M lines of the evaluation database, quiet-filtered); final validation 0.01017, MAE
+  153 cp (v2: 0.01161 / 175 cp on its own chunk). Consistency 2.1 cp, incremental exact,
+  evaluations well scaled (queen +962, rook −488, KQvK +1689). Gate vs v2.1: 300 games at
+  10 s + 0.1 s, 3 workers, running alone. Batch 2 (capture/continuation history) gates after it.
