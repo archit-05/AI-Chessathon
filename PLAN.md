@@ -501,3 +501,8 @@ conversion + endgame suite, book; Tue own-search fine-tune, SF 2600/2800 ladder;
 - **Sun 6 Sept, 16:25.** Ladder 7-1 since the v2 upload (R38 win at 1.1 s/move with 97 s left,
   consistent with v2.1's clock policy now on the platform), 1717, rank 87. v3 gate vs v2.1 at
   61 games: +24 =24 −13, 59.0% (+63 ±91), 0 fallback.
+- **Sun 6 Sept, 17:45.** Ladder 8-1 since v2 upload, 1779, rank 70. v3 gate at 242 games:
+  +83 =103 −56, 55.6% (+39 ±44). v3 real-clock centipawn loss measured *under the gate's load*:
+  16.1 mean / 1.4% blunders over 12 games — not comparable with v2's 11.3 (quiet machine); a
+  quiet, sequential comparison of v2.1 and v3 vs Stockfish 2400 is chained after the gate, then
+  the batch-2 gate.
