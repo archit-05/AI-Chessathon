@@ -92,23 +92,45 @@ the same way.
 
 ## 7. Execution log (night of 6 Sept, written as it happens)
 
-- 00:05  Working copy `bini_leap` = v2.2 files (v2.1 search + v2.2 clock + v3 net) plus A and C.
+- 22:00  Working copy `bini_leap` = v2.2 files (v2.1 search + v2.2 clock + v3 net) plus A and C.
   - A: `mtg = max(18, 34 - 0.4·n)`; low-clock caps unchanged. Budget curve: 3.8/8.4 s at move 1,
     3.0/6.6 s at move 15 (75 s left), 2.35/5.2 s at move 30 (45 s left), 1.7/2.0 s at move 50 (25 s left).
   - C: root guard implemented as a driver rule, not a veto: when the best root move has SEE < -150
     and the score is not a mate, the iteration factor is forced to 2.5 (up to the hard limit) so the
     search keeps deepening before committing. Logged as `rg<n>` on the move line. Fires for 17.Rd4 in
     the R43 position (SEE -500).
-- 00:20  B (main-line safety: no multi-cut at PV nodes, LMR only from the 7th move at PV) built as
+- 22:10  B (main-line safety: no multi-cut at PV nodes, LMR only from the 7th move at PV) built as
   `bini_leap_b`. Regression: it plays 17.Rd4 (R43) at 2.0, 3.0 and 3.8 s while A+C avoids it at all
   three (b2b3 +90). Same 39/40 tactics. B is DROPPED on this evidence, per the instruction to drop it
   unless clearly positive; a second 200-game gate for it would not fit the night anyway.
-- 00:25  Suites on A+C: test_search gate 2 passed (9/11 tactics), blunders 2/2, puzzles 39/40 (98%).
-- 00:30  Top-team proxy calibrated: unrestricted Stockfish at N nodes, move loss judged by the site
+- 22:15  Suites on A+C: test_search gate 2 passed (9/11 tactics), blunders 2/2, puzzles 39/40 (98%).
+- 22:20  Top-team proxy calibrated: unrestricted Stockfish at N nodes, move loss judged by the site
   grader (120k nodes) on 120 quiet middlegame positions: 15k nodes -> CPL 8.9, 30k -> 5.0, 60k -> 4.2.
   The proxy for the 20 real-clock games is Stockfish at 10k nodes (about CPL 11 by extrapolation,
   measured again from the games).
-- 00:35  Gate cadence decided: 200 games at 30 s + 0.5 s (same increment as the platform, four times
+- 22:25  Gate cadence decided: 200 games at 30 s + 0.5 s (same increment as the platform, four times
   faster per move, 3 workers). Real clock (120 s + 0.5 s) is used for the 10 pressure games and the 20
   proxy games. Labelling reduced to 2 workers / 1.5M positions so the gate is not starved.
-- Batch 2 (D) at 132/150: +8 +/-60. Will be excluded unless the final interval clears zero.
+- 22:29  Batch 2 (D) final: 150 games, +5 +/-56, zero fallbacks. EXCLUDED.
+- 22:29  Leap gate started: bini_leap vs bini_v22, 200 games, 30 s + 0.5 s, 3 workers
+  (bini/tests/arena/leap_vs_v22.log). v2.2 baseline vs the Stockfish 10k proxy running at 1 worker.
+  Labelling relaunched at 2 workers / 1.5M positions (10 chunks; the v3b fine-tune waiter is unchanged).
+- 22:40  Second R43 position from the intel session added to tests/pos/blunders.epd (15.Rad1?!).
+  Stockfish (2M nodes): after 15.Rad1 Black stands +41 (15...Bg4 16.Qg3 Bxd1 17.Rxd1 Kh7 18.Rd6 Qc4);
+  best 15.Bd5 keeps +35. The leap build plays Rad1 at 3.8 s (+63 at depth 15): it sees 15...Bg4 and
+  still scores the exchange sacrifice as good for White. Same net as v2.2, same result, so this is not a
+  regression of tonight's build: it is the net's attacking-compensation bias, the same family as 18.Rd4,
+  and the reason the v3b fine-tune uses whole-game positions. Recorded as a known miss for V3.
+
+## 8. V3 (Monday), agreed shape
+
+One build for the whole of Monday morning (v2.2), then V3 in the afternoon if and only if it gates.
+- Net: v3b = v3 fine-tuned 2 epochs on the quiet set plus 1.5M whole-game Stockfish-labelled positions
+  (oversampled x10). Gate: 300 games at 10 s + 0.1 s vs the shipped v2.2; must be positive with the
+  interval clear of zero; CPL on 20 real-clock proxy games not worse than v2.2; both R43 positions.
+- Search: nothing new in V3 unless it gates on its own (candidates for Tuesday: contempt 30-40 for
+  draw aversion against weaker opponents, gated separately at 10 s).
+- Battery: identical to tonight's, uncompressed. Package, byte-check, fresh-extraction game, push.
+- Later in the week (freeze Wednesday night, upload Thursday afternoon): larger net trained from scratch
+  on the full data, 4 epochs; search speed work (target +20% nps); parameter tuning one change at a time.
+
