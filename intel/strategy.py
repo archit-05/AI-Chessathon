@@ -306,11 +306,19 @@ def main():
     voided = [(t, g) for t in teams for g in t.get("voided", [])]
     if voided:
         by_term = Counter(g["termination"] for _, g in voided)
-        L.append("SITE RULE CHANGE IN EFFECT (detected 6 Sept ~11:00)")
-        L.extend(wrap(f"The site now voids games that ended by threefold repetition or the fifty-move rule, retroactively, and has re-rated everyone: "
-                      f"{len(voided)} such games among the covered teams ({', '.join(f'{k} {v}' for k, v in by_term.most_common())}); insufficient-material draws still count. "
-                      "On the ladder a repetition therefore erases the game instead of scoring half a point: when worse, force a repetition and the game never happened; when better, never allow one. "
-                      "The published rules still say FIDE draws for the final Swiss, so treat this as a ladder-only fact until the organisers say otherwise, and watch the Void column for a reversal."))
+        last_voided = max(g["round"] for _, g in voided)
+        standing = [g for t in teams for g in t["rated"] if g["termination"] in ("threefold_repetition", "fifty_moves") and g["round"] > last_voided]
+        L.append("SITE VOIDING OF REPETITION AND FIFTY-MOVE GAMES (detected 6 Sept ~11:00)")
+        if standing:
+            L.extend(wrap(f"On 6 Sept around 11:00 the site voided, retroactively, every game up to R{last_voided} that had ended by threefold repetition or the fifty-move rule "
+                          f"({len(voided)} games among the covered teams: {', '.join(f'{k} {v}' for k, v in by_term.most_common())}) and re-rated everyone. "
+                          f"Since then {len(standing)} such draws (R{min(g['round'] for g in standing)}-R{max(g['round'] for g in standing)}) stand as draws, so this was a one-off re-adjudication, "
+                          "not a standing rule: repetition draws count again. Records and ratings above reflect the site's current counting; the voided games are still used for move quality, clocks and draw behaviour."))
+        else:
+            L.extend(wrap(f"The site voids games that ended by threefold repetition or the fifty-move rule, retroactively, and has re-rated everyone: "
+                          f"{len(voided)} such games among the covered teams ({', '.join(f'{k} {v}' for k, v in by_term.most_common())}); insufficient-material draws still count. "
+                          "While this holds, a repetition on the ladder erases the game instead of scoring half a point: when worse, force a repetition; when better, never allow one. "
+                          "The published rules still say FIDE draws for the final Swiss; watch the Void column and this section for a reversal."))
         L.append("")
     L.append("A. THE FIELD")
     L.extend(table([league_row(t) for t in sorted(teams, key=lambda t: t["rank"]) if t["rank"] <= TOP_N]))
