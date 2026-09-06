@@ -506,3 +506,8 @@ conversion + endgame suite, book; Tue own-search fine-tune, SF 2600/2800 ladder;
   16.1 mean / 1.4% blunders over 12 games — not comparable with v2's 11.3 (quiet machine); a
   quiet, sequential comparison of v2.1 and v3 vs Stockfish 2400 is chained after the gate, then
   the batch-2 gate.
+- **Sun 6 Sept, 18:06 — v3 gate final.** v3 net (same v2.1 code) vs v2.1, 300 games at
+  10 s + 0.1 s: +103 =123 −74, 54.8%, ≈ +34 ±40, 0 fallback. Passes the "measures positive" rule
+  but short of the target; decision on shipping waits for the quiet real-clock centipawn
+  comparison (v2.1 then v3, 12 games each vs Stockfish 2400). Tonight: batch-2 gate, then
+  whole-game labelling for a v3b fine-tune.
