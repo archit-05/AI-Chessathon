@@ -23,7 +23,7 @@ from collections import Counter
 import chess
 import chess.pgn
 
-from common import LEADERBOARD, RAW, dump_json, load_json
+from common import LEADERBOARD, OUR_TEAM, RAW, dump_json, load_json
 from scrape import BASE, fetch, get_game, get_team, now, parse_leaderboard
 
 ARCHIVE = RAW / "ladder"
@@ -144,6 +144,12 @@ CLIMB_DAY = 100  # or since yesterday's close
 MAX_DETAIL = 10
 
 
+def label(r: dict, width: int = 20) -> str:
+    """Bot name, marked when it is our own team."""
+    name = f"{r['bot']} (us)" if r.get("team") == OUR_TEAM else r["bot"]
+    return name[:width]
+
+
 def report(rows: list[dict], top: int = 8, detail: int = 5, since: int = 30) -> list[str]:
     hist = histories()
     latest = max((max(h) for h in hist.values() if h), default=0)
@@ -153,16 +159,16 @@ def report(rows: list[dict], top: int = 8, detail: int = 5, since: int = 30) -> 
     windows = [(1, "over the last round"), (3, "over the last three rounds")]
     if latest - since > 0 and latest - since != 3:
         windows.append((latest - since, f"since R{since} (yesterday's close)"))
-    for back, label in windows:
+    for back, label_ in windows:
         cl = climbers(rows, hist, back, latest)
         if not cl:
             continue
-        L.append(f"  Biggest gains {label}:")
+        L.append(f"  Biggest gains {label_}:")
         for c in cl[:top]:
-            L.append(f"    {c['delta']:+4d}  {c['bot'][:20]:<20} #{c['rank']:<3} {c['then']} -> {c['rating']}{'P' if c['provisional'] else ' '} {'-'.join(map(str, c['wdl'])) if c.get('wdl') else '':>9}"
+            L.append(f"    {c['delta']:+4d}  {label(c):<20} #{c['rank']:<3} {c['then']} -> {c['rating']}{'P' if c['provisional'] else ' '} {'-'.join(map(str, c['wdl'])) if c.get('wdl') else '':>9}"
                      f" {c['university'][:12]:<12}{rank_delta(c['uuid'], arcs, min(back, 6))}")
         if back == 1:
-            L.append(f"  Biggest falls {label}: " + "; ".join(f"{c['bot'][:16]} {c['delta']:+d} (#{c['rank']})" for c in cl[-4:][::-1]))
+            L.append(f"  Biggest falls {label_}: " + "; ".join(f"{label(c, 16)} {c['delta']:+d} (#{c['rank']})" for c in cl[-4:][::-1]))
     fresh = sorted([r for r in rows if r.get("provisional") and r["rank"] <= 100], key=lambda r: r["rank"])
     if fresh:
         shown = fresh[:20]
@@ -172,7 +178,7 @@ def report(rows: list[dict], top: int = 8, detail: int = 5, since: int = 30) -> 
         prev = arcs[-2][1]
         new = [r for r in rows if r["uuid"] not in prev]
         if new:
-            L.append("  New on the ladder since the previous snapshot: " + ", ".join(f"{r['bot'][:16]} (#{r['rank']}, {r['rating']})" for r in new[:10]))
+            L.append("  New on the ladder since the previous snapshot: " + ", ".join(f"{label(r, 16)} (#{r['rank']}, {r['rating']})" for r in new[:10]))
     cl3 = climbers(rows, hist, 3, latest) or climbers(rows, hist, 1, latest)
     clday = climbers(rows, hist, latest - since, latest) if latest - since > 0 else []
     big = {c["uuid"]: c for c in cl3 if c["delta"] >= CLIMB3}
@@ -182,9 +188,11 @@ def report(rows: list[dict], top: int = 8, detail: int = 5, since: int = 30) -> 
     if big:
         ordered = sorted(big.values(), key=lambda c: -c["delta"])
         L.append(f"  Climbing a lot ({CLIMB3}+ over the last three rounds or {CLIMB_DAY}+ since R{since}), {len(big)} teams: "
-                 + ", ".join(f"{c['bot'][:16]} #{c['rank']} ({c['delta']:+d})" for c in ordered[:30]) + (f", and {len(ordered) - 30} more" if len(ordered) > 30 else ""))
+                 + ", ".join(f"{label(c, 16)} #{c['rank']} ({c['delta']:+d})" for c in ordered[:30]) + (f", and {len(ordered) - 30} more" if len(ordered) > 30 else ""))
     chosen, seen = [], set()
     for c in list(cl3[:detail]) + sorted(big.values(), key=lambda c: -c["delta"]):
+        if c.get("team") == OUR_TEAM:
+            continue  # our own games have their own section
         if c["uuid"] not in seen and len(chosen) < MAX_DETAIL:
             chosen.append(c)
             seen.add(c["uuid"])
