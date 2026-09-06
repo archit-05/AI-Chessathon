@@ -459,3 +459,10 @@ conversion + endgame suite, book; Tue own-search fine-tune, SF 2600/2800 ladder;
   baseline of the shipped search vs Stockfish 400k nodes from +200..+500 positions: +11 =6 −3
   (55%); this is the number the conversion build must beat. Regression, torture alone, and
   packaging chained.
+- **Sun 6 Sept, 12:50 — v2.1 battery, part 2.** Pressure games (10, real clock, sharp
+  middlegames vs full-strength Stockfish 1.5M nodes/move) on the fixed time manager: min clock
+  9.7 s in a 133-move game; clock 60–90 s after 20 own moves, 33–62 s after 40, 22–37 s after 60;
+  unclear positions 1.85 s median vs decided 1.41 s; 0-3-7 (expected vs that opponent). Regression:
+  perft exact, 6,000-position differential ok, NNUE exact, wrapper state ok, search gate passed.
+  Conversion baseline vs Stockfish 400k: winning +11 =6 −3, marginal +0 =4 −6, drawn no losses.
+  Torture (alone) running, then packaging.
