@@ -155,9 +155,14 @@ def _budget(time_left_ms: int, move_number: int) -> tuple[float, float]:
         soft = min(0.4 * INCREMENT_MS, 0.05 * time_left_ms)
         hard = min(0.8 * INCREMENT_MS, 0.15 * time_left_ms)
         return max(MIN_THINK_MS, soft), max(MIN_THINK_MS, hard)
-    mtg = max(16.0, 42.0 - 0.5 * move_number)
+    # Games against strong opponents run 60-100 moves: budget for that horizon, and keep the
+    # hard cap close to the soft budget so an unstable move cannot eat several moves' time.
+    mtg = max(22.0, 50.0 - 0.5 * move_number)
     soft = time_left_ms / mtg + 0.6 * INCREMENT_MS
-    hard = min(3.0 * soft, 0.25 * time_left_ms, time_left_ms - RESERVE_MS)
+    hard = min(2.2 * soft, 0.2 * time_left_ms, time_left_ms - RESERVE_MS)
+    if time_left_ms < 10000:
+        soft = min(soft, 0.06 * time_left_ms + 0.4 * INCREMENT_MS)
+        hard = min(hard, 0.12 * time_left_ms + 0.6 * INCREMENT_MS)
     soft = min(soft, hard)
     return max(MIN_THINK_MS, soft), max(MIN_THINK_MS, hard)
 

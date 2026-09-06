@@ -117,6 +117,7 @@ class Engine:
         stable = 0
         gc_was_enabled = gc.isenabled()
         gc.disable()
+        last_iter_s = 0.0
         try:
             depth = 1
             alpha, beta = -S.INF, S.INF
@@ -124,6 +125,7 @@ class Engine:
             while depth <= max_depth:
                 info[S.I_ROOT_MOVE] = 0
                 info[S.I_ROOT_DONE] = 0
+                iter_start = time.perf_counter()
                 score = S.search(self.bb, self.st, self.pcs, self.mv, self.ub, self.ui, self.acc, self.tt_key, self.tt_data, self.killers, self.history, self.counters, self.scores, info, self.tlim, self.hist, self.w1, self.b1, self.w2, self.b2, depth, alpha, beta, self.age)
                 self.st[B.S_PLY] = 0
                 if info[S.I_ABORT]:
@@ -161,15 +163,20 @@ class Engine:
                         break
                     if depth >= 8 and best_score > 0:
                         break
-                # time management: soft limit, shortened when the move is stable
+                # time management: a new iteration starts only if it is predicted to finish
+                # inside the soft budget (the next iteration costs ~2x the last one), so the
+                # real spend tracks the budget instead of overrunning to the hard limit
+                last_iter_s = time.perf_counter() - iter_start
                 factor = 1.0
                 if stable >= 3:
                     factor = 0.6
                 elif stable == 0 and depth >= 6:
-                    factor = 1.4
+                    factor = 1.3
                 if abs(best_score) > 400 and stable >= 2 and depth >= 10:
                     factor *= 0.6  # decided position: save the clock for when it is needed
                 if elapsed >= soft_ms * factor:
+                    break
+                if depth >= 6 and elapsed + 2.0 * last_iter_s * 1000.0 > soft_ms * factor:
                     break
                 depth += 1
                 window = 25

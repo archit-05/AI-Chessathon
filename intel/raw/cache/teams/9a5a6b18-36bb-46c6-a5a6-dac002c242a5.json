@@ -2,10 +2,10 @@
  "uuid": "9a5a6b18-36bb-46c6-a5a6-dac002c242a5",
  "bot": "The LochChess Monster",
  "team": "Zack",
- "rating": 1274,
- "rank": 284,
- "record": "6-8-11",
- "rated_rounds": 25,
+ "rating": 1257,
+ "rank": 286,
+ "record": "7-8-12",
+ "rated_rounds": 27,
  "history": [
   [
    7,
@@ -106,9 +106,37 @@
   [
    31,
    1274
+  ],
+  [
+   32,
+   1255
+  ],
+  [
+   33,
+   1257
   ]
  ],
  "games": [
+  {
+   "game": "d1f62de0-8621-4dfa-809a-fdce83d77b7e",
+   "kind": "Rated",
+   "round": 33,
+   "colour": "Black",
+   "opponent": "Sun",
+   "opponent_uuid": "ef6ea1c4-e641-471e-91a0-ee7c521dbc56",
+   "verdict": "win",
+   "opening": "Nimzo-Indian Defence"
+  },
+  {
+   "game": "2b10b2b1-7f3a-4a26-9ba3-57211d1584b0",
+   "kind": "Rated",
+   "round": 32,
+   "colour": "White",
+   "opponent": "\u610f\u9762\u7c73\u52a9",
+   "opponent_uuid": "d8c1519e-4599-4470-96ec-dada4438927d",
+   "verdict": "loss",
+   "opening": "Semi-Slav Defence"
+  },
   {
    "game": "fcecc12a-076b-44b5-9efb-dbcfcbc85530",
    "kind": "Rated",
@@ -360,5 +388,5 @@
    "opening": "London System"
   }
  ],
- "fetched_at": "2026-09-06T08:02:56Z"
+ "fetched_at": "2026-09-06T09:33:09Z"
 }

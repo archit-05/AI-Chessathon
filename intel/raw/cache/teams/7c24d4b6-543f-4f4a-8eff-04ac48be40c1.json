@@ -2,10 +2,10 @@
  "uuid": "7c24d4b6-543f-4f4a-8eff-04ac48be40c1",
  "bot": "The Rook",
  "team": "The Rook",
- "rating": 1292,
- "rank": 273,
- "record": "6-15-10",
- "rated_rounds": 31,
+ "rating": 1269,
+ "rank": 281,
+ "record": "6-16-11",
+ "rated_rounds": 33,
  "history": [
   [
    1,
@@ -130,9 +130,37 @@
   [
    31,
    1292
+  ],
+  [
+   32,
+   1289
+  ],
+  [
+   33,
+   1269
   ]
  ],
  "games": [
+  {
+   "game": "6adc2b99-2e8b-4465-997d-1ede6d80c6ed",
+   "kind": "Rated",
+   "round": 33,
+   "colour": "Black",
+   "opponent": "SearchMate",
+   "opponent_uuid": "9b28a4ca-3e56-4988-8b28-8057e03974c9",
+   "verdict": "loss",
+   "opening": "Caro-Kann Classical"
+  },
+  {
+   "game": "203a37ad-e6cb-4ef7-85af-3d30a5e76642",
+   "kind": "Rated",
+   "round": 32,
+   "colour": "White",
+   "opponent": "Pawn Stars",
+   "opponent_uuid": "7273119d-628e-410b-900a-83252e53eb52",
+   "verdict": "draw",
+   "opening": "Dutch Stonewall"
+  },
   {
    "game": "a3cd55ee-33b9-468f-9c08-2f0341e9d7d7",
    "kind": "Rated",
@@ -444,5 +472,5 @@
    "opening": "Catalan Opening"
   }
  ],
- "fetched_at": "2026-09-06T08:05:09Z"
+ "fetched_at": "2026-09-06T09:33:04Z"
 }

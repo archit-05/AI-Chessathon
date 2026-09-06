@@ -2,10 +2,10 @@
  "uuid": "b1d4ae25-42a4-474a-b5bb-8e42066abda4",
  "bot": "GoodKnight",
  "team": "tristanize_chess",
- "rating": 1418,
- "rank": 216,
- "record": "8-9-14",
- "rated_rounds": 31,
+ "rating": 1423,
+ "rank": 215,
+ "record": "9-10-14",
+ "rated_rounds": 33,
  "history": [
   [
    1,
@@ -130,9 +130,37 @@
   [
    31,
    1418
+  ],
+  [
+   32,
+   1406
+  ],
+  [
+   33,
+   1423
   ]
  ],
  "games": [
+  {
+   "game": "5b0731b2-23fe-44a1-89c5-85df5ea6b33c",
+   "kind": "Rated",
+   "round": 33,
+   "colour": "White",
+   "opponent": "yung money",
+   "opponent_uuid": "0a01484c-ab06-4051-a634-4766c8d09c24",
+   "verdict": "win",
+   "opening": "Four Knights Game"
+  },
+  {
+   "game": "9c4fda0c-4644-43ec-b85c-6d3a26450225",
+   "kind": "Rated",
+   "round": 32,
+   "colour": "White",
+   "opponent": "Epoch & Mate",
+   "opponent_uuid": "05f56161-10ae-4332-8779-b38f98dfc624",
+   "verdict": "draw",
+   "opening": "English Symmetrical"
+  },
   {
    "game": "61803edc-9b1e-4155-9478-4dee45ebf9ab",
    "kind": "Rated",
@@ -444,5 +472,5 @@
    "opening": "Grunfeld Defence"
   }
  ],
- "fetched_at": "2026-09-06T07:54:32Z"
+ "fetched_at": "2026-09-06T09:31:56Z"
 }

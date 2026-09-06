@@ -162,10 +162,12 @@ def report(rows: list[dict], top: int = 8, detail: int = 5, since: int = 30) -> 
             L.append(f"    {c['delta']:+4d}  {c['bot'][:20]:<20} #{c['rank']:<3} {c['then']} -> {c['rating']}{'P' if c['provisional'] else ' '} {'-'.join(map(str, c['wdl'])) if c.get('wdl') else '':>9}"
                      f" {c['university'][:12]:<12}{rank_delta(c['uuid'], arcs, min(back, 6))}")
         if back == 1:
-            L.append(f"  Biggest falls over the {label}: " + "; ".join(f"{c['bot'][:16]} {c['delta']:+d} (#{c['rank']})" for c in cl[-4:][::-1]))
-    fresh = [r for r in rows if r.get("provisional") and r["rank"] <= 100]
+            L.append(f"  Biggest falls {label}: " + "; ".join(f"{c['bot'][:16]} {c['delta']:+d} (#{c['rank']})" for c in cl[-4:][::-1]))
+    fresh = sorted([r for r in rows if r.get("provisional") and r["rank"] <= 100], key=lambda r: r["rank"])
     if fresh:
-        L.append(f"  Provisional (fresh upload, <6 games on the build) in the top 100: " + ", ".join(f"{r['bot'][:16]} (#{r['rank']})" for r in sorted(fresh, key=lambda r: r["rank"])))
+        shown = fresh[:20]
+        L.append(f"  Provisional (fresh upload, <6 games on the build): {len(fresh)} of the top 100, first 20 by rank: "
+                 + ", ".join(f"{r['bot'][:16]} (#{r['rank']})" for r in shown) + (f", and {len(fresh) - 20} more" if len(fresh) > 20 else ""))
     if len(arcs) >= 2:
         prev = arcs[-2][1]
         new = [r for r in rows if r["uuid"] not in prev]
@@ -178,8 +180,9 @@ def report(rows: list[dict], top: int = 8, detail: int = 5, since: int = 30) -> 
         if c["delta"] >= CLIMB_DAY and c["uuid"] not in big:
             big[c["uuid"]] = c
     if big:
+        ordered = sorted(big.values(), key=lambda c: -c["delta"])
         L.append(f"  Climbing a lot ({CLIMB3}+ over the last three rounds or {CLIMB_DAY}+ since R{since}), {len(big)} teams: "
-                 + ", ".join(f"{c['bot'][:16]} #{c['rank']} ({c['delta']:+d})" for c in sorted(big.values(), key=lambda c: -c["delta"])))
+                 + ", ".join(f"{c['bot'][:16]} #{c['rank']} ({c['delta']:+d})" for c in ordered[:30]) + (f", and {len(ordered) - 30} more" if len(ordered) > 30 else ""))
     chosen, seen = [], set()
     for c in list(cl3[:detail]) + sorted(big.values(), key=lambda c: -c["delta"]):
         if c["uuid"] not in seen and len(chosen) < MAX_DETAIL:

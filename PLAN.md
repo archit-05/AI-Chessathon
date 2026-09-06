@@ -436,3 +436,12 @@ conversion + endgame suite, book; Tue own-search fine-tune, SF 2600/2800 ladder;
   small tables, machine quiet): 60/60 by checkmate, 0 fallback, 0 failures. Tactics gate (40
   Stockfish-verified unique winning moves, 2 s each): 39/40 = 98%. Real-clock pressure games vs
   Stockfish and the strong-defence conversion sets running.
+- **Sun 6 Sept, 11:15 — pressure test caught a time-management defect.** Ten real-clock games
+  from sharp middlegames vs full-strength Stockfish (1.5M nodes/move): clock 120 s → ~27 s after
+  20 own moves → ~6 s after 40, minimum 3.8 s (below the 5 s floor); results 0-2-8 (expected vs
+  that opponent). Cause: an iteration could start until the soft limit and then run to the hard
+  limit (3x soft), so unstable moves spent 2-3x the budget. Fix: start an iteration only if
+  elapsed + 2x the last iteration fits the budget; hard cap 2.2x soft and 20% of the clock;
+  horizon max(22, 50 − 0.5·n) for 60–100-move games; low-clock guard under 10 s. Budget curve now
+  2.7 s at move 1 → 1.6 s at move 40 (40 s left) → 0.75 s at 10 s left. Pressure games and
+  torture rerunning on the fix; hand-over slips ~45 min.

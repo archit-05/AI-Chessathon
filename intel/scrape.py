@@ -83,8 +83,9 @@ def parse_leaderboard(page: str) -> list[dict]:
         tag = re.search(r'ladder-tag"[^>]*>(.*?)</span>', row)
         uni = re.search(r'ladder-uni">(.*?)</td>', row, flags=re.S)
         rating = re.search(r'ladder-rating">(\d+)', row)
-        nums = re.findall(r'ladder-num">(\d+)</td>', row)
-        wdl = re.search(r"(\d+)<!-- -->-<!-- -->(\d+)<!-- -->-<!-- -->(\d+)", row)
+        cells = [clean(c) for c in re.findall(r'<td class="ladder-num">(.*?)</td>', row, flags=re.S)]
+        nums = [c for c in cells if c.isdigit()]
+        wdl = next((re.fullmatch(r"(\d+)-(\d+)-(\d+)", c) for c in cells if re.fullmatch(r"\d+-\d+-\d+", c)), None)
         rows.append(
             {
                 "rank": int(rank.group(1)),
@@ -94,7 +95,7 @@ def parse_leaderboard(page: str) -> list[dict]:
                 "university": clean(uni.group(1)) if uni else "",
                 "tag": clean(tag.group(1)) if tag else "",
                 "rating": int(rating.group(1)) if rating else None,
-                "games": int(nums[0]) if nums else None,
+                "games": int(nums[-1]) if nums else None,
                 "wdl": [int(x) for x in wdl.groups()] if wdl else None,
                 "provisional": "data-provisional" in row,
             }
@@ -358,8 +359,16 @@ def main() -> None:
         targets.append(ours[0])
     if not ours:
         print(f"WARNING: team {OUR_TEAM!r} not found on the leaderboard")
+    # files are named after the bot; when a team renames its bot, carry its files over (the uuid is stable)
+    previous = {t["uuid"]: t["slug"] for t in (load_json(TARGETS) or {}).get("targets", [])}
     for t in targets:
         t["slug"] = slugify(t["bot"])
+        old = previous.get(t["uuid"])
+        if old and old != t["slug"]:
+            for key, path in team_files(old).items():
+                if path.exists():
+                    path.rename(team_files(t["slug"])[key])
+            print(f"renamed files of {t['team']}: {old} -> {t['slug']}")
     dump_json(TARGETS, {"fetched_at": now(), "targets": targets})
 
     for t in targets:

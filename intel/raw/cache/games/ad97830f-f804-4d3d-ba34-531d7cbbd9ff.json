@@ -1,0 +1,200 @@
+{
+ "game": "ad97830f-f804-4d3d-ba34-531d7cbbd9ff",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.06\"]\n[Round \"31\"]\n[White \"Carro-Kans\"]\n[Black \"Ultraviolet\"]\n[Result \"1-0\"]\n[FEN \"r1bqkb1r/pp2pppp/2n2n2/3p4/3P4/2PB4/PP2NPPP/RNBQK2R b KQkq - 2 6\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n6... g5 { [%clk 0:02:00.498] } 7. Bxg5 { [%clk 0:01:55.745] } 7... Qb6 { [%clk 0:02:00.997] } 8. O-O { [%clk 0:01:54.993] } 8... h5 { [%clk 0:02:01.496] } 9. b4 { [%clk 0:01:47.464] } 9... Ng4 { [%clk 0:02:01.995] } 10. Nf4 { [%clk 0:01:47.323] } 10... Bd7 { [%clk 0:02:02.494] } 11. b5 { [%clk 0:01:47.357] } 11... Qa6 { [%clk 0:02:02.992] } 12. bxa6 { [%clk 0:01:44.159] } 12... f6 { [%clk 0:02:03.491] } 13. axb7 { [%clk 0:01:42.07] } 13... a5 { [%clk 0:02:03.99] } 14. Bg6+ { [%clk 0:01:39.241] } 14... Kd8 { [%clk 0:02:04.489] } 15. bxa8=Q+ { [%clk 0:01:36.349] } 15... Bc8 { [%clk 0:02:04.988] } 16. Ne6+ { [%clk 0:01:30.784] } 16... Kd7 { [%clk 0:02:05.487] } 17. Qa4 { [%clk 0:01:30.451] } 17... Ba6 { [%clk 0:02:05.986] } 18. Q8xc6# { [%clk 0:01:27.481] } 1-0\n",
+ "opening": "Caro-Kann Exchange",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 31\u00b7Final",
+ "white_uuid": "b224b12c-a83b-4670-95d1-4251ee63755b",
+ "black_uuid": "0ca66133-c1df-405e-a5ad-49618cf8f6f0",
+ "site_verdicts": [
+  [
+   "g5",
+   "blunder"
+  ],
+  [
+   "Bxg5",
+   "best"
+  ],
+  [
+   "Qb6",
+   "good"
+  ],
+  [
+   "O-O",
+   "excellent"
+  ],
+  [
+   "h5",
+   "excellent"
+  ],
+  [
+   "b4",
+   "excellent"
+  ],
+  [
+   "Ng4",
+   "excellent"
+  ],
+  [
+   "Nf4",
+   "excellent"
+  ],
+  [
+   "Bd7",
+   "inaccuracy"
+  ],
+  [
+   "b5",
+   "mistake"
+  ],
+  [
+   "Qa6",
+   "blunder"
+  ],
+  [
+   "bxa6",
+   "best"
+  ],
+  [
+   "f6",
+   "excellent"
+  ],
+  [
+   "axb7",
+   "excellent"
+  ],
+  [
+   "a5",
+   "inaccuracy"
+  ],
+  [
+   "Bg6+",
+   "best"
+  ],
+  [
+   "Kd8",
+   "forced"
+  ],
+  [
+   "bxa8=Q+",
+   "best"
+  ],
+  [
+   "Bc8",
+   "excellent"
+  ],
+  [
+   "Ne6+",
+   "excellent"
+  ],
+  [
+   "Kd7",
+   "forced"
+  ],
+  [
+   "Qa4",
+   "best"
+  ],
+  [
+   "Ba6",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "The Caro-Kannt",
+    "accuracy": 95.7,
+    "acpl": 14,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 6,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Ultraviolet",
+    "accuracy": 80.6,
+    "acpl": 182,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 5,
+     "good": 1,
+     "forced": 2,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 2
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -18,
+   192,
+   199,
+   244,
+   259,
+   262,
+   261,
+   267,
+   255,
+   374,
+   220,
+   929,
+   933,
+   1016,
+   1016,
+   9988,
+   9989,
+   9991,
+   9992,
+   9995,
+   9995,
+   9995,
+   9996,
+   9999,
+   10000
+  ],
+  "best": [
+   "e7e5",
+   "c1g5",
+   "h8g8",
+   "d1b3",
+   "b6b2",
+   "f1e1",
+   "f8h6",
+   "h2h3",
+   "h8g8",
+   "f4d5",
+   "c6d8",
+   "b5a6",
+   "f8h6",
+   "g5h4",
+   "a8b8",
+   "d3g6",
+   "e8d8",
+   "b7a8q",
+   "d8c7",
+   "d1a4",
+   "d8d7",
+   "d1a4",
+   "g4e5",
+   "a4c6",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-06T10:11:31Z"
+}

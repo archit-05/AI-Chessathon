@@ -1,0 +1,25 @@
+       6 tests/pos/drawn.epd
+      40 tests/pos/marginal.epd
+      40 tests/pos/puzzles.epd
+      40 tests/pos/sharp.epd
+      40 tests/pos/winning.epd
+     166 total
+=== TACTICS
+MISS  5qrk/5b1r/5pPb/p1p2P2/1pP1P1Q1/1P2pK1R/1P6/7R b - - 0 35  expected f8g7 got f7e8 (87cp d14)
+tactics: 39/40 = 98%
+=== PRESSURE (real clock vs SF 1.5M nodes)
+game 6: loss as B by CHECKMATE               52 own moves, clock end   8.0s, curve {20: 27.2, 40: 6.8},   333s
+game 7: loss as W by CHECKMATE               50 own moves, clock end  11.8s, curve {20: 37.3, 40: 11.8},   292s
+game 8: draw as B by THREEFOLD_REPETITION    28 own moves, clock end  16.5s, curve {20: 24.2},   233s
+game 9: loss as W by CHECKMATE               71 own moves, clock end   6.1s, curve {20: 27.8, 40: 5.8, 60: 4.2},   397s
+game 10: loss as B by CHECKMATE               61 own moves, clock end   5.7s, curve {20: 26.2, 40: 4.4, 60: 5.2},   419s
+results {'win': 0, 'draw': 2, 'loss': 8}; min clock 3.8s
+median time: unclear 3.51s  decided 0.97s  (unclear must not be shorter)
+Traceback (most recent call last):
+  File "/Users/architbhardwaj/Desktop/AI Chessathon/bini/tests/pressure_games.py", line 83, in <module>
+    main()
+  File "/Users/architbhardwaj/Desktop/AI Chessathon/bini/tests/pressure_games.py", line 79, in main
+    assert min_clock >= 5000, "clock fell under 5 s"
+           ^^^^^^^^^^^^^^^^^
+AssertionError: clock fell under 5 s
+=== CONVERSION winning
