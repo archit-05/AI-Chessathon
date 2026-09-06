@@ -451,3 +451,11 @@ conversion + endgame suite, book; Tue own-search fine-tune, SF 2600/2800 ladder;
   rules still say FIDE draws. Decision: no ladder-only policy; contempt is set for the Swiss regime
   (refuse repetition when ahead, welcome it when behind). Bini: 3-0 since the v2 upload (R31–R33),
   1487, rank 188; site grades 43 best / 18 excellent / 4 good / 0 errors over three games.
+- **Sun 6 Sept, 12:15.** Ladder: 4-0 since the v2 upload (R34 win vs ASD, 36 moves, 25 best /
+  9 excellent / 0 errors), 1533, rank 163. AlphaFish uploaded again (+98 → 2576). The threefold
+  voiding looks like a one-off re-rating pass, not a standing rule (a fresh R34 threefold stands).
+  v2.1 battery: pressure games on the fixed time manager show 60–90 s left after 20 moves and
+  33–62 s after 40 against full-strength Stockfish (min clock ≥ 24 s at game end). Conversion
+  baseline of the shipped search vs Stockfish 400k nodes from +200..+500 positions: +11 =6 −3
+  (55%); this is the number the conversion build must beat. Regression, torture alone, and
+  packaging chained.
