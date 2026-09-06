@@ -372,3 +372,7 @@ agent; worth 20 minutes a day from any UK-student team member who enjoys puzzles
   Read: the hand-crafted build is a top-5 engine; AlphaFish is a tier above; v2 must roughly halve
   our centipawn loss. v1 net gate final: 51 games, 48% (−14 ±98) → no gain over HCE. v2 epoch 0
   validation loss 0.0136 already beats v1's final 0.0157.
+- **Sun 6 Sept, 03:15 — early gate.** NNUE v2 snapshot after 3 of 8 epochs vs the hand-crafted
+  build, 60 games at 10 s + 0.1 s: +42 =7 −11, 75.8%, ≈ +199 ±109 Elo, no failures. Evaluations
+  well scaled (queen +1046, rook −476). Trainer/engine consistency 1.8 cp mean. Training continues
+  (epoch 3, ~30 min/epoch); final gate, real-clock centipawn loss, torture and packaging at ~05:45.
