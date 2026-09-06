@@ -32,7 +32,10 @@ def one_game(args: tuple[str, str, int, int, str, bool]) -> tuple[bool, str, str
     w, b = local(Path(white)), local(Path(black))
     outcome = play_match(w, b, base_ms, inc_ms, start_fen=fen)
     ours = w if agent_white else b
-    return agent_white, outcome.result, outcome.termination, outcome.pgn, ours.stderr_tail
+    # name the players so tools/cpl.py can attribute moves
+    wn, bn = (Path(white).name, Path(black).name)
+    pgn = outcome.pgn.replace('[Result ', f'[White "{wn}"]\n[Black "{bn}"]\n[Result ', 1)
+    return agent_white, outcome.result, outcome.termination, pgn, ours.stderr_tail
 
 
 def elo(score: float, n: int) -> tuple[float, float]:
