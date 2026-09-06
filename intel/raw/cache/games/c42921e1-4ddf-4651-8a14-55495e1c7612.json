@@ -1205,5 +1205,42 @@
    "excellent"
   ]
  ],
- "fetched_at": "2026-09-06T05:42:25Z"
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "test_bot",
+    "accuracy": 97.6,
+    "acpl": 8,
+    "tally": {
+     "brilliant": 1,
+     "best": 61,
+     "excellent": 71,
+     "good": 11,
+     "forced": 1,
+     "inaccuracy": 5,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "make_no_mistakes",
+    "accuracy": 97.6,
+    "acpl": 8,
+    "tally": {
+     "brilliant": 0,
+     "best": 84,
+     "excellent": 55,
+     "good": 2,
+     "forced": 1,
+     "inaccuracy": 7,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "fetched_at": "2026-09-06T07:53:53Z"
 }

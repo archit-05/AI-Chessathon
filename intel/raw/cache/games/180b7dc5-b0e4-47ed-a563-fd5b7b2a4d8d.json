@@ -1,0 +1,326 @@
+{
+ "game": "180b7dc5-b0e4-47ed-a563-fd5b7b2a4d8d",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"3\"]\n[White \"ms\"]\n[Black \"jlu\"]\n[Result \"1-0\"]\n[FEN \"r1bqk2r/pp3ppp/2nbpn2/2pp4/3P4/P1P1P1B1/1P1N1PPP/R2QKBNR b KQkq - 2 7\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n7... e5 { [%clk 0:01:55.329] } 8. dxc5 { [%clk 0:01:57.052] } 8... Bxc5 { [%clk 0:01:50.844] } 9. Ngf3 { [%clk 0:01:53.253] } 9... O-O { [%clk 0:01:46.539] } 10. Nxe5 { [%clk 0:01:49.883] } 10... Nxe5 { [%clk 0:01:42.407] } 11. Bxe5 { [%clk 0:01:46.534] } 11... Ng4 { [%clk 0:01:38.442] } 12. Bd4 { [%clk 0:01:43.664] } 12... Bxd4 { [%clk 0:01:34.635] } 13. cxd4 { [%clk 0:01:41.737] } 13... Re8 { [%clk 0:01:30.978] } 14. Bb5 { [%clk 0:01:38.416] } 14... Rxe3+ { [%clk 0:01:27.465] } 15. fxe3 { [%clk 0:01:30.457] } 15... Nxe3 { [%clk 0:01:24.098] } 16. Qe2 { [%clk 0:01:28.262] } 16... Qh4+ { [%clk 0:01:20.861] } 17. Qf2 { [%clk 0:01:24.929] } 17... Qxd4 { [%clk 0:01:17.758] } 18. Nf1 { [%clk 0:01:22.311] } 18... Nxg2+ { [%clk 0:01:14.778] } 19. Qxg2 { [%clk 0:01:19.131] } 19... Bg4 { [%clk 0:01:11.913] } 20. Ng3 { [%clk 0:01:15.86] } 20... Qc5 { [%clk 0:01:09.165] } 21. Be2 { [%clk 0:01:13.356] } 21... Re8 { [%clk 0:01:06.527] } 22. Qf2 { [%clk 0:01:08.123] } 22... Qa5+ { [%clk 0:01:03.996] } 23. b4 { [%clk 0:01:01.929] } 23... Qc7 { [%clk 0:01:01.568] } 24. O-O { [%clk 0:00:59.668] } 24... Bh3 { [%clk 0:00:59.232] } 25. Qf4 { [%clk 0:00:56.047] } 25... Qb6+ { [%clk 0:00:56.992] } 26. Rf2 { [%clk 0:00:53.453] } 26... f5 { [%clk 0:00:54.843] } 27. Nxf5 { [%clk 0:00:51.461] } 27... Qg6+ { [%clk 0:00:52.778] } 28. Ng3 { [%clk 0:00:49.457] } 28... Qe6 { [%clk 0:00:50.797] } 29. Bf1 { [%clk 0:00:47.233] } 29... Bg4 { [%clk 0:00:48.891] } 30. h3 { [%clk 0:00:45.409] } 30... Qe7 { [%clk 0:00:47.064] } 31. hxg4 { [%clk 0:00:43.119] } 31... g5 { [%clk 0:00:45.306] } 32. Qf3 { [%clk 0:00:41.066] } 32... Qd7 { [%clk 0:00:43.624] } 33. Rd1 { [%clk 0:00:38.904] } 33... Qc7 { [%clk 0:00:42.004] } 34. Qxd5+ { [%clk 0:00:37.518] } 34... Kh8 { [%clk 0:00:40.454] } 35. Qd4+ { [%clk 0:00:37.324] } 35... Qg7 { [%clk 0:00:38.966] } 36. Qxg7+ { [%clk 0:00:37.813] } 36... Kxg7 { [%clk 0:00:39.464] } 37. Rd7+ { [%clk 0:00:38.309] } 37... Kg8 { [%clk 0:00:38.264] } 38. Bc4+ { [%clk 0:00:38.8] } 38... Kh8 { [%clk 0:00:38.761] } 39. Rff7 { [%clk 0:00:39.296] } 39... Re1+ { [%clk 0:00:39.257] } 40. Kg2 { [%clk 0:00:39.792] } 40... Rg1+ { [%clk 0:00:39.752] } 41. Kxg1 { [%clk 0:00:40.289] } 41... b5 { [%clk 0:00:40.249] } 42. Rxh7# { [%clk 0:00:40.785] } 1-0\n",
+ "opening": "London System",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 3\u00b7Final",
+ "white_uuid": "c3e1bc09-3d21-4279-ace0-16bb3742f5da",
+ "black_uuid": "d935d7bf-978d-4483-8995-8bac436da1d1",
+ "site_verdicts": [
+  [
+   "e5",
+   "best"
+  ],
+  [
+   "dxc5",
+   "best"
+  ],
+  [
+   "Bxc5",
+   "best"
+  ],
+  [
+   "Ngf3",
+   "best"
+  ],
+  [
+   "O-O",
+   "inaccuracy"
+  ],
+  [
+   "Nxe5",
+   "best"
+  ],
+  [
+   "Nxe5",
+   "excellent"
+  ],
+  [
+   "Bxe5",
+   "best"
+  ],
+  [
+   "Ng4",
+   "best"
+  ],
+  [
+   "Bd4",
+   "best"
+  ],
+  [
+   "Bxd4",
+   "best"
+  ],
+  [
+   "cxd4",
+   "best"
+  ],
+  [
+   "Re8",
+   "inaccuracy"
+  ],
+  [
+   "Bb5",
+   "best"
+  ],
+  [
+   "Rxe3+",
+   "mistake"
+  ],
+  [
+   "fxe3",
+   "best"
+  ],
+  [
+   "Nxe3",
+   "best"
+  ],
+  [
+   "Qe2",
+   "best"
+  ],
+  [
+   "Qh4+",
+   "excellent"
+  ],
+  [
+   "Qf2",
+   "best"
+  ],
+  [
+   "Qxd4",
+   "inaccuracy"
+  ],
+  [
+   "Nf1",
+   "best"
+  ],
+  [
+   "Nxg2+",
+   "excellent"
+  ],
+  [
+   "Qxg2",
+   "best"
+  ],
+  [
+   "Bg4",
+   "best"
+  ],
+  [
+   "Ng3",
+   "best"
+  ],
+  [
+   "Qc5",
+   "good"
+  ],
+  [
+   "Be2",
+   "best"
+  ],
+  [
+   "Re8",
+   "excellent"
+  ],
+  [
+   "Qf2",
+   "best"
+  ],
+  [
+   "Qa5+",
+   "excellent"
+  ],
+  [
+   "b4",
+   "best"
+  ],
+  [
+   "Qc7",
+   "excellent"
+  ],
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "Bh3",
+   "excellent"
+  ],
+  [
+   "Qf4",
+   "excellent"
+  ],
+  [
+   "Qb6+",
+   "excellent"
+  ],
+  [
+   "Rf2",
+   "excellent"
+  ],
+  [
+   "f5",
+   "excellent"
+  ],
+  [
+   "Nxf5",
+   "best"
+  ],
+  [
+   "Qg6+",
+   "excellent"
+  ],
+  [
+   "Ng3",
+   "best"
+  ],
+  [
+   "Qe6",
+   "excellent"
+  ],
+  [
+   "Bf1",
+   "excellent"
+  ],
+  [
+   "Bg4",
+   "best"
+  ],
+  [
+   "h3",
+   "best"
+  ],
+  [
+   "Qe7",
+   "excellent"
+  ],
+  [
+   "hxg4",
+   "excellent"
+  ],
+  [
+   "g5",
+   "excellent"
+  ],
+  [
+   "Qf3",
+   "best"
+  ],
+  [
+   "Qd7",
+   "excellent"
+  ],
+  [
+   "Rd1",
+   "excellent"
+  ],
+  [
+   "Qc7",
+   "excellent"
+  ],
+  [
+   "Qxd5+",
+   "excellent"
+  ],
+  [
+   "Kh8",
+   "best"
+  ],
+  [
+   "Qd4+",
+   "miss"
+  ],
+  [
+   "Qg7",
+   "best"
+  ],
+  [
+   "Qxg7+",
+   "excellent"
+  ],
+  [
+   "Kxg7",
+   "forced"
+  ],
+  [
+   "Rd7+",
+   "excellent"
+  ],
+  [
+   "Kg8",
+   "excellent"
+  ],
+  [
+   "Bc4+",
+   "best"
+  ],
+  [
+   "Kh8",
+   "best"
+  ],
+  [
+   "Rff7",
+   "best"
+  ],
+  [
+   "Re1+",
+   "best"
+  ],
+  [
+   "Kg2",
+   "best"
+  ],
+  [
+   "Rg1+",
+   "best"
+  ],
+  [
+   "Kxg1",
+   "best"
+  ],
+  [
+   "b5",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "ms",
+    "accuracy": 99.3,
+    "acpl": 42,
+    "tally": {
+     "brilliant": 0,
+     "best": 26,
+     "excellent": 8,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 1,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "LSE4-E5",
+    "accuracy": 95.2,
+    "acpl": 94,
+    "tally": {
+     "brilliant": 0,
+     "best": 12,
+     "excellent": 17,
+     "good": 1,
+     "forced": 1,
+     "inaccuracy": 3,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "fetched_at": "2026-09-06T07:59:24Z"
+}

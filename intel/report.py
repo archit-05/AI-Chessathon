@@ -58,13 +58,15 @@ def rec(games):
     return f"{w}-{d}-{l} ({pct(w + 0.5 * d, n) if n else 0:.0f}%)" if n else "0-0-0"
 
 
+TIERS = (("top 10", 1, 10), ("11-20", 11, 20), ("21-50", 21, 50), ("rest", 51, 10**6))
+
+
 def tier_of(rank):
     if rank is None:
         return "rest"
-    if rank <= TOP_N:
-        return f"top {TOP_N}"
-    if rank <= 50:
-        return "11-50"
+    for name, lo, hi in TIERS:
+        if lo <= rank <= hi:
+            return name
     return "rest"
 
 
@@ -112,17 +114,36 @@ def result_word(g):
 
 
 # ----------------------------------------------------------------------------- per-team statistics
+ANALYSIS_KEYS = ("moves", "final_cp", "max_adv", "min_adv", "eval_swing", "cpl_mean", "cpl_n", "blunders", "worst_move",
+                 "opp_cpl_mean", "opp_blunders", "opp_worst_move", "opp_time_mean")
+
+
 def load_team(t):
+    """Fresh identity and per-game facts from the scrape file, merged with whatever analysis exists."""
     files = team_files(t["slug"])
-    data = load_json(files["json"]) or load_json(files["scrape"])
+    data = load_json(files["scrape"])
     if not data:
         return None
-    data["n_analysed"] = data.get("analysed_games", 0)
-    data["analysed"] = data["n_analysed"] > 0
+    analysed = load_json(files["json"]) or {}
+    by_id = {g["game"]: g for g in analysed.get("games", []) if "moves" in g}
+    n = 0
+    for g in data["games"]:
+        a = by_id.get(g["game"])
+        if a:
+            for k in ANALYSIS_KEYS:
+                if k in a:
+                    g[k] = a[k]
+            n += 1
+        g.setdefault("moves", [])
+    data["n_analysed"] = n
+    data["analysed"] = n > 0
     data["rated"] = [g for g in data["games"] if not g.get("void")]
     data["void_games"] = [g for g in data["games"] if g.get("void")]
-    for g in data["games"]:
-        g.setdefault("moves", [])
+    # the leaderboard row is the freshest source for rank/rating/record
+    for k in ("rank", "rating", "provisional", "wdl", "university", "tag"):
+        if k in t:
+            data[k] = t[k]
+    data["games_played"] = t.get("games", data.get("games_played"))
     return data
 
 
@@ -151,6 +172,11 @@ def quality(team):
     # site's own tags as a cross-check
     tags = Counter(m.get("verdict") for _, m in own_moves(team) if m.get("verdict"))
     q["site_tags"] = tags
+    sa = [g["site_acpl"] for g in team["rated"] if g.get("site_acpl") is not None]
+    q["site_acpl"] = mean(sa)
+    q["site_acpl_n"] = len(sa)
+    q["site_acc"] = mean([g["site_accuracy"] for g in team["rated"] if g.get("site_accuracy") is not None])
+    q["site_src"] = next((g.get("site_review_source") for g in team["rated"] if g.get("site_review_source")), "").replace(" · ", ", ")
     # blunders while level or ahead (tactical oversights rather than desperation)
     q["blunders_not_losing"] = sum(1 for g, m in counted if m["loss"] >= BLUNDER and m["cp_before"] >= -100)
     worst = sorted(((m["loss"], g, m) for g, m in own_moves(team) if m["loss"] >= 100 and m["cp_before"] > -300 and (m["cp_before"] < 1000 or m["cp_after"] < 300)), key=lambda x: -x[0])[:3]
@@ -158,9 +184,21 @@ def quality(team):
     return q
 
 
+def clock_moves(team):
+    """Own moves with clock data: analysed moves where available, else pseudo-moves from the scrape clocks."""
+    for g in team["rated"]:
+        if g["moves"]:
+            for m in g["moves"]:
+                if m["time"] is not None:
+                    yield g, m
+        else:
+            for i, (tm, ck) in enumerate(zip(g.get("time_per_move") or [], g.get("clock_after_move") or [])):
+                yield g, {"n": i + 1, "time": tm, "clock": ck, "cp_before": None, "cp_after": None}
+
+
 def timing(team):
     t = {}
-    moves = [(g, m) for g, m in own_moves(team) if m["time"] is not None]
+    moves = [(g, m) for g, m in clock_moves(team)]
     times = [m["time"] for _, m in moves]
     if not times:
         return {"n": 0}
@@ -178,6 +216,8 @@ def timing(team):
     prev = {}
     entering, calm, own_swing, own_calm = [], [], [], []
     for g, m in moves:
+        if m["cp_before"] is None:
+            continue
         key = g["game"]
         last = prev.get(key)
         if last is not None:
@@ -197,7 +237,7 @@ def timing(team):
     t["bands"] = {k: (mean(v, 2), len(v)) for k, v in bands.items()}
     ratios = []
     for g, m in moves:
-        if m["clock"] is not None and m["cp_before"] is not None and abs(m["cp_before"]) < 800 and m["time"] >= 0.05:
+        if m["clock"] is not None and m["time"] >= 0.05 and (m["cp_before"] is None or abs(m["cp_before"]) < 800):
             before = m["clock"] + m["time"] - 0.5
             if before > 1:
                 ratios.append(100.0 * m["time"] / before)
@@ -206,9 +246,10 @@ def timing(team):
         t["ratio"] = (round(st.median(ratios), 1), round(rq[0], 1), round(rq[2], 1))
     else:
         t["ratio"] = None
-    t["ahead"] = mean([m["time"] for _, m in moves if m["cp_before"] >= CONVERT], 2)
-    t["behind"] = mean([m["time"] for _, m in moves if m["cp_before"] <= -CONVERT], 2)
-    t["level"] = mean([m["time"] for _, m in moves if -CONVERT < m["cp_before"] < CONVERT], 2)
+    ev = [(g, m) for g, m in moves if m["cp_before"] is not None]
+    t["ahead"] = mean([m["time"] for _, m in ev if m["cp_before"] >= CONVERT], 2)
+    t["behind"] = mean([m["time"] for _, m in ev if m["cp_before"] <= -CONVERT], 2)
+    t["level"] = mean([m["time"] for _, m in ev if -CONVERT < m["cp_before"] < CONVERT], 2)
     t["by_phase"] = {i: mean([m["time"] for _, m in moves if phase_of(m["n"]) == i], 2) for i in (1, 2, 3)}
     t["opp_mean"] = mean([g.get("opp_time_mean") for g in team["rated"]], 2)
     return t
@@ -226,7 +267,7 @@ def draws(team):
     d["fifty_behind"] = [g for g in dr if g["termination"] == "fifty_moves" and g.get("final_cp") is not None and g["final_cp"] < -AHEAD]
     d["other_ahead"] = [g for g in dr if g["termination"] not in ("threefold_repetition", "fifty_moves") and g.get("final_cp") is not None and g["final_cp"] > AHEAD]
     # long shuffles: draws where the final 40 own moves were all inside +-50
-    d["vs_top"] = [g for g in dr if g.get("opponent_rank_now") and g["opponent_rank_now"] <= TOP_N]
+    d["vs_top"] = [g for g in dr if g.get("opponent_rank_now") and g["opponent_rank_now"] <= 10]
     return d
 
 
@@ -359,7 +400,7 @@ def style(team):
 
 def tiers(team):
     out = {}
-    for name in (f"top {TOP_N}", "11-50", "rest"):
+    for name, _, _ in TIERS:
         gs = [g for g in team["rated"] if tier_of(g.get("opponent_rank_now")) == name]
         out[name] = gs
     return out
@@ -495,7 +536,10 @@ def render_dossier(team, targets_by_uuid, ladder):
     # Identity
     add("IDENTITY")
     tag = f" [{team['tag']} bot]" if team.get("tag") else ""
-    solo = "looks like a personal name, probably solo" if re.fullmatch(r"[A-Z][a-z]+ [A-Z][a-z]+", team["team"]) else "members not shown on the site"
+    stop = {"Tree", "Fish", "Bot", "Chess", "Team", "Sister", "Demon", "Ammo", "Liver", "Knights", "One", "Mistakes", "Disciple", "Preventer", "Shooter", "Research", "Game", "Club", "Dark", "Lightning", "Blank", "Fried", "Mate", "Loss"}
+    words = team["team"].split()
+    solo = ("team name reads like a personal name, probably solo" if len(words) == 2 and all(re.fullmatch(r"[A-Z][a-z]+", w) for w in words) and not (set(words) & stop) and team["team"] != team["bot"]
+            else "members not shown on the site")
     add(f"  Bot {team['bot']}{tag}; team {team['team']}; university {team['university'] or 'n/a'}; {solo}.")
     prov = " (provisional: fewer than six games on the current build, i.e. a new upload in the last five rounds)" if team.get("provisional") else ""
     add(f"  Rank {team['rank']} of {len(ladder)}, rating {team['rating']}{prov}, record {team['record']} in {team['games_played']} rated games.")
@@ -521,7 +565,7 @@ def render_dossier(team, targets_by_uuid, ladder):
     add("RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)")
     for name, gs in team["tiers"].items():
         add(f"  vs {name:<7}: {rec(gs)} over {len(gs)} games")
-    top_games = team["tiers"][f"top {TOP_N}"]
+    top_games = sorted(team["tiers"]["top 10"] + team["tiers"]["11-20"], key=lambda g: g["round"])
     if top_games:
         add(f"  Games vs other top-{TOP_N} teams:")
         for g in top_games:
@@ -532,7 +576,7 @@ def render_dossier(team, targets_by_uuid, ladder):
     add(f"MOVE QUALITY (Stockfish 19, {SF_NODES // 1000}k nodes per position, loss clipped at 1000, positions inside +-800 only)")
     if q["mean"] is None:
         add("  not analysed yet")
-    else:
+    if q["mean"] is not None:
         add(f"  All own moves: n {q['n']}, mean loss {q['mean']} cp, median {q['median']:.0f} cp, blunders (>= {BLUNDER} cp) {q['blunders']} = {q['blunder_pct']}%"
             f" ({q['blunders_not_losing']} of them from level or better positions)")
         for i, (lo, hi) in enumerate(PHASES, 1):
@@ -547,6 +591,8 @@ def render_dossier(team, targets_by_uuid, ladder):
         tags = q["site_tags"]
         if tags:
             add(f"  Site's own tags on their moves: blunder {tags.get('blunder', 0)}, mistake {tags.get('mistake', 0)}, miss {tags.get('miss', 0)}, inaccuracy {tags.get('inaccuracy', 0)} of {sum(tags.values())}")
+    if q.get("site_acpl") is not None:
+        add(f"  Site's own review ({q['site_src'] or 'site engine'}): mean ACPL {q['site_acpl']} over {q['site_acpl_n']} games, mean accuracy {f(q['site_acc'])}% (all games, not only analysed ones)")
     add("")
     # Time
     add("TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)")
@@ -581,7 +627,7 @@ def render_dossier(team, targets_by_uuid, ladder):
     # Draws
     add("DRAW BEHAVIOUR")
     add(f"  {d['n']} draws in {len(rated)} games ({pct(d['n'], len(rated))}%): " + (", ".join(f"{k} {v}" for k, v in d["by"].most_common()) if d["n"] else "none")
-        + (f"; {len(d['vs_top'])} of them vs top-{TOP_N} teams" if d["vs_top"] else ""))
+        + (f"; {len(d['vs_top'])} of them vs top-10 teams" if d["vs_top"] else ""))
     if team["analysed"]:
         add(f"  Repetition while ahead (> +{AHEAD} at the final position): {len(d['rep_ahead'])}"
             + (" -> " + ", ".join(f"{rnd(g)} vs {g.get('opponent_bot') or g['opponent']} at {g['final_cp']:+d}" for g in d["rep_ahead"]) if d["rep_ahead"] else ""))
@@ -687,6 +733,7 @@ def league_row(team):
         "record": team["record"],
         "games": n,
         "cpl": q["mean"],
+        "site_acpl": q.get("site_acpl"),
         "blunder_pct": q["blunder_pct"],
         "spm": t.get("mean"),
         "draw_pct": pct(d["n"], n),
@@ -697,10 +744,10 @@ def league_row(team):
 
 
 def table(rows):
-    hdr = f"{'#':>3} {'Bot':<18} {'Rating':>6} {'Record':>8} {'CPL':>5} {'Bl%':>5} {'s/mv':>5} {'Draw%':>5} {'RepA':>4} {'NonC':>4}"
+    hdr = f"{'#':>3} {'Bot':<18} {'Rating':>6} {'Record':>8} {'CPL':>5} {'sACPL':>5} {'Bl%':>5} {'s/mv':>5} {'Draw%':>5} {'RepA':>4} {'NonC':>4}"
     out = [hdr, "-" * len(hdr)]
     for r in rows:
-        out.append(f"{r['rank']:>3} {r['bot'][:18]:<18} {r['rating']:>6} {r['record']:>8} {f(r['cpl']):>5} {f(r['blunder_pct']):>5} {f(r['spm'], 2):>5} {f(r['draw_pct'], 0):>5} {r['rep_ahead']:>4} {r['nonconv']:>4}"
+        out.append(f"{r['rank']:>3} {r['bot'][:18]:<18} {r['rating']:>6} {r['record']:>8} {f(r['cpl']):>5} {f(r.get('site_acpl'), 0):>5} {f(r['blunder_pct']):>5} {f(r['spm'], 2):>5} {f(r['draw_pct'], 0):>5} {r['rep_ahead']:>4} {r['nonconv']:>4}"
                    + ("  *" if r["provisional"] else ""))
     return out
 
@@ -709,23 +756,30 @@ def h2h(teams):
     tops = [t for t in teams if t["rank"] <= TOP_N]
     tops.sort(key=lambda t: t["rank"])
     by_uuid = {t["uuid"]: t for t in tops}
-    short = {t["uuid"]: (t["bot"][:7]) for t in tops}
-    hdr = f"{'':<9}" + "".join(f"{short[t['uuid']]:>8}" for t in tops)
-    out = [hdr]
+    short, used = {}, set()
+    for t in tops:
+        base = re.sub(r"[^A-Za-z0-9]", "", t["bot"])[:3] or "T"
+        code, k = base, 2
+        while code in used:
+            code, k = base[:2] + str(k), k + 1
+        used.add(code)
+        short[t["uuid"]] = code
+    hdr = f"{'':<8}" + "".join(f"{short[t['uuid']]:>4}" for t in tops)
+    out = ["  " + "; ".join(f"{short[t['uuid']]}={t['bot']}" for t in tops), hdr]
     games_list = []
     for a in tops:
         cells = []
         for b in tops:
             if a is b:
-                cells.append(f"{'-':>8}")
+                cells.append(f"{'-':>4}")
                 continue
             gs = sorted([g for g in a["rated"] if g.get("opponent_uuid") == b["uuid"]], key=lambda g: g["round"])
-            cells.append(f"{''.join({1.0: 'W', 0.5: 'D', 0.0: 'L'}[g['score']] for g in gs) or '.':>8}")
+            cells.append(f"{''.join({1.0: 'W', 0.5: 'D', 0.0: 'L'}[g['score']] for g in gs) or '.':>4}")
             for g in gs:
                 if a["rank"] < b["rank"]:
                     games_list.append((a, b, g))
-        out.append(f"{short[a['uuid']]:<9}" + "".join(cells))
-    out.append("  Row's result vs column, oldest game first (W/D/L). Games between top-10 teams:")
+        out.append(f"{short[a['uuid']]:<8}" + "".join(cells))
+    out.append(f"  Row's result vs column, oldest game first (W/D/L). Games between top-{TOP_N} teams:")
     for a, b, g in sorted(games_list, key=lambda x: x[2]["round"]):
         res = {1.0: f"{a['bot']} won", 0.5: "draw", 0.0: f"{b['bot']} won"}[g["score"]]
         add_cpl = f" (loss/move {f(g.get('cpl_mean'))} vs {f(g.get('opp_cpl_mean'))})" if g.get("cpl_mean") is not None else ""
@@ -850,7 +904,8 @@ def main():
     L = []
     L.append(f"AI CHESSATHON TOP-{TOP_N} INTEL SUMMARY  ({dt.datetime.now().strftime('%Y-%m-%d %H:%M')}; leaderboard fetched {load_json(LEADERBOARD)['fetched_at']})")
     L.append("=" * 100)
-    L.append(f"CPL = mean centipawn loss per own move (Stockfish 19, {SF_NODES // 1000}k nodes, positions inside +-800); Bl% = moves losing >= {BLUNDER} cp;")
+    L.append(f"CPL = mean centipawn loss per own move (Stockfish 19, {SF_NODES // 1000}k nodes, positions inside +-800); sACPL = the site's own review ACPL")
+    L.append(f"(Stockfish 16 depth 16, every game, mean per game); Bl% = moves losing >= {BLUNDER} cp;")
     L.append(f"s/mv = mean seconds per own move; RepA = draws by repetition while more than +{AHEAD}; NonC = games at +{CONVERT} or better not won; * = provisional rating.")
     L.append("")
     L.append("LEAGUE TABLE")
@@ -890,7 +945,7 @@ def main():
     L.append(f"HEAD-TO-HEAD AMONG THE TOP {TOP_N}")
     L.extend(h2h(teams))
     L.append("")
-    L.append("TIME MANAGEMENT (top 10)")
+    L.append(f"TIME MANAGEMENT (top {TOP_N})")
     hdr = f"{'Bot':<18} {'mean':>5} {'med':>5} {'max':>5} {'q1-q3':>11} {'end':>5} {'min':>5} {'<5s':>4} {'inst%':>5} {'swing':>6} {'calm':>6}"
     L.append(hdr)
     for t in sorted((t for t in teams if t["rank"] <= TOP_N), key=lambda t: t["rank"]):
@@ -899,7 +954,7 @@ def main():
             L.append(f"{t['bot'][:18]:<18} {tt['mean']:>5} {tt['median']:>5} {tt['max']:>5} {f(tt['q1'], 2) + '-' + f(tt['q3'], 2):>11} {f(tt['final_mean'], 0):>5} {f(tt['final_min']):>5} {len(tt['under5']):>4} {f(tt['instant_pct']):>5} {f(tt['swing_in'][0], 2):>6} {f(tt['calm_in'][0], 2):>6}")
     L.append("  seconds per own move; end/min = clock left at the end (mean/min); swing/calm = s per move after a >100 cp swing vs otherwise")
     L.append("")
-    L.append("DRAWS AND CONVERSION (top 10)")
+    L.append(f"DRAWS AND CONVERSION (top {TOP_N})")
     hdr = f"{'Bot':<18} {'draws':>5} {'3fold':>5} {'fifty':>5} {'insuf':>5} {'repA':>5} {'repB':>5} {'won+':>5} {'nonC':>5} {'lost-':>5} {'saved':>5}"
     L.append(hdr)
     for t in sorted((t for t in teams if t["rank"] <= TOP_N), key=lambda t: t["rank"]):

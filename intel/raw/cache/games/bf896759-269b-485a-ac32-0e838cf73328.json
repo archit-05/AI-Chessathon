@@ -1,0 +1,338 @@
+{
+ "game": "bf896759-269b-485a-ac32-0e838cf73328",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"25\"]\n[White \"Ransom\"]\n[Black \"ms\"]\n[Result \"1/2-1/2\"]\n[FEN \"r1bqk2r/pppp1ppp/1bn2n2/8/4P3/1NN2P2/PPP3PP/R1BQKB1R b KQkq - 4 7\"]\n[SetUp \"1\"]\n[Termination \"threefold_repetition\"]\n\n7... O-O { [%clk 0:01:55.568] } 8. Bg5 { [%clk 0:01:55.505] } 8... h6 { [%clk 0:01:53.129] } 9. Bh4 { [%clk 0:01:51.271] } 9... g5 { [%clk 0:01:48.834] } 10. Bf2 { [%clk 0:01:47.233] } 10... d5 { [%clk 0:01:46.317] } 11. Bxb6 { [%clk 0:01:43.644] } 11... axb6 { [%clk 0:01:43.281] } 12. Nxd5 { [%clk 0:01:33.645] } 12... Nxd5 { [%clk 0:01:39.694] } 13. exd5 { [%clk 0:01:28.514] } 13... Re8+ { [%clk 0:01:36.154] } 14. Kf2 { [%clk 0:01:24.255] } 14... Ne7 { [%clk 0:01:33.743] } 15. Bb5 { [%clk 0:01:21.089] } 15... Bd7 { [%clk 0:01:31.229] } 16. Bxd7 { [%clk 0:01:16.794] } 16... Qxd7 { [%clk 0:01:28.607] } 17. h4 { [%clk 0:01:09.659] } 17... Ng6 { [%clk 0:01:24.961] } 18. hxg5 { [%clk 0:01:06.485] } 18... hxg5 { [%clk 0:01:21.252] } 19. Qd3 { [%clk 0:01:04.072] } 19... Re5 { [%clk 0:01:18.165] } 20. d6 { [%clk 0:01:01.713] } 20... cxd6 { [%clk 0:01:15.214] } 21. Nd4 { [%clk 0:00:55.151] } 21... Qd8 { [%clk 0:01:07.745] } 22. a3 { [%clk 0:00:52.004] } 22... Qf6 { [%clk 0:01:03.272] } 23. g3 { [%clk 0:00:48.78] } 23... Rae8 { [%clk 0:00:54.768] } 24. Rae1 { [%clk 0:00:46.912] } 24... Rxe1 { [%clk 0:00:52.451] } 25. Rxe1 { [%clk 0:00:44.019] } 25... Rxe1 { [%clk 0:00:45.844] } 26. Kxe1 { [%clk 0:00:42.162] } 26... Ne5 { [%clk 0:00:42.426] } 27. Qe4 { [%clk 0:00:40.285] } 27... Nc4 { [%clk 0:00:39.68] } 28. b3 { [%clk 0:00:38.612] } 28... d5 { [%clk 0:00:38.068] } 29. Qe8+ { [%clk 0:00:35.193] } 29... Kg7 { [%clk 0:00:36.587] } 30. c3 { [%clk 0:00:31.281] } 30... Ne5 { [%clk 0:00:34.888] } 31. Kf2 { [%clk 0:00:29.764] } 31... Nc6 { [%clk 0:00:33.558] } 32. Qe3 { [%clk 0:00:28.951] } 32... g4 { [%clk 0:00:28.518] } 33. a4 { [%clk 0:00:26.5] } 33... gxf3 { [%clk 0:00:27.563] } 34. Qxf3 { [%clk 0:00:23.834] } 34... Nxd4 { [%clk 0:00:26.439] } 35. Qxf6+ { [%clk 0:00:22.93] } 35... Kxf6 { [%clk 0:00:25.509] } 36. cxd4 { [%clk 0:00:22.307] } 36... Kf5 { [%clk 0:00:24.319] } 37. Kf3 { [%clk 0:00:21.305] } 37... Kg5 { [%clk 0:00:23.357] } 38. g4 { [%clk 0:00:20.245] } 38... f5 { [%clk 0:00:22.257] } 39. gxf5 { [%clk 0:00:18.792] } 39... Kxf5 { [%clk 0:00:21.393] } 40. b4 { [%clk 0:00:17.846] } 40... Kg5 { [%clk 0:00:20.697] } 41. Kg3 { [%clk 0:00:17.172] } 41... Kf5 { [%clk 0:00:17.802] } 42. Kf3 { [%clk 0:00:16.546] } 42... Kg5 { [%clk 0:00:18.292] } 43. Kg3 { [%clk 0:00:15.857] } 43... Kf5 { [%clk 0:00:18.314] } 1/2-1/2\n",
+ "opening": "Scotch Game",
+ "termination_text": "Threefold repetition",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 25\u00b7Final",
+ "white_uuid": "4f71e103-0e8b-4287-af80-6d8b438eed01",
+ "black_uuid": "c3e1bc09-3d21-4279-ace0-16bb3742f5da",
+ "site_verdicts": [
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "Bg5",
+   "best"
+  ],
+  [
+   "h6",
+   "best"
+  ],
+  [
+   "Bh4",
+   "best"
+  ],
+  [
+   "g5",
+   "best"
+  ],
+  [
+   "Bf2",
+   "best"
+  ],
+  [
+   "d5",
+   "best"
+  ],
+  [
+   "Bxb6",
+   "good"
+  ],
+  [
+   "axb6",
+   "best"
+  ],
+  [
+   "Nxd5",
+   "best"
+  ],
+  [
+   "Nxd5",
+   "best"
+  ],
+  [
+   "exd5",
+   "best"
+  ],
+  [
+   "Re8+",
+   "excellent"
+  ],
+  [
+   "Kf2",
+   "best"
+  ],
+  [
+   "Ne7",
+   "best"
+  ],
+  [
+   "Bb5",
+   "best"
+  ],
+  [
+   "Bd7",
+   "best"
+  ],
+  [
+   "Bxd7",
+   "best"
+  ],
+  [
+   "Qxd7",
+   "best"
+  ],
+  [
+   "h4",
+   "excellent"
+  ],
+  [
+   "Ng6",
+   "good"
+  ],
+  [
+   "hxg5",
+   "best"
+  ],
+  [
+   "hxg5",
+   "best"
+  ],
+  [
+   "Qd3",
+   "best"
+  ],
+  [
+   "Re5",
+   "good"
+  ],
+  [
+   "d6",
+   "best"
+  ],
+  [
+   "cxd6",
+   "good"
+  ],
+  [
+   "Nd4",
+   "best"
+  ],
+  [
+   "Qd8",
+   "excellent"
+  ],
+  [
+   "a3",
+   "good"
+  ],
+  [
+   "Qf6",
+   "best"
+  ],
+  [
+   "g3",
+   "best"
+  ],
+  [
+   "Rae8",
+   "best"
+  ],
+  [
+   "Rae1",
+   "excellent"
+  ],
+  [
+   "Rxe1",
+   "good"
+  ],
+  [
+   "Rxe1",
+   "best"
+  ],
+  [
+   "Rxe1",
+   "best"
+  ],
+  [
+   "Kxe1",
+   "best"
+  ],
+  [
+   "Ne5",
+   "excellent"
+  ],
+  [
+   "Qe4",
+   "good"
+  ],
+  [
+   "Nc4",
+   "best"
+  ],
+  [
+   "b3",
+   "best"
+  ],
+  [
+   "d5",
+   "best"
+  ],
+  [
+   "Qe8+",
+   "excellent"
+  ],
+  [
+   "Kg7",
+   "best"
+  ],
+  [
+   "c3",
+   "best"
+  ],
+  [
+   "Ne5",
+   "best"
+  ],
+  [
+   "Kf2",
+   "best"
+  ],
+  [
+   "Nc6",
+   "best"
+  ],
+  [
+   "Qe3",
+   "excellent"
+  ],
+  [
+   "g4",
+   "excellent"
+  ],
+  [
+   "a4",
+   "excellent"
+  ],
+  [
+   "gxf3",
+   "excellent"
+  ],
+  [
+   "Qxf3",
+   "excellent"
+  ],
+  [
+   "Nxd4",
+   "best"
+  ],
+  [
+   "Qxf6+",
+   "best"
+  ],
+  [
+   "Kxf6",
+   "best"
+  ],
+  [
+   "cxd4",
+   "best"
+  ],
+  [
+   "Kf5",
+   "best"
+  ],
+  [
+   "Kf3",
+   "best"
+  ],
+  [
+   "Kg5",
+   "best"
+  ],
+  [
+   "g4",
+   "best"
+  ],
+  [
+   "f5",
+   "excellent"
+  ],
+  [
+   "gxf5",
+   "best"
+  ],
+  [
+   "Kxf5",
+   "best"
+  ],
+  [
+   "b4",
+   "best"
+  ],
+  [
+   "Kg5",
+   "best"
+  ],
+  [
+   "Kg3",
+   "best"
+  ],
+  [
+   "Kf5",
+   "best"
+  ],
+  [
+   "Kf3",
+   "best"
+  ],
+  [
+   "Kg5",
+   "best"
+  ],
+  [
+   "Kg3",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Fried Liver",
+    "accuracy": 98.5,
+    "acpl": 5,
+    "tally": {
+     "brilliant": 0,
+     "best": 27,
+     "excellent": 6,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "ms",
+    "accuracy": 98.2,
+    "acpl": 6,
+    "tally": {
+     "brilliant": 0,
+     "best": 26,
+     "excellent": 7,
+     "good": 4,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "fetched_at": "2026-09-06T07:59:55Z"
+}

@@ -1,0 +1,87 @@
+Blank Shooter  (team: No More Ammo)  -  rank 20, rating 2001
+============================================================
+Generated 2026-09-06 09:08 from 31 rated games (rounds 1-31, 0 of 31 analysed with Stockfish so
+  far).
+
+IDENTITY
+  Bot Blank Shooter; team No More Ammo; university Mixed; members not shown on the site.
+  Rank 20 of 311, rating 2001 (provisional: fewer than six games on the current build, i.e. a new
+    upload in the last five rounds), record 15-7-9 in 31 rated games.
+  Rating trajectory: entered R1 at 1578, peak 2073 (R30), now 2001 (R31).
+  No 100+ point jump between consecutive rounds.
+
+RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
+  vs top 10 : 1-2-7 (20%) over 10 games
+  vs 11-20  : 2-3-2 (50%) over 7 games
+  vs 21-50  : 8-1-0 (94%) over 9 games
+  vs rest   : 4-1-0 (90%) over 5 games
+  Games vs other top-20 teams:
+    R2   white vs AI Fellow          (#13) draw threefold_repetition  Sicilian Closed
+    R5   white vs Anchoa             (#2 ) loss checkmate             Grunfeld Defence
+    R6   white vs Dark Sister        (#19) win  checkmate             Sicilian Closed
+    R8   black vs make_no_mistakes   (#10) win  checkmate             Sicilian Sveshnikov
+    R10  white vs ms                 (#11) loss checkmate             Petroff Defence
+    R12  white vs Patzer 1.2         (#7 ) loss checkmate             Sicilian Taimanov
+    R14  black vs checkers           (#12) draw insufficient_material French Tarrasch
+    R15  black vs SoberJackson       (#5 ) loss checkmate             Sicilian Closed
+    R16  white vs Mate in One        (#6 ) loss checkmate             Sicilian Closed
+    R17  black vs lyra               (#14) win  checkmate             Ruy Lopez, Closed
+    R18  white vs Capablanca         (#3 ) loss checkmate             Petroff Defence
+    R20  black vs test_bot           (#8 ) draw threefold_repetition  Sicilian Closed
+    R22  black vs Fuzzydafool        (#17) draw threefold_repetition  London System
+    R26  black vs AlphaFish          (#1 ) draw threefold_repetition  Ruy Lopez, Closed
+    R27  white vs Danya's Disciple   (#4 ) loss checkmate             Sicilian Closed
+    R29  black vs Loss Preventer     (#9 ) loss checkmate             Reti Opening
+    R31  white vs zak                (#16) loss checkmate             Sicilian Closed
+
+MOVE QUALITY (Stockfish 19, 120k nodes per position, loss clipped at 1000, positions inside +-800
+  only)
+  not analysed yet
+  Site's own review (Stockfish 16 · depth 16): mean ACPL 24.4 over 31 games, mean accuracy 96.6%
+    (all games, not only analysed ones)
+
+TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
+  Per move: mean 2.12 s, median 1.81 s, quartiles 1.04-3.01 s, max 29.9 s; instant (<50 ms) moves
+    8.6%
+  Clock at the end: mean 28.2 s, minimum 8.8 s; games under 10 s: 4, under 5 s: 0
+  By clock before the move: >60s 3.4 s (n 663), 30-60s 1.8 s (n 565), 10-30s 0.9 s (n 465), <10s 0.5
+    s (n 59)
+  By own-move number: 1-15 3.5 s, 16-40 2.2 s, 41+ 0.9 s; when +300 or better n/a s, level n/a s,
+    -300 or worse n/a s
+  Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 4.1%,
+    quartiles 3.5-5.2%
+  After a >100 cp swing on the opponent's move: n/a s (n 0) vs n/a s otherwise; on moves that
+    themselves swing >100 cp: n/a s (n 0) vs n/a s
+  Exploitable: spends a fixed ~4% of the remaining clock per move, so its thinking time shrinks as
+    the game goes on
+
+DRAW BEHAVIOUR
+  7 draws in 31 games (23.0%): threefold_repetition 6, insufficient_material 1; 2 of them vs top-10
+    teams
+
+ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
+  not analysed yet
+
+OPENINGS (curated start positions assigned by the platform)
+  By family: Sicilian 4-2-5 (45%); French 3-1-0 (88%); Petroff 1-0-2 (33%); Dutch 1-1-0 (75%); Ruy
+    Lopez 1-1-0 (75%); Reti 1-0-1 (50%); Nimzo-Indian 1-0-0 (100%); English 1-0-0 (100%); Grunfeld
+    0-0-1 (0%); Italian 1-0-0 (100%); London 0-1-0 (50%); King's Indian 0-1-0 (50%); Scotch 1-0-0
+    (100%)
+  Positions seen: Sicilian Closed x7 1-2-4 (29%); Petroff Defence x3 1-0-2 (33%); Dutch Stonewall x2
+    1-1-0 (75%); French Tarrasch x2 1-1-0 (75%); French Winawer x2 2-0-0 (100%); Reti Opening x2
+    1-0-1 (50%); Ruy Lopez, Closed x2 1-1-0 (75%); English Symmetrical win; Grunfeld Defence loss;
+    Italian Game win; King's Indian Classical draw; London System draw; Nimzo-Indian Defence win;
+    Scotch Game win; Sicilian Dragon win; Sicilian Najdorf win; Sicilian Sveshnikov win; Sicilian
+    Taimanov loss
+  Underperforms in: Petroff 1-0-2 (33%)
+
+STYLE
+  Captures on n/a% of own moves, checks on n/a%; average game 113 plies (57 own moves), longest 205
+    plies (R31)
+  Wins: 15 (15 by checkmate, 0 by opponent failure); losses: 9 (9 by checkmate, 0 by own failure)
+
+LIKELY ENGINE PROFILE
+  Not analysed yet (run analyse.py).
+
+HOW TO PLAY THEM
+  1. Analysis pending.

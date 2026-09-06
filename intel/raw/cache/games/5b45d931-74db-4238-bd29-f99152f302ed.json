@@ -697,5 +697,42 @@
    "best"
   ]
  ],
- "fetched_at": "2026-09-06T05:34:04Z"
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Mate in One",
+    "accuracy": 97.6,
+    "acpl": 26,
+    "tally": {
+     "brilliant": 0,
+     "best": 34,
+     "excellent": 46,
+     "good": 4,
+     "forced": 1,
+     "inaccuracy": 0,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "AlphaFish",
+    "accuracy": 98.8,
+    "acpl": 6,
+    "tally": {
+     "brilliant": 0,
+     "best": 49,
+     "excellent": 36,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "fetched_at": "2026-09-06T07:48:05Z"
 }

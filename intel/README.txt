@@ -1,11 +1,14 @@
-OPPONENT INTELLIGENCE - AI Chessathon top 10 (+ Opus Carlsen)
+OPPONENT INTELLIGENCE - AI Chessathon top 20 (+ Opus Carlsen)
 =============================================================
 
 WHAT THIS IS
-  One plain-text dossier per team in the current top 10 of https://aichessathon.com/leaderboard,
-  plus one for us (team Opus Carlsen), built from every public rated game of theirs and a uniform
-  Stockfish analysis.  Read 00_summary.txt first (league table, key findings, head-to-head, time and
-  draw tables), then the dossier of the opponent you care about.
+  One plain-text dossier per team in the current top 20 of https://aichessathon.com/leaderboard
+  (TOP_N in common.py), plus one for us (team Opus Carlsen), built from every public rated game of
+  theirs, the site's own per-game review, and a uniform Stockfish analysis.  Read 00_summary.txt
+  first (league table, key findings, head-to-head, time and draw tables), then the dossier of the
+  opponent you care about.  Dossiers of teams the Stockfish pass has not reached yet still carry
+  identity, results, site review numbers, openings and (once analysed) everything else; the header
+  line says "N of M analysed".
 
 HOW TO REFRESH
   ./refresh.sh                 scrape + analyse + render (first run ~1-3 h of single-core Stockfish;
@@ -42,7 +45,9 @@ FILES
   raw/evals.jsonl              evaluation cache keyed by FEN: cp from White's view (mate = +-(10000-n)),
                                mate distance, Stockfish's first choice, depth, nodes used
   raw/cache/games/<uuid>.json  one file per game page: PGN, opening name, termination text, the
-                               site's own per-move tags (best/excellent/.../blunder), state
+                               site's own per-move tags (best/excellent/.../blunder), the site's
+                               "Game review" block (Stockfish 16 depth 16: accuracy, ACPL, tallies
+                               for White then Black), state
   raw/cache/teams/<uuid>.json  team pages (also of opponents, for their rating at the time)
 
 DEFINITIONS
@@ -61,7 +66,12 @@ DEFINITIONS
                        means the final position evaluated above +150 for that team.
   Conversion           a game counts as "won position" when the team's evaluation reached +300 at any
                        point; "non-conversion" when such a game was not won.  "Saved" is the mirror.
-  Opponent tiers       by the opponent's rank on the leaderboard at scrape time (top 10, 11-50, rest).
+  Opponent tiers       by the opponent's rank on the leaderboard at scrape time (top 10, 11-20,
+                       21-50, rest).
+  sACPL / site review  the ACPL and accuracy the site itself shows under "Game review" (Stockfish 16,
+                       depth 16, as rendered by the server; the browser may show a deeper re-analysis
+                       with different numbers).  Available for every game at once, so it is the
+                       quickest like-for-like comparison; our 120k-node CPL is the finer measure.
   Rating at the time   the opponent's rating after its previous rated round, read off its rating graph.
   Void games           games the site marks Void (result "*", never rated) are kept in raw/ but
                        excluded from every statistic.
@@ -78,7 +88,7 @@ CAVEATS
   - The site does not show team members; "solo" is a guess from the team name.
   - Rating jumps of 100+ in the first ten rounds are normal Glicko-2 behaviour; only later jumps, or
     the provisional flag, indicate a new upload.
-  - The site's own move tags (best/excellent/.../blunder) come from an unknown engine and depth; they
-    are shown only as a cross-check.
+  - The site's own move tags and review (Stockfish 16, depth 16) are a different yardstick from our
+    120k-node CPL: expect the site's ACPL to run higher and to include decided positions.
   - Stockfish's first choice at 120k nodes is not a book: "matches Stockfish" in the opening section
     measures move agreement, not whether the bot has a book.  Instant moves (<50 ms) do.

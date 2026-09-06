@@ -18,7 +18,7 @@ LEADERBOARD = RAW / "leaderboard.json"
 TARGETS = RAW / "targets.json"
 
 OUR_TEAM = "Opus Carlsen"
-TOP_N = 10
+TOP_N = 20
 
 # Stockfish settings: every team is measured the same way.
 SF_PATH = "/opt/homebrew/bin/stockfish"

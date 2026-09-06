@@ -1,0 +1,85 @@
+lyra  (team: slopfish)  -  rank 14, rating 2055
+===============================================
+Generated 2026-09-06 09:08 from 29 rated games (rounds 3-31, 0 of 29 analysed with Stockfish so
+  far).
+
+IDENTITY
+  Bot lyra; team slopfish; university Warwick; members not shown on the site.
+  Rank 14 of 311, rating 2055, record 11-11-7 in 29 rated games.
+  Rating trajectory: entered R3 at 1573, peak 2066 (R30), now 2055 (R31).
+  Jumps of 100+ between rounds (a jump that does not match the game result suggests a new upload;
+  the first ten rounds swing a lot anyway):
+    R5 +106 -> 1762 (win vs The_crow)
+    R16 +124 -> 1781 (win vs bot1)
+    R19 +107 -> 1893 (win vs DolphinBot)
+
+RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
+  vs top 10 : 0-6-3 (33%) over 9 games
+  vs 11-20  : 1-0-4 (20%) over 5 games
+  vs 21-50  : 7-4-0 (82%) over 11 games
+  vs rest   : 3-1-0 (88%) over 4 games
+  Games vs other top-20 teams:
+    R6   black vs Fuzzydafool        (#17) win  checkmate             King's Indian Classical
+    R9   white vs Patzer 1.2         (#7 ) draw threefold_repetition  Semi-Slav Defence
+    R10  black vs Mate in One        (#6 ) loss checkmate             Ruy Lopez, Closed
+    R11  white vs test_bot           (#8 ) draw threefold_repetition  Sicilian Closed
+    R12  black vs checkers           (#12) loss checkmate             London System
+    R13  black vs ms                 (#11) loss checkmate             Four Knights Game
+    R14  white vs Anchoa             (#2 ) draw threefold_repetition  English Symmetrical
+    R15  white vs AI Fellow          (#13) loss checkmate             Ruy Lopez, Closed
+    R17  white vs Blank Shooter      (#20) loss checkmate             Ruy Lopez, Closed
+    R20  black vs SoberJackson       (#5 ) draw threefold_repetition  King's Indian Classical
+    R25  white vs AlphaFish          (#1 ) loss checkmate             French Tarrasch
+    R26  black vs Capablanca         (#3 ) draw threefold_repetition  Nimzo-Indian Defence
+    R27  white vs make_no_mistakes   (#10) draw fifty_moves           Sicilian Sveshnikov
+    R31  black vs Loss Preventer     (#9 ) loss checkmate             Sicilian Closed
+
+MOVE QUALITY (Stockfish 19, 120k nodes per position, loss clipped at 1000, positions inside +-800
+  only)
+  not analysed yet
+  Site's own review (Stockfish 16 · depth 16): mean ACPL 23.3 over 29 games, mean accuracy 96.6%
+    (all games, not only analysed ones)
+
+TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
+  Per move: mean 1.92 s, median 1.95 s, quartiles 0.74-2.84 s, max 5.9 s; instant (<50 ms) moves
+    6.7%
+  Clock at the end: mean 29.4 s, minimum 5.9 s; games under 10 s: 10, under 5 s: 0
+  By clock before the move: >60s 2.6 s (n 802), 30-60s 2.1 s (n 379), 10-30s 1.4 s (n 303), <10s 0.6
+    s (n 372)
+  By own-move number: 1-15 3.0 s, 16-40 2.3 s, 41+ 1.0 s; when +300 or better n/a s, level n/a s,
+    -300 or worse n/a s
+  Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 3.3%,
+    quartiles 3.2-8.5%
+  After a >100 cp swing on the opponent's move: n/a s (n 0) vs n/a s otherwise; on moves that
+    themselves swing >100 cp: n/a s (n 0) vs n/a s
+  Exploitable: nothing obvious
+
+DRAW BEHAVIOUR
+  11 draws in 29 games (38.0%): threefold_repetition 8, insufficient_material 2, fifty_moves 1; 6 of
+    them vs top-10 teams
+
+ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
+  not analysed yet
+
+OPENINGS (curated start positions assigned by the platform)
+  By family: Sicilian 3-3-1 (64%); King's Indian 2-2-0 (75%); Ruy Lopez 0-0-3 (0%); Two Knights
+    2-0-0 (100%); French 1-0-1 (50%); Nimzo-Indian 0-2-0 (50%); Caro-Kann 1-1-0 (75%); Semi-Slav
+    0-1-0 (50%); London 0-0-1 (0%); Four Knights 0-0-1 (0%); English 0-1-0 (50%); Reti 1-0-0 (100%);
+    Pirc 0-1-0 (50%); Scotch 1-0-0 (100%)
+  Positions seen: King's Indian Classical x4 2-2-0 (75%); Sicilian Closed x4 1-2-1 (50%); Ruy Lopez,
+    Closed x3 0-0-3 (0%); Sicilian Sveshnikov x3 2-1-0 (83%); Nimzo-Indian Defence x2 0-2-0 (50%);
+    Two Knights Defence x2 2-0-0 (100%); Caro-Kann Classical draw; Caro-Kann Exchange win; English
+    Symmetrical draw; Four Knights Game loss; French Classical win; French Tarrasch loss; London
+    System loss; Pirc Defence draw; Reti Opening win; Scotch Game win; Semi-Slav Defence draw
+  Underperforms in: Ruy Lopez 0-0-3 (0%)
+
+STYLE
+  Captures on n/a% of own moves, checks on n/a%; average game 128 plies (64 own moves), longest 301
+    plies (R23)
+  Wins: 11 (11 by checkmate, 0 by opponent failure); losses: 7 (7 by checkmate, 0 by own failure)
+
+LIKELY ENGINE PROFILE
+  Not analysed yet (run analyse.py).
+
+HOW TO PLAY THEM
+  1. Analysis pending.

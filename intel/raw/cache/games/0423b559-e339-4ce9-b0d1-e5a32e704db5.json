@@ -1,0 +1,178 @@
+{
+ "game": "0423b559-e339-4ce9-b0d1-e5a32e704db5",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"7\"]\n[White \"omega3 fish\"]\n[Black \"No More Ammo\"]\n[Result \"1/2-1/2\"]\n[FEN \"rnbqk2r/ppp3pp/3bpn2/3p1p2/3P1B2/4PNP1/PPP2PBP/RN1QK2R b KQkq - 0 6\"]\n[SetUp \"1\"]\n[Termination \"threefold_repetition\"]\n\n6... O-O { [%clk 0:01:55.939] } 7. O-O { [%clk 0:01:55.371] } 7... Bd7 { [%clk 0:01:45.509] } 8. Ne5 { [%clk 0:01:49.439] } 8... Ne4 { [%clk 0:01:42.303] } 9. h4 { [%clk 0:01:42.385] } 9... Bb5 { [%clk 0:01:38.282] } 10. Re1 { [%clk 0:01:37.59] } 10... Nd7 { [%clk 0:01:34.427] } 11. a4 { [%clk 0:01:33.062] } 11... Ba6 { [%clk 0:01:32.467] } 12. Nxd7 { [%clk 0:01:29.022] } 12... Qxd7 { [%clk 0:01:29.661] } 13. Nd2 { [%clk 0:01:26.297] } 13... Qe7 { [%clk 0:01:26.992] } 14. Nf3 { [%clk 0:01:21.715] } 14... Rad8 { [%clk 0:01:24.362] } 15. Ne5 { [%clk 0:01:18.926] } 15... Rc8 { [%clk 0:01:21.821] } 16. Qh5 { [%clk 0:01:16.227] } 16... c5 { [%clk 0:01:18.182] } 17. c3 { [%clk 0:01:13.353] } 17... Qc7 { [%clk 0:01:15.839] } 18. Bf3 { [%clk 0:01:09.91] } 18... cxd4 { [%clk 0:01:14.159] } 19. exd4 { [%clk 0:01:03.101] } 19... Nf6 { [%clk 0:01:11.791] } 20. Qg5 { [%clk 0:01:00.544] } 20... Ne4 { [%clk 0:01:10.078] } 21. Qh5 { [%clk 0:00:57.124] } 21... Nf6 { [%clk 0:01:07.991] } 22. Qg5 { [%clk 0:00:53.998] } 22... Ne4 { [%clk 0:01:04.482] } 1/2-1/2\n",
+ "opening": "Dutch Stonewall",
+ "termination_text": "Threefold repetition",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 7\u00b7Final",
+ "white_uuid": "1daad2c3-adda-4ae6-945c-e82c4015ee72",
+ "black_uuid": "b49586d0-218d-4491-a460-90d0d9cf321c",
+ "site_verdicts": [
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "Bd7",
+   "excellent"
+  ],
+  [
+   "Ne5",
+   "best"
+  ],
+  [
+   "Ne4",
+   "excellent"
+  ],
+  [
+   "h4",
+   "inaccuracy"
+  ],
+  [
+   "Bb5",
+   "excellent"
+  ],
+  [
+   "Re1",
+   "best"
+  ],
+  [
+   "Nd7",
+   "excellent"
+  ],
+  [
+   "a4",
+   "excellent"
+  ],
+  [
+   "Ba6",
+   "best"
+  ],
+  [
+   "Nxd7",
+   "best"
+  ],
+  [
+   "Qxd7",
+   "best"
+  ],
+  [
+   "Nd2",
+   "best"
+  ],
+  [
+   "Qe7",
+   "excellent"
+  ],
+  [
+   "Nf3",
+   "best"
+  ],
+  [
+   "Rad8",
+   "excellent"
+  ],
+  [
+   "Ne5",
+   "excellent"
+  ],
+  [
+   "Rc8",
+   "excellent"
+  ],
+  [
+   "Qh5",
+   "inaccuracy"
+  ],
+  [
+   "c5",
+   "inaccuracy"
+  ],
+  [
+   "c3",
+   "good"
+  ],
+  [
+   "Qc7",
+   "good"
+  ],
+  [
+   "Bf3",
+   "inaccuracy"
+  ],
+  [
+   "cxd4",
+   "excellent"
+  ],
+  [
+   "exd4",
+   "best"
+  ],
+  [
+   "Nf6",
+   "best"
+  ],
+  [
+   "Qg5",
+   "best"
+  ],
+  [
+   "Ne4",
+   "best"
+  ],
+  [
+   "Qh5",
+   "best"
+  ],
+  [
+   "Nf6",
+   "best"
+  ],
+  [
+   "Qg5",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Random Seed Glitchless",
+    "accuracy": 94.9,
+    "acpl": 16,
+    "tally": {
+     "brilliant": 0,
+     "best": 10,
+     "excellent": 2,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 3,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Blank Shooter",
+    "accuracy": 96.6,
+    "acpl": 12,
+    "tally": {
+     "brilliant": 0,
+     "best": 7,
+     "excellent": 8,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "fetched_at": "2026-09-06T08:06:07Z"
+}

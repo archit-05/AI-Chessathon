@@ -422,3 +422,7 @@ conversion + endgame suite, book; Tue own-search fine-tune, SF 2600/2800 ladder;
   mate seen from move 13, 95 s left. Rating 1269 → 1353. v3 training running (202 chunks,
   ~60 min/epoch, 6 epochs). Conversion package gate vs batch 1 trending negative at 40 games
   (41%, −61 ±114); split variants prepared (endgame terms only / contempt only).
+- **Sun 6 Sept, 10:20 — round 32.** Win vs Terminal by checkmate in 25 moves; init 29.3 s, 588k
+  nodes/s (R31: 689k), depth 14–22, forced mate from move 22, 76 s left. v2.1 ready for upload
+  after the 10:00 game. Conversion gate rerunning on 2 workers (the first run was polluted by
+  memory starvation: 33 fallback games, 7 flags).

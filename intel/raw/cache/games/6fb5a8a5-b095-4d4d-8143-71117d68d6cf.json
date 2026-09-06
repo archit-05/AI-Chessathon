@@ -1,0 +1,182 @@
+{
+ "game": "6fb5a8a5-b095-4d4d-8143-71117d68d6cf",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"2\"]\n[White \"checkers\"]\n[Black \"David Naylor\"]\n[Result \"1-0\"]\n[FEN \"rnb1k2r/pp2nppp/4p3/q1ppP3/3P4/P1P5/2PB1PPP/1R1QKBNR b Kkq - 4 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8... cxd4 { [%clk 0:01:55.49] } 9. cxd4 { [%clk 0:01:57.173] } 9... Qxa3 { [%clk 0:01:54.003] } 10. Rb3 { [%clk 0:01:51.144] } 10... Qa2 { [%clk 0:01:51.965] } 11. Qc1 { [%clk 0:01:47.978] } 11... Nbc6 { [%clk 0:01:50.893] } 12. Ra3 { [%clk 0:01:45.53] } 12... Qxa3 { [%clk 0:01:50.514] } 13. Qxa3 { [%clk 0:01:44.324] } 13... Nxd4 { [%clk 0:01:45.987] } 14. Bd3 { [%clk 0:01:42.13] } 14... Nec6 { [%clk 0:01:45.764] } 15. f4 { [%clk 0:01:40.614] } 15... f6 { [%clk 0:01:44.123] } 16. exf6 { [%clk 0:01:35.987] } 16... gxf6 { [%clk 0:01:42.815] } 17. Ne2 { [%clk 0:01:34.835] } 17... Nxe2 { [%clk 0:01:42.188] } 18. Bxe2 { [%clk 0:01:31.997] } 18... Kf7 { [%clk 0:01:42.112] } 19. Bh5+ { [%clk 0:01:29.319] } 19... Kg8 { [%clk 0:01:41.685] } 20. f5 { [%clk 0:01:27.535] } 20... e5 { [%clk 0:01:39.527] } 21. Bh6 { [%clk 0:01:28.019] } 21... Bxf5 { [%clk 0:01:38.112] } 22. Qd6 { [%clk 0:01:28.513] } 22... Nd4 { [%clk 0:01:37.686] } 23. Qxf6 { [%clk 0:01:29.003] } 23... Nxc2+ { [%clk 0:01:37.33] } 24. Kd2 { [%clk 0:01:29.495] } 24... Be4 { [%clk 0:01:36.244] } 25. Qe6# { [%clk 0:01:29.991] } 1-0\n",
+ "opening": "French Winawer",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 2\u00b7Final",
+ "white_uuid": "9e5e613a-ca80-4fd9-aa68-76f184ef7bac",
+ "black_uuid": "93c0f006-ed5b-438f-b283-3a3b4054b049",
+ "site_verdicts": [
+  [
+   "cxd4",
+   "mistake"
+  ],
+  [
+   "cxd4",
+   "best"
+  ],
+  [
+   "Qxa3",
+   "blunder"
+  ],
+  [
+   "Rb3",
+   "best"
+  ],
+  [
+   "Qa2",
+   "best"
+  ],
+  [
+   "Qc1",
+   "best"
+  ],
+  [
+   "Nbc6",
+   "best"
+  ],
+  [
+   "Ra3",
+   "best"
+  ],
+  [
+   "Qxa3",
+   "best"
+  ],
+  [
+   "Qxa3",
+   "best"
+  ],
+  [
+   "Nxd4",
+   "excellent"
+  ],
+  [
+   "Bd3",
+   "best"
+  ],
+  [
+   "Nec6",
+   "good"
+  ],
+  [
+   "f4",
+   "excellent"
+  ],
+  [
+   "f6",
+   "good"
+  ],
+  [
+   "exf6",
+   "best"
+  ],
+  [
+   "gxf6",
+   "best"
+  ],
+  [
+   "Ne2",
+   "best"
+  ],
+  [
+   "Nxe2",
+   "excellent"
+  ],
+  [
+   "Bxe2",
+   "best"
+  ],
+  [
+   "Kf7",
+   "good"
+  ],
+  [
+   "Bh5+",
+   "best"
+  ],
+  [
+   "Kg8",
+   "good"
+  ],
+  [
+   "f5",
+   "best"
+  ],
+  [
+   "e5",
+   "inaccuracy"
+  ],
+  [
+   "Bh6",
+   "excellent"
+  ],
+  [
+   "Bxf5",
+   "best"
+  ],
+  [
+   "Qd6",
+   "best"
+  ],
+  [
+   "Nd4",
+   "best"
+  ],
+  [
+   "Qxf6",
+   "excellent"
+  ],
+  [
+   "Nxc2+",
+   "excellent"
+  ],
+  [
+   "Kd2",
+   "excellent"
+  ],
+  [
+   "Be4",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "checkers",
+    "accuracy": 98.4,
+    "acpl": 10,
+    "tally": {
+     "brilliant": 0,
+     "best": 12,
+     "excellent": 5,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "David Naylor",
+    "accuracy": 88.0,
+    "acpl": 122,
+    "tally": {
+     "brilliant": 0,
+     "best": 6,
+     "excellent": 4,
+     "good": 4,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "fetched_at": "2026-09-06T08:00:14Z"
+}

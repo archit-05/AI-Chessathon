@@ -157,6 +157,24 @@ def get_team(uuid: str, force: bool) -> dict:
 
 
 # ----------------------------------------------------------------------------- game page
+def parse_review(page: str) -> dict:
+    """The site's own 'Game review' (Stockfish 16, depth 16): accuracy, ACPL and move tallies per side."""
+    out = []
+    src = re.search(r'game-review-source">(.*?)</span>', page)
+    for side in re.findall(r'<div class="review-side">(.*?)</ul>', page, flags=re.S):
+        name = re.search(r'review-name">(.*?)</p>', side)
+        acc = re.search(r"<dt>Accuracy</dt><dd>(.*?)</dd>", side)
+        acpl = re.search(r"<dt>ACPL</dt><dd>(.*?)</dd>", side)
+        tally = {v: int(n) for v, n in re.findall(r'<li data-verdict="([a-z]+)">.*?review-tally-count">(\d+)<', side, flags=re.S)}
+        out.append({
+            "name": clean(name.group(1)) if name else "",
+            "accuracy": float(clean(acc.group(1)).rstrip("%")) if acc else None,
+            "acpl": int(clean(acpl.group(1))) if acpl and clean(acpl.group(1)).isdigit() else None,
+            "tally": tally,
+        })
+    return {"source": clean(src.group(1)) if src else "", "sides": out}  # sides[0] = White, sides[1] = Black
+
+
 def parse_game(page: str, gid: str) -> dict | None:
     m = re.search(r'href="(data:application/x-chess-pgn;charset=utf-8,[^"]+)"', page)
     if not m:
@@ -178,6 +196,7 @@ def parse_game(page: str, gid: str) -> dict | None:
         "white_uuid": sides[0] if len(sides) > 0 else None,
         "black_uuid": sides[1] if len(sides) > 1 else None,
         "site_verdicts": [[san, v] for v, san in verdicts],
+        "review": parse_review(page),
         "fetched_at": now(),
     }
 
@@ -185,7 +204,11 @@ def parse_game(page: str, gid: str) -> dict | None:
 def get_game(gid: str) -> dict | None:
     path = CACHE_GAMES / f"{gid}.json"
     cached = load_json(path)
-    if cached:
+    if cached and "review" in cached:
+        sides = (cached["review"] or {}).get("sides")
+        if isinstance(sides, dict):  # older cache format: name-keyed, insertion order = White, Black
+            cached["review"]["sides"] = [{"name": k, **v} for k, v in sides.items()]
+            dump_json(path, cached)
         return cached
     data = parse_game(fetch(f"{BASE}/game/{gid}"), gid)
     if data and ("Final" in data["state"] or "Void" in data["state"]):
@@ -273,6 +296,18 @@ def game_facts(team: dict, row: dict, gdata: dict, opp_hist: list | None, ladder
         "site_verdicts": gdata.get("site_verdicts", []),
     }
     facts.update(clock_facts(game, colour))
+    sides = (gdata.get("review") or {}).get("sides", [])
+    sides = sides if isinstance(sides, list) else []
+    wr, br = (sides[0] if len(sides) > 0 else {}), (sides[1] if len(sides) > 1 else {})
+    mine, theirs = (wr, br) if colour == chess.WHITE else (br, wr)
+    facts.update({
+        "site_review_source": (gdata.get("review") or {}).get("source", ""),
+        "site_acpl": mine.get("acpl"),
+        "site_accuracy": mine.get("accuracy"),
+        "site_tally": mine.get("tally", {}),
+        "opp_site_acpl": theirs.get("acpl"),
+        "opp_site_accuracy": theirs.get("accuracy"),
+    })
     return facts
 
 

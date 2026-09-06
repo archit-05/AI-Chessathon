@@ -1,0 +1,186 @@
+{
+ "game": "e251de9b-5ee4-4e74-81a5-9c6f332cdb5a",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"23\"]\n[White \"Ransom\"]\n[Black \"TriggerFish\"]\n[Result \"1-0\"]\n[FEN \"rnbqk2r/ppp1bppp/4pn2/8/2Pp4/5NP1/PPQPPPBP/RNB1K2R w KQkq - 0 6\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n6. a3 { [%clk 0:01:53.463] } 6... O-O { [%clk 0:01:54.657] } 7. d3 { [%clk 0:01:49.463] } 7... c5 { [%clk 0:01:47.551] } 8. e4 { [%clk 0:01:41.317] } 8... Nc6 { [%clk 0:01:42.418] } 9. e5 { [%clk 0:01:34.887] } 9... Nd7 { [%clk 0:01:38.583] } 10. Qe2 { [%clk 0:01:25.008] } 10... Qa5+ { [%clk 0:01:32.495] } 11. Bd2 { [%clk 0:01:20.573] } 11... Qb6 { [%clk 0:01:28.97] } 12. Bf4 { [%clk 0:01:17.037] } 12... Na5 { [%clk 0:01:23.561] } 13. Nbd2 { [%clk 0:01:14.165] } 13... h6 { [%clk 0:01:18.416] } 14. O-O { [%clk 0:01:11.526] } 14... g5 { [%clk 0:01:14.731] } 15. b4 { [%clk 0:01:06.786] } 15... cxb4 { [%clk 0:01:12.596] } 16. axb4 { [%clk 0:01:03.887] } 16... Bxb4 { [%clk 0:01:08.12] } 17. Nxg5 { [%clk 0:00:59.54] } 17... hxg5 { [%clk 0:01:04.97] } 18. Ne4 { [%clk 0:00:53.445] } 18... gxf4 { [%clk 0:01:00.959] } 19. Qg4+ { [%clk 0:00:47.715] } 19... Kh8 { [%clk 0:00:57.434] } 20. Qh4+ { [%clk 0:00:47.949] } 20... Kg7 { [%clk 0:00:55.479] } 21. Qg5+ { [%clk 0:00:48.436] } 21... Kh7 { [%clk 0:00:52.777] } 22. Nf6+ { [%clk 0:00:48.929] } 22... Kh8 { [%clk 0:00:50.068] } 23. Qh6# { [%clk 0:00:49.427] } 1-0\n",
+ "opening": "Reti Opening",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 23\u00b7Final",
+ "white_uuid": "4f71e103-0e8b-4287-af80-6d8b438eed01",
+ "black_uuid": "8cffadc3-2135-45a6-8f80-9e0bdf7cef1f",
+ "site_verdicts": [
+  [
+   "a3",
+   "good"
+  ],
+  [
+   "O-O",
+   "good"
+  ],
+  [
+   "d3",
+   "good"
+  ],
+  [
+   "c5",
+   "best"
+  ],
+  [
+   "e4",
+   "excellent"
+  ],
+  [
+   "Nc6",
+   "good"
+  ],
+  [
+   "e5",
+   "best"
+  ],
+  [
+   "Nd7",
+   "best"
+  ],
+  [
+   "Qe2",
+   "best"
+  ],
+  [
+   "Qa5+",
+   "best"
+  ],
+  [
+   "Bd2",
+   "best"
+  ],
+  [
+   "Qb6",
+   "inaccuracy"
+  ],
+  [
+   "Bf4",
+   "best"
+  ],
+  [
+   "Na5",
+   "good"
+  ],
+  [
+   "Nbd2",
+   "best"
+  ],
+  [
+   "h6",
+   "inaccuracy"
+  ],
+  [
+   "O-O",
+   "excellent"
+  ],
+  [
+   "g5",
+   "good"
+  ],
+  [
+   "b4",
+   "excellent"
+  ],
+  [
+   "cxb4",
+   "excellent"
+  ],
+  [
+   "axb4",
+   "best"
+  ],
+  [
+   "Bxb4",
+   "inaccuracy"
+  ],
+  [
+   "Nxg5",
+   "best"
+  ],
+  [
+   "hxg5",
+   "best"
+  ],
+  [
+   "Ne4",
+   "excellent"
+  ],
+  [
+   "gxf4",
+   "blunder"
+  ],
+  [
+   "Qg4+",
+   "best"
+  ],
+  [
+   "Kh8",
+   "best"
+  ],
+  [
+   "Qh4+",
+   "excellent"
+  ],
+  [
+   "Kg7",
+   "best"
+  ],
+  [
+   "Qg5+",
+   "best"
+  ],
+  [
+   "Kh7",
+   "excellent"
+  ],
+  [
+   "Nf6+",
+   "best"
+  ],
+  [
+   "Kh8",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Fried Liver",
+    "accuracy": 97.5,
+    "acpl": 10,
+    "tally": {
+     "brilliant": 0,
+     "best": 11,
+     "excellent": 5,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "TriggerFish",
+    "accuracy": 85.6,
+    "acpl": 89,
+    "tally": {
+     "brilliant": 0,
+     "best": 6,
+     "excellent": 3,
+     "good": 4,
+     "forced": 0,
+     "inaccuracy": 3,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "fetched_at": "2026-09-06T08:02:40Z"
+}

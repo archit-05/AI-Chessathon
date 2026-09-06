@@ -1,0 +1,83 @@
+Dark Sister  (team: Abhi's chess demon)  -  rank 19, rating 2003
+================================================================
+Generated 2026-09-06 09:08 from 31 rated games (rounds 1-31, 0 of 31 analysed with Stockfish so
+  far).
+
+IDENTITY
+  Bot Dark Sister; team Abhi's chess demon; university Imperial; members not shown on the site.
+  Rank 19 of 311, rating 2003 (provisional: fewer than six games on the current build, i.e. a new
+    upload in the last five rounds), record 13-8-10 in 31 rated games.
+  Rating trajectory: entered R1 at 1575, peak 2003 (R31), now 2003 (R31).
+  Jumps of 100+ between rounds (a jump that does not match the game result suggests a new upload;
+  the first ten rounds swing a lot anyway):
+    R10 -115 -> 1581 (loss vs Magnus Claudeson)
+
+RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
+  vs top 10 : 1-3-4 (31%) over 8 games
+  vs 11-20  : 1-1-2 (38%) over 4 games
+  vs 21-50  : 4-2-3 (56%) over 9 games
+  vs rest   : 7-2-1 (80%) over 10 games
+  Games vs other top-20 teams:
+    R4   black vs Anchoa             (#2 ) loss checkmate             French Classical
+    R6   black vs Blank Shooter      (#20) loss checkmate             Sicilian Closed
+    R7   white vs Capablanca         (#3 ) win  checkmate             Petroff Defence
+    R15  black vs Cornelius          (#18) win  checkmate             Grunfeld Defence
+    R16  black vs AlphaFish          (#1 ) loss checkmate             Sicilian Closed
+    R17  black vs Danya's Disciple   (#4 ) draw threefold_repetition  Grunfeld Defence
+    R25  black vs AI Fellow          (#13) loss checkmate             Sicilian Closed
+    R27  white vs SoberJackson       (#5 ) loss checkmate             Petroff Defence
+    R28  black vs ms                 (#11) draw insufficient_material Sicilian Classical
+    R29  white vs Patzer 1.2         (#7 ) draw fifty_moves           Queen's Gambit Accepted
+    R30  black vs Mate in One        (#6 ) loss checkmate             Scotch Game
+    R31  white vs make_no_mistakes   (#10) draw insufficient_material Sicilian Closed
+
+MOVE QUALITY (Stockfish 19, 120k nodes per position, loss clipped at 1000, positions inside +-800
+  only)
+  not analysed yet
+  Site's own review (Stockfish 16 · depth 16): mean ACPL 28.0 over 31 games, mean accuracy 95.4%
+    (all games, not only analysed ones)
+
+TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
+  Per move: mean 1.79 s, median 1.51 s, quartiles 0.82-2.41 s, max 16.5 s; instant (<50 ms) moves
+    8.3%
+  Clock at the end: mean 31.6 s, minimum 2.0 s; games under 10 s: 9, under 5 s: 2 (R8, R31)
+  By clock before the move: >60s 2.7 s (n 859), 30-60s 1.6 s (n 594), 10-30s 0.9 s (n 490), <10s 0.6
+    s (n 186)
+  By own-move number: 1-15 3.1 s, 16-40 2.0 s, 41+ 0.9 s; when +300 or better n/a s, level n/a s,
+    -300 or worse n/a s
+  Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 3.6%,
+    quartiles 2.4-5.5%
+  After a >100 cp swing on the opponent's move: n/a s (n 0) vs n/a s otherwise; on moves that
+    themselves swing >100 cp: n/a s (n 0) vs n/a s
+  Exploitable: gets into time trouble
+
+DRAW BEHAVIOUR
+  8 draws in 31 games (26.0%): insufficient_material 4, threefold_repetition 3, fifty_moves 1; 3 of
+    them vs top-10 teams
+
+ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
+  not analysed yet
+
+OPENINGS (curated start positions assigned by the platform)
+  By family: Sicilian 1-3-4 (31%); French 0-2-3 (20%); Dutch 3-0-0 (100%); English 3-0-0 (100%);
+    Petroff 1-0-1 (50%); Reti 0-1-1 (25%); Grunfeld 1-1-0 (75%); Catalan 1-0-0 (100%); Ruy Lopez
+    1-0-0 (100%); Caro-Kann 1-0-0 (100%); Queen's Indian 1-0-0 (100%); Queen's Gambit 0-1-0 (50%);
+    Scotch 0-0-1 (0%)
+  Positions seen: Sicilian Closed x6 1-2-3 (33%); Dutch Stonewall x3 3-0-0 (100%); English
+    Symmetrical x3 3-0-0 (100%); French Advance x2 0-1-1 (25%); French Tarrasch x2 0-1-1 (25%);
+    Grunfeld Defence x2 1-1-0 (75%); Petroff Defence x2 1-0-1 (50%); Reti Opening x2 0-1-1 (25%);
+    Caro-Kann Classical win; Catalan Opening win; French Classical loss; Queen's Gambit Accepted
+    draw; Queen's Indian Defence win; Ruy Lopez, Closed win; Scotch Game loss; Sicilian Classical
+    draw; Sicilian Najdorf loss
+  Underperforms in: French 0-2-3 (20%), Sicilian 1-3-4 (31%)
+
+STYLE
+  Captures on n/a% of own moves, checks on n/a%; average game 137 plies (69 own moves), longest 359
+    plies (R28)
+  Wins: 13 (13 by checkmate, 0 by opponent failure); losses: 10 (10 by checkmate, 0 by own failure)
+
+LIKELY ENGINE PROFILE
+  Not analysed yet (run analyse.py).
+
+HOW TO PLAY THEM
+  1. Analysis pending.

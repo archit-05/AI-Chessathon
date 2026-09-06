@@ -1,0 +1,106 @@
+{
+ "game": "0f8a31bf-268d-485e-a48d-24eb458815d8",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"21\"]\n[White \"JSP\"]\n[Black \"zak\"]\n[Result \"1/2-1/2\"]\n[FEN \"r1bqk2r/2p1bppp/p1np1n2/1p2p3/4P3/1B1P1N2/PPP2PPP/RNBQR1K1 b kq - 0 8\"]\n[SetUp \"1\"]\n[Termination \"threefold_repetition\"]\n\n8... O-O { [%clk 0:01:57.985] } 9. Nc3 { [%clk 0:01:55.075] } 9... Bg4 { [%clk 0:01:54.82] } 10. h3 { [%clk 0:01:52.712] } 10... Bxf3 { [%clk 0:01:53] } 11. Qxf3 { [%clk 0:01:50.083] } 11... Nd4 { [%clk 0:01:51.053] } 12. Qg3 { [%clk 0:01:44.193] } 12... Nh5 { [%clk 0:01:48.509] } 13. Qg4 { [%clk 0:01:42.212] } 13... Nf6 { [%clk 0:01:46.877] } 14. Qg3 { [%clk 0:01:38.575] } 14... Nh5 { [%clk 0:01:45.102] } 15. Qg4 { [%clk 0:01:36.875] } 15... Nf6 { [%clk 0:01:43.191] } 1/2-1/2\n",
+ "opening": "Ruy Lopez, Closed",
+ "termination_text": "Threefold repetition",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 21\u00b7Final",
+ "white_uuid": "dab1e77e-ebb1-49f5-92d4-2a013e3288c4",
+ "black_uuid": "0cebedbb-0376-4058-b6f4-0e11ef9dbeed",
+ "site_verdicts": [
+  [
+   "O-O",
+   "good"
+  ],
+  [
+   "Nc3",
+   "good"
+  ],
+  [
+   "Bg4",
+   "good"
+  ],
+  [
+   "h3",
+   "best"
+  ],
+  [
+   "Bxf3",
+   "best"
+  ],
+  [
+   "Qxf3",
+   "best"
+  ],
+  [
+   "Nd4",
+   "best"
+  ],
+  [
+   "Qg3",
+   "good"
+  ],
+  [
+   "Nh5",
+   "good"
+  ],
+  [
+   "Qg4",
+   "best"
+  ],
+  [
+   "Nf6",
+   "best"
+  ],
+  [
+   "Qg3",
+   "good"
+  ],
+  [
+   "Nh5",
+   "good"
+  ],
+  [
+   "Qg4",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Good Morning",
+    "accuracy": 93.7,
+    "acpl": 18,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 0,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "zak",
+    "accuracy": 93.7,
+    "acpl": 17,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 0,
+     "good": 4,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "fetched_at": "2026-09-06T08:03:24Z"
+}
