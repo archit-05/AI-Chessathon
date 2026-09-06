@@ -3,7 +3,8 @@
 #   1. scrape.py   - leaderboard, the current top-N team pages (+ Opus Carlsen) and any game pages not yet cached
 #   2. analyse.py  - Stockfish 19 at 120k nodes per new position (cached by FEN in raw/evals.jsonl)
 #   3. report.py   - dossiers <rank>_<Bot>.txt, 00_summary.txt, history/summary_<stamp>.{txt,json}
-#   4. strategy.py - STRATEGY.txt (reverse-engineered profiles + what it means for our build)
+#   4. strategy.py - STRATEGY.txt (reverse-engineered profiles + what it means for our build); full and --auto
+#                    runs also archive it as the next strategy/Strategy_N.txt with a diff against N-1
 # Everything runs under nice -n 15 with a single Stockfish process.  Safe to re-run; only new games cost time.
 # Usage: ./refresh.sh             full refresh, analysis in the foreground (first run takes hours)
 #        ./refresh.sh --auto      scrape, start the analysis in the background if none is running, render, commit intel/
@@ -30,7 +31,11 @@ elif [ "$MODE" = "--auto" ]; then
     fi
 fi
 nice -n 15 "$PY" report.py
-nice -n 15 "$PY" strategy.py > /dev/null
+if [ "$MODE" = "full" ] || [ "$MODE" = "--auto" ]; then
+    nice -n 15 "$PY" strategy.py --archive | tail -1     # numbered entry in strategy/Strategy_N.txt
+else
+    nice -n 15 "$PY" strategy.py > /dev/null              # latest only (STRATEGY.txt)
+fi
 echo "strategy report: $(pwd)/STRATEGY.txt"
 if [ "$MODE" = "--auto" ]; then
     git -C .. add intel

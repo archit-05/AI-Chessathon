@@ -105,7 +105,7 @@ def main() -> None:
     if ours:
         team = get_team(ours["uuid"], force=True)
         out.append(f"\n{ours['bot']} ({OUR_TEAM}): rank {ours['rank']}, rating {ours['rating']}{'P' if ours['provisional'] else ''}, {'-'.join(map(str, ours['wdl']))}; games since R{a.since_round}"
-                   " (grades = site tags best/exc/good/inacc/mist/miss/blund on own moves):")
+                   " (clk@20/40/60 = our clock in s after own moves 20/40/60; grades = site tags best/exc/good/inacc/mist/miss/blund on own moves):")
         games = sorted([g for g in team["games"] if g["round"] and g["round"] >= a.since_round], key=lambda g: g["round"])
         if not games:
             out.append("  none yet")
@@ -122,8 +122,10 @@ def main() -> None:
             tpm = g["time_per_move"]
             opp = ladder.get(row["opponent_uuid"], {})
             res = {1.0: "WIN ", 0.5: "DRAW", 0.0: "LOSS"}.get(g["score"], "VOID")
+            clk = g.get("clock_after_move") or []
+            curve = "/".join(f"{clk[i - 1]:.0f}" if len(clk) >= i else "-" for i in (20, 40, 60))
             out.append(f"  R{g['round']} {g['colour'][0].upper()} vs {opp.get('bot', row['opponent'])[:14]:<14} (#{opp.get('rank')},{opp.get('rating')}) {res} {g['termination'][:12]:<12} "
-                       f"{g['own_moves']:>3}mv {sum(tpm) / len(tpm) if tpm else 0:.1f}s/mv end {g['final_clock']:.0f}s  us {fmt_split(mine)} them {fmt_split(theirs)}  {g['opening']}")
+                       f"{g['own_moves']:>3}mv {sum(tpm) / len(tpm) if tpm else 0:.1f}s/mv clk@20/40/60 {curve} end {g['final_clock']:.0f}s  us {fmt_split(mine)} them {fmt_split(theirs)}  {g['opening']}")
             if g["score"] != 1.0:
                 out.append(f"      {'lost' if g['score'] == 0.0 else 'drawn'}: {why_not_won(g, gdata, mine, mat)}")
 

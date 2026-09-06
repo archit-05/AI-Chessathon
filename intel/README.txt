@@ -14,7 +14,10 @@ HOW TO REFRESH
   ./refresh.sh                 scrape + analyse + render (first run ~1-3 h of single-core Stockfish;
                                later runs only analyse new games, typically a few minutes)
   ./refresh.sh --no-scrape     re-analyse and re-render without touching the network
-  ./refresh.sh --report        re-render only (after editing notes/*.txt)
+  ./refresh.sh --auto          scrape, keep one Stockfish pass running in the background, render,
+                               archive the next Strategy_N, commit intel/ (the three-hourly schedule)
+  ./refresh.sh --report        re-render only (after editing notes/*.txt); updates STRATEGY.txt
+                               without adding a numbered entry
   Everything runs under nice -n 15 with ONE Stockfish process, so it can share the machine with
   training or arena jobs.  Python comes from ../aichessathon-starter/.venv (python-chess needed).
   Stockfish is expected at /opt/homebrew/bin/stockfish (common.py: SF_PATH).
@@ -26,7 +29,16 @@ FILES
   <rank>_<Bot>.txt             dossier: identity, results by opponent tier, move quality, time
                                management, draw behaviour, endgame conversion, openings, style,
                                likely engine profile, how to play them, analyst notes
-  refresh.sh                   the one-command refresh (see above)
+  STRATEGY.txt                 the latest strategic report: reverse-engineered profile of each top-10
+                               system, the bar the top five set, what it means for our build, the
+                               curated openings, our own games, head-to-head; ends with the
+                               hand-written synthesis from notes/strategy.txt
+  strategy/Strategy_N.txt      the numbered series of those reports (one per scheduled or full
+                               refresh, about every three hours); each opens with a diff against
+                               Strategy N-1 (rank/rating/record moves, fresh-upload flags, CPL
+                               becoming measurable, Stockfish coverage).  Strategy_N.json holds the
+                               rows used for the diff.
+  refresh.sh                   the one-command refresh (see above); --auto is what the schedule runs
   scrape.py                    leaderboard + team pages + game pages -> raw/
   analyse.py                   Stockfish evaluation of every position -> raw/<Bot>.json
   report.py                    renders dossiers, summary and history from raw/
