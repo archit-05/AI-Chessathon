@@ -376,3 +376,8 @@ agent; worth 20 minutes a day from any UK-student team member who enjoys puzzles
   build, 60 games at 10 s + 0.1 s: +42 =7 −11, 75.8%, ≈ +199 ±109 Elo, no failures. Evaluations
   well scaled (queen +1046, rook −476). Trainer/engine consistency 1.8 cp mean. Training continues
   (epoch 3, ~30 min/epoch); final gate, real-clock centipawn loss, torture and packaging at ~05:45.
+- **Sun 6 Sept, 05:10 — v2 trained and packaged.** 8 epochs, ~128M quiet Lichess positions,
+  validation loss 0.0116 (v1: 0.0157). Consistency 2.1 cp, incremental updates exact, compile with
+  the net 25 s under load, 8/8 in-process wins vs random. `submission_v2_0906_0507.zip` (6.4 MB
+  unzipped) built; 200-game gate vs the hand-crafted build running, torture and real-clock check
+  follow before hand-over.
