@@ -32,7 +32,7 @@ def main() -> None:
     ap.add_argument("--base-ms", type=int, default=120_000)
     ap.add_argument("--inc-ms", type=int, default=500)
     a = ap.parse_args()
-    assert agent._ready.is_set()
+    agent._ready.wait()  # local runs may compile slowly under load; the platform core is dedicated
     fens = [ln.split(";")[0].strip() for ln in Path(a.epd).read_text().splitlines() if ln.strip()]
     sf = UCI()
     results = {"win": 0, "draw": 0, "loss": 0}

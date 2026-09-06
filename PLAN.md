@@ -445,3 +445,9 @@ conversion + endgame suite, book; Tue own-search fine-tune, SF 2600/2800 ladder;
   horizon max(22, 50 − 0.5·n) for 60–100-move games; low-clock guard under 10 s. Budget curve now
   2.7 s at move 1 → 1.6 s at move 40 (40 s left) → 0.75 s at 10 s left. Pressure games and
   torture rerunning on the fix; hand-over slips ~45 min.
+- **Sun 6 Sept, 11:20 — site rule change (ladder).** Games ending by threefold repetition or the
+  fifty-move rule are now voided retroactively on the ladder (insufficient material still counts);
+  everyone re-rated (AlphaFish 2478, Capablanca 2429, Anchoa 2360, SoberElwood 2338). The Swiss
+  rules still say FIDE draws. Decision: no ladder-only policy; contempt is set for the Swiss regime
+  (refuse repetition when ahead, welcome it when behind). Bini: 3-0 since the v2 upload (R31–R33),
+  1487, rank 188; site grades 43 best / 18 excellent / 4 good / 0 errors over three games.
