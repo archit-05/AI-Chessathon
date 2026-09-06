@@ -231,6 +231,29 @@ def parse_game(page: str, gid: str) -> dict | None:
     }
 
 
+def revalidate_game(gid: str, verdict: str) -> dict | None:
+    """The team page says the game is void (or no longer void): re-read the page but keep the original PGN,
+    termination and evaluations, so a game the site voided later is still analysable as a played game."""
+    path = CACHE_GAMES / f"{gid}.json"
+    cached = load_json(path)
+    if not cached:
+        return get_game(gid)
+    was_void = "Void" in cached.get("state", "")
+    if (verdict == "void") == was_void:
+        return cached
+    fresh = parse_game(fetch(f"{BASE}/game/{gid}"), gid)
+    if not fresh:
+        return cached
+    if "Void" in fresh["state"] and not was_void:
+        cached["original_state"] = cached.get("state")
+        cached["state"] = fresh["state"]
+        cached["voided_at"] = now()
+    elif "Void" not in fresh["state"] and was_void:
+        cached = fresh  # restored by the site: take the fresh page
+    dump_json(path, cached)
+    return cached
+
+
 def get_game(gid: str) -> dict | None:
     path = CACHE_GAMES / f"{gid}.json"
     cached = load_json(path)
@@ -321,6 +344,9 @@ def game_facts(team: dict, row: dict, gdata: dict, opp_hist: list | None, ladder
         "termination_text": gdata["termination_text"],
         "state": gdata["state"],
         "void": "Void" in gdata["state"] or res == "*",
+        "voided": "Void" in gdata["state"] and res != "*",  # played to a result, voided by the site afterwards
+        "voided_at": gdata.get("voided_at"),
+        "site_verdict": row["verdict"],
         "plies": plies,
         "own_moves": own,
         "site_verdicts": gdata.get("site_verdicts", []),
@@ -380,6 +406,8 @@ def main() -> None:
         facts, pgns, missing = [], [], 0
         for row in games:
             gdata = get_game(row["game"])
+            if gdata:
+                gdata = revalidate_game(row["game"], row["verdict"])
             if not gdata:
                 missing += 1
                 continue

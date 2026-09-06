@@ -147,8 +147,10 @@ def load_team(t):
         g.setdefault("moves", [])
     data["n_analysed"] = n
     data["analysed"] = n > 0
-    data["rated"] = [g for g in data["games"] if not g.get("void")]
-    data["void_games"] = [g for g in data["games"] if g.get("void")]
+    data["rated"] = [g for g in data["games"] if not g.get("void")]            # counts on the ladder
+    data["voided"] = [g for g in data["games"] if g.get("voided")]            # played to a result, voided by the site later
+    data["played"] = data["rated"] + data["voided"]                           # real games: moves, clocks, draw behaviour
+    data["void_games"] = [g for g in data["games"] if g.get("void") and not g.get("voided")]  # never had a result
     # the leaderboard row is the freshest source for rank/rating/record
     for k in ("rank", "rating", "provisional", "wdl", "university", "tag"):
         if k in t:
@@ -158,7 +160,7 @@ def load_team(t):
 
 
 def own_moves(team, games=None):
-    for g in games if games is not None else team["rated"]:
+    for g in games if games is not None else team["played"]:
         for m in g["moves"]:
             yield g, m
 
@@ -197,7 +199,7 @@ def quality(team):
 
 def clock_moves(team):
     """Own moves with clock data: analysed moves where available, else pseudo-moves from the scrape clocks."""
-    for g in team["rated"]:
+    for g in team["played"]:
         if g["moves"]:
             for m in g["moves"]:
                 if m["time"] is not None:
@@ -219,10 +221,10 @@ def timing(team):
     t["q1"], t["q3"] = round(qs[0], 2), round(qs[2], 2)
     t["sd"] = round(st.pstdev(times), 2)
     t["instant_pct"] = pct(sum(1 for x in times if x < 0.05), len(times), 1)
-    finals = [g["final_clock"] for g in team["rated"] if g.get("final_clock") is not None]
+    finals = [g["final_clock"] for g in team["played"] if g.get("final_clock") is not None]
     t["final_mean"], t["final_min"] = mean(finals), round(min(finals), 1) if finals else None
-    t["under5"] = [g for g in team["rated"] if any(c < 5 for c in g.get("clock_after_move", []))]
-    t["under10"] = [g for g in team["rated"] if any(c < 10 for c in g.get("clock_after_move", []))]
+    t["under5"] = [g for g in team["played"] if any(c < 5 for c in g.get("clock_after_move", []))]
+    t["under10"] = [g for g in team["played"] if any(c < 10 for c in g.get("clock_after_move", []))]
     # spending vs complexity: eval moved by > 100 cp on the opponent's previous move (entering), or on the own move
     prev = {}
     entering, calm, own_swing, own_calm = [], [], [], []
@@ -262,14 +264,15 @@ def timing(team):
     t["behind"] = mean([m["time"] for _, m in ev if m["cp_before"] <= -CONVERT], 2)
     t["level"] = mean([m["time"] for _, m in ev if -CONVERT < m["cp_before"] < CONVERT], 2)
     t["by_phase"] = {i: mean([m["time"] for _, m in moves if phase_of(m["n"]) == i], 2) for i in (1, 2, 3)}
-    t["opp_mean"] = mean([g.get("opp_time_mean") for g in team["rated"]], 2)
+    t["opp_mean"] = mean([g.get("opp_time_mean") for g in team["played"]], 2)
     return t
 
 
 def draws(team):
     d = {}
-    dr = [g for g in team["rated"] if g["score"] == 0.5]
+    dr = [g for g in team["played"] if g["score"] == 0.5]
     d["n"] = len(dr)
+    d["voided"] = [g for g in dr if g.get("voided")]
     d["by"] = Counter(g["termination"] for g in dr)
     d["rep_ahead"] = [g for g in dr if g["termination"] == "threefold_repetition" and g.get("final_cp") is not None and g["final_cp"] > AHEAD]
     d["rep_behind"] = [g for g in dr if g["termination"] == "threefold_repetition" and g.get("final_cp") is not None and g["final_cp"] < -AHEAD]
@@ -284,7 +287,7 @@ def draws(team):
 
 def conversion(team):
     c = {"missed": [], "saved": [], "winning_games": 0, "losing_games": 0}
-    for g in team["rated"]:
+    for g in team["played"]:
         if not g["moves"]:
             continue
         pre = [m["cp_before"] for m in g["moves"]] + [m["cp_after"] for m in g["moves"]]
@@ -339,7 +342,7 @@ def openings(team):
     o = {}
     by_name = defaultdict(list)
     by_fam = defaultdict(list)
-    for g in team["rated"]:
+    for g in team["played"]:
         by_name[g["opening"]].append(g)
         by_fam[family(g["opening"])].append(g)
     o["by_name"] = by_name
@@ -353,7 +356,7 @@ def openings(team):
     o["early_cpl"] = mean([m["loss"] for m in early if m["counted"]])
     o["early_instant"] = pct(sum(1 for m in early if m["time"] is not None and m["time"] < 0.05), len(early))
     firsts = []
-    for g in team["rated"]:
+    for g in team["played"]:
         for m in g["moves"]:
             if not m["is_best"] and m["loss"] >= 20:
                 firsts.append(m["n"])
@@ -368,18 +371,18 @@ def style(team):
     s["n"] = len(ms)
     s["capture_pct"] = pct(sum(1 for m in ms if m["capture"]), len(ms), 1)
     s["check_pct"] = pct(sum(1 for m in ms if m["check"]), len(ms), 1)
-    s["plies"] = mean([g["plies"] for g in team["rated"]], 0)
-    s["own_moves"] = mean([g["own_moves"] for g in team["rated"]], 0)
-    wins = [g for g in team["rated"] if g["score"] == 1.0]
-    losses = [g for g in team["rated"] if g["score"] == 0.0]
+    s["plies"] = mean([g["plies"] for g in team["played"]], 0)
+    s["own_moves"] = mean([g["own_moves"] for g in team["played"]], 0)
+    wins = [g for g in team["played"] if g["score"] == 1.0]
+    losses = [g for g in team["played"] if g["score"] == 0.0]
     s["wins_mate"] = sum(1 for g in wins if g["termination"] == "checkmate")
     s["wins_fail"] = [g for g in wins if g["termination"] in FAILURES]
     s["losses_mate"] = sum(1 for g in losses if g["termination"] == "checkmate")
     s["losses_fail"] = [g for g in losses if g["termination"] in FAILURES]
-    s["longest"] = max(team["rated"], key=lambda g: g["plies"], default=None)
+    s["longest"] = max(team["played"], key=lambda g: g["plies"], default=None)
     # sacrifices: material given up (>= 2 pawns after the opponent's reply) without an eval loss, then recovered
     sacs = []
-    for g in team["rated"]:
+    for g in team["played"]:
         mv = g["moves"]
         for i, m in enumerate(mv[:-1]):
             nxt = mv[i + 1]
@@ -394,7 +397,7 @@ def style(team):
     # simplification when ahead: material leaving the board over own move + reply
     off_ahead, off_level = [], []
     cap_ahead, cap_level = [], []
-    for g in team["rated"]:
+    for g in team["played"]:
         mv = g["moves"]
         for i, m in enumerate(mv[:-1]):
             off = m["tot_before"] - mv[i + 1]["tot_before"]
@@ -432,7 +435,7 @@ def spikes(team):
 
 
 def recent_form(team, k=5):
-    games = sorted(team["rated"], key=lambda g: g["round"])
+    games = sorted(team["played"], key=lambda g: g["round"])
     recent, earlier = games[-k:], games[:-k]
     out = {}
     for name, gs in (("recent", recent), ("earlier", earlier)):
@@ -542,7 +545,8 @@ def render_dossier(team, targets_by_uuid, ladder):
     add("=" * min(W, len(L[0])))
     partial = f", {team['n_analysed']} of {len(team['games'])} with evaluations so far" if team["n_analysed"] < len(team["games"]) else ""
     add(f"Generated {dt.datetime.now().strftime('%Y-%m-%d %H:%M')} from {len(rated)} rated games (rounds {rated[0]['round']}-{rated[-1]['round']}{partial})"
-        + (f", {len(team['void_games'])} void game(s) ignored: {', '.join(rnd(g) for g in team['void_games'])}" if team["void_games"] else "") + ".")
+        + (f" plus {len(team['voided'])} played to a result but voided by the site later ({', '.join(rnd(g) + ' ' + g['termination'].replace('threefold_repetition', '3fold').replace('fifty_moves', '50-move') for g in team['voided'])}): they count for move quality, clocks and draw behaviour, not for results" if team["voided"] else "")
+        + (f"; {len(team['void_games'])} game(s) that never had a result ignored: {', '.join(rnd(g) for g in team['void_games'])}" if team["void_games"] else "") + ".")
     add("")
     # Identity
     add("IDENTITY")
@@ -637,8 +641,9 @@ def render_dossier(team, targets_by_uuid, ladder):
     add("")
     # Draws
     add("DRAW BEHAVIOUR")
-    add(f"  {d['n']} draws in {len(rated)} games ({pct(d['n'], len(rated))}%): " + (", ".join(f"{k} {v}" for k, v in d["by"].most_common()) if d["n"] else "none")
-        + (f"; {len(d['vs_top'])} of them vs top-10 teams" if d["vs_top"] else ""))
+    add(f"  {d['n']} draws in {len(team['played'])} played games ({pct(d['n'], len(team['played']))}%): " + (", ".join(f"{k} {v}" for k, v in d["by"].most_common()) if d["n"] else "none")
+        + (f"; {len(d['vs_top'])} of them vs top-10 teams" if d["vs_top"] else "")
+        + (f"; {len(d['voided'])} of these were voided by the site afterwards and no longer count on the ladder" if d["voided"] else ""))
     if team["analysed"]:
         add(f"  Repetition while ahead (> +{AHEAD} at the final position): {len(d['rep_ahead'])}"
             + (" -> " + ", ".join(f"{rnd(g)} vs {g.get('opponent_bot') or g['opponent']} at {g['final_cp']:+d}" for g in d["rep_ahead"]) if d["rep_ahead"] else ""))
@@ -753,15 +758,16 @@ def league_row(team):
         "draw_pct": pct(d["n"], n),
         "rep_ahead": len(d["rep_ahead"]),
         "nonconv": len(c["missed"]),
+        "voided": len(team["voided"]),
         "provisional": team.get("provisional", False),
     }
 
 
 def table(rows):
-    hdr = f"{'#':>3} {'Bot':<18} {'Rating':>6} {'Record':>8} {'CPL':>5} {'sACPL':>5} {'Bl%':>5} {'s/mv':>5} {'Draw%':>5} {'RepA':>4} {'NonC':>4}"
+    hdr = f"{'#':>3} {'Bot':<18} {'Rating':>6} {'Record':>8} {'CPL':>5} {'sACPL':>5} {'Bl%':>5} {'s/mv':>5} {'Draw%':>5} {'RepA':>4} {'NonC':>4} {'Void':>4}"
     out = [hdr, "-" * len(hdr)]
     for r in rows:
-        out.append(f"{r['rank']:>3} {r['bot'][:18]:<18} {r['rating']:>6} {r['record']:>8} {f(r['cpl']):>5} {f(r.get('site_acpl'), 0):>5} {f(r['blunder_pct']):>5} {f(r['spm'], 2):>5} {f(r['draw_pct'], 0):>5} {r['rep_ahead']:>4} {r['nonconv']:>4}"
+        out.append(f"{r['rank']:>3} {r['bot'][:18]:<18} {r['rating']:>6} {r['record']:>8} {f(r['cpl']):>5} {f(r.get('site_acpl'), 0):>5} {f(r['blunder_pct']):>5} {f(r['spm'], 2):>5} {f(r['draw_pct'], 0):>5} {r['rep_ahead']:>4} {r['nonconv']:>4} {r.get('voided', 0):>4}"
                    + ("  *" if r["provisional"] else ""))
     return out
 
@@ -921,6 +927,8 @@ def main():
     src = Counter(t.get("eval_source", "sf") for t in teams).most_common(1)[0][0]
     L.append(f"CPL = our mean centipawn loss per own move from {eval_label({'eval_source': src})}, positions inside +-800 only;")
     L.append(f"sACPL = the site's own review ACPL (all positions, mean per game); Bl% = moves losing >= {BLUNDER} cp; CPL and Bl% show n/a under 200 moves;")
+    L.append("Void = games played to a result that the site voided afterwards (repetition and fifty-move endings since 6 Sept ~11:00); they count for move")
+    L.append("quality, clocks and draw behaviour but not for Record or Draw%;")
     L.append(f"s/mv = mean seconds per own move; RepA = draws by repetition while more than +{AHEAD}; NonC = games at +{CONVERT} or better not won; * = provisional rating.")
     L.append("")
     L.append("LEAGUE TABLE")

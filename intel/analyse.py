@@ -370,8 +370,9 @@ def main() -> None:
         if not sc:
             continue
         for g in sc["games"]:
-            if g.get("void"):
-                continue  # never rated, excluded from every statistic: not worth the engine time
+            if g.get("void") and not g.get("voided"):
+                continue  # never had a result (300-ply unterminated): excluded from every statistic
+            # games the site voided afterwards were played to a result and stay in the analysis
             index.setdefault(g["game"], []).append((t, sc, g))
             if t["uuid"] == leader["uuid"] and g["score"] == 0.0:
                 cls = 0

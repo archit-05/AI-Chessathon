@@ -1,58 +1,62 @@
 {
- "fetched_at": "2026-09-06T09:17:00Z",
+ "fetched_at": "2026-09-06T10:25:27Z",
  "slug": "BINI_Alpha",
  "bot": "BINI Alpha",
  "team": "Opus Carlsen",
  "uuid": "f0286356-626d-4dd2-86ab-fd6d779063cb",
  "university": "Exeter",
  "tag": "",
- "rank": 212,
- "rating": 1415,
+ "rank": 188,
+ "rating": 1487,
  "provisional": true,
- "games_played": 9,
+ "games_played": 7,
  "wdl": [
-  2,
   3,
+  0,
   4
  ],
- "record": "2-3-4",
- "rated_rounds": 9,
+ "record": "3-0-4",
+ "rated_rounds": 10,
  "history": [
   [
    24,
-   1431
+   1440
   ],
   [
    25,
-   1430
+   1445
   ],
   [
    26,
-   1421
+   1449
   ],
   [
    27,
-   1364
+   1377
   ],
   [
    28,
-   1359
+   1383
   ],
   [
    29,
-   1305
+   1311
   ],
   [
    30,
-   1269
+   1265
   ],
   [
    31,
-   1353
+   1351
   ],
   [
    32,
-   1415
+   1417
+  ],
+  [
+   33,
+   1487
   ]
  ],
  "games": [
@@ -66,11 +70,11 @@
    "opponent": "Thorp",
    "opponent_uuid": "c7c9afba-d0bd-44f0-add8-b177e17526b0",
    "opponent_bot": "Thorp",
-   "opponent_rank_now": 95,
-   "opponent_rating_now": 1678,
-   "opponent_rating_then": 1605,
+   "opponent_rank_now": 76,
+   "opponent_rating_now": 1707,
+   "opponent_rating_then": 1601,
    "own_rating_then": null,
-   "own_rating_after": 1431,
+   "own_rating_after": 1440,
    "opening": "Four Knights Game",
    "start_fen": "r1bq1rk1/pppp1ppp/2n2n2/1B2p3/4P3/2P2N1P/PPP2PP1/R1BQ1RK1 b - - 0 7",
    "result": "0-1",
@@ -79,6 +83,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 24\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "loss",
    "plies": 67,
    "own_moves": 33,
    "site_verdicts": [
@@ -445,19 +452,22 @@
    "opponent": "Brownies",
    "opponent_uuid": "1d4fc121-d317-4aa2-a35d-f3d9a1bbaaa9",
    "opponent_bot": "Blunderbus",
-   "opponent_rank_now": 251,
-   "opponent_rating_now": 1337,
+   "opponent_rank_now": 230,
+   "opponent_rating_now": 1398,
    "opponent_rating_then": 1387,
-   "own_rating_then": 1431,
-   "own_rating_after": 1430,
+   "own_rating_then": 1440,
+   "own_rating_after": 1445,
    "opening": "Two Knights Defence",
    "start_fen": "r1bqk2r/ppppbppp/2n2n2/4p3/2B1P3/2NP1N2/PPP2PPP/R1BQK2R b KQkq - 2 5",
    "result": "1/2-1/2",
    "score": 0.5,
    "termination": "threefold_repetition",
    "termination_text": "Threefold repetition",
-   "state": "Rated 25\u00b7Final",
-   "void": false,
+   "state": "Rated 25\u00b7Void",
+   "void": true,
+   "voided": true,
+   "voided_at": "2026-09-06T10:25:22Z",
+   "site_verdict": "void",
    "plies": 105,
    "own_moves": 52,
    "site_verdicts": [
@@ -1014,19 +1024,22 @@
    "opponent": "Team2",
    "opponent_uuid": "33731895-4927-40e5-90f5-fad0442d196d",
    "opponent_bot": "Dr. DrunkenstAIn",
-   "opponent_rank_now": 239,
-   "opponent_rating_now": 1373,
+   "opponent_rank_now": 246,
+   "opponent_rating_now": 1368,
    "opponent_rating_then": 1391,
-   "own_rating_then": 1430,
-   "own_rating_after": 1421,
+   "own_rating_then": 1445,
+   "own_rating_after": 1449,
    "opening": "Petroff Defence",
    "start_fen": "rnbqkb1r/ppp2ppp/8/3p4/3Pn3/5N2/PPPN1PPP/R1BQKB1R b KQkq - 1 6",
    "result": "1/2-1/2",
    "score": 0.5,
    "termination": "threefold_repetition",
    "termination_text": "Threefold repetition",
-   "state": "Rated 26\u00b7Final",
-   "void": false,
+   "state": "Rated 26\u00b7Void",
+   "void": true,
+   "voided": true,
+   "voided_at": "2026-09-06T10:25:24Z",
+   "site_verdict": "void",
    "plies": 110,
    "own_moves": 55,
    "site_verdicts": [
@@ -1609,11 +1622,11 @@
    "opponent": "Martin",
    "opponent_uuid": "c29674a7-169d-4058-b77e-2a46df96bcf9",
    "opponent_bot": "Martin",
-   "opponent_rank_now": 206,
-   "opponent_rating_now": 1435,
+   "opponent_rank_now": 223,
+   "opponent_rating_now": 1415,
    "opponent_rating_then": 1439,
-   "own_rating_then": 1421,
-   "own_rating_after": 1364,
+   "own_rating_then": 1449,
+   "own_rating_after": 1377,
    "opening": "English Symmetrical",
    "start_fen": "r1bqk2r/pp1pppbp/2n2np1/2p5/2P5/2NP1NP1/PP2PPBP/R1BQK2R b KQkq - 0 6",
    "result": "1-0",
@@ -1622,6 +1635,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 27\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "loss",
    "plies": 68,
    "own_moves": 34,
    "site_verdicts": [
@@ -1994,19 +2010,22 @@
    "opponent": "meow",
    "opponent_uuid": "2b335ddf-2152-4352-9c37-3dacd7d32f6a",
    "opponent_bot": "meowbot",
-   "opponent_rank_now": 263,
-   "opponent_rating_now": 1299,
+   "opponent_rank_now": 264,
+   "opponent_rating_now": 1321,
    "opponent_rating_then": 1307,
-   "own_rating_then": 1364,
-   "own_rating_after": 1359,
+   "own_rating_then": 1377,
+   "own_rating_after": 1383,
    "opening": "Scotch Game",
    "start_fen": "r1bqk2r/pppp1ppp/1bn2n2/8/4P3/1NN2P2/PPP3PP/R1BQKB1R b KQkq - 4 7",
    "result": "1/2-1/2",
    "score": 0.5,
    "termination": "threefold_repetition",
    "termination_text": "Threefold repetition",
-   "state": "Rated 28\u00b7Final",
-   "void": false,
+   "state": "Rated 28\u00b7Void",
+   "void": true,
+   "voided": true,
+   "voided_at": "2026-09-06T10:25:26Z",
+   "site_verdict": "void",
    "plies": 57,
    "own_moves": 28,
    "site_verdicts": [
@@ -2323,11 +2342,11 @@
    "opponent": "limlamlom",
    "opponent_uuid": "25f260e1-4bf9-49eb-9ebb-117e90eefa28",
    "opponent_bot": "limlamlom",
-   "opponent_rank_now": 258,
-   "opponent_rating_now": 1307,
+   "opponent_rank_now": 269,
+   "opponent_rating_now": 1308,
    "opponent_rating_then": 1295,
-   "own_rating_then": 1359,
-   "own_rating_after": 1305,
+   "own_rating_then": 1383,
+   "own_rating_after": 1311,
    "opening": "Caro-Kann Classical",
    "start_fen": "r2qkb1r/pp1npppp/2p2nb1/8/3P3P/2P3N1/PP2NPP1/R1BQKB1R b KQkq - 0 8",
    "result": "1-0",
@@ -2336,6 +2355,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 29\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "loss",
    "plies": 48,
    "own_moves": 24,
    "site_verdicts": [
@@ -2608,11 +2630,11 @@
    "opponent": "2sigbros",
    "opponent_uuid": "5b500243-9807-4747-a843-5bf3facea567",
    "opponent_bot": "citytrek",
-   "opponent_rank_now": 240,
-   "opponent_rating_now": 1366,
-   "opponent_rating_then": 1341,
-   "own_rating_then": 1305,
-   "own_rating_after": 1269,
+   "opponent_rank_now": 235,
+   "opponent_rating_now": 1388,
+   "opponent_rating_then": 1358,
+   "own_rating_then": 1311,
+   "own_rating_after": 1265,
    "opening": "Petroff Defence",
    "start_fen": "rnbqk2r/ppp2ppp/3b4/3p4/3Pn3/3B1N2/PPPN1PPP/R1BQK2R b KQkq - 3 7",
    "result": "1-0",
@@ -2621,6 +2643,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 30\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "loss",
    "plies": 82,
    "own_moves": 41,
    "site_verdicts": [
@@ -3063,11 +3088,11 @@
    "opponent": "Minimax Three",
    "opponent_uuid": "9732317c-5dc8-4e6c-b31c-3c48389c9028",
    "opponent_bot": "Minimax Three",
-   "opponent_rank_now": 285,
-   "opponent_rating_now": 1258,
+   "opponent_rank_now": 291,
+   "opponent_rating_now": 1249,
    "opponent_rating_then": 1273,
-   "own_rating_then": 1269,
-   "own_rating_after": 1353,
+   "own_rating_then": 1265,
+   "own_rating_after": 1351,
    "opening": "French Tarrasch",
    "start_fen": "r1bqkbnr/pp3ppp/2n5/2pp4/3P4/P4N2/1PPN1PPP/R1BQKB1R b KQkq - 2 6",
    "result": "1-0",
@@ -3076,6 +3101,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 31\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
    "plies": 32,
    "own_moves": 16,
    "site_verdicts": [
@@ -3268,11 +3296,11 @@
    "opponent": "Terminal",
    "opponent_uuid": "46530d1a-3cfc-4840-8a3c-95daab9cc3e6",
    "opponent_bot": "Terminator",
-   "opponent_rank_now": 266,
-   "opponent_rating_now": 1297,
+   "opponent_rank_now": 243,
+   "opponent_rating_now": 1372,
    "opponent_rating_then": 1350,
-   "own_rating_then": 1353,
-   "own_rating_after": 1415,
+   "own_rating_then": 1351,
+   "own_rating_after": 1417,
    "opening": "Catalan Opening",
    "start_fen": "rnbq1rk1/p3bppp/1pp1pn2/3p4/2PP4/1P3NP1/P3PPBP/RNBQ1RK1 w - - 0 8",
    "result": "1-0",
@@ -3281,6 +3309,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 32\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
    "plies": 49,
    "own_moves": 25,
    "site_verdicts": [
@@ -3548,6 +3579,340 @@
    },
    "opp_site_acpl": 92,
    "opp_site_accuracy": 90.8
+  },
+  {
+   "game": "948f380f-4c03-47a5-b21d-7d3aefe171c2",
+   "url": "https://aichessathon.com/game/948f380f-4c03-47a5-b21d-7d3aefe171c2",
+   "kind": "Rated",
+   "round": 33,
+   "date": "2026.09.06",
+   "colour": "black",
+   "opponent": "SAC",
+   "opponent_uuid": "d655f2bd-c211-4ad5-bdc3-4fdf321a45b5",
+   "opponent_bot": "sack",
+   "opponent_rank_now": 220,
+   "opponent_rating_now": 1418,
+   "opponent_rating_then": 1418,
+   "own_rating_then": 1417,
+   "own_rating_after": 1487,
+   "opening": "Nimzo-Indian Defence",
+   "start_fen": "rnbq1rk1/ppp2ppp/4pn2/3p4/1bPP4/2NBP3/PP1B1PPP/R2QK1NR b KQ - 1 6",
+   "result": "0-1",
+   "score": 1.0,
+   "termination": "checkmate",
+   "termination_text": "Checkmate",
+   "state": "Rated 33\u00b7Final",
+   "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
+   "plies": 57,
+   "own_moves": 29,
+   "site_verdicts": [
+    [
+     "dxc4",
+     "good"
+    ],
+    [
+     "Bxh7+",
+     "blunder"
+    ],
+    [
+     "Nxh7",
+     "best"
+    ],
+    [
+     "Nf3",
+     "best"
+    ],
+    [
+     "c5",
+     "excellent"
+    ],
+    [
+     "O-O",
+     "excellent"
+    ],
+    [
+     "cxd4",
+     "best"
+    ],
+    [
+     "exd4",
+     "best"
+    ],
+    [
+     "b6",
+     "excellent"
+    ],
+    [
+     "a3",
+     "good"
+    ],
+    [
+     "Bxc3",
+     "best"
+    ],
+    [
+     "bxc3",
+     "excellent"
+    ],
+    [
+     "Nd7",
+     "best"
+    ],
+    [
+     "h3",
+     "excellent"
+    ],
+    [
+     "Bb7",
+     "best"
+    ],
+    [
+     "Bf4",
+     "good"
+    ],
+    [
+     "Qf6",
+     "best"
+    ],
+    [
+     "Bd6",
+     "good"
+    ],
+    [
+     "Bxf3",
+     "best"
+    ],
+    [
+     "Qxf3",
+     "best"
+    ],
+    [
+     "Qxf3",
+     "best"
+    ],
+    [
+     "gxf3",
+     "best"
+    ],
+    [
+     "Rfd8",
+     "best"
+    ],
+    [
+     "a4",
+     "excellent"
+    ],
+    [
+     "Nhf6",
+     "excellent"
+    ],
+    [
+     "Be7",
+     "excellent"
+    ],
+    [
+     "Rdc8",
+     "best"
+    ],
+    [
+     "Ba3",
+     "excellent"
+    ],
+    [
+     "Nd5",
+     "best"
+    ],
+    [
+     "Bb2",
+     "excellent"
+    ],
+    [
+     "f6",
+     "excellent"
+    ],
+    [
+     "Rae1",
+     "excellent"
+    ],
+    [
+     "Kf7",
+     "best"
+    ],
+    [
+     "Kh2",
+     "excellent"
+    ],
+    [
+     "Nf8",
+     "excellent"
+    ],
+    [
+     "Ba3",
+     "excellent"
+    ],
+    [
+     "Ng6",
+     "best"
+    ],
+    [
+     "Rc1",
+     "excellent"
+    ],
+    [
+     "Ngf4",
+     "excellent"
+    ],
+    [
+     "Bd6",
+     "best"
+    ],
+    [
+     "Rh8",
+     "excellent"
+    ],
+    [
+     "Bxf4",
+     "best"
+    ],
+    [
+     "Nxf4",
+     "best"
+    ],
+    [
+     "Kg3",
+     "best"
+    ],
+    [
+     "g5",
+     "best"
+    ],
+    [
+     "Rh1",
+     "best"
+    ],
+    [
+     "Rh4",
+     "best"
+    ],
+    [
+     "Ra1",
+     "blunder"
+    ],
+    [
+     "Rah8",
+     "best"
+    ],
+    [
+     "Rh2",
+     "best"
+    ],
+    [
+     "Rxh3+",
+     "best"
+    ],
+    [
+     "Rxh3",
+     "best"
+    ],
+    [
+     "Rxh3+",
+     "best"
+    ],
+    [
+     "Kg4",
+     "forced"
+    ],
+    [
+     "Kg6",
+     "best"
+    ],
+    [
+     "Rh1",
+     "excellent"
+    ]
+   ],
+   "time_per_move": [
+    2.071,
+    1.999,
+    3.791,
+    1.932,
+    5.121,
+    2.352,
+    2.495,
+    3.594,
+    1.812,
+    3.128,
+    2.842,
+    4.726,
+    1.86,
+    2.883,
+    2.829,
+    5.551,
+    2.616,
+    3.582,
+    2.496,
+    2.528,
+    3.38,
+    1.6,
+    1.866,
+    2.336,
+    0.084,
+    0.002,
+    0.003,
+    0.001,
+    0.002
+   ],
+   "clock_after_move": [
+    118.429,
+    116.93,
+    113.639,
+    112.207,
+    107.586,
+    105.734,
+    103.739,
+    100.645,
+    99.333,
+    96.705,
+    94.363,
+    90.137,
+    88.777,
+    86.394,
+    84.065,
+    79.014,
+    76.898,
+    73.816,
+    71.82,
+    69.792,
+    66.912,
+    65.812,
+    64.446,
+    62.61,
+    63.026,
+    63.524,
+    64.021,
+    64.52,
+    65.018
+   ],
+   "final_clock": 65.018,
+   "site_review_source": "Stockfish 16 \u00b7 depth 16",
+   "site_acpl": 12,
+   "site_accuracy": 98.2,
+   "site_tally": {
+    "brilliant": 0,
+    "best": 21,
+    "excellent": 7,
+    "good": 1,
+    "forced": 0,
+    "inaccuracy": 0,
+    "mistake": 0,
+    "miss": 0,
+    "blunder": 0
+   },
+   "opp_site_acpl": 66,
+   "opp_site_accuracy": 89.7
   }
  ]
 }

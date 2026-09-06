@@ -25,10 +25,14 @@ How we beat them (engineering, in priority order)
    moves that decide games, with zero flag risk given the 0.5 s increment.  Against AlphaFish and
    Capablanca this is the only structural edge available: they are playing 1.4-1.6 s a move by
    move 40.  Our own v2 left 95 s unused in R31; fix that before anything else.
-3. Never repeat while ahead, and hunt repetitions while lost.  The top five accepted 23 level
-   repetitions and 3 while ahead; the mate-score instant-move behaviour of AlphaFish and the
-   technique leaks of SoberJackson and Danya's Disciple are worth real half points.  Positive
-   contempt below the top ten (they hand out draws), zero against the top three when level.
+3. Repetitions, two regimes.  On the ladder (since 6 Sept ~11:00) a threefold or fifty-move
+   ending voids the game and it is re-rated as if never played: when worse, a repetition is a
+   free undo; when better, allowing one throws the win away entirely.  So: strongly positive
+   contempt whenever we are better, and an active repetition hunt whenever we are worse, against
+   everyone.  The top five accepted 23 level repetitions and 3 while ahead, and AlphaFish plays
+   instantly once it holds a mate score, so the undo is often on offer.  For the final Swiss the
+   published rules still say FIDE draws; keep the contempt setting switchable and confirm with
+   the organisers before Thursday.
 4. Do not build for swindles in the middlegame: a game against a class-A engine is lost at the
    first -300, so the evaluation in closed Sicilian, symmetrical English, closed Ruy Lopez and
    Petroff structures matters more than anything in the opening.

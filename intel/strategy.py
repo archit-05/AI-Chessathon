@@ -301,6 +301,15 @@ def main():
     L.append("SINCE THE PREVIOUS STRATEGY")
     L.extend(since_previous(rows, {t["uuid"] for t in focus}))
     L.append("")
+    voided = [(t, g) for t in teams for g in t.get("voided", [])]
+    if voided:
+        by_term = Counter(g["termination"] for _, g in voided)
+        L.append("SITE RULE CHANGE IN EFFECT (detected 6 Sept ~11:00)")
+        L.extend(wrap(f"The site now voids games that ended by threefold repetition or the fifty-move rule, retroactively, and has re-rated everyone: "
+                      f"{len(voided)} such games among the covered teams ({', '.join(f'{k} {v}' for k, v in by_term.most_common())}); insufficient-material draws still count. "
+                      "On the ladder a repetition therefore erases the game instead of scoring half a point: when worse, force a repetition and the game never happened; when better, never allow one. "
+                      "The published rules still say FIDE draws for the final Swiss, so treat this as a ladder-only fact until the organisers say otherwise, and watch the Void column for a reversal."))
+        L.append("")
     L.append("A. THE FIELD")
     L.extend(table([league_row(t) for t in sorted(teams, key=lambda t: t["rank"]) if t["rank"] <= TOP_N]))
     if ours:

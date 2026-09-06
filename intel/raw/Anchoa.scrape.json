@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-09-06T09:06:42Z",
+ "fetched_at": "2026-09-06T10:17:08Z",
  "slug": "Anchoa",
  "bot": "Anchoa",
  "team": "Lubina",
@@ -7,108 +7,108 @@
  "university": "Imperial",
  "tag": "",
  "rank": 3,
- "rating": 2357,
+ "rating": 2360,
  "provisional": true,
- "games_played": 30,
+ "games_played": 23,
  "wdl": [
   18,
-  8,
+  1,
   4
  ],
- "record": "18-8-4",
- "rated_rounds": 32,
+ "record": "18-2-4",
+ "rated_rounds": 33,
  "history": [
   [
    1,
-   1575
+   1571
   ],
   [
    2,
-   1655
+   1649
   ],
   [
    3,
-   1664
+   1659
   ],
   [
    4,
-   1748
+   1735
   ],
   [
    5,
-   1829
+   1822
   ],
   [
    6,
-   1836
+   1830
   ],
   [
    7,
-   1781
+   1755
   ],
   [
    8,
-   1833
+   1808
   ],
   [
    9,
-   1840
+   1809
   ],
   [
    10,
-   1880
+   1841
   ],
   [
    11,
-   1921
+   1884
   ],
   [
    12,
-   1935
+   1901
   ],
   [
    13,
-   1823
+   1787
   ],
   [
    14,
-   1820
+   1801
   ],
   [
    15,
-   1907
+   1888
   ],
   [
    16,
-   1910
+   1881
   ],
   [
    17,
-   1811
+   1808
   ],
   [
    18,
-   1863
+   1829
   ],
   [
    19,
-   1994
+   1987
   ],
   [
    20,
-   2076
+   2073
   ],
   [
    21,
-   2019
+   2018
   ],
   [
    22,
-   2017
+   2006
   ],
   [
    23,
-   2009
+   2018
   ],
   [
    24,
@@ -116,35 +116,39 @@
   ],
   [
    25,
-   2156
+   2140
   ],
   [
    26,
-   2201
+   2176
   ],
   [
    27,
-   2235
+   2195
   ],
   [
    28,
-   2310
+   2250
   ],
   [
    29,
-   2346
+   2273
   ],
   [
    30,
-   2386
+   2304
   ],
   [
    31,
-   2446
+   2352
   ],
   [
    32,
-   2357
+   2353
+  ],
+  [
+   33,
+   2360
   ]
  ],
  "games": [
@@ -158,11 +162,11 @@
    "opponent": "PlayOps",
    "opponent_uuid": "379349e7-efa1-4a1b-bef1-3837fc235f29",
    "opponent_bot": "PlayOps",
-   "opponent_rank_now": 282,
-   "opponent_rating_now": 1271,
+   "opponent_rank_now": 285,
+   "opponent_rating_now": 1269,
    "opponent_rating_then": null,
    "own_rating_then": null,
-   "own_rating_after": 1575,
+   "own_rating_after": 1571,
    "opening": "Sicilian Closed",
    "start_fen": "r1bqk2r/1p2ppbp/p1np1np1/2pN4/P3P3/3PB1P1/1PP2PBP/R2QK1NR b KQkq - 1 8",
    "result": "1-0",
@@ -171,6 +175,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 1\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
    "plies": 52,
    "own_moves": 26,
    "site_verdicts": [
@@ -463,11 +470,11 @@
    "opponent": "Stonkfish",
    "opponent_uuid": "385a6db2-1c05-46db-ae91-7218700f83b3",
    "opponent_bot": "Eazy-E",
-   "opponent_rank_now": 79,
-   "opponent_rating_now": 1713,
+   "opponent_rank_now": 61,
+   "opponent_rating_now": 1756,
    "opponent_rating_then": 1578,
-   "own_rating_then": 1575,
-   "own_rating_after": 1655,
+   "own_rating_then": 1571,
+   "own_rating_after": 1649,
    "opening": "London System",
    "start_fen": "r1b1k2r/pp3ppp/2nqpn2/2pp4/3P4/2P1PN2/PP1NBPPP/R2QK2R b KQkq - 1 8",
    "result": "0-1",
@@ -476,6 +483,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 2\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
    "plies": 101,
    "own_moves": 51,
    "site_verdicts": [
@@ -1015,18 +1025,21 @@
    "opponent_uuid": "3be637a8-e78d-4da4-8016-d13e00170433",
    "opponent_bot": "Mate in One",
    "opponent_rank_now": 7,
-   "opponent_rating_now": 2185,
-   "opponent_rating_then": 1631,
-   "own_rating_then": 1655,
-   "own_rating_after": 1664,
+   "opponent_rating_now": 2172,
+   "opponent_rating_then": 1625,
+   "own_rating_then": 1649,
+   "own_rating_after": 1659,
    "opening": "Petroff Defence",
    "start_fen": "rnbqk2r/ppp2ppp/3b4/3p4/3Pn3/2PB1N1P/PP3PP1/RNBQK2R b KQkq - 2 8",
    "result": "1/2-1/2",
    "score": 0.5,
    "termination": "threefold_repetition",
    "termination_text": "Threefold repetition",
-   "state": "Rated 3\u00b7Final",
-   "void": false,
+   "state": "Rated 3\u00b7Void",
+   "void": true,
+   "voided": true,
+   "voided_at": "2026-09-06T10:16:38Z",
+   "site_verdict": "void",
    "plies": 23,
    "own_moves": 11,
    "site_verdicts": [
@@ -1173,11 +1186,11 @@
    "opponent": "Abhi's chess demon",
    "opponent_uuid": "7af404ee-389f-427c-9433-40ebe5902fc6",
    "opponent_bot": "Dark Sister",
-   "opponent_rank_now": 28,
-   "opponent_rating_now": 1921,
+   "opponent_rank_now": 25,
+   "opponent_rating_now": 1919,
    "opponent_rating_then": 1639,
-   "own_rating_then": 1664,
-   "own_rating_after": 1748,
+   "own_rating_then": 1659,
+   "own_rating_after": 1735,
    "opening": "French Classical",
    "start_fen": "r1bqk2r/pp1n1ppp/2n1p3/2bpP3/5P2/2NB1N2/PPP3PP/R1BQK2R b KQkq - 1 8",
    "result": "1-0",
@@ -1186,6 +1199,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 4\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
    "plies": 72,
    "own_moves": 36,
    "site_verdicts": [
@@ -1578,11 +1594,11 @@
    "opponent": "No More Ammo",
    "opponent_uuid": "b49586d0-218d-4491-a460-90d0d9cf321c",
    "opponent_bot": "Blank Shooter",
-   "opponent_rank_now": 18,
-   "opponent_rating_now": 2007,
+   "opponent_rank_now": 16,
+   "opponent_rating_now": 1997,
    "opponent_rating_then": 1719,
-   "own_rating_then": 1748,
-   "own_rating_after": 1829,
+   "own_rating_then": 1735,
+   "own_rating_after": 1822,
    "opening": "Grunfeld Defence",
    "start_fen": "rn1qk2r/pp2ppbp/6p1/2p5/3PP1b1/2P1BN2/P4PPP/2RQKB1R b Kkq - 3 9",
    "result": "0-1",
@@ -1591,6 +1607,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 5\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
    "plies": 111,
    "own_moves": 56,
    "site_verdicts": [
@@ -2179,19 +2198,22 @@
    "opponent": "ms",
    "opponent_uuid": "c3e1bc09-3d21-4279-ace0-16bb3742f5da",
    "opponent_bot": "ms",
-   "opponent_rank_now": 10,
-   "opponent_rating_now": 2177,
+   "opponent_rank_now": 14,
+   "opponent_rating_now": 2082,
    "opponent_rating_then": 1813,
-   "own_rating_then": 1829,
-   "own_rating_after": 1836,
+   "own_rating_then": 1822,
+   "own_rating_after": 1830,
    "opening": "English Symmetrical",
    "start_fen": "r1bqk2r/pp1pppbp/2n2np1/2p5/2P5/2N2NPP/PP1PPPB1/R1BQK2R b KQkq - 0 6",
    "result": "1/2-1/2",
    "score": 0.5,
    "termination": "threefold_repetition",
    "termination_text": "Threefold repetition",
-   "state": "Rated 6\u00b7Final",
-   "void": false,
+   "state": "Rated 6\u00b7Void",
+   "void": true,
+   "voided": true,
+   "voided_at": "2026-09-06T10:16:40Z",
+   "site_verdict": "void",
    "plies": 88,
    "own_moves": 44,
    "site_verdicts": [
@@ -2664,11 +2686,11 @@
    "opponent": "checkers",
    "opponent_uuid": "9e5e613a-ca80-4fd9-aa68-76f184ef7bac",
    "opponent_bot": "checkers",
-   "opponent_rank_now": 11,
-   "opponent_rating_now": 2173,
-   "opponent_rating_then": 1738,
-   "own_rating_then": 1836,
-   "own_rating_after": 1781,
+   "opponent_rank_now": 10,
+   "opponent_rating_now": 2133,
+   "opponent_rating_then": 1720,
+   "own_rating_then": 1830,
+   "own_rating_after": 1755,
    "opening": "Scotch Game",
    "start_fen": "r1bq1rk1/pppp1ppp/2n2n2/1Bb5/3NP3/2P5/PP3PPP/RNBQ1RK1 w - - 3 8",
    "result": "0-1",
@@ -2677,6 +2699,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 7\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "loss",
    "plies": 110,
    "own_moves": 55,
    "site_verdicts": [
@@ -3259,11 +3284,11 @@
    "opponent": "Alien Gambit",
    "opponent_uuid": "0e8ca369-000d-44d4-a7c8-d505bf0a3a30",
    "opponent_bot": "My Gambit My Legacy",
-   "opponent_rank_now": 69,
+   "opponent_rank_now": 65,
    "opponent_rating_now": 1747,
    "opponent_rating_then": 1771,
-   "own_rating_then": 1781,
-   "own_rating_after": 1833,
+   "own_rating_then": 1755,
+   "own_rating_after": 1808,
    "opening": "King's Indian Classical",
    "start_fen": "r1bq1rk1/ppp2pbp/2np1np1/3Pp3/2P1P3/P1N2N2/1P2BPPP/R1BQK2R b KQ - 0 8",
    "result": "0-1",
@@ -3272,6 +3297,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 8\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
    "plies": 135,
    "own_moves": 68,
    "site_verdicts": [
@@ -3979,12 +4007,12 @@
    "colour": "white",
    "opponent": "Sobriety",
    "opponent_uuid": "258a9828-7442-4bea-97cb-eed1845ad2cc",
-   "opponent_bot": "SoberJackson",
+   "opponent_bot": "SoberElwood",
    "opponent_rank_now": 4,
-   "opponent_rating_now": 2269,
-   "opponent_rating_then": 1821,
-   "own_rating_then": 1833,
-   "own_rating_after": 1840,
+   "opponent_rating_now": 2338,
+   "opponent_rating_then": 1801,
+   "own_rating_then": 1808,
+   "own_rating_after": 1809,
    "opening": "French Tarrasch",
    "start_fen": "rnbqkbnr/pp3ppp/8/2pp4/3P4/7P/PPPN1PP1/R1BQKBNR b KQkq - 0 5",
    "result": "*",
@@ -3993,6 +4021,9 @@
    "termination_text": "Unterminated",
    "state": "Rated 9\u00b7Void",
    "void": true,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "void",
    "plies": 300,
    "own_moves": 150,
    "site_verdicts": [
@@ -5525,11 +5556,11 @@
    "opponent": "Waterside Research",
    "opponent_uuid": "f1289d23-f983-4de4-8d7e-283fe2656c41",
    "opponent_bot": "Vengeance",
-   "opponent_rank_now": 46,
-   "opponent_rating_now": 1830,
+   "opponent_rank_now": 49,
+   "opponent_rating_now": 1786,
    "opponent_rating_then": 1818,
-   "own_rating_then": 1840,
-   "own_rating_after": 1880,
+   "own_rating_then": 1809,
+   "own_rating_after": 1841,
    "opening": "Petroff Defence",
    "start_fen": "rnbq1rk1/ppp2ppp/3b4/3p4/3Pn3/3BBN2/PPP2PPP/RN1Q1RK1 b - - 5 8",
    "result": "0-1",
@@ -5538,6 +5569,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 10\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
    "plies": 123,
    "own_moves": 62,
    "site_verdicts": [
@@ -6186,11 +6220,11 @@
    "opponent": "Gijs Smit",
    "opponent_uuid": "3f0e0e44-cdce-485f-b5b6-3691e34f9f44",
    "opponent_bot": "Patzer 1.2",
-   "opponent_rank_now": 8,
-   "opponent_rating_now": 2183,
-   "opponent_rating_then": 1798,
-   "own_rating_then": 1880,
-   "own_rating_after": 1921,
+   "opponent_rank_now": 9,
+   "opponent_rating_now": 2154,
+   "opponent_rating_then": 1779,
+   "own_rating_then": 1841,
+   "own_rating_after": 1884,
    "opening": "Reti Opening",
    "start_fen": "rnbq1rk1/ppp1bppp/4pn2/3p4/2PP4/N4NP1/PP2PPBP/R1BQK2R b KQ - 0 6",
    "result": "0-1",
@@ -6199,6 +6233,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 11\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
    "plies": 115,
    "own_moves": 58,
    "site_verdicts": [
@@ -6807,11 +6844,11 @@
    "opponent": "AI Fellows",
    "opponent_uuid": "b574c0ea-e994-4a16-9918-7fbc989c4234",
    "opponent_bot": "AI Fellow",
-   "opponent_rank_now": 12,
-   "opponent_rating_now": 2128,
-   "opponent_rating_then": 1885,
-   "own_rating_then": 1921,
-   "own_rating_after": 1935,
+   "opponent_rank_now": 11,
+   "opponent_rating_now": 2114,
+   "opponent_rating_then": 1873,
+   "own_rating_then": 1884,
+   "own_rating_after": 1901,
    "opening": "Sicilian Closed",
    "start_fen": "1rbqk1nr/pp2ppbp/2np2p1/2p5/P3P3/2NP2P1/1PP1NPBP/R1BQK2R b KQk - 0 7",
    "result": "*",
@@ -6820,6 +6857,9 @@
    "termination_text": "Unterminated",
    "state": "Rated 12\u00b7Void",
    "void": true,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "void",
    "plies": 300,
    "own_moves": 150,
    "site_verdicts": [
@@ -8352,11 +8392,11 @@
    "opponent": "pheanup",
    "opponent_uuid": "0a121c61-60a7-4926-a0e7-024dffa6b185",
    "opponent_bot": "test_bot",
-   "opponent_rank_now": 9,
-   "opponent_rating_now": 2181,
-   "opponent_rating_then": 1731,
-   "own_rating_then": 1935,
-   "own_rating_after": 1823,
+   "opponent_rank_now": 6,
+   "opponent_rating_now": 2176,
+   "opponent_rating_then": 1702,
+   "own_rating_then": 1901,
+   "own_rating_after": 1787,
    "opening": "Dutch Stonewall",
    "start_fen": "rnbqkb1r/ppp3pp/4pn2/3p1p2/3P3P/5NP1/PPP1PPB1/RNBQK2R b KQkq - 0 5",
    "result": "0-1",
@@ -8365,6 +8405,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 13\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "loss",
    "plies": 77,
    "own_moves": 38,
    "site_verdicts": [
@@ -8782,18 +8825,21 @@
    "opponent_uuid": "1d137be0-3a3e-4cda-a7ba-b22d8d178e66",
    "opponent_bot": "lyra",
    "opponent_rank_now": 15,
-   "opponent_rating_now": 2078,
+   "opponent_rating_now": 2018,
    "opponent_rating_then": 1679,
-   "own_rating_then": 1823,
-   "own_rating_after": 1820,
+   "own_rating_then": 1787,
+   "own_rating_after": 1801,
    "opening": "English Symmetrical",
    "start_fen": "r1bq1rk1/pp1pppbp/2n2np1/2p5/2PP4/2N1PNP1/PP3PBP/R1BQK2R b KQ - 0 7",
    "result": "1/2-1/2",
    "score": 0.5,
    "termination": "threefold_repetition",
    "termination_text": "Threefold repetition",
-   "state": "Rated 14\u00b7Final",
-   "void": false,
+   "state": "Rated 14\u00b7Void",
+   "void": true,
+   "voided": true,
+   "voided_at": "2026-09-06T10:16:45Z",
+   "site_verdict": "void",
    "plies": 145,
    "own_moves": 73,
    "site_verdicts": [
@@ -9552,11 +9598,11 @@
    "opponent": "pgn",
    "opponent_uuid": "8b738da9-e5bb-4122-89ce-0caf6466ba80",
    "opponent_bot": "bot1",
-   "opponent_rank_now": 35,
-   "opponent_rating_now": 1899,
+   "opponent_rank_now": 45,
+   "opponent_rating_now": 1818,
    "opponent_rating_then": 1780,
-   "own_rating_then": 1820,
-   "own_rating_after": 1907,
+   "own_rating_then": 1801,
+   "own_rating_after": 1888,
    "opening": "English Symmetrical",
    "start_fen": "r1bqk2r/pp1pppbp/2n2np1/2p5/2P5/2N2NPP/PP1PPPB1/R1BQK2R b KQkq - 0 6",
    "result": "1-0",
@@ -9565,6 +9611,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 15\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
    "plies": 126,
    "own_moves": 63,
    "site_verdicts": [
@@ -10227,19 +10276,22 @@
    "opponent": "Make_no_mistakes",
    "opponent_uuid": "ba636320-7bda-41ab-835d-3799a11613d8",
    "opponent_bot": "make_no_mistakes",
-   "opponent_rank_now": 13,
+   "opponent_rank_now": 12,
    "opponent_rating_now": 2099,
-   "opponent_rating_then": 1912,
-   "own_rating_then": 1907,
-   "own_rating_after": 1910,
+   "opponent_rating_then": 1862,
+   "own_rating_then": 1888,
+   "own_rating_after": 1881,
    "opening": "Sicilian Najdorf",
    "start_fen": "rnbqkb1r/1p3ppp/p2p1n2/4p3/4P3/1NN5/PPP1BPPP/R1BQK2R b KQkq - 1 7",
    "result": "1/2-1/2",
    "score": 0.5,
    "termination": "fifty_moves",
    "termination_text": "Fifty moves",
-   "state": "Rated 16\u00b7Final",
-   "void": false,
+   "state": "Rated 16\u00b7Void",
+   "void": true,
+   "voided": true,
+   "voided_at": "2026-09-06T10:16:48Z",
+   "site_verdict": "void",
    "plies": 210,
    "own_moves": 105,
    "site_verdicts": [
@@ -11323,10 +11375,10 @@
    "opponent_uuid": "659a3020-8af7-4934-b753-3b7c5fd11184",
    "opponent_bot": "AlphaFish",
    "opponent_rank_now": 1,
-   "opponent_rating_now": 2462,
-   "opponent_rating_then": 1969,
-   "own_rating_then": 1910,
-   "own_rating_after": 1811,
+   "opponent_rating_now": 2478,
+   "opponent_rating_then": 1933,
+   "own_rating_then": 1881,
+   "own_rating_after": 1808,
    "opening": "Grunfeld Defence",
    "start_fen": "rnbqk2r/pp2ppbp/6p1/2p5/3PP3/2P1BN2/P4PPP/R2QKB1R b KQkq - 1 8",
    "result": "1-0",
@@ -11335,6 +11387,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 17\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "loss",
    "plies": 122,
    "own_moves": 61,
    "site_verdicts": [
@@ -11977,19 +12032,22 @@
    "opponent": "Lightning Tree",
    "opponent_uuid": "c90df064-e8e8-4144-b1fd-2dd6096dd21a",
    "opponent_bot": "Loss Preventer",
-   "opponent_rank_now": 6,
-   "opponent_rating_now": 2211,
-   "opponent_rating_then": 1914,
-   "own_rating_then": 1811,
-   "own_rating_after": 1863,
+   "opponent_rank_now": 8,
+   "opponent_rating_now": 2162,
+   "opponent_rating_then": 1870,
+   "own_rating_then": 1808,
+   "own_rating_after": 1829,
    "opening": "Ruy Lopez, Closed",
    "start_fen": "r1bq1rk1/2p1bppp/p2p1n2/np2p3/4P3/1B1P1N1P/PPP2PP1/RNBQR1K1 w - - 1 10",
    "result": "1/2-1/2",
    "score": 0.5,
    "termination": "threefold_repetition",
    "termination_text": "Threefold repetition",
-   "state": "Rated 18\u00b7Final",
-   "void": false,
+   "state": "Rated 18\u00b7Void",
+   "void": true,
+   "voided": true,
+   "voided_at": "2026-09-06T10:16:50Z",
+   "site_verdict": "void",
    "plies": 93,
    "own_moves": 46,
    "site_verdicts": [
@@ -12486,11 +12544,11 @@
    "opponent": "BitsEntangled",
    "opponent_uuid": "b227e85c-08e6-489b-ae9a-77e6e856ace0",
    "opponent_bot": "SirBlunderiusThird",
-   "opponent_rank_now": 29,
-   "opponent_rating_now": 1917,
+   "opponent_rank_now": 32,
+   "opponent_rating_now": 1876,
    "opponent_rating_then": 1911,
-   "own_rating_then": 1863,
-   "own_rating_after": 1994,
+   "own_rating_then": 1829,
+   "own_rating_after": 1987,
    "opening": "English Symmetrical",
    "start_fen": "r1bq1rk1/pp2ppbp/2np1np1/2p5/2P4P/2NP1NP1/PP2PPB1/1RBQK2R b K - 1 8",
    "result": "1-0",
@@ -12499,6 +12557,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 19\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
    "plies": 34,
    "own_moves": 17,
    "site_verdicts": [
@@ -12702,10 +12763,10 @@
    "opponent_uuid": "a4b26c08-0fa5-48ae-b15e-69a622ee81bb",
    "opponent_bot": "Danya's Disciple",
    "opponent_rank_now": 5,
-   "opponent_rating_now": 2233,
-   "opponent_rating_then": 1952,
-   "own_rating_then": 1994,
-   "own_rating_after": 2076,
+   "opponent_rating_now": 2223,
+   "opponent_rating_then": 1934,
+   "own_rating_then": 1987,
+   "own_rating_after": 2073,
    "opening": "Sicilian Dragon",
    "start_fen": "rnbqk2r/pp2ppbp/3p1np1/8/3NP3/2N1B3/PPP1BPPP/R2QK2R b KQkq - 3 7",
    "result": "0-1",
@@ -12714,6 +12775,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 20\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
    "plies": 143,
    "own_moves": 72,
    "site_verdicts": [
@@ -13463,10 +13527,10 @@
    "opponent_uuid": "c7fad433-1020-4b2a-a0e3-8e86720d23de",
    "opponent_bot": "Capablanca",
    "opponent_rank_now": 2,
-   "opponent_rating_now": 2407,
-   "opponent_rating_then": 2094,
-   "own_rating_then": 2076,
-   "own_rating_after": 2019,
+   "opponent_rating_now": 2429,
+   "opponent_rating_then": 2057,
+   "own_rating_then": 2073,
+   "own_rating_after": 2018,
    "opening": "French Classical",
    "start_fen": "rnbqkb1r/pp1n1ppp/4p3/2ppP3/3P1P2/8/PPP1N1PP/R1BQKBNR b KQkq - 1 6",
    "result": "0-1",
@@ -13475,6 +13539,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 21\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "loss",
    "plies": 75,
    "own_moves": 37,
    "site_verdicts": [
@@ -13881,11 +13948,11 @@
    "opponent": "Team1",
    "opponent_uuid": "9efa4b9d-296d-4ee0-b2e4-319dace8d318",
    "opponent_bot": "R8v8",
-   "opponent_rank_now": 59,
-   "opponent_rating_now": 1776,
+   "opponent_rank_now": 41,
+   "opponent_rating_now": 1831,
    "opponent_rating_then": 1983,
-   "own_rating_then": 2019,
-   "own_rating_after": 2017,
+   "own_rating_then": 2018,
+   "own_rating_after": 2006,
    "opening": "Sicilian Closed",
    "start_fen": "1rbqk1nr/pp2ppbp/2np2p1/2p5/P3P3/2NP2P1/1PP1NPBP/R1BQK2R b KQk - 0 7",
    "result": "1/2-1/2",
@@ -13894,6 +13961,9 @@
    "termination_text": "Insufficient material",
    "state": "Rated 22\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "draw",
    "plies": 183,
    "own_moves": 92,
    "site_verdicts": [
@@ -14842,19 +14912,22 @@
    "opponent": "Cornelius",
    "opponent_uuid": "acecd823-279a-4bf9-8321-0ee6ed68deda",
    "opponent_bot": "Cornelius",
-   "opponent_rank_now": 20,
-   "opponent_rating_now": 1991,
+   "opponent_rank_now": 23,
+   "opponent_rating_now": 1934,
    "opponent_rating_then": 1821,
-   "own_rating_then": 2017,
-   "own_rating_after": 2009,
+   "own_rating_then": 2006,
+   "own_rating_after": 2018,
    "opening": "Sicilian Closed",
    "start_fen": "r1bq1rk1/pp2ppbp/2np1np1/2p5/4P2P/2NP2P1/PPP1NPB1/R1BQ1RK1 b - - 4 8",
    "result": "1/2-1/2",
    "score": 0.5,
    "termination": "fifty_moves",
    "termination_text": "Fifty moves",
-   "state": "Rated 23\u00b7Final",
-   "void": false,
+   "state": "Rated 23\u00b7Void",
+   "void": true,
+   "voided": true,
+   "voided_at": "2026-09-06T10:16:53Z",
+   "site_verdict": "void",
    "plies": 259,
    "own_moves": 129,
    "site_verdicts": [
@@ -16181,10 +16254,10 @@
    "opponent": "LeetBeaters",
    "opponent_uuid": "683eb648-7443-471d-a54e-daa6f51d042c",
    "opponent_bot": "DolphinBot",
-   "opponent_rank_now": 19,
-   "opponent_rating_now": 2006,
+   "opponent_rank_now": 21,
+   "opponent_rating_now": 1963,
    "opponent_rating_then": 1886,
-   "own_rating_then": 2009,
+   "own_rating_then": 2018,
    "own_rating_after": 2059,
    "opening": "Petroff Defence",
    "start_fen": "rnbqk2r/ppp2ppp/8/3p4/1b1Pn3/2P2N1P/PP3PP1/RNBQKB1R b KQkq - 0 7",
@@ -16194,6 +16267,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 24\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
    "plies": 91,
    "own_moves": 46,
    "site_verdicts": [
@@ -16682,11 +16758,11 @@
    "opponent": "FuzzyBot",
    "opponent_uuid": "3241cef5-6b1c-41f2-b275-f0e50fc52ed5",
    "opponent_bot": "Fuzzydafool",
-   "opponent_rank_now": 14,
-   "opponent_rating_now": 2096,
+   "opponent_rank_now": 13,
+   "opponent_rating_now": 2084,
    "opponent_rating_then": 2022,
    "own_rating_then": 2059,
-   "own_rating_after": 2156,
+   "own_rating_after": 2140,
    "opening": "Nimzo-Indian Defence",
    "start_fen": "rnbq1rk1/ppp2ppp/4pn2/8/1bBP4/2N1P2P/PP3PP1/R1BQK1NR b KQ - 0 7",
    "result": "0-1",
@@ -16695,6 +16771,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 25\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
    "plies": 143,
    "own_moves": 72,
    "site_verdicts": [
@@ -17443,11 +17522,11 @@
    "opponent": "Ransom",
    "opponent_uuid": "4f71e103-0e8b-4287-af80-6d8b438eed01",
    "opponent_bot": "Fried Liver",
-   "opponent_rank_now": 22,
-   "opponent_rating_now": 1979,
+   "opponent_rank_now": 17,
+   "opponent_rating_now": 1973,
    "opponent_rating_then": 1923,
-   "own_rating_then": 2156,
-   "own_rating_after": 2201,
+   "own_rating_then": 2140,
+   "own_rating_after": 2176,
    "opening": "Catalan Opening",
    "start_fen": "rnbq1rk1/pp2bppp/2p1pn2/3p4/2PP4/5NP1/PP2PPBP/RNBQ1RK1 w - - 0 7",
    "result": "1-0",
@@ -17456,6 +17535,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 26\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
    "plies": 103,
    "own_moves": 52,
    "site_verdicts": [
@@ -18004,11 +18086,11 @@
    "opponent": "50CentRaise",
    "opponent_uuid": "4857862c-3ea2-4ae9-8792-335918e2ef58",
    "opponent_bot": "50CentRaise",
-   "opponent_rank_now": 38,
-   "opponent_rating_now": 1878,
+   "opponent_rank_now": 53,
+   "opponent_rating_now": 1779,
    "opponent_rating_then": 1850,
-   "own_rating_then": 2201,
-   "own_rating_after": 2235,
+   "own_rating_then": 2176,
+   "own_rating_after": 2195,
    "opening": "Catalan Opening",
    "start_fen": "rnbq1rk1/p3bppp/1pp1pn2/3p4/2PP4/1P3NP1/P3PPBP/RNBQ1RK1 w - - 0 8",
    "result": "1-0",
@@ -18017,6 +18099,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 27\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
    "plies": 83,
    "own_moves": 42,
    "site_verdicts": [
@@ -18465,11 +18550,11 @@
    "opponent": "mangodogo",
    "opponent_uuid": "1eabeb57-6e3c-46bd-902b-e3b7b5aacc73",
    "opponent_bot": "dog",
-   "opponent_rank_now": 23,
-   "opponent_rating_now": 1971,
+   "opponent_rank_now": 22,
+   "opponent_rating_now": 1936,
    "opponent_rating_then": 1949,
-   "own_rating_then": 2235,
-   "own_rating_after": 2310,
+   "own_rating_then": 2195,
+   "own_rating_after": 2250,
    "opening": "Sicilian Closed",
    "start_fen": "r1bqk2r/pp2ppbp/2np1np1/2p5/4P3/2NP1NP1/PPP2PBP/R1BQ1RK1 b kq - 3 7",
    "result": "0-1",
@@ -18478,6 +18563,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 28\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
    "plies": 111,
    "own_moves": 56,
    "site_verdicts": [
@@ -19066,11 +19154,11 @@
    "opponent": "what even is en passant",
    "opponent_uuid": "b9cbed87-8a3a-437d-9333-1447f68200d1",
    "opponent_bot": "stockfih",
-   "opponent_rank_now": 36,
-   "opponent_rating_now": 1889,
+   "opponent_rank_now": 24,
+   "opponent_rating_now": 1923,
    "opponent_rating_then": 1900,
-   "own_rating_then": 2310,
-   "own_rating_after": 2346,
+   "own_rating_then": 2250,
+   "own_rating_after": 2273,
    "opening": "King's Indian Classical",
    "start_fen": "rnbqr1k1/ppp2pbp/3p1np1/8/2PNP3/2N1B3/PPQ1BPPP/R3K2R b KQ - 2 9",
    "result": "1-0",
@@ -19079,6 +19167,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 29\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
    "plies": 220,
    "own_moves": 110,
    "site_verdicts": [
@@ -20211,11 +20302,11 @@
    "opponent": "adashima",
    "opponent_uuid": "e356ff20-37e4-4fc4-bfef-00cf5957a82c",
    "opponent_bot": "meowfish",
-   "opponent_rank_now": 31,
-   "opponent_rating_now": 1911,
+   "opponent_rank_now": 37,
+   "opponent_rating_now": 1857,
    "opponent_rating_then": 1937,
-   "own_rating_then": 2346,
-   "own_rating_after": 2386,
+   "own_rating_then": 2273,
+   "own_rating_after": 2304,
    "opening": "Sicilian Sveshnikov",
    "start_fen": "r2qkb1r/pp3ppp/2np1n2/4p3/4P1b1/N1N2P2/PPP3PP/R1BQKB1R b KQkq - 0 8",
    "result": "0-1",
@@ -20224,6 +20315,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 30\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
    "plies": 157,
    "own_moves": 79,
    "site_verdicts": [
@@ -21042,11 +21136,11 @@
    "opponent": "OMI",
    "opponent_uuid": "f90aed5c-61db-4b3a-bbc1-9f40391e701a",
    "opponent_bot": "a1",
-   "opponent_rank_now": 32,
-   "opponent_rating_now": 1906,
+   "opponent_rank_now": 36,
+   "opponent_rating_now": 1860,
    "opponent_rating_then": 1941,
-   "own_rating_then": 2386,
-   "own_rating_after": 2446,
+   "own_rating_then": 2304,
+   "own_rating_after": 2352,
    "opening": "Slav Defence",
    "start_fen": "r2qkb1r/pp1n1ppp/2p1pn2/5b2/P1NP4/2N1P3/1P3PPP/R1BQKB1R b KQkq - 0 8",
    "result": "0-1",
@@ -21055,6 +21149,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 31\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
    "plies": 81,
    "own_moves": 41,
    "site_verdicts": [
@@ -21493,19 +21590,22 @@
    "opponent": "AlphaBeta",
    "opponent_uuid": "1f234cf3-2829-4107-8a5f-2d0e15e978da",
    "opponent_bot": "Magnus Claudeson",
-   "opponent_rank_now": 16,
-   "opponent_rating_now": 2065,
+   "opponent_rank_now": 29,
+   "opponent_rating_now": 1883,
    "opponent_rating_then": 1997,
-   "own_rating_then": 2446,
-   "own_rating_after": 2357,
+   "own_rating_then": 2352,
+   "own_rating_after": 2353,
    "opening": "French Tarrasch",
    "start_fen": "rn2kb1r/pp1q1ppp/5n2/2pp4/3P4/7P/PPPN1PP1/R1BQK1NR w KQkq - 0 8",
    "result": "1/2-1/2",
    "score": 0.5,
    "termination": "fifty_moves",
    "termination_text": "Fifty moves",
-   "state": "Rated 32\u00b7Final",
-   "void": false,
+   "state": "Rated 32\u00b7Void",
+   "void": true,
+   "voided": true,
+   "voided_at": "2026-09-06T10:16:59Z",
+   "site_verdict": "void",
    "plies": 202,
    "own_moves": 101,
    "site_verdicts": [
@@ -22537,6 +22637,2662 @@
    },
    "opp_site_acpl": 1,
    "opp_site_accuracy": 99.6
+  },
+  {
+   "game": "24d1256f-07a7-4020-bcf5-808bdf2ccdd0",
+   "url": "https://aichessathon.com/game/24d1256f-07a7-4020-bcf5-808bdf2ccdd0",
+   "kind": "Rated",
+   "round": 33,
+   "date": "2026.09.06",
+   "colour": "black",
+   "opponent": "RMFE",
+   "opponent_uuid": "8b991dda-4b49-46cc-900d-96c853154292",
+   "opponent_bot": "RMFE",
+   "opponent_rank_now": 18,
+   "opponent_rating_now": 1970,
+   "opponent_rating_then": 1990,
+   "own_rating_then": 2353,
+   "own_rating_after": 2360,
+   "opening": "Pirc Defence",
+   "start_fen": "r2q1rk1/pppnppbp/3p1npB/8/3PP1b1/2N2N2/PPPQBPPP/R3K2R b KQ - 9 8",
+   "result": "*",
+   "score": null,
+   "termination": "unterminated",
+   "termination_text": "Unterminated",
+   "state": "Rated 33\u00b7Void",
+   "void": true,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "void",
+   "plies": 249,
+   "own_moves": 125,
+   "site_verdicts": [
+    [
+     "e5",
+     "best"
+    ],
+    [
+     "O-O-O",
+     "best"
+    ],
+    [
+     "Bxh6",
+     "inaccuracy"
+    ],
+    [
+     "Qxh6",
+     "best"
+    ],
+    [
+     "Bxf3",
+     "good"
+    ],
+    [
+     "gxf3",
+     "best"
+    ],
+    [
+     "Qe7",
+     "excellent"
+    ],
+    [
+     "h4",
+     "best"
+    ],
+    [
+     "Kh8",
+     "excellent"
+    ],
+    [
+     "h5",
+     "excellent"
+    ],
+    [
+     "exd4",
+     "best"
+    ],
+    [
+     "Rxd4",
+     "best"
+    ],
+    [
+     "Rg8",
+     "best"
+    ],
+    [
+     "hxg6",
+     "best"
+    ],
+    [
+     "fxg6",
+     "best"
+    ],
+    [
+     "Rdd1",
+     "good"
+    ],
+    [
+     "Rg7",
+     "best"
+    ],
+    [
+     "Qd2",
+     "inaccuracy"
+    ],
+    [
+     "Rf8",
+     "best"
+    ],
+    [
+     "Qe3",
+     "excellent"
+    ],
+    [
+     "Nc5",
+     "best"
+    ],
+    [
+     "b4",
+     "best"
+    ],
+    [
+     "Ne6",
+     "best"
+    ],
+    [
+     "f4",
+     "best"
+    ],
+    [
+     "Ng8",
+     "best"
+    ],
+    [
+     "Nd5",
+     "excellent"
+    ],
+    [
+     "Qf7",
+     "best"
+    ],
+    [
+     "f5",
+     "best"
+    ],
+    [
+     "gxf5",
+     "best"
+    ],
+    [
+     "Bh5",
+     "excellent"
+    ],
+    [
+     "Qd7",
+     "best"
+    ],
+    [
+     "e5",
+     "excellent"
+    ],
+    [
+     "c6",
+     "best"
+    ],
+    [
+     "Nf4",
+     "best"
+    ],
+    [
+     "Nxf4",
+     "best"
+    ],
+    [
+     "Rxd6",
+     "good"
+    ],
+    [
+     "Ng2",
+     "good"
+    ],
+    [
+     "Rxd7",
+     "best"
+    ],
+    [
+     "Nxe3",
+     "best"
+    ],
+    [
+     "Rxg7",
+     "best"
+    ],
+    [
+     "Kxg7",
+     "best"
+    ],
+    [
+     "fxe3",
+     "best"
+    ],
+    [
+     "Ne7",
+     "best"
+    ],
+    [
+     "Rd1",
+     "best"
+    ],
+    [
+     "Kh6",
+     "best"
+    ],
+    [
+     "Rd7",
+     "best"
+    ],
+    [
+     "Kxh5",
+     "best"
+    ],
+    [
+     "Rxe7",
+     "best"
+    ],
+    [
+     "Kg6",
+     "best"
+    ],
+    [
+     "Kd2",
+     "best"
+    ],
+    [
+     "Rf7",
+     "excellent"
+    ],
+    [
+     "Re6+",
+     "best"
+    ],
+    [
+     "Kg5",
+     "best"
+    ],
+    [
+     "Re8",
+     "best"
+    ],
+    [
+     "f4",
+     "excellent"
+    ],
+    [
+     "exf4+",
+     "best"
+    ],
+    [
+     "Rxf4",
+     "best"
+    ],
+    [
+     "a3",
+     "excellent"
+    ],
+    [
+     "Rf7",
+     "best"
+    ],
+    [
+     "Kd3",
+     "best"
+    ],
+    [
+     "Kf5",
+     "best"
+    ],
+    [
+     "Kc4",
+     "excellent"
+    ],
+    [
+     "Rg7",
+     "best"
+    ],
+    [
+     "a4",
+     "best"
+    ],
+    [
+     "b6",
+     "excellent"
+    ],
+    [
+     "e6",
+     "excellent"
+    ],
+    [
+     "Ke5",
+     "best"
+    ],
+    [
+     "b5",
+     "excellent"
+    ],
+    [
+     "Rc7",
+     "excellent"
+    ],
+    [
+     "Kd3",
+     "excellent"
+    ],
+    [
+     "cxb5",
+     "excellent"
+    ],
+    [
+     "axb5",
+     "best"
+    ],
+    [
+     "Kd6",
+     "best"
+    ],
+    [
+     "c4",
+     "best"
+    ],
+    [
+     "Re7",
+     "best"
+    ],
+    [
+     "Rg8",
+     "excellent"
+    ],
+    [
+     "Kxe6",
+     "best"
+    ],
+    [
+     "Rg5",
+     "excellent"
+    ],
+    [
+     "Rd7+",
+     "excellent"
+    ],
+    [
+     "Ke4",
+     "good"
+    ],
+    [
+     "Kf6",
+     "good"
+    ],
+    [
+     "Rh5",
+     "best"
+    ],
+    [
+     "Kg6",
+     "best"
+    ],
+    [
+     "Re5",
+     "best"
+    ],
+    [
+     "h5",
+     "excellent"
+    ],
+    [
+     "c5",
+     "best"
+    ],
+    [
+     "bxc5",
+     "best"
+    ],
+    [
+     "Rxc5",
+     "best"
+    ],
+    [
+     "Rf7",
+     "excellent"
+    ],
+    [
+     "Rc8",
+     "excellent"
+    ],
+    [
+     "h4",
+     "best"
+    ],
+    [
+     "Ke3",
+     "best"
+    ],
+    [
+     "Kg5",
+     "excellent"
+    ],
+    [
+     "Rg8+",
+     "best"
+    ],
+    [
+     "Kh5",
+     "excellent"
+    ],
+    [
+     "Rh8+",
+     "best"
+    ],
+    [
+     "Kg4",
+     "excellent"
+    ],
+    [
+     "Rg8+",
+     "best"
+    ],
+    [
+     "Kh3",
+     "excellent"
+    ],
+    [
+     "Ke2",
+     "excellent"
+    ],
+    [
+     "Rb7",
+     "excellent"
+    ],
+    [
+     "Rg5",
+     "best"
+    ],
+    [
+     "Re7+",
+     "best"
+    ],
+    [
+     "Kf3",
+     "best"
+    ],
+    [
+     "Rf7+",
+     "best"
+    ],
+    [
+     "Ke2",
+     "best"
+    ],
+    [
+     "Kh2",
+     "excellent"
+    ],
+    [
+     "Ke3",
+     "excellent"
+    ],
+    [
+     "h3",
+     "excellent"
+    ],
+    [
+     "Ke2",
+     "best"
+    ],
+    [
+     "Kh1",
+     "excellent"
+    ],
+    [
+     "Rg3",
+     "best"
+    ],
+    [
+     "Re7+",
+     "excellent"
+    ],
+    [
+     "Kf2",
+     "best"
+    ],
+    [
+     "Kh2",
+     "excellent"
+    ],
+    [
+     "Rg5",
+     "best"
+    ],
+    [
+     "Rh7",
+     "excellent"
+    ],
+    [
+     "Kf3",
+     "excellent"
+    ],
+    [
+     "Rc7",
+     "excellent"
+    ],
+    [
+     "Kf2",
+     "excellent"
+    ],
+    [
+     "Rc2+",
+     "best"
+    ],
+    [
+     "Kf3",
+     "best"
+    ],
+    [
+     "Rg2",
+     "best"
+    ],
+    [
+     "Rd5",
+     "excellent"
+    ],
+    [
+     "Rg3+",
+     "best"
+    ],
+    [
+     "Kf4",
+     "best"
+    ],
+    [
+     "Ra3",
+     "excellent"
+    ],
+    [
+     "Rd2+",
+     "excellent"
+    ],
+    [
+     "Kg1",
+     "excellent"
+    ],
+    [
+     "Rd1+",
+     "best"
+    ],
+    [
+     "Kf2",
+     "excellent"
+    ],
+    [
+     "Rd2+",
+     "best"
+    ],
+    [
+     "Ke1",
+     "best"
+    ],
+    [
+     "Rb2",
+     "best"
+    ],
+    [
+     "Kf1",
+     "best"
+    ],
+    [
+     "b6",
+     "excellent"
+    ],
+    [
+     "axb6",
+     "best"
+    ],
+    [
+     "Rb1+",
+     "best"
+    ],
+    [
+     "Ke2",
+     "excellent"
+    ],
+    [
+     "Rxb6",
+     "excellent"
+    ],
+    [
+     "Kd3",
+     "excellent"
+    ],
+    [
+     "Rh6",
+     "excellent"
+    ],
+    [
+     "Kd4",
+     "excellent"
+    ],
+    [
+     "Rh8",
+     "excellent"
+    ],
+    [
+     "Rc3",
+     "excellent"
+    ],
+    [
+     "Kg4",
+     "excellent"
+    ],
+    [
+     "Ke5",
+     "excellent"
+    ],
+    [
+     "Rh5+",
+     "excellent"
+    ],
+    [
+     "Ke4",
+     "best"
+    ],
+    [
+     "Rxh3",
+     "excellent"
+    ],
+    [
+     "Rc8",
+     "excellent"
+    ],
+    [
+     "Kg5",
+     "excellent"
+    ],
+    [
+     "Ke5",
+     "excellent"
+    ],
+    [
+     "Kg6",
+     "excellent"
+    ],
+    [
+     "Rc6+",
+     "excellent"
+    ],
+    [
+     "Kf7",
+     "best"
+    ],
+    [
+     "Rc7+",
+     "best"
+    ],
+    [
+     "Ke8",
+     "excellent"
+    ],
+    [
+     "Ra7",
+     "excellent"
+    ],
+    [
+     "Rh6",
+     "excellent"
+    ],
+    [
+     "Ra1",
+     "excellent"
+    ],
+    [
+     "Ke7",
+     "excellent"
+    ],
+    [
+     "Kd4",
+     "excellent"
+    ],
+    [
+     "Rh8",
+     "excellent"
+    ],
+    [
+     "Ke3",
+     "excellent"
+    ],
+    [
+     "Rc8",
+     "excellent"
+    ],
+    [
+     "Ra7+",
+     "best"
+    ],
+    [
+     "Kd8",
+     "best"
+    ],
+    [
+     "Rh7",
+     "excellent"
+    ],
+    [
+     "Rc6",
+     "excellent"
+    ],
+    [
+     "Rh4",
+     "excellent"
+    ],
+    [
+     "Kc8",
+     "excellent"
+    ],
+    [
+     "Rh5",
+     "excellent"
+    ],
+    [
+     "Rd6",
+     "excellent"
+    ],
+    [
+     "Rc5+",
+     "excellent"
+    ],
+    [
+     "Kb8",
+     "excellent"
+    ],
+    [
+     "Kf4",
+     "excellent"
+    ],
+    [
+     "Rd1",
+     "best"
+    ],
+    [
+     "Rc2",
+     "excellent"
+    ],
+    [
+     "Kb7",
+     "best"
+    ],
+    [
+     "Ke4",
+     "excellent"
+    ],
+    [
+     "Rh1",
+     "excellent"
+    ],
+    [
+     "Rg2",
+     "excellent"
+    ],
+    [
+     "Kc6",
+     "best"
+    ],
+    [
+     "Kf4",
+     "excellent"
+    ],
+    [
+     "Ra1",
+     "excellent"
+    ],
+    [
+     "Ke3",
+     "excellent"
+    ],
+    [
+     "Ra3+",
+     "excellent"
+    ],
+    [
+     "Ke4",
+     "best"
+    ],
+    [
+     "Kb6",
+     "excellent"
+    ],
+    [
+     "Ke5",
+     "excellent"
+    ],
+    [
+     "Ra1",
+     "best"
+    ],
+    [
+     "Rb2+",
+     "excellent"
+    ],
+    [
+     "Kc7",
+     "excellent"
+    ],
+    [
+     "Rc2+",
+     "best"
+    ],
+    [
+     "Kd7",
+     "best"
+    ],
+    [
+     "Rd2+",
+     "excellent"
+    ],
+    [
+     "Ke7",
+     "excellent"
+    ],
+    [
+     "Kd4",
+     "excellent"
+    ],
+    [
+     "Rg1",
+     "excellent"
+    ],
+    [
+     "Kd3",
+     "excellent"
+    ],
+    [
+     "Rh1",
+     "best"
+    ],
+    [
+     "Kc2",
+     "excellent"
+    ],
+    [
+     "Rf1",
+     "excellent"
+    ],
+    [
+     "Re2+",
+     "excellent"
+    ],
+    [
+     "Kd7",
+     "excellent"
+    ],
+    [
+     "Re3",
+     "excellent"
+    ],
+    [
+     "Rf2+",
+     "excellent"
+    ],
+    [
+     "Kd3",
+     "excellent"
+    ],
+    [
+     "Rh2",
+     "best"
+    ],
+    [
+     "Re4",
+     "excellent"
+    ],
+    [
+     "Rh6",
+     "excellent"
+    ],
+    [
+     "Ra4",
+     "excellent"
+    ],
+    [
+     "Kc8",
+     "excellent"
+    ],
+    [
+     "Kd2",
+     "excellent"
+    ],
+    [
+     "Rg6",
+     "excellent"
+    ],
+    [
+     "Ra8+",
+     "excellent"
+    ],
+    [
+     "Kc7",
+     "best"
+    ],
+    [
+     "Ra7+",
+     "excellent"
+    ],
+    [
+     "Kb8",
+     "excellent"
+    ],
+    [
+     "Ra1",
+     "best"
+    ],
+    [
+     "Rf6",
+     "excellent"
+    ],
+    [
+     "Rc1",
+     "excellent"
+    ],
+    [
+     "Rf5",
+     "excellent"
+    ],
+    [
+     "Ke3",
+     "excellent"
+    ],
+    [
+     "Kb7",
+     "excellent"
+    ],
+    [
+     "Rh1",
+     "best"
+    ],
+    [
+     "Rf6",
+     "excellent"
+    ],
+    [
+     "Ke2",
+     "excellent"
+    ],
+    [
+     "Rg6",
+     "excellent"
+    ],
+    [
+     "Rh7+",
+     "excellent"
+    ],
+    [
+     "Kb6",
+     "best"
+    ],
+    [
+     "Kf2",
+     "excellent"
+    ],
+    [
+     "Kb5",
+     "excellent"
+    ],
+    [
+     "Kf3",
+     "excellent"
+    ],
+    [
+     "Ka6",
+     "excellent"
+    ],
+    [
+     "Rh3",
+     "excellent"
+    ],
+    [
+     "Kb6",
+     "excellent"
+    ],
+    [
+     "Rh4",
+     "excellent"
+    ],
+    [
+     "Rg1",
+     "best"
+    ],
+    [
+     "Ke2",
+     "excellent"
+    ],
+    [
+     "Kb7",
+     "excellent"
+    ],
+    [
+     "Kf2",
+     "excellent"
+    ],
+    [
+     "Rd1",
+     "excellent"
+    ],
+    [
+     "Rg4",
+     "best"
+    ],
+    [
+     "Kc8",
+     "excellent"
+    ],
+    [
+     "Rf4",
+     "excellent"
+    ],
+    [
+     "Rc1",
+     "excellent"
+    ]
+   ],
+   "time_per_move": [
+    0.003,
+    0.009,
+    0.014,
+    2.59,
+    2.567,
+    2.23,
+    3.576,
+    2.259,
+    3.74,
+    3.442,
+    4.776,
+    1.834,
+    2.408,
+    3.333,
+    2.068,
+    2.774,
+    3.292,
+    5.187,
+    2.103,
+    1.743,
+    1.57,
+    4.808,
+    1.417,
+    1.611,
+    0.021,
+    2.515,
+    0.013,
+    0.047,
+    3.11,
+    4.242,
+    1.797,
+    2.24,
+    1.938,
+    1.415,
+    1.257,
+    1.273,
+    0.02,
+    2.284,
+    1.609,
+    1.84,
+    1.671,
+    2.212,
+    0.998,
+    0.01,
+    1.403,
+    1.482,
+    1.308,
+    1.835,
+    0.016,
+    2.033,
+    3.113,
+    0.022,
+    0.924,
+    1.771,
+    2.132,
+    1.217,
+    2.042,
+    1.27,
+    1.022,
+    1.466,
+    0.005,
+    0.9,
+    0.793,
+    1.567,
+    1.95,
+    0.898,
+    1.296,
+    1.487,
+    1.219,
+    0.864,
+    1.977,
+    1.058,
+    1.571,
+    0.01,
+    2.69,
+    0.093,
+    0.006,
+    1.169,
+    0.828,
+    2.279,
+    0.667,
+    0.737,
+    0.59,
+    1.865,
+    0.916,
+    0.779,
+    1.78,
+    0.645,
+    1.152,
+    0.645,
+    1.163,
+    0.56,
+    0.526,
+    0.612,
+    0.675,
+    0.689,
+    1.049,
+    0.01,
+    0.668,
+    0.603,
+    0.496,
+    0.557,
+    0.981,
+    0.648,
+    0.728,
+    0.551,
+    0.861,
+    0.524,
+    0.56,
+    0.586,
+    1.124,
+    0.564,
+    0.562,
+    0.547,
+    0.49,
+    0.885,
+    0.662,
+    0.613,
+    0.706,
+    0.864,
+    0.562,
+    0.76,
+    0.663,
+    0.682,
+    0.037
+   ],
+   "clock_after_move": [
+    120.497,
+    120.988,
+    121.474,
+    119.384,
+    117.317,
+    115.587,
+    112.511,
+    110.752,
+    107.512,
+    104.57,
+    100.294,
+    98.96,
+    97.052,
+    94.219,
+    92.651,
+    90.377,
+    87.585,
+    82.898,
+    81.295,
+    80.052,
+    78.982,
+    74.674,
+    73.757,
+    72.646,
+    73.125,
+    71.11,
+    71.597,
+    72.05,
+    69.44,
+    65.698,
+    64.401,
+    62.661,
+    61.223,
+    60.308,
+    59.551,
+    58.778,
+    59.258,
+    57.474,
+    56.365,
+    55.025,
+    53.854,
+    52.142,
+    51.644,
+    52.134,
+    51.231,
+    50.249,
+    49.441,
+    48.106,
+    48.59,
+    47.057,
+    44.444,
+    44.922,
+    44.498,
+    43.227,
+    41.595,
+    40.878,
+    39.336,
+    38.566,
+    38.044,
+    37.078,
+    37.573,
+    37.173,
+    36.88,
+    35.813,
+    34.363,
+    33.965,
+    33.169,
+    32.182,
+    31.463,
+    31.099,
+    29.622,
+    29.064,
+    27.993,
+    28.483,
+    26.293,
+    26.7,
+    27.194,
+    26.525,
+    26.197,
+    24.418,
+    24.251,
+    24.014,
+    23.924,
+    22.559,
+    22.143,
+    21.864,
+    20.584,
+    20.439,
+    19.787,
+    19.642,
+    18.979,
+    18.919,
+    18.893,
+    18.781,
+    18.606,
+    18.417,
+    17.868,
+    18.358,
+    18.19,
+    18.087,
+    18.091,
+    18.034,
+    17.553,
+    17.405,
+    17.177,
+    17.126,
+    16.765,
+    16.741,
+    16.681,
+    16.595,
+    15.971,
+    15.907,
+    15.845,
+    15.798,
+    15.808,
+    15.423,
+    15.261,
+    15.148,
+    14.942,
+    14.578,
+    14.516,
+    14.256,
+    14.093,
+    13.911,
+    14.374
+   ],
+   "final_clock": 14.374,
+   "site_review_source": "Stockfish 16 \u00b7 depth 16",
+   "site_acpl": 3,
+   "site_accuracy": 98.4,
+   "site_tally": {
+    "brilliant": 0,
+    "best": 48,
+    "excellent": 73,
+    "good": 3,
+    "forced": 0,
+    "inaccuracy": 1,
+    "mistake": 0,
+    "miss": 0,
+    "blunder": 0
+   },
+   "opp_site_acpl": 3,
+   "opp_site_accuracy": 98.4
+  },
+  {
+   "game": "8a56f269-9a3a-43a4-a46e-f6eb30e8a8d5",
+   "url": "https://aichessathon.com/game/8a56f269-9a3a-43a4-a46e-f6eb30e8a8d5",
+   "kind": "Rated",
+   "round": 34,
+   "date": "2026.09.06",
+   "colour": "white",
+   "opponent": "Sobriety",
+   "opponent_uuid": "258a9828-7442-4bea-97cb-eed1845ad2cc",
+   "opponent_bot": "SoberElwood",
+   "opponent_rank_now": 4,
+   "opponent_rating_now": 2338,
+   "opponent_rating_then": 2338,
+   "own_rating_then": 2360,
+   "own_rating_after": null,
+   "opening": "English Symmetrical",
+   "start_fen": "r1bq1rk1/pp2ppbp/2np1np1/2p5/2P4P/2NP1NP1/PP2PPB1/1RBQK2R b K - 1 8",
+   "result": "1/2-1/2",
+   "score": 0.5,
+   "termination": "fifty_moves",
+   "termination_text": "Fifty moves",
+   "state": "Rated 34\u00b7Final",
+   "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "draw",
+   "plies": 263,
+   "own_moves": 131,
+   "site_verdicts": [
+    [
+     "a6",
+     "excellent"
+    ],
+    [
+     "O-O",
+     "best"
+    ],
+    [
+     "b5",
+     "good"
+    ],
+    [
+     "Ne5",
+     "brilliant"
+    ],
+    [
+     "Nxe5",
+     "best"
+    ],
+    [
+     "Bxa8",
+     "best"
+    ],
+    [
+     "bxc4",
+     "best"
+    ],
+    [
+     "dxc4",
+     "good"
+    ],
+    [
+     "Bf5",
+     "best"
+    ],
+    [
+     "Bg2",
+     "best"
+    ],
+    [
+     "Bxb1",
+     "best"
+    ],
+    [
+     "Nxb1",
+     "best"
+    ],
+    [
+     "Nxc4",
+     "best"
+    ],
+    [
+     "Qa4",
+     "best"
+    ],
+    [
+     "d5",
+     "excellent"
+    ],
+    [
+     "Qxa6",
+     "best"
+    ],
+    [
+     "e6",
+     "excellent"
+    ],
+    [
+     "e4",
+     "best"
+    ],
+    [
+     "Qb6",
+     "best"
+    ],
+    [
+     "Qxb6",
+     "best"
+    ],
+    [
+     "Nxb6",
+     "best"
+    ],
+    [
+     "exd5",
+     "best"
+    ],
+    [
+     "Nfxd5",
+     "best"
+    ],
+    [
+     "b3",
+     "best"
+    ],
+    [
+     "c4",
+     "excellent"
+    ],
+    [
+     "bxc4",
+     "best"
+    ],
+    [
+     "Nxc4",
+     "best"
+    ],
+    [
+     "Rd1",
+     "best"
+    ],
+    [
+     "Ncb6",
+     "best"
+    ],
+    [
+     "Bd2",
+     "excellent"
+    ],
+    [
+     "Ra8",
+     "best"
+    ],
+    [
+     "a3",
+     "best"
+    ],
+    [
+     "Bb2",
+     "best"
+    ],
+    [
+     "Bh6",
+     "excellent"
+    ],
+    [
+     "Rc8",
+     "best"
+    ],
+    [
+     "Bf3",
+     "excellent"
+    ],
+    [
+     "Bg7",
+     "best"
+    ],
+    [
+     "Bd2",
+     "excellent"
+    ],
+    [
+     "Rc2",
+     "best"
+    ],
+    [
+     "Rc1",
+     "best"
+    ],
+    [
+     "Ra2",
+     "excellent"
+    ],
+    [
+     "h5",
+     "excellent"
+    ],
+    [
+     "gxh5",
+     "excellent"
+    ],
+    [
+     "Bxh5",
+     "best"
+    ],
+    [
+     "Ra1",
+     "excellent"
+    ],
+    [
+     "Be2",
+     "excellent"
+    ],
+    [
+     "Bf8",
+     "best"
+    ],
+    [
+     "Kf1",
+     "best"
+    ],
+    [
+     "Kg7",
+     "excellent"
+    ],
+    [
+     "Re1",
+     "excellent"
+    ],
+    [
+     "Bc5",
+     "excellent"
+    ],
+    [
+     "Bd3",
+     "excellent"
+    ],
+    [
+     "Bd4",
+     "excellent"
+    ],
+    [
+     "Kg2",
+     "excellent"
+    ],
+    [
+     "h5",
+     "best"
+    ],
+    [
+     "Re4",
+     "best"
+    ],
+    [
+     "Bf6",
+     "best"
+    ],
+    [
+     "Re2",
+     "excellent"
+    ],
+    [
+     "Na4",
+     "excellent"
+    ],
+    [
+     "Re1",
+     "excellent"
+    ],
+    [
+     "Nb2",
+     "excellent"
+    ],
+    [
+     "Be2",
+     "best"
+    ],
+    [
+     "Bd4",
+     "best"
+    ],
+    [
+     "Bxh5",
+     "excellent"
+    ],
+    [
+     "Bxf2",
+     "best"
+    ],
+    [
+     "Rf1",
+     "best"
+    ],
+    [
+     "Be3",
+     "best"
+    ],
+    [
+     "Rxf7+",
+     "good"
+    ],
+    [
+     "Kh6",
+     "best"
+    ],
+    [
+     "Bg4",
+     "best"
+    ],
+    [
+     "Rxb1",
+     "best"
+    ],
+    [
+     "Bxe6",
+     "best"
+    ],
+    [
+     "Bxd2",
+     "best"
+    ],
+    [
+     "Bxd5",
+     "best"
+    ],
+    [
+     "Ra1",
+     "best"
+    ],
+    [
+     "Be4",
+     "good"
+    ],
+    [
+     "Rxa3",
+     "best"
+    ],
+    [
+     "Re7",
+     "good"
+    ],
+    [
+     "Nc4",
+     "best"
+    ],
+    [
+     "Bb1",
+     "excellent"
+    ],
+    [
+     "Bc3",
+     "excellent"
+    ],
+    [
+     "Rc7",
+     "good"
+    ],
+    [
+     "Ne3+",
+     "excellent"
+    ],
+    [
+     "Kh3",
+     "excellent"
+    ],
+    [
+     "Bd4",
+     "excellent"
+    ],
+    [
+     "Rd7",
+     "best"
+    ],
+    [
+     "Ra4",
+     "excellent"
+    ],
+    [
+     "Rc7",
+     "excellent"
+    ],
+    [
+     "Ng4",
+     "good"
+    ],
+    [
+     "Rh7+",
+     "good"
+    ],
+    [
+     "Kg5",
+     "forced"
+    ],
+    [
+     "Rf7",
+     "best"
+    ],
+    [
+     "Ne3",
+     "best"
+    ],
+    [
+     "Rf8",
+     "excellent"
+    ],
+    [
+     "Ba7",
+     "good"
+    ],
+    [
+     "Bd3",
+     "good"
+    ],
+    [
+     "Bc5",
+     "good"
+    ],
+    [
+     "Rc8",
+     "best"
+    ],
+    [
+     "Be7",
+     "best"
+    ],
+    [
+     "Rc3",
+     "excellent"
+    ],
+    [
+     "Ra8",
+     "best"
+    ],
+    [
+     "Bh7",
+     "best"
+    ],
+    [
+     "Ra3",
+     "inaccuracy"
+    ],
+    [
+     "Rc6",
+     "inaccuracy"
+    ],
+    [
+     "Bf6",
+     "best"
+    ],
+    [
+     "Be4",
+     "best"
+    ],
+    [
+     "Ng4",
+     "best"
+    ],
+    [
+     "Bc2",
+     "best"
+    ],
+    [
+     "Ra8",
+     "good"
+    ],
+    [
+     "Rc5+",
+     "best"
+    ],
+    [
+     "Ne5",
+     "best"
+    ],
+    [
+     "Rb5",
+     "best"
+    ],
+    [
+     "Ra2",
+     "best"
+    ],
+    [
+     "Be4",
+     "excellent"
+    ],
+    [
+     "Rd2",
+     "excellent"
+    ],
+    [
+     "Bb1",
+     "excellent"
+    ],
+    [
+     "Kh6",
+     "excellent"
+    ],
+    [
+     "Rb7",
+     "excellent"
+    ],
+    [
+     "Re2",
+     "excellent"
+    ],
+    [
+     "Ra7",
+     "excellent"
+    ],
+    [
+     "Rb2",
+     "excellent"
+    ],
+    [
+     "Be4",
+     "excellent"
+    ],
+    [
+     "Kg5",
+     "best"
+    ],
+    [
+     "Ra8",
+     "best"
+    ],
+    [
+     "Rb4",
+     "excellent"
+    ],
+    [
+     "Bc2",
+     "best"
+    ],
+    [
+     "Kh6",
+     "excellent"
+    ],
+    [
+     "Ra7",
+     "best"
+    ],
+    [
+     "Ng4",
+     "good"
+    ],
+    [
+     "Ra6",
+     "excellent"
+    ],
+    [
+     "Kg7",
+     "excellent"
+    ],
+    [
+     "Ra7+",
+     "excellent"
+    ],
+    [
+     "Kf8",
+     "excellent"
+    ],
+    [
+     "Bg6",
+     "inaccuracy"
+    ],
+    [
+     "Nf2+",
+     "excellent"
+    ],
+    [
+     "Kg2",
+     "best"
+    ],
+    [
+     "Ne4",
+     "inaccuracy"
+    ],
+    [
+     "Bxe4",
+     "best"
+    ],
+    [
+     "Rxe4",
+     "best"
+    ],
+    [
+     "Kf3",
+     "best"
+    ],
+    [
+     "Rc4",
+     "excellent"
+    ],
+    [
+     "Rd7",
+     "best"
+    ],
+    [
+     "Bg5",
+     "best"
+    ],
+    [
+     "Ke2",
+     "excellent"
+    ],
+    [
+     "Be7",
+     "excellent"
+    ],
+    [
+     "Rd3",
+     "excellent"
+    ],
+    [
+     "Kg8",
+     "excellent"
+    ],
+    [
+     "Re3",
+     "excellent"
+    ],
+    [
+     "Bf8",
+     "excellent"
+    ],
+    [
+     "Re5",
+     "excellent"
+    ],
+    [
+     "Rb4",
+     "excellent"
+    ],
+    [
+     "Re6",
+     "excellent"
+    ],
+    [
+     "Kf7",
+     "excellent"
+    ],
+    [
+     "Rc6",
+     "excellent"
+    ],
+    [
+     "Bg7",
+     "excellent"
+    ],
+    [
+     "Rc7+",
+     "excellent"
+    ],
+    [
+     "Kg6",
+     "excellent"
+    ],
+    [
+     "Kf3",
+     "excellent"
+    ],
+    [
+     "Be5",
+     "excellent"
+    ],
+    [
+     "Rc8",
+     "best"
+    ],
+    [
+     "Rb3+",
+     "excellent"
+    ],
+    [
+     "Ke4",
+     "best"
+    ],
+    [
+     "Bxg3",
+     "excellent"
+    ],
+    [
+     "Rc2",
+     "excellent"
+    ],
+    [
+     "Kf7",
+     "excellent"
+    ],
+    [
+     "Kd5",
+     "excellent"
+    ],
+    [
+     "Bh4",
+     "excellent"
+    ],
+    [
+     "Kc6",
+     "excellent"
+    ],
+    [
+     "Be7",
+     "excellent"
+    ],
+    [
+     "Re2",
+     "best"
+    ],
+    [
+     "Rb4",
+     "excellent"
+    ],
+    [
+     "Rd2",
+     "excellent"
+    ],
+    [
+     "Rc4+",
+     "excellent"
+    ],
+    [
+     "Kd7",
+     "excellent"
+    ],
+    [
+     "Bh4",
+     "excellent"
+    ],
+    [
+     "Re2",
+     "excellent"
+    ],
+    [
+     "Rg4",
+     "excellent"
+    ],
+    [
+     "Kc6",
+     "excellent"
+    ],
+    [
+     "Rg6+",
+     "excellent"
+    ],
+    [
+     "Kd5",
+     "best"
+    ],
+    [
+     "Bg3",
+     "excellent"
+    ],
+    [
+     "Ra2",
+     "excellent"
+    ],
+    [
+     "Rg4",
+     "excellent"
+    ],
+    [
+     "Re2",
+     "excellent"
+    ],
+    [
+     "Bc7",
+     "excellent"
+    ],
+    [
+     "Kc6",
+     "excellent"
+    ],
+    [
+     "Ba5",
+     "excellent"
+    ],
+    [
+     "Kb7",
+     "excellent"
+    ],
+    [
+     "Bd8",
+     "excellent"
+    ],
+    [
+     "Kc6",
+     "excellent"
+    ],
+    [
+     "Rg5",
+     "excellent"
+    ],
+    [
+     "Kd7",
+     "excellent"
+    ],
+    [
+     "Bf6",
+     "excellent"
+    ],
+    [
+     "Kc6",
+     "excellent"
+    ],
+    [
+     "Bd4",
+     "excellent"
+    ],
+    [
+     "Rc2",
+     "excellent"
+    ],
+    [
+     "Bg7",
+     "excellent"
+    ],
+    [
+     "Rf2+",
+     "excellent"
+    ],
+    [
+     "Kg8",
+     "excellent"
+    ],
+    [
+     "Rc2",
+     "excellent"
+    ],
+    [
+     "Bf8",
+     "excellent"
+    ],
+    [
+     "Kb6",
+     "excellent"
+    ],
+    [
+     "Bd6",
+     "excellent"
+    ],
+    [
+     "Kc6",
+     "best"
+    ],
+    [
+     "Bb4",
+     "excellent"
+    ],
+    [
+     "Rc4",
+     "excellent"
+    ],
+    [
+     "Bf8",
+     "excellent"
+    ],
+    [
+     "Kb6",
+     "excellent"
+    ],
+    [
+     "Be7",
+     "excellent"
+    ],
+    [
+     "Re4",
+     "best"
+    ],
+    [
+     "Kf8",
+     "excellent"
+    ],
+    [
+     "Kc6",
+     "excellent"
+    ],
+    [
+     "Bc5",
+     "excellent"
+    ],
+    [
+     "Rc4",
+     "excellent"
+    ],
+    [
+     "Bg1",
+     "excellent"
+    ],
+    [
+     "Rc2",
+     "excellent"
+    ],
+    [
+     "Ke7",
+     "excellent"
+    ],
+    [
+     "Rd2",
+     "excellent"
+    ],
+    [
+     "Rc5+",
+     "best"
+    ],
+    [
+     "Kb7",
+     "best"
+    ],
+    [
+     "Rf5",
+     "excellent"
+    ],
+    [
+     "Kc7",
+     "excellent"
+    ],
+    [
+     "Rf6",
+     "excellent"
+    ],
+    [
+     "Re2+",
+     "best"
+    ],
+    [
+     "Kf7",
+     "best"
+    ],
+    [
+     "Kd7",
+     "best"
+    ],
+    [
+     "Bc5",
+     "best"
+    ],
+    [
+     "Rh2",
+     "excellent"
+    ],
+    [
+     "Bf8",
+     "excellent"
+    ],
+    [
+     "Re2",
+     "excellent"
+    ],
+    [
+     "Rg6",
+     "excellent"
+    ],
+    [
+     "Rf2+",
+     "best"
+    ],
+    [
+     "Kg8",
+     "best"
+    ],
+    [
+     "Re2",
+     "best"
+    ],
+    [
+     "Rd6+",
+     "excellent"
+    ],
+    [
+     "Kc7",
+     "excellent"
+    ],
+    [
+     "Rf6",
+     "excellent"
+    ],
+    [
+     "Kd7",
+     "excellent"
+    ],
+    [
+     "Bc5",
+     "excellent"
+    ],
+    [
+     "Re5",
+     "excellent"
+    ],
+    [
+     "Bb4",
+     "excellent"
+    ],
+    [
+     "Re4",
+     "excellent"
+    ],
+    [
+     "Ba3",
+     "excellent"
+    ],
+    [
+     "Re8+",
+     "excellent"
+    ],
+    [
+     "Kf7",
+     "best"
+    ],
+    [
+     "Re2",
+     "excellent"
+    ],
+    [
+     "Bf8",
+     "excellent"
+    ],
+    [
+     "Ra2",
+     "excellent"
+    ],
+    [
+     "Rh6",
+     "excellent"
+    ],
+    [
+     "Rg2",
+     "excellent"
+    ],
+    [
+     "Rb6",
+     "excellent"
+    ],
+    [
+     "Rf2+",
+     "best"
+    ],
+    [
+     "Kg7",
+     "best"
+    ],
+    [
+     "Rg2+",
+     "excellent"
+    ],
+    [
+     "Kh7",
+     "excellent"
+    ],
+    [
+     "Re2",
+     "excellent"
+    ],
+    [
+     "Rf6",
+     "excellent"
+    ],
+    [
+     "Rc2",
+     "excellent"
+    ],
+    [
+     "Bb4",
+     "excellent"
+    ],
+    [
+     "Rh2+",
+     "excellent"
+    ],
+    [
+     "Kg6",
+     "excellent"
+    ],
+    [
+     "Rg2+",
+     "excellent"
+    ]
+   ],
+   "time_per_move": [
+    0.004,
+    2.961,
+    0.032,
+    2.511,
+    0.017,
+    0.009,
+    0.004,
+    2.541,
+    3.052,
+    2.795,
+    0.037,
+    2.482,
+    3.089,
+    3.603,
+    1.668,
+    3.766,
+    0.026,
+    3.257,
+    2.322,
+    0.021,
+    1.754,
+    2.788,
+    2.522,
+    1.95,
+    1.868,
+    2.599,
+    2.475,
+    3.338,
+    0.011,
+    4.898,
+    1.794,
+    1.323,
+    1.426,
+    1.442,
+    2.252,
+    0.004,
+    5.583,
+    1.338,
+    1.999,
+    1.608,
+    1.308,
+    1.517,
+    1.103,
+    1.17,
+    1.165,
+    1.439,
+    2.07,
+    2.373,
+    1.605,
+    1.475,
+    1.867,
+    2.238,
+    1.726,
+    0.005,
+    1.458,
+    1.4,
+    1.956,
+    1.83,
+    0.82,
+    1.504,
+    1.244,
+    1.123,
+    1.012,
+    0.946,
+    1.005,
+    1.061,
+    1.243,
+    1.322,
+    1.082,
+    2.232,
+    0.843,
+    1.333,
+    2.48,
+    1.394,
+    1.948,
+    1.244,
+    1.007,
+    1.601,
+    0.892,
+    0.006,
+    3.304,
+    0.975,
+    0.681,
+    0.839,
+    0.593,
+    0.615,
+    0.876,
+    0.62,
+    1.601,
+    1.186,
+    0.616,
+    0.419,
+    0.837,
+    0.023,
+    1.027,
+    0.599,
+    0.013,
+    0.838,
+    0.014,
+    0.005,
+    0.788,
+    0.877,
+    0.691,
+    0.464,
+    0.534,
+    0.502,
+    0.752,
+    0.711,
+    0.632,
+    2.796,
+    0.59,
+    0.554,
+    0.683,
+    0.774,
+    0.491,
+    0.905,
+    0.546,
+    0.582,
+    1.738,
+    0.462,
+    0.959,
+    0.503,
+    0.673,
+    0.562,
+    1.064,
+    0.596,
+    0.641,
+    0.82,
+    0.682,
+    0.996,
+    0.681
+   ],
+   "clock_after_move": [
+    120.496,
+    118.035,
+    118.503,
+    116.492,
+    116.975,
+    117.466,
+    117.962,
+    115.921,
+    113.369,
+    111.074,
+    111.537,
+    109.555,
+    106.966,
+    103.863,
+    102.695,
+    99.429,
+    99.903,
+    97.146,
+    95.324,
+    95.803,
+    94.549,
+    92.261,
+    90.239,
+    88.789,
+    87.421,
+    85.322,
+    83.347,
+    80.509,
+    80.998,
+    76.6,
+    75.306,
+    74.483,
+    73.557,
+    72.615,
+    70.863,
+    71.359,
+    66.276,
+    65.438,
+    63.939,
+    62.831,
+    62.023,
+    61.006,
+    60.403,
+    59.733,
+    59.068,
+    58.129,
+    56.559,
+    54.686,
+    53.581,
+    52.606,
+    51.239,
+    49.501,
+    48.275,
+    48.77,
+    47.812,
+    46.912,
+    45.456,
+    44.126,
+    43.806,
+    42.802,
+    42.058,
+    41.435,
+    40.923,
+    40.477,
+    39.972,
+    39.411,
+    38.668,
+    37.846,
+    37.264,
+    35.532,
+    35.189,
+    34.356,
+    32.376,
+    31.482,
+    30.034,
+    29.29,
+    28.783,
+    27.682,
+    27.29,
+    27.784,
+    24.98,
+    24.505,
+    24.324,
+    23.985,
+    23.892,
+    23.777,
+    23.401,
+    23.281,
+    22.18,
+    21.494,
+    21.378,
+    21.459,
+    21.122,
+    21.599,
+    21.072,
+    20.973,
+    21.46,
+    21.122,
+    21.608,
+    22.103,
+    21.815,
+    21.438,
+    21.247,
+    21.283,
+    21.249,
+    21.247,
+    20.995,
+    20.784,
+    20.652,
+    18.356,
+    18.266,
+    18.212,
+    18.029,
+    17.755,
+    17.764,
+    17.359,
+    17.313,
+    17.231,
+    15.993,
+    16.031,
+    15.572,
+    15.569,
+    15.396,
+    15.334,
+    14.77,
+    14.674,
+    14.533,
+    14.213,
+    14.031,
+    13.535,
+    13.354
+   ],
+   "final_clock": 13.354,
+   "site_review_source": "Stockfish 16 \u00b7 depth 16",
+   "site_acpl": 5,
+   "site_accuracy": 98.9,
+   "site_tally": {
+    "brilliant": 1,
+    "best": 49,
+    "excellent": 72,
+    "good": 7,
+    "forced": 0,
+    "inaccuracy": 2,
+    "mistake": 0,
+    "miss": 0,
+    "blunder": 0
+   },
+   "opp_site_acpl": 5,
+   "opp_site_accuracy": 98.9
   }
  ]
 }
