@@ -160,6 +160,7 @@ def main() -> None:
     ap.add_argument("--resume")
     ap.add_argument("--buckets", type=int, default=8)
     ap.add_argument("--quiet-only", action="store_true", help="train only on positions whose best move is quiet")
+    ap.add_argument("--oversample", default=None, help="DIR:K — repeat the chunks of DIR K times per epoch (e.g. a small whole-game set)")
     ap.add_argument("--hidden", type=int, default=512)
     a = ap.parse_args()
 
@@ -169,6 +170,11 @@ def main() -> None:
     if len(files) < 2:
         raise SystemExit("need at least two chunks (one is held out for validation)")
     val_file, train_files = files[-1], files[:-1][: a.chunks]
+    if a.oversample:
+        odir, k = a.oversample.rsplit(":", 1)
+        extra = chunk_files(Path(odir))
+        train_files = train_files + extra * (int(k) - (1 if Path(odir).resolve() in [Path(d).resolve() for d in a.data] else 0))
+        print(f"oversampling {len(extra)} chunks from {odir} x{k}", flush=True)
     print(f"{len(train_files)} training chunks, validation chunk {val_file.name}", flush=True)
 
     vp, vs, vc = load_chunk(val_file, a.quiet_only)
