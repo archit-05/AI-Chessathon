@@ -1,4 +1,4 @@
-STRATEGY 2 - reverse-engineering the top of the AI Chessathon ladder  (2026-09-06 10:24)
+STRATEGY 2 - reverse-engineering the top of the AI Chessathon ladder  (2026-09-06 10:25)
 ====================================================================================================
 Sources: every public rated game of the top 20 (+ us), the site's own per-game review (accuracy,
 ACPL, move tags) and per-position evaluations (site evaluations: Stockfish 16, depth 16, one per
@@ -192,7 +192,7 @@ B. REVERSE-ENGINEERED PROFILES (top 10)
 
 C1. WHERE THE TOP 10 LEAK POINTS (from every rated game; details in the dossiers)
   1. AlphaFish: repeated while +9991 in R32 vs zak; R10 vs Oyinda: peak +821, lost it: worst move
-  44.a5 cost 1000 cp; held a mate score, played 1 moves in under 20 ms and still did not win (R32);
+  44.a5 cost 1000 cp; held a mate score, played 1 move in under 20 ms and still did not win (R32);
   clock under 5 s in 1 of 24 games
   2. Capablanca: R7 vs Dark Sister: peak +465, lost it: worst move 83.Kd2 cost 1000 cp
   3. Anchoa: nothing found: converts, never repeats ahead, never short of time

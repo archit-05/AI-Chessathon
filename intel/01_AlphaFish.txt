@@ -1,6 +1,6 @@
 AlphaFish  (team: Emile Andrieu)  -  rank 1, rating 2462
 ========================================================
-Generated 2026-09-06 10:24 from 24 rated games (rounds 9-32).
+Generated 2026-09-06 10:25 from 24 rated games (rounds 9-32).
 
 IDENTITY
   Bot AlphaFish; team Emile Andrieu; university International; team name reads like a personal name,
@@ -121,10 +121,10 @@ ANALYST NOTES (hand-written 2026-09-06; numbers above are regenerated on every r
   Both visible flaws are endgame technique, not search.  (1) The only loss, R10 as Black vs Oyinda:
   +9.6 with bishop and pawns against connected passers, it allowed 48.c8=Q and played 48...a5??
   instead of 48...Bxc8 with 30 s on the clock: a promotion or board-sync bug in that early build.
-  (2) The R32 draw as Black vs zak (rank 17): a queen and a knight up, a forced mate found at own
-  move 55 but not played, then every move from 58 on took 2-14 ms (Qf3+, Qd5+, Qd6+, Qd4, Qd2+, Qd4,
-  Nd5) until threefold repetition with +9991 on the board and 27 s left.  Once its search returns
-  a mate score it plays instantly and does not avoid repeating positions.
+  (2) The R32 draw as Black vs zak (rank 17): a queen and a knight up (+45 by the site's numbers),
+  a forced mate available at own move 55 but not played, then every move from 58 on took 2-14 ms
+  (Qf3+, Qd5+, Qd6+, Qd4, Qd2+, Qd4, Nd5) until threefold repetition with a mate on the board and
+  27 s left.  With a decisive score it plays instantly and does not avoid repeating positions.
   Use: we will usually be the lost side.  Never simplify into a forced mate; keep the king running
   and give the checks that recreate positions, and let its mate-score behaviour hand over the half
   point.  Otherwise it is the best engine on the ladder (CPL 6.5, 0.1% blunders, unbeaten vs the

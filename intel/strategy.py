@@ -168,7 +168,7 @@ def leaks(focus) -> list[str]:
         instant_mate = [(g, m) for g in t["rated"] if g["score"] < 1.0 for m in g["moves"] if m["cp_before"] >= 9000 and m["time"] is not None and m["time"] < 0.02]
         if instant_mate:
             rounds = sorted({g["round"] for g, _ in instant_mate})
-            items.append(f"held a mate score, played {len(instant_mate)} moves in under 20 ms and still did not win (R{', R'.join(map(str, rounds))})")
+            items.append(f"held a mate score, played {len(instant_mate)} move{'s' if len(instant_mate) != 1 else ''} in under 20 ms and still did not win (R{', R'.join(map(str, rounds))})")
         if tt.get("under5"):
             items.append(f"clock under 5 s in {len(tt['under5'])} of {len(t['rated'])} games")
         if not items:
