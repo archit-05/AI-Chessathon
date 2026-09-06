@@ -1,4 +1,4 @@
-STRATEGY 2 - reverse-engineering the top of the AI Chessathon ladder  (2026-09-06 10:22)
+STRATEGY 2 - reverse-engineering the top of the AI Chessathon ladder  (2026-09-06 10:24)
 ====================================================================================================
 Sources: every public rated game of the top 20 (+ us), the site's own per-game review (accuracy,
 ACPL, move tags) and per-position evaluations (site evaluations: Stockfish 16, depth 16, one per
@@ -189,6 +189,30 @@ B. REVERSE-ENGINEERED PROFILES (top 10)
       19/20 won positions, escaped 0/5 lost ones.
     Versus the top 10: 4-2-3 (56%) in 9 games. Exploit: They convert (19 of 20 won positions turned
       into wins): do not rely on swindles; the game is decided before -300.
+
+C1. WHERE THE TOP 10 LEAK POINTS (from every rated game; details in the dossiers)
+  1. AlphaFish: repeated while +9991 in R32 vs zak; R10 vs Oyinda: peak +821, lost it: worst move
+  44.a5 cost 1000 cp; 68 moves played in under 20 ms while holding a mate score (R9, R11, R12, R13,
+  R14, ...); clock under 5 s in 1 of 24 games
+  2. Capablanca: R7 vs Dark Sister: peak +465, lost it: worst move 83.Kd2 cost 1000 cp; 197 moves
+  played in under 20 ms while holding a mate score (R1, R3, R4, R6, R8, ...)
+  3. Anchoa: 92 moves played in under 20 ms while holding a mate score (R1, R2, R4, R5, R8, ...)
+  4. SoberJackson: R4 vs Fuzzydafool: peak +715, lost it: worst move 17.Kf2 cost 180 cp; R5 vs
+  keep_kann_and_: peak +441, lost it: worst move 30.Qxf7 cost 1000 cp; R16 vs Capablanca: peak
+  +9989, threw it away: move 87.Bg7 (+9987 -> +0); 66 moves played in under 20 ms while holding a
+  mate score (R1, R2, R3, R6, R7, ...); clock under 5 s in 1 of 31 games
+  5. Danya's Disciple: repeated while +542 in R17 vs Dark Sister; repeated while +593 in R18 vs
+  meowfish; 90 moves played in under 20 ms while holding a mate score (R1, R2, R4, R9, R10, ...)
+  6. Loss Preventer: 67 moves played in under 20 ms while holding a mate score (R2, R3, R4, R7, R8,
+  ...)
+  7. Mate in One: 94 moves played in under 20 ms while holding a mate score (R1, R2, R4, R6, R7,
+  ...); clock under 5 s in 6 of 33 games
+  8. Patzer 1.2: R29 vs Dark Sister: peak +542, threw it away: move 84.Kd4 (+542 -> +8); 103 moves
+  played in under 20 ms while holding a mate score (R1, R2, R3, R4, R5, ...)
+  9. test_bot: 48 moves played in under 20 ms while holding a mate score (R5, R7, R10, R13, R21,
+  ...); clock under 5 s in 11 of 27 games
+  10. ms: R28 vs Dark Sister: peak +421, traded down into a dead draw; 155 moves played in under 20
+  ms while holding a mate score (R1, R2, R3, R4, R5, ...); clock under 5 s in 8 of 31 games
 
 C. THE BAR TO CLEAR (top five by rating)
   Top five by rating: AlphaFish, Capablanca, Anchoa, SoberJackson, Danya's Disciple.

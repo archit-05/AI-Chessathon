@@ -152,6 +152,30 @@ def reverse_block(team) -> list[str]:
     return L
 
 
+def leaks(focus) -> list[str]:
+    """Where the top teams actually drop points: regenerated from the per-game data."""
+    L = []
+    for t in focus:
+        d, c, tt = t["d"], t["c"], t["t"]
+        items = []
+        for g in d["rep_ahead"]:
+            items.append(f"repeated while +{g['final_cp']} in {g['url'].rsplit('/', 1)[0] and 'R' + str(g['round'])} vs {(g.get('opponent_bot') or g['opponent'])[:14]}")
+        for g, best, why in c["missed"]:
+            if g["termination"] == "threefold_repetition" and g in d["rep_ahead"]:
+                continue
+            items.append(f"R{g['round']} vs {(g.get('opponent_bot') or g['opponent'])[:14]}: peak {best:+d}, {why}")
+        instant_mate = [(g, m) for g in t["rated"] for m in g["moves"] if m["cp_before"] >= 9000 and m["time"] is not None and m["time"] < 0.02]
+        if instant_mate:
+            rounds = sorted({g["round"] for g, _ in instant_mate})
+            items.append(f"{len(instant_mate)} moves played in under 20 ms while holding a mate score (R{', R'.join(map(str, rounds[:5]))}{', ...' if len(rounds) > 5 else ''})")
+        if tt.get("under5"):
+            items.append(f"clock under 5 s in {len(tt['under5'])} of {len(t['rated'])} games")
+        if not items:
+            items.append("nothing found: converts, never repeats ahead, never short of time")
+        L.append(f"{t['rank']:>2}. {t['bot']}: " + "; ".join(items))
+    return L
+
+
 def bar_to_clear(tops) -> list[str]:
     five = sorted(tops, key=lambda t: -t["rating"])[:5]
     L = []
@@ -284,6 +308,10 @@ def main():
     for t in focus:
         L.extend(reverse_block(t))
         L.append("")
+    L.append(f"C1. WHERE THE TOP {FOCUS} LEAK POINTS (from every rated game; details in the dossiers)")
+    for line in leaks(focus):
+        L.extend(wrap(line))
+    L.append("")
     L.append("C. THE BAR TO CLEAR (top five by rating)")
     for line in bar_to_clear(focus):
         L.extend(wrap(line))
