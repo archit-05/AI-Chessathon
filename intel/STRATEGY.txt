@@ -1,4 +1,4 @@
-STRATEGY 2 - reverse-engineering the top of the AI Chessathon ladder  (2026-09-06 10:19)
+STRATEGY 2 - reverse-engineering the top of the AI Chessathon ladder  (2026-09-06 10:21)
 ====================================================================================================
 Sources: every public rated game of the top 20 (+ us), the site's own per-game review (accuracy,
 ACPL, move tags) and per-position evaluations (site evaluations: Stockfish 16, depth 16, one per
@@ -283,36 +283,40 @@ Dol        L   L   L   .   D   .   D   .   L   .   L   L   .   L   L   .   W   L
 Cor        .   L   D   D   .   L   D   L   L   D   .   D   .   .   .   .   W   .   L   -
   Row's result vs column, oldest game first (W/D/L). Games between top-20 teams:
 
-H. ANALYST SYNTHESIS (hand-written 2026-09-06 09:43; sections A-G are regenerated, this is not)
-  What the top of the ladder actually is (6 Sept, after round 31)
-  - Three systems play at near-engine level: AlphaFish (site ACPL 16, our CPL 6 at 120k nodes,
-    unbeaten against the top ten: 7 wins 3 draws), Capablanca (16 / 10) and Mate in One (16 / 10).
-    SoberJackson and Anchoa are half a class behind (17-20 / 12), then a pack at 20-23.  Every one
-    of them is a classical alpha-beta searcher: no book (only Anchoa plays a fifth of its early
-    moves instantly), no contempt games, nothing exotic in the openings, and a clock policy that
-    spends a fixed 3-4% of what is left, so they play 4 s early and 1-1.5 s by move 40 and finish
-    with 25-45 s unused.  Their strength is uniformly good move quality, not depth bursts.
-  - Nobody at the top is beatable by tricks: 0 repetitions accepted while ahead in the top five,
-    every +300 converted, and no time trouble.  AlphaFish's only loss was a promotion bug in its
-    first build, since fixed.  The mid-table (ranks 6-20) is different: AI Fellow, test_bot and
-    Mate in One do drop under 5 s, Danya's Disciple and make_no_mistakes fade after move 40, and
-    AI Fellow has already given a half point by repeating while ahead.
+H. ANALYST SYNTHESIS (hand-written 2026-09-06 10:21; sections A-G are regenerated, this is not)
+  What the top of the ladder actually is (6 Sept, after round 33, site evaluations for every game)
+  - Three systems play at near-engine level: AlphaFish (site ACPL 17, CPL 6.5, 7 wins 3 draws 0
+    losses against the top ten), Capablanca (16 / 6.8) and Anchoa (19 / 8.3); Mate in One (16 / 10)
+    and SoberJackson (17 / 11) are half a class behind, then a pack at ACPL 20-26.  Every one of
+    them is a classical alpha-beta searcher: no book (only Anchoa plays a fifth of its early moves
+    instantly), nothing exotic in the openings, and a clock policy that spends a fixed 3-4% of what
+    is left, so they play 4 s early and 1-1.5 s by move 40 and finish with 28-44 s unused.  Their
+    strength is uniformly good move quality, not depth bursts.
+  - The top is not beatable by tricks in the middlegame, but it does leak in won endgames: across
+    the top five 90 of 98 positions at +300 were won, and the eight misses are all technique.
+    AlphaFish drew R32 by repetition with a forced mate on the board (playing instantly once it saw
+    the mate score); SoberJackson threw a mate into a repetition against Capablanca in R16 and has
+    3 non-conversions in 22; Danya's Disciple repeated while +500 twice (R17, R18).  Below the top
+    five the leaks widen: Mate in One, test_bot, ms, AI Fellow and Fuzzydafool drop under 5 s in a
+    third of their games, and make_no_mistakes, Magnus Claudeson, Blank Shooter, DolphinBot and
+    Cornelius all accepted repetitions while ahead.
 
   How we beat them (engineering, in priority order)
-  1. Move quality first.  Our v1 sat at site ACPL 82; the arena says v2 beats Stockfish-2400 12/12
-     at the real clock.  The dossier number that decides the final is the 120k-node CPL: the
-     podium is at 6-10 cp, the rest of the top ten at 12-22.  Every eval or search improvement
-     should be judged by this number on the same 300 curated positions the site uses.
-  2. Spend the clock they do not.  A 3-5 s middlegame budget with a swing bonus (they never think
-     longer after a big eval change) and a 10 s floor gives us one to two extra plies on the moves
-     that decide games, with zero flag risk given the 0.5 s increment.  Against AlphaFish this is
-     the only structural edge available: it is playing 1.4 s a move by move 40.
-  3. Repetition policy by opponent tier: positive contempt below the top ten (they hand out draws),
-     zero against the top three when level, and actively seek repetition when worse against them
-     (all five top teams accept level repetitions).  Never repeat while ahead ourselves: we did it
-     three times in the v1 games and it cost us against weaker opponents.
-  4. Do not build for swindles: nobody at the top fails to convert.  A game against a class-A
-     engine is lost at the first -300, so the middlegame evaluation in closed Sicilian, symmetrical
-     English, closed Ruy Lopez and Petroff structures matters more than endgame technique.
-  5. Skip the opening book: 231 curated positions so far, the most common seen five times, and the
-     top 40 cover a third of games.  A correct 1-2 s search out of the curated position is enough.
+  1. Move quality first.  Our v1 sat at site ACPL 82; the two v2 ladder games so far scored 4 and
+     23; the arena says v2 beats Stockfish-2400 12/12 at the real clock.  The number that decides
+     the final is CPL against the site's evaluations: the podium is at 6.5-8.3, the rest of the top
+     ten at 10-18.  Judge every eval or search change by this number on the curated positions.
+  2. Spend the clock they do not.  A 3-5 s middlegame budget with a swing bonus (none of them
+     thinks longer after a big eval change) and a 10 s floor gives us one to two extra plies on the
+     moves that decide games, with zero flag risk given the 0.5 s increment.  Against AlphaFish and
+     Capablanca this is the only structural edge available: they are playing 1.4-1.6 s a move by
+     move 40.  Our own v2 left 95 s unused in R31; fix that before anything else.
+  3. Never repeat while ahead, and hunt repetitions while lost.  The top five accepted 23 level
+     repetitions and 3 while ahead; the mate-score instant-move behaviour of AlphaFish and the
+     technique leaks of SoberJackson and Danya's Disciple are worth real half points.  Positive
+     contempt below the top ten (they hand out draws), zero against the top three when level.
+  4. Do not build for swindles in the middlegame: a game against a class-A engine is lost at the
+     first -300, so the evaluation in closed Sicilian, symmetrical English, closed Ruy Lopez and
+     Petroff structures matters more than anything in the opening.
+  5. Skip the opening book: 231 curated positions so far, the most common seen five times, the top
+     40 cover a third of games.  A correct 1-2 s search out of the curated position is enough.
