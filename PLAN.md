@@ -511,3 +511,8 @@ conversion + endgame suite, book; Tue own-search fine-tune, SF 2600/2800 ladder;
   but short of the target; decision on shipping waits for the quiet real-clock centipawn
   comparison (v2.1 then v3, 12 games each vs Stockfish 2400). Tonight: batch-2 gate, then
   whole-game labelling for a v3b fine-tune.
+- **Sun 6 Sept, 18:15 — evening pipeline chained.** (1) Quiet real-clock centipawn comparison
+  v2.1 vs v3 (12 games each vs Stockfish 2400) → (2) batch-2 gate vs v2.1 (150 games, 3 workers)
+  → (3) Stockfish depth-10 labelling of 2.5M whole-game Elite positions (4 workers) → (4) v3b
+  fine-tune: resume v3, 2 epochs at lr 5e-4 with the whole-game set oversampled ×10. Trainer gained
+  `--oversample DIR:K`. Ship decision for v3 after (1); v3b gate in the morning.
