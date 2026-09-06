@@ -153,7 +153,7 @@ def quality(team):
     q["site_tags"] = tags
     # blunders while level or ahead (tactical oversights rather than desperation)
     q["blunders_not_losing"] = sum(1 for g, m in counted if m["loss"] >= BLUNDER and m["cp_before"] >= -100)
-    worst = sorted(((m["loss"], g, m) for g, m in own_moves(team) if m["loss"] >= 100 and (m["cp_before"] < 1000 or m["cp_after"] < 300)), key=lambda x: -x[0])[:3]
+    worst = sorted(((m["loss"], g, m) for g, m in own_moves(team) if m["loss"] >= 100 and m["cp_before"] > -300 and (m["cp_before"] < 1000 or m["cp_after"] < 300)), key=lambda x: -x[0])[:3]
     q["worst"] = [(g, m) for _, g, m in worst]
     return q
 
@@ -333,7 +333,7 @@ def style(team):
             nxt = mv[i + 1]
             gave = nxt["mat_before"] - m["mat_before"]          # after the opponent's reply
             still = nxt["mat_after"] - m["mat_before"]          # after their own next move too
-            if gave <= -2 and still <= -2 and m["loss"] <= 60 and m["counted"] and m["n"] > 1:
+            if gave <= -2 and still <= -2 and m["loss"] <= 60 and m["counted"] and m["n"] > 1 and abs(m["cp_before"]) <= 300:
                 horizon = mv[i + 2 : i + 10]
                 recovered = any(h["mat_before"] >= m["mat_before"] - 1 for h in horizon) or (g["score"] == 1.0 and any(h["cp_before"] >= m["cp_before"] + 150 for h in horizon))
                 if recovered:
@@ -379,7 +379,19 @@ def spikes(team):
     return out
 
 
+def recent_form(team, k=5):
+    games = sorted(team["rated"], key=lambda g: g["round"])
+    recent, earlier = games[-k:], games[:-k]
+    out = {}
+    for name, gs in (("recent", recent), ("earlier", earlier)):
+        losses = [m["loss"] for g in gs for m in g["moves"] if m["counted"]]
+        out[name] = {"n": len(gs), "rec": rec(gs), "cpl": mean(losses), "bl": pct(sum(1 for x in losses if x >= BLUNDER), len(losses), 1),
+                     "rounds": f"R{gs[0]['round']}-R{gs[-1]['round']}" if gs else "-", "moves": len(losses)}
+    return out
+
+
 def compute(team):
+    team["form"] = recent_form(team)
     team["q"] = quality(team)
     team["t"] = timing(team)
     team["d"] = draws(team)
@@ -413,7 +425,10 @@ def profile(team) -> list[str]:
     elif p[3]["mean"] is not None and p[1]["mean"] is not None and p[1]["mean"] >= 1.5 * max(p[3]["mean"], 5):
         lines.append(f"Weakest early (moves 1-15 mean {p[1]['mean']} cp vs {p[3]['mean']} cp later): no book and a thin opening evaluation.")
     if t.get("n"):
-        if t["q3"] - t["q1"] <= 0.5 and t["max"] <= 3 * t["median"]:
+        fixed_share = bool(t.get("ratio")) and t["ratio"][2] <= 1.4 * t["ratio"][0] and t["ratio"][1] >= 0.6 * t["ratio"][0] and t["q3"] - t["q1"] > 0.5
+        if fixed_share:
+            lines.append(f"Time allocation is a fixed share of the remaining clock (~{t['ratio'][0]:.0f}% per move; median {t['median']} s, max {t['max']} s), so depth shrinks as the game goes on and no extra time goes to critical positions ({f(t['swing_in'][0])} s after a >100 cp swing vs {f(t['calm_in'][0])} s otherwise).")
+        elif t["q3"] - t["q1"] <= 0.5 and t["max"] <= 3 * t["median"]:
             lines.append(f"Time use is nearly fixed ({t['median']} s median, interquartile {t['q1']}-{t['q3']} s, max {t['max']} s): a fixed per-move budget rather than adaptive allocation.")
         elif t["max"] >= 8:
             lines.append(f"Adaptive time use (median {t['median']} s, max {t['max']} s, spends {f(t['swing_in'][0])} s on moves after a >100 cp swing vs {f(t['calm_in'][0])} s otherwise).")
@@ -423,8 +438,8 @@ def profile(team) -> list[str]:
             lines.append(f"Poor clock awareness: {len(t['under5'])} of {len(team['rated'])} games went under 5 s.")
     if d["rep_ahead"]:
         lines.append(f"Repeats while clearly ahead ({len(d['rep_ahead'])} games): no contempt or repetition avoidance in the search.")
-    if o["early_best"] is not None and o["early_instant"] is not None and o["early_instant"] >= 50:
-        lines.append(f"Instant early moves ({o['early_instant']}% of the first six played in under 50 ms): an opening book is in use.")
+    if o["early_best"] is not None and o["early_instant"] is not None and o["early_instant"] >= 15:
+        lines.append(f"Instant early moves ({o['early_instant']:.0f}% of the first six played in under 50 ms): an opening book covers part of the curated positions.")
     return lines
 
 
@@ -452,11 +467,11 @@ def recommendations(team) -> list[str]:
         if t["final_mean"] is not None and t["final_mean"] >= 30 and t["max"] <= 6:
             recs.append(f"They never use their clock (median {t['median']} s a move, {t['final_mean']:.0f} s left at the end). We can out-search them by spending our full budget in sharp positions; there is no way to out-clock them.")
         if t["swing_in"][0] is not None and t["calm_in"][0] is not None and t["swing_in"][0] <= 1.1 * t["calm_in"][0]:
-            recs.append("They do not think longer in critical positions: create tactical crises rather than slow squeezes, since our extra time per critical move buys real depth.")
+            recs.append(f"No extra time goes to critical positions ({f(t['swing_in'][0])} s after a big swing vs {f(t['calm_in'][0])} s otherwise): our search can spend several times their budget on the few moves that decide a game, so prefer positions where one precise move matters over long manoeuvring.")
     if q["blunders_not_losing"] >= 3:
         recs.append(f"Tactics work: {q['blunders_not_losing']} blunders (>= {BLUNDER} cp) came from level or better positions, so they can be out-calculated. Keep the position sharp.")
     elif q["blunder_pct"] is not None and q["blunder_pct"] <= 0.5:
-        recs.append(f"Do not gamble on tactics: only {plural(q['blunders'], 'blunder')} in {q['n']} measured moves. Play solid, avoid speculative sacrifices, and wait for the endgame.")
+        recs.append(f"Do not count on gifts: only {plural(q['blunders'], 'blunder')} in {q['n']} measured moves. Keep our play sound; speculative sacrifices will be refuted.")
     if o["under"]:
         fams = ", ".join(f"{fam} ({rec(gs)})" for fam, gs in o["under"])
         recs.append(f"Opening families where they score badly: {fams}. Nothing to choose here (positions are assigned), but expect our best chances there.")
@@ -496,6 +511,11 @@ def render_dossier(team, targets_by_uuid, ladder):
                 add(f"    R{r} {dd:+d} -> {v} ({what})")
         else:
             add("  No 100+ point jump between consecutive rounds.")
+    fr = team["form"]
+    if fr["earlier"]["n"] and fr["recent"]["moves"]:
+        add(f"  Recent form (last {fr['recent']['n']} games, {fr['recent']['rounds']}): {fr['recent']['rec']}, loss {f(fr['recent']['cpl'])} cp/move, blunders {f(fr['recent']['bl'])}%"
+            f" vs earlier ({fr['earlier']['rounds']}): {fr['earlier']['rec']}, {f(fr['earlier']['cpl'])} cp/move, {f(fr['earlier']['bl'])}%"
+            + (" - the provisional flag says the last games are a new build" if team.get("provisional") else ""))
     add("")
     # Results by tier
     add("RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)")
@@ -551,8 +571,9 @@ def render_dossier(team, targets_by_uuid, ladder):
             flags.append(f"leaves ~{t['final_mean']:.0f} s unused")
         if len(t["under5"]) >= 2:
             flags.append("gets into time trouble")
-        if t["bands"]["<10s"][1] >= 10 and t["bands"]["<10s"][0] is not None and t["bands"]["<10s"][0] < 0.4:
-            flags.append("panics under 10 s (sub-0.4 s moves)")
+        fixed_share = bool(t.get("ratio")) and t["ratio"][2] <= 1.4 * t["ratio"][0] and t["ratio"][1] >= 0.6 * t["ratio"][0] and t["q3"] - t["q1"] > 0.5
+        if t["bands"]["<10s"][1] >= 10 and t["bands"]["<10s"][0] is not None and t["bands"]["<10s"][0] < 0.25 and not fixed_share:
+            flags.append("panics under 10 s (sub-0.25 s moves)")
         if t["swing_in"][0] is not None and t["calm_in"][0] is not None and t["swing_in"][0] >= 1.5 * t["calm_in"][0]:
             flags.append("thinks longer when the position gets sharp")
         add("  Exploitable: " + ("; ".join(flags) if flags else "nothing obvious"))

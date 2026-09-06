@@ -1,6 +1,6 @@
 SoberJackson  (team: Sobriety)  -  rank 5, rating 2182
 ======================================================
-Generated 2026-09-06 08:00 from 29 rated games (rounds 1-30, 8 of 30 analysed with Stockfish so
+Generated 2026-09-06 08:32 from 29 rated games (rounds 1-30, 8 of 30 analysed with Stockfish so
   far), 1 void game(s) ignored: R9.
 
 IDENTITY
@@ -13,6 +13,9 @@ IDENTITY
     R2 +109 -> 1687 (win vs Loki 3.0)
     R10 +119 -> 1941 (win vs Patzer 1.2)
     R24 -118 -> 2162 (loss vs Loss Preventer)
+  Recent form (last 5 games, R26-R30): 2-3-0 (70%), loss 6.8 cp/move, blunders 0.0% vs earlier
+    (R1-R25): 15-5-4 (73%), 12.6 cp/move, 0.2% - the provisional flag says the last games are a new
+    build
 
 RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
   vs top 10 : 3-4-1 (62%) over 8 games
@@ -37,7 +40,7 @@ MOVE QUALITY (Stockfish 19, 120k nodes per position, loss clipped at 1000, posit
   own moves 41+     : n  217, mean 12.6 cp, median 0 cp, blunders 0.0%
   as white          : n  309, mean 15.3 cp, median 0 cp, blunders 0.3%
   as black          : n  228, mean 7.9 cp, median 0 cp, blunders 0.0%
-  Worst moves: R16 87.Bg7 (+1134 -> +0); R17 78.Kf2 (-1414 -> -9989); R17 79.Rg8 (-6291 -> -9988)
+  Worst moves: R16 87.Bg7 (+1134 -> +0); R10 36.Rxg7 (+426 -> +153); R13 23.Qg4 (+21 -> -169)
   Site's own tags on their moves: blunder 0, mistake 2, miss 0, inaccuracy 14 of 617
 
 TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
@@ -98,7 +101,8 @@ LIKELY ENGINE PROFILE
 HOW TO PLAY THEM
   1. They only repeat when worse (1 games), so when ahead avoid any repetition and keep pieces on;
   do not expect gifts.
-  2. They do not think longer in critical positions: create tactical crises rather than slow
-  squeezes, since our extra time per critical move buys real depth.
-  3. Do not gamble on tactics: only 1 blunder in 537 measured moves. Play solid, avoid speculative
-  sacrifices, and wait for the endgame.
+  2. No extra time goes to critical positions (1.0 s after a big swing vs 1.6 s otherwise): our
+  search can spend several times their budget on the few moves that decide a game, so prefer
+  positions where one precise move matters over long manoeuvring.
+  3. Do not count on gifts: only 1 blunder in 537 measured moves. Keep our play sound; speculative
+  sacrifices will be refuted.

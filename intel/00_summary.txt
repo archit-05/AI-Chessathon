@@ -1,4 +1,4 @@
-AI CHESSATHON TOP-10 INTEL SUMMARY  (2026-09-06 08:00; leaderboard fetched 2026-09-06T06:07:09Z)
+AI CHESSATHON TOP-10 INTEL SUMMARY  (2026-09-06 08:32; leaderboard fetched 2026-09-06T06:07:09Z)
 ====================================================================================================
 CPL = mean centipawn loss per own move (Stockfish 19, 120k nodes, positions inside +-800); Bl% =
   moves losing >= 200 cp;
@@ -8,9 +8,9 @@ s/mv = mean seconds per own move; RepA = draws by repetition while more than +15
 LEAGUE TABLE
   # Bot                Rating   Record   CPL   Bl%  s/mv Draw% RepA NonC
 ------------------------------------------------------------------------
-  1 AlphaFish            2478   16-5-1   6.0   0.1  1.50    23    0    1  *
-  2 Anchoa               2386   17-7-4  15.3   0.7  1.73    25    0    0  *
-  3 Capablanca           2344   20-6-3  10.6   0.3  1.79    21    0    0
+  1 AlphaFish            2478   16-5-1   6.9   0.1  1.64    23    0    1  *
+  2 Anchoa               2386   17-7-4  11.8   0.7  1.69    25    0    0  *
+  3 Capablanca           2344   20-6-3  10.0   0.2  1.81    21    0    0
   4 Mate in One          2183   20-8-2   9.6   0.2  1.96    27    0    0
   5 SoberJackson         2182   17-8-4  12.2   0.2  1.57    28    0    1  *
   6 make_no_mistakes     2177   13-8-8  17.0   1.3  1.75    28    0    1  *
@@ -18,8 +18,8 @@ LEAGUE TABLE
   8 Danya's Disciple     2156   13-9-8  21.6   1.4  2.48    30    0    0
   9 test_bot             2125   11-8-5  13.0   0.5  2.32    33    0    0
  10 AI Fellow            2101  14-10-4   6.4   0.2  1.81    36    1    1
-  Stockfish analysis still incomplete for: AlphaFish (11/22 games), Anchoa (11/30 games), Capablanca
-    (12/30 games), Mate in One (9/30 games), SoberJackson (8/30 games), make_no_mistakes (8/30
+  Stockfish analysis still incomplete for: AlphaFish (20/22 games), Anchoa (20/30 games), Capablanca
+    (19/30 games), Mate in One (9/30 games), SoberJackson (8/30 games), make_no_mistakes (8/30
     games), Patzer 1.2 (9/30 games), Danya's Disciple (9/30 games), test_bot (8/26 games), AI Fellow
     (8/30 games), BINI Alpha (0/7 games). Re-run ./refresh.sh --no-scrape to finish.
 
@@ -30,7 +30,7 @@ OUR ROW
     climbs through weaker teams first.
 
 KEY FINDINGS
-  1. Move quality spread: AlphaFish loses 6.0 cp per move, Danya's Disciple 21.6 cp. Blunder rates
+  1. Move quality spread: AI Fellow loses 6.4 cp per move, Danya's Disciple 21.6 cp. Blunder rates
   run 0.1-1.4%.
   2. Free half points: AI Fellow (1) accepted repetitions while more than +150. Against them, when
   worse, aim for repetition.
@@ -155,9 +155,9 @@ AI Fell         D       .       D       D       D       L       D       W       
 
 TIME MANAGEMENT (top 10)
 Bot                 mean   med   max       q1-q3   end   min  <5s inst%  swing   calm
-AlphaFish            1.5  1.24   4.4   0.65-2.18    33   5.6    1   6.4   1.07   1.50
-Anchoa              1.73  1.46  10.2   0.73-2.54    45  11.9    0  17.9   1.62   1.74
-Capablanca          1.79  1.48  11.5   0.82-2.45    28   9.0    0   6.3   1.26   1.80
+AlphaFish           1.64  1.43   4.4   0.75-2.40    33   5.6    1   7.2   1.33   1.63
+Anchoa              1.69  1.48  10.2   0.70-2.46    45  11.9    0  16.3   1.57   1.70
+Capablanca          1.81  1.56  11.5   0.84-2.51    28   9.0    0  11.2   1.19   1.83
 Mate in One         1.96  1.51   8.5   0.66-2.86    24   5.0    5   4.8   1.33   1.94
 SoberJackson        1.57  1.26   7.7   0.79-1.96    39   0.9    1   7.1   1.00   1.62
 make_no_mistakes    1.75  1.45  11.1   0.56-2.45    29  13.0    0  15.0   1.27   1.79
@@ -170,9 +170,9 @@ AI Fellow           1.81  0.79  11.3   0.51-2.40    11   1.3   14   4.3   1.17  
 
 DRAWS AND CONVERSION (top 10)
 Bot                draws 3fold fifty insuf  repA  repB  won+  nonC lost- saved
-AlphaFish              5     3     1     1     0     0     8     1     1     0
-Anchoa                 7     4     2     1     0     0     6     0     4     1
-Capablanca             6     5     1     0     0     0     6     0     2     1
+AlphaFish              5     3     1     1     0     0    15     1     1     0
+Anchoa                 7     4     2     1     0     0    11     0     5     2
+Capablanca             6     5     1     0     0     0    12     0     2     1
 Mate in One            8     5     2     1     0     0     4     0     1     0
 SoberJackson           8     6     2     0     0     1     4     1     3     2
 make_no_mistakes       8     4     2     2     0     0     3     1     4     0
@@ -184,7 +184,7 @@ AI Fellow             10     6     1     3     1     0     2     1     1     0
     those not won; lost- = games at -300; saved = those not lost
 
 WHAT CHANGED SINCE LAST REFRESH
-Compared with history/summary_20260906_0758.txt:
+Compared with history/summary_20260906_0831.txt:
   no changes
 
 FILES: 01_AlphaFish.txt, 02_Anchoa.txt, 03_Capablanca.txt, 04_Mate_in_One.txt, 05_SoberJackson.txt,

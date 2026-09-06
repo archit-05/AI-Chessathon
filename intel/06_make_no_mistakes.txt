@@ -1,6 +1,6 @@
 make_no_mistakes  (team: Make_no_mistakes)  -  rank 6, rating 2177
 ==================================================================
-Generated 2026-09-06 08:00 from 29 rated games (rounds 1-30, 8 of 30 analysed with Stockfish so
+Generated 2026-09-06 08:32 from 29 rated games (rounds 1-30, 8 of 30 analysed with Stockfish so
   far), 1 void game(s) ignored: R18.
 
 IDENTITY
@@ -13,6 +13,9 @@ IDENTITY
     R12 +150 -> 1780 (win vs Magnus Claudeson)
     R19 +124 -> 1978 (win vs meowfish)
     R26 +131 -> 2064 (win vs AI Fellow)
+  Recent form (last 5 games, R26-R30): 3-1-1 (70%), loss 19.8 cp/move, blunders 2.6% vs earlier
+    (R1-R25): 10-7-7 (56%), 16.2 cp/move, 0.9% - the provisional flag says the last games are a new
+    build
 
 RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
   vs top 10 : 2-2-4 (38%) over 8 games
@@ -37,7 +40,7 @@ MOVE QUALITY (Stockfish 19, 120k nodes per position, loss clipped at 1000, posit
   own moves 41+     : n  242, mean 17.6 cp, median 0 cp, blunders 1.7%
   as white          : n  210, mean 27.3 cp, median 3 cp, blunders 1.9%
   as black          : n  341, mean 10.6 cp, median 0 cp, blunders 0.9%
-  Worst moves: R22 62.Nf3 (-748 -> -2966); R24 58.Kf5 (-3096 -> -9992); R25 67.Ba6 (-1241 -> -9986)
+  Worst moves: R22 59.b7 (-23 -> -571); R24 43.Qd8 (+0 -> -373); R29 32.g6 (-161 -> -464)
   Site's own tags on their moves: blunder 4, mistake 6, miss 0, inaccuracy 20 of 637
 
 TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
@@ -94,13 +97,16 @@ LIKELY ENGINE PROFILE
   horizon problems.
   Adaptive time use (median 1.45 s, max 11.1 s, spends 1.3 s on moves after a >100 cp swing vs 1.8 s
   otherwise).
+  Instant early moves (31% of the first six played in under 50 ms): an opening book covers part of
+  the curated positions.
 
 HOW TO PLAY THEM
   1. Head for long games: their loss per move rises from 9.8 cp early to 17.6 cp after move 40.
   Avoid early mass exchanges only if we are not better; otherwise simplify into a queenless
   middlegame and outplay them late.
-  2. They do not think longer in critical positions: create tactical crises rather than slow
-  squeezes, since our extra time per critical move buys real depth.
+  2. No extra time goes to critical positions (1.3 s after a big swing vs 1.8 s otherwise): our
+  search can spend several times their budget on the few moves that decide a game, so prefer
+  positions where one precise move matters over long manoeuvring.
   3. Tactics work: 5 blunders (>= 200 cp) came from level or better positions, so they can be
   out-calculated. Keep the position sharp.
   4. Opening families where they score badly: London (1-0-2 (33%)). Nothing to choose here

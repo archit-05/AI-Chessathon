@@ -1,6 +1,6 @@
 AI Fellow  (team: AI Fellows)  -  rank 10, rating 2101
 ======================================================
-Generated 2026-09-06 08:00 from 28 rated games (rounds 1-30, 8 of 30 analysed with Stockfish so
+Generated 2026-09-06 08:32 from 28 rated games (rounds 1-30, 8 of 30 analysed with Stockfish so
   far), 2 void game(s) ignored: R12, R14.
 
 IDENTITY
@@ -8,6 +8,8 @@ IDENTITY
   Rank 10 of 299, rating 2101, record 14-10-4 in 28 rated games.
   Rating trajectory: entered R1 at 1575, peak 2101 (R30), now 2101 (R30).
   No 100+ point jump between consecutive rounds.
+  Recent form (last 5 games, R26-R30): 3-1-1 (70%), loss 20.1 cp/move, blunders 1.1% vs earlier
+    (R1-R25): 11-9-3 (67%), 4.1 cp/move, 0.0%
 
 RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
   vs top 10 : 1-6-1 (50%) over 8 games
@@ -32,7 +34,7 @@ MOVE QUALITY (Stockfish 19, 120k nodes per position, loss clipped at 1000, posit
   own moves 41+     : n  348, mean 5.1 cp, median 0 cp, blunders 0.3%
   as white          : n  163, mean 11.0 cp, median 0 cp, blunders 0.6%
   as black          : n  457, mean 4.8 cp, median 0 cp, blunders 0.0%
-  Worst moves: R26 71.Kxc4 (-1367 -> -9165); R26 68.Kb4 (-749 -> -1198); R26 72.Kd4 (-8008 -> -8317)
+  Worst moves: R17 71.Bc1 (+919 -> +695); R17 66.Rh2+ (+949 -> +743); R17 68.Kb4 (+825 -> +675)
   Site's own tags on their moves: blunder 0, mistake 1, miss 0, inaccuracy 4 of 647
 
 TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
@@ -90,13 +92,16 @@ LIKELY ENGINE PROFILE
   otherwise).
   Poor clock awareness: 14 of 28 games went under 5 s.
   Repeats while clearly ahead (1 games): no contempt or repetition avoidance in the search.
+  Instant early moves (15% of the first six played in under 50 ms): an opening book covers part of
+  the curated positions.
 
 HOW TO PLAY THEM
   1. When we are worse, steer for repetitions: they accepted threefolds while ahead in R17. Keep our
   own contempt positive so we never return the favour.
   2. Time pressure works: 14 games dipped under 5 s (R1, R10, R11, R16, R17, R18). Keep games long
   and complicated; their play under 10 s averages 0.6 s a move.
-  3. They do not think longer in critical positions: create tactical crises rather than slow
-  squeezes, since our extra time per critical move buys real depth.
-  4. Do not gamble on tactics: only 1 blunder in 620 measured moves. Play solid, avoid speculative
-  sacrifices, and wait for the endgame.
+  3. No extra time goes to critical positions (1.2 s after a big swing vs 1.8 s otherwise): our
+  search can spend several times their budget on the few moves that decide a game, so prefer
+  positions where one precise move matters over long manoeuvring.
+  4. Do not count on gifts: only 1 blunder in 620 measured moves. Keep our play sound; speculative
+  sacrifices will be refuted.

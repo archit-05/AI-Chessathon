@@ -1,6 +1,6 @@
 Mate in One  (team: Mate in One)  -  rank 4, rating 2183
 ========================================================
-Generated 2026-09-06 08:00 from 30 rated games (rounds 1-30, 9 of 30 analysed with Stockfish so
+Generated 2026-09-06 08:32 from 30 rated games (rounds 1-30, 9 of 30 analysed with Stockfish so
   far).
 
 IDENTITY
@@ -33,7 +33,7 @@ MOVE QUALITY (Stockfish 19, 120k nodes per position, loss clipped at 1000, posit
   own moves 41+     : n  204, mean 5.0 cp, median 0 cp, blunders 0.0%
   as white          : n  282, mean 9.2 cp, median 0 cp, blunders 0.0%
   as black          : n  206, mean 10.1 cp, median 0 cp, blunders 0.5%
-  Worst moves: R18 68.Kd2 (-876 -> -9992); R18 72.Kd2 (-1230 -> -2510); R18 73.Kxd1 (-1340 -> -9989)
+  Worst moves: R13 22.d5 (+220 -> -21); R18 25.Re2 (-81 -> -274); R13 52.Rf1 (-94 -> -248)
   Site's own tags on their moves: blunder 0, mistake 1, miss 2, inaccuracy 9 of 552
 
 TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
@@ -79,8 +79,8 @@ STYLE
   Captures on 18.1% of own moves, checks on 10.7%; average game 126 plies (63 own moves), longest
     277 plies (R21)
   Wins: 20 (20 by checkmate, 0 by opponent failure); losses: 2 (2 by checkmate, 0 by own failure)
-  Sacrifices (gave >= 2 pawns of material without losing eval, then recovered): 4 -> R13 30.Qb8, R14
-    28.Rg1, R21 14.Bxg5, R22 9.Rxb5
+  Sacrifices (gave >= 2 pawns of material without losing eval, then recovered): 3 -> R13 30.Qb8, R21
+    14.Bxg5, R22 9.Rxb5
   When ahead (> +150) material leaves the board at 1.72 pawns per own move (level: 0.61); capture
     rate 34.1% vs 13.3% level -> simplifies when ahead
 
@@ -94,9 +94,10 @@ LIKELY ENGINE PROFILE
 HOW TO PLAY THEM
   1. Time pressure works: 5 games dipped under 5 s (R6, R10, R13, R18, R21). Keep games long and
   complicated; their play under 10 s averages 0.6 s a move.
-  2. They do not think longer in critical positions: create tactical crises rather than slow
-  squeezes, since our extra time per critical move buys real depth.
-  3. Do not gamble on tactics: only 1 blunder in 488 measured moves. Play solid, avoid speculative
-  sacrifices, and wait for the endgame.
+  2. No extra time goes to critical positions (1.3 s after a big swing vs 1.9 s otherwise): our
+  search can spend several times their budget on the few moves that decide a game, so prefer
+  positions where one precise move matters over long manoeuvring.
+  3. Do not count on gifts: only 1 blunder in 488 measured moves. Keep our play sound; speculative
+  sacrifices will be refuted.
   4. Opening families where they score badly: French (2-2-1 (60%)). Nothing to choose here
   (positions are assigned), but expect our best chances there.

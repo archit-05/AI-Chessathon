@@ -1,0 +1,73 @@
+AI CHESSATHON MATCH LOG
+=======================
+
+MATCH
+  Round          Rated 31
+  Team           Opus Carlsen
+  Colour         White
+  Opponent       Minimax Three
+  Opening        French Tarrasch
+  Start FEN      r1bqkbnr/pp3ppp/2n5/2pp4/3P4/P4N2/1PPN1PPP/R1BQKB1R b KQkq - 2 6
+  You moved      Second
+  Machine        w-b3a6a9
+  Finished       2026-09-06 07:30:39 UTC
+  Match ID       8e8169e3-0dfc-4512-ad84-71084736ec4a
+
+INIT
+  Ready in       25.0 s
+  Budget         90.0 s
+  Used           28 percent
+
+CLOCK
+  Base           120.0 s plus 0.5 s per move
+  Moves          16
+  Time used      32.8 s
+  Slowest        6.9 s on move 8
+  Fastest        0.0 s on move 14
+  Average        2.1 s
+  Left at end    95.2 s
+
+RESULT
+  Won by checkmate
+  Game lasted 35.0 s
+
+MOVES
+    #  move          time     clock left
+    1  Be2           3.1 s      117.4 s
+    2  Nb3           2.0 s      115.9 s
+    3  Nbxd4         3.2 s      113.2 s
+    4  Qxd4          2.2 s      111.5 s
+    5  O-O           5.6 s      106.4 s
+    6  Re1           2.5 s      104.4 s
+    7  Nxe1          0.0 s      104.9 s
+    8  Nd3           6.9 s       98.5 s
+    9  Bg5           1.8 s       97.2 s
+   10  Qxd5+         1.8 s       95.9 s
+   11  Qxd3          1.9 s       94.5 s
+   12  Rd1           1.8 s       93.2 s
+   13  Qc4+          0.0 s       93.7 s
+   14  Rxd8+         0.0 s       94.2 s
+   15  Bf4+          0.0 s       94.7 s
+   16  Qxc7#         0.0 s       95.2 s
+
+OUTPUT
+  890 bytes on stderr
+
+  bini-2.0 ready: import+compile 24.6s (compile 23.8s), nnue=on
+  bini-2.0 m1 d17 f1e2 49cp 2174627n 3072ms left 120000ms
+  bini-2.0 m2 d16 d2b3 53cp 1432669n 1998ms left 117426ms
+  bini-2.0 m3 d17 b3d4 45cp 2342556n 3195ms left 115927ms
+  bini-2.0 m4 d16 d1d4 81cp 1517787n 2203ms left 113231ms
+  bini-2.0 m5 d17 e1g1 104cp 3864842n 5634ms left 111526ms
+  bini-2.0 m6 d20 f1e1 232cp 1870085n 2496ms left 106391ms
+  bini-2.0 m8 d17 e1d3 465cp 4410153n 6882ms left 104890ms
+  bini-2.0 m9 d18 c1g5 732cp 1227394n 1796ms left 98507ms
+  bini-2.0 m10 d17 d4d5 969cp 1195106n 1795ms left 97209ms
+  bini-2.0 m11 d19 d5d3 1032cp 1340472n 1880ms left 95913ms
+  bini-2.0 m12 d15 a1d1 1277cp 1203839n 1818ms left 94532ms
+  bini-2.0 m13 d7 d3c4 29993cp 1700n 4ms left 93212ms
+  bini-2.0 m14 d5 d1d8 29995cp 519n 1ms left 93707ms
+  bini-2.0 m15 d3 g5f4 29997cp 147n 1ms left 94204ms
+  bini-2.0 m16 d1 c4c7 29999cp 39n 1ms left 94702ms
+
+Email hello@aichessathon.com with this file if anything here is unclear.

@@ -1,6 +1,6 @@
 Danya's Disciple  (team: Danya's Disciple)  -  rank 8, rating 2156
 ==================================================================
-Generated 2026-09-06 08:00 from 30 rated games (rounds 1-30, 9 of 30 analysed with Stockfish so
+Generated 2026-09-06 08:32 from 30 rated games (rounds 1-30, 9 of 30 analysed with Stockfish so
   far).
 
 IDENTITY
@@ -14,6 +14,8 @@ IDENTITY
     R20 -108 -> 1844 (loss vs Anchoa)
     R21 +102 -> 1946 (win vs Loss Preventer)
     R25 +125 -> 2091 (win vs checkers)
+  Recent form (last 5 games, R26-R30): 1-3-1 (50%), loss 16.5 cp/move, blunders 2.2% vs earlier
+    (R1-R25): 12-6-7 (60%), 23.9 cp/move, 1.0%
 
 RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
   vs top 10 : 0-4-5 (22%) over 9 games
@@ -39,7 +41,7 @@ MOVE QUALITY (Stockfish 19, 120k nodes per position, loss clipped at 1000, posit
   own moves 41+     : n   40, mean 23.7 cp, median 3 cp, blunders 0.0%
   as white          : n  206, mean 22.8 cp, median 3 cp, blunders 1.9%
   as black          : n   82, mean 18.6 cp, median 3 cp, blunders 0.0%
-  Worst moves: R3 35.Qe6 (-956 -> -9993); R8 63.a4 (-8026 -> -9990); R20 66.h5+ (-827 -> -9990)
+  Worst moves: R30 19.Bd2 (+44 -> -393); R22 9.axb5 (+22 -> -370); R20 39.Ba7 (-126 -> -300)
   Site's own tags on their moves: blunder 3, mistake 3, miss 0, inaccuracy 14 of 341
 
 TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
@@ -93,6 +95,9 @@ LIKELY ENGINE PROFILE
   evaluation. Confidence low.
   Quality drops late (phase 41+ mean 23.7 cp vs 14.0 cp in the first 15 moves): endgame evaluation
   or horizon problems.
+  Time allocation is a fixed share of the remaining clock (~4% per move; median 2.45 s, max 4.8 s),
+  so depth shrinks as the game goes on and no extra time goes to critical positions (1.6 s after a
+  >100 cp swing vs 2.5 s otherwise).
 
 HOW TO PLAY THEM
   1. Head for long games: their loss per move rises from 14.0 cp early to 23.7 cp after move 40.
@@ -100,5 +105,6 @@ HOW TO PLAY THEM
   middlegame and outplay them late.
   2. They never use their clock (median 2.45 s a move, 34 s left at the end). We can out-search them
   by spending our full budget in sharp positions; there is no way to out-clock them.
-  3. They do not think longer in critical positions: create tactical crises rather than slow
-  squeezes, since our extra time per critical move buys real depth.
+  3. No extra time goes to critical positions (1.6 s after a big swing vs 2.5 s otherwise): our
+  search can spend several times their budget on the few moves that decide a game, so prefer
+  positions where one precise move matters over long manoeuvring.

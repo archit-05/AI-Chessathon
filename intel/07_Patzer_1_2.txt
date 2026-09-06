@@ -1,6 +1,6 @@
 Patzer 1.2  (team: Gijs Smit)  -  rank 7, rating 2158
 =====================================================
-Generated 2026-09-06 08:00 from 30 rated games (rounds 1-30, 9 of 30 analysed with Stockfish so
+Generated 2026-09-06 08:32 from 30 rated games (rounds 1-30, 9 of 30 analysed with Stockfish so
   far).
 
 IDENTITY
@@ -34,7 +34,7 @@ MOVE QUALITY (Stockfish 19, 120k nodes per position, loss clipped at 1000, posit
   own moves 41+     : n  235, mean 10.9 cp, median 0 cp, blunders 0.4%
   as white          : n  234, mean 14.2 cp, median 0 cp, blunders 1.7%
   as black          : n  339, mean 12.2 cp, median 0 cp, blunders 0.6%
-  Worst moves: R8 45.Kd7 (-1393 -> -9994); R10 64.Kd5 (-3442 -> -6775); R10 69.Kf5 (-6178 -> -7366)
+  Worst moves: R21 73.Kg6 (-13 -> -628); R11 31.Ref1 (-179 -> -647); R11 29.g4 (+289 -> -136)
   Site's own tags on their moves: blunder 6, mistake 2, miss 1, inaccuracy 18 of 647
 
 TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
@@ -92,7 +92,8 @@ LIKELY ENGINE PROFILE
   otherwise).
 
 HOW TO PLAY THEM
-  1. They do not think longer in critical positions: create tactical crises rather than slow
-  squeezes, since our extra time per critical move buys real depth.
+  1. No extra time goes to critical positions (1.3 s after a big swing vs 1.7 s otherwise): our
+  search can spend several times their budget on the few moves that decide a game, so prefer
+  positions where one precise move matters over long manoeuvring.
   2. Tactics work: 3 blunders (>= 200 cp) came from level or better positions, so they can be
   out-calculated. Keep the position sharp.

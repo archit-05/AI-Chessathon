@@ -417,3 +417,8 @@ conversion + endgame suite, book; Tue own-search fine-tune, SF 2600/2800 ladder;
   ≈ +63 ±49, 0 failures. Packaged as `submission_v2.1_*.zip`. Self-play draws: 31 fifty-move,
   32 threefold — the conversion package (mop-up on the net, fifty-move scaling, position-aware
   contempt; endgame suite 11/11 vs Stockfish's defence) is now gating against this build.
+- **Sun 6 Sept, 08:45 — first rated game of v2.** Round 31 vs minimax three: win by checkmate in
+  22 moves; init 25.0 s, 689k nodes/s, depth 16–17 in the opening, 6.9 s on the critical move,
+  mate seen from move 13, 95 s left. Rating 1269 → 1353. v3 training running (202 chunks,
+  ~60 min/epoch, 6 epochs). Conversion package gate vs batch 1 trending negative at 40 games
+  (41%, −61 ±114); split variants prepared (endgame terms only / contempt only).
