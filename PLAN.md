@@ -516,3 +516,11 @@ conversion + endgame suite, book; Tue own-search fine-tune, SF 2600/2800 ladder;
   → (3) Stockfish depth-10 labelling of 2.5M whole-game Elite positions (4 workers) → (4) v3b
   fine-tune: resume v3, 2 epochs at lr 5e-4 with the whole-game set oversampled ×10. Trainer gained
   `--oversample DIR:K`. Ship decision for v3 after (1); v3b gate in the morning.
+- **Sun 6 Sept, 18:30 — R40, first v2-era loss, analysed.** Black vs Parable (1799) from a
+  Grünfeld start already −24 for Black; Stockfish move-by-move: our errors 17...f5 (−160),
+  20...cxb4 (−73), 21...b5 (−106), 26...b4 (−85), 31...Bh6 (−171), collapse from move 38. Every
+  one played with 75+ s on the clock after ~1 s of thought (9 s used in the first 17 own moves):
+  the stable-move discount fires in slow squeezes. Time policy v2.2 (bini_tm): stable discount
+  0.75 instead of 0.6, a danger multiplier ×1.5 when the score fell ≥25 cp since our previous
+  move, a floor of half the budget before the predictive stop, cap ×2.0. Pressure test running.
+  Evaluation side of the same game is v3/v3b's job.
