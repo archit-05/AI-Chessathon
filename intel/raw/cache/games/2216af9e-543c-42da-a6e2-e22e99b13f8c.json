@@ -1,0 +1,182 @@
+{
+ "game": "2216af9e-543c-42da-a6e2-e22e99b13f8c",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"27\"]\n[White \"xx\"]\n[Black \"OctaBasilissa\"]\n[Result \"*\"]\n[FEN \"rnbq1rk1/ppp2pbp/5np1/4p3/2P1P3/2N1BN2/PP2BPPP/R2QK2R b KQ - 1 8\"]\n[SetUp \"1\"]\n[Termination \"unterminated\"]\n\n8... Nbd7 { [%clk 0:01:53.788] } 9. Qc2 { [%clk 0:01:56.989] } 9... h5 { [%clk 0:01:47.2] } 10. O-O { [%clk 0:01:54.78] } 10... a5 { [%clk 0:01:39.277] } 11. Rfd1 { [%clk 0:01:52.832] } 11... Re8 { [%clk 0:01:35.367] } 12. c5 { [%clk 0:01:49.536] } 12... Ng4 { [%clk 0:01:30.576] } 13. Bd2 { [%clk 0:01:46.32] } 13... Ngf6 { [%clk 0:01:25.126] } 14. Nb5 { [%clk 0:01:44.494] } 14... Bf8 { [%clk 0:01:22.276] } 15. Bg5 { [%clk 0:01:41.43] } 15... Ra6 { [%clk 0:01:19.264] } 16. Nc3 { [%clk 0:01:38.218] } 16... Ra8 { [%clk 0:01:15.725] } 17. Nb5 { [%clk 0:01:36.594] } 17... Ra6 { [%clk 0:01:11.159] } 18. Nc3 { [%clk 0:01:33.592] } 18... Ra8 { [%clk 0:01:05.18] } *\n",
+ "opening": "King's Indian Classical",
+ "termination_text": "Unterminated",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 27\u00b7Void",
+ "white_uuid": "26689e56-c9e6-438a-93db-ca5b2c879dc6",
+ "black_uuid": "7be4674f-d434-4919-9dad-50d03ad73a3d",
+ "site_verdicts": [
+  [
+   "Nbd7",
+   "good"
+  ],
+  [
+   "Qc2",
+   "excellent"
+  ],
+  [
+   "h5",
+   "inaccuracy"
+  ],
+  [
+   "O-O",
+   "good"
+  ],
+  [
+   "a5",
+   "inaccuracy"
+  ],
+  [
+   "Rfd1",
+   "excellent"
+  ],
+  [
+   "Re8",
+   "excellent"
+  ],
+  [
+   "c5",
+   "good"
+  ],
+  [
+   "Ng4",
+   "good"
+  ],
+  [
+   "Bd2",
+   "excellent"
+  ],
+  [
+   "Ngf6",
+   "good"
+  ],
+  [
+   "Nb5",
+   "best"
+  ],
+  [
+   "Bf8",
+   "excellent"
+  ],
+  [
+   "Bg5",
+   "excellent"
+  ],
+  [
+   "Ra6",
+   "best"
+  ],
+  [
+   "Nc3",
+   "best"
+  ],
+  [
+   "Ra8",
+   "good"
+  ],
+  [
+   "Nb5",
+   "good"
+  ],
+  [
+   "Ra6",
+   "best"
+  ],
+  [
+   "Nc3",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "xx",
+    "accuracy": 95.1,
+    "acpl": 17,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 4,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "OctaBasilissa",
+    "accuracy": 88.4,
+    "acpl": 40,
+    "tally": {
+     "brilliant": 0,
+     "best": 2,
+     "excellent": 2,
+     "good": 5,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   6,
+   57,
+   48,
+   123,
+   90,
+   203,
+   202,
+   200,
+   174,
+   232,
+   210,
+   275,
+   269,
+   277,
+   258,
+   240,
+   253,
+   291,
+   241,
+   242,
+   253,
+   285
+  ],
+  "best": [
+   "b8c6",
+   "e1g1",
+   "c7c6",
+   "a1d1",
+   "c7c6",
+   "a1d1",
+   "c7c6",
+   "h2h3",
+   "d8e7",
+   "e3g5",
+   "c7c6",
+   "c3b5",
+   "a5a4",
+   "d2e3",
+   "a8a6",
+   "b5c3",
+   "a6c6",
+   "c3d5",
+   "a8a6",
+   "b5c3",
+   "a6c6",
+   "c3d5"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-06T15:23:32Z"
+}

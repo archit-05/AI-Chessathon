@@ -2,10 +2,10 @@
  "uuid": "0a121c61-60a7-4926-a0e7-024dffa6b185",
  "bot": "test_bot",
  "team": "pheanup",
- "rating": 2272,
- "rank": 6,
- "record": "15-3-5",
- "rated_rounds": 32,
+ "rating": 2307,
+ "rank": 3,
+ "record": "16-4-6",
+ "rated_rounds": 34,
  "history": [
   [
    5,
@@ -134,9 +134,37 @@
   [
    36,
    2272
+  ],
+  [
+   37,
+   2322
+  ],
+  [
+   38,
+   2307
   ]
  ],
  "games": [
+  {
+   "game": "9ad6aeb6-f17f-4476-bde6-3edf89387ab0",
+   "kind": "Rated",
+   "round": 39,
+   "colour": "White",
+   "opponent": "Lubina",
+   "opponent_uuid": "34fd9228-11bf-4e7a-ba8f-b452d96ad8c9",
+   "verdict": "draw",
+   "opening": "Nimzo-Indian Defence"
+  },
+  {
+   "game": "6eaedfff-88c6-40ff-9d9e-4872aeda5661",
+   "kind": "Rated",
+   "round": 38,
+   "colour": "Black",
+   "opponent": "Emile Andrieu",
+   "opponent_uuid": "659a3020-8af7-4934-b753-3b7c5fd11184",
+   "verdict": "loss",
+   "opening": "Sicilian Closed"
+  },
   {
    "game": "7080ad78-9779-4aca-83d4-9f0590cb9ea7",
    "kind": "Rated",
@@ -144,7 +172,7 @@
    "colour": "Black",
    "opponent": "Sobriety",
    "opponent_uuid": "258a9828-7442-4bea-97cb-eed1845ad2cc",
-   "verdict": "live",
+   "verdict": "win",
    "opening": "Reti Opening"
   },
   {
@@ -468,5 +496,5 @@
    "opening": "London System"
   }
  ],
- "fetched_at": "2026-09-06T13:11:10Z"
+ "fetched_at": "2026-09-06T15:21:12Z"
 }

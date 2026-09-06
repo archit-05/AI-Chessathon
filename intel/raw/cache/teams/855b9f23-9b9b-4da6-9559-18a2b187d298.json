@@ -2,10 +2,10 @@
  "uuid": "855b9f23-9b9b-4da6-9559-18a2b187d298",
  "bot": "berserker",
  "team": "berserker",
- "rating": 1537,
- "rank": 164,
- "record": "11-9-13",
- "rated_rounds": 33,
+ "rating": 1565,
+ "rank": 155,
+ "record": "14-0-15",
+ "rated_rounds": 38,
  "history": [
   [
    1,
@@ -13,115 +13,115 @@
   ],
   [
    2,
-   1440
+   1426
   ],
   [
    3,
-   1489
+   1493
   ],
   [
    4,
-   1541
+   1545
   ],
   [
    5,
-   1612
+   1615
   ],
   [
    6,
-   1572
+   1564
   ],
   [
    7,
-   1537
+   1539
   ],
   [
    8,
-   1556
+   1557
   ],
   [
    9,
-   1600
+   1598
   ],
   [
    10,
-   1636
+   1631
   ],
   [
    11,
-   1603
+   1596
   ],
   [
    12,
-   1624
+   1620
   ],
   [
    13,
-   1627
+   1628
   ],
   [
    14,
-   1594
+   1600
   ],
   [
    15,
-   1568
+   1575
   ],
   [
    16,
-   1567
+   1577
   ],
   [
    17,
-   1570
+   1573
   ],
   [
    18,
-   1540
+   1546
   ],
   [
    19,
-   1522
-  ],
-  [
-   20,
    1527
   ],
   [
+   20,
+   1532
+  ],
+  [
    21,
-   1518
+   1529
   ],
   [
    22,
-   1507
-  ],
-  [
-   23,
-   1531
-  ],
-  [
-   24,
-   1516
-  ],
-  [
-   25,
-   1513
-  ],
-  [
-   26,
-   1511
-  ],
-  [
-   27,
    1515
   ],
   [
+   23,
+   1540
+  ],
+  [
+   24,
+   1521
+  ],
+  [
+   25,
+   1518
+  ],
+  [
+   26,
+   1514
+  ],
+  [
+   27,
+   1514
+  ],
+  [
    28,
-   1531
+   1532
   ],
   [
    29,
-   1532
+   1531
   ],
   [
    30,
@@ -129,18 +129,98 @@
   ],
   [
    31,
-   1562
+   1566
   ],
   [
    32,
-   1545
+   1551
   ],
   [
    33,
-   1537
+   1541
+  ],
+  [
+   34,
+   1557
+  ],
+  [
+   35,
+   1578
+  ],
+  [
+   36,
+   1570
+  ],
+  [
+   37,
+   1551
+  ],
+  [
+   38,
+   1565
   ]
  ],
  "games": [
+  {
+   "game": "6b36b4f4-3dad-409f-b887-d6d9460ea431",
+   "kind": "Rated",
+   "round": 39,
+   "colour": "White",
+   "opponent": "Vanish Onigiri",
+   "opponent_uuid": "b50dbc85-39d5-4657-a8f2-ef64dc14490b",
+   "verdict": "live",
+   "opening": "Sicilian Classical"
+  },
+  {
+   "game": "cbdacd48-49f9-4d67-bbc5-829b5156d944",
+   "kind": "Rated",
+   "round": 38,
+   "colour": "Black",
+   "opponent": "POFPOF",
+   "opponent_uuid": "990a6f93-c4eb-49e9-a883-d1b0869d9449",
+   "verdict": "win",
+   "opening": "Ruy Lopez, Closed"
+  },
+  {
+   "game": "cc54a8bc-d0ee-4c95-862c-7cbf77cdb489",
+   "kind": "Rated",
+   "round": 37,
+   "colour": "White",
+   "opponent": "NotLLM",
+   "opponent_uuid": "2e84d6ba-24da-4b6f-baa3-9af4f10179ee",
+   "verdict": "loss",
+   "opening": "Scotch Game"
+  },
+  {
+   "game": "78ce0a94-fee5-4802-bc81-c7d061d169ea",
+   "kind": "Rated",
+   "round": 36,
+   "colour": "White",
+   "opponent": "Opus Carlsen",
+   "opponent_uuid": "f0286356-626d-4dd2-86ab-fd6d779063cb",
+   "verdict": "loss",
+   "opening": "Ruy Lopez, Closed"
+  },
+  {
+   "game": "e47693e0-109d-40c9-b6af-43cbdc77d3a5",
+   "kind": "Rated",
+   "round": 35,
+   "colour": "Black",
+   "opponent": "hyperfish",
+   "opponent_uuid": "abfb1138-b3bc-429f-8b3d-9b739a8d1713",
+   "verdict": "win",
+   "opening": "Scotch Game"
+  },
+  {
+   "game": "b0659cea-bb42-4691-9131-8675544478c5",
+   "kind": "Rated",
+   "round": 34,
+   "colour": "Black",
+   "opponent": "ChemErep",
+   "opponent_uuid": "103c0d1e-7c04-4b5d-92ef-893f1cbcad61",
+   "verdict": "win",
+   "opening": "Sicilian Dragon"
+  },
   {
    "game": "a4eb620c-5457-403f-b704-370e7b38aa0f",
    "kind": "Rated",
@@ -188,7 +268,7 @@
    "colour": "Black",
    "opponent": "Zugzwang",
    "opponent_uuid": "704bdae2-ddbf-4cbc-aaa1-817c0ee4608f",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "French Tarrasch"
   },
   {
@@ -208,7 +288,7 @@
    "colour": "Black",
    "opponent": "hyperfish",
    "opponent_uuid": "abfb1138-b3bc-429f-8b3d-9b739a8d1713",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "Reti Opening"
   },
   {
@@ -218,7 +298,7 @@
    "colour": "White",
    "opponent": "Imperial Knights",
    "opponent_uuid": "b9ca5fee-1a73-4740-b94a-912e0c727462",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "London System"
   },
   {
@@ -268,7 +348,7 @@
    "colour": "White",
    "opponent": "Team Anay",
    "opponent_uuid": "046a9eef-2895-4d9d-84a4-22a40eff924f",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "Caro-Kann Exchange"
   },
   {
@@ -278,7 +358,7 @@
    "colour": "White",
    "opponent": "blue school baddies",
    "opponent_uuid": "ee9401d6-832c-4941-8924-9585d942b5f5",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "Ruy Lopez, Closed"
   },
   {
@@ -308,7 +388,7 @@
    "colour": "White",
    "opponent": "The Queen Gambler",
    "opponent_uuid": "6f72c571-bcbc-4f39-93b3-44dc293e7d4f",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "Ruy Lopez, Closed"
   },
   {
@@ -318,7 +398,7 @@
    "colour": "Black",
    "opponent": "Yumo",
    "opponent_uuid": "5aa0e1ef-c640-45f9-b4b4-1389de2a609b",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "King's Indian Classical"
   },
   {
@@ -348,7 +428,7 @@
    "colour": "White",
    "opponent": "The Good Boys",
    "opponent_uuid": "4347a2f7-a4d4-4cca-9541-51fd69f6ba56",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "Petroff Defence"
   },
   {
@@ -468,9 +548,9 @@
    "colour": "Black",
    "opponent": "HighestElo",
    "opponent_uuid": "833051b0-31db-4404-af8b-6147044a66b9",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "Nimzo-Indian Defence"
   }
  ],
- "fetched_at": "2026-09-06T09:31:02Z"
+ "fetched_at": "2026-09-06T15:23:53Z"
 }

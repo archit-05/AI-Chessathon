@@ -2,10 +2,10 @@
  "uuid": "3be637a8-e78d-4da4-8016-d13e00170433",
  "bot": "Mate in One",
  "team": "Mate in One",
- "rating": 2180,
- "rank": 12,
- "record": "21-4-3",
- "rated_rounds": 36,
+ "rating": 2145,
+ "rank": 11,
+ "record": "23-4-4",
+ "rated_rounds": 38,
  "history": [
   [
    1,
@@ -150,9 +150,37 @@
   [
    36,
    2180
+  ],
+  [
+   37,
+   2199
+  ],
+  [
+   38,
+   2145
   ]
  ],
  "games": [
+  {
+   "game": "34edd0b3-c59e-4e7e-aee7-401c94bd1a89",
+   "kind": "Rated",
+   "round": 39,
+   "colour": "White",
+   "opponent": "No More Ammo",
+   "opponent_uuid": "b49586d0-218d-4491-a460-90d0d9cf321c",
+   "verdict": "win",
+   "opening": "King's Indian Classical"
+  },
+  {
+   "game": "c89df3c9-9916-45ef-9587-40f9bef3bca7",
+   "kind": "Rated",
+   "round": 38,
+   "colour": "White",
+   "opponent": "AI Fellows",
+   "opponent_uuid": "b574c0ea-e994-4a16-9918-7fbc989c4234",
+   "verdict": "loss",
+   "opening": "Sicilian Classical"
+  },
   {
    "game": "cfece183-7c30-44f9-824b-62df3cd2865f",
    "kind": "Rated",
@@ -160,7 +188,7 @@
    "colour": "Black",
    "opponent": "Make_no_mistakes",
    "opponent_uuid": "ba636320-7bda-41ab-835d-3799a11613d8",
-   "verdict": "live",
+   "verdict": "win",
    "opening": "Caro-Kann Classical"
   },
   {
@@ -524,5 +552,5 @@
    "opening": "French Winawer"
   }
  ],
- "fetched_at": "2026-09-06T13:11:18Z"
+ "fetched_at": "2026-09-06T15:21:59Z"
 }

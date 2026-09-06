@@ -1,0 +1,99 @@
+xx  (team: xx)  -  rank 19, rating 2050
+=======================================
+Generated 2026-09-06 16:24 from 28 rated games (rounds 10-39, 28 of 30 with evaluations so far); 2
+  game(s) that never had a result ignored: R27, R30.
+
+IDENTITY
+  Bot xx; team xx; university Warwick; members not shown on the site.
+  Rank 19 of 321, rating 2050, record 18-3-7 in 27 rated games.
+  Rating trajectory: entered R10 at 1429, peak 2050 (R38), now 2050 (R38).
+  Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
+    upload): R12 +103 -> 1464 (win vs Minimax Three); R33 +108 -> 1796 (win vs BlockShark)
+  Recent form (last 5 games, R35-R39): 2-3-0 (70%), loss 11.6 cp/move, blunders 0.8% vs earlier
+    (R10-R34): 16-0-7 (70%), 25.3 cp/move, 1.9%
+
+RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
+  vs top 10 : 0-0-0 over 0 games
+  vs 11-20  : 0-3-0 (50%) over 3 games
+  vs 21-50  : 2-0-2 (50%) over 4 games
+  vs rest   : 16-0-5 (76%) over 21 games
+  Games vs ranks 11-20: R37 draw vs lyra (#16, stalemate); R38 draw vs Cornelius (#17, insuff); R39
+    draw vs Magnus Claudes (#18, insuff)
+
+MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
+  positions inside +-800 only)
+  All own moves: n 1193, mean loss 20.7 cp, median 3 cp, blunders (>= 200 cp) 18 = 1.5% (8 of them
+    from level or better positions)
+  own moves 1-15    : n  391, mean 21.3 cp, median 6 cp, blunders 1.8%
+  own moves 16-40   : n  453, mean 22.8 cp, median 4 cp, blunders 1.1%
+  own moves 41+     : n  349, mean 17.3 cp, median 0 cp, blunders 1.7%
+  as white          : n  687, mean 21.7 cp, median 3 cp, blunders 1.5%
+  as black          : n  506, mean 19.4 cp, median 3 cp, blunders 1.6%
+  Worst moves: R32 73.Kf3 (+0 -> -3554); R10 1.Nd4 (+13 -> -612); R31 89.Nxe5 (+0 -> -545)
+  Site's own review (Stockfish 16, depth 16): mean ACPL 39.8 over 28 games, accuracy 94.9%; its tags
+    on their moves: 14 blunder, 7 mistake, 1 miss, 54 inaccuracy of 1431
+
+TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
+  Per move: mean 1.74 s, median 1.64 s, quartiles 0.89-2.42 s, max 8.1 s; instant (<50 ms) moves
+    6.2%
+  Clock at the end: mean 55.9 s, minimum 11.5 s; games under 10 s: 0, under 5 s: 0
+  By clock before the move: >60s 2.2 s (n 802), 30-60s 1.4 s (n 401), 10-30s 0.7 s (n 248), <10s n/a
+    s (n 0)
+  By own-move number: 1-15 2.7 s, 16-40 1.8 s, 41+ 0.9 s; when +300 or better 1.5 s, level 2.0 s,
+    -300 or worse 1.1 s
+  Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 3.1%,
+    quartiles 2.5-3.6%
+  After a >100 cp swing on the opponent's move: 1.8 s (n 109) vs 1.7 s otherwise; on moves that
+    themselves swing >100 cp: 1.3 s (n 89) vs 1.8 s
+  Exploitable: spends a fixed ~3% of the remaining clock per move, so its thinking time shrinks as
+    the game goes on; leaves ~56 s unused
+
+DRAW BEHAVIOUR
+  3 draws in 28 played games (11.0%): insufficient_material 2, stalemate 1
+  Repetition while ahead (> +150 at the final position): 0
+  Repetition while behind (< -150): 0; level repetitions: 0
+
+ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
+  Reached +300 or better in 18 games, failed to win 0.
+  Reached -300 or worse in 9 games, escaped with a half point or more in 2:
+    R24 vs APEX low -9996, win by checkmate: opponent collapsed: Kh7 at ply 81 lost 1000 cp
+    R37  vs lyra               low -3477, draw by stalemate: stalemate
+
+OPENINGS (curated start positions assigned by the platform)
+  By family: Sicilian 5-0-3 (62%); Caro-Kann 5-1-0 (92%); King's Indian 3-0-1 (75%); Reti 1-0-1
+    (50%); Ruy Lopez 1-1-0 (75%); French 0-1-1 (25%); Scotch 0-0-1 (0%); Italian 1-0-0 (100%); Two
+    Knights 1-0-0 (100%); Petroff 1-0-0 (100%)
+  Positions seen more than once: Caro-Kann Classical x4 3-1-0 (88%); King's Indian Classical x4
+    3-0-1 (75%); Sicilian Closed x3 2-0-1 (67%); Caro-Kann Exchange x2 2-0-0 (100%); Reti Opening x2
+    1-0-1 (50%); Ruy Lopez, Closed x2 1-1-0 (75%); Sicilian Classical x2 1-0-1 (50%); Sicilian
+    Sveshnikov x2 1-0-1 (50%); 7 positions seen once (4 won, 1 drawn, 2 lost).
+  No family with 3+ games scores 20+ points below their overall average.
+  First six own moves: 50% match Stockfish's first choice (moves 7-20: 59%), mean loss 27.3 cp, 8%
+    played instantly; first clear divergence (loss >= 20 cp) at own move 5.0 on average.
+
+STYLE
+  Captures on 20.7% of own moves, checks on 12.6%; average game 103 plies (52 own moves), longest
+    299 plies (R37)
+  Wins: 18 (18 by checkmate, 0 by opponent failure); losses: 7 (7 by checkmate, 0 by own failure)
+  Sacrifices (gave >= 2 pawns of material without losing eval, then recovered): 3 -> R38 27.Nd3, R39
+    17.Ra8, R39 24.Qf5
+  When ahead (> +150) material leaves the board at 1.17 pawns per own move (level: 0.89); capture
+    rate 26.4% vs 18.3% level -> simplifies when ahead
+
+LIKELY ENGINE PROFILE
+  Mid-strength engine (mean loss 20.7 cp): plausible python alpha-beta at depth 4-7, hand-crafted
+  evaluation. Confidence medium.
+  Time allocation is a fixed share of the remaining clock (~3% per move; median 1.64 s, max 8.1 s),
+  so depth shrinks as the game goes on and no extra time goes to critical positions (1.8 s after a
+  >100 cp swing vs 1.7 s otherwise).
+  Leaves 56 s unused on average: the search is capped by something other than the clock (depth or
+  node limit).
+
+HOW TO PLAY THEM
+  1. They convert (18 of 18 won positions turned into wins): do not rely on swindles; the game is
+  decided before -300.
+  2. No extra time goes to critical positions (1.8 s after a big swing vs 1.7 s otherwise): our
+  search can spend several times their budget on the few moves that decide a game, so prefer
+  positions where one precise move matters over long manoeuvring.
+  3. Tactics work: 8 blunders (>= 200 cp) came from level or better positions, so they can be
+  out-calculated. Keep the position sharp.

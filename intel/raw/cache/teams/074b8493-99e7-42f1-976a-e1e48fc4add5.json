@@ -2,145 +2,225 @@
  "uuid": "074b8493-99e7-42f1-976a-e1e48fc4add5",
  "bot": "ChittyChittyBangBang",
  "team": "ChessNotCheckers",
- "rating": 1890,
- "rank": 33,
- "record": "19-3-11",
- "rated_rounds": 33,
+ "rating": 1939,
+ "rank": 31,
+ "record": "21-2-14",
+ "rated_rounds": 38,
  "history": [
   [
    1,
-   1422
+   1425
   ],
   [
    2,
-   1368
+   1374
   ],
   [
    3,
-   1456
+   1459
   ],
   [
    4,
-   1565
+   1560
   ],
   [
    5,
-   1688
+   1672
   ],
   [
    6,
-   1757
+   1728
   ],
   [
    7,
-   1806
+   1762
   ],
   [
    8,
-   1872
+   1822
   ],
   [
    9,
-   1917
+   1861
   ],
   [
    10,
-   1957
+   1896
   ],
   [
    11,
-   2007
+   1941
   ],
   [
    12,
-   1895
+   1843
   ],
   [
    13,
-   1832
+   1788
   ],
   [
    14,
-   1803
+   1761
   ],
   [
    15,
-   1841
+   1795
   ],
   [
    16,
-   1828
+   1799
   ],
   [
    17,
-   1850
+   1810
   ],
   [
    18,
-   1867
+   1824
   ],
   [
    19,
-   1842
+   1804
   ],
   [
    20,
-   1745
+   1713
   ],
   [
    21,
-   1820
+   1780
   ],
   [
    22,
-   1756
+   1723
   ],
   [
    23,
-   1744
+   1715
   ],
   [
    24,
-   1785
+   1752
   ],
   [
    25,
-   1836
+   1802
   ],
   [
    26,
-   1879
+   1845
   ],
   [
    27,
-   1910
+   1874
   ],
   [
    28,
-   1888
+   1855
   ],
   [
    29,
-   1865
+   1834
   ],
   [
    30,
-   1892
+   1858
   ],
   [
    31,
-   1968
+   1927
   ],
   [
    32,
-   1922
+   1890
   ],
   [
    33,
-   1890
+   1866
+  ],
+  [
+   34,
+   1834
+  ],
+  [
+   35,
+   1912
+  ],
+  [
+   36,
+   1990
+  ],
+  [
+   37,
+   1970
+  ],
+  [
+   38,
+   1939
   ]
  ],
  "games": [
+  {
+   "game": "6f9986d7-6ff2-4ceb-ad94-dedee5f24772",
+   "kind": "Rated",
+   "round": 39,
+   "colour": "White",
+   "opponent": "Amplifirm",
+   "opponent_uuid": "9babf92a-9fc5-43ab-a766-4d2200077d99",
+   "verdict": "draw",
+   "opening": "Petroff Defence"
+  },
+  {
+   "game": "b807f38b-ece6-4be7-be6b-f69278e42191",
+   "kind": "Rated",
+   "round": 38,
+   "colour": "Black",
+   "opponent": "Neural Gambit",
+   "opponent_uuid": "2d7385e9-dffa-4216-aeca-dd844e18c7db",
+   "verdict": "loss",
+   "opening": "Sicilian Closed"
+  },
+  {
+   "game": "87038e18-7258-4248-b3b8-fc24f77591af",
+   "kind": "Rated",
+   "round": 37,
+   "colour": "White",
+   "opponent": "LeetBeaters",
+   "opponent_uuid": "683eb648-7443-471d-a54e-daa6f51d042c",
+   "verdict": "loss",
+   "opening": "Reti Opening"
+  },
+  {
+   "game": "a3cb6972-234d-4154-acfb-39c49e3fec7c",
+   "kind": "Rated",
+   "round": 36,
+   "colour": "White",
+   "opponent": "Gladiator",
+   "opponent_uuid": "429a581d-e7fc-41e3-a915-2895b01d7d0b",
+   "verdict": "win",
+   "opening": "King's Indian Classical"
+  },
+  {
+   "game": "07e683cf-5e40-41b9-9b5f-4b859169f344",
+   "kind": "Rated",
+   "round": 35,
+   "colour": "Black",
+   "opponent": "David Naylor",
+   "opponent_uuid": "93c0f006-ed5b-438f-b283-3a3b4054b049",
+   "verdict": "win",
+   "opening": "Sicilian Closed"
+  },
+  {
+   "game": "52b6a1dc-a3e0-483a-ad95-5ba104e71022",
+   "kind": "Rated",
+   "round": 34,
+   "colour": "White",
+   "opponent": "OMI",
+   "opponent_uuid": "f90aed5c-61db-4b3a-bbc1-9f40391e701a",
+   "verdict": "loss",
+   "opening": "Queen's Indian Defence"
+  },
   {
    "game": "5f41ca1a-50ac-477c-b7a0-58be38041868",
    "kind": "Rated",
@@ -248,7 +328,7 @@
    "colour": "Black",
    "opponent": "Loki 3.0",
    "opponent_uuid": "239fb36b-5e2f-4bb7-9a8a-5832363a0c25",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "Sicilian Closed"
   },
   {
@@ -318,7 +398,7 @@
    "colour": "Black",
    "opponent": "ChessML",
    "opponent_uuid": "e152b64e-0c6d-4341-b02b-09c09b098f8c",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "Pirc Defence"
   },
   {
@@ -472,5 +552,5 @@
    "opening": "London System"
   }
  ],
- "fetched_at": "2026-09-06T09:28:06Z"
+ "fetched_at": "2026-09-06T15:22:17Z"
 }

@@ -1,0 +1,110 @@
+zak  (team: zak)  -  rank 20, rating 2034
+=========================================
+Generated 2026-09-06 16:24 from 27 rated games (rounds 7-39) plus 6 played to a result but voided by
+  the site later (R11 3fold, R13 3fold, R17 3fold, R19 3fold, R21 3fold, R32 3fold): they count for
+  move quality, clocks and draw behaviour, not for results.
+
+IDENTITY
+  Bot zak; team zak; university UCL; members not shown on the site.
+  Rank 20 of 321, rating 2034 (provisional: fewer than six games on the current build, i.e. a new
+    upload in the last five rounds), record 12-5-10 in 26 rated games.
+  Rating trajectory: entered R7 at 1570, peak 2034 (R38), now 2034 (R38).
+  Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
+    upload): R18 -117 -> 1609 (loss vs Falcon); R22 +134 -> 1848 (win vs The_crow); R38 +100 -> 2034
+    (win vs Viego)
+  Recent form (last 5 games, R35-R39): 1-3-1 (50%), loss 7.1 cp/move, blunders 0.5% vs earlier
+    (R7-R34): 11-8-9 (54%), 23.1 cp/move, 1.1% - the provisional flag says the last games are a new
+    build
+
+RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
+  vs top 10 : 0-0-2 (0%) over 2 games
+  vs 11-20  : 1-1-4 (25%) over 6 games
+  vs 21-50  : 4-3-4 (50%) over 11 games
+  vs rest   : 7-1-0 (94%) over 8 games
+  Games vs top-10 teams:
+    R10  white vs test_bot           (#3 ) loss checkmate             Italian Game
+    R33  black vs Capablanca         (#2 ) loss checkmate             Sicilian Dragon
+  Games vs ranks 11-20: R14 loss vs DolphinBot (#13, checkmate); R23 loss vs Loss Preventer (#15,
+    checkmate); R25 loss vs Cornelius (#17, checkmate); R30 loss vs ms (#14, checkmate); R31 win vs
+    Blank Shooter (#12, checkmate); R39 draw vs Cornelius (#17, 3fold)
+
+MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
+  positions inside +-800 only)
+  All own moves: n 1679, mean loss 19.4 cp, median 2 cp, blunders (>= 200 cp) 16 = 1.0% (3 of them
+    from level or better positions)
+  own moves 1-15    : n  484, mean 19.3 cp, median 6 cp, blunders 0.4%
+  own moves 16-40   : n  601, mean 21.1 cp, median 4 cp, blunders 1.2%
+  own moves 41+     : n  594, mean 17.8 cp, median 0 cp, blunders 1.2%
+  as white          : n  802, mean 18.3 cp, median 2 cp, blunders 0.7%
+  as black          : n  877, mean 20.4 cp, median 2 cp, blunders 1.1%
+  Worst moves: R10 12.Re3 (-275 -> -9996); R23 16.d3 (-217 -> -1483); R25 45.Kf4 (-182 -> -9994)
+  Site's own review (Stockfish 16, depth 16): mean ACPL 31.4 over 27 games, accuracy 95.2%; its tags
+    on their moves: 12 blunder, 13 mistake, 3 miss, 77 inaccuracy of 1908
+
+TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
+  Per move: mean 1.99 s, median 1.61 s, quartiles 0.78-2.75 s, max 13.3 s; instant (<50 ms) moves
+    5.5%
+  Clock at the end: mean 33.0 s, minimum 4.2 s; games under 10 s: 11, under 5 s: 4 (R22, R31, R33,
+    R35)
+  By clock before the move: >60s 3.1 s (n 718), 30-60s 1.9 s (n 482), 10-30s 1.1 s (n 564), <10s 0.6
+    s (n 166)
+  By own-move number: 1-15 3.4 s, 16-40 2.2 s, 41+ 0.9 s; when +300 or better 1.5 s, level 2.3 s,
+    -300 or worse 1.4 s
+  Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 3.7%,
+    quartiles 2.7-5.5%
+  After a >100 cp swing on the opponent's move: 1.8 s (n 111) vs 2.0 s otherwise; on moves that
+    themselves swing >100 cp: 1.8 s (n 97) vs 2.0 s
+  Exploitable: gets into time trouble
+
+DRAW BEHAVIOUR
+  11 draws in 33 played games (33.0%): threefold_repetition 8, insufficient_material 3; 1 of them vs
+    top-10 teams; 6 of these were voided by the site afterwards and no longer count on the ladder
+  Repetition while ahead (> +150 at the final position): 0
+  Repetition while behind (< -150): 2 -> R17 at -9992, R32 at -9991; level repetitions: 6
+
+ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
+  Reached +300 or better in 12 games, failed to win 0.
+  Reached -300 or worse in 12 games, escaped with a half point or more in 2:
+    R17 vs Astra low -9993, draw by threefold_repetition: opponent allowed a repetition
+    R32 vs AlphaFish low -9991, draw by threefold_repetition: opponent allowed a repetition
+
+OPENINGS (curated start positions assigned by the platform)
+  By family: Sicilian 6-4-5 (53%); Two Knights 2-0-1 (67%); Queen's Indian 1-1-1 (50%); Italian
+    0-1-1 (25%); Nimzo-Indian 1-1-0 (75%); French 1-1-0 (75%); Reti 1-0-0 (100%); Caro-Kann 0-0-1
+    (0%); Semi-Slav 0-0-1 (0%); English 0-1-0 (50%); Scotch 0-1-0 (50%); Ruy Lopez 0-1-0 (50%)
+  Positions seen more than once: Sicilian Closed x5 3-1-1 (70%); Queen's Indian Defence x3 1-1-1
+    (50%); Sicilian Dragon x3 1-0-2 (33%); Sicilian Najdorf x3 1-1-1 (50%); Sicilian Taimanov x3
+    1-1-1 (50%); Two Knights Defence x3 2-0-1 (67%); French Tarrasch x2 1-1-0 (75%); Italian Game x2
+    0-1-1 (25%); Nimzo-Indian Defence x2 1-1-0 (75%); 7 positions seen once (1 won, 4 drawn, 2
+    lost).
+  No family with 3+ games scores 20+ points below their overall average.
+  First six own moves: 46% match Stockfish's first choice (moves 7-20: 49%), mean loss 14.6 cp, 0%
+    played instantly; first clear divergence (loss >= 20 cp) at own move 4.3 on average.
+
+STYLE
+  Captures on 17.8% of own moves, checks on 6.2%; average game 117 plies (58 own moves), longest 257
+    plies (R14)
+  Wins: 12 (12 by checkmate, 0 by opponent failure); losses: 10 (10 by checkmate, 0 by own failure)
+  Sacrifices (gave >= 2 pawns of material without losing eval, then recovered): 1 -> R22 54.c3
+  When ahead (> +150) material leaves the board at 1.09 pawns per own move (level: 0.85); capture
+    rate 23.4% vs 16.7% level -> no deliberate simplification
+
+LIKELY ENGINE PROFILE
+  Strong searcher (mean loss 19.4 cp): consistent with a bitboard alpha-beta engine at depth 8-12
+  with a decent evaluation. Confidence high.
+  Adaptive time use (median 1.61 s, max 13.3 s, spends 1.8 s on moves after a >100 cp swing vs 2.0 s
+  otherwise).
+  Poor clock awareness: 4 of 27 games went under 5 s.
+
+HOW TO PLAY THEM
+  1. They only repeat when worse (2 games), so when ahead avoid any repetition and keep pieces on;
+  do not expect gifts.
+  2. They convert (12 of 12 won positions turned into wins): do not rely on swindles; the game is
+  decided before -300.
+  3. Time pressure works: 4 games dipped under 5 s (R22, R31, R33, R35). Keep games long and
+  complicated; their play under 10 s averages 0.6 s a move.
+  4. No extra time goes to critical positions (1.8 s after a big swing vs 2.0 s otherwise): our
+  search can spend several times their budget on the few moves that decide a game, so prefer
+  positions where one precise move matters over long manoeuvring.
+  5. Tactics work: 3 blunders (>= 200 cp) came from level or better positions, so they can be
+  out-calculated. Keep the position sharp.

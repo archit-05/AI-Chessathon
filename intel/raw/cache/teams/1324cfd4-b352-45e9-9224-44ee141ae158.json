@@ -2,109 +2,189 @@
  "uuid": "1324cfd4-b352-45e9-9224-44ee141ae158",
  "bot": "Viego",
  "team": "Solo Man",
- "rating": 1896,
- "rank": 32,
- "record": "9-11-4",
- "rated_rounds": 24,
+ "rating": 1893,
+ "rank": 39,
+ "record": "12-2-6",
+ "rated_rounds": 29,
  "history": [
   [
    10,
-   1500
+   1499
   ],
   [
    11,
-   1577
+   1572
   ],
   [
    12,
-   1504
+   1505
   ],
   [
    13,
-   1434
+   1436
   ],
   [
    14,
-   1440
+   1437
   ],
   [
    15,
-   1431
+   1413
   ],
   [
    16,
-   1447
+   1425
   ],
   [
    17,
-   1465
+   1431
   ],
   [
    18,
-   1441
+   1447
   ],
   [
    19,
-   1350
+   1386
   ],
   [
    20,
-   1463
+   1471
   ],
   [
    21,
-   1455
+   1467
   ],
   [
    22,
-   1456
+   1466
   ],
   [
    23,
-   1558
+   1569
   ],
   [
    24,
-   1610
+   1604
   ],
   [
    25,
-   1706
+   1684
   ],
   [
    26,
-   1793
+   1764
   ],
   [
    27,
-   1860
+   1820
   ],
   [
    28,
-   1917
+   1857
   ],
   [
    29,
-   1971
+   1904
   ],
   [
    30,
-   1929
+   1895
   ],
   [
    31,
-   1896
+   1860
   ],
   [
    32,
-   1903
+   1866
   ],
   [
    33,
-   1896
+   1868
+  ],
+  [
+   34,
+   1788
+  ],
+  [
+   35,
+   1860
+  ],
+  [
+   36,
+   1924
+  ],
+  [
+   37,
+   1921
+  ],
+  [
+   38,
+   1893
   ]
  ],
  "games": [
+  {
+   "game": "b1cc4cb6-685b-465e-ac09-5a5793882121",
+   "kind": "Rated",
+   "round": 39,
+   "colour": "White",
+   "opponent": "Ransom",
+   "opponent_uuid": "4f71e103-0e8b-4287-af80-6d8b438eed01",
+   "verdict": "win",
+   "opening": "Sicilian Sveshnikov"
+  },
+  {
+   "game": "8748bfe2-6ecb-4e97-9bc1-69f2c18ed35b",
+   "kind": "Rated",
+   "round": 38,
+   "colour": "White",
+   "opponent": "zak",
+   "opponent_uuid": "0cebedbb-0376-4058-b6f4-0e11ef9dbeed",
+   "verdict": "loss",
+   "opening": "Queen's Indian Defence"
+  },
+  {
+   "game": "7e72bfde-e341-4f86-8716-8a3b38a694c5",
+   "kind": "Rated",
+   "round": 37,
+   "colour": "Black",
+   "opponent": "Team1",
+   "opponent_uuid": "9efa4b9d-296d-4ee0-b2e4-319dace8d318",
+   "verdict": "draw",
+   "opening": "King's Indian Classical"
+  },
+  {
+   "game": "93cae7d2-dc71-4e4c-8c48-7dbaf71b11ab",
+   "kind": "Rated",
+   "round": 36,
+   "colour": "White",
+   "opponent": "CheckmateGPT",
+   "opponent_uuid": "75c703fc-cfc9-40a6-b414-f6ec4cc93d83",
+   "verdict": "win",
+   "opening": "Sicilian Closed"
+  },
+  {
+   "game": "e7794361-d865-4dda-922e-aae3832b71bd",
+   "kind": "Rated",
+   "round": 35,
+   "colour": "Black",
+   "opponent": "fuzz",
+   "opponent_uuid": "0f755e93-36d5-40fe-9654-2fd874a5822e",
+   "verdict": "win",
+   "opening": "Sicilian Sveshnikov"
+  },
+  {
+   "game": "4d2297f8-871e-4a38-8538-98a194bbde3e",
+   "kind": "Rated",
+   "round": 34,
+   "colour": "White",
+   "opponent": "JBG fam",
+   "opponent_uuid": "10021bb5-71a5-4b10-bde5-14e1f667501a",
+   "verdict": "loss",
+   "opening": "Catalan Opening"
+  },
   {
    "game": "7567f39d-6b9c-4503-b8f0-fe7bb7dcba78",
    "kind": "Rated",
@@ -112,7 +192,7 @@
    "colour": "Black",
    "opponent": "BitsEntangled",
    "opponent_uuid": "b227e85c-08e6-489b-ae9a-77e6e856ace0",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "English Symmetrical"
   },
   {
@@ -122,7 +202,7 @@
    "colour": "White",
    "opponent": "ChessML",
    "opponent_uuid": "e152b64e-0c6d-4341-b02b-09c09b098f8c",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "Dutch Stonewall"
   },
   {
@@ -142,7 +222,7 @@
    "colour": "White",
    "opponent": "French Carlsen",
    "opponent_uuid": "2dc678cd-2e7c-4894-aeb5-ef273c023c01",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "Dutch Stonewall"
   },
   {
@@ -222,7 +302,7 @@
    "colour": "Black",
    "opponent": "Naveen Ragav",
    "opponent_uuid": "ab9188c9-19e7-47f5-b99f-29587c16565b",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "French Winawer"
   },
   {
@@ -232,7 +312,7 @@
    "colour": "Black",
    "opponent": "Bblue",
    "opponent_uuid": "77dc3690-1297-446e-87ff-d99ea7146f7a",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "Sicilian Sveshnikov"
   },
   {
@@ -262,7 +342,7 @@
    "colour": "White",
    "opponent": "Cheeky",
    "opponent_uuid": "87449072-593f-439d-a1f0-949baf11e1ea",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "Petroff Defence"
   },
   {
@@ -272,7 +352,7 @@
    "colour": "Black",
    "opponent": "OpenAnand",
    "opponent_uuid": "8c37293d-28d3-4adb-b2d8-6bae1d7b2d02",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "Reti Opening"
   },
   {
@@ -282,7 +362,7 @@
    "colour": "Black",
    "opponent": "corundum.ai",
    "opponent_uuid": "e3b6706d-d6a7-43d4-ba84-3db44ebe66b0",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "Sicilian Closed"
   },
   {
@@ -292,7 +372,7 @@
    "colour": "Black",
    "opponent": "AlphaGambit",
    "opponent_uuid": "094b37cd-8a17-47bd-8d4d-10efe40101ee",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "Sicilian Closed"
   },
   {
@@ -302,7 +382,7 @@
    "colour": "Black",
    "opponent": "AGS",
    "opponent_uuid": "e870f14c-1ed3-494f-8b3b-04e3f6bd42ca",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "Sicilian Dragon"
   },
   {
@@ -346,5 +426,5 @@
    "opening": "Pirc Defence"
   }
  ],
- "fetched_at": "2026-09-06T09:28:05Z"
+ "fetched_at": "2026-09-06T15:23:49Z"
 }

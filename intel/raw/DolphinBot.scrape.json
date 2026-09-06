@@ -1,22 +1,22 @@
 {
- "fetched_at": "2026-09-06T09:16:30Z",
+ "fetched_at": "2026-09-06T15:22:20Z",
  "slug": "DolphinBot",
  "bot": "DolphinBot",
  "team": "LeetBeaters",
  "uuid": "683eb648-7443-471d-a54e-daa6f51d042c",
  "university": "International",
  "tag": "",
- "rank": 19,
- "rating": 2006,
- "provisional": true,
+ "rank": 13,
+ "rating": 2114,
+ "provisional": false,
  "games_played": 29,
  "wdl": [
-  14,
-  6,
-  9
+  18,
+  0,
+  11
  ],
- "record": "14-6-10",
- "rated_rounds": 29,
+ "record": "18-1-11",
+ "rated_rounds": 35,
  "history": [
   [
    4,
@@ -24,115 +24,139 @@
   ],
   [
    5,
-   1554
+   1571
   ],
   [
    6,
-   1630
+   1646
   ],
   [
    7,
-   1689
+   1699
   ],
   [
    8,
-   1651
+   1666
   ],
   [
    9,
-   1657
+   1665
   ],
   [
    10,
-   1582
+   1592
   ],
   [
    11,
-   1601
+   1613
   ],
   [
    12,
-   1693
+   1692
   ],
   [
    13,
-   1765
+   1757
   ],
   [
    14,
-   1798
+   1786
   ],
   [
    15,
-   1853
+   1834
   ],
   [
    16,
-   1884
+   1859
   ],
   [
    17,
-   1850
+   1829
   ],
   [
    18,
-   1887
+   1863
   ],
   [
    19,
-   1867
+   1845
   ],
   [
    20,
-   1901
+   1874
   ],
   [
    21,
-   1881
+   1858
   ],
   [
    22,
-   1862
+   1842
   ],
   [
    23,
-   1886
+   1862
   ],
   [
    24,
-   1878
+   1862
   ],
   [
    25,
-   1890
+   1873
   ],
   [
    26,
-   1872
+   1856
   ],
   [
    27,
-   1889
+   1868
   ],
   [
    28,
-   1882
+   1864
   ],
   [
    29,
-   1888
+   1870
   ],
   [
    30,
-   1905
+   1889
   ],
   [
    31,
-   1980
+   1958
   ],
   [
    32,
-   2006
+   1953
+  ],
+  [
+   33,
+   1963
+  ],
+  [
+   34,
+   2034
+  ],
+  [
+   35,
+   1994
+  ],
+  [
+   36,
+   2041
+  ],
+  [
+   37,
+   2078
+  ],
+  [
+   38,
+   2114
   ]
  ],
  "games": [
@@ -145,9 +169,9 @@
    "colour": "white",
    "opponent": "The Huxley Knights",
    "opponent_uuid": "7a719310-f164-4237-a6bc-28943dd7cb12",
-   "opponent_bot": "Clore Bot VI",
-   "opponent_rank_now": 56,
-   "opponent_rating_now": 1780,
+   "opponent_bot": "Clore Bot VII",
+   "opponent_rank_now": 79,
+   "opponent_rating_now": 1740,
    "opponent_rating_then": null,
    "own_rating_then": null,
    "own_rating_after": 1502,
@@ -157,8 +181,11 @@
    "score": 0.5,
    "termination": "threefold_repetition",
    "termination_text": "Threefold repetition",
-   "state": "Rated 4\u00b7Final",
-   "void": false,
+   "state": "Rated 4\u00b7Void",
+   "void": true,
+   "voided": true,
+   "voided_at": "2026-09-06T15:22:01Z",
+   "site_verdict": "void",
    "plies": 47,
    "own_moves": 23,
    "site_verdicts": [
@@ -425,11 +452,11 @@
    "opponent": "Fried Liver Defence",
    "opponent_uuid": "7bc75a64-6091-44e1-8f01-64c3ef2bbd2c",
    "opponent_bot": "Spongebob",
-   "opponent_rank_now": 267,
-   "opponent_rating_now": 1296,
+   "opponent_rank_now": 268,
+   "opponent_rating_now": 1307,
    "opponent_rating_then": null,
    "own_rating_then": 1502,
-   "own_rating_after": 1554,
+   "own_rating_after": 1571,
    "opening": "London System",
    "start_fen": "r1bqk2r/pp3ppp/2nbpn2/2pp4/3P4/P1P1P1B1/1P1N1PPP/R2QKBNR b KQkq - 2 7",
    "result": "0-1",
@@ -438,6 +465,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 5\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
    "plies": 55,
    "own_moves": 28,
    "site_verdicts": [
@@ -746,11 +776,11 @@
    "opponent": "The Castle Gambit",
    "opponent_uuid": "6a43144c-53b1-40d0-b620-8833a255f82f",
    "opponent_bot": "The Castle Gambit",
-   "opponent_rank_now": 80,
-   "opponent_rating_now": 1712,
+   "opponent_rank_now": 92,
+   "opponent_rating_now": 1709,
    "opponent_rating_then": 1577,
-   "own_rating_then": 1554,
-   "own_rating_after": 1630,
+   "own_rating_then": 1571,
+   "own_rating_after": 1646,
    "opening": "French Tarrasch",
    "start_fen": "rnbqkbnr/pp3ppp/8/2pp4/P2P4/8/1PPN1PPP/R1BQKBNR b KQkq - 0 5",
    "result": "0-1",
@@ -759,6 +789,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 6\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
    "plies": 103,
    "own_moves": 52,
    "site_verdicts": [
@@ -1307,11 +1340,11 @@
    "opponent": "jlu",
    "opponent_uuid": "d935d7bf-978d-4483-8995-8bac436da1d1",
    "opponent_bot": "LSE4-E5",
-   "opponent_rank_now": 77,
-   "opponent_rating_now": 1720,
+   "opponent_rank_now": 90,
+   "opponent_rating_now": 1711,
    "opponent_rating_then": 1582,
-   "own_rating_then": 1630,
-   "own_rating_after": 1689,
+   "own_rating_then": 1646,
+   "own_rating_after": 1699,
    "opening": "Nimzo-Indian Defence",
    "start_fen": "rnbq1rk1/pp3ppp/4pn2/2p5/1bBP4/2N1P3/PPQ2PPP/R1B1K1NR w KQ - 0 8",
    "result": "1-0",
@@ -1320,6 +1353,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 7\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
    "plies": 75,
    "own_moves": 38,
    "site_verdicts": [
@@ -1728,11 +1764,11 @@
    "opponent": "AI Fellows",
    "opponent_uuid": "b574c0ea-e994-4a16-9918-7fbc989c4234",
    "opponent_bot": "AI Fellow",
-   "opponent_rank_now": 12,
-   "opponent_rating_now": 2128,
-   "opponent_rating_then": 1714,
-   "own_rating_then": 1689,
-   "own_rating_after": 1651,
+   "opponent_rank_now": 8,
+   "opponent_rating_now": 2232,
+   "opponent_rating_then": 1700,
+   "own_rating_then": 1699,
+   "own_rating_after": 1666,
    "opening": "Queen's Indian Defence",
    "start_fen": "rn1q1rk1/pbp1bppp/1p1ppn2/8/2PP4/PP3NP1/4PPBP/RNBQ1RK1 b - - 0 8",
    "result": "0-1",
@@ -1741,6 +1777,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 8\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "loss",
    "plies": 127,
    "own_moves": 63,
    "site_verdicts": [
@@ -2407,19 +2446,22 @@
    "opponent": "TheROOK",
    "opponent_uuid": "13367195-d3ed-4c05-bba6-25ee8f416520",
    "opponent_bot": "TheROOK",
-   "opponent_rank_now": 101,
-   "opponent_rating_now": 1663,
+   "opponent_rank_now": 109,
+   "opponent_rating_now": 1669,
    "opponent_rating_then": 1692,
-   "own_rating_then": 1651,
-   "own_rating_after": 1657,
+   "own_rating_then": 1666,
+   "own_rating_after": 1665,
    "opening": "Queen's Gambit Accepted",
    "start_fen": "rnbqkb1r/1p3ppp/p3pn2/2p5/2BP4/4PN1P/PP3PP1/RNBQ1RK1 b kq - 1 7",
    "result": "1/2-1/2",
    "score": 0.5,
    "termination": "threefold_repetition",
    "termination_text": "Threefold repetition",
-   "state": "Rated 9\u00b7Final",
-   "void": false,
+   "state": "Rated 9\u00b7Void",
+   "void": true,
+   "voided": true,
+   "voided_at": "2026-09-06T15:22:04Z",
+   "site_verdict": "void",
    "plies": 111,
    "own_moves": 55,
    "site_verdicts": [
@@ -3007,10 +3049,10 @@
    "opponent_uuid": "c7fad433-1020-4b2a-a0e3-8e86720d23de",
    "opponent_bot": "Capablanca",
    "opponent_rank_now": 2,
-   "opponent_rating_now": 2407,
-   "opponent_rating_then": 1722,
-   "own_rating_then": 1657,
-   "own_rating_after": 1582,
+   "opponent_rating_now": 2494,
+   "opponent_rating_then": 1699,
+   "own_rating_then": 1665,
+   "own_rating_after": 1592,
    "opening": "Caro-Kann Exchange",
    "start_fen": "r2qkb1r/pp2pppp/2n2n2/3p4/3P1Bb1/1QPB4/PP3PPP/RN2K1NR b KQkq - 4 7",
    "result": "1-0",
@@ -3019,6 +3061,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 10\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "loss",
    "plies": 168,
    "own_moves": 84,
    "site_verdicts": [
@@ -3891,19 +3936,22 @@
    "opponent": "Danya's Disciple",
    "opponent_uuid": "a4b26c08-0fa5-48ae-b15e-69a622ee81bb",
    "opponent_bot": "Danya's Disciple",
-   "opponent_rank_now": 5,
-   "opponent_rating_now": 2233,
-   "opponent_rating_then": 1611,
-   "own_rating_then": 1582,
-   "own_rating_after": 1601,
+   "opponent_rank_now": 24,
+   "opponent_rating_now": 2013,
+   "opponent_rating_then": 1602,
+   "own_rating_then": 1592,
+   "own_rating_after": 1613,
    "opening": "Reti Opening",
    "start_fen": "rnbq1rk1/ppp1bppp/4pn2/3p4/2P5/3P1NP1/PP2PPBP/RNBQ1RK1 b - - 2 6",
    "result": "1/2-1/2",
    "score": 0.5,
    "termination": "threefold_repetition",
    "termination_text": "Threefold repetition",
-   "state": "Rated 11\u00b7Final",
-   "void": false,
+   "state": "Rated 11\u00b7Void",
+   "void": true,
+   "voided": true,
+   "voided_at": "2026-09-06T10:17:50Z",
+   "site_verdict": "void",
    "plies": 191,
    "own_moves": 96,
    "site_verdicts": [
@@ -4892,11 +4940,11 @@
    "opponent": "French Carlsen",
    "opponent_uuid": "2dc678cd-2e7c-4894-aeb5-ef273c023c01",
    "opponent_bot": "Le StockFish",
-   "opponent_rank_now": 55,
-   "opponent_rating_now": 1781,
+   "opponent_rank_now": 56,
+   "opponent_rating_now": 1804,
    "opponent_rating_then": 1629,
-   "own_rating_then": 1601,
-   "own_rating_after": 1693,
+   "own_rating_then": 1613,
+   "own_rating_after": 1692,
    "opening": "English Symmetrical",
    "start_fen": "r1bq1rk1/pp2ppbp/2n3p1/2pn4/3P4/2N1PNP1/PP3PBP/R1BQK2R w KQ - 0 9",
    "result": "1-0",
@@ -4905,6 +4953,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 12\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
    "plies": 101,
    "own_moves": 51,
    "site_verdicts": [
@@ -5443,11 +5494,11 @@
    "opponent": "IM_master",
    "opponent_uuid": "ea00da98-023a-42bf-8560-495e84d8df1c",
    "opponent_bot": "The_crow",
-   "opponent_rank_now": 45,
-   "opponent_rating_now": 1835,
+   "opponent_rank_now": 44,
+   "opponent_rating_now": 1865,
    "opponent_rating_then": 1670,
-   "own_rating_then": 1693,
-   "own_rating_after": 1765,
+   "own_rating_then": 1692,
+   "own_rating_after": 1757,
    "opening": "London System",
    "start_fen": "r1b2rk1/pp3ppp/2nqpn2/2pp4/3P4/2P1PN2/PP1NBPPP/R2QK2R w KQ - 2 9",
    "result": "0-1",
@@ -5456,6 +5507,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 13\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
    "plies": 114,
    "own_moves": 57,
    "site_verdicts": [
@@ -6058,11 +6112,11 @@
    "opponent": "zak",
    "opponent_uuid": "0cebedbb-0376-4058-b6f4-0e11ef9dbeed",
    "opponent_bot": "zak",
-   "opponent_rank_now": 17,
-   "opponent_rating_now": 2062,
-   "opponent_rating_then": 1648,
-   "own_rating_then": 1765,
-   "own_rating_after": 1798,
+   "opponent_rank_now": 20,
+   "opponent_rating_now": 2034,
+   "opponent_rating_then": 1624,
+   "own_rating_then": 1757,
+   "own_rating_after": 1786,
    "opening": "Caro-Kann Classical",
    "start_fen": "rn1qkbnr/pp2pppp/2p3b1/8/3P4/4B1N1/PPP2PPP/R2QKBNR b KQkq - 4 6",
    "result": "0-1",
@@ -6071,6 +6125,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 14\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
    "plies": 257,
    "own_moves": 129,
    "site_verdicts": [
@@ -7389,11 +7446,11 @@
    "opponent": "fuzz",
    "opponent_uuid": "0f755e93-36d5-40fe-9654-2fd874a5822e",
    "opponent_bot": "Blundermaster",
-   "opponent_rank_now": 57,
-   "opponent_rating_now": 1778,
+   "opponent_rank_now": 59,
+   "opponent_rating_now": 1801,
    "opponent_rating_then": 1723,
-   "own_rating_then": 1798,
-   "own_rating_after": 1853,
+   "own_rating_then": 1786,
+   "own_rating_after": 1834,
    "opening": "English Symmetrical",
    "start_fen": "r1bqk2r/pp1pppbp/2n2np1/2p5/2P5/2N2NPP/PP1PPPB1/R1BQK2R b KQkq - 0 6",
    "result": "1-0",
@@ -7402,6 +7459,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 15\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
    "plies": 136,
    "own_moves": 68,
    "site_verdicts": [
@@ -8114,11 +8174,11 @@
    "opponent": "Alien Gambit",
    "opponent_uuid": "0e8ca369-000d-44d4-a7c8-d505bf0a3a30",
    "opponent_bot": "My Gambit My Legacy",
-   "opponent_rank_now": 69,
-   "opponent_rating_now": 1747,
+   "opponent_rank_now": 54,
+   "opponent_rating_now": 1815,
    "opponent_rating_then": 1667,
-   "own_rating_then": 1853,
-   "own_rating_after": 1884,
+   "own_rating_then": 1834,
+   "own_rating_after": 1859,
    "opening": "Petroff Defence",
    "start_fen": "rnbqk2r/ppp2ppp/3b4/3p4/3Pn3/2P2N1P/PP2BPP1/RNBQK2R b KQkq - 2 8",
    "result": "1-0",
@@ -8127,6 +8187,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 16\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
    "plies": 98,
    "own_moves": 49,
    "site_verdicts": [
@@ -8649,11 +8712,11 @@
    "opponent": "FuzzyBot",
    "opponent_uuid": "3241cef5-6b1c-41f2-b275-f0e50fc52ed5",
    "opponent_bot": "Fuzzydafool",
-   "opponent_rank_now": 14,
-   "opponent_rating_now": 2096,
-   "opponent_rating_then": 1865,
-   "own_rating_then": 1884,
-   "own_rating_after": 1850,
+   "opponent_rank_now": 5,
+   "opponent_rating_now": 2247,
+   "opponent_rating_then": 1828,
+   "own_rating_then": 1859,
+   "own_rating_after": 1829,
    "opening": "Petroff Defence",
    "start_fen": "rnbqk2r/ppp2ppp/3b4/3p4/3Pn3/2P2N1P/PP2BPP1/RNBQK2R b KQkq - 2 8",
    "result": "1-0",
@@ -8662,6 +8725,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 17\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "loss",
    "plies": 88,
    "own_moves": 44,
    "site_verdicts": [
@@ -9134,11 +9200,11 @@
    "opponent": "Cornelius",
    "opponent_uuid": "acecd823-279a-4bf9-8321-0ee6ed68deda",
    "opponent_bot": "Cornelius",
-   "opponent_rank_now": 20,
-   "opponent_rating_now": 1991,
-   "opponent_rating_then": 1799,
-   "own_rating_then": 1850,
-   "own_rating_after": 1887,
+   "opponent_rank_now": 17,
+   "opponent_rating_now": 2065,
+   "opponent_rating_then": 1773,
+   "own_rating_then": 1829,
+   "own_rating_after": 1863,
    "opening": "Reti Opening",
    "start_fen": "rnbq1rk1/pp2bppp/4pn2/2pp4/2PP4/N4NP1/PP2PPBP/R1BQ1RK1 b - - 1 7",
    "result": "1-0",
@@ -9147,6 +9213,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 18\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
    "plies": 174,
    "own_moves": 87,
    "site_verdicts": [
@@ -10049,11 +10118,11 @@
    "opponent": "slopfish",
    "opponent_uuid": "1d137be0-3a3e-4cda-a7ba-b22d8d178e66",
    "opponent_bot": "lyra",
-   "opponent_rank_now": 15,
-   "opponent_rating_now": 2078,
-   "opponent_rating_then": 1786,
-   "own_rating_then": 1887,
-   "own_rating_after": 1867,
+   "opponent_rank_now": 16,
+   "opponent_rating_now": 2066,
+   "opponent_rating_then": 1767,
+   "own_rating_then": 1863,
+   "own_rating_after": 1845,
    "opening": "Reti Opening",
    "start_fen": "rnbq1rk1/ppp1bppp/4pn2/3p4/2P5/N4NP1/PP1PPPBP/R1BQK2R w KQ - 5 6",
    "result": "1-0",
@@ -10062,6 +10131,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 19\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "loss",
    "plies": 117,
    "own_moves": 58,
    "site_verdicts": [
@@ -10678,11 +10750,11 @@
    "opponent": "pgn",
    "opponent_uuid": "8b738da9-e5bb-4122-89ce-0caf6466ba80",
    "opponent_bot": "bot1",
-   "opponent_rank_now": 35,
-   "opponent_rating_now": 1899,
-   "opponent_rating_then": 1806,
-   "own_rating_then": 1867,
-   "own_rating_after": 1901,
+   "opponent_rank_now": 50,
+   "opponent_rating_now": 1852,
+   "opponent_rating_then": 1791,
+   "own_rating_then": 1845,
+   "own_rating_after": 1874,
    "opening": "Sicilian Sveshnikov",
    "start_fen": "r1bqkb1r/pp3ppp/2np1n2/1N2p3/4P3/2N2P2/PPP3PP/R1BQKB1R b KQkq - 0 7",
    "result": "1-0",
@@ -10691,6 +10763,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 20\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
    "plies": 86,
    "own_moves": 43,
    "site_verdicts": [
@@ -11153,11 +11228,11 @@
    "opponent": "No More Ammo",
    "opponent_uuid": "b49586d0-218d-4491-a460-90d0d9cf321c",
    "opponent_bot": "Blank Shooter",
-   "opponent_rank_now": 18,
-   "opponent_rating_now": 2007,
-   "opponent_rating_then": 1887,
-   "own_rating_then": 1901,
-   "own_rating_after": 1881,
+   "opponent_rank_now": 12,
+   "opponent_rating_now": 2125,
+   "opponent_rating_then": 1877,
+   "own_rating_then": 1874,
+   "own_rating_after": 1858,
    "opening": "Sicilian Najdorf",
    "start_fen": "rnbqkb1r/1p3ppp/p2ppn2/8/4PP2/1NN5/PPP3PP/R1BQKB1R b KQkq - 0 7",
    "result": "1-0",
@@ -11166,6 +11241,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 21\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "loss",
    "plies": 140,
    "own_moves": 70,
    "site_verdicts": [
@@ -11898,11 +11976,11 @@
    "opponent": "pheanup",
    "opponent_uuid": "0a121c61-60a7-4926-a0e7-024dffa6b185",
    "opponent_bot": "test_bot",
-   "opponent_rank_now": 9,
-   "opponent_rating_now": 2181,
-   "opponent_rating_then": 1872,
-   "own_rating_then": 1881,
-   "own_rating_after": 1862,
+   "opponent_rank_now": 3,
+   "opponent_rating_now": 2307,
+   "opponent_rating_then": 1838,
+   "own_rating_then": 1858,
+   "own_rating_after": 1842,
    "opening": "Nimzo-Indian Defence",
    "start_fen": "rnbq1rk1/pp3ppp/4pn2/b1p5/2BP4/P1N1P2P/1P3PP1/R1BQK1NR w KQ - 1 9",
    "result": "0-1",
@@ -11911,6 +11989,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 22\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "loss",
    "plies": 104,
    "own_moves": 52,
    "site_verdicts": [
@@ -12463,11 +12544,11 @@
    "opponent": "Asher Falcon",
    "opponent_uuid": "39c268bf-a894-4fb1-9d76-6b5343700832",
    "opponent_bot": "Falcon",
-   "opponent_rank_now": 39,
-   "opponent_rating_now": 1871,
+   "opponent_rank_now": 28,
+   "opponent_rating_now": 1965,
    "opponent_rating_then": 1802,
-   "own_rating_then": 1862,
-   "own_rating_after": 1886,
+   "own_rating_then": 1842,
+   "own_rating_after": 1862,
    "opening": "Sicilian Sveshnikov",
    "start_fen": "r1bqkb1r/pp3ppp/2np4/1N1Pp3/8/8/PPP2PPP/R1BQKB1R b KQkq - 0 8",
    "result": "0-1",
@@ -12476,6 +12557,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 23\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
    "plies": 183,
    "own_moves": 92,
    "site_verdicts": [
@@ -13424,11 +13508,11 @@
    "opponent": "Lubina",
    "opponent_uuid": "34fd9228-11bf-4e7a-ba8f-b452d96ad8c9",
    "opponent_bot": "Anchoa",
-   "opponent_rank_now": 3,
-   "opponent_rating_now": 2357,
-   "opponent_rating_then": 2009,
-   "own_rating_then": 1886,
-   "own_rating_after": 1878,
+   "opponent_rank_now": 7,
+   "opponent_rating_now": 2243,
+   "opponent_rating_then": 2018,
+   "own_rating_then": 1862,
+   "own_rating_after": 1862,
    "opening": "Petroff Defence",
    "start_fen": "rnbqk2r/ppp2ppp/8/3p4/1b1Pn3/2P2N1P/PP3PP1/RNBQKB1R b KQkq - 0 7",
    "result": "0-1",
@@ -13437,6 +13521,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 24\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "loss",
    "plies": 91,
    "own_moves": 45,
    "site_verdicts": [
@@ -13923,19 +14010,22 @@
    "opponent": "mangodogo",
    "opponent_uuid": "1eabeb57-6e3c-46bd-902b-e3b7b5aacc73",
    "opponent_bot": "dog",
-   "opponent_rank_now": 23,
-   "opponent_rating_now": 1971,
+   "opponent_rank_now": 30,
+   "opponent_rating_now": 1946,
    "opponent_rating_then": 1939,
-   "own_rating_then": 1878,
-   "own_rating_after": 1890,
+   "own_rating_then": 1862,
+   "own_rating_after": 1873,
    "opening": "Ruy Lopez, Closed",
    "start_fen": "r1bq1rk1/2p1bppp/p1np1n2/1p2p3/4P3/PB1P1N2/1PP2PPP/RNBQR1K1 b - - 0 9",
    "result": "1/2-1/2",
    "score": 0.5,
    "termination": "fifty_moves",
    "termination_text": "Fifty moves",
-   "state": "Rated 25\u00b7Final",
-   "void": false,
+   "state": "Rated 25\u00b7Void",
+   "void": true,
+   "voided": true,
+   "voided_at": "2026-09-06T15:22:07Z",
+   "site_verdict": "void",
    "plies": 256,
    "own_moves": 128,
    "site_verdicts": [
@@ -15248,11 +15338,11 @@
    "opponent": "Abhi's chess demon",
    "opponent_uuid": "7af404ee-389f-427c-9433-40ebe5902fc6",
    "opponent_bot": "Dark Sister",
-   "opponent_rank_now": 28,
-   "opponent_rating_now": 1921,
-   "opponent_rating_then": 1868,
-   "own_rating_then": 1890,
-   "own_rating_after": 1872,
+   "opponent_rank_now": 22,
+   "opponent_rating_now": 2026,
+   "opponent_rating_then": 1850,
+   "own_rating_then": 1873,
+   "own_rating_after": 1856,
    "opening": "Dutch Stonewall",
    "start_fen": "rnbqk2r/pp4pp/2pbpn2/3p1p2/2PP4/2N2NP1/PP2PPBP/R1BQ1RK1 b kq - 1 7",
    "result": "1-0",
@@ -15261,6 +15351,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 26\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "loss",
    "plies": 136,
    "own_moves": 68,
    "site_verdicts": [
@@ -15972,12 +16065,12 @@
    "colour": "white",
    "opponent": "omega3 fish",
    "opponent_uuid": "1daad2c3-adda-4ae6-945c-e82c4015ee72",
-   "opponent_bot": "Random Seed Glitchless",
-   "opponent_rank_now": 91,
-   "opponent_rating_now": 1688,
-   "opponent_rating_then": 1845,
-   "own_rating_then": 1872,
-   "own_rating_after": 1889,
+   "opponent_bot": "Astra",
+   "opponent_rank_now": 23,
+   "opponent_rating_now": 2026,
+   "opponent_rating_then": 1806,
+   "own_rating_then": 1856,
+   "own_rating_after": 1868,
    "opening": "Ruy Lopez, Closed",
    "start_fen": "r2qk2r/2pbbppp/p1np1n2/1p2p3/P3P3/1BP2N2/1P1P1PPP/RNBQR1K1 b kq - 0 9",
    "result": "1-0",
@@ -15986,6 +16079,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 27\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
    "plies": 106,
    "own_moves": 53,
    "site_verdicts": [
@@ -16548,11 +16644,11 @@
    "opponent": "checkers",
    "opponent_uuid": "9e5e613a-ca80-4fd9-aa68-76f184ef7bac",
    "opponent_bot": "checkers",
-   "opponent_rank_now": 11,
-   "opponent_rating_now": 2173,
-   "opponent_rating_then": 1998,
-   "own_rating_then": 1889,
-   "own_rating_after": 1882,
+   "opponent_rank_now": 9,
+   "opponent_rating_now": 2225,
+   "opponent_rating_then": 1948,
+   "own_rating_then": 1868,
+   "own_rating_after": 1864,
    "opening": "Sicilian Closed",
    "start_fen": "r1bqk2r/pp2ppbp/2np1np1/2p5/4P3/2NP1NP1/PPP2PBP/R1BQK2R w KQkq - 2 7",
    "result": "1-0",
@@ -16561,6 +16657,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 28\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "loss",
    "plies": 147,
    "own_moves": 73,
    "site_verdicts": [
@@ -17327,19 +17426,22 @@
    "opponent": "50CentRaise",
    "opponent_uuid": "4857862c-3ea2-4ae9-8792-335918e2ef58",
    "opponent_bot": "50CentRaise",
-   "opponent_rank_now": 38,
-   "opponent_rating_now": 1878,
+   "opponent_rank_now": 67,
+   "opponent_rating_now": 1791,
    "opponent_rating_then": 1824,
-   "own_rating_then": 1882,
-   "own_rating_after": 1888,
+   "own_rating_then": 1864,
+   "own_rating_after": 1870,
    "opening": "Reti Opening",
    "start_fen": "rnbq1rk1/ppp1bppp/4pn2/3p4/2P5/3P1NP1/PP2PPBP/RNBQ1RK1 b - - 2 6",
    "result": "1/2-1/2",
    "score": 0.5,
    "termination": "threefold_repetition",
    "termination_text": "Threefold repetition",
-   "state": "Rated 29\u00b7Final",
-   "void": false,
+   "state": "Rated 29\u00b7Void",
+   "void": true,
+   "voided": true,
+   "voided_at": "2026-09-06T15:22:09Z",
+   "site_verdict": "void",
    "plies": 389,
    "own_moves": 194,
    "site_verdicts": [
@@ -19316,11 +19418,11 @@
    "opponent": "JSP",
    "opponent_uuid": "dab1e77e-ebb1-49f5-92d4-2a013e3288c4",
    "opponent_bot": "Good Morning",
-   "opponent_rank_now": 52,
-   "opponent_rating_now": 1788,
+   "opponent_rank_now": 51,
+   "opponent_rating_now": 1844,
    "opponent_rating_then": 1804,
-   "own_rating_then": 1888,
-   "own_rating_after": 1905,
+   "own_rating_then": 1870,
+   "own_rating_after": 1889,
    "opening": "Caro-Kann Advance",
    "start_fen": "rn1qkbnr/pp3ppp/2p1p3/3pPb2/3P4/5N2/PPPN1PPP/R1BQKB1R b KQkq - 1 5",
    "result": "1-0",
@@ -19329,6 +19431,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 30\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
    "plies": 134,
    "own_moves": 67,
    "site_verdicts": [
@@ -20031,11 +20136,11 @@
    "opponent": "Team1",
    "opponent_uuid": "9efa4b9d-296d-4ee0-b2e4-319dace8d318",
    "opponent_bot": "R8v8",
-   "opponent_rank_now": 59,
-   "opponent_rating_now": 1776,
+   "opponent_rank_now": 26,
+   "opponent_rating_now": 1979,
    "opponent_rating_then": 1908,
-   "own_rating_then": 1905,
-   "own_rating_after": 1980,
+   "own_rating_then": 1889,
+   "own_rating_after": 1958,
    "opening": "King's Indian Classical",
    "start_fen": "rnbq1rk1/ppp2pbp/3p1np1/4p3/2PPP3/P1N2N2/1P2BPPP/R1BQK2R b KQ - 0 7",
    "result": "0-1",
@@ -20044,6 +20149,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 31\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
    "plies": 183,
    "own_moves": 92,
    "site_verdicts": [
@@ -20992,19 +21100,22 @@
    "opponent": "Mate in One",
    "opponent_uuid": "3be637a8-e78d-4da4-8016-d13e00170433",
    "opponent_bot": "Mate in One",
-   "opponent_rank_now": 7,
-   "opponent_rating_now": 2185,
-   "opponent_rating_then": 2187,
-   "own_rating_then": 1980,
-   "own_rating_after": 2006,
+   "opponent_rank_now": 11,
+   "opponent_rating_now": 2145,
+   "opponent_rating_then": 2152,
+   "own_rating_then": 1958,
+   "own_rating_after": 1953,
    "opening": "Nimzo-Indian Defence",
    "start_fen": "rnbq1rk1/ppp2ppp/3b1n2/3p4/3P4/2NBP3/PP2NPPP/R1BQ1RK1 b - - 3 8",
    "result": "1/2-1/2",
    "score": 0.5,
    "termination": "fifty_moves",
    "termination_text": "Fifty moves",
-   "state": "Rated 32\u00b7Final",
-   "void": false,
+   "state": "Rated 32\u00b7Void",
+   "void": true,
+   "voided": true,
+   "voided_at": "2026-09-06T10:19:09Z",
+   "site_verdict": "void",
    "plies": 325,
    "own_moves": 162,
    "site_verdicts": [
@@ -22662,10 +22773,10 @@
    "opponent_uuid": "659a3020-8af7-4934-b753-3b7c5fd11184",
    "opponent_bot": "AlphaFish",
    "opponent_rank_now": 1,
-   "opponent_rating_now": 2462,
-   "opponent_rating_then": 2462,
-   "own_rating_then": 2006,
-   "own_rating_after": null,
+   "opponent_rating_now": 2648,
+   "opponent_rating_then": 2456,
+   "own_rating_then": 1953,
+   "own_rating_after": 1963,
    "opening": "Semi-Slav Defence",
    "start_fen": "r1bqkb1r/pp1n1ppp/2p1pn2/3p4/2PP4/2N1PN2/PP2BPPP/R1BQK2R b KQkq - 2 6",
    "result": "1-0",
@@ -22674,6 +22785,9 @@
    "termination_text": "Checkmate",
    "state": "Rated 33\u00b7Final",
    "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "loss",
    "plies": 104,
    "own_moves": 52,
    "site_verdicts": [
@@ -23215,6 +23329,3698 @@
    },
    "opp_site_acpl": 9,
    "opp_site_accuracy": 98.7
+  },
+  {
+   "game": "66df1e34-355e-4334-b0ce-86e8e915a04a",
+   "url": "https://aichessathon.com/game/66df1e34-355e-4334-b0ce-86e8e915a04a",
+   "kind": "Rated",
+   "round": 34,
+   "date": "2026.09.06",
+   "colour": "white",
+   "opponent": "mangodogo",
+   "opponent_uuid": "1eabeb57-6e3c-46bd-902b-e3b7b5aacc73",
+   "opponent_bot": "dog",
+   "opponent_rank_now": 30,
+   "opponent_rating_now": 1946,
+   "opponent_rating_then": 1936,
+   "own_rating_then": 1963,
+   "own_rating_after": 2034,
+   "opening": "English Symmetrical",
+   "start_fen": "r1bq1rk1/pp1pppbp/2n2np1/2p5/P1P5/2NP1NP1/1P2PPBP/R1BQK2R b KQ - 0 7",
+   "result": "1-0",
+   "score": 1.0,
+   "termination": "checkmate",
+   "termination_text": "Checkmate",
+   "state": "Rated 34\u00b7Final",
+   "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
+   "plies": 128,
+   "own_moves": 64,
+   "site_verdicts": [
+    [
+     "d5",
+     "best"
+    ],
+    [
+     "cxd5",
+     "excellent"
+    ],
+    [
+     "Nxd5",
+     "best"
+    ],
+    [
+     "Nxd5",
+     "best"
+    ],
+    [
+     "Qxd5",
+     "best"
+    ],
+    [
+     "O-O",
+     "best"
+    ],
+    [
+     "Qd6",
+     "best"
+    ],
+    [
+     "Bf4",
+     "excellent"
+    ],
+    [
+     "e5",
+     "best"
+    ],
+    [
+     "Be3",
+     "best"
+    ],
+    [
+     "b6",
+     "best"
+    ],
+    [
+     "a5",
+     "best"
+    ],
+    [
+     "Nxa5",
+     "best"
+    ],
+    [
+     "Nxe5",
+     "best"
+    ],
+    [
+     "Bb7",
+     "best"
+    ],
+    [
+     "Bxb7",
+     "excellent"
+    ],
+    [
+     "Nxb7",
+     "best"
+    ],
+    [
+     "Nc4",
+     "best"
+    ],
+    [
+     "Qc6",
+     "good"
+    ],
+    [
+     "Qb3",
+     "good"
+    ],
+    [
+     "Rfe8",
+     "inaccuracy"
+    ],
+    [
+     "Ra6",
+     "best"
+    ],
+    [
+     "Nd6",
+     "best"
+    ],
+    [
+     "Rfa1",
+     "excellent"
+    ],
+    [
+     "Nxc4",
+     "best"
+    ],
+    [
+     "Qxc4",
+     "best"
+    ],
+    [
+     "Qb7",
+     "best"
+    ],
+    [
+     "Qa4",
+     "best"
+    ],
+    [
+     "Re7",
+     "best"
+    ],
+    [
+     "Ra2",
+     "best"
+    ],
+    [
+     "h6",
+     "inaccuracy"
+    ],
+    [
+     "b4",
+     "best"
+    ],
+    [
+     "cxb4",
+     "excellent"
+    ],
+    [
+     "Qxb4",
+     "best"
+    ],
+    [
+     "Rd7",
+     "inaccuracy"
+    ],
+    [
+     "Bxb6",
+     "best"
+    ],
+    [
+     "Bf8",
+     "mistake"
+    ],
+    [
+     "Qf4",
+     "best"
+    ],
+    [
+     "g5",
+     "excellent"
+    ],
+    [
+     "Qf5",
+     "best"
+    ],
+    [
+     "Rc8",
+     "inaccuracy"
+    ],
+    [
+     "Be3",
+     "best"
+    ],
+    [
+     "Rdc7",
+     "good"
+    ],
+    [
+     "Ra1",
+     "best"
+    ],
+    [
+     "Bg7",
+     "excellent"
+    ],
+    [
+     "Rxa7",
+     "best"
+    ],
+    [
+     "Qb2",
+     "excellent"
+    ],
+    [
+     "R1a2",
+     "best"
+    ],
+    [
+     "Qb8",
+     "excellent"
+    ],
+    [
+     "Qd5",
+     "excellent"
+    ],
+    [
+     "Rf8",
+     "best"
+    ],
+    [
+     "Kg2",
+     "excellent"
+    ],
+    [
+     "Qc8",
+     "excellent"
+    ],
+    [
+     "Rxc7",
+     "excellent"
+    ],
+    [
+     "Qxc7",
+     "best"
+    ],
+    [
+     "Ra7",
+     "excellent"
+    ],
+    [
+     "Qe5",
+     "excellent"
+    ],
+    [
+     "Qxe5",
+     "best"
+    ],
+    [
+     "Bxe5",
+     "best"
+    ],
+    [
+     "g4",
+     "excellent"
+    ],
+    [
+     "Rb8",
+     "excellent"
+    ],
+    [
+     "Ra6",
+     "excellent"
+    ],
+    [
+     "Kg7",
+     "excellent"
+    ],
+    [
+     "Bb6",
+     "good"
+    ],
+    [
+     "Re8",
+     "good"
+    ],
+    [
+     "Bc5",
+     "best"
+    ],
+    [
+     "Rd8",
+     "best"
+    ],
+    [
+     "h3",
+     "excellent"
+    ],
+    [
+     "f6",
+     "excellent"
+    ],
+    [
+     "Kf3",
+     "excellent"
+    ],
+    [
+     "Kg6",
+     "best"
+    ],
+    [
+     "Ke4",
+     "best"
+    ],
+    [
+     "Re8",
+     "best"
+    ],
+    [
+     "d4",
+     "excellent"
+    ],
+    [
+     "Bh2+",
+     "excellent"
+    ],
+    [
+     "Kd3",
+     "best"
+    ],
+    [
+     "Kf7",
+     "excellent"
+    ],
+    [
+     "d5",
+     "excellent"
+    ],
+    [
+     "Be5",
+     "best"
+    ],
+    [
+     "f3",
+     "excellent"
+    ],
+    [
+     "Rb8",
+     "best"
+    ],
+    [
+     "Ra7+",
+     "excellent"
+    ],
+    [
+     "Kg6",
+     "excellent"
+    ],
+    [
+     "Bd4",
+     "excellent"
+    ],
+    [
+     "Rb3+",
+     "best"
+    ],
+    [
+     "Kc4",
+     "best"
+    ],
+    [
+     "Bxd4",
+     "best"
+    ],
+    [
+     "Kxd4",
+     "best"
+    ],
+    [
+     "Rb2",
+     "excellent"
+    ],
+    [
+     "Re7",
+     "best"
+    ],
+    [
+     "h5",
+     "best"
+    ],
+    [
+     "d6",
+     "excellent"
+    ],
+    [
+     "f5",
+     "excellent"
+    ],
+    [
+     "Re6+",
+     "best"
+    ],
+    [
+     "Kf7",
+     "best"
+    ],
+    [
+     "gxf5",
+     "best"
+    ],
+    [
+     "Rd2+",
+     "best"
+    ],
+    [
+     "Kc5",
+     "best"
+    ],
+    [
+     "Rc2+",
+     "best"
+    ],
+    [
+     "Kb6",
+     "best"
+    ],
+    [
+     "Rb2+",
+     "best"
+    ],
+    [
+     "Kc7",
+     "best"
+    ],
+    [
+     "Rc2+",
+     "best"
+    ],
+    [
+     "Kd7",
+     "excellent"
+    ],
+    [
+     "Ra2",
+     "excellent"
+    ],
+    [
+     "e4",
+     "best"
+    ],
+    [
+     "Ra7+",
+     "best"
+    ],
+    [
+     "Kc8",
+     "excellent"
+    ],
+    [
+     "Ra8+",
+     "excellent"
+    ],
+    [
+     "Kb7",
+     "excellent"
+    ],
+    [
+     "Ra3",
+     "excellent"
+    ],
+    [
+     "d7",
+     "best"
+    ],
+    [
+     "Rd3",
+     "excellent"
+    ],
+    [
+     "Kc7",
+     "best"
+    ],
+    [
+     "g4",
+     "best"
+    ],
+    [
+     "fxg4",
+     "best"
+    ],
+    [
+     "hxg4",
+     "best"
+    ],
+    [
+     "hxg4",
+     "best"
+    ],
+    [
+     "Rd2",
+     "inaccuracy"
+    ],
+    [
+     "d8=Q",
+     "best"
+    ],
+    [
+     "Rxd8",
+     "excellent"
+    ],
+    [
+     "Kxd8",
+     "best"
+    ],
+    [
+     "Kg7",
+     "excellent"
+    ],
+    [
+     "Ke7",
+     "excellent"
+    ],
+    [
+     "Kh7",
+     "excellent"
+    ],
+    [
+     "Kf7",
+     "best"
+    ],
+    [
+     "Kh8",
+     "forced"
+    ]
+   ],
+   "time_per_move": [
+    2.404,
+    3.522,
+    2.592,
+    4.085,
+    5.536,
+    2.22,
+    5.483,
+    2.646,
+    8.548,
+    2.844,
+    2.659,
+    2.022,
+    4.395,
+    4.75,
+    1.704,
+    2.758,
+    2.956,
+    1.78,
+    1.627,
+    1.806,
+    1.763,
+    1.741,
+    2.223,
+    2.439,
+    2.922,
+    1.35,
+    1.838,
+    2.111,
+    1.857,
+    2.089,
+    2.0,
+    1.668,
+    3.14,
+    3.001,
+    1.761,
+    1.723,
+    1.328,
+    2.575,
+    1.797,
+    0.904,
+    1.295,
+    1.564,
+    1.357,
+    1.5,
+    4.189,
+    3.599,
+    1.066,
+    2.498,
+    1.891,
+    1.624,
+    2.806,
+    1.765,
+    1.022,
+    2.495,
+    2.239,
+    0.822,
+    1.16,
+    0.795,
+    1.67,
+    1.038,
+    0.365,
+    0.007,
+    0.003,
+    0.002
+   ],
+   "clock_after_move": [
+    118.096,
+    115.074,
+    112.982,
+    109.397,
+    104.361,
+    102.641,
+    97.658,
+    95.512,
+    87.464,
+    85.12,
+    82.961,
+    81.439,
+    77.544,
+    73.294,
+    72.09,
+    69.832,
+    67.376,
+    66.096,
+    64.969,
+    63.663,
+    62.4,
+    61.159,
+    59.436,
+    57.497,
+    55.075,
+    54.225,
+    52.887,
+    51.276,
+    49.919,
+    48.33,
+    46.83,
+    45.662,
+    43.022,
+    40.521,
+    39.26,
+    38.037,
+    37.209,
+    35.134,
+    33.837,
+    33.433,
+    32.638,
+    31.574,
+    30.717,
+    29.717,
+    26.028,
+    22.929,
+    22.363,
+    20.365,
+    18.974,
+    17.85,
+    15.544,
+    14.279,
+    13.757,
+    11.762,
+    10.023,
+    9.701,
+    9.041,
+    8.746,
+    7.576,
+    7.038,
+    7.173,
+    7.666,
+    8.163,
+    8.661
+   ],
+   "final_clock": 8.661,
+   "site_review_source": "Stockfish 16 \u00b7 depth 16",
+   "site_acpl": 7,
+   "site_accuracy": 98.8,
+   "site_tally": {
+    "brilliant": 0,
+    "best": 40,
+    "excellent": 22,
+    "good": 2,
+    "forced": 0,
+    "inaccuracy": 0,
+    "mistake": 0,
+    "miss": 0,
+    "blunder": 0
+   },
+   "opp_site_acpl": 33,
+   "opp_site_accuracy": 96.7
+  },
+  {
+   "game": "a337c88f-eaec-4046-90aa-52b92a07cadf",
+   "url": "https://aichessathon.com/game/a337c88f-eaec-4046-90aa-52b92a07cadf",
+   "kind": "Rated",
+   "round": 35,
+   "date": "2026.09.06",
+   "colour": "black",
+   "opponent": "slopfish",
+   "opponent_uuid": "1d137be0-3a3e-4cda-a7ba-b22d8d178e66",
+   "opponent_bot": "lyra",
+   "opponent_rank_now": 16,
+   "opponent_rating_now": 2066,
+   "opponent_rating_then": 2007,
+   "own_rating_then": 2034,
+   "own_rating_after": 1994,
+   "opening": "Reti Opening",
+   "start_fen": "rnbq1rk1/ppp1bppp/4pn2/3p4/2PP4/N4NP1/PP2PPBP/R1BQK2R b KQ - 0 6",
+   "result": "1-0",
+   "score": 0.0,
+   "termination": "checkmate",
+   "termination_text": "Checkmate",
+   "state": "Rated 35\u00b7Final",
+   "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "loss",
+   "plies": 126,
+   "own_moves": 63,
+   "site_verdicts": [
+    [
+     "Bxa3",
+     "excellent"
+    ],
+    [
+     "bxa3",
+     "best"
+    ],
+    [
+     "dxc4",
+     "excellent"
+    ],
+    [
+     "O-O",
+     "best"
+    ],
+    [
+     "Nd5",
+     "good"
+    ],
+    [
+     "Qc2",
+     "good"
+    ],
+    [
+     "b5",
+     "inaccuracy"
+    ],
+    [
+     "e4",
+     "mistake"
+    ],
+    [
+     "Nb6",
+     "best"
+    ],
+    [
+     "Rd1",
+     "good"
+    ],
+    [
+     "Ba6",
+     "mistake"
+    ],
+    [
+     "d5",
+     "best"
+    ],
+    [
+     "exd5",
+     "good"
+    ],
+    [
+     "exd5",
+     "best"
+    ],
+    [
+     "Qf6",
+     "excellent"
+    ],
+    [
+     "Ng5",
+     "best"
+    ],
+    [
+     "g6",
+     "inaccuracy"
+    ],
+    [
+     "Ne4",
+     "best"
+    ],
+    [
+     "Qxa1",
+     "good"
+    ],
+    [
+     "Bb2",
+     "best"
+    ],
+    [
+     "Qxd1+",
+     "excellent"
+    ],
+    [
+     "Qxd1",
+     "best"
+    ],
+    [
+     "N8d7",
+     "best"
+    ],
+    [
+     "Qd4",
+     "excellent"
+    ],
+    [
+     "f6",
+     "best"
+    ],
+    [
+     "Bh3",
+     "best"
+    ],
+    [
+     "Bc8",
+     "good"
+    ],
+    [
+     "Be6+",
+     "best"
+    ],
+    [
+     "Kg7",
+     "best"
+    ],
+    [
+     "f4",
+     "inaccuracy"
+    ],
+    [
+     "a5",
+     "best"
+    ],
+    [
+     "Bc3",
+     "excellent"
+    ],
+    [
+     "h5",
+     "best"
+    ],
+    [
+     "h3",
+     "best"
+    ],
+    [
+     "Na4",
+     "best"
+    ],
+    [
+     "Ba1",
+     "good"
+    ],
+    [
+     "Ra6",
+     "best"
+    ],
+    [
+     "g4",
+     "best"
+    ],
+    [
+     "c3",
+     "best"
+    ],
+    [
+     "gxh5",
+     "excellent"
+    ],
+    [
+     "c5",
+     "good"
+    ],
+    [
+     "Qe3",
+     "excellent"
+    ],
+    [
+     "gxh5",
+     "good"
+    ],
+    [
+     "Qg3+",
+     "excellent"
+    ],
+    [
+     "Kh7",
+     "best"
+    ],
+    [
+     "Bf5+",
+     "best"
+    ],
+    [
+     "Kh8",
+     "best"
+    ],
+    [
+     "Qh4",
+     "best"
+    ],
+    [
+     "Kg7",
+     "best"
+    ],
+    [
+     "Qxh5",
+     "best"
+    ],
+    [
+     "Rh8",
+     "best"
+    ],
+    [
+     "Qg6+",
+     "best"
+    ],
+    [
+     "Kf8",
+     "forced"
+    ],
+    [
+     "Be6",
+     "inaccuracy"
+    ],
+    [
+     "Rxe6",
+     "best"
+    ],
+    [
+     "dxe6",
+     "best"
+    ],
+    [
+     "Rg8",
+     "best"
+    ],
+    [
+     "e7+",
+     "best"
+    ],
+    [
+     "Kxe7",
+     "forced"
+    ],
+    [
+     "Qxg8",
+     "best"
+    ],
+    [
+     "c2",
+     "excellent"
+    ],
+    [
+     "Qg7+",
+     "excellent"
+    ],
+    [
+     "Ke6",
+     "excellent"
+    ],
+    [
+     "f5+",
+     "excellent"
+    ],
+    [
+     "Kd5",
+     "best"
+    ],
+    [
+     "Nxf6+",
+     "best"
+    ],
+    [
+     "Nxf6",
+     "best"
+    ],
+    [
+     "Qg2+",
+     "best"
+    ],
+    [
+     "Ne4",
+     "best"
+    ],
+    [
+     "Qxc2",
+     "best"
+    ],
+    [
+     "Bxf5",
+     "best"
+    ],
+    [
+     "Qd3+",
+     "excellent"
+    ],
+    [
+     "Kc6",
+     "best"
+    ],
+    [
+     "Qf3",
+     "excellent"
+    ],
+    [
+     "Bh7",
+     "excellent"
+    ],
+    [
+     "Qh5",
+     "excellent"
+    ],
+    [
+     "Nac3",
+     "best"
+    ],
+    [
+     "Qxh7",
+     "best"
+    ],
+    [
+     "Ne2+",
+     "excellent"
+    ],
+    [
+     "Kg2",
+     "excellent"
+    ],
+    [
+     "Nf4+",
+     "best"
+    ],
+    [
+     "Kh2",
+     "best"
+    ],
+    [
+     "Nd6",
+     "excellent"
+    ],
+    [
+     "Be5",
+     "good"
+    ],
+    [
+     "Ne2",
+     "good"
+    ],
+    [
+     "Qh6",
+     "best"
+    ],
+    [
+     "Kd5",
+     "best"
+    ],
+    [
+     "Qxd6+",
+     "best"
+    ],
+    [
+     "Ke4",
+     "excellent"
+    ],
+    [
+     "Qxc5",
+     "best"
+    ],
+    [
+     "b4",
+     "best"
+    ],
+    [
+     "a4",
+     "excellent"
+    ],
+    [
+     "Kd3",
+     "excellent"
+    ],
+    [
+     "h4",
+     "excellent"
+    ],
+    [
+     "b3",
+     "excellent"
+    ],
+    [
+     "axb3",
+     "best"
+    ],
+    [
+     "Ke4",
+     "excellent"
+    ],
+    [
+     "Kh3",
+     "excellent"
+    ],
+    [
+     "Kf5",
+     "excellent"
+    ],
+    [
+     "Bb2+",
+     "excellent"
+    ],
+    [
+     "Ke4",
+     "best"
+    ],
+    [
+     "Kg4",
+     "excellent"
+    ],
+    [
+     "Kd3",
+     "best"
+    ],
+    [
+     "Kf5",
+     "excellent"
+    ],
+    [
+     "Kd2",
+     "best"
+    ],
+    [
+     "Qc4",
+     "excellent"
+    ],
+    [
+     "Ng3+",
+     "best"
+    ],
+    [
+     "Ke6",
+     "excellent"
+    ],
+    [
+     "Ne2",
+     "best"
+    ],
+    [
+     "Be5",
+     "excellent"
+    ],
+    [
+     "Ke1",
+     "excellent"
+    ],
+    [
+     "h5",
+     "best"
+    ],
+    [
+     "Kd2",
+     "inaccuracy"
+    ],
+    [
+     "h6",
+     "best"
+    ],
+    [
+     "Ng1",
+     "best"
+    ],
+    [
+     "Bf4+",
+     "excellent"
+    ],
+    [
+     "Ke1",
+     "best"
+    ],
+    [
+     "h7",
+     "best"
+    ],
+    [
+     "Nh3",
+     "excellent"
+    ],
+    [
+     "h8=Q",
+     "excellent"
+    ],
+    [
+     "Nxf4+",
+     "best"
+    ],
+    [
+     "Qxf4",
+     "best"
+    ],
+    [
+     "Ke2",
+     "excellent"
+    ],
+    [
+     "Qhh2+",
+     "best"
+    ],
+    [
+     "Kd3",
+     "excellent"
+    ]
+   ],
+   "time_per_move": [
+    2.938,
+    4.147,
+    2.306,
+    2.612,
+    2.563,
+    2.496,
+    3.08,
+    4.83,
+    4.702,
+    4.167,
+    2.102,
+    8.051,
+    4.062,
+    2.973,
+    3.16,
+    6.93,
+    2.998,
+    2.103,
+    3.531,
+    2.767,
+    1.322,
+    2.568,
+    3.343,
+    4.3,
+    1.701,
+    2.189,
+    0.003,
+    2.563,
+    4.827,
+    0.002,
+    4.614,
+    1.85,
+    1.911,
+    3.942,
+    2.044,
+    2.707,
+    1.431,
+    3.244,
+    2.004,
+    2.899,
+    0.657,
+    1.112,
+    1.814,
+    2.266,
+    1.238,
+    0.939,
+    2.242,
+    1.464,
+    0.832,
+    0.725,
+    1.011,
+    0.957,
+    1.309,
+    0.694,
+    0.548,
+    0.361,
+    0.591,
+    1.475,
+    0.589,
+    0.148,
+    0.003,
+    0.003,
+    0.003
+   ],
+   "clock_after_move": [
+    117.562,
+    113.915,
+    112.109,
+    109.997,
+    107.934,
+    105.938,
+    103.358,
+    99.028,
+    94.826,
+    91.159,
+    89.557,
+    82.006,
+    78.444,
+    75.971,
+    73.311,
+    66.881,
+    64.383,
+    62.78,
+    59.749,
+    57.482,
+    56.66,
+    54.592,
+    51.749,
+    47.949,
+    46.748,
+    45.059,
+    45.556,
+    43.493,
+    39.166,
+    39.664,
+    35.55,
+    34.2,
+    32.789,
+    29.347,
+    27.803,
+    25.596,
+    24.665,
+    21.921,
+    20.417,
+    18.018,
+    17.861,
+    17.249,
+    15.935,
+    14.169,
+    13.431,
+    12.992,
+    11.25,
+    10.286,
+    9.954,
+    9.729,
+    9.218,
+    8.761,
+    7.952,
+    7.758,
+    7.71,
+    7.849,
+    7.758,
+    6.783,
+    6.694,
+    7.046,
+    7.543,
+    8.04,
+    8.537
+   ],
+   "final_clock": 8.537,
+   "site_review_source": "Stockfish 16 \u00b7 depth 16",
+   "site_acpl": 101,
+   "site_accuracy": 94.9,
+   "site_tally": {
+    "brilliant": 0,
+    "best": 32,
+    "excellent": 18,
+    "good": 7,
+    "forced": 2,
+    "inaccuracy": 3,
+    "mistake": 1,
+    "miss": 0,
+    "blunder": 0
+   },
+   "opp_site_acpl": 58,
+   "opp_site_accuracy": 97.3
+  },
+  {
+   "game": "5162cf1d-1d97-4ae9-85bb-3da7f802d415",
+   "url": "https://aichessathon.com/game/5162cf1d-1d97-4ae9-85bb-3da7f802d415",
+   "kind": "Rated",
+   "round": 36,
+   "date": "2026.09.06",
+   "colour": "white",
+   "opponent": "RMFE",
+   "opponent_uuid": "8b991dda-4b49-46cc-900d-96c853154292",
+   "opponent_bot": "RMFE",
+   "opponent_rank_now": 37,
+   "opponent_rating_now": 1910,
+   "opponent_rating_then": 1966,
+   "own_rating_then": 1994,
+   "own_rating_after": 2041,
+   "opening": "King's Indian Classical",
+   "start_fen": "rnbq1rk1/ppp2pbp/5np1/4p3/2P1P3/2N1BN2/PP2BPPP/R2QK2R b KQ - 1 8",
+   "result": "1-0",
+   "score": 1.0,
+   "termination": "checkmate",
+   "termination_text": "Checkmate",
+   "state": "Rated 36\u00b7Final",
+   "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
+   "plies": 90,
+   "own_moves": 45,
+   "site_verdicts": [
+    [
+     "Nc6",
+     "best"
+    ],
+    [
+     "O-O",
+     "best"
+    ],
+    [
+     "Bg4",
+     "best"
+    ],
+    [
+     "h3",
+     "excellent"
+    ],
+    [
+     "Bxf3",
+     "best"
+    ],
+    [
+     "Bxf3",
+     "best"
+    ],
+    [
+     "Nd4",
+     "best"
+    ],
+    [
+     "Nb5",
+     "best"
+    ],
+    [
+     "Ne6",
+     "best"
+    ],
+    [
+     "c5",
+     "excellent"
+    ],
+    [
+     "Qe7",
+     "best"
+    ],
+    [
+     "b4",
+     "excellent"
+    ],
+    [
+     "Rfd8",
+     "excellent"
+    ],
+    [
+     "Qc2",
+     "inaccuracy"
+    ],
+    [
+     "a6",
+     "best"
+    ],
+    [
+     "Nc3",
+     "best"
+    ],
+    [
+     "c6",
+     "good"
+    ],
+    [
+     "Be2",
+     "best"
+    ],
+    [
+     "Nd4",
+     "best"
+    ],
+    [
+     "Qb2",
+     "best"
+    ],
+    [
+     "h6",
+     "excellent"
+    ],
+    [
+     "Bc4",
+     "excellent"
+    ],
+    [
+     "a5",
+     "best"
+    ],
+    [
+     "a3",
+     "best"
+    ],
+    [
+     "Kh7",
+     "good"
+    ],
+    [
+     "Rfd1",
+     "good"
+    ],
+    [
+     "h5",
+     "excellent"
+    ],
+    [
+     "f3",
+     "best"
+    ],
+    [
+     "axb4",
+     "excellent"
+    ],
+    [
+     "axb4",
+     "best"
+    ],
+    [
+     "Rxa1",
+     "best"
+    ],
+    [
+     "Rxa1",
+     "best"
+    ],
+    [
+     "Bh6",
+     "excellent"
+    ],
+    [
+     "Bf2",
+     "excellent"
+    ],
+    [
+     "h4",
+     "best"
+    ],
+    [
+     "Bxh4",
+     "best"
+    ],
+    [
+     "Nxf3+",
+     "brilliant"
+    ],
+    [
+     "gxf3",
+     "best"
+    ],
+    [
+     "Rd2",
+     "best"
+    ],
+    [
+     "Qc1",
+     "best"
+    ],
+    [
+     "b5",
+     "inaccuracy"
+    ],
+    [
+     "cxb6",
+     "best"
+    ],
+    [
+     "Be3+",
+     "inaccuracy"
+    ],
+    [
+     "Kh1",
+     "best"
+    ],
+    [
+     "Qd7",
+     "blunder"
+    ],
+    [
+     "Qf1",
+     "best"
+    ],
+    [
+     "Nh5",
+     "excellent"
+    ],
+    [
+     "Ra7",
+     "best"
+    ],
+    [
+     "Qd6",
+     "best"
+    ],
+    [
+     "Rxf7+",
+     "best"
+    ],
+    [
+     "Kh6",
+     "best"
+    ],
+    [
+     "b7",
+     "best"
+    ],
+    [
+     "Rc2",
+     "good"
+    ],
+    [
+     "Qd3",
+     "excellent"
+    ],
+    [
+     "Qxd3",
+     "best"
+    ],
+    [
+     "Bxd3",
+     "best"
+    ],
+    [
+     "Rc1+",
+     "best"
+    ],
+    [
+     "Kg2",
+     "best"
+    ],
+    [
+     "Ba7",
+     "best"
+    ],
+    [
+     "Bf2",
+     "excellent"
+    ],
+    [
+     "Ra1",
+     "best"
+    ],
+    [
+     "Bxa7",
+     "best"
+    ],
+    [
+     "Rxa7",
+     "best"
+    ],
+    [
+     "Bc4",
+     "best"
+    ],
+    [
+     "Rxb7",
+     "excellent"
+    ],
+    [
+     "Rxb7",
+     "best"
+    ],
+    [
+     "Nf4+",
+     "best"
+    ],
+    [
+     "Kh2",
+     "best"
+    ],
+    [
+     "Nh5",
+     "excellent"
+    ],
+    [
+     "Rc7",
+     "best"
+    ],
+    [
+     "Nf6",
+     "excellent"
+    ],
+    [
+     "Rxc6",
+     "best"
+    ],
+    [
+     "Nh7",
+     "excellent"
+    ],
+    [
+     "b5",
+     "best"
+    ],
+    [
+     "Ng5",
+     "excellent"
+    ],
+    [
+     "Kg3",
+     "excellent"
+    ],
+    [
+     "Nh7",
+     "excellent"
+    ],
+    [
+     "b6",
+     "best"
+    ],
+    [
+     "Nf8",
+     "excellent"
+    ],
+    [
+     "Rc7",
+     "excellent"
+    ],
+    [
+     "g5",
+     "best"
+    ],
+    [
+     "b7",
+     "best"
+    ],
+    [
+     "Ng6",
+     "best"
+    ],
+    [
+     "b8=Q",
+     "excellent"
+    ],
+    [
+     "g4",
+     "excellent"
+    ],
+    [
+     "Kxg4",
+     "best"
+    ],
+    [
+     "Nh8",
+     "excellent"
+    ],
+    [
+     "Qf8+",
+     "excellent"
+    ],
+    [
+     "Kg6",
+     "forced"
+    ]
+   ],
+   "time_per_move": [
+    3.202,
+    4.032,
+    2.873,
+    4.257,
+    2.307,
+    2.237,
+    2.429,
+    7.136,
+    2.138,
+    2.217,
+    8.27,
+    3.186,
+    3.91,
+    3.401,
+    3.012,
+    2.149,
+    2.978,
+    1.68,
+    1.858,
+    2.491,
+    1.877,
+    1.811,
+    2.786,
+    2.905,
+    1.883,
+    2.736,
+    2.047,
+    1.515,
+    5.694,
+    2.069,
+    2.601,
+    2.24,
+    1.369,
+    1.607,
+    2.447,
+    1.274,
+    2.705,
+    1.488,
+    1.365,
+    1.279,
+    0.372,
+    0.009,
+    0.003,
+    0.003,
+    0.002
+   ],
+   "clock_after_move": [
+    117.298,
+    113.766,
+    111.393,
+    107.636,
+    105.829,
+    104.092,
+    102.163,
+    95.527,
+    93.889,
+    92.172,
+    84.402,
+    81.716,
+    78.306,
+    75.405,
+    72.893,
+    71.244,
+    68.766,
+    67.586,
+    66.228,
+    64.237,
+    62.86,
+    61.549,
+    59.263,
+    56.858,
+    55.475,
+    53.239,
+    51.692,
+    50.677,
+    45.483,
+    43.914,
+    41.813,
+    40.073,
+    39.204,
+    38.097,
+    36.15,
+    35.376,
+    33.171,
+    32.183,
+    31.318,
+    30.539,
+    30.667,
+    31.158,
+    31.655,
+    32.152,
+    32.65
+   ],
+   "final_clock": 32.65,
+   "site_review_source": "Stockfish 16 \u00b7 depth 16",
+   "site_acpl": 6,
+   "site_accuracy": 98.3,
+   "site_tally": {
+    "brilliant": 0,
+    "best": 31,
+    "excellent": 12,
+    "good": 1,
+    "forced": 0,
+    "inaccuracy": 1,
+    "mistake": 0,
+    "miss": 0,
+    "blunder": 0
+   },
+   "opp_site_acpl": 71,
+   "opp_site_accuracy": 93.7
+  },
+  {
+   "game": "87038e18-7258-4248-b3b8-fc24f77591af",
+   "url": "https://aichessathon.com/game/87038e18-7258-4248-b3b8-fc24f77591af",
+   "kind": "Rated",
+   "round": 37,
+   "date": "2026.09.06",
+   "colour": "black",
+   "opponent": "ChessNotCheckers",
+   "opponent_uuid": "074b8493-99e7-42f1-976a-e1e48fc4add5",
+   "opponent_bot": "ChittyChittyBangBang",
+   "opponent_rank_now": 31,
+   "opponent_rating_now": 1939,
+   "opponent_rating_then": 1990,
+   "own_rating_then": 2041,
+   "own_rating_after": 2078,
+   "opening": "Reti Opening",
+   "start_fen": "rnbq1rk1/ppp1bppp/4pn2/3p4/2P5/N4NP1/PP1PPPBP/R1BQK2R w KQ - 5 6",
+   "result": "0-1",
+   "score": 1.0,
+   "termination": "checkmate",
+   "termination_text": "Checkmate",
+   "state": "Rated 37\u00b7Final",
+   "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
+   "plies": 136,
+   "own_moves": 68,
+   "site_verdicts": [
+    [
+     "O-O",
+     "excellent"
+    ],
+    [
+     "Nc6",
+     "excellent"
+    ],
+    [
+     "d4",
+     "excellent"
+    ],
+    [
+     "Bxa3",
+     "best"
+    ],
+    [
+     "cxd5",
+     "good"
+    ],
+    [
+     "Bxb2",
+     "brilliant"
+    ],
+    [
+     "Bxb2",
+     "best"
+    ],
+    [
+     "exd5",
+     "best"
+    ],
+    [
+     "Rc1",
+     "excellent"
+    ],
+    [
+     "Ne7",
+     "best"
+    ],
+    [
+     "Qb3",
+     "excellent"
+    ],
+    [
+     "c6",
+     "best"
+    ],
+    [
+     "e3",
+     "excellent"
+    ],
+    [
+     "Qb6",
+     "excellent"
+    ],
+    [
+     "Qa3",
+     "good"
+    ],
+    [
+     "Ng6",
+     "good"
+    ],
+    [
+     "Bc3",
+     "excellent"
+    ],
+    [
+     "a5",
+     "best"
+    ],
+    [
+     "h3",
+     "good"
+    ],
+    [
+     "Bf5",
+     "good"
+    ],
+    [
+     "Rfd1",
+     "good"
+    ],
+    [
+     "Be4",
+     "best"
+    ],
+    [
+     "Qb2",
+     "excellent"
+    ],
+    [
+     "Qxb2",
+     "good"
+    ],
+    [
+     "Bxb2",
+     "best"
+    ],
+    [
+     "Rfe8",
+     "excellent"
+    ],
+    [
+     "Ba3",
+     "excellent"
+    ],
+    [
+     "Rac8",
+     "good"
+    ],
+    [
+     "Bd6",
+     "good"
+    ],
+    [
+     "Nd7",
+     "excellent"
+    ],
+    [
+     "h4",
+     "best"
+    ],
+    [
+     "h5",
+     "best"
+    ],
+    [
+     "Re1",
+     "excellent"
+    ],
+    [
+     "Nb6",
+     "best"
+    ],
+    [
+     "Nd2",
+     "best"
+    ],
+    [
+     "Bxg2",
+     "best"
+    ],
+    [
+     "Kxg2",
+     "best"
+    ],
+    [
+     "Na4",
+     "best"
+    ],
+    [
+     "Rc2",
+     "best"
+    ],
+    [
+     "Re6",
+     "best"
+    ],
+    [
+     "Ba3",
+     "best"
+    ],
+    [
+     "b5",
+     "best"
+    ],
+    [
+     "Nb3",
+     "excellent"
+    ],
+    [
+     "Ra8",
+     "best"
+    ],
+    [
+     "Bc5",
+     "best"
+    ],
+    [
+     "Nf8",
+     "best"
+    ],
+    [
+     "Bxf8",
+     "best"
+    ],
+    [
+     "Kxf8",
+     "best"
+    ],
+    [
+     "Rec1",
+     "best"
+    ],
+    [
+     "Ra6",
+     "best"
+    ],
+    [
+     "Rg1",
+     "good"
+    ],
+    [
+     "Ke7",
+     "good"
+    ],
+    [
+     "Nc1",
+     "best"
+    ],
+    [
+     "b4",
+     "inaccuracy"
+    ],
+    [
+     "Nd3",
+     "best"
+    ],
+    [
+     "Kd6",
+     "best"
+    ],
+    [
+     "Rb1",
+     "best"
+    ],
+    [
+     "Re7",
+     "best"
+    ],
+    [
+     "Rb3",
+     "inaccuracy"
+    ],
+    [
+     "Rc7",
+     "best"
+    ],
+    [
+     "Nf4",
+     "inaccuracy"
+    ],
+    [
+     "c5",
+     "best"
+    ],
+    [
+     "Nxh5",
+     "best"
+    ],
+    [
+     "g6",
+     "best"
+    ],
+    [
+     "Nf4",
+     "best"
+    ],
+    [
+     "c4",
+     "best"
+    ],
+    [
+     "Rb1",
+     "best"
+    ],
+    [
+     "Ra8",
+     "best"
+    ],
+    [
+     "h5",
+     "good"
+    ],
+    [
+     "gxh5",
+     "best"
+    ],
+    [
+     "Nxh5",
+     "best"
+    ],
+    [
+     "Nc3",
+     "excellent"
+    ],
+    [
+     "Rh1",
+     "best"
+    ],
+    [
+     "Rh8",
+     "best"
+    ],
+    [
+     "f3",
+     "good"
+    ],
+    [
+     "Nb5",
+     "excellent"
+    ],
+    [
+     "Re2",
+     "good"
+    ],
+    [
+     "a4",
+     "excellent"
+    ],
+    [
+     "Ng7",
+     "good"
+    ],
+    [
+     "Rxh1",
+     "best"
+    ],
+    [
+     "Ne8+",
+     "best"
+    ],
+    [
+     "Kc6",
+     "best"
+    ],
+    [
+     "Nxc7",
+     "excellent"
+    ],
+    [
+     "Nc3",
+     "excellent"
+    ],
+    [
+     "Rb2",
+     "excellent"
+    ],
+    [
+     "Ra1",
+     "best"
+    ],
+    [
+     "Na6",
+     "excellent"
+    ],
+    [
+     "Kb5",
+     "good"
+    ],
+    [
+     "Nc7+",
+     "excellent"
+    ],
+    [
+     "Ka5",
+     "excellent"
+    ],
+    [
+     "e4",
+     "excellent"
+    ],
+    [
+     "dxe4",
+     "best"
+    ],
+    [
+     "fxe4",
+     "best"
+    ],
+    [
+     "a3",
+     "good"
+    ],
+    [
+     "Rc2",
+     "best"
+    ],
+    [
+     "Rxa2",
+     "excellent"
+    ],
+    [
+     "Rxa2",
+     "best"
+    ],
+    [
+     "Nxa2",
+     "best"
+    ],
+    [
+     "d5",
+     "excellent"
+    ],
+    [
+     "b3",
+     "best"
+    ],
+    [
+     "d6",
+     "best"
+    ],
+    [
+     "Nb4",
+     "best"
+    ],
+    [
+     "Nd5",
+     "best"
+    ],
+    [
+     "Nc6",
+     "best"
+    ],
+    [
+     "e5",
+     "good"
+    ],
+    [
+     "Nxe5",
+     "excellent"
+    ],
+    [
+     "Ne3",
+     "best"
+    ],
+    [
+     "Kb4",
+     "excellent"
+    ],
+    [
+     "Nd5+",
+     "excellent"
+    ],
+    [
+     "Kc5",
+     "excellent"
+    ],
+    [
+     "Nf6",
+     "good"
+    ],
+    [
+     "c3",
+     "good"
+    ],
+    [
+     "Ne4+",
+     "excellent"
+    ],
+    [
+     "Kd4",
+     "excellent"
+    ],
+    [
+     "Ng5",
+     "best"
+    ],
+    [
+     "c2",
+     "best"
+    ],
+    [
+     "Nf3+",
+     "best"
+    ],
+    [
+     "Kd5",
+     "excellent"
+    ],
+    [
+     "Nxe5",
+     "best"
+    ],
+    [
+     "c1=Q",
+     "best"
+    ],
+    [
+     "g4",
+     "excellent"
+    ],
+    [
+     "Qc2+",
+     "excellent"
+    ],
+    [
+     "Kh3",
+     "inaccuracy"
+    ],
+    [
+     "Kxe5",
+     "best"
+    ],
+    [
+     "d7",
+     "best"
+    ],
+    [
+     "Qd3+",
+     "best"
+    ],
+    [
+     "Kg2",
+     "excellent"
+    ],
+    [
+     "a2",
+     "excellent"
+    ],
+    [
+     "d8=B",
+     "excellent"
+    ],
+    [
+     "Qxd8",
+     "best"
+    ],
+    [
+     "Kf3",
+     "excellent"
+    ],
+    [
+     "a1=Q",
+     "best"
+    ],
+    [
+     "Kg3",
+     "excellent"
+    ],
+    [
+     "Qg1+",
+     "best"
+    ],
+    [
+     "Kf3",
+     "excellent"
+    ]
+   ],
+   "time_per_move": [
+    4.475,
+    3.906,
+    2.862,
+    6.228,
+    2.71,
+    2.322,
+    4.831,
+    4.968,
+    3.703,
+    2.214,
+    2.114,
+    7.686,
+    2.876,
+    6.794,
+    3.737,
+    3.786,
+    1.484,
+    4.638,
+    3.072,
+    1.572,
+    1.359,
+    2.157,
+    1.456,
+    1.96,
+    5.186,
+    1.509,
+    1.238,
+    1.145,
+    1.668,
+    1.108,
+    2.511,
+    1.734,
+    2.701,
+    2.917,
+    1.207,
+    2.15,
+    1.72,
+    2.714,
+    1.008,
+    0.98,
+    0.88,
+    1.062,
+    1.065,
+    1.706,
+    2.49,
+    2.963,
+    1.045,
+    0.89,
+    1.765,
+    1.142,
+    2.63,
+    1.899,
+    1.06,
+    1.354,
+    2.04,
+    1.739,
+    1.496,
+    0.566,
+    1.287,
+    1.132,
+    0.853,
+    0.394,
+    0.419,
+    0.267,
+    0.365,
+    0.049,
+    0.003,
+    0.002
+   ],
+   "clock_after_move": [
+    116.025,
+    112.619,
+    110.257,
+    104.529,
+    102.319,
+    100.497,
+    96.166,
+    91.698,
+    88.495,
+    86.781,
+    85.167,
+    77.981,
+    75.605,
+    69.311,
+    66.074,
+    62.788,
+    61.804,
+    57.666,
+    55.094,
+    54.022,
+    53.163,
+    51.506,
+    50.55,
+    49.09,
+    44.404,
+    43.395,
+    42.657,
+    42.012,
+    40.844,
+    40.236,
+    38.225,
+    36.991,
+    34.79,
+    32.373,
+    31.666,
+    30.016,
+    28.796,
+    26.582,
+    26.074,
+    25.594,
+    25.214,
+    24.652,
+    24.087,
+    22.881,
+    20.891,
+    18.428,
+    17.883,
+    17.493,
+    16.228,
+    15.586,
+    13.456,
+    12.057,
+    11.497,
+    10.643,
+    9.103,
+    7.864,
+    6.868,
+    6.802,
+    6.015,
+    5.383,
+    5.03,
+    5.136,
+    5.217,
+    5.45,
+    5.585,
+    6.036,
+    6.533,
+    7.031
+   ],
+   "final_clock": 7.031,
+   "site_review_source": "Stockfish 16 \u00b7 depth 16",
+   "site_acpl": 21,
+   "site_accuracy": 97.1,
+   "site_tally": {
+    "brilliant": 1,
+    "best": 40,
+    "excellent": 18,
+    "good": 8,
+    "forced": 0,
+    "inaccuracy": 1,
+    "mistake": 0,
+    "miss": 0,
+    "blunder": 0
+   },
+   "opp_site_acpl": 60,
+   "opp_site_accuracy": 95.2
+  },
+  {
+   "game": "4ebbeef3-d49c-4185-83a0-a0fc5662c8d0",
+   "url": "https://aichessathon.com/game/4ebbeef3-d49c-4185-83a0-a0fc5662c8d0",
+   "kind": "Rated",
+   "round": 38,
+   "date": "2026.09.06",
+   "colour": "white",
+   "opponent": "Abhi's chess demon",
+   "opponent_uuid": "7af404ee-389f-427c-9433-40ebe5902fc6",
+   "opponent_bot": "Dark Sister",
+   "opponent_rank_now": 22,
+   "opponent_rating_now": 2026,
+   "opponent_rating_then": 2102,
+   "own_rating_then": 2078,
+   "own_rating_after": 2114,
+   "opening": "French Tarrasch",
+   "start_fen": "rnbqk1nr/1p3ppp/p7/2bp4/P7/1N6/1PP2PPP/R1BQKBNR b KQkq - 1 7",
+   "result": "1-0",
+   "score": 1.0,
+   "termination": "checkmate",
+   "termination_text": "Checkmate",
+   "state": "Rated 38\u00b7Final",
+   "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "win",
+   "plies": 132,
+   "own_moves": 66,
+   "site_verdicts": [
+    [
+     "Ba7",
+     "best"
+    ],
+    [
+     "Nf3",
+     "excellent"
+    ],
+    [
+     "Nf6",
+     "best"
+    ],
+    [
+     "Bd3",
+     "best"
+    ],
+    [
+     "O-O",
+     "best"
+    ],
+    [
+     "O-O",
+     "best"
+    ],
+    [
+     "Ne4",
+     "excellent"
+    ],
+    [
+     "c3",
+     "excellent"
+    ],
+    [
+     "Nc6",
+     "best"
+    ],
+    [
+     "Nbd4",
+     "best"
+    ],
+    [
+     "Qf6",
+     "excellent"
+    ],
+    [
+     "Be3",
+     "best"
+    ],
+    [
+     "Bg4",
+     "best"
+    ],
+    [
+     "Nxc6",
+     "best"
+    ],
+    [
+     "Bxe3",
+     "inaccuracy"
+    ],
+    [
+     "Nb4",
+     "best"
+    ],
+    [
+     "Nxf2",
+     "excellent"
+    ],
+    [
+     "Rxf2",
+     "best"
+    ],
+    [
+     "Bxf2+",
+     "best"
+    ],
+    [
+     "Kxf2",
+     "best"
+    ],
+    [
+     "Rad8",
+     "best"
+    ],
+    [
+     "h3",
+     "excellent"
+    ],
+    [
+     "Bh5",
+     "excellent"
+    ],
+    [
+     "g4",
+     "inaccuracy"
+    ],
+    [
+     "Bg6",
+     "best"
+    ],
+    [
+     "Bxg6",
+     "excellent"
+    ],
+    [
+     "fxg6",
+     "best"
+    ],
+    [
+     "Kg2",
+     "best"
+    ],
+    [
+     "h5",
+     "best"
+    ],
+    [
+     "g5",
+     "excellent"
+    ],
+    [
+     "Qd6",
+     "good"
+    ],
+    [
+     "Qd2",
+     "best"
+    ],
+    [
+     "d4",
+     "best"
+    ],
+    [
+     "Nxd4",
+     "good"
+    ],
+    [
+     "a5",
+     "good"
+    ],
+    [
+     "Nd3",
+     "best"
+    ],
+    [
+     "h4",
+     "best"
+    ],
+    [
+     "Qe1",
+     "best"
+    ],
+    [
+     "Qd5+",
+     "best"
+    ],
+    [
+     "Kh2",
+     "best"
+    ],
+    [
+     "Qxg5",
+     "best"
+    ],
+    [
+     "Rd1",
+     "good"
+    ],
+    [
+     "Rde8",
+     "best"
+    ],
+    [
+     "Qg1",
+     "best"
+    ],
+    [
+     "Qxg1+",
+     "good"
+    ],
+    [
+     "Rxg1",
+     "excellent"
+    ],
+    [
+     "Re3",
+     "best"
+    ],
+    [
+     "Rd1",
+     "best"
+    ],
+    [
+     "Kh7",
+     "excellent"
+    ],
+    [
+     "Rd2",
+     "best"
+    ],
+    [
+     "Rfe8",
+     "best"
+    ],
+    [
+     "Nf2",
+     "best"
+    ],
+    [
+     "g5",
+     "excellent"
+    ],
+    [
+     "Ng4",
+     "best"
+    ],
+    [
+     "Re1",
+     "best"
+    ],
+    [
+     "Kg2",
+     "best"
+    ],
+    [
+     "Kg6",
+     "excellent"
+    ],
+    [
+     "Kf2",
+     "best"
+    ],
+    [
+     "Rb1",
+     "inaccuracy"
+    ],
+    [
+     "Nf3",
+     "best"
+    ],
+    [
+     "Kh5",
+     "inaccuracy"
+    ],
+    [
+     "Nge5",
+     "inaccuracy"
+    ],
+    [
+     "b6",
+     "excellent"
+    ],
+    [
+     "Nc4",
+     "good"
+    ],
+    [
+     "Re4",
+     "good"
+    ],
+    [
+     "Rd8",
+     "best"
+    ],
+    [
+     "Kg6",
+     "best"
+    ],
+    [
+     "Rb8",
+     "excellent"
+    ],
+    [
+     "Re6",
+     "best"
+    ],
+    [
+     "Rf8",
+     "good"
+    ],
+    [
+     "Kh6",
+     "inaccuracy"
+    ],
+    [
+     "Rh8+",
+     "good"
+    ],
+    [
+     "Kg6",
+     "forced"
+    ],
+    [
+     "Nce5+",
+     "best"
+    ],
+    [
+     "Kf5",
+     "best"
+    ],
+    [
+     "Nd3",
+     "good"
+    ],
+    [
+     "Kg6",
+     "good"
+    ],
+    [
+     "Rf8",
+     "good"
+    ],
+    [
+     "Rf6",
+     "best"
+    ],
+    [
+     "Rd8",
+     "excellent"
+    ],
+    [
+     "Rh1",
+     "best"
+    ],
+    [
+     "Kg2",
+     "best"
+    ],
+    [
+     "Rb1",
+     "best"
+    ],
+    [
+     "Rd5",
+     "best"
+    ],
+    [
+     "Kh6",
+     "excellent"
+    ],
+    [
+     "Rb5",
+     "best"
+    ],
+    [
+     "Re6",
+     "good"
+    ],
+    [
+     "Kf2",
+     "best"
+    ],
+    [
+     "Rf6",
+     "best"
+    ],
+    [
+     "Ne5",
+     "best"
+    ],
+    [
+     "Kh7",
+     "excellent"
+    ],
+    [
+     "Ke3",
+     "good"
+    ],
+    [
+     "Rf5",
+     "best"
+    ],
+    [
+     "Rxb6",
+     "mistake"
+    ],
+    [
+     "Rh1",
+     "best"
+    ],
+    [
+     "Ke4",
+     "best"
+    ],
+    [
+     "Rf4+",
+     "best"
+    ],
+    [
+     "Kd5",
+     "best"
+    ],
+    [
+     "Rf5",
+     "best"
+    ],
+    [
+     "Nd4",
+     "best"
+    ],
+    [
+     "Rd1",
+     "inaccuracy"
+    ],
+    [
+     "Rb3",
+     "good"
+    ],
+    [
+     "g4",
+     "best"
+    ],
+    [
+     "hxg4",
+     "best"
+    ],
+    [
+     "Rf8",
+     "good"
+    ],
+    [
+     "Kc5",
+     "best"
+    ],
+    [
+     "h3",
+     "inaccuracy"
+    ],
+    [
+     "c4",
+     "best"
+    ],
+    [
+     "Rh1",
+     "best"
+    ],
+    [
+     "Ne6",
+     "inaccuracy"
+    ],
+    [
+     "Re8",
+     "inaccuracy"
+    ],
+    [
+     "Ng5+",
+     "best"
+    ],
+    [
+     "Kg8",
+     "excellent"
+    ],
+    [
+     "Nc6",
+     "best"
+    ],
+    [
+     "Rf1",
+     "good"
+    ],
+    [
+     "Nxh3",
+     "best"
+    ],
+    [
+     "Rc8",
+     "excellent"
+    ],
+    [
+     "Rb5",
+     "excellent"
+    ],
+    [
+     "Rf3",
+     "excellent"
+    ],
+    [
+     "Kd5",
+     "best"
+    ],
+    [
+     "Re8",
+     "excellent"
+    ],
+    [
+     "Ng5",
+     "best"
+    ],
+    [
+     "Rd3+",
+     "excellent"
+    ],
+    [
+     "Kc5",
+     "best"
+    ],
+    [
+     "Rg3",
+     "excellent"
+    ],
+    [
+     "Kd6",
+     "best"
+    ],
+    [
+     "Rxg4",
+     "blunder"
+    ],
+    [
+     "Ne7+",
+     "best"
+    ],
+    [
+     "Kh8",
+     "excellent"
+    ],
+    [
+     "Nf7+",
+     "best"
+    ],
+    [
+     "Kh7",
+     "forced"
+    ]
+   ],
+   "time_per_move": [
+    2.925,
+    2.392,
+    3.521,
+    4.214,
+    2.586,
+    5.601,
+    2.44,
+    2.938,
+    2.518,
+    8.537,
+    1.966,
+    7.747,
+    1.978,
+    2.641,
+    4.45,
+    2.511,
+    3.105,
+    1.912,
+    2.58,
+    5.376,
+    5.717,
+    5.119,
+    3.386,
+    1.713,
+    3.423,
+    1.305,
+    1.334,
+    1.638,
+    1.314,
+    1.716,
+    1.057,
+    2.554,
+    1.655,
+    2.161,
+    3.893,
+    2.412,
+    3.458,
+    3.144,
+    1.007,
+    2.811,
+    0.917,
+    1.344,
+    1.081,
+    1.072,
+    0.731,
+    0.762,
+    0.799,
+    1.488,
+    1.596,
+    1.859,
+    0.966,
+    0.855,
+    0.537,
+    0.551,
+    0.996,
+    0.464,
+    0.563,
+    0.498,
+    0.796,
+    0.755,
+    0.509,
+    0.555,
+    0.484,
+    0.007,
+    0.003,
+    0.003
+   ],
+   "clock_after_move": [
+    117.575,
+    115.683,
+    112.662,
+    108.948,
+    106.862,
+    101.761,
+    99.821,
+    97.383,
+    95.365,
+    87.328,
+    85.862,
+    78.615,
+    77.137,
+    74.996,
+    71.046,
+    69.035,
+    66.43,
+    65.018,
+    62.938,
+    58.062,
+    52.845,
+    48.226,
+    45.34,
+    44.127,
+    41.204,
+    40.399,
+    39.565,
+    38.427,
+    37.613,
+    36.397,
+    35.84,
+    33.786,
+    32.631,
+    30.97,
+    27.577,
+    25.665,
+    22.707,
+    20.063,
+    19.556,
+    17.245,
+    16.828,
+    15.984,
+    15.403,
+    14.831,
+    14.6,
+    14.338,
+    14.039,
+    13.051,
+    11.955,
+    10.596,
+    10.13,
+    9.775,
+    9.738,
+    9.687,
+    9.191,
+    9.227,
+    9.164,
+    9.166,
+    8.87,
+    8.615,
+    8.606,
+    8.551,
+    8.567,
+    9.06,
+    9.557,
+    10.054
+   ],
+   "final_clock": 10.054,
+   "site_review_source": "Stockfish 16 \u00b7 depth 16",
+   "site_acpl": 14,
+   "site_accuracy": 96.0,
+   "site_tally": {
+    "brilliant": 0,
+    "best": 44,
+    "excellent": 9,
+    "good": 9,
+    "forced": 0,
+    "inaccuracy": 3,
+    "mistake": 1,
+    "miss": 0,
+    "blunder": 0
+   },
+   "opp_site_acpl": 35,
+   "opp_site_accuracy": 93.7
+  },
+  {
+   "game": "65805a49-fee3-4166-bc4f-0cb05ec1095a",
+   "url": "https://aichessathon.com/game/65805a49-fee3-4166-bc4f-0cb05ec1095a",
+   "kind": "Rated",
+   "round": 39,
+   "date": "2026.09.06",
+   "colour": "black",
+   "opponent": "ms",
+   "opponent_uuid": "c3e1bc09-3d21-4279-ace0-16bb3742f5da",
+   "opponent_bot": "ms",
+   "opponent_rank_now": 14,
+   "opponent_rating_now": 2099,
+   "opponent_rating_then": 2099,
+   "own_rating_then": 2114,
+   "own_rating_after": null,
+   "opening": "Nimzo-Indian Defence",
+   "start_fen": "rnbq1rk1/pp3ppp/4pn2/2p5/1bBP4/2N1P2P/PP3PP1/R1BQK1NR w KQ - 0 8",
+   "result": "1/2-1/2",
+   "score": 0.5,
+   "termination": "threefold_repetition",
+   "termination_text": "Threefold repetition",
+   "state": "Rated 39\u00b7Final",
+   "void": false,
+   "voided": false,
+   "voided_at": null,
+   "site_verdict": "draw",
+   "plies": 69,
+   "own_moves": 34,
+   "site_verdicts": [
+    [
+     "Nf3",
+     "best"
+    ],
+    [
+     "a6",
+     "excellent"
+    ],
+    [
+     "O-O",
+     "best"
+    ],
+    [
+     "b5",
+     "excellent"
+    ],
+    [
+     "Be2",
+     "best"
+    ],
+    [
+     "cxd4",
+     "best"
+    ],
+    [
+     "exd4",
+     "excellent"
+    ],
+    [
+     "Bb7",
+     "best"
+    ],
+    [
+     "a4",
+     "best"
+    ],
+    [
+     "bxa4",
+     "best"
+    ],
+    [
+     "Qxa4",
+     "best"
+    ],
+    [
+     "a5",
+     "best"
+    ],
+    [
+     "Bf4",
+     "excellent"
+    ],
+    [
+     "Nc6",
+     "best"
+    ],
+    [
+     "Rfd1",
+     "excellent"
+    ],
+    [
+     "Nd5",
+     "best"
+    ],
+    [
+     "Bd2",
+     "best"
+    ],
+    [
+     "Nce7",
+     "excellent"
+    ],
+    [
+     "Nxd5",
+     "best"
+    ],
+    [
+     "Nxd5",
+     "best"
+    ],
+    [
+     "Qc2",
+     "excellent"
+    ],
+    [
+     "Qb6",
+     "best"
+    ],
+    [
+     "Bxb4",
+     "best"
+    ],
+    [
+     "Qxb4",
+     "best"
+    ],
+    [
+     "Ra4",
+     "best"
+    ],
+    [
+     "Qb6",
+     "best"
+    ],
+    [
+     "Qd2",
+     "excellent"
+    ],
+    [
+     "Nb4",
+     "best"
+    ],
+    [
+     "Ra3",
+     "best"
+    ],
+    [
+     "Rfc8",
+     "good"
+    ],
+    [
+     "Rc3",
+     "good"
+    ],
+    [
+     "Rxc3",
+     "excellent"
+    ],
+    [
+     "bxc3",
+     "best"
+    ],
+    [
+     "Nc6",
+     "best"
+    ],
+    [
+     "c4",
+     "excellent"
+    ],
+    [
+     "a4",
+     "best"
+    ],
+    [
+     "d5",
+     "best"
+    ],
+    [
+     "Nd8",
+     "best"
+    ],
+    [
+     "Bd3",
+     "best"
+    ],
+    [
+     "a3",
+     "best"
+    ],
+    [
+     "Bb1",
+     "best"
+    ],
+    [
+     "Qb3",
+     "excellent"
+    ],
+    [
+     "Ba2",
+     "best"
+    ],
+    [
+     "Qb2",
+     "best"
+    ],
+    [
+     "Rb1",
+     "excellent"
+    ],
+    [
+     "Qxd2",
+     "best"
+    ],
+    [
+     "Nxd2",
+     "best"
+    ],
+    [
+     "exd5",
+     "excellent"
+    ],
+    [
+     "cxd5",
+     "best"
+    ],
+    [
+     "Kf8",
+     "best"
+    ],
+    [
+     "Rd1",
+     "excellent"
+    ],
+    [
+     "Ra5",
+     "excellent"
+    ],
+    [
+     "Ne4",
+     "best"
+    ],
+    [
+     "Ke7",
+     "best"
+    ],
+    [
+     "Re1",
+     "excellent"
+    ],
+    [
+     "Kd7",
+     "best"
+    ],
+    [
+     "Nc3",
+     "excellent"
+    ],
+    [
+     "f5",
+     "best"
+    ],
+    [
+     "Re3",
+     "best"
+    ],
+    [
+     "g6",
+     "excellent"
+    ],
+    [
+     "Rd3",
+     "excellent"
+    ],
+    [
+     "Ba6",
+     "best"
+    ],
+    [
+     "Rf3",
+     "excellent"
+    ],
+    [
+     "Bb7",
+     "excellent"
+    ],
+    [
+     "Rd3",
+     "excellent"
+    ],
+    [
+     "Ba6",
+     "best"
+    ],
+    [
+     "Rf3",
+     "excellent"
+    ],
+    [
+     "Bb7",
+     "excellent"
+    ]
+   ],
+   "time_per_move": [
+    3.022,
+    2.812,
+    6.476,
+    2.811,
+    2.873,
+    2.907,
+    2.655,
+    5.091,
+    2.264,
+    5.154,
+    1.977,
+    6.103,
+    2.728,
+    4.423,
+    3.809,
+    6.845,
+    3.154,
+    4.148,
+    3.231,
+    2.25,
+    2.949,
+    3.404,
+    3.213,
+    1.855,
+    1.815,
+    1.334,
+    2.979,
+    1.294,
+    1.022,
+    3.002,
+    1.247,
+    1.125,
+    1.366,
+    1.246
+   ],
+   "clock_after_move": [
+    117.478,
+    115.166,
+    109.19,
+    106.879,
+    104.506,
+    102.099,
+    99.944,
+    95.353,
+    93.589,
+    88.935,
+    87.458,
+    81.855,
+    79.627,
+    75.704,
+    72.395,
+    66.05,
+    63.396,
+    59.748,
+    57.017,
+    55.267,
+    52.818,
+    49.914,
+    47.201,
+    45.846,
+    44.531,
+    43.697,
+    41.218,
+    40.424,
+    39.902,
+    37.4,
+    36.653,
+    36.028,
+    35.162,
+    34.416
+   ],
+   "final_clock": 34.416,
+   "site_review_source": "Stockfish 16 \u00b7 depth 16",
+   "site_acpl": 4,
+   "site_accuracy": 98.9,
+   "site_tally": {
+    "brilliant": 0,
+    "best": 23,
+    "excellent": 10,
+    "good": 1,
+    "forced": 0,
+    "inaccuracy": 0,
+    "mistake": 0,
+    "miss": 0,
+    "blunder": 0
+   },
+   "opp_site_acpl": 4,
+   "opp_site_accuracy": 99.0
   }
  ]
 }

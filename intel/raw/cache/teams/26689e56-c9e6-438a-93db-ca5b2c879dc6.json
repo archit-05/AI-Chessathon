@@ -2,10 +2,10 @@
  "uuid": "26689e56-c9e6-438a-93db-ca5b2c879dc6",
  "bot": "xx",
  "team": "xx",
- "rating": 2039,
- "rank": 21,
- "record": "18-0-7",
- "rated_rounds": 27,
+ "rating": 2050,
+ "rank": 19,
+ "record": "18-3-7",
+ "rated_rounds": 29,
  "history": [
   [
    10,
@@ -114,9 +114,37 @@
   [
    36,
    2039
+  ],
+  [
+   37,
+   2042
+  ],
+  [
+   38,
+   2050
   ]
  ],
  "games": [
+  {
+   "game": "544051de-97d7-42b7-93c8-f3a2f47e7b19",
+   "kind": "Rated",
+   "round": 39,
+   "colour": "Black",
+   "opponent": "AlphaBeta",
+   "opponent_uuid": "1f234cf3-2829-4107-8a5f-2d0e15e978da",
+   "verdict": "draw",
+   "opening": "Ruy Lopez, Closed"
+  },
+  {
+   "game": "7b83f479-51dc-4d04-8397-c14cefc09814",
+   "kind": "Rated",
+   "round": 38,
+   "colour": "White",
+   "opponent": "Cornelius",
+   "opponent_uuid": "acecd823-279a-4bf9-8321-0ee6ed68deda",
+   "verdict": "draw",
+   "opening": "French Winawer"
+  },
   {
    "game": "c43e0254-89f3-4029-8aeb-c6cb479060b5",
    "kind": "Rated",
@@ -124,7 +152,7 @@
    "colour": "White",
    "opponent": "slopfish",
    "opponent_uuid": "1d137be0-3a3e-4cda-a7ba-b22d8d178e66",
-   "verdict": "live",
+   "verdict": "draw",
    "opening": "Caro-Kann Classical"
   },
   {
@@ -398,5 +426,5 @@
    "opening": "Reti Opening"
   }
  ],
- "fetched_at": "2026-09-06T13:11:28Z"
+ "fetched_at": "2026-09-06T15:23:11Z"
 }

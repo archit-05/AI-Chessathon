@@ -2,18 +2,18 @@
  "uuid": "5413ad8a-a0f1-4379-90c1-281f5c365fb7",
  "bot": "Sirloin v3",
  "team": "Elbow Grease",
- "rating": 1719,
- "rank": 80,
- "record": "14-7-12",
- "rated_rounds": 33,
+ "rating": 1714,
+ "rank": 88,
+ "record": "16-3-14",
+ "rated_rounds": 38,
  "history": [
   [
    1,
-   1578
+   1575
   ],
   [
    2,
-   1563
+   1557
   ],
   [
    3,
@@ -21,39 +21,39 @@
   ],
   [
    4,
-   1572
+   1561
   ],
   [
    5,
-   1522
+   1518
   ],
   [
    6,
-   1488
+   1483
   ],
   [
    7,
-   1524
+   1523
   ],
   [
    8,
-   1560
+   1563
   ],
   [
    9,
-   1558
+   1555
   ],
   [
    10,
-   1655
+   1652
   ],
   [
    11,
-   1578
+   1568
   ],
   [
    12,
-   1637
+   1626
   ],
   [
    13,
@@ -61,86 +61,166 @@
   ],
   [
    14,
-   1586
+   1584
   ],
   [
    15,
-   1692
+   1688
   ],
   [
    16,
-   1691
+   1693
   ],
   [
    17,
-   1601
+   1583
   ],
   [
    18,
-   1697
+   1684
   ],
   [
    19,
-   1592
+   1581
   ],
   [
    20,
-   1528
+   1521
   ],
   [
    21,
-   1598
+   1586
   ],
   [
    22,
-   1537
+   1536
   ],
   [
    23,
-   1562
+   1531
   ],
   [
    24,
-   1508
+   1480
   ],
   [
    25,
-   1509
+   1489
   ],
   [
    26,
-   1568
+   1551
   ],
   [
    27,
-   1538
+   1526
   ],
   [
    28,
-   1563
+   1543
   ],
   [
    29,
-   1532
+   1523
   ],
   [
    30,
-   1569
+   1556
   ],
   [
    31,
-   1645
+   1628
   ],
   [
    32,
-   1650
+   1632
   ],
   [
    33,
-   1719
+   1701
+  ],
+  [
+   34,
+   1707
+  ],
+  [
+   35,
+   1624
+  ],
+  [
+   36,
+   1616
+  ],
+  [
+   37,
+   1660
+  ],
+  [
+   38,
+   1714
   ]
  ],
  "games": [
+  {
+   "game": "03d67d89-aff7-404b-87bd-a5cae576242f",
+   "kind": "Rated",
+   "round": 39,
+   "colour": "White",
+   "opponent": "Opus Carlsen",
+   "opponent_uuid": "f0286356-626d-4dd2-86ab-fd6d779063cb",
+   "verdict": "loss",
+   "opening": "English Symmetrical"
+  },
+  {
+   "game": "0871b966-1f90-4685-8189-32665c6bd2b1",
+   "kind": "Rated",
+   "round": 38,
+   "colour": "Black",
+   "opponent": "Defense",
+   "opponent_uuid": "b9800604-af3c-4f05-addf-11114b400ac0",
+   "verdict": "win",
+   "opening": "Italian Game"
+  },
+  {
+   "game": "a5ede12d-8a5e-4c06-9fe0-3efd0b86a743",
+   "kind": "Rated",
+   "round": 37,
+   "colour": "White",
+   "opponent": "APEX",
+   "opponent_uuid": "dbe5877f-f1ea-410f-8fea-c759d58fe09a",
+   "verdict": "win",
+   "opening": "King's Indian Classical"
+  },
+  {
+   "game": "2778c39c-2963-492f-8c5e-2e5d853e5184",
+   "kind": "Rated",
+   "round": 36,
+   "colour": "White",
+   "opponent": "Rustic Alpha 3",
+   "opponent_uuid": "dd558c2d-0d10-4b3b-bcfc-529c000205fa",
+   "verdict": "draw",
+   "opening": "Sicilian Sveshnikov"
+  },
+  {
+   "game": "4037bb7d-1d2c-4072-a6d9-8b9efebd2620",
+   "kind": "Rated",
+   "round": 35,
+   "colour": "Black",
+   "opponent": "Gambit",
+   "opponent_uuid": "e9f8c904-d9a9-4bfb-acf8-451b5aa2e2f4",
+   "verdict": "loss",
+   "opening": "French Tarrasch"
+  },
+  {
+   "game": "8e82a942-4f80-452e-87c8-aec1a0c22b7c",
+   "kind": "Rated",
+   "round": 34,
+   "colour": "White",
+   "opponent": "blundered my queen \ud83d\udc94",
+   "opponent_uuid": "ea0db44a-0888-4b54-b7ff-ec805c7befb6",
+   "verdict": "draw",
+   "opening": "Sicilian Classical"
+  },
   {
    "game": "48890b75-d881-4fcf-9d08-e3799da76770",
    "kind": "Rated",
@@ -158,7 +238,7 @@
    "colour": "Black",
    "opponent": "Bonjour Oui Oui Baguette",
    "opponent_uuid": "d1e28d2b-82b4-4d1c-970e-856a0e6d8ec0",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "Nimzo-Indian Defence"
   },
   {
@@ -248,7 +328,7 @@
    "colour": "Black",
    "opponent": "blundered my queen \ud83d\udc94",
    "opponent_uuid": "ea0db44a-0888-4b54-b7ff-ec805c7befb6",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "Petroff Defence"
   },
   {
@@ -318,7 +398,7 @@
    "colour": "Black",
    "opponent": "LehmanBro",
    "opponent_uuid": "8d98448c-f28c-4552-b82d-cb657b33175d",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "Catalan Opening"
   },
   {
@@ -348,7 +428,7 @@
    "colour": "Black",
    "opponent": "Something",
    "opponent_uuid": "051edd6e-9a85-47c0-8c8f-4b3a87a2ec30",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "Italian Game"
   },
   {
@@ -388,7 +468,7 @@
    "colour": "White",
    "opponent": "archierayteam",
    "opponent_uuid": "e41de29d-1869-4a7e-9cf0-0159e71e3d2c",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "Sicilian Dragon"
   },
   {
@@ -458,7 +538,7 @@
    "colour": "White",
    "opponent": "Yumo",
    "opponent_uuid": "5aa0e1ef-c640-45f9-b4b4-1389de2a609b",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "Reti Opening"
   },
   {
@@ -472,5 +552,5 @@
    "opening": "Catalan Opening"
   }
  ],
- "fetched_at": "2026-09-06T09:29:13Z"
+ "fetched_at": "2026-09-06T15:23:57Z"
 }
