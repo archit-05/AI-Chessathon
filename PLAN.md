@@ -551,3 +551,11 @@ conversion + endgame suite, book; Tue own-search fine-tune, SF 2600/2800 ladder;
   extraction wins vs Stockfish 2400 as Black, compile 16 s quiet. Evidence for the net: +34 ±40
   self-play over v2.1 and 11.7 vs 13.3 centipawn loss at the real clock. Batch-2 gate, labelling
   and the v3b fine-tune run overnight.
+- **Sun 6 Sept, 21:40 — R43 analysed (draw a queen down, swindled).** 14.Rad1 (−60) and
+  17.Rd4?? exd4 (−328, Stockfish best Rd6), 20.Nc5 (−54); then the opponent erred and we took the
+  perpetual correctly. Both v2.1 and v2.2 still play Rd4 at 2.5 s (+69 / +105, d14; +36 at d17).
+  Probes: the net's static eval before Rd4 is +211 for White in a level position, and after
+  17...exd4 18.Bxd4 our own search from Black's side finds Black +230 at d17 while the root still
+  scores the line +36 — over-optimistic evaluation of the attack plus reduced/pruned quiet
+  defences. Added tests/pos/blunders.epd + tests/test_blunders.py (must not repeat Rd4); the v3b
+  fine-tune (evaluation) and batch 2 (ordering/depth) are the overnight remedies to measure.
