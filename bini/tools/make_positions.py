@@ -38,9 +38,9 @@ class UCI:
             if line.startswith(token):
                 return line
 
-    def eval2(self, fen: str, nodes: int) -> tuple[int | None, int | None, str | None]:
+    def eval2(self, fen: str, nodes: int) -> tuple[int | None, int | None, str | None]:  # nodes reused as movetime ms
         """(best cp, second cp, best move) from the side to move's view; mates mapped to +-3000."""
-        self.cmd(f"position fen {fen}"); self.cmd(f"go nodes {nodes}")
+        self.cmd(f"position fen {fen}"); self.cmd(f"go movetime {nodes}")
         best = second = None; bm = None
         while True:
             line = self.p.stdout.readline()  # type: ignore[union-attr]
@@ -92,9 +92,13 @@ def main() -> None:
     rng.shuffle(cands)
     sf = UCI()
     sets: dict[str, list[str]] = {"sharp": [], "winning": [], "marginal": [], "puzzles": []}
-    for fen, npieces in cands:
+    for k, (fen, npieces) in enumerate(cands):
         if all(len(v) >= a.per_set for v in sets.values()):
             break
+        if k % 100 == 0:
+            print(f"  {k} evaluated: " + ", ".join(f"{n} {len(v)}" for n, v in sets.items()), flush=True)
+        if chess.Board(fen).legal_moves.count() < 2:
+            continue
         best, second, bm = sf.eval2(fen, a.nodes)
         if best is None or second is None or bm is None:
             continue

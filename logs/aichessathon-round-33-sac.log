@@ -1,0 +1,100 @@
+AI CHESSATHON MATCH LOG
+=======================
+
+MATCH
+  Round          Rated 33
+  Team           Opus Carlsen
+  Colour         Black
+  Opponent       SAC
+  Opening        Nimzo-Indian Defence
+  Start FEN      rnbq1rk1/ppp2ppp/4pn2/3p4/1bPP4/2NBP3/PP1B1PPP/R2QK1NR b KQ - 1 6
+  You moved      First
+  Machine        w-de09dc
+  Finished       2026-09-06 09:16:42 UTC
+  Match ID       948f380f-4c03-47a5-b21d-7d3aefe171c2
+
+INIT
+  Ready in       24.7 s
+  Budget         90.0 s
+  Used           27 percent
+
+CLOCK
+  Base           120.0 s plus 0.5 s per move
+  Moves          29
+  Time used      69.5 s
+  Slowest        5.6 s on move 16
+  Fastest        0.0 s on move 28
+  Average        2.4 s
+  Left at end    65.0 s
+
+RESULT
+  Won by checkmate
+  Game lasted 154.9 s
+
+MOVES
+    #  move          time     clock left
+    1  dxc4          2.1 s      118.4 s
+    2  Nxh7          2.0 s      116.9 s
+    3  c5            3.8 s      113.6 s
+    4  cxd4          1.9 s      112.2 s
+    5  b6            5.1 s      107.6 s
+    6  Bxc3          2.4 s      105.7 s
+    7  Nd7           2.5 s      103.7 s
+    8  Bb7           3.6 s      100.6 s
+    9  Qf6           1.8 s       99.3 s
+   10  Bxf3          3.1 s       96.7 s
+   11  Qxf3          2.8 s       94.4 s
+   12  Rfd8          4.7 s       90.1 s
+   13  Nhf6          1.9 s       88.8 s
+   14  Rdc8          2.9 s       86.4 s
+   15  Nd5           2.8 s       84.1 s
+   16  f6            5.6 s       79.0 s
+   17  Kf7           2.6 s       76.9 s
+   18  Nf8           3.6 s       73.8 s
+   19  Ng6           2.5 s       71.8 s
+   20  Ngf4          2.5 s       69.8 s
+   21  Rh8           3.4 s       66.9 s
+   22  Nxf4          1.6 s       65.8 s
+   23  g5            1.9 s       64.4 s
+   24  Rh4           2.3 s       62.6 s
+   25  Rah8          0.1 s       63.0 s
+   26  Rxh3+         0.0 s       63.5 s
+   27  Rxh3+         0.0 s       64.0 s
+   28  Kg6           0.0 s       64.5 s
+   29  f5#           0.0 s       65.0 s
+
+OUTPUT
+  1,691 bytes on stderr
+
+  bini-2.0 ready: import+compile 24.2s (compile 23.5s), nnue=on
+  bini-2.0 m1 d16 d5c4 11cp 1665048n 2070ms left 120000ms
+  bini-2.0 m2 d16 f6h7 301cp 1515162n 1997ms left 118428ms
+  bini-2.0 m3 d17 c7c5 298cp 2903290n 3790ms left 116930ms
+  bini-2.0 m4 d16 c5d4 341cp 1627043n 1931ms left 113639ms
+  bini-2.0 m5 d16 b7b6 356cp 4109522n 5120ms left 112206ms
+  bini-2.0 m6 d19 b4c3 368cp 1908634n 2351ms left 107585ms
+  bini-2.0 m7 d17 b8d7 388cp 2048429n 2493ms left 105733ms
+  bini-2.0 m8 d17 c8b7 401cp 2854236n 3592ms left 103739ms
+  bini-2.0 m9 d18 d8f6 473cp 1486786n 1811ms left 100645ms
+  bini-2.0 m10 d20 b7f3 541cp 2575083n 3126ms left 99332ms
+  bini-2.0 m11 d20 f6f3 559cp 2417203n 2841ms left 96705ms
+  bini-2.0 m12 d19 f8d8 557cp 3876026n 4726ms left 94363ms
+  bini-2.0 m13 d18 h7f6 560cp 1613075n 1859ms left 90136ms
+  bini-2.0 m14 d19 d8c8 581cp 2461610n 2882ms left 88776ms
+  bini-2.0 m15 d18 f6d5 644cp 2311946n 2828ms left 86393ms
+  bini-2.0 m16 d18 f7f6 687cp 4381812n 5550ms left 84065ms
+  bini-2.0 m17 d17 g8f7 754cp 2027039n 2615ms left 79014ms
+  bini-2.0 m18 d18 d7f8 757cp 2778589n 3580ms left 76897ms
+  bini-2.0 m19 d16 f8g6 886cp 1923499n 2495ms left 73816ms
+  bini-2.0 m20 d18 g6f4 993cp 1961828n 2526ms left 71819ms
+  bini-2.0 m21 d22 c8h8 1075cp 2631391n 3379ms left 69792ms
+  bini-2.0 m22 d21 d5f4 1566cp 1270847n 1599ms left 66912ms
+  bini-2.0 m23 d23 g7g5 1728cp 1519419n 1865ms left 65811ms
+  bini-2.0 m24 d24 h8h4 1786cp 1840204n 2335ms left 64445ms
+  bini-2.0 m25 d13 a8h8 29987cp 66687n 82ms left 62609ms
+  bini-2.0 m26 d7 h4h3 29993cp 916n 2ms left 63026ms
+  bini-2.0 m27 d5 h8h3 29995cp 409n 1ms left 63523ms
+  bini-2.0 m28 d3 f7g6 29997cp 116n 1ms left 64021ms
+  bini-2.0 m29 d1 f6f5 29999cp 24n 1ms left 64519ms
+
+Email hello@aichessathon.com with this file if anything here is unclear.

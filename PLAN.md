@@ -432,3 +432,7 @@ conversion + endgame suite, book; Tue own-search fine-tune, SF 2600/2800 ladder;
   0 fallback games. Position sets (sharp/winning/marginal/puzzles/drawn) building; tactics gate,
   real-clock pressure games vs Stockfish and strong-defence conversion sets chained behind them.
   Next-build item: skip compiling the hand-crafted evaluator when the net is loaded.
+- **Sun 6 Sept, 10:25 — v2.1 battery, part 1.** Torture (60 games vs random, 6 s + 0.3 s,
+  small tables, machine quiet): 60/60 by checkmate, 0 fallback, 0 failures. Tactics gate (40
+  Stockfish-verified unique winning moves, 2 s each): 39/40 = 98%. Real-clock pressure games vs
+  Stockfish and the strong-defence conversion sets running.
