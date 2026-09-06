@@ -543,3 +543,11 @@ conversion + endgame suite, book; Tue own-search fine-tune, SF 2600/2800 ladder;
   0.6·increment (hard 1.6 s at 20 s, 0.8 s at 8 s). Pressure and torture rerunning, then
   packaging, batch-2 gate and labelling chained. Ladder: 9-2-5 on v2, rank 72 (R42 a 152-move
   blameless draw, 20 s left).
+- **Sun 6 Sept, 21:10 — v2.2 handed over.** `submission_v2.2_0906_2107.zip` = v2.1 search +
+  time policy v2.2 (danger multiplier, stable discount 0.75, half-budget floor, low-clock cap) +
+  NNUE v3. Battery on the exact files: tactics 40/40, mate suites 40/40, wrapper/NNUE suites
+  green, torture 30/30 (0 fallback), real-clock pressure min clock 9.0 s (unclear 2.5 s median vs
+  decided 1.4 s; 0-4-6 vs full-strength Stockfish), zip byte-identical to sources, fresh
+  extraction wins vs Stockfish 2400 as Black, compile 16 s quiet. Evidence for the net: +34 ±40
+  self-play over v2.1 and 11.7 vs 13.3 centipawn loss at the real clock. Batch-2 gate, labelling
+  and the v3b fine-tune run overnight.
