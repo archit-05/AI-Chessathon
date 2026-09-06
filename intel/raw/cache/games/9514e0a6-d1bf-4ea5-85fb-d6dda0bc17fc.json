@@ -1,0 +1,230 @@
+{
+ "game": "9514e0a6-d1bf-4ea5-85fb-d6dda0bc17fc",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.06\"]\n[Round \"45\"]\n[White \"Stonkfish\"]\n[Black \"JSP\"]\n[Result \"1/2-1/2\"]\n[FEN \"r1bqkb1r/1p3ppp/p1np1n2/4p3/4P3/N1N1B3/PPP2PPP/R2QKB1R b KQkq - 1 8\"]\n[SetUp \"1\"]\n[Termination \"threefold_repetition\"]\n\n8... b5 { [%clk 0:01:58.055] } 9. Nd5 { [%clk 0:01:57.608] } 9... Rb8 { [%clk 0:01:55.131] } 10. c4 { [%clk 0:01:54.589] } 10... Nxe4 { [%clk 0:01:51.838] } 11. cxb5 { [%clk 0:01:51.214] } 11... Qa5+ { [%clk 0:01:49.13] } 12. Bd2 { [%clk 0:01:47.605] } 12... Nxd2 { [%clk 0:01:47.285] } 13. Qxd2 { [%clk 0:01:44.928] } 13... Qxd2+ { [%clk 0:01:43.04] } 14. Kxd2 { [%clk 0:01:45.427] } 14... axb5 { [%clk 0:01:38.155] } 15. Bxb5 { [%clk 0:01:43.005] } 15... Bd7 { [%clk 0:01:35.806] } 16. Nc4 { [%clk 0:01:41.16] } 16... Nd4 { [%clk 0:01:31.176] } 17. Bxd7+ { [%clk 0:01:39.375] } 17... Kxd7 { [%clk 0:01:28.365] } 18. Ncb6+ { [%clk 0:01:36.161] } 18... Ke6 { [%clk 0:01:26.824] } 19. Nc7+ { [%clk 0:01:34.36] } 19... Kf5 { [%clk 0:01:24.824] } 20. Ncd5 { [%clk 0:01:32.426] } 20... Ke6 { [%clk 0:01:21.786] } 21. Nc7+ { [%clk 0:01:29.724] } 21... Kf5 { [%clk 0:01:19.646] } 22. Ncd5 { [%clk 0:01:27.489] } 22... Ke6 { [%clk 0:01:13.915] } 1/2-1/2\n",
+ "opening": "Sicilian Sveshnikov",
+ "termination_text": "Threefold repetition",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 45\u00b7Final",
+ "white_uuid": "385a6db2-1c05-46db-ae91-7218700f83b3",
+ "black_uuid": "dab1e77e-ebb1-49f5-92d4-2a013e3288c4",
+ "site_verdicts": [
+  [
+   "b5",
+   "good"
+  ],
+  [
+   "Nd5",
+   "best"
+  ],
+  [
+   "Rb8",
+   "best"
+  ],
+  [
+   "c4",
+   "best"
+  ],
+  [
+   "Nxe4",
+   "inaccuracy"
+  ],
+  [
+   "cxb5",
+   "best"
+  ],
+  [
+   "Qa5+",
+   "best"
+  ],
+  [
+   "Bd2",
+   "best"
+  ],
+  [
+   "Nxd2",
+   "best"
+  ],
+  [
+   "Qxd2",
+   "best"
+  ],
+  [
+   "Qxd2+",
+   "best"
+  ],
+  [
+   "Kxd2",
+   "forced"
+  ],
+  [
+   "axb5",
+   "best"
+  ],
+  [
+   "Bxb5",
+   "best"
+  ],
+  [
+   "Bd7",
+   "best"
+  ],
+  [
+   "Nc4",
+   "excellent"
+  ],
+  [
+   "Nd4",
+   "excellent"
+  ],
+  [
+   "Bxd7+",
+   "best"
+  ],
+  [
+   "Kxd7",
+   "best"
+  ],
+  [
+   "Ncb6+",
+   "best"
+  ],
+  [
+   "Ke6",
+   "best"
+  ],
+  [
+   "Nc7+",
+   "best"
+  ],
+  [
+   "Kf5",
+   "best"
+  ],
+  [
+   "Ncd5",
+   "best"
+  ],
+  [
+   "Ke6",
+   "best"
+  ],
+  [
+   "Nc7+",
+   "best"
+  ],
+  [
+   "Kf5",
+   "best"
+  ],
+  [
+   "Ncd5",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Challenger",
+    "accuracy": 97.0,
+    "acpl": 8,
+    "tally": {
+     "brilliant": 0,
+     "best": 12,
+     "excellent": 1,
+     "good": 0,
+     "forced": 1,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Good Morning",
+    "accuracy": 96.6,
+    "acpl": 9,
+    "tally": {
+     "brilliant": 0,
+     "best": 12,
+     "excellent": 1,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -6,
+   20,
+   24,
+   24,
+   13,
+   98,
+   22,
+   0,
+   -2,
+   14,
+   -2,
+   -6,
+   -8,
+   -1,
+   0,
+   0,
+   -8,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "best": [
+   "a8b8",
+   "c3d5",
+   "a8b8",
+   "c2c4",
+   "b5b4",
+   "c4b5",
+   "d8a5",
+   "e3d2",
+   "e4d2",
+   "d1d2",
+   "a5d2",
+   "e1d2",
+   "a6b5",
+   "f1b5",
+   "c8d7",
+   "h1c1",
+   "c6b4",
+   "b5d7",
+   "e8d7",
+   "c4b6",
+   "d7e6",
+   "d5c7",
+   "e6f5",
+   "c7d5",
+   "f5e6",
+   "d5c7",
+   "e6f5",
+   "c7d5",
+   "f5e6",
+   "d5c7"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-06T21:11:58Z"
+}

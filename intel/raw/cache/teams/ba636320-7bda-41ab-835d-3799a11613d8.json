@@ -2,10 +2,10 @@
  "uuid": "ba636320-7bda-41ab-835d-3799a11613d8",
  "bot": "make_no_mistakes",
  "team": "Make_no_mistakes",
- "rating": 2209,
- "rank": 10,
- "record": "17-6-12",
- "rated_rounds": 42,
+ "rating": 2168,
+ "rank": 13,
+ "record": "18-7-13",
+ "rated_rounds": 44,
  "history": [
   [
    1,
@@ -174,9 +174,47 @@
   [
    42,
    2209
+  ],
+  [
+   43,
+   2227
+  ],
+  [
+   44,
+   2168
   ]
  ],
  "games": [
+  {
+   "game": "ee22e679-6397-4a87-9efb-83c0ba6ca539",
+   "kind": "Rated",
+   "round": 45,
+   "colour": "Black",
+   "opponent": "FuzzyBot",
+   "opponent_uuid": "3241cef5-6b1c-41f2-b275-f0e50fc52ed5",
+   "verdict": "win",
+   "opening": "London System"
+  },
+  {
+   "game": "d7f455bc-8391-4fef-b763-cd701ef913a9",
+   "kind": "Rated",
+   "round": 44,
+   "colour": "White",
+   "opponent": "AI Fellows",
+   "opponent_uuid": "b574c0ea-e994-4a16-9918-7fbc989c4234",
+   "verdict": "loss",
+   "opening": "Ruy Lopez, Closed"
+  },
+  {
+   "game": "d34dd66e-dbd5-4812-803d-c0ee6d0697ce",
+   "kind": "Rated",
+   "round": 43,
+   "colour": "Black",
+   "opponent": "Gijs Smit",
+   "opponent_uuid": "3f0e0e44-cdce-485f-b5b6-3691e34f9f44",
+   "verdict": "draw",
+   "opening": "Pirc Defence"
+  },
   {
    "game": "17f6eb4a-605b-439a-904e-d9fb24524c5c",
    "kind": "Rated",
@@ -598,5 +636,5 @@
    "opening": "Italian Game"
   }
  ],
- "fetched_at": "2026-09-06T19:11:13Z"
+ "fetched_at": "2026-09-06T21:23:04Z"
 }

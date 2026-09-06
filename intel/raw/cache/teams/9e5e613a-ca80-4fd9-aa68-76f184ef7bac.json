@@ -2,10 +2,10 @@
  "uuid": "9e5e613a-ca80-4fd9-aa68-76f184ef7bac",
  "bot": "checkers",
  "team": "checkers",
- "rating": 2226,
- "rank": 8,
- "record": "21-8-10",
- "rated_rounds": 42,
+ "rating": 2252,
+ "rank": 9,
+ "record": "22-10-10",
+ "rated_rounds": 44,
  "history": [
   [
    1,
@@ -174,9 +174,37 @@
   [
    42,
    2226
+  ],
+  [
+   43,
+   2224
+  ],
+  [
+   44,
+   2252
   ]
  ],
  "games": [
+  {
+   "game": "1a0e46e6-3483-42bc-ba58-3a322372f12c",
+   "kind": "Rated",
+   "round": 45,
+   "colour": "Black",
+   "opponent": "what even is en passant",
+   "opponent_uuid": "b9cbed87-8a3a-437d-9333-1447f68200d1",
+   "verdict": "draw",
+   "opening": "French Winawer"
+  },
+  {
+   "game": "56e9ef26-f19f-4a5b-9bc4-07e5e4d2c6a2",
+   "kind": "Rated",
+   "round": 44,
+   "colour": "Black",
+   "opponent": "AlphaBeta",
+   "opponent_uuid": "1f234cf3-2829-4107-8a5f-2d0e15e978da",
+   "verdict": "win",
+   "opening": "Sicilian Sveshnikov"
+  },
   {
    "game": "8c45428e-396a-4f69-bb17-4d656b755d05",
    "kind": "Rated",
@@ -184,7 +212,7 @@
    "colour": "White",
    "opponent": "AI Fellows",
    "opponent_uuid": "b574c0ea-e994-4a16-9918-7fbc989c4234",
-   "verdict": "live",
+   "verdict": "draw",
    "opening": "Ruy Lopez, Closed"
   },
   {
@@ -608,5 +636,5 @@
    "opening": "Sicilian Closed"
   }
  ],
- "fetched_at": "2026-09-06T19:11:11Z"
+ "fetched_at": "2026-09-06T21:22:40Z"
 }

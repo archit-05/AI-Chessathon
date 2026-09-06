@@ -1,0 +1,242 @@
+{
+ "game": "66509fa3-9739-43f5-88c4-84d8fca7d7cf",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.06\"]\n[Round \"42\"]\n[White \"Golden Guys\"]\n[Black \"Rook Bottom\"]\n[Result \"1-0\"]\n[FEN \"rnbq1rk1/pp3ppp/4pn2/2p5/1bBP4/2N1P3/PPQ2PPP/R1B1K1NR w KQ - 0 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8. Nf3 { [%clk 0:01:54.798] } 8... Nh5 { [%clk 0:02:00.499] } 9. a3 { [%clk 0:01:49.857] } 9... Bxa3 { [%clk 0:02:00.997] } 10. Rxa3 { [%clk 0:01:45.163] } 10... Kh8 { [%clk 0:02:01.496] } 11. dxc5 { [%clk 0:01:40.703] } 11... Kg8 { [%clk 0:02:01.995] } 12. O-O { [%clk 0:01:36.467] } 12... Qd4 { [%clk 0:02:02.494] } 13. exd4 { [%clk 0:01:32.443] } 13... Kh8 { [%clk 0:02:02.993] } 14. Be3 { [%clk 0:01:28.619] } 14... a5 { [%clk 0:02:03.492] } 15. b4 { [%clk 0:01:24.987] } 15... a4 { [%clk 0:02:03.991] } 16. Rxa4 { [%clk 0:01:21.536] } 16... g6 { [%clk 0:02:04.49] } 17. Rxa8 { [%clk 0:01:18.258] } 17... f6 { [%clk 0:02:04.989] } 18. Rxb8 { [%clk 0:01:15.144] } 18... Ng7 { [%clk 0:02:05.488] } 19. Re1 { [%clk 0:01:12.186] } 19... b5 { [%clk 0:02:05.987] } 20. cxb6 { [%clk 0:01:09.375] } 20... Rg8 { [%clk 0:02:06.486] } 21. b7 { [%clk 0:01:06.705] } 21... e5 { [%clk 0:02:06.985] } 22. bxc8=Q { [%clk 0:01:04.169] } 22... g5 { [%clk 0:02:07.484] } 23. Qxg8# { [%clk 0:01:01.759] } 1-0\n",
+ "opening": "Nimzo-Indian Defence",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 42\u00b7Final",
+ "white_uuid": "0680f515-66d1-4f73-aa0f-bcfc1d645023",
+ "black_uuid": "a3e6ea31-dcd9-4507-b730-5acdcab01b04",
+ "site_verdicts": [
+  [
+   "Nf3",
+   "excellent"
+  ],
+  [
+   "Nh5",
+   "mistake"
+  ],
+  [
+   "a3",
+   "good"
+  ],
+  [
+   "Bxa3",
+   "blunder"
+  ],
+  [
+   "Rxa3",
+   "best"
+  ],
+  [
+   "Kh8",
+   "good"
+  ],
+  [
+   "dxc5",
+   "best"
+  ],
+  [
+   "Kg8",
+   "excellent"
+  ],
+  [
+   "O-O",
+   "excellent"
+  ],
+  [
+   "Qd4",
+   "inaccuracy"
+  ],
+  [
+   "exd4",
+   "best"
+  ],
+  [
+   "Kh8",
+   "excellent"
+  ],
+  [
+   "Be3",
+   "excellent"
+  ],
+  [
+   "a5",
+   "excellent"
+  ],
+  [
+   "b4",
+   "excellent"
+  ],
+  [
+   "a4",
+   "excellent"
+  ],
+  [
+   "Rxa4",
+   "excellent"
+  ],
+  [
+   "g6",
+   "excellent"
+  ],
+  [
+   "Rxa8",
+   "best"
+  ],
+  [
+   "f6",
+   "excellent"
+  ],
+  [
+   "Rxb8",
+   "best"
+  ],
+  [
+   "Ng7",
+   "best"
+  ],
+  [
+   "Re1",
+   "excellent"
+  ],
+  [
+   "b5",
+   "excellent"
+  ],
+  [
+   "cxb6",
+   "best"
+  ],
+  [
+   "Rg8",
+   "excellent"
+  ],
+  [
+   "b7",
+   "excellent"
+  ],
+  [
+   "e5",
+   "inaccuracy"
+  ],
+  [
+   "bxc8=Q",
+   "best"
+  ],
+  [
+   "g5",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Golden Guys",
+    "accuracy": 99.3,
+    "acpl": 22,
+    "tally": {
+     "brilliant": 0,
+     "best": 8,
+     "excellent": 7,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Martin",
+    "accuracy": 87.2,
+    "acpl": 200,
+    "tally": {
+     "brilliant": 0,
+     "best": 1,
+     "excellent": 9,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -12,
+   -26,
+   84,
+   58,
+   478,
+   502,
+   586,
+   592,
+   621,
+   618,
+   1096,
+   1106,
+   1162,
+   1083,
+   1140,
+   1087,
+   1130,
+   1071,
+   1390,
+   1407,
+   1545,
+   1565,
+   1579,
+   1595,
+   1695,
+   1778,
+   1928,
+   1805,
+   9996,
+   9997,
+   9999,
+   10000
+  ],
+  "best": [
+   "a2a3",
+   "c5d4",
+   "e1g1",
+   "b4c3",
+   "a1a3",
+   "c5d4",
+   "d4c5",
+   "d8e7",
+   "e3e4",
+   "b8c6",
+   "e3d4",
+   "h5f6",
+   "f3g5",
+   "h5f6",
+   "f3g5",
+   "b8c6",
+   "d4d5",
+   "a8a4",
+   "a4a8",
+   "b8c6",
+   "a8b8",
+   "h5g7",
+   "e3d2",
+   "g7f5",
+   "c5b6",
+   "g7f5",
+   "c2e4",
+   "c8b7",
+   "b7c8q",
+   "g8c8",
+   "c8g8",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-06T21:11:50Z"
+}

@@ -2,10 +2,10 @@
  "uuid": "7af404ee-389f-427c-9433-40ebe5902fc6",
  "bot": "Dark Sister",
  "team": "Abhi's chess demon",
- "rating": 2171,
+ "rating": 2189,
  "rank": 12,
- "record": "18-8-12",
- "rated_rounds": 42,
+ "record": "19-8-13",
+ "rated_rounds": 44,
  "history": [
   [
    1,
@@ -174,9 +174,37 @@
   [
    42,
    2171
+  ],
+  [
+   43,
+   2245
+  ],
+  [
+   44,
+   2189
   ]
  ],
  "games": [
+  {
+   "game": "86e7e8c9-c22c-4640-99aa-a20794e33a59",
+   "kind": "Rated",
+   "round": 45,
+   "colour": "White",
+   "opponent": "Cornelius",
+   "opponent_uuid": "acecd823-279a-4bf9-8321-0ee6ed68deda",
+   "verdict": "win",
+   "opening": "Sicilian Najdorf"
+  },
+  {
+   "game": "a2c047cc-7c49-4375-a64f-51b712aa5ad7",
+   "kind": "Rated",
+   "round": 44,
+   "colour": "White",
+   "opponent": "Gijs Smit",
+   "opponent_uuid": "3f0e0e44-cdce-485f-b5b6-3691e34f9f44",
+   "verdict": "loss",
+   "opening": "Sicilian Closed"
+  },
   {
    "game": "fd3365c8-dd42-4fcf-8d71-8477fffcf003",
    "kind": "Rated",
@@ -608,5 +636,5 @@
    "opening": "Catalan Opening"
   }
  ],
- "fetched_at": "2026-09-06T19:11:15Z"
+ "fetched_at": "2026-09-06T21:23:31Z"
 }
