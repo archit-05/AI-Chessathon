@@ -118,6 +118,15 @@ ANALYSIS_KEYS = ("moves", "final_cp", "max_adv", "min_adv", "eval_swing", "cpl_m
                  "opp_cpl_mean", "opp_blunders", "opp_worst_move", "opp_time_mean")
 
 
+def eval_label(team) -> str:
+    src = team.get("eval_source", "sf")
+    if src == "site":
+        return "site evaluations: Stockfish 16, depth 16, one per position"
+    if src == "mixed":
+        return f"mixed: site evaluations (Stockfish 16 depth 16) and our Stockfish 19 at {SF_NODES // 1000}k nodes"
+    return f"Stockfish 19, {SF_NODES // 1000}k nodes per position"
+
+
 def load_team(t):
     """Fresh identity and per-game facts from the scrape file, merged with whatever analysis exists."""
     files = team_files(t["slug"])
@@ -125,6 +134,7 @@ def load_team(t):
     if not data:
         return None
     analysed = load_json(files["json"]) or {}
+    data["eval_source"] = analysed.get("eval_source", "sf")
     by_id = {g["game"]: g for g in analysed.get("games", []) if "moves" in g}
     n = 0
     for g in data["games"]:
@@ -454,7 +464,7 @@ def profile(team) -> list[str]:
     if q["mean"] is None:
         return ["Not analysed yet (run analyse.py)."]
     if q["mean"] <= 10:
-        lines.append(f"Move quality is engine-grade (mean loss {q['mean']} cp at {SF_NODES // 1000}k nodes): a real alpha-beta searcher with a strong, probably NNUE-class or well-tuned evaluation. Confidence {conf}.")
+        lines.append(f"Move quality is engine-grade (mean loss {q['mean']} cp against {eval_label(team)}): a real alpha-beta searcher with a strong, probably NNUE-class or well-tuned evaluation. Confidence {conf}.")
     elif q["mean"] <= 20:
         lines.append(f"Strong searcher (mean loss {q['mean']} cp): consistent with a bitboard alpha-beta engine at depth 8-12 with a decent evaluation. Confidence {conf}.")
     elif q["mean"] <= 35:
@@ -530,7 +540,7 @@ def render_dossier(team, targets_by_uuid, ladder):
     add = L.append
     add(f"{team['bot']}  (team: {team['team']})  -  rank {team['rank']}, rating {team['rating']}")
     add("=" * min(W, len(L[0])))
-    partial = f", {team['n_analysed']} of {len(team['games'])} analysed with Stockfish so far" if team["n_analysed"] < len(team["games"]) else ""
+    partial = f", {team['n_analysed']} of {len(team['games'])} with evaluations so far" if team["n_analysed"] < len(team["games"]) else ""
     add(f"Generated {dt.datetime.now().strftime('%Y-%m-%d %H:%M')} from {len(rated)} rated games (rounds {rated[0]['round']}-{rated[-1]['round']}{partial})"
         + (f", {len(team['void_games'])} void game(s) ignored: {', '.join(rnd(g) for g in team['void_games'])}" if team["void_games"] else "") + ".")
     add("")
@@ -574,7 +584,7 @@ def render_dossier(team, targets_by_uuid, ladder):
             add(f"    {rnd(g):<4} {g['colour']:<5} vs {opp:<18} (#{g['opponent_rank_now']:<2}) {result_word(g):<4} {g['termination']:<21} {g['opening']}")
     add("")
     # Move quality
-    add(f"MOVE QUALITY (Stockfish 19, {SF_NODES // 1000}k nodes per position, loss clipped at 1000, positions inside +-800 only)")
+    add(f"MOVE QUALITY ({eval_label(team)}; loss clipped at 1000; positions inside +-800 only)")
     if q["mean"] is None:
         add("  not analysed yet")
     if q["mean"] is not None:
@@ -905,15 +915,16 @@ def main():
     L = []
     L.append(f"AI CHESSATHON TOP-{TOP_N} INTEL SUMMARY  ({dt.datetime.now().strftime('%Y-%m-%d %H:%M')}; leaderboard fetched {load_json(LEADERBOARD)['fetched_at']})")
     L.append("=" * 100)
-    L.append(f"CPL = mean centipawn loss per own move (Stockfish 19, {SF_NODES // 1000}k nodes, positions inside +-800); sACPL = the site's own review ACPL")
-    L.append(f"(Stockfish 16 depth 16, every game, mean per game); Bl% = moves losing >= {BLUNDER} cp; CPL and Bl% show n/a until 200 moves are analysed;")
+    src = Counter(t.get("eval_source", "sf") for t in teams).most_common(1)[0][0]
+    L.append(f"CPL = our mean centipawn loss per own move from {eval_label({'eval_source': src})}, positions inside +-800 only;")
+    L.append(f"sACPL = the site's own review ACPL (all positions, mean per game); Bl% = moves losing >= {BLUNDER} cp; CPL and Bl% show n/a under 200 moves;")
     L.append(f"s/mv = mean seconds per own move; RepA = draws by repetition while more than +{AHEAD}; NonC = games at +{CONVERT} or better not won; * = provisional rating.")
     L.append("")
     L.append("LEAGUE TABLE")
     L.extend(table(tops))
     partial = [t for t in teams if t["n_analysed"] < len(t["games"])]
     if partial:
-        L.append("  Stockfish analysis still incomplete for: " + ", ".join(f"{t['bot']} ({t['n_analysed']}/{len(t['games'])} games)" for t in partial) + ". Re-run ./refresh.sh --no-scrape to finish.")
+        L.append("  Evaluations still incomplete for: " + ", ".join(f"{t['bot']} ({t['n_analysed']}/{len(t['games'])} games)" for t in partial) + ". Re-run ./refresh.sh to finish.")
     if ours:
         L.append("")
         L.append("OUR ROW")

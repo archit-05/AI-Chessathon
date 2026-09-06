@@ -1,15 +1,16 @@
 #!/bin/bash
 # Refresh the opponent dossiers and the strategy report in one command:
-#   1. scrape.py   - leaderboard, the current top-N team pages (+ Opus Carlsen) and any game pages not yet cached
-#   2. analyse.py  - Stockfish 19 at 120k nodes per new position (cached by FEN in raw/evals.jsonl)
+#   1. scrape.py   - leaderboard, the current top-N team pages (+ Opus Carlsen), game pages not yet cached
+#                    (PGN, opening, site review, the site's per-position evaluations)
+#   2. analyse.py  - per-move facts from the site's embedded evaluations (Stockfish 16 depth 16; no engine, ~1 min)
 #   3. report.py   - dossiers <rank>_<Bot>.txt, 00_summary.txt, history/summary_<stamp>.{txt,json}
-#   4. strategy.py - STRATEGY.txt (reverse-engineered profiles + what it means for our build); full and --auto
-#                    runs also archive it as the next strategy/Strategy_N.txt with a diff against N-1
-# Everything runs under nice -n 15 with a single Stockfish process.  Safe to re-run; only new games cost time.
-# Usage: ./refresh.sh             full refresh, analysis in the foreground (first run takes hours)
-#        ./refresh.sh --auto      scrape, start the analysis in the background if none is running, render, commit intel/
-#        ./refresh.sh --no-scrape re-analyse and re-render only
-#        ./refresh.sh --report    re-render only (e.g. after editing notes/*.txt)
+#   4. strategy.py - STRATEGY.txt; full and --auto runs also archive the next strategy/Strategy_N.txt
+# Usage: ./refresh.sh             full refresh (network + site-based analysis + render + numbered strategy)
+#        ./refresh.sh --auto      the same, then commit intel/ (what the three-hourly schedule runs)
+#        ./refresh.sh --no-scrape re-analyse and re-render without touching the network
+#        ./refresh.sh --report    re-render only (e.g. after editing notes/*.txt); no numbered entry
+#        ./refresh.sh --deep      optional: our own Stockfish 19 pass at 120k nodes (one niced process,
+#                                 hours; cached in raw/evals.jsonl) instead of the site's evaluations
 set -euo pipefail
 cd "$(dirname "$0")"
 PY="$(cd .. && pwd)/aichessathon-starter/.venv/bin/python"
@@ -18,23 +19,16 @@ MODE="${1:-full}"
 if [ "$MODE" = "full" ] || [ "$MODE" = "--auto" ]; then
     nice -n 15 "$PY" scrape.py
 fi
-if [ "$MODE" = "full" ] || [ "$MODE" = "--no-scrape" ]; then
-    nice -n 15 "$PY" analyse.py
-elif [ "$MODE" = "--auto" ]; then
-    if pgrep -f "analyse.py" >/dev/null; then
-        echo "analysis already running; rendering with what is cached so far"
-    else
-        mkdir -p logs
-        nohup nice -n 15 "$PY" analyse.py > "logs/analyse_$(date +%Y%m%d_%H%M).log" 2>&1 &
-        echo "analysis started in the background (pid $!)"
-        sleep 20
-    fi
+if [ "$MODE" = "--deep" ]; then
+    nice -n 15 "$PY" analyse.py --source sf
+elif [ "$MODE" != "--report" ]; then
+    nice -n 15 "$PY" analyse.py --source site | tail -3
 fi
 nice -n 15 "$PY" report.py
 if [ "$MODE" = "full" ] || [ "$MODE" = "--auto" ]; then
-    nice -n 15 "$PY" strategy.py --archive | tail -1     # numbered entry in strategy/Strategy_N.txt
+    nice -n 15 "$PY" strategy.py --archive | tail -1
 else
-    nice -n 15 "$PY" strategy.py > /dev/null              # latest only (STRATEGY.txt)
+    nice -n 15 "$PY" strategy.py > /dev/null
 fi
 echo "strategy report: $(pwd)/STRATEGY.txt"
 if [ "$MODE" = "--auto" ]; then

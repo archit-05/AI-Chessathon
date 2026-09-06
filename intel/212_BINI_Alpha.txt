@@ -1,0 +1,95 @@
+BINI Alpha  (team: Opus Carlsen)  -  rank 212, rating 1415
+==========================================================
+Generated 2026-09-06 10:19 from 9 rated games (rounds 24-32).
+
+IDENTITY
+  Bot BINI Alpha; team Opus Carlsen; university Exeter; team name reads like a personal name,
+    probably solo.
+  Rank 212 of 311, rating 1415 (provisional: fewer than six games on the current build, i.e. a new
+    upload in the last five rounds), record 2-3-4 in 9 rated games.
+  Rating trajectory: entered R24 at 1431, peak 1431 (R24), now 1415 (R32).
+  No 100+ point jump between consecutive rounds.
+  Recent form (last 5 games, R28-R32): 2-1-2 (50%), loss 58.1 cp/move, blunders 6.1% vs earlier
+    (R24-R27): 0-2-2 (25%), 60.1 cp/move, 7.1% - the provisional flag says the last games are a new
+    build
+
+RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
+  vs top 10 : 0-0-0 over 0 games
+  vs 11-20  : 0-0-0 over 0 games
+  vs 21-50  : 0-0-0 over 0 games
+  vs rest   : 2-3-4 (39%) over 9 games
+
+MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
+  positions inside +-800 only)
+  All own moves: n 239, mean loss 59.3 cp, median 23 cp, blunders (>= 200 cp) 16 = 6.7% (10 of them
+    from level or better positions)
+  own moves 1-15    : n  132, mean 51.0 cp, median 20 cp, blunders 5.3%
+  own moves 16-40   : n   86, mean 82.5 cp, median 33 cp, blunders 10.5%
+  own moves 41+     : n   21, mean 16.1 cp, median 0 cp, blunders 0.0%
+  as white          : n  128, mean 40.6 cp, median 18 cp, blunders 3.1%
+  as black          : n  111, mean 80.8 cp, median 37 cp, blunders 10.8%
+  Worst moves: R26 38.Qc4+ (+474 -> +0); R26 34.Qf2+ (-74 -> -528); R26 28.Qd1+ (+332 -> +0)
+  Site's own tags on their moves: blunder 13, mistake 19, miss 0, inaccuracy 35 of 306
+  Site's own review (Stockfish 16, depth 16): mean ACPL 75.3 over 9 games, mean accuracy 89.6% (all
+    games, not only analysed ones)
+
+TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
+  Per move: mean 2.75 s, median 2.08 s, quartiles 1.25-3.78 s, max 14.9 s; instant (<50 ms) moves
+    6.8%
+  Clock at the end: mean 43.1 s, minimum 16.9 s; games under 10 s: 0, under 5 s: 0
+  By clock before the move: >60s 3.6 s (n 159), 30-60s 2.0 s (n 108), 10-30s 1.2 s (n 41), <10s n/a
+    s (n 0)
+  By own-move number: 1-15 3.9 s, 16-40 2.0 s, 41+ 1.2 s; when +300 or better 1.9 s, level 3.5 s,
+    -300 or worse 2.2 s
+  Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 3.5%,
+    quartiles 2.4-6.0%
+  After a >100 cp swing on the opponent's move: 2.9 s (n 43) vs 2.6 s otherwise; on moves that
+    themselves swing >100 cp: 3.1 s (n 69) vs 2.6 s
+  Exploitable: leaves ~43 s unused
+
+DRAW BEHAVIOUR
+  3 draws in 9 games (33.0%): threefold_repetition 3
+  Repetition while ahead (> +150 at the final position): 0
+  Repetition while behind (< -150): 0; level repetitions: 3
+
+ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
+  Reached +300 or better in 3 games, failed to win 1:
+    R26 vs Dr. DrunkenstAIn peak +592, draw by threefold_repetition: threw it away: move 27.Bxa2+
+      (+592 -> +300)
+  Reached -300 or worse in 7 games, escaped with a half point or more in 3:
+    R25 vs Blunderbus low -961, draw by threefold_repetition: opponent allowed a repetition
+    R26 vs Dr. DrunkenstAIn low -587, draw by threefold_repetition: opponent allowed a repetition
+    R28 vs meowbot low -622, draw by threefold_repetition: opponent allowed a repetition
+
+OPENINGS (curated start positions assigned by the platform)
+  By family: Petroff 0-1-1 (25%); Four Knights 0-0-1 (0%); Two Knights 0-1-0 (50%); English 0-0-1
+    (0%); Scotch 0-1-0 (50%); Caro-Kann 0-0-1 (0%); French 1-0-0 (100%); Catalan 1-0-0 (100%)
+  Positions seen: Petroff Defence x2 0-1-1 (25%); Caro-Kann Classical loss; Catalan Opening win;
+    English Symmetrical loss; Four Knights Game loss; French Tarrasch win; Scotch Game draw; Two
+    Knights Defence draw
+  No family with 3+ games scores 20+ points below their overall average.
+  First six own moves: 33% match Stockfish's first choice (moves 7-20: 43%), mean loss 61.7 cp, 0%
+    played instantly; first clear divergence (loss >= 20 cp) at own move 2.7 on average.
+
+STYLE
+  Captures on 21.1% of own moves, checks on 15.6%; average game 69 plies (34 own moves), longest 110
+    plies (R26)
+  Wins: 2 (2 by checkmate, 0 by opponent failure); losses: 4 (4 by checkmate, 0 by own failure)
+  Sacrifices (gave >= 2 pawns of material without losing eval, then recovered): 1 -> R31 5.O-O
+  When ahead (> +150) material leaves the board at 2.11 pawns per own move (level: 0.99); capture
+    rate 36.2% vs 17.4% level -> simplifies when ahead
+
+LIKELY ENGINE PROFILE
+  Shallow or noisy engine (mean loss 59.3 cp, blunder rate 6.7%). Confidence low.
+  Weakest early (moves 1-15 mean 51.0 cp vs 16.1 cp later): no book and a thin opening evaluation.
+  Adaptive time use (median 2.08 s, max 14.9 s, spends 2.9 s on moves after a >100 cp swing vs 2.6 s
+  otherwise).
+  Leaves 43 s unused on average: the search is capped by something other than the clock (depth or
+  node limit).
+
+HOW TO PLAY THEM
+  1. No extra time goes to critical positions (2.9 s after a big swing vs 2.6 s otherwise): our
+  search can spend several times their budget on the few moves that decide a game, so prefer
+  positions where one precise move matters over long manoeuvring.
+  2. Tactics work: 10 blunders (>= 200 cp) came from level or better positions, so they can be
+  out-calculated. Keep the position sharp.

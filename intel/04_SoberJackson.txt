@@ -1,0 +1,123 @@
+SoberJackson  (team: Sobriety)  -  rank 4, rating 2269
+======================================================
+Generated 2026-09-06 10:19 from 31 rated games (rounds 1-32, 31 of 32 with evaluations so far), 1
+  void game(s) ignored: R9.
+
+IDENTITY
+  Bot SoberJackson; team Sobriety; university Mixed; members not shown on the site.
+  Rank 4 of 311, rating 2269, record 19-8-4 in 31 rated games.
+  Rating trajectory: entered R1 at 1578, peak 2280 (R23), now 2269 (R32).
+  Jumps of 100+ between rounds (a jump that does not match the game result suggests a new upload;
+  the first ten rounds swing a lot anyway):
+    R2 +109 -> 1687 (win vs Loki 3.0)
+    R10 +119 -> 1941 (win vs Patzer 1.2)
+    R24 -118 -> 2162 (loss vs Loss Preventer)
+  Recent form (last 5 games, R28-R32): 3-2-0 (80%), loss 4.6 cp/move, blunders 0.2% vs earlier
+    (R1-R27): 16-6-4 (73%), 13.1 cp/move, 0.4%
+
+RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
+  vs top 10 : 3-3-2 (56%) over 8 games
+  vs 11-20  : 4-3-1 (69%) over 8 games
+  vs 21-50  : 8-2-0 (90%) over 10 games
+  vs rest   : 4-0-1 (80%) over 5 games
+  Games vs other top-20 teams:
+    R3   white vs Magnus Claudeson   (#16) win  checkmate             Nimzo-Indian Defence
+    R4   white vs Fuzzydafool        (#14) loss flag                  Four Knights Game
+    R10  white vs Patzer 1.2         (#8 ) win  checkmate             Sicilian Najdorf
+    R11  black vs checkers           (#11) win  checkmate             French Classical
+    R12  white vs ms                 (#10) win  checkmate             French Classical
+    R13  white vs Mate in One        (#7 ) draw fifty_moves           Ruy Lopez, Closed
+    R14  black vs test_bot           (#9 ) win  checkmate             Petroff Defence
+    R15  white vs Blank Shooter      (#18) win  checkmate             Sicilian Closed
+    R16  black vs Capablanca         (#2 ) draw threefold_repetition  Sicilian Sveshnikov
+    R17  white vs AI Fellow          (#12) draw threefold_repetition  Nimzo-Indian Defence
+    R19  white vs AlphaFish          (#1 ) loss checkmate             English Symmetrical
+    R20  white vs lyra               (#15) draw threefold_repetition  King's Indian Classical
+    R22  black vs make_no_mistakes   (#13) win  checkmate             Sicilian Sveshnikov
+    R24  white vs Loss Preventer     (#6 ) loss checkmate             Sicilian Dragon
+    R26  black vs Danya's Disciple   (#5 ) draw threefold_repetition  Caro-Kann Exchange
+    R29  white vs Cornelius          (#20) draw fifty_moves           Nimzo-Indian Defence
+
+MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
+  positions inside +-800 only)
+  All own moves: n 1828, mean loss 10.9 cp, median 0 cp, blunders (>= 200 cp) 7 = 0.4% (3 of them
+    from level or better positions)
+  own moves 1-15    : n  465, mean 10.0 cp, median 4 cp, blunders 0.0%
+  own moves 16-40   : n  685, mean 12.4 cp, median 1 cp, blunders 0.6%
+  own moves 41+     : n  678, mean 10.0 cp, median 0 cp, blunders 0.4%
+  as white          : n 1171, mean 11.8 cp, median 0 cp, blunders 0.5%
+  as black          : n  657, mean 9.3 cp, median 0 cp, blunders 0.2%
+  Worst moves: R16 87.Bg7 (+9987 -> +0); R5 16.Rf5 (+387 -> +35); R5 17.Ka1 (+0 -> -295)
+  Site's own tags on their moves: blunder 3, mistake 6, miss 1, inaccuracy 33 of 2068
+  Site's own review (Stockfish 16, depth 16): mean ACPL 17.1 over 31 games, mean accuracy 97.2% (all
+    games, not only analysed ones)
+
+TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
+  Per move: mean 1.72 s, median 1.36 s, quartiles 0.72-2.32 s, max 12.9 s; instant (<50 ms) moves
+    9.0%
+  Clock at the end: mean 37.9 s, minimum 0.9 s; games under 10 s: 1, under 5 s: 1 (R4)
+  By clock before the move: >60s 2.5 s (n 928), 30-60s 1.4 s (n 700), 10-30s 0.7 s (n 455), <10s 1.3
+    s (n 11)
+  By own-move number: 1-15 2.9 s, 16-40 2.0 s, 41+ 0.9 s; when +300 or better 1.1 s, level 2.0 s,
+    -300 or worse 1.1 s
+  Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 3.0%,
+    quartiles 2.0-4.5%
+  After a >100 cp swing on the opponent's move: 1.5 s (n 83) vs 1.7 s otherwise; on moves that
+    themselves swing >100 cp: 1.3 s (n 77) vs 1.7 s
+  Exploitable: nothing obvious
+
+DRAW BEHAVIOUR
+  8 draws in 31 games (26.0%): threefold_repetition 6, fifty_moves 2; 3 of them vs top-10 teams
+  Repetition while ahead (> +150 at the final position): 0
+  Repetition while behind (< -150): 1 -> R17 at -9992; level repetitions: 5
+
+ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
+  Reached +300 or better in 22 games, failed to win 3:
+    R4   vs Fuzzydafool        peak  +715, loss by flag: lost it: worst move 17.Kf2 cost 180 cp
+    R5 vs keep_kann_and_caro_on peak +441, loss by checkmate: lost it: worst move 30.Qxf7 cost 1000
+      cp
+    R16 vs Capablanca peak +9989, draw by threefold_repetition: threw it away: move 87.Bg7 (+9987 ->
+      +0)
+  Reached -300 or worse in 5 games, escaped with a half point or more in 2:
+    R17 vs AI Fellow low -9992, draw by threefold_repetition: opponent allowed a repetition
+    R22 vs make_no_mistakes low -311, win by checkmate: opponent collapsed: Nf3 at ply 124 lost 1000
+      cp
+
+OPENINGS (curated start positions assigned by the platform)
+  By family: Sicilian 6-2-2 (70%); French 4-0-0 (100%); Ruy Lopez 2-2-0 (75%); Petroff 3-0-0 (100%);
+    Nimzo-Indian 1-2-0 (67%); Caro-Kann 1-1-0 (75%); Queen's Indian 1-0-0 (100%); Four Knights 0-0-1
+    (0%); English 0-0-1 (0%); King's Indian 0-1-0 (50%); London 1-0-0 (100%)
+  Positions seen: Ruy Lopez, Closed x4 2-2-0 (75%); French Classical x3 3-0-0 (100%); Nimzo-Indian
+    Defence x3 1-2-0 (67%); Petroff Defence x3 3-0-0 (100%); Sicilian Dragon x3 0-1-2 (17%);
+    Sicilian Sveshnikov x3 2-1-0 (83%); Caro-Kann Exchange x2 1-1-0 (75%); Sicilian Najdorf x2 2-0-0
+    (100%); English Symmetrical loss; Four Knights Game loss; French Tarrasch win; King's Indian
+    Classical draw; London System win; Queen's Indian Defence win; Sicilian Closed win; Sicilian
+    Taimanov win
+  No family with 3+ games scores 20+ points below their overall average.
+  First six own moves: 66% match Stockfish's first choice (moves 7-20: 66%), mean loss 8.0 cp, 10%
+    played instantly; first clear divergence (loss >= 20 cp) at own move 7.4 on average.
+
+STYLE
+  Captures on 17.4% of own moves, checks on 10.6%; average game 135 plies (68 own moves), longest
+    370 plies (R29)
+  Wins: 19 (19 by checkmate, 0 by opponent failure); losses: 4 (3 by checkmate, 1 by own failure: R4
+    flag)
+  Sacrifices (gave >= 2 pawns of material without losing eval, then recovered): 10 -> R1 20.Nc6, R10
+    19.Ne4, R12 15.Qd3, R13 20.g6, R16 12.Rfd8, R22 25.Nxg3+
+  When ahead (> +150) material leaves the board at 1.05 pawns per own move (level: 0.84); capture
+    rate 22.6% vs 15.6% level -> no deliberate simplification
+
+LIKELY ENGINE PROFILE
+  Strong searcher (mean loss 10.9 cp): consistent with a bitboard alpha-beta engine at depth 8-12
+  with a decent evaluation. Confidence high.
+  Adaptive time use (median 1.36 s, max 12.9 s, spends 1.5 s on moves after a >100 cp swing vs 1.7 s
+  otherwise).
+
+HOW TO PLAY THEM
+  1. They only repeat when worse (1 games), so when ahead avoid any repetition and keep pieces on;
+  do not expect gifts.
+  2. No extra time goes to critical positions (1.5 s after a big swing vs 1.7 s otherwise): our
+  search can spend several times their budget on the few moves that decide a game, so prefer
+  positions where one precise move matters over long manoeuvring.
+  3. Tactics work: 3 blunders (>= 200 cp) came from level or better positions, so they can be
+  out-calculated. Keep the position sharp.

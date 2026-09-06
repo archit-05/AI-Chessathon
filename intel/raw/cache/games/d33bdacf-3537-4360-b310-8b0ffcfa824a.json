@@ -1,0 +1,158 @@
+{
+ "game": "d33bdacf-3537-4360-b310-8b0ffcfa824a",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"1\"]\n[White \"Team7347\"]\n[Black \"AlphaBeta\"]\n[Result \"0-1\"]\n[FEN \"r1bqk1nr/pp1p1ppp/1bn1p3/8/4P3/PNN5/1PP2PPP/R1BQKB1R b KQkq - 4 7\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n7... Nf6 { [%clk 0:01:58.385] } 8. Nb1 { [%clk 0:02:00.473] } 8... Nxe4 { [%clk 0:01:56.581] } 9. Nc3 { [%clk 0:02:00.971] } 9... Nxf2 { [%clk 0:01:55.163] } 10. Nb1 { [%clk 0:02:01.465] } 10... Nxd1 { [%clk 0:01:53.807] } 11. Nc3 { [%clk 0:02:01.963] } 11... Nf2 { [%clk 0:01:52.039] } 12. Nb1 { [%clk 0:02:02.461] } 12... Qh4 { [%clk 0:01:50.701] } 13. Nc3 { [%clk 0:02:02.959] } 13... Nd3+ { [%clk 0:01:51.195] } 14. Kd2 { [%clk 0:02:03.453] } 14... Qe1+ { [%clk 0:01:51.689] } 15. Kxd3 { [%clk 0:02:03.945] } 15... Ne5# { [%clk 0:01:52.186] } 0-1\n",
+ "opening": "Sicilian Taimanov",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 1\u00b7Final",
+ "white_uuid": "1f20a852-ae0c-44f5-aed7-8be8a5e699b0",
+ "black_uuid": "1f234cf3-2829-4107-8a5f-2d0e15e978da",
+ "site_verdicts": [
+  [
+   "Nf6",
+   "excellent"
+  ],
+  [
+   "Nb1",
+   "blunder"
+  ],
+  [
+   "Nxe4",
+   "best"
+  ],
+  [
+   "Nc3",
+   "inaccuracy"
+  ],
+  [
+   "Nxf2",
+   "best"
+  ],
+  [
+   "Nb1",
+   "inaccuracy"
+  ],
+  [
+   "Nxd1",
+   "best"
+  ],
+  [
+   "Nc3",
+   "good"
+  ],
+  [
+   "Nf2",
+   "best"
+  ],
+  [
+   "Nb1",
+   "excellent"
+  ],
+  [
+   "Qh4",
+   "best"
+  ],
+  [
+   "Nc3",
+   "inaccuracy"
+  ],
+  [
+   "Nd3+",
+   "best"
+  ],
+  [
+   "Kd2",
+   "best"
+  ],
+  [
+   "Qe1+",
+   "best"
+  ],
+  [
+   "Kxd3",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Team7347",
+    "accuracy": 78.6,
+    "acpl": 300,
+    "tally": {
+     "brilliant": 0,
+     "best": 1,
+     "excellent": 1,
+     "good": 1,
+     "forced": 1,
+     "inaccuracy": 3,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "Magnus Claudeson",
+    "accuracy": 99.5,
+    "acpl": 4,
+    "tally": {
+     "brilliant": 0,
+     "best": 8,
+     "excellent": 1,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   32,
+   48,
+   -301,
+   -350,
+   -537,
+   -542,
+   -767,
+   -749,
+   -1042,
+   -1084,
+   -1431,
+   -1449,
+   -9997,
+   -9998,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "g8e7",
+   "d1f3",
+   "f6e4",
+   "d1g4",
+   "e4f2",
+   "d1h5",
+   "f2d1",
+   "e1d1",
+   "d1f2",
+   "h1g1",
+   "d8h4",
+   "f1e2",
+   "f2d3",
+   "e1d2",
+   "h4e1",
+   "d2d3",
+   "c6e5",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-06T09:14:21Z"
+}

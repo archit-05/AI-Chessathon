@@ -11,9 +11,11 @@ WHAT THIS IS
   line says "N of M analysed".
 
 HOW TO REFRESH
-  ./refresh.sh                 scrape + analyse + render (first run ~1-3 h of single-core Stockfish;
-                               later runs only analyse new games, typically a few minutes)
+  ./refresh.sh                 scrape + analyse + render (a few minutes: the analysis uses the site's
+                               own per-position evaluations, so no engine runs)
   ./refresh.sh --no-scrape     re-analyse and re-render without touching the network
+  ./refresh.sh --deep          optional: our own Stockfish 19 pass at 120k nodes per position (one
+                               niced process, hours; cached in raw/evals.jsonl) as a second opinion
   ./refresh.sh --auto          scrape, keep one Stockfish pass running in the background, render,
                                archive the next Strategy_N, commit intel/ (the three-hourly schedule)
   ./refresh.sh --report        re-render only (after editing notes/*.txt); updates STRATEGY.txt
@@ -65,12 +67,15 @@ FILES
 DEFINITIONS
   Team attribution     PGN White/Black headers carry the TEAM name (e.g. "Emile Andrieu"), not the
                        bot name ("AlphaFish"); files and tables use the bot name, dossiers show both.
-  Centipawn loss (CPL) Stockfish 19, 120,000 nodes per position, Threads 1, Hash 64, loss = eval before
-                       the move minus eval after it (mover's view), clipped to [0, 1000]; only positions
-                       inside +-800 count, so decided games do not distort the average.  Positions that
-                       are already decided (previous evaluation at or beyond +-1000) are evaluated with
-                       30,000 nodes and never enter the CPL statistics; if such a look comes back inside
-                       the band it is redone at 120,000.  Blunder = a loss of 200 cp or more.
+  Evaluations          by default the site's own per-position analysis embedded in every game page
+                       (Stockfish 16, depth 16: a centipawn score from White's view for the start
+                       position and after every ply, mates as +-(10000-n), and the engine's first
+                       choice per position).  The same numbers drive the site's eval bar and move tags,
+                       and they are identical for every team.  --deep replaces them with our own
+                       Stockfish 19 at 120,000 nodes (Threads 1, Hash 64; decided positions at 30,000).
+  Centipawn loss (CPL) loss = eval before the move minus eval after it (mover's view), clipped to
+                       [0, 1000]; only positions inside +-800 count, so decided games do not distort the
+                       average.  Blunder = a loss of 200 cp or more.  Shown as n/a under 200 moves.
   Phases               own moves 1-15, 16-40, 41+ counted from the curated start position.
   Time per move        from the [%clk] comments (clock after the move, increment included):
                        spent = previous own clock - clock after move + 0.5 s.
@@ -92,8 +97,9 @@ DEFINITIONS
                        describe an older bot.
 
 CAVEATS
-  - CPL at 120k nodes is a proxy for strength, not an Elo.  It also depends on how sharp the assigned
-    openings were and on how quickly the opponent collapsed (decided positions are excluded).
+  - CPL from depth-16 evaluations is a proxy for strength, not an Elo.  It also depends on how sharp
+    the assigned openings were and on how quickly the opponent collapsed (decided positions are
+    excluded).  The site's ACPL (sACPL) counts every position, so it runs higher.
   - Samples are small: 22-30 games per team, 0-3 games per opponent pair, 1-6 games per opening
     family.  Treat anything built on fewer than ~5 games as a hint, not a fact.
   - Tiers use today's ranks; the opponent may have been much weaker or stronger when the game was played.

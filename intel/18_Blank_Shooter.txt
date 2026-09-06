@@ -1,0 +1,124 @@
+Blank Shooter  (team: No More Ammo)  -  rank 18, rating 2007
+============================================================
+Generated 2026-09-06 10:19 from 33 rated games (rounds 1-33).
+
+IDENTITY
+  Bot Blank Shooter; team No More Ammo; university Mixed; members not shown on the site.
+  Rank 18 of 311, rating 2007 (provisional: fewer than six games on the current build, i.e. a new
+    upload in the last five rounds), record 16-8-9 in 32 rated games.
+  Rating trajectory: entered R1 at 1578, peak 2073 (R30), now 2007 (R32).
+  No 100+ point jump between consecutive rounds.
+  Recent form (last 5 games, R29-R33): 2-1-2 (50%), loss 16.4 cp/move, blunders 0.0% vs earlier
+    (R1-R28): 14-7-7 (62%), 16.2 cp/move, 0.3% - the provisional flag says the last games are a new
+    build
+
+RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
+  vs top 10 : 0-2-8 (10%) over 10 games
+  vs 11-20  : 3-3-1 (64%) over 7 games
+  vs 21-50  : 9-1-0 (95%) over 10 games
+  vs rest   : 4-2-0 (83%) over 6 games
+  Games vs other top-20 teams:
+    R2   white vs AI Fellow          (#12) draw threefold_repetition  Sicilian Closed
+    R5   white vs Anchoa             (#3 ) loss checkmate             Grunfeld Defence
+    R8   black vs make_no_mistakes   (#13) win  checkmate             Sicilian Sveshnikov
+    R10  white vs ms                 (#10) loss checkmate             Petroff Defence
+    R12  white vs Patzer 1.2         (#8 ) loss checkmate             Sicilian Taimanov
+    R14  black vs checkers           (#11) draw insufficient_material French Tarrasch
+    R15  black vs SoberJackson       (#4 ) loss checkmate             Sicilian Closed
+    R16  white vs Mate in One        (#7 ) loss checkmate             Sicilian Closed
+    R17  black vs lyra               (#15) win  checkmate             Ruy Lopez, Closed
+    R18  white vs Capablanca         (#2 ) loss checkmate             Petroff Defence
+    R20  black vs test_bot           (#9 ) draw threefold_repetition  Sicilian Closed
+    R21  white vs DolphinBot         (#19) win  checkmate             Sicilian Najdorf
+    R22  black vs Fuzzydafool        (#14) draw threefold_repetition  London System
+    R26  black vs AlphaFish          (#1 ) draw threefold_repetition  Ruy Lopez, Closed
+    R27  white vs Danya's Disciple   (#5 ) loss checkmate             Sicilian Closed
+    R29  black vs Loss Preventer     (#6 ) loss checkmate             Reti Opening
+    R31  white vs zak                (#17) loss checkmate             Sicilian Closed
+
+MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
+  positions inside +-800 only)
+  All own moves: n 1656, mean loss 16.3 cp, median 4 cp, blunders (>= 200 cp) 4 = 0.2% (2 of them
+    from level or better positions)
+  own moves 1-15    : n  495, mean 14.7 cp, median 6 cp, blunders 0.2%
+  own moves 16-40   : n  720, mean 18.1 cp, median 4 cp, blunders 0.4%
+  own moves 41+     : n  441, mean 15.2 cp, median 2 cp, blunders 0.0%
+  as white          : n  913, mean 18.1 cp, median 6 cp, blunders 0.3%
+  as black          : n  743, mean 14.0 cp, median 2 cp, blunders 0.1%
+  Worst moves: R8 31.Rxb2 (+428 -> +115); R5 12.gxf3 (-132 -> -393); R4 26.Ne6 (+707 -> +489)
+  Site's own tags on their moves: blunder 2, mistake 11, miss 0, inaccuracy 70 of 1904
+  Site's own review (Stockfish 16, depth 16): mean ACPL 24.5 over 33 games, mean accuracy 96.5% (all
+    games, not only analysed ones)
+
+TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
+  Per move: mean 2.09 s, median 1.77 s, quartiles 1.01-2.97 s, max 29.9 s; instant (<50 ms) moves
+    8.2%
+  Clock at the end: mean 27.3 s, minimum 8.8 s; games under 10 s: 5, under 5 s: 0
+  By clock before the move: >60s 3.4 s (n 709), 30-60s 1.8 s (n 607), 10-30s 0.9 s (n 540), <10s 0.5
+    s (n 66)
+  By own-move number: 1-15 3.5 s, 16-40 2.2 s, 41+ 0.9 s; when +300 or better 1.2 s, level 2.7 s,
+    -300 or worse 1.2 s
+  Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 4.1%,
+    quartiles 3.5-5.2%
+  After a >100 cp swing on the opponent's move: 1.6 s (n 113) vs 2.1 s otherwise; on moves that
+    themselves swing >100 cp: 1.6 s (n 83) vs 2.1 s
+  Exploitable: spends a fixed ~4% of the remaining clock per move, so its thinking time shrinks as
+    the game goes on
+
+DRAW BEHAVIOUR
+  8 draws in 33 games (24.0%): threefold_repetition 7, insufficient_material 1; 2 of them vs top-10
+    teams
+  Repetition while ahead (> +150 at the final position): 1 -> R20 vs test_bot at +3783
+  Repetition while behind (< -150): 0; level repetitions: 6
+
+ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
+  Reached +300 or better in 16 games, failed to win 0.
+  Reached -300 or worse in 10 games, escaped with a half point or more in 1:
+    R23 vs R8v8 low -446, draw by threefold_repetition: opponent allowed a repetition
+
+OPENINGS (curated start positions assigned by the platform)
+  By family: Sicilian 4-3-5 (46%); French 3-1-0 (88%); Petroff 1-0-2 (33%); Reti 2-0-1 (67%); Dutch
+    1-1-0 (75%); Ruy Lopez 1-1-0 (75%); Nimzo-Indian 1-0-0 (100%); English 1-0-0 (100%); Grunfeld
+    0-0-1 (0%); Italian 1-0-0 (100%); London 0-1-0 (50%); King's Indian 0-1-0 (50%); Scotch 1-0-0
+    (100%)
+  Positions seen: Sicilian Closed x7 1-2-4 (29%); Petroff Defence x3 1-0-2 (33%); Reti Opening x3
+    2-0-1 (67%); Dutch Stonewall x2 1-1-0 (75%); French Tarrasch x2 1-1-0 (75%); French Winawer x2
+    2-0-0 (100%); Ruy Lopez, Closed x2 1-1-0 (75%); Sicilian Sveshnikov x2 1-1-0 (75%); English
+    Symmetrical win; Grunfeld Defence loss; Italian Game win; King's Indian Classical draw; London
+    System draw; Nimzo-Indian Defence win; Scotch Game win; Sicilian Dragon win; Sicilian Najdorf
+    win; Sicilian Taimanov loss
+  Underperforms in: Petroff 1-0-2 (33%)
+  First six own moves: 54% match Stockfish's first choice (moves 7-20: 54%), mean loss 11.1 cp, 21%
+    played instantly; first clear divergence (loss >= 20 cp) at own move 5.8 on average.
+
+STYLE
+  Captures on 18.8% of own moves, checks on 10.0%; average game 116 plies (58 own moves), longest
+    205 plies (R31)
+  Wins: 16 (16 by checkmate, 0 by opponent failure); losses: 9 (9 by checkmate, 0 by own failure)
+  Sacrifices (gave >= 2 pawns of material without losing eval, then recovered): 4 -> R1 18.Rxb8, R8
+    23.Nxf3, R14 28.R8a5, R32 19.exf4
+  When ahead (> +150) material leaves the board at 0.92 pawns per own move (level: 1.02); capture
+    rate 21.7% vs 20.5% level -> no deliberate simplification
+
+LIKELY ENGINE PROFILE
+  Strong searcher (mean loss 16.3 cp): consistent with a bitboard alpha-beta engine at depth 8-12
+  with a decent evaluation. Confidence high.
+  Time allocation is a fixed share of the remaining clock (~4% per move; median 1.77 s, max 29.9 s),
+  so depth shrinks as the game goes on and no extra time goes to critical positions (1.6 s after a
+  >100 cp swing vs 2.1 s otherwise).
+  Repeats while clearly ahead (1 games): no contempt or repetition avoidance in the search.
+  Instant early moves (21% of the first six played in under 50 ms): an opening book covers part of
+  the curated positions.
+
+HOW TO PLAY THEM
+  1. When we are worse, steer for repetitions: they accepted threefolds while ahead in R20. Keep our
+  own contempt positive so we never return the favour.
+  2. They convert (16 of 16 won positions turned into wins): do not rely on swindles; the game is
+  decided before -300.
+  3. No extra time goes to critical positions (1.6 s after a big swing vs 2.1 s otherwise): our
+  search can spend several times their budget on the few moves that decide a game, so prefer
+  positions where one precise move matters over long manoeuvring.
+  4. Do not count on gifts: only 4 blunders in 1656 measured moves. Keep our play sound; speculative
+  sacrifices will be refuted.
+  5. Opening families where they score badly: Petroff (1-0-2 (33%)). Nothing to choose here
+  (positions are assigned), but expect our best chances there.

@@ -2,10 +2,10 @@
  "uuid": "8b738da9-e5bb-4122-89ce-0caf6466ba80",
  "bot": "bot1",
  "team": "pgn",
- "rating": 1857,
- "rank": 38,
- "record": "13-5-12",
- "rated_rounds": 30,
+ "rating": 1899,
+ "rank": 35,
+ "record": "14-5-14",
+ "rated_rounds": 32,
  "history": [
   [
    1,
@@ -126,9 +126,47 @@
   [
    30,
    1857
+  ],
+  [
+   31,
+   1941
+  ],
+  [
+   32,
+   1899
   ]
  ],
  "games": [
+  {
+   "game": "294c1fa4-e73e-4bcb-969d-5e25ac6c26a4",
+   "kind": "Rated",
+   "round": 33,
+   "colour": "White",
+   "opponent": "what even is en passant",
+   "opponent_uuid": "b9cbed87-8a3a-437d-9333-1447f68200d1",
+   "verdict": "loss",
+   "opening": "Semi-Slav Defence"
+  },
+  {
+   "game": "c559236b-7ce5-4c02-ad32-d18864bef168",
+   "kind": "Rated",
+   "round": 32,
+   "colour": "White",
+   "opponent": "AI Fellows",
+   "opponent_uuid": "b574c0ea-e994-4a16-9918-7fbc989c4234",
+   "verdict": "loss",
+   "opening": "Queen's Gambit Accepted"
+  },
+  {
+   "game": "4634a512-a80a-4bc5-b223-7a3e815f7f33",
+   "kind": "Rated",
+   "round": 31,
+   "colour": "Black",
+   "opponent": "PawnStorm",
+   "opponent_uuid": "e2a3a86e-7b1b-4926-8873-b396674733fb",
+   "verdict": "win",
+   "opening": "Reti Opening"
+  },
   {
    "game": "7761b894-7ab0-4f82-8dd1-0ff6ad57dc63",
    "kind": "Rated",
@@ -430,5 +468,5 @@
    "opening": "French Winawer"
   }
  ],
- "fetched_at": "2026-09-06T05:34:44Z"
+ "fetched_at": "2026-09-06T09:12:44Z"
 }
