@@ -381,3 +381,6 @@ agent; worth 20 minutes a day from any UK-student team member who enjoys puzzles
   the net 25 s under load, 8/8 in-process wins vs random. `submission_v2_0906_0507.zip` (6.4 MB
   unzipped) built; 200-game gate vs the hand-crafted build running, torture and real-clock check
   follow before hand-over.
+- **Sun 6 Sept, 06:08 — final gate.** v2 (epoch 8) vs hand-crafted build, 200 games at
+  10 s + 0.1 s: +143 =17 −40, 75.8%, ≈ +198 ±57 Elo, 0 failures (183 checkmates, 7 fifty-move,
+  4 insufficient material, 6 threefold). Torture suite and real-clock check running.
