@@ -365,3 +365,10 @@ agent; worth 20 minutes a day from any UK-student team member who enjoys puzzles
   centipawn-loss analysis of the top five's public games (tools/scrape_games.py, tools/cpl.py).
   Partial v1 gate before the restart: +15 =3 −11 (+48 ±134) — the plain net is only marginally
   better than the hand-crafted eval, hence the v2 changes.
+- **Sun 6 Sept, 01:50 — the yardstick.** Mean centipawn loss vs Stockfish (120k nodes/position)
+  on public platform games: AlphaFish 6.3 (0.1% blunders, 1,339 moves); Mate in One 18.8; Patzer
+  19.8; Anchoa 27.7 (their moves against AlphaFish). Our hand-crafted build at the real clock
+  (12 games vs SF UCI_Elo 2400, 12–0, machine heavily loaded): 17.3 mean, median 3, 1.3% blunders.
+  Read: the hand-crafted build is a top-5 engine; AlphaFish is a tier above; v2 must roughly halve
+  our centipawn loss. v1 net gate final: 51 games, 48% (−14 ±98) → no gain over HCE. v2 epoch 0
+  validation loss 0.0136 already beats v1's final 0.0157.

@@ -15,13 +15,11 @@ bini-2.0 m47 d33 h6h5 -20cp 40745n 68ms left 1933ms
 
 [2/60] +0 =1 -1  score 25.0%  elo -191 ±1351  last: draw by threefold_repetition
 [3/60] +0 =1 -2  score 16.7%  elo -280 ±1231  last: white by checkmate
-[4/60] +1 =1 -2  score 37.5%  elo -89 ±1350  last: black by checkmate
-[5/60] +2 =1 -2  score 50.0%  elo -0 ±473  last: white by checkmate
-[6/60] +3 =1 -2  score 58.3%  elo +58 ±455  last: black by checkmate
-[7/60] +4 =1 -2  score 64.3%  elo +102 ±611  last: white by checkmate
-[8/60] +5 =1 -2  score 68.8%  elo +137 ±1248  last: black by checkmate
-[9/60] +6 =1 -2  score 72.2%  elo +166 ±1225  last: black by checkmate
-[10/60] +6 =1 -3  score 65.0%  elo +108 ±300  last: white by checkmate
+[4/60] +1 =1 -2  score 37.5%  elo -89 ±1350  las/opt/anaconda3/lib/python3.12/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+serWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+-3  score 65.0%  elo +108 ±300  last: white by checkmate
 [11/60] +7 =1 -3  score 68.2%  elo +132 ±302  last: white by checkmate
 DRAW (threefold_repetition) stderr tail:
 bini-2.0 ready: import+compile 38.7s (compile 37.7s), nnue=off
@@ -216,3 +214,5 @@ bini-2.0 m62 d25 f6f5 -20cp 31327n 65ms left 1700ms
 bini-2.0 m63 d28 f5f6 -20cp 39541n 79ms left 1725ms
 
 [53/60] +33 =12 -8  score 73.6%  elo +178 ±112  last: draw by threefold_repetition
+/opt/anaconda3/lib/python3.12/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

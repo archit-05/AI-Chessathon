@@ -75,12 +75,9 @@ bini-2.0 m121 d30 c1b2 -20cp 14362n 48ms left 1467ms
 
 [20/100] +8 =4 -8  score 50.0%  elo -0 ±163  last: draw by fifty_moves
 [21/100] +8 =4 -9  score 47.6%  elo -17 ±159  last: black by checkmate
-[22/100] +8 =4 -10  score 45.5%  elo -32 ±156  last: black by checkmate
-[23/100] +9 =4 -10  score 47.8%  elo -15 ±151  last: black by checkmate
-[24/100] +10 =4 -10  score 50.0%  elo -0 ±147  last: black by checkmate
-DRAW (insufficient_material) stderr tail:
-83n 171ms left 2657ms
-bini-2.0 m33 d15 c1d2 230cp 92891n 127ms left 2582ms
+[22/100] +8 =4 -10  score 45.5%  elo -32 ±156  last: black by che/opt/anaconda3/lib/python3.12/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+15 c1d2 230cp 92891n 127ms left 2582ms
 bini-2.0 m34 d14 f5e5 222cp 42703n 79ms left 2554ms
 bini-2.0 m35 d15 e5d5 222cp 74525n 102ms left 2570ms
 bini-2.0 m36 d15 d5c5 324cp 82660n 145ms left 2567ms
@@ -176,3 +173,5 @@ bini-2.0 m128 d64 d4g7 -20cp 6910n 11ms left 2337ms
 [50/100] +19 =9 -22  score 47.0%  elo -21 ±99  last: white by checkmate
 [51/100] +20 =9 -22  score 48.0%  elo -14 ±98  last: black by checkmate
 [52/100] +21 =9 -22  score 49.0%  elo -7 ±97  last: white by checkmate
+/opt/anaconda3/lib/python3.12/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
