@@ -1,0 +1,113 @@
+Snapshot 2026-09-06 17:11 - top 12 (P = provisional: <6 games on the current build)
+  1 AlphaFish           2697P   23-2-1  last R39
+  2 Capablanca          2449P   25-2-5  last R39
+  3 SoberElwood         2368P   21-4-5  last R39
+  4 test_bot            2306    16-4-6  last R39
+  5 Patzer 1.2          2265    22-5-4  last R39
+  6 Anchoa              2253P   18-5-6  last R39
+  7 make_no_mistakes    2228P  17-5-10  last R39
+  8 Mate in One         2195P   23-4-4  last R39
+  9 checkers            2191    20-7-9  last R39
+ 10 Fuzzydafool         2186P  15-2-12  last R39
+ 11 AI Fellow           2170P   20-4-5  last R39
+ 12 DolphinBot          2122P  18-1-11  last R39
+Rounds rated since the last snapshot (2026-09-06 16:11): R39; latest rated round R39
+Jumps >= 80 in one round from R31 (likely new uploads): SoberElwood R39 +85->2368; SoberElwood R37 -112->2285; Anchoa R37 -126->2233; make_no_mistakes R36 +109->2186; Fuzzydafool R36 +101->2330; AlphaFish R34 +98->2576; test_bot R34 +91->2267; Fuzzydafool R34 +116->2200; Fuzzydafool R32 +90->2072
+
+BINI Alpha I (Opus Carlsen): rank 70, rating 1779P, 8-1-4; games since R31 (clk@20/40/60 = our clock in s after own moves 20/40/60; grades = site tags best/exc/good/inacc/mist/miss/blund on own moves):
+  R31 W vs Minimax Three  (#297,1240) WIN  checkmate     16mv 2.1s/mv clk@20/40/60 -/-/- end 95s  us 12/1/1/0/0/0/0 them 3/5/1/2/2/0/1  French Tarrasch
+  R32 W vs Terminator     (#203,1467) WIN  checkmate     25mv 2.3s/mv clk@20/40/60 73/-/- end 76s  us 11/10/2/0/0/0/0 them 9/5/4/3/1/0/1  Catalan Opening
+  R33 B vs sack           (#222,1424) WIN  checkmate     29mv 2.4s/mv clk@20/40/60 70/-/- end 65s  us 20/7/1/0/0/0/0 them 10/12/3/0/0/0/2  Nimzo-Indian Defence
+  R34 W vs ASD            (#186,1503) WIN  checkmate     36mv 2.1s/mv clk@20/40/60 76/-/- end 64s  us 25/9/1/0/0/0/0 them 17/9/4/2/2/0/0  Ruy Lopez, Closed
+  R35 B vs John Chess     (#182,1507) WIN  checkmate     52mv 2.2s/mv clk@20/40/60 73/38/- end 32s  us 36/14/1/0/0/0/0 them 19/19/7/1/1/0/0  Reti Opening
+  R36 B vs berserker      (#148,1583) WIN  checkmate     48mv 2.3s/mv clk@20/40/60 73/39/- end 32s  us 22/17/6/1/0/1/0 them 19/14/9/5/0/0/0  Ruy Lopez, Closed
+  R37 W vs ChEKmate       (#134,1617) DRAW threefold_re  66mv 2.2s/mv clk@20/40/60 63/31/12 end 6s  us 37/23/3/1/1/0/0 them 36/24/2/3/0/0/0  Nimzo-Indian Defence
+      drawn: repetition with material -1 (level), 1 site-tagged errors
+  R38 W vs CCC            (#161,1544) WIN  checkmate     37mv 1.1s/mv clk@20/40/60 99/-/- end 97s  us 25/9/2/0/0/0/0 them 15/9/4/5/1/0/0  Semi-Slav Defence
+  R39 B vs Sirloin v3     (#107,1677) WIN  checkmate     22mv 1.2s/mv clk@20/40/60 103/-/- end 104s  us 13/7/1/0/0/0/0 them 10/2/4/1/1/0/1  English Symmetrical
+  R40 vs The Good Boys: page not final yet
+
+----- ladder movement (whole leaderboard) -----
+LADDER MOVEMENT across all 323 teams (latest rated round R39; rating-by-round from 312 team pages)
+  Biggest gains over the last round:
+    +165  stockfish out of wat #50  1677 -> 1842      8-0-1 Manchester  , rank 61 -> 50
+    +157  None                 #108 1515 -> 1672P     8-0-6 Internationa, rank 139 -> 108
+    +154  MonkeyBum            #236 1238 -> 1392P   12-3-15 Imperial    , rank 267 -> 236
+    +152  Pwn                  #43  1736 -> 1888     13-0-7 Warwick     , rank 48 -> 43
+    +150  Blunderer            #99  1547 -> 1697P     8-3-7 Imperial    , rank 97 -> 99
+    +147  Yumo                 #54  1678 -> 1825P   13-4-13 Warwick     , rank 76 -> 54
+    +135  Bartholomew          #51  1699 -> 1834    19-1-15 Internationa, rank 60 -> 51
+    +132  Seelie               #226 1284 -> 1416P   13-0-16 QMUL        , rank 252 -> 226
+  Biggest falls over the last round: Blitz -328 (#289); BlunderBot -234 (#246); BigRed -190 (#176); IMakeBlunderSome -188 (#191)
+  Biggest gains over the last three rounds:
+    +223  Edward               #115 1431 -> 1654P     8-1-4 Sussex      , rank 217 -> 115
+    +195  Astra                #13  1913 -> 2108P   18-2-13 Imperial    , rank 34 -> 13
+    +178  KingSac              #149 1404 -> 1582P   12-0-10 Imperial    , rank 229 -> 149
+    +165  stockfish out of wat #50  1677 -> 1842      8-0-1 Manchester  , rank 85 -> 50
+    +157  None                 #108 1515 -> 1672P     8-0-6 Internationa, rank 148 -> 108
+    +154  MonkeyBum            #236 1238 -> 1392P   12-3-15 Imperial    , rank 264 -> 236
+    +152  Pwn                  #43  1736 -> 1888     13-0-7 Warwick     , rank 61 -> 43
+    +150  Blunderer            #99  1547 -> 1697P     8-3-7 Imperial    , rank 97 -> 99
+  Biggest gains since R30 (yesterday's close):
+    +514  BINI Alpha I (us)    #70  1265 -> 1779P     8-1-4 Exeter      , rank 188 -> 70
+    +409  Astra                #13  1699 -> 2108P   18-2-13 Imperial    , rank 100 -> 13
+    +394  Edward               #115 1260 -> 1654P     8-1-4 Sussex      , rank 298 -> 115
+    +365  Ultron               #42  1528 -> 1893    16-4-12 Mixed       , rank 66 -> 42
+    +362  Team7347             #211 1086 -> 1448    11-1-17 Mixed       , rank 294 -> 211
+    +361  Artemis              #91  1357 -> 1718    13-5-13 Cambridge   , rank 137 -> 91
+    +353  Challenger           #35  1576 -> 1929    19-2-15 Warwick     , rank 61 -> 35
+    +345  Mite                 #46  1520 -> 1865P     7-1-3 Imperial    
+  Provisional (fresh upload, <6 games on the build): 41 of the top 100, first 20 by rank: AlphaFish (#1), Capablanca (#2), SoberElwood (#3), Anchoa (#6), make_no_mistakes (#7), Mate in One (#8), Fuzzydafool (#10), AI Fellow (#11), DolphinBot (#12), Astra (#13), Dark Sister (#16), Loss Preventer (#17), Cornelius (#18), zak (#20), Poincare (#26), Falcon (#27), Danya's Disciple (#31), ChittyChittyBang (#33), Asmit Agrawal (#34), Good Morning (#38), and 21 more
+  New on the ladder since the previous snapshot: Blunders central (#188, 1500), C1 (#189, 1500), Modus (#224, 1418)
+  Climbing a lot (50+ over the last three rounds or 100+ since R30), 84 teams: Ultron #42 (+365), 72o #53 (+233), Edward #115 (+223), test_bot #4 (+220), xx #21 (+217), Blunderbuss #41 (+217), cory #67 (+211), 3D #89 (+202), Cornelius #18 (+197), Astra #13 (+195), Dark Sister #16 (+185), BlunderGPT v2 #59 (+182), checkers #9 (+180), KingSac #149 (+178), Magnus Claudeson #22 (+167), stockfish out of #50 (+165), None #108 (+157), MonkeyBum #236 (+154), Pwn #43 (+152), Milkyway #229 (+151), Blunderer #99 (+150), Yumo #54 (+147), BINI Alpha I (us #70 (+141), Fuzzydafool #10 (+140), zak #20 (+136), Vanish Onigiri #175 (+136), Bartholomew #51 (+135), Asmit Agrawal #34 (+135), Seelie #226 (+132), Letsbeatit #170 (+131), and 54 more
+  Details on the climbers (10 teams: the top 5 of the last three rounds, then the biggest of those climbing a lot, at most 10):
+  Edward (team Edward, Sussex): rank 115, 1654P, 8-1-4, entered R27 at 1442
+    rating by round: R34 1282, R35 1341, R36 1431, R37 1507, R38 1584, R39 1654
+    R39 W vs FableEngine (#151, 1579): win by checkmate, 42 plies, ACPL 6 vs 79, 5.0 s/move, end 25 s, Four Knights Game
+    R38 B vs fischer (#190, 1497): win by checkmate, 67 plies, ACPL 6 vs 63, 3.7 s/move, end 11 s, Sicilian Dragon
+    R37 B vs Martin (#205, 1463): win by checkmate, 64 plies, ACPL 37 vs 34, 3.7 s/move, end 19 s, London System
+  Astra (team omega3 fish, Imperial): rank 13, 2108P, 18-2-13, entered R1 at 1571
+    rating by round: R34 1715, R35 1801, R36 1913, R37 1910, R38 2026, R39 2108
+    R40 W vs ms (#14, 2105): draw by threefold_re, 95 plies, ACPL 15 vs 14, 2.7 s/move, end 17 s, Sicilian Closed
+    R39 W vs Danya's Disciple (#31, 1943): win by checkmate, 54 plies, ACPL 6 vs 37, 3.3 s/move, end 46 s, Caro-Kann Classical
+    R38 B vs SirBlunderiusThi (#36, 1928): win by checkmate, 143 plies, ACPL 6 vs 15, 2.0 s/move, end 9 s, Nimzo-Indian Defence
+  KingSac (team Sac the king, Imperial): rank 149, 1582P, 12-0-10, entered R15 at 1573
+    rating by round: R34 1443, R35 1348, R36 1404, R37 1481, R38 1526, R39 1582
+    R39 B vs Analphabet (#177, 1515): win by checkmate, 133 plies, ACPL 26 vs 42, 2.0 s/move, end 23 s, French Tarrasch
+    R38 W vs Tempo (#217, 1441): win by checkmate, 78 plies, ACPL 45 vs 101, 2.4 s/move, end 47 s, Petroff Defence
+    R37 B vs dhav (#231, 1403): win by checkmate, 87 plies, ACPL 35 vs 70, 2.3 s/move, end 42 s, Sicilian Closed
+  stockfish out of water (team krishthefish, Manchester): rank 50, 1842, 8-0-1, entered R31 at 1570
+    rating by round: R34 1611, R35 1677, R36 1714, R37 1772, R38 1799, R39 1842
+    R39 W vs Nakamura (#78, 1748): win by checkmate, 139 plies, ACPL 33 vs 36, 1.7 s/move, end 36 s, Sicilian Closed
+    R38 B vs Talos (#68, 1782): win by checkmate, 135 plies, ACPL 8 vs 43, 1.7 s/move, end 35 s, Petroff Defence
+    R37 B vs NaJ (#94, 1710): win by checkmate, 87 plies, ACPL 18 vs 54, 2.0 s/move, end 53 s, Sicilian Sveshnikov
+  None (team None, International): rank 108, 1672P, 8-0-6, entered R22 at 1571
+    rating by round: R34 1563, R35 1590, R36 1572, R37 1526, R38 1596, R39 1672
+    R39 B vs Atheon (#164, 1540): win by checkmate, 134 plies, ACPL 32 vs 53, 1.8 s/move, end 36 s, London System
+    R38 B vs Letsbeatit (#170, 1532): win by checkmate, 85 plies, ACPL 33 vs 85, 2.1 s/move, end 50 s, English Symmetrical
+    R37 W vs FableEngine (#151, 1579): loss by checkmate, 109 plies, ACPL 57 vs 63, 1.9 s/move, end 43 s, Sicilian Taimanov
+  Ultron (team DGS ELO, Mixed): rank 42, 1893, 16-4-12, entered R1 at 1502
+    rating by round: R34 1820, R35 1875, R36 1881, R37 1886, R38 1896, R39 1893
+    R40 B vs Blunder Buss: live (page not final)
+    R39 W vs RMFE (#40, 1899): draw by fifty_moves, 323 plies, ACPL 1 vs 2, 1.2 s/move, end 4 s, Sicilian Closed
+    R38 B vs Fried Liver (#49, 1843): draw by threefold_re, 111 plies, ACPL 22 vs 20, 2.5 s/move, end 8 s, Caro-Kann Exchange
+  72o (team Dogwarts, Bristol): rank 53, 1827, 11-2-8, entered R15 at 1498
+    rating by round: R34 1797, R35 1868, R36 1817, R37 1867, R38 1865, R39 1827
+    R40 B vs Yumo: live (page not final)
+    R39 W vs Blunderbuss (#41, 1895): loss by checkmate, 155 plies, ACPL 43 vs 48, 1.9 s/move, end 15 s, Sicilian Sveshnikov
+    R38 W vs stockfih (#61, 1813): draw by threefold_re, 159 plies, ACPL 19 vs 22, 1.9 s/move, end 11 s, Sicilian Dragon
+  test_bot (team pheanup, KCL): rank 4, 2306, 16-4-6, entered R5 at 1573
+    rating by round: R34 2267, R35 2265, R36 2272, R37 2322, R38 2307, R39 2306
+    R40 W vs Make_no_mistakes: live (page not final)
+    R39 W vs Anchoa (#6, 2253): draw by threefold_re, 82 plies, ACPL 4 vs 4, 3.0 s/move, end 16 s, Nimzo-Indian Defence
+    R38 B vs AlphaFish (#1, 2697): loss by checkmate, 168 plies, ACPL 41 vs 19, 1.8 s/move, end 8 s, Sicilian Closed
+  xx (team xx, Warwick): rank 21, 2052, 18-3-7, entered R10 at 1429
+    rating by round: R34 1873, R35 1951, R36 2039, R37 2042, R38 2050, R39 2052
+    R40 B vs R8int8v9 (#23, 2027): loss by checkmate, 115 plies, ACPL 74 vs 49, 2.2 s/move, end 23 s, English Symmetrical
+    R39 B vs Magnus Claudeson (#22, 2048): draw by insufficient, 173 plies, ACPL 4 vs 4, 1.6 s/move, end 21 s, Ruy Lopez, Closed
+    R38 W vs Cornelius (#18, 2068): draw by insufficient, 128 plies, ACPL 6 vs 6, 1.9 s/move, end 29 s, French Winawer
+  Blunderbuss (team Blunder Buss, Mixed): rank 41, 1895, 18-0-16, entered R1 at 1575
+    rating by round: R34 1836, R35 1887, R36 1857, R37 1825, R38 1862, R39 1895
+    R40 W vs DGS ELO: live (page not final)
+    R39 B vs 72o (#53, 1827): win by checkmate, 155 plies, ACPL 48 vs 43, 1.9 s/move, end 14 s, Sicilian Sveshnikov
+    R38 B vs MateX (#65, 1789): win by checkmate, 147 plies, ACPL 11 vs 37, 2.0 s/move, end 8 s, Grunfeld Defence

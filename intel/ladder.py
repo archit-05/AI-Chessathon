@@ -146,8 +146,9 @@ MAX_DETAIL = 10
 
 def label(r: dict, width: int = 20) -> str:
     """Bot name, marked when it is our own team."""
-    name = f"{r['bot']} (us)" if r.get("team") == OUR_TEAM else r["bot"]
-    return name[:width]
+    if r.get("team") == OUR_TEAM:
+        return f"{r['bot'][:max(width - 5, 4)]} (us)"  # the marker must survive truncation
+    return r["bot"][:width]
 
 
 def report(rows: list[dict], top: int = 8, detail: int = 5, since: int = 30) -> list[str]:
