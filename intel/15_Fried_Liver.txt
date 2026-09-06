@@ -1,6 +1,6 @@
 Fried Liver  (team: Ransom)  -  rank 15, rating 2016
 ====================================================
-Generated 2026-09-06 09:08 from 12 rated games (rounds 20-31, 0 of 12 analysed with Stockfish so
+Generated 2026-09-06 09:44 from 12 rated games (rounds 20-31, 4 of 12 analysed with Stockfish so
   far).
 
 IDENTITY
@@ -12,6 +12,9 @@ IDENTITY
   the first ten rounds swing a lot anyway):
     R22 +124 -> 1706 (win vs IMakeBlunderSometimes)
     R23 +119 -> 1825 (win vs TriggerFish)
+  Recent form (last 5 games, R27-R31): 1-2-2 (40%), loss 9.5 cp/move, blunders 1.0% vs earlier
+    (R20-R26): 4-2-1 (71%), n/a cp/move, n/a% - the provisional flag says the last games are a new
+    build
 
 RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
   vs top 10 : 0-2-3 (20%) over 5 games
@@ -30,9 +33,17 @@ RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
 
 MOVE QUALITY (Stockfish 19, 120k nodes per position, loss clipped at 1000, positions inside +-800
   only)
-  not analysed yet
-  Site's own review (Stockfish 16 · depth 16): mean ACPL 20.7 over 12 games, mean accuracy 97.2%
-    (all games, not only analysed ones)
+  All own moves: n 315, mean loss 9.5 cp, median 0 cp, blunders (>= 200 cp) 3 = 1.0% (2 of them from
+    level or better positions)
+  own moves 1-15    : n   60, mean 10.3 cp, median 2 cp, blunders 0.0%
+  own moves 16-40   : n  100, mean 11.2 cp, median 0 cp, blunders 1.0%
+  own moves 41+     : n  155, mean 8.2 cp, median 0 cp, blunders 1.3%
+  as white          : n  250, mean 6.5 cp, median 0 cp, blunders 0.0%
+  as black          : n   65, mean 21.2 cp, median 1 cp, blunders 4.6%
+  Worst moves: R29 52.Rd7 (+0 -> -396); R29 20.h6 (-10 -> -220)
+  Site's own tags on their moves: blunder 2, mistake 0, miss 0, inaccuracy 9 of 352
+  Site's own review (Stockfish 16, depth 16): mean ACPL 20.7 over 12 games, mean accuracy 97.2% (all
+    games, not only analysed ones)
 
 TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
   Per move: mean 2.23 s, median 1.56 s, quartiles 0.66-3.33 s, max 12.3 s; instant (<50 ms) moves
@@ -41,20 +52,23 @@ TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
     R29, R31)
   By clock before the move: >60s 4.9 s (n 169), 30-60s 2.7 s (n 139), 10-30s 1.7 s (n 165), <10s 0.6
     s (n 256)
-  By own-move number: 1-15 4.8 s, 16-40 2.2 s, 41+ 0.7 s; when +300 or better n/a s, level n/a s,
-    -300 or worse n/a s
+  By own-move number: 1-15 4.8 s, 16-40 2.2 s, 41+ 0.7 s; when +300 or better n/a s, level 2.1 s,
+    -300 or worse 0.8 s
   Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 8.0%,
-    quartiles 5.1-13.3%
-  After a >100 cp swing on the opponent's move: n/a s (n 0) vs n/a s otherwise; on moves that
-    themselves swing >100 cp: n/a s (n 0) vs n/a s
+    quartiles 5.1-12.8%
+  After a >100 cp swing on the opponent's move: 0.9 s (n 13) vs 1.8 s otherwise; on moves that
+    themselves swing >100 cp: 0.8 s (n 8) vs 1.8 s
   Exploitable: gets into time trouble
 
 DRAW BEHAVIOUR
   4 draws in 12 games (33.0%): threefold_repetition 3, insufficient_material 1; 2 of them vs top-10
     teams
+  Repetition while ahead (> +150 at the final position): 0
+  Repetition while behind (< -150): 0; level repetitions: 1
 
 ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
-  not analysed yet
+  Reached +300 or better in 0 games, failed to win 0.
+  Reached -300 or worse in 2 games, escaped with a half point or more in 0.
 
 OPENINGS (curated start positions assigned by the platform)
   By family: Four Knights 0-1-1 (25%); Ruy Lopez 2-0-0 (100%); King's Indian 1-1-0 (75%); Reti 1-0-0
@@ -64,14 +78,27 @@ OPENINGS (curated start positions assigned by the platform)
     Lopez, Closed x2 2-0-0 (100%); Catalan Opening loss; English Symmetrical loss; French Tarrasch
     draw; Pirc Defence win; Reti Opening win; Scotch Game draw
   No family with 3+ games scores 20+ points below their overall average.
+  First six own moves: 54% match Stockfish's first choice (moves 7-20: 48%), mean loss 4.7 cp, 0%
+    played instantly; first clear divergence (loss >= 20 cp) at own move 8.8 on average.
 
 STYLE
-  Captures on n/a% of own moves, checks on n/a%; average game 122 plies (61 own moves), longest 268
+  Captures on 13.3% of own moves, checks on 8.2%; average game 122 plies (61 own moves), longest 268
     plies (R28)
   Wins: 5 (5 by checkmate, 0 by opponent failure); losses: 3 (3 by checkmate, 0 by own failure)
+  Sacrifices (gave >= 2 pawns of material without losing eval, then recovered): 1 -> R28 36.Kf3
+  When ahead (> +150) material leaves the board at n/a pawns per own move (level: 0.90); capture
+    rate n/a% vs 14.7% level -> no deliberate simplification
 
 LIKELY ENGINE PROFILE
-  Not analysed yet (run analyse.py).
+  Move quality is engine-grade (mean loss 9.5 cp at 120k nodes): a real alpha-beta searcher with a
+  strong, probably NNUE-class or well-tuned evaluation. Confidence low.
+  Adaptive time use (median 1.56 s, max 12.3 s, spends 0.9 s on moves after a >100 cp swing vs 1.8 s
+  otherwise).
+  Poor clock awareness: 5 of 12 games went under 5 s.
 
 HOW TO PLAY THEM
-  1. Analysis pending.
+  1. Time pressure works: 5 games dipped under 5 s (R20, R27, R28, R29, R31). Keep games long and
+  complicated; their play under 10 s averages 0.6 s a move.
+  2. No extra time goes to critical positions (0.9 s after a big swing vs 1.8 s otherwise): our
+  search can spend several times their budget on the few moves that decide a game, so prefer
+  positions where one precise move matters over long manoeuvring.

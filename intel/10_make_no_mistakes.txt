@@ -1,6 +1,6 @@
 make_no_mistakes  (team: Make_no_mistakes)  -  rank 10, rating 2145
 ===================================================================
-Generated 2026-09-06 09:08 from 30 rated games (rounds 1-31, 8 of 31 analysed with Stockfish so
+Generated 2026-09-06 09:44 from 30 rated games (rounds 1-31, 2 of 31 analysed with Stockfish so
   far), 1 void game(s) ignored: R18.
 
 IDENTITY
@@ -13,8 +13,8 @@ IDENTITY
     R12 +150 -> 1780 (win vs Magnus Claudeson)
     R19 +124 -> 1978 (win vs meowfish)
     R26 +131 -> 2064 (win vs AI Fellow)
-  Recent form (last 5 games, R27-R31): 2-2-1 (60%), loss 25.5 cp/move, blunders 2.2% vs earlier
-    (R1-R26): 11-7-7 (58%), 16.2 cp/move, 1.2% - the provisional flag says the last games are a new
+  Recent form (last 5 games, R27-R31): 2-2-1 (60%), loss 11.1 cp/move, blunders 1.0% vs earlier
+    (R1-R26): 11-7-7 (58%), n/a cp/move, n/a% - the provisional flag says the last games are a new
     build
 
 RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
@@ -41,17 +41,17 @@ RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
 
 MOVE QUALITY (Stockfish 19, 120k nodes per position, loss clipped at 1000, positions inside +-800
   only)
-  All own moves: n 551, mean loss 17.0 cp, median 0 cp, blunders (>= 200 cp) 7 = 1.3% (5 of them
+  All own moves: n 207, mean loss 11.1 cp, median 0 cp, blunders (>= 200 cp) 2 = 1.0% (1 of them
     from level or better positions)
-  own moves 1-15    : n  120, mean 9.8 cp, median 2 cp, blunders 0.0%
-  own moves 16-40   : n  189, mean 20.8 cp, median 2 cp, blunders 1.6%
-  own moves 41+     : n  242, mean 17.6 cp, median 0 cp, blunders 1.7%
-  as white          : n  210, mean 27.3 cp, median 3 cp, blunders 1.9%
-  as black          : n  341, mean 10.6 cp, median 0 cp, blunders 0.9%
-  Worst moves: R22 59.b7 (-23 -> -571); R24 43.Qd8 (+0 -> -373); R29 32.g6 (-161 -> -464)
-  Site's own tags on their moves: blunder 4, mistake 6, miss 0, inaccuracy 20 of 637
-  Site's own review (Stockfish 16 · depth 16): mean ACPL 23.4 over 30 games, mean accuracy 96.1%
-    (all games, not only analysed ones)
+  own moves 1-15    : n   30, mean 9.2 cp, median 0 cp, blunders 0.0%
+  own moves 16-40   : n   50, mean 32.1 cp, median 7 cp, blunders 4.0%
+  own moves 41+     : n  127, mean 3.3 cp, median 0 cp, blunders 0.0%
+  as white          : n   46, mean 25.5 cp, median 8 cp, blunders 2.2%
+  as black          : n  161, mean 7.0 cp, median 0 cp, blunders 0.6%
+  Worst moves: R29 32.g6 (-161 -> -464); R31 38.Bh6 (+443 -> +162); R31 37.Qf6 (+440 -> +289)
+  Site's own tags on their moves: blunder 0, mistake 2, miss 0, inaccuracy 6 of 224
+  Site's own review (Stockfish 16, depth 16): mean ACPL 23.4 over 30 games, mean accuracy 96.1% (all
+    games, not only analysed ones)
 
 TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
   Per move: mean 2.01 s, median 1.69 s, quartiles 0.77-2.79 s, max 11.1 s; instant (<50 ms) moves
@@ -59,24 +59,24 @@ TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
   Clock at the end: mean 28.8 s, minimum 13.0 s; games under 10 s: 0, under 5 s: 0
   By clock before the move: >60s 3.0 s (n 726), 30-60s 2.2 s (n 417), 10-30s 0.8 s (n 669), <10s n/a
     s (n 0)
-  By own-move number: 1-15 3.1 s, 16-40 2.5 s, 41+ 0.9 s; when +300 or better 1.7 s, level 1.9 s,
-    -300 or worse 1.3 s
+  By own-move number: 1-15 3.1 s, 16-40 2.5 s, 41+ 0.9 s; when +300 or better 2.0 s, level 1.4 s,
+    -300 or worse 1.9 s
   Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 3.8%,
-    quartiles 2.7-5.4%
-  After a >100 cp swing on the opponent's move: 1.3 s (n 41) vs 1.8 s otherwise; on moves that
-    themselves swing >100 cp: 1.7 s (n 43) vs 1.8 s
-  Exploitable: nothing obvious
+    quartiles 2.7-5.5%
+  After a >100 cp swing on the opponent's move: 2.3 s (n 8) vs 1.4 s otherwise; on moves that
+    themselves swing >100 cp: 2.2 s (n 10) vs 1.4 s
+  Exploitable: thinks longer when the position gets sharp
 
 DRAW BEHAVIOUR
   9 draws in 30 games (30.0%): threefold_repetition 4, insufficient_material 3, fifty_moves 2; 2 of
     them vs top-10 teams
   Repetition while ahead (> +150 at the final position): 0
-  Repetition while behind (< -150): 0; level repetitions: 1
+  Repetition while behind (< -150): 0; level repetitions: 0
 
 ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
-  Reached +300 or better in 3 games, failed to win 1:
-    R22 vs SoberJackson peak +382, loss by checkmate: lost it: worst move 62.Nf3 cost 1000 cp
-  Reached -300 or worse in 4 games, escaped with a half point or more in 0.
+  Reached +300 or better in 1 games, failed to win 1:
+    R31 vs Dark Sister peak +443, draw by insufficient_material: traded down into a dead draw
+  Reached -300 or worse in 1 games, escaped with a half point or more in 0.
 
 OPENINGS (curated start positions assigned by the platform)
   By family: Sicilian 3-7-3 (50%); London 1-0-2 (33%); Petroff 1-0-1 (50%); Grunfeld 2-0-0 (100%);
@@ -89,35 +89,26 @@ OPENINGS (curated start positions assigned by the platform)
     win; Nimzo-Indian Defence win; Pirc Defence win; Queen's Gambit Accepted loss; Reti Opening
     draw; Scotch Game loss; Sicilian Najdorf draw; Sicilian Taimanov draw; Two Knights Defence win
   Underperforms in: London 1-0-2 (33%)
-  First six own moves: 46% match Stockfish's first choice (moves 7-20: 70%), mean loss 9.2 cp, 31%
-    played instantly; first clear divergence (loss >= 20 cp) at own move 5.9 on average.
+  First six own moves: 67% match Stockfish's first choice (moves 7-20: 68%), mean loss 6.8 cp, 17%
+    played instantly; first clear divergence (loss >= 20 cp) at own move 6 on average.
 
 STYLE
-  Captures on 14.4% of own moves, checks on 8.3%; average game 121 plies (60 own moves), longest 323
+  Captures on 10.7% of own moves, checks on 3.1%; average game 121 plies (60 own moves), longest 323
     plies (R31)
   Wins: 13 (13 by checkmate, 0 by opponent failure); losses: 8 (8 by checkmate, 0 by own failure)
   Sacrifices (gave >= 2 pawns of material without losing eval, then recovered): 0
-  When ahead (> +150) material leaves the board at 0.85 pawns per own move (level: 0.77); capture
-    rate 17.2% vs 15.0% level -> no deliberate simplification
+  When ahead (> +150) material leaves the board at 2.27 pawns per own move (level: 0.26); capture
+    rate 36.4% vs 6.6% level -> simplifies when ahead
 
 LIKELY ENGINE PROFILE
-  Strong searcher (mean loss 17.0 cp): consistent with a bitboard alpha-beta engine at depth 8-12
+  Strong searcher (mean loss 11.1 cp): consistent with a bitboard alpha-beta engine at depth 8-12
   with a decent evaluation. Confidence low.
-  Quality drops late (phase 41+ mean 17.6 cp vs 9.8 cp in the first 15 moves): endgame evaluation or
-  horizon problems.
-  Adaptive time use (median 1.69 s, max 11.1 s, spends 1.3 s on moves after a >100 cp swing vs 1.8 s
+  Weakest early (moves 1-15 mean 9.2 cp vs 3.3 cp later): no book and a thin opening evaluation.
+  Adaptive time use (median 1.69 s, max 11.1 s, spends 2.3 s on moves after a >100 cp swing vs 1.4 s
   otherwise).
-  Instant early moves (31% of the first six played in under 50 ms): an opening book covers part of
+  Instant early moves (17% of the first six played in under 50 ms): an opening book covers part of
   the curated positions.
 
 HOW TO PLAY THEM
-  1. Head for long games: their loss per move rises from 9.8 cp early to 17.6 cp after move 40.
-  Avoid early mass exchanges only if we are not better; otherwise simplify into a queenless
-  middlegame and outplay them late.
-  2. No extra time goes to critical positions (1.3 s after a big swing vs 1.8 s otherwise): our
-  search can spend several times their budget on the few moves that decide a game, so prefer
-  positions where one precise move matters over long manoeuvring.
-  3. Tactics work: 5 blunders (>= 200 cp) came from level or better positions, so they can be
-  out-calculated. Keep the position sharp.
-  4. Opening families where they score badly: London (1-0-2 (33%)). Nothing to choose here
+  1. Opening families where they score badly: London (1-0-2 (33%)). Nothing to choose here
   (positions are assigned), but expect our best chances there.

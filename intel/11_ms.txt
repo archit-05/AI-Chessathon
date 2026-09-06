@@ -1,6 +1,6 @@
 ms  (team: ms)  -  rank 11, rating 2143
 =======================================
-Generated 2026-09-06 09:08 from 29 rated games (rounds 1-31, 0 of 31 analysed with Stockfish so
+Generated 2026-09-06 09:44 from 29 rated games (rounds 1-31, 2 of 31 analysed with Stockfish so
   far), 2 void game(s) ignored: R14, R18.
 
 IDENTITY
@@ -10,6 +10,8 @@ IDENTITY
   Jumps of 100+ between rounds (a jump that does not match the game result suggests a new upload;
   the first ten rounds swing a lot anyway):
     R26 -105 -> 1954 (loss vs meowfish)
+  Recent form (last 5 games, R27-R31): 4-1-0 (90%), loss 7.8 cp/move, blunders 0.5% vs earlier
+    (R1-R26): 14-5-5 (69%), n/a cp/move, n/a%
 
 RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
   vs top 10 : 4-3-3 (55%) over 10 games
@@ -36,9 +38,17 @@ RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
 
 MOVE QUALITY (Stockfish 19, 120k nodes per position, loss clipped at 1000, positions inside +-800
   only)
-  not analysed yet
-  Site's own review (Stockfish 16 · depth 16): mean ACPL 20.2 over 29 games, mean accuracy 96.9%
-    (all games, not only analysed ones)
+  All own moves: n 206, mean loss 7.8 cp, median 1 cp, blunders (>= 200 cp) 1 = 0.5% (1 of them from
+    level or better positions)
+  own moves 1-15    : n   30, mean 10.1 cp, median 0 cp, blunders 0.0%
+  own moves 16-40   : n   37, mean 7.2 cp, median 1 cp, blunders 0.0%
+  own moves 41+     : n  139, mean 7.4 cp, median 1 cp, blunders 0.7%
+  as white          : n  179, mean 7.8 cp, median 1 cp, blunders 0.6%
+  as black          : n   27, mean 7.8 cp, median 0 cp, blunders 0.0%
+  Worst moves: R28 93.Kg6 (+319 -> +73); R28 42.Kxe3 (+138 -> +26)
+  Site's own tags on their moves: blunder 1, mistake 0, miss 0, inaccuracy 3 of 231
+  Site's own review (Stockfish 16, depth 16): mean ACPL 20.2 over 29 games, mean accuracy 96.9% (all
+    games, not only analysed ones)
 
 TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
   Per move: mean 2.07 s, median 1.62 s, quartiles 0.63-3.12 s, max 13.6 s; instant (<50 ms) moves
@@ -47,20 +57,24 @@ TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
     R20, R24, R26, R28, R29)
   By clock before the move: >60s 4.1 s (n 495), 30-60s 2.7 s (n 359), 10-30s 1.1 s (n 558), <10s 0.5
     s (n 483)
-  By own-move number: 1-15 4.2 s, 16-40 2.4 s, 41+ 0.6 s; when +300 or better n/a s, level n/a s,
+  By own-move number: 1-15 4.2 s, 16-40 2.4 s, 41+ 0.6 s; when +300 or better 2.1 s, level 1.3 s,
     -300 or worse n/a s
   Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 6.5%,
     quartiles 4.8-9.8%
-  After a >100 cp swing on the opponent's move: n/a s (n 0) vs n/a s otherwise; on moves that
-    themselves swing >100 cp: n/a s (n 0) vs n/a s
-  Exploitable: gets into time trouble
+  After a >100 cp swing on the opponent's move: 3.2 s (n 5) vs 1.4 s otherwise; on moves that
+    themselves swing >100 cp: 0.8 s (n 7) vs 1.5 s
+  Exploitable: gets into time trouble; thinks longer when the position gets sharp
 
 DRAW BEHAVIOUR
   6 draws in 29 games (21.0%): threefold_repetition 4, insufficient_material 2; 3 of them vs top-10
     teams
+  Repetition while ahead (> +150 at the final position): 0
+  Repetition while behind (< -150): 0; level repetitions: 0
 
 ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
-  not analysed yet
+  Reached +300 or better in 2 games, failed to win 1:
+    R28 vs Dark Sister peak +366, draw by insufficient_material: traded down into a dead draw
+  Reached -300 or worse in 0 games, escaped with a half point or more in 0.
 
 OPENINGS (curated start positions assigned by the platform)
   By family: Sicilian 5-3-0 (81%); English 2-1-1 (62%); French 1-0-2 (33%); Pirc 2-0-0 (100%);
@@ -72,14 +86,28 @@ OPENINGS (curated start positions assigned by the platform)
     x2 0-2-0 (50%); Four Knights Game win; French Tarrasch loss; Italian Game loss; King's Indian
     Classical win; Nimzo-Indian Defence loss; Sicilian Classical draw
   Underperforms in: French 1-0-2 (33%)
+  First six own moves: 67% match Stockfish's first choice (moves 7-20: 75%), mean loss 11.2 cp, 0%
+    played instantly; first clear divergence (loss >= 20 cp) at own move 3.5 on average.
 
 STYLE
-  Captures on n/a% of own moves, checks on n/a%; average game 130 plies (65 own moves), longest 359
+  Captures on 12.5% of own moves, checks on 9.1%; average game 130 plies (65 own moves), longest 359
     plies (R28)
   Wins: 18 (18 by checkmate, 0 by opponent failure); losses: 5 (5 by checkmate, 0 by own failure)
+  Sacrifices (gave >= 2 pawns of material without losing eval, then recovered): 1 -> R28 19.Rxe2
+  When ahead (> +150) material leaves the board at 0.80 pawns per own move (level: 0.46); capture
+    rate 21.3% vs 8.4% level -> simplifies when ahead
 
 LIKELY ENGINE PROFILE
-  Not analysed yet (run analyse.py).
+  Move quality is engine-grade (mean loss 7.8 cp at 120k nodes): a real alpha-beta searcher with a
+  strong, probably NNUE-class or well-tuned evaluation. Confidence low.
+  Adaptive time use (median 1.62 s, max 13.6 s, spends 3.2 s on moves after a >100 cp swing vs 1.4 s
+  otherwise).
+  Poor clock awareness: 8 of 29 games went under 5 s.
 
 HOW TO PLAY THEM
-  1. Analysis pending.
+  1. Time pressure works: 8 games dipped under 5 s (R10, R16, R17, R20, R24, R26). Keep games long
+  and complicated; their play under 10 s averages 0.5 s a move.
+  2. Do not count on gifts: only 1 blunder in 206 measured moves. Keep our play sound; speculative
+  sacrifices will be refuted.
+  3. Opening families where they score badly: French (1-0-2 (33%)). Nothing to choose here
+  (positions are assigned), but expect our best chances there.

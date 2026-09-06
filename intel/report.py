@@ -161,6 +161,7 @@ def quality(team):
     q["mean"], q["median"] = mean(losses), median(losses, 0)
     q["blunders"] = sum(1 for x in losses if x >= BLUNDER)
     q["blunder_pct"] = pct(q["blunders"], len(losses), 1)
+    q["reliable"] = len(losses) >= 200  # about four games; below that the mean is noise
     q["phase"] = {}
     for i in (1, 2, 3):
         ls = [m["loss"] for _, m in counted if phase_of(m["n"]) == i]
@@ -732,9 +733,9 @@ def league_row(team):
         "rating": team["rating"],
         "record": team["record"],
         "games": n,
-        "cpl": q["mean"],
+        "cpl": q["mean"] if q.get("reliable") else None,
         "site_acpl": q.get("site_acpl"),
-        "blunder_pct": q["blunder_pct"],
+        "blunder_pct": q["blunder_pct"] if q.get("reliable") else None,
         "spm": t.get("mean"),
         "draw_pct": pct(d["n"], n),
         "rep_ahead": len(d["rep_ahead"]),
@@ -806,7 +807,7 @@ def losses_of(team):
 
 
 def findings(teams, ours):
-    tops = [t for t in teams if t["rank"] <= TOP_N and t["q"]["mean"] is not None]
+    tops = [t for t in teams if t["rank"] <= TOP_N and t["q"]["mean"] is not None and t["q"].get("reliable")]
     cands = []
     if not tops:
         return ["analysis pending"]
@@ -905,7 +906,7 @@ def main():
     L.append(f"AI CHESSATHON TOP-{TOP_N} INTEL SUMMARY  ({dt.datetime.now().strftime('%Y-%m-%d %H:%M')}; leaderboard fetched {load_json(LEADERBOARD)['fetched_at']})")
     L.append("=" * 100)
     L.append(f"CPL = mean centipawn loss per own move (Stockfish 19, {SF_NODES // 1000}k nodes, positions inside +-800); sACPL = the site's own review ACPL")
-    L.append(f"(Stockfish 16 depth 16, every game, mean per game); Bl% = moves losing >= {BLUNDER} cp;")
+    L.append(f"(Stockfish 16 depth 16, every game, mean per game); Bl% = moves losing >= {BLUNDER} cp; CPL and Bl% show n/a until 200 moves are analysed;")
     L.append(f"s/mv = mean seconds per own move; RepA = draws by repetition while more than +{AHEAD}; NonC = games at +{CONVERT} or better not won; * = provisional rating.")
     L.append("")
     L.append("LEAGUE TABLE")

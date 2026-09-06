@@ -1,6 +1,6 @@
 AI Fellow  (team: AI Fellows)  -  rank 13, rating 2109
 ======================================================
-Generated 2026-09-06 09:08 from 29 rated games (rounds 1-31, 8 of 31 analysed with Stockfish so
+Generated 2026-09-06 09:44 from 29 rated games (rounds 1-31, 1 of 31 analysed with Stockfish so
   far), 2 void game(s) ignored: R12, R14.
 
 IDENTITY
@@ -9,7 +9,7 @@ IDENTITY
   Rating trajectory: entered R1 at 1575, peak 2109 (R31), now 2109 (R31).
   No 100+ point jump between consecutive rounds.
   Recent form (last 5 games, R27-R31): 3-2-0 (80%), loss 7.8 cp/move, blunders 0.0% vs earlier
-    (R1-R26): 11-9-4 (65%), 6.4 cp/move, 0.2%
+    (R1-R26): 11-9-4 (65%), n/a cp/move, n/a%
 
 RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
   vs top 10 : 2-6-1 (56%) over 9 games
@@ -35,17 +35,16 @@ RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
 
 MOVE QUALITY (Stockfish 19, 120k nodes per position, loss clipped at 1000, positions inside +-800
   only)
-  All own moves: n 620, mean loss 6.4 cp, median 0 cp, blunders (>= 200 cp) 1 = 0.2% (0 of them from
+  All own moves: n 22, mean loss 7.8 cp, median 4 cp, blunders (>= 200 cp) 0 = 0.0% (0 of them from
     level or better positions)
-  own moves 1-15    : n  120, mean 6.2 cp, median 1 cp, blunders 0.0%
-  own moves 16-40   : n  152, mean 9.4 cp, median 0 cp, blunders 0.0%
-  own moves 41+     : n  348, mean 5.1 cp, median 0 cp, blunders 0.3%
-  as white          : n  163, mean 11.0 cp, median 0 cp, blunders 0.6%
-  as black          : n  457, mean 4.8 cp, median 0 cp, blunders 0.0%
-  Worst moves: R17 71.Bc1 (+919 -> +695); R17 66.Rh2+ (+949 -> +743); R17 68.Kb4 (+825 -> +675)
-  Site's own tags on their moves: blunder 0, mistake 1, miss 0, inaccuracy 4 of 647
-  Site's own review (Stockfish 16 · depth 16): mean ACPL 27.0 over 29 games, mean accuracy 96.8%
-    (all games, not only analysed ones)
+  own moves 1-15    : n   15, mean 7.5 cp, median 4 cp, blunders 0.0%
+  own moves 16-40   : n    7, mean 8.6 cp, median 2 cp, blunders 0.0%
+  own moves 41+     : n    0, mean n/a cp, median n/a cp, blunders n/a%
+  as white          : n    0, mean n/a cp, median n/a cp, blunders n/a%
+  as black          : n   22, mean 7.8 cp, median 4 cp, blunders 0.0%
+  Site's own tags on their moves: blunder 0, mistake 0, miss 0, inaccuracy 0 of 26
+  Site's own review (Stockfish 16, depth 16): mean ACPL 27.0 over 29 games, mean accuracy 96.8% (all
+    games, not only analysed ones)
 
 TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
   Per move: mean 1.97 s, median 1.03 s, quartiles 0.56-2.76 s, max 11.3 s; instant (<50 ms) moves
@@ -54,24 +53,23 @@ TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
     R16, R17, R18, R19, R21, R22, R23, R24, R26, R28, R29, R31)
   By clock before the move: >60s 5.6 s (n 354), 30-60s 3.1 s (n 320), 10-30s 1.5 s (n 470), <10s 0.6
     s (n 1021)
-  By own-move number: 1-15 5.3 s, 16-40 2.0 s, 41+ 0.6 s; when +300 or better 0.8 s, level 2.0 s,
-    -300 or worse 0.7 s
-  Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 9.9%,
-    quartiles 7.1-19.4%
-  After a >100 cp swing on the opponent's move: 1.2 s (n 23) vs 1.8 s otherwise; on moves that
-    themselves swing >100 cp: 0.7 s (n 22) vs 1.8 s
+  By own-move number: 1-15 5.3 s, 16-40 2.0 s, 41+ 0.6 s; when +300 or better 2.1 s, level 4.6 s,
+    -300 or worse n/a s
+  Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median
+    10.0%, quartiles 7.1-19.9%
+  After a >100 cp swing on the opponent's move: 3.7 s (n 3) vs 4.1 s otherwise; on moves that
+    themselves swing >100 cp: n/a s (n 0) vs 3.9 s
   Exploitable: gets into time trouble
 
 DRAW BEHAVIOUR
   11 draws in 29 games (38.0%): threefold_repetition 7, insufficient_material 3, fifty_moves 1; 6 of
     them vs top-10 teams
-  Repetition while ahead (> +150 at the final position): 1 -> R17 vs SoberJackson at +9994
-  Repetition while behind (< -150): 0; level repetitions: 2
+  Repetition while ahead (> +150 at the final position): 0
+  Repetition while behind (< -150): 0; level repetitions: 0
 
 ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
-  Reached +300 or better in 2 games, failed to win 1:
-    R17  vs SoberJackson       peak +9993, draw by threefold_repetition: repeated while +9994
-  Reached -300 or worse in 1 games, escaped with a half point or more in 0.
+  Reached +300 or better in 1 games, failed to win 0.
+  Reached -300 or worse in 0 games, escaped with a half point or more in 0.
 
 OPENINGS (curated start positions assigned by the platform)
   By family: Sicilian 3-6-0 (67%); Ruy Lopez 5-1-0 (92%); Nimzo-Indian 0-2-0 (50%); Catalan 1-0-0
@@ -84,34 +82,31 @@ OPENINGS (curated start positions assigned by the platform)
     win; Petroff Defence win; Pirc Defence loss; Queen's Indian Defence win; Reti Opening win;
     Scotch Game loss; Sicilian Classical draw; Sicilian Sveshnikov draw; Two Knights Defence win
   No family with 3+ games scores 20+ points below their overall average.
-  First six own moves: 60% match Stockfish's first choice (moves 7-20: 71%), mean loss 6.2 cp, 15%
-    played instantly; first clear divergence (loss >= 20 cp) at own move 17.5 on average.
+  First six own moves: 50% match Stockfish's first choice (moves 7-20: 71%), mean loss 9.7 cp, 33%
+    played instantly; first clear divergence (loss >= 20 cp) at own move 2 on average.
 
 STYLE
-  Captures on 13.0% of own moves, checks on 13.8%; average game 149 plies (75 own moves), longest
+  Captures on 22.2% of own moves, checks on 14.8%; average game 149 plies (75 own moves), longest
     525 plies (R24)
   Wins: 14 (14 by checkmate, 0 by opponent failure); losses: 4 (4 by checkmate, 0 by own failure)
   Sacrifices (gave >= 2 pawns of material without losing eval, then recovered): 0
-  When ahead (> +150) material leaves the board at 0.29 pawns per own move (level: 0.60); capture
-    rate 13.5% vs 11.7% level -> no deliberate simplification
+  When ahead (> +150) material leaves the board at 0.86 pawns per own move (level: 0.74); capture
+    rate 14.3% vs 21.1% level -> no deliberate simplification
 
 LIKELY ENGINE PROFILE
-  Move quality is engine-grade (mean loss 6.4 cp at 120k nodes): a real alpha-beta searcher with a
-  strong, probably NNUE-class or well-tuned evaluation. Confidence medium.
-  Adaptive time use (median 1.03 s, max 11.3 s, spends 1.2 s on moves after a >100 cp swing vs 1.8 s
+  Move quality is engine-grade (mean loss 7.8 cp at 120k nodes): a real alpha-beta searcher with a
+  strong, probably NNUE-class or well-tuned evaluation. Confidence low.
+  Adaptive time use (median 1.03 s, max 11.3 s, spends 3.7 s on moves after a >100 cp swing vs 4.1 s
   otherwise).
   Poor clock awareness: 15 of 29 games went under 5 s.
-  Repeats while clearly ahead (1 games): no contempt or repetition avoidance in the search.
-  Instant early moves (15% of the first six played in under 50 ms): an opening book covers part of
+  Instant early moves (33% of the first six played in under 50 ms): an opening book covers part of
   the curated positions.
 
 HOW TO PLAY THEM
-  1. When we are worse, steer for repetitions: they accepted threefolds while ahead in R17. Keep our
-  own contempt positive so we never return the favour.
-  2. Time pressure works: 15 games dipped under 5 s (R1, R10, R11, R16, R17, R18). Keep games long
+  1. Time pressure works: 15 games dipped under 5 s (R1, R10, R11, R16, R17, R18). Keep games long
   and complicated; their play under 10 s averages 0.6 s a move.
-  3. No extra time goes to critical positions (1.2 s after a big swing vs 1.8 s otherwise): our
+  2. No extra time goes to critical positions (3.7 s after a big swing vs 4.1 s otherwise): our
   search can spend several times their budget on the few moves that decide a game, so prefer
   positions where one precise move matters over long manoeuvring.
-  4. Do not count on gifts: only 1 blunder in 620 measured moves. Keep our play sound; speculative
+  3. Do not count on gifts: only 0 blunders in 22 measured moves. Keep our play sound; speculative
   sacrifices will be refuted.
