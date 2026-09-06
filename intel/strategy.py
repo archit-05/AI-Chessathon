@@ -64,8 +64,10 @@ def since_previous(rows, focus_uuids) -> list[str]:
             d.append(f"rank {p['rank']} -> {r['rank']}")
         if r["rating"] != p["rating"]:
             d.append(f"rating {p['rating']} -> {r['rating']}")
-        if r["games"] != p["games"]:
+        if r["games"] > p["games"]:
             d.append(f"{r['games'] - p['games']} new game(s), now {r['record']}")
+        elif r["games"] < p["games"]:
+            d.append(f"rated games {p['games']} -> {r['games']} (site voided some), now {r['record']}")
         if r["provisional"] and not p["provisional"]:
             d.append("NEW UPLOAD (rating turned provisional)")
         if r["site_acpl"] is not None and p.get("site_acpl") is not None and abs(r["site_acpl"] - p["site_acpl"]) >= 2:
