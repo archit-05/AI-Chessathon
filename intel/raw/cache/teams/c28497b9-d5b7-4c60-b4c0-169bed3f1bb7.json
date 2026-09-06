@@ -2,10 +2,10 @@
  "uuid": "c28497b9-d5b7-4c60-b4c0-169bed3f1bb7",
  "bot": "Sunfish",
  "team": "Sunfish",
- "rating": 1477,
- "rank": 198,
- "record": "15-0-18",
- "rated_rounds": 38,
+ "rating": 1471,
+ "rank": 209,
+ "record": "16-1-19",
+ "rated_rounds": 41,
  "history": [
   [
    1,
@@ -158,9 +158,51 @@
   [
    38,
    1477
+  ],
+  [
+   39,
+   1473
+  ],
+  [
+   40,
+   1460
+  ],
+  [
+   41,
+   1471
   ]
  ],
  "games": [
+  {
+   "game": "b533aac7-9035-4f30-abaa-8bb9f352d085",
+   "kind": "Rated",
+   "round": 41,
+   "colour": "Black",
+   "opponent": "How does the knight move?",
+   "opponent_uuid": "8b53f803-fec1-418a-b683-ca108b2adbb2",
+   "verdict": "win",
+   "opening": "Pirc Defence"
+  },
+  {
+   "game": "4596699e-0d5a-45f4-b7a8-9793d53ca6c0",
+   "kind": "Rated",
+   "round": 40,
+   "colour": "White",
+   "opponent": "0x88",
+   "opponent_uuid": "60a6cc18-9fe5-4dbc-8c97-10f2906d7ea5",
+   "verdict": "loss",
+   "opening": "Caro-Kann Classical"
+  },
+  {
+   "game": "82359d4e-3844-4b7c-b52a-768bfc695a18",
+   "kind": "Rated",
+   "round": 39,
+   "colour": "Black",
+   "opponent": "Hanging Pawns",
+   "opponent_uuid": "a0d4a80b-0bfe-4e5b-bd3d-7a7a0164be08",
+   "verdict": "draw",
+   "opening": "London System"
+  },
   {
    "game": "0ab3f890-acee-4b6a-98fd-a3283f1f9ef6",
    "kind": "Rated",
@@ -542,5 +584,5 @@
    "opening": "Italian Game"
   }
  ],
- "fetched_at": "2026-09-06T15:21:34Z"
+ "fetched_at": "2026-09-06T18:21:17Z"
 }

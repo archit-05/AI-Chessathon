@@ -2,10 +2,10 @@
  "uuid": "321c728a-c198-4749-a1ec-2ba5754ab033",
  "bot": "dinosaur",
  "team": "Team Keble",
- "rating": 1630,
- "rank": 126,
- "record": "18-1-13",
- "rated_rounds": 38,
+ "rating": 1684,
+ "rank": 108,
+ "record": "20-2-14",
+ "rated_rounds": 41,
  "history": [
   [
    1,
@@ -158,9 +158,51 @@
   [
    38,
    1630
+  ],
+  [
+   39,
+   1659
+  ],
+  [
+   40,
+   1651
+  ],
+  [
+   41,
+   1684
   ]
  ],
  "games": [
+  {
+   "game": "d8472fb5-02c5-49df-bb1d-41d182116e79",
+   "kind": "Rated",
+   "round": 42,
+   "colour": "Black",
+   "opponent": "The Castle Gambit",
+   "opponent_uuid": "6a43144c-53b1-40d0-b620-8833a255f82f",
+   "verdict": "loss",
+   "opening": "Sicilian Closed"
+  },
+  {
+   "game": "ab9d4253-4bd8-42ab-967c-a234446ff56a",
+   "kind": "Rated",
+   "round": 41,
+   "colour": "Black",
+   "opponent": "Phantom",
+   "opponent_uuid": "d5dd74ce-90ff-4643-97d0-406b517dd0ad",
+   "verdict": "win",
+   "opening": "Sicilian Sveshnikov"
+  },
+  {
+   "game": "e8946287-ec03-4591-9498-677e5914ffa3",
+   "kind": "Rated",
+   "round": 40,
+   "colour": "Black",
+   "opponent": "AIY",
+   "opponent_uuid": "ecbf58c0-f148-4ba6-aef7-383d0bb15b4e",
+   "verdict": "draw",
+   "opening": "London System"
+  },
   {
    "game": "22025837-fef8-43ec-ae4a-cfcbbd014425",
    "kind": "Rated",
@@ -168,7 +210,7 @@
    "colour": "White",
    "opponent": "Rustic Alpha 3",
    "opponent_uuid": "dd558c2d-0d10-4b3b-bcfc-529c000205fa",
-   "verdict": "live",
+   "verdict": "win",
    "opening": "Sicilian Closed"
   },
   {
@@ -552,5 +594,5 @@
    "opening": "Petroff Defence"
   }
  ],
- "fetched_at": "2026-09-06T15:20:49Z"
+ "fetched_at": "2026-09-06T18:21:10Z"
 }

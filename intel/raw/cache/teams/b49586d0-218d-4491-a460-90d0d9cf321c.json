@@ -2,10 +2,10 @@
  "uuid": "b49586d0-218d-4491-a460-90d0d9cf321c",
  "bot": "Blank Shooter",
  "team": "No More Ammo",
- "rating": 2125,
- "rank": 12,
- "record": "18-4-10",
- "rated_rounds": 38,
+ "rating": 2087,
+ "rank": 20,
+ "record": "18-6-11",
+ "rated_rounds": 41,
  "history": [
   [
    1,
@@ -158,9 +158,51 @@
   [
    38,
    2125
+  ],
+  [
+   39,
+   2105
+  ],
+  [
+   40,
+   2081
+  ],
+  [
+   41,
+   2087
   ]
  ],
  "games": [
+  {
+   "game": "f952e1ba-b650-40ff-aefc-482dd88ce29f",
+   "kind": "Rated",
+   "round": 42,
+   "colour": "Black",
+   "opponent": "AlphaBeta",
+   "opponent_uuid": "1f234cf3-2829-4107-8a5f-2d0e15e978da",
+   "verdict": "draw",
+   "opening": "London System"
+  },
+  {
+   "game": "1fd8d6e6-409b-4adc-9ed3-617429cb70e3",
+   "kind": "Rated",
+   "round": 41,
+   "colour": "Black",
+   "opponent": "Gladiator",
+   "opponent_uuid": "429a581d-e7fc-41e3-a915-2895b01d7d0b",
+   "verdict": "draw",
+   "opening": "Petroff Defence"
+  },
+  {
+   "game": "11f4c9d3-2b34-4778-999c-d74cfb9d5413",
+   "kind": "Rated",
+   "round": 40,
+   "colour": "White",
+   "opponent": "Cornelius",
+   "opponent_uuid": "acecd823-279a-4bf9-8321-0ee6ed68deda",
+   "verdict": "loss",
+   "opening": "Italian Game"
+  },
   {
    "game": "34edd0b3-c59e-4e7e-aee7-401c94bd1a89",
    "kind": "Rated",
@@ -552,5 +594,5 @@
    "opening": "Sicilian Dragon"
   }
  ],
- "fetched_at": "2026-09-06T15:21:50Z"
+ "fetched_at": "2026-09-06T18:23:11Z"
 }

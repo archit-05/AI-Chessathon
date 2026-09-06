@@ -2,10 +2,10 @@
  "uuid": "ba636320-7bda-41ab-835d-3799a11613d8",
  "bot": "make_no_mistakes",
  "team": "Make_no_mistakes",
- "rating": 2228,
- "rank": 7,
- "record": "17-5-10",
- "rated_rounds": 39,
+ "rating": 2200,
+ "rank": 11,
+ "record": "17-6-12",
+ "rated_rounds": 41,
  "history": [
   [
    1,
@@ -162,9 +162,37 @@
   [
    39,
    2228
+  ],
+  [
+   40,
+   2206
+  ],
+  [
+   41,
+   2200
   ]
  ],
  "games": [
+  {
+   "game": "17f6eb4a-605b-439a-904e-d9fb24524c5c",
+   "kind": "Rated",
+   "round": 42,
+   "colour": "White",
+   "opponent": "Abhi's chess demon",
+   "opponent_uuid": "7af404ee-389f-427c-9433-40ebe5902fc6",
+   "verdict": "draw",
+   "opening": "Caro-Kann Exchange"
+  },
+  {
+   "game": "30dbe1d2-f8a4-4c1e-925f-f7492c5f5fe8",
+   "kind": "Rated",
+   "round": 41,
+   "colour": "White",
+   "opponent": "Lubina",
+   "opponent_uuid": "34fd9228-11bf-4e7a-ba8f-b452d96ad8c9",
+   "verdict": "loss",
+   "opening": "Grunfeld Defence"
+  },
   {
    "game": "95fcc73b-f56e-4696-a1b3-3df8eb37943f",
    "kind": "Rated",
@@ -172,7 +200,7 @@
    "colour": "Black",
    "opponent": "pheanup",
    "opponent_uuid": "0a121c61-60a7-4926-a0e7-024dffa6b185",
-   "verdict": "live",
+   "verdict": "loss",
    "opening": "Queen's Gambit Accepted"
   },
   {
@@ -566,5 +594,5 @@
    "opening": "Italian Game"
   }
  ],
- "fetched_at": "2026-09-06T16:11:05Z"
+ "fetched_at": "2026-09-06T18:21:33Z"
 }

@@ -1,0 +1,92 @@
+Poincare  (team: Gladiator)  -  rank 17, rating 2094
+====================================================
+Generated 2026-09-06 19:24 from 16 rated games (rounds 27-42).
+
+IDENTITY
+  Bot Poincare; team Gladiator; university Hertfordshire; members not shown on the site.
+  Rank 17 of 329, rating 2094 (provisional: fewer than six games on the current build, i.e. a new
+    upload in the last five rounds), record 9-4-3 in 15 rated games.
+  Rating trajectory: entered R27 at 1429, peak 2094 (R41), now 2094 (R41).
+  Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
+    upload): R33 +104 -> 1881 (win vs Imperial Larper)
+  Recent form (last 5 games, R38-R42): 2-3-0 (70%), loss 8.2 cp/move, blunders 0.0% vs earlier
+    (R27-R37): 7-1-3 (68%), 21.5 cp/move, 0.8% - the provisional flag says the last games are a new
+    build
+
+RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
+  vs top 10 : 0-0-0 over 0 games
+  vs 11-20  : 0-2-0 (50%) over 2 games
+  vs 21-50  : 3-1-1 (70%) over 5 games
+  vs rest   : 6-1-2 (72%) over 9 games
+  Games vs ranks 11-20: R41 draw vs Blank Shooter (#20, insuff); R42 draw vs Astral (#18, insuff)
+
+MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
+  positions inside +-800 only)
+  All own moves: n 843, mean loss 16.2 cp, median 2 cp, blunders (>= 200 cp) 4 = 0.5% (3 of them
+    from level or better positions)
+  own moves 1-15    : n  237, mean 15.4 cp, median 5 cp, blunders 0.0%
+  own moves 16-40   : n  339, mean 16.4 cp, median 5 cp, blunders 0.6%
+  own moves 41+     : n  267, mean 16.6 cp, median 0 cp, blunders 0.7%
+  as white          : n  556, mean 13.0 cp, median 1 cp, blunders 0.0%
+  as black          : n  287, mean 22.4 cp, median 5 cp, blunders 1.4%
+  Worst moves: R36 20.fxe4 (+189 -> -159); R27 70.Kxh5 (-20 -> -287); R27 37.Qh3 (+217 -> +0)
+  Site's own review (Stockfish 16, depth 16): mean ACPL 17.2 over 16 games, accuracy 96.3%; its tags
+    on their moves: 5 blunder, 8 mistake, 1 miss, 35 inaccuracy of 966
+
+TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
+  Per move: mean 1.81 s, median 1.79 s, quartiles 1.42-2.14 s, max 7.7 s; instant (<50 ms) moves
+    6.6%
+  Clock at the end: mean 40.1 s, minimum 7.9 s; games under 10 s: 1, under 5 s: 0
+  By clock before the move: >60s 2.2 s (n 557), 30-60s 1.4 s (n 309), 10-30s 1.0 s (n 86), <10s 0.6
+    s (n 26)
+  By own-move number: 1-15 2.7 s, 16-40 1.9 s, 41+ 1.2 s; when +300 or better 1.5 s, level 2.0 s,
+    -300 or worse 1.2 s
+  Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 2.7%,
+    quartiles 2.2-3.8%
+  After a >100 cp swing on the opponent's move: 1.9 s (n 60) vs 1.8 s otherwise; on moves that
+    themselves swing >100 cp: 1.8 s (n 44) vs 1.8 s
+  Exploitable: leaves ~40 s unused
+
+DRAW BEHAVIOUR
+  4 draws in 16 played games (25.0%): insufficient_material 4
+  Repetition while ahead (> +150 at the final position): 0
+  Repetition while behind (< -150): 0; level repetitions: 0
+
+ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
+  Reached +300 or better in 9 games, failed to win 0.
+  Reached -300 or worse in 3 games, escaped with a half point or more in 0.
+
+OPENINGS (curated start positions assigned by the platform)
+  By family: Sicilian 2-0-0 (100%); Petroff 0-2-0 (50%); Reti 2-0-0 (100%); King's Indian 1-0-1
+    (50%); Caro-Kann 0-0-1 (0%); Ruy Lopez 1-0-0 (100%); Grunfeld 1-0-0 (100%); English 1-0-0
+    (100%); French 0-0-1 (0%); Two Knights 0-1-0 (50%); Four Knights 1-0-0 (100%); Scotch 0-1-0
+    (50%)
+  Positions seen more than once: King's Indian Classical x2 1-0-1 (50%); Petroff Defence x2 0-2-0
+    (50%); Reti Opening x2 2-0-0 (100%); 10 positions seen once (6 won, 2 drawn, 2 lost).
+  No family with 3+ games scores 20+ points below their overall average.
+  First six own moves: 56% match Stockfish's first choice (moves 7-20: 57%), mean loss 15.2 cp, 0%
+    played instantly; first clear divergence (loss >= 20 cp) at own move 5.2 on average.
+
+STYLE
+  Captures on 21.0% of own moves, checks on 10.7%; average game 122 plies (61 own moves), longest
+    178 plies (R27)
+  Wins: 9 (9 by checkmate, 0 by opponent failure); losses: 3 (3 by checkmate, 0 by own failure)
+  Sacrifices (gave >= 2 pawns of material without losing eval, then recovered): 4 -> R34 19.Nb3, R39
+    15.Rxh6, R39 38.Bxf6, R42 55.Bd5
+  When ahead (> +150) material leaves the board at 1.25 pawns per own move (level: 0.93); capture
+    rate 26.7% vs 19.1% level -> simplifies when ahead
+
+LIKELY ENGINE PROFILE
+  Strong searcher (mean loss 16.2 cp): consistent with a bitboard alpha-beta engine at depth 8-12
+  with a decent evaluation. Confidence medium.
+  Leaves 40 s unused on average: the search is capped by something other than the clock (depth or
+  node limit).
+
+HOW TO PLAY THEM
+  1. They convert (9 of 9 won positions turned into wins): do not rely on swindles; the game is
+  decided before -300.
+  2. No extra time goes to critical positions (1.9 s after a big swing vs 1.8 s otherwise): our
+  search can spend several times their budget on the few moves that decide a game, so prefer
+  positions where one precise move matters over long manoeuvring.
+  3. Tactics work: 3 blunders (>= 200 cp) came from level or better positions, so they can be
+  out-calculated. Keep the position sharp.

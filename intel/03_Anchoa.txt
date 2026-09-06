@@ -1,0 +1,123 @@
+Anchoa  (team: Lubina)  -  rank 3, rating 2423
+==============================================
+Generated 2026-09-06 19:24 from 32 rated games (rounds 1-42, 39 of 42 with evaluations so far) plus
+  7 played to a result but voided by the site later (R3 3fold, R6 3fold, R14 3fold, R16 50-move, R18
+  3fold, R23 50-move, R32 50-move): they count for move quality, clocks and draw behaviour, not for
+  results; 3 game(s) that never had a result ignored: R9, R12, R33.
+
+IDENTITY
+  Bot Anchoa; team Lubina; university Imperial; members not shown on the site.
+  Rank 3 of 329, rating 2423 (provisional: fewer than six games on the current build, i.e. a new
+    upload in the last five rounds), record 20-6-6 in 31 rated games.
+  Rating trajectory: entered R1 at 1571, peak 2423 (R41), now 2423 (R41).
+  Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
+    upload): R13 -114 -> 1787 (loss vs test_bot); R19 +158 -> 1987 (win vs SirBlunderiusThird); R37
+    -126 -> 2233 (loss vs Patzer 1.2)
+  Recent form (last 5 games, R38-R42): 2-3-0 (70%), loss 6.6 cp/move, blunders 0.0% vs earlier
+    (R1-R37): 18-10-6 (68%), 11.9 cp/move, 0.4% - the provisional flag says the last games are a new
+    build
+
+RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
+  vs top 10 : 3-5-6 (39%) over 14 games
+  vs 11-20  : 4-0-0 (100%) over 4 games
+  vs 21-50  : 9-1-0 (95%) over 10 games
+  vs rest   : 4-0-0 (100%) over 4 games
+  Games vs top-10 teams:
+    R7   white vs checkers           (#7 ) loss checkmate             Scotch Game
+    R11  black vs Patzer 1.2         (#6 ) win  checkmate             Reti Opening
+    R13  white vs test_bot           (#5 ) loss checkmate             Dutch Stonewall
+    R17  black vs AlphaFish          (#1 ) loss checkmate             Grunfeld Defence
+    R21  white vs Capablanca         (#4 ) loss checkmate             French Classical
+    R25  black vs Fuzzydafool        (#10) win  checkmate             Nimzo-Indian Defence
+    R34  white vs SoberElwood        (#2 ) draw fifty_moves           English Symmetrical
+    R35  white vs AlphaFish          (#1 ) loss checkmate             Pirc Defence
+    R36  black vs Capablanca         (#4 ) draw threefold_repetition  Italian Game
+    R37  white vs Patzer 1.2         (#6 ) loss checkmate             Semi-Slav Defence
+    R38  white vs checkers           (#7 ) draw fifty_moves           Sicilian Sveshnikov
+    R39  black vs test_bot           (#5 ) draw threefold_repetition  Nimzo-Indian Defence
+    R40  white vs Mate in One        (#8 ) win  checkmate             Sicilian Classical
+    R42  black vs AlphaFish          (#1 ) draw insufficient_material King's Indian Classical
+  Games vs ranks 11-20: R4 win vs Dark Sister (#12, checkmate); R5 win vs Blank Shooter (#20,
+    checkmate); R24 win vs DolphinBot (#14, checkmate); R41 win vs make_no_mistak (#11, checkmate)
+
+MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
+  positions inside +-800 only)
+  All own moves: n 2309, mean loss 11.0 cp, median 0 cp, blunders (>= 200 cp) 8 = 0.3% (4 of them
+    from level or better positions)
+  own moves 1-15    : n  579, mean 11.6 cp, median 4 cp, blunders 0.2%
+  own moves 16-40   : n  829, mean 13.9 cp, median 2 cp, blunders 0.5%
+  own moves 41+     : n  901, mean 7.8 cp, median 0 cp, blunders 0.3%
+  as white          : n 1149, mean 11.6 cp, median 0 cp, blunders 0.4%
+  as black          : n 1160, mean 10.4 cp, median 0 cp, blunders 0.3%
+  Worst moves: R24 32.Ne4 (+938 -> +613); R13 14.Rxg7+ (+0 -> -295); R30 66.Rc4 (+479 -> +196)
+  Site's own review (Stockfish 16, depth 16): mean ACPL 21.5 over 32 games, accuracy 97.1%; its tags
+    on their moves: 7 blunder, 9 mistake, 2 miss, 48 inaccuracy of 2586
+
+TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
+  Per move: mean 1.71 s, median 1.46 s, quartiles 0.73-2.44 s, max 10.2 s; instant (<50 ms) moves
+    13.8%
+  Clock at the end: mean 39.2 s, minimum 7.2 s; games under 10 s: 3, under 5 s: 0
+  By clock before the move: >60s 2.3 s (n 1245), 30-60s 1.3 s (n 832), 10-30s 0.8 s (n 496), <10s
+    0.6 s (n 38)
+  By own-move number: 1-15 2.7 s, 16-40 1.9 s, 41+ 1.0 s; when +300 or better 1.3 s, level 1.9 s,
+    -300 or worse 1.5 s
+  Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 3.2%,
+    quartiles 2.5-4.3%
+  After a >100 cp swing on the opponent's move: 1.8 s (n 89) vs 1.7 s otherwise; on moves that
+    themselves swing >100 cp: 1.9 s (n 90) vs 1.7 s
+  Exploitable: spends a fixed ~3% of the remaining clock per move, so its thinking time shrinks as
+    the game goes on
+
+DRAW BEHAVIOUR
+  13 draws in 39 played games (33.0%): threefold_repetition 6, fifty_moves 5, insufficient_material
+    2; 6 of them vs top-10 teams; 7 of these were voided by the site afterwards and no longer count
+    on the ladder
+  Repetition while ahead (> +150 at the final position): 0
+  Repetition while behind (< -150): 0; level repetitions: 6
+
+ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
+  Reached +300 or better in 20 games, failed to win 0.
+  Reached -300 or worse in 6 games, escaped with a half point or more in 0.
+
+OPENINGS (curated start positions assigned by the platform)
+  By family: Sicilian 5-4-0 (78%); English 2-3-0 (70%); French 1-1-1 (50%); Grunfeld 2-0-1 (67%);
+    King's Indian 2-1-0 (83%); Petroff 2-1-0 (83%); Nimzo-Indian 1-1-0 (75%); Catalan 2-0-0 (100%);
+    London 1-0-0 (100%); Scotch 0-0-1 (0%); Reti 1-0-0 (100%); Dutch 0-0-1 (0%); Slav 1-0-0 (100%);
+    Pirc 0-0-1 (0%); Italian 0-1-0 (50%); Semi-Slav 0-0-1 (0%); Ruy Lopez 0-1-0 (50%)
+  Positions seen more than once: English Symmetrical x5 2-3-0 (70%); Sicilian Closed x4 2-2-0 (75%);
+    Grunfeld Defence x3 2-0-1 (67%); King's Indian Classical x3 2-1-0 (83%); Petroff Defence x3
+    2-1-0 (83%); Catalan Opening x2 2-0-0 (100%); French Classical x2 1-0-1 (50%); Nimzo-Indian
+    Defence x2 1-1-0 (75%); Sicilian Sveshnikov x2 1-1-0 (75%); 13 positions seen once (5 won, 4
+    drawn, 4 lost).
+  Underperforms in: French 1-1-1 (50%)
+  First six own moves: 66% match Stockfish's first choice (moves 7-20: 60%), mean loss 9.9 cp, 19%
+    played instantly; first clear divergence (loss >= 20 cp) at own move 7.9 on average.
+
+STYLE
+  Captures on 16.9% of own moves, checks on 14.7%; average game 134 plies (67 own moves), longest
+    263 plies (R34)
+  Wins: 20 (20 by checkmate, 0 by opponent failure); losses: 6 (6 by checkmate, 0 by own failure)
+  Sacrifices (gave >= 2 pawns of material without losing eval, then recovered): 9 -> R11 10.Rxe3,
+    R17 35.Qxc7, R19 4.Ng5+, R24 14.f3, R24 17.Rf6, R36 17.Rxe4
+  When ahead (> +150) material leaves the board at 0.78 pawns per own move (level: 0.86); capture
+    rate 19.4% vs 16.2% level -> no deliberate simplification
+
+LIKELY ENGINE PROFILE
+  Strong searcher (mean loss 11.0 cp): consistent with a bitboard alpha-beta engine at depth 8-12
+  with a decent evaluation. Confidence high.
+  Time allocation is a fixed share of the remaining clock (~3% per move; median 1.46 s, max 10.2 s),
+  so depth shrinks as the game goes on and no extra time goes to critical positions (1.8 s after a
+  >100 cp swing vs 1.7 s otherwise).
+  Instant early moves (19% of the first six played in under 50 ms): an opening book covers part of
+  the curated positions.
+
+HOW TO PLAY THEM
+  1. They convert (20 of 20 won positions turned into wins): do not rely on swindles; the game is
+  decided before -300.
+  2. No extra time goes to critical positions (1.8 s after a big swing vs 1.7 s otherwise): our
+  search can spend several times their budget on the few moves that decide a game, so prefer
+  positions where one precise move matters over long manoeuvring.
+  3. Tactics work: 4 blunders (>= 200 cp) came from level or better positions, so they can be
+  out-calculated. Keep the position sharp.
+  4. Opening families where they score badly: French (1-1-1 (50%)). Nothing to choose here
+  (positions are assigned), but expect our best chances there.

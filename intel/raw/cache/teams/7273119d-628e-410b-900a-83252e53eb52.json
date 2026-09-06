@@ -2,10 +2,10 @@
  "uuid": "7273119d-628e-410b-900a-83252e53eb52",
  "bot": "Pawn Star 1",
  "team": "Pawn Stars",
- "rating": 1209,
- "rank": 302,
- "record": "5-2-9",
- "rated_rounds": 30,
+ "rating": 1219,
+ "rank": 303,
+ "record": "6-4-9",
+ "rated_rounds": 33,
  "history": [
   [
    9,
@@ -126,9 +126,51 @@
   [
    38,
    1209
+  ],
+  [
+   39,
+   1208
+  ],
+  [
+   40,
+   1226
+  ],
+  [
+   41,
+   1219
   ]
  ],
  "games": [
+  {
+   "game": "4b3c61c0-dd26-428a-821f-b31ed22eb5e0",
+   "kind": "Rated",
+   "round": 41,
+   "colour": "Black",
+   "opponent": "Stockfish",
+   "opponent_uuid": "20ed5de0-fb1b-47ff-9167-05de682c510d",
+   "verdict": "draw",
+   "opening": "French Winawer"
+  },
+  {
+   "game": "95e1e5e0-319a-4d29-89c8-c095f4266b3c",
+   "kind": "Rated",
+   "round": 40,
+   "colour": "White",
+   "opponent": "Saturday Knight",
+   "opponent_uuid": "25ae5fc8-e19a-4841-9299-71e72762a6f9",
+   "verdict": "win",
+   "opening": "French Winawer"
+  },
+  {
+   "game": "c46a8e6e-d5fc-4a4d-94da-4cb5ab35654c",
+   "kind": "Rated",
+   "round": 39,
+   "colour": "Black",
+   "opponent": "The Rook",
+   "opponent_uuid": "7c24d4b6-543f-4f4a-8eff-04ac48be40c1",
+   "verdict": "draw",
+   "opening": "Caro-Kann Advance"
+  },
   {
    "game": "1fd83796-7b09-4475-819f-d6d8c1193186",
    "kind": "Rated",
@@ -430,5 +472,5 @@
    "opening": "Semi-Slav Defence"
   }
  ],
- "fetched_at": "2026-09-06T15:22:53Z"
+ "fetched_at": "2026-09-06T18:21:56Z"
 }

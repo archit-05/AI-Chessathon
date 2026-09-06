@@ -2,10 +2,10 @@
  "uuid": "1982a7e4-5cb2-4e67-9ea2-f1bda975bb2d",
  "bot": "Hallucinated Gambits",
  "team": "Hallucinated Gambits",
- "rating": 1582,
- "rank": 147,
- "record": "14-2-13",
- "rated_rounds": 34,
+ "rating": 1554,
+ "rank": 162,
+ "record": "14-3-15",
+ "rated_rounds": 37,
  "history": [
   [
    5,
@@ -142,9 +142,41 @@
   [
    38,
    1582
+  ],
+  [
+   39,
+   1564
+  ],
+  [
+   40,
+   1552
+  ],
+  [
+   41,
+   1554
   ]
  ],
  "games": [
+  {
+   "game": "7a0137f8-d30f-426a-9785-2ff394ac0f22",
+   "kind": "Rated",
+   "round": 41,
+   "colour": "White",
+   "opponent": "hyperfish",
+   "opponent_uuid": "abfb1138-b3bc-429f-8b3d-9b739a8d1713",
+   "verdict": "draw",
+   "opening": "Nimzo-Indian Defence"
+  },
+  {
+   "game": "0940dda8-8483-4594-87fe-753182e7f06e",
+   "kind": "Rated",
+   "round": 40,
+   "colour": "Black",
+   "opponent": "while True: win()",
+   "opponent_uuid": "0065d170-1082-42d7-a4a3-af54b0df2019",
+   "verdict": "loss",
+   "opening": "Slav Defence"
+  },
   {
    "game": "d7820e7f-2c68-46e3-825d-9eae0f779270",
    "kind": "Rated",
@@ -152,7 +184,7 @@
    "colour": "Black",
    "opponent": "Invictus",
    "opponent_uuid": "570f0eaa-e1ed-4519-a97f-6fabf34be884",
-   "verdict": "live",
+   "verdict": "loss",
    "opening": "Reti Opening"
   },
   {
@@ -496,5 +528,5 @@
    "opening": "London System"
   }
  ],
- "fetched_at": "2026-09-06T15:20:31Z"
+ "fetched_at": "2026-09-06T18:20:39Z"
 }
