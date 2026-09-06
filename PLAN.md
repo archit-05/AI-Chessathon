@@ -482,3 +482,9 @@ conversion + endgame suite, book; Tue own-search fine-tune, SF 2600/2800 ladder;
   115. Repetition draws count again from R35 (the voiding was a one-off pass). Conversion package
   self-play gate at 94 games: 48.9% (−7 ±71), neutral; Stockfish conversion sets on the
   conversion build in progress (baseline +11 =6 −3). v3 epoch 5 of 6, validation 0.0103.
+- **Sun 6 Sept, 15:00 — conversion package does not gate.** Self-play vs v2.1, 150 games:
+  50.7% (+5 ±56). Stockfish conversion sets: winning +8 =9 −3 (baseline +11 =6 −3), marginal
+  0-5-5 (baseline 0-4-6). Mop-up, fifty-move scaling and position-aware contempt stay in the
+  working copy, unshipped; the compile trim (skip HCE when the net is loaded, −7%) carries forward
+  into the next build. Next gate: search batch 2 (capture + continuation history, history-driven
+  reductions) on the v2.1 base, 150 games. v3 finishes ~16:15, then a 300-game gate vs v2.1.
