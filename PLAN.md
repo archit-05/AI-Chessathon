@@ -527,3 +527,7 @@ conversion + endgame suite, book; Tue own-search fine-tune, SF 2600/2800 ladder;
 - **Sun 6 Sept, 19:00 — time policy v2.2 passes the pressure test.** 10 real-clock games vs
   full-strength Stockfish: min clock 9.4 s, unclear positions 3.0 s median (v2.1: 1.85 s),
   decided 1.6 s, 0-4-6 (v2.1: 0-3-7). Adopted for the next build; torture + regression running.
+- **Sun 6 Sept, 19:10.** Time policy v2.2: torture 30/30 (0 fallback), wrapper-state and search
+  suites green. Quiet real-clock centipawn loss, v2.1: 13.3 mean / 0.6% blunders over 12 games
+  vs Stockfish 2400 (12-0); v3's measurement in progress. A time-policy-only candidate is packaged
+  (`submission_v2.2tm_*.zip`) pending the v3 decision.
