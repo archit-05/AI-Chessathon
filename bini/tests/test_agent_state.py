@@ -54,10 +54,10 @@ def main() -> None:
 
     # repetition: from a position our engine has seen twice, with a winning eval, it must not
     # steer into the repeated position
+    # a new game is detected the real way: a FEN unreachable from the last known position
     fen = "6k1/5ppp/8/8/8/8/5PPP/1Q4K1 w - - 0 1"
-    st.board = None
     agent.get_move(fen, 30000)
-    assert st.move_number == 1
+    assert st.move_number == 1 and len(st.keys) == 1, (st.move_number, len(st.keys))
     print("repetition plumbing ok (engine received", len(st.keys), "history keys)")
 
 

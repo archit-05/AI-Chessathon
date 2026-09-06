@@ -59,12 +59,12 @@ class UCI:
 
 
 DRAWN = [
-    ("KR v KR", "8/8/4k3/8/8/4K3/8/r6R w - - 0 1"),
+    ("KR v KR", "8/8/4k3/8/8/4K3/r7/7R w - - 0 1"),
     ("opposite bishops", "8/5k2/8/2b5/8/2B5/5K2/8 w - - 0 1"),
-    ("KRP v KR Philidor", "4k3/8/8/4P3/8/8/r7/4K2R b - - 0 1"),
+    ("KRP v KR Philidor", "4k3/8/r7/4P3/8/8/8/4K2R w - - 0 1"),
     ("wrong bishop h-pawn", "7k/8/6KP/8/8/8/8/5B2 w - - 0 1"),
     ("KP v K opposition", "8/8/8/4k3/4P3/4K3/8/8 b - - 0 1"),
-    ("KQ v KQ", "8/8/3k4/8/8/3K4/8/q6Q w - - 0 1"),
+    ("KQ v KQ", "8/8/3k4/8/8/3K4/q7/7Q w - - 0 1"),
 ]
 
 
