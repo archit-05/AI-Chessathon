@@ -478,3 +478,7 @@ conversion + endgame suite, book; Tue own-search fine-tune, SF 2600/2800 ladder;
   at move 20, 38 s at move 40, 32 s at the end — the pre-fix policy), 1580, rank 142. AlphaFish
   2642 after beating Capablanca (R34) and Anchoa (R35). Conversion package gate vs v2.1 running
   (150 games, 2 workers); v3 epoch 3 of 6.
+- **Sun 6 Sept, 14:15.** Ladder 6-0 on v2 (R36 as Black vs berserker, 48 moves), 1638, rank
+  115. Repetition draws count again from R35 (the voiding was a one-off pass). Conversion package
+  self-play gate at 94 games: 48.9% (−7 ±71), neutral; Stockfish conversion sets on the
+  conversion build in progress (baseline +11 =6 −3). v3 epoch 5 of 6, validation 0.0103.
