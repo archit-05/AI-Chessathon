@@ -185,3 +185,20 @@ Expected on the platform: init unchanged (~28-30 s); first moves 3-4 s instead o
 
 V3 pipeline: labelling stops at 1.05M positions (about 05:10), the v3b fine-tune starts automatically
 (data/train_v3b_ft.log), expected done about 09:30; then the 300-game gate and the same battery.
+
+## 10. V3 (v3b net) log, Monday 07 Sept
+
+- 06:26  v3b fine-tune done: 2 epochs, 272 chunks/epoch (202 quiet + 7 whole-game chunks x10),
+  36 min/epoch on MPS. Validation on the held-out whole-game chunk: MAE 122 cp after epoch 1,
+  117 cp after epoch 2. Exported 6.30 MB, qb 32, |w1|max 3.28, |w2|max 1.78.
+- 06:28  Suites on v3b (= shipped v2.2 leap files + new net): NNUE incremental == reference (3,958
+  positions); trainer/engine consistency mean 2.2 cp, max 10.7 cp; puzzles 39/40; blunder set 3/3:
+  BOTH R43 positions now avoided (18.Rd4 -> b2b3 +35 d16; 15.Rad1 -> Bb3 +32 d15). This is the first
+  build to pass 15.Rad1; the whole-game data did what it was for.
+- 08:34  GATE v3b vs v2.2 leap, 300 games at 10 s + 0.1 s, 3 workers: +85 =154 -61, 54.0%, +28.
+  arena_par prints +/-40 (draw-blind formula); the draw-aware interval is +/-27, so the interval clears
+  zero (+1..+55). Zero fallbacks, zero failures. Extension of 300 games (seed 2) started 08:36 to firm
+  it up; combined tally follows.
+- 08:36  Battery queued behind the extension: 20 real-clock proxy games (v2.2 leap reference:
+  +4 =15 -1, CPL 8.1), 10 pressure games (min clock >= 5 s), 30 torture, wrapper/board suites, CPL.
+  Expected done about 13:00; V3 hand-over about 13:15 if everything holds.
