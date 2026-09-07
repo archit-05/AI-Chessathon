@@ -138,7 +138,7 @@ def main() -> None:
             flags = []
             if g["final_clock"] is not None and g["final_clock"] < 5:
                 flags.append(f"ended under 5 s ({g['final_clock']:.1f} s)")
-            if tpm and tpm[0] < 2.5 and g["round"] >= a.leap_round:
+            if tpm and tpm[0] < 1.8 and g["round"] >= a.leap_round:
                 flags.append(f"first move took {tpm[0]:.1f} s: old-build clock profile?")
             if len(clk) >= 40 and clk[39] < 20:
                 flags.append(f"only {clk[39]:.0f} s left at move 40")
