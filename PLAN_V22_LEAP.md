@@ -134,3 +134,21 @@ One build for the whole of Monday morning (v2.2), then V3 in the afternoon if an
 - Later in the week (freeze Wednesday night, upload Thursday afternoon): larger net trained from scratch
   on the full data, 4 epochs; search speed work (target +20% nps); parameter tuning one change at a time.
 
+- 02:20  LEAP GATE FINAL: bini_leap (A+C) vs bini_v22, 200 games at 30 s + 0.5 s: +39 =123 -38,
+  50.2%, +2 +/-48. Three early games had our compile exceed 75 s (start-up burst of eight processes on
+  the laptop); excluding them: 197 games, 50.8%, +5. Zero failures, zero fallbacks after game 9.
+  Reading: NOT WORSE than v2.2, which is the ship condition for A; not the head-to-head gain hoped for.
+  Caveat on the cadence: at a 30 s base the under-30 s low-clock cap (hard <= tl/15 + 0.6*inc) applies
+  from move 2 onward, so both builds were held to nearly the same hard limit (about 2 s) and A's
+  redistribution only showed in the soft budget (1.2 s vs 0.9 s). At 120 s the difference is 3.8/8.4 s
+  against 2.7/5.9 s for the first 20 moves, which this gate could not exercise. The real-clock pressure
+  and proxy games in the battery are the evidence for that regime.
+  Decision: ship A+C as v2.2 (the neutral-or-better condition holds; C costs nothing measurable and is
+  the only guard we have for the R43 family). D excluded, B dropped.
+- 02:25  Battery started (uncompressed): fast suites, 10 real-clock pressure games, 20 real-clock proxy
+  games (v2.2 baseline: +2 =8 -10, 30.0%, 0 fallbacks), 30 torture games with the data pipeline paused,
+  CPL of both proxy sets.
+- 02:30  V3 timetable: labelling runs at 44 positions/s (2 workers, depth 10), too slow for 1.5M by
+  morning. Cut to 7 chunks (1.05M, chunk 6 expected about 06:00), then the v3b fine-tune (2 epochs,
+  resume from v3, whole-game set x10) starts automatically; expected done about 09:30, gate 300 games
+  to about 12:00, battery to about 14:00. V3 hand-over target: Monday early afternoon.
