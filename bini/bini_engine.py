@@ -32,6 +32,9 @@ class Engine:
         self.tlim = np.zeros(2, dtype=np.float64)
         self.age = 0
         self.nps_estimate = 400_000.0
+        self.prev_score = 0
+        self.prev_score_valid = False
+        self.root_guard = 0
         self.w1, self.b1, self.w2, self.b2 = N.W1, N.B1, N.W2, N.B2
         self.use_nnue = bool(use_nnue and N.LOADED)
         self.info[S.I_USE_NNUE] = 1 if self.use_nnue else 0
@@ -79,6 +82,7 @@ class Engine:
 
     # ------------------------------------------------------------------ search
     def new_game(self) -> None:
+        self.prev_score_valid = False
         self.tt_key[:] = 0
         self.tt_data[:] = 0
         self.killers[:] = 0
@@ -169,14 +173,27 @@ class Engine:
                 last_iter_s = time.perf_counter() - iter_start
                 factor = 1.0
                 if stable >= 3:
-                    factor = 0.6
+                    factor = 0.75
                 elif stable == 0 and depth >= 6:
                     factor = 1.3
+                # danger: the score fell since our previous move -> think longer, not shorter
+                if self.prev_score_valid and depth >= 8 and best_score < self.prev_score - 25:
+                    factor = max(factor, 1.0) * 1.5
                 if abs(best_score) > 400 and stable >= 2 and depth >= 10:
                     factor *= 0.6  # decided position: save the clock for when it is needed
+                # root guard: a best move that hangs material by static exchange (and is not a
+                # mate) is treated as unstable, so the search keeps deepening to the hard limit
+                # before committing to it
+                if best_move != 0 and abs(best_score) < S.MATE_IN_MAX and depth >= 8:
+                    if S.see(self.bb, self.pcs, best_move) < -150:
+                        factor = 2.5
+                        self.root_guard += 1
+                if factor > 2.5:
+                    factor = 2.5
                 if elapsed >= soft_ms * factor:
                     break
-                if depth >= 6 and elapsed + 2.0 * last_iter_s * 1000.0 > soft_ms * factor:
+                # a floor of half the budget, so a "stable" move in a slow squeeze still gets depth
+                if depth >= 6 and elapsed + 2.0 * last_iter_s * 1000.0 > soft_ms * factor and elapsed >= 0.5 * soft_ms:
                     break
                 depth += 1
                 window = 25
@@ -188,6 +205,8 @@ class Engine:
             if gc_was_enabled:
                 gc.enable()
         elapsed = time.perf_counter() - start
+        self.prev_score = best_score
+        self.prev_score_valid = True
         nodes = int(info[S.I_NODES])
         if elapsed > 0.05 and nodes > 0:
             self.nps_estimate = 0.7 * self.nps_estimate + 0.3 * (nodes / elapsed)

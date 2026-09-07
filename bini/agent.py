@@ -157,9 +157,15 @@ def _budget(time_left_ms: int, move_number: int) -> tuple[float, float]:
         return max(MIN_THINK_MS, soft), max(MIN_THINK_MS, hard)
     # Games against strong opponents run 60-100 moves: budget for that horizon, and keep the
     # hard cap close to the soft budget so an unstable move cannot eat several moves' time.
-    mtg = max(22.0, 50.0 - 0.5 * move_number)
+    # Front-loaded like the strongest teams (3-4 s in the opening, ~2 s in the middlegame),
+    # finishing with 15-25 s instead of 60-100 s unused; the low-clock caps below keep it safe.
+    mtg = max(18.0, 34.0 - 0.4 * move_number)
     soft = time_left_ms / mtg + 0.6 * INCREMENT_MS
     hard = min(2.2 * soft, 0.2 * time_left_ms, time_left_ms - RESERVE_MS)
+    if time_left_ms < 30000:
+        # low clock: no move may cost more than a fifteenth of what is left plus most of the
+        # increment, whatever the search's danger or instability multipliers ask for
+        hard = min(hard, time_left_ms / 15.0 + 0.6 * INCREMENT_MS)
     if time_left_ms < 10000:
         soft = min(soft, 0.06 * time_left_ms + 0.4 * INCREMENT_MS)
         hard = min(hard, 0.12 * time_left_ms + 0.6 * INCREMENT_MS)
@@ -197,7 +203,7 @@ def get_move(fen: str, time_left_ms: int) -> str:
             if chess.Move.from_uci(cand) in board.legal_moves:
                 uci = cand
                 spent = (time.perf_counter() - t0) * 1000.0
-                print(f"{VERSION} m{_state.move_number + 1} d{depth} {cand} {score}cp {int(eng.info[S.I_NODES])}n {spent:.0f}ms left {time_left_ms}ms sx{int(eng.info[S.I_SINGULAR])}/{int(eng.info[S.I_MULTICUT])}/{int(eng.info[S.I_QS_TTCUT])}", file=sys.stderr, flush=True)
+                print(f"{VERSION} m{_state.move_number + 1} d{depth} {cand} {score}cp {int(eng.info[S.I_NODES])}n {spent:.0f}ms left {time_left_ms}ms sx{int(eng.info[S.I_SINGULAR])}/{int(eng.info[S.I_MULTICUT])}/{int(eng.info[S.I_QS_TTCUT])} rg{eng.root_guard}", file=sys.stderr, flush=True)
             else:
                 print(f"{VERSION} ILLEGAL candidate {cand} in {fen}", file=sys.stderr, flush=True)
     except Exception as exc:  # noqa: BLE001 - any engine failure falls through to the fallback
