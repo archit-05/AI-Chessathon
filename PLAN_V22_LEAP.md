@@ -152,3 +152,36 @@ One build for the whole of Monday morning (v2.2), then V3 in the afternoon if an
   morning. Cut to 7 chunks (1.05M, chunk 6 expected about 06:00), then the v3b fine-tune (2 epochs,
   resume from v3, whole-game set x10) starts automatically; expected done about 09:30, gate 300 games
   to about 12:00, battery to about 14:00. V3 hand-over target: Monday early afternoon.
+
+## 9. HAND-OVER, Monday 07 Sept 04:40: upload `submission_v2.2leap_0907_0435.zip`
+
+File: submission_v2.2leap_0907_0435.zip (4,123,531 bytes, sha256 9a2227340064...371921), tag
+`v2.2leap-upload`, commit f3c48f3 on main. Contents: agent.py + 6 bini_*.py + nnue.safetensors (v3 net).
+Rollback: submission_v2.2_0906_2107.zip (tag v2.2-upload), same net, previous clock policy.
+
+What it is: v2.1 search + v3 net + front-loaded clock horizon (A) + root guard (C).
+
+Battery (all uncompressed, all passed):
+- Fast suites: wrapper state, NNUE incremental == reference (3,958 positions), perft, 20k-position
+  differential make/unmake.
+- Pressure, 10 real-clock games (120 s + 0.5 s) vs full-strength Stockfish 1.5M nodes: 0-4-6,
+  min clock 6.7 s (game 7, 109 own moves), never below the 5 s line; clock at move 20 typically 40-70 s,
+  at move 40 15-27 s, at move 60 10-14 s. (v2.2: 0-4-6, min 9.0-9.7 s.)
+- Proxy, 20 real-clock games vs Stockfish 10k nodes (top-team proxy, CPL ~11 by the site grader):
+    leap  +4 =15 -1  57.5%   CPL 8.1, blunders 0.2%   (Stockfish in those games: CPL 8.2)
+    v2.2  +2 =8 -10  30.0%   CPL 15.6, blunders 0.9%
+  This is the real-clock evidence for A: the same net and search, spending the clock where the top
+  teams spend it, halves the move loss and turns a 30% score into 57.5% against the same opponent.
+- Torture: 30/30 wins vs random at 6 s + 0.3 s, 0 fallbacks, 0 failures (data pipeline paused).
+- Regression: 18.Rd4 avoided at every budget; 15.Rad1 still played at 3.8 s (net bias, V3 item).
+- Zip byte-checked against sources; fresh-extraction game as Black vs SF 2400 at 30 s + 0.5 s: win by
+  checkmate, init 25.0 s locally (expect 28-31 s on the platform).
+
+Gate: 200 games vs v2.2 at 30 s + 0.5 s: +2 +/-48 (not worse; the 30 s cadence cannot show A).
+
+Expected on the platform: init unchanged (~28-30 s); first moves 3-4 s instead of 1-2 s; clock at move
+40 around 30-40 s instead of 70-80 s; games end with 10-25 s. Watch for: any game ending under 5 s
+(none in 10 pressure games), and the `rg` counter on the log line (root guard fired).
+
+V3 pipeline: labelling stops at 1.05M positions (about 05:10), the v3b fine-tune starts automatically
+(data/train_v3b_ft.log), expected done about 09:30; then the 300-game gate and the same battery.
