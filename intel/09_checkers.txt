@@ -1,44 +1,44 @@
-checkers  (team: checkers)  -  rank 9, rating 2252
+checkers  (team: checkers)  -  rank 9, rating 2259
 ==================================================
-Generated 2026-09-06 22:26 from 42 rated games (rounds 1-45) plus 3 played to a result but voided by
+Generated 2026-09-07 01:24 from 42 rated games (rounds 1-45) plus 3 played to a result but voided by
   the site later (R8 3fold, R9 50-move, R30 50-move): they count for move quality, clocks and draw
   behaviour, not for results.
 
 IDENTITY
   Bot checkers; team checkers; university Imperial; members not shown on the site.
-  Rank 9 of 335, rating 2252, record 22-10-10 in 41 rated games.
-  Rating trajectory: entered R1 at 1575, peak 2252 (R44), now 2252 (R44).
+  Rank 9 of 338, rating 2259, record 22-10-10 in 42 rated games.
+  Rating trajectory: entered R1 at 1575, peak 2259 (R45), now 2259 (R45).
   No 100+ point jump between consecutive rounds.
   Recent form (last 5 games, R41-R45): 1-3-1 (50%), loss 7.2 cp/move, blunders 0.6% vs earlier
     (R1-R40): 21-10-9 (65%), 13.3 cp/move, 0.7%
 
 RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
-  vs top 10 : 4-7-6 (44%) over 17 games
-  vs 11-20  : 4-2-1 (71%) over 7 games
-  vs 21-50  : 9-1-2 (79%) over 12 games
+  vs top 10 : 4-6-7 (41%) over 17 games
+  vs 11-20  : 5-2-0 (86%) over 7 games
+  vs 21-50  : 8-2-2 (75%) over 12 games
   vs rest   : 5-0-1 (83%) over 6 games
   Games vs top-10 teams:
-    R5   white vs Patzer 1.2         (#6 ) loss checkmate             Sicilian Closed
+    R4   white vs make_no_mistakes   (#10) win  checkmate             Petroff Defence
+    R5   white vs Patzer 1.2         (#7 ) loss checkmate             Sicilian Closed
     R7   black vs Anchoa             (#2 ) win  checkmate             Scotch Game
-    R11  white vs SoberElwood        (#3 ) loss checkmate             French Classical
-    R13  black vs AI Fellow          (#7 ) win  checkmate             Scotch Game
+    R11  white vs SoberElwood        (#4 ) loss checkmate             French Classical
+    R13  black vs AI Fellow          (#6 ) win  checkmate             Scotch Game
     R15  black vs Capablanca         (#5 ) loss checkmate             Two Knights Defence
-    R17  black vs test_bot           (#4 ) draw insufficient_material Sicilian Closed
-    R18  black vs stockfih           (#10) win  checkmate             Sicilian Closed
+    R17  black vs test_bot           (#3 ) draw insufficient_material Sicilian Closed
     R23  white vs AlphaFish          (#1 ) loss checkmate             English Symmetrical
-    R34  black vs Patzer 1.2         (#6 ) draw fifty_moves           Reti Opening
-    R35  white vs AI Fellow          (#7 ) draw threefold_repetition  Two Knights Defence
+    R34  black vs Patzer 1.2         (#7 ) draw fifty_moves           Reti Opening
+    R35  white vs AI Fellow          (#6 ) draw threefold_repetition  Two Knights Defence
     R36  black vs Mate in One        (#8 ) win  checkmate             Sicilian Closed
     R37  white vs Capablanca         (#5 ) loss checkmate             English Symmetrical
     R38  black vs Anchoa             (#2 ) draw fifty_moves           Sicilian Sveshnikov
-    R41  white vs Patzer 1.2         (#6 ) draw fifty_moves           Sicilian Taimanov
+    R39  white vs make_no_mistakes   (#10) loss checkmate             Sicilian Closed
+    R41  white vs Patzer 1.2         (#7 ) draw fifty_moves           Sicilian Taimanov
     R42  white vs Mate in One        (#8 ) loss checkmate             French Tarrasch
-    R43  white vs AI Fellow          (#7 ) draw insufficient_material Ruy Lopez, Closed
-    R45  black vs stockfih           (#10) draw threefold_repetition  French Winawer
-  Games vs ranks 11-20: R4 win vs make_no_mistak (#13, checkmate); R12 win vs lyra (#20, checkmate);
-    R16 draw vs Loss Preventer (#18, insuff); R19 draw vs Fuzzydafool (#11, insuff); R39 loss vs
-    make_no_mistak (#13, checkmate); R40 win vs Fuzzydafool (#11, checkmate); R44 win vs Magnus
-    Claudes (#19, checkmate)
+    R43  white vs AI Fellow          (#6 ) draw insufficient_material Ruy Lopez, Closed
+  Games vs ranks 11-20: R12 win vs lyra (#20, checkmate); R18 win vs stockfih (#13, checkmate); R19
+    draw vs Fuzzydafool (#16, insuff); R28 win vs DolphinBot (#19, checkmate); R40 win vs
+    Fuzzydafool (#16, checkmate); R44 win vs Magnus Claudes (#15, checkmate); R45 draw vs stockfih
+    (#13, 3fold)
 
 MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
   positions inside +-800 only)
@@ -70,7 +70,7 @@ TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
 
 DRAW BEHAVIOUR
   13 draws in 45 played games (29.0%): insufficient_material 5, fifty_moves 5, threefold_repetition
-    3; 8 of them vs top-10 teams; 3 of these were voided by the site afterwards and no longer count
+    3; 7 of them vs top-10 teams; 3 of these were voided by the site afterwards and no longer count
     on the ladder
   Repetition while ahead (> +150 at the final position): 0
   Repetition while behind (< -150): 0; level repetitions: 3

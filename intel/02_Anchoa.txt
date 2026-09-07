@@ -1,47 +1,45 @@
-Anchoa  (team: Lubina)  -  rank 2, rating 2472
+Anchoa  (team: Lubina)  -  rank 2, rating 2506
 ==============================================
-Generated 2026-09-06 22:26 from 35 rated games (rounds 1-45, 42 of 45 with evaluations so far) plus
+Generated 2026-09-07 01:24 from 35 rated games (rounds 1-45, 42 of 45 with evaluations so far) plus
   7 played to a result but voided by the site later (R3 3fold, R6 3fold, R14 3fold, R16 50-move, R18
   3fold, R23 50-move, R32 50-move): they count for move quality, clocks and draw behaviour, not for
   results; 3 game(s) that never had a result ignored: R9, R12, R33.
 
 IDENTITY
   Bot Anchoa; team Lubina; university Imperial; members not shown on the site.
-  Rank 2 of 335, rating 2472 (provisional: fewer than six games on the current build, i.e. a new
-    upload in the last five rounds), record 21-8-6 in 34 rated games.
-  Rating trajectory: entered R1 at 1571, peak 2478 (R42), now 2472 (R44).
+  Rank 2 of 338, rating 2506, record 21-8-6 in 35 rated games.
+  Rating trajectory: entered R1 at 1571, peak 2506 (R45), now 2506 (R45).
   Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
     upload): R13 -114 -> 1787 (loss vs test_bot); R19 +158 -> 1987 (win vs SirBlunderiusThird); R37
     -126 -> 2233 (loss vs Patzer 1.2)
   Recent form (last 5 games, R41-R45): 2-3-0 (70%), loss 5.9 cp/move, blunders 0.0% vs earlier
-    (R1-R40): 19-12-6 (68%), 11.2 cp/move, 0.4% - the provisional flag says the last games are a new
-    build
+    (R1-R40): 19-12-6 (68%), 11.2 cp/move, 0.4%
 
 RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
   vs top 10 : 4-7-6 (44%) over 17 games
-  vs 11-20  : 3-0-0 (100%) over 3 games
-  vs 21-50  : 10-1-0 (95%) over 11 games
+  vs 11-20  : 4-0-0 (100%) over 4 games
+  vs 21-50  : 9-1-0 (95%) over 10 games
   vs rest   : 4-0-0 (100%) over 4 games
   Games vs top-10 teams:
     R7   white vs checkers           (#9 ) loss checkmate             Scotch Game
-    R11  black vs Patzer 1.2         (#6 ) win  checkmate             Reti Opening
-    R13  white vs test_bot           (#4 ) loss checkmate             Dutch Stonewall
+    R11  black vs Patzer 1.2         (#7 ) win  checkmate             Reti Opening
+    R13  white vs test_bot           (#3 ) loss checkmate             Dutch Stonewall
     R17  black vs AlphaFish          (#1 ) loss checkmate             Grunfeld Defence
     R21  white vs Capablanca         (#5 ) loss checkmate             French Classical
-    R29  white vs stockfih           (#10) win  checkmate             King's Indian Classical
-    R34  white vs SoberElwood        (#3 ) draw fifty_moves           English Symmetrical
+    R34  white vs SoberElwood        (#4 ) draw fifty_moves           English Symmetrical
     R35  white vs AlphaFish          (#1 ) loss checkmate             Pirc Defence
     R36  black vs Capablanca         (#5 ) draw threefold_repetition  Italian Game
-    R37  white vs Patzer 1.2         (#6 ) loss checkmate             Semi-Slav Defence
+    R37  white vs Patzer 1.2         (#7 ) loss checkmate             Semi-Slav Defence
     R38  white vs checkers           (#9 ) draw fifty_moves           Sicilian Sveshnikov
-    R39  black vs test_bot           (#4 ) draw threefold_repetition  Nimzo-Indian Defence
+    R39  black vs test_bot           (#3 ) draw threefold_repetition  Nimzo-Indian Defence
     R40  white vs Mate in One        (#8 ) win  checkmate             Sicilian Classical
+    R41  black vs make_no_mistakes   (#10) win  checkmate             Grunfeld Defence
     R42  black vs AlphaFish          (#1 ) draw insufficient_material King's Indian Classical
-    R43  white vs SoberElwood        (#3 ) draw fifty_moves           English Symmetrical
-    R44  white vs test_bot           (#4 ) draw threefold_repetition  Queen's Gambit Declined
+    R43  white vs SoberElwood        (#4 ) draw fifty_moves           English Symmetrical
+    R44  white vs test_bot           (#3 ) draw threefold_repetition  Queen's Gambit Declined
     R45  black vs Capablanca         (#5 ) win  checkmate             Caro-Kann Advance
-  Games vs ranks 11-20: R4 win vs Dark Sister (#12, checkmate); R25 win vs Fuzzydafool (#11,
-    checkmate); R41 win vs make_no_mistak (#13, checkmate)
+  Games vs ranks 11-20: R4 win vs Dark Sister (#11, checkmate); R24 win vs DolphinBot (#19,
+    checkmate); R25 win vs Fuzzydafool (#16, checkmate); R29 win vs stockfih (#13, checkmate)
 
 MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
   positions inside +-800 only)
@@ -73,7 +71,7 @@ TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
 
 DRAW BEHAVIOUR
   15 draws in 42 played games (36.0%): threefold_repetition 7, fifty_moves 6, insufficient_material
-    2; 8 of them vs top-10 teams; 7 of these were voided by the site afterwards and no longer count
+    2; 9 of them vs top-10 teams; 7 of these were voided by the site afterwards and no longer count
     on the ladder
   Repetition while ahead (> +150 at the final position): 0
   Repetition while behind (< -150): 0; level repetitions: 7

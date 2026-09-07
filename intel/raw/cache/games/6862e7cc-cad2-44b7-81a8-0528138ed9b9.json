@@ -1,0 +1,248 @@
+{
+ "game": "6862e7cc-cad2-44b7-81a8-0528138ed9b9",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"26\"]\n[White \"JBG fam\"]\n[Black \"Nighty Knight\"]\n[Result \"1-0\"]\n[FEN \"rnbqk2r/ppp3pp/3bpn2/3p1p2/3P1B2/4PNP1/PPP2PBP/RN1QK2R b KQkq - 0 6\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n6... Ng4 { [%clk 0:01:57.998] } 7. O-O { [%clk 0:01:54.888] } 7... b5 { [%clk 0:01:55.996] } 8. h3 { [%clk 0:01:52.253] } 8... Bb7 { [%clk 0:01:53.994] } 9. hxg4 { [%clk 0:01:50.142] } 9... Bxf4 { [%clk 0:01:51.992] } 10. exf4 { [%clk 0:01:48.066] } 10... Qc8 { [%clk 0:01:49.989] } 11. Re1 { [%clk 0:01:45.999] } 11... fxg4 { [%clk 0:01:47.987] } 12. Ng5 { [%clk 0:01:43.754] } 12... Nc6 { [%clk 0:01:45.985] } 13. Nxe6 { [%clk 0:01:40.933] } 13... Nb4 { [%clk 0:01:43.983] } 14. Qxg4 { [%clk 0:01:36.884] } 14... Nxc2 { [%clk 0:01:41.98] } 15. Nxg7+ { [%clk 0:01:34.713] } 15... Kf7 { [%clk 0:01:40.871] } 16. Qh5+ { [%clk 0:01:32.836] } 16... Kf8 { [%clk 0:01:38.869] } 17. Ne6+ { [%clk 0:01:21.279] } 17... Ke7 { [%clk 0:01:36.867] } 18. Qg5+ { [%clk 0:01:21.729] } 18... Ke8 { [%clk 0:01:34.865] } 19. Nxc7+ { [%clk 0:01:22.211] } 19... Kd7 { [%clk 0:01:32.863] } 20. Re7+ { [%clk 0:01:22.704] } 20... Kd6 { [%clk 0:01:31.291] } 21. Qf6+ { [%clk 0:01:23.201] } 21... Qe6 { [%clk 0:01:30.517] } 22. Qxe6# { [%clk 0:01:23.699] } 1-0\n",
+ "opening": "Dutch Stonewall",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 26\u00b7Final",
+ "white_uuid": "10021bb5-71a5-4b10-bde5-14e1f667501a",
+ "black_uuid": "0ad2d3da-9db9-4292-adf2-cc15bd1591b0",
+ "site_verdicts": [
+  [
+   "Ng4",
+   "good"
+  ],
+  [
+   "O-O",
+   "excellent"
+  ],
+  [
+   "b5",
+   "good"
+  ],
+  [
+   "h3",
+   "good"
+  ],
+  [
+   "Bb7",
+   "blunder"
+  ],
+  [
+   "hxg4",
+   "best"
+  ],
+  [
+   "Bxf4",
+   "good"
+  ],
+  [
+   "exf4",
+   "best"
+  ],
+  [
+   "Qc8",
+   "good"
+  ],
+  [
+   "Re1",
+   "excellent"
+  ],
+  [
+   "fxg4",
+   "best"
+  ],
+  [
+   "Ng5",
+   "best"
+  ],
+  [
+   "Nc6",
+   "excellent"
+  ],
+  [
+   "Nxe6",
+   "best"
+  ],
+  [
+   "Nb4",
+   "good"
+  ],
+  [
+   "Qxg4",
+   "excellent"
+  ],
+  [
+   "Nxc2",
+   "excellent"
+  ],
+  [
+   "Nxg7+",
+   "excellent"
+  ],
+  [
+   "Kf7",
+   "inaccuracy"
+  ],
+  [
+   "Qh5+",
+   "best"
+  ],
+  [
+   "Kf8",
+   "best"
+  ],
+  [
+   "Ne6+",
+   "best"
+  ],
+  [
+   "Ke7",
+   "best"
+  ],
+  [
+   "Qg5+",
+   "best"
+  ],
+  [
+   "Ke8",
+   "excellent"
+  ],
+  [
+   "Nxc7+",
+   "excellent"
+  ],
+  [
+   "Kd7",
+   "excellent"
+  ],
+  [
+   "Re7+",
+   "best"
+  ],
+  [
+   "Kd6",
+   "excellent"
+  ],
+  [
+   "Qf6+",
+   "best"
+  ],
+  [
+   "Qe6",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "PSL God Matt Bomer",
+    "accuracy": 98.9,
+    "acpl": 7,
+    "tally": {
+     "brilliant": 0,
+     "best": 10,
+     "excellent": 5,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Bot Knighty Night",
+    "accuracy": 87.5,
+    "acpl": 132,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 5,
+     "good": 5,
+     "forced": 1,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   51,
+   82,
+   78,
+   134,
+   85,
+   523,
+   536,
+   628,
+   623,
+   708,
+   668,
+   647,
+   660,
+   732,
+   752,
+   937,
+   925,
+   1069,
+   1485,
+   9991,
+   9992,
+   9992,
+   9993,
+   9993,
+   9994,
+   9996,
+   9997,
+   9997,
+   9998,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "e8g8",
+   "c2c4",
+   "e8g8",
+   "a2a4",
+   "g4f6",
+   "h3g4",
+   "f5g4",
+   "e3f4",
+   "f5g4",
+   "g4f5",
+   "f5g4",
+   "f3g5",
+   "e8g8",
+   "g5e6",
+   "h7h5",
+   "d1e2",
+   "g7g6",
+   "g4g7",
+   "e8f8",
+   "g4h5",
+   "f7f8",
+   "g7e6",
+   "f8e7",
+   "h5g5",
+   "e7d6",
+   "e6g7",
+   "e8f8",
+   "e1e7",
+   "d7c6",
+   "g5f6",
+   "c8e6",
+   "f6e6",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T00:22:29Z"
+}
