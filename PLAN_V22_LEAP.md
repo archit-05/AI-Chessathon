@@ -216,3 +216,24 @@ V3 pipeline: labelling stops at 1.05M positions (about 05:10), the v3b fine-tune
 - 11:08  Cosmetic fix applied to the V3 files only: the rg counter now resets per move (it accumulated
   across the game in v2.2's log lines). Python driver only, no search or clock change; the search suite
   passes on the edited copy, and the torture and wrapper suites in the running battery use it.
+
+## 11. HAND-OVER, Monday 07 Sept 13:00: upload `submission_v3_0907_1258.zip`
+
+File: submission_v3_0907_1258.zip (4,134,516 bytes), tag `v3-upload`. Rollback: submission_v2.2leap_0907_0435.zip
+(tag v2.2leap-upload), the build playing now. Difference from v2.2: the v3b net (fine-tuned on 1.05M
+whole-game positions) and a one-line log fix (rg counter resets per move). Search and clock unchanged.
+
+Battery (all uncompressed, all passed):
+- Gate: 600 games vs v2.2 leap at 10 s + 0.1 s: +189 =289 -122, 55.6%, +39 +/-20. One flag loss in
+  game 76 of the second block, traced to a machine stall (80 ms budget, 6k nodes/s); counted as a loss.
+- Proxy, 20 real-clock games vs Stockfish 10k nodes: +4 =12 -4 (50.0%); move loss by the site grader
+  6.9 cp, blunders 0.1% (v2.2: 8.1 cp, 0.2%; Stockfish itself in these games: 8.2 cp). V3 plays these
+  games at better than proxy quality; the lower score than v2.2's 57.5% is 20-game noise.
+- Pressure, 10 real-clock games vs Stockfish 1.5M nodes: 0-3-7, min clock 7.3 s (v2.2: 6.7 s).
+- Torture 30/30, 0 fallbacks, 0 failures (on the file with the counter fix). Wrapper, board,
+  differential, NNUE exactness, trainer consistency: pass. Puzzles 39/40. Both R43 positions avoided.
+- Zip byte-checked; fresh-extraction game as Black vs SF 2400 at 30 s + 0.5 s: draw by repetition, no
+  warnings; init 33.3 s on a loaded laptop (25 s quiet; expect 28-31 s on the platform as before).
+
+Expected on the platform: identical clock profile to v2.2 (first move 2-3 s, 30-40 s at move 40,
+10-25 s at the end); the rg counter now reads per move. The Mac is released to the V4 build from 13:00.
