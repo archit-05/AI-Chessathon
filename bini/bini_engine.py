@@ -105,6 +105,7 @@ class Engine:
         info[S.I_MULTICUT] = 0
         info[S.I_QS_TTCUT] = 0
         info[S.I_EXCL_NODES] = 0
+        self.root_guard = 0  # per-move count of root-guard extensions, logged as rg<n>
         # history ages between moves so old knowledge fades
         self.history //= 2
 
