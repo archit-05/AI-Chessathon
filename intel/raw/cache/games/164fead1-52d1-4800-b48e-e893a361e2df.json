@@ -1,0 +1,122 @@
+{
+ "game": "164fead1-52d1-4800-b48e-e893a361e2df",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.07\"]\n[Round \"48\"]\n[White \"HAL9000\"]\n[Black \"fuzz\"]\n[Result \"1/2-1/2\"]\n[FEN \"r3kbnr/pp1b1ppp/1qn1p3/3pP3/3P4/5N1P/PP2BPP1/RNBQK2R b KQkq - 0 8\"]\n[SetUp \"1\"]\n[Termination \"threefold_repetition\"]\n\n8... Nge7 { [%clk 0:01:55.95] } 9. Nc3 { [%clk 0:01:56.504] } 9... Nf5 { [%clk 0:01:52.171] } 10. Na4 { [%clk 0:01:52.951] } 10... Qa5+ { [%clk 0:01:48.549] } 11. Nc3 { [%clk 0:01:49.948] } 11... Qb6 { [%clk 0:01:45.073] } 12. Na4 { [%clk 0:01:45.956] } 12... Qa5+ { [%clk 0:01:41.153] } 13. Nc3 { [%clk 0:01:43.442] } 13... Qb6 { [%clk 0:01:37.889] } 1/2-1/2\n",
+ "opening": "French Advance",
+ "termination_text": "Threefold repetition",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 48\u00b7Final",
+ "white_uuid": "d5a49e55-5b7b-4794-9c4b-40fc286d6e35",
+ "black_uuid": "0f755e93-36d5-40fe-9654-2fd874a5822e",
+ "site_verdicts": [
+  [
+   "Nge7",
+   "best"
+  ],
+  [
+   "Nc3",
+   "best"
+  ],
+  [
+   "Nf5",
+   "best"
+  ],
+  [
+   "Na4",
+   "best"
+  ],
+  [
+   "Qa5+",
+   "best"
+  ],
+  [
+   "Nc3",
+   "best"
+  ],
+  [
+   "Qb6",
+   "best"
+  ],
+  [
+   "Na4",
+   "best"
+  ],
+  [
+   "Qa5+",
+   "best"
+  ],
+  [
+   "Nc3",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "HAL9000",
+    "accuracy": 100.0,
+    "acpl": 0,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 0,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Blundermaster",
+    "accuracy": 100.0,
+    "acpl": 0,
+    "tally": {
+     "brilliant": 0,
+     "best": 6,
+     "excellent": 0,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "best": [
+   "g8e7",
+   "b1c3",
+   "e7f5",
+   "c3a4",
+   "b6a5",
+   "a4c3",
+   "a5b6",
+   "c3a4",
+   "b6a5",
+   "a4c3",
+   "a5b6",
+   "c3a4"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T09:12:01Z"
+}

@@ -1,0 +1,103 @@
+Mite  (team: Ryan Vincent)  -  rank 15, rating 2203
+===================================================
+Generated 2026-09-07 10:25 from 20 rated games (rounds 29-48).
+
+IDENTITY
+  Bot Mite; team Ryan Vincent; university Imperial; team name reads like a personal name, probably
+    solo.
+  Rank 15 of 352, rating 2203 (provisional: fewer than six games on the current build, i.e. a new
+    upload in the last five rounds), record 12-3-5 in 19 rated games.
+  Rating trajectory: entered R29 at 1428, peak 2203 (R47), now 2203 (R47).
+  Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
+    upload): R31 +102 -> 1622 (win vs noob); R32 +108 -> 1730 (win vs femboy number 2); R35 -110 ->
+    1775 (loss vs R8int8v9); R44 +104 -> 2149 (win vs Danya's Disciple); R46 +124 -> 2174 (win vs
+    R8int8v9)
+  Recent form (last 5 games, R44-R48): 2-2-1 (60%), loss 9.8 cp/move, blunders 0.3% vs earlier
+    (R29-R43): 10-1-4 (70%), 17.8 cp/move, 0.7% - the provisional flag says the last games are a new
+    build
+
+RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
+  vs top 10 : 0-0-0 over 0 games
+  vs 11-20  : 1-2-2 (40%) over 5 games
+  vs 21-50  : 4-0-2 (67%) over 6 games
+  vs rest   : 7-1-1 (83%) over 9 games
+  Games vs ranks 11-20: R38 loss vs PSL God Matt B (#16, checkmate); R42 win vs cory (#18,
+    checkmate); R45 loss vs Astral (#13, checkmate); R47 draw vs Fuzzydafool (#14, 3fold); R48 draw
+    vs PSL God Matt B (#16, insuff)
+
+MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
+  positions inside +-800 only)
+  All own moves: n 1046, mean loss 14.9 cp, median 2 cp, blunders (>= 200 cp) 6 = 0.6% (4 of them
+    from level or better positions)
+  own moves 1-15    : n  297, mean 14.3 cp, median 6 cp, blunders 0.3%
+  own moves 16-40   : n  419, mean 13.1 cp, median 2 cp, blunders 0.2%
+  own moves 41+     : n  330, mean 17.8 cp, median 0 cp, blunders 1.2%
+  as white          : n  629, mean 11.9 cp, median 1 cp, blunders 0.3%
+  as black          : n  417, mean 19.6 cp, median 5 cp, blunders 1.0%
+  Worst moves: R36 43.Nxf5 (+760 -> +316); R42 24.Re5 (+459 -> +185); R30 8.Rac1 (+529 -> +302)
+  Site's own review (Stockfish 16, depth 16): mean ACPL 28.1 over 20 games, accuracy 97.1%; its tags
+    on their moves: 2 blunder, 9 mistake, 2 miss, 29 inaccuracy of 1234
+
+TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
+  Per move: mean 2.08 s, median 1.69 s, quartiles 0.78-2.93 s, max 13.7 s; instant (<50 ms) moves
+    9.1%
+  Clock at the end: mean 21.7 s, minimum 3.1 s; games under 10 s: 8, under 5 s: 2 (R35, R36)
+  By clock before the move: >60s 3.3 s (n 441), 30-60s 2.1 s (n 311), 10-30s 1.1 s (n 383), <10s 0.5
+    s (n 113)
+  By own-move number: 1-15 3.6 s, 16-40 2.2 s, 41+ 1.0 s; when +300 or better 1.5 s, level 2.5 s,
+    -300 or worse 1.5 s
+  Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 4.4%,
+    quartiles 3.3-6.3%
+  After a >100 cp swing on the opponent's move: 1.8 s (n 83) vs 2.1 s otherwise; on moves that
+    themselves swing >100 cp: 1.8 s (n 72) vs 2.1 s
+  Exploitable: gets into time trouble
+
+DRAW BEHAVIOUR
+  3 draws in 20 played games (15.0%): fifty_moves 1, threefold_repetition 1, insufficient_material 1
+  Repetition while ahead (> +150 at the final position): 0
+  Repetition while behind (< -150): 0; level repetitions: 1
+
+ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
+  Reached +300 or better in 13 games, failed to win 1:
+    R36 vs 50CentRaise peak +760, draw by fifty_moves: threw it away: move 43.Nxf5 (+760 -> +316)
+  Reached -300 or worse in 5 games, escaped with a half point or more in 0.
+
+OPENINGS (curated start positions assigned by the platform)
+  By family: Sicilian 2-1-0 (83%); English 2-0-0 (100%); Scotch 2-0-0 (100%); Reti 0-1-1 (25%); Ruy
+    Lopez 0-1-1 (25%); Queen's Gambit 1-0-1 (50%); Petroff 2-0-0 (100%); French 0-0-1 (0%); Two
+    Knights 1-0-0 (100%); Semi-Slav 1-0-0 (100%); Nimzo-Indian 0-0-1 (0%); Queen's Indian 1-0-0
+    (100%)
+  Positions seen more than once: English Symmetrical x2 2-0-0 (100%); Petroff Defence x2 2-0-0
+    (100%); Reti Opening x2 0-1-1 (25%); Ruy Lopez, Closed x2 0-1-1 (25%); Scotch Game x2 2-0-0
+    (100%); 10 positions seen once (6 won, 1 drawn, 3 lost).
+  No family with 3+ games scores 20+ points below their overall average.
+  First six own moves: 60% match Stockfish's first choice (moves 7-20: 63%), mean loss 12.2 cp, 22%
+    played instantly; first clear divergence (loss >= 20 cp) at own move 7.7 on average.
+
+STYLE
+  Captures on 20.6% of own moves, checks on 10.7%; average game 125 plies (62 own moves), longest
+    253 plies (R47)
+  Wins: 12 (12 by checkmate, 0 by opponent failure); losses: 5 (5 by checkmate, 0 by own failure)
+  Sacrifices (gave >= 2 pawns of material without losing eval, then recovered): 2 -> R34 17.Bg7, R39
+    14.Nxf7
+  When ahead (> +150) material leaves the board at 0.97 pawns per own move (level: 1.07); capture
+    rate 23.6% vs 19.7% level -> no deliberate simplification
+
+LIKELY ENGINE PROFILE
+  Strong searcher (mean loss 14.9 cp): consistent with a bitboard alpha-beta engine at depth 8-12
+  with a decent evaluation. Confidence medium.
+  Adaptive time use (median 1.69 s, max 13.7 s, spends 1.8 s on moves after a >100 cp swing vs 2.1 s
+  otherwise).
+  Instant early moves (22% of the first six played in under 50 ms): an opening book covers part of
+  the curated positions.
+
+HOW TO PLAY THEM
+  1. They convert (12 of 13 won positions turned into wins): do not rely on swindles; the game is
+  decided before -300.
+  2. Time pressure works: 2 games dipped under 5 s (R35, R36). Keep games long and complicated;
+  their play under 10 s averages 0.5 s a move.
+  3. No extra time goes to critical positions (1.8 s after a big swing vs 2.1 s otherwise): our
+  search can spend several times their budget on the few moves that decide a game, so prefer
+  positions where one precise move matters over long manoeuvring.
+  4. Tactics work: 4 blunders (>= 200 cp) came from level or better positions, so they can be
+  out-calculated. Keep the position sharp.

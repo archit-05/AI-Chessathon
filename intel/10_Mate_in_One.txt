@@ -1,0 +1,123 @@
+Mate in One  (team: Mate in One)  -  rank 10, rating 2258
+=========================================================
+Generated 2026-09-07 10:25 from 40 rated games (rounds 1-48) plus 8 played to a result but voided by
+  the site later (R3 3fold, R9 50-move, R13 50-move, R19 3fold, R20 3fold, R21 3fold, R26 3fold, R32
+  50-move): they count for move quality, clocks and draw behaviour, not for results.
+
+IDENTITY
+  Bot Mate in One; team Mate in One; university Manchester; members not shown on the site.
+  Rank 10 of 352, rating 2258, record 25-6-9 in 39 rated games.
+  Rating trajectory: entered R1 at 1571, peak 2318 (R43), now 2258 (R47).
+  No 100+ point jump between consecutive rounds.
+  Recent form (last 5 games, R44-R48): 0-1-4 (10%), loss 21.1 cp/move, blunders 0.0% vs earlier
+    (R1-R43): 25-13-5 (73%), 11.6 cp/move, 0.3%
+
+RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
+  vs top 10 : 4-3-8 (37%) over 15 games
+  vs 11-20  : 4-1-1 (75%) over 6 games
+  vs 21-50  : 13-2-0 (93%) over 15 games
+  vs rest   : 4-0-0 (100%) over 4 games
+  Games vs top-10 teams:
+    R5   white vs AI Fellow          (#9 ) draw insufficient_material Sicilian Dragon
+    R8   black vs Patzer 1.3         (#7 ) win  checkmate             Sicilian Sveshnikov
+    R12  black vs test_bot           (#3 ) win  checkmate             Ruy Lopez, Closed
+    R14  white vs Capablanca         (#4 ) win  checkmate             French Classical
+    R18  white vs AlphaFish          (#1 ) loss checkmate             London System
+    R36  white vs checkers           (#6 ) loss checkmate             Sicilian Closed
+    R38  white vs AI Fellow          (#9 ) loss checkmate             Sicilian Classical
+    R40  black vs Anchoa             (#2 ) loss checkmate             Sicilian Classical
+    R42  black vs checkers           (#6 ) win  checkmate             French Tarrasch
+    R43  white vs Capablanca         (#4 ) draw fifty_moves           Caro-Kann Advance
+    R44  black vs SoberElwood        (#5 ) loss checkmate             Sicilian Sveshnikov
+    R45  black vs test_bot           (#3 ) draw threefold_repetition  Ruy Lopez, Closed
+    R46  white vs Patzer 1.3         (#7 ) loss checkmate             Sicilian Closed
+    R47  white vs checkers           (#6 ) loss checkmate             Sicilian Taimanov
+    R48  black vs AI Fellow          (#9 ) loss checkmate             Scotch Game
+  Games vs ranks 11-20: R11 loss vs ms (#17, checkmate); R25 win vs Loss Preventer (#19, checkmate);
+    R30 win vs Dark Sister (#11, checkmate); R34 draw vs Loss Preventer (#19, 3fold); R37 win vs
+    make_no_mistak (#12, checkmate); R41 win vs Astral (#13, checkmate)
+
+MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
+  positions inside +-800 only)
+  All own moves: n 2782, mean loss 12.5 cp, median 0 cp, blunders (>= 200 cp) 7 = 0.3% (2 of them
+    from level or better positions)
+  own moves 1-15    : n  713, mean 9.1 cp, median 3 cp, blunders 0.0%
+  own moves 16-40   : n 1067, mean 15.1 cp, median 3 cp, blunders 0.0%
+  own moves 41+     : n 1002, mean 12.1 cp, median 0 cp, blunders 0.7%
+  as white          : n 1446, mean 13.7 cp, median 1 cp, blunders 0.3%
+  as black          : n 1336, mean 11.2 cp, median 0 cp, blunders 0.1%
+  Worst moves: R6 49.Kd1 (+327 -> +30); R42 52.Kg4 (+325 -> +52); R47 38.g5 (-61 -> -237)
+  Site's own review (Stockfish 16, depth 16): mean ACPL 21.7 over 40 games, accuracy 97.4%; its tags
+    on their moves: 4 blunder, 15 mistake, 3 miss, 76 inaccuracy of 3153
+
+TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
+  Per move: mean 1.98 s, median 1.58 s, quartiles 0.82-2.81 s, max 8.5 s; instant (<50 ms) moves
+    7.1%
+  Clock at the end: mean 21.8 s, minimum 4.1 s; games under 10 s: 16, under 5 s: 8 (R6, R10, R18,
+    R40, R43, R13, R21, R32)
+  By clock before the move: >60s 3.7 s (n 893), 30-60s 2.0 s (n 820), 10-30s 1.0 s (n 1004), <10s
+    0.6 s (n 469)
+  By own-move number: 1-15 4.0 s, 16-40 2.1 s, 41+ 0.8 s; when +300 or better 1.2 s, level 2.4 s,
+    -300 or worse 1.0 s
+  Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 5.0%,
+    quartiles 3.7-7.4%
+  After a >100 cp swing on the opponent's move: 1.3 s (n 139) vs 2.0 s otherwise; on moves that
+    themselves swing >100 cp: 1.3 s (n 111) vs 2.0 s
+  Exploitable: gets into time trouble
+
+DRAW BEHAVIOUR
+  14 draws in 48 played games (29.0%): threefold_repetition 8, fifty_moves 4, insufficient_material
+    2; 7 of them vs top-10 teams; 8 of these were voided by the site afterwards and no longer count
+    on the ladder
+  Repetition while ahead (> +150 at the final position): 0
+  Repetition while behind (< -150): 1 -> R26 at -385; level repetitions: 7
+
+ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
+  Reached +300 or better in 25 games, failed to win 0.
+  Reached -300 or worse in 10 games, escaped with a half point or more in 1:
+    R26 vs stockfih low -385, draw by threefold_repetition: opponent allowed a repetition
+
+OPENINGS (curated start positions assigned by the platform)
+  By family: Sicilian 7-3-6 (53%); French 3-2-1 (67%); Caro-Kann 3-2-0 (80%); Ruy Lopez 2-2-0 (75%);
+    London 2-0-1 (67%); King's Indian 2-0-0 (100%); English 2-0-0 (100%); Petroff 1-1-0 (75%);
+    Scotch 1-0-1 (50%); Queen's Gambit 0-2-0 (50%); Reti 1-0-0 (100%); Italian 1-0-0 (100%); Dutch
+    0-1-0 (50%); Nimzo-Indian 0-1-0 (50%)
+  Positions seen more than once: Sicilian Classical x5 2-1-2 (50%); Ruy Lopez, Closed x4 2-2-0
+    (75%); Sicilian Closed x4 2-0-2 (50%); London System x3 2-0-1 (67%); Caro-Kann Classical x2
+    2-0-0 (100%); Caro-Kann Exchange x2 1-1-0 (75%); English Symmetrical x2 2-0-0 (100%); French
+    Classical x2 1-0-1 (50%); French Winawer x2 1-1-0 (75%); King's Indian Classical x2 2-0-0
+    (100%); Petroff Defence x2 1-1-0 (75%); Queen's Gambit Accepted x2 0-2-0 (50%); Scotch Game x2
+    1-0-1 (50%); Sicilian Dragon x2 1-1-0 (75%); Sicilian Sveshnikov x2 1-0-1 (50%); Sicilian
+    Taimanov x2 0-1-1 (25%); 8 positions seen once (4 won, 4 drawn, 0 lost).
+  No family with 3+ games scores 20+ points below their overall average.
+  First six own moves: 65% match Stockfish's first choice (moves 7-20: 62%), mean loss 7.8 cp, 7%
+    played instantly; first clear divergence (loss >= 20 cp) at own move 8.9 on average.
+
+STYLE
+  Captures on 17.1% of own moves, checks on 9.5%; average game 133 plies (66 own moves), longest 325
+    plies (R32)
+  Wins: 25 (25 by checkmate, 0 by opponent failure); losses: 9 (9 by checkmate, 0 by own failure)
+  Sacrifices (gave >= 2 pawns of material without losing eval, then recovered): 6 -> R15 33.Bd5, R16
+    13.gxf4, R22 9.Rxb5, R23 27.Qf4, R13 30.Qb8, R21 14.Bxg5
+  When ahead (> +150) material leaves the board at 0.92 pawns per own move (level: 0.85); capture
+    rate 21.3% vs 16.5% level -> no deliberate simplification
+
+LIKELY ENGINE PROFILE
+  Strong searcher (mean loss 12.5 cp): consistent with a bitboard alpha-beta engine at depth 8-12
+  with a decent evaluation. Confidence high.
+  Adaptive time use (median 1.58 s, max 8.5 s, spends 1.3 s on moves after a >100 cp swing vs 2.0 s
+  otherwise).
+  Poor clock awareness: 8 of 40 games went under 5 s.
+
+HOW TO PLAY THEM
+  1. They only repeat when worse (1 games), so when ahead avoid any repetition and keep pieces on;
+  do not expect gifts.
+  2. They convert (25 of 25 won positions turned into wins): do not rely on swindles; the game is
+  decided before -300.
+  3. Time pressure works: 8 games dipped under 5 s (R6, R10, R18, R40, R43, R13). Keep games long
+  and complicated; their play under 10 s averages 0.6 s a move.
+  4. No extra time goes to critical positions (1.3 s after a big swing vs 2.0 s otherwise): our
+  search can spend several times their budget on the few moves that decide a game, so prefer
+  positions where one precise move matters over long manoeuvring.
+  5. Do not count on gifts: only 7 blunders in 2782 measured moves. Keep our play sound; speculative
+  sacrifices will be refuted.

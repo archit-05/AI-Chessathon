@@ -2,10 +2,10 @@
  "uuid": "7c24d4b6-543f-4f4a-8eff-04ac48be40c1",
  "bot": "The Rook",
  "team": "The Rook",
- "rating": 1211,
- "rank": 313,
- "record": "7-8-14",
- "rated_rounds": 45,
+ "rating": 1220,
+ "rank": 322,
+ "record": "8-9-14",
+ "rated_rounds": 47,
  "history": [
   [
    1,
@@ -186,9 +186,37 @@
   [
    45,
    1211
+  ],
+  [
+   46,
+   1222
+  ],
+  [
+   47,
+   1220
   ]
  ],
  "games": [
+  {
+   "game": "069acb5e-979b-484f-ad80-15d47a831ea6",
+   "kind": "Rated",
+   "round": 47,
+   "colour": "White",
+   "opponent": "Stockfish",
+   "opponent_uuid": "20ed5de0-fb1b-47ff-9167-05de682c510d",
+   "verdict": "draw",
+   "opening": "Nimzo-Indian Defence"
+  },
+  {
+   "game": "8517be71-c4f5-48e3-8210-4c87d8b1d463",
+   "kind": "Rated",
+   "round": 46,
+   "colour": "Black",
+   "opponent": "kronos",
+   "opponent_uuid": "a2e51576-3e24-47b0-8562-48028bf257bb",
+   "verdict": "win",
+   "opening": "English Symmetrical"
+  },
   {
    "game": "09bd12b4-d580-4baa-ba3e-23859a8582be",
    "kind": "Rated",
@@ -640,5 +668,5 @@
    "opening": "Catalan Opening"
   }
  ],
- "fetched_at": "2026-09-07T00:21:44Z"
+ "fetched_at": "2026-09-07T09:22:12Z"
 }
