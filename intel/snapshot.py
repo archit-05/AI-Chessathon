@@ -75,6 +75,7 @@ def main() -> None:
     ap.add_argument("--last", type=int, default=10)
     ap.add_argument("--jump", type=int, default=80)
     ap.add_argument("--no-ladder", action="store_true", help="compact snapshot only (no whole-ladder movement section)")
+    ap.add_argument("--leap-round", type=int, default=46, help="first round of the front-loaded-clock build; first-move and unused-clock flags apply from here")
     a = ap.parse_args()
 
     rows = parse_leaderboard(fetch(f"{BASE}/leaderboard"))
@@ -130,6 +131,17 @@ def main() -> None:
                        f"{g['own_moves']:>3}mv {sum(tpm) / len(tpm) if tpm else 0:.1f}s/mv clk@20/40/60 {curve} end {g['final_clock']:.0f}s  us {fmt_split(mine)} them {fmt_split(theirs)}  {g['opening']}")
             if g["score"] != 1.0:
                 out.append(f"      {'lost' if g['score'] == 0.0 else 'drawn'}: {why_not_won(g, gdata, mine, mat)}")
+            flags = []
+            if g["final_clock"] is not None and g["final_clock"] < 5:
+                flags.append(f"ended under 5 s ({g['final_clock']:.1f} s)")
+            if tpm and tpm[0] < 2.5 and g["round"] >= a.leap_round:
+                flags.append(f"first move took {tpm[0]:.1f} s: old-build clock profile?")
+            if len(clk) >= 40 and clk[39] < 20:
+                flags.append(f"only {clk[39]:.0f} s left at move 40")
+            if len(clk) >= 40 and clk[39] > 60 and g["round"] >= a.leap_round:
+                flags.append(f"{clk[39]:.0f} s still unused at move 40")
+            if flags:
+                out.append("      FLAG: " + "; ".join(flags))
 
     if a.grades:
         out.append(f"\nSite move grades over the last {a.last} games (best/exc/good/inacc/mist/miss/blund, own moves):")
