@@ -76,6 +76,7 @@ def main() -> None:
     ap.add_argument("--jump", type=int, default=80)
     ap.add_argument("--no-ladder", action="store_true", help="compact snapshot only (no whole-ladder movement section)")
     ap.add_argument("--leap-round", type=int, default=46, help="first round of the front-loaded-clock build; first-move and unused-clock flags apply from here")
+    ap.add_argument("--max-games", type=int, default=8, help="show at most this many of our most recent games in the compact part")
     a = ap.parse_args()
 
     rows = parse_leaderboard(fetch(f"{BASE}/leaderboard"))
@@ -110,6 +111,9 @@ def main() -> None:
         out.append(f"\n{ours['bot']} ({OUR_TEAM}): rank {ours['rank']}, rating {ours['rating']}{'P' if ours['provisional'] else ''}, {'-'.join(map(str, ours['wdl']))}; games since R{a.since_round}"
                    " (clk@20/40/60 = our clock in s after own moves 20/40/60; grades = site tags best/exc/good/inacc/mist/miss/blund on own moves):")
         games = sorted([g for g in team["games"] if g["round"] and g["round"] >= a.since_round], key=lambda g: g["round"])
+        if len(games) > a.max_games:
+            out.append(f"  ({len(games) - a.max_games} earlier games since R{a.since_round} omitted; all are in intel/raw/{team['bot'].replace(' ', '_')}.scrape.json)")
+            games = games[-a.max_games:]
         if not games:
             out.append("  none yet")
         for row in games:
