@@ -202,3 +202,17 @@ V3 pipeline: labelling stops at 1.05M positions (about 05:10), the v3b fine-tune
 - 08:36  Battery queued behind the extension: 20 real-clock proxy games (v2.2 leap reference:
   +4 =15 -1, CPL 8.1), 10 pressure games (min clock >= 5 s), 30 torture, wrapper/board suites, CPL.
   Expected done about 13:00; V3 hand-over about 13:15 if everything holds.
+- 11:05  Gate extension (seed 2): +104 =135 -61, 57.2%, +50. COMBINED 600 games: +189 =289 -122,
+  55.6%, +39 +/-20. Interval clear of zero by a wide margin. V3 net passes the strength gate.
+- 11:05  One AGENT FAILURE in the extension: game 76, bini_v3b flagged at 10 s + 0.1 s with 1.09 s left.
+  Log: move 52 took 1,277 ms for 8,192 nodes (about 6k nodes/s against the normal 600k), i.e. the
+  process was stalled by the machine for over a second, not by the search: the emergency budget at
+  1.09 s left is hard = 80 ms and the time check runs every 4,096 nodes (about 7 ms at normal speed).
+  The same code has played 1,150 local gate games since Saturday with no other flag, and on the platform
+  (dedicated core, 120 s + 0.5 s) the clock has never been below 55 s in a rated game or 6.7 s in the
+  pressure set. Verdict: local starvation at the 10 s cadence (laptop in use at the time), not a defect.
+  Counted as a loss for v3b in the tally above. Follow-up for Tuesday's build (with its own battery):
+  finer time checks when the hard budget is under 200 ms, so a partial stall costs less.
+- 11:08  Cosmetic fix applied to the V3 files only: the rg counter now resets per move (it accumulated
+  across the game in v2.2's log lines). Python driver only, no search or clock change; the search suite
+  passes on the edited copy, and the torture and wrapper suites in the running battery use it.
