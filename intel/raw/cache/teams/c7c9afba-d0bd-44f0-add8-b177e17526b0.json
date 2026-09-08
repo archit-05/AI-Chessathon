@@ -2,10 +2,10 @@
  "uuid": "c7c9afba-d0bd-44f0-add8-b177e17526b0",
  "bot": "Alea",
  "team": "Thorp",
- "rating": 1893,
- "rank": 80,
- "record": "37-4-23",
- "rated_rounds": 71,
+ "rating": 1925,
+ "rank": 72,
+ "record": "38-4-22",
+ "rated_rounds": 73,
  "history": [
   [
    1,
@@ -290,9 +290,27 @@
   [
    71,
    1893
+  ],
+  [
+   72,
+   1906
+  ],
+  [
+   73,
+   1925
   ]
  ],
  "games": [
+  {
+   "game": "a8b8625b-6478-4d99-a8dc-de8e73d54208",
+   "kind": "Rated",
+   "round": 73,
+   "colour": "White",
+   "opponent": "HighestElo",
+   "opponent_uuid": "833051b0-31db-4404-af8b-6147044a66b9",
+   "verdict": "win",
+   "opening": "Sicilian Closed"
+  },
   {
    "game": "f4ceb709-1b5c-4c74-800a-57e578f52392",
    "kind": "Rated",
@@ -330,7 +348,7 @@
    "colour": "White",
    "opponent": "BetaGo",
    "opponent_uuid": "145e2e17-6316-4b84-911b-45f3258ec8c9",
-   "verdict": "loss",
+   "verdict": "void",
    "opening": "Italian Game"
   },
   {
@@ -1004,5 +1022,5 @@
    "opening": "English Symmetrical"
   }
  ],
- "fetched_at": "2026-09-08T18:41:41Z"
+ "fetched_at": "2026-09-08T19:41:37Z"
 }

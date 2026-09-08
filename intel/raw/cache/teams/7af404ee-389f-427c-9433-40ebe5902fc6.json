@@ -2,10 +2,10 @@
  "uuid": "7af404ee-389f-427c-9433-40ebe5902fc6",
  "bot": "Dark Sister",
  "team": "Abhi's chess demon",
- "rating": 2021,
- "rank": 47,
- "record": "24-14-23",
- "rated_rounds": 66,
+ "rating": 2279,
+ "rank": 22,
+ "record": "28-17-22",
+ "rated_rounds": 73,
  "history": [
   [
    1,
@@ -225,54 +225,152 @@
   ],
   [
    55,
-   2086
+   2135
   ],
   [
    56,
-   1989
+   2023
   ],
   [
    57,
-   2107
+   2143
   ],
   [
    58,
-   2021
+   2048
   ],
   [
    59,
-   2106
+   2129
   ],
   [
    60,
-   2115
+   2132
   ],
   [
    61,
-   2037
+   2051
   ],
   [
    62,
-   1973
+   1984
   ],
   [
    63,
-   1900
+   1915
   ],
   [
    64,
-   1977
+   1990
   ],
   [
    65,
-   2020
+   2030
   ],
   [
    66,
-   2021
+   2029
+  ],
+  [
+   67,
+   2089
+  ],
+  [
+   68,
+   2132
+  ],
+  [
+   69,
+   2132
+  ],
+  [
+   70,
+   2138
+  ],
+  [
+   71,
+   2173
+  ],
+  [
+   72,
+   2182
+  ],
+  [
+   73,
+   2279
   ]
  ],
  "games": [
+  {
+   "game": "e706f339-7464-4612-83f1-8a3b8c7979d3",
+   "kind": "Rated",
+   "round": 73,
+   "colour": "Black",
+   "opponent": "Something",
+   "opponent_uuid": "051edd6e-9a85-47c0-8c8f-4b3a87a2ec30",
+   "verdict": "win",
+   "opening": "Sicilian Closed"
+  },
+  {
+   "game": "34a50977-d693-411f-93c9-ca85e6ed92a2",
+   "kind": "Rated",
+   "round": 72,
+   "colour": "White",
+   "opponent": "No More Ammo",
+   "opponent_uuid": "b49586d0-218d-4491-a460-90d0d9cf321c",
+   "verdict": "draw",
+   "opening": "Petroff Defence"
+  },
+  {
+   "game": "49c1d519-872f-4217-a0c9-d27869d9dac1",
+   "kind": "Rated",
+   "round": 71,
+   "colour": "Black",
+   "opponent": "Zugzwin",
+   "opponent_uuid": "2463d1f5-3e78-4dce-a254-be5983079ccc",
+   "verdict": "win",
+   "opening": "French Classical"
+  },
+  {
+   "game": "218f9b17-7d40-4199-b2e6-da1ec40b5c6d",
+   "kind": "Rated",
+   "round": 70,
+   "colour": "Black",
+   "opponent": "AlphaBeta",
+   "opponent_uuid": "1f234cf3-2829-4107-8a5f-2d0e15e978da",
+   "verdict": "draw",
+   "opening": "Queen's Indian Defence"
+  },
+  {
+   "game": "99cfd79d-8461-40ca-a262-b2f97c637494",
+   "kind": "Rated",
+   "round": 69,
+   "colour": "White",
+   "opponent": "pgn",
+   "opponent_uuid": "8b738da9-e5bb-4122-89ce-0caf6466ba80",
+   "verdict": "draw",
+   "opening": "Petroff Defence"
+  },
+  {
+   "game": "52d59090-ae50-47c6-b97f-5938455cee44",
+   "kind": "Rated",
+   "round": 68,
+   "colour": "White",
+   "opponent": "Gators",
+   "opponent_uuid": "fb9b2a77-d376-4526-bfde-bc7d3cdf9524",
+   "verdict": "win",
+   "opening": "Semi-Slav Defence"
+  },
+  {
+   "game": "4c49c77c-c794-42b1-8728-d2cf3778f20e",
+   "kind": "Rated",
+   "round": 67,
+   "colour": "Black",
+   "opponent": "Amplifirm",
+   "opponent_uuid": "9babf92a-9fc5-43ab-a766-4d2200077d99",
+   "verdict": "win",
+   "opening": "Queen's Indian Defence"
+  },
   {
    "game": "16888e85-020c-4f12-ac4a-bf3bb35c8af9",
    "kind": "Rated",
@@ -390,7 +488,7 @@
    "colour": "Black",
    "opponent": "FuzzyBot",
    "opponent_uuid": "3241cef5-6b1c-41f2-b275-f0e50fc52ed5",
-   "verdict": "loss",
+   "verdict": "void",
    "opening": "English Symmetrical"
   },
   {
@@ -934,5 +1032,5 @@
    "opening": "Catalan Opening"
   }
  ],
- "fetched_at": "2026-09-08T12:54:09Z"
+ "fetched_at": "2026-09-08T19:46:39Z"
 }

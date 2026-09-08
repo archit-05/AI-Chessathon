@@ -2,10 +2,10 @@
  "uuid": "0a121c61-60a7-4926-a0e7-024dffa6b185",
  "bot": "test_bot",
  "team": "pheanup",
- "rating": 2398,
- "rank": 14,
+ "rating": 2346,
+ "rank": 17,
  "record": "25-19-15",
- "rated_rounds": 68,
+ "rated_rounds": 69,
  "history": [
   [
    5,
@@ -278,9 +278,23 @@
   [
    72,
    2398
+  ],
+  [
+   73,
+   2346
   ]
  ],
  "games": [
+  {
+   "game": "7e5c5f4f-9082-45b3-bf3e-7518297773e1",
+   "kind": "Rated",
+   "round": 73,
+   "colour": "White",
+   "opponent": "Lubina",
+   "opponent_uuid": "34fd9228-11bf-4e7a-ba8f-b452d96ad8c9",
+   "verdict": "loss",
+   "opening": "English Symmetrical"
+  },
   {
    "game": "7262648a-91cb-4b38-b836-d81c81799b90",
    "kind": "Rated",
@@ -308,7 +322,7 @@
    "colour": "Black",
    "opponent": "FuzzyBot",
    "opponent_uuid": "3241cef5-6b1c-41f2-b275-f0e50fc52ed5",
-   "verdict": "loss",
+   "verdict": "void",
    "opening": "Sicilian Closed"
   },
   {
@@ -962,5 +976,5 @@
    "opening": "London System"
   }
  ],
- "fetched_at": "2026-09-08T18:43:43Z"
+ "fetched_at": "2026-09-08T19:43:44Z"
 }

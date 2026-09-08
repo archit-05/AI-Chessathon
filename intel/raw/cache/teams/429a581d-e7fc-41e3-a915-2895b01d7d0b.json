@@ -2,10 +2,10 @@
  "uuid": "429a581d-e7fc-41e3-a915-2895b01d7d0b",
  "bot": "Poincare",
  "team": "Gladiator",
- "rating": 2396,
- "rank": 16,
- "record": "17-21-8",
- "rated_rounds": 46,
+ "rating": 2456,
+ "rank": 12,
+ "record": "18-20-8",
+ "rated_rounds": 47,
  "history": [
   [
    27,
@@ -190,9 +190,23 @@
   [
    72,
    2396
+  ],
+  [
+   73,
+   2456
   ]
  ],
  "games": [
+  {
+   "game": "f7b1d64e-9780-476c-a5bd-5dae51a0c47a",
+   "kind": "Rated",
+   "round": 73,
+   "colour": "White",
+   "opponent": "zak",
+   "opponent_uuid": "0cebedbb-0376-4058-b6f4-0e11ef9dbeed",
+   "verdict": "win",
+   "opening": "King's Indian Classical"
+  },
   {
    "game": "b4bf5f64-7a6f-481e-be07-fe0dc4e1aa6f",
    "kind": "Rated",
@@ -210,7 +224,7 @@
    "colour": "Black",
    "opponent": "FuzzyBot",
    "opponent_uuid": "3241cef5-6b1c-41f2-b275-f0e50fc52ed5",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "Nimzo-Indian Defence"
   },
   {
@@ -654,5 +668,5 @@
    "opening": "Caro-Kann Exchange"
   }
  ],
- "fetched_at": "2026-09-08T18:43:16Z"
+ "fetched_at": "2026-09-08T19:42:33Z"
 }

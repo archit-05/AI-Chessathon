@@ -2,10 +2,10 @@
  "uuid": "f0286356-626d-4dd2-86ab-fd6d779063cb",
  "bot": "BINI Alpha",
  "team": "Opus Carlsen",
- "rating": 2323,
- "rank": 19,
- "record": "24-11-11",
- "rated_rounds": 49,
+ "rating": 2346,
+ "rank": 18,
+ "record": "25-11-10",
+ "rated_rounds": 50,
  "history": [
   [
    24,
@@ -202,9 +202,23 @@
   [
    72,
    2323
+  ],
+  [
+   73,
+   2346
   ]
  ],
  "games": [
+  {
+   "game": "03b10e6b-3b24-42d7-8b69-5c19a6490484",
+   "kind": "Rated",
+   "round": 73,
+   "colour": "Black",
+   "opponent": "DGS ELO",
+   "opponent_uuid": "5f8a69d7-73a8-4498-b322-861b557dffbd",
+   "verdict": "win",
+   "opening": "French Classical"
+  },
   {
    "game": "2f0fb00e-da3c-4908-9c15-ab69178cf325",
    "kind": "Rated",
@@ -262,7 +276,7 @@
    "colour": "White",
    "opponent": "FuzzyBot",
    "opponent_uuid": "3241cef5-6b1c-41f2-b275-f0e50fc52ed5",
-   "verdict": "loss",
+   "verdict": "void",
    "opening": "King's Indian Classical"
   },
   {
@@ -696,5 +710,5 @@
    "opening": "Four Knights Game"
   }
  ],
- "fetched_at": "2026-09-08T18:43:44Z"
+ "fetched_at": "2026-09-08T19:43:35Z"
 }
