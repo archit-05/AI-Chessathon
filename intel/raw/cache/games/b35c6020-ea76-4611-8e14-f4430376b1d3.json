@@ -1,0 +1,152 @@
+{
+ "game": "b35c6020-ea76-4611-8e14-f4430376b1d3",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.08\"]\n[Round \"67\"]\n[White \"AGS\"]\n[Black \"OnlyBlunder\"]\n[Result \"1/2-1/2\"]\n[FEN \"r1bqk2r/2p1bppp/p1np1n2/1p2p3/4P3/1BN2N2/PPPP1PPP/R1BQR1K1 b kq - 1 8\"]\n[SetUp \"1\"]\n[Termination \"threefold_repetition\"]\n\n8... Bg4 { [%clk 0:01:56.816] } 9. h3 { [%clk 0:01:57.163] } 9... Bxf3 { [%clk 0:01:53.883] } 10. Qxf3 { [%clk 0:01:52.529] } 10... Nd4 { [%clk 0:01:50.395] } 11. Qg3 { [%clk 0:01:48.087] } 11... O-O { [%clk 0:01:45.597] } 12. d3 { [%clk 0:01:45.62] } 12... Nh5 { [%clk 0:01:42.839] } 13. Qg4 { [%clk 0:01:42.049] } 13... Nf6 { [%clk 0:01:38.39] } 14. Qg3 { [%clk 0:01:38.043] } 14... Nh5 { [%clk 0:01:34.96] } 15. Qg4 { [%clk 0:01:35.595] } 15... Nf6 { [%clk 0:01:30.877] } 16. Qg3 { [%clk 0:01:31.858] } 1/2-1/2\n",
+ "opening": "Ruy Lopez, Closed",
+ "termination_text": "Threefold repetition",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 67\u00b7Final",
+ "white_uuid": "e870f14c-1ed3-494f-8b3b-04e3f6bd42ca",
+ "black_uuid": "72e19bc4-a390-4dbd-9df8-04c55e39bf7b",
+ "site_verdicts": [
+  [
+   "Bg4",
+   "best"
+  ],
+  [
+   "h3",
+   "best"
+  ],
+  [
+   "Bxf3",
+   "best"
+  ],
+  [
+   "Qxf3",
+   "best"
+  ],
+  [
+   "Nd4",
+   "best"
+  ],
+  [
+   "Qg3",
+   "good"
+  ],
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "d3",
+   "best"
+  ],
+  [
+   "Nh5",
+   "best"
+  ],
+  [
+   "Qg4",
+   "best"
+  ],
+  [
+   "Nf6",
+   "best"
+  ],
+  [
+   "Qg3",
+   "best"
+  ],
+  [
+   "Nh5",
+   "best"
+  ],
+  [
+   "Qg4",
+   "best"
+  ],
+  [
+   "Nf6",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "The Pawnisher",
+    "accuracy": 98.2,
+    "acpl": 5,
+    "tally": {
+     "brilliant": 0,
+     "great": 0,
+     "best": 7,
+     "excellent": 0,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Generational Comeback",
+    "accuracy": 98.8,
+    "acpl": 4,
+    "tally": {
+     "brilliant": 0,
+     "great": 0,
+     "best": 8,
+     "excellent": 0,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   0,
+   11,
+   0,
+   -1,
+   2,
+   16,
+   -16,
+   -8,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "best": [
+   "c8g4",
+   "h2h3",
+   "g4f3",
+   "d1f3",
+   "c6d4",
+   "f3d1",
+   "e8g8",
+   "d2d3",
+   "f6h5",
+   "g3g4",
+   "h5f6",
+   "g4g3",
+   "f6h5",
+   "g3g4",
+   "h5f6",
+   "g4g3",
+   "f6h5"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-08T14:45:34Z"
+}
