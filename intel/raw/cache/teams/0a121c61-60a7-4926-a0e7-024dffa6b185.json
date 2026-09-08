@@ -2,10 +2,10 @@
  "uuid": "0a121c61-60a7-4926-a0e7-024dffa6b185",
  "bot": "test_bot",
  "team": "pheanup",
- "rating": 2234,
- "rank": 25,
- "record": "23-16-14",
- "rated_rounds": 62,
+ "rating": 2376,
+ "rank": 15,
+ "record": "24-18-14",
+ "rated_rounds": 65,
  "history": [
   [
    5,
@@ -254,9 +254,51 @@
   [
    66,
    2234
+  ],
+  [
+   67,
+   2241
+  ],
+  [
+   68,
+   2375
+  ],
+  [
+   69,
+   2376
   ]
  ],
  "games": [
+  {
+   "game": "21eb0492-ea14-4efd-8722-4283005e0e62",
+   "kind": "Rated",
+   "round": 69,
+   "colour": "White",
+   "opponent": "DGS ELO",
+   "opponent_uuid": "5f8a69d7-73a8-4498-b322-861b557dffbd",
+   "verdict": "draw",
+   "opening": "English Symmetrical"
+  },
+  {
+   "game": "fe5b0b4d-45cc-474f-a5fe-2155bb52b4a2",
+   "kind": "Rated",
+   "round": 68,
+   "colour": "Black",
+   "opponent": "checkers",
+   "opponent_uuid": "9e5e613a-ca80-4fd9-aa68-76f184ef7bac",
+   "verdict": "win",
+   "opening": "Nimzo-Indian Defence"
+  },
+  {
+   "game": "19b8ceae-3eaa-42af-b6f6-40bc5df93a45",
+   "kind": "Rated",
+   "round": 67,
+   "colour": "White",
+   "opponent": "Edward",
+   "opponent_uuid": "e85fee09-4c17-4122-a6a1-67d09d9349bd",
+   "verdict": "draw",
+   "opening": "French Winawer"
+  },
   {
    "game": "590a8fef-61ab-4455-a65d-4f2dde26efa9",
    "kind": "Rated",
@@ -878,5 +920,5 @@
    "opening": "London System"
   }
  ],
- "fetched_at": "2026-09-08T12:46:32Z"
+ "fetched_at": "2026-09-08T15:42:58Z"
 }
