@@ -4,7 +4,7 @@
  "opening": "Sicilian Closed",
  "termination_text": "Checkmate",
  "time_control": "120s + 0.5s",
- "state": "Rated 70\u00b7Final",
+ "state": "Rated 70\u00b7Void",
  "white_uuid": "3241cef5-6b1c-41f2-b275-f0e50fc52ed5",
  "black_uuid": "0a121c61-60a7-4926-a0e7-024dffa6b185",
  "site_verdicts": [],
@@ -743,5 +743,7 @@
   "depth": 16,
   "engine": "Stockfish 16"
  },
- "fetched_at": "2026-09-08T16:43:13Z"
+ "fetched_at": "2026-09-08T16:43:13Z",
+ "original_state": "Rated 70\u00b7Final",
+ "voided_at": "2026-09-08T20:43:00Z"
 }

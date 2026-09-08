@@ -2,10 +2,10 @@
  "uuid": "9e5e613a-ca80-4fd9-aa68-76f184ef7bac",
  "bot": "checkers",
  "team": "checkers",
- "rating": 2241,
- "rank": 24,
- "record": "26-21-19",
- "rated_rounds": 69,
+ "rating": 2312,
+ "rank": 20,
+ "record": "27-25-18",
+ "rated_rounds": 73,
  "history": [
   [
    1,
@@ -225,23 +225,23 @@
   ],
   [
    55,
-   2488
+   2487
   ],
   [
    56,
-   2453
+   2452
   ],
   [
    57,
-   2439
+   2441
   ],
   [
    58,
-   2444
+   2446
   ],
   [
    59,
-   2439
+   2441
   ],
   [
    60,
@@ -257,34 +257,100 @@
   ],
   [
    63,
-   2324
+   2323
   ],
   [
    64,
-   2284
+   2283
   ],
   [
    65,
-   2294
+   2292
   ],
   [
    66,
-   2253
+   2292
   ],
   [
    67,
-   2271
+   2304
   ],
   [
    68,
-   2242
+   2271
   ],
   [
    69,
-   2241
+   2267
+  ],
+  [
+   70,
+   2269
+  ],
+  [
+   71,
+   2304
+  ],
+  [
+   72,
+   2309
+  ],
+  [
+   73,
+   2312
   ]
  ],
  "games": [
+  {
+   "game": "19dee95e-f1f5-407a-9f06-e5a360041a48",
+   "kind": "Rated",
+   "round": 74,
+   "colour": "White",
+   "opponent": "Mate in One",
+   "opponent_uuid": "3be637a8-e78d-4da4-8016-d13e00170433",
+   "verdict": "draw",
+   "opening": "Sicilian Closed"
+  },
+  {
+   "game": "2dba629a-632f-4a0a-b456-c3bc1cc36181",
+   "kind": "Rated",
+   "round": 73,
+   "colour": "Black",
+   "opponent": "Cornelius",
+   "opponent_uuid": "acecd823-279a-4bf9-8321-0ee6ed68deda",
+   "verdict": "draw",
+   "opening": "Ruy Lopez, Closed"
+  },
+  {
+   "game": "6e0b0792-fd74-4fb1-a32b-5c3821eb711d",
+   "kind": "Rated",
+   "round": 72,
+   "colour": "White",
+   "opponent": "Edward",
+   "opponent_uuid": "e85fee09-4c17-4122-a6a1-67d09d9349bd",
+   "verdict": "draw",
+   "opening": "Italian Game"
+  },
+  {
+   "game": "8b77e38d-e585-42b0-9dbc-8781ca750cea",
+   "kind": "Rated",
+   "round": 71,
+   "colour": "Black",
+   "opponent": "Make_no_mistakes",
+   "opponent_uuid": "ba636320-7bda-41ab-835d-3799a11613d8",
+   "verdict": "win",
+   "opening": "Scotch Game"
+  },
+  {
+   "game": "9fcd6cf1-2b02-4244-beaa-2117219da2f7",
+   "kind": "Rated",
+   "round": 70,
+   "colour": "Black",
+   "opponent": "slopfish",
+   "opponent_uuid": "1d137be0-3a3e-4cda-a7ba-b22d8d178e66",
+   "verdict": "draw",
+   "opening": "English Symmetrical"
+  },
   {
    "game": "4dcc6de8-fb95-4a4e-9ea9-077014bd88fb",
    "kind": "Rated",
@@ -322,7 +388,7 @@
    "colour": "White",
    "opponent": "FuzzyBot",
    "opponent_uuid": "3241cef5-6b1c-41f2-b275-f0e50fc52ed5",
-   "verdict": "loss",
+   "verdict": "void",
    "opening": "Reti Opening"
   },
   {
@@ -976,5 +1042,5 @@
    "opening": "Sicilian Closed"
   }
  ],
- "fetched_at": "2026-09-08T15:43:13Z"
+ "fetched_at": "2026-09-08T20:43:29Z"
 }
