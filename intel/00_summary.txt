@@ -1,4 +1,4 @@
-AI CHESSATHON TOP-20 INTEL SUMMARY  (2026-09-08 16:45; leaderboard fetched 2026-09-08T15:41:01Z)
+AI CHESSATHON TOP-20 INTEL SUMMARY  (2026-09-08 17:45; leaderboard fetched 2026-09-08T16:41:02Z)
 ====================================================================================================
 CPL = our mean centipawn loss per own move from site evaluations: Stockfish 16, depth 16, one per
   position, positions inside +-800 only;
@@ -13,68 +13,69 @@ s/mv = mean seconds per own move; RepA = draws by repetition while more than +15
 LEAGUE TABLE
   # Bot                Rating   Record   CPL sACPL   Bl%  s/mv Draw% RepA NonC Void
 -----------------------------------------------------------------------------------
-  1 PSL God Matt Bomer   2658  24-13-9  12.4    17   0.6  1.79    28    0    0    0  *
-  2 AlphaFish            2645  34-17-5   8.0    16   0.0  1.66    39    1    3    5
-  3 Capablanca           2588 32-18-11  11.0    18   0.3  1.76    39    0    3    6
-  4 multi millionare     2568 29-17-13  18.3    29   0.8  2.11    29    0    1    0
-  5 ms                   2564 32-17-14  11.9    21   0.3  1.89    33    1    3    4
-  6 cory                 2512  20-9-11  14.4    24   0.6  1.69    22    0    1    0  *
-  7 SoberPaschoud        2511 29-18-13  11.2    19   0.3  1.68    43    0    4    8  *
-  8 AI Fellow            2498  28-22-9   9.3    22   0.2  1.99    51    5    7    8
-  9 Mite                 2496  17-16-8  10.6    23   0.3  1.76    39    0    2    0  *
- 10 Patzer 2.1           2488 28-22-11  12.2    20   0.6  1.66    49    0    2    8
- 11 Anchoa               2472 25-23-11   9.6    17   0.3  1.64    51    0    0    7
- 12 Loss Preventer       2418 28-18-19  13.4    24   0.5  1.69    31    0    0    2  *
- 13 Danya's Disciple     2413 29-13-17  13.9    25   0.6  1.87    39    2    2   10
- 14 stockfih             2379 22-15-19  16.3    26   0.5  2.00    34    2    4    4  *
- 15 test_bot             2376 24-18-14  12.2    21   0.5  1.98    45    0    1    7  *
- 16 Fuzzydafool          2376 24-15-20  15.0    28   0.6  1.93    41    0    2    9
- 17 Ultron Prime         2368 29-15-18  18.3    33   1.0  1.98    24    0    2    0
- 18 Poincare             2366  17-18-8  12.5    17   0.2  1.59    42    0    0    0  *
- 19 Mate in One          2325 31-15-15  12.8    22   0.3  1.99    38    0    0    8
- 20 zak                  2311 20-17-20  16.2    28   0.7  1.91    40    0    0    6
-  Evaluations still incomplete for: PSL God Matt Bomer (46/47 games), Capablanca (67/68 games),
-    multi millionare (59/66 games), ms (67/69 games), SoberPaschoud (68/69 games), AI Fellow (67/69
-    games), Anchoa (66/69 games), Loss Preventer (67/68 games), stockfih (60/61 games), test_bot
-    (63/65 games), Fuzzydafool (68/69 games), Ultron Prime (62/69 games), BINI Alpha (44/46 games).
+  1 PSL God Matt Bomer   2658  24-14-9  11.5    17   0.6  1.73    30    0    0    0  *
+  2 AlphaFish            2645  34-18-5   7.6    16   0.0  1.62    40    1    3    5
+  3 Capablanca           2588 33-18-11  11.0    18   0.3  1.76    39    0    3    6
+  4 multi millionare     2568 29-17-14  18.4    29   0.9  2.11    28    0    1    0
+  5 ms                   2564 32-18-14  11.8    21   0.3  1.89    34    1    3    4
+  6 cory                 2512 20-10-11  14.2    23   0.6  1.69    24    0    1    0  *
+  7 SoberPaschoud        2511 29-19-13  11.2    19   0.3  1.66    44    0    4    8  *
+  8 AI Fellow            2498  28-23-9   9.2    22   0.2  1.97    52    5    7    8
+  9 Mite                 2496  17-17-8  10.6    23   0.2  1.77    40    0    2    0  *
+ 10 Patzer 2.1           2488 29-22-11  12.1    20   0.6  1.65    48    0    2    8
+ 11 Anchoa               2472 25-24-11   9.5    17   0.3  1.65    52    0    0    7
+ 12 Loss Preventer       2418 28-18-20  13.4    24   0.5  1.69    30    0    0    2  *
+ 13 Danya's Disciple     2413 29-13-18  14.0    26   0.6  1.87    38    2    2   10
+ 14 stockfih             2379 23-15-19  16.2    26   0.5  2.01    33    2    4    4  *
+ 15 test_bot             2376 24-18-15  12.3    21   0.5  1.95    44    0    2    7  *
+ 16 Fuzzydafool          2376 25-15-20  14.8    28   0.6  1.90    40    0    2    9
+ 17 Ultron Prime         2368 29-16-18  18.0    32   1.0  1.98    25    0    2    0
+ 18 Poincare             2366  17-19-8  12.3    17   0.2  1.60    43    0    0    0  *
+ 19 Mate in One          2325 31-16-15  12.8    21   0.3  2.00    39    0    0    8
+ 20 zak                  2311 20-18-20  15.8    28   0.7  1.90    41    0    0    6
+  Evaluations still incomplete for: PSL God Matt Bomer (47/48 games), Capablanca (68/69 games),
+    multi millionare (60/67 games), ms (68/70 games), SoberPaschoud (69/70 games), AI Fellow (68/70
+    games), Anchoa (67/70 games), Loss Preventer (68/69 games), stockfih (61/62 games), test_bot
+    (64/66 games), Fuzzydafool (69/70 games), Ultron Prime (63/70 games), BINI Alpha (45/47 games).
     Re-run ./refresh.sh to finish.
 
 OUR ROW
- 21 BINI Alpha           2304  24-8-11  17.2    29   0.9  1.85    26    0    1    3
-  Pairing: our 42 rated opponents were rated -2 relative to us on average at the time (range -88 to
+ 21 BINI Alpha           2304  24-9-11  17.0    29   0.9  1.86    27    0    1    3
+  Pairing: our 43 rated opponents were rated -1 relative to us on average at the time (range -88 to
     +47); current ranks 74, 245, 333, 359, 383, 298, 299, 273, 200, 208, 135, 194, 121, 55, 117, 4,
     62, 89, 73, 83, 59, 30, 43, 20, 35, 36, 23, 38, 5, 27, 45, 49, 22, 10, 13, 25, 24, 14, 18, 15,
-    16, 6, 22. Pairings track rating, so a fresh build climbs through weaker teams first.
+    16, 6, 22, 19. Pairings track rating, so a fresh build climbs through weaker teams first.
 
 KEY FINDINGS
-  1. Move quality spread: AlphaFish loses 8.0 cp per move, multi millionare 18.3 cp; our current
-  build measures 17.2 cp. Blunder rates run 0.0-1.0%.
+  1. Move quality spread: AlphaFish loses 7.6 cp per move, multi millionare 18.4 cp; our current
+  build measures 17.0 cp. Blunder rates run 0.0-1.0%.
   2. Free half points: AlphaFish (1), ms (1), AI Fellow (5), Danya's Disciple (2), stockfih (2)
   accepted repetitions while more than +150. Against them, when worse, aim for repetition.
-  3. Time trouble is real for PSL God Matt Bomer (3 games under 5 s), Capablanca (2 games under 5
+  3. Time trouble is real for PSL God Matt Bomer (4 games under 5 s), Capablanca (2 games under 5
   s), multi millionare (29 games under 5 s), ms (23 games under 5 s), cory (9 games under 5 s), AI
-  Fellow (36 games under 5 s), Mite (2 games under 5 s), Anchoa (6 games under 5 s), stockfih (8
-  games under 5 s), test_bot (34 games under 5 s), Fuzzydafool (36 games under 5 s), Ultron Prime
+  Fellow (37 games under 5 s), Mite (2 games under 5 s), Anchoa (6 games under 5 s), stockfih (8
+  games under 5 s), test_bot (35 games under 5 s), Fuzzydafool (37 games under 5 s), Ultron Prime
   (28 games under 5 s), Mate in One (10 games under 5 s), zak (12 games under 5 s). Long,
   complicated games punish them.
   4. Clock left unused by Patzer 2.1 (38 s), Anchoa (31 s), Loss Preventer (40 s), Poincare (41 s):
   their depth is capped by a per-move budget, so our deeper search in critical moments is a real
   edge.
-  5. Leaky conversion: AlphaFish (3 of 37 winning positions not won), Capablanca (3 of 35 winning
+  5. Leaky conversion: AlphaFish (3 of 37 winning positions not won), Capablanca (3 of 36 winning
   positions not won), ms (3 of 35 winning positions not won), SoberPaschoud (4 of 33 winning
   positions not won), AI Fellow (7 of 35 winning positions not won), Mite (2 of 19 winning positions
-  not won), Patzer 2.1 (2 of 30 winning positions not won), Danya's Disciple (2 of 31 winning
-  positions not won), stockfih (4 of 26 winning positions not won), Fuzzydafool (2 of 25 winning
-  positions not won), Ultron Prime (2 of 31 winning positions not won). Keep lost positions alive.
+  not won), Patzer 2.1 (2 of 31 winning positions not won), Danya's Disciple (2 of 31 winning
+  positions not won), stockfih (4 of 27 winning positions not won), test_bot (2 of 26 winning
+  positions not won), Fuzzydafool (2 of 26 winning positions not won), Ultron Prime (2 of 31 winning
+  positions not won). Keep lost positions alive.
   (further observations)
-  6. Endgame fade: stockfih (11.6 -> 18.8 cp) lose far more per move after own move 40.
+  6. Endgame fade: stockfih (11.5 -> 18.8 cp) lose far more per move after own move 40.
   7. New builds in the last five rounds (provisional ratings): PSL God Matt Bomer, cory,
   SoberPaschoud, Mite, Loss Preventer, stockfih, test_bot, Poincare. Their older games may not
   describe the bot we will face.
-  8. Drawishness: AI Fellow 51.0%, Anchoa 51.0%, Patzer 2.1 49.0% draw most often; threefold is the
+  8. Drawishness: AI Fellow 52.0%, Anchoa 52.0%, Patzer 2.1 48.0% draw most often; threefold is the
   dominant draw type across the field.
 
-LOSSES OF THE LEADER (PSL God Matt Bomer, 24-13-9)
+LOSSES OF THE LEADER (PSL God Matt Bomer, 24-14-9)
   R25 as black vs spring_week_converter (#136, rated 1599 at the time): lost by checkmate after 164
     plies, French Winawer.
     Loss per move 39.2 cp (4 blunders) vs opponent 21.0 cp (1 blunders); best moment -15, first
@@ -136,24 +137,24 @@ HEAD-TO-HEAD AMONG THE TOP 20
     Dan=Danya's Disciple; sto=stockfih; tes=test_bot; Fuz=Fuzzydafool; Ult=Ultron Prime;
     Poi=Poincare; Mat=Mate in One; zak=zak
          PSL Alp Cap mul  ms cor Sob AIF Mit Pat Anc Los Dan sto tes Fuz Ult Poi Mat zak
-PSL        -  DL  WL   D WWD   . WWW   D WDW   D   W  LW   .   D   .   .   .   L   .   W
-Alp       DW   -WWDLDDD   D  WW   .WDDWWDWL DDD   . WWDWWDWDWD  WD   .   .WWWLW   W   .   .   W   .
-Cap       LWLLDWDDD   -  WD   L   .DDDLD  LD   D DWD WDL  WD   W  WWWLLWD  WW   .   . LDW   W
-mul        D   D  LD   -   D   .  DD  DW   .   W   .  DW   .  WD   .   W   L   W   .   .
-ms       LLD  LL   W   D   -  WW   L   .   D  LD   . WLW   . LDW  WW  LD   .   . WDW WWD
-cor        .   .   .   .  LL   -   .   .  LD   .   .   L   D  WW   .   .  WW   .   .  LD
-Sob      LLLLDDLLDLWDDDWD  DD   W   .   - DWD   .  WDDDDWLW   L   .   .WLLDW  LW   .   D   W   .
-AIF        D DDD  WD  DL   .   . DLD   -   W DLD LDLWWDD  WW WWD  DD  LD   W   W DWW   .
-Mit      LDL   .   D   .   D  WD   .   L   -   D   D  DD WDD   L   .   D   .DDDW  WW   .
-Pat        D LLD DLD   L  WD   .  LD DWD   D   - LWD WWD   D WDD  DL  WW   .   L  LW   D
-Anc        LLLDLDLD LDW   .   .   .DDDLWL WDW   D WLD   - DDD   W   WLDDDD   W   .   D   W   D
-Los       WL  LD  LD  DL LWL   W   WLLDD  DD LLD DDD   -   L   .  LW  WL   .   L  LD   W
-Dan        .   .   L   .   .   D   .  LL LDD   D   L   W   -   L  LD WLD   .   D LDLDWWWW
-sto        D   .  LL  LD WDL  LL   . LLD   W LDD   L   .   W   -   L   .   . WWD   W   W
-tes        .LLLWLLWWLD   .  LL   .LWWDL  DD   .  DWWDDDD  WL  WD   W   -   D  DD   D  LD   W
-Fuz        .   L  LL   L  WD   .  WL  WD   D  LL   L  LW LWD   .   D   -   .   L   .   .
-Ult        .   .   .   W   .  LL   .   L   .   .   .   .   .   .  DD   .   -   .   D   W
-Poi        W   .   .   L   .   .   D   LDDDL   W   D   W   D LLD   D   W   .   -   D   D
+PSL        - DLD  WL   D WWD   . WWW   D WDW   D   W  LW   .   D   .   .   .   L   .   W
+Alp      DWD   -WWDLDDD   D  WW   .WDDWWDWL DDD   . WWDWWDWDWD  WD   .   .WWWLW   W   .   .   W   .
+Cap       LWLLDWDDD   - WDW   L   .DDDLD  LD   D DWD WDL  WD   W  WWWLLWD  WW   .   . LDW   W
+mul        D   D LDL   -   D   .  DD  DW   .   W   .  DW   .  WD   .   W   L   W   .   .
+ms       LLD  LL   W   D   - WWD   L   .   D  LD   . WLW   . LDW  WW  LD   .   . WDW WWD
+cor        .   .   .   . LLD   -   .   .  LD   .   .   L   D  WW   .   .  WW   .   .  LD
+Sob      LLLLDDLLDLWDDDWD  DD   W   .   -DWDD   .  WDDDDWLW   L   .   .WLLDW  LW   .   D   W   .
+AIF        D DDD  WD  DL   .   .DLDD   -   W DLD LDLWWDD  WW WWD  DD  LD   W   W DWW   .
+Mit      LDL   .   D   .   D  WD   .   L   -   D  DD  DD WDD   L   .   D   .DDDW  WW   .
+Pat        D LLD DLD   L  WD   .  LD DWD   D   - LWDWWDW   D WDD  DL  WW   .   L  LW   D
+Anc        LLLDLDLD LDW   .   .   .DDDLWL WDW  DD WLD   - DDD   W   WLDDDD   W   .   D   W   D
+Los       WL  LD  LD  DL LWL   W   WLLDD  DDLLDL DDD   -   L   .  LW  WL   .   L  LD   W
+Dan        .   .   L   .   .   D   .  LL LDD   D   L   W   -  LL  LD WLD   .   D LDLDWWWW
+sto        D   .  LL  LD WDL  LL   . LLD   W LDD   L   .  WW   -   L   .   . WWD   W   W
+tes        .LLLWLLWWLD   .  LL   .LWWDL  DD   .  DWWDDDD  WL  WD   W   -  DL  DD   D  LD   W
+Fuz        .   L  LL   L  WD   .  WL  WD   D  LL   L  LW LWD   .  DW   -   .   L   .   .
+Ult        .   .   .   W   .  LL   .   L   .   .   .   .   .   .  DD   .   -   D   D   W
+Poi        W   .   .   L   .   .   D   LDDDL   W   D   W   D LLD   D   W   D   -   D   D
 Mat        .   L WDL   . LDL   .   L DLL  LL  WL   L  WD WDW   L  WD   .   D   D   -  LD
 zak        L   .   L   . LLD  WD   .   .   .   D   D   LDLLLL   L   L   .   L   D  WD   -
   Row's result vs column, oldest game first (W/D/L). Games between top-20 teams:
@@ -703,83 +704,101 @@ zak        L   .   L   . LLD  WD   .   .   .   D   D   LDLLLL   L   L   .   L   
     (loss/move 4.0 vs 4.0)
   R69 Mate in One (white) vs zak: draw by insufficient_material, Italian Game, 110 plies (loss/move
     1.0 vs 1.0)
+  R70 PSL God Matt Bomer (black) vs AlphaFish: draw by insufficient_material, Semi-Slav Defence, 538
+    plies (loss/move 1.2 vs 1.3)
+  R70 Capablanca (white) vs multi millionare: Capablanca won by checkmate, Queen's Indian Defence,
+    130 plies (loss/move 12.4 vs 21.5)
+  R70 ms (black) vs cory: draw by insufficient_material, Caro-Kann Classical, 146 plies (loss/move
+    5.8 vs 5.0)
+  R70 SoberPaschoud (black) vs AI Fellow: draw by insufficient_material, Petroff Defence, 314 plies
+    (loss/move 9.4 vs 8.9)
+  R70 Mite (white) vs Anchoa: draw by threefold_repetition, Queen's Gambit Declined, 80 plies
+    (loss/move 7.3 vs 6.5)
+  R70 Patzer 2.1 (white) vs Loss Preventer: Patzer 2.1 won by checkmate, Sicilian Sveshnikov, 204
+    plies (loss/move 7.4 vs 15.2)
+  R70 Danya's Disciple (white) vs stockfih: stockfih won by checkmate, Two Knights Defence, 89 plies
+    (loss/move 27.2 vs 8.3)
+  R70 test_bot (black) vs Fuzzydafool: Fuzzydafool won by checkmate, Sicilian Closed, 344 plies
+    (loss/move 13.5 vs 8.6)
+  R70 Ultron Prime (white) vs Poincare: draw by threefold_repetition, Nimzo-Indian Defence, 112
+    plies (loss/move 3.4 vs 3.2)
 
 TIME MANAGEMENT (top 20)
 Bot                 mean   med   max       q1-q3   end   min  <5s inst%  swing   calm
-PSL God Matt Bomer  1.79  1.56  13.0   0.83-2.50    29   8.3    3   9.5   1.40   1.79
-AlphaFish           1.66  1.47   4.4   0.84-2.40    27   5.6    1   9.1   1.24   1.66
-Capablanca          1.76  1.44  17.0   0.73-2.43    28   6.3    2   8.6   1.17   1.76
-multi millionare    2.11  1.58  13.9   0.57-3.10    15   2.5   29   8.1   1.47   2.09
-ms                  1.89  1.33  13.6   0.58-2.96    15   3.8   23   9.4   1.30   1.88
-cory                1.69  1.14  33.3   0.51-2.27    20   4.6    9   6.8   1.71   1.58
-SoberPaschoud       1.68  1.29  12.9   0.60-2.34    29   0.9    1  10.1   1.13   1.71
-AI Fellow           1.99   1.1  11.5   0.58-2.77    10   1.3   36   6.6   1.26   1.98
-Mite                1.76  1.34  13.7   0.57-2.54    24   3.1    2   7.9   1.57   1.77
-Patzer 2.1          1.66  1.43   8.4   0.84-2.13    38   9.5    0   6.2   1.25   1.66
-Anchoa              1.64  1.29  12.6   0.63-2.34    31   4.3    6  10.6   1.58   1.63
-Loss Preventer      1.69  1.34  11.6   0.84-2.12    40   6.5    1   4.7   2.01   1.66
-Danya's Disciple    1.87  1.52   9.1   0.83-2.77    24   4.8    1   6.6   1.43   1.85
-stockfih             2.0  1.63  12.6   0.91-2.69    24   1.5    8   8.6   1.32   2.01
-test_bot            1.98  1.24  11.8   0.56-2.89    11   1.2   34   4.8   1.39   1.96
-Fuzzydafool         1.93   1.6  13.1   0.60-2.77    15   1.0   36   8.5   1.69   1.93
-Ultron Prime        1.98  1.42  12.7   0.63-2.86    18   2.9   28   6.9   1.82   1.96
-Poincare            1.59  1.64   7.7   1.28-1.97    41   7.9    0   4.9   1.61   1.58
-Mate in One         1.99   1.6   8.8   0.86-2.79    20   3.0   10   6.5   1.19   1.99
-zak                 1.91  1.44  13.3   0.67-2.65    24   4.1   12   4.4   1.60   1.88
+PSL God Matt Bomer  1.73  1.46  13.0   0.71-2.44    29   7.3    4   8.9   1.40   1.72
+AlphaFish           1.62  1.41   4.4   0.78-2.36    27   5.6    1   8.7   1.24   1.62
+Capablanca          1.76  1.45  17.0   0.74-2.43    28   6.3    2   8.6   1.16   1.76
+multi millionare    2.11  1.59  13.9   0.57-3.10    15   2.5   29   8.1   1.47   2.09
+ms                  1.89  1.34  13.6   0.58-2.96    15   3.8   23   9.2   1.30   1.88
+cory                1.69  1.15  33.3   0.52-2.27    20   4.6    9   6.7   1.71   1.59
+SoberPaschoud       1.66  1.26  12.9   0.59-2.32    28   0.9    1   9.8   1.13   1.69
+AI Fellow           1.97  1.08  11.5   0.58-2.73    10   1.3   37   6.4   1.25   1.96
+Mite                1.77  1.36  13.7   0.57-2.55    25   3.1    2   7.9   1.57   1.78
+Patzer 2.1          1.65  1.43   8.4   0.84-2.13    38   9.5    0   6.2   1.25   1.66
+Anchoa              1.65   1.3  12.6   0.64-2.35    31   4.3    6  10.5   1.58   1.64
+Loss Preventer      1.69  1.33  11.6   0.84-2.11    40   6.5    1   4.6   2.00   1.65
+Danya's Disciple    1.87  1.54   9.1   0.84-2.77    24   4.8    1   6.7   1.43   1.85
+stockfih            2.01  1.64  12.6   0.91-2.69    24   1.5    8   8.7   1.33   2.02
+test_bot            1.95  1.21  11.8   0.55-2.83    11   1.2   35   5.1   1.37   1.93
+Fuzzydafool          1.9  1.55  13.1   0.59-2.73    14   1.0   37   8.3   1.66   1.91
+Ultron Prime        1.98  1.43  12.7   0.64-2.86    18   2.9   28   6.9   1.82   1.96
+Poincare             1.6  1.64   7.7   1.29-1.98    41   7.9    0   4.8   1.61   1.58
+Mate in One          2.0  1.61   8.8   0.87-2.80    20   3.0   10   6.5   1.19   2.00
+zak                  1.9  1.43  13.3   0.66-2.63    24   4.1   12   4.3   1.60   1.88
   seconds per own move; end/min = clock left at the end (mean/min); swing/calm = s per move after a
     >100 cp swing vs otherwise
 
 DRAWS AND CONVERSION (top 20)
 Bot                draws 3fold fifty insuf  repA  repB  won+  nonC lost- saved
-PSL God Matt Bomer    13    10     0     3     0     0    24     0    10     1
-AlphaFish             22    11     2     9     1     0    37     3     5     1
-Capablanca            24    13     6     4     0     0    35     3    12     1
-multi millionare      17    15     1     1     0     0    30     1    15     2
-ms                    21    15     0     6     1     0    35     3    14     0
-cory                   9     3     4     2     0     0    21     1    11     0
-SoberPaschoud         26    14     6     5     0     1    33     4    15     3
-AI Fellow             30    21     3     6     5     0    35     7     9     0
-Mite                  16    10     4     2     0     0    19     2     9     1
-Patzer 2.1            30    18     7     5     0     2    30     2    13     2
-Anchoa                30    14    10     6     0     0    25     0    12     1
-Loss Preventer        20    13     2     5     0     1    28     0    20     1
-Danya's Disciple      23    19     2     2     2     1    31     2    18     1
-stockfih              19    15     1     3     2     0    26     4    20     1
-test_bot              25    16     3     6     0     2    25     1    16     2
-Fuzzydafool           24    14     3     7     0     1    25     2    24     4
-Ultron Prime          15     6     7     2     0     1    31     2    21     3
-Poincare              18     7     3     8     0     0    17     0     9     1
-Mate in One           23    11     5     7     0     1    31     0    17     2
-zak                   23    15     0     8     0     2    20     0    22     2
+PSL God Matt Bomer    14    10     0     4     0     0    24     0    10     1
+AlphaFish             23    11     2    10     1     0    37     3     5     1
+Capablanca            24    13     6     4     0     0    36     3    12     1
+multi millionare      17    15     1     1     0     0    30     1    16     2
+ms                    22    15     0     7     1     0    35     3    14     0
+cory                  10     3     4     3     0     0    21     1    11     0
+SoberPaschoud         27    14     6     6     0     1    33     4    15     3
+AI Fellow             31    21     3     7     5     0    35     7     9     0
+Mite                  17    11     4     2     0     0    19     2     9     1
+Patzer 2.1            30    18     7     5     0     2    31     2    13     2
+Anchoa                31    15    10     6     0     0    25     0    12     1
+Loss Preventer        20    13     2     5     0     1    28     0    21     1
+Danya's Disciple      23    19     2     2     2     1    31     2    19     1
+stockfih              19    15     1     3     2     0    27     4    20     1
+test_bot              25    16     3     6     0     2    26     2    17     2
+Fuzzydafool           24    14     3     7     0     1    26     2    25     5
+Ultron Prime          16     7     7     2     0     1    31     2    21     3
+Poincare              19     8     3     8     0     0    17     0     9     1
+Mate in One           24    12     5     7     0     1    31     0    17     2
+zak                   24    15     0     9     0     2    20     0    22     2
   repA/repB = repetition draws while ahead/behind by 150+; won+ = games that reached +300; nonC =
     those not won; lost- = games at -300; saved = those not lost
 
 WHAT CHANGED SINCE LAST REFRESH
-Compared with history/summary_20260908_1545.txt:
-  new in the table: test_bot (rank 15)
-  PSL God Matt Bomer: rank 2 -> 1, rating 2596 -> 2658, games 45 -> 46 (24-13-9)
-  AlphaFish: rank 1 -> 2, rating 2657 -> 2645, games 55 -> 56 (34-17-5)
-  Capablanca: rank 4 -> 3, rating 2579 -> 2588, games 60 -> 61 (32-18-11)
-  multi millionare: rank 5 -> 4, rating 2549 -> 2568, games 58 -> 59 (29-17-13)
-  ms: rank 6 -> 5, rating 2520 -> 2564, games 62 -> 63 (32-17-14)
-  cory: rank 16 -> 6, rating 2343 -> 2512, games 39 -> 40 (20-9-11)
-  SoberPaschoud: rank 3 -> 7, rating 2586 -> 2511, games 59 -> 60 (29-18-13)
-  AI Fellow: rank 7 -> 8, rating 2509 -> 2498, games 58 -> 59 (28-22-9)
-  Mite: rank 13 -> 9, rating 2416 -> 2496, games 40 -> 41 (17-16-8)
-  Patzer 2.1: rank 12 -> 10, rating 2445 -> 2488, games 60 -> 61 (28-22-11)
-  Anchoa: rank 9 -> 11, rating 2484 -> 2472, games 58 -> 59 (25-23-11)
-  Loss Preventer: rank 8 -> 12, rating 2486 -> 2418, games 64 -> 65 (28-18-19)
-  Danya's Disciple: rank 15 -> 13, rating 2401 -> 2413, games 58 -> 59 (29-13-17)
-  stockfih: rank 10 -> 14, rating 2462 -> 2379, games 55 -> 56 (22-15-19)
-  Fuzzydafool: rank 14 -> 16, rating 2413 -> 2376, games 58 -> 59 (24-15-20)
-  Ultron Prime: rank 19 -> 17, rating 2319 -> 2368, games 61 -> 62 (29-15-18)
-  Poincare: rank 11 -> 18, rating 2456 -> 2366, games 42 -> 43 (17-18-8), CPL 11.5 -> 12.5
-  Mate in One: rank 20 -> 19, rating 2299 -> 2325, games 60 -> 61 (31-15-15)
-  zak: rank 17 -> 20, rating 2337 -> 2311, games 56 -> 57 (20-17-20)
-  BINI Alpha: rank 18 -> 21, rating 2319 -> 2304, games 42 -> 43 (24-8-11), CPL 18.5 -> 17.2
+Compared with history/summary_20260908_1645.txt:
+  PSL God Matt Bomer: games 46 -> 47 (24-14-9)
+  AlphaFish: games 56 -> 57 (34-18-5)
+  Capablanca: games 61 -> 62 (33-18-11)
+  multi millionare: games 59 -> 60 (29-17-14)
+  ms: games 63 -> 64 (32-18-14)
+  cory: games 40 -> 41 (20-10-11)
+  SoberPaschoud: games 60 -> 61 (29-19-13)
+  AI Fellow: games 59 -> 60 (28-23-9)
+  Mite: games 41 -> 42 (17-17-8)
+  Patzer 2.1: games 61 -> 62 (29-22-11)
+  Anchoa: games 59 -> 60 (25-24-11)
+  Loss Preventer: games 65 -> 66 (28-18-20)
+  Danya's Disciple: games 59 -> 60 (29-13-18)
+  stockfih: games 56 -> 57 (23-15-19)
+  test_bot: games 56 -> 57 (24-18-15)
+  Fuzzydafool: games 59 -> 60 (25-15-20)
+  Ultron Prime: games 62 -> 63 (29-16-18)
+  Poincare: games 43 -> 44 (17-19-8)
+  Mate in One: games 61 -> 62 (31-16-15)
+  zak: games 57 -> 58 (20-18-20)
+  BINI Alpha: games 43 -> 44 (24-9-11)
 
 FILES: 01_PSL_God_Matt_Bomer.txt, 02_AlphaFish.txt, 03_Capablanca.txt, 04_multi_millionare.txt,
-  05_ms.txt, 06_cory.txt, 07_SoberPaschoud.txt, 08_AI_Fellow.txt, 09_Mite.txt, 10_Patzer_2_0.txt,
+  05_ms.txt, 06_cory.txt, 07_SoberPaschoud.txt, 08_AI_Fellow.txt, 09_Mite.txt, 10_Patzer_2_1.txt,
   11_Anchoa.txt, 12_Loss_Preventer.txt, 13_Danya_s_Disciple.txt, 14_stockfih.txt, 15_test_bot.txt,
   16_Fuzzydafool.txt, 17_Ultron_Prime.txt, 18_Poincare.txt, 19_Mate_in_One.txt, 20_zak.txt,
   21_BINI_Alpha.txt
