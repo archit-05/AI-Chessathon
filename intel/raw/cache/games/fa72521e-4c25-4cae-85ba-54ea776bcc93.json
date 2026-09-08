@@ -1,0 +1,59 @@
+{
+ "game": "fa72521e-4c25-4cae-85ba-54ea776bcc93",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"21\"]\n[White \"Minimax Two\"]\n[Black \"Team7347\"]\n[Result \"1-0\"]\n[FEN \"r1bqk2r/pp2ppbp/2np1np1/2p5/P3P3/2NPB1P1/1PP2PBP/R2QK1NR b KQkq - 0 7\"]\n[SetUp \"1\"]\n[Termination \"flag\"]\n\n1-0\n",
+ "opening": "Sicilian Closed",
+ "termination_text": "Flag",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 21\u00b7Final",
+ "white_uuid": "431df1f2-36fa-41f7-936f-ada03f51e174",
+ "black_uuid": "1f20a852-ae0c-44f5-aed7-8be8a5e699b0",
+ "site_verdicts": [],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Minimax Two",
+    "accuracy": 0.0,
+    "acpl": 0,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 0,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Team7347",
+    "accuracy": 0.0,
+    "acpl": 0,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 0,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -6
+  ],
+  "best": [
+   "a7a6"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:04:34Z"
+}

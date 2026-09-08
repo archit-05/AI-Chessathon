@@ -1,0 +1,230 @@
+{
+ "game": "b096801a-d749-4ed2-bede-15825bf0e605",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"25\"]\n[White \"Hephaestus\"]\n[Black \"QueenC4\"]\n[Result \"0-1\"]\n[FEN \"r1bqkb1r/pp3ppp/2np4/1N1Pp3/8/8/PPP2PPP/R1BQKB1R b KQkq - 0 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8... Ne7 { [%clk 0:01:55.961] } 9. Be2 { [%clk 0:01:56.744] } 9... Ng6 { [%clk 0:01:52.391] } 10. O-O { [%clk 0:01:51.422] } 10... a6 { [%clk 0:01:45.884] } 11. Nc3 { [%clk 0:01:48.595] } 11... Be7 { [%clk 0:01:39.402] } 12. Be3 { [%clk 0:01:42.26] } 12... O-O { [%clk 0:01:34.132] } 13. Na4 { [%clk 0:01:38.573] } 13... Bg5 { [%clk 0:01:29.837] } 14. Bxg5 { [%clk 0:01:32.593] } 14... Qxg5 { [%clk 0:01:24.469] } 15. Nb6 { [%clk 0:01:28.004] } 15... Bh3 { [%clk 0:01:17.955] } 16. Bf3 { [%clk 0:01:25.939] } 16... Bxg2 { [%clk 0:01:11.483] } 17. Bg4 { [%clk 0:01:24.278] } 17... Bh3 { [%clk 0:01:07.824] } 18. Nxa8 { [%clk 0:01:22.54] } 18... Bxg4 { [%clk 0:01:05.307] } 19. h4 { [%clk 0:01:20.362] } 19... Qxh4 { [%clk 0:01:01.255] } 20. Qd2 { [%clk 0:01:16.313] } 20... Bf3 { [%clk 0:01:01.602] } 21. Qh6 { [%clk 0:01:16.1] } 21... Qg4+ { [%clk 0:01:02.052] } 22. Kh2 { [%clk 0:01:16.597] } 22... Qg2# { [%clk 0:01:02.55] } 0-1\n",
+ "opening": "Sicilian Sveshnikov",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 25\u00b7Final",
+ "white_uuid": "25ec4daa-f0e9-4af7-8c68-c07709ced4fb",
+ "black_uuid": "7f1cfc93-6c6a-4408-b6f8-fa0dd4e16bce",
+ "site_verdicts": [
+  [
+   "Ne7",
+   "inaccuracy"
+  ],
+  [
+   "Be2",
+   "good"
+  ],
+  [
+   "Ng6",
+   "excellent"
+  ],
+  [
+   "O-O",
+   "excellent"
+  ],
+  [
+   "a6",
+   "excellent"
+  ],
+  [
+   "Nc3",
+   "good"
+  ],
+  [
+   "Be7",
+   "best"
+  ],
+  [
+   "Be3",
+   "good"
+  ],
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "Na4",
+   "excellent"
+  ],
+  [
+   "Bg5",
+   "best"
+  ],
+  [
+   "Bxg5",
+   "excellent"
+  ],
+  [
+   "Qxg5",
+   "best"
+  ],
+  [
+   "Nb6",
+   "mistake"
+  ],
+  [
+   "Bh3",
+   "best"
+  ],
+  [
+   "Bf3",
+   "blunder"
+  ],
+  [
+   "Bxg2",
+   "best"
+  ],
+  [
+   "Bg4",
+   "best"
+  ],
+  [
+   "Bh3",
+   "best"
+  ],
+  [
+   "Nxa8",
+   "good"
+  ],
+  [
+   "Bxg4",
+   "best"
+  ],
+  [
+   "h4",
+   "good"
+  ],
+  [
+   "Qxh4",
+   "excellent"
+  ],
+  [
+   "Qd2",
+   "mistake"
+  ],
+  [
+   "Bf3",
+   "best"
+  ],
+  [
+   "Qh6",
+   "best"
+  ],
+  [
+   "Qg4+",
+   "excellent"
+  ],
+  [
+   "Kh2",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Talos",
+    "accuracy": 85.8,
+    "acpl": 140,
+    "tally": {
+     "brilliant": 0,
+     "best": 2,
+     "excellent": 3,
+     "good": 5,
+     "forced": 1,
+     "inaccuracy": 0,
+     "mistake": 2,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "WunderBar",
+    "accuracy": 97.4,
+    "acpl": 17,
+    "tally": {
+     "brilliant": 0,
+     "best": 10,
+     "excellent": 4,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -13,
+   50,
+   13,
+   21,
+   0,
+   12,
+   -17,
+   -13,
+   -48,
+   -31,
+   -49,
+   -63,
+   -77,
+   -88,
+   -259,
+   -275,
+   -594,
+   -581,
+   -587,
+   -584,
+   -697,
+   -679,
+   -869,
+   -754,
+   -9997,
+   -9998,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "c6b8",
+   "a2a4",
+   "a7a6",
+   "h2h4",
+   "f8e7",
+   "b5a3",
+   "f8e7",
+   "a2a4",
+   "e8g8",
+   "a2a4",
+   "e7g5",
+   "e3b6",
+   "d8g5",
+   "g1h1",
+   "c8h3",
+   "g2g3",
+   "h3g2",
+   "f3g4",
+   "g2h3",
+   "g1h1",
+   "h3g4",
+   "g1h1",
+   "g6h4",
+   "f2f3",
+   "g4f3",
+   "d2h6",
+   "g7h6",
+   "g1h2",
+   "g4g2",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:00:31Z"
+}

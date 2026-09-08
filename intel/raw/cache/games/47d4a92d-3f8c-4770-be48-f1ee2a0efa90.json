@@ -1,0 +1,152 @@
+{
+ "game": "47d4a92d-3f8c-4770-be48-f1ee2a0efa90",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"17\"]\n[White \"Chesstosterone\"]\n[Black \"Fried Liver Defence\"]\n[Result \"*\"]\n[FEN \"r2qkb1r/1p3ppp/p1npbn2/4p3/4P3/N1N2P2/PPP3PP/R1BQKB1R w KQkq - 2 9\"]\n[SetUp \"1\"]\n[Termination \"unterminated\"]\n\n9. Nc4 { [%clk 0:01:55.969] } 9... Rc8 { [%clk 0:01:52.626] } 10. Be3 { [%clk 0:01:52.014] } 10... Nb4 { [%clk 0:01:45.709] } 11. b3 { [%clk 0:01:48.192] } 11... Be7 { [%clk 0:01:39.233] } 12. a3 { [%clk 0:01:44.578] } 12... Nc6 { [%clk 0:01:33.162] } 13. Nb6 { [%clk 0:01:41.156] } 13... Rc7 { [%clk 0:01:27.486] } 14. Nbd5 { [%clk 0:01:37.575] } 14... Rc8 { [%clk 0:01:22.127] } 15. Nb6 { [%clk 0:01:34.221] } 15... Rc7 { [%clk 0:01:17.127] } 16. Nbd5 { [%clk 0:01:30.918] } 16... Rc8 { [%clk 0:01:12.411] } *\n",
+ "opening": "Sicilian Sveshnikov",
+ "termination_text": "Unterminated",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 17\u00b7Void",
+ "white_uuid": "1f808e1d-ad15-4072-8492-e1f94624951f",
+ "black_uuid": "7bc75a64-6091-44e1-8f01-64c3ef2bbd2c",
+ "site_verdicts": [
+  [
+   "Nc4",
+   "best"
+  ],
+  [
+   "Rc8",
+   "excellent"
+  ],
+  [
+   "Be3",
+   "best"
+  ],
+  [
+   "Nb4",
+   "best"
+  ],
+  [
+   "b3",
+   "blunder"
+  ],
+  [
+   "Be7",
+   "blunder"
+  ],
+  [
+   "a3",
+   "best"
+  ],
+  [
+   "Nc6",
+   "inaccuracy"
+  ],
+  [
+   "Nb6",
+   "best"
+  ],
+  [
+   "Rc7",
+   "best"
+  ],
+  [
+   "Nbd5",
+   "inaccuracy"
+  ],
+  [
+   "Rc8",
+   "inaccuracy"
+  ],
+  [
+   "Nb6",
+   "best"
+  ],
+  [
+   "Rc7",
+   "best"
+  ],
+  [
+   "Nbd5",
+   "inaccuracy"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Chessticles",
+    "accuracy": 78.9,
+    "acpl": 57,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 0,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "Spongebob",
+    "accuracy": 79.3,
+    "acpl": 63,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 1,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 3,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -4,
+   0,
+   0,
+   10,
+   3,
+   -251,
+   -18,
+   -4,
+   79,
+   68,
+   75,
+   -26,
+   76,
+   63,
+   54,
+   -25,
+   51
+  ],
+  "best": [
+   "a3c4",
+   "d6d5",
+   "c1e3",
+   "c6b4",
+   "c4b6",
+   "d6d5",
+   "a2a3",
+   "d6d5",
+   "c4b6",
+   "c8c7",
+   "f1c4",
+   "e6d5",
+   "d5b6",
+   "c8c7",
+   "f1c4",
+   "e6d5",
+   "f1c4"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:15:34Z"
+}

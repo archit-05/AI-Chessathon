@@ -1,0 +1,152 @@
+{
+ "game": "4cbfd634-4fc6-474e-ab12-a272a9aef90a",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"16\"]\n[White \"Phantom\"]\n[Black \"Zack\"]\n[Result \"1-0\"]\n[FEN \"r2qkb1r/1p3ppp/p1npbn2/4p1B1/4P3/N1N2P2/PPP3PP/R2QKB1R b KQkq - 3 9\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n9... Nd4 { [%clk 0:01:56.497] } 10. Qd3 { [%clk 0:01:58.493] } 10... Nxf3+ { [%clk 0:01:53.112] } 11. gxf3 { [%clk 0:01:57.005] } 11... Ke7 { [%clk 0:01:49.84] } 12. f4 { [%clk 0:01:55.547] } 12... h6 { [%clk 0:01:46.677] } 13. Bxf6+ { [%clk 0:01:54.118] } 13... Kxf6 { [%clk 0:01:43.62] } 14. f5 { [%clk 0:01:52.71] } 14... Bd7 { [%clk 0:01:40.665] } 15. Nd5+ { [%clk 0:01:51.328] } 15... Kg5 { [%clk 0:01:41.163] } 16. h4+ { [%clk 0:01:49.968] } 16... Kh5 { [%clk 0:01:38.289] } 17. Be2# { [%clk 0:01:48.63] } 1-0\n",
+ "opening": "Sicilian Sveshnikov",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 16\u00b7Final",
+ "white_uuid": "d5dd74ce-90ff-4643-97d0-406b517dd0ad",
+ "black_uuid": "9a5a6b18-36bb-46c6-a5a6-dac002c242a5",
+ "site_verdicts": [
+  [
+   "Nd4",
+   "inaccuracy"
+  ],
+  [
+   "Qd3",
+   "mistake"
+  ],
+  [
+   "Nxf3+",
+   "blunder"
+  ],
+  [
+   "gxf3",
+   "excellent"
+  ],
+  [
+   "Ke7",
+   "inaccuracy"
+  ],
+  [
+   "f4",
+   "excellent"
+  ],
+  [
+   "h6",
+   "good"
+  ],
+  [
+   "Bxf6+",
+   "best"
+  ],
+  [
+   "Kxf6",
+   "excellent"
+  ],
+  [
+   "f5",
+   "best"
+  ],
+  [
+   "Bd7",
+   "blunder"
+  ],
+  [
+   "Nd5+",
+   "best"
+  ],
+  [
+   "Kg5",
+   "forced"
+  ],
+  [
+   "h4+",
+   "best"
+  ],
+  [
+   "Kh5",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "FERB",
+    "accuracy": 95.4,
+    "acpl": 21,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 2,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "The LochChess Monster",
+    "accuracy": 73.4,
+    "acpl": 224,
+    "tally": {
+     "brilliant": 0,
+     "best": 1,
+     "excellent": 1,
+     "good": 1,
+     "forced": 1,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 2
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -23,
+   54,
+   -78,
+   352,
+   343,
+   507,
+   519,
+   600,
+   595,
+   635,
+   612,
+   9997,
+   9998,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "f8e7",
+   "c3d5",
+   "d6d5",
+   "d3f3",
+   "b7b5",
+   "e1c1",
+   "e5f4",
+   "g5f6",
+   "g7f6",
+   "f4f5",
+   "g7g6",
+   "c3d5",
+   "f6g5",
+   "h2h4",
+   "g5h5",
+   "f1e2",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:42:36Z"
+}

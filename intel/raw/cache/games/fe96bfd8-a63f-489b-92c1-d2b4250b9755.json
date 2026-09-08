@@ -1,0 +1,206 @@
+{
+ "game": "fe96bfd8-a63f-489b-92c1-d2b4250b9755",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"11\"]\n[White \"Buddy's Grill Gambit\"]\n[Black \"Team7347\"]\n[Result \"*\"]\n[FEN \"r1bq1rk1/2p1bppp/p2p1n2/np2p3/4P3/1B1P1N1P/PPPN1PP1/R1BQR1K1 b - - 2 10\"]\n[SetUp \"1\"]\n[Termination \"unterminated\"]\n\n10... Bb7 { [%clk 0:01:53.267] } 11. Ng5 { [%clk 0:01:55.448] } 11... Bc8 { [%clk 0:01:53.643] } 12. Bxf7+ { [%clk 0:01:51.079] } 12... Rxf7 { [%clk 0:01:52.984] } 13. Nxf7 { [%clk 0:01:46.885] } 13... Bb7 { [%clk 0:01:53.226] } 14. Nxd8 { [%clk 0:01:42.858] } 14... Bc8 { [%clk 0:01:53.674] } 15. b4 { [%clk 0:01:38.992] } 15... Bb7 { [%clk 0:01:48.776] } 16. Ne6 { [%clk 0:01:35.281] } 16... Bc8 { [%clk 0:01:48.921] } 17. Nxc7 { [%clk 0:01:31.718] } 17... Bb7 { [%clk 0:01:47.191] } 18. Nxa8 { [%clk 0:01:28.298] } 18... Bc8 { [%clk 0:01:47.679] } 19. bxa5 { [%clk 0:01:25.014] } 19... Bb7 { [%clk 0:01:48.178] } 20. Nc7 { [%clk 0:01:21.862] } 20... Bc8 { [%clk 0:01:48.672] } 21. Na8 { [%clk 0:01:18.836] } 21... Bb7 { [%clk 0:01:49.171] } 22. Nc7 { [%clk 0:01:15.932] } 22... Bc8 { [%clk 0:01:49.67] } *\n",
+ "opening": "Ruy Lopez, Closed",
+ "termination_text": "Unterminated",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 11\u00b7Void",
+ "white_uuid": "f4a515ca-ddb5-4d2e-bf37-277d9d8d0f39",
+ "black_uuid": "1f20a852-ae0c-44f5-aed7-8be8a5e699b0",
+ "site_verdicts": [
+  [
+   "Bb7",
+   "excellent"
+  ],
+  [
+   "Ng5",
+   "inaccuracy"
+  ],
+  [
+   "Bc8",
+   "inaccuracy"
+  ],
+  [
+   "Bxf7+",
+   "inaccuracy"
+  ],
+  [
+   "Rxf7",
+   "best"
+  ],
+  [
+   "Nxf7",
+   "best"
+  ],
+  [
+   "Bb7",
+   "blunder"
+  ],
+  [
+   "Nxd8",
+   "best"
+  ],
+  [
+   "Bc8",
+   "good"
+  ],
+  [
+   "b4",
+   "best"
+  ],
+  [
+   "Bb7",
+   "excellent"
+  ],
+  [
+   "Ne6",
+   "best"
+  ],
+  [
+   "Bc8",
+   "excellent"
+  ],
+  [
+   "Nxc7",
+   "best"
+  ],
+  [
+   "Bb7",
+   "excellent"
+  ],
+  [
+   "Nxa8",
+   "best"
+  ],
+  [
+   "Bc8",
+   "excellent"
+  ],
+  [
+   "bxa5",
+   "best"
+  ],
+  [
+   "Bb7",
+   "excellent"
+  ],
+  [
+   "Nc7",
+   "excellent"
+  ],
+  [
+   "Bc8",
+   "excellent"
+  ],
+  [
+   "Na8",
+   "best"
+  ],
+  [
+   "Bb7",
+   "excellent"
+  ],
+  [
+   "Nc7",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "flamin_fillet",
+    "accuracy": 96.1,
+    "acpl": 27,
+    "tally": {
+     "brilliant": 0,
+     "best": 8,
+     "excellent": 2,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Team7347",
+    "accuracy": 73.6,
+    "acpl": 129,
+    "tally": {
+     "brilliant": 0,
+     "best": 1,
+     "excellent": 9,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -8,
+   -7,
+   -105,
+   -10,
+   -92,
+   -86,
+   -103,
+   670,
+   670,
+   799,
+   806,
+   925,
+   920,
+   952,
+   961,
+   1116,
+   1121,
+   1344,
+   1363,
+   1385,
+   1340,
+   1371,
+   1371,
+   1415,
+   1335,
+   1381
+  ],
+  "best": [
+   "a5b3",
+   "d2f1",
+   "f6d7",
+   "d2f1",
+   "f8f7",
+   "g5f7",
+   "g8f7",
+   "f7d8",
+   "a8d8",
+   "b2b4",
+   "e7d8",
+   "d8e6",
+   "a5c6",
+   "e6c7",
+   "a8a7",
+   "c7a8",
+   "b7a8",
+   "b4a5",
+   "e7d8",
+   "a8b6",
+   "e7d8",
+   "c7a8",
+   "e7d8",
+   "a8b6",
+   "e7d8",
+   "c1a3"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:04:45Z"
+}

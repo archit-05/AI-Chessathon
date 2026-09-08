@@ -1,0 +1,236 @@
+{
+ "game": "42e25906-49f7-427c-967f-93c1e95ccfe7",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.06\"]\n[Round \"35\"]\n[White \"Obligatory En Passant\"]\n[Black \"e=mc^2\"]\n[Result \"0-1\"]\n[FEN \"r2q1rk1/1bp1bppp/p2p1n2/np2p3/4P3/1BNP1N1P/PPP2PP1/R1BQR1K1 w - - 1 11\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n11. Be3 { [%clk 0:01:56.633] } 11... Qd7 { [%clk 0:01:57.034] } 12. Bd5 { [%clk 0:01:51.35] } 12... c6 { [%clk 0:01:54.606] } 13. Bxf7+ { [%clk 0:01:48.889] } 13... Rxf7 { [%clk 0:01:52.208] } 14. b4 { [%clk 0:01:44.19] } 14... Nh5 { [%clk 0:01:43.068] } 15. Ng5 { [%clk 0:01:39.765] } 15... Bxg5 { [%clk 0:01:39.845] } 16. Bxg5 { [%clk 0:01:36.02] } 16... Nf4 { [%clk 0:01:37.326] } 17. bxa5 { [%clk 0:01:31.907] } 17... Raf8 { [%clk 0:01:28.434] } 18. a4 { [%clk 0:01:28.187] } 18... Nxg2 { [%clk 0:01:26.034] } 19. Kxg2 { [%clk 0:01:24.987] } 19... Rxf2+ { [%clk 0:01:17.478] } 20. Kg3 { [%clk 0:01:22.303] } 20... Bc8 { [%clk 0:01:12.236] } 21. Rh1 { [%clk 0:01:18.946] } 21... b4 { [%clk 0:01:05.937] } 22. Nb1 { [%clk 0:01:16.247] } 22... b3 { [%clk 0:00:58.358] } 23. cxb3 { [%clk 0:01:13.36] } 23... Qa7 { [%clk 0:00:53.894] } 24. h4 { [%clk 0:01:11.741] } 24... Rg2+ { [%clk 0:00:54.129] } 25. Kxg2 { [%clk 0:01:12.223] } 25... Qf2# { [%clk 0:00:54.627] } 0-1\n",
+ "opening": "Ruy Lopez, Closed",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 35\u00b7Final",
+ "white_uuid": "8e698790-5a73-4a34-889d-7e7619582cee",
+ "black_uuid": "3f2c6106-702b-4a60-8eb5-5f5fe3886d0a",
+ "site_verdicts": [
+  [
+   "Be3",
+   "good"
+  ],
+  [
+   "Qd7",
+   "excellent"
+  ],
+  [
+   "Bd5",
+   "excellent"
+  ],
+  [
+   "c6",
+   "best"
+  ],
+  [
+   "Bxf7+",
+   "good"
+  ],
+  [
+   "Rxf7",
+   "best"
+  ],
+  [
+   "b4",
+   "best"
+  ],
+  [
+   "Nh5",
+   "inaccuracy"
+  ],
+  [
+   "Ng5",
+   "best"
+  ],
+  [
+   "Bxg5",
+   "best"
+  ],
+  [
+   "Bxg5",
+   "best"
+  ],
+  [
+   "Nf4",
+   "best"
+  ],
+  [
+   "bxa5",
+   "excellent"
+  ],
+  [
+   "Raf8",
+   "excellent"
+  ],
+  [
+   "a4",
+   "blunder"
+  ],
+  [
+   "Nxg2",
+   "best"
+  ],
+  [
+   "Kxg2",
+   "blunder"
+  ],
+  [
+   "Rxf2+",
+   "best"
+  ],
+  [
+   "Kg3",
+   "best"
+  ],
+  [
+   "Bc8",
+   "best"
+  ],
+  [
+   "Rh1",
+   "best"
+  ],
+  [
+   "b4",
+   "inaccuracy"
+  ],
+  [
+   "Nb1",
+   "blunder"
+  ],
+  [
+   "b3",
+   "miss"
+  ],
+  [
+   "cxb3",
+   "inaccuracy"
+  ],
+  [
+   "Qa7",
+   "inaccuracy"
+  ],
+  [
+   "h4",
+   "blunder"
+  ],
+  [
+   "Rg2+",
+   "best"
+  ],
+  [
+   "Kxg2",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Ticktocker",
+    "accuracy": 73.5,
+    "acpl": 270,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 2,
+     "good": 2,
+     "forced": 1,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 4
+    }
+   },
+   {
+    "name": "biggestbrilliant",
+    "accuracy": 91.0,
+    "acpl": 167,
+    "tally": {
+     "brilliant": 0,
+     "best": 9,
+     "excellent": 2,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 3,
+     "mistake": 0,
+     "miss": 1,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -10,
+   -33,
+   -12,
+   -33,
+   -33,
+   -78,
+   -73,
+   -72,
+   7,
+   8,
+   15,
+   10,
+   0,
+   -12,
+   2,
+   -391,
+   -409,
+   -1112,
+   -828,
+   -913,
+   -1098,
+   -1356,
+   -653,
+   -9992,
+   -553,
+   -1061,
+   -665,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "c3e2",
+   "h7h6",
+   "c3e2",
+   "c7c6",
+   "d5b3",
+   "f8f7",
+   "b2b4",
+   "h7h6",
+   "f3g5",
+   "e7g5",
+   "e3g5",
+   "h5f4",
+   "g5f4",
+   "f4g6",
+   "g5f4",
+   "f4g2",
+   "e1e2",
+   "f7f2",
+   "g2g3",
+   "b7c8",
+   "e1h1",
+   "d7f7",
+   "d1e2",
+   "d7f7",
+   "b1d2",
+   "d7f7",
+   "h1h2",
+   "f2g2",
+   "g3g2",
+   "a7f2",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:35:18Z"
+}

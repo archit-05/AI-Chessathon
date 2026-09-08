@@ -1,0 +1,212 @@
+{
+ "game": "4c549bd5-0bfb-41fd-84ce-487d51988e27",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"14\"]\n[White \"The Good Team\"]\n[Black \"Thorp\"]\n[Result \"*\"]\n[FEN \"r1bqkbnr/pp3ppp/2n5/2pp4/3P4/P4N2/1PPN1PPP/R1BQKB1R b KQkq - 2 6\"]\n[SetUp \"1\"]\n[Termination \"unterminated\"]\n\n6... Nf6 { [%clk 0:01:57.669] } 7. Bb5 { [%clk 0:02:00.156] } 7... c4 { [%clk 0:01:55.368] } 8. Qe2+ { [%clk 0:02:00.409] } 8... Be7 { [%clk 0:01:53.026] } 9. Ne5 { [%clk 0:02:00.014] } 9... Qc7 { [%clk 0:01:50.683] } 10. g4 { [%clk 0:01:58.934] } 10... O-O { [%clk 0:01:48.752] } 11. Bxc6 { [%clk 0:01:59.221] } 11... bxc6 { [%clk 0:01:46.859] } 12. b3 { [%clk 0:01:59.053] } 12... c5 { [%clk 0:01:44.488] } 13. bxc4 { [%clk 0:01:59.253] } 13... dxc4 { [%clk 0:01:42.765] } 14. g5 { [%clk 0:01:59.424] } 14... Nd5 { [%clk 0:01:41.011] } 15. Qxc4 { [%clk 0:01:59.362] } 15... Nb6 { [%clk 0:01:38.945] } 16. Qc3 { [%clk 0:01:59.552] } 16... Na4 { [%clk 0:01:36.516] } 17. Qc4 { [%clk 0:01:59.868] } 17... Nb6 { [%clk 0:01:34.085] } 18. Qc3 { [%clk 0:02:00.365] } 18... Na4 { [%clk 0:01:31.651] } 19. Qc4 { [%clk 0:02:00.862] } *\n",
+ "opening": "French Tarrasch",
+ "termination_text": "Unterminated",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 14\u00b7Void",
+ "white_uuid": "7e5a9874-6b65-41c5-b80f-7be47d1f84b5",
+ "black_uuid": "c7c9afba-d0bd-44f0-add8-b177e17526b0",
+ "site_verdicts": [
+  [
+   "Nf6",
+   "best"
+  ],
+  [
+   "Bb5",
+   "best"
+  ],
+  [
+   "c4",
+   "excellent"
+  ],
+  [
+   "Qe2+",
+   "good"
+  ],
+  [
+   "Be7",
+   "best"
+  ],
+  [
+   "Ne5",
+   "good"
+  ],
+  [
+   "Qc7",
+   "best"
+  ],
+  [
+   "g4",
+   "mistake"
+  ],
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "Bxc6",
+   "best"
+  ],
+  [
+   "bxc6",
+   "best"
+  ],
+  [
+   "b3",
+   "inaccuracy"
+  ],
+  [
+   "c5",
+   "best"
+  ],
+  [
+   "bxc4",
+   "good"
+  ],
+  [
+   "dxc4",
+   "good"
+  ],
+  [
+   "g5",
+   "excellent"
+  ],
+  [
+   "Nd5",
+   "excellent"
+  ],
+  [
+   "Qxc4",
+   "best"
+  ],
+  [
+   "Nb6",
+   "excellent"
+  ],
+  [
+   "Qc3",
+   "good"
+  ],
+  [
+   "Na4",
+   "good"
+  ],
+  [
+   "Qc4",
+   "excellent"
+  ],
+  [
+   "Nb6",
+   "best"
+  ],
+  [
+   "Qc3",
+   "good"
+  ],
+  [
+   "Na4",
+   "inaccuracy"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "The Good Bot",
+    "accuracy": 89.4,
+    "acpl": 39,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 3,
+     "good": 5,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Alea",
+    "accuracy": 91.8,
+    "acpl": 23,
+    "tally": {
+     "brilliant": 0,
+     "best": 7,
+     "excellent": 3,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -7,
+   -1,
+   -7,
+   -9,
+   -60,
+   -58,
+   -81,
+   -74,
+   -217,
+   -223,
+   -240,
+   -210,
+   -300,
+   -311,
+   -345,
+   -277,
+   -283,
+   -301,
+   -302,
+   -277,
+   -322,
+   -258,
+   -280,
+   -281,
+   -334,
+   -231,
+   -249
+  ],
+  "best": [
+   "g8f6",
+   "f1b5",
+   "d8e7",
+   "e1g1",
+   "f8e7",
+   "b2b3",
+   "d8c7",
+   "e1g1",
+   "e8g8",
+   "b5c6",
+   "b7c6",
+   "e1g1",
+   "c6c5",
+   "g4g5",
+   "c5d4",
+   "d2c4",
+   "f6d7",
+   "e2c4",
+   "c8e6",
+   "c4d3",
+   "c8a6",
+   "c3g3",
+   "a4b6",
+   "c4b5",
+   "c8a6",
+   "c3g3",
+   "c8b7"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:16:59Z"
+}

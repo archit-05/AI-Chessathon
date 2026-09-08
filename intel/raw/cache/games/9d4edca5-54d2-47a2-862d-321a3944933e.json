@@ -1,0 +1,170 @@
+{
+ "game": "9d4edca5-54d2-47a2-862d-321a3944933e",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"4\"]\n[White \"Magnus Force\"]\n[Black \"Dio\"]\n[Result \"0-1\"]\n[FEN \"r1bqkb1r/pp2pppp/2n2n2/3p4/3P4/2PB4/PP1N1PPP/R1BQK1NR b KQkq - 2 6\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n6... e5 { [%clk 0:01:55.116] } 7. dxe5 { [%clk 0:01:59.498] } 7... Nxe5 { [%clk 0:01:53.189] } 8. Qa4+ { [%clk 0:01:58.996] } 8... Bd7 { [%clk 0:01:46.971] } 9. Qb3 { [%clk 0:01:58.491] } 9... Nxd3+ { [%clk 0:01:45.409] } 10. Ke2 { [%clk 0:01:57.986] } 10... Qe7+ { [%clk 0:01:39.657] } 11. Kxd3 { [%clk 0:01:57.484] } 11... Bf5+ { [%clk 0:01:34.657] } 12. Kd4 { [%clk 0:01:56.981] } 12... Qc5+ { [%clk 0:01:34.699] } 13. Ke5 { [%clk 0:01:57.47] } 13... Bd6+ { [%clk 0:01:35.154] } 14. Kxf5 { [%clk 0:01:57.961] } 14... d4+ { [%clk 0:01:35.641] } 15. Qd5 { [%clk 0:01:58.455] } 15... Qxd5# { [%clk 0:01:36.126] } 0-1\n",
+ "opening": "Caro-Kann Exchange",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 4\u00b7Final",
+ "white_uuid": "b7ee465f-39af-444e-8b74-6d6c268108ef",
+ "black_uuid": "0694a1f6-90a5-46fb-bfad-bea66259fe23",
+ "site_verdicts": [
+  [
+   "e5",
+   "inaccuracy"
+  ],
+  [
+   "dxe5",
+   "best"
+  ],
+  [
+   "Nxe5",
+   "best"
+  ],
+  [
+   "Qa4+",
+   "mistake"
+  ],
+  [
+   "Bd7",
+   "best"
+  ],
+  [
+   "Qb3",
+   "blunder"
+  ],
+  [
+   "Nxd3+",
+   "best"
+  ],
+  [
+   "Ke2",
+   "good"
+  ],
+  [
+   "Qe7+",
+   "best"
+  ],
+  [
+   "Kxd3",
+   "best"
+  ],
+  [
+   "Bf5+",
+   "best"
+  ],
+  [
+   "Kd4",
+   "mistake"
+  ],
+  [
+   "Qc5+",
+   "best"
+  ],
+  [
+   "Ke5",
+   "forced"
+  ],
+  [
+   "Bd6+",
+   "best"
+  ],
+  [
+   "Kxf5",
+   "forced"
+  ],
+  [
+   "d4+",
+   "best"
+  ],
+  [
+   "Qd5",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Magnus Five",
+    "accuracy": 77.5,
+    "acpl": 216,
+    "tally": {
+     "brilliant": 0,
+     "best": 2,
+     "excellent": 0,
+     "good": 1,
+     "forced": 3,
+     "inaccuracy": 0,
+     "mistake": 2,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "Dio",
+    "accuracy": 98.2,
+    "acpl": 11,
+    "tally": {
+     "brilliant": 0,
+     "best": 9,
+     "excellent": 0,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -15,
+   40,
+   23,
+   43,
+   -79,
+   -78,
+   -721,
+   -690,
+   -817,
+   -815,
+   -853,
+   -866,
+   -9996,
+   -9997,
+   -9997,
+   -9998,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "c8g4",
+   "d4e5",
+   "c6e5",
+   "d1e2",
+   "c8d7",
+   "a4d4",
+   "e5d3",
+   "e1f1",
+   "d8e7",
+   "e2d3",
+   "d7f5",
+   "d2e4",
+   "e7c5",
+   "d4e5",
+   "f8d6",
+   "e5f5",
+   "d5d4",
+   "b3d5",
+   "c5d5",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:26:38Z"
+}

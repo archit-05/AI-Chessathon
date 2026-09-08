@@ -1,0 +1,116 @@
+{
+ "game": "aecb1280-b32f-4df7-a779-5bd241dd6fa5",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.07\"]\n[Round \"53\"]\n[White \"JBG fam\"]\n[Black \"Gijs Smit\"]\n[Result \"1/2-1/2\"]\n[FEN \"r2qkb1r/pp3ppp/2np1n2/4p3/4P1b1/N1N2P2/PPP3PP/R1BQKB1R b KQkq - 0 8\"]\n[SetUp \"1\"]\n[Termination \"threefold_repetition\"]\n\n8... Be6 { [%clk 0:01:58.583] } 9. Bc4 { [%clk 0:01:57.666] } 9... Na5 { [%clk 0:01:54.939] } 10. Bb5+ { [%clk 0:01:55.082] } 10... Nc6 { [%clk 0:01:51.599] } 11. Bc4 { [%clk 0:01:52.828] } 11... Na5 { [%clk 0:01:49.071] } 12. Bb5+ { [%clk 0:01:48.77] } 12... Nc6 { [%clk 0:01:41.501] } 13. Bc4 { [%clk 0:01:46.718] } 1/2-1/2\n",
+ "opening": "Sicilian Sveshnikov",
+ "termination_text": "Threefold repetition",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 53\u00b7Final",
+ "white_uuid": "10021bb5-71a5-4b10-bde5-14e1f667501a",
+ "black_uuid": "3f0e0e44-cdce-485f-b5b6-3691e34f9f44",
+ "site_verdicts": [
+  [
+   "Be6",
+   "best"
+  ],
+  [
+   "Bc4",
+   "best"
+  ],
+  [
+   "Na5",
+   "excellent"
+  ],
+  [
+   "Bb5+",
+   "best"
+  ],
+  [
+   "Nc6",
+   "best"
+  ],
+  [
+   "Bc4",
+   "excellent"
+  ],
+  [
+   "Na5",
+   "excellent"
+  ],
+  [
+   "Bb5+",
+   "best"
+  ],
+  [
+   "Nc6",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "PSL God Matt Bomer",
+    "accuracy": 99.9,
+    "acpl": 1,
+    "tally": {
+     "brilliant": 0,
+     "great": 0,
+     "best": 4,
+     "excellent": 1,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Patzer 2.0",
+    "accuracy": 99.9,
+    "acpl": 1,
+    "tally": {
+     "brilliant": 0,
+     "great": 0,
+     "best": 3,
+     "excellent": 2,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -3,
+   0,
+   0,
+   0,
+   0,
+   3,
+   0,
+   0,
+   0,
+   0,
+   -3
+  ],
+  "best": [
+   "g4e6",
+   "f1c4",
+   "a7a6",
+   "c4b5",
+   "a5c6",
+   "c3d5",
+   "a7a6",
+   "c4b5",
+   "a5c6",
+   "b5c4",
+   "a7a6"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-08T12:51:07Z"
+}

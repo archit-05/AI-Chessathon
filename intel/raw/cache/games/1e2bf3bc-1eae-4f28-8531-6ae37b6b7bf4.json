@@ -1,0 +1,218 @@
+{
+ "game": "1e2bf3bc-1eae-4f28-8531-6ae37b6b7bf4",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"26\"]\n[White \"blundered my queen \ud83d\udc94\"]\n[Black \"NotLLM\"]\n[Result \"1-0\"]\n[FEN \"r1bqk2r/pp2ppbp/2np1np1/2p5/4P3/2NP1NP1/PPP2PBP/R1BQK2R w KQkq - 2 7\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n7. a4 { [%clk 0:01:16.717] } 7... O-O { [%clk 0:01:56.293] } 8. Be3 { [%clk 0:01:16.857] } 8... Ng4 { [%clk 0:01:53.124] } 9. Bg5 { [%clk 0:01:15.521] } 9... Nge5 { [%clk 0:01:49.893] } 10. Nxe5 { [%clk 0:01:13.872] } 10... Bxe5 { [%clk 0:01:46.917] } 11. h4 { [%clk 0:01:12.725] } 11... a5 { [%clk 0:01:41.823] } 12. h5 { [%clk 0:01:11.085] } 12... Bd4 { [%clk 0:01:36.979] } 13. Rb1 { [%clk 0:01:10.18] } 13... Re8 { [%clk 0:01:32.013] } 14. hxg6 { [%clk 0:01:08.522] } 14... hxg6 { [%clk 0:01:29.674] } 15. Nd5 { [%clk 0:01:07.883] } 15... f6 { [%clk 0:01:27.176] } 16. Bd2 { [%clk 0:01:06.63] } 16... e6 { [%clk 0:01:24.604] } 17. Nf4 { [%clk 0:01:05.524] } 17... g5 { [%clk 0:01:22.449] } 18. Qh5 { [%clk 0:01:05.971] } 18... Bxb2 { [%clk 0:01:17.891] } 19. Qh7+ { [%clk 0:01:06.468] } 19... Kf8 { [%clk 0:01:18.39] } 20. Ng6# { [%clk 0:01:06.967] } 1-0\n",
+ "opening": "Sicilian Closed",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 26\u00b7Final",
+ "white_uuid": "ea0db44a-0888-4b54-b7ff-ec805c7befb6",
+ "black_uuid": "2e84d6ba-24da-4b6f-baa3-9af4f10179ee",
+ "site_verdicts": [
+  [
+   "a4",
+   "best"
+  ],
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "Be3",
+   "excellent"
+  ],
+  [
+   "Ng4",
+   "excellent"
+  ],
+  [
+   "Bg5",
+   "excellent"
+  ],
+  [
+   "Nge5",
+   "excellent"
+  ],
+  [
+   "Nxe5",
+   "best"
+  ],
+  [
+   "Bxe5",
+   "inaccuracy"
+  ],
+  [
+   "h4",
+   "excellent"
+  ],
+  [
+   "a5",
+   "inaccuracy"
+  ],
+  [
+   "h5",
+   "best"
+  ],
+  [
+   "Bd4",
+   "good"
+  ],
+  [
+   "Rb1",
+   "good"
+  ],
+  [
+   "Re8",
+   "good"
+  ],
+  [
+   "hxg6",
+   "excellent"
+  ],
+  [
+   "hxg6",
+   "good"
+  ],
+  [
+   "Nd5",
+   "excellent"
+  ],
+  [
+   "f6",
+   "inaccuracy"
+  ],
+  [
+   "Bd2",
+   "excellent"
+  ],
+  [
+   "e6",
+   "mistake"
+  ],
+  [
+   "Nf4",
+   "best"
+  ],
+  [
+   "g5",
+   "blunder"
+  ],
+  [
+   "Qh5",
+   "best"
+  ],
+  [
+   "Bxb2",
+   "excellent"
+  ],
+  [
+   "Qh7+",
+   "excellent"
+  ],
+  [
+   "Kf8",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Traveling Salespawn",
+    "accuracy": 97.6,
+    "acpl": 11,
+    "tally": {
+     "brilliant": 0,
+     "best": 6,
+     "excellent": 7,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "OptiFish",
+    "accuracy": 82.1,
+    "acpl": 120,
+    "tally": {
+     "brilliant": 0,
+     "best": 1,
+     "excellent": 3,
+     "good": 3,
+     "forced": 1,
+     "inaccuracy": 3,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -10,
+   -15,
+   -10,
+   -21,
+   -18,
+   -23,
+   -3,
+   -34,
+   39,
+   25,
+   133,
+   112,
+   146,
+   99,
+   127,
+   128,
+   153,
+   141,
+   205,
+   202,
+   405,
+   442,
+   9995,
+   9996,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "a2a4",
+   "e8g8",
+   "e1g1",
+   "a8b8",
+   "e3d2",
+   "h7h6",
+   "f3e5",
+   "d6e5",
+   "g5h6",
+   "e5g7",
+   "h4h5",
+   "e5g7",
+   "g5h6",
+   "d4g7",
+   "c3d5",
+   "f7g6",
+   "f2f4",
+   "c6b4",
+   "g5h6",
+   "c6e5",
+   "d5f4",
+   "d8c7",
+   "d1h5",
+   "d4f2",
+   "h5h8",
+   "g8f8",
+   "f4g6",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:41:09Z"
+}

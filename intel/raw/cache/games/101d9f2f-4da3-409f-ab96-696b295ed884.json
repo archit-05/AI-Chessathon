@@ -1,0 +1,122 @@
+{
+ "game": "101d9f2f-4da3-409f-ab96-696b295ed884",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"13\"]\n[White \"Team7347\"]\n[Black \"True Prince of Imperial\"]\n[Result \"0-1\"]\n[FEN \"rnbqkb1r/pp2pp1p/3p1np1/8/3NP3/2N4P/PPP2PP1/R1BQKB1R b KQkq - 0 6\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n6... Qb6 { [%clk 0:01:57.664] } 7. Be3 { [%clk 0:01:32.914] } 7... Qxb2 { [%clk 0:01:55.311] } 8. Bc1 { [%clk 0:01:29.519] } 8... Qxc3+ { [%clk 0:01:52.957] } 9. Bd2 { [%clk 0:01:28.936] } 9... Qxd4 { [%clk 0:01:50.59] } 10. h4 { [%clk 0:01:27.941] } 10... Nxe4 { [%clk 0:01:48.219] } 11. f3 { [%clk 0:01:27.325] } 11... Qf2# { [%clk 0:01:45.842] } 0-1\n",
+ "opening": "Sicilian Dragon",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 13\u00b7Final",
+ "white_uuid": "1f20a852-ae0c-44f5-aed7-8be8a5e699b0",
+ "black_uuid": "bf4a6261-8c16-4049-8d9f-4529eeffd88b",
+ "site_verdicts": [
+  [
+   "Qb6",
+   "mistake"
+  ],
+  [
+   "Be3",
+   "best"
+  ],
+  [
+   "Qxb2",
+   "good"
+  ],
+  [
+   "Bc1",
+   "blunder"
+  ],
+  [
+   "Qxc3+",
+   "best"
+  ],
+  [
+   "Bd2",
+   "excellent"
+  ],
+  [
+   "Qxd4",
+   "best"
+  ],
+  [
+   "h4",
+   "excellent"
+  ],
+  [
+   "Nxe4",
+   "best"
+  ],
+  [
+   "f3",
+   "mistake"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Team7347",
+    "accuracy": 49.7,
+    "acpl": 399,
+    "tally": {
+     "brilliant": 0,
+     "best": 1,
+     "excellent": 2,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "True Prince of Imperial",
+    "accuracy": 92.9,
+    "acpl": 27,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 0,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   25,
+   138,
+   148,
+   196,
+   -662,
+   -661,
+   -720,
+   -728,
+   -806,
+   -806,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "f8g7",
+   "c1e3",
+   "a7a6",
+   "d4b5",
+   "b2c3",
+   "d1d2",
+   "c3d4",
+   "f1b5",
+   "f6e4",
+   "f1b5",
+   "d4f2",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:04:43Z"
+}

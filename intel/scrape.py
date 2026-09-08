@@ -66,13 +66,30 @@ def fetch(url: str, retries: int = 4) -> str:
 
 
 # ----------------------------------------------------------------------------- leaderboard
+def resolve_streamed(page: str) -> str:
+    """Inline React's streamed fragments.
+
+    Since 8 Sept the leaderboard renders the top three as "podium" rows and streams some of their
+    cells in late: the row carries <template id="P:n"></template> placeholders and the payload
+    arrives further down as <table hidden><tr id="S:n">...  $RS("S:n","P:n") pairs them up.
+    """
+    for sid, pid in re.findall(r'\$RS\("(S:[0-9a-f]+)","(P:[0-9a-f]+)"\)', page):
+        m = re.search(rf'<table hidden><tr id="{sid}">(.*?)</tr></table>', page, flags=re.S) or re.search(
+            rf'<div hidden id="{sid}">(.*?)</div>', page, flags=re.S
+        )
+        if m:
+            page = page.replace(f'<template id="{pid}"></template>', m.group(1))
+    return page
+
+
 def parse_leaderboard(page: str) -> list[dict]:
     rows = []
-    for row in page.split("<tr")[1:]:
+    for row in resolve_streamed(page).split("<tr")[1:]:
         m = re.search(r'data-href="/team/([0-9a-f-]{36})', row)
         if not m:
             continue
-        rank = re.search(r'ladder-rank">(\d+)', row)
+        # podium rows show a medal instead of the number; the rank is on the row itself
+        rank = re.search(r'ladder-rank">(\d+)', row) or re.search(r'data-podium="(\d+)"', row)
         name = re.search(r'ladder-bot-name">(.*?)</span>', row, flags=re.S)
         if not (rank and name):
             continue
@@ -139,7 +156,7 @@ def parse_team(page: str, uuid: str) -> dict:
         "bot": clean(h1.group(1)) if h1 else "",
         "team": clean(sub.group(1)) if sub else (clean(h1.group(1)) if h1 else ""),
         "rating": int(clean(re.sub(r"<small>.*?</small>", "", facts.get("Rating", "0"))) or 0) or None,
-        "rank": int(clean(re.sub(r"<small>.*?</small>", "", facts.get("Rank", "0"))) or 0) or None,
+        "rank": int(clean(re.sub(r"<small>.*?</small>", "", facts.get("Rank", "0"))).lstrip("#").strip() or 0) or None,
         "record": rec,
         "rated_rounds": int(rounds.group(1)) if rounds else len(history),
         "history": history,

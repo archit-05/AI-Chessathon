@@ -1,0 +1,182 @@
+{
+ "game": "d65a78cb-0118-4123-9f06-3ca75ed72437",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.06\"]\n[Round \"41\"]\n[White \"0x88\"]\n[Black \"Trojan Horse\"]\n[Result \"0-1\"]\n[FEN \"r1bqkb1r/1p3ppp/p1np1n2/4p3/4P3/N1N1B3/PPP2PPP/R2QKB1R b KQkq - 1 8\"]\n[SetUp \"1\"]\n[Termination \"illegal\"]\n\n8... b5 { [%clk 0:01:55.476] } 9. Nd5 { [%clk 0:01:56.583] } 9... Nxe4 { [%clk 0:01:51.089] } 10. Bb6 { [%clk 0:01:53.211] } 10... Nxf2 { [%clk 0:01:46.936] } 11. Kxf2 { [%clk 0:01:49.87] } 11... Qh4+ { [%clk 0:01:42.939] } 12. g3 { [%clk 0:01:45.995] } 12... Qe4 { [%clk 0:01:39.093] } 13. Nc7+ { [%clk 0:01:43.728] } 13... Kd7 { [%clk 0:01:35.39] } 14. Ne8 { [%clk 0:01:36.649] } 14... Kxe8 { [%clk 0:01:31.807] } 15. Bg2 { [%clk 0:01:30.961] } 15... Qf5+ { [%clk 0:01:28.309] } 16. Ke3 { [%clk 0:01:24.514] } 16... Bb7 { [%clk 0:01:24.959] } 17. Rf1 { [%clk 0:01:22.242] } 17... Qe6 { [%clk 0:01:21.787] } 18. Nb1 { [%clk 0:01:19.651] } 18... Qh6+ { [%clk 0:01:18.739] } 0-1\n",
+ "opening": "Sicilian Sveshnikov",
+ "termination_text": "Illegal",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 41\u00b7Final",
+ "white_uuid": "60a6cc18-9fe5-4dbc-8c97-10f2906d7ea5",
+ "black_uuid": "407075b3-e5d4-4393-b06b-186b35541516",
+ "site_verdicts": [
+  [
+   "b5",
+   "good"
+  ],
+  [
+   "Nd5",
+   "best"
+  ],
+  [
+   "Nxe4",
+   "blunder"
+  ],
+  [
+   "Bb6",
+   "best"
+  ],
+  [
+   "Nxf2",
+   "inaccuracy"
+  ],
+  [
+   "Kxf2",
+   "best"
+  ],
+  [
+   "Qh4+",
+   "excellent"
+  ],
+  [
+   "g3",
+   "best"
+  ],
+  [
+   "Qe4",
+   "inaccuracy"
+  ],
+  [
+   "Nc7+",
+   "best"
+  ],
+  [
+   "Kd7",
+   "excellent"
+  ],
+  [
+   "Ne8",
+   "blunder"
+  ],
+  [
+   "Kxe8",
+   "good"
+  ],
+  [
+   "Bg2",
+   "best"
+  ],
+  [
+   "Qf5+",
+   "best"
+  ],
+  [
+   "Ke3",
+   "inaccuracy"
+  ],
+  [
+   "Bb7",
+   "best"
+  ],
+  [
+   "Rf1",
+   "excellent"
+  ],
+  [
+   "Qe6",
+   "inaccuracy"
+  ],
+  [
+   "Nb1",
+   "inaccuracy"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Son of Carl",
+    "accuracy": 54.9,
+    "acpl": 108,
+    "tally": {
+     "brilliant": 0,
+     "best": 6,
+     "excellent": 1,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "troy",
+    "accuracy": 79.6,
+    "acpl": 80,
+    "tally": {
+     "brilliant": 0,
+     "best": 2,
+     "excellent": 2,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 3,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   1,
+   23,
+   14,
+   314,
+   317,
+   427,
+   450,
+   434,
+   457,
+   578,
+   596,
+   583,
+   -284,
+   -240,
+   -227,
+   -203,
+   -276,
+   -289,
+   -290,
+   -216,
+   -346,
+   -158
+  ],
+  "best": [
+   "a8b8",
+   "c3d5",
+   "f6d5",
+   "e3b6",
+   "d8h4",
+   "e1f2",
+   "d8g5",
+   "g2g3",
+   "h4g5",
+   "d5c7",
+   "e8e7",
+   "f1d3",
+   "e4f5",
+   "f1g2",
+   "e4f5",
+   "d1f3",
+   "c8b7",
+   "c2c4",
+   "f5d7",
+   "c2c4",
+   "e5e4",
+   "e3f2"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:55:49Z"
+}

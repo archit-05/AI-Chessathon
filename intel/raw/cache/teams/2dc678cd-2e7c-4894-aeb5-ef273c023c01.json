@@ -2,10 +2,10 @@
  "uuid": "2dc678cd-2e7c-4894-aeb5-ef273c023c01",
  "bot": "Le StockFish",
  "team": "French Carlsen",
- "rating": 1922,
- "rank": 39,
- "record": "16-3-12",
- "rated_rounds": 41,
+ "rating": 1857,
+ "rank": 62,
+ "record": "18-7-15",
+ "rated_rounds": 50,
  "history": [
   [
    1,
@@ -170,9 +170,135 @@
   [
    41,
    1922
+  ],
+  [
+   42,
+   1916
+  ],
+  [
+   43,
+   1919
+  ],
+  [
+   44,
+   1870
+  ],
+  [
+   45,
+   1865
+  ],
+  [
+   46,
+   1945
+  ],
+  [
+   47,
+   1881
+  ],
+  [
+   48,
+   1890
+  ],
+  [
+   49,
+   1817
+  ],
+  [
+   50,
+   1857
   ]
  ],
  "games": [
+  {
+   "game": "dce4e525-2df7-4d13-870e-2531e28db7ee",
+   "kind": "Rated",
+   "round": 50,
+   "colour": "Black",
+   "opponent": "CheckmateGPT",
+   "opponent_uuid": "75c703fc-cfc9-40a6-b414-f6ec4cc93d83",
+   "verdict": "win",
+   "opening": "Italian Game"
+  },
+  {
+   "game": "7aa4d593-5811-4b7a-9db0-c3f314952932",
+   "kind": "Rated",
+   "round": 49,
+   "colour": "White",
+   "opponent": "Solo Man",
+   "opponent_uuid": "1324cfd4-b352-45e9-9224-44ee141ae158",
+   "verdict": "loss",
+   "opening": "Sicilian Dragon"
+  },
+  {
+   "game": "5be8cf01-c725-457e-a17f-eba70af0b57d",
+   "kind": "Rated",
+   "round": 48,
+   "colour": "Black",
+   "opponent": "The Queen Gambler",
+   "opponent_uuid": "6f72c571-bcbc-4f39-93b3-44dc293e7d4f",
+   "verdict": "draw",
+   "opening": "Slav Defence"
+  },
+  {
+   "game": "63bd1b4a-0fe1-4cbd-ac1e-54b9dc0ad80c",
+   "kind": "Rated",
+   "round": 47,
+   "colour": "White",
+   "opponent": "pgn",
+   "opponent_uuid": "8b738da9-e5bb-4122-89ce-0caf6466ba80",
+   "verdict": "loss",
+   "opening": "Caro-Kann Exchange"
+  },
+  {
+   "game": "0637e664-7cbf-401d-a4c1-a0b523130fd8",
+   "kind": "Rated",
+   "round": 46,
+   "colour": "Black",
+   "opponent": "The Archer",
+   "opponent_uuid": "e7fec099-817d-43b5-8981-8904b8038a22",
+   "verdict": "win",
+   "opening": "Sicilian Dragon"
+  },
+  {
+   "game": "e476f29c-190f-4d20-b79b-31b5ea9f1520",
+   "kind": "Rated",
+   "round": 45,
+   "colour": "Black",
+   "opponent": "MeshPotato",
+   "opponent_uuid": "2a6799a8-ccc7-45d6-a342-701ce3b923b6",
+   "verdict": "draw",
+   "opening": "Reti Opening"
+  },
+  {
+   "game": "99b23e34-9ad4-4b32-a281-ec714a7a2ff1",
+   "kind": "Rated",
+   "round": 44,
+   "colour": "White",
+   "opponent": "Neural Gambit",
+   "opponent_uuid": "2d7385e9-dffa-4216-aeca-dd844e18c7db",
+   "verdict": "loss",
+   "opening": "Sicilian Najdorf"
+  },
+  {
+   "game": "1198548e-9b14-4cba-9ed1-3b63c8a9a878",
+   "kind": "Rated",
+   "round": 43,
+   "colour": "White",
+   "opponent": "xx",
+   "opponent_uuid": "26689e56-c9e6-438a-93db-ca5b2c879dc6",
+   "verdict": "draw",
+   "opening": "Sicilian Sveshnikov"
+  },
+  {
+   "game": "26222712-9fba-4bd9-941c-9eefca1780ac",
+   "kind": "Rated",
+   "round": 42,
+   "colour": "Black",
+   "opponent": "Solo Man",
+   "opponent_uuid": "1324cfd4-b352-45e9-9224-44ee141ae158",
+   "verdict": "draw",
+   "opening": "Sicilian Closed"
+  },
   {
    "game": "3f2c4b98-c2ad-4bea-9742-76a49eb7e269",
    "kind": "Rated",
@@ -584,5 +710,5 @@
    "opening": "Ruy Lopez, Closed"
   }
  ],
- "fetched_at": "2026-09-06T18:11:14Z"
+ "fetched_at": "2026-09-07T12:10:16Z"
 }

@@ -1,0 +1,128 @@
+{
+ "game": "e4b35c29-59d7-4e9e-ab5e-c43f445d7fca",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"14\"]\n[White \"Magnus Force\"]\n[Black \"Team7347\"]\n[Result \"1-0\"]\n[FEN \"rnbqk2r/pp2ppbp/3p1np1/8/3NP3/2N1B3/PPP1BPPP/R2QK2R b KQkq - 3 7\"]\n[SetUp \"1\"]\n[Termination \"flag\"]\n\n7... Bd7 { [%clk 0:01:39.555] } 8. Rb1 { [%clk 0:01:59.498] } 8... O-O { [%clk 0:01:25.488] } 9. a3 { [%clk 0:01:58.995] } 9... Re8 { [%clk 0:01:15.308] } 10. a4 { [%clk 0:01:58.493] } 10... Rf8 { [%clk 0:01:07.753] } 11. a5 { [%clk 0:01:57.99] } 11... Qxa5 { [%clk 0:00:58.084] } 12. b4 { [%clk 0:01:57.489] } 12... Qc7 { [%clk 0:00:33.758] } 13. Na2 { [%clk 0:01:56.987] } 1-0\n",
+ "opening": "Sicilian Dragon",
+ "termination_text": "Flag",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 14\u00b7Final",
+ "white_uuid": "b7ee465f-39af-444e-8b74-6d6c268108ef",
+ "black_uuid": "1f20a852-ae0c-44f5-aed7-8be8a5e699b0",
+ "site_verdicts": [
+  [
+   "Bd7",
+   "good"
+  ],
+  [
+   "Rb1",
+   "good"
+  ],
+  [
+   "O-O",
+   "excellent"
+  ],
+  [
+   "a3",
+   "excellent"
+  ],
+  [
+   "Re8",
+   "excellent"
+  ],
+  [
+   "a4",
+   "excellent"
+  ],
+  [
+   "Rf8",
+   "good"
+  ],
+  [
+   "a5",
+   "inaccuracy"
+  ],
+  [
+   "Qxa5",
+   "best"
+  ],
+  [
+   "b4",
+   "good"
+  ],
+  [
+   "Qc7",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Magnus Five",
+    "accuracy": 83.0,
+    "acpl": 68,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 2,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Team7347",
+    "accuracy": 96.5,
+    "acpl": 12,
+    "tally": {
+     "brilliant": 0,
+     "best": 2,
+     "excellent": 2,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   24,
+   52,
+   4,
+   3,
+   -3,
+   1,
+   -13,
+   17,
+   -88,
+   -96,
+   -139,
+   -130,
+   -319
+  ],
+  "best": [
+   "b8c6",
+   "d1d2",
+   "b8c6",
+   "e1g1",
+   "b8c6",
+   "d1d2",
+   "b8c6",
+   "e1g1",
+   "d8a5",
+   "e1g1",
+   "a5c7",
+   "d1d2",
+   "d6d5"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:04:42Z"
+}

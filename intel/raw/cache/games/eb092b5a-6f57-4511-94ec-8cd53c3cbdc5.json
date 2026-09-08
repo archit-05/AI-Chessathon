@@ -1,0 +1,98 @@
+{
+ "game": "eb092b5a-6f57-4511-94ec-8cd53c3cbdc5",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"23\"]\n[White \"Too Down Bad\"]\n[Black \"Team7347\"]\n[Result \"1-0\"]\n[FEN \"r1bqkb1r/pp1n1ppp/2n1p3/2ppP3/3P1P2/2NB4/PPP3PP/R1BQK1NR w KQkq - 2 7\"]\n[SetUp \"1\"]\n[Termination \"flag\"]\n\n7. Nge2 { [%clk 0:02:00.499] } 7... cxd4 { [%clk 0:01:52.519] } 8. Rf1 { [%clk 0:02:00.996] } 8... dxc3 { [%clk 0:01:45.836] } 9. Rf3 { [%clk 0:02:01.494] } 9... cxb2 { [%clk 0:01:34.535] } 10. f5 { [%clk 0:02:01.993] } 1-0\n",
+ "opening": "French Classical",
+ "termination_text": "Flag",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 23\u00b7Final",
+ "white_uuid": "770e39da-5830-4656-9ec3-7f0c00ddf85a",
+ "black_uuid": "1f20a852-ae0c-44f5-aed7-8be8a5e699b0",
+ "site_verdicts": [
+  [
+   "Nge2",
+   "blunder"
+  ],
+  [
+   "cxd4",
+   "blunder"
+  ],
+  [
+   "Rf1",
+   "blunder"
+  ],
+  [
+   "dxc3",
+   "best"
+  ],
+  [
+   "Rf3",
+   "excellent"
+  ],
+  [
+   "cxb2",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Too Down Bad",
+    "accuracy": 50.7,
+    "acpl": 426,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 1,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 2
+    }
+   },
+   {
+    "name": "Team7347",
+    "accuracy": 83.2,
+    "acpl": 87,
+    "tally": {
+     "brilliant": 0,
+     "best": 2,
+     "excellent": 0,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -11,
+   -321,
+   -101,
+   -537,
+   -518,
+   -565,
+   -543,
+   -1454
+  ],
+  "best": [
+   "g1f3",
+   "c5c4",
+   "c3b5",
+   "d4c3",
+   "e2c3",
+   "c3b2",
+   "c1b2",
+   "b2a1q"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:04:33Z"
+}

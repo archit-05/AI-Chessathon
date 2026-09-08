@@ -1,0 +1,200 @@
+{
+ "game": "41ee7560-6c3b-4247-8c54-472596fcd029",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"25\"]\n[White \"yung money\"]\n[Black \"LARPMAXX\"]\n[Result \"0-1\"]\n[FEN \"rnbqk2r/ppp2ppp/3b4/8/3Pp3/5N2/PPP2PPP/R1BQKB1R w KQkq - 0 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8. Bb5+ { [%clk 0:01:58.75] } 8... c6 { [%clk 0:01:55.561] } 9. Bxc6+ { [%clk 0:01:57.616] } 9... Nxc6 { [%clk 0:01:51.295] } 10. Nd2 { [%clk 0:01:56.569] } 10... O-O { [%clk 0:01:47.196] } 11. Nxe4 { [%clk 0:01:55.369] } 11... Re8 { [%clk 0:01:43.257] } 12. Qd3 { [%clk 0:01:54.235] } 12... Qh4 { [%clk 0:01:39.786] } 13. g4 { [%clk 0:01:53.131] } 13... Nb4 { [%clk 0:01:36.137] } 14. Qe2 { [%clk 0:01:51.921] } 14... Bxg4 { [%clk 0:01:32.639] } 15. c3 { [%clk 0:01:50.661] } 15... Bxe2 { [%clk 0:01:29.268] } 16. Nxd6 { [%clk 0:01:49.542] } 16... Bf3+ { [%clk 0:01:29.248] } 17. Nxe8 { [%clk 0:01:48.456] } 17... Nd3+ { [%clk 0:01:29.743] } 18. Kd2 { [%clk 0:01:47.285] } 18... Qxf2+ { [%clk 0:01:30.239] } 19. Kxd3 { [%clk 0:01:46.275] } 19... Qe2# { [%clk 0:01:30.736] } 0-1\n",
+ "opening": "Petroff Defence",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 25\u00b7Final",
+ "white_uuid": "0a01484c-ab06-4051-a634-4766c8d09c24",
+ "black_uuid": "faa7dc92-3d5d-4190-8e78-39ccbe4dddb9",
+ "site_verdicts": [
+  [
+   "Bb5+",
+   "blunder"
+  ],
+  [
+   "c6",
+   "best"
+  ],
+  [
+   "Bxc6+",
+   "good"
+  ],
+  [
+   "Nxc6",
+   "best"
+  ],
+  [
+   "Nd2",
+   "excellent"
+  ],
+  [
+   "O-O",
+   "excellent"
+  ],
+  [
+   "Nxe4",
+   "excellent"
+  ],
+  [
+   "Re8",
+   "best"
+  ],
+  [
+   "Qd3",
+   "good"
+  ],
+  [
+   "Qh4",
+   "best"
+  ],
+  [
+   "g4",
+   "good"
+  ],
+  [
+   "Nb4",
+   "best"
+  ],
+  [
+   "Qe2",
+   "best"
+  ],
+  [
+   "Bxg4",
+   "best"
+  ],
+  [
+   "c3",
+   "good"
+  ],
+  [
+   "Bxe2",
+   "best"
+  ],
+  [
+   "Nxd6",
+   "inaccuracy"
+  ],
+  [
+   "Bf3+",
+   "best"
+  ],
+  [
+   "Nxe8",
+   "excellent"
+  ],
+  [
+   "Nd3+",
+   "best"
+  ],
+  [
+   "Kd2",
+   "best"
+  ],
+  [
+   "Qxf2+",
+   "best"
+  ],
+  [
+   "Kxd3",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "nicki minaj",
+    "accuracy": 85.7,
+    "acpl": 196,
+    "tally": {
+     "brilliant": 0,
+     "best": 2,
+     "excellent": 3,
+     "good": 4,
+     "forced": 1,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "Blundermaster",
+    "accuracy": 100.0,
+    "acpl": 0,
+    "tally": {
+     "brilliant": 0,
+     "best": 11,
+     "excellent": 1,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -27,
+   -386,
+   -390,
+   -483,
+   -482,
+   -508,
+   -508,
+   -532,
+   -543,
+   -648,
+   -646,
+   -788,
+   -822,
+   -861,
+   -899,
+   -1461,
+   -1536,
+   -9996,
+   -9997,
+   -9997,
+   -9998,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "f3g5",
+   "c7c6",
+   "b5c4",
+   "b8c6",
+   "f3g5",
+   "e4e3",
+   "e1g1",
+   "f8e8",
+   "f2f3",
+   "d8h4",
+   "c1e3",
+   "c6b4",
+   "d3e2",
+   "c8g4",
+   "c1g5",
+   "g4e2",
+   "c1e3",
+   "e2f3",
+   "d6e4",
+   "b4d3",
+   "e1d2",
+   "h4f2",
+   "d2d3",
+   "f2e2",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:46:08Z"
+}

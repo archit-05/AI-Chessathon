@@ -1,0 +1,242 @@
+{
+ "game": "d2c09899-0be3-44f7-998f-1020010f2866",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"3\"]\n[White \"Greedy Material\"]\n[Black \"noob\"]\n[Result \"0-1\"]\n[FEN \"r1bqk2r/pp1pppbp/2n2np1/2p5/2P5/2N2NPP/PP1PPPB1/R1BQK2R b KQkq - 0 6\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n6... e5 { [%clk 0:01:55.312] } 7. Nxe5 { [%clk 0:02:00.498] } 7... Nxe5 { [%clk 0:01:50.814] } 8. Bxb7 { [%clk 0:02:00.995] } 8... Bxb7 { [%clk 0:01:46.493] } 9. Qc2 { [%clk 0:02:01.492] } 9... Bxh1 { [%clk 0:01:42.351] } 10. Qxg6 { [%clk 0:02:01.99] } 10... hxg6 { [%clk 0:01:38.369] } 11. d3 { [%clk 0:02:02.488] } 11... Rxh3 { [%clk 0:01:34.548] } 12. Nd1 { [%clk 0:02:02.986] } 12... Bc6 { [%clk 0:01:30.882] } 13. f4 { [%clk 0:02:03.484] } 13... Neg4 { [%clk 0:01:27.362] } 14. Rb1 { [%clk 0:02:03.982] } 14... Rxg3 { [%clk 0:01:23.976] } 15. d4 { [%clk 0:02:04.48] } 15... Qa5+ { [%clk 0:01:20.732] } 16. b4 { [%clk 0:02:04.978] } 16... Rg1+ { [%clk 0:01:17.618] } 17. Kd2 { [%clk 0:02:05.476] } 17... Ne4+ { [%clk 0:01:14.626] } 18. Kc2 { [%clk 0:02:05.975] } 18... Qxa2+ { [%clk 0:01:11.754] } 19. Bb2 { [%clk 0:02:06.472] } 19... Qa4+ { [%clk 0:01:12.234] } 20. Kd3 { [%clk 0:02:06.971] } 20... Rxd1+ { [%clk 0:01:12.724] } 21. Rxd1 { [%clk 0:02:07.468] } 21... Qxd1# { [%clk 0:01:13.21] } 0-1\n",
+ "opening": "English Symmetrical",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 3\u00b7Final",
+ "white_uuid": "d9a19162-7480-4e54-bcd6-e2176df533fd",
+ "black_uuid": "ca128304-e1a1-45f0-9b74-6e192fcd9bd9",
+ "site_verdicts": [
+  [
+   "e5",
+   "good"
+  ],
+  [
+   "Nxe5",
+   "blunder"
+  ],
+  [
+   "Nxe5",
+   "best"
+  ],
+  [
+   "Bxb7",
+   "blunder"
+  ],
+  [
+   "Bxb7",
+   "best"
+  ],
+  [
+   "Qc2",
+   "good"
+  ],
+  [
+   "Bxh1",
+   "best"
+  ],
+  [
+   "Qxg6",
+   "good"
+  ],
+  [
+   "hxg6",
+   "best"
+  ],
+  [
+   "d3",
+   "excellent"
+  ],
+  [
+   "Rxh3",
+   "excellent"
+  ],
+  [
+   "Nd1",
+   "excellent"
+  ],
+  [
+   "Bc6",
+   "best"
+  ],
+  [
+   "f4",
+   "excellent"
+  ],
+  [
+   "Neg4",
+   "excellent"
+  ],
+  [
+   "Rb1",
+   "inaccuracy"
+  ],
+  [
+   "Rxg3",
+   "miss"
+  ],
+  [
+   "d4",
+   "inaccuracy"
+  ],
+  [
+   "Qa5+",
+   "best"
+  ],
+  [
+   "b4",
+   "best"
+  ],
+  [
+   "Rg1+",
+   "best"
+  ],
+  [
+   "Kd2",
+   "forced"
+  ],
+  [
+   "Ne4+",
+   "excellent"
+  ],
+  [
+   "Kc2",
+   "best"
+  ],
+  [
+   "Qxa2+",
+   "best"
+  ],
+  [
+   "Bb2",
+   "excellent"
+  ],
+  [
+   "Qa4+",
+   "excellent"
+  ],
+  [
+   "Kd3",
+   "best"
+  ],
+  [
+   "Rxd1+",
+   "best"
+  ],
+  [
+   "Rxd1",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Greedy Material",
+    "accuracy": 88.6,
+    "acpl": 300,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 4,
+     "good": 2,
+     "forced": 2,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 2
+    }
+   },
+   {
+    "name": "noob",
+    "accuracy": 99.1,
+    "acpl": 132,
+    "tally": {
+     "brilliant": 0,
+     "best": 10,
+     "excellent": 4,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 1,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -25,
+   18,
+   -261,
+   -257,
+   -737,
+   -692,
+   -844,
+   -861,
+   -1276,
+   -1275,
+   -1274,
+   -1262,
+   -1440,
+   -1429,
+   -3382,
+   -1601,
+   -9991,
+   -1551,
+   -9991,
+   -9992,
+   -9992,
+   -9993,
+   -9993,
+   -9994,
+   -9994,
+   -9995,
+   -9998,
+   -9998,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "d7d5",
+   "d2d3",
+   "c6e5",
+   "d2d4",
+   "c8b7",
+   "e1g1",
+   "b7h1",
+   "d2d3",
+   "h7g6",
+   "h3h4",
+   "d8b6",
+   "c1f4",
+   "h1c6",
+   "d1c3",
+   "d8a5",
+   "d1e3",
+   "d8a5",
+   "d1e3",
+   "d8a5",
+   "b2b4",
+   "g3g1",
+   "e1d2",
+   "a5a2",
+   "d2c2",
+   "a5a2",
+   "b1b2",
+   "c6a4",
+   "c2d3",
+   "g1d1",
+   "b1d1",
+   "a4d1",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:09:15Z"
+}

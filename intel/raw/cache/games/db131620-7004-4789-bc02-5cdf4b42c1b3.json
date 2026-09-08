@@ -1,0 +1,200 @@
+{
+ "game": "db131620-7004-4789-bc02-5cdf4b42c1b3",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"26\"]\n[White \"Sweat\"]\n[Black \"HAL9000\"]\n[Result \"0-1\"]\n[FEN \"rnbqk2r/pp2bppp/3pp3/3nP3/2BP4/5N2/PP3PPP/RNBQK2R w KQkq - 1 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8. Qa4+ { [%clk 0:01:56.508] } 8... Nc6 { [%clk 0:01:58.525] } 9. exd6 { [%clk 0:01:53.134] } 9... Bxd6 { [%clk 0:01:56.435] } 10. Bxd5 { [%clk 0:01:49.871] } 10... exd5 { [%clk 0:01:53.041] } 11. Bg5 { [%clk 0:01:46.718] } 11... f6 { [%clk 0:01:51.603] } 12. Bxf6 { [%clk 0:01:43.669] } 12... Qxf6 { [%clk 0:01:50.022] } 13. Kd1 { [%clk 0:01:40.723] } 13... O-O { [%clk 0:01:48.612] } 14. Qc2 { [%clk 0:01:37.874] } 14... Bh3 { [%clk 0:01:47.25] } 15. gxh3 { [%clk 0:01:35.121] } 15... Qxf3+ { [%clk 0:01:44.501] } 16. Kd2 { [%clk 0:01:32.459] } 16... Bf4+ { [%clk 0:01:42.85] } 17. Ke1 { [%clk 0:01:32.958] } 17... Rfe8+ { [%clk 0:01:41.104] } 18. Qe4 { [%clk 0:01:30.369] } 18... Rxe4+ { [%clk 0:01:39.921] } 19. Kf1 { [%clk 0:01:30.868] } 19... Qxh1# { [%clk 0:01:38.238] } 0-1\n",
+ "opening": "Sicilian Alapin",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 26\u00b7Final",
+ "white_uuid": "6c401207-8252-4616-80c0-59592315f309",
+ "black_uuid": "d5a49e55-5b7b-4794-9c4b-40fc286d6e35",
+ "site_verdicts": [
+  [
+   "Qa4+",
+   "good"
+  ],
+  [
+   "Nc6",
+   "best"
+  ],
+  [
+   "exd6",
+   "good"
+  ],
+  [
+   "Bxd6",
+   "excellent"
+  ],
+  [
+   "Bxd5",
+   "good"
+  ],
+  [
+   "exd5",
+   "best"
+  ],
+  [
+   "Bg5",
+   "good"
+  ],
+  [
+   "f6",
+   "excellent"
+  ],
+  [
+   "Bxf6",
+   "blunder"
+  ],
+  [
+   "Qxf6",
+   "best"
+  ],
+  [
+   "Kd1",
+   "good"
+  ],
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "Qc2",
+   "good"
+  ],
+  [
+   "Bh3",
+   "excellent"
+  ],
+  [
+   "gxh3",
+   "inaccuracy"
+  ],
+  [
+   "Qxf3+",
+   "best"
+  ],
+  [
+   "Kd2",
+   "inaccuracy"
+  ],
+  [
+   "Bf4+",
+   "best"
+  ],
+  [
+   "Ke1",
+   "forced"
+  ],
+  [
+   "Rfe8+",
+   "excellent"
+  ],
+  [
+   "Qe4",
+   "best"
+  ],
+  [
+   "Rxe4+",
+   "best"
+  ],
+  [
+   "Kf1",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "botlobby",
+    "accuracy": 83.5,
+    "acpl": 188,
+    "tally": {
+     "brilliant": 0,
+     "best": 1,
+     "excellent": 0,
+     "good": 6,
+     "forced": 2,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "HAL9000",
+    "accuracy": 99.1,
+    "acpl": 5,
+    "tally": {
+     "brilliant": 0,
+     "best": 8,
+     "excellent": 4,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   18,
+   -27,
+   -24,
+   -53,
+   -46,
+   -98,
+   -78,
+   -129,
+   -110,
+   -491,
+   -515,
+   -646,
+   -637,
+   -717,
+   -718,
+   -1207,
+   -1262,
+   -9996,
+   -9997,
+   -9997,
+   -9998,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "e1g1",
+   "b8c6",
+   "e1g1",
+   "d8d6",
+   "e1g1",
+   "e6d5",
+   "e1g1",
+   "d8b6",
+   "g5d2",
+   "d8f6",
+   "e1g1",
+   "e8g8",
+   "b1d2",
+   "c6b4",
+   "f3e1",
+   "f6f3",
+   "c2e2",
+   "d6f4",
+   "d2e1",
+   "a8e8",
+   "c2e4",
+   "e8e4",
+   "e1f1",
+   "f3h1",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:19:09Z"
+}

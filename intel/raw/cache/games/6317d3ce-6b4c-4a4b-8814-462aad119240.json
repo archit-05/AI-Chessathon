@@ -1,0 +1,242 @@
+{
+ "game": "6317d3ce-6b4c-4a4b-8814-462aad119240",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"15\"]\n[White \"2sigbros\"]\n[Black \"Checkers\"]\n[Result \"0-1\"]\n[FEN \"r2q1rk1/pppnppbp/3p1npB/8/3PP1b1/2N2N2/PPPQBPPP/R3K2R b KQ - 9 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8... Bxh6 { [%clk 0:01:56.121] } 9. Qxh6 { [%clk 0:01:56.454] } 9... e5 { [%clk 0:01:52.377] } 10. O-O-O { [%clk 0:01:53.067] } 10... exd4 { [%clk 0:01:48.696] } 11. Rxd4 { [%clk 0:01:49.769] } 11... Qe7 { [%clk 0:01:45.122] } 12. Nd5 { [%clk 0:01:46.588] } 12... Nxd5 { [%clk 0:01:41.662] } 13. Rxd5 { [%clk 0:01:43.505] } 13... Qxe4 { [%clk 0:01:38.384] } 14. Rd2 { [%clk 0:01:40.512] } 14... Bxf3 { [%clk 0:01:35.216] } 15. Bxf3 { [%clk 0:01:37.654] } 15... Qb4 { [%clk 0:01:32.163] } 16. Qg5 { [%clk 0:01:34.869] } 16... Ne5 { [%clk 0:01:29.19] } 17. Qg3 { [%clk 0:01:32.192] } 17... Nc4 { [%clk 0:01:26.335] } 18. c3 { [%clk 0:01:29.583] } 18... Qb6 { [%clk 0:01:23.565] } 19. Re2 { [%clk 0:01:27.056] } 19... Rfe8 { [%clk 0:01:20.842] } 20. Rhe1 { [%clk 0:01:24.62] } 20... Re5 { [%clk 0:01:18.219] } 21. Be4 { [%clk 0:01:22.258] } 21... Rxe4 { [%clk 0:01:15.733] } 22. Rxe4 { [%clk 0:01:19.984] } 22... Qxb2+ { [%clk 0:01:16.026] } 23. Kd1 { [%clk 0:01:20.481] } 23... Qd2# { [%clk 0:01:16.521] } 0-1\n",
+ "opening": "Pirc Defence",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 15\u00b7Final",
+ "white_uuid": "5b500243-9807-4747-a843-5bf3facea567",
+ "black_uuid": "54548efb-c055-4a52-b471-7611bf0f7d9e",
+ "site_verdicts": [
+  [
+   "Bxh6",
+   "excellent"
+  ],
+  [
+   "Qxh6",
+   "best"
+  ],
+  [
+   "e5",
+   "best"
+  ],
+  [
+   "O-O-O",
+   "good"
+  ],
+  [
+   "exd4",
+   "inaccuracy"
+  ],
+  [
+   "Rxd4",
+   "good"
+  ],
+  [
+   "Qe7",
+   "excellent"
+  ],
+  [
+   "Nd5",
+   "inaccuracy"
+  ],
+  [
+   "Nxd5",
+   "best"
+  ],
+  [
+   "Rxd5",
+   "good"
+  ],
+  [
+   "Qxe4",
+   "mistake"
+  ],
+  [
+   "Rd2",
+   "blunder"
+  ],
+  [
+   "Bxf3",
+   "best"
+  ],
+  [
+   "Bxf3",
+   "best"
+  ],
+  [
+   "Qb4",
+   "blunder"
+  ],
+  [
+   "Qg5",
+   "blunder"
+  ],
+  [
+   "Ne5",
+   "good"
+  ],
+  [
+   "Qg3",
+   "blunder"
+  ],
+  [
+   "Nc4",
+   "best"
+  ],
+  [
+   "c3",
+   "best"
+  ],
+  [
+   "Qb6",
+   "blunder"
+  ],
+  [
+   "Re2",
+   "good"
+  ],
+  [
+   "Rfe8",
+   "inaccuracy"
+  ],
+  [
+   "Rhe1",
+   "good"
+  ],
+  [
+   "Re5",
+   "good"
+  ],
+  [
+   "Be4",
+   "blunder"
+  ],
+  [
+   "Rxe4",
+   "best"
+  ],
+  [
+   "Rxe4",
+   "blunder"
+  ],
+  [
+   "Qxb2+",
+   "best"
+  ],
+  [
+   "Kd1",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "citytrek",
+    "accuracy": 69.7,
+    "acpl": 159,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 0,
+     "good": 5,
+     "forced": 1,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 5
+    }
+   },
+   {
+    "name": "Tic-Tac-Toe",
+    "accuracy": 82.6,
+    "acpl": 53,
+    "tally": {
+     "brilliant": 0,
+     "best": 7,
+     "excellent": 2,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 2
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   39,
+   45,
+   62,
+   63,
+   39,
+   117,
+   72,
+   58,
+   -27,
+   -29,
+   -68,
+   75,
+   -105,
+   -113,
+   -125,
+   78,
+   -124,
+   -91,
+   -390,
+   -415,
+   -417,
+   -141,
+   -184,
+   -125,
+   -175,
+   -121,
+   -519,
+   -533,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "e7e5",
+   "d2h6",
+   "e7e5",
+   "d4e5",
+   "f8e8",
+   "f3d4",
+   "f8e8",
+   "f3g1",
+   "f6d5",
+   "e4d5",
+   "d7f6",
+   "f3g5",
+   "g4f3",
+   "e2f3",
+   "e4e6",
+   "h2h4",
+   "a8e8",
+   "f3d5",
+   "e5c4",
+   "c2c3",
+   "b4a5",
+   "d2c2",
+   "b6a5",
+   "b2b3",
+   "e8e2",
+   "b2b3",
+   "e5e4",
+   "b2b3",
+   "b6b2",
+   "c1d1",
+   "b2d2",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:39:31Z"
+}

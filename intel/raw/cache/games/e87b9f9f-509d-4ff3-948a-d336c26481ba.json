@@ -1,0 +1,200 @@
+{
+ "game": "e87b9f9f-509d-4ff3-948a-d336c26481ba",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.07\"]\n[Round \"51\"]\n[White \"Makina\"]\n[Black \"OnlyBlunder\"]\n[Result \"1/2-1/2\"]\n[FEN \"r1bq1rk1/2p1bppp/p1np1n2/1p2p3/4P3/PB1P1N2/1PP2PPP/RNBQR1K1 b - - 0 9\"]\n[SetUp \"1\"]\n[Termination \"threefold_repetition\"]\n\n9... Bg4 { [%clk 0:01:59.052] } 10. c3 { [%clk 0:01:56.405] } 10... Qd7 { [%clk 0:01:56.147] } 11. a4 { [%clk 0:01:53.771] } 11... d5 { [%clk 0:01:53.586] } 12. exd5 { [%clk 0:01:49.845] } 12... Nxd5 { [%clk 0:01:52.202] } 13. h3 { [%clk 0:01:45.191] } 13... Bxf3 { [%clk 0:01:51.048] } 14. Qxf3 { [%clk 0:01:41.327] } 14... Rad8 { [%clk 0:01:48.547] } 15. axb5 { [%clk 0:01:39.715] } 15... axb5 { [%clk 0:01:45.799] } 16. Ra6 { [%clk 0:01:37.278] } 16... Nb6 { [%clk 0:01:44.333] } 17. Be3 { [%clk 0:01:34.703] } 17... Qc8 { [%clk 0:01:43.243] } 18. Ra2 { [%clk 0:01:32.387] } 18... Qd7 { [%clk 0:01:42.045] } 19. Ra6 { [%clk 0:01:28.389] } 19... Qc8 { [%clk 0:01:40.548] } 20. Ra2 { [%clk 0:01:25.996] } 20... Qd7 { [%clk 0:01:39.383] } 21. Ra6 { [%clk 0:01:21.374] } 1/2-1/2\n",
+ "opening": "Ruy Lopez, Closed",
+ "termination_text": "Threefold repetition",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 51\u00b7Final",
+ "white_uuid": "ddefd09c-dcc6-4bb7-915c-77e5b91a495e",
+ "black_uuid": "72e19bc4-a390-4dbd-9df8-04c55e39bf7b",
+ "site_verdicts": [
+  [
+   "Bg4",
+   "good"
+  ],
+  [
+   "c3",
+   "best"
+  ],
+  [
+   "Qd7",
+   "good"
+  ],
+  [
+   "a4",
+   "inaccuracy"
+  ],
+  [
+   "d5",
+   "excellent"
+  ],
+  [
+   "exd5",
+   "excellent"
+  ],
+  [
+   "Nxd5",
+   "best"
+  ],
+  [
+   "h3",
+   "best"
+  ],
+  [
+   "Bxf3",
+   "inaccuracy"
+  ],
+  [
+   "Qxf3",
+   "best"
+  ],
+  [
+   "Rad8",
+   "best"
+  ],
+  [
+   "axb5",
+   "best"
+  ],
+  [
+   "axb5",
+   "best"
+  ],
+  [
+   "Ra6",
+   "excellent"
+  ],
+  [
+   "Nb6",
+   "excellent"
+  ],
+  [
+   "Be3",
+   "best"
+  ],
+  [
+   "Qc8",
+   "good"
+  ],
+  [
+   "Ra2",
+   "excellent"
+  ],
+  [
+   "Qd7",
+   "best"
+  ],
+  [
+   "Ra6",
+   "excellent"
+  ],
+  [
+   "Qc8",
+   "excellent"
+  ],
+  [
+   "Ra2",
+   "excellent"
+  ],
+  [
+   "Qd7",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Kingo Disco",
+    "accuracy": 92.3,
+    "acpl": 20,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 5,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Generational Comeback",
+    "accuracy": 93.8,
+    "acpl": 19,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 3,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   15,
+   39,
+   26,
+   61,
+   6,
+   21,
+   18,
+   27,
+   9,
+   78,
+   67,
+   71,
+   70,
+   88,
+   73,
+   74,
+   60,
+   88,
+   71,
+   69,
+   65,
+   77,
+   68,
+   78,
+   0
+  ],
+  "best": [
+   "c8e6",
+   "c2c3",
+   "c6a5",
+   "b1d2",
+   "c6a5",
+   "b1d2",
+   "f6d5",
+   "h2h3",
+   "g4h5",
+   "d1f3",
+   "a8d8",
+   "a4b5",
+   "a6b5",
+   "b1d2",
+   "c6b8",
+   "c1e3",
+   "b5b4",
+   "a6a1",
+   "c8d7",
+   "b1d2",
+   "b5b4",
+   "a6a1",
+   "c8d7",
+   "b1d2",
+   "d7c8"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:42:53Z"
+}

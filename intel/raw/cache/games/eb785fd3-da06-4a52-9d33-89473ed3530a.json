@@ -1,0 +1,242 @@
+{
+ "game": "eb785fd3-da06-4a52-9d33-89473ed3530a",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"22\"]\n[White \"murmp\"]\n[Black \"TrojanKnight\"]\n[Result \"1-0\"]\n[FEN \"r1b2rk1/pp3ppp/2nqpn2/2pp4/3P4/2P1PN2/PP1NBPPP/R2QK2R w KQ - 2 9\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n9. O-O { [%clk 0:01:57.647] } 9... b5 { [%clk 0:01:52.892] } 10. Bxb5 { [%clk 0:01:55.353] } 10... Nh5 { [%clk 0:01:46.45] } 11. Bxc6 { [%clk 0:01:53.117] } 11... Ba6 { [%clk 0:01:42.564] } 12. Bxa8 { [%clk 0:01:50.936] } 12... Nf4 { [%clk 0:01:37.678] } 13. c4 { [%clk 0:01:48.81] } 13... Ne2+ { [%clk 0:01:33.668] } 14. Qxe2 { [%clk 0:01:46.737] } 14... Qxh2+ { [%clk 0:01:28.578] } 15. Kxh2 { [%clk 0:01:44.716] } 15... e5 { [%clk 0:01:26.656] } 16. Bxd5 { [%clk 0:01:42.746] } 16... exd4 { [%clk 0:01:25.676] } 17. exd4 { [%clk 0:01:40.824] } 17... cxd4 { [%clk 0:01:25.253] } 18. Nxd4 { [%clk 0:01:38.95] } 18... Ra8 { [%clk 0:01:24.082] } 19. Bxa8 { [%clk 0:01:37.123] } 19... h5 { [%clk 0:01:23.558] } 20. Qe8+ { [%clk 0:01:36.39] } 20... Kh7 { [%clk 0:01:24.009] } 21. Be4+ { [%clk 0:01:36.606] } 21... Kh6 { [%clk 0:01:24.353] } 22. Qh8+ { [%clk 0:01:37.087] } 22... Kg5 { [%clk 0:01:24.766] } 23. Qxg7+ { [%clk 0:01:37.568] } 23... Kh4 { [%clk 0:01:25.187] } 24. g3# { [%clk 0:01:38.066] } 1-0\n",
+ "opening": "London System",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 22\u00b7Final",
+ "white_uuid": "91ae103d-c7db-4551-9de1-ee32f77a44ca",
+ "black_uuid": "c5e818b1-9cab-4a6c-9ca4-bcb9ac455128",
+ "site_verdicts": [
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "b5",
+   "mistake"
+  ],
+  [
+   "Bxb5",
+   "best"
+  ],
+  [
+   "Nh5",
+   "blunder"
+  ],
+  [
+   "Bxc6",
+   "best"
+  ],
+  [
+   "Ba6",
+   "inaccuracy"
+  ],
+  [
+   "Bxa8",
+   "best"
+  ],
+  [
+   "Nf4",
+   "good"
+  ],
+  [
+   "c4",
+   "excellent"
+  ],
+  [
+   "Ne2+",
+   "excellent"
+  ],
+  [
+   "Qxe2",
+   "best"
+  ],
+  [
+   "Qxh2+",
+   "good"
+  ],
+  [
+   "Kxh2",
+   "best"
+  ],
+  [
+   "e5",
+   "excellent"
+  ],
+  [
+   "Bxd5",
+   "best"
+  ],
+  [
+   "exd4",
+   "excellent"
+  ],
+  [
+   "exd4",
+   "best"
+  ],
+  [
+   "cxd4",
+   "best"
+  ],
+  [
+   "Nxd4",
+   "excellent"
+  ],
+  [
+   "Ra8",
+   "inaccuracy"
+  ],
+  [
+   "Bxa8",
+   "best"
+  ],
+  [
+   "h5",
+   "excellent"
+  ],
+  [
+   "Qe8+",
+   "best"
+  ],
+  [
+   "Kh7",
+   "forced"
+  ],
+  [
+   "Be4+",
+   "best"
+  ],
+  [
+   "Kh6",
+   "excellent"
+  ],
+  [
+   "Qh8+",
+   "excellent"
+  ],
+  [
+   "Kg5",
+   "forced"
+  ],
+  [
+   "Qxg7+",
+   "best"
+  ],
+  [
+   "Kh4",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "murmp-bot",
+    "accuracy": 99.7,
+    "acpl": 4,
+    "tally": {
+     "brilliant": 0,
+     "best": 13,
+     "excellent": 3,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "TK-Bravo2",
+    "accuracy": 89.6,
+    "acpl": 167,
+    "tally": {
+     "brilliant": 0,
+     "best": 1,
+     "excellent": 6,
+     "good": 2,
+     "forced": 2,
+     "inaccuracy": 2,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -6,
+   0,
+   132,
+   139,
+   434,
+   450,
+   621,
+   630,
+   738,
+   682,
+   724,
+   729,
+   1078,
+   1102,
+   1424,
+   1435,
+   1499,
+   1582,
+   1598,
+   1632,
+   9987,
+   9989,
+   9995,
+   9996,
+   9996,
+   9997,
+   9997,
+   9998,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "e1g1",
+   "e6e5",
+   "e2b5",
+   "c8d7",
+   "b5c6",
+   "d6c6",
+   "c6a8",
+   "a6f1",
+   "d4c5",
+   "f8a8",
+   "d1e2",
+   "f8a8",
+   "g1h2",
+   "f8a8",
+   "a8d5",
+   "a6c8",
+   "e3d4",
+   "c5d4",
+   "e2e7",
+   "g7g6",
+   "d5a8",
+   "g7g6",
+   "e2e8",
+   "g8h7",
+   "a8e4",
+   "g7g6",
+   "e8f7",
+   "h6g5",
+   "h8g7",
+   "g5f4",
+   "g2g3",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:57:44Z"
+}

@@ -1,0 +1,218 @@
+{
+ "game": "8486a3fe-b7a4-4daf-86ce-7abb18145298",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"27\"]\n[White \"Ultimate32\"]\n[Black \"corundum.ai\"]\n[Result \"*\"]\n[FEN \"r1bqk1nr/pp2ppbp/2np2p1/2p5/P3P3/2NP2P1/1PP2PBP/R1BQK1NR b KQkq - 0 6\"]\n[SetUp \"1\"]\n[Termination \"unterminated\"]\n\n6... Nh6 { [%clk 0:02:00.498] } 7. Nge2 { [%clk 0:01:56.182] } 7... Rg8 { [%clk 0:02:00.996] } 8. O-O { [%clk 0:01:51.078] } 8... Rh8 { [%clk 0:02:01.494] } 9. Nd5 { [%clk 0:01:47.419] } 9... Rg8 { [%clk 0:02:01.992] } 10. Nec3 { [%clk 0:01:39.658] } 10... Rh8 { [%clk 0:02:02.491] } 11. Ne2 { [%clk 0:01:32.188] } 11... Rg8 { [%clk 0:02:02.989] } 12. h3 { [%clk 0:01:25.009] } 12... Rh8 { [%clk 0:02:03.487] } 13. Kh2 { [%clk 0:01:22.67] } 13... Rg8 { [%clk 0:02:03.985] } 14. Re1 { [%clk 0:01:17.017] } 14... Rh8 { [%clk 0:02:04.483] } 15. Rb1 { [%clk 0:01:13.721] } 15... Rg8 { [%clk 0:02:04.98] } 16. Bg5 { [%clk 0:01:10.054] } 16... Rh8 { [%clk 0:02:05.478] } 17. Nef4 { [%clk 0:01:05.938] } 17... Rg8 { [%clk 0:02:05.976] } 18. Ne2 { [%clk 0:00:59.115] } 18... Rh8 { [%clk 0:02:06.474] } 19. Nef4 { [%clk 0:00:52.665] } 19... Rg8 { [%clk 0:02:06.972] } *\n",
+ "opening": "Sicilian Closed",
+ "termination_text": "Unterminated",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 27\u00b7Void",
+ "white_uuid": "f1e66ae9-1a41-4ae4-af06-1db3d854e88b",
+ "black_uuid": "e3b6706d-d6a7-43d4-ba84-3db44ebe66b0",
+ "site_verdicts": [
+  [
+   "Nh6",
+   "good"
+  ],
+  [
+   "Nge2",
+   "best"
+  ],
+  [
+   "Rg8",
+   "inaccuracy"
+  ],
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "Rh8",
+   "best"
+  ],
+  [
+   "Nd5",
+   "best"
+  ],
+  [
+   "Rg8",
+   "good"
+  ],
+  [
+   "Nec3",
+   "good"
+  ],
+  [
+   "Rh8",
+   "best"
+  ],
+  [
+   "Ne2",
+   "excellent"
+  ],
+  [
+   "Rg8",
+   "good"
+  ],
+  [
+   "h3",
+   "excellent"
+  ],
+  [
+   "Rh8",
+   "best"
+  ],
+  [
+   "Kh2",
+   "good"
+  ],
+  [
+   "Rg8",
+   "good"
+  ],
+  [
+   "Re1",
+   "excellent"
+  ],
+  [
+   "Rh8",
+   "best"
+  ],
+  [
+   "Rb1",
+   "good"
+  ],
+  [
+   "Rg8",
+   "inaccuracy"
+  ],
+  [
+   "Bg5",
+   "good"
+  ],
+  [
+   "Rh8",
+   "good"
+  ],
+  [
+   "Nef4",
+   "mistake"
+  ],
+  [
+   "Rg8",
+   "inaccuracy"
+  ],
+  [
+   "Ne2",
+   "best"
+  ],
+  [
+   "Rh8",
+   "excellent"
+  ],
+  [
+   "Nef4",
+   "blunder"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "THE KNOOK",
+    "accuracy": 83.8,
+    "acpl": 42,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 3,
+     "good": 4,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "muffin",
+    "accuracy": 82.9,
+    "acpl": 50,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 1,
+     "good": 5,
+     "forced": 0,
+     "inaccuracy": 3,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -4,
+   25,
+   17,
+   108,
+   112,
+   117,
+   118,
+   160,
+   122,
+   128,
+   133,
+   168,
+   160,
+   168,
+   129,
+   176,
+   171,
+   180,
+   155,
+   257,
+   199,
+   228,
+   92,
+   198,
+   225,
+   226,
+   0,
+   186
+  ],
+  "best": [
+   "a8b8",
+   "g1e2",
+   "e8g8",
+   "e1g1",
+   "g8h8",
+   "c3d5",
+   "h6g8",
+   "c2c3",
+   "g8h8",
+   "c3b5",
+   "h6g8",
+   "c2c3",
+   "g8h8",
+   "c2c3",
+   "b7b6",
+   "c2c3",
+   "g8h8",
+   "c2c3",
+   "e7e6",
+   "c2c3",
+   "f7f6",
+   "c2c3",
+   "f7f6",
+   "f4e2",
+   "f7f6",
+   "c2c3",
+   "h6g8",
+   "b2b4"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:59:46Z"
+}

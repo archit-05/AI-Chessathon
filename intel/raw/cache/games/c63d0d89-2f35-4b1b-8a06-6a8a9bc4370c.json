@@ -1,0 +1,236 @@
+{
+ "game": "c63d0d89-2f35-4b1b-8a06-6a8a9bc4370c",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.06\"]\n[Round \"36\"]\n[White \"while True: win()\"]\n[Black \"Blitz\"]\n[Result \"1-0\"]\n[FEN \"r1bqk1nr/pp2ppbp/2np2p1/2p5/4P3/2NPB1P1/PPP2PBP/R2QK1NR b KQkq - 1 6\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n6... Qb6 { [%clk 0:01:57.072] } 7. Rb1 { [%clk 0:01:55.303] } 7... Bxc3+ { [%clk 0:01:54.117] } 8. bxc3 { [%clk 0:01:51.394] } 8... Qa5 { [%clk 0:01:51.107] } 9. h4 { [%clk 0:01:47.485] } 9... Nf6 { [%clk 0:01:48.132] } 10. h5 { [%clk 0:01:43.571] } 10... gxh5 { [%clk 0:01:45.134] } 11. Bg5 { [%clk 0:01:39.733] } 11... Qxc3+ { [%clk 0:01:42.092] } 12. Bd2 { [%clk 0:01:35.849] } 12... Qa3 { [%clk 0:01:39.056] } 13. Nf3 { [%clk 0:01:32.327] } 13... Qxa2 { [%clk 0:01:36.133] } 14. O-O { [%clk 0:01:28.945] } 14... e5 { [%clk 0:01:33.094] } 15. Nh4 { [%clk 0:01:25.694] } 15... O-O { [%clk 0:01:30.049] } 16. Bh6 { [%clk 0:01:22.578] } 16... Re8 { [%clk 0:01:27.131] } 17. Qd2 { [%clk 0:01:19.587] } 17... Nxe4 { [%clk 0:01:24.156] } 18. dxe4 { [%clk 0:01:16.715] } 18... Kh8 { [%clk 0:01:21.094] } 19. Qg5 { [%clk 0:01:13.958] } 19... Rg8 { [%clk 0:01:18.17] } 20. Qf6+ { [%clk 0:01:11.31] } 20... Rg7 { [%clk 0:01:18.669] } 21. Qxg7# { [%clk 0:01:08.77] } 1-0\n",
+ "opening": "Sicilian Closed",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 36\u00b7Final",
+ "white_uuid": "0065d170-1082-42d7-a4a3-af54b0df2019",
+ "black_uuid": "7a6d3886-a870-4efe-a04f-1c38e695851e",
+ "site_verdicts": [
+  [
+   "Qb6",
+   "good"
+  ],
+  [
+   "Rb1",
+   "best"
+  ],
+  [
+   "Bxc3+",
+   "mistake"
+  ],
+  [
+   "bxc3",
+   "best"
+  ],
+  [
+   "Qa5",
+   "best"
+  ],
+  [
+   "h4",
+   "mistake"
+  ],
+  [
+   "Nf6",
+   "inaccuracy"
+  ],
+  [
+   "h5",
+   "inaccuracy"
+  ],
+  [
+   "gxh5",
+   "inaccuracy"
+  ],
+  [
+   "Bg5",
+   "inaccuracy"
+  ],
+  [
+   "Qxc3+",
+   "best"
+  ],
+  [
+   "Bd2",
+   "inaccuracy"
+  ],
+  [
+   "Qa3",
+   "best"
+  ],
+  [
+   "Nf3",
+   "good"
+  ],
+  [
+   "Qxa2",
+   "excellent"
+  ],
+  [
+   "O-O",
+   "good"
+  ],
+  [
+   "e5",
+   "inaccuracy"
+  ],
+  [
+   "Nh4",
+   "best"
+  ],
+  [
+   "O-O",
+   "mistake"
+  ],
+  [
+   "Bh6",
+   "excellent"
+  ],
+  [
+   "Re8",
+   "blunder"
+  ],
+  [
+   "Qd2",
+   "best"
+  ],
+  [
+   "Nxe4",
+   "best"
+  ],
+  [
+   "dxe4",
+   "best"
+  ],
+  [
+   "Kh8",
+   "blunder"
+  ],
+  [
+   "Qg5",
+   "best"
+  ],
+  [
+   "Rg8",
+   "best"
+  ],
+  [
+   "Qf6+",
+   "best"
+  ],
+  [
+   "Rg7",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Dr. Drunkenstein",
+    "accuracy": 84.8,
+    "acpl": 39,
+    "tally": {
+     "brilliant": 0,
+     "best": 8,
+     "excellent": 1,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 3,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Blitz",
+    "accuracy": 76.9,
+    "acpl": 132,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 1,
+     "good": 1,
+     "forced": 1,
+     "inaccuracy": 3,
+     "mistake": 2,
+     "miss": 0,
+     "blunder": 2
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -15,
+   24,
+   22,
+   139,
+   138,
+   147,
+   -4,
+   66,
+   -34,
+   70,
+   -8,
+   0,
+   -98,
+   -85,
+   -115,
+   -104,
+   -129,
+   -41,
+   -60,
+   98,
+   77,
+   445,
+   407,
+   409,
+   383,
+   9997,
+   9998,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "a8b8",
+   "a1b1",
+   "b6d8",
+   "b2c3",
+   "b6a5",
+   "g1e2",
+   "a5c3",
+   "g1e2",
+   "f6h5",
+   "g1e2",
+   "a5c3",
+   "d1d2",
+   "c3a3",
+   "g1e2",
+   "a8b8",
+   "b1a1",
+   "h8g8",
+   "f3h4",
+   "h8g8",
+   "d2g5",
+   "f6g4",
+   "d1d2",
+   "f6e4",
+   "d3e4",
+   "f7f6",
+   "d2g5",
+   "e8g8",
+   "g5f6",
+   "g8g7",
+   "f6g7",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:59:12Z"
+}

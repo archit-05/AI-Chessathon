@@ -1,0 +1,260 @@
+{
+ "game": "4b2423d5-27a3-47dc-865e-b6c606b39fb7",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.07\"]\n[Round \"50\"]\n[White \"Rook and Roll\"]\n[Black \"corundum.ai\"]\n[Result \"1-0\"]\n[FEN \"r1bqkb1r/pp2pppp/2n2n2/3p2B1/3P4/2PB4/PP3PPP/RN1QK1NR b KQkq - 2 6\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n6... Bg4 { [%clk 0:01:56.491] } 7. Ne2 { [%clk 0:01:57.375] } 7... Ne4 { [%clk 0:01:52.989] } 8. Be3 { [%clk 0:01:54.833] } 8... Qb6 { [%clk 0:01:49.487] } 9. Nd2 { [%clk 0:01:52.345] } 9... Qxb2 { [%clk 0:01:45.985] } 10. Rb1 { [%clk 0:01:49.823] } 10... Bxe2 { [%clk 0:01:42.483] } 11. Qxe2 { [%clk 0:01:47.317] } 11... Qxc3 { [%clk 0:01:38.981] } 12. Bxe4 { [%clk 0:01:44.704] } 12... dxe4 { [%clk 0:01:35.475] } 13. d5 { [%clk 0:01:41.962] } 13... Na5 { [%clk 0:01:31.974] } 14. Qb5+ { [%clk 0:01:39.301] } 14... Kd8 { [%clk 0:01:28.472] } 15. O-O { [%clk 0:01:36.723] } 15... f5 { [%clk 0:01:24.971] } 16. Rfc1 { [%clk 0:01:34.197] } 16... Qa3 { [%clk 0:01:21.469] } 17. Bxa7 { [%clk 0:01:31.809] } 17... Nc4 { [%clk 0:01:17.967] } 18. Rxc4 { [%clk 0:01:29.402] } 18... Qxa7 { [%clk 0:01:14.565] } 19. Kh1 { [%clk 0:01:26.842] } 19... Qxf2 { [%clk 0:01:11.336] } 20. Qxb7 { [%clk 0:01:24.263] } 20... Qxd2 { [%clk 0:01:08.268] } 21. Qxa8+ { [%clk 0:01:24.724] } 21... Kd7 { [%clk 0:01:05.354] } 22. Qc6+ { [%clk 0:01:25.215] } 22... Kd8 { [%clk 0:01:02.585] } 23. Rb8# { [%clk 0:01:25.705] } 1-0\n",
+ "opening": "Caro-Kann Exchange",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 50\u00b7Final",
+ "white_uuid": "0cb1906b-efb8-4735-a788-3423ca705065",
+ "black_uuid": "e3b6706d-d6a7-43d4-ba84-3db44ebe66b0",
+ "site_verdicts": [
+  [
+   "Bg4",
+   "excellent"
+  ],
+  [
+   "Ne2",
+   "best"
+  ],
+  [
+   "Ne4",
+   "good"
+  ],
+  [
+   "Be3",
+   "excellent"
+  ],
+  [
+   "Qb6",
+   "blunder"
+  ],
+  [
+   "Nd2",
+   "blunder"
+  ],
+  [
+   "Qxb2",
+   "inaccuracy"
+  ],
+  [
+   "Rb1",
+   "best"
+  ],
+  [
+   "Bxe2",
+   "good"
+  ],
+  [
+   "Qxe2",
+   "best"
+  ],
+  [
+   "Qxc3",
+   "best"
+  ],
+  [
+   "Bxe4",
+   "good"
+  ],
+  [
+   "dxe4",
+   "best"
+  ],
+  [
+   "d5",
+   "best"
+  ],
+  [
+   "Na5",
+   "blunder"
+  ],
+  [
+   "Qb5+",
+   "best"
+  ],
+  [
+   "Kd8",
+   "best"
+  ],
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "f5",
+   "mistake"
+  ],
+  [
+   "Rfc1",
+   "best"
+  ],
+  [
+   "Qa3",
+   "inaccuracy"
+  ],
+  [
+   "Bxa7",
+   "inaccuracy"
+  ],
+  [
+   "Nc4",
+   "inaccuracy"
+  ],
+  [
+   "Rxc4",
+   "blunder"
+  ],
+  [
+   "Qxa7",
+   "best"
+  ],
+  [
+   "Kh1",
+   "blunder"
+  ],
+  [
+   "Qxf2",
+   "blunder"
+  ],
+  [
+   "Qxb7",
+   "best"
+  ],
+  [
+   "Qxd2",
+   "mistake"
+  ],
+  [
+   "Qxa8+",
+   "best"
+  ],
+  [
+   "Kd7",
+   "forced"
+  ],
+  [
+   "Qc6+",
+   "excellent"
+  ],
+  [
+   "Kd8",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Rook and Roll",
+    "accuracy": 81.5,
+    "acpl": 151,
+    "tally": {
+     "brilliant": 0,
+     "best": 10,
+     "excellent": 2,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 3
+    }
+   },
+   {
+    "name": "muffin",
+    "accuracy": 72.4,
+    "acpl": 275,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 1,
+     "good": 2,
+     "forced": 2,
+     "inaccuracy": 3,
+     "mistake": 2,
+     "miss": 0,
+     "blunder": 3
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -12,
+   -14,
+   -9,
+   38,
+   34,
+   265,
+   65,
+   177,
+   189,
+   231,
+   263,
+   216,
+   190,
+   249,
+   179,
+   411,
+   407,
+   410,
+   402,
+   700,
+   677,
+   1716,
+   702,
+   2161,
+   298,
+   417,
+   178,
+   704,
+   795,
+   9997,
+   9998,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "d8b6",
+   "g1e2",
+   "e7e6",
+   "d3e4",
+   "e4d6",
+   "d3e4",
+   "e4f6",
+   "a1b1",
+   "b2a3",
+   "d1e2",
+   "b2c3",
+   "e1g1",
+   "d5e4",
+   "d4d5",
+   "c6d4",
+   "e2b5",
+   "e8d8",
+   "e1g1",
+   "b7b6",
+   "f1c1",
+   "c3f6",
+   "e3f4",
+   "e7e6",
+   "d2c4",
+   "a3a7",
+   "d5d6",
+   "a7a6",
+   "b5b7",
+   "f2a7",
+   "b7a8",
+   "d8d7",
+   "a8c8",
+   "d7d8",
+   "b1b8",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:57:49Z"
+}

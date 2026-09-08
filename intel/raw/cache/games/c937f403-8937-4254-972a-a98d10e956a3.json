@@ -1,0 +1,59 @@
+{
+ "game": "c937f403-8937-4254-972a-a98d10e956a3",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"20\"]\n[White \"Kirkification\"]\n[Black \"The Good Team\"]\n[Result \"1-0\"]\n[FEN \"r1bq1rk1/pp3ppp/2nbpn2/1Bpp4/3P1B2/2P1P2N/PP1N1PPP/R2QK2R w KQ - 4 8\"]\n[SetUp \"1\"]\n[Termination \"init\"]\n\n1-0\n",
+ "opening": "London System",
+ "termination_text": "Init",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 20\u00b7Final",
+ "white_uuid": "ea5d87d0-f5b2-435e-b524-e6292de6cebb",
+ "black_uuid": "7e5a9874-6b65-41c5-b80f-7be47d1f84b5",
+ "site_verdicts": [],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "IMakeBlunderSometimes",
+    "accuracy": 0.0,
+    "acpl": 0,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 0,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "The Good Bot",
+    "accuracy": 0.0,
+    "acpl": 0,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 0,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -18
+  ],
+  "best": [
+   "d2f3"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:14:21Z"
+}

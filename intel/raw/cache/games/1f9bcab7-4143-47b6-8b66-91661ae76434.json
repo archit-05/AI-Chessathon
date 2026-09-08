@@ -1,0 +1,242 @@
+{
+ "game": "1f9bcab7-4143-47b6-8b66-91661ae76434",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.06\"]\n[Round \"45\"]\n[White \"Columbia Trader\"]\n[Black \"e=mc^2\"]\n[Result \"0-1\"]\n[FEN \"rnbqk2r/ppp1bppp/4pn2/3p4/2P5/5NP1/PPQPPPBP/RNB1K2R b KQkq - 4 5\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n5... Nc6 { [%clk 0:01:55.915] } 6. d4 { [%clk 0:01:55.398] } 6... O-O { [%clk 0:01:51.227] } 7. Nbd2 { [%clk 0:01:50.981] } 7... dxc4 { [%clk 0:01:42.743] } 8. Qxc4 { [%clk 0:01:46.74] } 8... a6 { [%clk 0:01:39.72] } 9. e4 { [%clk 0:01:42.669] } 9... Ng4 { [%clk 0:01:34.194] } 10. O-O { [%clk 0:01:38.761] } 10... Bf6 { [%clk 0:01:28.201] } 11. h3 { [%clk 0:01:35.009] } 11... Bxd4 { [%clk 0:01:23.794] } 12. Nxd4 { [%clk 0:01:31.407] } 12... Nxd4 { [%clk 0:01:22.065] } 13. hxg4 { [%clk 0:01:27.95] } 13... e5 { [%clk 0:01:15.572] } 14. Bf3 { [%clk 0:01:24.63] } 14... h5 { [%clk 0:01:13.478] } 15. gxh5 { [%clk 0:01:21.444] } 15... Qf6 { [%clk 0:01:11.845] } 16. Bg2 { [%clk 0:01:18.385] } 16... Bg4 { [%clk 0:01:05.728] } 17. Qxc7 { [%clk 0:01:15.448] } 17... Qg5 { [%clk 0:01:02.668] } 18. Nc4 { [%clk 0:01:12.629] } 18... Ne2+ { [%clk 0:01:03.162] } 19. Kh2 { [%clk 0:01:09.922] } 19... Qxh5+ { [%clk 0:01:03.659] } 20. Bh3 { [%clk 0:01:10.421] } 20... Qxh3# { [%clk 0:01:04.157] } 0-1\n",
+ "opening": "Reti Opening",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 45\u00b7Final",
+ "white_uuid": "304ddb9d-4871-480e-a93c-4005a5feadf4",
+ "black_uuid": "3f2c6106-702b-4a60-8eb5-5f5fe3886d0a",
+ "site_verdicts": [
+  [
+   "Nc6",
+   "good"
+  ],
+  [
+   "d4",
+   "best"
+  ],
+  [
+   "O-O",
+   "good"
+  ],
+  [
+   "Nbd2",
+   "good"
+  ],
+  [
+   "dxc4",
+   "excellent"
+  ],
+  [
+   "Qxc4",
+   "best"
+  ],
+  [
+   "a6",
+   "good"
+  ],
+  [
+   "e4",
+   "good"
+  ],
+  [
+   "Ng4",
+   "inaccuracy"
+  ],
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "Bf6",
+   "mistake"
+  ],
+  [
+   "h3",
+   "best"
+  ],
+  [
+   "Bxd4",
+   "inaccuracy"
+  ],
+  [
+   "Nxd4",
+   "excellent"
+  ],
+  [
+   "Nxd4",
+   "best"
+  ],
+  [
+   "hxg4",
+   "best"
+  ],
+  [
+   "e5",
+   "best"
+  ],
+  [
+   "Bf3",
+   "inaccuracy"
+  ],
+  [
+   "h5",
+   "inaccuracy"
+  ],
+  [
+   "gxh5",
+   "best"
+  ],
+  [
+   "Qf6",
+   "excellent"
+  ],
+  [
+   "Bg2",
+   "inaccuracy"
+  ],
+  [
+   "Bg4",
+   "inaccuracy"
+  ],
+  [
+   "Qxc7",
+   "blunder"
+  ],
+  [
+   "Qg5",
+   "blunder"
+  ],
+  [
+   "Nc4",
+   "blunder"
+  ],
+  [
+   "Ne2+",
+   "best"
+  ],
+  [
+   "Kh2",
+   "excellent"
+  ],
+  [
+   "Qxh5+",
+   "best"
+  ],
+  [
+   "Bh3",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "TheGambler",
+    "accuracy": 53.6,
+    "acpl": 111,
+    "tally": {
+     "brilliant": 0,
+     "best": 6,
+     "excellent": 2,
+     "good": 2,
+     "forced": 1,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 2
+    }
+   },
+   {
+    "name": "biggestbrilliant",
+    "accuracy": 83.7,
+    "acpl": 50,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 2,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 4,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -3,
+   22,
+   17,
+   39,
+   15,
+   33,
+   18,
+   50,
+   6,
+   112,
+   107,
+   227,
+   218,
+   348,
+   354,
+   332,
+   326,
+   329,
+   240,
+   317,
+   333,
+   333,
+   229,
+   330,
+   -34,
+   139,
+   -9997,
+   -9998,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "d5d4",
+   "d2d4",
+   "c6b4",
+   "e1g1",
+   "a7a5",
+   "c2c4",
+   "d8d6",
+   "a2a3",
+   "a6a5",
+   "e1g1",
+   "c8d7",
+   "h2h3",
+   "g4h6",
+   "h3g4",
+   "c6d4",
+   "h3g4",
+   "e6e5",
+   "d2f3",
+   "c8e6",
+   "g4h5",
+   "c8e6",
+   "c4c3",
+   "f8d8",
+   "f2f3",
+   "a8c8",
+   "d2f3",
+   "d4e2",
+   "g1h1",
+   "g5h5",
+   "g2h3",
+   "h5h3",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:36:09Z"
+}

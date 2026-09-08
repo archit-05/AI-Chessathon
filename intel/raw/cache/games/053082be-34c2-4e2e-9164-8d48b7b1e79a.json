@@ -1,0 +1,134 @@
+{
+ "game": "053082be-34c2-4e2e-9164-8d48b7b1e79a",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.06\"]\n[Round \"40\"]\n[White \"CrimsonBot\"]\n[Black \"Blitz\"]\n[Result \"1/2-1/2\"]\n[FEN \"r1bqk2r/pp2npbp/2np2p1/2p1p3/4P3/2NP2PP/PPP1NPB1/R1BQ1RK1 b kq - 3 8\"]\n[SetUp \"1\"]\n[Termination \"threefold_repetition\"]\n\n8... O-O { [%clk 0:01:56.907] } 9. Kh2 { [%clk 0:01:54.511] } 9... Be6 { [%clk 0:01:53.828] } 10. Be3 { [%clk 0:01:49.297] } 10... Qb6 { [%clk 0:01:50.776] } 11. Rb1 { [%clk 0:01:44.343] } 11... Qa5 { [%clk 0:01:47.806] } 12. Ra1 { [%clk 0:01:39.637] } 12... Qb6 { [%clk 0:01:44.834] } 13. Rb1 { [%clk 0:01:35.166] } 13... Qa5 { [%clk 0:01:41.898] } 14. Ra1 { [%clk 0:01:30.919] } 14... Qb6 { [%clk 0:01:38.877] } 1/2-1/2\n",
+ "opening": "Sicilian Closed",
+ "termination_text": "Threefold repetition",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 40\u00b7Final",
+ "white_uuid": "48257c20-4323-4972-a086-037fed7be7b2",
+ "black_uuid": "7a6d3886-a870-4efe-a04f-1c38e695851e",
+ "site_verdicts": [
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "Kh2",
+   "best"
+  ],
+  [
+   "Be6",
+   "good"
+  ],
+  [
+   "Be3",
+   "good"
+  ],
+  [
+   "Qb6",
+   "good"
+  ],
+  [
+   "Rb1",
+   "good"
+  ],
+  [
+   "Qa5",
+   "good"
+  ],
+  [
+   "Ra1",
+   "good"
+  ],
+  [
+   "Qb6",
+   "excellent"
+  ],
+  [
+   "Rb1",
+   "excellent"
+  ],
+  [
+   "Qa5",
+   "good"
+  ],
+  [
+   "Ra1",
+   "good"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "CrimsonBot",
+    "accuracy": 89.9,
+    "acpl": 28,
+    "tally": {
+     "brilliant": 0,
+     "best": 1,
+     "excellent": 1,
+     "good": 4,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Blitz",
+    "accuracy": 89.1,
+    "acpl": 28,
+    "tally": {
+     "brilliant": 0,
+     "best": 1,
+     "excellent": 2,
+     "good": 4,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -27,
+   -26,
+   -31,
+   1,
+   -27,
+   25,
+   -10,
+   20,
+   -18,
+   0,
+   -9,
+   31,
+   -20,
+   0
+  ],
+  "best": [
+   "e8g8",
+   "g1h2",
+   "f7f5",
+   "c3d5",
+   "c6d4",
+   "c3d5",
+   "c6d4",
+   "c3d5",
+   "c6d4",
+   "c3d5",
+   "c6d4",
+   "c3d5",
+   "c6d4",
+   "a1b1"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:56:21Z"
+}

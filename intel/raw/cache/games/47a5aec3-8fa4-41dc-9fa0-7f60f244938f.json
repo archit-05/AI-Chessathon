@@ -1,0 +1,188 @@
+{
+ "game": "47a5aec3-8fa4-41dc-9fa0-7f60f244938f",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"7\"]\n[White \"Blitz\"]\n[Black \"Greedy Material\"]\n[Result \"1-0\"]\n[FEN \"rn1qkb1r/pp3ppp/2p1p3/3n1b2/P1BP1B2/2N1PN2/1P3PPP/R2QK2R b KQkq - 0 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8... Nxf4 { [%clk 0:02:00.497] } 9. exf4 { [%clk 0:01:57.053] } 9... Qxd4 { [%clk 0:02:00.995] } 10. Nxd4 { [%clk 0:01:54.132] } 10... Bc5 { [%clk 0:02:01.493] } 11. Nxf5 { [%clk 0:01:51.223] } 11... exf5 { [%clk 0:02:01.987] } 12. Qb3 { [%clk 0:01:48.298] } 12... Bxf2+ { [%clk 0:02:02.484] } 13. Kxf2 { [%clk 0:01:45.291] } 13... Nd7 { [%clk 0:02:02.981] } 14. Qxb7 { [%clk 0:01:42.358] } 14... Rd8 { [%clk 0:02:03.479] } 15. Rad1 { [%clk 0:01:39.406] } 15... Rg8 { [%clk 0:02:03.976] } 16. Qxa7 { [%clk 0:01:36.471] } 16... Rh8 { [%clk 0:02:04.474] } 17. Qc7 { [%clk 0:01:33.522] } 17... Ra8 { [%clk 0:02:04.972] } 18. Qxd7+ { [%clk 0:01:34.011] } 18... Kf8 { [%clk 0:02:05.47] } 19. Qxf7# { [%clk 0:01:34.498] } 1-0\n",
+ "opening": "Slav Defence",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 7\u00b7Final",
+ "white_uuid": "7a6d3886-a870-4efe-a04f-1c38e695851e",
+ "black_uuid": "d9a19162-7480-4e54-bcd6-e2176df533fd",
+ "site_verdicts": [
+  [
+   "Nxf4",
+   "best"
+  ],
+  [
+   "exf4",
+   "best"
+  ],
+  [
+   "Qxd4",
+   "blunder"
+  ],
+  [
+   "Nxd4",
+   "best"
+  ],
+  [
+   "Bc5",
+   "excellent"
+  ],
+  [
+   "Nxf5",
+   "best"
+  ],
+  [
+   "exf5",
+   "excellent"
+  ],
+  [
+   "Qb3",
+   "excellent"
+  ],
+  [
+   "Bxf2+",
+   "good"
+  ],
+  [
+   "Kxf2",
+   "best"
+  ],
+  [
+   "Nd7",
+   "excellent"
+  ],
+  [
+   "Qxb7",
+   "excellent"
+  ],
+  [
+   "Rd8",
+   "good"
+  ],
+  [
+   "Rad1",
+   "excellent"
+  ],
+  [
+   "Rg8",
+   "inaccuracy"
+  ],
+  [
+   "Qxa7",
+   "miss"
+  ],
+  [
+   "Rh8",
+   "inaccuracy"
+  ],
+  [
+   "Qc7",
+   "excellent"
+  ],
+  [
+   "Ra8",
+   "excellent"
+  ],
+  [
+   "Qxd7+",
+   "best"
+  ],
+  [
+   "Kf8",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Blitz",
+    "accuracy": 98.0,
+    "acpl": 169,
+    "tally": {
+     "brilliant": 0,
+     "best": 6,
+     "excellent": 4,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 1,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Greedy Material",
+    "accuracy": 74.8,
+    "acpl": 356,
+    "tally": {
+     "brilliant": 0,
+     "best": 1,
+     "excellent": 4,
+     "good": 2,
+     "forced": 1,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -30,
+   -25,
+   -30,
+   800,
+   802,
+   915,
+   907,
+   902,
+   811,
+   966,
+   971,
+   1306,
+   998,
+   1480,
+   1032,
+   9996,
+   1510,
+   9996,
+   9997,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "d5f4",
+   "e3f4",
+   "f8b4",
+   "f3d4",
+   "b8d7",
+   "d4f5",
+   "e8g8",
+   "d1e2",
+   "e8g8",
+   "e1f2",
+   "e8g8",
+   "h1e1",
+   "e8g8",
+   "h1e1",
+   "e8g8",
+   "h1e1",
+   "g7g5",
+   "d1d7",
+   "g7g6",
+   "c7d7",
+   "e8f8",
+   "d7f7",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:56:47Z"
+}

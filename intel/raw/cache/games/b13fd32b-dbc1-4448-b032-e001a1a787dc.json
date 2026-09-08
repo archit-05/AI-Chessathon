@@ -1,0 +1,116 @@
+{
+ "game": "b13fd32b-dbc1-4448-b032-e001a1a787dc",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"17\"]\n[White \"The Huxley Knights\"]\n[Black \"darKnight\"]\n[Result \"*\"]\n[FEN \"r3kbnr/pp1b1ppp/1qn1p3/3pP3/3P4/5N1P/PP2BPP1/RNBQK2R b KQkq - 0 8\"]\n[SetUp \"1\"]\n[Termination \"unterminated\"]\n\n8... Nge7 { [%clk 0:01:55.435] } 9. Nc3 { [%clk 0:01:57.487] } 9... Nf5 { [%clk 0:01:51.231] } 10. Na4 { [%clk 0:01:54.64] } 10... Qa5+ { [%clk 0:01:47.238] } 11. Nc3 { [%clk 0:01:51.216] } 11... Qb6 { [%clk 0:01:42.812] } 12. Na4 { [%clk 0:01:47.898] } 12... Qa5+ { [%clk 0:01:39.033] } 13. Nc3 { [%clk 0:01:44.684] } *\n",
+ "opening": "French Advance",
+ "termination_text": "Unterminated",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 17\u00b7Void",
+ "white_uuid": "7a719310-f164-4237-a6bc-28943dd7cb12",
+ "black_uuid": "29aebabe-6a5b-45e5-9d1e-36c706cde3b4",
+ "site_verdicts": [
+  [
+   "Nge7",
+   "excellent"
+  ],
+  [
+   "Nc3",
+   "best"
+  ],
+  [
+   "Nf5",
+   "best"
+  ],
+  [
+   "Na4",
+   "best"
+  ],
+  [
+   "Qa5+",
+   "best"
+  ],
+  [
+   "Nc3",
+   "best"
+  ],
+  [
+   "Qb6",
+   "best"
+  ],
+  [
+   "Na4",
+   "best"
+  ],
+  [
+   "Qa5+",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Clore Bot VII",
+    "accuracy": 100.0,
+    "acpl": 0,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 0,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Oyinda",
+    "accuracy": 100.0,
+    "acpl": 0,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 1,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "best": [
+   "g8h6",
+   "b1c3",
+   "e7f5",
+   "c3a4",
+   "b6a5",
+   "a4c3",
+   "a5b6",
+   "c3a4",
+   "b6a5",
+   "a4c3",
+   "a5b6"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:16:06Z"
+}

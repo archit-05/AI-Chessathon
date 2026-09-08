@@ -1,0 +1,236 @@
+{
+ "game": "e129562c-f9da-4024-ac00-cdabfadbd3a7",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"23\"]\n[White \"f1shstock\"]\n[Black \"OatMilk\"]\n[Result \"1-0\"]\n[FEN \"r1bqk2r/pp1pppbp/2n2np1/2p5/2P5/2N2NPP/PP1PPPB1/R1BQK2R b KQkq - 0 6\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n6... e5 { [%clk 0:01:42.492] } 7. g4 { [%clk 0:01:58.295] } 7... O-O { [%clk 0:01:22.614] } 8. d3 { [%clk 0:01:51.718] } 8... d6 { [%clk 0:01:16.26] } 9. Qb3 { [%clk 0:01:50.282] } 9... Nd4 { [%clk 0:01:12.7] } 10. Nxd4 { [%clk 0:01:47.007] } 10... cxd4 { [%clk 0:00:58.377] } 11. Ne4 { [%clk 0:01:40.655] } 11... Nxe4 { [%clk 0:00:55.687] } 12. Bxe4 { [%clk 0:01:35.756] } 12... h5 { [%clk 0:00:44.583] } 13. gxh5 { [%clk 0:01:31.101] } 13... gxh5 { [%clk 0:00:41.058] } 14. Rg1 { [%clk 0:01:28.191] } 14... Bxh3 { [%clk 0:00:37.452] } 15. Qxb7 { [%clk 0:01:25.207] } 15... Qa5+ { [%clk 0:00:31.716] } 16. Bd2 { [%clk 0:01:24.382] } 16... Qa4 { [%clk 0:00:25.074] } 17. Qe7 { [%clk 0:01:14.855] } 17... Rad8 { [%clk 0:00:22.585] } 18. Rxg7+ { [%clk 0:01:15.009] } 18... Kxg7 { [%clk 0:00:22.763] } 19. Qg5+ { [%clk 0:01:15.477] } 19... Kh8 { [%clk 0:00:23.261] } 20. Qh6+ { [%clk 0:01:15.956] } 20... Kg8 { [%clk 0:00:23.76] } 21. Qh7# { [%clk 0:01:16.445] } 1-0\n",
+ "opening": "English Symmetrical",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 23\u00b7Final",
+ "white_uuid": "01f0d0bc-6daa-4420-92ec-af01e724deb4",
+ "black_uuid": "14064084-720f-4dba-8764-9b3f77784d40",
+ "site_verdicts": [
+  [
+   "e5",
+   "good"
+  ],
+  [
+   "g4",
+   "good"
+  ],
+  [
+   "O-O",
+   "good"
+  ],
+  [
+   "d3",
+   "best"
+  ],
+  [
+   "d6",
+   "best"
+  ],
+  [
+   "Qb3",
+   "inaccuracy"
+  ],
+  [
+   "Nd4",
+   "excellent"
+  ],
+  [
+   "Nxd4",
+   "good"
+  ],
+  [
+   "cxd4",
+   "inaccuracy"
+  ],
+  [
+   "Ne4",
+   "good"
+  ],
+  [
+   "Nxe4",
+   "best"
+  ],
+  [
+   "Bxe4",
+   "best"
+  ],
+  [
+   "h5",
+   "blunder"
+  ],
+  [
+   "gxh5",
+   "best"
+  ],
+  [
+   "gxh5",
+   "good"
+  ],
+  [
+   "Rg1",
+   "best"
+  ],
+  [
+   "Bxh3",
+   "best"
+  ],
+  [
+   "Qxb7",
+   "best"
+  ],
+  [
+   "Qa5+",
+   "blunder"
+  ],
+  [
+   "Bd2",
+   "best"
+  ],
+  [
+   "Qa4",
+   "good"
+  ],
+  [
+   "Qe7",
+   "best"
+  ],
+  [
+   "Rad8",
+   "blunder"
+  ],
+  [
+   "Rxg7+",
+   "best"
+  ],
+  [
+   "Kxg7",
+   "best"
+  ],
+  [
+   "Qg5+",
+   "best"
+  ],
+  [
+   "Kh8",
+   "forced"
+  ],
+  [
+   "Qh6+",
+   "best"
+  ],
+  [
+   "Kg8",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "fishy",
+    "accuracy": 96.4,
+    "acpl": 15,
+    "tally": {
+     "brilliant": 0,
+     "best": 11,
+     "excellent": 0,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "OatMilk",
+    "accuracy": 81.7,
+    "acpl": 119,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 1,
+     "good": 4,
+     "forced": 2,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 3
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -22,
+   29,
+   -17,
+   26,
+   26,
+   20,
+   -41,
+   -50,
+   -90,
+   -27,
+   -49,
+   -57,
+   -57,
+   136,
+   157,
+   218,
+   221,
+   247,
+   220,
+   465,
+   450,
+   553,
+   539,
+   9996,
+   9997,
+   9997,
+   9998,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "d7d5",
+   "d2d3",
+   "h7h6",
+   "d2d3",
+   "d7d6",
+   "c1g5",
+   "a8b8",
+   "b3d1",
+   "e5d4",
+   "c3d5",
+   "f6e4",
+   "g2e4",
+   "a8b8",
+   "g4h5",
+   "c8e6",
+   "h1g1",
+   "c8h3",
+   "b3b7",
+   "a8b8",
+   "c1d2",
+   "a5b6",
+   "b7e7",
+   "h3g4",
+   "g1g7",
+   "g8g7",
+   "e7g5",
+   "g7h8",
+   "g5h6",
+   "h8g8",
+   "h6h7",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:05:04Z"
+}

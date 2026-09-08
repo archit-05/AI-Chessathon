@@ -1,0 +1,218 @@
+{
+ "game": "eeb68887-6fbf-4540-855a-bfa36f354928",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.06\"]\n[Round \"34\"]\n[White \"YouU-AreR\"]\n[Black \"0x88\"]\n[Result \"1-0\"]\n[FEN \"r1bq1rk1/pp3ppp/2nbpn2/1Bpp4/3P1B2/2P1P2N/PP1N1PPP/R2QK2R w KQ - 4 8\"]\n[SetUp \"1\"]\n[Termination \"illegal\"]\n\n8. Qf3 { [%clk 0:01:57.777] } 8... e5 { [%clk 0:01:57.107] } 9. Bg5 { [%clk 0:01:55.84] } 9... e4 { [%clk 0:01:55.267] } 10. Qe2 { [%clk 0:01:51.844] } 10... Bxh3 { [%clk 0:01:52.697] } 11. gxh3 { [%clk 0:01:46.131] } 11... cxd4 { [%clk 0:01:49.04] } 12. cxd4 { [%clk 0:01:41.699] } 12... h6 { [%clk 0:01:44.897] } 13. Bxf6 { [%clk 0:01:38.629] } 13... Qxf6 { [%clk 0:01:41.53] } 14. Bxc6 { [%clk 0:01:36.512] } 14... bxc6 { [%clk 0:01:36.214] } 15. f3 { [%clk 0:01:35.171] } 15... Rae8 { [%clk 0:01:33.934] } 16. fxe4 { [%clk 0:01:30.225] } 16... Bb4 { [%clk 0:01:31.366] } 17. exd5 { [%clk 0:01:28.926] } 17... cxd5 { [%clk 0:01:27.902] } 18. a3 { [%clk 0:01:23.975] } 18... Ba5 { [%clk 0:01:24.878] } 19. Kd1 { [%clk 0:01:19.719] } 19... Qe6 { [%clk 0:01:22.12] } 20. Nb3 { [%clk 0:01:15.145] } 20... Bc7 { [%clk 0:01:19.593] } 21. Kd2 { [%clk 0:01:11.855] } 1-0\n",
+ "opening": "London System",
+ "termination_text": "Illegal",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 34\u00b7Final",
+ "white_uuid": "4c0e2889-26cd-41bb-b6e0-2471a3963ef1",
+ "black_uuid": "60a6cc18-9fe5-4dbc-8c97-10f2906d7ea5",
+ "site_verdicts": [
+  [
+   "Qf3",
+   "blunder"
+  ],
+  [
+   "e5",
+   "good"
+  ],
+  [
+   "Bg5",
+   "best"
+  ],
+  [
+   "e4",
+   "best"
+  ],
+  [
+   "Qe2",
+   "best"
+  ],
+  [
+   "Bxh3",
+   "good"
+  ],
+  [
+   "gxh3",
+   "best"
+  ],
+  [
+   "cxd4",
+   "best"
+  ],
+  [
+   "cxd4",
+   "best"
+  ],
+  [
+   "h6",
+   "best"
+  ],
+  [
+   "Bxf6",
+   "inaccuracy"
+  ],
+  [
+   "Qxf6",
+   "best"
+  ],
+  [
+   "Bxc6",
+   "inaccuracy"
+  ],
+  [
+   "bxc6",
+   "best"
+  ],
+  [
+   "f3",
+   "inaccuracy"
+  ],
+  [
+   "Rae8",
+   "inaccuracy"
+  ],
+  [
+   "fxe4",
+   "best"
+  ],
+  [
+   "Bb4",
+   "best"
+  ],
+  [
+   "exd5",
+   "inaccuracy"
+  ],
+  [
+   "cxd5",
+   "excellent"
+  ],
+  [
+   "a3",
+   "good"
+  ],
+  [
+   "Ba5",
+   "inaccuracy"
+  ],
+  [
+   "Kd1",
+   "best"
+  ],
+  [
+   "Qe6",
+   "good"
+  ],
+  [
+   "Nb3",
+   "blunder"
+  ],
+  [
+   "Bc7",
+   "blunder"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Analphabet",
+    "accuracy": 79.0,
+    "acpl": 71,
+    "tally": {
+     "brilliant": 0,
+     "best": 6,
+     "excellent": 0,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 4,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 3
+    }
+   },
+   {
+    "name": "Son of Carl",
+    "accuracy": 84.9,
+    "acpl": 48,
+    "tally": {
+     "brilliant": 0,
+     "best": 6,
+     "excellent": 1,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -11,
+   -184,
+   -156,
+   -146,
+   -155,
+   -153,
+   -107,
+   -90,
+   -94,
+   -95,
+   -88,
+   -147,
+   -136,
+   -211,
+   -213,
+   -307,
+   -194,
+   -200,
+   -192,
+   -268,
+   -249,
+   -288,
+   -187,
+   -182,
+   -154,
+   -391,
+   -124,
+   -357
+  ],
+  "best": [
+   "d2f3",
+   "c5d4",
+   "f4g5",
+   "e5e4",
+   "f3e2",
+   "c5d4",
+   "g2h3",
+   "c5d4",
+   "c3d4",
+   "h7h6",
+   "g5h4",
+   "d8f6",
+   "e1g1",
+   "b7c6",
+   "e1g1",
+   "a8b8",
+   "f3e4",
+   "d6b4",
+   "e4e5",
+   "f6g5",
+   "e1d1",
+   "f6g5",
+   "e1d1",
+   "a5d2",
+   "h1e1",
+   "e6h3",
+   "a1c1",
+   "e8b8"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:23:51Z"
+}

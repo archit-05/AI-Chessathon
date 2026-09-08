@@ -1,0 +1,158 @@
+{
+ "game": "6b916b53-2524-4bdc-87a0-8ac47af50185",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"10\"]\n[White \"Checkmate99\"]\n[Black \"2sigbros\"]\n[Result \"0-1\"]\n[FEN \"r1bqkb1r/1p2pppp/p1np4/8/4P1n1/1NN5/PPPB1PPP/R2QKB1R b KQkq - 3 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8... Be6 { [%clk 0:01:56.476] } 9. Qxg4 { [%clk 0:02:00.498] } 9... Bxg4 { [%clk 0:01:53.063] } 10. Bxa6 { [%clk 0:02:00.996] } 10... Rxa6 { [%clk 0:01:49.758] } 11. Ne2 { [%clk 0:02:01.494] } 11... Qa8 { [%clk 0:01:46.578] } 12. h4 { [%clk 0:02:01.992] } 12... Rxa2 { [%clk 0:01:43.485] } 13. Rxa2 { [%clk 0:02:02.49] } 13... Qxa2 { [%clk 0:01:40.513] } 14. c3 { [%clk 0:02:02.989] } 14... Qxb3 { [%clk 0:01:37.637] } 15. Bf4 { [%clk 0:02:03.487] } 15... Qxb2 { [%clk 0:01:34.858] } 16. Bxd6 { [%clk 0:02:03.985] } 16... Qxe2# { [%clk 0:01:35.357] } 0-1\n",
+ "opening": "Sicilian Classical",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 10\u00b7Final",
+ "white_uuid": "23313d96-aec8-4bb0-92d7-a687055c7bc1",
+ "black_uuid": "5b500243-9807-4747-a843-5bf3facea567",
+ "site_verdicts": [
+  [
+   "Be6",
+   "good"
+  ],
+  [
+   "Qxg4",
+   "blunder"
+  ],
+  [
+   "Bxg4",
+   "best"
+  ],
+  [
+   "Bxa6",
+   "good"
+  ],
+  [
+   "Rxa6",
+   "best"
+  ],
+  [
+   "Ne2",
+   "excellent"
+  ],
+  [
+   "Qa8",
+   "excellent"
+  ],
+  [
+   "h4",
+   "good"
+  ],
+  [
+   "Rxa2",
+   "best"
+  ],
+  [
+   "Rxa2",
+   "excellent"
+  ],
+  [
+   "Qxa2",
+   "best"
+  ],
+  [
+   "c3",
+   "good"
+  ],
+  [
+   "Qxb3",
+   "best"
+  ],
+  [
+   "Bf4",
+   "excellent"
+  ],
+  [
+   "Qxb2",
+   "best"
+  ],
+  [
+   "Bxd6",
+   "mistake"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Checkmate99",
+    "accuracy": 70.7,
+    "acpl": 271,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 3,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "citytrek",
+    "accuracy": 98.7,
+    "acpl": 15,
+    "tally": {
+     "brilliant": 0,
+     "best": 7,
+     "excellent": 1,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   38,
+   64,
+   -596,
+   -589,
+   -674,
+   -672,
+   -702,
+   -666,
+   -752,
+   -720,
+   -738,
+   -729,
+   -929,
+   -934,
+   -1019,
+   -992,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "g4f6",
+   "f2f4",
+   "e6g4",
+   "a2a3",
+   "a8a6",
+   "h2h3",
+   "g4e2",
+   "e2f4",
+   "a6a2",
+   "a1b1",
+   "a8a2",
+   "f2f3",
+   "a2b3",
+   "f2f3",
+   "b3b2",
+   "f2f3",
+   "b2e2",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:38:06Z"
+}

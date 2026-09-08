@@ -1,0 +1,188 @@
+{
+ "game": "c7beed32-bb53-41fb-b416-453d464dc578",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"19\"]\n[White \"Magnus CarlSON \ud83d\ude2d\"]\n[Black \"PawnStorm\"]\n[Result \"1-0\"]\n[FEN \"r3kb1r/pp1qpppp/2n2n2/3p4/3P1Bb1/1QPB3P/PP3PP1/RN2K1NR b KQkq - 0 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8... Be6 { [%clk 0:01:59.992] } 9. Nf3 { [%clk 0:01:55.498] } 9... O-O-O { [%clk 0:01:59.984] } 10. Na3 { [%clk 0:01:50.995] } 10... Ne4 { [%clk 0:01:59.976] } 11. O-O { [%clk 0:01:47.922] } 11... h6 { [%clk 0:01:59.962] } 12. h4 { [%clk 0:01:43.548] } 12... a6 { [%clk 0:01:59.953] } 13. Qb6 { [%clk 0:01:39.354] } 13... Re8 { [%clk 0:01:59.951] } 14. Bxe4 { [%clk 0:01:31.851] } 14... dxe4 { [%clk 0:01:59.945] } 15. Nd2 { [%clk 0:01:24.349] } 15... Bd5 { [%clk 0:01:59.943] } 16. c4 { [%clk 0:01:16.847] } 16... Be6 { [%clk 0:01:59.937] } 17. d5 { [%clk 0:01:09.345] } 17... Rg8 { [%clk 0:01:59.929] } 18. dxe6 { [%clk 0:01:02.3] } 18... Qxe6 { [%clk 0:01:59.92] } 19. Qc7# { [%clk 0:01:02.787] } 1-0\n",
+ "opening": "Caro-Kann Exchange",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 19\u00b7Final",
+ "white_uuid": "23113ce3-33c5-4683-8057-07d3a2e33bf9",
+ "black_uuid": "e2a3a86e-7b1b-4926-8873-b396674733fb",
+ "site_verdicts": [
+  [
+   "Be6",
+   "good"
+  ],
+  [
+   "Nf3",
+   "excellent"
+  ],
+  [
+   "O-O-O",
+   "mistake"
+  ],
+  [
+   "Na3",
+   "inaccuracy"
+  ],
+  [
+   "Ne4",
+   "inaccuracy"
+  ],
+  [
+   "O-O",
+   "good"
+  ],
+  [
+   "h6",
+   "inaccuracy"
+  ],
+  [
+   "h4",
+   "mistake"
+  ],
+  [
+   "a6",
+   "good"
+  ],
+  [
+   "Qb6",
+   "excellent"
+  ],
+  [
+   "Re8",
+   "inaccuracy"
+  ],
+  [
+   "Bxe4",
+   "inaccuracy"
+  ],
+  [
+   "dxe4",
+   "best"
+  ],
+  [
+   "Nd2",
+   "mistake"
+  ],
+  [
+   "Bd5",
+   "blunder"
+  ],
+  [
+   "c4",
+   "best"
+  ],
+  [
+   "Be6",
+   "good"
+  ],
+  [
+   "d5",
+   "best"
+  ],
+  [
+   "Rg8",
+   "mistake"
+  ],
+  [
+   "dxe6",
+   "best"
+  ],
+  [
+   "Qxe6",
+   "blunder"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "John Chess",
+    "accuracy": 84.0,
+    "acpl": 54,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 2,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 2,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Bartholomew",
+    "accuracy": 70.0,
+    "acpl": 189,
+    "tally": {
+     "brilliant": 0,
+     "best": 1,
+     "excellent": 0,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 3,
+     "mistake": 2,
+     "miss": 0,
+     "blunder": 2
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   17,
+   64,
+   75,
+   230,
+   163,
+   233,
+   171,
+   297,
+   165,
+   213,
+   191,
+   311,
+   241,
+   238,
+   96,
+   331,
+   358,
+   409,
+   374,
+   603,
+   539,
+   9999,
+   10000
+  ],
+  "best": [
+   "g4h5",
+   "b1d2",
+   "g7g6",
+   "d3b5",
+   "e6f5",
+   "f3e5",
+   "f7f6",
+   "a3b5",
+   "f7f6",
+   "c3c4",
+   "e4d6",
+   "f3e5",
+   "d5e4",
+   "d4d5",
+   "g7g5",
+   "c3c4",
+   "e7e6",
+   "d4d5",
+   "d7d8",
+   "d5e6",
+   "f7e6",
+   "b6c7",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:20:27Z"
+}

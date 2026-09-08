@@ -1,0 +1,158 @@
+{
+ "game": "18d593e4-567d-4fc6-9d9e-451bfd579112",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"14\"]\n[White \"Oxchess\"]\n[Black \"Egill40\"]\n[Result \"*\"]\n[FEN \"r1bqk2r/pp1pppbp/2n2np1/2p5/2P5/2N2NP1/PP1PPPBP/R1BQ1RK1 b kq - 5 6\"]\n[SetUp \"1\"]\n[Termination \"unterminated\"]\n\n6... d5 { [%clk 0:01:58.997] } 7. d4 { [%clk 0:01:56.286] } 7... dxc4 { [%clk 0:01:57.994] } 8. dxc5 { [%clk 0:01:51.988] } 8... O-O { [%clk 0:01:56.992] } 9. Qxd8 { [%clk 0:01:47.396] } 9... Rxd8 { [%clk 0:01:55.989] } 10. Ne1 { [%clk 0:01:43.305] } 10... Ne5 { [%clk 0:01:54.987] } 11. Bf4 { [%clk 0:01:38.992] } 11... Nh5 { [%clk 0:01:53.985] } 12. Be3 { [%clk 0:01:34.633] } 12... Nf6 { [%clk 0:01:52.982] } 13. Bf4 { [%clk 0:01:30.568] } 13... Nh5 { [%clk 0:01:51.98] } 14. Be3 { [%clk 0:01:26.563] } 14... Nf6 { [%clk 0:01:50.978] } *\n",
+ "opening": "English Symmetrical",
+ "termination_text": "Unterminated",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 14\u00b7Void",
+ "white_uuid": "e11cad31-ab8f-46ee-bf00-056881752046",
+ "black_uuid": "28cb7468-aa2c-4887-82d1-89ffafeeed5e",
+ "site_verdicts": [
+  [
+   "d5",
+   "good"
+  ],
+  [
+   "d4",
+   "best"
+  ],
+  [
+   "dxc4",
+   "excellent"
+  ],
+  [
+   "dxc5",
+   "inaccuracy"
+  ],
+  [
+   "O-O",
+   "inaccuracy"
+  ],
+  [
+   "Qxd8",
+   "inaccuracy"
+  ],
+  [
+   "Rxd8",
+   "best"
+  ],
+  [
+   "Ne1",
+   "good"
+  ],
+  [
+   "Ne5",
+   "inaccuracy"
+  ],
+  [
+   "Bf4",
+   "best"
+  ],
+  [
+   "Nh5",
+   "excellent"
+  ],
+  [
+   "Be3",
+   "best"
+  ],
+  [
+   "Nf6",
+   "excellent"
+  ],
+  [
+   "Bf4",
+   "good"
+  ],
+  [
+   "Nh5",
+   "good"
+  ],
+  [
+   "Be3",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "magdabot",
+    "accuracy": 86.4,
+    "acpl": 32,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 0,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Chesser",
+    "accuracy": 90.0,
+    "acpl": 28,
+    "tally": {
+     "brilliant": 0,
+     "best": 1,
+     "excellent": 4,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   31,
+   54,
+   52,
+   47,
+   -21,
+   58,
+   -34,
+   -22,
+   -65,
+   16,
+   6,
+   27,
+   29,
+   33,
+   5,
+   31,
+   21,
+   27
+  ],
+  "best": [
+   "d7d6",
+   "d2d4",
+   "c5d4",
+   "d4d5",
+   "d8a5",
+   "d1a4",
+   "f8d8",
+   "c1e3",
+   "c6b4",
+   "c1f4",
+   "e5c6",
+   "f4e3",
+   "e5c6",
+   "e1c2",
+   "e5c6",
+   "f4e3",
+   "e5c6",
+   "e1c2"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:44:57Z"
+}

@@ -1,0 +1,212 @@
+{
+ "game": "4283794a-6e80-49a9-892f-3f53ad629ce0",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"12\"]\n[White \"The Good Team\"]\n[Black \"Stock-ish\"]\n[Result \"1-0\"]\n[FEN \"rnbq1rk1/ppp2ppp/4pn2/8/1bBP4/2N1P2P/PP3PP1/R1BQK1NR b KQ - 0 7\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n7... Bxc3+ { [%clk 0:01:55.66] } 8. bxc3 { [%clk 0:02:00.393] } 8... Nc6 { [%clk 0:01:51.481] } 9. Ba3 { [%clk 0:02:00.524] } 9... Re8 { [%clk 0:01:47.458] } 10. g4 { [%clk 0:02:00.473] } 10... Ne4 { [%clk 0:01:43.585] } 11. Qd3 { [%clk 0:02:00.519] } 11... Nd6 { [%clk 0:01:39.858] } 12. Bb3 { [%clk 0:02:00.667] } 12... g5 { [%clk 0:01:36.271] } 13. Nf3 { [%clk 0:02:00.384] } 13... a5 { [%clk 0:01:32.818] } 14. h4 { [%clk 0:01:59.85] } 14... h6 { [%clk 0:01:29.494] } 15. Ba4 { [%clk 0:01:59.764] } 15... gxh4 { [%clk 0:01:26.295] } 16. Rxh4 { [%clk 0:01:59.911] } 16... f5 { [%clk 0:01:23.215] } 17. Rxh6 { [%clk 0:01:59.984] } 17... fxg4 { [%clk 0:01:20.253] } 18. Qg6+ { [%clk 0:02:00.44] } 18... Kf8 { [%clk 0:01:17.401] } 19. Rh8+ { [%clk 0:02:00.892] } 19... Ke7 { [%clk 0:01:14.656] } 20. Qg7# { [%clk 0:02:01.333] } 1-0\n",
+ "opening": "Nimzo-Indian Defence",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 12\u00b7Final",
+ "white_uuid": "7e5a9874-6b65-41c5-b80f-7be47d1f84b5",
+ "black_uuid": "924492e0-622c-4bcd-b507-290f40a3fbe6",
+ "site_verdicts": [
+  [
+   "Bxc3+",
+   "good"
+  ],
+  [
+   "bxc3",
+   "best"
+  ],
+  [
+   "Nc6",
+   "good"
+  ],
+  [
+   "Ba3",
+   "excellent"
+  ],
+  [
+   "Re8",
+   "excellent"
+  ],
+  [
+   "g4",
+   "blunder"
+  ],
+  [
+   "Ne4",
+   "mistake"
+  ],
+  [
+   "Qd3",
+   "mistake"
+  ],
+  [
+   "Nd6",
+   "inaccuracy"
+  ],
+  [
+   "Bb3",
+   "best"
+  ],
+  [
+   "g5",
+   "blunder"
+  ],
+  [
+   "Nf3",
+   "good"
+  ],
+  [
+   "a5",
+   "mistake"
+  ],
+  [
+   "h4",
+   "excellent"
+  ],
+  [
+   "h6",
+   "mistake"
+  ],
+  [
+   "Ba4",
+   "blunder"
+  ],
+  [
+   "gxh4",
+   "good"
+  ],
+  [
+   "Rxh4",
+   "good"
+  ],
+  [
+   "f5",
+   "blunder"
+  ],
+  [
+   "Rxh6",
+   "good"
+  ],
+  [
+   "fxg4",
+   "blunder"
+  ],
+  [
+   "Qg6+",
+   "best"
+  ],
+  [
+   "Kf8",
+   "forced"
+  ],
+  [
+   "Rh8+",
+   "best"
+  ],
+  [
+   "Ke7",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "The Good Bot",
+    "accuracy": 81.1,
+    "acpl": 67,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 2,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 2
+    }
+   },
+   {
+    "name": "test",
+    "accuracy": 68.3,
+    "acpl": 174,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 1,
+     "good": 3,
+     "forced": 2,
+     "inaccuracy": 1,
+     "mistake": 3,
+     "miss": 0,
+     "blunder": 3
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -12,
+   41,
+   44,
+   81,
+   64,
+   79,
+   -99,
+   35,
+   -122,
+   -52,
+   -51,
+   210,
+   165,
+   305,
+   289,
+   553,
+   198,
+   229,
+   201,
+   453,
+   380,
+   9997,
+   9998,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "c7c5",
+   "b2c3",
+   "c7c5",
+   "g1e2",
+   "c6e7",
+   "g1f3",
+   "b7b5",
+   "d1c2",
+   "c6a5",
+   "c4b3",
+   "b7b6",
+   "b3c2",
+   "d8f6",
+   "b3c2",
+   "c6e7",
+   "h4g5",
+   "e6e5",
+   "a4c2",
+   "d8f6",
+   "g4f5",
+   "g8g7",
+   "d3g6",
+   "g8f8",
+   "h6h8",
+   "f8e7",
+   "g6g7",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:23:11Z"
+}

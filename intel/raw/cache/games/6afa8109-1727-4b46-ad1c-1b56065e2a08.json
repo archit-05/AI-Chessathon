@@ -1,0 +1,59 @@
+{
+ "game": "6afa8109-1727-4b46-ad1c-1b56065e2a08",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"1\"]\n[White \"f1shstock\"]\n[Black \"404 Not Found\"]\n[Result \"0-1\"]\n[FEN \"r1bq1rk1/pp1pppbp/2n2np1/2p5/2P5/2NP1NP1/PP2PPBP/R1BQ1RK1 b - - 2 7\"]\n[SetUp \"1\"]\n[Termination \"init\"]\n\n0-1\n",
+ "opening": "English Symmetrical",
+ "termination_text": "Init",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 1\u00b7Final",
+ "white_uuid": "01f0d0bc-6daa-4420-92ec-af01e724deb4",
+ "black_uuid": "0507e5e2-d40f-4565-8e16-ca6feacebe42",
+ "site_verdicts": [],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "fishy",
+    "accuracy": 0.0,
+    "acpl": 0,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 0,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "404 Not Found",
+    "accuracy": 0.0,
+    "acpl": 0,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 0,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   20
+  ],
+  "best": [
+   "d7d6"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:21:11Z"
+}

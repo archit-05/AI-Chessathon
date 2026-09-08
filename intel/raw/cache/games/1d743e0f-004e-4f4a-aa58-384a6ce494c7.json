@@ -1,0 +1,182 @@
+{
+ "game": "1d743e0f-004e-4f4a-aa58-384a6ce494c7",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"30\"]\n[White \"Random Mover\"]\n[Black \"Edward\"]\n[Result \"0-1\"]\n[FEN \"r1bq1rk1/ppp2pbp/2np1np1/P2Pp3/4P3/2N2N2/1PP1BPPP/R1BQK2R b KQ - 0 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8... Nd4 { [%clk 0:01:53.405] } 9. Nxe5 { [%clk 0:02:00.499] } 9... Nxe2 { [%clk 0:01:45.986] } 10. Na2 { [%clk 0:02:00.997] } 10... Nxc1 { [%clk 0:01:42.061] } 11. Nc4 { [%clk 0:02:01.496] } 11... Nxa2 { [%clk 0:01:39.958] } 12. e5 { [%clk 0:02:01.994] } 12... dxe5 { [%clk 0:01:36.78] } 13. g4 { [%clk 0:02:02.493] } 13... Nb4 { [%clk 0:01:34.198] } 14. Rf1 { [%clk 0:02:02.992] } 14... Qxd5 { [%clk 0:01:32.267] } 15. b3 { [%clk 0:02:03.491] } 15... Qxd1+ { [%clk 0:01:27.912] } 16. Rxd1 { [%clk 0:02:03.99] } 16... Bxg4 { [%clk 0:01:26.871] } 17. Rd2 { [%clk 0:02:04.489] } 17... Ne4 { [%clk 0:01:25.678] } 18. Rd6 { [%clk 0:02:04.988] } 18... Nxc2# { [%clk 0:01:22.572] } 0-1\n",
+ "opening": "Pirc Defence",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 30\u00b7Final",
+ "white_uuid": "5c7abbac-f8d0-4635-a335-d4b6c90aeefe",
+ "black_uuid": "e85fee09-4c17-4122-a6a1-67d09d9349bd",
+ "site_verdicts": [
+  [
+   "Nd4",
+   "good"
+  ],
+  [
+   "Nxe5",
+   "blunder"
+  ],
+  [
+   "Nxe2",
+   "good"
+  ],
+  [
+   "Na2",
+   "blunder"
+  ],
+  [
+   "Nxc1",
+   "best"
+  ],
+  [
+   "Nc4",
+   "excellent"
+  ],
+  [
+   "Nxa2",
+   "best"
+  ],
+  [
+   "e5",
+   "excellent"
+  ],
+  [
+   "dxe5",
+   "best"
+  ],
+  [
+   "g4",
+   "excellent"
+  ],
+  [
+   "Nb4",
+   "excellent"
+  ],
+  [
+   "Rf1",
+   "excellent"
+  ],
+  [
+   "Qxd5",
+   "excellent"
+  ],
+  [
+   "b3",
+   "excellent"
+  ],
+  [
+   "Qxd1+",
+   "excellent"
+  ],
+  [
+   "Rxd1",
+   "best"
+  ],
+  [
+   "Bxg4",
+   "excellent"
+  ],
+  [
+   "Rd2",
+   "excellent"
+  ],
+  [
+   "Ne4",
+   "best"
+  ],
+  [
+   "Rd6",
+   "inaccuracy"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Random Mover",
+    "accuracy": 76.6,
+    "acpl": 281,
+    "tally": {
+     "brilliant": 0,
+     "best": 1,
+     "excellent": 6,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 2
+    }
+   },
+   {
+    "name": "Edward",
+    "accuracy": 97.1,
+    "acpl": 52,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 4,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   33,
+   81,
+   -393,
+   -329,
+   -750,
+   -733,
+   -801,
+   -772,
+   -875,
+   -870,
+   -1061,
+   -987,
+   -1160,
+   -1061,
+   -1306,
+   -1120,
+   -1127,
+   -1078,
+   -1203,
+   -1233,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "c6e7",
+   "f3d4",
+   "d6e5",
+   "d1e2",
+   "e2c1",
+   "d1c1",
+   "c1a2",
+   "a1a2",
+   "d6e5",
+   "e1g1",
+   "c8g4",
+   "g4g5",
+   "c8g4",
+   "d1d5",
+   "d5e4",
+   "a1d1",
+   "b4c2",
+   "f2f3",
+   "f6e4",
+   "d2e2",
+   "b4c2",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:03:35Z"
+}

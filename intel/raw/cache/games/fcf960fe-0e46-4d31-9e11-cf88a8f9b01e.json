@@ -1,0 +1,170 @@
+{
+ "game": "fcf960fe-0e46-4d31-9e11-cf88a8f9b01e",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.07\"]\n[Round \"46\"]\n[White \"MrGreedy\"]\n[Black \"StockZero\"]\n[Result \"0-1\"]\n[FEN \"r1bq1rk1/pp1pppbp/2n2np1/2p5/2PP4/2N1PNP1/PP3PBP/R1BQK2R b KQ - 0 7\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n7... d5 { [%clk 0:01:56.992] } 8. dxc5 { [%clk 0:01:53.298] } 8... dxc4 { [%clk 0:01:53.956] } 9. Nd4 { [%clk 0:01:47] } 9... Bg4 { [%clk 0:01:50.909] } 10. Nxc6 { [%clk 0:01:41.079] } 10... bxc6 { [%clk 0:01:47.858] } 11. Qa4 { [%clk 0:01:35.514] } 11... Qd3 { [%clk 0:01:44.798] } 12. Bxc6 { [%clk 0:01:30.282] } 12... Rad8 { [%clk 0:01:41.733] } 13. Bg2 { [%clk 0:01:25.365] } 13... Ne4 { [%clk 0:01:38.65] } 14. Bf1 { [%clk 0:01:20.743] } 14... Bxc3+ { [%clk 0:01:39.119] } 15. bxc3 { [%clk 0:01:16.397] } 15... Qxc3+ { [%clk 0:01:39.608] } 16. Bd2 { [%clk 0:01:12.312] } 16... Qxd2# { [%clk 0:01:40.105] } 0-1\n",
+ "opening": "English Symmetrical",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 46\u00b7Final",
+ "white_uuid": "4a108003-57d5-4688-9dd9-94bb9e9ac1fb",
+ "black_uuid": "7eae8bfa-01ba-4b4b-b1b9-e2e0d0ed2147",
+ "site_verdicts": [
+  [
+   "d5",
+   "best"
+  ],
+  [
+   "dxc5",
+   "inaccuracy"
+  ],
+  [
+   "dxc4",
+   "best"
+  ],
+  [
+   "Nd4",
+   "good"
+  ],
+  [
+   "Bg4",
+   "excellent"
+  ],
+  [
+   "Nxc6",
+   "excellent"
+  ],
+  [
+   "bxc6",
+   "excellent"
+  ],
+  [
+   "Qa4",
+   "good"
+  ],
+  [
+   "Qd3",
+   "best"
+  ],
+  [
+   "Bxc6",
+   "blunder"
+  ],
+  [
+   "Rad8",
+   "blunder"
+  ],
+  [
+   "Bg2",
+   "blunder"
+  ],
+  [
+   "Ne4",
+   "best"
+  ],
+  [
+   "Bf1",
+   "mistake"
+  ],
+  [
+   "Bxc3+",
+   "best"
+  ],
+  [
+   "bxc3",
+   "best"
+  ],
+  [
+   "Qxc3+",
+   "best"
+  ],
+  [
+   "Bd2",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "cocFish",
+    "accuracy": 69.9,
+    "acpl": 251,
+    "tally": {
+     "brilliant": 0,
+     "best": 1,
+     "excellent": 1,
+     "good": 2,
+     "forced": 1,
+     "inaccuracy": 1,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 2
+    }
+   },
+   {
+    "name": "HaveFaith",
+    "accuracy": 89.9,
+    "acpl": 46,
+    "tally": {
+     "brilliant": 0,
+     "best": 7,
+     "excellent": 2,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -25,
+   -29,
+   -99,
+   -109,
+   -139,
+   -124,
+   -127,
+   -121,
+   -147,
+   -157,
+   -738,
+   -299,
+   -848,
+   -861,
+   -9997,
+   -9998,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "d7d5",
+   "c4d5",
+   "d5c4",
+   "d1d8",
+   "f6d7",
+   "d1a4",
+   "d8d1",
+   "d1d8",
+   "d8d3",
+   "g2f1",
+   "f6d5",
+   "f2f3",
+   "f6e4",
+   "f2f3",
+   "g7c3",
+   "b2c3",
+   "d3c3",
+   "c1d2",
+   "c3d2",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:52:46Z"
+}

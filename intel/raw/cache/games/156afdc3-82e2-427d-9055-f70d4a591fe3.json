@@ -1,0 +1,212 @@
+{
+ "game": "156afdc3-82e2-427d-9055-f70d4a591fe3",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"21\"]\n[White \"keep kann and caro on\"]\n[Black \"French Carlsen\"]\n[Result \"*\"]\n[FEN \"r1bqk2r/pp1n1ppp/2n1p3/2bpP3/5P2/2NB4/PPP3PP/R1BQK1NR w KQkq - 0 8\"]\n[SetUp \"1\"]\n[Termination \"unterminated\"]\n\n8. Nf3 { [%clk 0:01:50.705] } 8... f6 { [%clk 0:01:50.28] } 9. Na4 { [%clk 0:01:46.976] } 9... Qa5+ { [%clk 0:01:41.882] } 10. c3 { [%clk 0:01:43.361] } 10... fxe5 { [%clk 0:01:38.204] } 11. Nxe5 { [%clk 0:01:39.146] } 11... Ndxe5 { [%clk 0:01:34.269] } 12. Nxc5 { [%clk 0:01:36.315] } 12... Qxc5 { [%clk 0:01:27.243] } 13. fxe5 { [%clk 0:01:33.723] } 13... O-O { [%clk 0:01:22.942] } 14. Qh5 { [%clk 0:01:24.799] } 14... g6 { [%clk 0:01:17.382] } 15. Bxg6 { [%clk 0:01:18.085] } 15... Qf2+ { [%clk 0:01:13.448] } 16. Kd1 { [%clk 0:01:18.581] } 16... hxg6 { [%clk 0:01:10.023] } 17. Qxg6+ { [%clk 0:01:12.07] } 17... Kh8 { [%clk 0:01:10.519] } 18. Qh5+ { [%clk 0:01:04.25] } 18... Kg8 { [%clk 0:01:08.162] } 19. Qg6+ { [%clk 0:01:02.3] } 19... Kh8 { [%clk 0:01:08.658] } 20. Qh5+ { [%clk 0:00:57.833] } 20... Kg8 { [%clk 0:01:07.353] } *\n",
+ "opening": "French Classical",
+ "termination_text": "Unterminated",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 21\u00b7Void",
+ "white_uuid": "9f1cfbea-48c3-4345-8741-021152dbe77c",
+ "black_uuid": "2dc678cd-2e7c-4894-aeb5-ef273c023c01",
+ "site_verdicts": [
+  [
+   "Nf3",
+   "excellent"
+  ],
+  [
+   "f6",
+   "inaccuracy"
+  ],
+  [
+   "Na4",
+   "inaccuracy"
+  ],
+  [
+   "Qa5+",
+   "inaccuracy"
+  ],
+  [
+   "c3",
+   "best"
+  ],
+  [
+   "fxe5",
+   "best"
+  ],
+  [
+   "Nxe5",
+   "excellent"
+  ],
+  [
+   "Ndxe5",
+   "best"
+  ],
+  [
+   "Nxc5",
+   "best"
+  ],
+  [
+   "Qxc5",
+   "best"
+  ],
+  [
+   "fxe5",
+   "best"
+  ],
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "Qh5",
+   "best"
+  ],
+  [
+   "g6",
+   "excellent"
+  ],
+  [
+   "Bxg6",
+   "excellent"
+  ],
+  [
+   "Qf2+",
+   "best"
+  ],
+  [
+   "Kd1",
+   "forced"
+  ],
+  [
+   "hxg6",
+   "best"
+  ],
+  [
+   "Qxg6+",
+   "best"
+  ],
+  [
+   "Kh8",
+   "forced"
+  ],
+  [
+   "Qh5+",
+   "excellent"
+  ],
+  [
+   "Kg8",
+   "best"
+  ],
+  [
+   "Qg6+",
+   "best"
+  ],
+  [
+   "Kh8",
+   "forced"
+  ],
+  [
+   "Qh5+",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "keep_kann_and_caro_on",
+    "accuracy": 96.9,
+    "acpl": 7,
+    "tally": {
+     "brilliant": 0,
+     "best": 6,
+     "excellent": 5,
+     "good": 0,
+     "forced": 1,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Le StockFish",
+    "accuracy": 94.9,
+    "acpl": 11,
+    "tally": {
+     "brilliant": 0,
+     "best": 8,
+     "excellent": 1,
+     "good": 0,
+     "forced": 2,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -21,
+   -24,
+   46,
+   -26,
+   53,
+   46,
+   22,
+   7,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "best": [
+   "d1g4",
+   "a7a6",
+   "d1e2",
+   "f6e5",
+   "c2c3",
+   "f6e5",
+   "f4e5",
+   "d7e5",
+   "a4c5",
+   "a5c5",
+   "f4e5",
+   "e8g8",
+   "d1h5",
+   "c5f2",
+   "h5g5",
+   "c5f2",
+   "e1d1",
+   "h7g6",
+   "h5g6",
+   "g8h8",
+   "g6h6",
+   "h8g8",
+   "h5g6",
+   "g8h8",
+   "g6h6",
+   "h8g8",
+   "h5g6"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:10:34Z"
+}

@@ -1,0 +1,236 @@
+{
+ "game": "1518a33d-8c1c-4609-b929-ad30dd8c4695",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"28\"]\n[White \"Team name\"]\n[Black \"corundum.ai\"]\n[Result \"1-0\"]\n[FEN \"rn1qk2r/pbppbppp/1p2pn2/8/2PP4/5NP1/PP2PPBP/RNBQ1RK1 b kq - 4 6\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n6... Rg8 { [%clk 0:02:00.498] } 7. Nc3 { [%clk 0:01:56.786] } 7... Rh8 { [%clk 0:02:00.996] } 8. Bf4 { [%clk 0:01:53.543] } 8... Rg8 { [%clk 0:02:01.494] } 9. d5 { [%clk 0:01:50.305] } 9... Rh8 { [%clk 0:02:01.992] } 10. e4 { [%clk 0:01:47.08] } 10... Rg8 { [%clk 0:02:02.489] } 11. e5 { [%clk 0:01:43.852] } 11... Rh8 { [%clk 0:02:02.987] } 12. exf6 { [%clk 0:01:40.608] } 12... Rg8 { [%clk 0:02:03.484] } 13. fxe7 { [%clk 0:01:37.334] } 13... Rh8 { [%clk 0:02:03.982] } 14. exd8=Q+ { [%clk 0:01:34.077] } 14... Kxd8 { [%clk 0:02:04.48] } 15. Ng5 { [%clk 0:01:30.808] } 15... Rg8 { [%clk 0:02:04.978] } 16. dxe6 { [%clk 0:01:27.524] } 16... Rh8 { [%clk 0:02:05.476] } 17. Bxb7 { [%clk 0:01:24.245] } 17... Rg8 { [%clk 0:02:05.974] } 18. exf7 { [%clk 0:01:20.962] } 18... Rh8 { [%clk 0:02:06.472] } 19. Bxa8 { [%clk 0:01:17.664] } 19... Rg8 { [%clk 0:02:06.97] } 20. fxg8=Q+ { [%clk 0:01:17.291] } 20... Ke7 { [%clk 0:02:07.469] } 21. Nd5# { [%clk 0:01:17.77] } 1-0\n",
+ "opening": "Queen's Indian Defence",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 28\u00b7Final",
+ "white_uuid": "f7774d65-94ae-4a54-9358-6c3d0097b51b",
+ "black_uuid": "e3b6706d-d6a7-43d4-ba84-3db44ebe66b0",
+ "site_verdicts": [
+  [
+   "Rg8",
+   "mistake"
+  ],
+  [
+   "Nc3",
+   "good"
+  ],
+  [
+   "Rh8",
+   "inaccuracy"
+  ],
+  [
+   "Bf4",
+   "inaccuracy"
+  ],
+  [
+   "Rg8",
+   "inaccuracy"
+  ],
+  [
+   "d5",
+   "excellent"
+  ],
+  [
+   "Rh8",
+   "inaccuracy"
+  ],
+  [
+   "e4",
+   "best"
+  ],
+  [
+   "Rg8",
+   "inaccuracy"
+  ],
+  [
+   "e5",
+   "best"
+  ],
+  [
+   "Rh8",
+   "inaccuracy"
+  ],
+  [
+   "exf6",
+   "best"
+  ],
+  [
+   "Rg8",
+   "inaccuracy"
+  ],
+  [
+   "fxe7",
+   "best"
+  ],
+  [
+   "Rh8",
+   "good"
+  ],
+  [
+   "exd8=Q+",
+   "excellent"
+  ],
+  [
+   "Kxd8",
+   "forced"
+  ],
+  [
+   "Ng5",
+   "excellent"
+  ],
+  [
+   "Rg8",
+   "excellent"
+  ],
+  [
+   "dxe6",
+   "best"
+  ],
+  [
+   "Rh8",
+   "excellent"
+  ],
+  [
+   "Bxb7",
+   "excellent"
+  ],
+  [
+   "Rg8",
+   "excellent"
+  ],
+  [
+   "exf7",
+   "excellent"
+  ],
+  [
+   "Rh8",
+   "excellent"
+  ],
+  [
+   "Bxa8",
+   "excellent"
+  ],
+  [
+   "Rg8",
+   "excellent"
+  ],
+  [
+   "fxg8=Q+",
+   "best"
+  ],
+  [
+   "Ke7",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Muggsy_Bogues",
+    "accuracy": 96.6,
+    "acpl": 22,
+    "tally": {
+     "brilliant": 0,
+     "best": 7,
+     "excellent": 6,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "muffin",
+    "accuracy": 84.5,
+    "acpl": 157,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 5,
+     "good": 1,
+     "forced": 2,
+     "inaccuracy": 6,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   34,
+   206,
+   151,
+   246,
+   166,
+   276,
+   252,
+   378,
+   387,
+   488,
+   490,
+   637,
+   615,
+   967,
+   943,
+   1413,
+   1396,
+   1419,
+   1316,
+   1522,
+   1542,
+   2075,
+   9989,
+   9995,
+   9994,
+   9996,
+   9987,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "e8g8",
+   "d4d5",
+   "f6e4",
+   "d4d5",
+   "b8a6",
+   "d1c2",
+   "d7d6",
+   "e2e4",
+   "f6h5",
+   "e4e5",
+   "f6h5",
+   "e5f6",
+   "e7f6",
+   "f6e7",
+   "d8e7",
+   "e7d8n",
+   "e8d8",
+   "d5e6",
+   "d8c8",
+   "d5e6",
+   "b7g2",
+   "e6d7",
+   "h7h6",
+   "e6e7",
+   "g8f8",
+   "g5e6",
+   "b6b5",
+   "f7g8q",
+   "d8e7",
+   "c3d5",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:58:54Z"
+}

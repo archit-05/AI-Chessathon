@@ -1,0 +1,128 @@
+{
+ "game": "c3605dda-298d-44c3-9d61-0e7973d98940",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"1\"]\n[White \"jlu\"]\n[Black \"Greedy Material\"]\n[Result \"1-0\"]\n[FEN \"r1bqk2r/pppp1ppp/2n2n2/1Bb5/3NP3/2P5/PP3PPP/RNBQ1RK1 b kq - 2 7\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n7... Nxd4 { [%clk 0:02:00.497] } 8. cxd4 { [%clk 0:01:55.328] } 8... Bxd4 { [%clk 0:02:00.995] } 9. Qxd4 { [%clk 0:01:50.838] } 9... Nxe4 { [%clk 0:02:01.493] } 10. Qxg7 { [%clk 0:01:46.536] } 10... Nxf2 { [%clk 0:02:01.989] } 11. Re1+ { [%clk 0:01:46.99] } 11... Ne4 { [%clk 0:02:02.486] } 12. Rxe4+ { [%clk 0:01:47.485] } 12... Qe7 { [%clk 0:02:02.984] } 13. Qxh8# { [%clk 0:01:47.982] } 1-0\n",
+ "opening": "Scotch Game",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 1\u00b7Final",
+ "white_uuid": "d935d7bf-978d-4483-8995-8bac436da1d1",
+ "black_uuid": "d9a19162-7480-4e54-bcd6-e2176df533fd",
+ "site_verdicts": [
+  [
+   "Nxd4",
+   "blunder"
+  ],
+  [
+   "cxd4",
+   "best"
+  ],
+  [
+   "Bxd4",
+   "blunder"
+  ],
+  [
+   "Qxd4",
+   "best"
+  ],
+  [
+   "Nxe4",
+   "good"
+  ],
+  [
+   "Qxg7",
+   "excellent"
+  ],
+  [
+   "Nxf2",
+   "blunder"
+  ],
+  [
+   "Re1+",
+   "best"
+  ],
+  [
+   "Ne4",
+   "best"
+  ],
+  [
+   "Rxe4+",
+   "best"
+  ],
+  [
+   "Qe7",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "LSE4-E5",
+    "accuracy": 100.0,
+    "acpl": 0,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 1,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Greedy Material",
+    "accuracy": 74.0,
+    "acpl": 277,
+    "tally": {
+     "brilliant": 0,
+     "best": 1,
+     "excellent": 0,
+     "good": 1,
+     "forced": 1,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 3
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -26,
+   171,
+   198,
+   515,
+   528,
+   676,
+   687,
+   9997,
+   9998,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "e8g8",
+   "c3d4",
+   "c5e7",
+   "d1d4",
+   "e8g8",
+   "d4e4",
+   "d8f6",
+   "f1e1",
+   "f2e4",
+   "e1e4",
+   "d8e7",
+   "g7h8",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:25:02Z"
+}

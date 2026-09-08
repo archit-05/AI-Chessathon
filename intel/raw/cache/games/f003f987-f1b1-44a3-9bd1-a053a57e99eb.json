@@ -1,0 +1,140 @@
+{
+ "game": "f003f987-f1b1-44a3-9bd1-a053a57e99eb",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.06\"]\n[Round \"42\"]\n[White \"Shallow Blue 2.0\"]\n[Black \"Dominated Horses\"]\n[Result \"1/2-1/2\"]\n[FEN \"rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N5/PPP1BPPP/R1BQK2R b KQkq - 1 6\"]\n[SetUp \"1\"]\n[Termination \"threefold_repetition\"]\n\n6... e5 { [%clk 0:02:00.14] } 7. Nf3 { [%clk 0:01:55.913] } 7... Nc6 { [%clk 0:01:59.738] } 8. O-O { [%clk 0:01:51.904] } 8... Be7 { [%clk 0:02:00.081] } 9. Be3 { [%clk 0:01:48.039] } 9... Ng4 { [%clk 0:01:59.91] } 10. Bd2 { [%clk 0:01:44.942] } 10... Nf6 { [%clk 0:02:00.183] } 11. Be3 { [%clk 0:01:41.33] } 11... Ng4 { [%clk 0:02:00.68] } 12. Bd2 { [%clk 0:01:38.199] } 12... Nf6 { [%clk 0:02:01.177] } 13. Be3 { [%clk 0:01:34.824] } 1/2-1/2\n",
+ "opening": "Sicilian Najdorf",
+ "termination_text": "Threefold repetition",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 42\u00b7Final",
+ "white_uuid": "16436a48-3e9c-40e7-915c-53ba083b3fb4",
+ "black_uuid": "74427349-a24e-498e-8508-a8a80d225133",
+ "site_verdicts": [
+  [
+   "e5",
+   "best"
+  ],
+  [
+   "Nf3",
+   "excellent"
+  ],
+  [
+   "Nc6",
+   "good"
+  ],
+  [
+   "O-O",
+   "excellent"
+  ],
+  [
+   "Be7",
+   "best"
+  ],
+  [
+   "Be3",
+   "good"
+  ],
+  [
+   "Ng4",
+   "good"
+  ],
+  [
+   "Bd2",
+   "good"
+  ],
+  [
+   "Nf6",
+   "excellent"
+  ],
+  [
+   "Be3",
+   "excellent"
+  ],
+  [
+   "Ng4",
+   "good"
+  ],
+  [
+   "Bd2",
+   "excellent"
+  ],
+  [
+   "Nf6",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Shallow Blue 2.0",
+    "accuracy": 93.2,
+    "acpl": 20,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 4,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "KD",
+    "accuracy": 93.9,
+    "acpl": 17,
+    "tally": {
+     "brilliant": 0,
+     "best": 2,
+     "excellent": 2,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   38,
+   25,
+   19,
+   56,
+   45,
+   43,
+   17,
+   53,
+   29,
+   42,
+   25,
+   47,
+   35,
+   43,
+   0
+  ],
+  "best": [
+   "e7e5",
+   "d4b3",
+   "f8e7",
+   "c1g5",
+   "f8e7",
+   "c1g5",
+   "e8g8",
+   "c3d5",
+   "e8g8",
+   "d2g5",
+   "e8g8",
+   "c3d5",
+   "e8g8",
+   "d2g5",
+   "f6g4"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:49:15Z"
+}

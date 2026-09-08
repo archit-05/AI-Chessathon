@@ -1,0 +1,212 @@
+{
+ "game": "199719d1-810e-44da-a382-fa9332da13bd",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"3\"]\n[White \"Skill Issue\"]\n[Black \"Check m8\"]\n[Result \"1-0\"]\n[FEN \"rn1qkbnr/pp3ppp/4p3/2ppPb2/3P4/2P2N2/PP2BPPP/RNBQK2R b KQkq - 1 6\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n6... Bxb1 { [%clk 0:02:00.464] } 7. Rxb1 { [%clk 0:01:56.108] } 7... f5 { [%clk 0:02:00.924] } 8. dxc5 { [%clk 0:01:52.346] } 8... d4 { [%clk 0:02:01.405] } 9. Qa4+ { [%clk 0:01:48.711] } 9... Ke7 { [%clk 0:02:01.899] } 10. Bg5+ { [%clk 0:01:45.195] } 10... Nf6 { [%clk 0:02:02.384] } 11. cxd4 { [%clk 0:01:41.797] } 11... Kf7 { [%clk 0:02:02.866] } 12. exf6 { [%clk 0:01:38.512] } 12... g6 { [%clk 0:02:03.33] } 13. Ne5+ { [%clk 0:01:35.337] } 13... Kg8 { [%clk 0:02:03.825] } 14. f7+ { [%clk 0:01:32.269] } 14... Kg7 { [%clk 0:02:04.319] } 15. Bxd8 { [%clk 0:01:29.302] } 15... h5 { [%clk 0:02:04.782] } 16. Qe8 { [%clk 0:01:26.434] } 16... Kh7 { [%clk 0:02:05.262] } 17. Qxe6 { [%clk 0:01:26.727] } 17... Rg8 { [%clk 0:02:05.742] } 18. fxg8=Q+ { [%clk 0:01:27.22] } 18... Kh6 { [%clk 0:02:06.23] } 19. Qexg6# { [%clk 0:01:27.718] } 1-0\n",
+ "opening": "Caro-Kann Advance",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 3\u00b7Final",
+ "white_uuid": "e1211e74-ce5e-4528-8064-27b219991585",
+ "black_uuid": "ff1e0f91-07dc-4e77-9125-c733833d456e",
+ "site_verdicts": [
+  [
+   "Bxb1",
+   "inaccuracy"
+  ],
+  [
+   "Rxb1",
+   "best"
+  ],
+  [
+   "f5",
+   "mistake"
+  ],
+  [
+   "dxc5",
+   "good"
+  ],
+  [
+   "d4",
+   "blunder"
+  ],
+  [
+   "Qa4+",
+   "good"
+  ],
+  [
+   "Ke7",
+   "inaccuracy"
+  ],
+  [
+   "Bg5+",
+   "best"
+  ],
+  [
+   "Nf6",
+   "best"
+  ],
+  [
+   "cxd4",
+   "excellent"
+  ],
+  [
+   "Kf7",
+   "best"
+  ],
+  [
+   "exf6",
+   "best"
+  ],
+  [
+   "g6",
+   "inaccuracy"
+  ],
+  [
+   "Ne5+",
+   "best"
+  ],
+  [
+   "Kg8",
+   "forced"
+  ],
+  [
+   "f7+",
+   "best"
+  ],
+  [
+   "Kg7",
+   "forced"
+  ],
+  [
+   "Bxd8",
+   "best"
+  ],
+  [
+   "h5",
+   "excellent"
+  ],
+  [
+   "Qe8",
+   "best"
+  ],
+  [
+   "Kh7",
+   "inaccuracy"
+  ],
+  [
+   "Qxe6",
+   "best"
+  ],
+  [
+   "Rg8",
+   "best"
+  ],
+  [
+   "fxg8=Q+",
+   "best"
+  ],
+  [
+   "Kh6",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Gaydant",
+    "accuracy": 97.4,
+    "acpl": 14,
+    "tally": {
+     "brilliant": 0,
+     "best": 10,
+     "excellent": 1,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Check m8",
+    "accuracy": 83.9,
+    "acpl": 181,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 1,
+     "good": 0,
+     "forced": 3,
+     "inaccuracy": 4,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   25,
+   117,
+   117,
+   243,
+   193,
+   515,
+   426,
+   678,
+   672,
+   685,
+   657,
+   673,
+   663,
+   1098,
+   1101,
+   1124,
+   1160,
+   1170,
+   1189,
+   1253,
+   1301,
+   9997,
+   9998,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "b8c6",
+   "a1b1",
+   "c5d4",
+   "g2g4",
+   "f8c5",
+   "f3d4",
+   "d8d7",
+   "c1g5",
+   "g8f6",
+   "f3d4",
+   "e7f7",
+   "e5f6",
+   "g7f6",
+   "f3e5",
+   "f7g8",
+   "f6f7",
+   "g8g7",
+   "g5d8",
+   "b8c6",
+   "a4e8",
+   "b8c6",
+   "e8e6",
+   "h8g8",
+   "f7g8q",
+   "h7h6",
+   "e6g6",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:46:14Z"
+}

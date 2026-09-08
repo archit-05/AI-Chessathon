@@ -1,0 +1,224 @@
+{
+ "game": "8331c039-07fd-4777-9a9a-fcf0bfdfc038",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"16\"]\n[White \"Rudra\"]\n[Black \"Sunfish\"]\n[Result \"1-0\"]\n[FEN \"r2qk2r/2pbbppp/p1np1n2/1p2p3/P3P3/1BP2N2/1P1P1PPP/RNBQR1K1 b kq - 0 9\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n9... Na5 { [%clk 0:01:56.862] } 10. Bc2 { [%clk 0:01:58.773] } 10... O-O { [%clk 0:01:53.36] } 11. d4 { [%clk 0:01:53.399] } 11... exd4 { [%clk 0:01:49.704] } 12. cxd4 { [%clk 0:01:51.872] } 12... b4 { [%clk 0:01:46.388] } 13. e5 { [%clk 0:01:44.744] } 13... Nd5 { [%clk 0:01:42.744] } 14. Qe2 { [%clk 0:01:37.831] } 14... b3 { [%clk 0:01:39.819] } 15. Bd3 { [%clk 0:01:35.17] } 15... Nb4 { [%clk 0:01:36.115] } 16. Bd2 { [%clk 0:01:30.041] } 16... dxe5 { [%clk 0:01:32.607] } 17. Nxe5 { [%clk 0:01:23.326] } 17... Re8 { [%clk 0:01:29.486] } 18. Bxh7+ { [%clk 0:01:21.761] } 18... Kxh7 { [%clk 0:01:26.566] } 19. Qh5+ { [%clk 0:01:19.726] } 19... Kg8 { [%clk 0:01:23.027] } 20. Qxf7+ { [%clk 0:01:17.325] } 20... Kh7 { [%clk 0:01:19.716] } 21. Nxd7 { [%clk 0:01:11.487] } 21... Nc2 { [%clk 0:01:16.597] } 22. Re5 { [%clk 0:01:08.188] } 22... Nxa1 { [%clk 0:01:13.59] } 23. Rh5# { [%clk 0:01:08.682] } 1-0\n",
+ "opening": "Ruy Lopez, Closed",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 16\u00b7Final",
+ "white_uuid": "d44726a1-2c96-4cca-99dc-bfecf2dfee7a",
+ "black_uuid": "c28497b9-d5b7-4c60-b4c0-169bed3f1bb7",
+ "site_verdicts": [
+  [
+   "Na5",
+   "excellent"
+  ],
+  [
+   "Bc2",
+   "best"
+  ],
+  [
+   "O-O",
+   "excellent"
+  ],
+  [
+   "d4",
+   "best"
+  ],
+  [
+   "exd4",
+   "excellent"
+  ],
+  [
+   "cxd4",
+   "best"
+  ],
+  [
+   "b4",
+   "good"
+  ],
+  [
+   "e5",
+   "best"
+  ],
+  [
+   "Nd5",
+   "best"
+  ],
+  [
+   "Qe2",
+   "good"
+  ],
+  [
+   "b3",
+   "good"
+  ],
+  [
+   "Bd3",
+   "inaccuracy"
+  ],
+  [
+   "Nb4",
+   "best"
+  ],
+  [
+   "Bd2",
+   "excellent"
+  ],
+  [
+   "dxe5",
+   "good"
+  ],
+  [
+   "Nxe5",
+   "good"
+  ],
+  [
+   "Re8",
+   "blunder"
+  ],
+  [
+   "Bxh7+",
+   "best"
+  ],
+  [
+   "Kxh7",
+   "best"
+  ],
+  [
+   "Qh5+",
+   "inaccuracy"
+  ],
+  [
+   "Kg8",
+   "forced"
+  ],
+  [
+   "Qxf7+",
+   "best"
+  ],
+  [
+   "Kh7",
+   "best"
+  ],
+  [
+   "Nxd7",
+   "excellent"
+  ],
+  [
+   "Nc2",
+   "excellent"
+  ],
+  [
+   "Re5",
+   "excellent"
+  ],
+  [
+   "Nxa1",
+   "blunder"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Artemis",
+    "accuracy": 92.8,
+    "acpl": 22,
+    "tally": {
+     "brilliant": 0,
+     "best": 7,
+     "excellent": 3,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Sunfish",
+    "accuracy": 82.9,
+    "acpl": 112,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 4,
+     "good": 3,
+     "forced": 1,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 2
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   51,
+   64,
+   61,
+   67,
+   67,
+   70,
+   74,
+   109,
+   103,
+   114,
+   60,
+   107,
+   24,
+   28,
+   19,
+   50,
+   18,
+   340,
+   425,
+   460,
+   348,
+   344,
+   338,
+   401,
+   467,
+   466,
+   588,
+   9999,
+   10000
+  ],
+  "best": [
+   "e8g8",
+   "b3c2",
+   "c7c5",
+   "d2d4",
+   "a5c6",
+   "c3d4",
+   "d7g4",
+   "e4e5",
+   "f6d5",
+   "b1d2",
+   "d7e6",
+   "c2e4",
+   "d5b4",
+   "b1c3",
+   "a5c6",
+   "d4d5",
+   "a5c6",
+   "d3h7",
+   "g8h7",
+   "e5f7",
+   "h7g8",
+   "h5f7",
+   "g8h7",
+   "f7h5",
+   "a5c6",
+   "e1e6",
+   "e7g5",
+   "e5h5",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:49:00Z"
+}

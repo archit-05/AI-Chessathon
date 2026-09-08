@@ -1,0 +1,230 @@
+{
+ "game": "9fe8ce91-2cbb-4aaa-8474-558778e885ba",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"7\"]\n[White \"CrimsonBot\"]\n[Black \"LeoMax\"]\n[Result \"0-1\"]\n[FEN \"rnbqk2r/ppp3pp/3bpn2/3p1p2/2PP4/5NP1/PP2PPBP/RNBQ1RK1 b kq - 0 6\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n6... c6 { [%clk 0:02:00.495] } 7. Bg5 { [%clk 0:01:54.51] } 7... dxc4 { [%clk 0:01:58.581] } 8. Nc3 { [%clk 0:01:49.294] } 8... h6 { [%clk 0:01:56.562] } 9. Bh4 { [%clk 0:01:44.34] } 9... g5 { [%clk 0:01:54.007] } 10. Nxg5 { [%clk 0:01:39.632] } 10... hxg5 { [%clk 0:01:52.697] } 11. Bxg5 { [%clk 0:01:35.161] } 11... Nbd7 { [%clk 0:01:52.032] } 12. Kh1 { [%clk 0:01:30.914] } 12... Kf7 { [%clk 0:01:51.369] } 13. Qd2 { [%clk 0:01:26.879] } 13... Qg8 { [%clk 0:01:50.456] } 14. Qe3 { [%clk 0:01:23.046] } 14... Ng4 { [%clk 0:01:48.944] } 15. Qf3 { [%clk 0:01:19.404] } 15... Nxh2 { [%clk 0:01:48.162] } 16. Bf6 { [%clk 0:01:15.945] } 16... Nxf3+ { [%clk 0:01:47.38] } 17. Bh4 { [%clk 0:01:12.658] } 17... Nxh4 { [%clk 0:01:45.145] } 18. gxh4 { [%clk 0:01:09.535] } 18... Rxh4+ { [%clk 0:01:43.85] } 19. Kg1 { [%clk 0:01:06.569] } 19... Rh2 { [%clk 0:01:43.153] } 20. Nd5 { [%clk 0:01:03.751] } 20... Qxg2# { [%clk 0:01:42.236] } 0-1\n",
+ "opening": "Dutch Stonewall",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 7\u00b7Final",
+ "white_uuid": "48257c20-4323-4972-a086-037fed7be7b2",
+ "black_uuid": "3383ea43-ad79-4439-941e-a49788e9e7ce",
+ "site_verdicts": [
+  [
+   "c6",
+   "best"
+  ],
+  [
+   "Bg5",
+   "excellent"
+  ],
+  [
+   "dxc4",
+   "inaccuracy"
+  ],
+  [
+   "Nc3",
+   "good"
+  ],
+  [
+   "h6",
+   "best"
+  ],
+  [
+   "Bh4",
+   "blunder"
+  ],
+  [
+   "g5",
+   "best"
+  ],
+  [
+   "Nxg5",
+   "best"
+  ],
+  [
+   "hxg5",
+   "best"
+  ],
+  [
+   "Bxg5",
+   "best"
+  ],
+  [
+   "Nbd7",
+   "good"
+  ],
+  [
+   "Kh1",
+   "mistake"
+  ],
+  [
+   "Kf7",
+   "inaccuracy"
+  ],
+  [
+   "Qd2",
+   "good"
+  ],
+  [
+   "Qg8",
+   "inaccuracy"
+  ],
+  [
+   "Qe3",
+   "blunder"
+  ],
+  [
+   "Ng4",
+   "best"
+  ],
+  [
+   "Qf3",
+   "good"
+  ],
+  [
+   "Nxh2",
+   "best"
+  ],
+  [
+   "Bf6",
+   "good"
+  ],
+  [
+   "Nxf3+",
+   "best"
+  ],
+  [
+   "Bh4",
+   "best"
+  ],
+  [
+   "Nxh4",
+   "best"
+  ],
+  [
+   "gxh4",
+   "inaccuracy"
+  ],
+  [
+   "Rxh4+",
+   "best"
+  ],
+  [
+   "Kg1",
+   "best"
+  ],
+  [
+   "Rh2",
+   "best"
+  ],
+  [
+   "Nd5",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "CrimsonBot",
+    "accuracy": 77.4,
+    "acpl": 191,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 2,
+     "good": 4,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 2
+    }
+   },
+   {
+    "name": "CompetitionBotLeo",
+    "accuracy": 92.7,
+    "acpl": 23,
+    "tally": {
+     "brilliant": 0,
+     "best": 11,
+     "excellent": 0,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 3,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   46,
+   52,
+   33,
+   143,
+   116,
+   105,
+   -105,
+   -120,
+   -116,
+   -124,
+   -135,
+   -97,
+   -259,
+   -157,
+   -204,
+   -127,
+   -675,
+   -670,
+   -925,
+   -934,
+   -1256,
+   -1315,
+   -1389,
+   -1460,
+   -9997,
+   -9998,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "c7c6",
+   "f3e5",
+   "h7h6",
+   "b1d2",
+   "h7h6",
+   "g5f6",
+   "g7g5",
+   "f3g5",
+   "h6g5",
+   "h4g5",
+   "d6e7",
+   "e2e4",
+   "d6e7",
+   "e2e4",
+   "d6e7",
+   "e2e4",
+   "f6g4",
+   "h1g1",
+   "g4h2",
+   "g5h4",
+   "h2f3",
+   "f6h4",
+   "f3h4",
+   "g2h3",
+   "h8h4",
+   "h1g1",
+   "h4h2",
+   "a2a3",
+   "g8g2",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:40:19Z"
+}

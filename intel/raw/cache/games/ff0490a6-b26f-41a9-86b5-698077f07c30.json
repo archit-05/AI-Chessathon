@@ -1,0 +1,200 @@
+{
+ "game": "ff0490a6-b26f-41a9-86b5-698077f07c30",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"17\"]\n[White \"Egill40\"]\n[Black \"The Monkey's Bum\"]\n[Result \"*\"]\n[FEN \"r1bqk2r/2p1bppp/p1np1n2/1p2p3/4P3/1B3N1P/PPPP1PP1/RNBQR1K1 b kq - 0 8\"]\n[SetUp \"1\"]\n[Termination \"unterminated\"]\n\n8... Na5 { [%clk 0:02:00.23] } 9. Nc3 { [%clk 0:01:58.998] } 9... Nxb3 { [%clk 0:01:59.8] } 10. axb3 { [%clk 0:01:57.996] } 10... b4 { [%clk 0:01:59.63] } 11. Nd5 { [%clk 0:01:56.994] } 11... Nxd5 { [%clk 0:02:00.066] } 12. exd5 { [%clk 0:01:55.992] } 12... Bb7 { [%clk 0:02:00.298] } 13. Re4 { [%clk 0:01:54.989] } 13... O-O { [%clk 0:02:00.506] } 14. d3 { [%clk 0:01:53.987] } 14... a5 { [%clk 0:02:00.399] } 15. c4 { [%clk 0:01:52.986] } 15... bxc3 { [%clk 0:02:00.398] } 16. bxc3 { [%clk 0:01:51.984] } 16... Bxd5 { [%clk 0:02:00.551] } 17. Rg4 { [%clk 0:01:50.982] } 17... Be6 { [%clk 0:02:00.238] } 18. Re4 { [%clk 0:01:49.98] } 18... Bd5 { [%clk 0:01:59.991] } 19. Rg4 { [%clk 0:01:48.978] } 19... Be6 { [%clk 0:02:00.487] } 20. Re4 { [%clk 0:01:47.976] } *\n",
+ "opening": "Ruy Lopez, Closed",
+ "termination_text": "Unterminated",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 17\u00b7Void",
+ "white_uuid": "28cb7468-aa2c-4887-82d1-89ffafeeed5e",
+ "black_uuid": "e115c6ff-50b7-4c63-b4f3-99b563804929",
+ "site_verdicts": [
+  [
+   "Na5",
+   "best"
+  ],
+  [
+   "Nc3",
+   "excellent"
+  ],
+  [
+   "Nxb3",
+   "excellent"
+  ],
+  [
+   "axb3",
+   "best"
+  ],
+  [
+   "b4",
+   "best"
+  ],
+  [
+   "Nd5",
+   "good"
+  ],
+  [
+   "Nxd5",
+   "best"
+  ],
+  [
+   "exd5",
+   "best"
+  ],
+  [
+   "Bb7",
+   "good"
+  ],
+  [
+   "Re4",
+   "inaccuracy"
+  ],
+  [
+   "O-O",
+   "excellent"
+  ],
+  [
+   "d3",
+   "good"
+  ],
+  [
+   "a5",
+   "excellent"
+  ],
+  [
+   "c4",
+   "best"
+  ],
+  [
+   "bxc3",
+   "excellent"
+  ],
+  [
+   "bxc3",
+   "best"
+  ],
+  [
+   "Bxd5",
+   "best"
+  ],
+  [
+   "Rg4",
+   "excellent"
+  ],
+  [
+   "Be6",
+   "inaccuracy"
+  ],
+  [
+   "Re4",
+   "mistake"
+  ],
+  [
+   "Bd5",
+   "inaccuracy"
+  ],
+  [
+   "Rg4",
+   "good"
+  ],
+  [
+   "Be6",
+   "inaccuracy"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Chesser",
+    "accuracy": 83.2,
+    "acpl": 43,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 2,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 2,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "MonkeyBum",
+    "accuracy": 87.9,
+    "acpl": 27,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 4,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 3,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -17,
+   -10,
+   -15,
+   -7,
+   8,
+   4,
+   -39,
+   -36,
+   -25,
+   10,
+   -98,
+   -78,
+   -122,
+   -130,
+   -144,
+   -121,
+   -120,
+   -123,
+   -144,
+   -75,
+   -192,
+   -117,
+   -146,
+   -65,
+   -194
+  ],
+  "best": [
+   "c6a5",
+   "d2d3",
+   "e8g8",
+   "a2b3",
+   "b5b4",
+   "c3a4",
+   "f6d5",
+   "e4d5",
+   "f7f5",
+   "d2d4",
+   "a6a5",
+   "e4b4",
+   "b7d5",
+   "c2c4",
+   "f7f5",
+   "b2c3",
+   "b7d5",
+   "e4a4",
+   "c7c5",
+   "g4a4",
+   "d8b8",
+   "e4a4",
+   "c7c5",
+   "g4a4",
+   "d8b8"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:51:57Z"
+}

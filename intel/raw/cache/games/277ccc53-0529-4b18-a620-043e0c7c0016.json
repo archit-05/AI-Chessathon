@@ -1,0 +1,212 @@
+{
+ "game": "277ccc53-0529-4b18-a620-043e0c7c0016",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"29\"]\n[White \"tristanize_chess\"]\n[Black \"Magnus\"]\n[Result \"1-0\"]\n[FEN \"r1bqk1nr/pp1p1ppp/1bn1p3/8/4P3/PNN5/1PP2PPP/R1BQKB1R b KQkq - 4 7\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n7... Nge7 { [%clk 0:02:00.499] } 8. Bc4 { [%clk 0:01:57.602] } 8... Rg8 { [%clk 0:02:00.997] } 9. Qh5 { [%clk 0:01:53.128] } 9... Rh8 { [%clk 0:02:01.496] } 10. O-O { [%clk 0:01:48.828] } 10... Rg8 { [%clk 0:02:01.994] } 11. Qxh7 { [%clk 0:01:44.722] } 11... Rh8 { [%clk 0:02:02.493] } 12. Qxh8+ { [%clk 0:01:40.788] } 12... Ng8 { [%clk 0:02:02.992] } 13. Qxg8+ { [%clk 0:01:36.956] } 13... Ke7 { [%clk 0:02:03.491] } 14. Bg5+ { [%clk 0:01:33.328] } 14... Kd6 { [%clk 0:02:03.989] } 15. Rfd1+ { [%clk 0:01:29.772] } 15... Kc7 { [%clk 0:02:04.488] } 16. Bxd8+ { [%clk 0:01:26.439] } 16... Kb8 { [%clk 0:02:04.987] } 17. Bxb6 { [%clk 0:01:23.158] } 17... Nd8 { [%clk 0:02:05.486] } 18. Bxd8 { [%clk 0:01:20.075] } 18... g6 { [%clk 0:02:05.985] } 19. Qxf7 { [%clk 0:01:17.103] } 19... d6 { [%clk 0:02:06.484] } 20. Bc7# { [%clk 0:01:17.599] } 1-0\n",
+ "opening": "Sicilian Taimanov",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 29\u00b7Final",
+ "white_uuid": "b1d4ae25-42a4-474a-b5bb-8e42066abda4",
+ "black_uuid": "2c34bb06-ba13-42a2-927e-bb2d9573f1a1",
+ "site_verdicts": [
+  [
+   "Nge7",
+   "best"
+  ],
+  [
+   "Bc4",
+   "good"
+  ],
+  [
+   "Rg8",
+   "blunder"
+  ],
+  [
+   "Qh5",
+   "excellent"
+  ],
+  [
+   "Rh8",
+   "excellent"
+  ],
+  [
+   "O-O",
+   "good"
+  ],
+  [
+   "Rg8",
+   "mistake"
+  ],
+  [
+   "Qxh7",
+   "inaccuracy"
+  ],
+  [
+   "Rh8",
+   "blunder"
+  ],
+  [
+   "Qxh8+",
+   "best"
+  ],
+  [
+   "Ng8",
+   "forced"
+  ],
+  [
+   "Qxg8+",
+   "best"
+  ],
+  [
+   "Ke7",
+   "forced"
+  ],
+  [
+   "Bg5+",
+   "best"
+  ],
+  [
+   "Kd6",
+   "excellent"
+  ],
+  [
+   "Rfd1+",
+   "miss"
+  ],
+  [
+   "Kc7",
+   "best"
+  ],
+  [
+   "Bxd8+",
+   "excellent"
+  ],
+  [
+   "Kb8",
+   "best"
+  ],
+  [
+   "Bxb6",
+   "excellent"
+  ],
+  [
+   "Nd8",
+   "inaccuracy"
+  ],
+  [
+   "Bxd8",
+   "miss"
+  ],
+  [
+   "g6",
+   "inaccuracy"
+  ],
+  [
+   "Qxf7",
+   "excellent"
+  ],
+  [
+   "d6",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "GoodKnight",
+    "accuracy": 96.6,
+    "acpl": 189,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 5,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 2,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "burger",
+    "accuracy": 79.9,
+    "acpl": 274,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 3,
+     "good": 0,
+     "forced": 2,
+     "inaccuracy": 2,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 2
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   28,
+   29,
+   -16,
+   155,
+   162,
+   176,
+   121,
+   260,
+   184,
+   9990,
+   9991,
+   9991,
+   9992,
+   9992,
+   9993,
+   9995,
+   1425,
+   1572,
+   1409,
+   1495,
+   1376,
+   9996,
+   1987,
+   9997,
+   9995,
+   9999,
+   10000
+  ],
+  "best": [
+   "g8e7",
+   "c1g5",
+   "e8g8",
+   "c1f4",
+   "e7g6",
+   "c1g5",
+   "e7g6",
+   "c3b5",
+   "c6e5",
+   "h7h8",
+   "e7g8",
+   "h8g8",
+   "e8e7",
+   "c1g5",
+   "f7f6",
+   "c3b5",
+   "d6c7",
+   "g8d8",
+   "c7b8",
+   "g8f8",
+   "a7b6",
+   "b6c7",
+   "a7a6",
+   "g8f8",
+   "a7a6",
+   "f7c7",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:53:29Z"
+}

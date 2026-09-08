@@ -1,0 +1,146 @@
+{
+ "game": "2fe6646f-481b-449d-b390-2f8d5e707aca",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.07\"]\n[Round \"47\"]\n[White \"Dogwarts\"]\n[Black \"Selvoo\"]\n[Result \"0-1\"]\n[FEN \"r1bqk2r/pp2npbp/2np2p1/2p1p3/4P3/P1NP2PP/1PP1NPB1/R1BQK2R b KQkq - 2 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8... Qb6 { [%clk 0:01:56.076] } 9. b4 { [%clk 0:02:00.498] } 9... cxb4 { [%clk 0:01:52.773] } 10. h4 { [%clk 0:02:00.997] } 10... bxc3 { [%clk 0:01:49.334] } 11. Rh2 { [%clk 0:02:01.495] } 11... Bg4 { [%clk 0:01:45.715] } 12. Bh6 { [%clk 0:02:01.993] } 12... Bxh6 { [%clk 0:01:42.323] } 13. h5 { [%clk 0:02:02.492] } 13... Nd4 { [%clk 0:01:39.063] } 14. Bh3 { [%clk 0:02:02.99] } 14... Bxe2 { [%clk 0:01:36.509] } 15. Qb1 { [%clk 0:02:03.489] } 15... Bd2# { [%clk 0:01:34.151] } 0-1\n",
+ "opening": "Sicilian Closed",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 47\u00b7Final",
+ "white_uuid": "81dca41d-b715-4c1f-928e-a0100a7a7df6",
+ "black_uuid": "92c69c50-0bd7-4063-b99a-de7198e0a173",
+ "site_verdicts": [
+  [
+   "Qb6",
+   "good"
+  ],
+  [
+   "b4",
+   "excellent"
+  ],
+  [
+   "cxb4",
+   "best"
+  ],
+  [
+   "h4",
+   "blunder"
+  ],
+  [
+   "bxc3",
+   "best"
+  ],
+  [
+   "Rh2",
+   "inaccuracy"
+  ],
+  [
+   "Bg4",
+   "excellent"
+  ],
+  [
+   "Bh6",
+   "inaccuracy"
+  ],
+  [
+   "Bxh6",
+   "best"
+  ],
+  [
+   "h5",
+   "excellent"
+  ],
+  [
+   "Nd4",
+   "best"
+  ],
+  [
+   "Bh3",
+   "excellent"
+  ],
+  [
+   "Bxe2",
+   "excellent"
+  ],
+  [
+   "Qb1",
+   "inaccuracy"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "72o",
+    "accuracy": 76.5,
+    "acpl": 306,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 3,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 3,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "Nuke",
+    "accuracy": 98.6,
+    "acpl": 11,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 2,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -29,
+   -2,
+   -9,
+   3,
+   -451,
+   -445,
+   -581,
+   -539,
+   -866,
+   -862,
+   -978,
+   -1015,
+   -1116,
+   -1160,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "e8g8",
+   "e1g1",
+   "c5b4",
+   "c3d5",
+   "b4c3",
+   "h4h5",
+   "h7h5",
+   "c1e3",
+   "g7h6",
+   "f2f3",
+   "c6d4",
+   "e2d4",
+   "h6d2",
+   "d1e2",
+   "h6d2",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:03:14Z"
+}

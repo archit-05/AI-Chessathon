@@ -1,0 +1,242 @@
+{
+ "game": "6d3c58df-f731-498b-90f1-62be45fa2d4c",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"28\"]\n[White \"Magnus.AI\"]\n[Black \"Dio\"]\n[Result \"0-1\"]\n[FEN \"r3kb1r/pp1qpppp/2n2n2/3p4/3P1Bb1/1QPB3P/PP3PP1/RN2K1NR b KQkq - 0 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8... Bh5 { [%clk 0:01:54.44] } 9. Nd2 { [%clk 0:02:00.497] } 9... Bg6 { [%clk 0:01:50.028] } 10. Bxg6 { [%clk 0:01:56.939] } 10... hxg6 { [%clk 0:01:48.388] } 11. Ngf3 { [%clk 0:01:54.971] } 11... a5 { [%clk 0:01:46.683] } 12. O-O { [%clk 0:01:51.053] } 12... a4 { [%clk 0:01:44.647] } 13. Qb5 { [%clk 0:01:47.535] } 13... e5 { [%clk 0:01:43.169] } 14. dxe5 { [%clk 0:01:44.473] } 14... Nh5 { [%clk 0:01:39.125] } 15. Bg5 { [%clk 0:01:42.536] } 15... Ra5 { [%clk 0:01:37.19] } 16. Qd3 { [%clk 0:01:41.253] } 16... Be7 { [%clk 0:01:35.237] } 17. b4 { [%clk 0:01:39.292] } 17... axb3 { [%clk 0:01:34.042] } 18. Nxb3 { [%clk 0:01:37.239] } 18... Ra4 { [%clk 0:01:32.473] } 19. Bxe7 { [%clk 0:01:36.066] } 19... Nf4 { [%clk 0:01:27.386] } 20. Qb5 { [%clk 0:01:34.038] } 20... Nxh3+ { [%clk 0:01:24.936] } 21. gxh3 { [%clk 0:01:32.366] } 21... Qg4+ { [%clk 0:01:25.053] } 22. Kh1 { [%clk 0:01:32.767] } 22... Qxh3+ { [%clk 0:01:25.453] } 23. Kg1 { [%clk 0:01:33.252] } 23... Rg4# { [%clk 0:01:25.944] } 0-1\n",
+ "opening": "Caro-Kann Exchange",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 28\u00b7Final",
+ "white_uuid": "fd604223-8da1-4c1f-aff5-c5916b25ad96",
+ "black_uuid": "0694a1f6-90a5-46fb-bfad-bea66259fe23",
+ "site_verdicts": [
+  [
+   "Bh5",
+   "best"
+  ],
+  [
+   "Nd2",
+   "best"
+  ],
+  [
+   "Bg6",
+   "excellent"
+  ],
+  [
+   "Bxg6",
+   "best"
+  ],
+  [
+   "hxg6",
+   "best"
+  ],
+  [
+   "Ngf3",
+   "best"
+  ],
+  [
+   "a5",
+   "good"
+  ],
+  [
+   "O-O",
+   "good"
+  ],
+  [
+   "a4",
+   "best"
+  ],
+  [
+   "Qb5",
+   "excellent"
+  ],
+  [
+   "e5",
+   "blunder"
+  ],
+  [
+   "dxe5",
+   "best"
+  ],
+  [
+   "Nh5",
+   "excellent"
+  ],
+  [
+   "Bg5",
+   "inaccuracy"
+  ],
+  [
+   "Ra5",
+   "best"
+  ],
+  [
+   "Qd3",
+   "good"
+  ],
+  [
+   "Be7",
+   "inaccuracy"
+  ],
+  [
+   "b4",
+   "good"
+  ],
+  [
+   "axb3",
+   "best"
+  ],
+  [
+   "Nxb3",
+   "best"
+  ],
+  [
+   "Ra4",
+   "best"
+  ],
+  [
+   "Bxe7",
+   "blunder"
+  ],
+  [
+   "Nf4",
+   "best"
+  ],
+  [
+   "Qb5",
+   "blunder"
+  ],
+  [
+   "Nxh3+",
+   "best"
+  ],
+  [
+   "gxh3",
+   "mistake"
+  ],
+  [
+   "Qg4+",
+   "best"
+  ],
+  [
+   "Kh1",
+   "best"
+  ],
+  [
+   "Qxh3+",
+   "best"
+  ],
+  [
+   "Kg1",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Magnus.AI",
+    "accuracy": 76.3,
+    "acpl": 130,
+    "tally": {
+     "brilliant": 0,
+     "best": 6,
+     "excellent": 2,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 2
+    }
+   },
+   {
+    "name": "Dio",
+    "accuracy": 92.9,
+    "acpl": 25,
+    "tally": {
+     "brilliant": 0,
+     "best": 10,
+     "excellent": 3,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   18,
+   21,
+   19,
+   40,
+   28,
+   29,
+   28,
+   50,
+   25,
+   21,
+   20,
+   233,
+   250,
+   275,
+   207,
+   229,
+   192,
+   260,
+   207,
+   224,
+   222,
+   230,
+   -40,
+   -76,
+   -551,
+   -704,
+   -9997,
+   -9998,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "g4h5",
+   "b1d2",
+   "e7e6",
+   "d3g6",
+   "h7g6",
+   "g1f3",
+   "e7e6",
+   "a2a4",
+   "a5a4",
+   "b3b6",
+   "e7e6",
+   "d4e5",
+   "c6d8",
+   "f4h2",
+   "a8a5",
+   "b5e2",
+   "d7f5",
+   "g5e7",
+   "a4b3",
+   "d2b3",
+   "a5a4",
+   "f1d1",
+   "h5f4",
+   "e5e6",
+   "f4h3",
+   "g1h1",
+   "d7g4",
+   "g1h1",
+   "g4h3",
+   "f3h2",
+   "h3h1",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:21:58Z"
+}

@@ -1,0 +1,206 @@
+{
+ "game": "dd300596-d13f-4c6a-8b1f-d92c9fbf3e61",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"16\"]\n[White \"corundum.ai\"]\n[Black \"Solo Man\"]\n[Result \"*\"]\n[FEN \"r1bqk2r/pp2ppbp/2np1np1/2p5/4P2P/2NP2P1/PPP2PB1/R1BQK1NR w KQkq - 1 7\"]\n[SetUp \"1\"]\n[Termination \"unterminated\"]\n\n7. Nf3 { [%clk 0:01:56.497] } 7... O-O { [%clk 0:01:55.668] } 8. Be3 { [%clk 0:01:52.995] } 8... Ng4 { [%clk 0:01:51.392] } 9. O-O { [%clk 0:01:49.493] } 9... Nxe3 { [%clk 0:01:47.881] } 10. fxe3 { [%clk 0:01:45.99] } 10... Bg4 { [%clk 0:01:45.108] } 11. Qe2 { [%clk 0:01:42.488] } 11... e6 { [%clk 0:01:41.99] } 12. Qf2 { [%clk 0:01:38.986] } 12... Qb6 { [%clk 0:01:39.353] } 13. Rab1 { [%clk 0:01:35.485] } 13... Rad8 { [%clk 0:01:36.837] } 14. Nh2 { [%clk 0:01:31.983] } 14... h5 { [%clk 0:01:33.351] } 15. Nxg4 { [%clk 0:01:28.481] } 15... hxg4 { [%clk 0:01:30.83] } 16. Qe2 { [%clk 0:01:24.978] } 16... Ne5 { [%clk 0:01:28.313] } 17. Qf2 { [%clk 0:01:21.476] } 17... Nc6 { [%clk 0:01:25.198] } 18. Na4 { [%clk 0:01:17.974] } 18... Qa5 { [%clk 0:01:22.186] } 19. Nc3 { [%clk 0:01:14.575] } *\n",
+ "opening": "Sicilian Closed",
+ "termination_text": "Unterminated",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 16\u00b7Void",
+ "white_uuid": "e3b6706d-d6a7-43d4-ba84-3db44ebe66b0",
+ "black_uuid": "1324cfd4-b352-45e9-9224-44ee141ae158",
+ "site_verdicts": [
+  [
+   "Nf3",
+   "good"
+  ],
+  [
+   "O-O",
+   "excellent"
+  ],
+  [
+   "Be3",
+   "good"
+  ],
+  [
+   "Ng4",
+   "excellent"
+  ],
+  [
+   "O-O",
+   "inaccuracy"
+  ],
+  [
+   "Nxe3",
+   "best"
+  ],
+  [
+   "fxe3",
+   "best"
+  ],
+  [
+   "Bg4",
+   "excellent"
+  ],
+  [
+   "Qe2",
+   "excellent"
+  ],
+  [
+   "e6",
+   "excellent"
+  ],
+  [
+   "Qf2",
+   "best"
+  ],
+  [
+   "Qb6",
+   "excellent"
+  ],
+  [
+   "Rab1",
+   "best"
+  ],
+  [
+   "Rad8",
+   "good"
+  ],
+  [
+   "Nh2",
+   "excellent"
+  ],
+  [
+   "h5",
+   "good"
+  ],
+  [
+   "Nxg4",
+   "best"
+  ],
+  [
+   "hxg4",
+   "best"
+  ],
+  [
+   "Qe2",
+   "good"
+  ],
+  [
+   "Ne5",
+   "best"
+  ],
+  [
+   "Qf2",
+   "excellent"
+  ],
+  [
+   "Nc6",
+   "good"
+  ],
+  [
+   "Na4",
+   "good"
+  ],
+  [
+   "Qa5",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "muffin",
+    "accuracy": 92.4,
+    "acpl": 23,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 3,
+     "good": 4,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Viego",
+    "accuracy": 93.8,
+    "acpl": 17,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 5,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -22,
+   -53,
+   -38,
+   -67,
+   -59,
+   -152,
+   -153,
+   -142,
+   -123,
+   -139,
+   -130,
+   -125,
+   -115,
+   -104,
+   -75,
+   -92,
+   -48,
+   -48,
+   -47,
+   -99,
+   -84,
+   -91,
+   -47,
+   -94,
+   -86,
+   -93
+  ],
+  "best": [
+   "c3d5",
+   "c8g4",
+   "f3h2",
+   "b7b5",
+   "e3c1",
+   "g4e3",
+   "f2e3",
+   "b7b5",
+   "a2a4",
+   "b7b5",
+   "e2f2",
+   "g4f3",
+   "a1b1",
+   "g4f3",
+   "c3e2",
+   "c6e5",
+   "h2g4",
+   "h5g4",
+   "c3e2",
+   "c6e5",
+   "g1h2",
+   "b6a5",
+   "c3e2",
+   "b6a5",
+   "a4c3",
+   "c6e5"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:04:31Z"
+}

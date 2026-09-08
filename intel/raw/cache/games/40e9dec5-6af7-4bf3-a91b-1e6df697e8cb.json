@@ -1,0 +1,218 @@
+{
+ "game": "40e9dec5-6af7-4bf3-a91b-1e6df697e8cb",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"20\"]\n[White \"Cheeky\"]\n[Black \"Naveen Ragav\"]\n[Result \"*\"]\n[FEN \"r1bqk2r/pp3ppp/2nbpn2/2pp4/3P1B2/2P1P2N/PP1N1PPP/R2QKB1R w KQkq - 2 7\"]\n[SetUp \"1\"]\n[Termination \"unterminated\"]\n\n7. Bxd6 { [%clk 0:01:54.492] } 7... Qxd6 { [%clk 0:01:57.059] } 8. dxc5 { [%clk 0:01:48.272] } 8... Qxc5 { [%clk 0:01:54.228] } 9. Nb3 { [%clk 0:01:42.275] } 9... Qe7 { [%clk 0:01:51.498] } 10. Nd4 { [%clk 0:01:32.011] } 10... O-O { [%clk 0:01:48.837] } 11. f4 { [%clk 0:01:21.543] } 11... Bd7 { [%clk 0:01:46.26] } 12. Qb3 { [%clk 0:01:12.056] } 12... e5 { [%clk 0:01:43.747] } 13. Ne2 { [%clk 0:01:09.994] } 13... Ng4 { [%clk 0:01:41.249] } 14. Qxd5 { [%clk 0:01:05.341] } 14... Nxe3 { [%clk 0:01:38.744] } 15. Qd2 { [%clk 0:00:57.936] } 15... Nc4 { [%clk 0:01:36.41] } 16. Qd3 { [%clk 0:00:53.619] } 16... Nxb2 { [%clk 0:01:34.14] } 17. Qd2 { [%clk 0:00:47.508] } 17... Nc4 { [%clk 0:01:31.907] } 18. Qd3 { [%clk 0:00:45.53] } 18... Nb2 { [%clk 0:01:29.707] } 19. Qd2 { [%clk 0:00:38.944] } 19... Nc4 { [%clk 0:01:27.495] } 20. Qd3 { [%clk 0:00:33.107] } *\n",
+ "opening": "London System",
+ "termination_text": "Unterminated",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 20\u00b7Void",
+ "white_uuid": "87449072-593f-439d-a1f0-949baf11e1ea",
+ "black_uuid": "ab9188c9-19e7-47f5-b99f-29587c16565b",
+ "site_verdicts": [
+  [
+   "Bxd6",
+   "excellent"
+  ],
+  [
+   "Qxd6",
+   "best"
+  ],
+  [
+   "dxc5",
+   "good"
+  ],
+  [
+   "Qxc5",
+   "best"
+  ],
+  [
+   "Nb3",
+   "excellent"
+  ],
+  [
+   "Qe7",
+   "excellent"
+  ],
+  [
+   "Nd4",
+   "inaccuracy"
+  ],
+  [
+   "O-O",
+   "excellent"
+  ],
+  [
+   "f4",
+   "good"
+  ],
+  [
+   "Bd7",
+   "good"
+  ],
+  [
+   "Qb3",
+   "mistake"
+  ],
+  [
+   "e5",
+   "best"
+  ],
+  [
+   "Ne2",
+   "inaccuracy"
+  ],
+  [
+   "Ng4",
+   "excellent"
+  ],
+  [
+   "Qxd5",
+   "excellent"
+  ],
+  [
+   "Nxe3",
+   "excellent"
+  ],
+  [
+   "Qd2",
+   "excellent"
+  ],
+  [
+   "Nc4",
+   "excellent"
+  ],
+  [
+   "Qd3",
+   "best"
+  ],
+  [
+   "Nxb2",
+   "best"
+  ],
+  [
+   "Qd2",
+   "good"
+  ],
+  [
+   "Nc4",
+   "excellent"
+  ],
+  [
+   "Qd3",
+   "best"
+  ],
+  [
+   "Nb2",
+   "excellent"
+  ],
+  [
+   "Qd2",
+   "excellent"
+  ],
+  [
+   "Nc4",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Cheeky",
+    "accuracy": 90.1,
+    "acpl": 41,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 5,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "naveen ragav",
+    "accuracy": 97.8,
+    "acpl": 9,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 8,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -24,
+   -9,
+   -12,
+   -57,
+   -57,
+   -74,
+   -55,
+   -143,
+   -146,
+   -197,
+   -142,
+   -281,
+   -319,
+   -430,
+   -432,
+   -430,
+   -460,
+   -469,
+   -456,
+   -475,
+   -465,
+   -524,
+   -512,
+   -522,
+   -508,
+   -518,
+   -522,
+   -532
+  ],
+  "best": [
+   "f1b5",
+   "d8d6",
+   "f2f4",
+   "d6c5",
+   "h3f4",
+   "c5b6",
+   "h3f4",
+   "e6e5",
+   "h3f4",
+   "e6e5",
+   "h3f2",
+   "e6e5",
+   "d4c6",
+   "d7h3",
+   "e1c1",
+   "e5f4",
+   "d5e4",
+   "e5f4",
+   "d2d3",
+   "c4b2",
+   "d3e4",
+   "d7h3",
+   "d2d3",
+   "d7h3",
+   "d3e3",
+   "d7h3",
+   "d2d3",
+   "d7h3"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:19:36Z"
+}

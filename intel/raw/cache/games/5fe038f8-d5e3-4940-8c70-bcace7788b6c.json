@@ -1,0 +1,374 @@
+{
+ "game": "5fe038f8-d5e3-4940-8c70-bcace7788b6c",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.07\"]\n[Round \"49\"]\n[White \"AlphaGambit\"]\n[Black \"En Passant Labs\"]\n[Result \"1-0\"]\n[FEN \"rnbq1rk1/p3bppp/1pp1pn2/3p4/2PP4/1P3NP1/P3PPBP/RNBQ1RK1 w - - 0 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8. Nc3 { [%clk 0:01:56.748] } 8... dxc4 { [%clk 0:01:57.208] } 9. bxc4 { [%clk 0:01:53.48] } 9... b5 { [%clk 0:01:54.601] } 10. cxb5 { [%clk 0:01:50.195] } 10... Qa5 { [%clk 0:01:52.053] } 11. Bb2 { [%clk 0:01:44.993] } 11... cxb5 { [%clk 0:01:49.562] } 12. Ne5 { [%clk 0:01:41.741] } 12... b4 { [%clk 0:01:47.126] } 13. Qb3 { [%clk 0:01:38.471] } 13... bxc3 { [%clk 0:01:44.744] } 14. Bxc3 { [%clk 0:01:35.181] } 14... Qc7 { [%clk 0:01:42.415] } 15. Bxa8 { [%clk 0:01:31.871] } 15... Nbd7 { [%clk 0:01:40.138] } 16. Rac1 { [%clk 0:01:26.627] } 16... Nxe5 { [%clk 0:01:37.912] } 17. dxe5 { [%clk 0:01:23.358] } 17... Ne4 { [%clk 0:01:35.734] } 18. Bxe4 { [%clk 0:01:18.173] } 18... Bg5 { [%clk 0:01:33.606] } 19. f4 { [%clk 0:01:13.086] } 19... Bxf4 { [%clk 0:01:31.524] } 20. Rxf4 { [%clk 0:01:08.102] } 20... Qc5+ { [%clk 0:01:29.489] } 21. Kg2 { [%clk 0:01:02.148] } 21... Qe3 { [%clk 0:01:27.499] } 22. Qc2 { [%clk 0:00:57.466] } 22... Qc5 { [%clk 0:01:25.552] } 23. Bxh7+ { [%clk 0:00:52.893] } 23... Kh8 { [%clk 0:01:26.051] } 24. Bd4 { [%clk 0:00:48.431] } 24... Qxc2 { [%clk 0:01:24.136] } 25. Bxc2 { [%clk 0:00:45.7] } 25... g5 { [%clk 0:01:22.265] } 26. Rff1 { [%clk 0:00:39.587] } 26... g4 { [%clk 0:01:20.435] } 27. Be4 { [%clk 0:00:35.207] } 27... Ba6 { [%clk 0:01:18.646] } 28. Bc5 { [%clk 0:00:31.367] } 28... Rc8 { [%clk 0:01:16.897] } 29. Rxf7 { [%clk 0:00:27.999] } 29... Bxe2 { [%clk 0:01:15.186] } 30. Rxa7 { [%clk 0:00:25.047] } 30... Rxc5 { [%clk 0:01:13.514] } 31. Rxc5 { [%clk 0:00:22.325] } 31... Ba6 { [%clk 0:01:14] } 32. Rcc7 { [%clk 0:00:19.713] } 32... Bb5 { [%clk 0:01:14.496] } 33. Rc8+ { [%clk 0:00:17.465] } 33... Be8 { [%clk 0:01:14.995] } 34. Rxe8# { [%clk 0:00:15.53] } 1-0\n",
+ "opening": "Catalan Opening",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 49\u00b7Final",
+ "white_uuid": "094b37cd-8a17-47bd-8d4d-10efe40101ee",
+ "black_uuid": "26a8dec4-e2a8-4fbf-8f4c-86be287e51fe",
+ "site_verdicts": [
+  [
+   "Nc3",
+   "excellent"
+  ],
+  [
+   "dxc4",
+   "inaccuracy"
+  ],
+  [
+   "bxc4",
+   "best"
+  ],
+  [
+   "b5",
+   "inaccuracy"
+  ],
+  [
+   "cxb5",
+   "best"
+  ],
+  [
+   "Qa5",
+   "inaccuracy"
+  ],
+  [
+   "Bb2",
+   "good"
+  ],
+  [
+   "cxb5",
+   "mistake"
+  ],
+  [
+   "Ne5",
+   "best"
+  ],
+  [
+   "b4",
+   "best"
+  ],
+  [
+   "Qb3",
+   "best"
+  ],
+  [
+   "bxc3",
+   "excellent"
+  ],
+  [
+   "Bxc3",
+   "best"
+  ],
+  [
+   "Qc7",
+   "good"
+  ],
+  [
+   "Bxa8",
+   "best"
+  ],
+  [
+   "Nbd7",
+   "good"
+  ],
+  [
+   "Rac1",
+   "excellent"
+  ],
+  [
+   "Nxe5",
+   "best"
+  ],
+  [
+   "dxe5",
+   "excellent"
+  ],
+  [
+   "Ne4",
+   "inaccuracy"
+  ],
+  [
+   "Bxe4",
+   "best"
+  ],
+  [
+   "Bg5",
+   "best"
+  ],
+  [
+   "f4",
+   "excellent"
+  ],
+  [
+   "Bxf4",
+   "good"
+  ],
+  [
+   "Rxf4",
+   "best"
+  ],
+  [
+   "Qc5+",
+   "best"
+  ],
+  [
+   "Kg2",
+   "best"
+  ],
+  [
+   "Qe3",
+   "best"
+  ],
+  [
+   "Qc2",
+   "best"
+  ],
+  [
+   "Qc5",
+   "excellent"
+  ],
+  [
+   "Bxh7+",
+   "excellent"
+  ],
+  [
+   "Kh8",
+   "forced"
+  ],
+  [
+   "Bd4",
+   "excellent"
+  ],
+  [
+   "Qxc2",
+   "best"
+  ],
+  [
+   "Bxc2",
+   "best"
+  ],
+  [
+   "g5",
+   "best"
+  ],
+  [
+   "Rff1",
+   "excellent"
+  ],
+  [
+   "g4",
+   "excellent"
+  ],
+  [
+   "Be4",
+   "best"
+  ],
+  [
+   "Ba6",
+   "best"
+  ],
+  [
+   "Bc5",
+   "excellent"
+  ],
+  [
+   "Rc8",
+   "best"
+  ],
+  [
+   "Rxf7",
+   "best"
+  ],
+  [
+   "Bxe2",
+   "best"
+  ],
+  [
+   "Rxa7",
+   "excellent"
+  ],
+  [
+   "Rxc5",
+   "inaccuracy"
+  ],
+  [
+   "Rxc5",
+   "best"
+  ],
+  [
+   "Ba6",
+   "best"
+  ],
+  [
+   "Rcc7",
+   "best"
+  ],
+  [
+   "Bb5",
+   "excellent"
+  ],
+  [
+   "Rc8+",
+   "excellent"
+  ],
+  [
+   "Be8",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "7.3",
+    "accuracy": 97.6,
+    "acpl": 21,
+    "tally": {
+     "brilliant": 0,
+     "best": 16,
+     "excellent": 10,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "CookieMonster",
+    "accuracy": 91.2,
+    "acpl": 100,
+    "tally": {
+     "brilliant": 0,
+     "best": 11,
+     "excellent": 4,
+     "good": 3,
+     "forced": 2,
+     "inaccuracy": 5,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   39,
+   37,
+   130,
+   108,
+   179,
+   191,
+   285,
+   221,
+   408,
+   400,
+   439,
+   422,
+   449,
+   407,
+   474,
+   442,
+   484,
+   450,
+   470,
+   459,
+   664,
+   670,
+   671,
+   621,
+   742,
+   746,
+   792,
+   797,
+   857,
+   888,
+   1015,
+   966,
+   1002,
+   870,
+   888,
+   916,
+   984,
+   915,
+   1006,
+   1000,
+   1063,
+   1045,
+   1095,
+   1103,
+   1180,
+   1181,
+   9996,
+   9997,
+   9997,
+   9998,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "d1c2",
+   "b8d7",
+   "b3c4",
+   "b8d7",
+   "c4b5",
+   "c8b7",
+   "c1d2",
+   "f6d5",
+   "f3e5",
+   "b5b4",
+   "d1b3",
+   "a5a6",
+   "b2c3",
+   "a5d8",
+   "g2a8",
+   "f6d5",
+   "f1c1",
+   "d7e5",
+   "c3b4",
+   "f6d5",
+   "a8e4",
+   "e7g5",
+   "e2e3",
+   "g5e7",
+   "f1f4",
+   "c7c5",
+   "g1g2",
+   "c5e3",
+   "b3c2",
+   "c8a6",
+   "c3b4",
+   "g8h8",
+   "h7e4",
+   "c5c2",
+   "h7c2",
+   "g7g5",
+   "f4f6",
+   "c8a6",
+   "c2e4",
+   "c8a6",
+   "c1c7",
+   "f8c8",
+   "f1f7",
+   "a6e2",
+   "f7h7",
+   "e2b5",
+   "c1c5",
+   "e2a6",
+   "c5c7",
+   "a6f1",
+   "a7a8",
+   "b5e8",
+   "c8e8",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:31:41Z"
+}

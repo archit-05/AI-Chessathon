@@ -1,0 +1,200 @@
+{
+ "game": "471dc1be-4b95-4f8d-9ff9-417a6ca9ad5f",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"1\"]\n[White \"OnlyBlunder\"]\n[Black \"fm2\"]\n[Result \"1-0\"]\n[FEN \"r2q1rk1/2pbbppp/p1np1n2/1p2p3/P2PP3/1BP2N2/1P3PPP/RNBQR1K1 b - - 0 10\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n10... exd4 { [%clk 0:01:57.415] } 11. axb5 { [%clk 0:01:58.397] } 11... axb5 { [%clk 0:01:54.817] } 12. Rxa8 { [%clk 0:01:57.194] } 12... Qxa8 { [%clk 0:01:52.212] } 13. cxd4 { [%clk 0:01:55.432] } 13... Nxe4 { [%clk 0:01:49.596] } 14. Rxe4 { [%clk 0:01:53.185] } 14... Nxd4 { [%clk 0:01:46.976] } 15. Qxd4 { [%clk 0:01:51.831] } 15... Qxe4 { [%clk 0:01:44.349] } 16. Qxe4 { [%clk 0:01:49.561] } 16... Bf6 { [%clk 0:01:41.715] } 17. Nc3 { [%clk 0:01:47.285] } 17... Bxc3 { [%clk 0:01:39.07] } 18. bxc3 { [%clk 0:01:45.552] } 18... Re8 { [%clk 0:01:35.839] } 19. Qb7 { [%clk 0:01:44.458] } 19... Re1+ { [%clk 0:01:33.199] } 20. Nxe1 { [%clk 0:01:42.128] } 20... d5 { [%clk 0:01:30.55] } 21. Qb8+ { [%clk 0:01:39.79] } 21... Be8 { [%clk 0:01:27.893] } 22. Qxe8# { [%clk 0:01:37.446] } 1-0\n",
+ "opening": "Ruy Lopez, Closed",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 1\u00b7Final",
+ "white_uuid": "72e19bc4-a390-4dbd-9df8-04c55e39bf7b",
+ "black_uuid": "7377da57-681d-4f44-a1b8-e624776462e0",
+ "site_verdicts": [
+  [
+   "exd4",
+   "good"
+  ],
+  [
+   "axb5",
+   "excellent"
+  ],
+  [
+   "axb5",
+   "best"
+  ],
+  [
+   "Rxa8",
+   "best"
+  ],
+  [
+   "Qxa8",
+   "best"
+  ],
+  [
+   "cxd4",
+   "best"
+  ],
+  [
+   "Nxe4",
+   "mistake"
+  ],
+  [
+   "Rxe4",
+   "best"
+  ],
+  [
+   "Nxd4",
+   "blunder"
+  ],
+  [
+   "Qxd4",
+   "inaccuracy"
+  ],
+  [
+   "Qxe4",
+   "mistake"
+  ],
+  [
+   "Qxe4",
+   "best"
+  ],
+  [
+   "Bf6",
+   "excellent"
+  ],
+  [
+   "Nc3",
+   "excellent"
+  ],
+  [
+   "Bxc3",
+   "good"
+  ],
+  [
+   "bxc3",
+   "excellent"
+  ],
+  [
+   "Re8",
+   "best"
+  ],
+  [
+   "Qb7",
+   "excellent"
+  ],
+  [
+   "Re1+",
+   "inaccuracy"
+  ],
+  [
+   "Nxe1",
+   "forced"
+  ],
+  [
+   "d5",
+   "inaccuracy"
+  ],
+  [
+   "Qb8+",
+   "excellent"
+  ],
+  [
+   "Be8",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Generational Comeback",
+    "accuracy": 96.9,
+    "acpl": 21,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 5,
+     "good": 0,
+     "forced": 1,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "KingSlayr",
+    "accuracy": 83.7,
+    "acpl": 183,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 2,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 2,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   38,
+   64,
+   59,
+   65,
+   63,
+   79,
+   77,
+   230,
+   246,
+   522,
+   375,
+   642,
+   668,
+   658,
+   642,
+   752,
+   680,
+   685,
+   682,
+   1021,
+   4518,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "h7h6",
+   "c3d4",
+   "a6b5",
+   "a1a8",
+   "d8a8",
+   "c3d4",
+   "c6a5",
+   "e1e4",
+   "d7f5",
+   "e4d4",
+   "e7f6",
+   "d4e4",
+   "e7d8",
+   "c1g5",
+   "f8e8",
+   "f3g5",
+   "f8e8",
+   "e4d5",
+   "d7e6",
+   "f3e1",
+   "g8f8",
+   "b7a8",
+   "d7c8",
+   "b8e8",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:43:25Z"
+}

@@ -1,0 +1,206 @@
+{
+ "game": "4a248ab3-d624-4e9d-a61f-90ef2b17bf4f",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.07\"]\n[Round \"52\"]\n[White \"404 Not Found\"]\n[Black \"does 4th place get a trophy\"]\n[Result \"1/2-1/2\"]\n[FEN \"rnbqkb1r/1p3ppp/p2p1n2/4p3/4P3/1NN1B3/PPP2PPP/R2QKB1R b KQkq - 1 7\"]\n[SetUp \"1\"]\n[Termination \"threefold_repetition\"]\n\n7... Ng4 { [%clk 0:01:54.489] } 8. Bd2 { [%clk 0:01:56.298] } 8... Qh4 { [%clk 0:01:49.251] } 9. g3 { [%clk 0:01:53.067] } 9... Qf6 { [%clk 0:01:44.278] } 10. f3 { [%clk 0:01:49.718] } 10... Nh6 { [%clk 0:01:39.558] } 11. Nd5 { [%clk 0:01:46.536] } 11... Qd8 { [%clk 0:01:35.074] } 12. Ba5 { [%clk 0:01:43.367] } 12... Qd7 { [%clk 0:01:30.762] } 13. Nc7+ { [%clk 0:01:40.369] } 13... Ke7 { [%clk 0:01:26.709] } 14. Nxa8 { [%clk 0:01:37.293] } 14... Nc6 { [%clk 0:01:22.872] } 15. Nb6 { [%clk 0:01:34.442] } 15... Qe6 { [%clk 0:01:19.192] } 16. Bc4 { [%clk 0:01:31.634] } 16... Qh3 { [%clk 0:01:15.725] } 17. Bf1 { [%clk 0:01:28.871] } 17... Qe6 { [%clk 0:01:12.434] } 18. Bc4 { [%clk 0:01:26.251] } 18... Qh3 { [%clk 0:01:09.276] } 19. Bf1 { [%clk 0:01:23.673] } 19... Qe6 { [%clk 0:01:06.309] } 1/2-1/2\n",
+ "opening": "Sicilian Najdorf",
+ "termination_text": "Threefold repetition",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 52\u00b7Final",
+ "white_uuid": "0507e5e2-d40f-4565-8e16-ca6feacebe42",
+ "black_uuid": "def2de4e-859c-4571-9bfe-55c5242fcbff",
+ "site_verdicts": [
+  [
+   "Ng4",
+   "best"
+  ],
+  [
+   "Bd2",
+   "best"
+  ],
+  [
+   "Qh4",
+   "inaccuracy"
+  ],
+  [
+   "g3",
+   "good"
+  ],
+  [
+   "Qf6",
+   "blunder"
+  ],
+  [
+   "f3",
+   "best"
+  ],
+  [
+   "Nh6",
+   "inaccuracy"
+  ],
+  [
+   "Nd5",
+   "best"
+  ],
+  [
+   "Qd8",
+   "excellent"
+  ],
+  [
+   "Ba5",
+   "best"
+  ],
+  [
+   "Qd7",
+   "excellent"
+  ],
+  [
+   "Nc7+",
+   "excellent"
+  ],
+  [
+   "Ke7",
+   "good"
+  ],
+  [
+   "Nxa8",
+   "best"
+  ],
+  [
+   "Nc6",
+   "excellent"
+  ],
+  [
+   "Nb6",
+   "best"
+  ],
+  [
+   "Qe6",
+   "excellent"
+  ],
+  [
+   "Bc4",
+   "excellent"
+  ],
+  [
+   "Qh3",
+   "best"
+  ],
+  [
+   "Bf1",
+   "best"
+  ],
+  [
+   "Qe6",
+   "excellent"
+  ],
+  [
+   "Bc4",
+   "excellent"
+  ],
+  [
+   "Qh3",
+   "best"
+  ],
+  [
+   "Bf1",
+   "blunder"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "404 Not Found",
+    "accuracy": 76.3,
+    "acpl": 77,
+    "tally": {
+     "brilliant": 0,
+     "best": 7,
+     "excellent": 3,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "Stinkfish",
+    "accuracy": 70.7,
+    "acpl": 129,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 5,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   48,
+   36,
+   51,
+   159,
+   110,
+   417,
+   430,
+   679,
+   665,
+   662,
+   656,
+   639,
+   639,
+   743,
+   733,
+   779,
+   779,
+   817,
+   802,
+   806,
+   827,
+   824,
+   775,
+   785,
+   0,
+   805
+  ],
+  "best": [
+   "f6g4",
+   "e3d2",
+   "g4f6",
+   "d1e2",
+   "h4d8",
+   "f2f3",
+   "f6g6",
+   "c3d5",
+   "f6g6",
+   "d2a5",
+   "d8e7",
+   "d5b6",
+   "d7c7",
+   "c7a8",
+   "f7f5",
+   "a8b6",
+   "c6a5",
+   "b6d5",
+   "e6h3",
+   "c4f1",
+   "h3h5",
+   "b6d5",
+   "e6h3",
+   "d1d2",
+   "h3e6",
+   "b6d5"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:33:06Z"
+}

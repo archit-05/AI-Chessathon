@@ -1,0 +1,248 @@
+{
+ "game": "ccf7e19a-20f2-446a-baeb-c23b04cb1a75",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"21\"]\n[White \"The Smart Guy(s)\"]\n[Black \"Surya prabha\"]\n[Result \"1-0\"]\n[FEN \"1rbqkb1r/1p3ppp/p1np1n2/4p1B1/4P3/N1N5/PPP2PPP/R2QKB1R b KQk - 3 9\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n9... Be7 { [%clk 0:01:56.148] } 10. Nc4 { [%clk 0:01:57.473] } 10... Bg4 { [%clk 0:01:52.419] } 11. Be2 { [%clk 0:01:53.293] } 11... Bxe2 { [%clk 0:01:48.82] } 12. Qxe2 { [%clk 0:01:50.812] } 12... Nd4 { [%clk 0:01:45.341] } 13. Qd3 { [%clk 0:01:48.324] } 13... Rc8 { [%clk 0:01:41.974] } 14. Bxf6 { [%clk 0:01:44.521] } 14... Bxf6 { [%clk 0:01:38.722] } 15. Nd5 { [%clk 0:01:42.118] } 15... Ra8 { [%clk 0:01:35.579] } 16. Nxf6+ { [%clk 0:01:38.577] } 16... Qxf6 { [%clk 0:01:32.541] } 17. c3 { [%clk 0:01:35.871] } 17... b5 { [%clk 0:01:29.605] } 18. Nb6 { [%clk 0:01:33.39] } 18... Rb8 { [%clk 0:01:26.766] } 19. Nd5 { [%clk 0:01:30.167] } 19... Qg6 { [%clk 0:01:24.021] } 20. cxd4 { [%clk 0:01:27.087] } 20... Qxg2 { [%clk 0:01:21.368] } 21. Ke2 { [%clk 0:01:25.448] } 21... Qg4+ { [%clk 0:01:18.804] } 22. Kf1 { [%clk 0:01:22.565] } 22... Rb7 { [%clk 0:01:16.325] } 23. Rg1 { [%clk 0:01:19.798] } 23... Qh5 { [%clk 0:01:13.929] } 24. Qc3 { [%clk 0:01:17.149] } 24... Qxh2 { [%clk 0:01:11.613] } 25. Qc8# { [%clk 0:01:17.633] } 1-0\n",
+ "opening": "Sicilian Sveshnikov",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 21\u00b7Final",
+ "white_uuid": "c93bf8b8-2043-4966-aeb4-8cae79678dbf",
+ "black_uuid": "ad314622-404e-4102-a7cf-2a26b9f9d645",
+ "site_verdicts": [
+  [
+   "Be7",
+   "good"
+  ],
+  [
+   "Nc4",
+   "best"
+  ],
+  [
+   "Bg4",
+   "excellent"
+  ],
+  [
+   "Be2",
+   "best"
+  ],
+  [
+   "Bxe2",
+   "best"
+  ],
+  [
+   "Qxe2",
+   "best"
+  ],
+  [
+   "Nd4",
+   "best"
+  ],
+  [
+   "Qd3",
+   "best"
+  ],
+  [
+   "Rc8",
+   "good"
+  ],
+  [
+   "Bxf6",
+   "best"
+  ],
+  [
+   "Bxf6",
+   "best"
+  ],
+  [
+   "Nd5",
+   "good"
+  ],
+  [
+   "Ra8",
+   "blunder"
+  ],
+  [
+   "Nxf6+",
+   "inaccuracy"
+  ],
+  [
+   "Qxf6",
+   "best"
+  ],
+  [
+   "c3",
+   "best"
+  ],
+  [
+   "b5",
+   "mistake"
+  ],
+  [
+   "Nb6",
+   "best"
+  ],
+  [
+   "Rb8",
+   "excellent"
+  ],
+  [
+   "Nd5",
+   "best"
+  ],
+  [
+   "Qg6",
+   "best"
+  ],
+  [
+   "cxd4",
+   "best"
+  ],
+  [
+   "Qxg2",
+   "best"
+  ],
+  [
+   "Ke2",
+   "excellent"
+  ],
+  [
+   "Qg4+",
+   "excellent"
+  ],
+  [
+   "Kf1",
+   "best"
+  ],
+  [
+   "Rb7",
+   "good"
+  ],
+  [
+   "Rg1",
+   "best"
+  ],
+  [
+   "Qh5",
+   "excellent"
+  ],
+  [
+   "Qc3",
+   "excellent"
+  ],
+  [
+   "Qxh2",
+   "blunder"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "BlunderBoss",
+    "accuracy": 97.9,
+    "acpl": 9,
+    "tally": {
+     "brilliant": 0,
+     "best": 12,
+     "excellent": 2,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Suryaprabha",
+    "accuracy": 85.3,
+    "acpl": 108,
+    "tally": {
+     "brilliant": 0,
+     "best": 6,
+     "excellent": 4,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 2
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   2,
+   27,
+   35,
+   56,
+   55,
+   50,
+   60,
+   61,
+   67,
+   122,
+   114,
+   118,
+   95,
+   283,
+   210,
+   230,
+   219,
+   426,
+   418,
+   444,
+   450,
+   451,
+   442,
+   450,
+   445,
+   477,
+   476,
+   580,
+   571,
+   599,
+   601,
+   9999,
+   10000
+  ],
+  "best": [
+   "b7b5",
+   "a3c4",
+   "c6d4",
+   "f1e2",
+   "g4e2",
+   "d1e2",
+   "c6d4",
+   "e2d3",
+   "b7b5",
+   "g5f6",
+   "e7f6",
+   "e1c1",
+   "e8g8",
+   "d5b6",
+   "d8f6",
+   "c2c3",
+   "d4e6",
+   "c4b6",
+   "d4e6",
+   "b6d5",
+   "f6g6",
+   "c3d4",
+   "g6g2",
+   "e1c1",
+   "f7f5",
+   "e2f1",
+   "g4h5",
+   "h1g1",
+   "g4e6",
+   "g1g7",
+   "b7d7",
+   "c3c8",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:48:19Z"
+}

@@ -1,0 +1,236 @@
+{
+ "game": "c641fbbc-bc53-4713-a241-c2e1be2104e7",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.06\"]\n[Round \"34\"]\n[White \"Team7347\"]\n[Black \"fm2\"]\n[Result \"1-0\"]\n[FEN \"rnbq1rk1/ppp2ppp/3b4/3p4/3Pn3/3BBN2/PPP2PPP/RN1Q1RK1 b - - 5 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8... Nc6 { [%clk 0:01:57.545] } 9. Nc3 { [%clk 0:01:54.955] } 9... Bxh2+ { [%clk 0:01:55.078] } 10. Nxh2 { [%clk 0:01:50.452] } 10... Re8 { [%clk 0:01:52.599] } 11. Qf3 { [%clk 0:01:45.947] } 11... Nxc3 { [%clk 0:01:50.116] } 12. bxc3 { [%clk 0:01:41.445] } 12... Qd6 { [%clk 0:01:47.63] } 13. Bf4 { [%clk 0:01:36.97] } 13... Qd8 { [%clk 0:01:45.136] } 14. Rab1 { [%clk 0:01:32.715] } 14... g5 { [%clk 0:01:42.637] } 15. Qg3 { [%clk 0:01:28.676] } 15... Nxd4 { [%clk 0:01:40.128] } 16. cxd4 { [%clk 0:01:24.84] } 16... Be6 { [%clk 0:01:37.612] } 17. Bxg5 { [%clk 0:01:21.195] } 17... Qxg5 { [%clk 0:01:35.091] } 18. Qxg5+ { [%clk 0:01:17.731] } 18... Kf8 { [%clk 0:01:32.557] } 19. Rxb7 { [%clk 0:01:14.442] } 19... Rad8 { [%clk 0:01:30.018] } 20. Rxc7 { [%clk 0:01:11.316] } 20... h6 { [%clk 0:01:27.469] } 21. Qxh6+ { [%clk 0:01:11.673] } 21... Kg8 { [%clk 0:01:27.957] } 22. Qh7+ { [%clk 0:01:12.171] } 22... Kf8 { [%clk 0:01:28.444] } 23. Qh8# { [%clk 0:01:12.669] } 1-0\n",
+ "opening": "Petroff Defence",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 34\u00b7Final",
+ "white_uuid": "1f20a852-ae0c-44f5-aed7-8be8a5e699b0",
+ "black_uuid": "7377da57-681d-4f44-a1b8-e624776462e0",
+ "site_verdicts": [
+  [
+   "Nc6",
+   "excellent"
+  ],
+  [
+   "Nc3",
+   "excellent"
+  ],
+  [
+   "Bxh2+",
+   "blunder"
+  ],
+  [
+   "Nxh2",
+   "best"
+  ],
+  [
+   "Re8",
+   "excellent"
+  ],
+  [
+   "Qf3",
+   "excellent"
+  ],
+  [
+   "Nxc3",
+   "good"
+  ],
+  [
+   "bxc3",
+   "best"
+  ],
+  [
+   "Qd6",
+   "excellent"
+  ],
+  [
+   "Bf4",
+   "best"
+  ],
+  [
+   "Qd8",
+   "excellent"
+  ],
+  [
+   "Rab1",
+   "excellent"
+  ],
+  [
+   "g5",
+   "good"
+  ],
+  [
+   "Qg3",
+   "excellent"
+  ],
+  [
+   "Nxd4",
+   "good"
+  ],
+  [
+   "cxd4",
+   "best"
+  ],
+  [
+   "Be6",
+   "good"
+  ],
+  [
+   "Bxg5",
+   "best"
+  ],
+  [
+   "Qxg5",
+   "excellent"
+  ],
+  [
+   "Qxg5+",
+   "best"
+  ],
+  [
+   "Kf8",
+   "best"
+  ],
+  [
+   "Rxb7",
+   "best"
+  ],
+  [
+   "Rad8",
+   "excellent"
+  ],
+  [
+   "Rxc7",
+   "excellent"
+  ],
+  [
+   "h6",
+   "inaccuracy"
+  ],
+  [
+   "Qxh6+",
+   "best"
+  ],
+  [
+   "Kg8",
+   "forced"
+  ],
+  [
+   "Qh7+",
+   "best"
+  ],
+  [
+   "Kf8",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Team7347",
+    "accuracy": 99.4,
+    "acpl": 17,
+    "tally": {
+     "brilliant": 0,
+     "best": 10,
+     "excellent": 5,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "KingSlayr",
+    "accuracy": 85.3,
+    "acpl": 158,
+    "tally": {
+     "brilliant": 0,
+     "best": 1,
+     "excellent": 6,
+     "good": 4,
+     "forced": 2,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -3,
+   -14,
+   -16,
+   430,
+   457,
+   439,
+   457,
+   527,
+   521,
+   539,
+   509,
+   532,
+   536,
+   606,
+   600,
+   759,
+   729,
+   1041,
+   1066,
+   1175,
+   1175,
+   1226,
+   1207,
+   1324,
+   1167,
+   9997,
+   9998,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "c8g4",
+   "c2c4",
+   "e4c3",
+   "f3h2",
+   "f7f5",
+   "f1e1",
+   "c6b4",
+   "b2c3",
+   "c6a5",
+   "e3f4",
+   "d6f6",
+   "a1e1",
+   "d8f6",
+   "f4c1",
+   "f7f6",
+   "c3d4",
+   "h7h6",
+   "f4g5",
+   "g8f8",
+   "g3g5",
+   "g8f8",
+   "b1b7",
+   "a8c8",
+   "d3h7",
+   "d8d7",
+   "g5h6",
+   "f8g8",
+   "h6h7",
+   "g8f8",
+   "h7h8",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:04:26Z"
+}

@@ -1,0 +1,248 @@
+{
+ "game": "97a4e5da-6ec4-4eb5-a677-30f8a8c5dfc4",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"3\"]\n[White \"neomatica\"]\n[Black \"Minimax Three\"]\n[Result \"1-0\"]\n[FEN \"r1bqk2r/2p1bppp/p1np1n2/1p2p3/4P3/1B3N1P/PPPP1PP1/RNBQR1K1 b kq - 0 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8... Na5 { [%clk 0:02:00.183] } 9. Nc3 { [%clk 0:01:56.364] } 9... O-O { [%clk 0:02:00.354] } 10. Nd5 { [%clk 0:01:51.775] } 10... Nxb3 { [%clk 0:02:00.794] } 11. Nxe7+ { [%clk 0:01:47.19] } 11... Qxe7 { [%clk 0:02:01.261] } 12. axb3 { [%clk 0:01:42.612] } 12... Be6 { [%clk 0:02:01.31] } 13. d4 { [%clk 0:01:37.128] } 13... exd4 { [%clk 0:02:01.34] } 14. Nxd4 { [%clk 0:01:32.5] } 14... Bd5 { [%clk 0:02:01.454] } 15. exd5 { [%clk 0:01:27.91] } 15... Qd7 { [%clk 0:02:01.617] } 16. Qf3 { [%clk 0:01:22.367] } 16... Rfd8 { [%clk 0:02:01.647] } 17. Bg5 { [%clk 0:01:16.782] } 17... c5 { [%clk 0:02:01.863] } 18. dxc6 { [%clk 0:01:12.208] } 18... Qa7 { [%clk 0:02:02.028] } 19. Rad1 { [%clk 0:01:06.67] } 19... d5 { [%clk 0:02:02.324] } 20. Bxf6 { [%clk 0:01:02.162] } 20... gxf6 { [%clk 0:02:02.685] } 21. Qxf6 { [%clk 0:00:57.93] } 21... h6 { [%clk 0:02:02.994] } 22. Nf5 { [%clk 0:00:57.683] } 22... Qxf2+ { [%clk 0:02:03.36] } 23. Kxf2 { [%clk 0:00:58.165] } 23... Kf8 { [%clk 0:02:03.785] } 24. Qg7# { [%clk 0:00:58.651] } 1-0\n",
+ "opening": "Ruy Lopez, Closed",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 3\u00b7Final",
+ "white_uuid": "820cbf59-e775-4c97-97fe-36f494f0d676",
+ "black_uuid": "9732317c-5dc8-4e6c-b31c-3c48389c9028",
+ "site_verdicts": [
+  [
+   "Na5",
+   "best"
+  ],
+  [
+   "Nc3",
+   "excellent"
+  ],
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "Nd5",
+   "good"
+  ],
+  [
+   "Nxb3",
+   "good"
+  ],
+  [
+   "Nxe7+",
+   "best"
+  ],
+  [
+   "Qxe7",
+   "best"
+  ],
+  [
+   "axb3",
+   "best"
+  ],
+  [
+   "Be6",
+   "inaccuracy"
+  ],
+  [
+   "d4",
+   "best"
+  ],
+  [
+   "exd4",
+   "good"
+  ],
+  [
+   "Nxd4",
+   "good"
+  ],
+  [
+   "Bd5",
+   "blunder"
+  ],
+  [
+   "exd5",
+   "best"
+  ],
+  [
+   "Qd7",
+   "best"
+  ],
+  [
+   "Qf3",
+   "excellent"
+  ],
+  [
+   "Rfd8",
+   "excellent"
+  ],
+  [
+   "Bg5",
+   "best"
+  ],
+  [
+   "c5",
+   "good"
+  ],
+  [
+   "dxc6",
+   "best"
+  ],
+  [
+   "Qa7",
+   "excellent"
+  ],
+  [
+   "Rad1",
+   "good"
+  ],
+  [
+   "d5",
+   "good"
+  ],
+  [
+   "Bxf6",
+   "best"
+  ],
+  [
+   "gxf6",
+   "excellent"
+  ],
+  [
+   "Qxf6",
+   "best"
+  ],
+  [
+   "h6",
+   "inaccuracy"
+  ],
+  [
+   "Nf5",
+   "best"
+  ],
+  [
+   "Qxf2+",
+   "excellent"
+  ],
+  [
+   "Kxf2",
+   "best"
+  ],
+  [
+   "Kf8",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "neomatica",
+    "accuracy": 97.2,
+    "acpl": 18,
+    "tally": {
+     "brilliant": 0,
+     "best": 11,
+     "excellent": 2,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Minimax Three",
+    "accuracy": 83.7,
+    "acpl": 145,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 5,
+     "good": 4,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -12,
+   -7,
+   -12,
+   -12,
+   -65,
+   -21,
+   -17,
+   0,
+   0,
+   79,
+   70,
+   95,
+   40,
+   574,
+   572,
+   542,
+   568,
+   596,
+   653,
+   791,
+   761,
+   875,
+   749,
+   879,
+   971,
+   1171,
+   1292,
+   9997,
+   9998,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "c6a5",
+   "d2d3",
+   "e8g8",
+   "d2d3",
+   "f6d5",
+   "d5e7",
+   "d8e7",
+   "a2b3",
+   "c8b7",
+   "d2d4",
+   "e6c8",
+   "c1g5",
+   "c7c5",
+   "e4d5",
+   "e7d7",
+   "c2c4",
+   "a8e8",
+   "c1g5",
+   "d8e8",
+   "d5c6",
+   "d7c8",
+   "d4f5",
+   "a7c5",
+   "g5f6",
+   "d8e8",
+   "f3f6",
+   "d8d6",
+   "d4f5",
+   "a7d4",
+   "g1f2",
+   "b5b4",
+   "f6g7",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:52:17Z"
+}

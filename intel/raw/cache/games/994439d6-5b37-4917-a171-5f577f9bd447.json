@@ -1,0 +1,242 @@
+{
+ "game": "994439d6-5b37-4917-a171-5f577f9bd447",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.06\"]\n[Round \"38\"]\n[White \"team\"]\n[Black \"En Passant\"]\n[Result \"1/2-1/2\"]\n[FEN \"r1bq1rk1/pp2bppp/2n1pn2/2pp4/3P4/2PBP1B1/PP1NNPPP/R2QK2R b KQ - 5 8\"]\n[SetUp \"1\"]\n[Termination \"threefold_repetition\"]\n\n8... c4 { [%clk 0:01:58.966] } 9. Bc2 { [%clk 0:01:58.245] } 9... Qb6 { [%clk 0:01:57.945] } 10. b3 { [%clk 0:01:56.49] } 10... cxb3 { [%clk 0:01:56.908] } 11. axb3 { [%clk 0:01:54.736] } 11... Bd7 { [%clk 0:01:55.85] } 12. O-O { [%clk 0:01:53.197] } 12... Rac8 { [%clk 0:01:54.807] } 13. Bd3 { [%clk 0:01:51.442] } 13... Rfe8 { [%clk 0:01:53.743] } 14. b4 { [%clk 0:01:49.853] } 14... Ng4 { [%clk 0:01:52.711] } 15. b5 { [%clk 0:01:48.098] } 15... Na5 { [%clk 0:01:51.669] } 16. Qa4 { [%clk 0:01:46.344] } 16... Bd8 { [%clk 0:01:50.664] } 17. h3 { [%clk 0:01:44.589] } 17... Nf6 { [%clk 0:01:49.657] } 18. Qb4 { [%clk 0:01:43.016] } 18... Rf8 { [%clk 0:01:48.66] } 19. Bd6 { [%clk 0:01:41.261] } 19... Re8 { [%clk 0:01:47.635] } 20. Bc5 { [%clk 0:01:39.506] } 20... Qc7 { [%clk 0:01:46.629] } 21. Bd6 { [%clk 0:01:37.752] } 21... Qb6 { [%clk 0:01:45.577] } 22. Bc5 { [%clk 0:01:35.997] } 22... Qc7 { [%clk 0:01:44.526] } 23. Bd6 { [%clk 0:01:34.242] } 23... Qb6 { [%clk 0:01:43.522] } 1/2-1/2\n",
+ "opening": "London System",
+ "termination_text": "Threefold repetition",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 38\u00b7Final",
+ "white_uuid": "55b6ba0f-26a3-4ffa-929d-8615bdc10153",
+ "black_uuid": "e5f4f3b3-9448-4e01-a69a-ece311b0f38a",
+ "site_verdicts": [
+  [
+   "c4",
+   "excellent"
+  ],
+  [
+   "Bc2",
+   "best"
+  ],
+  [
+   "Qb6",
+   "good"
+  ],
+  [
+   "b3",
+   "best"
+  ],
+  [
+   "cxb3",
+   "best"
+  ],
+  [
+   "axb3",
+   "best"
+  ],
+  [
+   "Bd7",
+   "excellent"
+  ],
+  [
+   "O-O",
+   "excellent"
+  ],
+  [
+   "Rac8",
+   "excellent"
+  ],
+  [
+   "Bd3",
+   "excellent"
+  ],
+  [
+   "Rfe8",
+   "excellent"
+  ],
+  [
+   "b4",
+   "good"
+  ],
+  [
+   "Ng4",
+   "inaccuracy"
+  ],
+  [
+   "b5",
+   "excellent"
+  ],
+  [
+   "Na5",
+   "best"
+  ],
+  [
+   "Qa4",
+   "best"
+  ],
+  [
+   "Bd8",
+   "best"
+  ],
+  [
+   "h3",
+   "best"
+  ],
+  [
+   "Nf6",
+   "best"
+  ],
+  [
+   "Qb4",
+   "best"
+  ],
+  [
+   "Rf8",
+   "inaccuracy"
+  ],
+  [
+   "Bd6",
+   "best"
+  ],
+  [
+   "Re8",
+   "best"
+  ],
+  [
+   "Bc5",
+   "excellent"
+  ],
+  [
+   "Qc7",
+   "best"
+  ],
+  [
+   "Bd6",
+   "best"
+  ],
+  [
+   "Qb6",
+   "best"
+  ],
+  [
+   "Bc5",
+   "inaccuracy"
+  ],
+  [
+   "Qc7",
+   "best"
+  ],
+  [
+   "Bd6",
+   "mistake"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "team",
+    "accuracy": 88.2,
+    "acpl": 27,
+    "tally": {
+     "brilliant": 0,
+     "best": 8,
+     "excellent": 4,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "aadhyayayayayaya",
+    "accuracy": 83.4,
+    "acpl": 39,
+    "tally": {
+     "brilliant": 0,
+     "best": 9,
+     "excellent": 4,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -3,
+   15,
+   21,
+   49,
+   52,
+   46,
+   44,
+   60,
+   54,
+   60,
+   43,
+   59,
+   10,
+   120,
+   138,
+   182,
+   140,
+   174,
+   160,
+   172,
+   167,
+   235,
+   246,
+   253,
+   249,
+   230,
+   249,
+   251,
+   131,
+   141,
+   0,
+   249
+  ],
+  "best": [
+   "b7b6",
+   "d3c2",
+   "b7b5",
+   "b2b3",
+   "c4b3",
+   "a2b3",
+   "a7a5",
+   "h2h3",
+   "f8d8",
+   "e3e4",
+   "f6h5",
+   "d1b1",
+   "a7a6",
+   "e3e4",
+   "c6a5",
+   "d1a4",
+   "e7d8",
+   "h2h3",
+   "g4f6",
+   "a4b4",
+   "a5c4",
+   "g3d6",
+   "f8e8",
+   "f1b1",
+   "b6c7",
+   "c5d6",
+   "c7b6",
+   "f1b1",
+   "b6c7",
+   "a1a2",
+   "c7b6",
+   "f1b1"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:24:13Z"
+}

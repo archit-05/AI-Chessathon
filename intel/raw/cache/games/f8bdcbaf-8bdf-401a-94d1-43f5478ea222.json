@@ -1,0 +1,224 @@
+{
+ "game": "f8bdcbaf-8bdf-401a-94d1-43f5478ea222",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"5\"]\n[White \"Blitz\"]\n[Black \"kronos\"]\n[Result \"*\"]\n[FEN \"r1bqk2r/pp1pppbp/2n2np1/2p5/2P5/2N1PNP1/PP1P1PBP/R1BQK2R b KQkq - 0 6\"]\n[SetUp \"1\"]\n[Termination \"unterminated\"]\n\n6... e5 { [%clk 0:01:56.09] } 7. Nxe5 { [%clk 0:01:51.991] } 7... Nxe5 { [%clk 0:01:51.333] } 8. Bxb7 { [%clk 0:01:43.964] } 8... Nd3+ { [%clk 0:01:47.88] } 9. Ke2 { [%clk 0:01:36.314] } 9... Bxb7 { [%clk 0:01:44.002] } 10. Kxd3 { [%clk 0:01:29.185] } 10... Bxh1 { [%clk 0:01:38.258] } 11. Qxh1 { [%clk 0:01:23.54] } 11... Qc8 { [%clk 0:01:33.49] } 12. Ne4 { [%clk 0:01:17.934] } 12... Ke7 { [%clk 0:01:30.18] } 13. Nxf6 { [%clk 0:01:12.38] } 13... Bxf6 { [%clk 0:01:27.001] } 14. Kc2 { [%clk 0:01:06.809] } 14... Qa6 { [%clk 0:01:24.381] } 15. Qd5 { [%clk 0:01:01.313] } 15... Rhc8 { [%clk 0:01:22.005] } 16. Qc6 { [%clk 0:00:56.22] } 16... Qxc4+ { [%clk 0:01:14.856] } 17. Kd1 { [%clk 0:00:51.598] } 17... Qf1+ { [%clk 0:01:11.293] } 18. Kc2 { [%clk 0:00:52.097] } 18... Qc4+ { [%clk 0:01:04.624] } 19. Kd1 { [%clk 0:00:47.843] } 19... Qf1+ { [%clk 0:00:58.338] } 20. Kc2 { [%clk 0:00:48.342] } *\n",
+ "opening": "English Symmetrical",
+ "termination_text": "Unterminated",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 5\u00b7Void",
+ "white_uuid": "7a6d3886-a870-4efe-a04f-1c38e695851e",
+ "black_uuid": "a2e51576-3e24-47b0-8562-48028bf257bb",
+ "site_verdicts": [
+  [
+   "e5",
+   "inaccuracy"
+  ],
+  [
+   "Nxe5",
+   "blunder"
+  ],
+  [
+   "Nxe5",
+   "best"
+  ],
+  [
+   "Bxb7",
+   "blunder"
+  ],
+  [
+   "Nd3+",
+   "best"
+  ],
+  [
+   "Ke2",
+   "best"
+  ],
+  [
+   "Bxb7",
+   "good"
+  ],
+  [
+   "Kxd3",
+   "best"
+  ],
+  [
+   "Bxh1",
+   "good"
+  ],
+  [
+   "Qxh1",
+   "best"
+  ],
+  [
+   "Qc8",
+   "excellent"
+  ],
+  [
+   "Ne4",
+   "good"
+  ],
+  [
+   "Ke7",
+   "good"
+  ],
+  [
+   "Nxf6",
+   "best"
+  ],
+  [
+   "Bxf6",
+   "best"
+  ],
+  [
+   "Kc2",
+   "best"
+  ],
+  [
+   "Qa6",
+   "excellent"
+  ],
+  [
+   "Qd5",
+   "best"
+  ],
+  [
+   "Rhc8",
+   "best"
+  ],
+  [
+   "Qc6",
+   "mistake"
+  ],
+  [
+   "Qxc4+",
+   "best"
+  ],
+  [
+   "Kd1",
+   "best"
+  ],
+  [
+   "Qf1+",
+   "best"
+  ],
+  [
+   "Kc2",
+   "forced"
+  ],
+  [
+   "Qc4+",
+   "excellent"
+  ],
+  [
+   "Kd1",
+   "best"
+  ],
+  [
+   "Qf1+",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Blitz",
+    "accuracy": 84.8,
+    "acpl": 109,
+    "tally": {
+     "brilliant": 0,
+     "best": 8,
+     "excellent": 0,
+     "good": 1,
+     "forced": 2,
+     "inaccuracy": 0,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 2
+    }
+   },
+   {
+    "name": "kronos",
+    "accuracy": 95.1,
+    "acpl": 31,
+    "tally": {
+     "brilliant": 0,
+     "best": 7,
+     "excellent": 3,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -35,
+   44,
+   -292,
+   -316,
+   -734,
+   -718,
+   -721,
+   -563,
+   -586,
+   -506,
+   -476,
+   -507,
+   -561,
+   -484,
+   -479,
+   -494,
+   -494,
+   -483,
+   -484,
+   -475,
+   -1120,
+   -1201,
+   -1214,
+   -1230,
+   -1244,
+   -1258,
+   -1277,
+   -1283,
+   -1283
+  ],
+  "best": [
+   "d7d5",
+   "d2d4",
+   "c6e5",
+   "d2d4",
+   "e5d3",
+   "e1e2",
+   "d3c1",
+   "e2d3",
+   "e8g8",
+   "d1h1",
+   "e8g8",
+   "e3e4",
+   "e8g8",
+   "e4f6",
+   "g7f6",
+   "d3c2",
+   "d7d5",
+   "h1d5",
+   "h8c8",
+   "d2d3",
+   "a6c4",
+   "c2d1",
+   "c4f1",
+   "d1c2",
+   "c8c6",
+   "c2d1",
+   "c4f1",
+   "d1c2",
+   "c8c6"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:56:49Z"
+}

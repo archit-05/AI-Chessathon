@@ -1,0 +1,194 @@
+{
+ "game": "ec46c1d9-37b2-48d4-aa3a-f05ad1114324",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.07\"]\n[Round \"46\"]\n[White \"ChEKmate\"]\n[Black \"Team Anay\"]\n[Result \"1/2-1/2\"]\n[FEN \"rnbq1rk1/ppp2ppp/4pn2/8/1bBP4/2N1P2P/PP3PP1/R1BQK1NR b KQ - 0 7\"]\n[SetUp \"1\"]\n[Termination \"threefold_repetition\"]\n\n7... c5 { [%clk 0:01:57.395] } 8. Nf3 { [%clk 0:01:57.856] } 8... Qc7 { [%clk 0:01:54.858] } 9. Qd3 { [%clk 0:01:54.277] } 9... cxd4 { [%clk 0:01:52.382] } 10. exd4 { [%clk 0:01:51.352] } 10... Nc6 { [%clk 0:01:49.968] } 11. O-O { [%clk 0:01:48.749] } 11... Na5 { [%clk 0:01:47.611] } 12. Bb3 { [%clk 0:01:45.222] } 12... Nxb3 { [%clk 0:01:45.317] } 13. axb3 { [%clk 0:01:43.646] } 13... Bd7 { [%clk 0:01:43.081] } 14. Ne5 { [%clk 0:01:41.646] } 14... h6 { [%clk 0:01:40.9] } 15. Qg3 { [%clk 0:01:40.127] } 15... Kh7 { [%clk 0:01:38.774] } 16. Qd3+ { [%clk 0:01:38.618] } 16... Kg8 { [%clk 0:01:36.701] } 17. Qg3 { [%clk 0:01:35.489] } 17... Kh7 { [%clk 0:01:34.682] } 18. Qd3+ { [%clk 0:01:32.406] } 18... Kg8 { [%clk 0:01:32.709] } 1/2-1/2\n",
+ "opening": "Nimzo-Indian Defence",
+ "termination_text": "Threefold repetition",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 46\u00b7Final",
+ "white_uuid": "f173ad36-42a6-4832-ae7f-f0880d9504b6",
+ "black_uuid": "046a9eef-2895-4d9d-84a4-22a40eff924f",
+ "site_verdicts": [
+  [
+   "c5",
+   "best"
+  ],
+  [
+   "Nf3",
+   "best"
+  ],
+  [
+   "Qc7",
+   "excellent"
+  ],
+  [
+   "Qd3",
+   "excellent"
+  ],
+  [
+   "cxd4",
+   "excellent"
+  ],
+  [
+   "exd4",
+   "best"
+  ],
+  [
+   "Nc6",
+   "best"
+  ],
+  [
+   "O-O",
+   "excellent"
+  ],
+  [
+   "Na5",
+   "best"
+  ],
+  [
+   "Bb3",
+   "best"
+  ],
+  [
+   "Nxb3",
+   "best"
+  ],
+  [
+   "axb3",
+   "best"
+  ],
+  [
+   "Bd7",
+   "good"
+  ],
+  [
+   "Ne5",
+   "excellent"
+  ],
+  [
+   "h6",
+   "good"
+  ],
+  [
+   "Qg3",
+   "best"
+  ],
+  [
+   "Kh7",
+   "good"
+  ],
+  [
+   "Qd3+",
+   "good"
+  ],
+  [
+   "Kg8",
+   "best"
+  ],
+  [
+   "Qg3",
+   "excellent"
+  ],
+  [
+   "Kh7",
+   "good"
+  ],
+  [
+   "Qd3+",
+   "good"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "ChEKmate",
+    "accuracy": 95.3,
+    "acpl": 13,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 4,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "ChaosBot",
+    "accuracy": 94.9,
+    "acpl": 14,
+    "tally": {
+     "brilliant": 0,
+     "best": 6,
+     "excellent": 2,
+     "good": 4,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -9,
+   -20,
+   -25,
+   -18,
+   -30,
+   -25,
+   -23,
+   -21,
+   -36,
+   -36,
+   -39,
+   -32,
+   -32,
+   0,
+   -20,
+   8,
+   -15,
+   24,
+   0,
+   0,
+   -17,
+   25,
+   0,
+   0
+  ],
+  "best": [
+   "c7c5",
+   "g1f3",
+   "c5d4",
+   "e1g1",
+   "a7a6",
+   "e3d4",
+   "b8c6",
+   "a2a3",
+   "c6a5",
+   "c4b3",
+   "a5b3",
+   "a2b3",
+   "b7b6",
+   "c1g5",
+   "d7c6",
+   "d3g3",
+   "d7e8",
+   "c1f4",
+   "h7g8",
+   "c1f4",
+   "d7e8",
+   "c1f4",
+   "h7g8",
+   "d3g3"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:47:37Z"
+}

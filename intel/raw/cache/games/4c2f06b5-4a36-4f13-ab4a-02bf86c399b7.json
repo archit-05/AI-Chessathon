@@ -1,0 +1,188 @@
+{
+ "game": "4c2f06b5-4a36-4f13-ab4a-02bf86c399b7",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"4\"]\n[White \"e=mc^2\"]\n[Black \"Shashwat\"]\n[Result \"*\"]\n[FEN \"r2qkb1r/pp1bpppp/2np1n2/1B4B1/3NP3/2N5/PPP2PPP/R2QK2R b KQkq - 6 7\"]\n[SetUp \"1\"]\n[Termination \"unterminated\"]\n\n7... Qb6 { [%clk 0:01:57.305] } 8. Nb3 { [%clk 0:01:58.144] } 8... Nxe4 { [%clk 0:01:54.618] } 9. Nxe4 { [%clk 0:01:56.466] } 9... Qxb5 { [%clk 0:01:51.829] } 10. Bf4 { [%clk 0:01:54.396] } 10... Qb4+ { [%clk 0:01:49.06] } 11. Nbd2 { [%clk 0:01:53.074] } 11... d5 { [%clk 0:01:46.301] } 12. c3 { [%clk 0:01:48.764] } 12... Qxb2 { [%clk 0:01:43.544] } 13. Rb1 { [%clk 0:01:47.475] } 13... Qxa2 { [%clk 0:01:40.783] } 14. Ra1 { [%clk 0:01:45.278] } 14... Qb2 { [%clk 0:01:37.956] } 15. Rb1 { [%clk 0:01:42.476] } 15... Qa3 { [%clk 0:01:35.115] } 16. Ra1 { [%clk 0:01:36.899] } 16... Qb2 { [%clk 0:01:32.295] } 17. Rb1 { [%clk 0:01:35.724] } 17... Qa2 { [%clk 0:01:29.438] } 18. Ra1 { [%clk 0:01:34.363] } *\n",
+ "opening": "Sicilian Classical",
+ "termination_text": "Unterminated",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 4\u00b7Void",
+ "white_uuid": "3f2c6106-702b-4a60-8eb5-5f5fe3886d0a",
+ "black_uuid": "21c6a41e-3786-4bb2-873f-101def0df852",
+ "site_verdicts": [
+  [
+   "Qb6",
+   "good"
+  ],
+  [
+   "Nb3",
+   "blunder"
+  ],
+  [
+   "Nxe4",
+   "brilliant"
+  ],
+  [
+   "Nxe4",
+   "best"
+  ],
+  [
+   "Qxb5",
+   "best"
+  ],
+  [
+   "Bf4",
+   "inaccuracy"
+  ],
+  [
+   "Qb4+",
+   "excellent"
+  ],
+  [
+   "Nbd2",
+   "best"
+  ],
+  [
+   "d5",
+   "inaccuracy"
+  ],
+  [
+   "c3",
+   "best"
+  ],
+  [
+   "Qxb2",
+   "inaccuracy"
+  ],
+  [
+   "Rb1",
+   "best"
+  ],
+  [
+   "Qxa2",
+   "mistake"
+  ],
+  [
+   "Ra1",
+   "best"
+  ],
+  [
+   "Qb2",
+   "best"
+  ],
+  [
+   "Rb1",
+   "best"
+  ],
+  [
+   "Qa3",
+   "best"
+  ],
+  [
+   "Ra1",
+   "best"
+  ],
+  [
+   "Qb2",
+   "excellent"
+  ],
+  [
+   "Rb1",
+   "best"
+  ],
+  [
+   "Qa2",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "biggestbrilliant",
+    "accuracy": 91.2,
+    "acpl": 32,
+    "tally": {
+     "brilliant": 0,
+     "best": 9,
+     "excellent": 0,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "Shashwat",
+    "accuracy": 88.8,
+    "acpl": 31,
+    "tally": {
+     "brilliant": 1,
+     "best": 4,
+     "excellent": 2,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   17,
+   40,
+   -184,
+   -183,
+   -192,
+   -202,
+   -289,
+   -268,
+   -278,
+   -198,
+   -204,
+   -111,
+   -113,
+   0,
+   0,
+   0,
+   -12,
+   -6,
+   -4,
+   -3,
+   0,
+   0,
+   0
+  ],
+  "best": [
+   "e7e6",
+   "g5f6",
+   "f6e4",
+   "c3e4",
+   "b6b5",
+   "f2f3",
+   "b5f5",
+   "b3d2",
+   "f7f5",
+   "c2c3",
+   "b4b6",
+   "a1b1",
+   "b2a3",
+   "b1a1",
+   "a2b2",
+   "a1b1",
+   "b2a3",
+   "b1a1",
+   "a3a1",
+   "a1b1",
+   "b2a2",
+   "b1a1",
+   "a2b2"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:36:48Z"
+}

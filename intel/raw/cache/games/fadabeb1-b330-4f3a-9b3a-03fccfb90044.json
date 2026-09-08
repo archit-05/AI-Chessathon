@@ -1,0 +1,254 @@
+{
+ "game": "fadabeb1-b330-4f3a-9b3a-03fccfb90044",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"8\"]\n[White \"Fight Club\"]\n[Black \"OctaBasilissa\"]\n[Result \"0-1\"]\n[FEN \"r1bqk2r/pp1pppbp/2n2np1/2p5/2P4P/2N2NP1/PP1PPPB1/R1BQK2R b KQkq - 0 6\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n6... O-O { [%clk 0:01:55.281] } 7. d3 { [%clk 0:01:57.857] } 7... d6 { [%clk 0:01:49.867] } 8. a4 { [%clk 0:01:55.697] } 8... a5 { [%clk 0:01:38.203] } 9. Qb3 { [%clk 0:01:53.535] } 9... Ra6 { [%clk 0:01:34.485] } 10. Be3 { [%clk 0:01:51.371] } 10... Ng4 { [%clk 0:01:30.961] } 11. Bf4 { [%clk 0:01:49.201] } 11... Rb6 { [%clk 0:01:26.888] } 12. Nb5 { [%clk 0:01:47.03] } 12... e5 { [%clk 0:01:23.411] } 13. Bd2 { [%clk 0:01:44.855] } 13... h6 { [%clk 0:01:16.718] } 14. e4 { [%clk 0:01:42.676] } 14... f5 { [%clk 0:01:14.168] } 15. h5 { [%clk 0:01:40.49] } 15... g5 { [%clk 0:01:09.918] } 16. O-O { [%clk 0:01:38.303] } 16... Qe8 { [%clk 0:01:03.392] } 17. Qc2 { [%clk 0:01:36.108] } 17... Qxh5 { [%clk 0:00:56.376] } 18. Nxd6 { [%clk 0:01:33.91] } 18... Nd4 { [%clk 0:00:52.733] } 19. Nh4 { [%clk 0:01:31.706] } 19... gxh4 { [%clk 0:00:46.782] } 20. exf5 { [%clk 0:01:29.493] } 20... Ne2+ { [%clk 0:00:47.277] } 21. Kh1 { [%clk 0:01:29.979] } 21... hxg3+ { [%clk 0:00:47.774] } 22. Bh3 { [%clk 0:01:30.467] } 22... Qxh3# { [%clk 0:00:48.272] } 0-1\n",
+ "opening": "English Symmetrical",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 8\u00b7Final",
+ "white_uuid": "edc3ae56-ebc8-4a39-9e46-11db2179faf8",
+ "black_uuid": "7be4674f-d434-4919-9dad-50d03ad73a3d",
+ "site_verdicts": [
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "d3",
+   "best"
+  ],
+  [
+   "d6",
+   "excellent"
+  ],
+  [
+   "a4",
+   "good"
+  ],
+  [
+   "a5",
+   "good"
+  ],
+  [
+   "Qb3",
+   "good"
+  ],
+  [
+   "Ra6",
+   "excellent"
+  ],
+  [
+   "Be3",
+   "excellent"
+  ],
+  [
+   "Ng4",
+   "excellent"
+  ],
+  [
+   "Bf4",
+   "excellent"
+  ],
+  [
+   "Rb6",
+   "excellent"
+  ],
+  [
+   "Nb5",
+   "best"
+  ],
+  [
+   "e5",
+   "excellent"
+  ],
+  [
+   "Bd2",
+   "excellent"
+  ],
+  [
+   "h6",
+   "best"
+  ],
+  [
+   "e4",
+   "good"
+  ],
+  [
+   "f5",
+   "best"
+  ],
+  [
+   "h5",
+   "inaccuracy"
+  ],
+  [
+   "g5",
+   "best"
+  ],
+  [
+   "O-O",
+   "mistake"
+  ],
+  [
+   "Qe8",
+   "best"
+  ],
+  [
+   "Qc2",
+   "inaccuracy"
+  ],
+  [
+   "Qxh5",
+   "best"
+  ],
+  [
+   "Nxd6",
+   "mistake"
+  ],
+  [
+   "Nd4",
+   "best"
+  ],
+  [
+   "Nh4",
+   "best"
+  ],
+  [
+   "gxh4",
+   "best"
+  ],
+  [
+   "exf5",
+   "inaccuracy"
+  ],
+  [
+   "Ne2+",
+   "best"
+  ],
+  [
+   "Kh1",
+   "forced"
+  ],
+  [
+   "hxg3+",
+   "best"
+  ],
+  [
+   "Bh3",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Fight Club",
+    "accuracy": 86.4,
+    "acpl": 134,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 3,
+     "good": 3,
+     "forced": 2,
+     "inaccuracy": 3,
+     "mistake": 2,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "OctaBasilissa",
+    "accuracy": 98.3,
+    "acpl": 6,
+    "tally": {
+     "brilliant": 0,
+     "best": 11,
+     "excellent": 5,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -6,
+   -32,
+   -25,
+   -10,
+   -59,
+   -27,
+   -62,
+   -62,
+   -72,
+   -57,
+   -76,
+   -58,
+   -63,
+   -44,
+   -42,
+   -43,
+   -74,
+   -82,
+   -152,
+   -153,
+   -291,
+   -361,
+   -470,
+   -490,
+   -1111,
+   -1194,
+   -1252,
+   -1274,
+   -9997,
+   -9998,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "e8g8",
+   "d2d3",
+   "d7d5",
+   "c1d2",
+   "f6h5",
+   "f3h2",
+   "c6b4",
+   "c3b5",
+   "h7h6",
+   "e3d2",
+   "h7h6",
+   "c3b5",
+   "h7h6",
+   "f4g5",
+   "h7h6",
+   "f3h2",
+   "f7f5",
+   "b3d1",
+   "g6g5",
+   "b3d1",
+   "d8e8",
+   "b3d1",
+   "e8h5",
+   "e4f5",
+   "c6d4",
+   "f3h4",
+   "g5h4",
+   "d2f4",
+   "d4e2",
+   "g1h1",
+   "h4g3",
+   "g2h3",
+   "h5h3",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:34:15Z"
+}

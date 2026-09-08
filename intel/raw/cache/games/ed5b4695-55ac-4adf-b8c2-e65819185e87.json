@@ -1,0 +1,254 @@
+{
+ "game": "ed5b4695-55ac-4adf-b8c2-e65819185e87",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"3\"]\n[White \"lefischer\"]\n[Black \"Alien Gambit\"]\n[Result \"0-1\"]\n[FEN \"r1bq1rk1/2p1bppp/p1np1n2/1p2p3/4P3/PB1P1N2/1PP2PPP/RNBQR1K1 b - - 0 9\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n9... h6 { [%clk 0:01:24.019] } 10. Nc3 { [%clk 0:01:55.565] } 10... Bg4 { [%clk 0:01:22.191] } 11. Nd5 { [%clk 0:01:51.285] } 11... Nxd5 { [%clk 0:01:18.496] } 12. Bxd5 { [%clk 0:01:47.217] } 12... Nd4 { [%clk 0:01:17.37] } 13. Bxa8 { [%clk 0:01:43.268] } 13... Qxa8 { [%clk 0:01:16.012] } 14. Be3 { [%clk 0:01:39.452] } 14... Nxf3+ { [%clk 0:01:14.217] } 15. gxf3 { [%clk 0:01:35.801] } 15... Bh5 { [%clk 0:01:11.152] } 16. d4 { [%clk 0:01:32.293] } 16... Qc8 { [%clk 0:01:06.622] } 17. dxe5 { [%clk 0:01:28.912] } 17... Qh3 { [%clk 0:01:04.171] } 18. exd6 { [%clk 0:01:26.245] } 18... Bxd6 { [%clk 0:01:02.564] } 19. e5 { [%clk 0:01:23.103] } 19... Bxe5 { [%clk 0:01:01.346] } 20. Bd4 { [%clk 0:01:20.08] } 20... Bxh2+ { [%clk 0:01:01.838] } 21. Kh1 { [%clk 0:01:18.438] } 21... Bf4+ { [%clk 0:01:02.335] } 22. Kg1 { [%clk 0:01:16.71] } 22... Qh2+ { [%clk 0:01:02.832] } 23. Kf1 { [%clk 0:01:13.926] } 23... Qh1+ { [%clk 0:01:03.328] } 24. Ke2 { [%clk 0:01:11.256] } 24... Qxf3+ { [%clk 0:01:03.825] } 25. Kf1 { [%clk 0:01:08.673] } 25... Qh1# { [%clk 0:01:04.317] } 0-1\n",
+ "opening": "Ruy Lopez, Closed",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 3\u00b7Final",
+ "white_uuid": "0900c279-5ede-4155-a850-436c28af6ea9",
+ "black_uuid": "0e8ca369-000d-44d4-a7c8-d505bf0a3a30",
+ "site_verdicts": [
+  [
+   "h6",
+   "excellent"
+  ],
+  [
+   "Nc3",
+   "best"
+  ],
+  [
+   "Bg4",
+   "best"
+  ],
+  [
+   "Nd5",
+   "mistake"
+  ],
+  [
+   "Nxd5",
+   "best"
+  ],
+  [
+   "Bxd5",
+   "best"
+  ],
+  [
+   "Nd4",
+   "best"
+  ],
+  [
+   "Bxa8",
+   "best"
+  ],
+  [
+   "Qxa8",
+   "best"
+  ],
+  [
+   "Be3",
+   "mistake"
+  ],
+  [
+   "Nxf3+",
+   "best"
+  ],
+  [
+   "gxf3",
+   "best"
+  ],
+  [
+   "Bh5",
+   "best"
+  ],
+  [
+   "d4",
+   "good"
+  ],
+  [
+   "Qc8",
+   "best"
+  ],
+  [
+   "dxe5",
+   "blunder"
+  ],
+  [
+   "Qh3",
+   "best"
+  ],
+  [
+   "exd6",
+   "good"
+  ],
+  [
+   "Bxd6",
+   "best"
+  ],
+  [
+   "e5",
+   "excellent"
+  ],
+  [
+   "Bxe5",
+   "best"
+  ],
+  [
+   "Bd4",
+   "blunder"
+  ],
+  [
+   "Bxh2+",
+   "best"
+  ],
+  [
+   "Kh1",
+   "forced"
+  ],
+  [
+   "Bf4+",
+   "best"
+  ],
+  [
+   "Kg1",
+   "forced"
+  ],
+  [
+   "Qh2+",
+   "best"
+  ],
+  [
+   "Kf1",
+   "forced"
+  ],
+  [
+   "Qh1+",
+   "best"
+  ],
+  [
+   "Ke2",
+   "forced"
+  ],
+  [
+   "Qxf3+",
+   "best"
+  ],
+  [
+   "Kf1",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "fischer",
+    "accuracy": 86.2,
+    "acpl": 109,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 1,
+     "good": 2,
+     "forced": 5,
+     "inaccuracy": 0,
+     "mistake": 2,
+     "miss": 0,
+     "blunder": 2
+    }
+   },
+   {
+    "name": "My Gambit My Legacy",
+    "accuracy": 97.8,
+    "acpl": 10,
+    "tally": {
+     "brilliant": 0,
+     "best": 16,
+     "excellent": 1,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   15,
+   25,
+   25,
+   26,
+   -96,
+   -75,
+   -50,
+   -77,
+   -89,
+   -57,
+   -206,
+   -194,
+   -230,
+   -213,
+   -261,
+   -222,
+   -487,
+   -530,
+   -598,
+   -567,
+   -604,
+   -622,
+   -9994,
+   -9995,
+   -9995,
+   -9996,
+   -9996,
+   -9997,
+   -9997,
+   -9998,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "c6a5",
+   "b1c3",
+   "c8g4",
+   "c1e3",
+   "f6d5",
+   "b3d5",
+   "c6d4",
+   "d5a8",
+   "d8a8",
+   "e1e3",
+   "d4f3",
+   "g2f3",
+   "g4h5",
+   "h2h3",
+   "a8c8",
+   "e3c1",
+   "c8h3",
+   "e3h6",
+   "e7d6",
+   "f3f4",
+   "d6e5",
+   "f3f4",
+   "e5h2",
+   "g1h1",
+   "h2f4",
+   "h1g1",
+   "h3h2",
+   "g1f1",
+   "h2h1",
+   "f1e2",
+   "h1f3",
+   "e2f1",
+   "f3h1",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:09:32Z"
+}

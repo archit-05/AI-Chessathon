@@ -1,0 +1,200 @@
+{
+ "game": "dabc903c-e99c-495d-9397-04086dba8b25",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.06\"]\n[Round \"33\"]\n[White \"NotGothamChess\"]\n[Black \"Random Mover\"]\n[Result \"1-0\"]\n[FEN \"r1bqkb1r/pp3ppp/2n1pn2/2pp4/3P1B2/2P1P2P/PP1N1PP1/R2QKBNR b KQkq - 0 6\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n6... g6 { [%clk 0:02:00.499] } 7. Ngf3 { [%clk 0:01:55.249] } 7... g5 { [%clk 0:02:00.997] } 8. Bxg5 { [%clk 0:01:50.696] } 8... b6 { [%clk 0:02:01.496] } 9. Qa4 { [%clk 0:01:46.332] } 9... Rb8 { [%clk 0:02:01.995] } 10. Bb5 { [%clk 0:01:42.151] } 10... cxd4 { [%clk 0:02:02.494] } 11. Bxc6+ { [%clk 0:01:38.143] } 11... Nd7 { [%clk 0:02:02.993] } 12. Bxd8 { [%clk 0:01:34.303] } 12... dxe3 { [%clk 0:02:03.492] } 13. Bf6 { [%clk 0:01:30.622] } 13... Rg8 { [%clk 0:02:03.991] } 14. fxe3 { [%clk 0:01:27.095] } 14... Rh8 { [%clk 0:02:04.49] } 15. Qf4 { [%clk 0:01:23.715] } 15... Bc5 { [%clk 0:02:04.989] } 16. Qxb8 { [%clk 0:01:24.145] } 16... Be7 { [%clk 0:02:05.488] } 17. Qxc8+ { [%clk 0:01:24.626] } 17... Bd8 { [%clk 0:02:05.987] } 18. Qxd8# { [%clk 0:01:25.121] } 1-0\n",
+ "opening": "London System",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 33\u00b7Final",
+ "white_uuid": "79221421-6214-4b91-9da2-fbc41daff640",
+ "black_uuid": "5c7abbac-f8d0-4635-a335-d4b6c90aeefe",
+ "site_verdicts": [
+  [
+   "g6",
+   "inaccuracy"
+  ],
+  [
+   "Ngf3",
+   "best"
+  ],
+  [
+   "g5",
+   "mistake"
+  ],
+  [
+   "Bxg5",
+   "best"
+  ],
+  [
+   "b6",
+   "mistake"
+  ],
+  [
+   "Qa4",
+   "inaccuracy"
+  ],
+  [
+   "Rb8",
+   "blunder"
+  ],
+  [
+   "Bb5",
+   "best"
+  ],
+  [
+   "cxd4",
+   "good"
+  ],
+  [
+   "Bxc6+",
+   "best"
+  ],
+  [
+   "Nd7",
+   "excellent"
+  ],
+  [
+   "Bxd8",
+   "best"
+  ],
+  [
+   "dxe3",
+   "excellent"
+  ],
+  [
+   "Bf6",
+   "best"
+  ],
+  [
+   "Rg8",
+   "excellent"
+  ],
+  [
+   "fxe3",
+   "excellent"
+  ],
+  [
+   "Rh8",
+   "excellent"
+  ],
+  [
+   "Qf4",
+   "excellent"
+  ],
+  [
+   "Bc5",
+   "inaccuracy"
+  ],
+  [
+   "Qxb8",
+   "best"
+  ],
+  [
+   "Be7",
+   "best"
+  ],
+  [
+   "Qxc8+",
+   "best"
+  ],
+  [
+   "Bd8",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Kirito",
+    "accuracy": 97.6,
+    "acpl": 55,
+    "tally": {
+     "brilliant": 0,
+     "best": 9,
+     "excellent": 2,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Random Mover",
+    "accuracy": 83.1,
+    "acpl": 252,
+    "tally": {
+     "brilliant": 0,
+     "best": 1,
+     "excellent": 4,
+     "good": 1,
+     "forced": 1,
+     "inaccuracy": 2,
+     "mistake": 2,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -3,
+   52,
+   50,
+   223,
+   228,
+   407,
+   289,
+   654,
+   647,
+   822,
+   839,
+   982,
+   929,
+   1110,
+   1156,
+   1267,
+   1153,
+   1796,
+   1426,
+   9997,
+   9998,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "f8d6",
+   "g1f3",
+   "f6h5",
+   "f4g5",
+   "f8e7",
+   "f1b5",
+   "c8d7",
+   "f1b5",
+   "c8d7",
+   "b5c6",
+   "e8e7",
+   "g5d8",
+   "e8d8",
+   "d8f6",
+   "e3d2",
+   "f3e5",
+   "f8e7",
+   "f3e5",
+   "b8b7",
+   "f4b8",
+   "c5e7",
+   "b8c8",
+   "e7d8",
+   "c8d8",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:32:09Z"
+}

@@ -1,0 +1,194 @@
+{
+ "game": "a5fcb107-f9e1-4e46-8ab0-b5b17ec6e9ed",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"17\"]\n[White \"Ultraviolet\"]\n[Black \"Nakamura\"]\n[Result \"0-1\"]\n[FEN \"r1bqkb1r/pp3ppp/2np1n2/1N2p3/4P3/2N2P2/PPP3PP/R1BQKB1R b KQkq - 0 7\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n7... a6 { [%clk 0:01:58.532] } 8. Na7 { [%clk 0:02:00.498] } 8... Rxa7 { [%clk 0:01:57.064] } 9. a4 { [%clk 0:02:00.997] } 9... Be6 { [%clk 0:01:55.597] } 10. Bg5 { [%clk 0:02:01.496] } 10... h6 { [%clk 0:01:54.129] } 11. Qd2 { [%clk 0:02:01.994] } 11... hxg5 { [%clk 0:01:52.662] } 12. Qxd6 { [%clk 0:02:02.493] } 12... Qxd6 { [%clk 0:01:51.194] } 13. Nb5 { [%clk 0:02:02.99] } 13... axb5 { [%clk 0:01:49.726] } 14. h3 { [%clk 0:02:03.488] } 14... Rxa4 { [%clk 0:01:48.259] } 15. Bxb5 { [%clk 0:02:03.987] } 15... Rxa1+ { [%clk 0:01:46.791] } 16. Kf2 { [%clk 0:02:04.486] } 16... Qd2+ { [%clk 0:01:45.323] } 17. Be2 { [%clk 0:02:04.984] } 17... Bc5+ { [%clk 0:01:45.309] } 18. Kg3 { [%clk 0:02:05.483] } 18... Qf4# { [%clk 0:01:45.785] } 0-1\n",
+ "opening": "Sicilian Sveshnikov",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 17\u00b7Final",
+ "white_uuid": "0ca66133-c1df-405e-a5ad-49618cf8f6f0",
+ "black_uuid": "abfdf13d-3efa-4764-a3b4-c9e7c9f18339",
+ "site_verdicts": [
+  [
+   "a6",
+   "best"
+  ],
+  [
+   "Na7",
+   "blunder"
+  ],
+  [
+   "Rxa7",
+   "best"
+  ],
+  [
+   "a4",
+   "good"
+  ],
+  [
+   "Be6",
+   "excellent"
+  ],
+  [
+   "Bg5",
+   "excellent"
+  ],
+  [
+   "h6",
+   "excellent"
+  ],
+  [
+   "Qd2",
+   "inaccuracy"
+  ],
+  [
+   "hxg5",
+   "best"
+  ],
+  [
+   "Qxd6",
+   "good"
+  ],
+  [
+   "Qxd6",
+   "best"
+  ],
+  [
+   "Nb5",
+   "excellent"
+  ],
+  [
+   "axb5",
+   "excellent"
+  ],
+  [
+   "h3",
+   "excellent"
+  ],
+  [
+   "Rxa4",
+   "excellent"
+  ],
+  [
+   "Bxb5",
+   "inaccuracy"
+  ],
+  [
+   "Rxa1+",
+   "best"
+  ],
+  [
+   "Kf2",
+   "excellent"
+  ],
+  [
+   "Qd2+",
+   "best"
+  ],
+  [
+   "Be2",
+   "best"
+  ],
+  [
+   "Bc5+",
+   "best"
+  ],
+  [
+   "Kg3",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Ultraviolet",
+    "accuracy": 82.6,
+    "acpl": 262,
+    "tally": {
+     "brilliant": 0,
+     "best": 1,
+     "excellent": 4,
+     "good": 2,
+     "forced": 1,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "Nakamura",
+    "accuracy": 99.4,
+    "acpl": 39,
+    "tally": {
+     "brilliant": 0,
+     "best": 8,
+     "excellent": 4,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   0,
+   -2,
+   -408,
+   -357,
+   -438,
+   -443,
+   -474,
+   -468,
+   -757,
+   -765,
+   -1185,
+   -1189,
+   -1457,
+   -1431,
+   -1814,
+   -1431,
+   -9993,
+   -9994,
+   -9997,
+   -9998,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "a7a6",
+   "b5a3",
+   "a8a7",
+   "c1e3",
+   "a7a8",
+   "c3d5",
+   "f8e7",
+   "g5e3",
+   "h6g5",
+   "c3d5",
+   "d8d6",
+   "f1e2",
+   "d6b4",
+   "f1d3",
+   "d6b4",
+   "a1a4",
+   "a4a1",
+   "e1e2",
+   "d6d2",
+   "b5e2",
+   "f8c5",
+   "f2g3",
+   "d2f4",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:26:22Z"
+}

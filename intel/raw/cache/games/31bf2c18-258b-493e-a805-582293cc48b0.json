@@ -1,0 +1,260 @@
+{
+ "game": "31bf2c18-258b-493e-a805-582293cc48b0",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"2\"]\n[White \"while True: win()\"]\n[Black \"Hephaestus\"]\n[Result \"*\"]\n[FEN \"r1bq1rk1/pp2bppp/2n1pn2/2pp4/3P4/2PBP1B1/PP1NNPPP/R2QK2R b KQ - 5 8\"]\n[SetUp \"1\"]\n[Termination \"unterminated\"]\n\n8... c4 { [%clk 0:01:56.875] } 9. a3 { [%clk 0:02:00.497] } 9... cxd3 { [%clk 0:01:54.302] } 10. h3 { [%clk 0:02:00.995] } 10... dxe2 { [%clk 0:01:51.818] } 11. Kxe2 { [%clk 0:02:01.492] } 11... Nh5 { [%clk 0:01:48.539] } 12. Bh2 { [%clk 0:01:57.586] } 12... Qb6 { [%clk 0:01:46.042] } 13. g4 { [%clk 0:01:53.679] } 13... Nf6 { [%clk 0:01:41.282] } 14. Kf1 { [%clk 0:01:49.773] } 14... Qxb2 { [%clk 0:01:37.819] } 15. g5 { [%clk 0:01:45.074] } 15... Nd7 { [%clk 0:01:35.437] } 16. Nb3 { [%clk 0:01:41.184] } 16... a5 { [%clk 0:01:31.927] } 17. Rb1 { [%clk 0:01:37.45] } 17... Qxc3 { [%clk 0:01:27.096] } 18. Rc1 { [%clk 0:01:33.132] } 18... Qb2 { [%clk 0:01:22.007] } 19. a4 { [%clk 0:01:29.72] } 19... Bxg5 { [%clk 0:01:18.21] } 20. Bd6 { [%clk 0:01:25.767] } 20... Bh4 { [%clk 0:01:14.633] } 21. Rh2 { [%clk 0:01:22.648] } 21... Bf6 { [%clk 0:01:11.469] } 22. Rb1 { [%clk 0:01:19.656] } 22... Qc3 { [%clk 0:01:09.984] } 23. Rc1 { [%clk 0:01:16.781] } 23... Qb2 { [%clk 0:01:08.362] } 24. Rb1 { [%clk 0:01:14.022] } 24... Qc3 { [%clk 0:01:05.895] } 25. Rc1 { [%clk 0:01:11.378] } *\n",
+ "opening": "London System",
+ "termination_text": "Unterminated",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 2\u00b7Void",
+ "white_uuid": "0065d170-1082-42d7-a4a3-af54b0df2019",
+ "black_uuid": "25ec4daa-f0e9-4af7-8c68-c07709ced4fb",
+ "site_verdicts": [
+  [
+   "c4",
+   "excellent"
+  ],
+  [
+   "a3",
+   "blunder"
+  ],
+  [
+   "cxd3",
+   "best"
+  ],
+  [
+   "h3",
+   "inaccuracy"
+  ],
+  [
+   "dxe2",
+   "best"
+  ],
+  [
+   "Kxe2",
+   "excellent"
+  ],
+  [
+   "Nh5",
+   "excellent"
+  ],
+  [
+   "Bh2",
+   "best"
+  ],
+  [
+   "Qb6",
+   "excellent"
+  ],
+  [
+   "g4",
+   "best"
+  ],
+  [
+   "Nf6",
+   "best"
+  ],
+  [
+   "Kf1",
+   "excellent"
+  ],
+  [
+   "Qxb2",
+   "excellent"
+  ],
+  [
+   "g5",
+   "best"
+  ],
+  [
+   "Nd7",
+   "excellent"
+  ],
+  [
+   "Nb3",
+   "excellent"
+  ],
+  [
+   "a5",
+   "excellent"
+  ],
+  [
+   "Rb1",
+   "best"
+  ],
+  [
+   "Qxc3",
+   "excellent"
+  ],
+  [
+   "Rc1",
+   "best"
+  ],
+  [
+   "Qb2",
+   "best"
+  ],
+  [
+   "a4",
+   "best"
+  ],
+  [
+   "Bxg5",
+   "excellent"
+  ],
+  [
+   "Bd6",
+   "best"
+  ],
+  [
+   "Bh4",
+   "best"
+  ],
+  [
+   "Rh2",
+   "excellent"
+  ],
+  [
+   "Bf6",
+   "inaccuracy"
+  ],
+  [
+   "Rb1",
+   "excellent"
+  ],
+  [
+   "Qc3",
+   "excellent"
+  ],
+  [
+   "Rc1",
+   "best"
+  ],
+  [
+   "Qb2",
+   "best"
+  ],
+  [
+   "Rb1",
+   "excellent"
+  ],
+  [
+   "Qc3",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Dr. Drunkenstein",
+    "accuracy": 88.1,
+    "acpl": 55,
+    "tally": {
+     "brilliant": 0,
+     "best": 9,
+     "excellent": 6,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "Talos",
+    "accuracy": 96.7,
+    "acpl": 28,
+    "tally": {
+     "brilliant": 0,
+     "best": 6,
+     "excellent": 10,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -7,
+   14,
+   -484,
+   -464,
+   -713,
+   -725,
+   -752,
+   -721,
+   -737,
+   -684,
+   -660,
+   -662,
+   -701,
+   -712,
+   -721,
+   -708,
+   -709,
+   -738,
+   -747,
+   -752,
+   -724,
+   -756,
+   -765,
+   -697,
+   -701,
+   -720,
+   -743,
+   -525,
+   -559,
+   -536,
+   -514,
+   -530,
+   -546,
+   -517,
+   -512
+  ],
+  "best": [
+   "b7b6",
+   "d3c2",
+   "c4d3",
+   "e2c1",
+   "d3e2",
+   "d1e2",
+   "f6e8",
+   "g3h2",
+   "h5f6",
+   "g2g4",
+   "h5f6",
+   "e2e1",
+   "f6e8",
+   "g4g5",
+   "f6e8",
+   "a1c1",
+   "b7b6",
+   "a1b1",
+   "b2a3",
+   "b1c1",
+   "c3b2",
+   "a3a4",
+   "b2a3",
+   "h2d6",
+   "g5h4",
+   "b3d2",
+   "h4e7",
+   "f2f3",
+   "b2a2",
+   "b1c1",
+   "c3b2",
+   "f2f3",
+   "b2a2",
+   "b1c1",
+   "c3c1"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:01:01Z"
+}

@@ -1,0 +1,212 @@
+{
+ "game": "7acef786-bd3c-4c94-af64-f4b136d5474a",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"22\"]\n[White \"Team name\"]\n[Black \"Ultimate32\"]\n[Result \"0-1\"]\n[FEN \"r1bq1rk1/pppp1ppp/2n2n2/1Bb5/3NP3/2P5/PP3PPP/RNBQ1RK1 w - - 3 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8. Bg5 { [%clk 0:01:56.679] } 8... Ne5 { [%clk 0:01:51.931] } 9. Bxf6 { [%clk 0:01:53.355] } 9... Qxf6 { [%clk 0:01:46.722] } 10. Nd2 { [%clk 0:01:50.04] } 10... d6 { [%clk 0:01:39.015] } 11. Qb3 { [%clk 0:01:46.709] } 11... Bg4 { [%clk 0:01:31.597] } 12. Rfe1 { [%clk 0:01:43.377] } 12... Be6 { [%clk 0:01:27.578] } 13. Nc4 { [%clk 0:01:40.033] } 13... a6 { [%clk 0:01:21.784] } 14. Nxe6 { [%clk 0:01:36.683] } 14... fxe6 { [%clk 0:01:19.567] } 15. Nxe5 { [%clk 0:01:33.287] } 15... Bxf2+ { [%clk 0:01:15.275] } 16. Kh1 { [%clk 0:01:29.923] } 16... Bxe1 { [%clk 0:01:11.863] } 17. Rxe1 { [%clk 0:01:26.547] } 17... axb5 { [%clk 0:01:05.275] } 18. Nf3 { [%clk 0:01:23.154] } 18... Ra5 { [%clk 0:01:02.579] } 19. Nd4 { [%clk 0:01:19.764] } 19... Qf1+ { [%clk 0:00:59.442] } 20. Rxf1 { [%clk 0:01:20.255] } 20... Rxf1# { [%clk 0:00:57.015] } 0-1\n",
+ "opening": "Scotch Game",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 22\u00b7Final",
+ "white_uuid": "f7774d65-94ae-4a54-9358-6c3d0097b51b",
+ "black_uuid": "f1e66ae9-1a41-4ae4-af06-1db3d854e88b",
+ "site_verdicts": [
+  [
+   "Bg5",
+   "inaccuracy"
+  ],
+  [
+   "Ne5",
+   "blunder"
+  ],
+  [
+   "Bxf6",
+   "blunder"
+  ],
+  [
+   "Qxf6",
+   "best"
+  ],
+  [
+   "Nd2",
+   "excellent"
+  ],
+  [
+   "d6",
+   "best"
+  ],
+  [
+   "Qb3",
+   "good"
+  ],
+  [
+   "Bg4",
+   "good"
+  ],
+  [
+   "Rfe1",
+   "excellent"
+  ],
+  [
+   "Be6",
+   "excellent"
+  ],
+  [
+   "Nc4",
+   "blunder"
+  ],
+  [
+   "a6",
+   "excellent"
+  ],
+  [
+   "Nxe6",
+   "good"
+  ],
+  [
+   "fxe6",
+   "good"
+  ],
+  [
+   "Nxe5",
+   "best"
+  ],
+  [
+   "Bxf2+",
+   "best"
+  ],
+  [
+   "Kh1",
+   "best"
+  ],
+  [
+   "Bxe1",
+   "excellent"
+  ],
+  [
+   "Rxe1",
+   "good"
+  ],
+  [
+   "axb5",
+   "excellent"
+  ],
+  [
+   "Nf3",
+   "best"
+  ],
+  [
+   "Ra5",
+   "good"
+  ],
+  [
+   "Nd4",
+   "blunder"
+  ],
+  [
+   "Qf1+",
+   "best"
+  ],
+  [
+   "Rxf1",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Muggsy_Bogues",
+    "accuracy": 74.4,
+    "acpl": 139,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 2,
+     "good": 3,
+     "forced": 1,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 3
+    }
+   },
+   {
+    "name": "THE KNOOK",
+    "accuracy": 91.8,
+    "acpl": 34,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 4,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -17,
+   -72,
+   115,
+   -57,
+   -49,
+   -56,
+   -49,
+   -82,
+   -53,
+   -65,
+   -75,
+   -471,
+   -460,
+   -529,
+   -457,
+   -447,
+   -448,
+   -428,
+   -400,
+   -442,
+   -410,
+   -431,
+   -365,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "f2f3",
+   "h7h6",
+   "f2f4",
+   "d8f6",
+   "f2f4",
+   "d7d6",
+   "b2b4",
+   "a7a6",
+   "a1e1",
+   "e5g6",
+   "b3c2",
+   "c7c6",
+   "c4e5",
+   "c5f2",
+   "c4e5",
+   "c5f2",
+   "g1h1",
+   "f6e5",
+   "e5f3",
+   "f6e5",
+   "e5f3",
+   "c7c6",
+   "a2a3",
+   "f6f1",
+   "e1f1",
+   "f8f1",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:59:00Z"
+}

@@ -1,0 +1,230 @@
+{
+ "game": "3ce499f2-9120-40b3-9d2f-bbfea6a856f6",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"4\"]\n[White \"Team7347\"]\n[Black \"Stockfish\"]\n[Result \"0-1\"]\n[FEN \"r1bqkb1r/1p3ppp/p1np1n2/4p3/P3P3/N1N5/1PP2PPP/R1BQKB1R b KQkq - 1 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8... Bg4 { [%clk 0:01:58.498] } 9. Ncb1 { [%clk 0:02:00.489] } 9... Bxd1 { [%clk 0:01:56.994] } 10. Nc3 { [%clk 0:02:00.988] } 10... Bg4 { [%clk 0:01:55.492] } 11. Ncb1 { [%clk 0:02:01.486] } 11... Nxe4 { [%clk 0:01:53.99] } 12. Nc3 { [%clk 0:02:01.984] } 12... Nxc3 { [%clk 0:01:52.486] } 13. Nb1 { [%clk 0:02:02.481] } 13... Nxb1 { [%clk 0:01:50.984] } 14. f3 { [%clk 0:02:02.978] } 14... Qa5+ { [%clk 0:01:49.482] } 15. c3 { [%clk 0:02:03.477] } 15... Bf5 { [%clk 0:01:47.98] } 16. b3 { [%clk 0:02:03.973] } 16... Qxc3+ { [%clk 0:01:46.479] } 17. Kf2 { [%clk 0:02:04.461] } 17... Qxa1 { [%clk 0:01:44.977] } 18. Bc4 { [%clk 0:02:04.94] } 18... Qd4+ { [%clk 0:01:43.474] } 19. Ke1 { [%clk 0:02:05.434] } 19... Qh4+ { [%clk 0:01:41.973] } 20. Kf1 { [%clk 0:02:05.919] } 20... Na5 { [%clk 0:01:40.47] } 21. Bd5 { [%clk 0:02:06.413] } 21... Bd3+ { [%clk 0:01:38.967] } 22. Kg1 { [%clk 0:02:06.904] } 22... Qe1# { [%clk 0:01:37.486] } 0-1\n",
+ "opening": "Sicilian Sveshnikov",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 4\u00b7Final",
+ "white_uuid": "1f20a852-ae0c-44f5-aed7-8be8a5e699b0",
+ "black_uuid": "20ed5de0-fb1b-47ff-9167-05de682c510d",
+ "site_verdicts": [
+  [
+   "Bg4",
+   "best"
+  ],
+  [
+   "Ncb1",
+   "blunder"
+  ],
+  [
+   "Bxd1",
+   "best"
+  ],
+  [
+   "Nc3",
+   "best"
+  ],
+  [
+   "Bg4",
+   "best"
+  ],
+  [
+   "Ncb1",
+   "good"
+  ],
+  [
+   "Nxe4",
+   "excellent"
+  ],
+  [
+   "Nc3",
+   "excellent"
+  ],
+  [
+   "Nxc3",
+   "excellent"
+  ],
+  [
+   "Nb1",
+   "excellent"
+  ],
+  [
+   "Nxb1",
+   "best"
+  ],
+  [
+   "f3",
+   "excellent"
+  ],
+  [
+   "Qa5+",
+   "excellent"
+  ],
+  [
+   "c3",
+   "best"
+  ],
+  [
+   "Bf5",
+   "best"
+  ],
+  [
+   "b3",
+   "excellent"
+  ],
+  [
+   "Qxc3+",
+   "best"
+  ],
+  [
+   "Kf2",
+   "best"
+  ],
+  [
+   "Qxa1",
+   "best"
+  ],
+  [
+   "Bc4",
+   "excellent"
+  ],
+  [
+   "Qd4+",
+   "excellent"
+  ],
+  [
+   "Ke1",
+   "inaccuracy"
+  ],
+  [
+   "Qh4+",
+   "miss"
+  ],
+  [
+   "Kf1",
+   "best"
+  ],
+  [
+   "Na5",
+   "excellent"
+  ],
+  [
+   "Bd5",
+   "inaccuracy"
+  ],
+  [
+   "Bd3+",
+   "best"
+  ],
+  [
+   "Kg1",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Team7347",
+    "accuracy": 81.5,
+    "acpl": 271,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 5,
+     "good": 1,
+     "forced": 1,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "Optiverchess",
+    "accuracy": 100.0,
+    "acpl": 92,
+    "tally": {
+     "brilliant": 0,
+     "best": 9,
+     "excellent": 5,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 1,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   22,
+   13,
+   -732,
+   -737,
+   -735,
+   -747,
+   -907,
+   -879,
+   -866,
+   -884,
+   -1082,
+   -1083,
+   -1237,
+   -1194,
+   -1228,
+   -1230,
+   -1604,
+   -1600,
+   -1612,
+   -1613,
+   -1682,
+   -1563,
+   -9990,
+   -1689,
+   -1737,
+   -1550,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "c8g4",
+   "f1e2",
+   "g4d1",
+   "b1c3",
+   "d1g4",
+   "f1d3",
+   "d6d5",
+   "b1d2",
+   "d6d5",
+   "b2c3",
+   "c3b1",
+   "a1b1",
+   "c6d4",
+   "c2c3",
+   "g4f5",
+   "g2g4",
+   "a5c3",
+   "e1f2",
+   "c3a1",
+   "g2g4",
+   "d6d5",
+   "c1e3",
+   "d6d5",
+   "e1f1",
+   "d6d5",
+   "g2g4",
+   "f5d3",
+   "f1g1",
+   "h4e1",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:04:50Z"
+}

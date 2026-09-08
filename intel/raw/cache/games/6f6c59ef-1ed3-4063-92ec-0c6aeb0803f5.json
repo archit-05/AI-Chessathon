@@ -1,0 +1,176 @@
+{
+ "game": "6f6c59ef-1ed3-4063-92ec-0c6aeb0803f5",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"20\"]\n[White \"son\"]\n[Black \"Rohan\"]\n[Result \"0-1\"]\n[FEN \"r1bqk2r/pp2ppbp/2np1np1/2p5/4P2P/2NP2P1/PPP2PB1/R1BQK1NR w KQkq - 1 7\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n7. Nf3 { [%clk 0:01:59.204] } 7... Bg4 { [%clk 0:01:57.09] } 8. O-O { [%clk 0:01:58.407] } 8... Nd4 { [%clk 0:01:54.245] } 9. Be3 { [%clk 0:01:57.595] } 9... O-O { [%clk 0:01:51.473] } 10. Ne2 { [%clk 0:01:56.77] } 10... Nxf3+ { [%clk 0:01:48.776] } 11. Bxf3 { [%clk 0:01:55.939] } 11... Bxf3 { [%clk 0:01:46.15] } 12. Qd2 { [%clk 0:01:55.087] } 12... Qd7 { [%clk 0:01:43.579] } 13. Nf4 { [%clk 0:01:54.23] } 13... e5 { [%clk 0:01:41.084] } 14. Nd5 { [%clk 0:01:53.363] } 14... Qh3 { [%clk 0:01:38.643] } 15. Ne7+ { [%clk 0:01:52.478] } 15... Kh8 { [%clk 0:01:39.055] } 16. Nd5 { [%clk 0:01:51.583] } 16... Qh1# { [%clk 0:01:39.549] } 0-1\n",
+ "opening": "Sicilian Closed",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 20\u00b7Final",
+ "white_uuid": "6df8959b-319a-416a-a742-724003dabb2e",
+ "black_uuid": "73a39e5a-a4eb-4018-bfe0-1d546db4b394",
+ "site_verdicts": [
+  [
+   "Nf3",
+   "good"
+  ],
+  [
+   "Bg4",
+   "excellent"
+  ],
+  [
+   "O-O",
+   "excellent"
+  ],
+  [
+   "Nd4",
+   "inaccuracy"
+  ],
+  [
+   "Be3",
+   "good"
+  ],
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "Ne2",
+   "blunder"
+  ],
+  [
+   "Nxf3+",
+   "best"
+  ],
+  [
+   "Bxf3",
+   "good"
+  ],
+  [
+   "Bxf3",
+   "best"
+  ],
+  [
+   "Qd2",
+   "excellent"
+  ],
+  [
+   "Qd7",
+   "best"
+  ],
+  [
+   "Nf4",
+   "good"
+  ],
+  [
+   "e5",
+   "best"
+  ],
+  [
+   "Nd5",
+   "mistake"
+  ],
+  [
+   "Qh3",
+   "best"
+  ],
+  [
+   "Ne7+",
+   "best"
+  ],
+  [
+   "Kh8",
+   "forced"
+  ],
+  [
+   "Nd5",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "son",
+    "accuracy": 77.4,
+    "acpl": 182,
+    "tally": {
+     "brilliant": 0,
+     "best": 1,
+     "excellent": 3,
+     "good": 4,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "Rohan",
+    "accuracy": 98.2,
+    "acpl": 9,
+    "tally": {
+     "brilliant": 0,
+     "best": 7,
+     "excellent": 1,
+     "good": 0,
+     "forced": 1,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -15,
+   -40,
+   -53,
+   -60,
+   -1,
+   -53,
+   -53,
+   -554,
+   -555,
+   -674,
+   -672,
+   -689,
+   -673,
+   -774,
+   -762,
+   -9996,
+   -9997,
+   -9997,
+   -9998,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "c3d5",
+   "e8g8",
+   "c3e2",
+   "c6e5",
+   "c3d5",
+   "e8g8",
+   "e3d4",
+   "d4f3",
+   "g1h1",
+   "g4f3",
+   "e3g5",
+   "d8d7",
+   "g1h2",
+   "e7e5",
+   "e3c5",
+   "d7h3",
+   "d5e7",
+   "g8h8",
+   "e7g6",
+   "h3h1",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:25:35Z"
+}

@@ -1,0 +1,188 @@
+{
+ "game": "4efb235d-8251-4f76-9f44-7d3d16e62f38",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"3\"]\n[White \"Cagnus_Marlsen\"]\n[Black \"BitsEntangled\"]\n[Result \"0-1\"]\n[FEN \"rnbq1rk1/pp2bppp/2p1pn2/3p4/2PP4/5NP1/PP2PPBP/RNBQ1RK1 w - - 0 7\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n7. Nbd2 { [%clk 0:01:57.498] } 7... Nbd7 { [%clk 0:01:37.087] } 8. e3 { [%clk 0:01:54.995] } 8... a5 { [%clk 0:01:34.954] } 9. Kh1 { [%clk 0:01:52.493] } 9... a4 { [%clk 0:01:32.672] } 10. c5 { [%clk 0:01:49.991] } 10... b6 { [%clk 0:01:31.748] } 11. cxb6 { [%clk 0:01:47.489] } 11... Qxb6 { [%clk 0:01:30.721] } 12. Ne5 { [%clk 0:01:44.987] } 12... Nxe5 { [%clk 0:01:29.707] } 13. dxe5 { [%clk 0:01:42.485] } 13... Nd7 { [%clk 0:01:28.25] } 14. Nf3 { [%clk 0:01:39.983] } 14... Ba6 { [%clk 0:01:25.82] } 15. Re1 { [%clk 0:01:37.511] } 15... Nc5 { [%clk 0:01:24.996] } 16. Nd4 { [%clk 0:01:35.11] } 16... Nd3 { [%clk 0:01:24.197] } 17. Rg1 { [%clk 0:01:32.778] } 17... Nxf2# { [%clk 0:01:24.693] } 0-1\n",
+ "opening": "Catalan Opening",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 3\u00b7Final",
+ "white_uuid": "a1c2258e-a9c4-4b1d-a3d3-78425668d2ca",
+ "black_uuid": "b227e85c-08e6-489b-ae9a-77e6e856ace0",
+ "site_verdicts": [
+  [
+   "Nbd2",
+   "excellent"
+  ],
+  [
+   "Nbd7",
+   "excellent"
+  ],
+  [
+   "e3",
+   "excellent"
+  ],
+  [
+   "a5",
+   "excellent"
+  ],
+  [
+   "Kh1",
+   "inaccuracy"
+  ],
+  [
+   "a4",
+   "best"
+  ],
+  [
+   "c5",
+   "inaccuracy"
+  ],
+  [
+   "b6",
+   "best"
+  ],
+  [
+   "cxb6",
+   "best"
+  ],
+  [
+   "Qxb6",
+   "best"
+  ],
+  [
+   "Ne5",
+   "inaccuracy"
+  ],
+  [
+   "Nxe5",
+   "best"
+  ],
+  [
+   "dxe5",
+   "best"
+  ],
+  [
+   "Nd7",
+   "best"
+  ],
+  [
+   "Nf3",
+   "best"
+  ],
+  [
+   "Ba6",
+   "best"
+  ],
+  [
+   "Re1",
+   "best"
+  ],
+  [
+   "Nc5",
+   "best"
+  ],
+  [
+   "Nd4",
+   "blunder"
+  ],
+  [
+   "Nd3",
+   "best"
+  ],
+  [
+   "Rg1",
+   "blunder"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Veli",
+    "accuracy": 77.5,
+    "acpl": 138,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 2,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 3,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 2
+    }
+   },
+   {
+    "name": "SirBlunderiusThird",
+    "accuracy": 99.1,
+    "acpl": 5,
+    "tally": {
+     "brilliant": 0,
+     "best": 9,
+     "excellent": 2,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   48,
+   28,
+   46,
+   28,
+   23,
+   -50,
+   -62,
+   -156,
+   -147,
+   -153,
+   -147,
+   -214,
+   -215,
+   -211,
+   -206,
+   -204,
+   -214,
+   -198,
+   -211,
+   -450,
+   -437,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "d1c2",
+   "b7b6",
+   "d1c2",
+   "b7b6",
+   "b2b3",
+   "a5a4",
+   "h1g1",
+   "b7b6",
+   "c5b6",
+   "d8b6",
+   "d2b1",
+   "d7e5",
+   "d4e5",
+   "f6d7",
+   "d2f3",
+   "c8a6",
+   "f1e1",
+   "d7c5",
+   "g2f1",
+   "c5d3",
+   "e1f1",
+   "d3f2",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T11:55:21Z"
+}

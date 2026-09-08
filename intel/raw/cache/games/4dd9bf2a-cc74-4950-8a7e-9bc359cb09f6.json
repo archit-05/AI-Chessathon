@@ -1,0 +1,212 @@
+{
+ "game": "4dd9bf2a-cc74-4950-8a7e-9bc359cb09f6",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"3\"]\n[White \"Columbia Trader\"]\n[Black \"Team Keble\"]\n[Result \"1-0\"]\n[FEN \"rnbq1rk1/ppp2ppp/3b4/3p4/3Pn3/3BBN2/PPP2PPP/RN1Q1RK1 b - - 5 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8... f6 { [%clk 0:02:00.481] } 9. Nh4 { [%clk 0:01:57.126] } 9... Rf7 { [%clk 0:02:00.955] } 10. Nf3 { [%clk 0:01:54.724] } 10... Kh8 { [%clk 0:02:01.439] } 11. Nh4 { [%clk 0:01:52.322] } 11... c6 { [%clk 0:02:01.922] } 12. Nf3 { [%clk 0:01:49.92] } 12... Rd7 { [%clk 0:02:02.404] } 13. Nh4 { [%clk 0:01:47.518] } 13... Qa5 { [%clk 0:02:02.889] } 14. Nf5 { [%clk 0:01:45.111] } 14... Be7 { [%clk 0:02:03.372] } 15. Nxe7 { [%clk 0:01:42.709] } 15... Rxe7 { [%clk 0:02:03.856] } 16. Bf4 { [%clk 0:01:40.307] } 16... b6 { [%clk 0:02:04.339] } 17. Bxb8 { [%clk 0:01:37.905] } 17... Rxb8 { [%clk 0:02:04.823] } 18. Re1 { [%clk 0:01:35.566] } 18... Ng5 { [%clk 0:02:05.308] } 19. Rxe7 { [%clk 0:01:33.297] } 19... Qb4 { [%clk 0:02:05.795] } 20. Re8+ { [%clk 0:01:31.096] } 20... Qf8 { [%clk 0:02:06.293] } 21. Rxf8# { [%clk 0:01:28.958] } 1-0\n",
+ "opening": "Petroff Defence",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 3\u00b7Final",
+ "white_uuid": "304ddb9d-4871-480e-a93c-4005a5feadf4",
+ "black_uuid": "321c728a-c198-4749-a1ec-2ba5754ab033",
+ "site_verdicts": [
+  [
+   "f6",
+   "inaccuracy"
+  ],
+  [
+   "Nh4",
+   "blunder"
+  ],
+  [
+   "Rf7",
+   "mistake"
+  ],
+  [
+   "Nf3",
+   "good"
+  ],
+  [
+   "Kh8",
+   "good"
+  ],
+  [
+   "Nh4",
+   "inaccuracy"
+  ],
+  [
+   "c6",
+   "good"
+  ],
+  [
+   "Nf3",
+   "inaccuracy"
+  ],
+  [
+   "Rd7",
+   "inaccuracy"
+  ],
+  [
+   "Nh4",
+   "good"
+  ],
+  [
+   "Qa5",
+   "blunder"
+  ],
+  [
+   "Nf5",
+   "blunder"
+  ],
+  [
+   "Be7",
+   "mistake"
+  ],
+  [
+   "Nxe7",
+   "inaccuracy"
+  ],
+  [
+   "Rxe7",
+   "best"
+  ],
+  [
+   "Bf4",
+   "inaccuracy"
+  ],
+  [
+   "b6",
+   "mistake"
+  ],
+  [
+   "Bxb8",
+   "blunder"
+  ],
+  [
+   "Rxb8",
+   "best"
+  ],
+  [
+   "Re1",
+   "good"
+  ],
+  [
+   "Ng5",
+   "blunder"
+  ],
+  [
+   "Rxe7",
+   "best"
+  ],
+  [
+   "Qb4",
+   "blunder"
+  ],
+  [
+   "Re8+",
+   "best"
+  ],
+  [
+   "Qf8",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "TheGambler",
+    "accuracy": 76.9,
+    "acpl": 90,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 0,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 4,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 3
+    }
+   },
+   {
+    "name": "dinosaur",
+    "accuracy": 58.5,
+    "acpl": 216,
+    "tally": {
+     "brilliant": 0,
+     "best": 2,
+     "excellent": 0,
+     "good": 2,
+     "forced": 1,
+     "inaccuracy": 2,
+     "mistake": 3,
+     "miss": 0,
+     "blunder": 3
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -2,
+   101,
+   -66,
+   89,
+   40,
+   78,
+   -11,
+   33,
+   -37,
+   44,
+   14,
+   461,
+   121,
+   271,
+   174,
+   181,
+   88,
+   223,
+   29,
+   30,
+   -17,
+   628,
+   628,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "c8f5",
+   "c2c4",
+   "f6f5",
+   "c2c4",
+   "c8e6",
+   "c2c4",
+   "g7g5",
+   "f2f3",
+   "b8a6",
+   "c2c4",
+   "d7e7",
+   "d1h5",
+   "d6f8",
+   "f5g7",
+   "d7e7",
+   "d1h5",
+   "a5b6",
+   "c2c3",
+   "a8b8",
+   "c2c3",
+   "a5b4",
+   "e1e7",
+   "c8h3",
+   "e7e8",
+   "b4f8",
+   "e8f8",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:36:57Z"
+}

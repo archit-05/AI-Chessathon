@@ -1,0 +1,146 @@
+{
+ "game": "7f7f9ece-d892-4e7a-a897-24dc20f47496",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"3\"]\n[White \"Buddy's Grill Gambit\"]\n[Black \"Malvoo\"]\n[Result \"0-1\"]\n[FEN \"rn1qkb1r/pp2pppp/2p2nb1/8/3P4/2P3N1/PP2NPPP/R1BQKB1R b KQkq - 0 7\"]\n[SetUp \"1\"]\n[Termination \"flag\"]\n\n7... Nbd7 { [%clk 0:01:58.333] } 8. Nf4 { [%clk 0:01:28.222] } 8... e5 { [%clk 0:01:56.683] } 9. dxe5 { [%clk 0:01:17.654] } 9... Nxe5 { [%clk 0:01:55.676] } 10. Qb3 { [%clk 0:01:04.993] } 10... Qc7 { [%clk 0:01:53.831] } 11. h3 { [%clk 0:00:53.487] } 11... Bc5 { [%clk 0:01:52.196] } 12. f3 { [%clk 0:00:36.97] } 12... Ned7 { [%clk 0:01:50.598] } 13. Be2 { [%clk 0:00:24.432] } 13... Nd5 { [%clk 0:01:48.784] } 14. Qd1 { [%clk 0:00:11.118] } 14... Nxf4 { [%clk 0:01:47.61] } 0-1\n",
+ "opening": "Caro-Kann Classical",
+ "termination_text": "Flag",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 3\u00b7Final",
+ "white_uuid": "f4a515ca-ddb5-4d2e-bf37-277d9d8d0f39",
+ "black_uuid": "fe4f9319-4a10-4ff8-9ec0-6c5c92f79031",
+ "site_verdicts": [
+  [
+   "Nbd7",
+   "best"
+  ],
+  [
+   "Nf4",
+   "good"
+  ],
+  [
+   "e5",
+   "best"
+  ],
+  [
+   "dxe5",
+   "best"
+  ],
+  [
+   "Nxe5",
+   "best"
+  ],
+  [
+   "Qb3",
+   "inaccuracy"
+  ],
+  [
+   "Qc7",
+   "excellent"
+  ],
+  [
+   "h3",
+   "good"
+  ],
+  [
+   "Bc5",
+   "best"
+  ],
+  [
+   "f3",
+   "blunder"
+  ],
+  [
+   "Ned7",
+   "blunder"
+  ],
+  [
+   "Be2",
+   "blunder"
+  ],
+  [
+   "Nd5",
+   "inaccuracy"
+  ],
+  [
+   "Qd1",
+   "mistake"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "flamin_fillet",
+    "accuracy": 63.9,
+    "acpl": 173,
+    "tally": {
+     "brilliant": 0,
+     "best": 1,
+     "excellent": 0,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 2
+    }
+   },
+   {
+    "name": "Esther",
+    "accuracy": 86.5,
+    "acpl": 68,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 1,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   5,
+   31,
+   4,
+   2,
+   -2,
+   -5,
+   -81,
+   -64,
+   -109,
+   -115,
+   -610,
+   -255,
+   -520,
+   -382,
+   -681,
+   -671
+  ],
+  "best": [
+   "b8d7",
+   "h2h4",
+   "e7e5",
+   "d4e5",
+   "d7e5",
+   "d1d8",
+   "f8c5",
+   "f1e2",
+   "f8c5",
+   "f1e2",
+   "e8c8",
+   "g3e2",
+   "c5d6",
+   "g3h5",
+   "d5f4",
+   "e1f1"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:17:16Z"
+}

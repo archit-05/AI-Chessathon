@@ -1,0 +1,152 @@
+{
+ "game": "58123db3-8d12-4794-a5d7-8070863d5628",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"28\"]\n[White \"SAC\"]\n[Black \"Columbia Trader\"]\n[Result \"1-0\"]\n[FEN \"r1bqk2r/pp1n1ppp/2n1p3/2bpP3/5P2/2NB1N2/PPP3PP/R1BQK2R b KQkq - 1 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8... O-O { [%clk 0:01:55.398] } 9. Bxh7+ { [%clk 0:01:58.265] } 9... Kxh7 { [%clk 0:01:50.981] } 10. Ng5+ { [%clk 0:01:53.426] } 10... Kg8 { [%clk 0:01:46.74] } 11. Qh5 { [%clk 0:01:45.449] } 11... Re8 { [%clk 0:01:42.669] } 12. Qxf7+ { [%clk 0:01:39.248] } 12... Kh8 { [%clk 0:01:43.168] } 13. Qh5+ { [%clk 0:01:39.054] } 13... Kg8 { [%clk 0:01:43.667] } 14. Qh7+ { [%clk 0:01:39.538] } 14... Kf8 { [%clk 0:01:44.165] } 15. Qh8+ { [%clk 0:01:40.011] } 15... Ke7 { [%clk 0:01:44.664] } 16. Qxg7# { [%clk 0:01:40.505] } 1-0\n",
+ "opening": "French Classical",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 28\u00b7Final",
+ "white_uuid": "d655f2bd-c211-4ad5-bdc3-4fdf321a45b5",
+ "black_uuid": "304ddb9d-4871-480e-a93c-4005a5feadf4",
+ "site_verdicts": [
+  [
+   "O-O",
+   "mistake"
+  ],
+  [
+   "Bxh7+",
+   "brilliant"
+  ],
+  [
+   "Kxh7",
+   "best"
+  ],
+  [
+   "Ng5+",
+   "best"
+  ],
+  [
+   "Kg8",
+   "inaccuracy"
+  ],
+  [
+   "Qh5",
+   "best"
+  ],
+  [
+   "Re8",
+   "blunder"
+  ],
+  [
+   "Qxf7+",
+   "best"
+  ],
+  [
+   "Kh8",
+   "forced"
+  ],
+  [
+   "Qh5+",
+   "best"
+  ],
+  [
+   "Kg8",
+   "forced"
+  ],
+  [
+   "Qh7+",
+   "best"
+  ],
+  [
+   "Kf8",
+   "forced"
+  ],
+  [
+   "Qh8+",
+   "best"
+  ],
+  [
+   "Ke7",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "sack",
+    "accuracy": 99.6,
+    "acpl": 2,
+    "tally": {
+     "brilliant": 1,
+     "best": 7,
+     "excellent": 0,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "TheGambler",
+    "accuracy": 74.4,
+    "acpl": 158,
+    "tally": {
+     "brilliant": 0,
+     "best": 1,
+     "excellent": 0,
+     "good": 0,
+     "forced": 4,
+     "inaccuracy": 1,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -25,
+   133,
+   135,
+   135,
+   135,
+   242,
+   230,
+   9995,
+   9996,
+   9996,
+   9997,
+   9997,
+   9998,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "a7a6",
+   "d3h7",
+   "g8h7",
+   "f3g5",
+   "h7g6",
+   "d1h5",
+   "d8g5",
+   "h5f7",
+   "g8h8",
+   "f7h5",
+   "h8g8",
+   "h5h7",
+   "g8f8",
+   "h7h8",
+   "f8e7",
+   "h8g7",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:52:24Z"
+}

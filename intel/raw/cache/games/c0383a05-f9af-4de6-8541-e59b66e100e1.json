@@ -1,0 +1,242 @@
+{
+ "game": "c0383a05-f9af-4de6-8541-e59b66e100e1",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"6\"]\n[White \"Surya prabha\"]\n[Black \"Clanfinn\"]\n[Result \"0-1\"]\n[FEN \"r1bqk2r/pp1n1ppp/2pbpn2/3p4/P1PP4/2N1PN2/1P2BPPP/R1BQK2R b KQkq - 2 7\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n7... a5 { [%clk 0:01:57.339] } 8. Bd3 { [%clk 0:01:56.148] } 8... h6 { [%clk 0:01:54.744] } 9. Bd2 { [%clk 0:01:52.424] } 9... e5 { [%clk 0:01:52.21] } 10. cxd5 { [%clk 0:01:48.824] } 10... O-O { [%clk 0:01:49.736] } 11. dxc6 { [%clk 0:01:45.338] } 11... bxc6 { [%clk 0:01:47.321] } 12. Ra2 { [%clk 0:01:41.974] } 12... Re8 { [%clk 0:01:44.964] } 13. dxe5 { [%clk 0:01:38.717] } 13... Nxe5 { [%clk 0:01:42.663] } 14. Nxe5 { [%clk 0:01:35.575] } 14... Bxe5 { [%clk 0:01:40.417] } 15. Bc4 { [%clk 0:01:32.536] } 15... Be6 { [%clk 0:01:38.224] } 16. Bxe6 { [%clk 0:01:29.596] } 16... Rxe6 { [%clk 0:01:36.084] } 17. Qf3 { [%clk 0:01:26.757] } 17... Qd3 { [%clk 0:01:33.994] } 18. Ra3 { [%clk 0:01:24.012] } 18... Rd8 { [%clk 0:01:31.954] } 19. Bc1 { [%clk 0:01:21.359] } 19... Ree8 { [%clk 0:01:29.963] } 20. Qxc6 { [%clk 0:01:18.795] } 20... Bxc3+ { [%clk 0:01:28.019] } 21. Bd2 { [%clk 0:01:16.314] } 21... Qxd2+ { [%clk 0:01:28.511] } 22. Kf1 { [%clk 0:01:13.918] } 22... Qe1# { [%clk 0:01:29.002] } 0-1\n",
+ "opening": "Semi-Slav Defence",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 6\u00b7Final",
+ "white_uuid": "ad314622-404e-4102-a7cf-2a26b9f9d645",
+ "black_uuid": "4e97b85c-2525-46e4-bda7-f92e5733c9dc",
+ "site_verdicts": [
+  [
+   "a5",
+   "excellent"
+  ],
+  [
+   "Bd3",
+   "good"
+  ],
+  [
+   "h6",
+   "excellent"
+  ],
+  [
+   "Bd2",
+   "good"
+  ],
+  [
+   "e5",
+   "inaccuracy"
+  ],
+  [
+   "cxd5",
+   "best"
+  ],
+  [
+   "O-O",
+   "good"
+  ],
+  [
+   "dxc6",
+   "best"
+  ],
+  [
+   "bxc6",
+   "best"
+  ],
+  [
+   "Ra2",
+   "blunder"
+  ],
+  [
+   "Re8",
+   "best"
+  ],
+  [
+   "dxe5",
+   "best"
+  ],
+  [
+   "Nxe5",
+   "best"
+  ],
+  [
+   "Nxe5",
+   "best"
+  ],
+  [
+   "Bxe5",
+   "best"
+  ],
+  [
+   "Bc4",
+   "best"
+  ],
+  [
+   "Be6",
+   "inaccuracy"
+  ],
+  [
+   "Bxe6",
+   "best"
+  ],
+  [
+   "Rxe6",
+   "best"
+  ],
+  [
+   "Qf3",
+   "mistake"
+  ],
+  [
+   "Qd3",
+   "best"
+  ],
+  [
+   "Ra3",
+   "blunder"
+  ],
+  [
+   "Rd8",
+   "best"
+  ],
+  [
+   "Bc1",
+   "best"
+  ],
+  [
+   "Ree8",
+   "blunder"
+  ],
+  [
+   "Qxc6",
+   "blunder"
+  ],
+  [
+   "Bxc3+",
+   "best"
+  ],
+  [
+   "Bd2",
+   "best"
+  ],
+  [
+   "Qxd2+",
+   "best"
+  ],
+  [
+   "Kf1",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Suryaprabha",
+    "accuracy": 70.2,
+    "acpl": 118,
+    "tally": {
+     "brilliant": 0,
+     "best": 8,
+     "excellent": 0,
+     "good": 2,
+     "forced": 1,
+     "inaccuracy": 0,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 3
+    }
+   },
+   {
+    "name": "Yu",
+    "accuracy": 87.6,
+    "acpl": 39,
+    "tally": {
+     "brilliant": 0,
+     "best": 9,
+     "excellent": 3,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   11,
+   17,
+   -14,
+   -8,
+   -45,
+   46,
+   50,
+   86,
+   100,
+   108,
+   -79,
+   -60,
+   -90,
+   -82,
+   -99,
+   -119,
+   -135,
+   -59,
+   -48,
+   -41,
+   -182,
+   -182,
+   -491,
+   -459,
+   -452,
+   -120,
+   -9997,
+   -9998,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "e8g8",
+   "e1g1",
+   "e8g8",
+   "e1g1",
+   "d5c4",
+   "c4d5",
+   "c6d5",
+   "d5c6",
+   "b7c6",
+   "e1g1",
+   "f8e8",
+   "d4e5",
+   "d7e5",
+   "f3e5",
+   "d6e5",
+   "d3c4",
+   "f6g4",
+   "c4e6",
+   "e8e6",
+   "d2c1",
+   "d8d3",
+   "e3e4",
+   "a8d8",
+   "d2c1",
+   "e6d6",
+   "f3e2",
+   "e5c3",
+   "c1d2",
+   "d3d2",
+   "e1f1",
+   "d2d1",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:32:59Z"
+}

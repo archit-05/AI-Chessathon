@@ -1,0 +1,218 @@
+{
+ "game": "80bdfe54-66ac-4b69-8f44-f1ca0268d859",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"9\"]\n[White \"Checkmate99\"]\n[Black \"darKnight\"]\n[Result \"0-1\"]\n[FEN \"r2qk2r/2p1bppp/p1np1n2/1p2p3/4P3/1BN2Q1P/PPPP1PP1/R1B1R1K1 b kq - 0 10\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n10... Nd4 { [%clk 0:01:56.243] } 11. Qxf6 { [%clk 0:02:00.498] } 11... Bxf6 { [%clk 0:01:53.135] } 12. Bxf7+ { [%clk 0:02:00.995] } 12... Kxf7 { [%clk 0:01:50.307] } 13. Nxb5 { [%clk 0:02:01.492] } 13... Nxc2 { [%clk 0:01:47.54] } 14. Nxd6+ { [%clk 0:02:01.989] } 14... cxd6 { [%clk 0:01:44.581] } 15. Rd1 { [%clk 0:02:02.486] } 15... Nxa1 { [%clk 0:01:41.54] } 16. g3 { [%clk 0:02:02.98] } 16... Qa5 { [%clk 0:01:38.62] } 17. f4 { [%clk 0:02:03.478] } 17... Qxa2 { [%clk 0:01:35.734] } 18. fxe5 { [%clk 0:02:03.976] } 18... Qb3 { [%clk 0:01:33.168] } 19. exf6 { [%clk 0:02:04.474] } 19... Qxd1+ { [%clk 0:01:30.693] } 20. Kh2 { [%clk 0:02:04.972] } 20... Rac8 { [%clk 0:01:28.276] } 21. fxg7 { [%clk 0:02:05.471] } 21... Qe2+ { [%clk 0:01:25.881] } 22. Kh1 { [%clk 0:02:05.969] } 22... Kxg7 { [%clk 0:01:23.354] } 23. Kg1 { [%clk 0:02:06.467] } 23... Rxc1# { [%clk 0:01:21.435] } 0-1\n",
+ "opening": "Ruy Lopez, Closed",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 9\u00b7Final",
+ "white_uuid": "23313d96-aec8-4bb0-92d7-a687055c7bc1",
+ "black_uuid": "29aebabe-6a5b-45e5-9d1e-36c706cde3b4",
+ "site_verdicts": [
+  [
+   "Nd4",
+   "best"
+  ],
+  [
+   "Qxf6",
+   "blunder"
+  ],
+  [
+   "Bxf6",
+   "best"
+  ],
+  [
+   "Bxf7+",
+   "good"
+  ],
+  [
+   "Kxf7",
+   "best"
+  ],
+  [
+   "Nxb5",
+   "good"
+  ],
+  [
+   "Nxc2",
+   "best"
+  ],
+  [
+   "Nxd6+",
+   "excellent"
+  ],
+  [
+   "cxd6",
+   "best"
+  ],
+  [
+   "Rd1",
+   "excellent"
+  ],
+  [
+   "Nxa1",
+   "best"
+  ],
+  [
+   "g3",
+   "excellent"
+  ],
+  [
+   "Qa5",
+   "excellent"
+  ],
+  [
+   "f4",
+   "excellent"
+  ],
+  [
+   "Qxa2",
+   "best"
+  ],
+  [
+   "fxe5",
+   "excellent"
+  ],
+  [
+   "Qb3",
+   "best"
+  ],
+  [
+   "exf6",
+   "inaccuracy"
+  ],
+  [
+   "Qxd1+",
+   "miss"
+  ],
+  [
+   "Kh2",
+   "inaccuracy"
+  ],
+  [
+   "Rac8",
+   "excellent"
+  ],
+  [
+   "fxg7",
+   "excellent"
+  ],
+  [
+   "Qe2+",
+   "best"
+  ],
+  [
+   "Kh1",
+   "excellent"
+  ],
+  [
+   "Kxg7",
+   "excellent"
+  ],
+  [
+   "Kg1",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Checkmate99",
+    "accuracy": 83.7,
+    "acpl": 235,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 8,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "Oyinda",
+    "accuracy": 99.6,
+    "acpl": 73,
+    "tally": {
+     "brilliant": 0,
+     "best": 10,
+     "excellent": 3,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 1,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   2,
+   -6,
+   -596,
+   -609,
+   -710,
+   -693,
+   -852,
+   -866,
+   -957,
+   -975,
+   -998,
+   -1011,
+   -1016,
+   -1046,
+   -1103,
+   -1131,
+   -1153,
+   -1157,
+   -9990,
+   -1167,
+   -9992,
+   -9997,
+   -9998,
+   -9999,
+   -9999,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "c6d4",
+   "f3d1",
+   "e7f6",
+   "c3d5",
+   "e8f7",
+   "a1b1",
+   "d4c2",
+   "e1f1",
+   "c7d6",
+   "d2d4",
+   "c2a1",
+   "d2d3",
+   "d8c7",
+   "d2d4",
+   "a5a2",
+   "d1f1",
+   "a2b3",
+   "g1g2",
+   "b3g3",
+   "g1f2",
+   "h8c8",
+   "h3h4",
+   "d1e2",
+   "h2g1",
+   "c8c1",
+   "b2b3",
+   "c8c1",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:06:48Z"
+}

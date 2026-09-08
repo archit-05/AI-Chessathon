@@ -1,0 +1,212 @@
+{
+ "game": "56dd271e-122d-4141-8c23-3f0b6a9469bb",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"9\"]\n[White \"claudeshark\"]\n[Black \"PawnStorm\"]\n[Result \"1-0\"]\n[FEN \"rnbqkb1r/pp1n1ppp/4p3/2ppP3/3P1P2/2NB4/PPP3PP/R1BQK1NR b KQkq - 1 6\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n6... cxd4 { [%clk 0:01:59.986] } 7. Nb5 { [%clk 0:01:57.503] } 7... Bb4+ { [%clk 0:01:59.984] } 8. Bd2 { [%clk 0:01:50.798] } 8... Bxd2+ { [%clk 0:01:59.98] } 9. Qxd2 { [%clk 0:01:47.743] } 9... Qh4+ { [%clk 0:01:59.975] } 10. g3 { [%clk 0:01:43.632] } 10... Qg4 { [%clk 0:01:59.963] } 11. Nc7+ { [%clk 0:01:40.107] } 11... Kf8 { [%clk 0:01:59.944] } 12. Nxa8 { [%clk 0:01:35.738] } 12... Na6 { [%clk 0:01:59.935] } 13. Bxa6 { [%clk 0:01:32.412] } 13... bxa6 { [%clk 0:01:59.931] } 14. Nc7 { [%clk 0:01:30.461] } 14... Kg8 { [%clk 0:01:59.926] } 15. Qxd4 { [%clk 0:01:25.831] } 15... Bb7 { [%clk 0:01:59.914] } 16. Qxa7 { [%clk 0:01:21.441] } 16... Bc6 { [%clk 0:01:59.907] } 17. Qxa6 { [%clk 0:01:19.298] } 17... Nb8 { [%clk 0:01:59.904] } 18. Qc8+ { [%clk 0:01:19.794] } 18... Be8 { [%clk 0:02:00.037] } 19. Qxe8# { [%clk 0:01:20.29] } 1-0\n",
+ "opening": "French Classical",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 9\u00b7Final",
+ "white_uuid": "6532bc56-58ba-48b5-977d-0c039fe3fd7b",
+ "black_uuid": "e2a3a86e-7b1b-4926-8873-b396674733fb",
+ "site_verdicts": [
+  [
+   "cxd4",
+   "excellent"
+  ],
+  [
+   "Nb5",
+   "good"
+  ],
+  [
+   "Bb4+",
+   "inaccuracy"
+  ],
+  [
+   "Bd2",
+   "best"
+  ],
+  [
+   "Bxd2+",
+   "good"
+  ],
+  [
+   "Qxd2",
+   "best"
+  ],
+  [
+   "Qh4+",
+   "blunder"
+  ],
+  [
+   "g3",
+   "best"
+  ],
+  [
+   "Qg4",
+   "inaccuracy"
+  ],
+  [
+   "Nc7+",
+   "best"
+  ],
+  [
+   "Kf8",
+   "good"
+  ],
+  [
+   "Nxa8",
+   "best"
+  ],
+  [
+   "Na6",
+   "good"
+  ],
+  [
+   "Bxa6",
+   "best"
+  ],
+  [
+   "bxa6",
+   "best"
+  ],
+  [
+   "Nc7",
+   "good"
+  ],
+  [
+   "Kg8",
+   "good"
+  ],
+  [
+   "Qxd4",
+   "excellent"
+  ],
+  [
+   "Bb7",
+   "good"
+  ],
+  [
+   "Qxa7",
+   "best"
+  ],
+  [
+   "Bc6",
+   "excellent"
+  ],
+  [
+   "Qxa6",
+   "best"
+  ],
+  [
+   "Nb8",
+   "blunder"
+  ],
+  [
+   "Qc8+",
+   "best"
+  ],
+  [
+   "Be8",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "larp",
+    "accuracy": 97.2,
+    "acpl": 15,
+    "tally": {
+     "brilliant": 0,
+     "best": 10,
+     "excellent": 1,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Bartholomew",
+    "accuracy": 85.3,
+    "acpl": 137,
+    "tally": {
+     "brilliant": 0,
+     "best": 1,
+     "excellent": 2,
+     "good": 5,
+     "forced": 1,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 2
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -15,
+   1,
+   -46,
+   28,
+   19,
+   69,
+   65,
+   254,
+   284,
+   415,
+   442,
+   508,
+   494,
+   594,
+   580,
+   575,
+   484,
+   571,
+   558,
+   625,
+   660,
+   661,
+   662,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "b8c6",
+   "c3e2",
+   "b8c6",
+   "c1d2",
+   "b4c5",
+   "d1d2",
+   "e8g8",
+   "g2g3",
+   "h4d8",
+   "b5c7",
+   "e8d8",
+   "c7a8",
+   "f8e7",
+   "d3a6",
+   "b7a6",
+   "g1e2",
+   "d7e5",
+   "g1e2",
+   "h7h5",
+   "d4a7",
+   "h7h5",
+   "a7a6",
+   "h7h5",
+   "a6c8",
+   "c6e8",
+   "c8e8",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:20:36Z"
+}

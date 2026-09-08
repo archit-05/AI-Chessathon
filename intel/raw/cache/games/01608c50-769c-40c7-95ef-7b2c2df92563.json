@@ -1,0 +1,59 @@
+{
+ "game": "01608c50-769c-40c7-95ef-7b2c2df92563",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"1\"]\n[White \"fuzz\"]\n[Black \"TheROOK\"]\n[Result \"0-1\"]\n[FEN \"r1bqk2r/ppp2ppp/2np1n2/2b1p3/P1B1P3/2PP1N2/1P3PPP/RNBQK2R b KQkq - 0 6\"]\n[SetUp \"1\"]\n[Termination \"init\"]\n\n0-1\n",
+ "opening": "Italian Game",
+ "termination_text": "Init",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 1\u00b7Final",
+ "white_uuid": "0f755e93-36d5-40fe-9654-2fd874a5822e",
+ "black_uuid": "13367195-d3ed-4c05-bba6-25ee8f416520",
+ "site_verdicts": [],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Blundermaster",
+    "accuracy": 0.0,
+    "acpl": 0,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 0,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "TheROOK",
+    "accuracy": 0.0,
+    "acpl": 0,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 0,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   9
+  ],
+  "best": [
+   "a7a6"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:17:46Z"
+}

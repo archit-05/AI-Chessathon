@@ -1,0 +1,266 @@
+{
+ "game": "6e2a69df-956e-4674-bc28-760151a363b8",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.06\"]\n[Round \"44\"]\n[White \"Tunir\"]\n[Black \"Prophylaxis\"]\n[Result \"0-1\"]\n[FEN \"r2qkb1r/pp2pppp/2n2n2/3p4/3P1Bb1/1QPB4/PP3PPP/RN2K1NR b KQkq - 4 7\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n7... Qd7 { [%clk 0:02:00.499] } 8. h3 { [%clk 0:01:57.498] } 8... Bh5 { [%clk 0:02:00.997] } 9. Nd2 { [%clk 0:01:55.058] } 9... e6 { [%clk 0:02:01.496] } 10. Ngf3 { [%clk 0:01:52.678] } 10... Bd6 { [%clk 0:02:01.995] } 11. Bxd6 { [%clk 0:01:49.418] } 11... Qxd6 { [%clk 0:02:02.494] } 12. Qxb7 { [%clk 0:01:46.268] } 12... Rb8 { [%clk 0:01:58.053] } 13. Nc4 { [%clk 0:01:43.224] } 13... dxc4 { [%clk 0:01:54.643] } 14. Qxc6+ { [%clk 0:01:40.28] } 14... Qxc6 { [%clk 0:01:50.506] } 15. Bxc4 { [%clk 0:01:37.434] } 15... Bxf3 { [%clk 0:01:46.492] } 16. b3 { [%clk 0:01:34.683] } 16... Bxg2 { [%clk 0:01:42.726] } 17. Rg1 { [%clk 0:01:32.024] } 17... Bxh3 { [%clk 0:01:39.1] } 18. Rxg7 { [%clk 0:01:29.454] } 18... Qh1+ { [%clk 0:01:35.563] } 19. Ke2 { [%clk 0:01:26.969] } 19... Qxa1 { [%clk 0:01:32.222] } 20. Rg8+ { [%clk 0:01:24.567] } 20... Rxg8 { [%clk 0:01:28.958] } 21. Ke3 { [%clk 0:01:22.247] } 21... Qe1+ { [%clk 0:01:25.85] } 22. Be2 { [%clk 0:01:20.002] } 22... Nd5+ { [%clk 0:01:26.342] } 23. Kd3 { [%clk 0:01:17.832] } 23... Bf5+ { [%clk 0:01:23.377] } 24. Kc4 { [%clk 0:01:15.736] } 24... Qxc3# { [%clk 0:01:23.866] } 0-1\n",
+ "opening": "Caro-Kann Exchange",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 44\u00b7Final",
+ "white_uuid": "95aa042c-ccc3-4cf4-8e21-34062d6cee1a",
+ "black_uuid": "2658b7a0-8c20-4fcb-91ab-1fad8d05c0d7",
+ "site_verdicts": [
+  [
+   "Qd7",
+   "best"
+  ],
+  [
+   "h3",
+   "excellent"
+  ],
+  [
+   "Bh5",
+   "best"
+  ],
+  [
+   "Nd2",
+   "best"
+  ],
+  [
+   "e6",
+   "best"
+  ],
+  [
+   "Ngf3",
+   "best"
+  ],
+  [
+   "Bd6",
+   "best"
+  ],
+  [
+   "Bxd6",
+   "best"
+  ],
+  [
+   "Qxd6",
+   "best"
+  ],
+  [
+   "Qxb7",
+   "excellent"
+  ],
+  [
+   "Rb8",
+   "best"
+  ],
+  [
+   "Nc4",
+   "blunder"
+  ],
+  [
+   "dxc4",
+   "best"
+  ],
+  [
+   "Qxc6+",
+   "good"
+  ],
+  [
+   "Qxc6",
+   "best"
+  ],
+  [
+   "Bxc4",
+   "good"
+  ],
+  [
+   "Bxf3",
+   "excellent"
+  ],
+  [
+   "b3",
+   "excellent"
+  ],
+  [
+   "Bxg2",
+   "excellent"
+  ],
+  [
+   "Rg1",
+   "excellent"
+  ],
+  [
+   "Bxh3",
+   "excellent"
+  ],
+  [
+   "Rxg7",
+   "good"
+  ],
+  [
+   "Qh1+",
+   "excellent"
+  ],
+  [
+   "Ke2",
+   "excellent"
+  ],
+  [
+   "Qxa1",
+   "excellent"
+  ],
+  [
+   "Rg8+",
+   "inaccuracy"
+  ],
+  [
+   "Rxg8",
+   "best"
+  ],
+  [
+   "Ke3",
+   "excellent"
+  ],
+  [
+   "Qe1+",
+   "best"
+  ],
+  [
+   "Be2",
+   "best"
+  ],
+  [
+   "Nd5+",
+   "best"
+  ],
+  [
+   "Kd3",
+   "best"
+  ],
+  [
+   "Bf5+",
+   "best"
+  ],
+  [
+   "Kc4",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Tunir",
+    "accuracy": 84.7,
+    "acpl": 158,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 6,
+     "good": 3,
+     "forced": 1,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "Frankfurt Airport",
+    "accuracy": 99.5,
+    "acpl": 27,
+    "tally": {
+     "brilliant": 0,
+     "best": 13,
+     "excellent": 5,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   21,
+   23,
+   18,
+   18,
+   19,
+   17,
+   21,
+   14,
+   22,
+   20,
+   13,
+   7,
+   -639,
+   -656,
+   -797,
+   -798,
+   -1092,
+   -916,
+   -979,
+   -988,
+   -1030,
+   -920,
+   -1244,
+   -1220,
+   -1376,
+   -1206,
+   -9994,
+   -9995,
+   -9996,
+   -9997,
+   -9997,
+   -9998,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "d8d7",
+   "b1d2",
+   "g4h5",
+   "b1d2",
+   "e7e6",
+   "g1f3",
+   "f8d6",
+   "f4d6",
+   "d7d6",
+   "e1g1",
+   "a8b8",
+   "b7a6",
+   "d5c4",
+   "b7b8",
+   "d6c6",
+   "d3e2",
+   "c6c4",
+   "e1g1",
+   "c6e4",
+   "d4d5",
+   "c6e4",
+   "a1d1",
+   "c6e4",
+   "e1d2",
+   "h1e4",
+   "f2f3",
+   "h8g8",
+   "a2a3",
+   "a1e1",
+   "c4e2",
+   "f6d5",
+   "e3d3",
+   "h3f5",
+   "d3c4",
+   "e1c3",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:13:55Z"
+}

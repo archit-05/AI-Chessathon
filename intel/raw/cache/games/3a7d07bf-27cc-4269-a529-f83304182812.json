@@ -1,0 +1,212 @@
+{
+ "game": "3a7d07bf-27cc-4269-a529-f83304182812",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.06\"]\n[Round \"37\"]\n[White \"Team7347\"]\n[Black \"Team name\"]\n[Result \"1-0\"]\n[FEN \"rn1qk2r/pp2ppbp/6p1/2p5/3PP1b1/2P1BN2/P4PPP/2RQKB1R b Kkq - 3 9\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n9... cxd4 { [%clk 0:01:56.581] } 10. cxd4 { [%clk 0:01:54.97] } 10... Nc6 { [%clk 0:01:53.165] } 11. d5 { [%clk 0:01:50.467] } 11... Qa5+ { [%clk 0:01:49.739] } 12. Bd2 { [%clk 0:01:45.965] } 12... Qxa2 { [%clk 0:01:46.277] } 13. dxc6 { [%clk 0:01:41.457] } 13... bxc6 { [%clk 0:01:42.839] } 14. Rxc6 { [%clk 0:01:36.98] } 14... e5 { [%clk 0:01:39.392] } 15. Bc4 { [%clk 0:01:32.725] } 15... Bxf3 { [%clk 0:01:35.933] } 16. Qxf3 { [%clk 0:01:28.684] } 16... Qb1+ { [%clk 0:01:32.461] } 17. Ke2 { [%clk 0:01:24.846] } 17... Qb7 { [%clk 0:01:28.979] } 18. Rb1 { [%clk 0:01:21.202] } 18... Qxc6 { [%clk 0:01:25.479] } 19. Qxf7+ { [%clk 0:01:20.666] } 19... Kd8 { [%clk 0:01:21.967] } 20. Ba5+ { [%clk 0:01:21.148] } 20... Kc8 { [%clk 0:01:21.918] } 21. Be6+ { [%clk 0:01:21.644] } 21... Qxe6 { [%clk 0:01:22.407] } 22. Qxe6# { [%clk 0:01:22.142] } 1-0\n",
+ "opening": "Grunfeld Defence",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 37\u00b7Final",
+ "white_uuid": "1f20a852-ae0c-44f5-aed7-8be8a5e699b0",
+ "black_uuid": "f7774d65-94ae-4a54-9358-6c3d0097b51b",
+ "site_verdicts": [
+  [
+   "cxd4",
+   "excellent"
+  ],
+  [
+   "cxd4",
+   "best"
+  ],
+  [
+   "Nc6",
+   "good"
+  ],
+  [
+   "d5",
+   "best"
+  ],
+  [
+   "Qa5+",
+   "blunder"
+  ],
+  [
+   "Bd2",
+   "best"
+  ],
+  [
+   "Qxa2",
+   "best"
+  ],
+  [
+   "dxc6",
+   "best"
+  ],
+  [
+   "bxc6",
+   "best"
+  ],
+  [
+   "Rxc6",
+   "inaccuracy"
+  ],
+  [
+   "e5",
+   "blunder"
+  ],
+  [
+   "Bc4",
+   "best"
+  ],
+  [
+   "Bxf3",
+   "best"
+  ],
+  [
+   "Qxf3",
+   "best"
+  ],
+  [
+   "Qb1+",
+   "good"
+  ],
+  [
+   "Ke2",
+   "best"
+  ],
+  [
+   "Qb7",
+   "best"
+  ],
+  [
+   "Rb1",
+   "best"
+  ],
+  [
+   "Qxc6",
+   "mistake"
+  ],
+  [
+   "Qxf7+",
+   "best"
+  ],
+  [
+   "Kd8",
+   "forced"
+  ],
+  [
+   "Ba5+",
+   "best"
+  ],
+  [
+   "Kc8",
+   "excellent"
+  ],
+  [
+   "Be6+",
+   "best"
+  ],
+  [
+   "Qxe6",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Team7347",
+    "accuracy": 95.9,
+    "acpl": 17,
+    "tally": {
+     "brilliant": 0,
+     "best": 12,
+     "excellent": 0,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Muggsy_Bogues",
+    "accuracy": 81.7,
+    "acpl": 149,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 2,
+     "good": 2,
+     "forced": 1,
+     "inaccuracy": 0,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 2
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   39,
+   45,
+   50,
+   103,
+   94,
+   400,
+   399,
+   369,
+   320,
+   364,
+   240,
+   545,
+   520,
+   596,
+   602,
+   679,
+   688,
+   760,
+   747,
+   9996,
+   9997,
+   9997,
+   9998,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "e8g8",
+   "c3d4",
+   "e8g8",
+   "d4d5",
+   "c6e5",
+   "e3d2",
+   "a5a2",
+   "d5c6",
+   "b7c6",
+   "f1c4",
+   "e8g8",
+   "f1c4",
+   "g4f3",
+   "d1f3",
+   "a2c4",
+   "e1e2",
+   "b1b7",
+   "h1b1",
+   "b7d7",
+   "f3f7",
+   "e8d8",
+   "d2a5",
+   "c6b6",
+   "c4e6",
+   "c6e6",
+   "f7e6",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:04:22Z"
+}

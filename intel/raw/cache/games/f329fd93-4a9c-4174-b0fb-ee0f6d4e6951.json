@@ -1,0 +1,230 @@
+{
+ "game": "f329fd93-4a9c-4174-b0fb-ee0f6d4e6951",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"15\"]\n[White \"Checkmate99\"]\n[Black \"Random Mover\"]\n[Result \"1-0\"]\n[FEN \"r1bqk2r/pp3ppp/2nbpn2/2pp4/3P1B2/P1P1P3/1P1N1PPP/R2QKBNR w KQkq - 1 7\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n7. Bxd6 { [%clk 0:02:00.321] } 7... Rf8 { [%clk 0:02:00.498] } 8. Bxf8 { [%clk 0:02:00.661] } 8... Rb8 { [%clk 0:02:00.996] } 9. Bxc5 { [%clk 0:02:01.03] } 9... Nxd4 { [%clk 0:02:01.487] } 10. Bxd4 { [%clk 0:02:01.396] } 10... b6 { [%clk 0:02:01.983] } 11. Bd3 { [%clk 0:02:01.785] } 11... Ba6 { [%clk 0:02:02.482] } 12. Bxa6 { [%clk 0:02:02.144] } 12... g6 { [%clk 0:02:02.981] } 13. Bd3 { [%clk 0:02:02.548] } 13... g5 { [%clk 0:02:03.479] } 14. Qa4+ { [%clk 0:02:02.932] } 14... b5 { [%clk 0:02:03.978] } 15. Qxa7 { [%clk 0:02:03.289] } 15... Rb7 { [%clk 0:02:04.477] } 16. Qxb7 { [%clk 0:02:03.634] } 16... Qa8 { [%clk 0:02:04.976] } 17. Qxa8+ { [%clk 0:02:04.014] } 17... Ke7 { [%clk 0:02:05.474] } 18. Bxb5 { [%clk 0:02:04.429] } 18... Nd7 { [%clk 0:02:05.973] } 19. Qc8 { [%clk 0:02:04.849] } 19... f5 { [%clk 0:02:06.471] } 20. Qxd7+ { [%clk 0:02:05.272] } 20... Kf8 { [%clk 0:02:06.97] } 21. Qg7# { [%clk 0:02:05.735] } 1-0\n",
+ "opening": "London System",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 15\u00b7Final",
+ "white_uuid": "23313d96-aec8-4bb0-92d7-a687055c7bc1",
+ "black_uuid": "5c7abbac-f8d0-4635-a335-d4b6c90aeefe",
+ "site_verdicts": [
+  [
+   "Bxd6",
+   "best"
+  ],
+  [
+   "Rf8",
+   "blunder"
+  ],
+  [
+   "Bxf8",
+   "good"
+  ],
+  [
+   "Rb8",
+   "good"
+  ],
+  [
+   "Bxc5",
+   "excellent"
+  ],
+  [
+   "Nxd4",
+   "good"
+  ],
+  [
+   "Bxd4",
+   "best"
+  ],
+  [
+   "b6",
+   "excellent"
+  ],
+  [
+   "Bd3",
+   "excellent"
+  ],
+  [
+   "Ba6",
+   "excellent"
+  ],
+  [
+   "Bxa6",
+   "best"
+  ],
+  [
+   "g6",
+   "excellent"
+  ],
+  [
+   "Bd3",
+   "excellent"
+  ],
+  [
+   "g5",
+   "excellent"
+  ],
+  [
+   "Qa4+",
+   "excellent"
+  ],
+  [
+   "b5",
+   "excellent"
+  ],
+  [
+   "Qxa7",
+   "excellent"
+  ],
+  [
+   "Rb7",
+   "excellent"
+  ],
+  [
+   "Qxb7",
+   "best"
+  ],
+  [
+   "Qa8",
+   "inaccuracy"
+  ],
+  [
+   "Qxa8+",
+   "best"
+  ],
+  [
+   "Ke7",
+   "best"
+  ],
+  [
+   "Bxb5",
+   "excellent"
+  ],
+  [
+   "Nd7",
+   "excellent"
+  ],
+  [
+   "Qc8",
+   "excellent"
+  ],
+  [
+   "f5",
+   "excellent"
+  ],
+  [
+   "Qxd7+",
+   "best"
+  ],
+  [
+   "Kf8",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Checkmate99",
+    "accuracy": 99.5,
+    "acpl": 14,
+    "tally": {
+     "brilliant": 0,
+     "best": 7,
+     "excellent": 7,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Random Mover",
+    "accuracy": 82.2,
+    "acpl": 209,
+    "tally": {
+     "brilliant": 0,
+     "best": 1,
+     "excellent": 8,
+     "good": 2,
+     "forced": 1,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -7,
+   -17,
+   678,
+   595,
+   792,
+   789,
+   969,
+   978,
+   989,
+   988,
+   1235,
+   1244,
+   1328,
+   1262,
+   1375,
+   1353,
+   1378,
+   1353,
+   1718,
+   1732,
+   9995,
+   9996,
+   9996,
+   9993,
+   9994,
+   9995,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "f4d6",
+   "d8d6",
+   "d4c5",
+   "e8f8",
+   "f8g7",
+   "b7b6",
+   "c5d4",
+   "e8f8",
+   "d4e5",
+   "e8f8",
+   "d3a6",
+   "e8f8",
+   "g1f3",
+   "e8f8",
+   "g1f3",
+   "f6d7",
+   "d3b5",
+   "f6d7",
+   "a7b7",
+   "g5g4",
+   "b7a8",
+   "e8e7",
+   "d4c5",
+   "e6e5",
+   "a8b7",
+   "e6e5",
+   "c8d7",
+   "e7f8",
+   "d7g7",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:37:58Z"
+}

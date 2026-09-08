@@ -1,0 +1,200 @@
+{
+ "game": "164748ba-d21d-4b71-8395-4bfe6bf3f2f1",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.06\"]\n[Round \"33\"]\n[White \"f1shstock\"]\n[Black \"En Passant\"]\n[Result \"1-0\"]\n[FEN \"r1bqk2r/pp2ppbp/2np1np1/8/3NP3/2N1B3/PPPQBPPP/R3K2R b KQkq - 5 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8... e5 { [%clk 0:01:58.963] } 9. Ndb5 { [%clk 0:01:55.424] } 9... O-O { [%clk 0:01:57.931] } 10. Nxd6 { [%clk 0:01:53.293] } 10... Qa5 { [%clk 0:01:56.917] } 11. Bc4 { [%clk 0:01:50.38] } 11... a6 { [%clk 0:01:55.891] } 12. O-O { [%clk 0:01:45.093] } 12... Qb4 { [%clk 0:01:54.861] } 13. a3 { [%clk 0:01:40.067] } 13... Qxb2 { [%clk 0:01:53.833] } 14. Ra2 { [%clk 0:01:34.935] } 14... Qxa2 { [%clk 0:01:52.813] } 15. Bxa2 { [%clk 0:01:33.745] } 15... Rb8 { [%clk 0:01:51.795] } 16. Rb1 { [%clk 0:01:24.826] } 16... Ng4 { [%clk 0:01:50.767] } 17. Nxf7 { [%clk 0:01:15.687] } 17... Rxf7 { [%clk 0:01:49.729] } 18. Qd5 { [%clk 0:01:11.047] } 18... Nxe3 { [%clk 0:01:48.695] } 19. Qxf7+ { [%clk 0:01:11.533] } 19... Kh8 { [%clk 0:01:49.193] } 20. Qg8# { [%clk 0:01:12.021] } 1-0\n",
+ "opening": "Sicilian Dragon",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 33\u00b7Final",
+ "white_uuid": "01f0d0bc-6daa-4420-92ec-af01e724deb4",
+ "black_uuid": "e5f4f3b3-9448-4e01-a69a-ece311b0f38a",
+ "site_verdicts": [
+  [
+   "e5",
+   "mistake"
+  ],
+  [
+   "Ndb5",
+   "excellent"
+  ],
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "Nxd6",
+   "good"
+  ],
+  [
+   "Qa5",
+   "good"
+  ],
+  [
+   "Bc4",
+   "best"
+  ],
+  [
+   "a6",
+   "good"
+  ],
+  [
+   "O-O",
+   "inaccuracy"
+  ],
+  [
+   "Qb4",
+   "inaccuracy"
+  ],
+  [
+   "a3",
+   "best"
+  ],
+  [
+   "Qxb2",
+   "blunder"
+  ],
+  [
+   "Ra2",
+   "best"
+  ],
+  [
+   "Qxa2",
+   "best"
+  ],
+  [
+   "Bxa2",
+   "excellent"
+  ],
+  [
+   "Rb8",
+   "good"
+  ],
+  [
+   "Rb1",
+   "good"
+  ],
+  [
+   "Ng4",
+   "inaccuracy"
+  ],
+  [
+   "Nxf7",
+   "best"
+  ],
+  [
+   "Rxf7",
+   "good"
+  ],
+  [
+   "Qd5",
+   "best"
+  ],
+  [
+   "Nxe3",
+   "mistake"
+  ],
+  [
+   "Qxf7+",
+   "best"
+  ],
+  [
+   "Kh8",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "fishy",
+    "accuracy": 93.4,
+    "acpl": 30,
+    "tally": {
+     "brilliant": 0,
+     "best": 7,
+     "excellent": 2,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "aadhyayayayayaya",
+    "accuracy": 78.4,
+    "acpl": 179,
+    "tally": {
+     "brilliant": 0,
+     "best": 2,
+     "excellent": 0,
+     "good": 4,
+     "forced": 1,
+     "inaccuracy": 2,
+     "mistake": 2,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   10,
+   153,
+   153,
+   142,
+   111,
+   165,
+   162,
+   204,
+   110,
+   221,
+   218,
+   553,
+   532,
+   537,
+   499,
+   604,
+   485,
+   683,
+   630,
+   781,
+   816,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "f6g4",
+   "d4c6",
+   "e8g8",
+   "d2d6",
+   "d8e7",
+   "e2c4",
+   "c6d4",
+   "c3d5",
+   "b7b5",
+   "a2a3",
+   "b4a5",
+   "a1a2",
+   "b2a2",
+   "c3a2",
+   "c8e6",
+   "d6f7",
+   "c8e6",
+   "d6f7",
+   "g4e3",
+   "d2d5",
+   "c8e6",
+   "d5f7",
+   "g8h8",
+   "f7g8",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:20:58Z"
+}

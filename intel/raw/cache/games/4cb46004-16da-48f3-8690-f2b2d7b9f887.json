@@ -1,0 +1,242 @@
+{
+ "game": "4cb46004-16da-48f3-8690-f2b2d7b9f887",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"10\"]\n[White \"Martin\"]\n[Black \"Phantom\"]\n[Result \"*\"]\n[FEN \"r1bqk1nr/pp2ppbp/2np2p1/2p5/4P3/2NPB1P1/PPP2PBP/R2QK1NR b KQkq - 1 6\"]\n[SetUp \"1\"]\n[Termination \"unterminated\"]\n\n6... Qa5 { [%clk 0:01:58.496] } 7. Ne2 { [%clk 0:01:58.498] } 7... Bg4 { [%clk 0:01:57.016] } 8. f3 { [%clk 0:01:56.997] } 8... Be6 { [%clk 0:01:55.561] } 9. O-O { [%clk 0:01:55.495] } 9... Bh6 { [%clk 0:01:54.129] } 10. Nf4 { [%clk 0:01:53.994] } 10... Bxf4 { [%clk 0:01:52.723] } 11. gxf4 { [%clk 0:01:52.492] } 11... f6 { [%clk 0:01:51.337] } 12. h4 { [%clk 0:01:50.99] } 12... Rc8 { [%clk 0:01:49.975] } 13. a4 { [%clk 0:01:49.488] } 13... b6 { [%clk 0:01:48.636] } 14. Nd5 { [%clk 0:01:47.986] } 14... h5 { [%clk 0:01:47.322] } 15. c4 { [%clk 0:01:46.485] } 15... Kd8 { [%clk 0:01:46.029] } 16. Bd2 { [%clk 0:01:44.981] } 16... Qa6 { [%clk 0:01:44.754] } 17. Be3 { [%clk 0:01:43.48] } 17... Nh6 { [%clk 0:01:43.505] } 18. b3 { [%clk 0:01:41.978] } 18... Qa5 { [%clk 0:01:42.267] } 19. Bd2 { [%clk 0:01:40.474] } 19... Qa6 { [%clk 0:01:41.06] } 20. Be3 { [%clk 0:01:38.972] } 20... Qa5 { [%clk 0:01:39.866] } 21. Bd2 { [%clk 0:01:37.468] } 21... Qa6 { [%clk 0:01:38.693] } *\n",
+ "opening": "Sicilian Closed",
+ "termination_text": "Unterminated",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 10\u00b7Void",
+ "white_uuid": "c29674a7-169d-4058-b77e-2a46df96bcf9",
+ "black_uuid": "d5dd74ce-90ff-4643-97d0-406b517dd0ad",
+ "site_verdicts": [
+  [
+   "Qa5",
+   "good"
+  ],
+  [
+   "Ne2",
+   "best"
+  ],
+  [
+   "Bg4",
+   "excellent"
+  ],
+  [
+   "f3",
+   "good"
+  ],
+  [
+   "Be6",
+   "good"
+  ],
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "Bh6",
+   "good"
+  ],
+  [
+   "Nf4",
+   "good"
+  ],
+  [
+   "Bxf4",
+   "excellent"
+  ],
+  [
+   "gxf4",
+   "good"
+  ],
+  [
+   "f6",
+   "good"
+  ],
+  [
+   "h4",
+   "inaccuracy"
+  ],
+  [
+   "Rc8",
+   "good"
+  ],
+  [
+   "a4",
+   "good"
+  ],
+  [
+   "b6",
+   "mistake"
+  ],
+  [
+   "Nd5",
+   "good"
+  ],
+  [
+   "h5",
+   "good"
+  ],
+  [
+   "c4",
+   "excellent"
+  ],
+  [
+   "Kd8",
+   "good"
+  ],
+  [
+   "Bd2",
+   "excellent"
+  ],
+  [
+   "Qa6",
+   "best"
+  ],
+  [
+   "Be3",
+   "excellent"
+  ],
+  [
+   "Nh6",
+   "good"
+  ],
+  [
+   "b3",
+   "inaccuracy"
+  ],
+  [
+   "Qa5",
+   "good"
+  ],
+  [
+   "Bd2",
+   "good"
+  ],
+  [
+   "Qa6",
+   "best"
+  ],
+  [
+   "Be3",
+   "excellent"
+  ],
+  [
+   "Qa5",
+   "good"
+  ],
+  [
+   "Bd2",
+   "good"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Martin",
+    "accuracy": 90.3,
+    "acpl": 28,
+    "tally": {
+     "brilliant": 0,
+     "best": 2,
+     "excellent": 4,
+     "good": 7,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "FERB",
+    "accuracy": 87.6,
+    "acpl": 35,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 2,
+     "good": 10,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -10,
+   25,
+   28,
+   41,
+   17,
+   56,
+   60,
+   110,
+   74,
+   91,
+   58,
+   104,
+   29,
+   60,
+   28,
+   140,
+   101,
+   130,
+   111,
+   153,
+   147,
+   150,
+   141,
+   194,
+   117,
+   165,
+   138,
+   135,
+   126,
+   169,
+   138,
+   138
+  ],
+  "best": [
+   "a8b8",
+   "g1e2",
+   "e7e5",
+   "e1g1",
+   "g4d7",
+   "e1g1",
+   "g7d4",
+   "f3f4",
+   "a8c8",
+   "e3f4",
+   "f7f5",
+   "a2a3",
+   "f6f5",
+   "a2a3",
+   "f6f5",
+   "c3b5",
+   "e6d5",
+   "c2c3",
+   "e8f7",
+   "g1h2",
+   "a5a6",
+   "d2c3",
+   "f6f5",
+   "b2b4",
+   "e6d5",
+   "d1c1",
+   "a5a6",
+   "b3b4",
+   "e6d5",
+   "d1c1",
+   "a5a6",
+   "b3b4"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:42:43Z"
+}

@@ -1,0 +1,374 @@
+{
+ "game": "9d38c2c0-eb14-4d60-89e7-f71c20413cab",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"7\"]\n[White \"IDK\"]\n[Black \"Minimax Three\"]\n[Result \"*\"]\n[FEN \"r1bqk2r/pp2npbp/2np2p1/2p1p3/4P3/P1NP2PP/1PP1NPB1/R1BQK2R b KQkq - 2 8\"]\n[SetUp \"1\"]\n[Termination \"unterminated\"]\n\n8... Qa5 { [%clk 0:02:00.065] } 9. O-O { [%clk 0:01:59.457] } 9... d5 { [%clk 0:01:59.995] } 10. exd5 { [%clk 0:01:55.973] } 10... Bxh3 { [%clk 0:02:00.311] } 11. Bxh3 { [%clk 0:01:55.207] } 11... Nb4 { [%clk 0:02:00.613] } 12. Bd2 { [%clk 0:01:55.033] } 12... Nexd5 { [%clk 0:02:00.868] } 13. Nxd5 { [%clk 0:01:53.872] } 13... O-O { [%clk 0:02:01.215] } 14. axb4 { [%clk 0:01:50.892] } 14... Qd8 { [%clk 0:02:01.571] } 15. Bg2 { [%clk 0:01:49.606] } 15... c4 { [%clk 0:02:01.837] } 16. dxc4 { [%clk 0:01:49.559] } 16... Re8 { [%clk 0:02:02.203] } 17. Bc3 { [%clk 0:01:48.701] } 17... Qd6 { [%clk 0:02:02.558] } 18. c5 { [%clk 0:01:47.635] } 18... Qc6 { [%clk 0:02:02.844] } 19. Ne7+ { [%clk 0:01:45.028] } 19... Rxe7 { [%clk 0:02:03.321] } 20. Bxc6 { [%clk 0:01:42.443] } 20... bxc6 { [%clk 0:02:03.748] } 21. Ra6 { [%clk 0:01:42.431] } 21... Rb8 { [%clk 0:02:04.121] } 22. Rxc6 { [%clk 0:01:40.405] } 22... Ree8 { [%clk 0:02:04.431] } 23. Qd7 { [%clk 0:01:40.319] } 23... Bf8 { [%clk 0:02:04.821] } 24. Qxa7 { [%clk 0:01:40.022] } 24... Rbd8 { [%clk 0:02:05.199] } 25. Rc7 { [%clk 0:01:39.945] } 25... Ra8 { [%clk 0:02:05.603] } 26. Qb7 { [%clk 0:01:39.169] } 26... Rab8 { [%clk 0:02:05.991] } 27. Qd5 { [%clk 0:01:36.362] } 27... Re6 { [%clk 0:02:06.391] } 28. Bxe5 { [%clk 0:01:36.139] } 28... Rxb4 { [%clk 0:02:06.794] } 29. c6 { [%clk 0:01:35.727] } 29... g5 { [%clk 0:02:07.066] } 30. Nd4 { [%clk 0:01:35.38] } 30... Rxe5 { [%clk 0:02:07.442] } 31. Qxf7+ { [%clk 0:01:35.201] } 31... Kh8 { [%clk 0:02:07.935] } 32. Qf6+ { [%clk 0:01:32.526] } 32... Kg8 { [%clk 0:02:08.42] } 33. Qf7+ { [%clk 0:01:32.61] } 33... Kh8 { [%clk 0:02:08.913] } 34. Qf6+ { [%clk 0:01:30.021] } 34... Kg8 { [%clk 0:02:09.395] } *\n",
+ "opening": "Sicilian Closed",
+ "termination_text": "Unterminated",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 7\u00b7Void",
+ "white_uuid": "51544a8f-76bc-4e56-b18d-9329d2237075",
+ "black_uuid": "9732317c-5dc8-4e6c-b31c-3c48389c9028",
+ "site_verdicts": [
+  [
+   "Qa5",
+   "good"
+  ],
+  [
+   "O-O",
+   "excellent"
+  ],
+  [
+   "d5",
+   "blunder"
+  ],
+  [
+   "exd5",
+   "best"
+  ],
+  [
+   "Bxh3",
+   "blunder"
+  ],
+  [
+   "Bxh3",
+   "best"
+  ],
+  [
+   "Nb4",
+   "good"
+  ],
+  [
+   "Bd2",
+   "excellent"
+  ],
+  [
+   "Nexd5",
+   "good"
+  ],
+  [
+   "Nxd5",
+   "best"
+  ],
+  [
+   "O-O",
+   "good"
+  ],
+  [
+   "axb4",
+   "best"
+  ],
+  [
+   "Qd8",
+   "best"
+  ],
+  [
+   "Bg2",
+   "excellent"
+  ],
+  [
+   "c4",
+   "excellent"
+  ],
+  [
+   "dxc4",
+   "best"
+  ],
+  [
+   "Re8",
+   "excellent"
+  ],
+  [
+   "Bc3",
+   "excellent"
+  ],
+  [
+   "Qd6",
+   "excellent"
+  ],
+  [
+   "c5",
+   "best"
+  ],
+  [
+   "Qc6",
+   "excellent"
+  ],
+  [
+   "Ne7+",
+   "excellent"
+  ],
+  [
+   "Rxe7",
+   "best"
+  ],
+  [
+   "Bxc6",
+   "best"
+  ],
+  [
+   "bxc6",
+   "best"
+  ],
+  [
+   "Ra6",
+   "excellent"
+  ],
+  [
+   "Rb8",
+   "excellent"
+  ],
+  [
+   "Rxc6",
+   "excellent"
+  ],
+  [
+   "Ree8",
+   "excellent"
+  ],
+  [
+   "Qd7",
+   "excellent"
+  ],
+  [
+   "Bf8",
+   "good"
+  ],
+  [
+   "Qxa7",
+   "excellent"
+  ],
+  [
+   "Rbd8",
+   "excellent"
+  ],
+  [
+   "Rc7",
+   "best"
+  ],
+  [
+   "Ra8",
+   "excellent"
+  ],
+  [
+   "Qb7",
+   "best"
+  ],
+  [
+   "Rab8",
+   "excellent"
+  ],
+  [
+   "Qd5",
+   "best"
+  ],
+  [
+   "Re6",
+   "best"
+  ],
+  [
+   "Bxe5",
+   "excellent"
+  ],
+  [
+   "Rxb4",
+   "inaccuracy"
+  ],
+  [
+   "c6",
+   "miss"
+  ],
+  [
+   "g5",
+   "excellent"
+  ],
+  [
+   "Nd4",
+   "excellent"
+  ],
+  [
+   "Rxe5",
+   "inaccuracy"
+  ],
+  [
+   "Qxf7+",
+   "best"
+  ],
+  [
+   "Kh8",
+   "forced"
+  ],
+  [
+   "Qf6+",
+   "excellent"
+  ],
+  [
+   "Kg8",
+   "best"
+  ],
+  [
+   "Qf7+",
+   "best"
+  ],
+  [
+   "Kh8",
+   "forced"
+  ],
+  [
+   "Qf6+",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "on99",
+    "accuracy": 98.9,
+    "acpl": 71,
+    "tally": {
+     "brilliant": 0,
+     "best": 12,
+     "excellent": 13,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 1,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Minimax Three",
+    "accuracy": 91.5,
+    "acpl": 147,
+    "tally": {
+     "brilliant": 0,
+     "best": 6,
+     "excellent": 10,
+     "good": 5,
+     "forced": 2,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 2
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -35,
+   12,
+   9,
+   223,
+   224,
+   560,
+   552,
+   657,
+   593,
+   761,
+   734,
+   858,
+   871,
+   866,
+   866,
+   888,
+   895,
+   965,
+   907,
+   916,
+   923,
+   964,
+   870,
+   870,
+   907,
+   920,
+   870,
+   934,
+   907,
+   925,
+   929,
+   1274,
+   1016,
+   1030,
+   1088,
+   1125,
+   1189,
+   1335,
+   1396,
+   1353,
+   1103,
+   9992,
+   1294,
+   1490,
+   1841,
+   9998,
+   9999,
+   9999,
+   9998,
+   9998,
+   9999,
+   9999,
+   9996,
+   9996
+  ],
+  "best": [
+   "e8g8",
+   "f2f4",
+   "a5d8",
+   "e4d5",
+   "c6d4",
+   "g2h3",
+   "c6d4",
+   "h3g2",
+   "b4a6",
+   "c3d5",
+   "a5d8",
+   "a3b4",
+   "a5d8",
+   "c2c4",
+   "c5b4",
+   "d3c4",
+   "f7f5",
+   "e2c3",
+   "d8c8",
+   "c4c5",
+   "d6f8",
+   "f2f4",
+   "e8e7",
+   "g2c6",
+   "b7c6",
+   "d1d6",
+   "a8e8",
+   "d1d6",
+   "e5e4",
+   "d1d5",
+   "e5e4",
+   "c6c7",
+   "b8a8",
+   "c6c7",
+   "e8e6",
+   "a7b7",
+   "g6g5",
+   "b7d5",
+   "e8e6",
+   "d5d7",
+   "b8e8",
+   "d5f3",
+   "b4b6",
+   "d5d7",
+   "b4b5",
+   "d5f7",
+   "g8h8",
+   "f7f8",
+   "h8g8",
+   "f6f7",
+   "g8h8",
+   "f7f8",
+   "h8g8",
+   "c7c8"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:50:52Z"
+}

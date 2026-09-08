@@ -1,0 +1,59 @@
+{
+ "game": "f238814f-adfe-4735-8352-57860fde0ea9",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.07\"]\n[Round \"50\"]\n[White \"checkers\"]\n[Black \"Emile Andrieu\"]\n[Result \"1-0\"]\n[FEN \"rnbqkb1r/pp1n1ppp/4p3/3pP3/3Q1P2/2N1B3/PPP3PP/R3KBNR b KQkq - 0 7\"]\n[SetUp \"1\"]\n[Termination \"init\"]\n\n1-0\n",
+ "opening": "French Classical",
+ "termination_text": "Init",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 50\u00b7Final",
+ "white_uuid": "9e5e613a-ca80-4fd9-aa68-76f184ef7bac",
+ "black_uuid": "659a3020-8af7-4934-b753-3b7c5fd11184",
+ "site_verdicts": [],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "checkers",
+    "accuracy": 0.0,
+    "acpl": 0,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 0,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "AlphaFish",
+    "accuracy": 0.0,
+    "acpl": 0,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 0,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   35
+  ],
+  "best": [
+   "b8c6"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T11:52:05Z"
+}

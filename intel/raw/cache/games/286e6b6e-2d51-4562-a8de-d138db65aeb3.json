@@ -1,0 +1,236 @@
+{
+ "game": "286e6b6e-2d51-4562-a8de-d138db65aeb3",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"15\"]\n[White \"Gambit\"]\n[Black \"404 Not Found\"]\n[Result \"1-0\"]\n[FEN \"rn1qk2r/pp2ppbp/6p1/2p5/3PP1b1/2P1BN2/P4PPP/2RQKB1R b Kkq - 3 9\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n9... cxd4 { [%clk 0:01:58.496] } 10. cxd4 { [%clk 0:01:59.163] } 10... f5 { [%clk 0:01:56.984] } 11. e5 { [%clk 0:01:55.702] } 11... Qa5+ { [%clk 0:01:55.476] } 12. Bd2 { [%clk 0:01:54.349] } 12... Qxa2 { [%clk 0:01:53.964] } 13. Rc8+ { [%clk 0:01:54.252] } 13... Kd7 { [%clk 0:01:52.455] } 14. Bc4 { [%clk 0:01:54.325] } 14... Qxd2+ { [%clk 0:01:50.946] } 15. Qxd2 { [%clk 0:01:53.787] } 15... Kxc8 { [%clk 0:01:49.437] } 16. Be6+ { [%clk 0:01:53.586] } 16... Kc7 { [%clk 0:01:47.928] } 17. O-O { [%clk 0:01:52.451] } 17... Rd8 { [%clk 0:01:46.417] } 18. Qa5+ { [%clk 0:01:48.928] } 18... b6 { [%clk 0:01:44.914] } 19. Qc3+ { [%clk 0:01:45.492] } 19... Kb7 { [%clk 0:01:43.406] } 20. Rc1 { [%clk 0:01:44.293] } 20... Ka6 { [%clk 0:01:41.896] } 21. Qc7 { [%clk 0:01:44.765] } 21... Nc6 { [%clk 0:01:40.386] } 22. Qxc6 { [%clk 0:01:45.256] } 22... Ka5 { [%clk 0:01:40.877] } 23. Ra1+ { [%clk 0:01:45.754] } 23... Kb4 { [%clk 0:01:41.369] } 24. Ra4# { [%clk 0:01:46.252] } 1-0\n",
+ "opening": "Grunfeld Defence",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 15\u00b7Final",
+ "white_uuid": "e9f8c904-d9a9-4bfb-acf8-451b5aa2e2f4",
+ "black_uuid": "0507e5e2-d40f-4565-8e16-ca6feacebe42",
+ "site_verdicts": [
+  [
+   "cxd4",
+   "good"
+  ],
+  [
+   "cxd4",
+   "best"
+  ],
+  [
+   "f5",
+   "mistake"
+  ],
+  [
+   "e5",
+   "inaccuracy"
+  ],
+  [
+   "Qa5+",
+   "mistake"
+  ],
+  [
+   "Bd2",
+   "best"
+  ],
+  [
+   "Qxa2",
+   "good"
+  ],
+  [
+   "Rc8+",
+   "excellent"
+  ],
+  [
+   "Kd7",
+   "best"
+  ],
+  [
+   "Bc4",
+   "mistake"
+  ],
+  [
+   "Qxd2+",
+   "blunder"
+  ],
+  [
+   "Qxd2",
+   "best"
+  ],
+  [
+   "Kxc8",
+   "inaccuracy"
+  ],
+  [
+   "Be6+",
+   "best"
+  ],
+  [
+   "Kc7",
+   "best"
+  ],
+  [
+   "O-O",
+   "excellent"
+  ],
+  [
+   "Rd8",
+   "blunder"
+  ],
+  [
+   "Qa5+",
+   "excellent"
+  ],
+  [
+   "b6",
+   "best"
+  ],
+  [
+   "Qc3+",
+   "excellent"
+  ],
+  [
+   "Kb7",
+   "excellent"
+  ],
+  [
+   "Rc1",
+   "best"
+  ],
+  [
+   "Ka6",
+   "excellent"
+  ],
+  [
+   "Qc7",
+   "excellent"
+  ],
+  [
+   "Nc6",
+   "excellent"
+  ],
+  [
+   "Qxc6",
+   "best"
+  ],
+  [
+   "Ka5",
+   "best"
+  ],
+  [
+   "Ra1+",
+   "best"
+  ],
+  [
+   "Kb4",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "DegreeGambit",
+    "accuracy": 93.0,
+    "acpl": 25,
+    "tally": {
+     "brilliant": 0,
+     "best": 7,
+     "excellent": 6,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "404 Not Found",
+    "accuracy": 83.5,
+    "acpl": 119,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 3,
+     "good": 2,
+     "forced": 1,
+     "inaccuracy": 1,
+     "mistake": 2,
+     "miss": 0,
+     "blunder": 2
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   53,
+   89,
+   53,
+   220,
+   136,
+   261,
+   263,
+   297,
+   381,
+   390,
+   191,
+   451,
+   434,
+   579,
+   589,
+   598,
+   562,
+   9992,
+   9993,
+   9993,
+   9994,
+   9995,
+   9996,
+   9997,
+   9996,
+   9997,
+   9998,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "e8g8",
+   "c3d4",
+   "e8g8",
+   "d1a4",
+   "b8c6",
+   "e3d2",
+   "a5d8",
+   "f1c4",
+   "e8d7",
+   "c8c2",
+   "a2a3",
+   "d1d2",
+   "h8c8",
+   "c4e6",
+   "c8c7",
+   "d2a5",
+   "b8c6",
+   "f1c1",
+   "b7b6",
+   "f1c1",
+   "b8c6",
+   "f1c1",
+   "b8a6",
+   "c3c4",
+   "d8d5",
+   "c7c6",
+   "a6a5",
+   "c1a1",
+   "a5b4",
+   "c6c4",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:29:56Z"
+}

@@ -1,0 +1,128 @@
+{
+ "game": "05aaa81c-cc1a-499e-9d60-5100c08ab549",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"2\"]\n[White \"HAL9000\"]\n[Black \"Greedy Material\"]\n[Result \"1-0\"]\n[FEN \"r1bqk2r/ppp2ppp/2np1n2/2b1p3/P1B1P3/2PP1N2/1P3PPP/RNBQK2R b KQkq - 0 6\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n6... Nxe4 { [%clk 0:02:00.497] } 7. dxe4 { [%clk 0:01:32.528] } 7... Bxf2+ { [%clk 0:02:00.995] } 8. Kxf2 { [%clk 0:01:30.878] } 8... g6 { [%clk 0:02:01.492] } 9. Ke1 { [%clk 0:01:28.385] } 9... Bg4 { [%clk 0:02:01.989] } 10. Kf1 { [%clk 0:01:25.537] } 10... Bxf3 { [%clk 0:02:02.485] } 11. Qxf3 { [%clk 0:01:24.529] } 11... b5 { [%clk 0:02:02.982] } 12. Qxf7# { [%clk 0:01:21.474] } 1-0\n",
+ "opening": "Italian Game",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 2\u00b7Final",
+ "white_uuid": "d5a49e55-5b7b-4794-9c4b-40fc286d6e35",
+ "black_uuid": "d9a19162-7480-4e54-bcd6-e2176df533fd",
+ "site_verdicts": [
+  [
+   "Nxe4",
+   "blunder"
+  ],
+  [
+   "dxe4",
+   "best"
+  ],
+  [
+   "Bxf2+",
+   "inaccuracy"
+  ],
+  [
+   "Kxf2",
+   "best"
+  ],
+  [
+   "g6",
+   "good"
+  ],
+  [
+   "Ke1",
+   "best"
+  ],
+  [
+   "Bg4",
+   "best"
+  ],
+  [
+   "Kf1",
+   "good"
+  ],
+  [
+   "Bxf3",
+   "good"
+  ],
+  [
+   "Qxf3",
+   "best"
+  ],
+  [
+   "b5",
+   "blunder"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "HAL9000",
+    "accuracy": 96.4,
+    "acpl": 25,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 0,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Greedy Material",
+    "accuracy": 71.1,
+    "acpl": 280,
+    "tally": {
+     "brilliant": 0,
+     "best": 1,
+     "excellent": 0,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 2
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   17,
+   407,
+   399,
+   557,
+   580,
+   652,
+   635,
+   636,
+   513,
+   572,
+   587,
+   9999,
+   10000
+  ],
+  "best": [
+   "a7a6",
+   "d3e4",
+   "a7a6",
+   "e1f2",
+   "f7f5",
+   "f2e1",
+   "c8g4",
+   "h2h3",
+   "f7f5",
+   "d1f3",
+   "f7f5",
+   "f3f7",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:19:34Z"
+}

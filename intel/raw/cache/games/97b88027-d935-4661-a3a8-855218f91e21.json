@@ -1,0 +1,242 @@
+{
+ "game": "97b88027-d935-4661-a3a8-855218f91e21",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"25\"]\n[White \"Obligatory En Passant\"]\n[Black \"Team I Love Fortnite\"]\n[Result \"0-1\"]\n[FEN \"rnbqk2r/ppp3pp/4pn2/3p1p2/1b1P4/1PP2NP1/P3PPBP/RNBQK2R b KQkq - 0 6\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n6... Bd6 { [%clk 0:01:58.1] } 7. O-O { [%clk 0:01:57.461] } 7... O-O { [%clk 0:01:56.183] } 8. Nbd2 { [%clk 0:01:52.359] } 8... Nc6 { [%clk 0:01:54.255] } 9. e3 { [%clk 0:01:50.961] } 9... e5 { [%clk 0:01:52.317] } 10. dxe5 { [%clk 0:01:46.151] } 10... Nxe5 { [%clk 0:01:50.363] } 11. c4 { [%clk 0:01:41.915] } 11... Be6 { [%clk 0:01:48.402] } 12. Ng5 { [%clk 0:01:39.255] } 12... Qe7 { [%clk 0:01:46.432] } 13. f4 { [%clk 0:01:36.301] } 13... Nd3 { [%clk 0:01:44.451] } 14. Nxe6 { [%clk 0:01:32.162] } 14... Qxe6 { [%clk 0:01:42.461] } 15. Qf3 { [%clk 0:01:30.889] } 15... Bc5 { [%clk 0:01:40.453] } 16. cxd5 { [%clk 0:01:29.46] } 16... Qxe3+ { [%clk 0:01:38.431] } 17. Kh1 { [%clk 0:01:24.6] } 17... Qd4 { [%clk 0:01:36.4] } 18. a4 { [%clk 0:01:21.053] } 18... Ng4 { [%clk 0:01:34.357] } 19. Rb1 { [%clk 0:01:18.168] } 19... Qg1+ { [%clk 0:01:34.657] } 20. Rxg1 { [%clk 0:01:18.617] } 20... Ngf2+ { [%clk 0:01:35.14] } 21. Qxf2 { [%clk 0:01:19.096] } 21... Nxf2# { [%clk 0:01:35.632] } 0-1\n",
+ "opening": "Dutch Stonewall",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 25\u00b7Final",
+ "white_uuid": "8e698790-5a73-4a34-889d-7e7619582cee",
+ "black_uuid": "b6b3a357-e142-47fc-9f9b-5a0520a393bc",
+ "site_verdicts": [
+  [
+   "Bd6",
+   "best"
+  ],
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "Nbd2",
+   "good"
+  ],
+  [
+   "Nc6",
+   "excellent"
+  ],
+  [
+   "e3",
+   "excellent"
+  ],
+  [
+   "e5",
+   "good"
+  ],
+  [
+   "dxe5",
+   "best"
+  ],
+  [
+   "Nxe5",
+   "best"
+  ],
+  [
+   "c4",
+   "excellent"
+  ],
+  [
+   "Be6",
+   "inaccuracy"
+  ],
+  [
+   "Ng5",
+   "excellent"
+  ],
+  [
+   "Qe7",
+   "best"
+  ],
+  [
+   "f4",
+   "mistake"
+  ],
+  [
+   "Nd3",
+   "mistake"
+  ],
+  [
+   "Nxe6",
+   "mistake"
+  ],
+  [
+   "Qxe6",
+   "best"
+  ],
+  [
+   "Qf3",
+   "blunder"
+  ],
+  [
+   "Bc5",
+   "best"
+  ],
+  [
+   "cxd5",
+   "inaccuracy"
+  ],
+  [
+   "Qxe3+",
+   "best"
+  ],
+  [
+   "Kh1",
+   "good"
+  ],
+  [
+   "Qd4",
+   "best"
+  ],
+  [
+   "a4",
+   "mistake"
+  ],
+  [
+   "Ng4",
+   "best"
+  ],
+  [
+   "Rb1",
+   "blunder"
+  ],
+  [
+   "Qg1+",
+   "best"
+  ],
+  [
+   "Rxg1",
+   "forced"
+  ],
+  [
+   "Ngf2+",
+   "best"
+  ],
+  [
+   "Qxf2",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Ticktocker",
+    "accuracy": 79.0,
+    "acpl": 126,
+    "tally": {
+     "brilliant": 0,
+     "best": 2,
+     "excellent": 3,
+     "good": 2,
+     "forced": 2,
+     "inaccuracy": 1,
+     "mistake": 3,
+     "miss": 0,
+     "blunder": 2
+    }
+   },
+   {
+    "name": "ILuvFortnite",
+    "accuracy": 94.2,
+    "acpl": 20,
+    "tally": {
+     "brilliant": 0,
+     "best": 12,
+     "excellent": 1,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   42,
+   40,
+   45,
+   34,
+   11,
+   22,
+   15,
+   68,
+   65,
+   60,
+   40,
+   103,
+   104,
+   107,
+   -8,
+   109,
+   -2,
+   7,
+   -218,
+   -208,
+   -278,
+   -267,
+   -332,
+   -327,
+   -578,
+   -544,
+   -9997,
+   -9998,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "b4d6",
+   "e1g1",
+   "e8g8",
+   "c3c4",
+   "b7b6",
+   "c3c4",
+   "b7b6",
+   "d4e5",
+   "c6e5",
+   "f3e5",
+   "d5c4",
+   "c1b2",
+   "d8e7",
+   "g5e6",
+   "e5g4",
+   "c4d5",
+   "e7e6",
+   "d2f3",
+   "d6c5",
+   "g1h1",
+   "e6e3",
+   "f3e3",
+   "e3d4",
+   "h2h3",
+   "f6g4",
+   "h2h4",
+   "d4g1",
+   "f1g1",
+   "g4f2",
+   "f3f2",
+   "d3f2",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:11:40Z"
+}

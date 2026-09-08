@@ -1,0 +1,116 @@
+{
+ "game": "03ef79e4-7e6b-4f42-8e0f-4a64798c3740",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"19\"]\n[White \"Team Keble\"]\n[Black \"Surya prabha\"]\n[Result \"1-0\"]\n[FEN \"r1bqk2r/pp2ppbp/2np1np1/8/3NP3/2N1B3/PPPQBPPP/R3K2R b KQkq - 5 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8... Nxd4 { [%clk 0:01:56.148] } 9. Qxd4 { [%clk 0:01:58.247] } 9... Be6 { [%clk 0:01:52.424] } 10. Bb5+ { [%clk 0:01:55.252] } 10... Kf8 { [%clk 0:01:48.824] } 11. O-O { [%clk 0:01:52.86] } 11... Nd7 { [%clk 0:01:45.344] } 12. Bh6 { [%clk 0:01:50.272] } 12... Bxh6 { [%clk 0:01:41.981] } 13. Qxh8# { [%clk 0:01:46.387] } 1-0\n",
+ "opening": "Sicilian Dragon",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 19\u00b7Final",
+ "white_uuid": "321c728a-c198-4749-a1ec-2ba5754ab033",
+ "black_uuid": "ad314622-404e-4102-a7cf-2a26b9f9d645",
+ "site_verdicts": [
+  [
+   "Nxd4",
+   "good"
+  ],
+  [
+   "Qxd4",
+   "inaccuracy"
+  ],
+  [
+   "Be6",
+   "excellent"
+  ],
+  [
+   "Bb5+",
+   "best"
+  ],
+  [
+   "Kf8",
+   "excellent"
+  ],
+  [
+   "O-O",
+   "inaccuracy"
+  ],
+  [
+   "Nd7",
+   "inaccuracy"
+  ],
+  [
+   "Bh6",
+   "good"
+  ],
+  [
+   "Bxh6",
+   "blunder"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "dinosaur",
+    "accuracy": 86.6,
+    "acpl": 38,
+    "tally": {
+     "brilliant": 0,
+     "best": 2,
+     "excellent": 0,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Suryaprabha",
+    "accuracy": 58.5,
+    "acpl": 236,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 2,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   16,
+   61,
+   -13,
+   7,
+   10,
+   22,
+   -61,
+   42,
+   11,
+   9999,
+   10000
+  ],
+  "best": [
+   "f6g4",
+   "e3d4",
+   "e8g8",
+   "e2b5",
+   "e6d7",
+   "d4b4",
+   "f6g4",
+   "d4b4",
+   "d7f6",
+   "d4h8",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:36:37Z"
+}

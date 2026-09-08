@@ -1,0 +1,260 @@
+{
+ "game": "6c71773d-716e-4ef1-a412-6fe0a5532afa",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.07\"]\n[Round \"51\"]\n[White \"Zero Elo\"]\n[Black \"Rohan\"]\n[Result \"0-1\"]\n[FEN \"r1b1qrk1/ppp2pbp/n2p2p1/4p1B1/2PPP1n1/2NQ1N2/PP2BPPP/R3K2R w KQ - 6 10\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n10. Nd5 { [%clk 0:01:53.993] } 10... f6 { [%clk 0:01:57.088] } 11. Bh4 { [%clk 0:01:51.018] } 11... c6 { [%clk 0:01:54.257] } 12. Nc3 { [%clk 0:01:46.342] } 12... exd4 { [%clk 0:01:51.485] } 13. Qxd4 { [%clk 0:01:41.785] } 13... f5 { [%clk 0:01:48.79] } 14. Qxd6 { [%clk 0:01:39.098] } 14... fxe4 { [%clk 0:01:46.146] } 15. Ng5 { [%clk 0:01:35.966] } 15... Be5 { [%clk 0:01:43.573] } 16. Qa3 { [%clk 0:01:29.954] } 16... e3 { [%clk 0:01:41.063] } 17. Nf3 { [%clk 0:01:24.317] } 17... exf2+ { [%clk 0:01:38.631] } 18. Bxf2 { [%clk 0:01:21.838] } 18... Nxf2 { [%clk 0:01:36.251] } 19. Kxf2 { [%clk 0:01:19.502] } 19... Bd4+ { [%clk 0:01:33.936] } 20. Ke1 { [%clk 0:01:17.396] } 20... Bc5 { [%clk 0:01:31.671] } 21. Qa4 { [%clk 0:01:12.466] } 21... Bf5 { [%clk 0:01:29.466] } 22. Kf1 { [%clk 0:01:08.331] } 22... Rd8 { [%clk 0:01:27.308] } 23. Re1 { [%clk 0:01:05.666] } 23... Qe3 { [%clk 0:01:25.213] } 24. Nd1 { [%clk 0:01:04.074] } 24... Rxd1 { [%clk 0:01:25.462] } 25. Nd4 { [%clk 0:00:59.423] } 25... Bd3+ { [%clk 0:01:25.922] } 26. Nf3 { [%clk 0:00:58.02] } 26... Bxe2# { [%clk 0:01:26.402] } 0-1\n",
+ "opening": "King's Indian Classical",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 51\u00b7Final",
+ "white_uuid": "e7f98a29-051d-48d1-8eeb-b85aaa0d17c3",
+ "black_uuid": "73a39e5a-a4eb-4018-bfe0-1d546db4b394",
+ "site_verdicts": [
+  [
+   "Nd5",
+   "mistake"
+  ],
+  [
+   "f6",
+   "good"
+  ],
+  [
+   "Bh4",
+   "best"
+  ],
+  [
+   "c6",
+   "best"
+  ],
+  [
+   "Nc3",
+   "best"
+  ],
+  [
+   "exd4",
+   "best"
+  ],
+  [
+   "Qxd4",
+   "inaccuracy"
+  ],
+  [
+   "f5",
+   "best"
+  ],
+  [
+   "Qxd6",
+   "best"
+  ],
+  [
+   "fxe4",
+   "best"
+  ],
+  [
+   "Ng5",
+   "best"
+  ],
+  [
+   "Be5",
+   "blunder"
+  ],
+  [
+   "Qa3",
+   "best"
+  ],
+  [
+   "e3",
+   "good"
+  ],
+  [
+   "Nf3",
+   "blunder"
+  ],
+  [
+   "exf2+",
+   "best"
+  ],
+  [
+   "Bxf2",
+   "best"
+  ],
+  [
+   "Nxf2",
+   "best"
+  ],
+  [
+   "Kxf2",
+   "inaccuracy"
+  ],
+  [
+   "Bd4+",
+   "best"
+  ],
+  [
+   "Ke1",
+   "best"
+  ],
+  [
+   "Bc5",
+   "best"
+  ],
+  [
+   "Qa4",
+   "good"
+  ],
+  [
+   "Bf5",
+   "inaccuracy"
+  ],
+  [
+   "Kf1",
+   "inaccuracy"
+  ],
+  [
+   "Rd8",
+   "excellent"
+  ],
+  [
+   "Re1",
+   "blunder"
+  ],
+  [
+   "Qe3",
+   "best"
+  ],
+  [
+   "Nd1",
+   "best"
+  ],
+  [
+   "Rxd1",
+   "best"
+  ],
+  [
+   "Nd4",
+   "best"
+  ],
+  [
+   "Bd3+",
+   "best"
+  ],
+  [
+   "Nf3",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Milkyway",
+    "accuracy": 79.2,
+    "acpl": 121,
+    "tally": {
+     "brilliant": 0,
+     "best": 10,
+     "excellent": 0,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 3,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 2
+    }
+   },
+   {
+    "name": "Rohan",
+    "accuracy": 92.0,
+    "acpl": 27,
+    "tally": {
+     "brilliant": 0,
+     "best": 12,
+     "excellent": 1,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -6,
+   -155,
+   -104,
+   -96,
+   -103,
+   -83,
+   -77,
+   -173,
+   -187,
+   -195,
+   -198,
+   -191,
+   0,
+   0,
+   40,
+   -382,
+   -403,
+   -394,
+   -386,
+   -487,
+   -499,
+   -490,
+   -497,
+   -547,
+   -414,
+   -647,
+   -622,
+   -9996,
+   -9997,
+   -9997,
+   -9998,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "d3d2",
+   "e5d4",
+   "g5h4",
+   "c7c6",
+   "d5c3",
+   "e5d4",
+   "f3d4",
+   "f6f5",
+   "d4d6",
+   "f5e4",
+   "f3g5",
+   "g4h6",
+   "d6a3",
+   "e5c3",
+   "f2f3",
+   "e3f2",
+   "h4f2",
+   "g4f2",
+   "e1g1",
+   "e5d4",
+   "f2e1",
+   "d4c5",
+   "a3b3",
+   "e8e3",
+   "a2a3",
+   "e8e3",
+   "c3d5",
+   "e8e3",
+   "c3d1",
+   "d8d1",
+   "f3d4",
+   "f5d3",
+   "d4f3",
+   "d3e2",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:25:15Z"
+}

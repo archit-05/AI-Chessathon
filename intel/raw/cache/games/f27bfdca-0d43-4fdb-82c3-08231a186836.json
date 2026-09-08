@@ -1,0 +1,176 @@
+{
+ "game": "f27bfdca-0d43-4fdb-82c3-08231a186836",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.06\"]\n[Round \"40\"]\n[White \"The Knight Shift\"]\n[Black \"Forking squad\"]\n[Result \"1-0\"]\n[FEN \"rnbq1rk1/pp2bppp/4pn2/2ppN3/2P5/3P2P1/PP2PPBP/RNBQ1RK1 b - - 0 7\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n7... h5 { [%clk 0:02:00.499] } 8. cxd5 { [%clk 0:01:56.537] } 8... exd5 { [%clk 0:02:00.998] } 9. Nc3 { [%clk 0:01:53.191] } 9... Na6 { [%clk 0:02:01.497] } 10. e4 { [%clk 0:01:49.936] } 10... Qd7 { [%clk 0:02:01.996] } 11. Nxd7 { [%clk 0:01:46.79] } 11... Bd6 { [%clk 0:02:02.495] } 12. Nxf8 { [%clk 0:01:43.741] } 12... Nc7 { [%clk 0:02:02.994] } 13. Bg5 { [%clk 0:01:40.82] } 13... Kxf8 { [%clk 0:02:03.493] } 14. Bxf6 { [%clk 0:01:37.979] } 14... Be6 { [%clk 0:02:03.992] } 15. exd5 { [%clk 0:01:35.213] } 15... Bf5 { [%clk 0:02:04.491] } 16. Qxh5 { [%clk 0:01:32.55] } 16... g5 { [%clk 0:02:04.99] } 17. Qh8# { [%clk 0:01:33.042] } 1-0\n",
+ "opening": "Reti Opening",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 40\u00b7Final",
+ "white_uuid": "717bf9ac-4189-48e2-828e-0b0552c05e57",
+ "black_uuid": "be613cff-e874-4b18-912a-133db284bc60",
+ "site_verdicts": [
+  [
+   "h5",
+   "inaccuracy"
+  ],
+  [
+   "cxd5",
+   "good"
+  ],
+  [
+   "exd5",
+   "best"
+  ],
+  [
+   "Nc3",
+   "good"
+  ],
+  [
+   "Na6",
+   "inaccuracy"
+  ],
+  [
+   "e4",
+   "best"
+  ],
+  [
+   "Qd7",
+   "blunder"
+  ],
+  [
+   "Nxd7",
+   "best"
+  ],
+  [
+   "Bd6",
+   "good"
+  ],
+  [
+   "Nxf8",
+   "excellent"
+  ],
+  [
+   "Nc7",
+   "excellent"
+  ],
+  [
+   "Bg5",
+   "excellent"
+  ],
+  [
+   "Kxf8",
+   "excellent"
+  ],
+  [
+   "Bxf6",
+   "best"
+  ],
+  [
+   "Be6",
+   "excellent"
+  ],
+  [
+   "exd5",
+   "excellent"
+  ],
+  [
+   "Bf5",
+   "excellent"
+  ],
+  [
+   "Qxh5",
+   "best"
+  ],
+  [
+   "g5",
+   "inaccuracy"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "sam_bot_lfg",
+    "accuracy": 97.7,
+    "acpl": 30,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 3,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Electro Knight",
+    "accuracy": 78.7,
+    "acpl": 252,
+    "tally": {
+     "brilliant": 0,
+     "best": 1,
+     "excellent": 4,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 3,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -14,
+   45,
+   14,
+   12,
+   -22,
+   74,
+   62,
+   720,
+   698,
+   1034,
+   916,
+   920,
+   907,
+   932,
+   971,
+   1089,
+   1021,
+   1242,
+   1369,
+   9999,
+   10000
+  ],
+  "best": [
+   "d8c7",
+   "c1f4",
+   "e6d5",
+   "e2e4",
+   "d5d4",
+   "e2e4",
+   "d5e4",
+   "e5d7",
+   "c8d7",
+   "d7f6",
+   "g8f8",
+   "e4d5",
+   "c8g4",
+   "g5f6",
+   "c8g4",
+   "d1h5",
+   "e6g4",
+   "d1h5",
+   "g7f6",
+   "h5h8",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:20:00Z"
+}

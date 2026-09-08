@@ -1,0 +1,200 @@
+{
+ "game": "f1ecefd2-1f76-438c-aee7-a338809e5084",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.07\"]\n[Round \"46\"]\n[White \"N0t_an_agent\"]\n[Black \"dhav\"]\n[Result \"0-1\"]\n[FEN \"rnbq1rk1/pp3ppp/4pn2/b1p5/2BP4/P1N1P2P/1P3PP1/R1BQK1NR w KQ - 1 9\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n9. Nf3 { [%clk 0:01:56.691] } 9... cxd4 { [%clk 0:01:56.683] } 10. Qxd4 { [%clk 0:01:53.851] } 10... Nc6 { [%clk 0:01:53.361] } 11. Qxf6 { [%clk 0:01:50.539] } 11... Qxf6 { [%clk 0:01:50.181] } 12. Bd2 { [%clk 0:01:47.684] } 12... Ne5 { [%clk 0:01:46.835] } 13. Nxe5 { [%clk 0:01:44.348] } 13... Qxe5 { [%clk 0:01:43.478] } 14. O-O { [%clk 0:01:41.009] } 14... Rd8 { [%clk 0:01:40.113] } 15. Be1 { [%clk 0:01:37.611] } 15... Bc7 { [%clk 0:01:36.737] } 16. g3 { [%clk 0:01:35.002] } 16... a6 { [%clk 0:01:33.763] } 17. Rc1 { [%clk 0:01:31.602] } 17... b5 { [%clk 0:01:30.347] } 18. Bb3 { [%clk 0:01:28.232] } 18... Bb7 { [%clk 0:01:26.919] } 19. Na4 { [%clk 0:01:24.811] } 19... Qe4 { [%clk 0:01:23.483] } 20. Bd2 { [%clk 0:01:21.413] } 20... Qg2# { [%clk 0:01:23.973] } 0-1\n",
+ "opening": "Nimzo-Indian Defence",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 46\u00b7Final",
+ "white_uuid": "c831d28c-504c-43fe-920b-440c70b78f29",
+ "black_uuid": "30d70c6d-a268-486e-b19c-8bdf2931ba04",
+ "site_verdicts": [
+  [
+   "Nf3",
+   "excellent"
+  ],
+  [
+   "cxd4",
+   "best"
+  ],
+  [
+   "Qxd4",
+   "excellent"
+  ],
+  [
+   "Nc6",
+   "good"
+  ],
+  [
+   "Qxf6",
+   "blunder"
+  ],
+  [
+   "Qxf6",
+   "best"
+  ],
+  [
+   "Bd2",
+   "best"
+  ],
+  [
+   "Ne5",
+   "excellent"
+  ],
+  [
+   "Nxe5",
+   "best"
+  ],
+  [
+   "Qxe5",
+   "best"
+  ],
+  [
+   "O-O",
+   "excellent"
+  ],
+  [
+   "Rd8",
+   "excellent"
+  ],
+  [
+   "Be1",
+   "excellent"
+  ],
+  [
+   "Bc7",
+   "excellent"
+  ],
+  [
+   "g3",
+   "excellent"
+  ],
+  [
+   "a6",
+   "excellent"
+  ],
+  [
+   "Rc1",
+   "excellent"
+  ],
+  [
+   "b5",
+   "best"
+  ],
+  [
+   "Bb3",
+   "excellent"
+  ],
+  [
+   "Bb7",
+   "best"
+  ],
+  [
+   "Na4",
+   "inaccuracy"
+  ],
+  [
+   "Qe4",
+   "best"
+  ],
+  [
+   "Bd2",
+   "inaccuracy"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Beginner",
+    "accuracy": 79.5,
+    "acpl": 181,
+    "tally": {
+     "brilliant": 0,
+     "best": 2,
+     "excellent": 7,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "dhav",
+    "accuracy": 98.3,
+    "acpl": 13,
+    "tally": {
+     "brilliant": 0,
+     "best": 6,
+     "excellent": 5,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -12,
+   -17,
+   -14,
+   -32,
+   8,
+   -624,
+   -604,
+   -618,
+   -605,
+   -605,
+   -624,
+   -631,
+   -606,
+   -642,
+   -627,
+   -632,
+   -616,
+   -634,
+   -652,
+   -672,
+   -644,
+   -1056,
+   -1092,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "g1e2",
+   "c5d4",
+   "e3d4",
+   "d8d4",
+   "d4d8",
+   "d8f6",
+   "c1d2",
+   "f6e7",
+   "f3e5",
+   "f6e5",
+   "a1c1",
+   "b7b5",
+   "f1d1",
+   "c8d7",
+   "f2f4",
+   "e5g5",
+   "c4e2",
+   "b7b5",
+   "c4e2",
+   "c8b7",
+   "e3e4",
+   "e5e4",
+   "f2f3",
+   "e4h1",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:31:20Z"
+}

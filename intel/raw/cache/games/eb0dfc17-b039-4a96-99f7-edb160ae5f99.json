@@ -1,0 +1,218 @@
+{
+ "game": "eb0dfc17-b039-4a96-99f7-edb160ae5f99",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"24\"]\n[White \"What the fork\"]\n[Black \"Sunfish\"]\n[Result \"0-1\"]\n[FEN \"r1bq1rk1/pp1n1ppp/2pbpn2/3p4/2PP4/1PN1PN2/P3BPPP/R1BQ1RK1 b - - 0 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8... dxc4 { [%clk 0:01:56.435] } 9. h3 { [%clk 0:02:00.499] } 9... cxb3 { [%clk 0:01:52.874] } 10. g3 { [%clk 0:02:00.997] } 10... bxa2 { [%clk 0:01:50.077] } 11. Kh1 { [%clk 0:02:01.496] } 11... e5 { [%clk 0:01:46.519] } 12. dxe5 { [%clk 0:02:01.995] } 12... Nxe5 { [%clk 0:01:42.966] } 13. Qc2 { [%clk 0:02:02.494] } 13... Bxh3 { [%clk 0:01:39.403] } 14. Nb1 { [%clk 0:02:02.993] } 14... axb1=Q { [%clk 0:01:36.578] } 15. Bd3 { [%clk 0:02:03.492] } 15... Qxa1 { [%clk 0:01:33.57] } 16. Kh2 { [%clk 0:02:03.991] } 16... Bxf1 { [%clk 0:01:29.972] } 17. Qa2 { [%clk 0:02:04.49] } 17... Nxf3+ { [%clk 0:01:26.456] } 18. Kh1 { [%clk 0:02:04.988] } 18... Qxa2 { [%clk 0:01:22.775] } 19. Bxh7+ { [%clk 0:02:05.487] } 19... Kxh7 { [%clk 0:01:19.524] } 20. Ba3 { [%clk 0:02:05.985] } 20... Qxf2 { [%clk 0:01:16.418] } 21. Bb2 { [%clk 0:02:06.484] } 21... Bg2# { [%clk 0:01:13.425] } 0-1\n",
+ "opening": "Semi-Slav Defence",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 24\u00b7Final",
+ "white_uuid": "316a1575-5bae-420c-af1c-67a187016631",
+ "black_uuid": "c28497b9-d5b7-4c60-b4c0-169bed3f1bb7",
+ "site_verdicts": [
+  [
+   "dxc4",
+   "excellent"
+  ],
+  [
+   "h3",
+   "inaccuracy"
+  ],
+  [
+   "cxb3",
+   "best"
+  ],
+  [
+   "g3",
+   "mistake"
+  ],
+  [
+   "bxa2",
+   "best"
+  ],
+  [
+   "Kh1",
+   "good"
+  ],
+  [
+   "e5",
+   "excellent"
+  ],
+  [
+   "dxe5",
+   "good"
+  ],
+  [
+   "Nxe5",
+   "best"
+  ],
+  [
+   "Qc2",
+   "good"
+  ],
+  [
+   "Bxh3",
+   "excellent"
+  ],
+  [
+   "Nb1",
+   "mistake"
+  ],
+  [
+   "axb1=Q",
+   "excellent"
+  ],
+  [
+   "Bd3",
+   "good"
+  ],
+  [
+   "Qxa1",
+   "best"
+  ],
+  [
+   "Kh2",
+   "excellent"
+  ],
+  [
+   "Bxf1",
+   "best"
+  ],
+  [
+   "Qa2",
+   "inaccuracy"
+  ],
+  [
+   "Nxf3+",
+   "best"
+  ],
+  [
+   "Kh1",
+   "forced"
+  ],
+  [
+   "Qxa2",
+   "best"
+  ],
+  [
+   "Bxh7+",
+   "excellent"
+  ],
+  [
+   "Kxh7",
+   "excellent"
+  ],
+  [
+   "Ba3",
+   "excellent"
+  ],
+  [
+   "Qxf2",
+   "best"
+  ],
+  [
+   "Bb2",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Husser",
+    "accuracy": 86.4,
+    "acpl": 207,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 4,
+     "good": 4,
+     "forced": 1,
+     "inaccuracy": 2,
+     "mistake": 2,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Sunfish",
+    "accuracy": 99.6,
+    "acpl": 2,
+    "tally": {
+     "brilliant": 0,
+     "best": 8,
+     "excellent": 6,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   17,
+   29,
+   -49,
+   -57,
+   -233,
+   -233,
+   -288,
+   -280,
+   -338,
+   -359,
+   -398,
+   -389,
+   -753,
+   -779,
+   -1508,
+   -1539,
+   -1723,
+   -1823,
+   -9990,
+   -9991,
+   -9993,
+   -9994,
+   -9996,
+   -9997,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "b7b6",
+   "b3c4",
+   "c4b3",
+   "a2a4",
+   "b3a2",
+   "e3e4",
+   "b7b5",
+   "h1h2",
+   "d7e5",
+   "h1h2",
+   "e5f3",
+   "f1d1",
+   "a2b1r",
+   "a1b1",
+   "b1a1",
+   "c1b2",
+   "h3f1",
+   "f3e5",
+   "e5f3",
+   "h2h1",
+   "a1a2",
+   "c1d2",
+   "f6h7",
+   "c1d2",
+   "a2f2",
+   "e3e4",
+   "f2g1",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:29:59Z"
+}

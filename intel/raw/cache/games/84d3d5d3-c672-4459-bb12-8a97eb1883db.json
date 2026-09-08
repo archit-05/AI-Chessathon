@@ -1,0 +1,200 @@
+{
+ "game": "84d3d5d3-c672-4459-bb12-8a97eb1883db",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"19\"]\n[White \"neomatica\"]\n[Black \"Brownies\"]\n[Result \"1-0\"]\n[FEN \"rnbqkb1r/pp1n1ppp/4p3/2ppP3/3P1P2/2NB4/PPP3PP/R1BQK1NR b KQkq - 1 6\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n6... cxd4 { [%clk 0:01:56.968] } 7. Nb5 { [%clk 0:01:56.71] } 7... Nc6 { [%clk 0:01:53.922] } 8. Nf3 { [%clk 0:01:52.807] } 8... Bc5 { [%clk 0:01:50.86] } 9. O-O { [%clk 0:01:49.289] } 9... O-O { [%clk 0:01:47.781] } 10. Bxh7+ { [%clk 0:01:44.974] } 10... Kxh7 { [%clk 0:01:44.686] } 11. Ng5+ { [%clk 0:01:41.455] } 11... Kg8 { [%clk 0:01:41.574] } 12. Qh5 { [%clk 0:01:37.944] } 12... d3+ { [%clk 0:01:38.445] } 13. Kh1 { [%clk 0:01:35.198] } 13... Re8 { [%clk 0:01:35.297] } 14. Qxf7+ { [%clk 0:01:35.32] } 14... Kh8 { [%clk 0:01:35.795] } 15. Qh5+ { [%clk 0:01:35.761] } 15... Kg8 { [%clk 0:01:36.294] } 16. Qh7+ { [%clk 0:01:36.242] } 16... Kf8 { [%clk 0:01:36.793] } 17. Qh8+ { [%clk 0:01:36.731] } 17... Ke7 { [%clk 0:01:37.291] } 18. Qxg7# { [%clk 0:01:37.222] } 1-0\n",
+ "opening": "French Classical",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 19\u00b7Final",
+ "white_uuid": "820cbf59-e775-4c97-97fe-36f494f0d676",
+ "black_uuid": "1d4fc121-d317-4aa2-a35d-f3d9a1bbaaa9",
+ "site_verdicts": [
+  [
+   "cxd4",
+   "excellent"
+  ],
+  [
+   "Nb5",
+   "inaccuracy"
+  ],
+  [
+   "Nc6",
+   "best"
+  ],
+  [
+   "Nf3",
+   "best"
+  ],
+  [
+   "Bc5",
+   "best"
+  ],
+  [
+   "O-O",
+   "excellent"
+  ],
+  [
+   "O-O",
+   "blunder"
+  ],
+  [
+   "Bxh7+",
+   "best"
+  ],
+  [
+   "Kxh7",
+   "best"
+  ],
+  [
+   "Ng5+",
+   "best"
+  ],
+  [
+   "Kg8",
+   "inaccuracy"
+  ],
+  [
+   "Qh5",
+   "best"
+  ],
+  [
+   "d3+",
+   "excellent"
+  ],
+  [
+   "Kh1",
+   "best"
+  ],
+  [
+   "Re8",
+   "blunder"
+  ],
+  [
+   "Qxf7+",
+   "best"
+  ],
+  [
+   "Kh8",
+   "forced"
+  ],
+  [
+   "Qh5+",
+   "best"
+  ],
+  [
+   "Kg8",
+   "forced"
+  ],
+  [
+   "Qh7+",
+   "best"
+  ],
+  [
+   "Kf8",
+   "forced"
+  ],
+  [
+   "Qh8+",
+   "best"
+  ],
+  [
+   "Ke7",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "neomatica",
+    "accuracy": 98.6,
+    "acpl": 6,
+    "tally": {
+     "brilliant": 0,
+     "best": 10,
+     "excellent": 1,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Blunderbus",
+    "accuracy": 80.1,
+    "acpl": 119,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 2,
+     "good": 0,
+     "forced": 4,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 2
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -5,
+   5,
+   -66,
+   -60,
+   -60,
+   -74,
+   -70,
+   238,
+   238,
+   212,
+   212,
+   299,
+   305,
+   316,
+   331,
+   9995,
+   9996,
+   9996,
+   9997,
+   9997,
+   9998,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "b8c6",
+   "c3e2",
+   "b8c6",
+   "g1f3",
+   "f8c5",
+   "c2c3",
+   "a7a6",
+   "d3h7",
+   "g8h7",
+   "f3g5",
+   "d8g5",
+   "d1h5",
+   "d8g5",
+   "g1h1",
+   "d8g5",
+   "h5f7",
+   "g8h8",
+   "f7h5",
+   "h8g8",
+   "h5h7",
+   "g8f8",
+   "h7h8",
+   "f8e7",
+   "h8g7",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:52:02Z"
+}

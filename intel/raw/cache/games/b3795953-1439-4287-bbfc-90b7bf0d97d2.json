@@ -1,0 +1,164 @@
+{
+ "game": "b3795953-1439-4287-bbfc-90b7bf0d97d2",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"8\"]\n[White \"Deep Red\"]\n[Black \"Bishop\"]\n[Result \"0-1\"]\n[FEN \"r1bq1rk1/pppp1ppp/2n2n2/1Bb5/3NP3/2P5/PP3PPP/RNBQ1RK1 w - - 3 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8. Bd3 { [%clk 0:01:59.595] } 8... Nxd4 { [%clk 0:01:57.039] } 9. cxd4 { [%clk 0:02:00.094] } 9... Bxd4 { [%clk 0:01:54.816] } 10. Bc2 { [%clk 0:01:59.683] } 10... Be5 { [%clk 0:01:52.001] } 11. Re1 { [%clk 0:01:59.278] } 11... Kh8 { [%clk 0:01:48.809] } 12. Kh1 { [%clk 0:01:58.873] } 12... d6 { [%clk 0:01:45.828] } 13. Re3 { [%clk 0:01:58.468] } 13... Ng4 { [%clk 0:01:42.72] } 14. Qd5 { [%clk 0:01:58.058] } 14... Nxe3 { [%clk 0:01:39.719] } 15. fxe3 { [%clk 0:01:58.556] } 15... Qh4 { [%clk 0:01:36.747] } 16. Bd3 { [%clk 0:01:59.032] } 16... Qxh2# { [%clk 0:01:37.242] } 0-1\n",
+ "opening": "Scotch Game",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 8\u00b7Final",
+ "white_uuid": "7e3be55e-a46c-4703-83a3-648990c12d5e",
+ "black_uuid": "91c4a7dc-20a6-4ee7-8b90-644ae1801083",
+ "site_verdicts": [
+  [
+   "Bd3",
+   "inaccuracy"
+  ],
+  [
+   "Nxd4",
+   "best"
+  ],
+  [
+   "cxd4",
+   "excellent"
+  ],
+  [
+   "Bxd4",
+   "best"
+  ],
+  [
+   "Bc2",
+   "best"
+  ],
+  [
+   "Be5",
+   "blunder"
+  ],
+  [
+   "Re1",
+   "blunder"
+  ],
+  [
+   "Kh8",
+   "mistake"
+  ],
+  [
+   "Kh1",
+   "blunder"
+  ],
+  [
+   "d6",
+   "blunder"
+  ],
+  [
+   "Re3",
+   "blunder"
+  ],
+  [
+   "Ng4",
+   "best"
+  ],
+  [
+   "Qd5",
+   "inaccuracy"
+  ],
+  [
+   "Nxe3",
+   "good"
+  ],
+  [
+   "fxe3",
+   "good"
+  ],
+  [
+   "Qh4",
+   "best"
+  ],
+  [
+   "Bd3",
+   "mistake"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "BigRed",
+    "accuracy": 56.5,
+    "acpl": 267,
+    "tally": {
+     "brilliant": 0,
+     "best": 1,
+     "excellent": 1,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 3
+    }
+   },
+   {
+    "name": "Bishop",
+    "accuracy": 72.1,
+    "acpl": 76,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 0,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 2
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -25,
+   -82,
+   -87,
+   -74,
+   -76,
+   -82,
+   171,
+   -96,
+   42,
+   -142,
+   31,
+   -460,
+   -437,
+   -683,
+   -583,
+   -738,
+   -765,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "f1e1",
+   "c6d4",
+   "e4e5",
+   "c5d4",
+   "d3c2",
+   "c7c5",
+   "f2f4",
+   "d7d5",
+   "f2f4",
+   "d7d5",
+   "f2f4",
+   "f6g4",
+   "d1e2",
+   "d8h4",
+   "c1e3",
+   "d8h4",
+   "g2g3",
+   "h4h2",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:55:30Z"
+}

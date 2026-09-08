@@ -1,0 +1,146 @@
+{
+ "game": "8d080799-f100-4486-a7c9-98b08774d0af",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"16\"]\n[White \"IDK\"]\n[Black \"Surya prabha\"]\n[Result \"*\"]\n[FEN \"1rbqk2r/pp2ppbp/2np1np1/2p5/4P3/2NP1NP1/PPP2PBP/R1BQ1RK1 w k - 4 8\"]\n[SetUp \"1\"]\n[Termination \"unterminated\"]\n\n8. Be3 { [%clk 0:01:59.35] } 8... Qb6 { [%clk 0:01:56.144] } 9. Nd5 { [%clk 0:01:58.804] } 9... Qxb2 { [%clk 0:01:52.42] } 10. Nc7+ { [%clk 0:01:58.58] } 10... Kd8 { [%clk 0:01:48.821] } 11. Rb1 { [%clk 0:01:58.283] } 11... Qxa2 { [%clk 0:01:45.34] } 12. Ra1 { [%clk 0:01:57.889] } 12... Qb2 { [%clk 0:01:41.97] } 13. Rb1 { [%clk 0:01:57.541] } 13... Qa2 { [%clk 0:01:38.718] } 14. Ra1 { [%clk 0:01:57.183] } 14... Qb2 { [%clk 0:01:35.574] } 15. Rb1 { [%clk 0:01:56.825] } *\n",
+ "opening": "Sicilian Closed",
+ "termination_text": "Unterminated",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 16\u00b7Void",
+ "white_uuid": "51544a8f-76bc-4e56-b18d-9329d2237075",
+ "black_uuid": "ad314622-404e-4102-a7cf-2a26b9f9d645",
+ "site_verdicts": [
+  [
+   "Be3",
+   "excellent"
+  ],
+  [
+   "Qb6",
+   "good"
+  ],
+  [
+   "Nd5",
+   "good"
+  ],
+  [
+   "Qxb2",
+   "best"
+  ],
+  [
+   "Nc7+",
+   "excellent"
+  ],
+  [
+   "Kd8",
+   "inaccuracy"
+  ],
+  [
+   "Rb1",
+   "best"
+  ],
+  [
+   "Qxa2",
+   "best"
+  ],
+  [
+   "Ra1",
+   "best"
+  ],
+  [
+   "Qb2",
+   "best"
+  ],
+  [
+   "Rb1",
+   "best"
+  ],
+  [
+   "Qa2",
+   "best"
+  ],
+  [
+   "Ra1",
+   "best"
+  ],
+  [
+   "Qb2",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "on99",
+    "accuracy": 97.4,
+    "acpl": 9,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 2,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Suryaprabha",
+    "accuracy": 96.4,
+    "acpl": 14,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 0,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -5,
+   -21,
+   18,
+   -35,
+   -62,
+   -60,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "best": [
+   "a2a4",
+   "b7b5",
+   "a1b1",
+   "b6b2",
+   "a1b1",
+   "e8f8",
+   "a1b1",
+   "b2a2",
+   "b1a1",
+   "a2b2",
+   "a1b1",
+   "b2a2",
+   "b1a1",
+   "a2b2",
+   "a1b1",
+   "b2a2"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:48:24Z"
+}

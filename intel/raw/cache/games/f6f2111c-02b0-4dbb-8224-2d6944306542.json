@@ -1,0 +1,242 @@
+{
+ "game": "f6f2111c-02b0-4dbb-8224-2d6944306542",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"3\"]\n[White \"MeshPotato\"]\n[Black \"DGS ELO\"]\n[Result \"*\"]\n[FEN \"rnbq1rk1/pp3ppp/4pn2/b1p5/2BP4/P1N1P2P/1P3PP1/R1BQK1NR w KQ - 1 9\"]\n[SetUp \"1\"]\n[Termination \"unterminated\"]\n\n9. Ne2 { [%clk 0:01:55.635] } 9... Qc7 { [%clk 0:01:53.961] } 10. dxc5 { [%clk 0:01:51.424] } 10... Qxc5 { [%clk 0:01:49.031] } 11. Bd3 { [%clk 0:01:47.372] } 11... Qe7 { [%clk 0:01:45.092] } 12. b4 { [%clk 0:01:43.476] } 12... Bb6 { [%clk 0:01:39.638] } 13. Bb2 { [%clk 0:01:39.745] } 13... Nbd7 { [%clk 0:01:36.422] } 14. Na4 { [%clk 0:01:36.166] } 14... Bc7 { [%clk 0:01:32.836] } 15. Qc2 { [%clk 0:01:32.72] } 15... Ne5 { [%clk 0:01:27.11] } 16. O-O { [%clk 0:01:29.408] } 16... Nxd3 { [%clk 0:01:24.124] } 17. Bxf6 { [%clk 0:01:26.22] } 17... Qxf6 { [%clk 0:01:16.431] } 18. Qxc7 { [%clk 0:01:23.16] } 18... b6 { [%clk 0:01:09.02] } 19. Nac3 { [%clk 0:01:20.193] } 19... Ba6 { [%clk 0:01:05.156] } 20. b5 { [%clk 0:01:17.342] } 20... Rfc8 { [%clk 0:01:02.127] } 21. Qd6 { [%clk 0:01:14.605] } 21... Rd8 { [%clk 0:00:59.848] } 22. Qc7 { [%clk 0:01:11.98] } 22... Rdc8 { [%clk 0:00:57.651] } 23. Qd6 { [%clk 0:01:09.45] } 23... Rd8 { [%clk 0:00:53.23] } 24. Qc7 { [%clk 0:01:07.033] } *\n",
+ "opening": "Nimzo-Indian Defence",
+ "termination_text": "Unterminated",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 3\u00b7Void",
+ "white_uuid": "2a6799a8-ccc7-45d6-a342-701ce3b923b6",
+ "black_uuid": "5f8a69d7-73a8-4498-b322-861b557dffbd",
+ "site_verdicts": [
+  [
+   "Ne2",
+   "best"
+  ],
+  [
+   "Qc7",
+   "excellent"
+  ],
+  [
+   "dxc5",
+   "excellent"
+  ],
+  [
+   "Qxc5",
+   "excellent"
+  ],
+  [
+   "Bd3",
+   "best"
+  ],
+  [
+   "Qe7",
+   "excellent"
+  ],
+  [
+   "b4",
+   "best"
+  ],
+  [
+   "Bb6",
+   "excellent"
+  ],
+  [
+   "Bb2",
+   "best"
+  ],
+  [
+   "Nbd7",
+   "best"
+  ],
+  [
+   "Na4",
+   "excellent"
+  ],
+  [
+   "Bc7",
+   "best"
+  ],
+  [
+   "Qc2",
+   "inaccuracy"
+  ],
+  [
+   "Ne5",
+   "best"
+  ],
+  [
+   "O-O",
+   "excellent"
+  ],
+  [
+   "Nxd3",
+   "best"
+  ],
+  [
+   "Bxf6",
+   "best"
+  ],
+  [
+   "Qxf6",
+   "good"
+  ],
+  [
+   "Qxc7",
+   "best"
+  ],
+  [
+   "b6",
+   "best"
+  ],
+  [
+   "Nac3",
+   "best"
+  ],
+  [
+   "Ba6",
+   "best"
+  ],
+  [
+   "b5",
+   "best"
+  ],
+  [
+   "Rfc8",
+   "best"
+  ],
+  [
+   "Qd6",
+   "best"
+  ],
+  [
+   "Rd8",
+   "best"
+  ],
+  [
+   "Qc7",
+   "best"
+  ],
+  [
+   "Rdc8",
+   "best"
+  ],
+  [
+   "Qd6",
+   "best"
+  ],
+  [
+   "Rd8",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Mesh Potato",
+    "accuracy": 98.1,
+    "acpl": 7,
+    "tally": {
+     "brilliant": 0,
+     "best": 12,
+     "excellent": 3,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Ultron",
+    "accuracy": 97.4,
+    "acpl": 9,
+    "tally": {
+     "brilliant": 0,
+     "best": 10,
+     "excellent": 4,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   5,
+   -5,
+   7,
+   2,
+   1,
+   0,
+   18,
+   9,
+   30,
+   27,
+   32,
+   42,
+   11,
+   -63,
+   -36,
+   -52,
+   -52,
+   -52,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "best": [
+   "g1e2",
+   "b7b6",
+   "c4d3",
+   "f8d8",
+   "c4d3",
+   "f8d8",
+   "b2b4",
+   "a5c7",
+   "c1b2",
+   "b8d7",
+   "e1g1",
+   "b6c7",
+   "a1c1",
+   "d7e5",
+   "a1c1",
+   "e5d3",
+   "b2f6",
+   "g7f6",
+   "c2c7",
+   "b7b6",
+   "a4c3",
+   "c8a6",
+   "b4b5",
+   "f8c8",
+   "c7d6",
+   "c8d8",
+   "d6c7",
+   "d8c8",
+   "c7d6",
+   "c8d8",
+   "d6c7",
+   "d8c8"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:01:41Z"
+}

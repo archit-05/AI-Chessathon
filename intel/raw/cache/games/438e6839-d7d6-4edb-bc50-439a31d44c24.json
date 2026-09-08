@@ -1,0 +1,236 @@
+{
+ "game": "438e6839-d7d6-4edb-bc50-439a31d44c24",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.06\"]\n[Round \"38\"]\n[White \"Sweat\"]\n[Black \"Benko\"]\n[Result \"1/2-1/2\"]\n[FEN \"1rbqk1nr/pp3pbp/2npp1p1/2p5/4PP2/2NP1NP1/PPP3BP/R1BQK2R w KQk - 2 8\"]\n[SetUp \"1\"]\n[Termination \"threefold_repetition\"]\n\n8. d4 { [%clk 0:01:56.508] } 8... cxd4 { [%clk 0:01:57.229] } 9. Nxd4 { [%clk 0:01:53.134] } 9... Bxd4 { [%clk 0:01:54.544] } 10. Qd3 { [%clk 0:01:49.872] } 10... Qa5 { [%clk 0:01:51.917] } 11. e5 { [%clk 0:01:46.718] } 11... dxe5 { [%clk 0:01:49.36] } 12. Bxc6+ { [%clk 0:01:43.67] } 12... bxc6 { [%clk 0:01:46.857] } 13. Rb1 { [%clk 0:01:40.723] } 13... Bxc3+ { [%clk 0:01:44.42] } 14. Qxc3 { [%clk 0:01:37.875] } 14... Qxc3+ { [%clk 0:01:42.054] } 15. bxc3 { [%clk 0:01:35.122] } 15... Rxb1 { [%clk 0:01:39.738] } 16. Kf2 { [%clk 0:01:32.46] } 16... Ra1 { [%clk 0:01:37.485] } 17. Rd1 { [%clk 0:01:29.887] } 17... exf4 { [%clk 0:01:35.291] } 18. gxf4 { [%clk 0:01:27.4] } 18... Rxa2 { [%clk 0:01:33.156] } 19. Rd2 { [%clk 0:01:24.995] } 19... Ra1 { [%clk 0:01:31.064] } 20. Rd1 { [%clk 0:01:22.671] } 20... Ra2 { [%clk 0:01:29.03] } 21. Rd2 { [%clk 0:01:20.424] } 21... Ra1 { [%clk 0:01:27.05] } 22. Rd1 { [%clk 0:01:18.253] } 22... Ra2 { [%clk 0:01:25.109] } 1/2-1/2\n",
+ "opening": "Sicilian Closed",
+ "termination_text": "Threefold repetition",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 38\u00b7Final",
+ "white_uuid": "6c401207-8252-4616-80c0-59592315f309",
+ "black_uuid": "4884dad8-ada0-4018-8013-2b7050e24afb",
+ "site_verdicts": [
+  [
+   "d4",
+   "inaccuracy"
+  ],
+  [
+   "cxd4",
+   "best"
+  ],
+  [
+   "Nxd4",
+   "blunder"
+  ],
+  [
+   "Bxd4",
+   "best"
+  ],
+  [
+   "Qd3",
+   "excellent"
+  ],
+  [
+   "Qa5",
+   "good"
+  ],
+  [
+   "e5",
+   "good"
+  ],
+  [
+   "dxe5",
+   "best"
+  ],
+  [
+   "Bxc6+",
+   "excellent"
+  ],
+  [
+   "bxc6",
+   "best"
+  ],
+  [
+   "Rb1",
+   "inaccuracy"
+  ],
+  [
+   "Bxc3+",
+   "excellent"
+  ],
+  [
+   "Qxc3",
+   "best"
+  ],
+  [
+   "Qxc3+",
+   "best"
+  ],
+  [
+   "bxc3",
+   "best"
+  ],
+  [
+   "Rxb1",
+   "best"
+  ],
+  [
+   "Kf2",
+   "excellent"
+  ],
+  [
+   "Ra1",
+   "excellent"
+  ],
+  [
+   "Rd1",
+   "excellent"
+  ],
+  [
+   "exf4",
+   "best"
+  ],
+  [
+   "gxf4",
+   "excellent"
+  ],
+  [
+   "Rxa2",
+   "excellent"
+  ],
+  [
+   "Rd2",
+   "excellent"
+  ],
+  [
+   "Ra1",
+   "excellent"
+  ],
+  [
+   "Rd1",
+   "best"
+  ],
+  [
+   "Ra2",
+   "excellent"
+  ],
+  [
+   "Rd2",
+   "excellent"
+  ],
+  [
+   "Ra1",
+   "good"
+  ],
+  [
+   "Rd1",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "botlobby",
+    "accuracy": 88.2,
+    "acpl": 71,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 8,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "benko_bot",
+    "accuracy": 78.9,
+    "acpl": 76,
+    "tally": {
+     "brilliant": 0,
+     "best": 7,
+     "excellent": 5,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -9,
+   -115,
+   -166,
+   -432,
+   -397,
+   -414,
+   -364,
+   -453,
+   -436,
+   -436,
+   -446,
+   -708,
+   -715,
+   -721,
+   -735,
+   -734,
+   -721,
+   -735,
+   -689,
+   -752,
+   -757,
+   -775,
+   -783,
+   -839,
+   -829,
+   -803,
+   -783,
+   -871,
+   -747,
+   -829,
+   0
+  ],
+  "best": [
+   "a2a4",
+   "c5d4",
+   "c3e2",
+   "g7d4",
+   "c3b5",
+   "b7b5",
+   "c1d2",
+   "d6e5",
+   "f4e5",
+   "b7c6",
+   "c1d2",
+   "c8a6",
+   "d3c3",
+   "a5c3",
+   "b2c3",
+   "b8b1",
+   "e1g1",
+   "e5f4",
+   "f4e5",
+   "e5f4",
+   "f2e1",
+   "g8f6",
+   "c1e3",
+   "g8f6",
+   "d2d1",
+   "g8h6",
+   "c1e3",
+   "g8f6",
+   "c1b2",
+   "g8e7",
+   "d1d2"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:44:50Z"
+}

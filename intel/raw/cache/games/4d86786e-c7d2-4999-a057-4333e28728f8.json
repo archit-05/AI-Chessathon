@@ -1,0 +1,218 @@
+{
+ "game": "4d86786e-c7d2-4999-a057-4333e28728f8",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"8\"]\n[White \"Imperial Knights\"]\n[Black \"Shallow Blue 2.0\"]\n[Result \"*\"]\n[FEN \"r1bqk2r/2p1bppp/p1np1n2/1p2p3/4P3/1B3N2/PPPPQPPP/RNB1R1K1 b kq - 1 8\"]\n[SetUp \"1\"]\n[Termination \"unterminated\"]\n\n8... Na5 { [%clk 0:01:55.941] } 9. d4 { [%clk 0:01:57.611] } 9... exd4 { [%clk 0:01:52.838] } 10. Nxd4 { [%clk 0:01:54.768] } 10... c5 { [%clk 0:01:49.032] } 11. Nf5 { [%clk 0:01:51.905] } 11... Bxf5 { [%clk 0:01:46.955] } 12. exf5 { [%clk 0:01:49.021] } 12... c4 { [%clk 0:01:44.704] } 13. Bd2 { [%clk 0:01:46.111] } 13... Nc6 { [%clk 0:01:41.087] } 14. Bxc4 { [%clk 0:01:43.261] } 14... bxc4 { [%clk 0:01:37.601] } 15. Qxc4 { [%clk 0:01:40.283] } 15... Ne5 { [%clk 0:01:34.239] } 16. Qa4+ { [%clk 0:01:37.279] } 16... Kf8 { [%clk 0:01:30.99] } 17. Nc3 { [%clk 0:01:34.37] } 17... Qc8 { [%clk 0:01:27.857] } 18. Qf4 { [%clk 0:01:31.549] } 18... Nh5 { [%clk 0:01:24.849] } 19. Qe4 { [%clk 0:01:28.99] } 19... Nf6 { [%clk 0:01:22.144] } 20. Qf4 { [%clk 0:01:26.821] } 20... Nh5 { [%clk 0:01:19.341] } 21. Qe4 { [%clk 0:01:24.228] } 21... Nf6 { [%clk 0:01:16.635] } *\n",
+ "opening": "Ruy Lopez, Closed",
+ "termination_text": "Unterminated",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 8\u00b7Void",
+ "white_uuid": "b9ca5fee-1a73-4740-b94a-912e0c727462",
+ "black_uuid": "16436a48-3e9c-40e7-915c-53ba083b3fb4",
+ "site_verdicts": [
+  [
+   "Na5",
+   "best"
+  ],
+  [
+   "d4",
+   "excellent"
+  ],
+  [
+   "exd4",
+   "best"
+  ],
+  [
+   "Nxd4",
+   "inaccuracy"
+  ],
+  [
+   "c5",
+   "best"
+  ],
+  [
+   "Nf5",
+   "best"
+  ],
+  [
+   "Bxf5",
+   "best"
+  ],
+  [
+   "exf5",
+   "best"
+  ],
+  [
+   "c4",
+   "best"
+  ],
+  [
+   "Bd2",
+   "mistake"
+  ],
+  [
+   "Nc6",
+   "best"
+  ],
+  [
+   "Bxc4",
+   "best"
+  ],
+  [
+   "bxc4",
+   "best"
+  ],
+  [
+   "Qxc4",
+   "excellent"
+  ],
+  [
+   "Ne5",
+   "good"
+  ],
+  [
+   "Qa4+",
+   "best"
+  ],
+  [
+   "Kf8",
+   "excellent"
+  ],
+  [
+   "Nc3",
+   "excellent"
+  ],
+  [
+   "Qc8",
+   "best"
+  ],
+  [
+   "Qf4",
+   "good"
+  ],
+  [
+   "Nh5",
+   "inaccuracy"
+  ],
+  [
+   "Qe4",
+   "inaccuracy"
+  ],
+  [
+   "Nf6",
+   "best"
+  ],
+  [
+   "Qf4",
+   "excellent"
+  ],
+  [
+   "Nh5",
+   "inaccuracy"
+  ],
+  [
+   "Qe4",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Knight you will remember",
+    "accuracy": 89.2,
+    "acpl": 34,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 5,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Shallow Blue 2.0",
+    "accuracy": 87.8,
+    "acpl": 32,
+    "tally": {
+     "brilliant": 0,
+     "best": 9,
+     "excellent": 1,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 3,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -33,
+   -34,
+   0,
+   -27,
+   -129,
+   -162,
+   -143,
+   -156,
+   -157,
+   -143,
+   -275,
+   -254,
+   -290,
+   -277,
+   -303,
+   -237,
+   -236,
+   -211,
+   -217,
+   -223,
+   -257,
+   -166,
+   -266,
+   -252,
+   -256,
+   -136,
+   -89,
+   0
+  ],
+  "best": [
+   "c6a5",
+   "b1c3",
+   "e5d4",
+   "c1d2",
+   "c7c5",
+   "d4f5",
+   "c8f5",
+   "e4f5",
+   "c5c4",
+   "c1g5",
+   "a5c6",
+   "b3c4",
+   "b5c4",
+   "b1c3",
+   "d8d7",
+   "c4a4",
+   "d8d7",
+   "d2g5",
+   "d8c8",
+   "d2f4",
+   "h7h5",
+   "f4d4",
+   "h5f6",
+   "e4d4",
+   "h7h5",
+   "f4d4",
+   "a8a7",
+   "e4f4"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:37:34Z"
+}

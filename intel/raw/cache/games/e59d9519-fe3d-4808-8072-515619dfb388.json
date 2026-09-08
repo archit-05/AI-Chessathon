@@ -1,0 +1,230 @@
+{
+ "game": "e59d9519-fe3d-4808-8072-515619dfb388",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"12\"]\n[White \"Fishy Fischer\"]\n[Black \"Pawn Stars En Peasants\"]\n[Result \"0-1\"]\n[FEN \"r1bqkbnr/pp3ppp/2npp3/1N6/2P1P3/8/PP3PPP/RNBQKB1R b KQkq - 0 6\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n6... a6 { [%clk 0:01:57.36] } 7. Qa4 { [%clk 0:01:55.496] } 7... Bd7 { [%clk 0:01:54.701] } 8. N5c3 { [%clk 0:01:51.166] } 8... Nf6 { [%clk 0:01:52.032] } 9. Bg5 { [%clk 0:01:47.005] } 9... Qb6 { [%clk 0:01:49.346] } 10. c5 { [%clk 0:01:41.853] } 10... Qxb2 { [%clk 0:01:46.643] } 11. Bxf6 { [%clk 0:01:36.947] } 11... gxf6 { [%clk 0:01:43.924] } 12. Nb5 { [%clk 0:01:32.276] } 12... Qxa1 { [%clk 0:01:41.191] } 13. Nc7+ { [%clk 0:01:27.829] } 13... Kd8 { [%clk 0:01:38.441] } 14. Nxa8 { [%clk 0:01:23.592] } 14... Qxb1+ { [%clk 0:01:35.673] } 15. Kd2 { [%clk 0:01:18.393] } 15... Bh6+ { [%clk 0:01:32.889] } 16. f4 { [%clk 0:01:13.506] } 16... Bxf4+ { [%clk 0:01:30.089] } 17. Ke2 { [%clk 0:01:08.911] } 17... Qb2+ { [%clk 0:01:27.266] } 18. Qc2 { [%clk 0:01:04.595] } 18... Qxc2+ { [%clk 0:01:27.764] } 19. Kf3 { [%clk 0:01:00.536] } 19... Ne5+ { [%clk 0:01:28.262] } 20. Kxf4 { [%clk 0:00:55.446] } 20... Qf2# { [%clk 0:01:28.758] } 0-1\n",
+ "opening": "Sicilian Taimanov",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 12\u00b7Final",
+ "white_uuid": "8087333f-5959-4d33-8fce-16347b93344b",
+ "black_uuid": "003ebf62-f643-48e1-8967-9c1cfcfedb37",
+ "site_verdicts": [
+  [
+   "a6",
+   "excellent"
+  ],
+  [
+   "Qa4",
+   "mistake"
+  ],
+  [
+   "Bd7",
+   "best"
+  ],
+  [
+   "N5c3",
+   "best"
+  ],
+  [
+   "Nf6",
+   "good"
+  ],
+  [
+   "Bg5",
+   "inaccuracy"
+  ],
+  [
+   "Qb6",
+   "good"
+  ],
+  [
+   "c5",
+   "blunder"
+  ],
+  [
+   "Qxb2",
+   "best"
+  ],
+  [
+   "Bxf6",
+   "best"
+  ],
+  [
+   "gxf6",
+   "best"
+  ],
+  [
+   "Nb5",
+   "inaccuracy"
+  ],
+  [
+   "Qxa1",
+   "best"
+  ],
+  [
+   "Nc7+",
+   "excellent"
+  ],
+  [
+   "Kd8",
+   "best"
+  ],
+  [
+   "Nxa8",
+   "best"
+  ],
+  [
+   "Qxb1+",
+   "best"
+  ],
+  [
+   "Kd2",
+   "inaccuracy"
+  ],
+  [
+   "Bh6+",
+   "best"
+  ],
+  [
+   "f4",
+   "inaccuracy"
+  ],
+  [
+   "Bxf4+",
+   "best"
+  ],
+  [
+   "Ke2",
+   "excellent"
+  ],
+  [
+   "Qb2+",
+   "best"
+  ],
+  [
+   "Qc2",
+   "best"
+  ],
+  [
+   "Qxc2+",
+   "best"
+  ],
+  [
+   "Kf3",
+   "best"
+  ],
+  [
+   "Ne5+",
+   "best"
+  ],
+  [
+   "Kxf4",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Internship seeker",
+    "accuracy": 84.1,
+    "acpl": 168,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 2,
+     "good": 0,
+     "forced": 1,
+     "inaccuracy": 4,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "kilobyte",
+    "accuracy": 97.5,
+    "acpl": 11,
+    "tally": {
+     "brilliant": 0,
+     "best": 12,
+     "excellent": 1,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   39,
+   56,
+   -55,
+   -37,
+   -47,
+   -24,
+   -112,
+   -59,
+   -393,
+   -428,
+   -462,
+   -418,
+   -661,
+   -685,
+   -691,
+   -705,
+   -683,
+   -680,
+   -1198,
+   -1419,
+   -9994,
+   -9995,
+   -9996,
+   -9997,
+   -9997,
+   -9998,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "g8f6",
+   "b5c3",
+   "c8d7",
+   "b5c3",
+   "b7b5",
+   "a4d1",
+   "h7h6",
+   "a4c2",
+   "b6b2",
+   "g5f6",
+   "g7f6",
+   "f1b5",
+   "b2a1",
+   "b5c3",
+   "e8d8",
+   "c7a8",
+   "a1b1",
+   "a4d1",
+   "f8h6",
+   "d2e2",
+   "h6f4",
+   "d2c3",
+   "b1b2",
+   "a4c2",
+   "b2c2",
+   "e2f3",
+   "c6e5",
+   "f3f4",
+   "c2f2",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:56:46Z"
+}

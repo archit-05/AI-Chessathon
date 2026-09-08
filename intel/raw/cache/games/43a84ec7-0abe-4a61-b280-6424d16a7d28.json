@@ -1,0 +1,230 @@
+{
+ "game": "43a84ec7-0abe-4a61-b280-6424d16a7d28",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.07\"]\n[Round \"47\"]\n[White \"Rohan\"]\n[Black \"Terminal\"]\n[Result \"1-0\"]\n[FEN \"r1bqk2r/2p1bppp/p2p1n2/np2p3/4P3/1B1P1N2/PPP2PPP/RNBQR1K1 w kq - 1 9\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n9. c3 { [%clk 0:01:57.087] } 9... Nxb3 { [%clk 0:01:58.459] } 10. axb3 { [%clk 0:01:54.242] } 10... Ng4 { [%clk 0:01:55.538] } 11. h3 { [%clk 0:01:51.48] } 11... Nf6 { [%clk 0:01:51.891] } 12. c4 { [%clk 0:01:48.786] } 12... Bd7 { [%clk 0:01:49.279] } 13. d4 { [%clk 0:01:46.152] } 13... exd4 { [%clk 0:01:47.111] } 14. Nxd4 { [%clk 0:01:43.584] } 14... c5 { [%clk 0:01:45.726] } 15. Nf5 { [%clk 0:01:41.084] } 15... Nxe4 { [%clk 0:01:43.013] } 16. Nxg7+ { [%clk 0:01:38.632] } 16... Kf8 { [%clk 0:01:43.512] } 17. Bh6 { [%clk 0:01:36.254] } 17... Nxf2 { [%clk 0:01:41.477] } 18. Nh5+ { [%clk 0:01:33.928] } 18... Kg8 { [%clk 0:01:37.983] } 19. Rxe7 { [%clk 0:01:31.677] } 19... Nxh3+ { [%clk 0:01:34.645] } 20. gxh3 { [%clk 0:01:29.47] } 20... Qxe7 { [%clk 0:01:32.6] } 21. Qe2 { [%clk 0:01:27.323] } 21... Bxh3 { [%clk 0:01:29.411] } 22. Qxe7 { [%clk 0:01:27.74] } 22... Bg4 { [%clk 0:01:29.883] } 23. Nf6# { [%clk 0:01:28.229] } 1-0\n",
+ "opening": "Ruy Lopez, Closed",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 47\u00b7Final",
+ "white_uuid": "73a39e5a-a4eb-4018-bfe0-1d546db4b394",
+ "black_uuid": "46530d1a-3cfc-4840-8a3c-95daab9cc3e6",
+ "site_verdicts": [
+  [
+   "c3",
+   "excellent"
+  ],
+  [
+   "Nxb3",
+   "best"
+  ],
+  [
+   "axb3",
+   "best"
+  ],
+  [
+   "Ng4",
+   "good"
+  ],
+  [
+   "h3",
+   "excellent"
+  ],
+  [
+   "Nf6",
+   "best"
+  ],
+  [
+   "c4",
+   "excellent"
+  ],
+  [
+   "Bd7",
+   "excellent"
+  ],
+  [
+   "d4",
+   "best"
+  ],
+  [
+   "exd4",
+   "best"
+  ],
+  [
+   "Nxd4",
+   "excellent"
+  ],
+  [
+   "c5",
+   "inaccuracy"
+  ],
+  [
+   "Nf5",
+   "best"
+  ],
+  [
+   "Nxe4",
+   "blunder"
+  ],
+  [
+   "Nxg7+",
+   "best"
+  ],
+  [
+   "Kf8",
+   "forced"
+  ],
+  [
+   "Bh6",
+   "best"
+  ],
+  [
+   "Nxf2",
+   "excellent"
+  ],
+  [
+   "Nh5+",
+   "good"
+  ],
+  [
+   "Kg8",
+   "best"
+  ],
+  [
+   "Rxe7",
+   "good"
+  ],
+  [
+   "Nxh3+",
+   "good"
+  ],
+  [
+   "gxh3",
+   "best"
+  ],
+  [
+   "Qxe7",
+   "best"
+  ],
+  [
+   "Qe2",
+   "best"
+  ],
+  [
+   "Bxh3",
+   "excellent"
+  ],
+  [
+   "Qxe7",
+   "best"
+  ],
+  [
+   "Bg4",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Rohan",
+    "accuracy": 98.2,
+    "acpl": 13,
+    "tally": {
+     "brilliant": 0,
+     "best": 9,
+     "excellent": 4,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Terminator",
+    "accuracy": 84.2,
+    "acpl": 87,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 4,
+     "good": 2,
+     "forced": 1,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -8,
+   -15,
+   -21,
+   -24,
+   14,
+   26,
+   22,
+   28,
+   32,
+   43,
+   41,
+   35,
+   100,
+   97,
+   588,
+   581,
+   605,
+   620,
+   654,
+   575,
+   619,
+   525,
+   673,
+   770,
+   1121,
+   9981,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "b1d2",
+   "a5b3",
+   "a2b3",
+   "e8g8",
+   "d3d4",
+   "g4f6",
+   "b3b4",
+   "c8b7",
+   "d3d4",
+   "e5d4",
+   "d1d4",
+   "e8g8",
+   "d4f5",
+   "d7f5",
+   "f5g7",
+   "e8f8",
+   "c1h6",
+   "f8g8",
+   "g7f5",
+   "f8g8",
+   "d1f3",
+   "d8e7",
+   "g2h3",
+   "d8e7",
+   "d1e2",
+   "e7g5",
+   "e2e7",
+   "b5b4",
+   "h5f6",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:25:17Z"
+}

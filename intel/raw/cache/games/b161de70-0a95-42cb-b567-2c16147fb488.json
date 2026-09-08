@@ -1,0 +1,146 @@
+{
+ "game": "b161de70-0a95-42cb-b567-2c16147fb488",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"20\"]\n[White \"Dogwarts\"]\n[Black \"beacon\"]\n[Result \"0-1\"]\n[FEN \"r1bq1rk1/ppp1bppp/2np1n2/4p3/P1B1P3/2PP1N2/1P3PPP/RNBQ1RK1 b - - 0 7\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n7... d5 { [%clk 0:01:54.926] } 8. Qc2 { [%clk 0:02:00.499] } 8... dxc4 { [%clk 0:01:52.83] } 9. Ra3 { [%clk 0:02:00.997] } 9... cxd3 { [%clk 0:01:50.786] } 10. Bg5 { [%clk 0:02:01.496] } 10... dxc2 { [%clk 0:01:48.762] } 11. b3 { [%clk 0:02:01.995] } 11... Nxe4 { [%clk 0:01:46.788] } 12. Re1 { [%clk 0:02:02.494] } 12... Bg4 { [%clk 0:01:44.832] } 13. Rd1 { [%clk 0:02:02.993] } 13... cxd1=Q+ { [%clk 0:01:45.295] } 14. Ne1 { [%clk 0:02:03.492] } 14... Qxe1# { [%clk 0:01:45.791] } 0-1\n",
+ "opening": "Two Knights Defence",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 20\u00b7Final",
+ "white_uuid": "81dca41d-b715-4c1f-928e-a0100a7a7df6",
+ "black_uuid": "0790dc24-a593-438d-bd06-d0dc6c67c523",
+ "site_verdicts": [
+  [
+   "d5",
+   "good"
+  ],
+  [
+   "Qc2",
+   "blunder"
+  ],
+  [
+   "dxc4",
+   "best"
+  ],
+  [
+   "Ra3",
+   "inaccuracy"
+  ],
+  [
+   "cxd3",
+   "best"
+  ],
+  [
+   "Bg5",
+   "good"
+  ],
+  [
+   "dxc2",
+   "best"
+  ],
+  [
+   "b3",
+   "excellent"
+  ],
+  [
+   "Nxe4",
+   "excellent"
+  ],
+  [
+   "Re1",
+   "excellent"
+  ],
+  [
+   "Bg4",
+   "excellent"
+  ],
+  [
+   "Rd1",
+   "inaccuracy"
+  ],
+  [
+   "cxd1=Q+",
+   "excellent"
+  ],
+  [
+   "Ne1",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "72o",
+    "accuracy": 69.9,
+    "acpl": 389,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 2,
+     "good": 1,
+     "forced": 1,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "beacon",
+    "accuracy": 98.3,
+    "acpl": 53,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 3,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   25,
+   72,
+   -540,
+   -541,
+   -756,
+   -742,
+   -1156,
+   -1162,
+   -1408,
+   -1326,
+   -1563,
+   -1281,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "c8e6",
+   "e4d5",
+   "d5c4",
+   "d3c4",
+   "c4d3",
+   "c2d1",
+   "d3c2",
+   "a3a1",
+   "c2b1q",
+   "a3a1",
+   "e7g5",
+   "a3a1",
+   "d8d1",
+   "f3e1",
+   "d1e1",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:55:14Z"
+}

@@ -1,0 +1,116 @@
+Snapshot 2026-09-07 11:11 - top 12 (P = provisional: <6 games on the current build)
+  1 AlphaFish           2643P   27-6-2  last R48
+  2 test_bot            2493    21-7-7  last R48
+  3 Anchoa              2472P   22-9-7  last R48
+  4 SoberElwood         2439P  22-10-7  last R48
+  5 Capablanca          2420P   26-7-8  last R48
+  6 checkers            2381P 24-11-10  last R48
+  7 AI Fellow           2342P   23-9-6  last R48
+  8 Patzer 1.3          2336P  24-10-6  last R48
+  9 Dark Sister         2311P 20-10-13  last R48
+ 10 stockfih            2295   17-5-13  last R48
+ 11 Astral              2275P  21-7-14  last R48
+ 12 ms                  2250P  24-7-11  last R48
+Rounds rated since the last snapshot (2026-09-07 10:12): R48; latest rated round R48
+Jumps >= 80 in one round from R31 (likely new uploads): AlphaFish R48 -106->2643; Capablanca R47 +95->2434; stockfih R44 +88->2210; stockfih R43 +95->2122; Anchoa R41 +81->2423; stockfih R41 +81->1971; Anchoa R40 +89->2342; SoberElwood R39 +85->2368; Astral R39 +82->2108; Astral R38 +116->2026; Anchoa R37 -126->2233; SoberElwood R37 -112->2285; stockfih R36 +94->1912; Astral R36 +112->1913; Astral R35 +86->1801; AlphaFish R34 +98->2576; test_bot R34 +91->2267; Dark Sister R34 +82->2001; Astral R32 +89->1670; stockfih R31 +81->1891; Astral R31 -118->1581
+
+BINI Alpha (Opus Carlsen): rank 33, rating 2013P, 14-3-5; games since R31 (clk@20/40/60 = our clock in s after own moves 20/40/60; grades = site tags best/exc/good/inacc/mist/miss/blund on own moves):
+  (11 earlier games since R31 omitted; all are in intel/raw/BINI_Alpha.scrape.json)
+  R42 B vs multi milliona (#44,1947) DRAW threefold_re 152mv 1.2s/mv clk@20/40/60 101/77/56 end 20s  us 57/89/6/0/0/0/0 them 63/82/5/0/0/0/0  Petroff Defence
+      drawn: repetition with material +0 (level)
+  R43 W vs Pershore-4     (#68,1839) DRAW threefold_re  19mv 1.7s/mv clk@20/40/60 -/-/- end 98s  us 13/1/2/0/2/0/0 them 16/2/1/0/0/0/0  Sicilian Najdorf
+      drawn: repetition with material -9 (while behind), 2 site-tagged errors
+  R44 W vs Imperial Larpe (#89,1769) WIN  checkmate     36mv 1.3s/mv clk@20/40/60 98/-/- end 90s  us 28/4/2/1/0/0/0 them 16/11/5/1/0/0/0  Caro-Kann Advance
+  R45 B vs Blundermaster  (#77,1808) WIN  checkmate     52mv 1.2s/mv clk@20/40/60 104/82/- end 84s  us 30/17/4/0/0/0/0 them 19/22/4/4/0/0/0  French Advance
+  R46 B vs BlunderGPT v2  (#59,1865) WIN  checkmate     48mv 1.3s/mv clk@20/40/60 97/80/- end 80s  us 36/8/2/1/0/0/0 them 27/9/7/2/1/0/0  Petroff Defence
+      FLAG: first move took 1.3 s: old-build clock profile?; 80 s still unused at move 40
+  R47 W vs warriors of ac (#94,1748) WIN  checkmate     55mv 1.4s/mv clk@20/40/60 96/78/- end 70s  us 28/24/1/1/0/0/0 them 26/18/7/2/0/0/0  Queen's Indian Defence
+      FLAG: 78 s still unused at move 40
+  R48 B vs TMS            (#52,1897) WIN  checkmate     34mv 2.4s/mv clk@20/40/60 69/-/- end 56s  us 26/4/1/2/0/0/0 them 16/4/5/5/1/0/0  Sicilian Sveshnikov
+      FLAG: first move took 2.3 s: old-build clock profile?
+  R49 vs BitsEntangled: page not final yet
+
+----- ladder movement (whole leaderboard) -----
+LADDER MOVEMENT across all 355 teams (latest rated round R48; rating-by-round from 312 team pages)
+  Biggest gains over the last round:
+    +195  jordan-belfort       #168 1380 -> 1575P   14-3-19 Cambridge   , rank 217 -> 168
+    +188  Seelie               #126 1474 -> 1662P   19-2-17 QMUL        , rank 158 -> 126
+    +188  Andrew Tate          #236 1254 -> 1442P     5-4-9 Mixed       , rank 272 -> 236
+    +167  Quant Larper         #62  1689 -> 1856P    11-2-9 Warwick     , rank 82 -> 62
+    +159  Tunir                #188 1371 -> 1530P   14-2-15 Imperial    , rank 229 -> 188
+    +150  meowbot              #215 1328 -> 1478P    8-8-12 West London , rank 260 -> 215
+    +142  ASD                  #172 1430 -> 1572P    11-2-9 UCL         , rank 186 -> 172
+    +138  Keresight            #93  1612 -> 1750P   22-2-19 Imperial    , rank 108 -> 93
+  Biggest falls over the last round: 72o -373 (#227); Blundermaster -334 (#278); Blunderbuss -318 (#165); Pwn -288 (#134)
+  Biggest gains over the last three rounds:
+    +195  jordan-belfort       #168 1380 -> 1575P   14-3-19 Cambridge   , rank 243 -> 168
+    +188  Seelie               #126 1474 -> 1662P   19-2-17 QMUL        , rank 170 -> 126
+    +188  Andrew Tate          #236 1254 -> 1442P     5-4-9 Mixed       , rank 316 -> 236
+    +175  ms                   #12  2075 -> 2250P   24-7-11 Imperial    , rank 23 -> 12
+    +167  Quant Larper         #62  1689 -> 1856P    11-2-9 Warwick     , rank 109 -> 62
+    +161  Mite                 #15  2050 -> 2211P    12-3-5 Imperial    , rank 16 -> 15
+    +159  Tunir                #188 1371 -> 1530P   14-2-15 Imperial    , rank 251 -> 188
+    +150  meowbot              #215 1328 -> 1478P    8-8-12 West London , rank 294 -> 215
+  Biggest gains since R30 (yesterday's close):
+    +748  BINI Alpha (us)      #33  1265 -> 2013P    14-3-5 Exeter      , rank 76 -> 33
+    +691  Mite                 #15  1520 -> 2211P    12-3-5 Imperial    , rank 48 -> 15
+    +576  Astral               #11  1699 -> 2275P   21-7-14 Imperial    , rank 18 -> 11
+    +565  Edward               #75  1260 -> 1825P    13-2-7 Sussex      , rank 118 -> 75
+    +518  cory                 #23  1572 -> 2090P    11-2-6 Imperial    , rank 47 -> 23
+    +485  stockfih             #10  1810 -> 2295    17-5-13 Mixed       , rank 34 -> 10
+    +462  Team7347             #183 1086 -> 1548    16-4-18 Mixed       , rank 222 -> 183
+    +457  PSL God Matt Bomer   #14  1759 -> 2216P    15-5-5 Mixed       , rank 25 -> 14
+  Provisional (fresh upload, <6 games on the build): 49 of the top 100, first 20 by rank: AlphaFish (#1), Anchoa (#3), SoberElwood (#4), Capablanca (#5), checkers (#6), AI Fellow (#7), Patzer 1.3 (#8), Dark Sister (#9), Astral (#11), ms (#12), Loss Preventer (#13), PSL God Matt Bom (#14), Mite (#15), Mate in One (#16), Cornelius (#18), make_no_mistakes (#19), Poincare (#20), cory (#23), RMFE (#28), TensorTortoise (#29), and 29 more
+  New on the ladder since the previous snapshot: Bane v2.1 (#169, 1574), Zugzwang (#203, 1499), CookieMonster (#245, 1426)
+  Climbing a lot (50+ over the last three rounds or 100+ since R30), 106 teams: Team7347 #183 (+462), Poincare #20 (+439), Challenger #35 (+436), Ultron #48 (+414), Artemis #129 (+301), Cornelius #18 (+298), The Pawnisher #83 (+278), AI Fellow #7 (+276), dattebayo #61 (+272), Asmit Agrawal #32 (+247), Pershore-4 #68 (+243), 3D #91 (+243), BlunderGPT v2 #59 (+235), Patzer 1.3 #8 (+223), None #107 (+222), Sirloin v3 #84 (+221), TensorTortoise #29 (+220), Milkyway #214 (+220), AlphaFish #1 (+217), Magnus #81 (+217), xx #31 (+207), Vanish Onigiri #156 (+207), SoberElwood #4 (+201), DolphinBot #24 (+200), Magnus Claudeson #26 (+200), jordan-belfort #168 (+195), Seelie #126 (+188), Andrew Tate #236 (+188), ms #12 (+175), Falcon #38 (+174), and 76 more
+  Details on the climbers (10 teams: the top 5 of the last three rounds, then the biggest of those climbing a lot, at most 10):
+  jordan-belfort (team Wolves of Silver Street, Cambridge): rank 168, 1575P, 14-3-19, entered R1 at 1502
+    rating by round: R43 1290, R44 1393, R45 1474, R46 1414, R47 1467, R48 1575
+    R48 W vs team (#231, 1448): win by checkmate, 125 plies, ACPL 98 vs 144, 2.3 s/move, end 10 s, Catalan Opening
+    R47 W vs Blunderbot (#254, 1411): win by checkmate, 56 plies, ACPL 11 vs 66, 2.3 s/move, end 71 s, Ruy Lopez, Closed
+    R46 W vs John Chess (#170, 1573): loss by checkmate, 58 plies, ACPL 74 vs 42, 2.6 s/move, end 60 s, Catalan Opening
+  Seelie (team NotGothamChess, QMUL): rank 126, 1662P, 19-2-17, entered R1 at 1571
+    rating by round: R43 1552, R44 1555, R45 1592, R46 1662, R47 1588, R48 1662
+    R48 W vs SahMatik (#171, 1572): win by checkmate, 98 plies, ACPL 18 vs 66, 2.6 s/move, end 17 s, Nimzo-Indian Defence
+    R47 B vs FERB (#105, 1711): loss by checkmate, 76 plies, ACPL 63 vs 42, 3.0 s/move, end 26 s, Sicilian Sveshnikov
+    R46 W vs KingSac (#195, 1518): win by checkmate, 103 plies, ACPL 34 vs 61, 2.5 s/move, end 14 s, Petroff Defence
+  Andrew Tate (team bentheboss1236, Mixed): rank 236, 1442P, 5-4-9, entered R31 at 1428
+    rating by round: R43 1088, R44 1182, R45 1179, R46 1291, R47 1358, R48 1442
+    R48 B vs Shashwat (#279, 1349): win by checkmate, 55 plies, ACPL 42 vs 79, 3.8 s/move, end 27 s, Ruy Lopez, Closed
+    R47 W vs Alpha (#305, 1288): win by checkmate, 66 plies, ACPL 18 vs 78, 3.3 s/move, end 29 s, Sicilian Taimanov
+    R46 W vs botlobby (#336, 1165): win by checkmate, 33 plies, ACPL 19 vs 150, 4.4 s/move, end 53 s, Catalan Opening
+  ms (team ms, Imperial): rank 12, 2250P, 24-7-11, entered R1 at 1571
+    rating by round: R43 2108, R44 2087, R45 2075, R46 2137, R47 2194, R48 2250
+    R49 B vs omega3 fish: live (page not final)
+    R48 W vs cory (#23, 2090): win by checkmate, 81 plies, ACPL 27 vs 67, 2.6 s/move, end 33 s, English Symmetrical
+    R47 B vs Cornelius (#18, 2169): win by checkmate, 132 plies, ACPL 9 vs 17, 2.1 s/move, end 14 s, Ruy Lopez, Closed
+  Quant Larper (team Quant Larper, Warwick): rank 62, 1856P, 11-2-9, entered R25 at 1592
+    rating by round: R43 1728, R44 1687, R45 1595, R46 1703, R47 1791, R48 1856
+    R48 B vs Yumo (#109, 1698): win by checkmate, 119 plies, ACPL 23 vs 52, 2.3 s/move, end 13 s, Sicilian Taimanov
+    R47 W vs The Castle Gambi (#106, 1703): win by checkmate, 130 plies, ACPL 21 vs 43, 2.2 s/move, end 11 s, French Tarrasch
+    R46 W vs OatMilk (#173, 1568): win by checkmate, 138 plies, ACPL 23 vs 47, 2.1 s/move, end 11 s, English Symmetrical
+  Team7347 (team Team7347, Mixed): rank 183, 1548, 16-4-18, entered R1 at 1425
+    rating by round: R43 1493, R44 1516, R45 1510, R46 1531, R47 1528, R48 1548
+    R48 W vs Zagreus 2.3.1 (#191, 1527): win by checkmate, 78 plies, ACPL 47 vs 107, 2.8 s/move, end 32 s, Sicilian Sveshnikov
+    R47 B vs Windarov (#176, 1562): draw by threefold_re, 63 plies, ACPL 28 vs 26, 3.3 s/move, end 34 s, London System
+    R46 B vs fischer (#222, 1466): win by checkmate, 78 plies, ACPL 27 vs 79, 2.8 s/move, end 30 s, Catalan Opening
+  Poincare (team Gladiator, Hertfordshire): rank 20, 2143P, 11-7-4, entered R27 at 1429
+    rating by round: R43 2104, R44 2144, R45 2234, R46 2241, R47 2132, R48 2143
+    R49 B vs make_no_mistakes (#19, 2158): win by checkmate, 111 plies, ACPL 10 vs 44, 1.6 s/move, end 57 s, Sicilian Najdorf
+    R48 B vs lyra (#21, 2110): draw by threefold_re, 88 plies, ACPL 8 vs 6, 1.9 s/move, end 60 s, Sicilian Classical
+    R47 W vs stockfih (#10, 2295): loss by checkmate, 153 plies, ACPL 35 vs 11, 1.6 s/move, end 38 s, Nimzo-Indian Defence
+  Challenger (team Stonkfish, Warwick): rank 35, 2012, 23-5-17, entered R1 at 1575
+    rating by round: R43 1982, R44 1966, R45 1972, R46 1987, R47 1993, R48 2012
+    R49 W vs zak (#36, 2006): draw by threefold_re, 70 plies, ACPL 14 vs 15, 2.5 s/move, end 50 s, Two Knights Defence
+    R48 W vs Falcon (#38, 1971): win by checkmate, 92 plies, ACPL 11 vs 55, 2.1 s/move, end 44 s, Sicilian Closed
+    R47 B vs ChessML (#39, 1968): draw by insufficient, 105 plies, ACPL 4 vs 6, 2.1 s/move, end 33 s, Dutch Stonewall
+  Ultron (team DGS ELO, Mixed): rank 48, 1942, 19-7-15, entered R1 at 1502
+    rating by round: R43 1936, R44 1939, R45 1941, R46 1936, R47 1921, R48 1942
+    R48 W vs Viego (#54, 1885): win by checkmate, 96 plies, ACPL 5 vs 76, 2.6 s/move, end 19 s, Grunfeld Defence
+    R47 B vs Good Morning (#45, 1945): loss by checkmate, 94 plies, ACPL 82 vs 25, 2.7 s/move, end 16 s, Queen's Indian Defence
+    R46 B vs cory (#23, 2090): loss by checkmate, 128 plies, ACPL 25 vs 10, 2.2 s/move, end 9 s, Semi-Slav Defence
+  Artemis (team Rudra, Cambridge): rank 129, 1658, 15-7-18, entered R1 at 1571
+    rating by round: R43 1696, R44 1675, R45 1678, R46 1696, R47 1682, R48 1658
+    R48 B vs Zagreus 5.0 (#115, 1686): loss by checkmate, 180 plies, ACPL 35 vs 18, 1.7 s/move, end 9 s, Italian Game
+    R47 W vs Talos (#70, 1830): loss by checkmate, 74 plies, ACPL 82 vs 39, 2.9 s/move, end 33 s, Catalan Opening
+    R46 B vs bitterbot (#209, 1490): win by checkmate, 117 plies, ACPL 22 vs 59, 2.2 s/move, end 18 s, Queen's Gambit Accepted

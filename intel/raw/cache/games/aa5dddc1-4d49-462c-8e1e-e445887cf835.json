@@ -1,0 +1,152 @@
+{
+ "game": "aa5dddc1-4d49-462c-8e1e-e445887cf835",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"12\"]\n[White \"Elbow Grease\"]\n[Black \"HighestElo\"]\n[Result \"1-0\"]\n[FEN \"rnbqk2r/pp2nppp/4p3/2ppP3/3P4/P1P5/2P2PPP/1RBQKBNR b Kkq - 2 7\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n7... b6 { [%clk 0:01:54.54] } 8. Nf3 { [%clk 0:01:55.482] } 8... O-O { [%clk 0:01:50.48] } 9. Bd3 { [%clk 0:01:51.131] } 9... h6 { [%clk 0:01:43.153] } 10. Ng5 { [%clk 0:01:46.942] } 10... hxg5 { [%clk 0:01:40.188] } 11. Bxg5 { [%clk 0:01:42.925] } 11... Nbc6 { [%clk 0:01:35.732] } 12. Qh5 { [%clk 0:01:39.058] } 12... g6 { [%clk 0:01:33.99] } 13. Qh4 { [%clk 0:01:35.346] } 13... c4 { [%clk 0:01:31.685] } 14. Bf6 { [%clk 0:01:35.814] } 14... cxd3 { [%clk 0:01:32.022] } 15. Qh8# { [%clk 0:01:36.303] } 1-0\n",
+ "opening": "French Winawer",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 12\u00b7Final",
+ "white_uuid": "5413ad8a-a0f1-4379-90c1-281f5c365fb7",
+ "black_uuid": "833051b0-31db-4404-af8b-6147044a66b9",
+ "site_verdicts": [
+  [
+   "b6",
+   "good"
+  ],
+  [
+   "Nf3",
+   "inaccuracy"
+  ],
+  [
+   "O-O",
+   "inaccuracy"
+  ],
+  [
+   "Bd3",
+   "inaccuracy"
+  ],
+  [
+   "h6",
+   "best"
+  ],
+  [
+   "Ng5",
+   "inaccuracy"
+  ],
+  [
+   "hxg5",
+   "good"
+  ],
+  [
+   "Bxg5",
+   "mistake"
+  ],
+  [
+   "Nbc6",
+   "blunder"
+  ],
+  [
+   "Qh5",
+   "best"
+  ],
+  [
+   "g6",
+   "blunder"
+  ],
+  [
+   "Qh4",
+   "inaccuracy"
+  ],
+  [
+   "c4",
+   "blunder"
+  ],
+  [
+   "Bf6",
+   "best"
+  ],
+  [
+   "cxd3",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Sirloin v3",
+    "accuracy": 78.1,
+    "acpl": 68,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 0,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 4,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Winnerz",
+    "accuracy": 59.7,
+    "acpl": 228,
+    "tally": {
+     "brilliant": 0,
+     "best": 1,
+     "excellent": 1,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 3
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   38,
+   67,
+   -1,
+   103,
+   24,
+   25,
+   -48,
+   0,
+   -148,
+   177,
+   168,
+   486,
+   317,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "d8a5",
+   "d1g4",
+   "c8a6",
+   "h2h4",
+   "h7h6",
+   "h2h4",
+   "c8a6",
+   "d1h5",
+   "c8a6",
+   "d1h5",
+   "f7f5",
+   "h5h6",
+   "f7f6",
+   "g5f6",
+   "b6b5",
+   "h4h8",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:23:20Z"
+}

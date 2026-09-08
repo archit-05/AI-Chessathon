@@ -1,0 +1,164 @@
+{
+ "game": "a622e890-e31f-432f-8082-6bfd155875f9",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"2\"]\n[White \"mangodogo\"]\n[Black \"Team7347\"]\n[Result \"1-0\"]\n[FEN \"rnbq1rk1/pp2ppbp/3p1np1/8/3NP3/2N1B2P/PPPQ1PP1/R3KB1R b KQ - 4 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8... Nbd7 { [%clk 0:02:00.474] } 9. f3 { [%clk 0:02:00.47] } 9... Nc5 { [%clk 0:02:00.953] } 10. O-O-O { [%clk 0:02:00.95] } 10... Ncd7 { [%clk 0:02:01.432] } 11. g4 { [%clk 0:02:01.412] } 11... Ne8 { [%clk 0:02:01.928] } 12. h4 { [%clk 0:02:01.884] } 12... Bxd4 { [%clk 0:02:02.42] } 13. Bxd4 { [%clk 0:02:02.361] } 13... Nc7 { [%clk 0:02:02.918] } 14. h5 { [%clk 0:02:02.835] } 14... Ne8 { [%clk 0:02:03.409] } 15. hxg6 { [%clk 0:02:03.305] } 15... Nc7 { [%clk 0:02:03.903] } 16. Qh6 { [%clk 0:02:03.785] } 16... Ne8 { [%clk 0:02:04.401] } 17. Qxh7# { [%clk 0:02:04.264] } 1-0\n",
+ "opening": "Sicilian Dragon",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 2\u00b7Final",
+ "white_uuid": "1eabeb57-6e3c-46bd-902b-e3b7b5aacc73",
+ "black_uuid": "1f20a852-ae0c-44f5-aed7-8be8a5e699b0",
+ "site_verdicts": [
+  [
+   "Nbd7",
+   "inaccuracy"
+  ],
+  [
+   "f3",
+   "good"
+  ],
+  [
+   "Nc5",
+   "inaccuracy"
+  ],
+  [
+   "O-O-O",
+   "excellent"
+  ],
+  [
+   "Ncd7",
+   "inaccuracy"
+  ],
+  [
+   "g4",
+   "excellent"
+  ],
+  [
+   "Ne8",
+   "inaccuracy"
+  ],
+  [
+   "h4",
+   "best"
+  ],
+  [
+   "Bxd4",
+   "inaccuracy"
+  ],
+  [
+   "Bxd4",
+   "best"
+  ],
+  [
+   "Nc7",
+   "good"
+  ],
+  [
+   "h5",
+   "best"
+  ],
+  [
+   "Ne8",
+   "inaccuracy"
+  ],
+  [
+   "hxg6",
+   "best"
+  ],
+  [
+   "Nc7",
+   "mistake"
+  ],
+  [
+   "Qh6",
+   "excellent"
+  ],
+  [
+   "Ne8",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "dog",
+    "accuracy": 98.3,
+    "acpl": 8,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 4,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Team7347",
+    "accuracy": 80.0,
+    "acpl": 201,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 1,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 6,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   4,
+   97,
+   44,
+   117,
+   114,
+   182,
+   205,
+   296,
+   285,
+   391,
+   383,
+   444,
+   478,
+   792,
+   987,
+   9999,
+   9998,
+   9999,
+   10000
+  ],
+  "best": [
+   "d6d5",
+   "e1c1",
+   "d6d5",
+   "g2g4",
+   "c8d7",
+   "c1b1",
+   "d6d5",
+   "h3h4",
+   "d7b6",
+   "e3d4",
+   "e7e5",
+   "h4h5",
+   "e7e5",
+   "h5g6",
+   "e7e5",
+   "g6h7",
+   "d7f6",
+   "g6h7",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:03:26Z"
+}

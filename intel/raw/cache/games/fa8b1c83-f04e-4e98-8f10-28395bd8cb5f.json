@@ -1,0 +1,230 @@
+{
+ "game": "fa8b1c83-f04e-4e98-8f10-28395bd8cb5f",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"8\"]\n[White \"Greedy Material\"]\n[Black \"Team Keble\"]\n[Result \"0-1\"]\n[FEN \"r1bq1rk1/pp1pppbp/2n2np1/2p5/2PP4/2N2NP1/PP2PPBP/R1BQ1RK1 b - - 0 7\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n7... Qa5 { [%clk 0:02:00.376] } 8. dxc5 { [%clk 0:02:00.498] } 8... Qxc5 { [%clk 0:02:00.65] } 9. Qxd7 { [%clk 0:02:00.996] } 9... Bxd7 { [%clk 0:02:01.049] } 10. a4 { [%clk 0:02:01.493] } 10... Qxc4 { [%clk 0:02:01.311] } 11. Nh4 { [%clk 0:02:01.99] } 11... Nd8 { [%clk 0:02:01.529] } 12. Bxb7 { [%clk 0:02:02.487] } 12... Nxb7 { [%clk 0:02:01.922] } 13. Nxg6 { [%clk 0:02:02.985] } 13... hxg6 { [%clk 0:02:02.229] } 14. Na2 { [%clk 0:02:03.483] } 14... Qxe2 { [%clk 0:02:02.547] } 15. Re1 { [%clk 0:02:03.978] } 15... Qxe1+ { [%clk 0:02:02.713] } 16. Kg2 { [%clk 0:02:04.476] } 16... Bxa4 { [%clk 0:02:03.049] } 17. Nc3 { [%clk 0:02:04.973] } 17... Be8 { [%clk 0:02:03.387] } 18. Rxa7 { [%clk 0:02:05.471] } 18... Rxa7 { [%clk 0:02:03.823] } 19. Bf4 { [%clk 0:02:05.969] } 19... Kh8 { [%clk 0:02:04.239] } 20. Kf3 { [%clk 0:02:06.467] } 20... Bc6+ { [%clk 0:02:04.661] } 21. Nd5 { [%clk 0:02:06.965] } 21... Bxd5# { [%clk 0:02:04.919] } 0-1\n",
+ "opening": "English Symmetrical",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 8\u00b7Final",
+ "white_uuid": "d9a19162-7480-4e54-bcd6-e2176df533fd",
+ "black_uuid": "321c728a-c198-4749-a1ec-2ba5754ab033",
+ "site_verdicts": [
+  [
+   "Qa5",
+   "inaccuracy"
+  ],
+  [
+   "dxc5",
+   "mistake"
+  ],
+  [
+   "Qxc5",
+   "best"
+  ],
+  [
+   "Qxd7",
+   "blunder"
+  ],
+  [
+   "Bxd7",
+   "best"
+  ],
+  [
+   "a4",
+   "excellent"
+  ],
+  [
+   "Qxc4",
+   "excellent"
+  ],
+  [
+   "Nh4",
+   "excellent"
+  ],
+  [
+   "Nd8",
+   "excellent"
+  ],
+  [
+   "Bxb7",
+   "good"
+  ],
+  [
+   "Nxb7",
+   "best"
+  ],
+  [
+   "Nxg6",
+   "excellent"
+  ],
+  [
+   "hxg6",
+   "excellent"
+  ],
+  [
+   "Na2",
+   "excellent"
+  ],
+  [
+   "Qxe2",
+   "best"
+  ],
+  [
+   "Re1",
+   "inaccuracy"
+  ],
+  [
+   "Qxe1+",
+   "best"
+  ],
+  [
+   "Kg2",
+   "forced"
+  ],
+  [
+   "Bxa4",
+   "miss"
+  ],
+  [
+   "Nc3",
+   "inaccuracy"
+  ],
+  [
+   "Be8",
+   "miss"
+  ],
+  [
+   "Rxa7",
+   "inaccuracy"
+  ],
+  [
+   "Rxa7",
+   "excellent"
+  ],
+  [
+   "Bf4",
+   "excellent"
+  ],
+  [
+   "Kh8",
+   "excellent"
+  ],
+  [
+   "Kf3",
+   "excellent"
+  ],
+  [
+   "Bc6+",
+   "best"
+  ],
+  [
+   "Nd5",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Greedy Material",
+    "accuracy": 76.7,
+    "acpl": 332,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 7,
+     "good": 1,
+     "forced": 1,
+     "inaccuracy": 3,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "dinosaur",
+    "accuracy": 97.2,
+    "acpl": 147,
+    "tally": {
+     "brilliant": 0,
+     "best": 7,
+     "excellent": 5,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 2,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   38,
+   147,
+   32,
+   40,
+   -716,
+   -715,
+   -742,
+   -733,
+   -768,
+   -724,
+   -952,
+   -943,
+   -1115,
+   -1112,
+   -1408,
+   -1481,
+   -9995,
+   -9996,
+   -9996,
+   -1636,
+   -9992,
+   -1645,
+   -9992,
+   -9985,
+   -9993,
+   -9984,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "d7d6",
+   "d4d5",
+   "a5c5",
+   "b2b3",
+   "c8d7",
+   "c1f4",
+   "f8d8",
+   "c1f4",
+   "h7h6",
+   "f1d1",
+   "d8b7",
+   "c1g5",
+   "f7g6",
+   "c1g5",
+   "c4e2",
+   "a2c3",
+   "e2e1",
+   "g1g2",
+   "e1e4",
+   "a2b4",
+   "a4c6",
+   "a1a6",
+   "e8c6",
+   "f2f3",
+   "e8c6",
+   "f4c1",
+   "e8c6",
+   "c3e4",
+   "c6d5",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:36:51Z"
+}

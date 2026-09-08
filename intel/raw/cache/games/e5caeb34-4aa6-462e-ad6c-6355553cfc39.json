@@ -1,0 +1,182 @@
+{
+ "game": "e5caeb34-4aa6-462e-ad6c-6355553cfc39",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.08\"]\n[Round \"67\"]\n[White \"Ryan Vincent\"]\n[Black \"Gijs Smit\"]\n[Result \"1/2-1/2\"]\n[FEN \"rnbq1rk1/pp2ppbp/3p1np1/8/3NP3/2N1B2P/PPPQ1PP1/R3KB1R b KQ - 4 8\"]\n[SetUp \"1\"]\n[Termination \"threefold_repetition\"]\n\n8... d5 { [%clk 0:01:58.351] } 9. exd5 { [%clk 0:02:00.498] } 9... Nxd5 { [%clk 0:01:56.749] } 10. O-O-O { [%clk 0:02:00.995] } 10... Nxe3 { [%clk 0:01:54.694] } 11. Qxe3 { [%clk 0:02:01.493] } 11... Qa5 { [%clk 0:01:50.518] } 12. Qxe7 { [%clk 0:02:01.991] } 12... Nc6 { [%clk 0:01:48.324] } 13. Nb3 { [%clk 0:02:02.488] } 13... Qf5 { [%clk 0:01:45.614] } 14. Qh4 { [%clk 0:02:02.986] } 14... Bf6 { [%clk 0:01:44.531] } 15. Qg3 { [%clk 0:02:03.484] } 15... Be5 { [%clk 0:01:42.607] } 16. Qh4 { [%clk 0:02:03.982] } 16... Bf6 { [%clk 0:01:40.598] } 17. Qg3 { [%clk 0:01:58.997] } 17... Be5 { [%clk 0:01:36.737] } 18. Qh4 { [%clk 0:01:56.945] } 18... Bf6 { [%clk 0:01:33.716] } 1/2-1/2\n",
+ "opening": "Sicilian Dragon",
+ "termination_text": "Threefold repetition",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 67\u00b7Final",
+ "white_uuid": "8c22f2a5-3bce-4b66-b93a-8f4ab4318b0f",
+ "black_uuid": "3f0e0e44-cdce-485f-b5b6-3691e34f9f44",
+ "site_verdicts": [
+  [
+   "d5",
+   "best"
+  ],
+  [
+   "exd5",
+   "best"
+  ],
+  [
+   "Nxd5",
+   "best"
+  ],
+  [
+   "O-O-O",
+   "best"
+  ],
+  [
+   "Nxe3",
+   "best"
+  ],
+  [
+   "Qxe3",
+   "best"
+  ],
+  [
+   "Qa5",
+   "best"
+  ],
+  [
+   "Qxe7",
+   "best"
+  ],
+  [
+   "Nc6",
+   "best"
+  ],
+  [
+   "Nb3",
+   "best"
+  ],
+  [
+   "Qf5",
+   "best"
+  ],
+  [
+   "Qh4",
+   "excellent"
+  ],
+  [
+   "Bf6",
+   "best"
+  ],
+  [
+   "Qg3",
+   "best"
+  ],
+  [
+   "Be5",
+   "best"
+  ],
+  [
+   "Qh4",
+   "best"
+  ],
+  [
+   "Bf6",
+   "best"
+  ],
+  [
+   "Qg3",
+   "best"
+  ],
+  [
+   "Be5",
+   "best"
+  ],
+  [
+   "Qh4",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Mite",
+    "accuracy": 99.1,
+    "acpl": 3,
+    "tally": {
+     "brilliant": 0,
+     "great": 0,
+     "best": 9,
+     "excellent": 1,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Patzer 2.0",
+    "accuracy": 98.9,
+    "acpl": 3,
+    "tally": {
+     "brilliant": 0,
+     "great": 0,
+     "best": 11,
+     "excellent": 0,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   3,
+   26,
+   6,
+   5,
+   3,
+   0,
+   0,
+   14,
+   14,
+   14,
+   10,
+   7,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "best": [
+   "d6d5",
+   "e4d5",
+   "f6d5",
+   "e1c1",
+   "d5e3",
+   "d2e3",
+   "d8a5",
+   "e3e7",
+   "b8c6",
+   "d4b3",
+   "a5f5",
+   "e7c5",
+   "g7f6",
+   "h4g3",
+   "f6e5",
+   "g3h4",
+   "e5f6",
+   "h4g3",
+   "f6e5",
+   "g3h4",
+   "e5f6",
+   "h4g3"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-08T13:04:57Z"
+}

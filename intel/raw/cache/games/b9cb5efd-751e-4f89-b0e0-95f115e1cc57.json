@@ -1,0 +1,218 @@
+{
+ "game": "b9cb5efd-751e-4f89-b0e0-95f115e1cc57",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"9\"]\n[White \"3D\"]\n[Black \"while True: win()\"]\n[Result \"*\"]\n[FEN \"rn1qkb1r/pp2pppp/2p2nb1/8/3P1B2/5NN1/PPP2PPP/R2QKB1R b KQkq - 6 7\"]\n[SetUp \"1\"]\n[Termination \"unterminated\"]\n\n7... e6 { [%clk 0:01:55.185] } 8. Bd3 { [%clk 0:01:57.744] } 8... Be7 { [%clk 0:01:51.274] } 9. Bxg6 { [%clk 0:01:55.557] } 9... hxg6 { [%clk 0:01:46.576] } 10. O-O { [%clk 0:01:53.459] } 10... g5 { [%clk 0:01:42.671] } 11. Bxg5 { [%clk 0:01:51.453] } 11... Nbd7 { [%clk 0:01:38.106] } 12. Qd3 { [%clk 0:01:49.48] } 12... Qc7 { [%clk 0:01:34.496] } 13. Rfd1 { [%clk 0:01:47.564] } 13... O-O-O { [%clk 0:01:31.03] } 14. Qb3 { [%clk 0:01:45.702] } 14... Qb6 { [%clk 0:01:27.703] } 15. Qxb6 { [%clk 0:01:43.836] } 15... Nxb6 { [%clk 0:01:23.845] } 16. Ne5 { [%clk 0:01:42.012] } 16... Rhg8 { [%clk 0:01:20.804] } 17. Nxf7 { [%clk 0:01:40.202] } 17... Rd5 { [%clk 0:01:17.271] } 18. Ne5 { [%clk 0:01:38.409] } 18... Rdd8 { [%clk 0:01:14.494] } 19. Nf7 { [%clk 0:01:36.674] } 19... Rd5 { [%clk 0:01:11.828] } 20. Ne5 { [%clk 0:01:34.983] } 20... Rdd8 { [%clk 0:01:09.263] } *\n",
+ "opening": "Caro-Kann Classical",
+ "termination_text": "Unterminated",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 9\u00b7Void",
+ "white_uuid": "0d820bba-69c7-4a15-adfe-cd6c12c88292",
+ "black_uuid": "0065d170-1082-42d7-a4a3-af54b0df2019",
+ "site_verdicts": [
+  [
+   "e6",
+   "best"
+  ],
+  [
+   "Bd3",
+   "excellent"
+  ],
+  [
+   "Be7",
+   "excellent"
+  ],
+  [
+   "Bxg6",
+   "excellent"
+  ],
+  [
+   "hxg6",
+   "best"
+  ],
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "g5",
+   "blunder"
+  ],
+  [
+   "Bxg5",
+   "best"
+  ],
+  [
+   "Nbd7",
+   "excellent"
+  ],
+  [
+   "Qd3",
+   "good"
+  ],
+  [
+   "Qc7",
+   "good"
+  ],
+  [
+   "Rfd1",
+   "excellent"
+  ],
+  [
+   "O-O-O",
+   "good"
+  ],
+  [
+   "Qb3",
+   "good"
+  ],
+  [
+   "Qb6",
+   "excellent"
+  ],
+  [
+   "Qxb6",
+   "best"
+  ],
+  [
+   "Nxb6",
+   "best"
+  ],
+  [
+   "Ne5",
+   "excellent"
+  ],
+  [
+   "Rhg8",
+   "mistake"
+  ],
+  [
+   "Nxf7",
+   "best"
+  ],
+  [
+   "Rd5",
+   "best"
+  ],
+  [
+   "Ne5",
+   "excellent"
+  ],
+  [
+   "Rdd8",
+   "good"
+  ],
+  [
+   "Nf7",
+   "good"
+  ],
+  [
+   "Rd5",
+   "best"
+  ],
+  [
+   "Ne5",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "3D",
+    "accuracy": 95.4,
+    "acpl": 19,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 6,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Dr. Drunkenstein",
+    "accuracy": 86.0,
+    "acpl": 47,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 3,
+     "good": 4,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   18,
+   14,
+   -2,
+   13,
+   16,
+   11,
+   6,
+   189,
+   173,
+   184,
+   143,
+   172,
+   152,
+   193,
+   160,
+   181,
+   186,
+   193,
+   183,
+   393,
+   382,
+   394,
+   388,
+   450,
+   379,
+   395,
+   383,
+   429
+  ],
+  "best": [
+   "e7e6",
+   "f1e2",
+   "c6c5",
+   "e1g1",
+   "h7g6",
+   "e1g1",
+   "e8g8",
+   "f4g5",
+   "c6c5",
+   "d1e2",
+   "c6c5",
+   "c2c4",
+   "e8g8",
+   "c2c4",
+   "c6c5",
+   "b3b6",
+   "d7b6",
+   "b2b3",
+   "h8f8",
+   "e5f7",
+   "d8d5",
+   "h2h4",
+   "e7d6",
+   "h2h4",
+   "d8d5",
+   "b2b3",
+   "g8e8",
+   "e5f3"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:24:06Z"
+}

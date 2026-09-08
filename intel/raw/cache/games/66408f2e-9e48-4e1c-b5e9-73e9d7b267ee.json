@@ -1,0 +1,236 @@
+{
+ "game": "66408f2e-9e48-4e1c-b5e9-73e9d7b267ee",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.06\"]\n[Round \"32\"]\n[White \"neomatica\"]\n[Black \"Bblue\"]\n[Result \"1-0\"]\n[FEN \"r1bqk2r/pp2nppp/2n1p3/2ppP3/P2P4/2P2N2/2P2PPP/R1BQKB1R b KQkq - 2 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8... Qa5 { [%clk 0:01:59.719] } 9. Bd2 { [%clk 0:01:56.881] } 9... O-O { [%clk 0:01:58.747] } 10. h4 { [%clk 0:01:53.887] } 10... c4 { [%clk 0:01:57.863] } 11. g4 { [%clk 0:01:49.867] } 11... Bd7 { [%clk 0:01:57.346] } 12. Rb1 { [%clk 0:01:45.902] } 12... Rab8 { [%clk 0:01:57.17] } 13. h5 { [%clk 0:01:39.582] } 13... Qxa4 { [%clk 0:01:56.847] } 14. h6 { [%clk 0:01:32.555] } 14... g6 { [%clk 0:01:56.742] } 15. Ra1 { [%clk 0:01:26.892] } 15... Qb5 { [%clk 0:01:55.411] } 16. Ng5 { [%clk 0:01:21.363] } 16... a6 { [%clk 0:01:55.166] } 17. Qf3 { [%clk 0:01:14.969] } 17... Qb2 { [%clk 0:01:54.462] } 18. Qf6 { [%clk 0:01:11.739] } 18... Qxa1+ { [%clk 0:01:52.661] } 19. Ke2 { [%clk 0:01:12.081] } 19... Nf5 { [%clk 0:01:52.911] } 20. gxf5 { [%clk 0:01:12.542] } 20... Nxd4+ { [%clk 0:01:52.629] } 21. cxd4 { [%clk 0:01:13.029] } 21... Qe1+ { [%clk 0:01:51.432] } 22. Bxe1 { [%clk 0:01:13.52] } 22... Rbe8 { [%clk 0:01:49.489] } 23. Qg7# { [%clk 0:01:14.013] } 1-0\n",
+ "opening": "French Winawer",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 32\u00b7Final",
+ "white_uuid": "820cbf59-e775-4c97-97fe-36f494f0d676",
+ "black_uuid": "77dc3690-1297-446e-87ff-d99ea7146f7a",
+ "site_verdicts": [
+  [
+   "Qa5",
+   "best"
+  ],
+  [
+   "Bd2",
+   "best"
+  ],
+  [
+   "O-O",
+   "excellent"
+  ],
+  [
+   "h4",
+   "good"
+  ],
+  [
+   "c4",
+   "inaccuracy"
+  ],
+  [
+   "g4",
+   "good"
+  ],
+  [
+   "Bd7",
+   "mistake"
+  ],
+  [
+   "Rb1",
+   "mistake"
+  ],
+  [
+   "Rab8",
+   "inaccuracy"
+  ],
+  [
+   "h5",
+   "best"
+  ],
+  [
+   "Qxa4",
+   "inaccuracy"
+  ],
+  [
+   "h6",
+   "best"
+  ],
+  [
+   "g6",
+   "best"
+  ],
+  [
+   "Ra1",
+   "good"
+  ],
+  [
+   "Qb5",
+   "best"
+  ],
+  [
+   "Ng5",
+   "good"
+  ],
+  [
+   "a6",
+   "blunder"
+  ],
+  [
+   "Qf3",
+   "best"
+  ],
+  [
+   "Qb2",
+   "blunder"
+  ],
+  [
+   "Qf6",
+   "best"
+  ],
+  [
+   "Qxa1+",
+   "best"
+  ],
+  [
+   "Ke2",
+   "best"
+  ],
+  [
+   "Nf5",
+   "best"
+  ],
+  [
+   "gxf5",
+   "best"
+  ],
+  [
+   "Nxd4+",
+   "best"
+  ],
+  [
+   "cxd4",
+   "best"
+  ],
+  [
+   "Qe1+",
+   "excellent"
+  ],
+  [
+   "Bxe1",
+   "best"
+  ],
+  [
+   "Rbe8",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "neomatica",
+    "accuracy": 93.6,
+    "acpl": 21,
+    "tally": {
+     "brilliant": 0,
+     "best": 10,
+     "excellent": 0,
+     "good": 4,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Vibs",
+    "accuracy": 81.5,
+    "acpl": 110,
+    "tally": {
+     "brilliant": 0,
+     "best": 6,
+     "excellent": 3,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 3,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 2
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   44,
+   35,
+   37,
+   52,
+   19,
+   106,
+   61,
+   182,
+   34,
+   103,
+   108,
+   191,
+   200,
+   191,
+   164,
+   167,
+   112,
+   391,
+   388,
+   9994,
+   9995,
+   9995,
+   9996,
+   9996,
+   9997,
+   9997,
+   9998,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "d8a5",
+   "c1d2",
+   "h7h6",
+   "f1e2",
+   "f7f6",
+   "h4h5",
+   "f7f6",
+   "g4g5",
+   "f7f6",
+   "h4h5",
+   "f7f6",
+   "h5h6",
+   "g7g6",
+   "d2g5",
+   "a4b5",
+   "f1g2",
+   "f7f6",
+   "d1f3",
+   "f7f6",
+   "f3f6",
+   "b2a1",
+   "e1e2",
+   "e7f5",
+   "g4f5",
+   "c6d4",
+   "c3d4",
+   "a1d1",
+   "d2e1",
+   "c4c3",
+   "f6g7",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:51:45Z"
+}

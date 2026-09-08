@@ -1,0 +1,272 @@
+{
+ "game": "7d9b76b0-31ca-4939-a5e8-dc3a100f1c31",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"10\"]\n[White \"Blitz\"]\n[Black \"Egill40\"]\n[Result \"1-0\"]\n[FEN \"r1bqk2r/pp2ppbp/2np1np1/2p5/4P3/2NP1NP1/PPP2PBP/R1BQ1RK1 b kq - 3 7\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n7... Be6 { [%clk 0:01:58.998] } 8. Bf4 { [%clk 0:01:56.975] } 8... O-O { [%clk 0:01:57.996] } 9. d4 { [%clk 0:01:54.06] } 9... Bc4 { [%clk 0:01:56.994] } 10. Re1 { [%clk 0:01:51.135] } 10... Qb6 { [%clk 0:01:55.993] } 11. d5 { [%clk 0:01:48.226] } 11... Qxb2 { [%clk 0:01:54.991] } 12. Na4 { [%clk 0:01:45.3] } 12... Qa3 { [%clk 0:01:53.989] } 13. dxc6 { [%clk 0:01:42.273] } 13... Qxa4 { [%clk 0:01:52.987] } 14. cxb7 { [%clk 0:01:39.292] } 14... Rab8 { [%clk 0:01:51.985] } 15. e5 { [%clk 0:01:36.32] } 15... dxe5 { [%clk 0:01:50.984] } 16. Nxe5 { [%clk 0:01:33.371] } 16... Rfd8 { [%clk 0:01:49.982] } 17. Nd3 { [%clk 0:01:30.437] } 17... e5 { [%clk 0:01:48.98] } 18. Bxe5 { [%clk 0:01:27.468] } 18... Nh5 { [%clk 0:01:47.978] } 19. Bxb8 { [%clk 0:01:24.495] } 19... Bxa1 { [%clk 0:01:46.977] } 20. Bc7 { [%clk 0:01:21.538] } 20... Bxd3 { [%clk 0:01:45.975] } 21. Bxd8 { [%clk 0:01:18.598] } 21... Bxc2 { [%clk 0:01:44.973] } 22. Qxa1 { [%clk 0:01:15.673] } 22... Qb5 { [%clk 0:01:43.972] } 23. b8=Q { [%clk 0:01:12.675] } 23... f5 { [%clk 0:01:42.97] } 24. Be7+ { [%clk 0:01:12.919] } 24... Qxb8 { [%clk 0:01:41.968] } 25. Bd5# { [%clk 0:01:13.414] } 1-0\n",
+ "opening": "Sicilian Closed",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 10\u00b7Final",
+ "white_uuid": "7a6d3886-a870-4efe-a04f-1c38e695851e",
+ "black_uuid": "28cb7468-aa2c-4887-82d1-89ffafeeed5e",
+ "site_verdicts": [
+  [
+   "Be6",
+   "excellent"
+  ],
+  [
+   "Bf4",
+   "good"
+  ],
+  [
+   "O-O",
+   "good"
+  ],
+  [
+   "d4",
+   "blunder"
+  ],
+  [
+   "Bc4",
+   "blunder"
+  ],
+  [
+   "Re1",
+   "best"
+  ],
+  [
+   "Qb6",
+   "inaccuracy"
+  ],
+  [
+   "d5",
+   "best"
+  ],
+  [
+   "Qxb2",
+   "excellent"
+  ],
+  [
+   "Na4",
+   "mistake"
+  ],
+  [
+   "Qa3",
+   "best"
+  ],
+  [
+   "dxc6",
+   "best"
+  ],
+  [
+   "Qxa4",
+   "good"
+  ],
+  [
+   "cxb7",
+   "best"
+  ],
+  [
+   "Rab8",
+   "best"
+  ],
+  [
+   "e5",
+   "best"
+  ],
+  [
+   "dxe5",
+   "blunder"
+  ],
+  [
+   "Nxe5",
+   "best"
+  ],
+  [
+   "Rfd8",
+   "inaccuracy"
+  ],
+  [
+   "Nd3",
+   "good"
+  ],
+  [
+   "e5",
+   "inaccuracy"
+  ],
+  [
+   "Bxe5",
+   "best"
+  ],
+  [
+   "Nh5",
+   "inaccuracy"
+  ],
+  [
+   "Bxb8",
+   "best"
+  ],
+  [
+   "Bxa1",
+   "excellent"
+  ],
+  [
+   "Bc7",
+   "best"
+  ],
+  [
+   "Bxd3",
+   "good"
+  ],
+  [
+   "Bxd8",
+   "best"
+  ],
+  [
+   "Bxc2",
+   "excellent"
+  ],
+  [
+   "Qxa1",
+   "excellent"
+  ],
+  [
+   "Qb5",
+   "inaccuracy"
+  ],
+  [
+   "b8=Q",
+   "best"
+  ],
+  [
+   "f5",
+   "excellent"
+  ],
+  [
+   "Be7+",
+   "excellent"
+  ],
+  [
+   "Qxb8",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Blitz",
+    "accuracy": 91.9,
+    "acpl": 23,
+    "tally": {
+     "brilliant": 0,
+     "best": 12,
+     "excellent": 2,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "Chesser",
+    "accuracy": 82.7,
+    "acpl": 189,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 5,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 5,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 2
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -8,
+   5,
+   -18,
+   6,
+   -202,
+   -2,
+   -11,
+   53,
+   62,
+   60,
+   -55,
+   -75,
+   -43,
+   -16,
+   -30,
+   -22,
+   -22,
+   219,
+   212,
+   347,
+   310,
+   448,
+   473,
+   653,
+   667,
+   746,
+   742,
+   1039,
+   1144,
+   2224,
+   2391,
+   9995,
+   9996,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "e8g8",
+   "h2h3",
+   "d8c8",
+   "d1d2",
+   "c5d4",
+   "f1e1",
+   "c5d4",
+   "d4d5",
+   "c6d4",
+   "d5c6",
+   "b2a3",
+   "d5c6",
+   "b7c6",
+   "c6b7",
+   "a8b8",
+   "e4e5",
+   "f6d5",
+   "f3e5",
+   "b8d8",
+   "e5c4",
+   "f6d7",
+   "f4e5",
+   "c4d5",
+   "e5b8",
+   "d8b8",
+   "b8c7",
+   "d8f8",
+   "c7d8",
+   "a4b5",
+   "b7b8q",
+   "a4d4",
+   "b7b8q",
+   "h5f6",
+   "d8b6",
+   "b5b8",
+   "g2d5",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:56:43Z"
+}

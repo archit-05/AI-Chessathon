@@ -1,0 +1,104 @@
+{
+ "game": "72d07016-2f8c-4e3b-8da2-036d98d38ba6",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"25\"]\n[White \"Team7347\"]\n[Black \"Pawn Stars\"]\n[Result \"*\"]\n[FEN \"r1bqkb1r/1p3ppp/p1np1n2/4p3/P3P3/N1N5/1PP2PPP/R1BQKB1R b KQkq - 1 8\"]\n[SetUp \"1\"]\n[Termination \"unterminated\"]\n\n8... Qa5 { [%clk 0:01:55.7] } 9. Nc4 { [%clk 0:01:47.115] } 9... Qc7 { [%clk 0:01:51.572] } 10. Na3 { [%clk 0:01:30.63] } 10... Qa5 { [%clk 0:01:47.61] } 11. Nc4 { [%clk 0:01:30.603] } 11... Qc7 { [%clk 0:01:43.806] } 12. Na3 { [%clk 0:01:31.102] } *\n",
+ "opening": "Sicilian Sveshnikov",
+ "termination_text": "Unterminated",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 25\u00b7Void",
+ "white_uuid": "1f20a852-ae0c-44f5-aed7-8be8a5e699b0",
+ "black_uuid": "7273119d-628e-410b-900a-83252e53eb52",
+ "site_verdicts": [
+  [
+   "Qa5",
+   "mistake"
+  ],
+  [
+   "Nc4",
+   "best"
+  ],
+  [
+   "Qc7",
+   "excellent"
+  ],
+  [
+   "Na3",
+   "blunder"
+  ],
+  [
+   "Qa5",
+   "blunder"
+  ],
+  [
+   "Nc4",
+   "best"
+  ],
+  [
+   "Qc7",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Team7347",
+    "accuracy": 66.6,
+    "acpl": 93,
+    "tally": {
+     "brilliant": 0,
+     "best": 2,
+     "excellent": 0,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 2
+    }
+   },
+   {
+    "name": "Pawn Star 1",
+    "accuracy": 72.7,
+    "acpl": 83,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 2,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   0,
+   129,
+   136,
+   138,
+   -41,
+   139,
+   122,
+   142,
+   -35
+  ],
+  "best": [
+   "c8g4",
+   "a3c4",
+   "a5d8",
+   "a4a5",
+   "c8e6",
+   "a3c4",
+   "a5d8",
+   "a4a5",
+   "c8e6"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:04:31Z"
+}

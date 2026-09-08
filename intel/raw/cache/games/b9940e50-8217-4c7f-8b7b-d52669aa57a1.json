@@ -1,0 +1,116 @@
+{
+ "game": "b9940e50-8217-4c7f-8b7b-d52669aa57a1",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"19\"]\n[White \"claudeshark\"]\n[Black \"TrojanKnight\"]\n[Result \"1-0\"]\n[FEN \"r1bq1rk1/pp2ppbp/2np1np1/2pP4/2P5/2N2NP1/PP2PPBP/R1BQ1RK1 b - - 0 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8... Bh6 { [%clk 0:01:56.176] } 9. Bxh6 { [%clk 0:01:55.898] } 9... g5 { [%clk 0:01:52.57] } 10. dxc6 { [%clk 0:01:53.768] } 10... Qc7 { [%clk 0:01:50.255] } 11. Qd2 { [%clk 0:01:51.047] } 11... b6 { [%clk 0:01:46.798] } 12. Qxg5+ { [%clk 0:01:51.476] } 12... Kh8 { [%clk 0:01:47.259] } 13. Qg7# { [%clk 0:01:51.973] } 1-0\n",
+ "opening": "English Symmetrical",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 19\u00b7Final",
+ "white_uuid": "6532bc56-58ba-48b5-977d-0c039fe3fd7b",
+ "black_uuid": "c5e818b1-9cab-4a6c-9ca4-bcb9ac455128",
+ "site_verdicts": [
+  [
+   "Bh6",
+   "blunder"
+  ],
+  [
+   "Bxh6",
+   "best"
+  ],
+  [
+   "g5",
+   "good"
+  ],
+  [
+   "dxc6",
+   "excellent"
+  ],
+  [
+   "Qc7",
+   "excellent"
+  ],
+  [
+   "Qd2",
+   "excellent"
+  ],
+  [
+   "b6",
+   "mistake"
+  ],
+  [
+   "Qxg5+",
+   "best"
+  ],
+  [
+   "Kh8",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "larp",
+    "accuracy": 99.5,
+    "acpl": 16,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 2,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "TK-Bravo2",
+    "accuracy": 67.3,
+    "acpl": 400,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 1,
+     "good": 1,
+     "forced": 1,
+     "inaccuracy": 0,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   5,
+   691,
+   694,
+   939,
+   875,
+   946,
+   929,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "c6a5",
+   "c1h6",
+   "f6g4",
+   "d1c1",
+   "f6g4",
+   "d1c1",
+   "c8f5",
+   "d2g5",
+   "g8h8",
+   "g5g7",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:27:45Z"
+}

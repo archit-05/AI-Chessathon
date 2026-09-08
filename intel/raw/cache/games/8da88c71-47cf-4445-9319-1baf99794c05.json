@@ -1,0 +1,206 @@
+{
+ "game": "8da88c71-47cf-4445-9319-1baf99794c05",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"2\"]\n[White \"fm2\"]\n[Black \"Bblue\"]\n[Result \"0-1\"]\n[FEN \"rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N1B3/PPP2PPP/R2QKB1R b KQkq - 1 6\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n6... e5 { [%clk 0:01:58.648] } 7. Bb5+ { [%clk 0:01:57.605] } 7... axb5 { [%clk 0:01:57.621] } 8. Ndxb5 { [%clk 0:01:55.192] } 8... Nc6 { [%clk 0:01:56.906] } 9. Qf3 { [%clk 0:01:52.758] } 9... Bg4 { [%clk 0:01:54.29] } 10. Qg3 { [%clk 0:01:50.337] } 10... Nb4 { [%clk 0:01:52.974] } 11. Nxd6+ { [%clk 0:01:47.912] } 11... Bxd6 { [%clk 0:01:52.066] } 12. Qxe5+ { [%clk 0:01:45.478] } 12... Bxe5 { [%clk 0:01:51.496] } 13. Nd5 { [%clk 0:01:43.035] } 13... Nxc2+ { [%clk 0:01:50.926] } 14. Kf1 { [%clk 0:01:40.589] } 14... Nxa1 { [%clk 0:01:50.999] } 15. Bb6 { [%clk 0:01:38.134] } 15... Qd7 { [%clk 0:01:50.527] } 16. Nxf6+ { [%clk 0:01:35.673] } 16... Bxf6 { [%clk 0:01:50.313] } 17. Bd4 { [%clk 0:01:33.206] } 17... Qxd4 { [%clk 0:01:49.317] } 18. e5 { [%clk 0:01:30.722] } 18... Qd1# { [%clk 0:01:48.324] } 0-1\n",
+ "opening": "Sicilian Najdorf",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 2\u00b7Final",
+ "white_uuid": "7377da57-681d-4f44-a1b8-e624776462e0",
+ "black_uuid": "77dc3690-1297-446e-87ff-d99ea7146f7a",
+ "site_verdicts": [
+  [
+   "e5",
+   "excellent"
+  ],
+  [
+   "Bb5+",
+   "blunder"
+  ],
+  [
+   "axb5",
+   "best"
+  ],
+  [
+   "Ndxb5",
+   "best"
+  ],
+  [
+   "Nc6",
+   "good"
+  ],
+  [
+   "Qf3",
+   "inaccuracy"
+  ],
+  [
+   "Bg4",
+   "good"
+  ],
+  [
+   "Qg3",
+   "best"
+  ],
+  [
+   "Nb4",
+   "good"
+  ],
+  [
+   "Nxd6+",
+   "blunder"
+  ],
+  [
+   "Bxd6",
+   "best"
+  ],
+  [
+   "Qxe5+",
+   "inaccuracy"
+  ],
+  [
+   "Bxe5",
+   "best"
+  ],
+  [
+   "Nd5",
+   "excellent"
+  ],
+  [
+   "Nxc2+",
+   "best"
+  ],
+  [
+   "Kf1",
+   "best"
+  ],
+  [
+   "Nxa1",
+   "excellent"
+  ],
+  [
+   "Bb6",
+   "excellent"
+  ],
+  [
+   "Qd7",
+   "best"
+  ],
+  [
+   "Nxf6+",
+   "inaccuracy"
+  ],
+  [
+   "Bxf6",
+   "excellent"
+  ],
+  [
+   "Bd4",
+   "best"
+  ],
+  [
+   "Qxd4",
+   "excellent"
+  ],
+  [
+   "e5",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "KingSlayr",
+    "accuracy": 79.0,
+    "acpl": 233,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 3,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 3,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 2
+    }
+   },
+   {
+    "name": "Vibs",
+    "accuracy": 96.3,
+    "acpl": 31,
+    "tally": {
+     "brilliant": 0,
+     "best": 6,
+     "excellent": 4,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   67,
+   46,
+   -311,
+   -326,
+   -319,
+   -264,
+   -344,
+   -275,
+   -272,
+   -237,
+   -567,
+   -577,
+   -1025,
+   -1040,
+   -1467,
+   -1551,
+   -1581,
+   -1338,
+   -1458,
+   -1573,
+   -9992,
+   -9993,
+   -9993,
+   -9995,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "b8c6",
+   "d4b3",
+   "a6b5",
+   "d4b5",
+   "f8e7",
+   "e3g5",
+   "f8e7",
+   "f3g3",
+   "g4e6",
+   "e3g5",
+   "f8d6",
+   "e1g1",
+   "d6e5",
+   "e1g1",
+   "b4c2",
+   "e1f1",
+   "f6e4",
+   "h2h3",
+   "d8d7",
+   "f1g1",
+   "g7f6",
+   "b6d4",
+   "f6d4",
+   "f2f3",
+   "d4d1",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:28:04Z"
+}

@@ -1,0 +1,146 @@
+{
+ "game": "efaeee7e-a8a1-4729-9945-5113572227fd",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.06\"]\n[Round \"31\"]\n[White \"Zugzwang\"]\n[Black \"AI < human\"]\n[Result \"*\"]\n[FEN \"rn1qk2r/pbp1bppp/1p1ppn2/8/2PP1B2/5NP1/PP2PPBP/RN1Q1RK1 b kq - 1 7\"]\n[SetUp \"1\"]\n[Termination \"unterminated\"]\n\n7... c5 { [%clk 0:01:56.963] } 8. dxc5 { [%clk 0:01:55.518] } 8... bxc5 { [%clk 0:01:53.939] } 9. Nc3 { [%clk 0:01:52.375] } 9... Nc6 { [%clk 0:01:50.949] } 10. Qb3 { [%clk 0:01:48.882] } 10... Na5 { [%clk 0:01:47.981] } 11. Qb5+ { [%clk 0:01:45.697] } 11... Bc6 { [%clk 0:01:45.015] } 12. Qa6 { [%clk 0:01:42.194] } 12... Bb7 { [%clk 0:01:42.437] } 13. Qb5+ { [%clk 0:01:38.439] } 13... Bc6 { [%clk 0:01:39.525] } 14. Qa6 { [%clk 0:01:34.83] } 14... Bb7 { [%clk 0:01:36.632] } *\n",
+ "opening": "Queen's Indian Defence",
+ "termination_text": "Unterminated",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 31\u00b7Void",
+ "white_uuid": "704bdae2-ddbf-4cbc-aaa1-817c0ee4608f",
+ "black_uuid": "02c9bc21-30c6-4b39-9532-35d8146b87b4",
+ "site_verdicts": [
+  [
+   "c5",
+   "good"
+  ],
+  [
+   "dxc5",
+   "good"
+  ],
+  [
+   "bxc5",
+   "best"
+  ],
+  [
+   "Nc3",
+   "good"
+  ],
+  [
+   "Nc6",
+   "inaccuracy"
+  ],
+  [
+   "Qb3",
+   "inaccuracy"
+  ],
+  [
+   "Na5",
+   "best"
+  ],
+  [
+   "Qb5+",
+   "good"
+  ],
+  [
+   "Bc6",
+   "best"
+  ],
+  [
+   "Qa6",
+   "best"
+  ],
+  [
+   "Bb7",
+   "excellent"
+  ],
+  [
+   "Qb5+",
+   "best"
+  ],
+  [
+   "Bc6",
+   "best"
+  ],
+  [
+   "Qa6",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Blunderer",
+    "accuracy": 89.3,
+    "acpl": 29,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 0,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "BuildedBlunderer",
+    "accuracy": 91.5,
+    "acpl": 24,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 1,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   17,
+   67,
+   19,
+   27,
+   0,
+   82,
+   -2,
+   8,
+   -27,
+   -31,
+   -37,
+   -30,
+   -36,
+   -39,
+   -33,
+   0
+  ],
+  "best": [
+   "e8g8",
+   "d4d5",
+   "b6c5",
+   "d1a4",
+   "e8g8",
+   "c3b5",
+   "c6a5",
+   "b3c2",
+   "b7c6",
+   "b5a6",
+   "e8g8",
+   "a6b5",
+   "b7c6",
+   "b5a6",
+   "e8g8",
+   "a6b5"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:37:54Z"
+}

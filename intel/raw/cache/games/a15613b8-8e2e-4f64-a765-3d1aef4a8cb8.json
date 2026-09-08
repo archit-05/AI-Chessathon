@@ -1,0 +1,194 @@
+{
+ "game": "a15613b8-8e2e-4f64-a765-3d1aef4a8cb8",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"19\"]\n[White \"Golden Guys\"]\n[Black \"Tempo\"]\n[Result \"0-1\"]\n[FEN \"r1bq1rk1/pp1n1ppp/2pbpn2/3p4/2PP4/1PN1PN2/P3BPPP/R1BQ1RK1 b - - 0 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8... dxc4 { [%clk 0:01:48.252] } 9. Nd5 { [%clk 0:02:00.499] } 9... Nxd5 { [%clk 0:01:37.286] } 10. g4 { [%clk 0:02:00.997] } 10... c3 { [%clk 0:01:27.077] } 11. Ba3 { [%clk 0:02:01.496] } 11... Bxa3 { [%clk 0:01:17.599] } 12. e4 { [%clk 0:02:01.995] } 12... Nf4 { [%clk 0:01:08.825] } 13. Ne5 { [%clk 0:02:02.494] } 13... Nxe5 { [%clk 0:01:00.729] } 14. Qd2 { [%clk 0:02:02.993] } 14... cxd2 { [%clk 0:00:53.285] } 15. g5 { [%clk 0:02:03.492] } 15... Nxe2+ { [%clk 0:00:53.413] } 16. Kh1 { [%clk 0:02:03.991] } 16... Qxd4 { [%clk 0:00:46.334] } 17. g6 { [%clk 0:02:04.49] } 17... fxg6 { [%clk 0:00:39.9] } 18. Rfb1 { [%clk 0:02:04.989] } 18... Qxe4+ { [%clk 0:00:40.384] } 19. f3 { [%clk 0:02:05.488] } 19... Qxf3# { [%clk 0:00:40.874] } 0-1\n",
+ "opening": "Semi-Slav Defence",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 19\u00b7Final",
+ "white_uuid": "0680f515-66d1-4f73-aa0f-bcfc1d645023",
+ "black_uuid": "3a96a592-335f-443d-803c-ac6b39cf1d8c",
+ "site_verdicts": [
+  [
+   "dxc4",
+   "excellent"
+  ],
+  [
+   "Nd5",
+   "blunder"
+  ],
+  [
+   "Nxd5",
+   "excellent"
+  ],
+  [
+   "g4",
+   "good"
+  ],
+  [
+   "c3",
+   "good"
+  ],
+  [
+   "Ba3",
+   "inaccuracy"
+  ],
+  [
+   "Bxa3",
+   "best"
+  ],
+  [
+   "e4",
+   "excellent"
+  ],
+  [
+   "Nf4",
+   "best"
+  ],
+  [
+   "Ne5",
+   "excellent"
+  ],
+  [
+   "Nxe5",
+   "best"
+  ],
+  [
+   "Qd2",
+   "good"
+  ],
+  [
+   "cxd2",
+   "best"
+  ],
+  [
+   "g5",
+   "inaccuracy"
+  ],
+  [
+   "Nxe2+",
+   "miss"
+  ],
+  [
+   "Kh1",
+   "best"
+  ],
+  [
+   "Qxd4",
+   "best"
+  ],
+  [
+   "g6",
+   "excellent"
+  ],
+  [
+   "fxg6",
+   "excellent"
+  ],
+  [
+   "Rfb1",
+   "excellent"
+  ],
+  [
+   "Qxe4+",
+   "best"
+  ],
+  [
+   "f3",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Golden Guys",
+    "accuracy": 77.1,
+    "acpl": 264,
+    "tally": {
+     "brilliant": 0,
+     "best": 1,
+     "excellent": 4,
+     "good": 2,
+     "forced": 1,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "Tempo",
+    "accuracy": 97.9,
+    "acpl": 100,
+    "tally": {
+     "brilliant": 0,
+     "best": 7,
+     "excellent": 3,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 1,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   30,
+   49,
+   -539,
+   -504,
+   -594,
+   -500,
+   -852,
+   -814,
+   -842,
+   -831,
+   -894,
+   -935,
+   -1513,
+   -1554,
+   -9997,
+   -1859,
+   -1953,
+   -2004,
+   -2112,
+   -9995,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "f8e8",
+   "b3c4",
+   "e6d5",
+   "b3c4",
+   "c4b3",
+   "e3e4",
+   "d6a3",
+   "d1c2",
+   "d5f4",
+   "e4e5",
+   "d7e5",
+   "d4e5",
+   "c3d2",
+   "d4e5",
+   "d8g5",
+   "g1h1",
+   "d8d4",
+   "h1g2",
+   "h7g6",
+   "f2f3",
+   "d4e4",
+   "f2f3",
+   "e4f3",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:04:07Z"
+}

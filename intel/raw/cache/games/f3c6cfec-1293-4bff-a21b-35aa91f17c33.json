@@ -1,0 +1,164 @@
+{
+ "game": "f3c6cfec-1293-4bff-a21b-35aa91f17c33",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.06\"]\n[Round \"34\"]\n[White \"404 Not Found\"]\n[Black \"Chesshorns\"]\n[Result \"1/2-1/2\"]\n[FEN \"r1bqkb1r/pp2pppp/2np1n2/8/4P3/1NN5/PPP2PPP/R1BQKB1R b KQkq - 4 6\"]\n[SetUp \"1\"]\n[Termination \"threefold_repetition\"]\n\n6... Bg4 { [%clk 0:01:58.998] } 7. f3 { [%clk 0:01:56.367] } 7... Be6 { [%clk 0:01:57.997] } 8. h4 { [%clk 0:01:52.921] } 8... Qb6 { [%clk 0:01:56.996] } 9. Nd5 { [%clk 0:01:49.593] } 9... Nxd5 { [%clk 0:01:55.994] } 10. exd5 { [%clk 0:01:46.411] } 10... Bxd5 { [%clk 0:01:54.993] } 11. Qxd5 { [%clk 0:01:43.5] } 11... Qb4+ { [%clk 0:01:53.991] } 12. Bd2 { [%clk 0:01:40.948] } 12... Qb6 { [%clk 0:01:52.99] } 13. Bc1 { [%clk 0:01:37.906] } 13... Qb4+ { [%clk 0:01:51.989] } 14. Bd2 { [%clk 0:01:35.518] } 14... Qb6 { [%clk 0:01:50.987] } 15. Bc1 { [%clk 0:01:32.665] } 1/2-1/2\n",
+ "opening": "Sicilian Classical",
+ "termination_text": "Threefold repetition",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 34\u00b7Final",
+ "white_uuid": "0507e5e2-d40f-4565-8e16-ca6feacebe42",
+ "black_uuid": "3a674020-b0fb-423d-ac11-76552d5de285",
+ "site_verdicts": [
+  [
+   "Bg4",
+   "good"
+  ],
+  [
+   "f3",
+   "best"
+  ],
+  [
+   "Be6",
+   "best"
+  ],
+  [
+   "h4",
+   "inaccuracy"
+  ],
+  [
+   "Qb6",
+   "inaccuracy"
+  ],
+  [
+   "Nd5",
+   "good"
+  ],
+  [
+   "Nxd5",
+   "blunder"
+  ],
+  [
+   "exd5",
+   "best"
+  ],
+  [
+   "Bxd5",
+   "good"
+  ],
+  [
+   "Qxd5",
+   "best"
+  ],
+  [
+   "Qb4+",
+   "inaccuracy"
+  ],
+  [
+   "Bd2",
+   "excellent"
+  ],
+  [
+   "Qb6",
+   "best"
+  ],
+  [
+   "Bc1",
+   "inaccuracy"
+  ],
+  [
+   "Qb4+",
+   "inaccuracy"
+  ],
+  [
+   "Bd2",
+   "best"
+  ],
+  [
+   "Qb6",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "404 Not Found",
+    "accuracy": 70.9,
+    "acpl": 83,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 1,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "Baseline Bot",
+    "accuracy": 77.6,
+    "acpl": 77,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 0,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 3,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   27,
+   79,
+   78,
+   87,
+   10,
+   66,
+   30,
+   339,
+   328,
+   369,
+   372,
+   481,
+   502,
+   505,
+   384,
+   489,
+   480,
+   489,
+   0
+  ],
+  "best": [
+   "g7g6",
+   "f2f3",
+   "g4e6",
+   "c1e3",
+   "g7g6",
+   "d1e2",
+   "e6d5",
+   "e4d5",
+   "e6d7",
+   "d1d5",
+   "e7e6",
+   "c2c3",
+   "b4b6",
+   "e1c1",
+   "e7e6",
+   "c1d2",
+   "b4b6",
+   "e1c1",
+   "b6b4"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:29:30Z"
+}

@@ -1,0 +1,170 @@
+{
+ "game": "84b23d36-765e-45a5-ab72-9a0071fe6431",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"21\"]\n[White \"NajeebA\"]\n[Black \"Minimax Three\"]\n[Result \"1-0\"]\n[FEN \"r2qkb1r/1p3ppp/p1npbn2/4p3/4P3/N1N2P2/PPP3PP/R1BQKB1R w KQkq - 2 9\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n9. Be3 { [%clk 0:01:53.736] } 9... Qa5 { [%clk 0:02:00.077] } 10. Nc4 { [%clk 0:01:49.963] } 10... Bxc4 { [%clk 0:02:00.502] } 11. Bxc4 { [%clk 0:01:46.051] } 11... Qb4 { [%clk 0:02:00.676] } 12. Qd3 { [%clk 0:01:40.129] } 12... Qxb2 { [%clk 0:02:01.082] } 13. Rb1 { [%clk 0:01:34.946] } 13... Qa3 { [%clk 0:02:01.327] } 14. Rxb7 { [%clk 0:01:31.778] } 14... O-O-O { [%clk 0:02:01.629] } 15. Bxa6 { [%clk 0:01:25.65] } 15... d5 { [%clk 0:02:02.066] } 16. Rxf7+ { [%clk 0:01:26.12] } 16... Kb8 { [%clk 0:02:02.536] } 17. Qb5+ { [%clk 0:01:26.615] } 17... Ka8 { [%clk 0:02:03.019] } 18. Qb7# { [%clk 0:01:27.113] } 1-0\n",
+ "opening": "Sicilian Sveshnikov",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 21\u00b7Final",
+ "white_uuid": "dad102b9-2821-4f7d-9c45-312dcbb659da",
+ "black_uuid": "9732317c-5dc8-4e6c-b31c-3c48389c9028",
+ "site_verdicts": [
+  [
+   "Be3",
+   "good"
+  ],
+  [
+   "Qa5",
+   "blunder"
+  ],
+  [
+   "Nc4",
+   "best"
+  ],
+  [
+   "Bxc4",
+   "good"
+  ],
+  [
+   "Bxc4",
+   "best"
+  ],
+  [
+   "Qb4",
+   "inaccuracy"
+  ],
+  [
+   "Qd3",
+   "excellent"
+  ],
+  [
+   "Qxb2",
+   "mistake"
+  ],
+  [
+   "Rb1",
+   "best"
+  ],
+  [
+   "Qa3",
+   "best"
+  ],
+  [
+   "Rxb7",
+   "best"
+  ],
+  [
+   "O-O-O",
+   "blunder"
+  ],
+  [
+   "Bxa6",
+   "best"
+  ],
+  [
+   "d5",
+   "mistake"
+  ],
+  [
+   "Rxf7+",
+   "best"
+  ],
+  [
+   "Kb8",
+   "excellent"
+  ],
+  [
+   "Qb5+",
+   "best"
+  ],
+  [
+   "Ka8",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "NaJ",
+    "accuracy": 96.4,
+    "acpl": 15,
+    "tally": {
+     "brilliant": 0,
+     "best": 8,
+     "excellent": 1,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Minimax Three",
+    "accuracy": 76.7,
+    "acpl": 227,
+    "tally": {
+     "brilliant": 0,
+     "best": 1,
+     "excellent": 1,
+     "good": 1,
+     "forced": 1,
+     "inaccuracy": 1,
+     "mistake": 2,
+     "miss": 0,
+     "blunder": 2
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -5,
+   -50,
+   120,
+   97,
+   153,
+   162,
+   231,
+   230,
+   438,
+   444,
+   451,
+   373,
+   907,
+   925,
+   9997,
+   9998,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "a3c4",
+   "d6d5",
+   "a3c4",
+   "a5c7",
+   "f1c4",
+   "f8e7",
+   "c4b3",
+   "c6d4",
+   "a1b1",
+   "b2a3",
+   "b1b7",
+   "f8e7",
+   "c4a6",
+   "c6d4",
+   "b7f7",
+   "a3a6",
+   "d3b5",
+   "b8a8",
+   "b5b7",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:21:33Z"
+}

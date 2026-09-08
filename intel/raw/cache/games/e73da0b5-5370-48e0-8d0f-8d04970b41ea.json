@@ -1,0 +1,140 @@
+{
+ "game": "e73da0b5-5370-48e0-8d0f-8d04970b41ea",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"15\"]\n[White \"The Huxley Knights\"]\n[Black \"Brokefish\"]\n[Result \"*\"]\n[FEN \"r1bqk2r/pp2nppp/2n1p3/2ppP3/P2P4/2P2N2/2P2PPP/R1BQKB1R b KQkq - 2 8\"]\n[SetUp \"1\"]\n[Termination \"unterminated\"]\n\n8... O-O { [%clk 0:01:52.157] } 9. Be2 { [%clk 0:01:56.955] } 9... Qa5 { [%clk 0:01:44.774] } 10. O-O { [%clk 0:01:54.363] } 10... Qxc3 { [%clk 0:01:37.832] } 11. Bd2 { [%clk 0:01:51.087] } 11... Qb2 { [%clk 0:01:31.289] } 12. Rb1 { [%clk 0:01:47.801] } 12... Qa3 { [%clk 0:01:25.108] } 13. Ra1 { [%clk 0:01:44.59] } 13... Qb2 { [%clk 0:01:19.273] } 14. Rb1 { [%clk 0:01:41.479] } 14... Qa3 { [%clk 0:01:12.341] } 15. Ra1 { [%clk 0:01:39.276] } *\n",
+ "opening": "French Winawer",
+ "termination_text": "Unterminated",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 15\u00b7Void",
+ "white_uuid": "7a719310-f164-4237-a6bc-28943dd7cb12",
+ "black_uuid": "286d1cf9-ca59-41dd-8b0b-7fd4e2af01f9",
+ "site_verdicts": [
+  [
+   "O-O",
+   "good"
+  ],
+  [
+   "Be2",
+   "excellent"
+  ],
+  [
+   "Qa5",
+   "excellent"
+  ],
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "Qxc3",
+   "inaccuracy"
+  ],
+  [
+   "Bd2",
+   "best"
+  ],
+  [
+   "Qb2",
+   "best"
+  ],
+  [
+   "Rb1",
+   "best"
+  ],
+  [
+   "Qa3",
+   "inaccuracy"
+  ],
+  [
+   "Ra1",
+   "good"
+  ],
+  [
+   "Qb2",
+   "best"
+  ],
+  [
+   "Rb1",
+   "best"
+  ],
+  [
+   "Qa3",
+   "inaccuracy"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Clore Bot VII",
+    "accuracy": 81.7,
+    "acpl": 45,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 1,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "Brokefish",
+    "accuracy": 87.3,
+    "acpl": 37,
+    "tally": {
+     "brilliant": 0,
+     "best": 2,
+     "excellent": 1,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 3,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   50,
+   77,
+   77,
+   78,
+   78,
+   147,
+   153,
+   185,
+   148,
+   212,
+   152,
+   154,
+   136,
+   200,
+   0
+  ],
+  "best": [
+   "d8a5",
+   "f1b5",
+   "b7b6",
+   "e1g1",
+   "h7h6",
+   "c1d2",
+   "c3b2",
+   "a1b1",
+   "b2a2",
+   "b1b3",
+   "a3b2",
+   "a1b1",
+   "b2a2",
+   "b1b3",
+   "a3b2"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:16:07Z"
+}

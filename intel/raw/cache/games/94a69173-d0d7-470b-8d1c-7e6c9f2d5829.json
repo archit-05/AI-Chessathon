@@ -1,0 +1,260 @@
+{
+ "game": "94a69173-d0d7-470b-8d1c-7e6c9f2d5829",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.06\"]\n[Round \"35\"]\n[White \"The Monkey's Bum\"]\n[Black \"True Prince of Imperial\"]\n[Result \"1-0\"]\n[FEN \"rnbq1rk1/ppp1ppbp/6p1/8/3PP3/2P5/P3BPPP/1RBQK1NR b K - 4 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8... Nc6 { [%clk 0:01:57.542] } 9. Nf3 { [%clk 0:01:59.59] } 9... Kh8 { [%clk 0:01:55.074] } 10. Kd2 { [%clk 0:01:57.944] } 10... Qd6 { [%clk 0:01:52.596] } 11. Kc2 { [%clk 0:01:55.429] } 11... Qf6 { [%clk 0:01:50.115] } 12. Bg5 { [%clk 0:01:52.927] } 12... Qe6 { [%clk 0:01:47.629] } 13. Qd3 { [%clk 0:01:51.738] } 13... Nxd4+ { [%clk 0:01:45.136] } 14. cxd4 { [%clk 0:01:49.235] } 14... Qxa2+ { [%clk 0:01:42.636] } 15. Rb2 { [%clk 0:01:47.479] } 15... Qxb2+ { [%clk 0:01:40.126] } 16. Kxb2 { [%clk 0:01:46.453] } 16... f6 { [%clk 0:01:37.61] } 17. Ka2 { [%clk 0:01:45.639] } 17... fxg5 { [%clk 0:01:35.085] } 18. Qc4 { [%clk 0:01:43.191] } 18... g4 { [%clk 0:01:32.554] } 19. Ng5 { [%clk 0:01:40.802] } 19... Bxd4 { [%clk 0:01:30.017] } 20. Qxd4+ { [%clk 0:01:40.747] } 20... e5 { [%clk 0:01:27.47] } 21. Qxe5+ { [%clk 0:01:40.56] } 21... Rf6 { [%clk 0:01:24.915] } 22. Qxf6+ { [%clk 0:01:40.689] } 22... Kg8 { [%clk 0:01:25.403] } 23. Bxg4 { [%clk 0:01:40.384] } 23... Be6+ { [%clk 0:01:22.724] } 24. Nxe6 { [%clk 0:01:38.152] } 24... g5 { [%clk 0:01:20.035] } 25. Qg7# { [%clk 0:01:37.747] } 1-0\n",
+ "opening": "Grunfeld Defence",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 35\u00b7Final",
+ "white_uuid": "e115c6ff-50b7-4c63-b4f3-99b563804929",
+ "black_uuid": "bf4a6261-8c16-4049-8d9f-4529eeffd88b",
+ "site_verdicts": [
+  [
+   "Nc6",
+   "good"
+  ],
+  [
+   "Nf3",
+   "good"
+  ],
+  [
+   "Kh8",
+   "inaccuracy"
+  ],
+  [
+   "Kd2",
+   "mistake"
+  ],
+  [
+   "Qd6",
+   "inaccuracy"
+  ],
+  [
+   "Kc2",
+   "mistake"
+  ],
+  [
+   "Qf6",
+   "mistake"
+  ],
+  [
+   "Bg5",
+   "inaccuracy"
+  ],
+  [
+   "Qe6",
+   "best"
+  ],
+  [
+   "Qd3",
+   "excellent"
+  ],
+  [
+   "Nxd4+",
+   "blunder"
+  ],
+  [
+   "cxd4",
+   "best"
+  ],
+  [
+   "Qxa2+",
+   "best"
+  ],
+  [
+   "Rb2",
+   "best"
+  ],
+  [
+   "Qxb2+",
+   "blunder"
+  ],
+  [
+   "Kxb2",
+   "best"
+  ],
+  [
+   "f6",
+   "excellent"
+  ],
+  [
+   "Ka2",
+   "mistake"
+  ],
+  [
+   "fxg5",
+   "best"
+  ],
+  [
+   "Qc4",
+   "good"
+  ],
+  [
+   "g4",
+   "inaccuracy"
+  ],
+  [
+   "Ng5",
+   "good"
+  ],
+  [
+   "Bxd4",
+   "blunder"
+  ],
+  [
+   "Qxd4+",
+   "best"
+  ],
+  [
+   "e5",
+   "excellent"
+  ],
+  [
+   "Qxe5+",
+   "best"
+  ],
+  [
+   "Rf6",
+   "excellent"
+  ],
+  [
+   "Qxf6+",
+   "best"
+  ],
+  [
+   "Kg8",
+   "forced"
+  ],
+  [
+   "Bxg4",
+   "excellent"
+  ],
+  [
+   "Be6+",
+   "excellent"
+  ],
+  [
+   "Nxe6",
+   "excellent"
+  ],
+  [
+   "g5",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "MonkeyBum",
+    "accuracy": 88.1,
+    "acpl": 47,
+    "tally": {
+     "brilliant": 0,
+     "best": 7,
+     "excellent": 3,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 3,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "True Prince of Imperial",
+    "accuracy": 77.8,
+    "acpl": 124,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 4,
+     "good": 1,
+     "forced": 1,
+     "inaccuracy": 3,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 3
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   43,
+   91,
+   67,
+   133,
+   -27,
+   70,
+   -51,
+   60,
+   -29,
+   -26,
+   -34,
+   264,
+   262,
+   232,
+   254,
+   548,
+   539,
+   565,
+   324,
+   350,
+   285,
+   414,
+   336,
+   9984,
+   9985,
+   9994,
+   9995,
+   9997,
+   9998,
+   9998,
+   9998,
+   9999,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "c7c5",
+   "h2h4",
+   "b7b6",
+   "h2h4",
+   "f7f5",
+   "d2e1",
+   "d6e6",
+   "d1d3",
+   "f6e6",
+   "e2d3",
+   "e6a2",
+   "c3d4",
+   "e6a2",
+   "b1b2",
+   "a2e6",
+   "c2b2",
+   "c7c5",
+   "g5d2",
+   "f6g5",
+   "f3g5",
+   "f8f6",
+   "f3e5",
+   "h7h6",
+   "c4d4",
+   "h8g8",
+   "d4e5",
+   "h8g8",
+   "e5f6",
+   "h8g8",
+   "e2c4",
+   "c8g4",
+   "g4e6",
+   "g6g5",
+   "f6g7",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:51:34Z"
+}

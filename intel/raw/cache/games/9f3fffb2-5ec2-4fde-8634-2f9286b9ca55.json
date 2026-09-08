@@ -1,0 +1,236 @@
+{
+ "game": "9f3fffb2-5ec2-4fde-8634-2f9286b9ca55",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"6\"]\n[White \"Fork 72\"]\n[Black \"Wildcard\"]\n[Result \"1-0\"]\n[FEN \"r2qkb1r/pp1bpppp/2np1n2/1B4B1/3NP3/2N5/PPP2PPP/R2QK2R b KQkq - 6 7\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n7... Nxd4 { [%clk 0:02:00.388] } 8. Qxd4 { [%clk 0:01:55.685] } 8... Bxb5 { [%clk 0:02:00.73] } 9. Bxf6 { [%clk 0:01:51.53] } 9... exf6 { [%clk 0:02:01.077] } 10. Nxb5 { [%clk 0:01:47.535] } 10... Qa5+ { [%clk 0:02:01.473] } 11. Nc3 { [%clk 0:01:43.713] } 11... Rc8 { [%clk 0:02:01.81] } 12. O-O { [%clk 0:01:40.033] } 12... Rc7 { [%clk 0:02:02.129] } 13. Rac1 { [%clk 0:01:36.509] } 13... Rg8 { [%clk 0:02:02.472] } 14. Nd5 { [%clk 0:01:33.123] } 14... Rd7 { [%clk 0:02:02.825] } 15. Rcd1 { [%clk 0:01:29.873] } 15... Qxa2 { [%clk 0:02:03.206] } 16. Ra1 { [%clk 0:01:26.75] } 16... Qxa1 { [%clk 0:02:03.594] } 17. Rxa1 { [%clk 0:01:23.756] } 17... f5 { [%clk 0:02:04.034] } 18. exf5 { [%clk 0:01:20.887] } 18... g5 { [%clk 0:02:04.463] } 19. Nf6+ { [%clk 0:01:18.127] } 19... Kd8 { [%clk 0:02:04.951] } 20. Rxa7 { [%clk 0:01:17.774] } 20... Re7 { [%clk 0:02:05.4] } 21. Qxd6+ { [%clk 0:01:18.255] } 21... Rd7 { [%clk 0:02:05.892] } 22. Qxd7# { [%clk 0:01:18.75] } 1-0\n",
+ "opening": "Sicilian Classical",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 6\u00b7Final",
+ "white_uuid": "20847793-5055-429f-bf31-027877f796af",
+ "black_uuid": "1c12622b-8d4f-4a36-88a1-b1597c97d880",
+ "site_verdicts": [
+  [
+   "Nxd4",
+   "good"
+  ],
+  [
+   "Qxd4",
+   "best"
+  ],
+  [
+   "Bxb5",
+   "best"
+  ],
+  [
+   "Bxf6",
+   "best"
+  ],
+  [
+   "exf6",
+   "inaccuracy"
+  ],
+  [
+   "Nxb5",
+   "best"
+  ],
+  [
+   "Qa5+",
+   "good"
+  ],
+  [
+   "Nc3",
+   "best"
+  ],
+  [
+   "Rc8",
+   "excellent"
+  ],
+  [
+   "O-O",
+   "good"
+  ],
+  [
+   "Rc7",
+   "inaccuracy"
+  ],
+  [
+   "Rac1",
+   "inaccuracy"
+  ],
+  [
+   "Rg8",
+   "mistake"
+  ],
+  [
+   "Nd5",
+   "best"
+  ],
+  [
+   "Rd7",
+   "best"
+  ],
+  [
+   "Rcd1",
+   "best"
+  ],
+  [
+   "Qxa2",
+   "mistake"
+  ],
+  [
+   "Ra1",
+   "best"
+  ],
+  [
+   "Qxa1",
+   "best"
+  ],
+  [
+   "Rxa1",
+   "best"
+  ],
+  [
+   "f5",
+   "excellent"
+  ],
+  [
+   "exf5",
+   "excellent"
+  ],
+  [
+   "g5",
+   "mistake"
+  ],
+  [
+   "Nf6+",
+   "best"
+  ],
+  [
+   "Kd8",
+   "best"
+  ],
+  [
+   "Rxa7",
+   "excellent"
+  ],
+  [
+   "Re7",
+   "excellent"
+  ],
+  [
+   "Qxd6+",
+   "best"
+  ],
+  [
+   "Rd7",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Pawn Street",
+    "accuracy": 97.4,
+    "acpl": 11,
+    "tally": {
+     "brilliant": 0,
+     "best": 11,
+     "excellent": 2,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "DeLorean",
+    "accuracy": 85.4,
+    "acpl": 122,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 3,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 3,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   13,
+   53,
+   53,
+   75,
+   63,
+   140,
+   150,
+   175,
+   201,
+   207,
+   165,
+   229,
+   159,
+   332,
+   331,
+   326,
+   350,
+   712,
+   690,
+   701,
+   731,
+   775,
+   761,
+   9990,
+   9991,
+   9991,
+   9996,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "e7e6",
+   "d1d4",
+   "d7b5",
+   "g5f6",
+   "g7f6",
+   "c3b5",
+   "f8e7",
+   "b5c3",
+   "f8e7",
+   "e1c1",
+   "f8e7",
+   "c3d5",
+   "f8e7",
+   "c3d5",
+   "c7d7",
+   "c1d1",
+   "f8e7",
+   "d1a1",
+   "a2a1",
+   "f1a1",
+   "f8e7",
+   "d4a7",
+   "a7a6",
+   "d5f6",
+   "e8d8",
+   "d4a7",
+   "d7c7",
+   "d4d6",
+   "e7d7",
+   "d6d7",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:05:31Z"
+}

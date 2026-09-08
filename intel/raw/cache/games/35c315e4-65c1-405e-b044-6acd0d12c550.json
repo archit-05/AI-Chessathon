@@ -1,0 +1,182 @@
+{
+ "game": "35c315e4-65c1-405e-b044-6acd0d12c550",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"1\"]\n[White \"Yumo\"]\n[Black \"Random Mover\"]\n[Result \"1-0\"]\n[FEN \"rnbqkb1r/pp3ppp/5n2/2pp4/3P4/8/PPPNBPPP/R1BQK1NR w KQkq - 2 6\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n6. Ngf3 { [%clk 0:01:59.73] } 6... b6 { [%clk 0:02:00.498] } 7. O-O { [%clk 0:01:59.064] } 7... Bd6 { [%clk 0:02:00.997] } 8. c4 { [%clk 0:01:58.545] } 8... Nbd7 { [%clk 0:02:01.495] } 9. cxd5 { [%clk 0:01:58.417] } 9... g5 { [%clk 0:02:01.994] } 10. Nc4 { [%clk 0:01:57.835] } 10... g4 { [%clk 0:02:02.492] } 11. Nxd6+ { [%clk 0:01:54.998] } 11... Kf8 { [%clk 0:02:02.991] } 12. Ng5 { [%clk 0:01:53.742] } 12... Rg8 { [%clk 0:02:03.489] } 13. Ngxf7 { [%clk 0:01:52.765] } 13... cxd4 { [%clk 0:02:03.988] } 14. Nxd8 { [%clk 0:01:50.145] } 14... Rg5 { [%clk 0:02:04.486] } 15. Bxg5 { [%clk 0:01:48.086] } 15... Ng8 { [%clk 0:02:04.984] } 16. Ne6# { [%clk 0:01:48.583] } 1-0\n",
+ "opening": "French Tarrasch",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 1\u00b7Final",
+ "white_uuid": "5aa0e1ef-c640-45f9-b4b4-1389de2a609b",
+ "black_uuid": "5c7abbac-f8d0-4635-a335-d4b6c90aeefe",
+ "site_verdicts": [
+  [
+   "Ngf3",
+   "best"
+  ],
+  [
+   "b6",
+   "good"
+  ],
+  [
+   "O-O",
+   "excellent"
+  ],
+  [
+   "Bd6",
+   "inaccuracy"
+  ],
+  [
+   "c4",
+   "inaccuracy"
+  ],
+  [
+   "Nbd7",
+   "inaccuracy"
+  ],
+  [
+   "cxd5",
+   "best"
+  ],
+  [
+   "g5",
+   "blunder"
+  ],
+  [
+   "Nc4",
+   "best"
+  ],
+  [
+   "g4",
+   "mistake"
+  ],
+  [
+   "Nxd6+",
+   "best"
+  ],
+  [
+   "Kf8",
+   "excellent"
+  ],
+  [
+   "Ng5",
+   "excellent"
+  ],
+  [
+   "Rg8",
+   "excellent"
+  ],
+  [
+   "Ngxf7",
+   "best"
+  ],
+  [
+   "cxd4",
+   "excellent"
+  ],
+  [
+   "Nxd8",
+   "best"
+  ],
+  [
+   "Rg5",
+   "excellent"
+  ],
+  [
+   "Bxg5",
+   "best"
+  ],
+  [
+   "Ng8",
+   "inaccuracy"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Yumo",
+    "accuracy": 97.8,
+    "acpl": 14,
+    "tally": {
+     "brilliant": 0,
+     "best": 8,
+     "excellent": 2,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Random Mover",
+    "accuracy": 81.2,
+    "acpl": 260,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 4,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 3,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -6,
+   -11,
+   26,
+   32,
+   112,
+   42,
+   112,
+   94,
+   429,
+   429,
+   839,
+   857,
+   900,
+   838,
+   909,
+   974,
+   1342,
+   1387,
+   1577,
+   1586,
+   9999,
+   10000
+  ],
+  "best": [
+   "g1f3",
+   "f8e7",
+   "c2c4",
+   "f8e7",
+   "d4c5",
+   "e8g8",
+   "c4d5",
+   "e8g8",
+   "d2c4",
+   "d8c7",
+   "c4d6",
+   "e8e7",
+   "c1h6",
+   "d8e7",
+   "g5f7",
+   "d8e7",
+   "f7d8",
+   "g8g6",
+   "c1g5",
+   "c8a6",
+   "d8e6",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:15:10Z"
+}

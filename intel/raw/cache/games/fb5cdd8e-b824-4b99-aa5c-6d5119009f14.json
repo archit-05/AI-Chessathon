@@ -1,0 +1,236 @@
+{
+ "game": "fb5cdd8e-b824-4b99-aa5c-6d5119009f14",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"6\"]\n[White \"ACESOFSPADES\"]\n[Black \"Columbia Trader\"]\n[Result \"1-0\"]\n[FEN \"r3kbnr/pp1b1ppp/1qn1p3/3pP3/3P4/5N1P/PP2BPP1/RNBQK2R b KQkq - 0 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8... Nge7 { [%clk 0:01:57.053] } 9. Nc3 { [%clk 0:01:56.623] } 9... Qb4 { [%clk 0:01:54.651] } 10. Bb5 { [%clk 0:01:53.214] } 10... Nxe5 { [%clk 0:01:52.249] } 11. Nxe5 { [%clk 0:01:49.798] } 11... Bxb5 { [%clk 0:01:49.847] } 12. a3 { [%clk 0:01:46.366] } 12... Qa5 { [%clk 0:01:47.445] } 13. b4 { [%clk 0:01:42.924] } 13... Ba4 { [%clk 0:01:45.043] } 14. Nxa4 { [%clk 0:01:39.462] } 14... Qc7 { [%clk 0:01:42.641] } 15. Nc5 { [%clk 0:01:35.964] } 15... O-O-O { [%clk 0:01:40.237] } 16. Nxf7 { [%clk 0:01:32.389] } 16... Rg8 { [%clk 0:01:37.835] } 17. Nxd8 { [%clk 0:01:28.839] } 17... Rh8 { [%clk 0:01:35.498] } 18. Ndxe6 { [%clk 0:01:25.279] } 18... Qb8 { [%clk 0:01:33.231] } 19. Bf4 { [%clk 0:01:21.679] } 19... Qa8 { [%clk 0:01:31.032] } 20. Nc7 { [%clk 0:01:18.084] } 20... Qb8 { [%clk 0:01:28.899] } 21. Qg4+ { [%clk 0:01:14.642] } 21... Nf5 { [%clk 0:01:26.83] } 22. Qxf5+ { [%clk 0:01:11.378] } 22... Kd8 { [%clk 0:01:27.328] } 23. Qd7# { [%clk 0:01:08.246] } 1-0\n",
+ "opening": "French Advance",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 6\u00b7Final",
+ "white_uuid": "a99bd984-f6e0-4bab-b51d-8d4ad1ec2918",
+ "black_uuid": "304ddb9d-4871-480e-a93c-4005a5feadf4",
+ "site_verdicts": [
+  [
+   "Nge7",
+   "excellent"
+  ],
+  [
+   "Nc3",
+   "excellent"
+  ],
+  [
+   "Qb4",
+   "mistake"
+  ],
+  [
+   "Bb5",
+   "blunder"
+  ],
+  [
+   "Nxe5",
+   "brilliant"
+  ],
+  [
+   "Nxe5",
+   "best"
+  ],
+  [
+   "Bxb5",
+   "best"
+  ],
+  [
+   "a3",
+   "best"
+  ],
+  [
+   "Qa5",
+   "best"
+  ],
+  [
+   "b4",
+   "inaccuracy"
+  ],
+  [
+   "Ba4",
+   "blunder"
+  ],
+  [
+   "Nxa4",
+   "mistake"
+  ],
+  [
+   "Qc7",
+   "inaccuracy"
+  ],
+  [
+   "Nc5",
+   "good"
+  ],
+  [
+   "O-O-O",
+   "inaccuracy"
+  ],
+  [
+   "Nxf7",
+   "best"
+  ],
+  [
+   "Rg8",
+   "good"
+  ],
+  [
+   "Nxd8",
+   "excellent"
+  ],
+  [
+   "Rh8",
+   "good"
+  ],
+  [
+   "Ndxe6",
+   "excellent"
+  ],
+  [
+   "Qb8",
+   "excellent"
+  ],
+  [
+   "Bf4",
+   "excellent"
+  ],
+  [
+   "Qa8",
+   "inaccuracy"
+  ],
+  [
+   "Nc7",
+   "miss"
+  ],
+  [
+   "Qb8",
+   "inaccuracy"
+  ],
+  [
+   "Qg4+",
+   "best"
+  ],
+  [
+   "Nf5",
+   "best"
+  ],
+  [
+   "Qxf5+",
+   "best"
+  ],
+  [
+   "Kd8",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Boon",
+    "accuracy": 90.4,
+    "acpl": 112,
+    "tally": {
+     "brilliant": 0,
+     "best": 6,
+     "excellent": 4,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 1,
+     "miss": 1,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "TheGambler",
+    "accuracy": 74.2,
+    "acpl": 247,
+    "tally": {
+     "brilliant": 1,
+     "best": 3,
+     "excellent": 2,
+     "good": 2,
+     "forced": 1,
+     "inaccuracy": 4,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   0,
+   8,
+   0,
+   121,
+   -66,
+   -25,
+   -17,
+   -7,
+   -16,
+   0,
+   -70,
+   626,
+   386,
+   511,
+   430,
+   586,
+   592,
+   756,
+   685,
+   924,
+   961,
+   1084,
+   1074,
+   9989,
+   1390,
+   9997,
+   9998,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "g8h6",
+   "b1a3",
+   "e7f5",
+   "a2a3",
+   "c6e5",
+   "f3e5",
+   "d7b5",
+   "a2a3",
+   "b4a5",
+   "d1h5",
+   "a5a6",
+   "d1f3",
+   "a5b5",
+   "c1f4",
+   "e7c6",
+   "e5f7",
+   "e7f5",
+   "c5e6",
+   "c7d8",
+   "c5e6",
+   "c7b6",
+   "d1f3",
+   "b8f4",
+   "d1h5",
+   "e7f5",
+   "d1g4",
+   "e7f5",
+   "g4f5",
+   "c8d8",
+   "f5d7",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:57:36Z"
+}

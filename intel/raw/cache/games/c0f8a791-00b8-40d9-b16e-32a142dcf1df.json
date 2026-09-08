@@ -1,0 +1,128 @@
+{
+ "game": "c0f8a791-00b8-40d9-b16e-32a142dcf1df",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"24\"]\n[White \"Zack\"]\n[Black \"Team7347\"]\n[Result \"1-0\"]\n[FEN \"r1bqkb1r/pp2pppp/2n2n2/3p4/3P4/2PB3P/PP3PP1/RNBQK1NR b KQkq - 0 6\"]\n[SetUp \"1\"]\n[Termination \"flag\"]\n\n6... e5 { [%clk 0:01:54.062] } 7. Bg5 { [%clk 0:01:56.498] } 7... exd4 { [%clk 0:01:31.63] } 8. Qe2+ { [%clk 0:01:53.113] } 8... Be7 { [%clk 0:01:15.647] } 9. Nf3 { [%clk 0:01:49.841] } 9... dxc3 { [%clk 0:00:43.269] } 10. Nxc3 { [%clk 0:01:46.677] } 10... Be6 { [%clk 0:00:24.256] } 11. Bxf6 { [%clk 0:01:43.62] } 11... Bxf6 { [%clk 0:00:14.374] } 12. O-O-O { [%clk 0:01:40.665] } 1-0\n",
+ "opening": "Caro-Kann Exchange",
+ "termination_text": "Flag",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 24\u00b7Final",
+ "white_uuid": "9a5a6b18-36bb-46c6-a5a6-dac002c242a5",
+ "black_uuid": "1f20a852-ae0c-44f5-aed7-8be8a5e699b0",
+ "site_verdicts": [
+  [
+   "e5",
+   "best"
+  ],
+  [
+   "Bg5",
+   "mistake"
+  ],
+  [
+   "exd4",
+   "good"
+  ],
+  [
+   "Qe2+",
+   "good"
+  ],
+  [
+   "Be7",
+   "good"
+  ],
+  [
+   "Nf3",
+   "best"
+  ],
+  [
+   "dxc3",
+   "best"
+  ],
+  [
+   "Nxc3",
+   "best"
+  ],
+  [
+   "Be6",
+   "excellent"
+  ],
+  [
+   "Bxf6",
+   "inaccuracy"
+  ],
+  [
+   "Bxf6",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "The LochChess Monster",
+    "accuracy": 78.3,
+    "acpl": 67,
+    "tally": {
+     "brilliant": 0,
+     "best": 2,
+     "excellent": 0,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 2,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Team7347",
+    "accuracy": 95.1,
+    "acpl": 17,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 1,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   13,
+   19,
+   -97,
+   -56,
+   -89,
+   -57,
+   -95,
+   -77,
+   -78,
+   -75,
+   -152,
+   -150,
+   -289
+  ],
+  "best": [
+   "e7e5",
+   "d4e5",
+   "h7h6",
+   "c3d4",
+   "c8e6",
+   "g1f3",
+   "d4c3",
+   "b1c3",
+   "e8g8",
+   "a1d1",
+   "e7f6",
+   "e1g1",
+   "e8g8"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:04:32Z"
+}

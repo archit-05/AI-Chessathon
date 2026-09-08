@@ -1,0 +1,182 @@
+{
+ "game": "9b2e8d7d-0774-4187-ab16-7cee02246da1",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.06\"]\n[Round \"35\"]\n[White \"Zugzwin\"]\n[Black \"Saturday Knight\"]\n[Result \"1-0\"]\n[FEN \"rnbq1rk1/ppp1bppp/4pn2/3p4/2P5/P4NP1/1P1PPPBP/RNBQK2R w KQ - 1 6\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n6. cxd5 { [%clk 0:01:51.318] } 6... Bb4 { [%clk 0:02:00.499] } 7. axb4 { [%clk 0:01:48.624] } 7... a6 { [%clk 0:02:00.998] } 8. dxe6 { [%clk 0:01:46.494] } 8... g5 { [%clk 0:02:01.497] } 9. exf7+ { [%clk 0:01:43.96] } 9... Kg7 { [%clk 0:02:01.996] } 10. Nxg5 { [%clk 0:01:42.59] } 10... Ng4 { [%clk 0:02:02.495] } 11. Bxb7 { [%clk 0:01:38.836] } 11... Bd7 { [%clk 0:02:02.994] } 12. Bxa8 { [%clk 0:01:36.472] } 12... h6 { [%clk 0:02:03.493] } 13. Nf3 { [%clk 0:01:34.43] } 13... Kh8 { [%clk 0:02:03.992] } 14. Qb3 { [%clk 0:01:32.301] } 14... Be6 { [%clk 0:02:04.491] } 15. Qxe6 { [%clk 0:01:30.513] } 15... Nxf2 { [%clk 0:02:04.99] } 16. Qxh6# { [%clk 0:01:31.009] } 1-0\n",
+ "opening": "Reti Opening",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 35\u00b7Final",
+ "white_uuid": "2463d1f5-3e78-4dce-a254-be5983079ccc",
+ "black_uuid": "25ae5fc8-e19a-4841-9299-71e72762a6f9",
+ "site_verdicts": [
+  [
+   "cxd5",
+   "good"
+  ],
+  [
+   "Bb4",
+   "blunder"
+  ],
+  [
+   "axb4",
+   "best"
+  ],
+  [
+   "a6",
+   "good"
+  ],
+  [
+   "dxe6",
+   "best"
+  ],
+  [
+   "g5",
+   "good"
+  ],
+  [
+   "exf7+",
+   "excellent"
+  ],
+  [
+   "Kg7",
+   "excellent"
+  ],
+  [
+   "Nxg5",
+   "excellent"
+  ],
+  [
+   "Ng4",
+   "excellent"
+  ],
+  [
+   "Bxb7",
+   "excellent"
+  ],
+  [
+   "Bd7",
+   "excellent"
+  ],
+  [
+   "Bxa8",
+   "excellent"
+  ],
+  [
+   "h6",
+   "good"
+  ],
+  [
+   "Nf3",
+   "excellent"
+  ],
+  [
+   "Kh8",
+   "excellent"
+  ],
+  [
+   "Qb3",
+   "excellent"
+  ],
+  [
+   "Be6",
+   "excellent"
+  ],
+  [
+   "Qxe6",
+   "best"
+  ],
+  [
+   "Nxf2",
+   "inaccuracy"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Cheuder",
+    "accuracy": 97.4,
+    "acpl": 27,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 6,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Saturday Knight",
+    "accuracy": 75.9,
+    "acpl": 272,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 5,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   0,
+   -37,
+   589,
+   566,
+   633,
+   598,
+   761,
+   741,
+   803,
+   736,
+   785,
+   715,
+   806,
+   759,
+   947,
+   952,
+   1062,
+   1066,
+   1434,
+   1469,
+   9999,
+   10000
+  ],
+  "best": [
+   "d2d4",
+   "e6d5",
+   "a3b4",
+   "f6d5",
+   "d5e6",
+   "c8e6",
+   "d2d4",
+   "f8f7",
+   "d2d3",
+   "h7h6",
+   "d2d4",
+   "d8g5",
+   "d2d4",
+   "d8g5",
+   "g5h3",
+   "b8c6",
+   "h2h3",
+   "d8f6",
+   "b3e6",
+   "d8d7",
+   "e6h6",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:26:39Z"
+}

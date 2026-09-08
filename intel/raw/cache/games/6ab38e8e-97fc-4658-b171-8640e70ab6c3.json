@@ -1,0 +1,110 @@
+{
+ "game": "6ab38e8e-97fc-4658-b171-8640e70ab6c3",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"14\"]\n[White \"Chessify\"]\n[Black \"noob\"]\n[Result \"0-1\"]\n[FEN \"rnbqk2r/ppp2ppp/8/3p4/1b1Pn3/2P2N1P/PP3PP1/RNBQKB1R b KQkq - 0 7\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n7... Qe7 { [%clk 0:01:55.316] } 8. Ng5 { [%clk 0:01:55.345] } 8... Nxc3+ { [%clk 0:01:50.82] } 9. Kd2 { [%clk 0:01:48.309] } 9... Nxd1+ { [%clk 0:01:46.501] } 10. Kd3 { [%clk 0:01:41.489] } 10... Bf5+ { [%clk 0:01:46.8] } 11. Ne4 { [%clk 0:01:41.988] } 11... Qxe4# { [%clk 0:01:47.297] } 0-1\n",
+ "opening": "Petroff Defence",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 14\u00b7Final",
+ "white_uuid": "2837cf75-e0e4-4d1d-8942-6d451aff5f0a",
+ "black_uuid": "ca128304-e1a1-45f0-9b74-6e192fcd9bd9",
+ "site_verdicts": [
+  [
+   "Qe7",
+   "good"
+  ],
+  [
+   "Ng5",
+   "blunder"
+  ],
+  [
+   "Nxc3+",
+   "best"
+  ],
+  [
+   "Kd2",
+   "inaccuracy"
+  ],
+  [
+   "Nxd1+",
+   "best"
+  ],
+  [
+   "Kd3",
+   "inaccuracy"
+  ],
+  [
+   "Bf5+",
+   "best"
+  ],
+  [
+   "Ne4",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Hikaru",
+    "accuracy": 62.5,
+    "acpl": 537,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 0,
+     "good": 0,
+     "forced": 1,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "noob",
+    "accuracy": 97.6,
+    "acpl": 15,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 0,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   1,
+   48,
+   -696,
+   -666,
+   -1071,
+   -1101,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "b4d6",
+   "f1e2",
+   "e4c3",
+   "f1e2",
+   "c3d1",
+   "d2d1",
+   "c8f5",
+   "g5e4",
+   "e7e4",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:09:07Z"
+}

@@ -1,0 +1,182 @@
+{
+ "game": "8cdba065-8ea8-477b-aacf-f6c98717971b",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"10\"]\n[White \"Defense\"]\n[Black \"lefischer\"]\n[Result \"1-0\"]\n[FEN \"r1bqk2r/pp1n1ppp/2n1p3/2bpP3/5P2/2NB4/PPP3PP/R1BQK1NR w KQkq - 0 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8. Nf3 { [%clk 0:01:55.691] } 8... O-O { [%clk 0:01:55.567] } 9. Bxh7+ { [%clk 0:01:51.525] } 9... Kxh7 { [%clk 0:01:51.298] } 10. Ng5+ { [%clk 0:01:47.557] } 10... Kg6 { [%clk 0:01:48.745] } 11. h4 { [%clk 0:01:43.714] } 11... Nd4 { [%clk 0:01:44.74] } 12. h5+ { [%clk 0:01:40.03] } 12... Kh6 { [%clk 0:01:40.891] } 13. Qd3 { [%clk 0:01:36.503] } 13... Nf5 { [%clk 0:01:37.49] } 14. g4 { [%clk 0:01:33.104] } 14... d4 { [%clk 0:01:33.915] } 15. gxf5 { [%clk 0:01:29.842] } 15... exf5 { [%clk 0:01:30.475] } 16. Qxf5 { [%clk 0:01:26.648] } 16... Nf6 { [%clk 0:01:28.205] } 17. Nxf7+ { [%clk 0:01:23.657] } 17... Rxf7 { [%clk 0:01:24.983] } 18. Qg6# { [%clk 0:01:20.807] } 1-0\n",
+ "opening": "French Classical",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 10\u00b7Final",
+ "white_uuid": "b9800604-af3c-4f05-addf-11114b400ac0",
+ "black_uuid": "0900c279-5ede-4155-a850-436c28af6ea9",
+ "site_verdicts": [
+  [
+   "Nf3",
+   "best"
+  ],
+  [
+   "O-O",
+   "mistake"
+  ],
+  [
+   "Bxh7+",
+   "brilliant"
+  ],
+  [
+   "Kxh7",
+   "best"
+  ],
+  [
+   "Ng5+",
+   "best"
+  ],
+  [
+   "Kg6",
+   "best"
+  ],
+  [
+   "h4",
+   "inaccuracy"
+  ],
+  [
+   "Nd4",
+   "blunder"
+  ],
+  [
+   "h5+",
+   "inaccuracy"
+  ],
+  [
+   "Kh6",
+   "best"
+  ],
+  [
+   "Qd3",
+   "best"
+  ],
+  [
+   "Nf5",
+   "best"
+  ],
+  [
+   "g4",
+   "best"
+  ],
+  [
+   "d4",
+   "blunder"
+  ],
+  [
+   "gxf5",
+   "best"
+  ],
+  [
+   "exf5",
+   "mistake"
+  ],
+  [
+   "Qxf5",
+   "best"
+  ],
+  [
+   "Nf6",
+   "excellent"
+  ],
+  [
+   "Nxf7+",
+   "best"
+  ],
+  [
+   "Rxf7",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Attack",
+    "accuracy": 91.4,
+    "acpl": 26,
+    "tally": {
+     "brilliant": 1,
+     "best": 8,
+     "excellent": 0,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "fischer",
+    "accuracy": 71.4,
+    "acpl": 203,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 1,
+     "good": 0,
+     "forced": 1,
+     "inaccuracy": 0,
+     "mistake": 2,
+     "miss": 0,
+     "blunder": 2
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -11,
+   -17,
+   124,
+   161,
+   152,
+   164,
+   116,
+   40,
+   446,
+   284,
+   284,
+   261,
+   268,
+   248,
+   720,
+   798,
+   9997,
+   9998,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "g1f3",
+   "a7a6",
+   "d3h7",
+   "g8h7",
+   "f3g5",
+   "h7g6",
+   "d1d3",
+   "f7f5",
+   "f4f5",
+   "g6h6",
+   "d1d3",
+   "d4f5",
+   "g2g4",
+   "d7b6",
+   "g4f5",
+   "d8g5",
+   "d3f5",
+   "g7g6",
+   "g5f7",
+   "f8f7",
+   "f5g6",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:58:18Z"
+}

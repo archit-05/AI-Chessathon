@@ -1,0 +1,236 @@
+{
+ "game": "65bfa326-b53a-4541-8f2d-25c1456cfaea",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"23\"]\n[White \"Team name\"]\n[Black \"Blitz\"]\n[Result \"0-1\"]\n[FEN \"r1bq1rk1/2p1bppp/p2p1n2/np2p3/4P3/1BNP1N2/PPP2PPP/R1BQR1K1 w - - 3 10\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n10. Be3 { [%clk 0:01:56.476] } 10... Nxb3 { [%clk 0:01:56.992] } 11. axb3 { [%clk 0:01:52.94] } 11... Be6 { [%clk 0:01:54.041] } 12. b4 { [%clk 0:01:49.402] } 12... Ng4 { [%clk 0:01:50.99] } 13. d4 { [%clk 0:01:45.845] } 13... Nxe3 { [%clk 0:01:47.981] } 14. Rxe3 { [%clk 0:01:42.28] } 14... Bg5 { [%clk 0:01:45.008] } 15. Nxg5 { [%clk 0:01:38.683] } 15... Qxg5 { [%clk 0:01:42.042] } 16. d5 { [%clk 0:01:35.113] } 16... Bg4 { [%clk 0:01:39.066] } 17. Qd3 { [%clk 0:01:31.532] } 17... f5 { [%clk 0:01:36.111] } 18. h3 { [%clk 0:01:27.944] } 18... f4 { [%clk 0:01:33.122] } 19. Ree1 { [%clk 0:01:24.337] } 19... Bh5 { [%clk 0:01:30.146] } 20. Rab1 { [%clk 0:01:20.717] } 20... f3 { [%clk 0:01:27.144] } 21. g4 { [%clk 0:01:17.091] } 21... Bxg4 { [%clk 0:01:24.151] } 22. Kh2 { [%clk 0:01:13.457] } 22... Bxh3 { [%clk 0:01:21.206] } 23. Kxh3 { [%clk 0:01:09.77] } 23... Rf4 { [%clk 0:01:21.704] } 24. Kh2 { [%clk 0:01:09.832] } 24... Qg2# { [%clk 0:01:22.198] } 0-1\n",
+ "opening": "Ruy Lopez, Closed",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 23\u00b7Final",
+ "white_uuid": "f7774d65-94ae-4a54-9358-6c3d0097b51b",
+ "black_uuid": "7a6d3886-a870-4efe-a04f-1c38e695851e",
+ "site_verdicts": [
+  [
+   "Be3",
+   "excellent"
+  ],
+  [
+   "Nxb3",
+   "excellent"
+  ],
+  [
+   "axb3",
+   "best"
+  ],
+  [
+   "Be6",
+   "good"
+  ],
+  [
+   "b4",
+   "excellent"
+  ],
+  [
+   "Ng4",
+   "excellent"
+  ],
+  [
+   "d4",
+   "excellent"
+  ],
+  [
+   "Nxe3",
+   "best"
+  ],
+  [
+   "Rxe3",
+   "best"
+  ],
+  [
+   "Bg5",
+   "good"
+  ],
+  [
+   "Nxg5",
+   "best"
+  ],
+  [
+   "Qxg5",
+   "best"
+  ],
+  [
+   "d5",
+   "good"
+  ],
+  [
+   "Bg4",
+   "best"
+  ],
+  [
+   "Qd3",
+   "best"
+  ],
+  [
+   "f5",
+   "best"
+  ],
+  [
+   "h3",
+   "blunder"
+  ],
+  [
+   "f4",
+   "best"
+  ],
+  [
+   "Ree1",
+   "good"
+  ],
+  [
+   "Bh5",
+   "blunder"
+  ],
+  [
+   "Rab1",
+   "inaccuracy"
+  ],
+  [
+   "f3",
+   "best"
+  ],
+  [
+   "g4",
+   "blunder"
+  ],
+  [
+   "Bxg4",
+   "best"
+  ],
+  [
+   "Kh2",
+   "inaccuracy"
+  ],
+  [
+   "Bxh3",
+   "best"
+  ],
+  [
+   "Kxh3",
+   "excellent"
+  ],
+  [
+   "Rf4",
+   "best"
+  ],
+  [
+   "Kh2",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Muggsy_Bogues",
+    "accuracy": 79.9,
+    "acpl": 99,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 5,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 2
+    }
+   },
+   {
+    "name": "Blitz",
+    "accuracy": 94.3,
+    "acpl": 20,
+    "tally": {
+     "brilliant": 0,
+     "best": 9,
+     "excellent": 3,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -4,
+   -23,
+   -21,
+   -19,
+   14,
+   10,
+   10,
+   4,
+   0,
+   3,
+   35,
+   38,
+   37,
+   9,
+   16,
+   13,
+   16,
+   -217,
+   -183,
+   -227,
+   -44,
+   -155,
+   -160,
+   -587,
+   -721,
+   -1321,
+   -9992,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "c3e2",
+   "c8b7",
+   "a2b3",
+   "c8b7",
+   "d3d4",
+   "f8e8",
+   "e3c1",
+   "g4e3",
+   "e1e3",
+   "e7f6",
+   "f3g5",
+   "d8g5",
+   "e3g3",
+   "e6g4",
+   "d1d3",
+   "f7f5",
+   "e4f5",
+   "f5f4",
+   "e3f3",
+   "f4f3",
+   "f2f3",
+   "f4f3",
+   "g2g3",
+   "h5g4",
+   "c3e2",
+   "g4h3",
+   "e1g1",
+   "f8f4",
+   "b2b3",
+   "f4h4",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:56:33Z"
+}

@@ -1,0 +1,230 @@
+{
+ "game": "bdcb0d20-dd45-4e7d-a617-0b5ccfd97ba5",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"16\"]\n[White \"Too Down Bad\"]\n[Black \"Chesstosterone\"]\n[Result \"0-1\"]\n[FEN \"rnbqk2r/ppp3pp/3bpn2/3p1p2/2PP4/1P3NP1/P3PPBP/RNBQK2R b KQkq - 0 7\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n7... Nc6 { [%clk 0:01:56.081] } 8. Qd2 { [%clk 0:02:00.497] } 8... Bb4 { [%clk 0:01:52.28] } 9. e3 { [%clk 0:02:00.994] } 9... Bxd2+ { [%clk 0:01:48.627] } 10. Nbxd2 { [%clk 0:02:01.493] } 10... Kf7 { [%clk 0:01:44.887] } 11. Ne5+ { [%clk 0:02:01.992] } 11... Nxe5 { [%clk 0:01:41.192] } 12. Bf1 { [%clk 0:02:02.49] } 12... Nc6 { [%clk 0:01:37.741] } 13. a4 { [%clk 0:02:02.989] } 13... e5 { [%clk 0:01:34.349] } 14. dxe5 { [%clk 0:02:03.487] } 14... Nxe5 { [%clk 0:01:31.276] } 15. Nf3 { [%clk 0:02:03.986] } 15... Nxf3+ { [%clk 0:01:28.199] } 16. Ke2 { [%clk 0:02:04.485] } 16... dxc4 { [%clk 0:01:25.198] } 17. Rg1 { [%clk 0:02:04.983] } 17... Nxg1+ { [%clk 0:01:22.449] } 18. Ke1 { [%clk 0:02:05.482] } 18... Nf3+ { [%clk 0:01:19.68] } 19. Ke2 { [%clk 0:02:05.981] } 19... Ne5 { [%clk 0:01:17.009] } 20. Ra3 { [%clk 0:02:06.478] } 20... Qd3+ { [%clk 0:01:17.487] } 21. Ke1 { [%clk 0:02:06.976] } 21... Nf3# { [%clk 0:01:17.96] } 0-1\n",
+ "opening": "Dutch Stonewall",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 16\u00b7Final",
+ "white_uuid": "770e39da-5830-4656-9ec3-7f0c00ddf85a",
+ "black_uuid": "1f808e1d-ad15-4072-8492-e1f94624951f",
+ "site_verdicts": [
+  [
+   "Nc6",
+   "good"
+  ],
+  [
+   "Qd2",
+   "blunder"
+  ],
+  [
+   "Bb4",
+   "best"
+  ],
+  [
+   "e3",
+   "excellent"
+  ],
+  [
+   "Bxd2+",
+   "excellent"
+  ],
+  [
+   "Nbxd2",
+   "best"
+  ],
+  [
+   "Kf7",
+   "good"
+  ],
+  [
+   "Ne5+",
+   "excellent"
+  ],
+  [
+   "Nxe5",
+   "best"
+  ],
+  [
+   "Bf1",
+   "inaccuracy"
+  ],
+  [
+   "Nc6",
+   "best"
+  ],
+  [
+   "a4",
+   "excellent"
+  ],
+  [
+   "e5",
+   "excellent"
+  ],
+  [
+   "dxe5",
+   "best"
+  ],
+  [
+   "Nxe5",
+   "excellent"
+  ],
+  [
+   "Nf3",
+   "inaccuracy"
+  ],
+  [
+   "Nxf3+",
+   "best"
+  ],
+  [
+   "Ke2",
+   "best"
+  ],
+  [
+   "dxc4",
+   "best"
+  ],
+  [
+   "Rg1",
+   "excellent"
+  ],
+  [
+   "Nxg1+",
+   "best"
+  ],
+  [
+   "Ke1",
+   "forced"
+  ],
+  [
+   "Nf3+",
+   "best"
+  ],
+  [
+   "Ke2",
+   "forced"
+  ],
+  [
+   "Ne5",
+   "miss"
+  ],
+  [
+   "Ra3",
+   "inaccuracy"
+  ],
+  [
+   "Qd3+",
+   "best"
+  ],
+  [
+   "Ke1",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Too Down Bad",
+    "accuracy": 78.6,
+    "acpl": 290,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 4,
+     "good": 0,
+     "forced": 3,
+     "inaccuracy": 3,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "Chessticles",
+    "accuracy": 98.1,
+    "acpl": 80,
+    "tally": {
+     "brilliant": 0,
+     "best": 9,
+     "excellent": 3,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 1,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   38,
+   68,
+   -557,
+   -552,
+   -578,
+   -575,
+   -569,
+   -501,
+   -505,
+   -488,
+   -670,
+   -662,
+   -720,
+   -689,
+   -692,
+   -654,
+   -1109,
+   -1157,
+   -1230,
+   -1249,
+   -1882,
+   -2041,
+   -9987,
+   -9988,
+   -9989,
+   -1537,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "e8g8",
+   "b1c3",
+   "d6b4",
+   "c1a3",
+   "f6e4",
+   "b1d2",
+   "c6b4",
+   "c1a3",
+   "c6e5",
+   "d4e5",
+   "e5c6",
+   "f1g2",
+   "c6b4",
+   "d4e5",
+   "f6g4",
+   "c1b2",
+   "e5f3",
+   "e1e2",
+   "d5c4",
+   "b3c4",
+   "f3g1",
+   "e2e1",
+   "g1f3",
+   "e1e2",
+   "d8d5",
+   "f2f3",
+   "d8d3",
+   "e2e1",
+   "e5f3",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:15:35Z"
+}

@@ -1,0 +1,128 @@
+{
+ "game": "9ac6f660-9f34-4f0a-9c65-ab7756dd4448",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.07\"]\n[Round \"48\"]\n[White \"NotLLM\"]\n[Black \"Fishy Fischer\"]\n[Result \"1/2-1/2\"]\n[FEN \"r2qk2r/2p1bppp/p1np1n2/1p2p3/4P3/1BN2Q1P/PPPP1PP1/R1B1R1K1 b kq - 0 10\"]\n[SetUp \"1\"]\n[Termination \"threefold_repetition\"]\n\n10... Nd4 { [%clk 0:01:57.937] } 11. Qg3 { [%clk 0:01:56.761] } 11... O-O { [%clk 0:01:56.101] } 12. d3 { [%clk 0:01:51.298] } 12... Nh5 { [%clk 0:01:52.554] } 13. Qg4 { [%clk 0:01:48.212] } 13... Nf6 { [%clk 0:01:50.647] } 14. Qg3 { [%clk 0:01:45.585] } 14... Nh5 { [%clk 0:01:43.376] } 15. Qg4 { [%clk 0:01:40.062] } 15... Nf6 { [%clk 0:01:35.253] } 16. Qg3 { [%clk 0:01:37.108] } 1/2-1/2\n",
+ "opening": "Ruy Lopez, Closed",
+ "termination_text": "Threefold repetition",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 48\u00b7Final",
+ "white_uuid": "2e84d6ba-24da-4b6f-baa3-9af4f10179ee",
+ "black_uuid": "8087333f-5959-4d33-8fce-16347b93344b",
+ "site_verdicts": [
+  [
+   "Nd4",
+   "best"
+  ],
+  [
+   "Qg3",
+   "good"
+  ],
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "d3",
+   "best"
+  ],
+  [
+   "Nh5",
+   "excellent"
+  ],
+  [
+   "Qg4",
+   "best"
+  ],
+  [
+   "Nf6",
+   "best"
+  ],
+  [
+   "Qg3",
+   "best"
+  ],
+  [
+   "Nh5",
+   "best"
+  ],
+  [
+   "Qg4",
+   "best"
+  ],
+  [
+   "Nf6",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "OptiFish",
+    "accuracy": 97.1,
+    "acpl": 7,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 0,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Internship seeker",
+    "accuracy": 97.7,
+    "acpl": 6,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 1,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   5,
+   14,
+   -28,
+   0,
+   -1,
+   -3,
+   -3,
+   -3,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "best": [
+   "c6d4",
+   "f3d1",
+   "e8g8",
+   "d2d3",
+   "a6a5",
+   "g3g4",
+   "h5f6",
+   "g4g3",
+   "f6h5",
+   "g3g4",
+   "h5f6",
+   "g4g3",
+   "f6h5"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:46:56Z"
+}

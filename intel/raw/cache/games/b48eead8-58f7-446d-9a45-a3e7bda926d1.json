@@ -1,0 +1,476 @@
+{
+ "game": "b48eead8-58f7-446d-9a45-a3e7bda926d1",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.06\"]\n[Round \"38\"]\n[White \"imperialists\"]\n[Black \"tal\"]\n[Result \"1-0\"]\n[FEN \"rnbqk2r/pp2ppbp/3p1np1/8/3NP3/2N1B2P/PPP2PP1/R2QKB1R b KQkq - 2 7\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n7... O-O { [%clk 0:01:51.305] } 8. Bc4 { [%clk 0:01:58.979] } 8... a6 { [%clk 0:01:47.253] } 9. f4 { [%clk 0:01:57.884] } 9... e5 { [%clk 0:01:43.501] } 10. Nf3 { [%clk 0:01:53.865] } 10... Nc6 { [%clk 0:01:41.232] } 11. Bd3 { [%clk 0:01:52.313] } 11... Qa5 { [%clk 0:01:36.636] } 12. fxe5 { [%clk 0:01:47.839] } 12... dxe5 { [%clk 0:01:35.049] } 13. O-O { [%clk 0:01:42.01] } 13... Rd8 { [%clk 0:01:32.948] } 14. Qe2 { [%clk 0:01:40.154] } 14... Qb4 { [%clk 0:01:27.01] } 15. a3 { [%clk 0:01:38.287] } 15... Qa5 { [%clk 0:01:23.956] } 16. Qf2 { [%clk 0:01:36.922] } 16... Nd7 { [%clk 0:01:22.591] } 17. Ng5 { [%clk 0:01:34.847] } 17... Rf8 { [%clk 0:01:19.929] } 18. Nxf7 { [%clk 0:01:32.641] } 18... Nd4 { [%clk 0:01:16.578] } 19. Bc4 { [%clk 0:01:31.409] } 19... Nf6 { [%clk 0:01:13.746] } 20. Bxd4 { [%clk 0:01:28.632] } 20... exd4 { [%clk 0:01:12.319] } 21. Nd6+ { [%clk 0:01:25.375] } 21... Kh8 { [%clk 0:01:10.806] } 22. Qxd4 { [%clk 0:01:19.385] } 22... Nd7 { [%clk 0:01:08.06] } 23. Rxf8+ { [%clk 0:01:17.114] } 23... Nxf8 { [%clk 0:01:08.559] } 24. Nf7+ { [%clk 0:01:13.863] } 24... Kg8 { [%clk 0:01:09.058] } 25. Qd6 { [%clk 0:01:09.41] } 25... Bxc3 { [%clk 0:01:03.509] } 26. Ne5+ { [%clk 0:01:08.487] } 26... Be6 { [%clk 0:01:02.329] } 27. Bxe6+ { [%clk 0:01:05.421] } 27... Kh8 { [%clk 0:01:01.009] } 28. bxc3 { [%clk 0:01:01.723] } 28... Qxc3 { [%clk 0:00:56.052] } 29. Rb1 { [%clk 0:01:01.145] } 29... Qe3+ { [%clk 0:00:51.506] } 30. Kh1 { [%clk 0:00:57.912] } 30... Nxe6 { [%clk 0:00:47.967] } 31. Qxe6 { [%clk 0:00:55.999] } 31... b5 { [%clk 0:00:46.046] } 32. Nf7+ { [%clk 0:00:53.68] } 32... Kg7 { [%clk 0:00:45.458] } 33. Qe5+ { [%clk 0:00:49.147] } 33... Kxf7 { [%clk 0:00:44.323] } 34. Qd5+ { [%clk 0:00:47.466] } 34... Kg7 { [%clk 0:00:42.517] } 35. Qxa8 { [%clk 0:00:46.113] } 35... Qxa3 { [%clk 0:00:41.904] } 36. e5 { [%clk 0:00:44.971] } 36... Qa5 { [%clk 0:00:40.039] } 37. c4 { [%clk 0:00:41.513] } 37... bxc4 { [%clk 0:00:39.059] } 38. Rb7+ { [%clk 0:00:41.474] } 38... Qc7 { [%clk 0:00:39.237] } 39. Rxc7+ { [%clk 0:00:41.848] } 39... Kh6 { [%clk 0:00:39.736] } 40. Qf8+ { [%clk 0:00:42.288] } 40... Kg5 { [%clk 0:00:40.193] } 41. Qf6+ { [%clk 0:00:42.78] } 41... Kh6 { [%clk 0:00:40.69] } 42. Qh4# { [%clk 0:00:43.276] } 1-0\n",
+ "opening": "Sicilian Dragon",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 38\u00b7Final",
+ "white_uuid": "a481e066-a010-4260-bf29-0b1a5e0768df",
+ "black_uuid": "45ffde79-8837-461f-bf8b-e21ad21906d2",
+ "site_verdicts": [
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "Bc4",
+   "excellent"
+  ],
+  [
+   "a6",
+   "excellent"
+  ],
+  [
+   "f4",
+   "inaccuracy"
+  ],
+  [
+   "e5",
+   "inaccuracy"
+  ],
+  [
+   "Nf3",
+   "best"
+  ],
+  [
+   "Nc6",
+   "good"
+  ],
+  [
+   "Bd3",
+   "mistake"
+  ],
+  [
+   "Qa5",
+   "inaccuracy"
+  ],
+  [
+   "fxe5",
+   "best"
+  ],
+  [
+   "dxe5",
+   "good"
+  ],
+  [
+   "O-O",
+   "excellent"
+  ],
+  [
+   "Rd8",
+   "inaccuracy"
+  ],
+  [
+   "Qe2",
+   "inaccuracy"
+  ],
+  [
+   "Qb4",
+   "inaccuracy"
+  ],
+  [
+   "a3",
+   "good"
+  ],
+  [
+   "Qa5",
+   "mistake"
+  ],
+  [
+   "Qf2",
+   "best"
+  ],
+  [
+   "Nd7",
+   "blunder"
+  ],
+  [
+   "Ng5",
+   "best"
+  ],
+  [
+   "Rf8",
+   "best"
+  ],
+  [
+   "Nxf7",
+   "inaccuracy"
+  ],
+  [
+   "Nd4",
+   "good"
+  ],
+  [
+   "Bc4",
+   "good"
+  ],
+  [
+   "Nf6",
+   "best"
+  ],
+  [
+   "Bxd4",
+   "good"
+  ],
+  [
+   "exd4",
+   "best"
+  ],
+  [
+   "Nd6+",
+   "mistake"
+  ],
+  [
+   "Kh8",
+   "best"
+  ],
+  [
+   "Qxd4",
+   "best"
+  ],
+  [
+   "Nd7",
+   "inaccuracy"
+  ],
+  [
+   "Rxf8+",
+   "best"
+  ],
+  [
+   "Nxf8",
+   "forced"
+  ],
+  [
+   "Nf7+",
+   "best"
+  ],
+  [
+   "Kg8",
+   "forced"
+  ],
+  [
+   "Qd6",
+   "good"
+  ],
+  [
+   "Bxc3",
+   "inaccuracy"
+  ],
+  [
+   "Ne5+",
+   "excellent"
+  ],
+  [
+   "Be6",
+   "best"
+  ],
+  [
+   "Bxe6+",
+   "best"
+  ],
+  [
+   "Kh8",
+   "excellent"
+  ],
+  [
+   "bxc3",
+   "best"
+  ],
+  [
+   "Qxc3",
+   "good"
+  ],
+  [
+   "Rb1",
+   "good"
+  ],
+  [
+   "Qe3+",
+   "excellent"
+  ],
+  [
+   "Kh1",
+   "best"
+  ],
+  [
+   "Nxe6",
+   "best"
+  ],
+  [
+   "Qxe6",
+   "best"
+  ],
+  [
+   "b5",
+   "inaccuracy"
+  ],
+  [
+   "Nf7+",
+   "excellent"
+  ],
+  [
+   "Kg7",
+   "best"
+  ],
+  [
+   "Qe5+",
+   "excellent"
+  ],
+  [
+   "Kxf7",
+   "best"
+  ],
+  [
+   "Qd5+",
+   "excellent"
+  ],
+  [
+   "Kg7",
+   "best"
+  ],
+  [
+   "Qxa8",
+   "excellent"
+  ],
+  [
+   "Qxa3",
+   "best"
+  ],
+  [
+   "e5",
+   "excellent"
+  ],
+  [
+   "Qa5",
+   "excellent"
+  ],
+  [
+   "c4",
+   "good"
+  ],
+  [
+   "bxc4",
+   "blunder"
+  ],
+  [
+   "Rb7+",
+   "best"
+  ],
+  [
+   "Qc7",
+   "best"
+  ],
+  [
+   "Rxc7+",
+   "best"
+  ],
+  [
+   "Kh6",
+   "forced"
+  ],
+  [
+   "Qf8+",
+   "best"
+  ],
+  [
+   "Kg5",
+   "best"
+  ],
+  [
+   "Qf6+",
+   "best"
+  ],
+  [
+   "Kh6",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "imperialists",
+    "accuracy": 93.0,
+    "acpl": 39,
+    "tally": {
+     "brilliant": 0,
+     "best": 16,
+     "excellent": 8,
+     "good": 6,
+     "forced": 0,
+     "inaccuracy": 3,
+     "mistake": 2,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "rebecca salmon",
+    "accuracy": 88.0,
+    "acpl": 85,
+    "tally": {
+     "brilliant": 0,
+     "best": 14,
+     "excellent": 4,
+     "good": 4,
+     "forced": 3,
+     "inaccuracy": 7,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 2
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   21,
+   18,
+   3,
+   17,
+   -60,
+   32,
+   34,
+   60,
+   -92,
+   -7,
+   -8,
+   19,
+   11,
+   110,
+   47,
+   113,
+   61,
+   184,
+   182,
+   536,
+   563,
+   549,
+   431,
+   523,
+   476,
+   457,
+   410,
+   410,
+   228,
+   202,
+   264,
+   381,
+   399,
+   443,
+   457,
+   512,
+   457,
+   623,
+   614,
+   621,
+   626,
+   628,
+   628,
+   742,
+   577,
+   601,
+   589,
+   590,
+   604,
+   929,
+   802,
+   709,
+   651,
+   685,
+   626,
+   642,
+   621,
+   634,
+   649,
+   728,
+   620,
+   9995,
+   9996,
+   9996,
+   9997,
+   9997,
+   9998,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "e8g8",
+   "d1d2",
+   "f6e4",
+   "c4b3",
+   "b7b5",
+   "d4f3",
+   "d8c7",
+   "f4e5",
+   "e5f4",
+   "f4e5",
+   "c6e5",
+   "d1d2",
+   "c8e6",
+   "d1e1",
+   "c6d4",
+   "e2f2",
+   "b4e7",
+   "e2f2",
+   "c6d4",
+   "f3g5",
+   "d8f8",
+   "d3c4",
+   "d7c5",
+   "b2b4",
+   "d7f6",
+   "f7g5",
+   "e5d4",
+   "f2d4",
+   "g8h8",
+   "f2d4",
+   "a5g5",
+   "f1f8",
+   "d7f8",
+   "d6f7",
+   "h8g8",
+   "f7h6",
+   "c8h3",
+   "b2c3",
+   "c8e6",
+   "c4e6",
+   "f8e6",
+   "b2c3",
+   "f8e6",
+   "a1f1",
+   "a8e8",
+   "g1h1",
+   "f8e6",
+   "d6e6",
+   "e3f4",
+   "b1f1",
+   "h8g7",
+   "b1f1",
+   "g7f7",
+   "b1f1",
+   "f7g7",
+   "d5b7",
+   "e3a3",
+   "a8a7",
+   "a3f8",
+   "b1f1",
+   "h7h5",
+   "b1b7",
+   "a5c7",
+   "b7c7",
+   "g7h6",
+   "a8f8",
+   "h6g5",
+   "f8f6",
+   "g5h6",
+   "f6h4",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:54:26Z"
+}

@@ -1,0 +1,278 @@
+{
+ "game": "959b5e47-bcb6-4339-a6ed-ce7a83af3be6",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.06\"]\n[Round \"31\"]\n[White \"Gambit\"]\n[Black \"Imperial Larper\"]\n[Result \"0-1\"]\n[FEN \"r2qkb1r/pp1n1ppp/2p1pn2/5b2/P1NP4/2N1P3/1P3PPP/R1BQKB1R b KQkq - 0 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8... Bb4 { [%clk 0:01:57.342] } 9. Qb3 { [%clk 0:01:55.753] } 9... Qe7 { [%clk 0:01:54.902] } 10. Be2 { [%clk 0:01:51.726] } 10... a5 { [%clk 0:01:52.727] } 11. O-O { [%clk 0:01:49.581] } 11... e5 { [%clk 0:01:50.867] } 12. dxe5 { [%clk 0:01:45.726] } 12... Nxe5 { [%clk 0:01:48.12] } 13. Nxe5 { [%clk 0:01:44.514] } 13... Qxe5 { [%clk 0:01:45.899] } 14. Rd1 { [%clk 0:01:41.912] } 14... O-O { [%clk 0:01:43.407] } 15. Bc4 { [%clk 0:01:38.328] } 15... Ng4 { [%clk 0:01:41.818] } 16. g3 { [%clk 0:01:36.697] } 16... Qf6 { [%clk 0:01:37.98] } 17. e4 { [%clk 0:01:33.972] } 17... Be6 { [%clk 0:01:36.611] } 18. f4 { [%clk 0:01:31.663] } 18... Bc5+ { [%clk 0:01:33.834] } 19. Kg2 { [%clk 0:01:28.481] } 19... Nf2 { [%clk 0:01:30.784] } 20. e5 { [%clk 0:01:25.388] } 20... Bh3+ { [%clk 0:01:29.181] } 21. Kf3 { [%clk 0:01:22.392] } 21... Qh6 { [%clk 0:01:28.688] } 22. Ke2 { [%clk 0:01:21.603] } 22... Bg4+ { [%clk 0:01:27.296] } 23. Ke1 { [%clk 0:01:19.719] } 23... Qxh2 { [%clk 0:01:22.284] } 24. Rd2 { [%clk 0:01:18.909] } 24... Qg1+ { [%clk 0:01:22.781] } 25. Bf1 { [%clk 0:01:19.363] } 25... Nd3+ { [%clk 0:01:23.279] } 26. Rxd3 { [%clk 0:01:19.861] } 26... Qf2# { [%clk 0:01:23.777] } 0-1\n",
+ "opening": "Slav Defence",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 31\u00b7Final",
+ "white_uuid": "e9f8c904-d9a9-4bfb-acf8-451b5aa2e2f4",
+ "black_uuid": "cdc9d2a6-9470-450c-9642-31345007b69d",
+ "site_verdicts": [
+  [
+   "Bb4",
+   "best"
+  ],
+  [
+   "Qb3",
+   "good"
+  ],
+  [
+   "Qe7",
+   "good"
+  ],
+  [
+   "Be2",
+   "best"
+  ],
+  [
+   "a5",
+   "best"
+  ],
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "e5",
+   "best"
+  ],
+  [
+   "dxe5",
+   "inaccuracy"
+  ],
+  [
+   "Nxe5",
+   "best"
+  ],
+  [
+   "Nxe5",
+   "good"
+  ],
+  [
+   "Qxe5",
+   "best"
+  ],
+  [
+   "Rd1",
+   "best"
+  ],
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "Bc4",
+   "inaccuracy"
+  ],
+  [
+   "Ng4",
+   "best"
+  ],
+  [
+   "g3",
+   "excellent"
+  ],
+  [
+   "Qf6",
+   "excellent"
+  ],
+  [
+   "e4",
+   "best"
+  ],
+  [
+   "Be6",
+   "good"
+  ],
+  [
+   "f4",
+   "good"
+  ],
+  [
+   "Bc5+",
+   "best"
+  ],
+  [
+   "Kg2",
+   "best"
+  ],
+  [
+   "Nf2",
+   "best"
+  ],
+  [
+   "e5",
+   "blunder"
+  ],
+  [
+   "Bh3+",
+   "best"
+  ],
+  [
+   "Kf3",
+   "best"
+  ],
+  [
+   "Qh6",
+   "best"
+  ],
+  [
+   "Ke2",
+   "excellent"
+  ],
+  [
+   "Bg4+",
+   "best"
+  ],
+  [
+   "Ke1",
+   "excellent"
+  ],
+  [
+   "Qxh2",
+   "best"
+  ],
+  [
+   "Rd2",
+   "inaccuracy"
+  ],
+  [
+   "Qg1+",
+   "excellent"
+  ],
+  [
+   "Bf1",
+   "forced"
+  ],
+  [
+   "Nd3+",
+   "best"
+  ],
+  [
+   "Rxd3",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "DegreeGambit",
+    "accuracy": 86.8,
+    "acpl": 126,
+    "tally": {
+     "brilliant": 0,
+     "best": 6,
+     "excellent": 3,
+     "good": 3,
+     "forced": 2,
+     "inaccuracy": 3,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "Imperial Larper",
+    "accuracy": 98.4,
+    "acpl": 7,
+    "tally": {
+     "brilliant": 0,
+     "best": 15,
+     "excellent": 2,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   3,
+   4,
+   -20,
+   6,
+   -14,
+   2,
+   -3,
+   6,
+   -91,
+   -89,
+   -121,
+   -130,
+   -147,
+   -142,
+   -232,
+   -205,
+   -228,
+   -211,
+   -203,
+   -172,
+   -208,
+   -205,
+   -201,
+   -196,
+   -703,
+   -767,
+   -775,
+   -797,
+   -895,
+   -1007,
+   -1317,
+   -1324,
+   -9997,
+   -9998,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "f8b4",
+   "f1e2",
+   "a7a5",
+   "f1e2",
+   "a7a5",
+   "e1g1",
+   "e6e5",
+   "c3a2",
+   "d7e5",
+   "c3a2",
+   "e7e5",
+   "f1d1",
+   "e8g8",
+   "c1d2",
+   "f6g4",
+   "f2f4",
+   "f5e6",
+   "e3e4",
+   "f5c8",
+   "d1f1",
+   "b4c5",
+   "g1g2",
+   "g4f2",
+   "c4e6",
+   "e6h3",
+   "g2f3",
+   "f6h6",
+   "c1e3",
+   "h3g4",
+   "e2d2",
+   "h6h2",
+   "d1d4",
+   "f2d3",
+   "c4f1",
+   "f2d3",
+   "d2d3",
+   "g1f2",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:22:07Z"
+}

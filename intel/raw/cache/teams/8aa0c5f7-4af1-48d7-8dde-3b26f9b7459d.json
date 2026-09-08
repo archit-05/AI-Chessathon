@@ -2,129 +2,381 @@
  "uuid": "8aa0c5f7-4af1-48d7-8dde-3b26f9b7459d",
  "bot": "silly silly silly chess",
  "team": "Desai",
- "rating": 1552,
- "rank": 153,
- "record": "13-1-15",
- "rated_rounds": 29,
+ "rating": 1582,
+ "rank": 166,
+ "record": "21-2-23",
+ "rated_rounds": 47,
  "history": [
   [
    5,
-   1580
+   1573
   ],
   [
    6,
-   1511
+   1513
   ],
   [
    7,
-   1503
+   1500
   ],
   [
    8,
-   1561
+   1550
   ],
   [
    9,
-   1688
+   1677
   ],
   [
    10,
-   1589
-  ],
-  [
-   11,
-   1526
-  ],
-  [
-   12,
-   1620
-  ],
-  [
-   13,
-   1551
-  ],
-  [
-   14,
-   1664
-  ],
-  [
-   15,
-   1743
-  ],
-  [
-   16,
-   1642
-  ],
-  [
-   17,
-   1572
-  ],
-  [
-   18,
-   1631
-  ],
-  [
-   19,
-   1702
-  ],
-  [
-   20,
-   1599
-  ],
-  [
-   21,
-   1537
-  ],
-  [
-   22,
-   1610
-  ],
-  [
-   23,
-   1548
-  ],
-  [
-   24,
-   1507
-  ],
-  [
-   25,
-   1555
-  ],
-  [
-   26,
-   1625
-  ],
-  [
-   27,
-   1662
-  ],
-  [
-   28,
-   1633
-  ],
-  [
-   29,
    1590
   ],
   [
-   30,
-   1575
+   11,
+   1531
   ],
   [
-   31,
-   1598
+   12,
+   1611
   ],
   [
-   32,
+   13,
+   1555
+  ],
+  [
+   14,
+   1650
+  ],
+  [
+   15,
+   1721
+  ],
+  [
+   16,
+   1630
+  ],
+  [
+   17,
    1570
   ],
   [
-   33,
+   18,
+   1619
+  ],
+  [
+   19,
+   1678
+  ],
+  [
+   20,
+   1589
+  ],
+  [
+   21,
+   1533
+  ],
+  [
+   22,
+   1597
+  ],
+  [
+   23,
+   1543
+  ],
+  [
+   24,
+   1511
+  ],
+  [
+   25,
    1552
+  ],
+  [
+   26,
+   1614
+  ],
+  [
+   27,
+   1644
+  ],
+  [
+   28,
+   1622
+  ],
+  [
+   29,
+   1586
+  ],
+  [
+   30,
+   1578
+  ],
+  [
+   31,
+   1597
+  ],
+  [
+   32,
+   1574
+  ],
+  [
+   33,
+   1561
+  ],
+  [
+   34,
+   1576
+  ],
+  [
+   35,
+   1555
+  ],
+  [
+   36,
+   1580
+  ],
+  [
+   37,
+   1595
+  ],
+  [
+   38,
+   1611
+  ],
+  [
+   39,
+   1595
+  ],
+  [
+   40,
+   1590
+  ],
+  [
+   41,
+   1615
+  ],
+  [
+   42,
+   1596
+  ],
+  [
+   43,
+   1614
+  ],
+  [
+   44,
+   1600
+  ],
+  [
+   45,
+   1598
+  ],
+  [
+   46,
+   1588
+  ],
+  [
+   47,
+   1603
+  ],
+  [
+   48,
+   1595
+  ],
+  [
+   49,
+   1601
+  ],
+  [
+   50,
+   1591
+  ],
+  [
+   51,
+   1582
   ]
  ],
  "games": [
+  {
+   "game": "c16a33a8-4608-4f90-9fc0-13f2dc2b699f",
+   "kind": "Rated",
+   "round": 51,
+   "colour": "Black",
+   "opponent": "Blunder Buss",
+   "opponent_uuid": "5e10f7ae-b545-4ce9-bb7a-d2ec55f9387c",
+   "verdict": "loss",
+   "opening": "French Winawer"
+  },
+  {
+   "game": "9156fa71-65af-4f51-8763-46a7bd372e6e",
+   "kind": "Rated",
+   "round": 50,
+   "colour": "White",
+   "opponent": "Pwn",
+   "opponent_uuid": "39630436-64b8-4445-aa23-e545dde7a28f",
+   "verdict": "loss",
+   "opening": "Ruy Lopez, Closed"
+  },
+  {
+   "game": "3d234e27-1983-47db-bae9-c6773ae477dd",
+   "kind": "Rated",
+   "round": 49,
+   "colour": "White",
+   "opponent": "Vanish Onigiri",
+   "opponent_uuid": "b50dbc85-39d5-4657-a8f2-ef64dc14490b",
+   "verdict": "win",
+   "opening": "Sicilian Sveshnikov"
+  },
+  {
+   "game": "bc9ec8ee-30e7-4393-9b26-15eb5e736d32",
+   "kind": "Rated",
+   "round": 48,
+   "colour": "Black",
+   "opponent": "Oxchess",
+   "opponent_uuid": "e11cad31-ab8f-46ee-bf00-056881752046",
+   "verdict": "loss",
+   "opening": "Ruy Lopez, Closed"
+  },
+  {
+   "game": "1427c58b-8225-4854-8a18-a3fb10f381d2",
+   "kind": "Rated",
+   "round": 47,
+   "colour": "White",
+   "opponent": "tal",
+   "opponent_uuid": "45ffde79-8837-461f-bf8b-e21ad21906d2",
+   "verdict": "win",
+   "opening": "Sicilian Closed"
+  },
+  {
+   "game": "cacb23b9-5847-4adf-a768-6ac7eb59bd0e",
+   "kind": "Rated",
+   "round": 46,
+   "colour": "White",
+   "opponent": "The Pawn",
+   "opponent_uuid": "08d80098-6401-40cf-8675-1b668f2e1302",
+   "verdict": "loss",
+   "opening": "Sicilian Closed"
+  },
+  {
+   "game": "03aeca8f-cabe-4a91-a604-9e64532cc8b8",
+   "kind": "Rated",
+   "round": 45,
+   "colour": "Black",
+   "opponent": "ChemErep",
+   "opponent_uuid": "103c0d1e-7c04-4b5d-92ef-893f1cbcad61",
+   "verdict": "draw",
+   "opening": "Grunfeld Defence"
+  },
+  {
+   "game": "6ca1e5e7-8345-4137-99ab-d92ae048479e",
+   "kind": "Rated",
+   "round": 44,
+   "colour": "Black",
+   "opponent": "Phantom",
+   "opponent_uuid": "d5dd74ce-90ff-4643-97d0-406b517dd0ad",
+   "verdict": "loss",
+   "opening": "Semi-Slav Defence"
+  },
+  {
+   "game": "1bf873c5-b6f0-4b0e-b8a7-b94b132a72f3",
+   "kind": "Rated",
+   "round": 43,
+   "colour": "White",
+   "opponent": "berserker",
+   "opponent_uuid": "855b9f23-9b9b-4da6-9559-18a2b187d298",
+   "verdict": "win",
+   "opening": "Reti Opening"
+  },
+  {
+   "game": "66eed3a9-608a-479d-8b24-229bf35d5d04",
+   "kind": "Rated",
+   "round": 42,
+   "colour": "White",
+   "opponent": "HighestElo",
+   "opponent_uuid": "833051b0-31db-4404-af8b-6147044a66b9",
+   "verdict": "loss",
+   "opening": "Sicilian Closed"
+  },
+  {
+   "game": "b363a744-a560-493b-bff4-4f1a8b0fe8a8",
+   "kind": "Rated",
+   "round": 41,
+   "colour": "Black",
+   "opponent": "Oxchess",
+   "opponent_uuid": "e11cad31-ab8f-46ee-bf00-056881752046",
+   "verdict": "win",
+   "opening": "Ruy Lopez, Closed"
+  },
+  {
+   "game": "7eb727d6-6c27-4261-ba8d-4f2701b20773",
+   "kind": "Rated",
+   "round": 40,
+   "colour": "Black",
+   "opponent": "LARPMAXX",
+   "opponent_uuid": "faa7dc92-3d5d-4190-8e78-39ccbe4dddb9",
+   "verdict": "draw",
+   "opening": "Queen's Indian Defence"
+  },
+  {
+   "game": "c7e020fe-bab3-4713-ad43-92ad55cb6dd5",
+   "kind": "Rated",
+   "round": 39,
+   "colour": "White",
+   "opponent": "Zugzwin",
+   "opponent_uuid": "2463d1f5-3e78-4dce-a254-be5983079ccc",
+   "verdict": "loss",
+   "opening": "Ruy Lopez, Closed"
+  },
+  {
+   "game": "37b07afd-fecc-45f0-b0ba-d39f46ea8383",
+   "kind": "Rated",
+   "round": 38,
+   "colour": "Black",
+   "opponent": "NotLLM",
+   "opponent_uuid": "2e84d6ba-24da-4b6f-baa3-9af4f10179ee",
+   "verdict": "win",
+   "opening": "French Winawer"
+  },
+  {
+   "game": "89d8b4de-ec9d-4632-823e-e108ada4e7ce",
+   "kind": "Rated",
+   "round": 37,
+   "colour": "White",
+   "opponent": "beacon",
+   "opponent_uuid": "0790dc24-a593-438d-bd06-d0dc6c67c523",
+   "verdict": "win",
+   "opening": "Four Knights Game"
+  },
+  {
+   "game": "759fe82b-4263-4ed1-9f02-a55d724c69ec",
+   "kind": "Rated",
+   "round": 36,
+   "colour": "Black",
+   "opponent": "Team I Love Fortnite",
+   "opponent_uuid": "b6b3a357-e142-47fc-9f9b-5a0520a393bc",
+   "verdict": "win",
+   "opening": "Petroff Defence"
+  },
+  {
+   "game": "20b6425b-47e8-482b-bdd0-957034c309c0",
+   "kind": "Rated",
+   "round": 35,
+   "colour": "White",
+   "opponent": "Keresight",
+   "opponent_uuid": "3fcdf539-0b45-4b69-a4b1-4fdc59fcbe06",
+   "verdict": "loss",
+   "opening": "Petroff Defence"
+  },
+  {
+   "game": "26269701-d696-4b61-8c09-03928d39be8d",
+   "kind": "Rated",
+   "round": 34,
+   "colour": "Black",
+   "opponent": "CCC",
+   "opponent_uuid": "fc4d6c3d-5ebc-44f1-afaa-f02f9e001c8e",
+   "verdict": "win",
+   "opening": "Ruy Lopez, Closed"
+  },
   {
    "game": "1321e3f9-c9e3-4b11-b6f5-90e306ea6a30",
    "kind": "Rated",
@@ -392,7 +644,7 @@
    "colour": "Black",
    "opponent": "claudeshark",
    "opponent_uuid": "6532bc56-58ba-48b5-977d-0c039fe3fd7b",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "French Classical"
   },
   {
@@ -416,5 +668,5 @@
    "opening": "London System"
   }
  ],
- "fetched_at": "2026-09-06T09:30:48Z"
+ "fetched_at": "2026-09-07T13:00:50Z"
 }

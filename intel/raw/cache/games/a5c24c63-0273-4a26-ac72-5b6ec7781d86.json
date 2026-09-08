@@ -1,0 +1,260 @@
+{
+ "game": "a5c24c63-0273-4a26-ac72-5b6ec7781d86",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"16\"]\n[White \"Epoch & Mate\"]\n[Black \"Nakamura\"]\n[Result \"*\"]\n[FEN \"rnbqk2r/ppp2ppp/3b4/3p4/2PPn3/5N2/PP2BPPP/RNBQK2R b KQkq - 0 7\"]\n[SetUp \"1\"]\n[Termination \"unterminated\"]\n\n7... Be6 { [%clk 0:01:58.532] } 8. cxd5 { [%clk 0:01:56.406] } 8... Bxd5 { [%clk 0:01:57.065] } 9. Nbd2 { [%clk 0:01:52.925] } 9... O-O { [%clk 0:01:55.598] } 10. O-O { [%clk 0:01:49.552] } 10... Nc6 { [%clk 0:01:54.131] } 11. Bb5 { [%clk 0:01:46.285] } 11... Re8 { [%clk 0:01:52.664] } 12. Nxe4 { [%clk 0:01:43.121] } 12... Rxe4 { [%clk 0:01:51.196] } 13. Bg5 { [%clk 0:01:40.055] } 13... f6 { [%clk 0:01:49.729] } 14. Bxc6 { [%clk 0:01:37.084] } 14... bxc6 { [%clk 0:01:48.262] } 15. Be3 { [%clk 0:01:34.207] } 15... a5 { [%clk 0:01:46.794] } 16. Qd3 { [%clk 0:01:31.419] } 16... Rb8 { [%clk 0:01:45.327] } 17. Bc1 { [%clk 0:01:28.719] } 17... Qd7 { [%clk 0:01:43.86] } 18. Nd2 { [%clk 0:01:26.103] } 18... Rh4 { [%clk 0:01:42.393] } 19. Nf3 { [%clk 0:01:23.569] } 19... Bxf3 { [%clk 0:01:40.926] } 20. Qxf3 { [%clk 0:01:21.114] } 20... Bxh2+ { [%clk 0:01:39.458] } 21. Kh1 { [%clk 0:01:18.735] } 21... Be5+ { [%clk 0:01:37.991] } 22. Kg1 { [%clk 0:01:16.431] } 22... Bh2+ { [%clk 0:01:36.524] } 23. Kh1 { [%clk 0:01:14.199] } 23... Be5+ { [%clk 0:01:35.056] } 24. Kg1 { [%clk 0:01:12.037] } *\n",
+ "opening": "Petroff Defence",
+ "termination_text": "Unterminated",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 16\u00b7Void",
+ "white_uuid": "05f56161-10ae-4332-8779-b38f98dfc624",
+ "black_uuid": "abfdf13d-3efa-4764-a3b4-c9e7c9f18339",
+ "site_verdicts": [
+  [
+   "Be6",
+   "excellent"
+  ],
+  [
+   "cxd5",
+   "good"
+  ],
+  [
+   "Bxd5",
+   "good"
+  ],
+  [
+   "Nbd2",
+   "inaccuracy"
+  ],
+  [
+   "O-O",
+   "excellent"
+  ],
+  [
+   "O-O",
+   "excellent"
+  ],
+  [
+   "Nc6",
+   "good"
+  ],
+  [
+   "Bb5",
+   "inaccuracy"
+  ],
+  [
+   "Re8",
+   "good"
+  ],
+  [
+   "Nxe4",
+   "excellent"
+  ],
+  [
+   "Rxe4",
+   "best"
+  ],
+  [
+   "Bg5",
+   "excellent"
+  ],
+  [
+   "f6",
+   "good"
+  ],
+  [
+   "Bxc6",
+   "good"
+  ],
+  [
+   "bxc6",
+   "excellent"
+  ],
+  [
+   "Be3",
+   "inaccuracy"
+  ],
+  [
+   "a5",
+   "good"
+  ],
+  [
+   "Qd3",
+   "excellent"
+  ],
+  [
+   "Rb8",
+   "excellent"
+  ],
+  [
+   "Bc1",
+   "mistake"
+  ],
+  [
+   "Qd7",
+   "inaccuracy"
+  ],
+  [
+   "Nd2",
+   "inaccuracy"
+  ],
+  [
+   "Rh4",
+   "good"
+  ],
+  [
+   "Nf3",
+   "mistake"
+  ],
+  [
+   "Bxf3",
+   "best"
+  ],
+  [
+   "Qxf3",
+   "best"
+  ],
+  [
+   "Bxh2+",
+   "best"
+  ],
+  [
+   "Kh1",
+   "forced"
+  ],
+  [
+   "Be5+",
+   "best"
+  ],
+  [
+   "Kg1",
+   "best"
+  ],
+  [
+   "Bh2+",
+   "best"
+  ],
+  [
+   "Kh1",
+   "forced"
+  ],
+  [
+   "Be5+",
+   "inaccuracy"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Epoch & Mate",
+    "accuracy": 85.2,
+    "acpl": 50,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 4,
+     "good": 2,
+     "forced": 2,
+     "inaccuracy": 4,
+     "mistake": 2,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Nakamura",
+    "accuracy": 89.3,
+    "acpl": 34,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 4,
+     "good": 6,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   3,
+   9,
+   -17,
+   26,
+   -52,
+   -47,
+   -53,
+   -29,
+   -111,
+   -60,
+   -76,
+   -92,
+   -102,
+   -65,
+   -120,
+   -104,
+   -167,
+   -132,
+   -142,
+   -128,
+   -257,
+   -139,
+   -251,
+   -209,
+   -421,
+   -474,
+   -493,
+   -512,
+   -525,
+   -522,
+   -522,
+   -522,
+   -522,
+   -336,
+   -347
+  ],
+  "best": [
+   "e8g8",
+   "c4c5",
+   "d6b4",
+   "b1c3",
+   "e4d2",
+   "d2e4",
+   "e4d2",
+   "d2c4",
+   "e4g5",
+   "f1e1",
+   "e8e4",
+   "c1e3",
+   "d8d7",
+   "g5e3",
+   "d5c6",
+   "g5h4",
+   "d8e8",
+   "f1e1",
+   "d8e8",
+   "b2b3",
+   "d8e8",
+   "h2h3",
+   "e4g4",
+   "h2h3",
+   "d5f3",
+   "d3f3",
+   "d6h2",
+   "g1h1",
+   "h2e5",
+   "h1g1",
+   "e5h2",
+   "g1h1",
+   "d7d4",
+   "h1g1",
+   "d7d4"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:26:23Z"
+}

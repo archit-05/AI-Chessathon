@@ -1,0 +1,218 @@
+{
+ "game": "1f59ad20-0b31-4b29-8cb3-55835448ab74",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"22\"]\n[White \"Zagreus 5.0\"]\n[Black \"OctaBasilissa\"]\n[Result \"*\"]\n[FEN \"rnb1k2r/pp2nppp/4p3/q1ppP3/3P4/P1P5/2PB1PPP/1R1QKBNR b Kkq - 4 8\"]\n[SetUp \"1\"]\n[Termination \"unterminated\"]\n\n8... f6 { [%clk 0:01:53.465] } 9. c4 { [%clk 0:01:55.913] } 9... Qxa3 { [%clk 0:01:47.939] } 10. exf6 { [%clk 0:01:51.972] } 10... gxf6 { [%clk 0:01:41.612] } 11. Rb3 { [%clk 0:01:48.172] } 11... Qa4 { [%clk 0:01:33.57] } 12. cxd5 { [%clk 0:01:44.507] } 12... Qxd4 { [%clk 0:01:30.08] } 13. dxe6 { [%clk 0:01:40.974] } 13... Bxe6 { [%clk 0:01:25.494] } 14. Ne2 { [%clk 0:01:37.566] } 14... Qd7 { [%clk 0:01:22.412] } 15. Rd3 { [%clk 0:01:34.281] } 15... Qc6 { [%clk 0:01:18.762] } 16. Be3 { [%clk 0:01:31.112] } 16... Nd7 { [%clk 0:01:14.394] } 17. Rd6 { [%clk 0:01:28.057] } 17... Qe4 { [%clk 0:01:11.584] } 18. Nf4 { [%clk 0:01:25.111] } 18... Qb4+ { [%clk 0:01:08.405] } 19. Bd2 { [%clk 0:01:22.27] } 19... Qe4+ { [%clk 0:01:03.19] } 20. Be3 { [%clk 0:01:19.531] } 20... Qb4+ { [%clk 0:01:01.022] } 21. Bd2 { [%clk 0:01:16.889] } 21... Qe4+ { [%clk 0:00:57.072] } *\n",
+ "opening": "French Winawer",
+ "termination_text": "Unterminated",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 22\u00b7Void",
+ "white_uuid": "298458f5-3c10-4357-ae00-f3c43bd86386",
+ "black_uuid": "7be4674f-d434-4919-9dad-50d03ad73a3d",
+ "site_verdicts": [
+  [
+   "f6",
+   "mistake"
+  ],
+  [
+   "c4",
+   "good"
+  ],
+  [
+   "Qxa3",
+   "excellent"
+  ],
+  [
+   "exf6",
+   "best"
+  ],
+  [
+   "gxf6",
+   "best"
+  ],
+  [
+   "Rb3",
+   "inaccuracy"
+  ],
+  [
+   "Qa4",
+   "inaccuracy"
+  ],
+  [
+   "cxd5",
+   "best"
+  ],
+  [
+   "Qxd4",
+   "best"
+  ],
+  [
+   "dxe6",
+   "good"
+  ],
+  [
+   "Bxe6",
+   "good"
+  ],
+  [
+   "Ne2",
+   "best"
+  ],
+  [
+   "Qd7",
+   "excellent"
+  ],
+  [
+   "Rd3",
+   "best"
+  ],
+  [
+   "Qc6",
+   "good"
+  ],
+  [
+   "Be3",
+   "inaccuracy"
+  ],
+  [
+   "Nd7",
+   "best"
+  ],
+  [
+   "Rd6",
+   "best"
+  ],
+  [
+   "Qe4",
+   "best"
+  ],
+  [
+   "Nf4",
+   "best"
+  ],
+  [
+   "Qb4+",
+   "best"
+  ],
+  [
+   "Bd2",
+   "excellent"
+  ],
+  [
+   "Qe4+",
+   "best"
+  ],
+  [
+   "Be3",
+   "best"
+  ],
+  [
+   "Qb4+",
+   "best"
+  ],
+  [
+   "Bd2",
+   "good"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Zagreus 5.0",
+    "accuracy": 92.3,
+    "acpl": 22,
+    "tally": {
+     "brilliant": 0,
+     "best": 7,
+     "excellent": 1,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "OctaBasilissa",
+    "accuracy": 93.3,
+    "acpl": 22,
+    "tally": {
+     "brilliant": 0,
+     "best": 8,
+     "excellent": 2,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   56,
+   207,
+   174,
+   195,
+   216,
+   196,
+   107,
+   166,
+   162,
+   135,
+   106,
+   136,
+   144,
+   141,
+   116,
+   144,
+   78,
+   69,
+   84,
+   59,
+   71,
+   80,
+   88,
+   91,
+   92,
+   91,
+   48,
+   51
+  ],
+  "best": [
+   "b8c6",
+   "e5f6",
+   "a5a4",
+   "e5f6",
+   "g7f6",
+   "f1d3",
+   "a3a6",
+   "c4d5",
+   "a4d4",
+   "g1e2",
+   "b8c6",
+   "g1e2",
+   "d4d6",
+   "b3d3",
+   "d7c7",
+   "e2f4",
+   "b8d7",
+   "d3d6",
+   "c6e4",
+   "e2f4",
+   "e4b4",
+   "d6d2",
+   "b4e4",
+   "d2e3",
+   "e4b4",
+   "d6d2",
+   "b4e4",
+   "f1e2"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:34:09Z"
+}

@@ -1,0 +1,212 @@
+{
+ "game": "878820b8-8a30-47a6-a238-b76401bf78f1",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"10\"]\n[White \"bussin_csv\"]\n[Black \"Bishop\"]\n[Result \"0-1\"]\n[FEN \"rnbqk1nr/bp3ppp/p7/3p4/P7/1N6/1PP2PPP/R1BQKBNR w KQkq - 2 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8. Nc5 { [%clk 0:02:00.499] } 8... Bxc5 { [%clk 0:01:56.959] } 9. Nh3 { [%clk 0:02:00.997] } 9... Bxh3 { [%clk 0:01:53.728] } 10. Rg1 { [%clk 0:02:01.496] } 10... Be6 { [%clk 0:01:50.6] } 11. Rh1 { [%clk 0:02:01.995] } 11... Nf6 { [%clk 0:01:48.105] } 12. Rg1 { [%clk 0:02:02.494] } 12... Ng4 { [%clk 0:01:45.044] } 13. Rh1 { [%clk 0:02:02.993] } 13... Nxf2 { [%clk 0:01:41.964] } 14. Rg1 { [%clk 0:02:03.492] } 14... Nxd1 { [%clk 0:01:38.989] } 15. Rh1 { [%clk 0:02:03.99] } 15... Nf2 { [%clk 0:01:36.231] } 16. Rg1 { [%clk 0:02:04.489] } 16... Qh4 { [%clk 0:01:33.336] } 17. Rh1 { [%clk 0:02:04.988] } 17... Nxh1+ { [%clk 0:01:30.422] } 18. Ke2 { [%clk 0:02:05.487] } 18... Qf2+ { [%clk 0:01:30.052] } 19. Kd3 { [%clk 0:02:05.986] } 19... Bf5+ { [%clk 0:01:30.551] } 20. Kc3 { [%clk 0:02:06.485] } 20... Qxc2# { [%clk 0:01:31.046] } 0-1\n",
+ "opening": "French Tarrasch",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 10\u00b7Final",
+ "white_uuid": "ee0b493e-f326-4049-9487-3bbbdcd40301",
+ "black_uuid": "91c4a7dc-20a6-4ee7-8b90-644ae1801083",
+ "site_verdicts": [
+  [
+   "Nc5",
+   "blunder"
+  ],
+  [
+   "Bxc5",
+   "best"
+  ],
+  [
+   "Nh3",
+   "excellent"
+  ],
+  [
+   "Bxh3",
+   "excellent"
+  ],
+  [
+   "Rg1",
+   "inaccuracy"
+  ],
+  [
+   "Be6",
+   "best"
+  ],
+  [
+   "Rh1",
+   "excellent"
+  ],
+  [
+   "Nf6",
+   "best"
+  ],
+  [
+   "Rg1",
+   "excellent"
+  ],
+  [
+   "Ng4",
+   "excellent"
+  ],
+  [
+   "Rh1",
+   "excellent"
+  ],
+  [
+   "Nxf2",
+   "excellent"
+  ],
+  [
+   "Rg1",
+   "excellent"
+  ],
+  [
+   "Nxd1",
+   "best"
+  ],
+  [
+   "Rh1",
+   "excellent"
+  ],
+  [
+   "Nf2",
+   "excellent"
+  ],
+  [
+   "Rg1",
+   "excellent"
+  ],
+  [
+   "Qh4",
+   "best"
+  ],
+  [
+   "Rh1",
+   "inaccuracy"
+  ],
+  [
+   "Nxh1+",
+   "excellent"
+  ],
+  [
+   "Ke2",
+   "excellent"
+  ],
+  [
+   "Qf2+",
+   "best"
+  ],
+  [
+   "Kd3",
+   "excellent"
+  ],
+  [
+   "Bf5+",
+   "best"
+  ],
+  [
+   "Kc3",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Jarvis",
+    "accuracy": 83.7,
+    "acpl": 222,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 9,
+     "good": 0,
+     "forced": 1,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "Bishop",
+    "accuracy": 99.8,
+    "acpl": 21,
+    "tally": {
+     "brilliant": 0,
+     "best": 8,
+     "excellent": 5,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -18,
+   -572,
+   -557,
+   -576,
+   -556,
+   -816,
+   -816,
+   -821,
+   -821,
+   -907,
+   -900,
+   -1014,
+   -986,
+   -1271,
+   -1281,
+   -1724,
+   -1522,
+   -1642,
+   -1669,
+   -9997,
+   -9995,
+   -9997,
+   -9998,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "d1e2",
+   "a7c5",
+   "f1d3",
+   "b8c6",
+   "g2h3",
+   "h3e6",
+   "f1d3",
+   "g8f6",
+   "c1e3",
+   "f6e4",
+   "d1f3",
+   "c5f2",
+   "d1e2",
+   "f2d1",
+   "e1d1",
+   "e6g4",
+   "a1a3",
+   "d8h4",
+   "f1e2",
+   "f2d3",
+   "g2g3",
+   "h4f2",
+   "e2d1",
+   "e6f5",
+   "d3c3",
+   "f2c2",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:35:22Z"
+}

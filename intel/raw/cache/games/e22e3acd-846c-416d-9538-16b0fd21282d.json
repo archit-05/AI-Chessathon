@@ -1,0 +1,212 @@
+{
+ "game": "e22e3acd-846c-416d-9538-16b0fd21282d",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.07\"]\n[Round \"49\"]\n[White \"e=mc^2\"]\n[Black \"corundum.ai\"]\n[Result \"1-0\"]\n[FEN \"r1bq1rk1/2p1bppp/p2p1n2/np2p3/4P3/1BNP1N1P/PPP2PP1/R1BQR1K1 b - - 0 10\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n10... Nxb3 { [%clk 0:01:56.499] } 11. axb3 { [%clk 0:01:56.897] } 11... b4 { [%clk 0:01:52.997] } 12. Ne2 { [%clk 0:01:55.268] } 12... Bb7 { [%clk 0:01:49.496] } 13. Ng3 { [%clk 0:01:53.624] } 13... Re8 { [%clk 0:01:45.994] } 14. Nf5 { [%clk 0:01:49.421] } 14... g6 { [%clk 0:01:42.493] } 15. Nh6+ { [%clk 0:01:40.179] } 15... Kg7 { [%clk 0:01:38.992] } 16. Ra4 { [%clk 0:01:31.376] } 16... Bc6 { [%clk 0:01:35.49] } 17. Ng5 { [%clk 0:01:28.865] } 17... Bxa4 { [%clk 0:01:31.989] } 18. bxa4 { [%clk 0:01:27.705] } 18... Qd7 { [%clk 0:01:28.487] } 19. Qf3 { [%clk 0:01:24.421] } 19... Kxh6 { [%clk 0:01:24.986] } 20. Ne6+ { [%clk 0:01:24.915] } 20... g5 { [%clk 0:01:21.484] } 21. Bxg5+ { [%clk 0:01:25.411] } 21... Kg6 { [%clk 0:01:17.983] } 22. Qf5+ { [%clk 0:01:25.908] } 22... Kh5 { [%clk 0:01:14.582] } 23. Ng7# { [%clk 0:01:26.406] } 1-0\n",
+ "opening": "Ruy Lopez, Closed",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 49\u00b7Final",
+ "white_uuid": "3f2c6106-702b-4a60-8eb5-5f5fe3886d0a",
+ "black_uuid": "e3b6706d-d6a7-43d4-ba84-3db44ebe66b0",
+ "site_verdicts": [
+  [
+   "Nxb3",
+   "excellent"
+  ],
+  [
+   "axb3",
+   "best"
+  ],
+  [
+   "b4",
+   "excellent"
+  ],
+  [
+   "Ne2",
+   "best"
+  ],
+  [
+   "Bb7",
+   "good"
+  ],
+  [
+   "Ng3",
+   "best"
+  ],
+  [
+   "Re8",
+   "best"
+  ],
+  [
+   "Nf5",
+   "best"
+  ],
+  [
+   "g6",
+   "inaccuracy"
+  ],
+  [
+   "Nh6+",
+   "inaccuracy"
+  ],
+  [
+   "Kg7",
+   "best"
+  ],
+  [
+   "Ra4",
+   "good"
+  ],
+  [
+   "Bc6",
+   "good"
+  ],
+  [
+   "Ng5",
+   "blunder"
+  ],
+  [
+   "Bxa4",
+   "excellent"
+  ],
+  [
+   "bxa4",
+   "best"
+  ],
+  [
+   "Qd7",
+   "best"
+  ],
+  [
+   "Qf3",
+   "good"
+  ],
+  [
+   "Kxh6",
+   "blunder"
+  ],
+  [
+   "Ne6+",
+   "best"
+  ],
+  [
+   "g5",
+   "forced"
+  ],
+  [
+   "Bxg5+",
+   "best"
+  ],
+  [
+   "Kg6",
+   "forced"
+  ],
+  [
+   "Qf5+",
+   "best"
+  ],
+  [
+   "Kh5",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "biggestbrilliant",
+    "accuracy": 90.0,
+    "acpl": 27,
+    "tally": {
+     "brilliant": 0,
+     "best": 9,
+     "excellent": 0,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "muffin",
+    "accuracy": 54.0,
+    "acpl": 89,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 3,
+     "good": 2,
+     "forced": 3,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -15,
+   -3,
+   -5,
+   2,
+   0,
+   36,
+   22,
+   19,
+   13,
+   84,
+   23,
+   22,
+   -10,
+   23,
+   -153,
+   -153,
+   -171,
+   -168,
+   -204,
+   9996,
+   9997,
+   9997,
+   9998,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "f8e8",
+   "a2b3",
+   "c8b7",
+   "c3e2",
+   "f8e8",
+   "e2g3",
+   "f8e8",
+   "g3f5",
+   "e7f8",
+   "f5e7",
+   "g8g7",
+   "c2c3",
+   "c7c5",
+   "a4a2",
+   "d8d7",
+   "b3a4",
+   "d8d7",
+   "d1d2",
+   "e8f8",
+   "g5e6",
+   "g6g5",
+   "c1g5",
+   "h6g6",
+   "f3f5",
+   "g6h5",
+   "e6g7",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:36:05Z"
+}

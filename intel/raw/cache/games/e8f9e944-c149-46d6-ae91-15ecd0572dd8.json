@@ -1,0 +1,236 @@
+{
+ "game": "e8f9e944-c149-46d6-ae91-15ecd0572dd8",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"5\"]\n[White \"Desai\"]\n[Black \"SOLO\"]\n[Result \"1-0\"]\n[FEN \"r1bq1rk1/pp2bppp/2n1pn2/2pp4/3P4/2PBP1B1/PP1NNPPP/R2QK2R b KQ - 5 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8... c4 { [%clk 0:01:57.658] } 9. Bb1 { [%clk 0:01:56.374] } 9... Qb6 { [%clk 0:01:55.265] } 10. b3 { [%clk 0:01:50.873] } 10... cxb3 { [%clk 0:01:52.899] } 11. axb3 { [%clk 0:01:47.284] } 11... Nh5 { [%clk 0:01:50.579] } 12. c4 { [%clk 0:01:43.215] } 12... Nxg3 { [%clk 0:01:48.206] } 13. Bxh7+ { [%clk 0:01:39.756] } 13... Kxh7 { [%clk 0:01:45.855] } 14. hxg3+ { [%clk 0:01:34.972] } 14... Kg8 { [%clk 0:01:43.502] } 15. Nf4 { [%clk 0:01:26.297] } 15... Rd8 { [%clk 0:01:41.147] } 16. Qh5 { [%clk 0:01:21.397] } 16... f5 { [%clk 0:01:38.785] } 17. g4 { [%clk 0:01:16.655] } 17... fxg4 { [%clk 0:01:36.388] } 18. c5 { [%clk 0:01:13.394] } 18... Qc7 { [%clk 0:01:34.014] } 19. Qh7+ { [%clk 0:01:10.17] } 19... Kf8 { [%clk 0:01:31.614] } 20. Nh5 { [%clk 0:01:06.695] } 20... Ke8 { [%clk 0:01:29.215] } 21. Qxg7 { [%clk 0:01:02.659] } 21... Qb8 { [%clk 0:01:26.799] } 22. Nf6+ { [%clk 0:01:03.1] } 22... Bxf6 { [%clk 0:01:27.296] } 23. Rh8# { [%clk 0:01:03.549] } 1-0\n",
+ "opening": "London System",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 5\u00b7Final",
+ "white_uuid": "8aa0c5f7-4af1-48d7-8dde-3b26f9b7459d",
+ "black_uuid": "999978b3-38fa-469e-b5c4-e4d411433822",
+ "site_verdicts": [
+  [
+   "c4",
+   "good"
+  ],
+  [
+   "Bb1",
+   "good"
+  ],
+  [
+   "Qb6",
+   "good"
+  ],
+  [
+   "b3",
+   "best"
+  ],
+  [
+   "cxb3",
+   "best"
+  ],
+  [
+   "axb3",
+   "best"
+  ],
+  [
+   "Nh5",
+   "excellent"
+  ],
+  [
+   "c4",
+   "inaccuracy"
+  ],
+  [
+   "Nxg3",
+   "good"
+  ],
+  [
+   "Bxh7+",
+   "blunder"
+  ],
+  [
+   "Kxh7",
+   "best"
+  ],
+  [
+   "hxg3+",
+   "best"
+  ],
+  [
+   "Kg8",
+   "best"
+  ],
+  [
+   "Nf4",
+   "excellent"
+  ],
+  [
+   "Rd8",
+   "blunder"
+  ],
+  [
+   "Qh5",
+   "best"
+  ],
+  [
+   "f5",
+   "best"
+  ],
+  [
+   "g4",
+   "inaccuracy"
+  ],
+  [
+   "fxg4",
+   "inaccuracy"
+  ],
+  [
+   "c5",
+   "blunder"
+  ],
+  [
+   "Qc7",
+   "blunder"
+  ],
+  [
+   "Qh7+",
+   "best"
+  ],
+  [
+   "Kf8",
+   "best"
+  ],
+  [
+   "Nh5",
+   "best"
+  ],
+  [
+   "Ke8",
+   "mistake"
+  ],
+  [
+   "Qxg7",
+   "best"
+  ],
+  [
+   "Qb8",
+   "mistake"
+  ],
+  [
+   "Nf6+",
+   "best"
+  ],
+  [
+   "Bxf6",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "silly silly silly chess",
+    "accuracy": 86.5,
+    "acpl": 56,
+    "tally": {
+     "brilliant": 0,
+     "best": 9,
+     "excellent": 1,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 2
+    }
+   },
+   {
+    "name": "shivSOLO",
+    "accuracy": 69.1,
+    "acpl": 159,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 1,
+     "good": 3,
+     "forced": 1,
+     "inaccuracy": 1,
+     "mistake": 2,
+     "miss": 0,
+     "blunder": 2
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -4,
+   23,
+   -8,
+   34,
+   38,
+   42,
+   47,
+   58,
+   -7,
+   34,
+   -210,
+   -198,
+   -208,
+   -187,
+   -209,
+   333,
+   492,
+   493,
+   326,
+   427,
+   157,
+   408,
+   431,
+   400,
+   449,
+   784,
+   754,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "b7b6",
+   "d3c2",
+   "b7b5",
+   "b2b3",
+   "c4b3",
+   "a2b3",
+   "a7a5",
+   "e2f4",
+   "g7g6",
+   "h2g3",
+   "g8h7",
+   "h2g3",
+   "h7g8",
+   "c4c5",
+   "g7g6",
+   "d1h5",
+   "f7f5",
+   "h5g6",
+   "d5c4",
+   "h5h7",
+   "b6b4",
+   "h5h7",
+   "g8f8",
+   "f4h5",
+   "e7f6",
+   "h7g7",
+   "c7h2",
+   "h5f6",
+   "e7f6",
+   "h1h8",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:01:11Z"
+}

@@ -1,0 +1,236 @@
+{
+ "game": "925ef280-fc4c-4dcf-a757-f4a85dc7fdd3",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.07\"]\n[Round \"51\"]\n[White \"fom\"]\n[Black \"does 4th place get a trophy\"]\n[Result \"0-1\"]\n[FEN \"r1bq1rk1/2p1bppp/p2p1n2/np2p3/4P3/1BNP1N2/PPP2PPP/R1BQR1K1 w - - 3 10\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n10. Nd5 { [%clk 0:01:57.498] } 10... Nxd5 { [%clk 0:01:54.494] } 11. exd5 { [%clk 0:01:54.996] } 11... Nxb3 { [%clk 0:01:49.249] } 12. axb3 { [%clk 0:01:52.495] } 12... Bb7 { [%clk 0:01:44.261] } 13. c4 { [%clk 0:01:49.993] } 13... c6 { [%clk 0:01:39.517] } 14. dxc6 { [%clk 0:01:47.491] } 14... Bxc6 { [%clk 0:01:35.019] } 15. Be3 { [%clk 0:01:44.99] } 15... Qc7 { [%clk 0:01:30.731] } 16. g4 { [%clk 0:01:42.488] } 16... f5 { [%clk 0:01:26.657] } 17. cxb5 { [%clk 0:01:39.987] } 17... axb5 { [%clk 0:01:22.776] } 18. Rxa8 { [%clk 0:01:37.485] } 18... Bxa8 { [%clk 0:01:19.108] } 19. Ng5 { [%clk 0:01:34.997] } 19... Qb7 { [%clk 0:01:15.62] } 20. f3 { [%clk 0:01:32.581] } 20... fxg4 { [%clk 0:01:12.324] } 21. Ne6 { [%clk 0:01:30.234] } 21... gxf3 { [%clk 0:01:09.171] } 22. Nxf8 { [%clk 0:01:27.954] } 22... f2+ { [%clk 0:01:09.571] } 23. Kf1 { [%clk 0:01:28.433] } 23... Qg2+ { [%clk 0:01:10.066] } 24. Ke2 { [%clk 0:01:28.931] } 24... f1=Q# { [%clk 0:01:10.556] } 0-1\n",
+ "opening": "Ruy Lopez, Closed",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 51\u00b7Final",
+ "white_uuid": "38673d40-4b8f-4ccc-985f-57e7c70cca6b",
+ "black_uuid": "def2de4e-859c-4571-9bfe-55c5242fcbff",
+ "site_verdicts": [
+  [
+   "Nd5",
+   "good"
+  ],
+  [
+   "Nxd5",
+   "best"
+  ],
+  [
+   "exd5",
+   "inaccuracy"
+  ],
+  [
+   "Nxb3",
+   "best"
+  ],
+  [
+   "axb3",
+   "best"
+  ],
+  [
+   "Bb7",
+   "good"
+  ],
+  [
+   "c4",
+   "inaccuracy"
+  ],
+  [
+   "c6",
+   "inaccuracy"
+  ],
+  [
+   "dxc6",
+   "best"
+  ],
+  [
+   "Bxc6",
+   "best"
+  ],
+  [
+   "Be3",
+   "good"
+  ],
+  [
+   "Qc7",
+   "good"
+  ],
+  [
+   "g4",
+   "blunder"
+  ],
+  [
+   "f5",
+   "excellent"
+  ],
+  [
+   "cxb5",
+   "inaccuracy"
+  ],
+  [
+   "axb5",
+   "best"
+  ],
+  [
+   "Rxa8",
+   "good"
+  ],
+  [
+   "Bxa8",
+   "best"
+  ],
+  [
+   "Ng5",
+   "good"
+  ],
+  [
+   "Qb7",
+   "excellent"
+  ],
+  [
+   "f3",
+   "excellent"
+  ],
+  [
+   "fxg4",
+   "excellent"
+  ],
+  [
+   "Ne6",
+   "inaccuracy"
+  ],
+  [
+   "gxf3",
+   "inaccuracy"
+  ],
+  [
+   "Nxf8",
+   "mistake"
+  ],
+  [
+   "f2+",
+   "best"
+  ],
+  [
+   "Kf1",
+   "best"
+  ],
+  [
+   "Qg2+",
+   "best"
+  ],
+  [
+   "Ke2",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "fom",
+    "accuracy": 81.3,
+    "acpl": 154,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 1,
+     "good": 4,
+     "forced": 1,
+     "inaccuracy": 4,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "Stinkfish",
+    "accuracy": 93.9,
+    "acpl": 40,
+    "tally": {
+     "brilliant": 0,
+     "best": 8,
+     "excellent": 3,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -8,
+   -59,
+   -53,
+   -110,
+   -110,
+   -101,
+   -48,
+   -110,
+   -42,
+   -47,
+   -34,
+   -83,
+   -37,
+   -282,
+   -265,
+   -409,
+   -411,
+   -508,
+   -509,
+   -563,
+   -558,
+   -545,
+   -571,
+   -1112,
+   -714,
+   -9997,
+   -9998,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "c1g5",
+   "f6d5",
+   "b3d5",
+   "a5b3",
+   "a2b3",
+   "f7f5",
+   "d3d4",
+   "f7f5",
+   "d5c6",
+   "b7c6",
+   "d3d4",
+   "c6b7",
+   "d3d4",
+   "c7d7",
+   "d3d4",
+   "a6b5",
+   "d1e2",
+   "c6a8",
+   "g4g5",
+   "c7c6",
+   "d1f3",
+   "e7g5",
+   "g5e4",
+   "f8f3",
+   "e3f2",
+   "f3f2",
+   "g1f1",
+   "b7g2",
+   "f1e2",
+   "f2f1q",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:33:07Z"
+}

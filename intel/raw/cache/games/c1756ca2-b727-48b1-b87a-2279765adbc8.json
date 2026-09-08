@@ -1,0 +1,230 @@
+{
+ "game": "c1756ca2-b727-48b1-b87a-2279765adbc8",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"10\"]\n[White \"Team7347\"]\n[Black \"Wildcard\"]\n[Result \"0-1\"]\n[FEN \"rn1qkb1r/1p3ppp/p2pbn2/4p3/4P3/1NN1B2P/PPP2PP1/R2QKB1R b KQkq - 3 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8... Bxb3 { [%clk 0:02:00.403] } 9. Nb1 { [%clk 0:01:55.967] } 9... Qa5+ { [%clk 0:02:00.825] } 10. Nc3 { [%clk 0:01:54.282] } 10... Be6 { [%clk 0:02:01.232] } 11. a3 { [%clk 0:01:53.526] } 11... Nxe4 { [%clk 0:02:01.632] } 12. Bd2 { [%clk 0:01:43.565] } 12... Nxd2 { [%clk 0:02:02.03] } 13. Nb1 { [%clk 0:01:43.905] } 13... Nxb1+ { [%clk 0:02:02.462] } 14. b4 { [%clk 0:01:42.365] } 14... Qc7 { [%clk 0:02:02.889] } 15. h4 { [%clk 0:01:42.442] } 15... Qc3+ { [%clk 0:02:03.308] } 16. Ke2 { [%clk 0:01:42.198] } 16... Qxa1 { [%clk 0:02:03.748] } 17. f3 { [%clk 0:01:42.524] } 17... Nc3+ { [%clk 0:02:04.198] } 18. Ke3 { [%clk 0:01:41.953] } 18... Nxd1+ { [%clk 0:02:04.629] } 19. Ke2 { [%clk 0:01:41.985] } 19... Qd4 { [%clk 0:02:05.094] } 20. c3 { [%clk 0:01:42.443] } 20... Nxc3+ { [%clk 0:02:05.557] } 21. Ke1 { [%clk 0:01:42.942] } 21... Qe3+ { [%clk 0:02:06.006] } 22. Be2 { [%clk 0:01:43.33] } 22... Qxe2# { [%clk 0:02:06.463] } 0-1\n",
+ "opening": "Sicilian Najdorf",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 10\u00b7Final",
+ "white_uuid": "1f20a852-ae0c-44f5-aed7-8be8a5e699b0",
+ "black_uuid": "1c12622b-8d4f-4a36-88a1-b1597c97d880",
+ "site_verdicts": [
+  [
+   "Bxb3",
+   "inaccuracy"
+  ],
+  [
+   "Nb1",
+   "blunder"
+  ],
+  [
+   "Qa5+",
+   "blunder"
+  ],
+  [
+   "Nc3",
+   "blunder"
+  ],
+  [
+   "Be6",
+   "best"
+  ],
+  [
+   "a3",
+   "inaccuracy"
+  ],
+  [
+   "Nxe4",
+   "best"
+  ],
+  [
+   "Bd2",
+   "excellent"
+  ],
+  [
+   "Nxd2",
+   "best"
+  ],
+  [
+   "Nb1",
+   "inaccuracy"
+  ],
+  [
+   "Nxb1+",
+   "good"
+  ],
+  [
+   "b4",
+   "best"
+  ],
+  [
+   "Qc7",
+   "best"
+  ],
+  [
+   "h4",
+   "good"
+  ],
+  [
+   "Qc3+",
+   "best"
+  ],
+  [
+   "Ke2",
+   "best"
+  ],
+  [
+   "Qxa1",
+   "excellent"
+  ],
+  [
+   "f3",
+   "excellent"
+  ],
+  [
+   "Nc3+",
+   "best"
+  ],
+  [
+   "Ke3",
+   "excellent"
+  ],
+  [
+   "Nxd1+",
+   "excellent"
+  ],
+  [
+   "Ke2",
+   "excellent"
+  ],
+  [
+   "Qd4",
+   "best"
+  ],
+  [
+   "c3",
+   "excellent"
+  ],
+  [
+   "Nxc3+",
+   "excellent"
+  ],
+  [
+   "Ke1",
+   "forced"
+  ],
+  [
+   "Qe3+",
+   "best"
+  ],
+  [
+   "Be2",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Team7347",
+    "accuracy": 69.3,
+    "acpl": 244,
+    "tally": {
+     "brilliant": 0,
+     "best": 2,
+     "excellent": 5,
+     "good": 1,
+     "forced": 2,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 2
+    }
+   },
+   {
+    "name": "DeLorean",
+    "accuracy": 85.8,
+    "acpl": 98,
+    "tally": {
+     "brilliant": 0,
+     "best": 9,
+     "excellent": 3,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   37,
+   148,
+   -480,
+   -17,
+   -450,
+   -462,
+   -618,
+   -587,
+   -624,
+   -626,
+   -1114,
+   -820,
+   -802,
+   -811,
+   -1773,
+   -1796,
+   -1805,
+   -1492,
+   -1868,
+   -1898,
+   -2010,
+   -1750,
+   -1964,
+   -9992,
+   -9998,
+   -9998,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "b8d7",
+   "a2b3",
+   "b3e6",
+   "e3d2",
+   "b3e6",
+   "e3d2",
+   "f6e4",
+   "f1d3",
+   "e4d2",
+   "d1d2",
+   "d2f3",
+   "b2b4",
+   "a5c7",
+   "a1b1",
+   "c7c3",
+   "e1e2",
+   "e6c4",
+   "e2f3",
+   "b1c3",
+   "e2f2",
+   "a1d1",
+   "e3d2",
+   "a1d4",
+   "e2e1",
+   "d4e3",
+   "e2e1",
+   "d4e3",
+   "f1e2",
+   "e3e2",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:04:46Z"
+}

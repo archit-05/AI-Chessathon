@@ -1,0 +1,200 @@
+{
+ "game": "5dc16dc1-64d1-4b13-bc7b-c0adc8773d56",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.07\"]\n[Round \"51\"]\n[White \"Cheeky\"]\n[Black \"Chelsea's very own JP Morgan\"]\n[Result \"1/2-1/2\"]\n[FEN \"rnbqk2r/ppp3pp/3bpn2/3p1p2/2PP4/1P3NP1/P3PPBP/RNBQK2R b KQkq - 0 7\"]\n[SetUp \"1\"]\n[Termination \"threefold_repetition\"]\n\n7... dxc4 { [%clk 0:01:58.325] } 8. bxc4 { [%clk 0:01:55.852] } 8... Bb4+ { [%clk 0:01:55.889] } 9. Kf1 { [%clk 0:01:53.712] } 9... Nc6 { [%clk 0:01:51.456] } 10. Ng5 { [%clk 0:01:51.361] } 10... O-O { [%clk 0:01:49.208] } 11. Bxc6 { [%clk 0:01:47.169] } 11... bxc6 { [%clk 0:01:46.637] } 12. Nf3 { [%clk 0:01:44.023] } 12... Ne4 { [%clk 0:01:45.829] } 13. Qa4 { [%clk 0:01:40.571] } 13... c5 { [%clk 0:01:42.696] } 14. a3 { [%clk 0:01:36.752] } 14... Bd7 { [%clk 0:01:41.234] } 15. Qa6 { [%clk 0:01:33.854] } 15... Bc8 { [%clk 0:01:37.852] } 16. Qc6 { [%clk 0:01:31.797] } 16... Bd7 { [%clk 0:01:34.993] } 17. Qa6 { [%clk 0:01:27.99] } 17... Bc8 { [%clk 0:01:33.478] } 18. Qc6 { [%clk 0:01:25.396] } 18... Bd7 { [%clk 0:01:31.743] } 19. Qa6 { [%clk 0:01:21.639] } 1/2-1/2\n",
+ "opening": "Dutch Stonewall",
+ "termination_text": "Threefold repetition",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 51\u00b7Final",
+ "white_uuid": "87449072-593f-439d-a1f0-949baf11e1ea",
+ "black_uuid": "29f23ff2-c603-4921-a3ad-4448b1c7e108",
+ "site_verdicts": [
+  [
+   "dxc4",
+   "inaccuracy"
+  ],
+  [
+   "bxc4",
+   "best"
+  ],
+  [
+   "Bb4+",
+   "excellent"
+  ],
+  [
+   "Kf1",
+   "mistake"
+  ],
+  [
+   "Nc6",
+   "inaccuracy"
+  ],
+  [
+   "Ng5",
+   "mistake"
+  ],
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "Bxc6",
+   "good"
+  ],
+  [
+   "bxc6",
+   "best"
+  ],
+  [
+   "Nf3",
+   "excellent"
+  ],
+  [
+   "Ne4",
+   "inaccuracy"
+  ],
+  [
+   "Qa4",
+   "good"
+  ],
+  [
+   "c5",
+   "mistake"
+  ],
+  [
+   "a3",
+   "best"
+  ],
+  [
+   "Bd7",
+   "best"
+  ],
+  [
+   "Qa6",
+   "best"
+  ],
+  [
+   "Bc8",
+   "best"
+  ],
+  [
+   "Qc6",
+   "best"
+  ],
+  [
+   "Bd7",
+   "best"
+  ],
+  [
+   "Qa6",
+   "best"
+  ],
+  [
+   "Bc8",
+   "best"
+  ],
+  [
+   "Qc6",
+   "excellent"
+  ],
+  [
+   "Bd7",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Cheeky",
+    "accuracy": 88.9,
+    "acpl": 30,
+    "tally": {
+     "brilliant": 0,
+     "best": 6,
+     "excellent": 2,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 2,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Blunders central",
+    "accuracy": 91.9,
+    "acpl": 29,
+    "tally": {
+     "brilliant": 0,
+     "best": 7,
+     "excellent": 1,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 3,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   34,
+   105,
+   107,
+   115,
+   -34,
+   33,
+   -89,
+   -116,
+   -164,
+   -163,
+   -155,
+   -81,
+   -125,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "best": [
+   "e8g8",
+   "b3c4",
+   "c7c5",
+   "b1d2",
+   "c7c5",
+   "c1b2",
+   "e8g8",
+   "d4d5",
+   "b7c6",
+   "f1g2",
+   "c6c5",
+   "f1g2",
+   "b4e7",
+   "a2a3",
+   "c8d7",
+   "a4a6",
+   "d7c8",
+   "a6c6",
+   "c8d7",
+   "c6a6",
+   "d7c8",
+   "a6a4",
+   "c8d7",
+   "c6a6",
+   "d7c8"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:28:06Z"
+}

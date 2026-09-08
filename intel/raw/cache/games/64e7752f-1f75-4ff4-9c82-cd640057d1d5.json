@@ -1,0 +1,182 @@
+{
+ "game": "64e7752f-1f75-4ff4-9c82-cd640057d1d5",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.06\"]\n[Round \"36\"]\n[White \"Saturday Knight\"]\n[Black \"404 Not Found\"]\n[Result \"0-1\"]\n[FEN \"rnbq1rk1/ppp2pbp/5np1/4p3/2P1P3/2N1BN2/PP2BPPP/R2QK2R b KQ - 1 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8... Nbd7 { [%clk 0:01:56.416] } 9. Nb1 { [%clk 0:02:00.499] } 9... Nxe4 { [%clk 0:01:53.701] } 10. Qd5 { [%clk 0:02:00.998] } 10... Nef6 { [%clk 0:01:50.613] } 11. Qe6 { [%clk 0:02:01.497] } 11... fxe6 { [%clk 0:01:47.951] } 12. Na3 { [%clk 0:02:01.996] } 12... Ng4 { [%clk 0:01:45.373] } 13. Rg1 { [%clk 0:02:02.495] } 13... Nxe3 { [%clk 0:01:42.156] } 14. b3 { [%clk 0:02:02.993] } 14... e4 { [%clk 0:01:39.073] } 15. Rh1 { [%clk 0:02:03.492] } 15... Nxg2+ { [%clk 0:01:35.98] } 16. Kf1 { [%clk 0:02:03.991] } 16... Bxa1 { [%clk 0:01:33.112] } 17. Ng1 { [%clk 0:02:04.49] } 17... Ne3+ { [%clk 0:01:33.51] } 18. Ke1 { [%clk 0:02:04.989] } 18... Bc3# { [%clk 0:01:34.001] } 0-1\n",
+ "opening": "King's Indian Classical",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 36\u00b7Final",
+ "white_uuid": "25ae5fc8-e19a-4841-9299-71e72762a6f9",
+ "black_uuid": "0507e5e2-d40f-4565-8e16-ca6feacebe42",
+ "site_verdicts": [
+  [
+   "Nbd7",
+   "good"
+  ],
+  [
+   "Nb1",
+   "blunder"
+  ],
+  [
+   "Nxe4",
+   "best"
+  ],
+  [
+   "Qd5",
+   "good"
+  ],
+  [
+   "Nef6",
+   "excellent"
+  ],
+  [
+   "Qe6",
+   "blunder"
+  ],
+  [
+   "fxe6",
+   "best"
+  ],
+  [
+   "Na3",
+   "excellent"
+  ],
+  [
+   "Ng4",
+   "best"
+  ],
+  [
+   "Rg1",
+   "excellent"
+  ],
+  [
+   "Nxe3",
+   "best"
+  ],
+  [
+   "b3",
+   "excellent"
+  ],
+  [
+   "e4",
+   "best"
+  ],
+  [
+   "Rh1",
+   "excellent"
+  ],
+  [
+   "Nxg2+",
+   "excellent"
+  ],
+  [
+   "Kf1",
+   "best"
+  ],
+  [
+   "Bxa1",
+   "excellent"
+  ],
+  [
+   "Ng1",
+   "inaccuracy"
+  ],
+  [
+   "Ne3+",
+   "best"
+  ],
+  [
+   "Ke1",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Saturday Knight",
+    "accuracy": 81.9,
+    "acpl": 350,
+    "tally": {
+     "brilliant": 0,
+     "best": 1,
+     "excellent": 4,
+     "good": 1,
+     "forced": 1,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 2
+    }
+   },
+   {
+    "name": "404 Not Found",
+    "accuracy": 99.0,
+    "acpl": 111,
+    "tally": {
+     "brilliant": 0,
+     "best": 7,
+     "excellent": 3,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   6,
+   39,
+   -198,
+   -204,
+   -238,
+   -224,
+   -748,
+   -754,
+   -814,
+   -808,
+   -947,
+   -998,
+   -1238,
+   -1242,
+   -3737,
+   -1555,
+   -1823,
+   -1659,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "b8c6",
+   "d1c2",
+   "f6e4",
+   "e1g1",
+   "e4d6",
+   "d5d2",
+   "f7e6",
+   "e1g1",
+   "f6g4",
+   "e1g1",
+   "g4e3",
+   "f2e3",
+   "e5e4",
+   "f2e3",
+   "g7c3",
+   "e1f1",
+   "e4f3",
+   "h2h4",
+   "g2e3",
+   "f1e1",
+   "a1c3",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:29:27Z"
+}

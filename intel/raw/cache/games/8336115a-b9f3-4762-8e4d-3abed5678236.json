@@ -1,0 +1,206 @@
+{
+ "game": "8336115a-b9f3-4762-8e4d-3abed5678236",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"23\"]\n[White \"TrojanKnight\"]\n[Black \"Sac the king\"]\n[Result \"0-1\"]\n[FEN \"r2qkb1r/pp1bpppp/2np1n2/1B4B1/3NP3/2N5/PPP2PPP/R2QK2R b KQkq - 6 7\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n7... Nxd4 { [%clk 0:01:58.229] } 8. Qxd4 { [%clk 0:01:52.699] } 8... e5 { [%clk 0:01:56.454] } 9. Qa4 { [%clk 0:01:43.098] } 9... a6 { [%clk 0:01:54.669] } 10. Bc4 { [%clk 0:01:37.823] } 10... Bxa4 { [%clk 0:01:52.873] } 11. h4 { [%clk 0:01:32.22] } 11... Bxc2 { [%clk 0:01:51.068] } 12. Bxf7+ { [%clk 0:01:25.022] } 12... Kxf7 { [%clk 0:01:49.253] } 13. Be3 { [%clk 0:01:20.679] } 13... Nxe4 { [%clk 0:01:47.425] } 14. Rg1 { [%clk 0:01:13.257] } 14... Qxh4 { [%clk 0:01:45.588] } 15. Nb5 { [%clk 0:01:09.231] } 15... axb5 { [%clk 0:01:43.74] } 16. g3 { [%clk 0:01:06.259] } 16... Qh2 { [%clk 0:01:41.881] } 17. f4 { [%clk 0:01:02.901] } 17... Bd3 { [%clk 0:01:40.009] } 18. Kd1 { [%clk 0:01:00.793] } 18... Qe2+ { [%clk 0:01:40.507] } 19. Kc1 { [%clk 0:01:01.224] } 19... Qc2# { [%clk 0:01:41.006] } 0-1\n",
+ "opening": "Sicilian Classical",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 23\u00b7Final",
+ "white_uuid": "c5e818b1-9cab-4a6c-9ca4-bcb9ac455128",
+ "black_uuid": "d09b6d8d-6daf-4a4d-b51c-a99c8ad71bd7",
+ "site_verdicts": [
+  [
+   "Nxd4",
+   "good"
+  ],
+  [
+   "Qxd4",
+   "excellent"
+  ],
+  [
+   "e5",
+   "mistake"
+  ],
+  [
+   "Qa4",
+   "best"
+  ],
+  [
+   "a6",
+   "best"
+  ],
+  [
+   "Bc4",
+   "blunder"
+  ],
+  [
+   "Bxa4",
+   "best"
+  ],
+  [
+   "h4",
+   "good"
+  ],
+  [
+   "Bxc2",
+   "excellent"
+  ],
+  [
+   "Bxf7+",
+   "good"
+  ],
+  [
+   "Kxf7",
+   "best"
+  ],
+  [
+   "Be3",
+   "excellent"
+  ],
+  [
+   "Nxe4",
+   "excellent"
+  ],
+  [
+   "Rg1",
+   "excellent"
+  ],
+  [
+   "Qxh4",
+   "excellent"
+  ],
+  [
+   "Nb5",
+   "excellent"
+  ],
+  [
+   "axb5",
+   "excellent"
+  ],
+  [
+   "g3",
+   "best"
+  ],
+  [
+   "Qh2",
+   "best"
+  ],
+  [
+   "f4",
+   "inaccuracy"
+  ],
+  [
+   "Bd3",
+   "best"
+  ],
+  [
+   "Kd1",
+   "excellent"
+  ],
+  [
+   "Qe2+",
+   "best"
+  ],
+  [
+   "Kc1",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "TK-Bravo2",
+    "accuracy": 68.2,
+    "acpl": 215,
+    "tally": {
+     "brilliant": 0,
+     "best": 2,
+     "excellent": 5,
+     "good": 2,
+     "forced": 1,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "KingSac",
+    "accuracy": 95.7,
+    "acpl": 21,
+    "tally": {
+     "brilliant": 0,
+     "best": 7,
+     "excellent": 4,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   15,
+   55,
+   46,
+   204,
+   211,
+   205,
+   -574,
+   -569,
+   -660,
+   -647,
+   -817,
+   -857,
+   -920,
+   -916,
+   -1025,
+   -1002,
+   -1295,
+   -1267,
+   -1331,
+   -1408,
+   -9997,
+   -9998,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "e7e6",
+   "b5d7",
+   "d7b5",
+   "d4a4",
+   "a7a6",
+   "b5d7",
+   "d7a4",
+   "g5f6",
+   "d8c7",
+   "a1c1",
+   "e8f7",
+   "a1c1",
+   "d6d5",
+   "c3e4",
+   "d8a5",
+   "e1e2",
+   "d6d5",
+   "g2g3",
+   "h4h2",
+   "e1e2",
+   "c2d3",
+   "g1g2",
+   "h2e2",
+   "d1c1",
+   "e2c2",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:57:43Z"
+}

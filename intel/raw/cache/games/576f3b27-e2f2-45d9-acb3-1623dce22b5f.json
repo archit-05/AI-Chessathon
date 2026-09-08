@@ -1,0 +1,236 @@
+{
+ "game": "576f3b27-e2f2-45d9-acb3-1623dce22b5f",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.06\"]\n[Round \"35\"]\n[White \"while True: win()\"]\n[Black \"Sassori\"]\n[Result \"1-0\"]\n[FEN \"1rbqk1nr/pp3pbp/2npp1p1/2p5/4PP2/2NPBNP1/PPP3BP/R2QK2R b KQk - 3 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8... Qa5 { [%clk 0:01:57.886] } 9. e5 { [%clk 0:01:55.285] } 9... dxe5 { [%clk 0:01:55.505] } 10. fxe5 { [%clk 0:01:51.171] } 10... Nxe5 { [%clk 0:01:53.124] } 11. Nxe5 { [%clk 0:01:47.265] } 11... Bxe5 { [%clk 0:01:50.742] } 12. O-O { [%clk 0:01:43.356] } 12... Bxc3 { [%clk 0:01:48.36] } 13. bxc3 { [%clk 0:01:39.537] } 13... Qxc3 { [%clk 0:01:45.978] } 14. Qf3 { [%clk 0:01:35.867] } 14... f5 { [%clk 0:01:43.596] } 15. Qf4 { [%clk 0:01:32.344] } 15... Ra8 { [%clk 0:01:41.214] } 16. Rab1 { [%clk 0:01:28.964] } 16... Ne7 { [%clk 0:01:38.833] } 17. Qc7 { [%clk 0:01:25.721] } 17... Qxc2 { [%clk 0:01:37.27] } 18. Bxb7 { [%clk 0:01:22.605] } 18... Bxb7 { [%clk 0:01:34.888] } 19. Rxb7 { [%clk 0:01:19.613] } 19... O-O { [%clk 0:01:32.639] } 20. Qxe7 { [%clk 0:01:16.74] } 20... Qxh2+ { [%clk 0:01:30.358] } 21. Kxh2 { [%clk 0:01:17.229] } 21... Rf7 { [%clk 0:01:30.69] } 22. Qxf7+ { [%clk 0:01:14.452] } 22... Kh8 { [%clk 0:01:31.183] } 23. Qxh7# { [%clk 0:01:11.784] } 1-0\n",
+ "opening": "Sicilian Closed",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 35\u00b7Final",
+ "white_uuid": "0065d170-1082-42d7-a4a3-af54b0df2019",
+ "black_uuid": "daf4188f-c437-4905-92a1-3935ff41c690",
+ "site_verdicts": [
+  [
+   "Qa5",
+   "inaccuracy"
+  ],
+  [
+   "e5",
+   "excellent"
+  ],
+  [
+   "dxe5",
+   "good"
+  ],
+  [
+   "fxe5",
+   "good"
+  ],
+  [
+   "Nxe5",
+   "excellent"
+  ],
+  [
+   "Nxe5",
+   "excellent"
+  ],
+  [
+   "Bxe5",
+   "best"
+  ],
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "Bxc3",
+   "mistake"
+  ],
+  [
+   "bxc3",
+   "best"
+  ],
+  [
+   "Qxc3",
+   "inaccuracy"
+  ],
+  [
+   "Qf3",
+   "best"
+  ],
+  [
+   "f5",
+   "excellent"
+  ],
+  [
+   "Qf4",
+   "best"
+  ],
+  [
+   "Ra8",
+   "inaccuracy"
+  ],
+  [
+   "Rab1",
+   "good"
+  ],
+  [
+   "Ne7",
+   "excellent"
+  ],
+  [
+   "Qc7",
+   "good"
+  ],
+  [
+   "Qxc2",
+   "mistake"
+  ],
+  [
+   "Bxb7",
+   "best"
+  ],
+  [
+   "Bxb7",
+   "blunder"
+  ],
+  [
+   "Rxb7",
+   "best"
+  ],
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "Qxe7",
+   "best"
+  ],
+  [
+   "Qxh2+",
+   "excellent"
+  ],
+  [
+   "Kxh2",
+   "forced"
+  ],
+  [
+   "Rf7",
+   "best"
+  ],
+  [
+   "Qxf7+",
+   "best"
+  ],
+  [
+   "Kh8",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Dr. Drunkenstein",
+    "accuracy": 96.7,
+    "acpl": 14,
+    "tally": {
+     "brilliant": 0,
+     "best": 9,
+     "excellent": 2,
+     "good": 3,
+     "forced": 1,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "KilliManjaru1",
+    "accuracy": 82.3,
+    "acpl": 121,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 4,
+     "good": 1,
+     "forced": 1,
+     "inaccuracy": 3,
+     "mistake": 2,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -19,
+   73,
+   64,
+   118,
+   68,
+   83,
+   65,
+   68,
+   58,
+   209,
+   192,
+   289,
+   297,
+   238,
+   249,
+   371,
+   333,
+   356,
+   295,
+   554,
+   564,
+   9995,
+   9996,
+   9996,
+   9997,
+   9997,
+   9998,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "g8e7",
+   "f3d2",
+   "g8e7",
+   "f3d2",
+   "g8e7",
+   "e1g1",
+   "g7e5",
+   "e1g1",
+   "f7f5",
+   "b2c3",
+   "e6e5",
+   "d1f3",
+   "f7f6",
+   "f3f4",
+   "e6e5",
+   "f4d6",
+   "e6e5",
+   "f4d6",
+   "e8f7",
+   "g2b7",
+   "e8f7",
+   "b1b7",
+   "e8g8",
+   "c7e7",
+   "c2f2",
+   "g1h2",
+   "f8f7",
+   "e7f7",
+   "g8h8",
+   "f7h7",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:59:13Z"
+}

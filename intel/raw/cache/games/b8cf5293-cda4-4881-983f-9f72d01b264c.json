@@ -1,0 +1,152 @@
+{
+ "game": "b8cf5293-cda4-4881-983f-9f72d01b264c",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.06\"]\n[Round \"40\"]\n[White \"Kirkification\"]\n[Black \"lefischer\"]\n[Result \"1/2-1/2\"]\n[FEN \"r3kbnr/pp1b1ppp/1qn1p3/3pP3/3P4/5N1P/PP2BPP1/RNBQK2R b KQkq - 0 8\"]\n[SetUp \"1\"]\n[Termination \"threefold_repetition\"]\n\n8... Nge7 { [%clk 0:01:56.754] } 9. Kf1 { [%clk 0:01:55.515] } 9... Nf5 { [%clk 0:01:52.579] } 10. Nc3 { [%clk 0:01:50.865] } 10... Nfxd4 { [%clk 0:01:48.422] } 11. Na4 { [%clk 0:01:46.165] } 11... Qb4 { [%clk 0:01:46.002] } 12. Bd2 { [%clk 0:01:41.664] } 12... Qe7 { [%clk 0:01:43.81] } 13. Bg5 { [%clk 0:01:37.076] } 13... Qb4 { [%clk 0:01:40.704] } 14. Bd2 { [%clk 0:01:33.274] } 14... Qe7 { [%clk 0:01:36.992] } 15. Bg5 { [%clk 0:01:28.714] } 15... Qb4 { [%clk 0:01:33.435] } 16. Bd2 { [%clk 0:01:25.044] } 1/2-1/2\n",
+ "opening": "French Advance",
+ "termination_text": "Threefold repetition",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 40\u00b7Final",
+ "white_uuid": "ea5d87d0-f5b2-435e-b524-e6292de6cebb",
+ "black_uuid": "0900c279-5ede-4155-a850-436c28af6ea9",
+ "site_verdicts": [
+  [
+   "Nge7",
+   "best"
+  ],
+  [
+   "Kf1",
+   "blunder"
+  ],
+  [
+   "Nf5",
+   "best"
+  ],
+  [
+   "Nc3",
+   "best"
+  ],
+  [
+   "Nfxd4",
+   "excellent"
+  ],
+  [
+   "Na4",
+   "excellent"
+  ],
+  [
+   "Qb4",
+   "best"
+  ],
+  [
+   "Bd2",
+   "best"
+  ],
+  [
+   "Qe7",
+   "best"
+  ],
+  [
+   "Bg5",
+   "best"
+  ],
+  [
+   "Qb4",
+   "good"
+  ],
+  [
+   "Bd2",
+   "good"
+  ],
+  [
+   "Qe7",
+   "best"
+  ],
+  [
+   "Bg5",
+   "best"
+  ],
+  [
+   "Qb4",
+   "blunder"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "IMakeBlunderSometimes",
+    "accuracy": 90.1,
+    "acpl": 35,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 1,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "fischer",
+    "accuracy": 85.4,
+    "acpl": 36,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 1,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   0,
+   0,
+   -177,
+   -173,
+   -191,
+   -174,
+   -181,
+   -169,
+   -158,
+   -174,
+   -160,
+   -107,
+   -156,
+   -169,
+   -198,
+   0,
+   0
+  ],
+  "best": [
+   "g8e7",
+   "b1c3",
+   "e7f5",
+   "b1c3",
+   "c6d4",
+   "c1e3",
+   "b6b4",
+   "c1d2",
+   "b4e7",
+   "d2g5",
+   "f7f6",
+   "a2a3",
+   "b4e7",
+   "d2g5",
+   "f7f6",
+   "g5d2",
+   "b4e7"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:14:04Z"
+}

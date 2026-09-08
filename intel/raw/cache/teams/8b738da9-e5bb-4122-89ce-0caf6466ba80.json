@@ -2,10 +2,10 @@
  "uuid": "8b738da9-e5bb-4122-89ce-0caf6466ba80",
  "bot": "bot1",
  "team": "pgn",
- "rating": 1961,
- "rank": 40,
- "record": "22-4-19",
- "rated_rounds": 47,
+ "rating": 1923,
+ "rank": 50,
+ "record": "22-5-20",
+ "rated_rounds": 50,
  "history": [
   [
    1,
@@ -194,9 +194,41 @@
   [
    47,
    1961
+  ],
+  [
+   48,
+   1942
+  ],
+  [
+   49,
+   1942
+  ],
+  [
+   50,
+   1923
   ]
  ],
  "games": [
+  {
+   "game": "bafc09b0-dc30-4ba4-8e0b-e96883c50ec6",
+   "kind": "Rated",
+   "round": 50,
+   "colour": "Black",
+   "opponent": "Waterside Research",
+   "opponent_uuid": "f1289d23-f983-4de4-8d7e-283fe2656c41",
+   "verdict": "loss",
+   "opening": "Pirc Defence"
+  },
+  {
+   "game": "fa83b23c-38cd-4e0b-90bf-78bbc4d41944",
+   "kind": "Rated",
+   "round": 49,
+   "colour": "White",
+   "opponent": "DGS ELO",
+   "opponent_uuid": "5f8a69d7-73a8-4498-b322-861b557dffbd",
+   "verdict": "draw",
+   "opening": "Scotch Game"
+  },
   {
    "game": "68ee9c3b-d0b8-4f27-a24f-f71e345106d2",
    "kind": "Rated",
@@ -678,5 +710,5 @@
    "opening": "French Winawer"
   }
  ],
- "fetched_at": "2026-09-07T09:23:40Z"
+ "fetched_at": "2026-09-07T12:03:40Z"
 }

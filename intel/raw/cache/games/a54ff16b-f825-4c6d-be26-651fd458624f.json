@@ -1,0 +1,158 @@
+{
+ "game": "a54ff16b-f825-4c6d-be26-651fd458624f",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"3\"]\n[White \"Random Mover\"]\n[Black \"Trio Duo\"]\n[Result \"0-1\"]\n[FEN \"r1bqk2r/1p2ppbp/p1np1np1/2pN4/P3P3/3PB1P1/1PP2PBP/R2QK1NR b KQkq - 1 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8... Ng4 { [%clk 0:01:57.995] } 9. Bg5 { [%clk 0:02:00.494] } 9... Bxb2 { [%clk 0:01:55.984] } 10. Bc1 { [%clk 0:02:00.992] } 10... Bxa1 { [%clk 0:01:53.975] } 11. Bd2 { [%clk 0:02:01.49] } 11... Bd4 { [%clk 0:01:51.97] } 12. Ba5 { [%clk 0:02:01.989] } 12... Qxa5+ { [%clk 0:01:49.968] } 13. Ke2 { [%clk 0:02:02.487] } 13... Nxf2 { [%clk 0:01:47.961] } 14. Ne3 { [%clk 0:02:02.984] } 14... Bxe3 { [%clk 0:01:45.957] } 15. Kf3 { [%clk 0:02:03.482] } 15... Nxd1 { [%clk 0:01:43.954] } 16. Ne2 { [%clk 0:02:03.981] } 16... Ne5# { [%clk 0:01:44.429] } 0-1\n",
+ "opening": "Sicilian Closed",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 3\u00b7Final",
+ "white_uuid": "5c7abbac-f8d0-4635-a335-d4b6c90aeefe",
+ "black_uuid": "72832654-6178-4745-9f8d-f824ddf66ffd",
+ "site_verdicts": [
+  [
+   "Ng4",
+   "best"
+  ],
+  [
+   "Bg5",
+   "inaccuracy"
+  ],
+  [
+   "Bxb2",
+   "best"
+  ],
+  [
+   "Bc1",
+   "blunder"
+  ],
+  [
+   "Bxa1",
+   "best"
+  ],
+  [
+   "Bd2",
+   "good"
+  ],
+  [
+   "Bd4",
+   "best"
+  ],
+  [
+   "Ba5",
+   "inaccuracy"
+  ],
+  [
+   "Qxa5+",
+   "best"
+  ],
+  [
+   "Ke2",
+   "good"
+  ],
+  [
+   "Nxf2",
+   "best"
+  ],
+  [
+   "Ne3",
+   "good"
+  ],
+  [
+   "Bxe3",
+   "best"
+  ],
+  [
+   "Kf3",
+   "inaccuracy"
+  ],
+  [
+   "Nxd1",
+   "excellent"
+  ],
+  [
+   "Ne2",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Random Mover",
+    "accuracy": 79.9,
+    "acpl": 309,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 1,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 3,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "SahMatik",
+    "accuracy": 99.0,
+    "acpl": 13,
+    "tally": {
+     "brilliant": 0,
+     "best": 8,
+     "excellent": 1,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -30,
+   -17,
+   -110,
+   -113,
+   -517,
+   -529,
+   -639,
+   -614,
+   -893,
+   -819,
+   -984,
+   -987,
+   -1401,
+   -1460,
+   -9997,
+   -9995,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "f6g4",
+   "e3c1",
+   "g7b2",
+   "a1a2",
+   "b2a1",
+   "h2h3",
+   "a1d4",
+   "g1h3",
+   "d8a5",
+   "d1d2",
+   "g4f2",
+   "d1d2",
+   "d4e3",
+   "g1h3",
+   "c6d4",
+   "g2f1",
+   "c6e5",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:18:15Z"
+}

@@ -1,0 +1,236 @@
+{
+ "game": "efa97d36-3333-4c46-a614-c723007dabac",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"13\"]\n[White \"blundered my queen \ud83d\udc94\"]\n[Black \"Stochastic Gambit\"]\n[Result \"1-0\"]\n[FEN \"rnbqkb1r/ppp2ppp/8/3p4/3Pn3/5N2/PPP1BPPP/RNBQK2R b KQkq - 1 6\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n6... Nc6 { [%clk 0:01:56.733] } 7. O-O { [%clk 0:01:21.716] } 7... Bd7 { [%clk 0:01:53.566] } 8. Re1 { [%clk 0:01:19.927] } 8... Bd6 { [%clk 0:01:50.485] } 9. c4 { [%clk 0:01:19.23] } 9... Kf8 { [%clk 0:01:47.503] } 10. cxd5 { [%clk 0:01:17.761] } 10... Nxd4 { [%clk 0:01:44.617] } 11. Qxd4 { [%clk 0:01:16.166] } 11... Qe7 { [%clk 0:01:41.825] } 12. Bd3 { [%clk 0:01:15.662] } 12... f5 { [%clk 0:01:39.125] } 13. Bxe4 { [%clk 0:01:14.482] } 13... fxe4 { [%clk 0:01:36.511] } 14. Nc3 { [%clk 0:01:13.393] } 14... Bc5 { [%clk 0:01:33.965] } 15. Qc4 { [%clk 0:01:12.732] } 15... Bh3 { [%clk 0:01:31.511] } 16. Rxe4 { [%clk 0:01:11.856] } 16... Qd6 { [%clk 0:01:29.136] } 17. gxh3 { [%clk 0:01:11.437] } 17... Kg8 { [%clk 0:01:26.841] } 18. Nb5 { [%clk 0:01:10.856] } 18... Qf8 { [%clk 0:01:24.593] } 19. Rf4 { [%clk 0:01:09.934] } 19... Qc8 { [%clk 0:01:22.422] } 20. d6+ { [%clk 0:01:10.431] } 20... Qe6 { [%clk 0:01:22.915] } 21. Qxe6# { [%clk 0:01:10.929] } 1-0\n",
+ "opening": "Petroff Defence",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 13\u00b7Final",
+ "white_uuid": "ea0db44a-0888-4b54-b7ff-ec805c7befb6",
+ "black_uuid": "aa9c4d65-0540-4e80-a661-805ee43b04cb",
+ "site_verdicts": [
+  [
+   "Nc6",
+   "excellent"
+  ],
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "Bd7",
+   "inaccuracy"
+  ],
+  [
+   "Re1",
+   "excellent"
+  ],
+  [
+   "Bd6",
+   "good"
+  ],
+  [
+   "c4",
+   "best"
+  ],
+  [
+   "Kf8",
+   "mistake"
+  ],
+  [
+   "cxd5",
+   "best"
+  ],
+  [
+   "Nxd4",
+   "blunder"
+  ],
+  [
+   "Qxd4",
+   "best"
+  ],
+  [
+   "Qe7",
+   "good"
+  ],
+  [
+   "Bd3",
+   "best"
+  ],
+  [
+   "f5",
+   "best"
+  ],
+  [
+   "Bxe4",
+   "best"
+  ],
+  [
+   "fxe4",
+   "best"
+  ],
+  [
+   "Nc3",
+   "best"
+  ],
+  [
+   "Bc5",
+   "excellent"
+  ],
+  [
+   "Qc4",
+   "excellent"
+  ],
+  [
+   "Bh3",
+   "good"
+  ],
+  [
+   "Rxe4",
+   "excellent"
+  ],
+  [
+   "Qd6",
+   "excellent"
+  ],
+  [
+   "gxh3",
+   "best"
+  ],
+  [
+   "Kg8",
+   "excellent"
+  ],
+  [
+   "Nb5",
+   "excellent"
+  ],
+  [
+   "Qf8",
+   "excellent"
+  ],
+  [
+   "Rf4",
+   "excellent"
+  ],
+  [
+   "Qc8",
+   "mistake"
+  ],
+  [
+   "d6+",
+   "best"
+  ],
+  [
+   "Qe6",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Traveling Salespawn",
+    "accuracy": 99.2,
+    "acpl": 13,
+    "tally": {
+     "brilliant": 0,
+     "best": 10,
+     "excellent": 5,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Build 1",
+    "accuracy": 87.9,
+    "acpl": 131,
+    "tally": {
+     "brilliant": 0,
+     "best": 2,
+     "excellent": 5,
+     "good": 3,
+     "forced": 1,
+     "inaccuracy": 1,
+     "mistake": 2,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   14,
+   0,
+   -3,
+   69,
+   64,
+   112,
+   116,
+   237,
+   230,
+   575,
+   564,
+   632,
+   637,
+   635,
+   640,
+   635,
+   628,
+   649,
+   657,
+   820,
+   843,
+   853,
+   838,
+   853,
+   852,
+   957,
+   815,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "f8d6",
+   "e1g1",
+   "f8d6",
+   "c2c4",
+   "d7f5",
+   "c2c4",
+   "e8g8",
+   "c4d5",
+   "c6e7",
+   "d1d4",
+   "d7f5",
+   "e2d3",
+   "f7f5",
+   "d3e4",
+   "f5e4",
+   "b1c3",
+   "e7f6",
+   "d4e4",
+   "b7b5",
+   "c3e4",
+   "e7e4",
+   "g2h3",
+   "d6g6",
+   "c1f4",
+   "d6g6",
+   "d5d6",
+   "c5d6",
+   "d5d6",
+   "c8e6",
+   "c4e6",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:41:42Z"
+}

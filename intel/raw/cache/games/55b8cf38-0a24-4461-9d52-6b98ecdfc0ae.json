@@ -1,0 +1,176 @@
+{
+ "game": "55b8cf38-0a24-4461-9d52-6b98ecdfc0ae",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.07\"]\n[Round \"49\"]\n[White \"FableEngine\"]\n[Black \"Blunder Buss\"]\n[Result \"1-0\"]\n[FEN \"r1b1k2r/pp2nppp/2n1p3/q1ppP3/P2P4/2P2N2/2PB1PPP/R2QKB1R b KQkq - 4 9\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n9... Bd7 { [%clk 0:02:00.497] } 10. Be2 { [%clk 0:01:59.116] } 10... cxd4 { [%clk 0:02:00.869] } 11. cxd4 { [%clk 0:01:57.88] } 11... Qd8 { [%clk 0:02:01.244] } 12. Rb1 { [%clk 0:01:56.226] } 12... h5 { [%clk 0:02:01.621] } 13. Rxb7 { [%clk 0:01:54.589] } 13... Nxe5 { [%clk 0:02:01.999] } 14. Nxe5 { [%clk 0:01:53.448] } 14... Bxa4 { [%clk 0:02:02.372] } 15. Bb4 { [%clk 0:01:51.909] } 15... Nf5 { [%clk 0:02:02.747] } 16. Qa1 { [%clk 0:01:49.869] } 16... Bxc2 { [%clk 0:02:03.124] } 17. Bb5+ { [%clk 0:01:50.286] } 17... Qd7 { [%clk 0:02:03.623] } 18. Bxd7+ { [%clk 0:01:50.772] } 18... Kd8 { [%clk 0:02:04.121] } 19. Nxf7# { [%clk 0:01:51.262] } 1-0\n",
+ "opening": "French Winawer",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 49\u00b7Final",
+ "white_uuid": "ddf27983-07d0-4a0a-bb15-032ed889bcf9",
+ "black_uuid": "5e10f7ae-b545-4ce9-bb7a-d2ec55f9387c",
+ "site_verdicts": [
+  [
+   "Bd7",
+   "excellent"
+  ],
+  [
+   "Be2",
+   "excellent"
+  ],
+  [
+   "cxd4",
+   "inaccuracy"
+  ],
+  [
+   "cxd4",
+   "best"
+  ],
+  [
+   "Qd8",
+   "excellent"
+  ],
+  [
+   "Rb1",
+   "good"
+  ],
+  [
+   "h5",
+   "mistake"
+  ],
+  [
+   "Rxb7",
+   "best"
+  ],
+  [
+   "Nxe5",
+   "blunder"
+  ],
+  [
+   "Nxe5",
+   "best"
+  ],
+  [
+   "Bxa4",
+   "excellent"
+  ],
+  [
+   "Bb4",
+   "excellent"
+  ],
+  [
+   "Nf5",
+   "good"
+  ],
+  [
+   "Qa1",
+   "best"
+  ],
+  [
+   "Bxc2",
+   "mistake"
+  ],
+  [
+   "Bb5+",
+   "best"
+  ],
+  [
+   "Qd7",
+   "forced"
+  ],
+  [
+   "Bxd7+",
+   "best"
+  ],
+  [
+   "Kd8",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "FableEngine",
+    "accuracy": 97.8,
+    "acpl": 11,
+    "tally": {
+     "brilliant": 0,
+     "best": 7,
+     "excellent": 2,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Blunderbuss",
+    "accuracy": 79.3,
+    "acpl": 186,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 3,
+     "good": 1,
+     "forced": 2,
+     "inaccuracy": 1,
+     "mistake": 2,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   37,
+   46,
+   36,
+   104,
+   96,
+   95,
+   59,
+   200,
+   186,
+   578,
+   602,
+   651,
+   612,
+   817,
+   884,
+   9997,
+   9998,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "h7h6",
+   "h2h4",
+   "h7h6",
+   "c3d4",
+   "a5c7",
+   "e2d3",
+   "c6a5",
+   "b1b7",
+   "e7f5",
+   "f3e5",
+   "a7a6",
+   "d1a1",
+   "e8g8",
+   "d1a1",
+   "a4c6",
+   "e2b5",
+   "d8d7",
+   "b5d7",
+   "e8d8",
+   "e5f7",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:59:45Z"
+}

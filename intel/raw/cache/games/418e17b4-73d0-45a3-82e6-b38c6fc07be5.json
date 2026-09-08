@@ -1,0 +1,236 @@
+{
+ "game": "418e17b4-73d0-45a3-82e6-b38c6fc07be5",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"3\"]\n[White \"Marwari Stallion\"]\n[Black \"Team2\"]\n[Result \"*\"]\n[FEN \"rn1qkbnr/pp2pppp/2p3b1/8/3P1B2/6N1/PPP2PPP/R2QKBNR b KQkq - 4 6\"]\n[SetUp \"1\"]\n[Termination \"unterminated\"]\n\n6... e6 { [%clk 0:01:55.853] } 7. Nf3 { [%clk 0:01:58.698] } 7... Nf6 { [%clk 0:01:51.855] } 8. Ne5 { [%clk 0:01:57.392] } 8... a5 { [%clk 0:01:47.996] } 9. Nxg6 { [%clk 0:01:56.09] } 9... hxg6 { [%clk 0:01:44.284] } 10. Bg5 { [%clk 0:01:54.783] } 10... Qb6 { [%clk 0:01:40.707] } 11. Bxf6 { [%clk 0:01:53.481] } 11... gxf6 { [%clk 0:01:37.255] } 12. Ne4 { [%clk 0:01:52.179] } 12... f5 { [%clk 0:01:33.929] } 13. Nd2 { [%clk 0:01:51.011] } 13... Qxd4 { [%clk 0:01:30.708] } 14. Nc4 { [%clk 0:01:49.709] } 14... Qe4+ { [%clk 0:01:27.614] } 15. Qe2 { [%clk 0:01:49.172] } 15... Rh4 { [%clk 0:01:24.632] } 16. Qxe4 { [%clk 0:01:49.076] } 16... fxe4 { [%clk 0:01:21.745] } 17. Nb6 { [%clk 0:01:48.398] } 17... Ra7 { [%clk 0:01:18.96] } 18. Nc8 { [%clk 0:01:47.902] } 18... Ra8 { [%clk 0:01:16.282] } 19. Nb6 { [%clk 0:01:47.412] } 19... Ra7 { [%clk 0:01:13.701] } 20. Nc8 { [%clk 0:01:46.938] } 20... Ra8 { [%clk 0:01:10.152] } 21. Nb6 { [%clk 0:01:46.428] } *\n",
+ "opening": "Caro-Kann Classical",
+ "termination_text": "Unterminated",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 3\u00b7Void",
+ "white_uuid": "e75ca12a-5dab-4c44-97b8-5e67d871e695",
+ "black_uuid": "33731895-4927-40e5-90f5-fad0442d196d",
+ "site_verdicts": [
+  [
+   "e6",
+   "good"
+  ],
+  [
+   "Nf3",
+   "excellent"
+  ],
+  [
+   "Nf6",
+   "good"
+  ],
+  [
+   "Ne5",
+   "inaccuracy"
+  ],
+  [
+   "a5",
+   "mistake"
+  ],
+  [
+   "Nxg6",
+   "mistake"
+  ],
+  [
+   "hxg6",
+   "best"
+  ],
+  [
+   "Bg5",
+   "good"
+  ],
+  [
+   "Qb6",
+   "best"
+  ],
+  [
+   "Bxf6",
+   "mistake"
+  ],
+  [
+   "gxf6",
+   "best"
+  ],
+  [
+   "Ne4",
+   "inaccuracy"
+  ],
+  [
+   "f5",
+   "best"
+  ],
+  [
+   "Nd2",
+   "good"
+  ],
+  [
+   "Qxd4",
+   "inaccuracy"
+  ],
+  [
+   "Nc4",
+   "excellent"
+  ],
+  [
+   "Qe4+",
+   "best"
+  ],
+  [
+   "Qe2",
+   "best"
+  ],
+  [
+   "Rh4",
+   "good"
+  ],
+  [
+   "Qxe4",
+   "excellent"
+  ],
+  [
+   "fxe4",
+   "blunder"
+  ],
+  [
+   "Nb6",
+   "best"
+  ],
+  [
+   "Ra7",
+   "best"
+  ],
+  [
+   "Nc8",
+   "best"
+  ],
+  [
+   "Ra8",
+   "excellent"
+  ],
+  [
+   "Nb6",
+   "best"
+  ],
+  [
+   "Ra7",
+   "best"
+  ],
+  [
+   "Nc8",
+   "best"
+  ],
+  [
+   "Ra8",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Marwari Stallion",
+    "accuracy": 89.0,
+    "acpl": 40,
+    "tally": {
+     "brilliant": 0,
+     "best": 6,
+     "excellent": 3,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 2,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Dr. DrunkenstAIn",
+    "accuracy": 86.9,
+    "acpl": 42,
+    "tally": {
+     "brilliant": 0,
+     "best": 7,
+     "excellent": 2,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -11,
+   33,
+   17,
+   47,
+   -21,
+   135,
+   -9,
+   6,
+   -27,
+   -14,
+   -161,
+   -177,
+   -263,
+   -294,
+   -365,
+   -273,
+   -282,
+   -282,
+   -265,
+   -220,
+   -216,
+   -4,
+   -25,
+   -21,
+   -12,
+   -12,
+   -12,
+   -12,
+   -20,
+   0,
+   0
+  ],
+  "best": [
+   "d8b6",
+   "h2h4",
+   "d8b6",
+   "h2h4",
+   "b8d7",
+   "h2h4",
+   "h7g6",
+   "f1c4",
+   "d8b6",
+   "f1e2",
+   "g7f6",
+   "a1b1",
+   "f6f5",
+   "e4g5",
+   "b6b2",
+   "f1e2",
+   "d4e4",
+   "d1e2",
+   "e4e2",
+   "g2g3",
+   "h4e4",
+   "c4b6",
+   "a8a7",
+   "b6c8",
+   "f8c5",
+   "c8b6",
+   "a8a7",
+   "b6c8",
+   "f8c5",
+   "c8b6",
+   "a8a7"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:50:19Z"
+}

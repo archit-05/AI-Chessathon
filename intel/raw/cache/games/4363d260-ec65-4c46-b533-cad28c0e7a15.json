@@ -1,0 +1,188 @@
+{
+ "game": "4363d260-ec65-4c46-b533-cad28c0e7a15",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"18\"]\n[White \"Fishy Fischer\"]\n[Black \"Surya prabha\"]\n[Result \"1-0\"]\n[FEN \"r1bqkb1r/pp3ppp/2np1n2/1N2p3/4P3/2N2P2/PPP3PP/R1BQKB1R b KQkq - 0 7\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n7... Be7 { [%clk 0:01:56.148] } 8. Be3 { [%clk 0:01:54.589] } 8... Be6 { [%clk 0:01:52.424] } 9. Nd5 { [%clk 0:01:49.175] } 9... Nxd5 { [%clk 0:01:48.825] } 10. exd5 { [%clk 0:01:43.76] } 10... Qa5+ { [%clk 0:01:45.345] } 11. Kf2 { [%clk 0:01:38.347] } 11... a6 { [%clk 0:01:41.982] } 12. dxc6 { [%clk 0:01:33.082] } 12... axb5 { [%clk 0:01:38.731] } 13. cxb7 { [%clk 0:01:28.123] } 13... Rb8 { [%clk 0:01:35.588] } 14. Bd3 { [%clk 0:01:24.504] } 14... Bxa2 { [%clk 0:01:32.55] } 15. Be4 { [%clk 0:01:20.041] } 15... Bh4+ { [%clk 0:01:29.614] } 16. Kg1 { [%clk 0:01:14.625] } 16... Bd8 { [%clk 0:01:26.775] } 17. Qxd6 { [%clk 0:01:10.735] } 17... Bc7 { [%clk 0:01:24.031] } 18. Bc6# { [%clk 0:01:07.07] } 1-0\n",
+ "opening": "Sicilian Sveshnikov",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 18\u00b7Final",
+ "white_uuid": "8087333f-5959-4d33-8fce-16347b93344b",
+ "black_uuid": "ad314622-404e-4102-a7cf-2a26b9f9d645",
+ "site_verdicts": [
+  [
+   "Be7",
+   "inaccuracy"
+  ],
+  [
+   "Be3",
+   "inaccuracy"
+  ],
+  [
+   "Be6",
+   "mistake"
+  ],
+  [
+   "Nd5",
+   "best"
+  ],
+  [
+   "Nxd5",
+   "inaccuracy"
+  ],
+  [
+   "exd5",
+   "best"
+  ],
+  [
+   "Qa5+",
+   "excellent"
+  ],
+  [
+   "Kf2",
+   "inaccuracy"
+  ],
+  [
+   "a6",
+   "best"
+  ],
+  [
+   "dxc6",
+   "blunder"
+  ],
+  [
+   "axb5",
+   "best"
+  ],
+  [
+   "cxb7",
+   "best"
+  ],
+  [
+   "Rb8",
+   "best"
+  ],
+  [
+   "Bd3",
+   "inaccuracy"
+  ],
+  [
+   "Bxa2",
+   "blunder"
+  ],
+  [
+   "Be4",
+   "excellent"
+  ],
+  [
+   "Bh4+",
+   "inaccuracy"
+  ],
+  [
+   "Kg1",
+   "inaccuracy"
+  ],
+  [
+   "Bd8",
+   "mistake"
+  ],
+  [
+   "Qxd6",
+   "best"
+  ],
+  [
+   "Bc7",
+   "mistake"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Internship seeker",
+    "accuracy": 84.0,
+    "acpl": 55,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 1,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 4,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "Suryaprabha",
+    "accuracy": 67.1,
+    "acpl": 229,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 1,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 3,
+     "mistake": 3,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -34,
+   29,
+   -28,
+   104,
+   106,
+   210,
+   246,
+   271,
+   185,
+   226,
+   41,
+   43,
+   44,
+   46,
+   -46,
+   454,
+   457,
+   632,
+   466,
+   943,
+   920,
+   9999,
+   10000
+  ],
+  "best": [
+   "a7a6",
+   "c3d5",
+   "a7a6",
+   "c3d5",
+   "e6d5",
+   "e4d5",
+   "e6f5",
+   "c2c3",
+   "a7a6",
+   "b5c3",
+   "a6b5",
+   "c6b7",
+   "a8b8",
+   "a2a4",
+   "b8b7",
+   "d1b1",
+   "f7f5",
+   "g2g3",
+   "h4g5",
+   "d1d6",
+   "f7f6",
+   "e4c6",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:58:48Z"
+}

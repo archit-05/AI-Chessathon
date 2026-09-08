@@ -1,0 +1,158 @@
+{
+ "game": "cdd69d9a-d713-4df2-97e8-242bb329b6c9",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"2\"]\n[White \"Magnus.AI\"]\n[Black \"Malvoo\"]\n[Result \"1-0\"]\n[FEN \"r1bqk2r/pp2npbp/2npp1p1/2p5/4P3/2NPB1P1/PPP1NPBP/R2QK2R w KQkq - 2 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8. O-O { [%clk 0:01:57.512] } 8... c4 { [%clk 0:01:58.888] } 9. dxc4 { [%clk 0:01:54.344] } 9... d5 { [%clk 0:01:57.776] } 10. cxd5 { [%clk 0:01:46.536] } 10... e5 { [%clk 0:01:56.789] } 11. dxc6 { [%clk 0:01:43.552] } 11... g5 { [%clk 0:01:55.948] } 12. Qxd8+ { [%clk 0:01:40.672] } 12... Kxd8 { [%clk 0:01:54.952] } 13. Rad1+ { [%clk 0:01:33.524] } 13... Kc7 { [%clk 0:01:53.359] } 14. cxb7 { [%clk 0:01:30.37] } 14... g4 { [%clk 0:01:52.131] } 15. bxa8=Q { [%clk 0:01:23.031] } 15... Re8 { [%clk 0:01:51.385] } 16. Nb5# { [%clk 0:01:23.518] } 1-0\n",
+ "opening": "Sicilian Closed",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 2\u00b7Final",
+ "white_uuid": "fd604223-8da1-4c1f-aff5-c5916b25ad96",
+ "black_uuid": "fe4f9319-4a10-4ff8-9ec0-6c5c92f79031",
+ "site_verdicts": [
+  [
+   "O-O",
+   "excellent"
+  ],
+  [
+   "c4",
+   "blunder"
+  ],
+  [
+   "dxc4",
+   "best"
+  ],
+  [
+   "d5",
+   "inaccuracy"
+  ],
+  [
+   "cxd5",
+   "best"
+  ],
+  [
+   "e5",
+   "mistake"
+  ],
+  [
+   "dxc6",
+   "best"
+  ],
+  [
+   "g5",
+   "excellent"
+  ],
+  [
+   "Qxd8+",
+   "best"
+  ],
+  [
+   "Kxd8",
+   "forced"
+  ],
+  [
+   "Rad1+",
+   "excellent"
+  ],
+  [
+   "Kc7",
+   "excellent"
+  ],
+  [
+   "cxb7",
+   "excellent"
+  ],
+  [
+   "g4",
+   "mistake"
+  ],
+  [
+   "bxa8=Q",
+   "best"
+  ],
+  [
+   "Re8",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Magnus.AI",
+    "accuracy": 99.7,
+    "acpl": 3,
+    "tally": {
+     "brilliant": 0,
+     "best": 6,
+     "excellent": 3,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Esther",
+    "accuracy": 78.8,
+    "acpl": 223,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 3,
+     "good": 0,
+     "forced": 1,
+     "inaccuracy": 1,
+     "mistake": 2,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -9,
+   -4,
+   265,
+   246,
+   329,
+   346,
+   688,
+   722,
+   808,
+   803,
+   783,
+   780,
+   760,
+   758,
+   9994,
+   9995,
+   9999,
+   10000
+  ],
+  "best": [
+   "h2h4",
+   "c6d4",
+   "d3c4",
+   "a7a6",
+   "c4d5",
+   "e6d5",
+   "d5c6",
+   "e7c6",
+   "d1d8",
+   "e8d8",
+   "f1d1",
+   "d8e8",
+   "e3g5",
+   "c7b7",
+   "b7a8q",
+   "c8a6",
+   "c3b5",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:17:16Z"
+}

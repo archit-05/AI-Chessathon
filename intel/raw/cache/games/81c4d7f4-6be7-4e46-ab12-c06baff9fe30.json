@@ -1,0 +1,212 @@
+{
+ "game": "81c4d7f4-6be7-4e46-ab12-c06baff9fe30",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"21\"]\n[White \"Dogwarts\"]\n[Black \"Chessify\"]\n[Result \"0-1\"]\n[FEN \"r1bqr1k1/2p1bppp/p2p1n2/np2p3/4P3/1B1P1N1P/PPPN1PP1/R1BQR1K1 w - - 3 11\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n11. a3 { [%clk 0:02:00.499] } 11... Nxb3 { [%clk 0:01:56.5] } 12. Re2 { [%clk 0:02:00.997] } 12... Nxa1 { [%clk 0:01:52.75] } 13. Kh2 { [%clk 0:02:01.496] } 13... Bb7 { [%clk 0:01:49.128] } 14. Nb1 { [%clk 0:02:01.995] } 14... d5 { [%clk 0:01:45.606] } 15. Rd2 { [%clk 0:02:02.494] } 15... dxe4 { [%clk 0:01:42.189] } 16. g3 { [%clk 0:02:02.993] } 16... exf3 { [%clk 0:01:38.889] } 17. h4 { [%clk 0:02:03.492] } 17... e4 { [%clk 0:01:35.709] } 18. Kg1 { [%clk 0:02:03.99] } 18... e3 { [%clk 0:01:32.617] } 19. g4 { [%clk 0:02:04.489] } 19... exd2 { [%clk 0:01:29.317] } 20. c3 { [%clk 0:02:04.988] } 20... dxc1=Q { [%clk 0:01:26.255] } 21. Kh2 { [%clk 0:02:05.487] } 21... Qxd1 { [%clk 0:01:23.212] } 22. b4 { [%clk 0:02:05.986] } 22... Bd6+ { [%clk 0:01:23.66] } 23. Kh3 { [%clk 0:02:06.484] } 23... Qh1# { [%clk 0:01:24.139] } 0-1\n",
+ "opening": "Ruy Lopez, Closed",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 21\u00b7Final",
+ "white_uuid": "81dca41d-b715-4c1f-928e-a0100a7a7df6",
+ "black_uuid": "2837cf75-e0e4-4d1d-8942-6d451aff5f0a",
+ "site_verdicts": [
+  [
+   "a3",
+   "good"
+  ],
+  [
+   "Nxb3",
+   "best"
+  ],
+  [
+   "Re2",
+   "blunder"
+  ],
+  [
+   "Nxa1",
+   "best"
+  ],
+  [
+   "Kh2",
+   "excellent"
+  ],
+  [
+   "Bb7",
+   "excellent"
+  ],
+  [
+   "Nb1",
+   "excellent"
+  ],
+  [
+   "d5",
+   "best"
+  ],
+  [
+   "Rd2",
+   "excellent"
+  ],
+  [
+   "dxe4",
+   "excellent"
+  ],
+  [
+   "g3",
+   "good"
+  ],
+  [
+   "exf3",
+   "best"
+  ],
+  [
+   "h4",
+   "excellent"
+  ],
+  [
+   "e4",
+   "excellent"
+  ],
+  [
+   "Kg1",
+   "excellent"
+  ],
+  [
+   "e3",
+   "best"
+  ],
+  [
+   "g4",
+   "inaccuracy"
+  ],
+  [
+   "exd2",
+   "miss"
+  ],
+  [
+   "c3",
+   "inaccuracy"
+  ],
+  [
+   "dxc1=Q",
+   "excellent"
+  ],
+  [
+   "Kh2",
+   "excellent"
+  ],
+  [
+   "Qxd1",
+   "best"
+  ],
+  [
+   "b4",
+   "excellent"
+  ],
+  [
+   "Bd6+",
+   "best"
+  ],
+  [
+   "Kh3",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "72o",
+    "accuracy": 84.5,
+    "acpl": 255,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 7,
+     "good": 2,
+     "forced": 1,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "Hikaru",
+    "accuracy": 99.8,
+    "acpl": 86,
+    "tally": {
+     "brilliant": 0,
+     "best": 7,
+     "excellent": 5,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 1,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -10,
+   -46,
+   -47,
+   -639,
+   -647,
+   -715,
+   -676,
+   -714,
+   -757,
+   -761,
+   -794,
+   -1006,
+   -1050,
+   -1269,
+   -1185,
+   -1326,
+   -1435,
+   -9989,
+   -1746,
+   -9983,
+   -9990,
+   -9997,
+   -9998,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "d2f1",
+   "a5b3",
+   "d2b3",
+   "b3a1",
+   "d2f1",
+   "a1c2",
+   "d2f1",
+   "d6d5",
+   "f3h4",
+   "a1c2",
+   "d3e4",
+   "e4f3",
+   "b1c3",
+   "f6g4",
+   "d3e4",
+   "e4e3",
+   "f2e3",
+   "d8d4",
+   "b1d2",
+   "d2c1r",
+   "d1c1",
+   "c1d1",
+   "b2b3",
+   "e7d6",
+   "h2h3",
+   "d1f1",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:55:12Z"
+}

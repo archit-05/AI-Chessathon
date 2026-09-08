@@ -1,0 +1,164 @@
+{
+ "game": "31de450d-6ef7-4911-8be7-bbfb89986b89",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"16\"]\n[White \"Team Anay\"]\n[Black \"Golden Guys\"]\n[Result \"1-0\"]\n[FEN \"r1bqkb1r/1p3ppp/p1np1n2/4p3/4P3/N1N2P2/PPP3PP/R1BQKB1R b KQkq - 1 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8... Nb8 { [%clk 0:02:00.498] } 9. Be3 { [%clk 0:01:20.494] } 9... Ra7 { [%clk 0:02:00.997] } 10. Bxa7 { [%clk 0:00:54.16] } 10... Qa5 { [%clk 0:02:01.496] } 11. Bxb8 { [%clk 0:00:36.604] } 11... Ke7 { [%clk 0:02:01.995] } 12. Bxd6+ { [%clk 0:00:24.897] } 12... Kd7 { [%clk 0:02:02.494] } 13. Bb4+ { [%clk 0:00:17.091] } 13... Nd5 { [%clk 0:02:02.993] } 14. Bxa5 { [%clk 0:00:11.89] } 14... h5 { [%clk 0:02:03.491] } 15. Qxd5+ { [%clk 0:00:08.423] } 15... Ke7 { [%clk 0:02:03.99] } 16. Qd8+ { [%clk 0:00:06.112] } 16... Ke6 { [%clk 0:02:04.489] } 17. Bc4# { [%clk 0:00:04.572] } 1-0\n",
+ "opening": "Sicilian Sveshnikov",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 16\u00b7Final",
+ "white_uuid": "046a9eef-2895-4d9d-84a4-22a40eff924f",
+ "black_uuid": "0680f515-66d1-4f73-aa0f-bcfc1d645023",
+ "site_verdicts": [
+  [
+   "Nb8",
+   "mistake"
+  ],
+  [
+   "Be3",
+   "excellent"
+  ],
+  [
+   "Ra7",
+   "blunder"
+  ],
+  [
+   "Bxa7",
+   "best"
+  ],
+  [
+   "Qa5",
+   "good"
+  ],
+  [
+   "Bxb8",
+   "excellent"
+  ],
+  [
+   "Ke7",
+   "good"
+  ],
+  [
+   "Bxd6+",
+   "excellent"
+  ],
+  [
+   "Kd7",
+   "good"
+  ],
+  [
+   "Bb4+",
+   "excellent"
+  ],
+  [
+   "Nd5",
+   "excellent"
+  ],
+  [
+   "Bxa5",
+   "best"
+  ],
+  [
+   "h5",
+   "inaccuracy"
+  ],
+  [
+   "Qxd5+",
+   "best"
+  ],
+  [
+   "Ke7",
+   "excellent"
+  ],
+  [
+   "Qd8+",
+   "best"
+  ],
+  [
+   "Ke6",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "ChaosBot",
+    "accuracy": 99.7,
+    "acpl": 7,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 4,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Golden Guys",
+    "accuracy": 79.5,
+    "acpl": 311,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 2,
+     "good": 3,
+     "forced": 1,
+     "inaccuracy": 1,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -60,
+   99,
+   86,
+   565,
+   578,
+   691,
+   699,
+   884,
+   871,
+   1320,
+   1280,
+   1692,
+   1755,
+   9994,
+   9995,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "b7b5",
+   "a3c4",
+   "b7b5",
+   "e3a7",
+   "b8c6",
+   "a3c4",
+   "d6d5",
+   "a3c4",
+   "e7e8",
+   "d6f8",
+   "a5d5",
+   "b4a5",
+   "f8a3",
+   "d1d5",
+   "f8d6",
+   "d5d8",
+   "e7e6",
+   "f1c4",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:47:58Z"
+}

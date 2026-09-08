@@ -1,0 +1,218 @@
+{
+ "game": "49499c09-5114-4c1b-beb7-2596ed4b9aa2",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.06\"]\n[Round \"34\"]\n[White \"YG\"]\n[Black \"The big H\"]\n[Result \"1/2-1/2\"]\n[FEN \"r1bq1rk1/pppnbpp1/4pn1p/3p4/2PP3B/2N1PN2/PP3PPP/R2QKB1R w KQ - 2 8\"]\n[SetUp \"1\"]\n[Termination \"threefold_repetition\"]\n\n8. Qc2 { [%clk 0:01:54.103] } 8... g5 { [%clk 0:01:49.528] } 9. Bg3 { [%clk 0:01:48.909] } 9... c6 { [%clk 0:01:40.956] } 10. Bd3 { [%clk 0:01:42.499] } 10... dxc4 { [%clk 0:01:35.831] } 11. Bxc4 { [%clk 0:01:38.977] } 11... Nh5 { [%clk 0:01:27.436] } 12. Bxe6 { [%clk 0:01:34.227] } 12... fxe6 { [%clk 0:01:21.456] } 13. Qg6+ { [%clk 0:01:30.018] } 13... Ng7 { [%clk 0:01:16.434] } 14. Qxh6 { [%clk 0:01:25.01] } 14... g4 { [%clk 0:01:10.653] } 15. Be5 { [%clk 0:01:22.086] } 15... Nxe5 { [%clk 0:01:07.091] } 16. Nxe5 { [%clk 0:01:17.169] } 16... Rf6 { [%clk 0:01:03.315] } 17. Ng6 { [%clk 0:01:13.819] } 17... Kf7 { [%clk 0:01:00.499] } 18. Nh8+ { [%clk 0:01:11.67] } 18... Kg8 { [%clk 0:00:57.701] } 19. Ng6 { [%clk 0:01:09.481] } 19... Kf7 { [%clk 0:00:52.603] } 20. Nh8+ { [%clk 0:01:04.749] } 20... Kg8 { [%clk 0:00:47.944] } 21. Ng6 { [%clk 0:01:02.588] } 1/2-1/2\n",
+ "opening": "Queen's Gambit Declined",
+ "termination_text": "Threefold repetition",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 34\u00b7Final",
+ "white_uuid": "1809133c-1e0d-471b-8e92-933243c97ed7",
+ "black_uuid": "b72b6908-62fb-4dd1-a8a0-ad679f7dec67",
+ "site_verdicts": [
+  [
+   "Qc2",
+   "best"
+  ],
+  [
+   "g5",
+   "mistake"
+  ],
+  [
+   "Bg3",
+   "best"
+  ],
+  [
+   "c6",
+   "excellent"
+  ],
+  [
+   "Bd3",
+   "excellent"
+  ],
+  [
+   "dxc4",
+   "excellent"
+  ],
+  [
+   "Bxc4",
+   "best"
+  ],
+  [
+   "Nh5",
+   "excellent"
+  ],
+  [
+   "Bxe6",
+   "blunder"
+  ],
+  [
+   "fxe6",
+   "best"
+  ],
+  [
+   "Qg6+",
+   "good"
+  ],
+  [
+   "Ng7",
+   "best"
+  ],
+  [
+   "Qxh6",
+   "blunder"
+  ],
+  [
+   "g4",
+   "blunder"
+  ],
+  [
+   "Be5",
+   "inaccuracy"
+  ],
+  [
+   "Nxe5",
+   "inaccuracy"
+  ],
+  [
+   "Nxe5",
+   "best"
+  ],
+  [
+   "Rf6",
+   "best"
+  ],
+  [
+   "Ng6",
+   "excellent"
+  ],
+  [
+   "Kf7",
+   "good"
+  ],
+  [
+   "Nh8+",
+   "good"
+  ],
+  [
+   "Kg8",
+   "best"
+  ],
+  [
+   "Ng6",
+   "best"
+  ],
+  [
+   "Kf7",
+   "good"
+  ],
+  [
+   "Nh8+",
+   "excellent"
+  ],
+  [
+   "Kg8",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "YG",
+    "accuracy": 76.0,
+    "acpl": 64,
+    "tally": {
+     "brilliant": 0,
+     "best": 6,
+     "excellent": 3,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 2
+    }
+   },
+   {
+    "name": "Huntsville",
+    "accuracy": 79.2,
+    "acpl": 60,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 3,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   37,
+   25,
+   151,
+   152,
+   160,
+   164,
+   184,
+   197,
+   207,
+   -113,
+   -102,
+   -141,
+   -117,
+   -400,
+   0,
+   -106,
+   -42,
+   -62,
+   -51,
+   -72,
+   -27,
+   -63,
+   -47,
+   -49,
+   0,
+   0,
+   0,
+   -60
+  ],
+  "best": [
+   "d1c2",
+   "c7c5",
+   "h4g3",
+   "c7c5",
+   "f1e2",
+   "g8g7",
+   "d3c4",
+   "d8e8",
+   "e1c1",
+   "f7e6",
+   "h2h4",
+   "h5g7",
+   "h2h4",
+   "f8f6",
+   "f3e5",
+   "f8f7",
+   "f3e5",
+   "f8f6",
+   "h6g5",
+   "f6g6",
+   "g6e5",
+   "f7g8",
+   "h8g6",
+   "f6g6",
+   "g6e5",
+   "f7g8",
+   "h8g6",
+   "f6g6"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:12:57Z"
+}

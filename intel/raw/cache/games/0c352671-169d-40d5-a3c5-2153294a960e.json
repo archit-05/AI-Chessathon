@@ -1,0 +1,248 @@
+{
+ "game": "0c352671-169d-40d5-a3c5-2153294a960e",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"29\"]\n[White \"Tunir\"]\n[Black \"Stockfish\"]\n[Result \"1-0\"]\n[FEN \"r1bqk2r/pppp1ppp/2n2n2/1Bb5/3NP3/2P5/PP3PPP/RNBQ1RK1 b kq - 2 7\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n7... Nxd4 { [%clk 0:01:58.498] } 8. cxd4 { [%clk 0:01:57.497] } 8... c6 { [%clk 0:01:56.996] } 9. dxc5 { [%clk 0:01:55.058] } 9... cxb5 { [%clk 0:01:55.494] } 10. e5 { [%clk 0:01:52.678] } 10... Ne4 { [%clk 0:01:53.993] } 11. Qg4 { [%clk 0:01:49.419] } 11... Nxc5 { [%clk 0:01:52.491] } 12. Qxg7 { [%clk 0:01:46.27] } 12... Rf8 { [%clk 0:01:50.989] } 13. Bg5 { [%clk 0:01:43.226] } 13... Qc7 { [%clk 0:01:49.488] } 14. Qf6 { [%clk 0:01:40.282] } 14... d6 { [%clk 0:01:47.986] } 15. exd6 { [%clk 0:01:37.436] } 15... Qd7 { [%clk 0:01:46.484] } 16. Nc3 { [%clk 0:01:34.685] } 16... Rg8 { [%clk 0:01:44.983] } 17. Nd5 { [%clk 0:01:32.027] } 17... Ne6 { [%clk 0:01:43.481] } 18. Qe5 { [%clk 0:01:29.456] } 18... Rxg5 { [%clk 0:01:41.98] } 19. Qh8+ { [%clk 0:01:26.971] } 19... Rg8 { [%clk 0:01:40.479] } 20. Qxg8+ { [%clk 0:01:24.568] } 20... Nf8 { [%clk 0:01:38.977] } 21. Nf6+ { [%clk 0:01:22.244] } 21... Kd8 { [%clk 0:01:37.497] } 22. Qxf8+ { [%clk 0:01:20.001] } 22... Qe8 { [%clk 0:01:36.046] } 23. Qxe8# { [%clk 0:01:17.833] } 1-0\n",
+ "opening": "Scotch Game",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 29\u00b7Final",
+ "white_uuid": "95aa042c-ccc3-4cf4-8e21-34062d6cee1a",
+ "black_uuid": "20ed5de0-fb1b-47ff-9167-05de682c510d",
+ "site_verdicts": [
+  [
+   "Nxd4",
+   "blunder"
+  ],
+  [
+   "cxd4",
+   "best"
+  ],
+  [
+   "c6",
+   "mistake"
+  ],
+  [
+   "dxc5",
+   "best"
+  ],
+  [
+   "cxb5",
+   "best"
+  ],
+  [
+   "e5",
+   "best"
+  ],
+  [
+   "Ne4",
+   "best"
+  ],
+  [
+   "Qg4",
+   "good"
+  ],
+  [
+   "Nxc5",
+   "inaccuracy"
+  ],
+  [
+   "Qxg7",
+   "best"
+  ],
+  [
+   "Rf8",
+   "best"
+  ],
+  [
+   "Bg5",
+   "good"
+  ],
+  [
+   "Qc7",
+   "inaccuracy"
+  ],
+  [
+   "Qf6",
+   "best"
+  ],
+  [
+   "d6",
+   "excellent"
+  ],
+  [
+   "exd6",
+   "best"
+  ],
+  [
+   "Qd7",
+   "best"
+  ],
+  [
+   "Nc3",
+   "excellent"
+  ],
+  [
+   "Rg8",
+   "excellent"
+  ],
+  [
+   "Nd5",
+   "good"
+  ],
+  [
+   "Ne6",
+   "best"
+  ],
+  [
+   "Qe5",
+   "best"
+  ],
+  [
+   "Rxg5",
+   "mistake"
+  ],
+  [
+   "Qh8+",
+   "best"
+  ],
+  [
+   "Rg8",
+   "best"
+  ],
+  [
+   "Qxg8+",
+   "best"
+  ],
+  [
+   "Nf8",
+   "forced"
+  ],
+  [
+   "Nf6+",
+   "best"
+  ],
+  [
+   "Kd8",
+   "forced"
+  ],
+  [
+   "Qxf8+",
+   "best"
+  ],
+  [
+   "Qe8",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Tunir",
+    "accuracy": 96.6,
+    "acpl": 46,
+    "tally": {
+     "brilliant": 0,
+     "best": 12,
+     "excellent": 1,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Optiverchess",
+    "accuracy": 86.3,
+    "acpl": 139,
+    "tally": {
+     "brilliant": 0,
+     "best": 6,
+     "excellent": 2,
+     "good": 0,
+     "forced": 3,
+     "inaccuracy": 2,
+     "mistake": 2,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -24,
+   168,
+   163,
+   352,
+   367,
+   366,
+   418,
+   434,
+   368,
+   522,
+   495,
+   543,
+   468,
+   777,
+   888,
+   889,
+   934,
+   1048,
+   1147,
+   1344,
+   782,
+   778,
+   771,
+   9995,
+   9996,
+   9996,
+   9997,
+   9997,
+   9998,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "e8g8",
+   "c3d4",
+   "c5b6",
+   "d4c5",
+   "c6b5",
+   "e4e5",
+   "f6e4",
+   "d1c2",
+   "d7d5",
+   "g4g7",
+   "h8f8",
+   "b1c3",
+   "c5e6",
+   "g7f6",
+   "d7d5",
+   "e5d6",
+   "c7d7",
+   "f1e1",
+   "c5e6",
+   "f1e1",
+   "c5e6",
+   "f6e5",
+   "g8g7",
+   "e5h8",
+   "g5g8",
+   "h8g8",
+   "e6f8",
+   "d5f6",
+   "e8d8",
+   "g8f8",
+   "d7e8",
+   "f8e8",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:14:13Z"
+}

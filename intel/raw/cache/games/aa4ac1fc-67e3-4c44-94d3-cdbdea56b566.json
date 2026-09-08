@@ -1,0 +1,224 @@
+{
+ "game": "aa4ac1fc-67e3-4c44-94d3-cdbdea56b566",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.07\"]\n[Round \"54\"]\n[White \"Gladiator\"]\n[Black \"JBG fam\"]\n[Result \"1-0\"]\n[FEN \"rnbqkb1r/pp1n1ppp/4p3/2ppP3/3P1P2/8/PPP1N1PP/R1BQKBNR b KQkq - 1 6\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n6... Be7 { [%clk 0:01:57.632] } 7. Nf3 { [%clk 0:01:58.225] } 7... Nc6 { [%clk 0:01:55.468] } 8. c3 { [%clk 0:01:56.46] } 8... O-O { [%clk 0:01:51.263] } 9. h4 { [%clk 0:01:54.711] } 9... b5 { [%clk 0:01:48.906] } 10. Ng3 { [%clk 0:01:52.964] } 10... cxd4 { [%clk 0:01:44.738] } 11. Bd3 { [%clk 0:01:51.241] } 11... f6 { [%clk 0:01:41.894] } 12. Ng5 { [%clk 0:01:49.574] } 12... fxg5 { [%clk 0:01:38.985] } 13. Bxh7+ { [%clk 0:01:47.882] } 13... Kxh7 { [%clk 0:01:35.333] } 14. hxg5+ { [%clk 0:01:48.341] } 14... Kg8 { [%clk 0:01:31.14] } 15. Rh8+ { [%clk 0:01:48.821] } 15... Kxh8 { [%clk 0:01:31.625] } 16. Qh5+ { [%clk 0:01:49.315] } 16... Kg8 { [%clk 0:01:32.123] } 17. g6 { [%clk 0:01:49.812] } 17... Nf6 { [%clk 0:01:32.618] } 18. exf6 { [%clk 0:01:50.31] } 18... Rf7 { [%clk 0:01:33.115] } 19. Qh7+ { [%clk 0:01:50.808] } 19... Kf8 { [%clk 0:01:33.613] } 20. Qh8# { [%clk 0:01:51.307] } 1-0\n",
+ "opening": "French Classical",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 54\u00b7Final",
+ "white_uuid": "429a581d-e7fc-41e3-a915-2895b01d7d0b",
+ "black_uuid": "10021bb5-71a5-4b10-bde5-14e1f667501a",
+ "site_verdicts": [
+  [
+   "Be7",
+   "best"
+  ],
+  [
+   "Nf3",
+   "excellent"
+  ],
+  [
+   "Nc6",
+   "excellent"
+  ],
+  [
+   "c3",
+   "best"
+  ],
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "h4",
+   "excellent"
+  ],
+  [
+   "b5",
+   "good"
+  ],
+  [
+   "Ng3",
+   "best"
+  ],
+  [
+   "cxd4",
+   "good"
+  ],
+  [
+   "Bd3",
+   "best"
+  ],
+  [
+   "f6",
+   "excellent"
+  ],
+  [
+   "Ng5",
+   "brilliant"
+  ],
+  [
+   "fxg5",
+   "best"
+  ],
+  [
+   "Bxh7+",
+   "great"
+  ],
+  [
+   "Kxh7",
+   "best"
+  ],
+  [
+   "hxg5+",
+   "great"
+  ],
+  [
+   "Kg8",
+   "great"
+  ],
+  [
+   "Rh8+",
+   "excellent"
+  ],
+  [
+   "Kxh8",
+   "best"
+  ],
+  [
+   "Qh5+",
+   "great"
+  ],
+  [
+   "Kg8",
+   "forced"
+  ],
+  [
+   "g6",
+   "great"
+  ],
+  [
+   "Nf6",
+   "best"
+  ],
+  [
+   "exf6",
+   "best"
+  ],
+  [
+   "Rf7",
+   "excellent"
+  ],
+  [
+   "Qh7+",
+   "best"
+  ],
+  [
+   "Kf8",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Poincare",
+    "accuracy": 99.3,
+    "acpl": 3,
+    "tally": {
+     "brilliant": 1,
+     "great": 4,
+     "best": 6,
+     "excellent": 3,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "PSL God Matt Bomer",
+    "accuracy": 94.7,
+    "acpl": 21,
+    "tally": {
+     "brilliant": 0,
+     "great": 1,
+     "best": 6,
+     "excellent": 3,
+     "good": 2,
+     "forced": 2,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   24,
+   30,
+   11,
+   10,
+   8,
+   3,
+   4,
+   35,
+   24,
+   52,
+   43,
+   53,
+   58,
+   263,
+   350,
+   361,
+   407,
+   396,
+   9995,
+   9995,
+   9996,
+   9996,
+   9997,
+   9997,
+   9998,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "f8e7",
+   "c2c3",
+   "e8g8",
+   "c2c3",
+   "e8g8",
+   "c1e3",
+   "f7f6",
+   "e2g3",
+   "b5b4",
+   "f1d3",
+   "f7f5",
+   "f3g5",
+   "f6g5",
+   "d3h7",
+   "g8h7",
+   "h4g5",
+   "h7g8",
+   "g5g6",
+   "g8h8",
+   "d1h5",
+   "h8g8",
+   "g5g6",
+   "d7f6",
+   "e5f6",
+   "f8f6",
+   "h5h7",
+   "g8f8",
+   "h7h8",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-08T12:50:34Z"
+}

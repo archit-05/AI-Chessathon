@@ -1,0 +1,152 @@
+{
+ "game": "583b4259-3b2f-44b1-942f-84ceb90b4527",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"30\"]\n[White \"Team7347\"]\n[Black \"Minimax Three\"]\n[Result \"1-0\"]\n[FEN \"r1bqk2r/ppp1bppp/2np1n2/4p3/2B1P3/2PP1N2/PP3PPP/RNBQ1RK1 b kq - 0 6\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n6... Bg4 { [%clk 0:02:00.331] } 7. h3 { [%clk 0:01:54.881] } 7... Bh5 { [%clk 0:02:00.633] } 8. g4 { [%clk 0:01:50.374] } 8... Bg6 { [%clk 0:02:00.907] } 9. Nh4 { [%clk 0:01:45.871] } 9... Nxe4 { [%clk 0:02:01.31] } 10. Nxg6 { [%clk 0:01:41.367] } 10... Nxf2 { [%clk 0:02:01.691] } 11. Qf3 { [%clk 0:01:36.895] } 11... Nxh3+ { [%clk 0:02:02.063] } 12. Kh2 { [%clk 0:01:32.646] } 12... hxg6 { [%clk 0:02:02.453] } 13. Qxf7+ { [%clk 0:01:33.143] } 13... Kd7 { [%clk 0:02:02.941] } 14. Be6# { [%clk 0:01:33.64] } 1-0\n",
+ "opening": "Two Knights Defence",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 30\u00b7Final",
+ "white_uuid": "1f20a852-ae0c-44f5-aed7-8be8a5e699b0",
+ "black_uuid": "9732317c-5dc8-4e6c-b31c-3c48389c9028",
+ "site_verdicts": [
+  [
+   "Bg4",
+   "good"
+  ],
+  [
+   "h3",
+   "best"
+  ],
+  [
+   "Bh5",
+   "excellent"
+  ],
+  [
+   "g4",
+   "mistake"
+  ],
+  [
+   "Bg6",
+   "best"
+  ],
+  [
+   "Nh4",
+   "best"
+  ],
+  [
+   "Nxe4",
+   "blunder"
+  ],
+  [
+   "Nxg6",
+   "best"
+  ],
+  [
+   "Nxf2",
+   "blunder"
+  ],
+  [
+   "Qf3",
+   "best"
+  ],
+  [
+   "Nxh3+",
+   "best"
+  ],
+  [
+   "Kh2",
+   "excellent"
+  ],
+  [
+   "hxg6",
+   "blunder"
+  ],
+  [
+   "Qxf7+",
+   "best"
+  ],
+  [
+   "Kd7",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Team7347",
+    "accuracy": 92.8,
+    "acpl": 20,
+    "tally": {
+     "brilliant": 0,
+     "best": 6,
+     "excellent": 1,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Minimax Three",
+    "accuracy": 72.7,
+    "acpl": 211,
+    "tally": {
+     "brilliant": 0,
+     "best": 2,
+     "excellent": 1,
+     "good": 1,
+     "forced": 1,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 3
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   29,
+   67,
+   65,
+   83,
+   -46,
+   -37,
+   -32,
+   283,
+   258,
+   544,
+   552,
+   573,
+   571,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "e8g8",
+   "h2h3",
+   "g4e6",
+   "f1e1",
+   "h5g6",
+   "f3h4",
+   "d8d7",
+   "h4g6",
+   "h7g6",
+   "d1f3",
+   "f2h3",
+   "f3h3",
+   "h3f4",
+   "f3f7",
+   "e8d7",
+   "c4e6",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:04:26Z"
+}

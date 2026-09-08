@@ -1,0 +1,224 @@
+{
+ "game": "9a8df7df-7f15-4e42-90f1-0a6dc27f7701",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"5\"]\n[White \"3D\"]\n[Black \"Magnus Force\"]\n[Result \"1-0\"]\n[FEN \"rnbqkb1r/1p3ppp/p3pn2/2p5/2BP4/2N1PN2/PP3PPP/R1BQ1RK1 b kq - 1 7\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n7... cxd4 { [%clk 0:01:59.225] } 8. exd4 { [%clk 0:01:57.85] } 8... a5 { [%clk 0:01:58.721] } 9. Bf4 { [%clk 0:01:55.705] } 9... Nc6 { [%clk 0:01:58.216] } 10. Bb5 { [%clk 0:01:53.655] } 10... a4 { [%clk 0:01:57.713] } 11. Qd3 { [%clk 0:01:51.633] } 11... a3 { [%clk 0:01:57.208] } 12. bxa3 { [%clk 0:01:49.663] } 12... Rxa3 { [%clk 0:01:56.705] } 13. Ne5 { [%clk 0:01:47.672] } 13... Rxc3 { [%clk 0:01:56.199] } 14. Qxc3 { [%clk 0:01:45.761] } 14... b6 { [%clk 0:01:55.696] } 15. Bxc6+ { [%clk 0:01:43.869] } 15... Ke7 { [%clk 0:01:55.194] } 16. Qa3+ { [%clk 0:01:42.078] } 16... Qd6 { [%clk 0:01:55.687] } 17. Ng6+ { [%clk 0:01:40.267] } 17... Kd8 { [%clk 0:01:55.184] } 18. Bxd6 { [%clk 0:01:38.554] } 18... fxg6 { [%clk 0:01:54.682] } 19. Bxf8 { [%clk 0:01:36.838] } 19... Ng8 { [%clk 0:01:54.177] } 20. Qd6+ { [%clk 0:01:37.33] } 20... Bd7 { [%clk 0:01:54.668] } 21. Qxd7# { [%clk 0:01:37.823] } 1-0\n",
+ "opening": "Queen's Gambit Accepted",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 5\u00b7Final",
+ "white_uuid": "0d820bba-69c7-4a15-adfe-cd6c12c88292",
+ "black_uuid": "b7ee465f-39af-444e-8b74-6d6c268108ef",
+ "site_verdicts": [
+  [
+   "cxd4",
+   "inaccuracy"
+  ],
+  [
+   "exd4",
+   "best"
+  ],
+  [
+   "a5",
+   "mistake"
+  ],
+  [
+   "Bf4",
+   "inaccuracy"
+  ],
+  [
+   "Nc6",
+   "blunder"
+  ],
+  [
+   "Bb5",
+   "blunder"
+  ],
+  [
+   "a4",
+   "inaccuracy"
+  ],
+  [
+   "Qd3",
+   "inaccuracy"
+  ],
+  [
+   "a3",
+   "inaccuracy"
+  ],
+  [
+   "bxa3",
+   "mistake"
+  ],
+  [
+   "Rxa3",
+   "inaccuracy"
+  ],
+  [
+   "Ne5",
+   "inaccuracy"
+  ],
+  [
+   "Rxc3",
+   "blunder"
+  ],
+  [
+   "Qxc3",
+   "best"
+  ],
+  [
+   "b6",
+   "mistake"
+  ],
+  [
+   "Bxc6+",
+   "good"
+  ],
+  [
+   "Ke7",
+   "good"
+  ],
+  [
+   "Qa3+",
+   "best"
+  ],
+  [
+   "Qd6",
+   "forced"
+  ],
+  [
+   "Ng6+",
+   "best"
+  ],
+  [
+   "Kd8",
+   "excellent"
+  ],
+  [
+   "Bxd6",
+   "best"
+  ],
+  [
+   "fxg6",
+   "inaccuracy"
+  ],
+  [
+   "Bxf8",
+   "best"
+  ],
+  [
+   "Ng8",
+   "excellent"
+  ],
+  [
+   "Qd6+",
+   "best"
+  ],
+  [
+   "Bd7",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "3D",
+    "accuracy": 79.0,
+    "acpl": 83,
+    "tally": {
+     "brilliant": 0,
+     "best": 8,
+     "excellent": 0,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 3,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "Magnus Five",
+    "accuracy": 68.6,
+    "acpl": 237,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 2,
+     "good": 1,
+     "forced": 2,
+     "inaccuracy": 5,
+     "mistake": 2,
+     "miss": 0,
+     "blunder": 2
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   10,
+   83,
+   74,
+   203,
+   125,
+   554,
+   73,
+   166,
+   98,
+   199,
+   54,
+   153,
+   64,
+   476,
+   443,
+   988,
+   728,
+   1002,
+   998,
+   1011,
+   1011,
+   1152,
+   1406,
+   9989,
+   9990,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "b7b5",
+   "e3d4",
+   "f8e7",
+   "d4d5",
+   "f8e7",
+   "c3b5",
+   "f8d6",
+   "f3e5",
+   "f8d6",
+   "f3e5",
+   "f8d6",
+   "f4c1",
+   "f8b4",
+   "d3c3",
+   "f6d5",
+   "e5c6",
+   "f6d7",
+   "c3a3",
+   "d8d6",
+   "e5g6",
+   "f7g6",
+   "f4d6",
+   "f6d7",
+   "d6f8",
+   "h8f8",
+   "a3d6",
+   "c8d7",
+   "d6d7",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:24:11Z"
+}

@@ -1,0 +1,242 @@
+{
+ "game": "37ce2a16-ca51-4fd6-9a27-e391ac28c796",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"15\"]\n[White \"Wolves of Silver Street\"]\n[Black \"neomatica\"]\n[Result \"0-1\"]\n[FEN \"r1bqk2r/pp1pppbp/2n2np1/2p5/2P5/2N2NPP/PP1PPPB1/R1BQK2R b KQkq - 0 6\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n6... O-O { [%clk 0:01:55.791] } 7. d4 { [%clk 0:01:56.235] } 7... d5 { [%clk 0:01:51.854] } 8. cxd5 { [%clk 0:01:52.59] } 8... Nxd5 { [%clk 0:01:48.256] } 9. dxc5 { [%clk 0:01:49.075] } 9... Nxc3 { [%clk 0:01:44.729] } 10. Qxd8 { [%clk 0:01:45.685] } 10... Rxd8 { [%clk 0:01:41.155] } 11. Nd2 { [%clk 0:01:42.382] } 11... Nb4 { [%clk 0:01:36.748] } 12. bxc3 { [%clk 0:01:41.045] } 12... Nc2+ { [%clk 0:01:33.113] } 13. Kd1 { [%clk 0:01:37.898] } 13... Nxa1 { [%clk 0:01:29.532] } 14. Bb2 { [%clk 0:01:35.322] } 14... Bd7 { [%clk 0:01:24.761] } 15. Bxa1 { [%clk 0:01:33.821] } 15... Ba4+ { [%clk 0:01:20.811] } 16. Ke1 { [%clk 0:01:30.936] } 16... Rac8 { [%clk 0:01:16.465] } 17. Bb2 { [%clk 0:01:28.13] } 17... Rxc5 { [%clk 0:01:12.519] } 18. h4 { [%clk 0:01:26.377] } 18... Bxc3 { [%clk 0:01:08.943] } 19. Bxc3 { [%clk 0:01:24.695] } 19... Rxc3 { [%clk 0:01:05.382] } 20. Nb3 { [%clk 0:01:22.112] } 20... Rc1+ { [%clk 0:01:05.862] } 21. Nxc1 { [%clk 0:01:22.611] } 21... Rd1# { [%clk 0:01:06.358] } 0-1\n",
+ "opening": "English Symmetrical",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 15\u00b7Final",
+ "white_uuid": "ac36b461-5394-495f-868b-391a9b940447",
+ "black_uuid": "820cbf59-e775-4c97-97fe-36f494f0d676",
+ "site_verdicts": [
+  [
+   "O-O",
+   "good"
+  ],
+  [
+   "d4",
+   "best"
+  ],
+  [
+   "d5",
+   "excellent"
+  ],
+  [
+   "cxd5",
+   "good"
+  ],
+  [
+   "Nxd5",
+   "best"
+  ],
+  [
+   "dxc5",
+   "mistake"
+  ],
+  [
+   "Nxc3",
+   "best"
+  ],
+  [
+   "Qxd8",
+   "blunder"
+  ],
+  [
+   "Rxd8",
+   "best"
+  ],
+  [
+   "Nd2",
+   "excellent"
+  ],
+  [
+   "Nb4",
+   "inaccuracy"
+  ],
+  [
+   "bxc3",
+   "best"
+  ],
+  [
+   "Nc2+",
+   "best"
+  ],
+  [
+   "Kd1",
+   "best"
+  ],
+  [
+   "Nxa1",
+   "best"
+  ],
+  [
+   "Bb2",
+   "best"
+  ],
+  [
+   "Bd7",
+   "best"
+  ],
+  [
+   "Bxa1",
+   "good"
+  ],
+  [
+   "Ba4+",
+   "good"
+  ],
+  [
+   "Ke1",
+   "inaccuracy"
+  ],
+  [
+   "Rac8",
+   "best"
+  ],
+  [
+   "Bb2",
+   "good"
+  ],
+  [
+   "Rxc5",
+   "best"
+  ],
+  [
+   "h4",
+   "excellent"
+  ],
+  [
+   "Bxc3",
+   "best"
+  ],
+  [
+   "Bxc3",
+   "best"
+  ],
+  [
+   "Rxc3",
+   "best"
+  ],
+  [
+   "Nb3",
+   "blunder"
+  ],
+  [
+   "Rc1+",
+   "best"
+  ],
+  [
+   "Nxc1",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "jordan-belfort",
+    "accuracy": 86.6,
+    "acpl": 118,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 2,
+     "good": 3,
+     "forced": 1,
+     "inaccuracy": 1,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 2
+    }
+   },
+   {
+    "name": "neomatica",
+    "accuracy": 96.5,
+    "acpl": 17,
+    "tally": {
+     "brilliant": 0,
+     "best": 12,
+     "excellent": 1,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -45,
+   -11,
+   -33,
+   -13,
+   -54,
+   -69,
+   -221,
+   -232,
+   -477,
+   -483,
+   -526,
+   -389,
+   -392,
+   -425,
+   -406,
+   -430,
+   -400,
+   -420,
+   -479,
+   -399,
+   -500,
+   -511,
+   -578,
+   -585,
+   -615,
+   -625,
+   -618,
+   -614,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "d7d5",
+   "d2d4",
+   "c5d4",
+   "d4c5",
+   "f6d5",
+   "e2e3",
+   "d5c3",
+   "b2c3",
+   "f8d8",
+   "c1h6",
+   "c3b5",
+   "b2c3",
+   "b4c2",
+   "e1d1",
+   "c2a1",
+   "c1b2",
+   "c8d7",
+   "c5c6",
+   "a8c8",
+   "d1c1",
+   "a8c8",
+   "f2f4",
+   "c8c5",
+   "f2f4",
+   "g7c3",
+   "b2c3",
+   "c5c3",
+   "f2f4",
+   "c3c1",
+   "b3c1",
+   "d8d1",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:52:06Z"
+}

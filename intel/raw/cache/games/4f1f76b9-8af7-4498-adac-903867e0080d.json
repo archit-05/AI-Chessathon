@@ -1,0 +1,170 @@
+{
+ "game": "4f1f76b9-8af7-4498-adac-903867e0080d",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"4\"]\n[White \"Stocked Fish\"]\n[Black \"OpenAnand\"]\n[Result \"0-1\"]\n[FEN \"r1bqkb1r/1p3ppp/p1np1n2/4p3/4P3/N1N1B3/PPP2PPP/R2QKB1R b KQkq - 1 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8... Bg4 { [%clk 0:01:58.514] } 9. f3 { [%clk 0:01:59.498] } 9... Be6 { [%clk 0:01:57.028] } 10. Qd2 { [%clk 0:01:58.994] } 10... d5 { [%clk 0:01:55.545] } 11. Nc4 { [%clk 0:01:58.49] } 11... dxc4 { [%clk 0:01:54.058] } 12. Bxc4 { [%clk 0:01:57.986] } 12... Bxc4 { [%clk 0:01:52.575] } 13. Qd1 { [%clk 0:01:57.483] } 13... Qa5 { [%clk 0:01:51.085] } 14. b4 { [%clk 0:01:56.976] } 14... Bxb4 { [%clk 0:01:49.599] } 15. Qd2 { [%clk 0:01:56.474] } 15... Bxc3 { [%clk 0:01:48.113] } 16. O-O-O { [%clk 0:01:55.971] } 16... Qa3+ { [%clk 0:01:46.626] } 17. Kb1 { [%clk 0:01:55.469] } 17... Bxa2# { [%clk 0:01:45.14] } 0-1\n",
+ "opening": "Sicilian Sveshnikov",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 4\u00b7Final",
+ "white_uuid": "f0f3d271-711a-450d-bec7-e439a811d591",
+ "black_uuid": "8c37293d-28d3-4adb-b2d8-6bae1d7b2d02",
+ "site_verdicts": [
+  [
+   "Bg4",
+   "inaccuracy"
+  ],
+  [
+   "f3",
+   "best"
+  ],
+  [
+   "Be6",
+   "best"
+  ],
+  [
+   "Qd2",
+   "good"
+  ],
+  [
+   "d5",
+   "best"
+  ],
+  [
+   "Nc4",
+   "blunder"
+  ],
+  [
+   "dxc4",
+   "best"
+  ],
+  [
+   "Bxc4",
+   "inaccuracy"
+  ],
+  [
+   "Bxc4",
+   "best"
+  ],
+  [
+   "Qd1",
+   "excellent"
+  ],
+  [
+   "Qa5",
+   "best"
+  ],
+  [
+   "b4",
+   "good"
+  ],
+  [
+   "Bxb4",
+   "best"
+  ],
+  [
+   "Qd2",
+   "good"
+  ],
+  [
+   "Bxc3",
+   "best"
+  ],
+  [
+   "O-O-O",
+   "inaccuracy"
+  ],
+  [
+   "Qa3+",
+   "best"
+  ],
+  [
+   "Kb1",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Horst",
+    "accuracy": 73.8,
+    "acpl": 270,
+    "tally": {
+     "brilliant": 0,
+     "best": 1,
+     "excellent": 1,
+     "good": 3,
+     "forced": 1,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "CustomFish",
+    "accuracy": 98.2,
+    "acpl": 9,
+    "tally": {
+     "brilliant": 0,
+     "best": 9,
+     "excellent": 0,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -7,
+   58,
+   57,
+   51,
+   24,
+   34,
+   -496,
+   -497,
+   -663,
+   -656,
+   -731,
+   -757,
+   -987,
+   -975,
+   -1380,
+   -1410,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "a8b8",
+   "f2f3",
+   "g4e6",
+   "a3c4",
+   "d6d5",
+   "e4d5",
+   "d5c4",
+   "e1c1",
+   "e6c4",
+   "e1c1",
+   "d8a5",
+   "d1d2",
+   "f8b4",
+   "e1f2",
+   "b4c3",
+   "a1b1",
+   "a5a3",
+   "c1b1",
+   "c4a2",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:44:26Z"
+}

@@ -1,0 +1,212 @@
+{
+ "game": "8319fe36-7591-4cb7-a011-200b57f828f7",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"8\"]\n[White \"Malvoo\"]\n[Black \"Team2\"]\n[Result \"1-0\"]\n[FEN \"r1bq1rk1/pp2bppp/2n1pn2/2pp4/3P4/2PBP1B1/PP1NNPPP/R2QK2R b KQ - 5 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8... c4 { [%clk 0:01:55.858] } 9. Bc2 { [%clk 0:01:56.618] } 9... Bd7 { [%clk 0:01:51.864] } 10. e4 { [%clk 0:01:53.089] } 10... Nxe4 { [%clk 0:01:48.013] } 11. Nxe4 { [%clk 0:01:49.752] } 11... dxe4 { [%clk 0:01:44.301] } 12. Bxe4 { [%clk 0:01:46.392] } 12... Bh4 { [%clk 0:01:40.721] } 13. d5 { [%clk 0:01:43.195] } 13... Na5 { [%clk 0:01:37.258] } 14. dxe6 { [%clk 0:01:39.908] } 14... fxe6 { [%clk 0:01:33.929] } 15. Nd4 { [%clk 0:01:36.172] } 15... Bxg3 { [%clk 0:01:30.711] } 16. hxg3 { [%clk 0:01:32.577] } 16... g6 { [%clk 0:01:27.607] } 17. f4 { [%clk 0:01:29.031] } 17... Qb6 { [%clk 0:01:24.619] } 18. Rxh7 { [%clk 0:01:25.427] } 18... Kxh7 { [%clk 0:01:21.741] } 19. Qh5+ { [%clk 0:01:21.733] } 19... Kg8 { [%clk 0:01:22.234] } 20. Qxg6+ { [%clk 0:01:18.359] } 20... Kh8 { [%clk 0:01:22.732] } 21. Qh7# { [%clk 0:01:15.634] } 1-0\n",
+ "opening": "London System",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 8\u00b7Final",
+ "white_uuid": "fe4f9319-4a10-4ff8-9ec0-6c5c92f79031",
+ "black_uuid": "33731895-4927-40e5-90f5-fad0442d196d",
+ "site_verdicts": [
+  [
+   "c4",
+   "excellent"
+  ],
+  [
+   "Bc2",
+   "best"
+  ],
+  [
+   "Bd7",
+   "excellent"
+  ],
+  [
+   "e4",
+   "excellent"
+  ],
+  [
+   "Nxe4",
+   "excellent"
+  ],
+  [
+   "Nxe4",
+   "best"
+  ],
+  [
+   "dxe4",
+   "best"
+  ],
+  [
+   "Bxe4",
+   "best"
+  ],
+  [
+   "Bh4",
+   "good"
+  ],
+  [
+   "d5",
+   "good"
+  ],
+  [
+   "Na5",
+   "inaccuracy"
+  ],
+  [
+   "dxe6",
+   "best"
+  ],
+  [
+   "fxe6",
+   "mistake"
+  ],
+  [
+   "Nd4",
+   "mistake"
+  ],
+  [
+   "Bxg3",
+   "inaccuracy"
+  ],
+  [
+   "hxg3",
+   "best"
+  ],
+  [
+   "g6",
+   "good"
+  ],
+  [
+   "f4",
+   "mistake"
+  ],
+  [
+   "Qb6",
+   "blunder"
+  ],
+  [
+   "Rxh7",
+   "best"
+  ],
+  [
+   "Kxh7",
+   "blunder"
+  ],
+  [
+   "Qh5+",
+   "best"
+  ],
+  [
+   "Kg8",
+   "best"
+  ],
+  [
+   "Qxg6+",
+   "best"
+  ],
+  [
+   "Kh8",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Esther",
+    "accuracy": 90.4,
+    "acpl": 30,
+    "tally": {
+     "brilliant": 0,
+     "best": 9,
+     "excellent": 1,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 2,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Dr. DrunkenstAIn",
+    "accuracy": 75.3,
+    "acpl": 128,
+    "tally": {
+     "brilliant": 0,
+     "best": 2,
+     "excellent": 3,
+     "good": 2,
+     "forced": 1,
+     "inaccuracy": 2,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 2
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   0,
+   14,
+   20,
+   39,
+   43,
+   56,
+   33,
+   29,
+   24,
+   72,
+   44,
+   128,
+   117,
+   258,
+   131,
+   204,
+   180,
+   216,
+   43,
+   280,
+   307,
+   9997,
+   9998,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "b7b6",
+   "d3c2",
+   "b7b5",
+   "e1g1",
+   "f6h5",
+   "d2e4",
+   "d5e4",
+   "c2e4",
+   "e7g5",
+   "b2b3",
+   "e6d5",
+   "d5e6",
+   "d7e6",
+   "d1c2",
+   "h4f6",
+   "h2g3",
+   "h7h6",
+   "d4f3",
+   "e6e5",
+   "h1h7",
+   "d7e8",
+   "d1h5",
+   "h7g8",
+   "h5g6",
+   "g8h8",
+   "g6h7",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:17:14Z"
+}

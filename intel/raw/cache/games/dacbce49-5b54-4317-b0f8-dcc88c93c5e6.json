@@ -1,0 +1,194 @@
+{
+ "game": "dacbce49-5b54-4317-b0f8-dcc88c93c5e6",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"6\"]\n[White \"Minimax Two\"]\n[Black \"Bongcloud\"]\n[Result \"0-1\"]\n[FEN \"rnbq1rk1/ppp1bppp/4pn2/3p4/2PP4/N4NP1/PP2PPBP/R1BQK2R b KQ - 0 6\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n6... Bb4+ { [%clk 0:01:57.098] } 7. Kf1 { [%clk 0:02:00.488] } 7... Bxa3 { [%clk 0:01:54.281] } 8. bxa3 { [%clk 0:02:00.921] } 8... dxc4 { [%clk 0:01:51.55] } 9. Ne5 { [%clk 0:02:01.357] } 9... c3 { [%clk 0:01:48.901] } 10. Qd3 { [%clk 0:02:01.779] } 10... Nbd7 { [%clk 0:01:46.331] } 11. Nxd7 { [%clk 0:02:02.195] } 11... Qxd7 { [%clk 0:01:43.838] } 12. Qxc3 { [%clk 0:02:02.62] } 12... Nd5 { [%clk 0:01:41.42] } 13. Bxd5 { [%clk 0:02:03.05] } 13... Qxd5 { [%clk 0:01:39.075] } 14. e4 { [%clk 0:02:03.477] } 14... Qxe4 { [%clk 0:01:36.8] } 15. Rg1 { [%clk 0:02:03.913] } 15... Bd7 { [%clk 0:01:34.594] } 16. Qxc7 { [%clk 0:02:04.333] } 16... Bb5+ { [%clk 0:01:32.451] } 17. Qc4 { [%clk 0:02:04.829] } 17... Bxc4# { [%clk 0:01:32.949] } 0-1\n",
+ "opening": "Reti Opening",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 6\u00b7Final",
+ "white_uuid": "431df1f2-36fa-41f7-936f-ada03f51e174",
+ "black_uuid": "1c08d579-837b-49cb-9d4a-1427b978bfc9",
+ "site_verdicts": [
+  [
+   "Bb4+",
+   "excellent"
+  ],
+  [
+   "Kf1",
+   "inaccuracy"
+  ],
+  [
+   "Bxa3",
+   "best"
+  ],
+  [
+   "bxa3",
+   "best"
+  ],
+  [
+   "dxc4",
+   "excellent"
+  ],
+  [
+   "Ne5",
+   "excellent"
+  ],
+  [
+   "c3",
+   "inaccuracy"
+  ],
+  [
+   "Qd3",
+   "best"
+  ],
+  [
+   "Nbd7",
+   "best"
+  ],
+  [
+   "Nxd7",
+   "best"
+  ],
+  [
+   "Qxd7",
+   "excellent"
+  ],
+  [
+   "Qxc3",
+   "best"
+  ],
+  [
+   "Nd5",
+   "best"
+  ],
+  [
+   "Bxd5",
+   "mistake"
+  ],
+  [
+   "Qxd5",
+   "inaccuracy"
+  ],
+  [
+   "e4",
+   "mistake"
+  ],
+  [
+   "Qxe4",
+   "best"
+  ],
+  [
+   "Rg1",
+   "mistake"
+  ],
+  [
+   "Bd7",
+   "good"
+  ],
+  [
+   "Qxc7",
+   "blunder"
+  ],
+  [
+   "Bb5+",
+   "best"
+  ],
+  [
+   "Qc4",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Minimax Two",
+    "accuracy": 76.8,
+    "acpl": 145,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 1,
+     "good": 0,
+     "forced": 1,
+     "inaccuracy": 1,
+     "mistake": 3,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "BlunderBot",
+    "accuracy": 94.0,
+    "acpl": 18,
+    "tally": {
+     "brilliant": 0,
+     "best": 6,
+     "excellent": 3,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -13,
+   4,
+   -77,
+   -78,
+   -76,
+   -74,
+   -86,
+   -29,
+   -42,
+   -45,
+   -29,
+   -27,
+   -31,
+   -24,
+   -142,
+   -83,
+   -260,
+   -249,
+   -443,
+   -386,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "b8c6",
+   "f3d2",
+   "b4a3",
+   "b2a3",
+   "b8d7",
+   "a3a4",
+   "b8c6",
+   "d1d3",
+   "b8d7",
+   "e5d7",
+   "c8d7",
+   "d3c3",
+   "f6d5",
+   "c3b2",
+   "e6d5",
+   "f2f3",
+   "d5e4",
+   "f2f3",
+   "b7b6",
+   "c3e3",
+   "d7b5",
+   "c7c4",
+   "b5c4",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:21:48Z"
+}

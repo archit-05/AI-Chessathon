@@ -1,0 +1,224 @@
+{
+ "game": "588941b8-d6d4-4739-ad4b-71da7c24538f",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"16\"]\n[White \"Team I Love Fortnite\"]\n[Black \"404 Not Found\"]\n[Result \"1-0\"]\n[FEN \"rn1qk2r/pbp1bppp/1p1ppn2/8/2PP1B2/5NP1/PP2PPBP/RN1Q1RK1 b kq - 1 7\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n7... Nc6 { [%clk 0:01:58.498] } 8. d5 { [%clk 0:01:57.997] } 8... Na5 { [%clk 0:01:56.99] } 9. Nc3 { [%clk 0:01:55.978] } 9... O-O { [%clk 0:01:55.479] } 10. Qd3 { [%clk 0:01:53.949] } 10... b5 { [%clk 0:01:53.976] } 11. dxe6 { [%clk 0:01:51.904] } 11... bxc4 { [%clk 0:01:52.465] } 12. Qf5 { [%clk 0:01:49.855] } 12... c6 { [%clk 0:01:50.956] } 13. Ng5 { [%clk 0:01:47.794] } 13... g6 { [%clk 0:01:49.446] } 14. exf7+ { [%clk 0:01:45.724] } 14... Kh8 { [%clk 0:01:47.937] } 15. Qc2 { [%clk 0:01:43.638] } 15... Qb6 { [%clk 0:01:46.428] } 16. e4 { [%clk 0:01:41.543] } 16... h6 { [%clk 0:01:44.919] } 17. e5 { [%clk 0:01:39.434] } 17... hxg5 { [%clk 0:01:43.411] } 18. Qxg6 { [%clk 0:01:37.313] } 18... gxf4 { [%clk 0:01:41.905] } 19. exf6 { [%clk 0:01:35.178] } 19... Rxf7 { [%clk 0:01:40.397] } 20. Qxf7 { [%clk 0:01:33.029] } 20... c5 { [%clk 0:01:38.887] } 21. Qg7# { [%clk 0:01:33.519] } 1-0\n",
+ "opening": "Queen's Indian Defence",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 16\u00b7Final",
+ "white_uuid": "b6b3a357-e142-47fc-9f9b-5a0520a393bc",
+ "black_uuid": "0507e5e2-d40f-4565-8e16-ca6feacebe42",
+ "site_verdicts": [
+  [
+   "Nc6",
+   "inaccuracy"
+  ],
+  [
+   "d5",
+   "good"
+  ],
+  [
+   "Na5",
+   "excellent"
+  ],
+  [
+   "Nc3",
+   "excellent"
+  ],
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "Qd3",
+   "best"
+  ],
+  [
+   "b5",
+   "good"
+  ],
+  [
+   "dxe6",
+   "excellent"
+  ],
+  [
+   "bxc4",
+   "excellent"
+  ],
+  [
+   "Qf5",
+   "best"
+  ],
+  [
+   "c6",
+   "inaccuracy"
+  ],
+  [
+   "Ng5",
+   "best"
+  ],
+  [
+   "g6",
+   "inaccuracy"
+  ],
+  [
+   "exf7+",
+   "best"
+  ],
+  [
+   "Kh8",
+   "best"
+  ],
+  [
+   "Qc2",
+   "best"
+  ],
+  [
+   "Qb6",
+   "good"
+  ],
+  [
+   "e4",
+   "good"
+  ],
+  [
+   "h6",
+   "mistake"
+  ],
+  [
+   "e5",
+   "best"
+  ],
+  [
+   "hxg5",
+   "best"
+  ],
+  [
+   "Qxg6",
+   "excellent"
+  ],
+  [
+   "gxf4",
+   "good"
+  ],
+  [
+   "exf6",
+   "best"
+  ],
+  [
+   "Rxf7",
+   "best"
+  ],
+  [
+   "Qxf7",
+   "best"
+  ],
+  [
+   "c5",
+   "inaccuracy"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "ILuvFortnite",
+    "accuracy": 97.6,
+    "acpl": 10,
+    "tally": {
+     "brilliant": 0,
+     "best": 9,
+     "excellent": 3,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "404 Not Found",
+    "accuracy": 86.2,
+    "acpl": 136,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 2,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 4,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   14,
+   123,
+   97,
+   119,
+   102,
+   101,
+   106,
+   160,
+   188,
+   210,
+   192,
+   292,
+   298,
+   392,
+   382,
+   352,
+   369,
+   432,
+   366,
+   622,
+   643,
+   634,
+   729,
+   852,
+   957,
+   1014,
+   1034,
+   9999,
+   10000
+  ],
+  "best": [
+   "e8g8",
+   "e2e4",
+   "c6b8",
+   "e2e4",
+   "e8g8",
+   "d1d3",
+   "e6e5",
+   "c4b5",
+   "f7e6",
+   "d3f5",
+   "b7f3",
+   "f3g5",
+   "b7c8",
+   "e6f7",
+   "g8h8",
+   "f5c2",
+   "b7c8",
+   "c3a4",
+   "f6h5",
+   "e4e5",
+   "h6g5",
+   "e5f6",
+   "f8g8",
+   "e5f6",
+   "f8f7",
+   "g6f7",
+   "e7f6",
+   "f7g7",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:11:45Z"
+}

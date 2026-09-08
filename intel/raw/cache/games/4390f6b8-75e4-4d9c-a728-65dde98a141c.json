@@ -1,0 +1,164 @@
+{
+ "game": "4390f6b8-75e4-4d9c-a728-65dde98a141c",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"14\"]\n[White \"StockZero\"]\n[Black \"corundum.ai\"]\n[Result \"1-0\"]\n[FEN \"rnbqk2r/ppp2ppp/8/3p4/1b1Pn3/2P2N1P/PP3PP1/RNBQKB1R b KQkq - 0 7\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n7... Bd6 { [%clk 0:01:56.498] } 8. Nbd2 { [%clk 0:01:56.976] } 8... Nc6 { [%clk 0:01:52.995] } 9. Bd3 { [%clk 0:01:53.935] } 9... Bf5 { [%clk 0:01:49.493] } 10. O-O { [%clk 0:01:50.856] } 10... O-O { [%clk 0:01:45.991] } 11. Nxe4 { [%clk 0:01:47.856] } 11... Bxe4 { [%clk 0:01:42.488] } 12. Bxe4 { [%clk 0:01:44.835] } 12... dxe4 { [%clk 0:01:38.986] } 13. Ng5 { [%clk 0:01:41.777] } 13... Re8 { [%clk 0:01:35.479] } 14. Qh5 { [%clk 0:01:38.741] } 14... Qe7 { [%clk 0:01:31.977] } 15. Qxh7+ { [%clk 0:01:39.218] } 15... Kf8 { [%clk 0:01:32.475] } 16. Qh8# { [%clk 0:01:39.714] } 1-0\n",
+ "opening": "Petroff Defence",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 14\u00b7Final",
+ "white_uuid": "7eae8bfa-01ba-4b4b-b1b9-e2e0d0ed2147",
+ "black_uuid": "e3b6706d-d6a7-43d4-ba84-3db44ebe66b0",
+ "site_verdicts": [
+  [
+   "Bd6",
+   "best"
+  ],
+  [
+   "Nbd2",
+   "inaccuracy"
+  ],
+  [
+   "Nc6",
+   "inaccuracy"
+  ],
+  [
+   "Bd3",
+   "best"
+  ],
+  [
+   "Bf5",
+   "excellent"
+  ],
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "Nxe4",
+   "best"
+  ],
+  [
+   "Bxe4",
+   "excellent"
+  ],
+  [
+   "Bxe4",
+   "best"
+  ],
+  [
+   "dxe4",
+   "best"
+  ],
+  [
+   "Ng5",
+   "good"
+  ],
+  [
+   "Re8",
+   "blunder"
+  ],
+  [
+   "Qh5",
+   "best"
+  ],
+  [
+   "Qe7",
+   "blunder"
+  ],
+  [
+   "Qxh7+",
+   "best"
+  ],
+  [
+   "Kf8",
+   "forced"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "HaveFaith",
+    "accuracy": 94.2,
+    "acpl": 17,
+    "tally": {
+     "brilliant": 0,
+     "best": 7,
+     "excellent": 0,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "muffin",
+    "accuracy": 70.6,
+    "acpl": 162,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 2,
+     "good": 0,
+     "forced": 1,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 2
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   7,
+   11,
+   -48,
+   12,
+   10,
+   22,
+   18,
+   22,
+   13,
+   29,
+   32,
+   32,
+   -21,
+   337,
+   307,
+   9998,
+   9999,
+   9999,
+   10000
+  ],
+  "best": [
+   "b4d6",
+   "f1d3",
+   "e4g3",
+   "f1d3",
+   "e8g8",
+   "e1g1",
+   "e8g8",
+   "d2e4",
+   "d5e4",
+   "d3e4",
+   "d5e4",
+   "f3d2",
+   "d8e7",
+   "d1h5",
+   "h7h6",
+   "h5h7",
+   "g8f8",
+   "h7h8",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:53:06Z"
+}

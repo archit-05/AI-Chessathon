@@ -1,0 +1,188 @@
+{
+ "game": "1a2ed3a7-0be1-427c-884a-8c4be782dadc",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"17\"]\n[White \"HAL9000\"]\n[Black \"Too Down Bad\"]\n[Result \"1-0\"]\n[FEN \"r1b1kbnr/pp3ppp/1qn1p3/3pP3/3P4/5N2/PP2BPPP/RNBQK2R b KQkq - 0 7\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n7... Qc5 { [%clk 0:02:00.498] } 8. dxc5 { [%clk 0:01:11.675] } 8... Rb8 { [%clk 0:02:00.996] } 9. Qc2 { [%clk 0:01:10.614] } 9... Kd8 { [%clk 0:02:01.494] } 10. O-O { [%clk 0:01:09.311] } 10... f6 { [%clk 0:02:01.993] } 11. Qc3 { [%clk 0:01:08.438] } 11... h6 { [%clk 0:02:02.49] } 12. Bf4 { [%clk 0:01:07.496] } 12... g5 { [%clk 0:02:02.989] } 13. exf6 { [%clk 0:01:06.386] } 13... Bg7 { [%clk 0:02:03.488] } 14. Bxb8 { [%clk 0:01:05.166] } 14... a6 { [%clk 0:02:03.986] } 15. fxg7 { [%clk 0:01:04.389] } 15... Nge7 { [%clk 0:02:04.485] } 16. gxh8=Q+ { [%clk 0:01:03.112] } 16... Kd7 { [%clk 0:02:04.982] } 17. Qce5 { [%clk 0:01:02.209] } 17... g4 { [%clk 0:02:05.481] } 18. Qc7# { [%clk 0:01:01.383] } 1-0\n",
+ "opening": "French Advance",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 17\u00b7Final",
+ "white_uuid": "d5a49e55-5b7b-4794-9c4b-40fc286d6e35",
+ "black_uuid": "770e39da-5830-4656-9ec3-7f0c00ddf85a",
+ "site_verdicts": [
+  [
+   "Qc5",
+   "blunder"
+  ],
+  [
+   "dxc5",
+   "best"
+  ],
+  [
+   "Rb8",
+   "excellent"
+  ],
+  [
+   "Qc2",
+   "best"
+  ],
+  [
+   "Kd8",
+   "good"
+  ],
+  [
+   "O-O",
+   "excellent"
+  ],
+  [
+   "f6",
+   "excellent"
+  ],
+  [
+   "Qc3",
+   "excellent"
+  ],
+  [
+   "h6",
+   "excellent"
+  ],
+  [
+   "Bf4",
+   "excellent"
+  ],
+  [
+   "g5",
+   "best"
+  ],
+  [
+   "exf6",
+   "best"
+  ],
+  [
+   "Bg7",
+   "excellent"
+  ],
+  [
+   "Bxb8",
+   "excellent"
+  ],
+  [
+   "a6",
+   "excellent"
+  ],
+  [
+   "fxg7",
+   "best"
+  ],
+  [
+   "Nge7",
+   "inaccuracy"
+  ],
+  [
+   "gxh8=Q+",
+   "best"
+  ],
+  [
+   "Kd7",
+   "excellent"
+  ],
+  [
+   "Qce5",
+   "best"
+  ],
+  [
+   "g4",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "HAL9000",
+    "accuracy": 99.6,
+    "acpl": 31,
+    "tally": {
+     "brilliant": 0,
+     "best": 6,
+     "excellent": 5,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Too Down Bad",
+    "accuracy": 79.3,
+    "acpl": 264,
+    "tally": {
+     "brilliant": 0,
+     "best": 1,
+     "excellent": 7,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   0,
+   706,
+   690,
+   746,
+   738,
+   855,
+   834,
+   884,
+   876,
+   911,
+   893,
+   979,
+   984,
+   1369,
+   1101,
+   1569,
+   1632,
+   9996,
+   9997,
+   9997,
+   9998,
+   9999,
+   10000
+  ],
+  "best": [
+   "g8h6",
+   "d4c5",
+   "f8c5",
+   "d1c2",
+   "g8e7",
+   "b1c3",
+   "a7a6",
+   "b1c3",
+   "c8d7",
+   "b2b4",
+   "g7g5",
+   "e5f6",
+   "g5f4",
+   "f6g7",
+   "g8f6",
+   "f6g7",
+   "h8h7",
+   "g7h8q",
+   "e7g8",
+   "c3e5",
+   "e7g8",
+   "e5d6",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:19:21Z"
+}

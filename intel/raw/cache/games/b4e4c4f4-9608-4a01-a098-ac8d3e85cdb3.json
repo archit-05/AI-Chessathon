@@ -1,0 +1,206 @@
+{
+ "game": "b4e4c4f4-9608-4a01-a098-ac8d3e85cdb3",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"25\"]\n[White \"Magnus CarlSON \ud83d\ude2d\"]\n[Black \"What the fork\"]\n[Result \"*\"]\n[FEN \"r1bqk2r/2p1bppp/p1np1n2/1p2p3/4P3/1B1P1N2/PPP2PPP/RNBQR1K1 b kq - 0 8\"]\n[SetUp \"1\"]\n[Termination \"unterminated\"]\n\n8... Na5 { [%clk 0:01:54.869] } 9. d4 { [%clk 0:01:55.498] } 9... exd4 { [%clk 0:01:49.864] } 10. Nxd4 { [%clk 0:01:52.292] } 10... c5 { [%clk 0:01:44.987] } 11. Nf5 { [%clk 0:01:49.181] } 11... Bxf5 { [%clk 0:01:41.696] } 12. exf5 { [%clk 0:01:44.755] } 12... c4 { [%clk 0:01:37.006] } 13. Bf4 { [%clk 0:01:42.506] } 13... cxb3 { [%clk 0:01:35.034] } 14. axb3 { [%clk 0:01:35.004] } 14... Kf8 { [%clk 0:01:30.478] } 15. Rxe7 { [%clk 0:01:27.502] } 15... Kxe7 { [%clk 0:01:26.05] } 16. Rxa5 { [%clk 0:01:20] } 16... Qxa5 { [%clk 0:01:25.748] } 17. Qxd6+ { [%clk 0:01:12.498] } 17... Ke8 { [%clk 0:01:26.246] } 18. Qc6+ { [%clk 0:01:05.146] } 18... Ke7 { [%clk 0:01:21.775] } 19. Qd6+ { [%clk 0:00:58.518] } 19... Ke8 { [%clk 0:01:22.273] } 20. Qc6+ { [%clk 0:00:52.566] } 20... Ke7 { [%clk 0:01:22.657] } *\n",
+ "opening": "Ruy Lopez, Closed",
+ "termination_text": "Unterminated",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 25\u00b7Void",
+ "white_uuid": "23113ce3-33c5-4683-8057-07d3a2e33bf9",
+ "black_uuid": "316a1575-5bae-420c-af1c-67a187016631",
+ "site_verdicts": [
+  [
+   "Na5",
+   "best"
+  ],
+  [
+   "d4",
+   "inaccuracy"
+  ],
+  [
+   "exd4",
+   "best"
+  ],
+  [
+   "Nxd4",
+   "blunder"
+  ],
+  [
+   "c5",
+   "best"
+  ],
+  [
+   "Nf5",
+   "best"
+  ],
+  [
+   "Bxf5",
+   "best"
+  ],
+  [
+   "exf5",
+   "best"
+  ],
+  [
+   "c4",
+   "best"
+  ],
+  [
+   "Bf4",
+   "inaccuracy"
+  ],
+  [
+   "cxb3",
+   "good"
+  ],
+  [
+   "axb3",
+   "best"
+  ],
+  [
+   "Kf8",
+   "blunder"
+  ],
+  [
+   "Rxe7",
+   "inaccuracy"
+  ],
+  [
+   "Kxe7",
+   "best"
+  ],
+  [
+   "Rxa5",
+   "best"
+  ],
+  [
+   "Qxa5",
+   "inaccuracy"
+  ],
+  [
+   "Qxd6+",
+   "best"
+  ],
+  [
+   "Ke8",
+   "forced"
+  ],
+  [
+   "Qc6+",
+   "best"
+  ],
+  [
+   "Ke7",
+   "best"
+  ],
+  [
+   "Qd6+",
+   "best"
+  ],
+  [
+   "Ke8",
+   "forced"
+  ],
+  [
+   "Qc6+",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "John Chess",
+    "accuracy": 89.7,
+    "acpl": 35,
+    "tally": {
+     "brilliant": 0,
+     "best": 8,
+     "excellent": 0,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 3,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "Husser",
+    "accuracy": 87.5,
+    "acpl": 33,
+    "tally": {
+     "brilliant": 0,
+     "best": 8,
+     "excellent": 0,
+     "good": 1,
+     "forced": 2,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -6,
+   -14,
+   -79,
+   -39,
+   -235,
+   -200,
+   -198,
+   -198,
+   -207,
+   -205,
+   -285,
+   -256,
+   -257,
+   -21,
+   -95,
+   -87,
+   -85,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "best": [
+   "c6a5",
+   "c1d2",
+   "e5d4",
+   "e4e5",
+   "c7c5",
+   "d4f5",
+   "c8f5",
+   "e4f5",
+   "c5c4",
+   "g2g4",
+   "e8g8",
+   "a2b3",
+   "a5c6",
+   "a1a5",
+   "f8e7",
+   "a1a5",
+   "h8e8",
+   "d1d6",
+   "e7e8",
+   "d6c6",
+   "e8e7",
+   "c6d6",
+   "e7e8",
+   "d6c6",
+   "e8e7",
+   "c6b7"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:06:23Z"
+}

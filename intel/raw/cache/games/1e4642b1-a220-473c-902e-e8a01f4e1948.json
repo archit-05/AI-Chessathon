@@ -1,0 +1,266 @@
+{
+ "game": "1e4642b1-a220-473c-902e-e8a01f4e1948",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"29\"]\n[White \"Team I Love Fortnite\"]\n[Black \"Naveen Ragav\"]\n[Result \"0-1\"]\n[FEN \"rn1qk2r/pp2ppbp/6p1/2p5/3PP1b1/2P1BN2/P4PPP/2RQKB1R b Kkq - 3 9\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n9... cxd4 { [%clk 0:01:57.13] } 10. cxd4 { [%clk 0:01:57.892] } 10... O-O { [%clk 0:01:54.23] } 11. Rb1 { [%clk 0:01:55.766] } 11... Nc6 { [%clk 0:01:51.425] } 12. Rxb7 { [%clk 0:01:53.627] } 12... Nxd4 { [%clk 0:01:48.741] } 13. Bxd4 { [%clk 0:01:51.479] } 13... Bxf3 { [%clk 0:01:46.072] } 14. Qxf3 { [%clk 0:01:49.32] } 14... Bxd4 { [%clk 0:01:43.478] } 15. Bc4 { [%clk 0:01:47.149] } 15... Rc8 { [%clk 0:01:39.903] } 16. Qd3 { [%clk 0:01:44.964] } 16... Qa5+ { [%clk 0:01:36.439] } 17. Ke2 { [%clk 0:01:42.767] } 17... Rcd8 { [%clk 0:01:32.995] } 18. f4 { [%clk 0:01:40.554] } 18... e5 { [%clk 0:01:29.712] } 19. Qb3 { [%clk 0:01:38.327] } 19... exf4 { [%clk 0:01:26.645] } 20. Bxf7+ { [%clk 0:01:36.088] } 20... Kh8 { [%clk 0:01:23.657] } 21. Kf3 { [%clk 0:01:33.839] } 21... Qh5+ { [%clk 0:01:20.731] } 22. g4 { [%clk 0:01:31.572] } 22... fxg3+ { [%clk 0:01:17.847] } 23. Kxg3 { [%clk 0:01:29.292] } 23... Be5+ { [%clk 0:01:15.114] } 24. Kg2 { [%clk 0:01:29.423] } 24... Rd2+ { [%clk 0:01:14.237] } 25. Kg1 { [%clk 0:01:29.911] } 25... Bd4+ { [%clk 0:01:14.521] } 26. Kf1 { [%clk 0:01:30.397] } 26... Qe2# { [%clk 0:01:15.011] } 0-1\n",
+ "opening": "Grunfeld Defence",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 29\u00b7Final",
+ "white_uuid": "b6b3a357-e142-47fc-9f9b-5a0520a393bc",
+ "black_uuid": "ab9188c9-19e7-47f5-b99f-29587c16565b",
+ "site_verdicts": [
+  [
+   "cxd4",
+   "excellent"
+  ],
+  [
+   "cxd4",
+   "best"
+  ],
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "Rb1",
+   "mistake"
+  ],
+  [
+   "Nc6",
+   "best"
+  ],
+  [
+   "Rxb7",
+   "blunder"
+  ],
+  [
+   "Nxd4",
+   "best"
+  ],
+  [
+   "Bxd4",
+   "best"
+  ],
+  [
+   "Bxf3",
+   "best"
+  ],
+  [
+   "Qxf3",
+   "excellent"
+  ],
+  [
+   "Bxd4",
+   "excellent"
+  ],
+  [
+   "Bc4",
+   "good"
+  ],
+  [
+   "Rc8",
+   "best"
+  ],
+  [
+   "Qd3",
+   "excellent"
+  ],
+  [
+   "Qa5+",
+   "best"
+  ],
+  [
+   "Ke2",
+   "good"
+  ],
+  [
+   "Rcd8",
+   "blunder"
+  ],
+  [
+   "f4",
+   "blunder"
+  ],
+  [
+   "e5",
+   "blunder"
+  ],
+  [
+   "Qb3",
+   "mistake"
+  ],
+  [
+   "exf4",
+   "best"
+  ],
+  [
+   "Bxf7+",
+   "best"
+  ],
+  [
+   "Kh8",
+   "best"
+  ],
+  [
+   "Kf3",
+   "blunder"
+  ],
+  [
+   "Qh5+",
+   "best"
+  ],
+  [
+   "g4",
+   "good"
+  ],
+  [
+   "fxg3+",
+   "best"
+  ],
+  [
+   "Kxg3",
+   "inaccuracy"
+  ],
+  [
+   "Be5+",
+   "best"
+  ],
+  [
+   "Kg2",
+   "excellent"
+  ],
+  [
+   "Rd2+",
+   "best"
+  ],
+  [
+   "Kg1",
+   "excellent"
+  ],
+  [
+   "Bd4+",
+   "best"
+  ],
+  [
+   "Kf1",
+   "excellent"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "ILuvFortnite",
+    "accuracy": 74.0,
+    "acpl": 171,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 5,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 2,
+     "miss": 0,
+     "blunder": 3
+    }
+   },
+   {
+    "name": "naveen ragav",
+    "accuracy": 82.8,
+    "acpl": 52,
+    "tally": {
+     "brilliant": 0,
+     "best": 14,
+     "excellent": 2,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 2
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   41,
+   53,
+   56,
+   50,
+   -66,
+   -51,
+   -278,
+   -315,
+   -331,
+   -335,
+   -333,
+   -324,
+   -401,
+   -446,
+   -457,
+   -448,
+   -494,
+   -186,
+   -565,
+   -65,
+   -196,
+   -153,
+   -189,
+   -154,
+   -838,
+   -825,
+   -1011,
+   -1089,
+   -9996,
+   -9997,
+   -9997,
+   -9998,
+   -9998,
+   -9999,
+   -9999,
+   -10000
+  ],
+  "best": [
+   "e8g8",
+   "c3d4",
+   "e8g8",
+   "f1e2",
+   "b8c6",
+   "d4d5",
+   "c6d4",
+   "e3d4",
+   "g4f3",
+   "g2f3",
+   "a8c8",
+   "f1e2",
+   "a8c8",
+   "f3b3",
+   "d8a5",
+   "e1f1",
+   "a5h5",
+   "b7b5",
+   "d4b6",
+   "f4f5",
+   "e5f4",
+   "c4f7",
+   "g8h8",
+   "f7d5",
+   "a5h5",
+   "f3f4",
+   "f4g3",
+   "f3g2",
+   "d4e5",
+   "g3f2",
+   "d8d2",
+   "g2f1",
+   "e5d4",
+   "b3e3",
+   "h5e2",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:11:37Z"
+}

@@ -1,0 +1,200 @@
+{
+ "game": "ecfd1857-5bf0-4e55-8852-5be02c676e31",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"22\"]\n[White \"\u610f\u9762\u7c73\u52a9\"]\n[Black \"Fishy Fischer\"]\n[Result \"*\"]\n[FEN \"r1bq1rk1/pp2ppbp/2np1np1/2p5/4P2P/2NP2P1/PPP1NPB1/R1BQ1RK1 b - - 4 8\"]\n[SetUp \"1\"]\n[Termination \"unterminated\"]\n\n8... Ne5 { [%clk 0:01:54.902] } 9. Be3 { [%clk 0:01:58.443] } 9... Qe8 { [%clk 0:01:50.041] } 10. Nf4 { [%clk 0:01:56.914] } 10... Nfd7 { [%clk 0:01:45.405] } 11. Ncd5 { [%clk 0:01:55.409] } 11... Qd8 { [%clk 0:01:41.636] } 12. Re1 { [%clk 0:01:53.906] } 12... Kh8 { [%clk 0:01:38.022] } 13. Qe2 { [%clk 0:01:52.432] } 13... Rb8 { [%clk 0:01:34.553] } 14. Bh3 { [%clk 0:01:50.978] } 14... Qe8 { [%clk 0:01:31.224] } 15. Bg2 { [%clk 0:01:49.549] } 15... Nc6 { [%clk 0:01:28.029] } 16. Rab1 { [%clk 0:01:48.155] } 16... Nce5 { [%clk 0:01:24.413] } 17. Nc7 { [%clk 0:01:46.797] } 17... Qd8 { [%clk 0:01:21.492] } 18. Ncd5 { [%clk 0:01:45.454] } 18... Qe8 { [%clk 0:01:18.691] } 19. Nc7 { [%clk 0:01:44.121] } 19... Qd8 { [%clk 0:01:16.003] } 20. Ncd5 { [%clk 0:01:42.806] } *\n",
+ "opening": "Sicilian Closed",
+ "termination_text": "Unterminated",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 22\u00b7Void",
+ "white_uuid": "d8c1519e-4599-4470-96ec-dada4438927d",
+ "black_uuid": "8087333f-5959-4d33-8fce-16347b93344b",
+ "site_verdicts": [
+  [
+   "Ne5",
+   "excellent"
+  ],
+  [
+   "Be3",
+   "good"
+  ],
+  [
+   "Qe8",
+   "good"
+  ],
+  [
+   "Nf4",
+   "excellent"
+  ],
+  [
+   "Nfd7",
+   "good"
+  ],
+  [
+   "Ncd5",
+   "good"
+  ],
+  [
+   "Qd8",
+   "good"
+  ],
+  [
+   "Re1",
+   "good"
+  ],
+  [
+   "Kh8",
+   "good"
+  ],
+  [
+   "Qe2",
+   "inaccuracy"
+  ],
+  [
+   "Rb8",
+   "good"
+  ],
+  [
+   "Bh3",
+   "inaccuracy"
+  ],
+  [
+   "Qe8",
+   "inaccuracy"
+  ],
+  [
+   "Bg2",
+   "good"
+  ],
+  [
+   "Nc6",
+   "excellent"
+  ],
+  [
+   "Rab1",
+   "inaccuracy"
+  ],
+  [
+   "Nce5",
+   "mistake"
+  ],
+  [
+   "Nc7",
+   "inaccuracy"
+  ],
+  [
+   "Qd8",
+   "best"
+  ],
+  [
+   "Ncd5",
+   "good"
+  ],
+  [
+   "Qe8",
+   "mistake"
+  ],
+  [
+   "Nc7",
+   "inaccuracy"
+  ],
+  [
+   "Qd8",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "\u610f\u9762\u7c73\u52a9",
+    "accuracy": 84.3,
+    "acpl": 49,
+    "tally": {
+     "brilliant": 0,
+     "best": 0,
+     "excellent": 1,
+     "good": 6,
+     "forced": 0,
+     "inaccuracy": 5,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Internship seeker",
+    "accuracy": 84.1,
+    "acpl": 48,
+    "tally": {
+     "brilliant": 0,
+     "best": 2,
+     "excellent": 2,
+     "good": 5,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 2,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -35,
+   -17,
+   -43,
+   10,
+   -11,
+   17,
+   -14,
+   13,
+   -25,
+   26,
+   -42,
+   -3,
+   -60,
+   39,
+   -3,
+   8,
+   -53,
+   63,
+   -4,
+   -7,
+   -46,
+   79,
+   -21,
+   -13,
+   -47
+  ],
+  "best": [
+   "e7e6",
+   "d1d2",
+   "a8b8",
+   "a2a4",
+   "e7e6",
+   "h4h5",
+   "a8b8",
+   "e3d2",
+   "e5c6",
+   "e3c1",
+   "e5c6",
+   "f4h3",
+   "e7e6",
+   "c2c3",
+   "e8d8",
+   "c2c3",
+   "e7e6",
+   "c2c3",
+   "e8d8",
+   "c7b5",
+   "e7e6",
+   "c2c3",
+   "e8d8",
+   "f4d5",
+   "e7e6"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:58:44Z"
+}

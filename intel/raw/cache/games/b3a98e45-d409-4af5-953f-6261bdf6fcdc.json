@@ -1,0 +1,242 @@
+{
+ "game": "b3a98e45-d409-4af5-953f-6261bdf6fcdc",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"5\"]\n[White \"HAL9000\"]\n[Black \"Cagnus_Marlsen\"]\n[Result \"*\"]\n[FEN \"r2qkb1r/pp3ppp/2npbn2/3Np3/4P3/1N3P2/PPP3PP/R1BQKB1R b KQkq - 3 8\"]\n[SetUp \"1\"]\n[Termination \"unterminated\"]\n\n8... Nxd5 { [%clk 0:01:57.498] } 9. exd5 { [%clk 0:01:32.875] } 9... Qh4+ { [%clk 0:01:54.996] } 10. g3 { [%clk 0:01:31.274] } 10... Qa4 { [%clk 0:01:52.494] } 11. Kd2 { [%clk 0:01:28.712] } 11... Bxd5 { [%clk 0:01:49.992] } 12. Ke2 { [%clk 0:01:25.509] } 12... Bxb3 { [%clk 0:01:47.49] } 13. cxb3 { [%clk 0:01:23.216] } 13... Qd4 { [%clk 0:01:44.988] } 14. Ke1 { [%clk 0:01:20.687] } 14... d5 { [%clk 0:01:42.486] } 15. Bd2 { [%clk 0:01:18.592] } 15... Qxb2 { [%clk 0:01:39.984] } 16. Bd3 { [%clk 0:01:16.081] } 16... Bd6 { [%clk 0:01:37.512] } 17. Kf1 { [%clk 0:01:13.545] } 17... O-O-O { [%clk 0:01:35.111] } 18. Ke1 { [%clk 0:01:11.288] } 18... Nd4 { [%clk 0:01:32.779] } 19. Rb1 { [%clk 0:01:10.466] } 19... Qxa2 { [%clk 0:01:30.514] } 20. Kf1 { [%clk 0:01:07.914] } 20... Rde8 { [%clk 0:01:28.313] } 21. Ke1 { [%clk 0:01:05.547] } 21... Rd8 { [%clk 0:01:26.172] } 22. Kf1 { [%clk 0:01:03.172] } 22... Rde8 { [%clk 0:01:24.095] } 23. Bc3 { [%clk 0:01:02.191] } 23... Rd8 { [%clk 0:01:22.077] } *\n",
+ "opening": "Sicilian Classical",
+ "termination_text": "Unterminated",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 5\u00b7Void",
+ "white_uuid": "d5a49e55-5b7b-4794-9c4b-40fc286d6e35",
+ "black_uuid": "a1c2258e-a9c4-4b1d-a3d3-78425668d2ca",
+ "site_verdicts": [
+  [
+   "Nxd5",
+   "blunder"
+  ],
+  [
+   "exd5",
+   "best"
+  ],
+  [
+   "Qh4+",
+   "good"
+  ],
+  [
+   "g3",
+   "best"
+  ],
+  [
+   "Qa4",
+   "good"
+  ],
+  [
+   "Kd2",
+   "blunder"
+  ],
+  [
+   "Bxd5",
+   "best"
+  ],
+  [
+   "Ke2",
+   "excellent"
+  ],
+  [
+   "Bxb3",
+   "excellent"
+  ],
+  [
+   "cxb3",
+   "best"
+  ],
+  [
+   "Qd4",
+   "good"
+  ],
+  [
+   "Ke1",
+   "inaccuracy"
+  ],
+  [
+   "d5",
+   "best"
+  ],
+  [
+   "Bd2",
+   "mistake"
+  ],
+  [
+   "Qxb2",
+   "inaccuracy"
+  ],
+  [
+   "Bd3",
+   "inaccuracy"
+  ],
+  [
+   "Bd6",
+   "inaccuracy"
+  ],
+  [
+   "Kf1",
+   "best"
+  ],
+  [
+   "O-O-O",
+   "good"
+  ],
+  [
+   "Ke1",
+   "inaccuracy"
+  ],
+  [
+   "Nd4",
+   "inaccuracy"
+  ],
+  [
+   "Rb1",
+   "good"
+  ],
+  [
+   "Qxa2",
+   "best"
+  ],
+  [
+   "Kf1",
+   "best"
+  ],
+  [
+   "Rde8",
+   "good"
+  ],
+  [
+   "Ke1",
+   "inaccuracy"
+  ],
+  [
+   "Rd8",
+   "inaccuracy"
+  ],
+  [
+   "Kf1",
+   "best"
+  ],
+  [
+   "Rde8",
+   "good"
+  ],
+  [
+   "Bc3",
+   "good"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "HAL9000",
+    "accuracy": 66.8,
+    "acpl": 99,
+    "tally": {
+     "brilliant": 0,
+     "best": 6,
+     "excellent": 1,
+     "good": 2,
+     "forced": 0,
+     "inaccuracy": 4,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "Veli",
+    "accuracy": 74.7,
+    "acpl": 92,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 1,
+     "good": 6,
+     "forced": 0,
+     "inaccuracy": 4,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 2
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   28,
+   332,
+   325,
+   387,
+   384,
+   469,
+   -210,
+   -212,
+   -219,
+   -203,
+   -199,
+   -162,
+   -241,
+   -255,
+   -414,
+   -322,
+   -433,
+   -338,
+   -351,
+   -313,
+   -445,
+   -321,
+   -362,
+   -371,
+   -409,
+   -338,
+   -509,
+   -404,
+   -397,
+   -333,
+   -378,
+   0
+  ],
+  "best": [
+   "f8e7",
+   "e4d5",
+   "e6d7",
+   "g2g3",
+   "h4f6",
+   "d5e6",
+   "e6d5",
+   "d2e1",
+   "d5e6",
+   "c2b3",
+   "a4a5",
+   "d1d4",
+   "d6d5",
+   "d1d4",
+   "f8c5",
+   "f1b5",
+   "b2d4",
+   "e1f1",
+   "e8g8",
+   "a1b1",
+   "b2d4",
+   "d1c1",
+   "b2a2",
+   "e1f1",
+   "c8b8",
+   "d2e3",
+   "e5e4",
+   "e1f1",
+   "c8b8",
+   "d2e3",
+   "c8b8",
+   "c3d2"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:19:32Z"
+}

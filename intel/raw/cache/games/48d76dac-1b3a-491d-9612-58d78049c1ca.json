@@ -1,0 +1,242 @@
+{
+ "game": "48d76dac-1b3a-491d-9612-58d78049c1ca",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.06\"]\n[Round \"35\"]\n[White \"this team\"]\n[Black \"Fishy Fischer\"]\n[Result \"1/2-1/2\"]\n[FEN \"r1bqk1nr/pp1p1ppp/2n1p3/2b5/4P3/PN6/1PP2PPP/RNBQKB1R b KQkq - 2 6\"]\n[SetUp \"1\"]\n[Termination \"threefold_repetition\"]\n\n6... Bb6 { [%clk 0:01:57.388] } 7. Bd3 { [%clk 0:01:56.498] } 7... Nf6 { [%clk 0:01:52.818] } 8. O-O { [%clk 0:01:52.994] } 8... O-O { [%clk 0:01:49.231] } 9. a4 { [%clk 0:01:49.491] } 9... d5 { [%clk 0:01:47.641] } 10. Nc3 { [%clk 0:01:45.986] } 10... d4 { [%clk 0:01:45.322] } 11. a5 { [%clk 0:01:42.483] } 11... Nxa5 { [%clk 0:01:43.076] } 12. e5 { [%clk 0:01:38.981] } 12... Nxb3 { [%clk 0:01:41.025] } 13. exf6 { [%clk 0:01:33.078] } 13... Nxc1 { [%clk 0:01:39.04] } 14. Bxh7+ { [%clk 0:01:29.567] } 14... Kxh7 { [%clk 0:01:39.079] } 15. Ne4 { [%clk 0:01:23.66] } 15... g6 { [%clk 0:01:35.919] } 16. Qxc1 { [%clk 0:01:20.152] } 16... Qc7 { [%clk 0:01:33.691] } 17. Ra3 { [%clk 0:01:16.65] } 17... e5 { [%clk 0:01:30.901] } 18. Ng5+ { [%clk 0:01:12.733] } 18... Kg8 { [%clk 0:01:31.157] } 19. Ne4 { [%clk 0:01:09.23] } 19... Kh7 { [%clk 0:01:21.647] } 20. Ng5+ { [%clk 0:01:05.728] } 20... Kg8 { [%clk 0:01:21.864] } 21. Ne4 { [%clk 0:01:02.226] } 21... Kh7 { [%clk 0:01:19.723] } 1/2-1/2\n",
+ "opening": "Sicilian Taimanov",
+ "termination_text": "Threefold repetition",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 35\u00b7Final",
+ "white_uuid": "8110ff4a-a69c-4644-ae5d-9ad79ea47224",
+ "black_uuid": "8087333f-5959-4d33-8fce-16347b93344b",
+ "site_verdicts": [
+  [
+   "Bb6",
+   "best"
+  ],
+  [
+   "Bd3",
+   "good"
+  ],
+  [
+   "Nf6",
+   "excellent"
+  ],
+  [
+   "O-O",
+   "good"
+  ],
+  [
+   "O-O",
+   "best"
+  ],
+  [
+   "a4",
+   "excellent"
+  ],
+  [
+   "d5",
+   "excellent"
+  ],
+  [
+   "Nc3",
+   "best"
+  ],
+  [
+   "d4",
+   "excellent"
+  ],
+  [
+   "a5",
+   "best"
+  ],
+  [
+   "Nxa5",
+   "best"
+  ],
+  [
+   "e5",
+   "inaccuracy"
+  ],
+  [
+   "Nxb3",
+   "best"
+  ],
+  [
+   "exf6",
+   "best"
+  ],
+  [
+   "Nxc1",
+   "best"
+  ],
+  [
+   "Bxh7+",
+   "blunder"
+  ],
+  [
+   "Kxh7",
+   "best"
+  ],
+  [
+   "Ne4",
+   "good"
+  ],
+  [
+   "g6",
+   "excellent"
+  ],
+  [
+   "Qxc1",
+   "good"
+  ],
+  [
+   "Qc7",
+   "blunder"
+  ],
+  [
+   "Ra3",
+   "excellent"
+  ],
+  [
+   "e5",
+   "best"
+  ],
+  [
+   "Ng5+",
+   "best"
+  ],
+  [
+   "Kg8",
+   "best"
+  ],
+  [
+   "Ne4",
+   "best"
+  ],
+  [
+   "Kh7",
+   "best"
+  ],
+  [
+   "Ng5+",
+   "best"
+  ],
+  [
+   "Kg8",
+   "best"
+  ],
+  [
+   "Ne4",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "femboy number 2",
+    "accuracy": 87.7,
+    "acpl": 44,
+    "tally": {
+     "brilliant": 0,
+     "best": 7,
+     "excellent": 2,
+     "good": 4,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   },
+   {
+    "name": "Internship seeker",
+    "accuracy": 87.9,
+    "acpl": 40,
+    "tally": {
+     "brilliant": 0,
+     "best": 11,
+     "excellent": 4,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 1
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   20,
+   35,
+   7,
+   26,
+   -6,
+   4,
+   -17,
+   -12,
+   -27,
+   -8,
+   -11,
+   -14,
+   -98,
+   -50,
+   -192,
+   3,
+   -256,
+   -244,
+   -279,
+   -281,
+   -324,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "best": [
+   "c5b6",
+   "b1c3",
+   "g8e7",
+   "b1c3",
+   "e8g8",
+   "b1c3",
+   "a7a6",
+   "b1c3",
+   "h7h6",
+   "a4a5",
+   "c6a5",
+   "b3a5",
+   "a5b3",
+   "e5f6",
+   "b3c1",
+   "c3e4",
+   "g8h7",
+   "d1h5",
+   "f8h8",
+   "a1a3",
+   "f8h8",
+   "e4g5",
+   "e6e5",
+   "e4g5",
+   "h7g8",
+   "g5e4",
+   "g8h7",
+   "e4g5",
+   "h7g8",
+   "g5e4",
+   "g8h7",
+   "e4g5"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:58:35Z"
+}

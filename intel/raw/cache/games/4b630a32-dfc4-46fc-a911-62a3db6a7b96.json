@@ -1,0 +1,176 @@
+{
+ "game": "4b630a32-dfc4-46fc-a911-62a3db6a7b96",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.06\"]\n[Round \"36\"]\n[White \"Zagreus 2.3.1\"]\n[Black \"YouU-AreR\"]\n[Result \"1-0\"]\n[FEN \"rn1qkbnr/pp2pppp/2p3b1/8/3P4/6N1/PPP1NPPP/R1BQKB1R b KQkq - 4 6\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n6... Nf6 { [%clk 0:01:58.206] } 7. h4 { [%clk 0:01:55.913] } 7... Qa5+ { [%clk 0:01:55.703] } 8. Nc3 { [%clk 0:01:51.973] } 8... e5 { [%clk 0:01:53.175] } 9. h5 { [%clk 0:01:50.049] } 9... exd4 { [%clk 0:01:50.664] } 10. hxg6 { [%clk 0:01:46.317] } 10... dxc3 { [%clk 0:01:47.54] } 11. gxf7+ { [%clk 0:01:42.719] } 11... Kxf7 { [%clk 0:01:47.81] } 12. Bc4+ { [%clk 0:01:40.719] } 12... Nd5 { [%clk 0:01:42.34] } 13. O-O { [%clk 0:01:38.411] } 13... cxb2 { [%clk 0:01:41.736] } 14. Qf3+ { [%clk 0:01:35.096] } 14... Kg8 { [%clk 0:01:39.614] } 15. Qf5 { [%clk 0:01:33.089] } 15... bxa1=Q { [%clk 0:01:39.95] } 16. Qe6# { [%clk 0:01:29.964] } 1-0\n",
+ "opening": "Caro-Kann Classical",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 36\u00b7Final",
+ "white_uuid": "f909a8fc-5520-4232-b594-08cd45a6d028",
+ "black_uuid": "4c0e2889-26cd-41bb-b6e0-2471a3963ef1",
+ "site_verdicts": [
+  [
+   "Nf6",
+   "best"
+  ],
+  [
+   "h4",
+   "excellent"
+  ],
+  [
+   "Qa5+",
+   "mistake"
+  ],
+  [
+   "Nc3",
+   "mistake"
+  ],
+  [
+   "e5",
+   "blunder"
+  ],
+  [
+   "h5",
+   "best"
+  ],
+  [
+   "exd4",
+   "inaccuracy"
+  ],
+  [
+   "hxg6",
+   "best"
+  ],
+  [
+   "dxc3",
+   "best"
+  ],
+  [
+   "gxf7+",
+   "best"
+  ],
+  [
+   "Kxf7",
+   "inaccuracy"
+  ],
+  [
+   "Bc4+",
+   "best"
+  ],
+  [
+   "Nd5",
+   "inaccuracy"
+  ],
+  [
+   "O-O",
+   "inaccuracy"
+  ],
+  [
+   "cxb2",
+   "blunder"
+  ],
+  [
+   "Qf3+",
+   "excellent"
+  ],
+  [
+   "Kg8",
+   "good"
+  ],
+  [
+   "Qf5",
+   "inaccuracy"
+  ],
+  [
+   "bxa1=Q",
+   "blunder"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Zagreus 2.3.1",
+    "accuracy": 84.2,
+    "acpl": 61,
+    "tally": {
+     "brilliant": 0,
+     "best": 5,
+     "excellent": 2,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 2,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Analphabet",
+    "accuracy": 67.3,
+    "acpl": 200,
+    "tally": {
+     "brilliant": 0,
+     "best": 2,
+     "excellent": 0,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 3,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 3
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   45,
+   39,
+   22,
+   156,
+   9,
+   226,
+   211,
+   285,
+   211,
+   191,
+   181,
+   300,
+   296,
+   397,
+   267,
+   541,
+   510,
+   587,
+   401,
+   9999,
+   10000
+  ],
+  "best": [
+   "g8f6",
+   "c2c3",
+   "h7h6",
+   "c1d2",
+   "h7h6",
+   "h4h5",
+   "f6h5",
+   "h5g6",
+   "d4c3",
+   "g6f7",
+   "e8e7",
+   "f1c4",
+   "f7e8",
+   "d1f3",
+   "b8d7",
+   "c1b2",
+   "f7e8",
+   "c1b2",
+   "a5c7",
+   "f5e6",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:16:25Z"
+}

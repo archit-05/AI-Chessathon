@@ -1,0 +1,194 @@
+{
+ "game": "fc477341-818c-4706-a59a-987e127645c7",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.05\"]\n[Round \"26\"]\n[White \"Atheon, Time's Conflux\"]\n[Black \"Johnny's Sins\"]\n[Result \"*\"]\n[FEN \"r1bqk1nr/pp3pbp/2npp1p1/2p5/4P3/2NPB1P1/PPP1NPBP/R2QK2R b KQkq - 1 7\"]\n[SetUp \"1\"]\n[Termination \"unterminated\"]\n\n7... Nge7 { [%clk 0:01:56.989] } 8. O-O { [%clk 0:01:55.339] } 8... O-O { [%clk 0:01:53.83] } 9. Qd2 { [%clk 0:01:50.944] } 9... Qb6 { [%clk 0:01:50.648] } 10. Rab1 { [%clk 0:01:46.721] } 10... a6 { [%clk 0:01:47.6] } 11. b4 { [%clk 0:01:42.665] } 11... Qa7 { [%clk 0:01:44.964] } 12. bxc5 { [%clk 0:01:38.715] } 12... dxc5 { [%clk 0:01:43.644] } 13. Na4 { [%clk 0:01:34.993] } 13... Qb8 { [%clk 0:01:40.756] } 14. Nb6 { [%clk 0:01:31.436] } 14... c4 { [%clk 0:01:37.967] } 15. Nxc4 { [%clk 0:01:27.972] } 15... Qc7 { [%clk 0:01:35.259] } 16. Bb6 { [%clk 0:01:25.307] } 16... Qb8 { [%clk 0:01:33.445] } 17. Be3 { [%clk 0:01:22.731] } 17... Qc7 { [%clk 0:01:31.433] } 18. Bb6 { [%clk 0:01:20.224] } 18... Qb8 { [%clk 0:01:30.161] } *\n",
+ "opening": "Sicilian Closed",
+ "termination_text": "Unterminated",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 26\u00b7Void",
+ "white_uuid": "e1df793a-a14a-438f-bd44-2391541b3fbf",
+ "black_uuid": "925cb1e5-1634-46c4-b6a6-ca87b4b1a520",
+ "site_verdicts": [
+  [
+   "Nge7",
+   "excellent"
+  ],
+  [
+   "O-O",
+   "excellent"
+  ],
+  [
+   "O-O",
+   "excellent"
+  ],
+  [
+   "Qd2",
+   "excellent"
+  ],
+  [
+   "Qb6",
+   "good"
+  ],
+  [
+   "Rab1",
+   "best"
+  ],
+  [
+   "a6",
+   "inaccuracy"
+  ],
+  [
+   "b4",
+   "best"
+  ],
+  [
+   "Qa7",
+   "inaccuracy"
+  ],
+  [
+   "bxc5",
+   "best"
+  ],
+  [
+   "dxc5",
+   "best"
+  ],
+  [
+   "Na4",
+   "best"
+  ],
+  [
+   "Qb8",
+   "mistake"
+  ],
+  [
+   "Nb6",
+   "best"
+  ],
+  [
+   "c4",
+   "best"
+  ],
+  [
+   "Nxc4",
+   "good"
+  ],
+  [
+   "Qc7",
+   "inaccuracy"
+  ],
+  [
+   "Bb6",
+   "best"
+  ],
+  [
+   "Qb8",
+   "best"
+  ],
+  [
+   "Be3",
+   "inaccuracy"
+  ],
+  [
+   "Qc7",
+   "inaccuracy"
+  ],
+  [
+   "Bb6",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "Atheon",
+    "accuracy": 90.8,
+    "acpl": 27,
+    "tally": {
+     "brilliant": 0,
+     "best": 7,
+     "excellent": 2,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Daddy_Long_Legs",
+    "accuracy": 84.3,
+    "acpl": 58,
+    "tally": {
+     "brilliant": 0,
+     "best": 4,
+     "excellent": 2,
+     "good": 1,
+     "forced": 0,
+     "inaccuracy": 4,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   14,
+   6,
+   -4,
+   -9,
+   -18,
+   22,
+   21,
+   126,
+   100,
+   187,
+   187,
+   169,
+   189,
+   396,
+   393,
+   392,
+   313,
+   441,
+   392,
+   410,
+   309,
+   416,
+   402,
+   410
+  ],
+  "best": [
+   "g8f6",
+   "h2h4",
+   "c6d4",
+   "d3d4",
+   "c6d4",
+   "a1b1",
+   "b6d8",
+   "b2b4",
+   "c6d4",
+   "b4c5",
+   "d6c5",
+   "c3a4",
+   "b7b5",
+   "a4b6",
+   "c5c4",
+   "d3c4",
+   "b7b5",
+   "e3b6",
+   "c7b8",
+   "d3d4",
+   "b7b5",
+   "e3b6",
+   "c7b8",
+   "d3d4"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T13:17:49Z"
+}

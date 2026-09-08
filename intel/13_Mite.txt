@@ -1,0 +1,122 @@
+Mite  (team: Ryan Vincent)  -  rank 13, rating 2408
+===================================================
+Generated 2026-09-08 14:07 from 39 rated games (rounds 29-67).
+
+IDENTITY
+  Bot Mite; team Ryan Vincent; university Imperial; team name reads like a personal name, probably
+    solo.
+  Rank 13 of 389, rating 2408 (provisional: fewer than six games on the current build, i.e. a new
+    upload in the last five rounds), record 16-15-8 in 38 rated games.
+  Rating trajectory: entered R29 at 1428, peak 2432 (R53), now 2408 (R66).
+  Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
+    upload): R31 +102 -> 1622 (win vs noob); R32 +108 -> 1730 (win vs stop calling it femboy); R35
+    -110 -> 1775 (loss vs R8int8v9); R44 +104 -> 2149 (win vs Danya's Disciple); R46 +124 -> 2174
+    (win vs R8int8v9); R51 +108 -> 2377 (win vs Dark Sister)
+  Recent form (last 5 games, R63-R67): 1-4-0 (60%), loss 3.2 cp/move, blunders 0.0% vs earlier
+    (R29-R62): 15-11-8 (60%), 12.2 cp/move, 0.3% - the provisional flag says the last games are a
+    new build
+
+RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
+  vs top 10 : 0-7-4 (32%) over 11 games
+  vs 11-20  : 4-6-0 (70%) over 10 games
+  vs 21-50  : 5-2-2 (67%) over 9 games
+  vs rest   : 7-0-2 (78%) over 9 games
+  Games vs top-10 teams:
+    R38  white vs PSL God Matt Bomer (#2 ) loss checkmate             Ruy Lopez, Closed
+    R48  white vs PSL God Matt Bomer (#2 ) draw insufficient_material Ruy Lopez, Closed
+    R50  black vs Poincare           (#10) draw fifty_moves           English Symmetrical
+    R52  black vs Capablanca         (#4 ) draw fifty_moves           Italian Game
+    R54  black vs AI Fellow          (#7 ) loss checkmate             Nimzo-Indian Defence
+    R55  white vs Poincare           (#10) draw fifty_moves           Ruy Lopez, Closed
+    R56  white vs stockfih           (#9 ) loss checkmate             Dutch Stonewall
+    R57  black vs PSL God Matt Bomer (#2 ) loss checkmate             Dutch Stonewall
+    R58  white vs ms                 (#5 ) draw threefold_repetition  Dutch Stonewall
+    R60  black vs Poincare           (#10) draw threefold_repetition  Scotch Game
+    R65  white vs Anchoa             (#8 ) draw insufficient_material French Classical
+  Games vs ranks 11-20: R42 win vs cory (#14, checkmate); R44 win vs Danya's Discip (#16,
+    checkmate); R47 draw vs Fuzzydafool (#17, 3fold); R49 win vs Mate in One (#20, checkmate); R53
+    draw vs Loss Preventer (#12, 3fold); R59 draw vs Danya's Discip (#16, 3fold); R61 win vs Mate in
+    One (#20, checkmate); R64 draw vs Loss Preventer (#12, 3fold); R66 draw vs cory (#14, 3fold);
+    R67 draw vs Patzer 2.0 (#11, 3fold)
+
+MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
+  positions inside +-800 only)
+  All own moves: n 2646, mean loss 10.6 cp, median 1 cp, blunders (>= 200 cp) 7 = 0.3% (4 of them
+    from level or better positions)
+  own moves 1-15    : n  577, mean 12.1 cp, median 5 cp, blunders 0.2%
+  own moves 16-40   : n  837, mean 12.5 cp, median 2 cp, blunders 0.1%
+  own moves 41+     : n 1232, mean 8.7 cp, median 0 cp, blunders 0.4%
+  as white          : n 1459, mean 9.7 cp, median 0 cp, blunders 0.2%
+  as black          : n 1187, mean 11.8 cp, median 2 cp, blunders 0.3%
+  Worst moves: R36 43.Nxf5 (+760 -> +316); R42 24.Re5 (+459 -> +185); R30 8.Rac1 (+529 -> +302)
+  Site's own review (Stockfish 16, depth 16): mean ACPL 23.1 over 39 games, accuracy 97.3%; its tags
+    on their moves: 3 blunder, 12 mistake, 2 miss, 60 inaccuracy of 2930
+
+TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
+  Per move: mean 1.76 s, median 1.35 s, quartiles 0.56-2.56 s, max 13.7 s; instant (<50 ms) moves
+    7.5%
+  Clock at the end: mean 24.3 s, minimum 3.1 s; games under 10 s: 12, under 5 s: 2 (R35, R36)
+  By clock before the move: >60s 2.9 s (n 981), 30-60s 2.2 s (n 581), 10-30s 0.9 s (n 1165), <10s
+    0.5 s (n 225)
+  By own-move number: 1-15 2.9 s, 16-40 2.4 s, 41+ 0.9 s; when +300 or better 1.4 s, level 1.9 s,
+    -300 or worse 1.4 s
+  Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 3.9%,
+    quartiles 2.9-5.6%
+  After a >100 cp swing on the opponent's move: 1.6 s (n 120) vs 1.8 s otherwise; on moves that
+    themselves swing >100 cp: 1.6 s (n 109) vs 1.8 s
+  Exploitable: gets into time trouble
+
+DRAW BEHAVIOUR
+  15 draws in 39 played games (38.0%): threefold_repetition 9, fifty_moves 4, insufficient_material
+    2; 7 of them vs top-10 teams
+  Repetition while ahead (> +150 at the final position): 0
+  Repetition while behind (< -150): 0; level repetitions: 9
+
+ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
+  Reached +300 or better in 18 games, failed to win 2:
+    R36 vs 50CentRaise peak +760, draw by fifty_moves: threw it away: move 43.Nxf5 (+760 -> +316)
+    R55 vs Poincare peak +301, draw by fifty_moves: threw it away: move 73.Ra1 (+301 -> +124)
+  Reached -300 or worse in 9 games, escaped with a half point or more in 1:
+    R52 vs Capablanca low -308, draw by fifty_moves: opponent could not convert inside fifty moves
+
+OPENINGS (curated start positions assigned by the platform)
+  By family: Sicilian 2-3-0 (70%); Nimzo-Indian 0-2-2 (25%); Reti 1-2-1 (50%); French 1-1-1 (50%);
+    English 2-1-0 (83%); Scotch 2-1-0 (83%); Ruy Lopez 0-2-1 (33%); Petroff 3-0-0 (100%); Dutch
+    0-1-2 (17%); Queen's Gambit 1-0-1 (50%); Two Knights 1-0-0 (100%); Semi-Slav 1-0-0 (100%);
+    Queen's Indian 1-0-0 (100%); Caro-Kann 1-0-0 (100%); Italian 0-1-0 (50%); Pirc 0-1-0 (50%)
+  Positions seen more than once: Nimzo-Indian Defence x4 0-2-2 (25%); Reti Opening x4 1-2-1 (50%);
+    Dutch Stonewall x3 0-1-2 (17%); English Symmetrical x3 2-1-0 (83%); Petroff Defence x3 3-0-0
+    (100%); Ruy Lopez, Closed x3 0-2-1 (33%); Scotch Game x3 2-1-0 (83%); Sicilian Closed x2 1-1-0
+    (75%); 14 positions seen once (7 won, 5 drawn, 2 lost).
+  Underperforms in: Nimzo-Indian 0-2-2 (25%), Ruy Lopez 0-2-1 (33%), Dutch 0-1-2 (17%)
+  First six own moves: 58% match Stockfish's first choice (moves 7-20: 62%), mean loss 10.0 cp, 44%
+    played instantly; first clear divergence (loss >= 20 cp) at own move 9.0 on average.
+
+STYLE
+  Captures on 15.9% of own moves, checks on 10.9%; average game 151 plies (76 own moves), longest
+    494 plies (R55)
+  Wins: 16 (16 by checkmate, 0 by opponent failure); losses: 8 (8 by checkmate, 0 by own failure)
+  Sacrifices (gave >= 2 pawns of material without losing eval, then recovered): 5 -> R34 17.Bg7, R39
+    14.Nxf7, R57 27.Kf6, R59 8.Nxd4, R59 9.Ba6
+  When ahead (> +150) material leaves the board at 0.96 pawns per own move (level: 0.76); capture
+    rate 22.6% vs 14.2% level -> no deliberate simplification
+
+LIKELY ENGINE PROFILE
+  Strong searcher (mean loss 10.6 cp): consistent with a bitboard alpha-beta engine at depth 8-12
+  with a decent evaluation. Confidence high.
+  Adaptive time use (median 1.35 s, max 13.7 s, spends 1.6 s on moves after a >100 cp swing vs 1.8 s
+  otherwise).
+  Instant early moves (44% of the first six played in under 50 ms): an opening book covers part of
+  the curated positions.
+
+HOW TO PLAY THEM
+  1. Time pressure works: 2 games dipped under 5 s (R35, R36). Keep games long and complicated;
+  their play under 10 s averages 0.5 s a move.
+  2. No extra time goes to critical positions (1.6 s after a big swing vs 1.8 s otherwise): our
+  search can spend several times their budget on the few moves that decide a game, so prefer
+  positions where one precise move matters over long manoeuvring.
+  3. Tactics work: 4 blunders (>= 200 cp) came from level or better positions, so they can be
+  out-calculated. Keep the position sharp.
+  4. Opening families where they score badly: Nimzo-Indian (0-2-2 (25%)), Ruy Lopez (0-2-1 (33%)),
+  Dutch (0-1-2 (17%)). Nothing to choose here (positions are assigned), but expect our best chances
+  there.

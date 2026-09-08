@@ -1,0 +1,188 @@
+{
+ "game": "5115e3df-c865-475c-b06b-d153b20109a1",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"13\"]\n[White \"Dominated Horses\"]\n[Black \"AI < human\"]\n[Result \"*\"]\n[FEN \"rnbq1rk1/ppp2ppp/5n2/3p4/1b1P4/2NBP3/PP2NPPP/R1BQK2R b KQ - 1 7\"]\n[SetUp \"1\"]\n[Termination \"unterminated\"]\n\n7... Nc6 { [%clk 0:01:56.948] } 8. a3 { [%clk 0:01:58.177] } 8... Bd6 { [%clk 0:01:53.936] } 9. h3 { [%clk 0:01:54.338] } 9... Be6 { [%clk 0:01:50.951] } 10. Nb5 { [%clk 0:01:49.875] } 10... Ne4 { [%clk 0:01:48.463] } 11. Nxd6 { [%clk 0:01:47.403] } 11... Qxd6 { [%clk 0:01:45.481] } 12. Nf4 { [%clk 0:01:43.052] } 12... Rad8 { [%clk 0:01:42.533] } 13. O-O { [%clk 0:01:39.776] } 13... Bf5 { [%clk 0:01:39.606] } 14. Qc2 { [%clk 0:01:37.714] } 14... Qd7 { [%clk 0:01:36.72] } 15. Qb3 { [%clk 0:01:36.263] } 15... Na5 { [%clk 0:01:34.213] } 16. Qc2 { [%clk 0:01:33.893] } 16... Nc6 { [%clk 0:01:31.355] } 17. Qb3 { [%clk 0:01:29.116] } 17... Na5 { [%clk 0:01:28.521] } 18. Qc2 { [%clk 0:01:25.319] } *\n",
+ "opening": "Nimzo-Indian Defence",
+ "termination_text": "Unterminated",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 13\u00b7Void",
+ "white_uuid": "74427349-a24e-498e-8508-a8a80d225133",
+ "black_uuid": "02c9bc21-30c6-4b39-9532-35d8146b87b4",
+ "site_verdicts": [
+  [
+   "Nc6",
+   "inaccuracy"
+  ],
+  [
+   "a3",
+   "excellent"
+  ],
+  [
+   "Bd6",
+   "excellent"
+  ],
+  [
+   "h3",
+   "good"
+  ],
+  [
+   "Be6",
+   "good"
+  ],
+  [
+   "Nb5",
+   "best"
+  ],
+  [
+   "Ne4",
+   "good"
+  ],
+  [
+   "Nxd6",
+   "good"
+  ],
+  [
+   "Qxd6",
+   "best"
+  ],
+  [
+   "Nf4",
+   "good"
+  ],
+  [
+   "Rad8",
+   "good"
+  ],
+  [
+   "O-O",
+   "excellent"
+  ],
+  [
+   "Bf5",
+   "excellent"
+  ],
+  [
+   "Qc2",
+   "good"
+  ],
+  [
+   "Qd7",
+   "good"
+  ],
+  [
+   "Qb3",
+   "good"
+  ],
+  [
+   "Na5",
+   "best"
+  ],
+  [
+   "Qc2",
+   "best"
+  ],
+  [
+   "Nc6",
+   "excellent"
+  ],
+  [
+   "Qb3",
+   "good"
+  ],
+  [
+   "Na5",
+   "best"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "KD",
+    "accuracy": 91.2,
+    "acpl": 25,
+    "tally": {
+     "brilliant": 0,
+     "best": 2,
+     "excellent": 2,
+     "good": 7,
+     "forced": 0,
+     "inaccuracy": 0,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "BuildedBlunderer",
+    "accuracy": 91.2,
+    "acpl": 25,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 3,
+     "good": 4,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -7,
+   57,
+   43,
+   50,
+   6,
+   44,
+   50,
+   78,
+   50,
+   52,
+   21,
+   57,
+   53,
+   59,
+   21,
+   67,
+   41,
+   77,
+   57,
+   70,
+   33,
+   29,
+   0
+  ],
+  "best": [
+   "f8e8",
+   "f2f3",
+   "b4c3",
+   "c3b5",
+   "a7a6",
+   "c3b5",
+   "d6e7",
+   "e1g1",
+   "d8d6",
+   "e1g1",
+   "e6f5",
+   "c1d2",
+   "c6e7",
+   "d3e4",
+   "c6e7",
+   "g1h2",
+   "c6a5",
+   "b3c2",
+   "f8e8",
+   "g1h2",
+   "c6a5",
+   "b3d1",
+   "a5c6"
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:49:31Z"
+}

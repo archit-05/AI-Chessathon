@@ -1,0 +1,170 @@
+{
+ "game": "b9994b8a-b96a-460f-921e-77fba8a455a2",
+ "pgn": "[Event \"AI Chessathon Rated\"]\n[Site \"aichessathon.com\"]\n[Date \"2026.09.04\"]\n[Round \"3\"]\n[White \"TriggerFish\"]\n[Black \"Sun\"]\n[Result \"1-0\"]\n[FEN \"r1bq1rk1/pp3ppp/2nbpn2/1Bpp4/3P1B2/2P1P2N/PP1N1PPP/R2QK2R w KQ - 4 8\"]\n[SetUp \"1\"]\n[Termination \"checkmate\"]\n\n8. Bxd6 { [%clk 0:01:51.997] } 8... Qxd6 { [%clk 0:01:55.196] } 9. O-O { [%clk 0:01:52.181] } 9... cxd4 { [%clk 0:01:44.409] } 10. cxd4 { [%clk 0:01:46.916] } 10... Qb4 { [%clk 0:01:39.889] } 11. Bxc6 { [%clk 0:01:47.339] } 11... bxc6 { [%clk 0:01:35.387] } 12. Rb1 { [%clk 0:01:47.587] } 12... Kh8 { [%clk 0:01:30.848] } 13. Nf3 { [%clk 0:01:43.726] } 13... Qc4 { [%clk 0:01:26.33] } 14. Ne5 { [%clk 0:01:37.874] } 14... Qa6 { [%clk 0:01:21.828] } 15. Ng5 { [%clk 0:01:38.122] } 15... Nd7 { [%clk 0:01:17.325] } 16. Qc2 { [%clk 0:01:32.214] } 16... Nxe5 { [%clk 0:01:12.784] } 17. Qxh7# { [%clk 0:01:26.49] } 1-0\n",
+ "opening": "London System",
+ "termination_text": "Checkmate",
+ "time_control": "120s + 0.5s",
+ "state": "Rated 3\u00b7Final",
+ "white_uuid": "8cffadc3-2135-45a6-8f80-9e0bdf7cef1f",
+ "black_uuid": "ef6ea1c4-e641-471e-91a0-ee7c521dbc56",
+ "site_verdicts": [
+  [
+   "Bxd6",
+   "excellent"
+  ],
+  [
+   "Qxd6",
+   "best"
+  ],
+  [
+   "O-O",
+   "excellent"
+  ],
+  [
+   "cxd4",
+   "best"
+  ],
+  [
+   "cxd4",
+   "good"
+  ],
+  [
+   "Qb4",
+   "inaccuracy"
+  ],
+  [
+   "Bxc6",
+   "best"
+  ],
+  [
+   "bxc6",
+   "best"
+  ],
+  [
+   "Rb1",
+   "inaccuracy"
+  ],
+  [
+   "Kh8",
+   "inaccuracy"
+  ],
+  [
+   "Nf3",
+   "good"
+  ],
+  [
+   "Qc4",
+   "mistake"
+  ],
+  [
+   "Ne5",
+   "best"
+  ],
+  [
+   "Qa6",
+   "inaccuracy"
+  ],
+  [
+   "Ng5",
+   "good"
+  ],
+  [
+   "Nd7",
+   "blunder"
+  ],
+  [
+   "Qc2",
+   "excellent"
+  ],
+  [
+   "Nxe5",
+   "blunder"
+  ]
+ ],
+ "review": {
+  "source": "Stockfish 16 \u00b7 depth 16",
+  "sides": [
+   {
+    "name": "TriggerFish",
+    "accuracy": 90.4,
+    "acpl": 25,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 3,
+     "good": 3,
+     "forced": 0,
+     "inaccuracy": 1,
+     "mistake": 0,
+     "miss": 0,
+     "blunder": 0
+    }
+   },
+   {
+    "name": "Sgrg",
+    "accuracy": 68.2,
+    "acpl": 177,
+    "tally": {
+     "brilliant": 0,
+     "best": 3,
+     "excellent": 0,
+     "good": 0,
+     "forced": 0,
+     "inaccuracy": 3,
+     "mistake": 1,
+     "miss": 0,
+     "blunder": 2
+    }
+   }
+  ]
+ },
+ "evals": {
+  "cp": [
+   -19,
+   -24,
+   -30,
+   -39,
+   -14,
+   -37,
+   51,
+   25,
+   21,
+   -51,
+   48,
+   3,
+   118,
+   103,
+   174,
+   124,
+   318,
+   309,
+   9999,
+   10000
+  ],
+  "best": [
+   "d2f3",
+   "d8d6",
+   "f2f4",
+   "c5d4",
+   "e3d4",
+   "e6e5",
+   "b5c6",
+   "b7c6",
+   "d1c2",
+   "c8a6",
+   "d1c2",
+   "c8a6",
+   "f3e5",
+   "c4a2",
+   "d1c2",
+   "h8g8",
+   "g5f7",
+   "f7f5",
+   "c2h7",
+   ""
+  ],
+  "depth": 16,
+  "engine": "Stockfish 16"
+ },
+ "fetched_at": "2026-09-07T12:45:44Z"
+}
