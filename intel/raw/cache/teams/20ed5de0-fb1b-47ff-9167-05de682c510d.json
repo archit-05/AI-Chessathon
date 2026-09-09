@@ -2,10 +2,10 @@
  "uuid": "20ed5de0-fb1b-47ff-9167-05de682c510d",
  "bot": "Optiverchess",
  "team": "Stockfish",
- "rating": 1460,
- "rank": 281,
- "record": "21-16-31",
- "rated_rounds": 83,
+ "rating": 1576,
+ "rank": 228,
+ "record": "25-17-33",
+ "rated_rounds": 90,
  "history": [
   [
    1,
@@ -338,9 +338,97 @@
   [
    83,
    1460
+  ],
+  [
+   84,
+   1516
+  ],
+  [
+   85,
+   1515
+  ],
+  [
+   86,
+   1562
+  ],
+  [
+   87,
+   1602
+  ],
+  [
+   88,
+   1570
+  ],
+  [
+   89,
+   1607
+  ],
+  [
+   90,
+   1576
   ]
  ],
  "games": [
+  {
+   "game": "2c191487-2f65-45ce-8822-0972ebd46749",
+   "kind": "Rated",
+   "round": 90,
+   "colour": "White",
+   "opponent": "The Veritys",
+   "opponent_uuid": "b650ca5f-caff-48e7-932a-3ccdb6ab6332",
+   "verdict": "loss",
+   "opening": "Caro-Kann Exchange"
+  },
+  {
+   "game": "c1fc6956-0ead-4bef-bdb8-f5fdf9098d7b",
+   "kind": "Rated",
+   "round": 89,
+   "colour": "Black",
+   "opponent": "Invictus",
+   "opponent_uuid": "570f0eaa-e1ed-4519-a97f-6fabf34be884",
+   "verdict": "win",
+   "opening": "Semi-Slav Defence"
+  },
+  {
+   "game": "15c1c3a5-88e4-45bc-ace1-da66c95ce8bc",
+   "kind": "Rated",
+   "round": 88,
+   "colour": "Black",
+   "opponent": "Shah's Mate",
+   "opponent_uuid": "8e300ace-2ef9-43d8-84d4-50336d6f62e0",
+   "verdict": "loss",
+   "opening": "Catalan Opening"
+  },
+  {
+   "game": "cc0a3792-e071-4f46-9816-cd12cb3beff8",
+   "kind": "Rated",
+   "round": 86,
+   "colour": "White",
+   "opponent": "Malvoo",
+   "opponent_uuid": "fe4f9319-4a10-4ff8-9ec0-6c5c92f79031",
+   "verdict": "win",
+   "opening": "Dutch Stonewall"
+  },
+  {
+   "game": "4e8707d2-4878-47d8-a565-115a30f7e084",
+   "kind": "Rated",
+   "round": 85,
+   "colour": "Black",
+   "opponent": "Atheon, Time's Conflux",
+   "opponent_uuid": "e1df793a-a14a-438f-bd44-2391541b3fbf",
+   "verdict": "draw",
+   "opening": "Sicilian Taimanov"
+  },
+  {
+   "game": "69b3aded-c134-4fea-9295-1861e4212f66",
+   "kind": "Rated",
+   "round": 84,
+   "colour": "White",
+   "opponent": "MCAI",
+   "opponent_uuid": "641cf869-356f-41c1-9a3c-e3da0dc4837a",
+   "verdict": "win",
+   "opening": "London System"
+  },
   {
    "game": "1714794a-54b4-4f7d-9d76-e5e9abbe3ae6",
    "kind": "Rated",
@@ -370,6 +458,16 @@
    "opponent_uuid": "a1c2258e-a9c4-4b1d-a3d3-78425668d2ca",
    "verdict": "win",
    "opening": "Caro-Kann Classical"
+  },
+  {
+   "game": "c9023561-9729-4b3a-946c-67e7ccf86bde",
+   "kind": "Rated",
+   "round": 80,
+   "colour": "White",
+   "opponent": "Chessify",
+   "opponent_uuid": "2837cf75-e0e4-4d1d-8942-6d451aff5f0a",
+   "verdict": "loss",
+   "opening": "Catalan Opening"
   },
   {
    "game": "b0842c09-bf36-475d-bb05-b41826757ead",
@@ -1162,5 +1260,5 @@
    "opening": "Sicilian Najdorf"
   }
  ],
- "fetched_at": "2026-09-09T14:53:51Z"
+ "fetched_at": "2026-09-09T21:57:50Z"
 }
