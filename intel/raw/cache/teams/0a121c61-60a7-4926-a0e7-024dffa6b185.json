@@ -2,10 +2,10 @@
  "uuid": "0a121c61-60a7-4926-a0e7-024dffa6b185",
  "bot": "test_bot",
  "team": "pheanup",
- "rating": 2537,
- "rank": 12,
- "record": "28-23-16",
- "rated_rounds": 76,
+ "rating": 2542,
+ "rank": 11,
+ "record": "28-24-16",
+ "rated_rounds": 78,
  "history": [
   [
    5,
@@ -310,9 +310,27 @@
   [
    80,
    2537
+  ],
+  [
+   81,
+   2538
+  ],
+  [
+   82,
+   2542
   ]
  ],
  "games": [
+  {
+   "game": "9e3f8c7d-5278-4f7c-a63c-98602aca9a68",
+   "kind": "Rated",
+   "round": 82,
+   "colour": "White",
+   "opponent": "Ryan Vincent",
+   "opponent_uuid": "8c22f2a5-3bce-4b66-b93a-8f4ab4318b0f",
+   "verdict": "draw",
+   "opening": "Petroff Defence"
+  },
   {
    "game": "61c5d85c-f907-4881-80c2-c93efae481af",
    "kind": "Rated",
@@ -334,14 +352,14 @@
    "opening": "Sicilian Najdorf"
   },
   {
-   "game": "a160cc2a-729f-4ef4-9105-e2c6f6e32ee5",
+   "game": "af9cdfb1-e9d3-4f3b-bac9-0ee6e22243f3",
    "kind": "Rated",
-   "round": 79,
-   "colour": "Black",
-   "opponent": "AI Fellows",
-   "opponent_uuid": "b574c0ea-e994-4a16-9918-7fbc989c4234",
+   "round": 78,
+   "colour": "White",
+   "opponent": "zak",
+   "opponent_uuid": "0cebedbb-0376-4058-b6f4-0e11ef9dbeed",
    "verdict": "win",
-   "opening": "Petroff Defence"
+   "opening": "French Winawer"
   },
   {
    "game": "f905dc33-1d8c-4fe5-9e1b-b89042b535ab",
@@ -1074,5 +1092,5 @@
    "opening": "London System"
   }
  ],
- "fetched_at": "2026-09-09T12:44:37Z"
+ "fetched_at": "2026-09-09T13:44:35Z"
 }

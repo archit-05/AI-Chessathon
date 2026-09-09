@@ -2,10 +2,10 @@
  "uuid": "f0286356-626d-4dd2-86ab-fd6d779063cb",
  "bot": "BINI Alpha",
  "team": "Opus Carlsen",
- "rating": 2396,
- "rank": 21,
- "record": "25-17-12",
- "rated_rounds": 58,
+ "rating": 2385,
+ "rank": 25,
+ "record": "25-17-13",
+ "rated_rounds": 59,
  "history": [
   [
    24,
@@ -238,9 +238,23 @@
   [
    81,
    2396
+  ],
+  [
+   82,
+   2385
   ]
  ],
  "games": [
+  {
+   "game": "f4b118ae-fabf-421b-829e-96fa3161df25",
+   "kind": "Rated",
+   "round": 82,
+   "colour": "White",
+   "opponent": "Cornelius",
+   "opponent_uuid": "acecd823-279a-4bf9-8321-0ee6ed68deda",
+   "verdict": "loss",
+   "opening": "Sicilian Closed"
+  },
   {
    "game": "04a6e474-6e21-4788-8f77-457f827936a4",
    "kind": "Rated",
@@ -262,13 +276,13 @@
    "opening": "Reti Opening"
   },
   {
-   "game": "6d091fd3-94c6-4e60-b1f2-ad8e99e389ad",
+   "game": "ff3c004a-296c-4479-a182-167815fce91a",
    "kind": "Rated",
-   "round": 79,
+   "round": 78,
    "colour": "White",
-   "opponent": "zak",
-   "opponent_uuid": "0cebedbb-0376-4058-b6f4-0e11ef9dbeed",
-   "verdict": "loss",
+   "opponent": "Mate in One",
+   "opponent_uuid": "3be637a8-e78d-4da4-8016-d13e00170433",
+   "verdict": "draw",
    "opening": "Pirc Defence"
   },
   {
@@ -812,5 +826,5 @@
    "opening": "Four Knights Game"
   }
  ],
- "fetched_at": "2026-09-09T12:47:08Z"
+ "fetched_at": "2026-09-09T13:49:32Z"
 }
