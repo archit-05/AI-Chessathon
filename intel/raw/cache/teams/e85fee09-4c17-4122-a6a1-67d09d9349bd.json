@@ -2,10 +2,10 @@
  "uuid": "e85fee09-4c17-4122-a6a1-67d09d9349bd",
  "bot": "Edward",
  "team": "Edward",
- "rating": 2381,
- "rank": 19,
- "record": "25-14-11",
- "rated_rounds": 51,
+ "rating": 2339,
+ "rank": 22,
+ "record": "25-14-12",
+ "rated_rounds": 52,
  "history": [
   [
    27,
@@ -210,9 +210,23 @@
   [
    77,
    2381
+  ],
+  [
+   78,
+   2339
   ]
  ],
  "games": [
+  {
+   "game": "f870009b-ed32-48d6-9b33-06d4621b5c86",
+   "kind": "Rated",
+   "round": 78,
+   "colour": "Black",
+   "opponent": "catfish",
+   "opponent_uuid": "4c4aa194-e507-4fb7-a863-46341205f08b",
+   "verdict": "loss",
+   "opening": "Ruy Lopez, Closed"
+  },
   {
    "game": "80b1ca51-8022-4501-b13e-147aa11a8582",
    "kind": "Rated",
@@ -234,14 +248,14 @@
    "opening": "Sicilian Dragon"
   },
   {
-   "game": "baad6618-4fe2-4cf8-8193-e594e50eed4f",
+   "game": "d38b0b66-6b5d-4c5e-b258-c9c57232cadf",
    "kind": "Rated",
-   "round": 75,
-   "colour": "White",
-   "opponent": "AlphaBeta",
-   "opponent_uuid": "1f234cf3-2829-4107-8a5f-2d0e15e978da",
-   "verdict": "win",
-   "opening": "Reti Opening"
+   "round": 74,
+   "colour": "Black",
+   "opponent": "Zugzwin",
+   "opponent_uuid": "2463d1f5-3e78-4dce-a254-be5983079ccc",
+   "verdict": "draw",
+   "opening": "Catalan Opening"
   },
   {
    "game": "791d4e29-f1a9-43c7-a664-fc1a5fa3b919",
@@ -714,5 +728,5 @@
    "opening": "London System"
   }
  ],
- "fetched_at": "2026-09-09T08:44:44Z"
+ "fetched_at": "2026-09-09T09:48:29Z"
 }

@@ -1,70 +1,68 @@
-BINI Alpha  (team: Opus Carlsen)  -  rank 17, rating 2374
+BINI Alpha  (team: Opus Carlsen)  -  rank 17, rating 2397
 =========================================================
-Generated 2026-09-09 09:46 from 49 rated games (rounds 24-77, 49 of 53 with evaluations so far) plus
+Generated 2026-09-09 10:48 from 50 rated games (rounds 24-78, 49 of 54 with evaluations so far) plus
   4 played to a result but voided by the site later (R25 3fold, R26 3fold, R28 3fold, R67
   checkmate): they count for move quality, clocks and draw behaviour, not for results.
 
 IDENTITY
   Bot BINI Alpha; team Opus Carlsen; university Exeter; team name reads like a personal name,
     probably solo.
-  Rank 17 of 417, rating 2374, record 25-14-11 in 49 rated games.
-  Rating trajectory: entered R24 at 1440, peak 2391 (R77), now 2391 (R77).
+  Rank 17 of 418, rating 2397, record 25-15-11 in 51 rated games.
+  Rating trajectory: entered R24 at 1440, peak 2397 (R78), now 2397 (R78).
   No 100+ point jump between consecutive rounds.
-  Recent form (last 5 games, R72-R77): 1-3-1 (50%), loss 8.7 cp/move, blunders 0.0% vs earlier
-    (R24-R71): 24-13-11 (64%), 16.3 cp/move, 0.9%
+  Recent form (last 5 games, R73-R78): 1-3-1 (50%), loss 8.0 cp/move, blunders 0.0% vs earlier
+    (R24-R72): 24-14-11 (63%), 16.2 cp/move, 0.9%
 
 RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
-  vs top 10 : 1-2-3 (33%) over 6 games
-  vs 11-20  : 3-5-2 (55%) over 10 games
-  vs 21-50  : 8-4-1 (77%) over 13 games
-  vs rest   : 13-2-5 (70%) over 20 games
+  vs top 10 : 1-1-3 (30%) over 5 games
+  vs 11-20  : 2-7-2 (50%) over 11 games
+  vs 21-50  : 9-3-1 (81%) over 13 games
+  vs rest   : 13-3-5 (69%) over 21 games
   Games vs top-10 teams:
-    R42  black vs crash              (#10) draw threefold_repetition  Petroff Defence
-    R55  black vs ms                 (#7 ) loss checkmate             Ruy Lopez, Closed
+    R55  black vs ms                 (#5 ) loss checkmate             Ruy Lopez, Closed
     R60  white vs Patzer 2.3         (#4 ) win  checkmate             Caro-Kann Exchange
-    R64  white vs stockfih           (#1 ) loss checkmate             Italian Game
-    R65  black vs Poincare           (#9 ) loss checkmate             London System
-    R75  black vs Mite               (#8 ) draw insufficient_material Pirc Defence
-  Games vs ranks 11-20: R50 win vs zak (#19, checkmate); R54 win vs Dark Sister (#18, checkmate);
-    R61 draw vs Danya's Discip (#14, 3fold); R66 win vs test_bot (#16, checkmate); R68 loss vs cory
-    (#15, checkmate); R70 draw vs Mate in One (#20, 3fold); R71 draw vs zak (#19, fifty_moves); R72
-    draw vs Loss Preventer (#12, 3fold); R76 loss vs Danya's Discip (#14, checkmate); R77 draw vs
-    cory (#15, insuff)
+    R64  white vs stockfih           (#3 ) loss checkmate             Italian Game
+    R65  black vs Poincare           (#8 ) loss checkmate             London System
+    R72  white vs Loss Preventer     (#9 ) draw threefold_repetition  Sicilian Classical
+  Games vs ranks 11-20: R42 draw vs crash (#16, 3fold); R50 win vs zak (#18, checkmate); R61 draw vs
+    Danya's Discip (#12, 3fold); R66 win vs test_bot (#13, checkmate); R68 loss vs cory (#14,
+    checkmate); R70 draw vs Mate in One (#20, 3fold); R71 draw vs zak (#18, fifty_moves); R74 draw
+    vs test_bot (#13, 3fold); R76 loss vs Danya's Discip (#12, checkmate); R77 draw vs cory (#14,
+    insuff); R78 draw vs Mate in One (#20, 3fold)
 
 MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
   positions inside +-800 only)
-  All own moves: n 2464, mean loss 15.7 cp, median 1 cp, blunders (>= 200 cp) 20 = 0.8% (10 of them
+  All own moves: n 2396, mean loss 16.0 cp, median 0 cp, blunders (>= 200 cp) 20 = 0.8% (10 of them
     from level or better positions)
-  own moves 1-15    : n  732, mean 17.4 cp, median 5 cp, blunders 1.0%
-  own moves 16-40   : n  934, mean 20.2 cp, median 3 cp, blunders 1.1%
-  own moves 41+     : n  798, mean 8.7 cp, median 0 cp, blunders 0.4%
-  as white          : n 1058, mean 16.6 cp, median 2 cp, blunders 0.7%
-  as black          : n 1406, mean 15.0 cp, median 0 cp, blunders 0.9%
+  own moves 1-15    : n  732, mean 17.5 cp, median 5 cp, blunders 1.0%
+  own moves 16-40   : n  928, mean 20.1 cp, median 3 cp, blunders 1.1%
+  own moves 41+     : n  736, mean 9.3 cp, median 0 cp, blunders 0.4%
+  as white          : n 1092, mean 16.4 cp, median 2 cp, blunders 0.6%
+  as black          : n 1304, mean 15.6 cp, median 0 cp, blunders 1.0%
   Worst moves: R26 38.Qc4+ (+474 -> +0); R26 34.Qf2+ (-74 -> -528); R26 28.Qd1+ (+332 -> +0)
-  Site's own review (Stockfish 16, depth 16): mean ACPL 26.8 over 47 games, accuracy 96.8%; its tags
+  Site's own review (Stockfish 16, depth 16): mean ACPL 26.5 over 48 games, accuracy 96.8%; its tags
     on their moves: 14 blunder, 28 mistake, 1 miss, 76 inaccuracy of 2430
 
 TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
-  Per move: mean 1.86 s, median 1.61 s, quartiles 0.85-2.44 s, max 14.9 s; instant (<50 ms) moves
-    5.9%
-  Clock at the end: mean 38.0 s, minimum 6.2 s; games under 10 s: 8, under 5 s: 0
-  By clock before the move: >60s 2.5 s (n 1438), 30-60s 2.0 s (n 703), 10-30s 0.9 s (n 835), <10s
-    0.5 s (n 214)
-  By own-move number: 1-15 2.9 s, 16-40 2.2 s, 41+ 0.9 s; when +300 or better 1.4 s, level 2.1 s,
+  Per move: mean 1.89 s, median 1.64 s, quartiles 0.89-2.5 s, max 14.9 s; instant (<50 ms) moves
+    6.0%
+  Clock at the end: mean 38.5 s, minimum 6.2 s; games under 10 s: 7, under 5 s: 0
+  By clock before the move: >60s 2.6 s (n 1457), 30-60s 2.0 s (n 715), 10-30s 0.9 s (n 782), <10s
+    0.5 s (n 205)
+  By own-move number: 1-15 2.9 s, 16-40 2.2 s, 41+ 0.9 s; when +300 or better 1.4 s, level 2.2 s,
     -300 or worse 1.6 s
-  Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 3.8%,
+  Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 3.7%,
     quartiles 2.5-5.3%
   After a >100 cp swing on the opponent's move: 1.9 s (n 134) vs 1.9 s otherwise; on moves that
     themselves swing >100 cp: 2.3 s (n 142) vs 1.9 s
-  Exploitable: spends a fixed ~4% of the remaining clock per move, so its thinking time shrinks as
-    the game goes on
+  Exploitable: nothing obvious
 
 DRAW BEHAVIOUR
-  16 draws in 53 played games (30.0%): threefold_repetition 9, fifty_moves 4, insufficient_material
-    3; 2 of them vs top-10 teams; 3 of these were voided by the site afterwards and no longer count
+  17 draws in 54 played games (31.0%): threefold_repetition 11, fifty_moves 4, insufficient_material
+    2; 1 of them vs top-10 teams; 3 of these were voided by the site afterwards and no longer count
     on the ladder
   Repetition while ahead (> +150 at the final position): 0
-  Repetition while behind (< -150): 0; level repetitions: 9
+  Repetition while behind (< -150): 0; level repetitions: 10
 
 ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
   Reached +300 or better in 25 games, failed to win 1:
@@ -79,37 +77,36 @@ ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
 
 OPENINGS (curated start positions assigned by the platform)
   By family: Sicilian 3-4-0 (71%); Caro-Kann 2-2-1 (60%); Petroff 1-3-1 (50%); French 3-0-1 (75%);
-    Ruy Lopez 2-0-2 (50%); English 1-1-1 (50%); Nimzo-Indian 2-1-0 (83%); Semi-Slav 3-0-0 (100%);
-    Pirc 2-1-0 (83%); Catalan 2-0-0 (100%); Grunfeld 0-0-2 (0%); King's Indian 1-0-1 (50%); Queen's
-    Indian 1-1-0 (75%); London 0-1-1 (25%); Scotch 1-1-0 (75%); Four Knights 0-0-1 (0%); Reti 1-0-0
-    (100%); Italian 0-0-1 (0%); Two Knights 0-1-0 (50%)
+    Ruy Lopez 2-0-2 (50%); English 1-1-1 (50%); Catalan 2-1-0 (83%); Nimzo-Indian 2-1-0 (83%);
+    Semi-Slav 3-0-0 (100%); Pirc 2-1-0 (83%); Grunfeld 0-0-2 (0%); King's Indian 1-0-1 (50%);
+    Queen's Indian 1-1-0 (75%); London 0-1-1 (25%); Scotch 1-1-0 (75%); Four Knights 0-0-1 (0%);
+    Reti 1-0-0 (100%); Italian 0-0-1 (0%); Two Knights 0-1-0 (50%)
   Positions seen more than once: Petroff Defence x5 1-3-1 (50%); Ruy Lopez, Closed x4 2-0-2 (50%);
-    English Symmetrical x3 1-1-1 (50%); Nimzo-Indian Defence x3 2-1-0 (83%); Pirc Defence x3 2-1-0
-    (83%); Semi-Slav Defence x3 3-0-0 (100%); Sicilian Sveshnikov x3 1-2-0 (67%); Caro-Kann Advance
-    x2 1-1-0 (75%); Caro-Kann Classical x2 0-1-1 (25%); Catalan Opening x2 2-0-0 (100%); French
+    Catalan Opening x3 2-1-0 (83%); English Symmetrical x3 1-1-1 (50%); Nimzo-Indian Defence x3
+    2-1-0 (83%); Pirc Defence x3 2-1-0 (83%); Semi-Slav Defence x3 3-0-0 (100%); Sicilian Sveshnikov
+    x3 1-2-0 (67%); Caro-Kann Advance x2 1-1-0 (75%); Caro-Kann Classical x2 0-1-1 (25%); French
     Tarrasch x2 1-0-1 (50%); Grunfeld Defence x2 0-0-2 (0%); King's Indian Classical x2 1-0-1 (50%);
     London System x2 0-1-1 (25%); Queen's Indian Defence x2 1-1-0 (75%); Scotch Game x2 1-1-0 (75%);
     Sicilian Closed x2 2-0-0 (100%); 9 positions seen once (4 won, 3 drawn, 2 lost).
   No family with 3+ games scores 20+ points below their overall average.
-  First six own moves: 57% match Stockfish's first choice (moves 7-20: 59%), mean loss 18.1 cp, 0%
-    played instantly; first clear divergence (loss >= 20 cp) at own move 6.2 on average.
+  First six own moves: 56% match Stockfish's first choice (moves 7-20: 59%), mean loss 18.2 cp, 0%
+    played instantly; first clear divergence (loss >= 20 cp) at own move 6.0 on average.
 
 STYLE
-  Captures on 17.9% of own moves, checks on 13.9%; average game 120 plies (60 own moves), longest
+  Captures on 18.2% of own moves, checks on 14.0%; average game 117 plies (58 own moves), longest
     398 plies (R63)
   Wins: 25 (25 by checkmate, 0 by opponent failure); losses: 11 (12 by checkmate, 0 by own failure)
-  Sacrifices (gave >= 2 pawns of material without losing eval, then recovered): 5 -> R31 5.O-O, R50
-    24.Nf4, R66 32.Nf4, R68 33.Rxc3, R75 19.Bxh4
-  When ahead (> +150) material leaves the board at 1.17 pawns per own move (level: 0.82); capture
-    rate 25.8% vs 15.7% level -> simplifies when ahead
+  Sacrifices (gave >= 2 pawns of material without losing eval, then recovered): 4 -> R31 5.O-O, R50
+    24.Nf4, R66 32.Nf4, R68 33.Rxc3
+  When ahead (> +150) material leaves the board at 1.17 pawns per own move (level: 0.84); capture
+    rate 25.8% vs 16.0% level -> simplifies when ahead
 
 LIKELY ENGINE PROFILE
-  Strong searcher (mean loss 15.7 cp): consistent with a bitboard alpha-beta engine at depth 8-12
+  Strong searcher (mean loss 16.0 cp): consistent with a bitboard alpha-beta engine at depth 8-12
   with a decent evaluation. Confidence high.
-  Weakest early (moves 1-15 mean 17.4 cp vs 8.7 cp later): no book and a thin opening evaluation.
-  Time allocation is a fixed share of the remaining clock (~4% per move; median 1.61 s, max 14.9 s),
-  so depth shrinks as the game goes on and no extra time goes to critical positions (1.9 s after a
-  >100 cp swing vs 1.9 s otherwise).
+  Weakest early (moves 1-15 mean 17.5 cp vs 9.3 cp later): no book and a thin opening evaluation.
+  Adaptive time use (median 1.64 s, max 14.9 s, spends 1.9 s on moves after a >100 cp swing vs 1.9 s
+  otherwise).
 
 HOW TO PLAY THEM
   1. They convert (24 of 25 won positions turned into wins): do not rely on swindles; the game is

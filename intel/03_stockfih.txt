@@ -1,0 +1,147 @@
+stockfih  (team: what even is en passant)  -  rank 3, rating 2675
+=================================================================
+Generated 2026-09-09 10:48 from 64 rated games (rounds 9-78, 65 of 69 with evaluations so far) plus
+  4 played to a result but voided by the site later (R12 3fold, R13 3fold, R25 3fold, R26 3fold):
+  they count for move quality, clocks and draw behaviour, not for results; 1 game(s) that never had
+  a result ignored: R22.
+
+IDENTITY
+  Bot stockfih; team what even is en passant; university Mixed; members not shown on the site.
+  Rank 3 of 418, rating 2675, record 27-18-20 in 65 rated games.
+  Rating trajectory: entered R10 at 1580, peak 2721 (R76), now 2675 (R78).
+  Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
+    upload): R24 +107 -> 1948 (win vs Astral)
+  Recent form (last 5 games, R73-R78): 2-2-1 (60%), loss 9.5 cp/move, blunders 0.0% vs earlier
+    (R9-R72): 24-20-19 (54%), 16.0 cp/move, 0.5%
+
+RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
+  vs top 10 : 5-6-5 (50%) over 16 games
+  vs 11-20  : 8-4-7 (53%) over 19 games
+  vs 21-50  : 6-7-5 (53%) over 18 games
+  vs rest   : 7-1-3 (68%) over 11 games
+  Games vs top-10 teams:
+    R27  white vs Capablanca         (#6 ) loss checkmate             Grunfeld Defence
+    R28  black vs Patzer 2.3         (#4 ) loss checkmate             Two Knights Defence
+    R44  white vs ms                 (#5 ) win  checkmate             London System
+    R47  black vs Poincare           (#8 ) win  checkmate             Nimzo-Indian Defence
+    R48  black vs Patzer 2.3         (#4 ) draw threefold_repetition  Caro-Kann Advance
+    R51  black vs ms                 (#5 ) draw threefold_repetition  French Winawer
+    R52  black vs PSL God Matt Bomer (#1 ) draw threefold_repetition  London System
+    R54  black vs Patzer 2.3         (#4 ) draw insufficient_material Caro-Kann Exchange
+    R56  black vs Mite               (#7 ) win  checkmate             Dutch Stonewall
+    R60  black vs Capablanca         (#6 ) loss checkmate             Sicilian Taimanov
+    R61  white vs Poincare           (#8 ) win  checkmate             Sicilian Sveshnikov
+    R65  black vs ms                 (#5 ) loss checkmate             Sicilian Closed
+    R68  black vs Poincare           (#8 ) draw threefold_repetition  French Tarrasch
+    R76  white vs PSL God Matt Bomer (#1 ) win  checkmate             Caro-Kann Advance
+    R77  white vs AlphaFish          (#2 ) loss checkmate             Dutch Stonewall
+    R78  black vs Capablanca         (#6 ) draw insufficient_material Caro-Kann Exchange
+  Games vs ranks 11-20: R11 win vs Challenger (#19, checkmate); R14 win vs Danya's Discip (#12,
+    checkmate); R16 loss vs AI Fellow (#11, checkmate); R29 loss vs Anchoa (#15, checkmate); R30
+    loss vs test_bot (#13, checkmate); R42 win vs Challenger (#19, checkmate); R50 loss vs AI Fellow
+    (#11, checkmate); R55 win vs Mate in One (#20, checkmate); R57 loss vs crash (#16, checkmate);
+    R62 draw vs crash (#16, 3fold); R63 loss vs cory (#14, checkmate); R64 win vs BINI Alpha (#17,
+    checkmate); R66 win vs zak (#18, checkmate); R67 draw vs AI Fellow (#11, 3fold); R69 loss vs
+    cory (#14, checkmate); R70 win vs Danya's Discip (#12, checkmate); R71 draw vs Anchoa (#15,
+    3fold); R73 draw vs AI Fellow (#11, 3fold); R74 win vs cory (#14, checkmate)
+
+MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
+  positions inside +-800 only)
+  All own moves: n 3542, mean loss 15.8 cp, median 3 cp, blunders (>= 200 cp) 16 = 0.5% (5 of them
+    from level or better positions)
+  own moves 1-15    : n  974, mean 11.5 cp, median 4 cp, blunders 0.1%
+  own moves 16-40   : n 1476, mean 16.8 cp, median 4 cp, blunders 0.2%
+  own moves 41+     : n 1092, mean 18.2 cp, median 1 cp, blunders 1.1%
+  as white          : n 1741, mean 15.4 cp, median 3 cp, blunders 0.5%
+  as black          : n 1801, mean 16.1 cp, median 3 cp, blunders 0.4%
+  Worst moves: R53 71.Kf5 (+9998 -> +0); R34 12.Raf8 (+0 -> -388); R38 80.Qc5 (+371 -> +0)
+  Site's own review (Stockfish 16, depth 16): mean ACPL 25.6 over 64 games, accuracy 96.7%; its tags
+    on their moves: 7 blunder, 21 mistake, 0 miss, 105 inaccuracy of 3789
+
+TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
+  Per move: mean 2.02 s, median 1.64 s, quartiles 0.92-2.71 s, max 12.6 s; instant (<50 ms) moves
+    8.6%
+  Clock at the end: mean 23.9 s, minimum 1.5 s; games under 10 s: 18, under 5 s: 8 (R10, R14, R16,
+    R27, R29, R32, R12, R25)
+  By clock before the move: >60s 3.4 s (n 1446), 30-60s 1.9 s (n 1275), 10-30s 1.1 s (n 1114), <10s
+    0.6 s (n 478)
+  By own-move number: 1-15 3.9 s, 16-40 2.1 s, 41+ 0.8 s; when +300 or better 1.2 s, level 2.5 s,
+    -300 or worse 1.0 s
+  Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 4.8%,
+    quartiles 3.3-6.4%
+  After a >100 cp swing on the opponent's move: 1.3 s (n 172) vs 2.0 s otherwise; on moves that
+    themselves swing >100 cp: 1.2 s (n 188) vs 2.1 s
+  Exploitable: spends a fixed ~5% of the remaining clock per move, so its thinking time shrinks as
+    the game goes on; gets into time trouble
+
+DRAW BEHAVIOUR
+  22 draws in 68 played games (32.0%): threefold_repetition 17, insufficient_material 4, fifty_moves
+    1; 8 of them vs top-10 teams; 4 of these were voided by the site afterwards and no longer count
+    on the ladder
+  Repetition while ahead (> +150 at the final position): 2 -> R12 vs Loss Preventer at +509, R26 vs
+    Mate in One at +385
+  Repetition while behind (< -150): 0; level repetitions: 15
+
+ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
+  Reached +300 or better in 29 games, failed to win 4:
+    R38 vs 72o peak +474, draw by threefold_repetition: threw it away: move 80.Qc5 (+371 -> +0)
+    R53 vs Astral peak +9998, draw by threefold_repetition: threw it away: move 71.Kf5 (+9998 -> +0)
+    R12  vs Loss Preventer     peak  +490, draw by threefold_repetition: repeated while +509
+    R26  vs Mate in One        peak  +375, draw by threefold_repetition: repeated while +385
+  Reached -300 or worse in 20 games, escaped with a half point or more in 1:
+    R10 vs Cornelius low -538, draw by insufficient_material: opponent traded into insufficient
+      material
+
+OPENINGS (curated start positions assigned by the platform)
+  By family: Sicilian 4-2-5 (45%); Caro-Kann 2-5-3 (45%); French 3-4-2 (56%); English 3-1-2 (58%);
+    Two Knights 1-2-2 (40%); King's Indian 1-0-2 (33%); Petroff 1-1-1 (50%); Grunfeld 1-1-1 (50%);
+    Nimzo-Indian 2-1-0 (83%); London 1-2-0 (67%); Reti 2-0-0 (100%); Dutch 1-0-1 (50%); Ruy Lopez
+    0-2-0 (50%); Queen's Gambit 1-0-0 (100%); Semi-Slav 1-0-0 (100%); Catalan 0-0-1 (0%); Queen's
+    Indian 0-1-0 (50%); Italian 1-0-0 (100%); Pirc 1-0-0 (100%)
+  Positions seen more than once: English Symmetrical x6 3-1-2 (58%); French Winawer x6 1-3-2 (42%);
+    Caro-Kann Exchange x5 1-3-1 (50%); Sicilian Sveshnikov x5 3-0-2 (60%); Two Knights Defence x5
+    1-2-2 (40%); Caro-Kann Advance x3 1-1-1 (50%); Grunfeld Defence x3 1-1-1 (50%); King's Indian
+    Classical x3 1-0-2 (33%); London System x3 1-2-0 (67%); Nimzo-Indian Defence x3 2-1-0 (83%);
+    Petroff Defence x3 1-1-1 (50%); Sicilian Taimanov x3 1-1-1 (50%); Caro-Kann Classical x2 0-1-1
+    (25%); Dutch Stonewall x2 1-0-1 (50%); French Tarrasch x2 1-1-0 (75%); Reti Opening x2 2-0-0
+    (100%); Ruy Lopez, Closed x2 0-2-0 (50%); Sicilian Closed x2 0-0-2 (0%); 8 positions seen once
+    (5 won, 2 drawn, 1 lost).
+  Underperforms in: King's Indian 1-0-2 (33%)
+  First six own moves: 66% match Stockfish's first choice (moves 7-20: 62%), mean loss 8.6 cp, 15%
+    played instantly; first clear divergence (loss >= 20 cp) at own move 7.2 on average.
+
+STYLE
+  Captures on 17.6% of own moves, checks on 9.4%; average game 127 plies (63 own moves), longest 353
+    plies (R69)
+  Wins: 26 (26 by checkmate, 0 by opponent failure); losses: 20 (20 by checkmate, 0 by own failure)
+  Sacrifices (gave >= 2 pawns of material without losing eval, then recovered): 4 -> R27 10.Qb4, R37
+    12.Ng3, R38 9.Nd5, R44 31.Kh2
+  When ahead (> +150) material leaves the board at 0.84 pawns per own move (level: 1.01); capture
+    rate 20.0% vs 18.2% level -> no deliberate simplification
+
+LIKELY ENGINE PROFILE
+  Strong searcher (mean loss 15.8 cp): consistent with a bitboard alpha-beta engine at depth 8-12
+  with a decent evaluation. Confidence high.
+  Quality drops late (phase 41+ mean 18.2 cp vs 11.5 cp in the first 15 moves): endgame evaluation
+  or horizon problems.
+  Time allocation is a fixed share of the remaining clock (~5% per move; median 1.64 s, max 12.6 s),
+  so depth shrinks as the game goes on and no extra time goes to critical positions (1.3 s after a
+  >100 cp swing vs 2.0 s otherwise).
+  Poor clock awareness: 8 of 64 games went under 5 s.
+  Repeats while clearly ahead (2 games): no contempt or repetition avoidance in the search.
+  Instant early moves (15% of the first six played in under 50 ms): an opening book covers part of
+  the curated positions.
+
+HOW TO PLAY THEM
+  1. When we are worse, steer for repetitions: they accepted threefolds while ahead in R12, R26.
+  Keep our own contempt positive so we never return the favour.
+  2. Head for long games: their loss per move rises from 11.5 cp early to 18.2 cp after move 40.
+  Avoid early mass exchanges only if we are not better; otherwise simplify into a queenless
+  middlegame and outplay them late.
+  3. Time pressure works: 8 games dipped under 5 s (R10, R14, R16, R27, R29, R32). Keep games long
+  and complicated; their play under 10 s averages 0.6 s a move.
+  4. No extra time goes to critical positions (1.3 s after a big swing vs 2.0 s otherwise): our
+  search can spend several times their budget on the few moves that decide a game, so prefer
+  positions where one precise move matters over long manoeuvring.
+  5. Tactics work: 5 blunders (>= 200 cp) came from level or better positions, so they can be
+  out-calculated. Keep the position sharp.

@@ -2,10 +2,10 @@
  "uuid": "f0286356-626d-4dd2-86ab-fd6d779063cb",
  "bot": "BINI Alpha",
  "team": "Opus Carlsen",
- "rating": 2391,
- "rank": 18,
- "record": "25-14-11",
- "rated_rounds": 54,
+ "rating": 2397,
+ "rank": 17,
+ "record": "25-15-11",
+ "rated_rounds": 55,
  "history": [
   [
    24,
@@ -222,9 +222,23 @@
   [
    77,
    2391
+  ],
+  [
+   78,
+   2397
   ]
  ],
  "games": [
+  {
+   "game": "ff3c004a-296c-4479-a182-167815fce91a",
+   "kind": "Rated",
+   "round": 78,
+   "colour": "White",
+   "opponent": "Mate in One",
+   "opponent_uuid": "3be637a8-e78d-4da4-8016-d13e00170433",
+   "verdict": "draw",
+   "opening": "Pirc Defence"
+  },
   {
    "game": "335b9480-a59b-4627-879a-9f7e8a17457e",
    "kind": "Rated",
@@ -246,14 +260,14 @@
    "opening": "Grunfeld Defence"
   },
   {
-   "game": "7bde525a-f18a-4e3a-959d-3de29522c9e5",
+   "game": "099df359-d6c8-4a33-8126-bc2271d95cf1",
    "kind": "Rated",
-   "round": 75,
-   "colour": "Black",
-   "opponent": "Ryan Vincent",
-   "opponent_uuid": "8c22f2a5-3bce-4b66-b93a-8f4ab4318b0f",
+   "round": 74,
+   "colour": "White",
+   "opponent": "pheanup",
+   "opponent_uuid": "0a121c61-60a7-4926-a0e7-024dffa6b185",
    "verdict": "draw",
-   "opening": "Pirc Defence"
+   "opening": "Catalan Opening"
   },
   {
    "game": "03b10e6b-3b24-42d7-8b69-5c19a6490484",
@@ -756,5 +770,5 @@
    "opening": "Four Knights Game"
   }
  ],
- "fetched_at": "2026-09-09T08:44:07Z"
+ "fetched_at": "2026-09-09T09:45:02Z"
 }
