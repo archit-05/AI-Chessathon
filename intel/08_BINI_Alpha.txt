@@ -1,37 +1,38 @@
-BINI Alpha  (team: Opus Carlsen)  -  rank 9, rating 2605
+BINI Alpha  (team: Opus Carlsen)  -  rank 8, rating 2610
 ========================================================
-Generated 2026-09-09 22:57 from 62 rated games (rounds 24-90, 50 of 66 with evaluations so far) plus
+Generated 2026-09-09 23:58 from 62 rated games (rounds 24-90, 50 of 66 with evaluations so far) plus
   4 played to a result but voided by the site later (R25 3fold, R26 3fold, R28 3fold, R67
   checkmate): they count for move quality, clocks and draw behaviour, not for results.
 
 IDENTITY
   Bot BINI Alpha; team Opus Carlsen; university Exeter; team name reads like a personal name,
     probably solo.
-  Rank 9 of 433, rating 2605 (provisional: fewer than six games on the current build, i.e. a new
-    upload in the last five rounds), record 28-22-13 in 62 rated games.
-  Rating trajectory: entered R24 at 1440, peak 2605 (R89), now 2605 (R89).
+  Rank 8 of 435, rating 2610 (provisional: fewer than six games on the current build, i.e. a new
+    upload in the last five rounds), record 28-22-13 in 63 rated games.
+  Rating trajectory: entered R24 at 1440, peak 2610 (R90), now 2610 (R90).
   Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
     upload): R89 +101 -> 2605 (win vs Challenger)
 
 RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
-  vs top 10 : 1-3-3 (36%) over 7 games
-  vs 11-20  : 5-6-2 (62%) over 13 games
+  vs top 10 : 3-3-3 (50%) over 9 games
+  vs 11-20  : 3-6-2 (55%) over 11 games
   vs 21-50  : 9-8-3 (65%) over 20 games
   vs rest   : 13-4-5 (68%) over 22 games
   Games vs top-10 teams:
-    R55  black vs ms                 (#4 ) loss checkmate             Ruy Lopez, Closed
-    R60  white vs Patzer 2.4         (#6 ) win  checkmate             Caro-Kann Exchange
+    R55  black vs ms                 (#5 ) loss checkmate             Ruy Lopez, Closed
+    R57  black vs o2-1               (#9 ) win  checkmate             Pirc Defence
+    R60  white vs Patzer 2.4         (#7 ) win  checkmate             Caro-Kann Exchange
     R64  white vs stockfih           (#2 ) loss checkmate             Italian Game
     R65  black vs Poincare conjecture (#10) loss checkmate             London System
-    R72  white vs Loss Preventer     (#8 ) draw threefold_repetition  Sicilian Classical
-    R75  black vs Mite               (#3 ) draw insufficient_material Pirc Defence
-    R90  black vs Patzer 2.4         (#6 ) draw insufficient_material Sicilian Closed
-  Games vs ranks 11-20: R57 win vs o2-1 (#18, checkmate); R61 draw vs Danya's Discip (#15, 3fold);
-    R66 win vs test_bot (#16, checkmate); R68 loss vs cory (#19, checkmate); R73 win vs Ultron Prime
-    (#14, checkmate); R74 draw vs test_bot (#16, 3fold); R76 loss vs Danya's Discip (#15,
-    checkmate); R77 draw vs cory (#19, insuff); R80 draw vs Challenger (#20, fifty_moves); R83 win
-    vs o2-1 (#18, checkmate); R86 draw vs cory (#19, 3fold); R88 draw vs o2-1 (#18, insuff); R89 win
-    vs Challenger (#20, checkmate)
+    R72  white vs Loss Preventer     (#4 ) draw threefold_repetition  Sicilian Classical
+    R83  black vs o2-1               (#9 ) win  checkmate             Queen's Gambit Declined
+    R88  white vs o2-1               (#9 ) draw insufficient_material English Symmetrical
+    R90  black vs Patzer 2.4         (#7 ) draw insufficient_material Sicilian Closed
+  Games vs ranks 11-20: R61 draw vs Danya's Discip (#17, 3fold); R66 win vs test_bot (#16,
+    checkmate); R68 loss vs cory (#18, checkmate); R73 win vs Ultron Prime (#15, checkmate); R74
+    draw vs test_bot (#16, 3fold); R75 draw vs Mite (#12, insuff); R76 loss vs Danya's Discip (#17,
+    checkmate); R77 draw vs cory (#18, insuff); R80 draw vs Challenger (#20, fifty_moves); R86 draw
+    vs cory (#18, 3fold); R89 win vs Challenger (#20, checkmate)
 
 MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
   positions inside +-800 only)

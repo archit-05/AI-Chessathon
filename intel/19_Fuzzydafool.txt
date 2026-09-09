@@ -1,6 +1,6 @@
-Fuzzydafool  (team: FuzzyBot)  -  rank 17, rating 2527
+Fuzzydafool  (team: FuzzyBot)  -  rank 19, rating 2493
 ======================================================
-Generated 2026-09-09 22:57 from 59 rated games (rounds 1-90, 72 of 89 with evaluations so far) plus
+Generated 2026-09-09 23:58 from 59 rated games (rounds 1-90, 72 of 89 with evaluations so far) plus
   29 played to a result but voided by the site later (R8 3fold, R9 3fold, R15 3fold, R20 3fold, R22
   3fold, R24 3fold, R26 3fold, R29 50-move, R33 3fold, R54 insufficient_material, R55 checkmate, R56
   insufficient_material, R57 checkmate, R58 insufficient_material, R59 3fold, R60 checkmate, R61
@@ -11,8 +11,8 @@ Generated 2026-09-09 22:57 from 59 rated games (rounds 1-90, 72 of 89 with evalu
 
 IDENTITY
   Bot Fuzzydafool; team FuzzyBot; university Warwick; members not shown on the site.
-  Rank 17 of 433, rating 2527 (provisional: fewer than six games on the current build, i.e. a new
-    upload in the last five rounds), record 23-16-21 in 59 rated games.
+  Rank 19 of 435, rating 2493 (provisional: fewer than six games on the current build, i.e. a new
+    upload in the last five rounds), record 23-16-21 in 60 rated games.
   Rating trajectory: entered R1 at 1575, peak 2527 (R89), now 2493 (R90).
   Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
     upload): R11 +201 -> 1695 (win vs Loki 3.0); R12 +106 -> 1801 (win vs Mesh Potato); R21 +101 ->
@@ -20,26 +20,26 @@ IDENTITY
     ms); R36 +101 -> 2330 (win vs Danya's Disciple); R86 +100 -> 2480 (win vs lyra)
 
 RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
-  vs top 10 : 3-2-5 (40%) over 10 games
-  vs 11-20  : 2-3-6 (32%) over 11 games
-  vs 21-50  : 9-10-6 (56%) over 25 games
-  vs rest   : 9-1-3 (73%) over 13 games
+  vs top 10 : 3-1-6 (35%) over 10 games
+  vs 11-20  : 2-4-5 (36%) over 11 games
+  vs 21-50  : 9-11-6 (56%) over 26 games
+  vs rest   : 9-0-3 (75%) over 12 games
   Games vs top-10 teams:
-    R4   black vs SoberPaschoud      (#5 ) win  flag                  Four Knights Game
-    R14  black vs Patzer 2.4         (#6 ) loss checkmate             Reti Opening
-    R27  black vs Loss Preventer     (#8 ) loss checkmate             Pirc Defence
-    R34  white vs ms                 (#4 ) win  checkmate             Petroff Defence
+    R4   black vs SoberPaschoud      (#6 ) win  flag                  Four Knights Game
+    R14  black vs Patzer 2.4         (#7 ) loss checkmate             Reti Opening
+    R27  black vs Loss Preventer     (#4 ) loss checkmate             Pirc Defence
+    R34  white vs ms                 (#5 ) win  checkmate             Petroff Defence
     R37  black vs AlphaFish          (#1 ) loss checkmate             Queen's Indian Defence
-    R39  black vs SoberPaschoud      (#5 ) loss checkmate             French Tarrasch
-    R44  black vs Loss Preventer     (#8 ) win  checkmate             Caro-Kann Advance
-    R47  black vs Mite               (#3 ) draw threefold_repetition  Sicilian Sveshnikov
-    R50  black vs ms                 (#4 ) draw threefold_repetition  Ruy Lopez, Closed
+    R39  black vs SoberPaschoud      (#6 ) loss checkmate             French Tarrasch
+    R44  black vs Loss Preventer     (#4 ) win  checkmate             Caro-Kann Advance
+    R50  black vs ms                 (#5 ) draw threefold_repetition  Ruy Lopez, Closed
     R51  black vs Poincare conjecture (#10) loss checkmate             Nimzo-Indian Defence
-  Games vs ranks 11-20: R21 win vs AI Fellow (#12, checkmate); R23 loss vs Capablanca (#11,
-    checkmate); R25 loss vs Anchoa (#13, checkmate); R31 loss vs Danya's Discip (#15, checkmate);
-    R35 draw vs test_bot (#16, 3fold); R36 win vs Danya's Discip (#15, checkmate); R38 loss vs
-    Capablanca (#11, checkmate); R42 draw vs AI Fellow (#12, 3fold); R74 draw vs Challenger (#20,
-    insuff); R77 loss vs Ultron Prime (#14, checkmate); R90 loss vs o2-1 (#18, checkmate)
+    R90  black vs o2-1               (#9 ) loss checkmate             English Symmetrical
+  Games vs ranks 11-20: R21 win vs AI Fellow (#13, checkmate); R23 loss vs Capablanca (#11,
+    checkmate); R25 loss vs Anchoa (#14, checkmate); R31 loss vs Danya's Discip (#17, checkmate);
+    R35 draw vs test_bot (#16, 3fold); R36 win vs Danya's Discip (#17, checkmate); R38 loss vs
+    Capablanca (#11, checkmate); R42 draw vs AI Fellow (#13, 3fold); R47 draw vs Mite (#12, 3fold);
+    R74 draw vs Challenger (#20, insuff); R77 loss vs Ultron Prime (#15, checkmate)
 
 MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
   positions inside +-800 only)
@@ -72,7 +72,7 @@ TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
 
 DRAW BEHAVIOUR
   36 draws in 88 played games (41.0%): threefold_repetition 21, insufficient_material 10,
-    fifty_moves 4, stalemate 1; 5 of them vs top-10 teams; 20 of these were voided by the site
+    fifty_moves 4, stalemate 1; 3 of them vs top-10 teams; 20 of these were voided by the site
     afterwards and no longer count on the ladder
   Repetition while ahead (> +150 at the final position): 0
   Repetition while behind (< -150): 1 -> R8 at -285; level repetitions: 14
