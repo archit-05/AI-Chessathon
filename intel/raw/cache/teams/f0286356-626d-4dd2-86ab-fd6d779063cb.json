@@ -2,10 +2,10 @@
  "uuid": "f0286356-626d-4dd2-86ab-fd6d779063cb",
  "bot": "BINI Alpha",
  "team": "Opus Carlsen",
- "rating": 2396,
+ "rating": 2399,
  "rank": 19,
- "record": "25-15-12",
- "rated_rounds": 56,
+ "record": "25-16-12",
+ "rated_rounds": 57,
  "history": [
   [
    24,
@@ -226,9 +226,23 @@
   [
    79,
    2396
+  ],
+  [
+   80,
+   2399
   ]
  ],
  "games": [
+  {
+   "game": "afbd18e7-529b-4852-9f08-700cf042c601",
+   "kind": "Rated",
+   "round": 80,
+   "colour": "White",
+   "opponent": "Stonkfish",
+   "opponent_uuid": "385a6db2-1c05-46db-ae91-7218700f83b3",
+   "verdict": "draw",
+   "opening": "Reti Opening"
+  },
   {
    "game": "6d091fd3-94c6-4e60-b1f2-ad8e99e389ad",
    "kind": "Rated",
@@ -250,14 +264,14 @@
    "opening": "Pirc Defence"
   },
   {
-   "game": "335b9480-a59b-4627-879a-9f7e8a17457e",
+   "game": "3885603a-fb42-4573-aa93-563fac06858a",
    "kind": "Rated",
-   "round": 77,
+   "round": 76,
    "colour": "Black",
-   "opponent": "catfish",
-   "opponent_uuid": "4c4aa194-e507-4fb7-a863-46341205f08b",
-   "verdict": "draw",
-   "opening": "Sicilian Sveshnikov"
+   "opponent": "Danya's Disciple",
+   "opponent_uuid": "a4b26c08-0fa5-48ae-b15e-69a622ee81bb",
+   "verdict": "loss",
+   "opening": "Grunfeld Defence"
   },
   {
    "game": "7bde525a-f18a-4e3a-959d-3de29522c9e5",
@@ -780,5 +794,5 @@
    "opening": "Four Knights Game"
   }
  ],
- "fetched_at": "2026-09-09T10:44:31Z"
+ "fetched_at": "2026-09-09T11:45:51Z"
 }

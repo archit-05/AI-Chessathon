@@ -2,10 +2,10 @@
  "uuid": "0a121c61-60a7-4926-a0e7-024dffa6b185",
  "bot": "test_bot",
  "team": "pheanup",
- "rating": 2559,
- "rank": 10,
- "record": "28-22-15",
- "rated_rounds": 75,
+ "rating": 2537,
+ "rank": 12,
+ "record": "28-22-16",
+ "rated_rounds": 76,
  "history": [
   [
    5,
@@ -306,9 +306,23 @@
   [
    79,
    2559
+  ],
+  [
+   80,
+   2537
   ]
  ],
  "games": [
+  {
+   "game": "e201306d-c535-42e2-bd28-a62e3117aff8",
+   "kind": "Rated",
+   "round": 80,
+   "colour": "White",
+   "opponent": "Lightning Tree",
+   "opponent_uuid": "c90df064-e8e8-4144-b1fd-2dd6096dd21a",
+   "verdict": "loss",
+   "opening": "Sicilian Najdorf"
+  },
   {
    "game": "a160cc2a-729f-4ef4-9105-e2c6f6e32ee5",
    "kind": "Rated",
@@ -330,14 +344,14 @@
    "opening": "French Winawer"
   },
   {
-   "game": "f905dc33-1d8c-4fe5-9e1b-b89042b535ab",
+   "game": "5abf858d-d06e-464e-96ce-80a38632775c",
    "kind": "Rated",
-   "round": 77,
+   "round": 76,
    "colour": "White",
-   "opponent": "Abhi's chess demon",
-   "opponent_uuid": "7af404ee-389f-427c-9433-40ebe5902fc6",
-   "verdict": "win",
-   "opening": "Caro-Kann Advance"
+   "opponent": "catfish",
+   "opponent_uuid": "4c4aa194-e507-4fb7-a863-46341205f08b",
+   "verdict": "draw",
+   "opening": "Ruy Lopez, Closed"
   },
   {
    "game": "32bd56e4-5cc9-4f59-9d86-09d9bd5825a0",
@@ -1050,5 +1064,5 @@
    "opening": "London System"
   }
  ],
- "fetched_at": "2026-09-09T10:43:44Z"
+ "fetched_at": "2026-09-09T11:43:35Z"
 }
