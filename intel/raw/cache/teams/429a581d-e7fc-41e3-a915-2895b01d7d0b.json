@@ -1,11 +1,11 @@
 {
  "uuid": "429a581d-e7fc-41e3-a915-2895b01d7d0b",
- "bot": "Poincare",
+ "bot": "Poincare conjecture",
  "team": "Gladiator",
- "rating": 2701,
+ "rating": 2700,
  "rank": 1,
- "record": "21-24-8",
- "rated_rounds": 53,
+ "record": "21-25-8",
+ "rated_rounds": 54,
  "history": [
   [
    27,
@@ -218,9 +218,23 @@
   [
    79,
    2701
+  ],
+  [
+   80,
+   2700
   ]
  ],
  "games": [
+  {
+   "game": "d3d94ae6-1f42-4879-ac03-d8726f4170c2",
+   "kind": "Rated",
+   "round": 81,
+   "colour": "Black",
+   "opponent": "Lightning Tree",
+   "opponent_uuid": "c90df064-e8e8-4144-b1fd-2dd6096dd21a",
+   "verdict": "draw",
+   "opening": "Two Knights Defence"
+  },
   {
    "game": "1067fe17-08f7-46f8-bcbb-4fff50fa7f45",
    "kind": "Rated",
@@ -242,14 +256,14 @@
    "opening": "London System"
   },
   {
-   "game": "7eaff5a5-a86b-41ce-a185-764082aec5da",
+   "game": "e0f8f194-b4e6-4fb7-84a9-8e780e6a2db4",
    "kind": "Rated",
-   "round": 78,
-   "colour": "Black",
-   "opponent": "Ryan Vincent",
-   "opponent_uuid": "8c22f2a5-3bce-4b66-b93a-8f4ab4318b0f",
-   "verdict": "draw",
-   "opening": "Sicilian Taimanov"
+   "round": 77,
+   "colour": "White",
+   "opponent": "LehmanBro",
+   "opponent_uuid": "8d98448c-f28c-4552-b82d-cb657b33175d",
+   "verdict": "win",
+   "opening": "Semi-Slav Defence"
   },
   {
    "game": "1672cca7-8139-4145-91fb-eff7193c686f",
@@ -752,5 +766,5 @@
    "opening": "Caro-Kann Exchange"
   }
  ],
- "fetched_at": "2026-09-09T11:41:37Z"
+ "fetched_at": "2026-09-09T12:41:59Z"
 }

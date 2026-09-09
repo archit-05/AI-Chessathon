@@ -2,14 +2,18 @@
  "uuid": "f0286356-626d-4dd2-86ab-fd6d779063cb",
  "bot": "BINI Alpha",
  "team": "Opus Carlsen",
- "rating": 2399,
- "rank": 19,
- "record": "25-16-12",
- "rated_rounds": 57,
+ "rating": 2396,
+ "rank": 21,
+ "record": "25-17-12",
+ "rated_rounds": 58,
  "history": [
   [
    24,
    1440
+  ],
+  [
+   25,
+   1445
   ],
   [
    26,
@@ -230,9 +234,23 @@
   [
    80,
    2399
+  ],
+  [
+   81,
+   2396
   ]
  ],
  "games": [
+  {
+   "game": "04a6e474-6e21-4788-8f77-457f827936a4",
+   "kind": "Rated",
+   "round": 81,
+   "colour": "Black",
+   "opponent": "slopfish",
+   "opponent_uuid": "1d137be0-3a3e-4cda-a7ba-b22d8d178e66",
+   "verdict": "draw",
+   "opening": "French Classical"
+  },
   {
    "game": "afbd18e7-529b-4852-9f08-700cf042c601",
    "kind": "Rated",
@@ -254,14 +272,14 @@
    "opening": "Pirc Defence"
   },
   {
-   "game": "ff3c004a-296c-4479-a182-167815fce91a",
+   "game": "335b9480-a59b-4627-879a-9f7e8a17457e",
    "kind": "Rated",
-   "round": 78,
-   "colour": "White",
-   "opponent": "Mate in One",
-   "opponent_uuid": "3be637a8-e78d-4da4-8016-d13e00170433",
+   "round": 77,
+   "colour": "Black",
+   "opponent": "catfish",
+   "opponent_uuid": "4c4aa194-e507-4fb7-a863-46341205f08b",
    "verdict": "draw",
-   "opening": "Pirc Defence"
+   "opening": "Sicilian Sveshnikov"
   },
   {
    "game": "3885603a-fb42-4573-aa93-563fac06858a",
@@ -794,5 +812,5 @@
    "opening": "Four Knights Game"
   }
  ],
- "fetched_at": "2026-09-09T11:45:51Z"
+ "fetched_at": "2026-09-09T12:47:08Z"
 }
