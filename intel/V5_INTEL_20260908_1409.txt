@@ -1,4 +1,4 @@
-V5 INTEL BRIEF  2026-09-09 19:55   (leaderboard fetched 2026-09-09T18:41:01Z)
+V5 INTEL BRIEF  2026-09-09 20:59   (leaderboard fetched 2026-09-09T19:41:02Z)
 ====================================================================================================
 Site evaluations throughout (Stockfish 16 depth 16, identical for every team). CPL = mean cp lost
 per own move (|eval| <= 800); Bl% = own moves losing >= 200 cp; sACPL = site review ACPL (all
@@ -9,119 +9,117 @@ slide, CLK flag, INIT/CRSH/ILL no legal move; +clk = decisive move under 10 s or
 A. TOP 15
   #  Bot                 Rating  W- D- L   CPL sACPL  Bl%  s/mv Draw%  New
   --------------------------------------------------------------------------
-  1  stockfih             2821  30-23-20  15.7    22  0.4  2.01    32  NEW
-  2  Mite                 2771  20-27-10  10.2    20  0.2  1.77    47  NEW
-  3  AlphaFish            2741  38-28- 7   7.5    15  0.1  1.56    37  
-  4  Patzer 2.4           2700  31-34-12  11.2    18  0.5  1.56    43  NEW
-  5  Poincare conjecture  2669  22-28- 9  11.7    17  0.2  1.63    46  
-  6  Loss Preventer       2660  33-27-22  13.1    22  0.4  1.67    32  
-  7  ms                   2640  36-26-17  11.1    20  0.3  1.82    32  NEW
-  8  SoberPaschoud        2617  32-30-15  10.5    17  0.3  1.65    38  
-  9  PSL God Matt Bomer   2615  27-23-13  10.6    17  0.5  1.67    37  NEW
-  10 Capablanca           2572  34-27-17  10.5    18  0.3  1.66    33  
-  11 AI Fellow            2556  31-34-11   8.7    19  0.2   1.9    46  
-  12 Anchoa               2555  29-32-14   9.4    16  0.3  1.63    44  
-  13 test_bot             2546  29-26-17  12.5    20  0.5  1.91    36  
-  14 Ultron Prime         2527  34-24-21  18.0    30  1.0  2.01    30  NEW
-  15 Danya's Disciple     2523  32-22-21  13.2    21  0.6  1.82    31  
+  1  stockfih             2817  30-24-20  15.7    22  0.4  2.01    32  
+  2  Mite                 2793  20-28-10  10.2    20  0.2  1.77    48  NEW
+  3  AlphaFish            2774  39-28- 7   7.5    15  0.1  1.53    38  
+  4  ms                   2676  37-26-17  11.1    20  0.3  1.81    32  
+  5  SoberPaschoud        2656  33-30-15  10.5    17  0.3  1.66    40  
+  6  Patzer 2.4           2625  31-34-13  11.2    17  0.5  1.53    45  NEW
+  7  Loss Preventer       2613  33-27-23  13.1    21  0.4  1.66    34  
+  8  PSL God Matt Bomer   2603  27-24-13  10.6    16  0.5  1.67    38  NEW
+  9  Poincare conjecture  2601  22-28-10  11.7    17  0.2  1.63    47  NEW
+  10 Capablanca           2590  35-27-17  10.5    18  0.3  1.65    35  
+  11 AI Fellow            2562  31-35-11   8.7    19  0.2  1.91    45  
+  12 Anchoa               2559  29-33-14   9.4    15  0.3  1.63    43  
+  13 Ultron Prime         2531  34-25-21  18.0    30  1.0  1.98    32  NEW
+  14 test_bot             2528  29-26-18  12.5    20  0.5  1.91    37  
+  15 Danya's Disciple     2526  32-23-21  13.2    21  0.6  1.81    30  NEW
 
 B. TOP 10 IN DETAIL  (bands by the opponent's rating at the time)
-  #1 stockfih (what even is en passant) 2821 [new build]
-     band  2500+ 9/14 64% | 2300-2499 10.5/20 52% | 2100-2299 6/11 55% | <2100 16/28 57%
+  #1 stockfih (what even is en passant) 2817
+     band  2500+ 8.5/15 57% | 2300-2499 10.5/20 52% | 2100-2299 6/11 55% | <2100 16/28 57%
      open  Sicilian 9/16 56% | Caro-Kann 4.5/10 45% | French 5/9 56% | English 3.5/6 58%
-     game  129 ply, CPL 15.7, Bl 0.4%, 2.01 s/mv, 23 s left; lost 20 = SLD 18, BLU 2
+     game  129 ply, CPL 15.7, Bl 0.4%, 2.01 s/mv, 23 s left; lost 21 = SLD 19, BLU 2
      lost  R16b AI Fellow/1851 SLD+clk | R18w checkers/1865 SLD | R19b Blank Shoot/1811 SLD
            R21w dog/1914 SLD | R27w Capablanca/2274 SLD | R28b Patzer 2.4/2084 SLD
            R29b Anchoa/2250 SLD | R30b test_bot/2060 SLD | R32w RMFE/1893 SLD
            R34b Cornelius/1934 BLU12/388 | R35w xx/1873 SLD | R37w apt install/1901 SLD
            R39w SirBlunderi/1886 SLD | R50w AI Fellow/2339 SLD | R57w crash/2410 SLD
            R60b Capablanca/2454 SLD | R63b cory/2388 SLD | R65b ms/2493 SLD
-           R69w cory/2434 BLU97/265+clk | R77w AlphaFish/2664 SLD
-  #2 Mite (Ryan Vincent) 2771 [new build]
-     band  2500+ 7.5/14 54% | 2300-2499 6.5/15 43% | 2100-2299 7/12 58% | <2100 12.5/16 78%
-     open  Sicilian 7.5/11 68% | Nimzo-Indian 1.5/5 30% | Reti 3/5 60% | French 1.5/4 38%
-     game  153 ply, CPL 10.2, Bl 0.2%, 1.77 s/mv, 24 s left; lost 10 = SLD 10
-     lost  R29w dattebayo/2217 SLD | R35b R8int8v9/1894 SLD | R38w PSL God Mat/1845 SLD
+           R69w cory/2434 BLU97/265+clk | R77w AlphaFish/2664 SLD | R88w AlphaFish/2774 SLD
+  #2 Mite (Ryan Vincent) 2793 [new build]
+     band  2500+ 8/15 53% | 2300-2499 6.5/15 43% | 2100-2299 7/12 58% | <2100 12.5/16 78%
+     open  Sicilian 7.5/11 68% | Reti 3.5/6 58% | Nimzo-Indian 1.5/5 30% | French 1.5/4 38%
+     game  155 ply, CPL 10.2, Bl 0.2%, 1.77 s/mv, 23 s left; lost 10 = SLD 10
+     lost  R29w dattebayo/2242 SLD | R35b R8int8v9/1894 SLD | R38w PSL God Mat/1845 SLD
            R41w apt install/1926 SLD | R45b Astral/2156 SLD | R54b AI Fellow/2385 SLD
            R56w stockfih/2344 SLD | R57b PSL God Mat/2351 SLD | R72b SoberPascho/2522 SLD
            R81w SoberPascho/2565 SLD
-  #3 AlphaFish (Emile Andrieu) 2741
-     band  2500+ 19.5/31 63% | 2300-2499 13.5/21 64% | 2100-2299 3/3 100% | <2100 16.5/18 92%
+  #3 AlphaFish (Emile Andrieu) 2774
+     band  2500+ 20/32 62% | 2300-2499 13.5/21 64% | 2100-2299 3/3 100% | <2100 16.5/18 92%
      open  Sicilian 13.5/21 64% | Reti 4/5 80% | London 3.5/5 70% | Ruy Lopez 4/5 80%
-     game  178 ply, CPL 7.5, Bl 0.1%, 1.56 s/mv, 27 s left; lost 7 = SLD 4, BLU 2, INIT 1
+     game  184 ply, CPL 7.5, Bl 0.1%, 1.53 s/mv, 27 s left; lost 7 = SLD 4, BLU 2, INIT 1
      lost  R10b Oyinda/1571 BLU44/1000 | R48w test_bot/2464 SLD | R49b Capablanca/2420 SLD
            R50b checkers/2353 INIT | R67w SoberPascho/2505 SLD | R72w Patzer 2.4/2543 BLU52/315
            R86w Mite/2637 SLD
-  #4 Patzer 2.4 (Gijs Smit) 2700 [new build]
-     band  2500+ 9.5/19 50% | 2300-2499 7.5/14 54% | 2100-2299 10.5/20 52% | <2100 20/24 83%
-     open  Sicilian 16/27 59% | Caro-Kann 5.5/8 69% | Reti 4/8 50% | French 3.5/7 50%
-     game  162 ply, CPL 11.2, Bl 0.5%, 1.56 s/mv, 36 s left; lost 13 = SLD 9, BLU 4
-     lost  R8w Mate in One/1817 SLD | R10b SoberPascho/1800 SLD | R11w Anchoa/1841 BLU31/383
-           R21b AlphaFish/2256 BLU73/793 | R40w AlphaFish/2697 SLD | R47w Capablanca/2339 SLD
-           R50w test_bot/2495 BLU72/389 | R52w Poincare co/2288 SLD | R55b crash/2313 SLD
-           R56w Astral/2257 BLU102/363 | R60b BINI Alpha/2246 SLD | R85w stockfih/2753 SLD
-           R87w SoberPascho/2617 SLD
-  #5 Poincare conjecture (Gladiator) 2669
-     band  2500+ 7/13 54% | 2300-2499 11/20 55% | 2100-2299 6/9 67% | <2100 11.5/17 68%
-     open  Sicilian 5/11 45% | Caro-Kann 2.5/5 50% | Nimzo-Indian 3/5 60% | Ruy Lopez 3/4 75%
-     game  145 ply, CPL 11.7, Bl 0.2%, 1.63 s/mv, 38 s left; lost 10 = SLD 8, BLU 2
-     lost  R27b Latimer/1842 BLU70/267+clk | R34w SirBlunderi/1876 SLD
-           R36b ChittyChitt/1912 BLU20/348 | R47w stockfih/2226 SLD | R53w AI Fellow/2341 SLD
-           R56w crash/2370 SLD | R61b stockfih/2352 SLD | R69w Mite/2417 SLD
-           R82w Patzer 2.4/2789 SLD | R87b AlphaFish/2741 SLD
-  #6 Loss Preventer (Lightning Tree) 2660
-     band  2500+ 6/15 40% | 2300-2499 13/23 57% | 2100-2299 6/11 55% | <2100 21/33 64%
-     open  Sicilian 11.5/24 48% | Reti 7.5/9 83% | Nimzo-Indian 4.5/8 56% | English 4/7 57%
-     game  136 ply, CPL 13.1, Bl 0.4%, 1.67 s/mv, 41 s left; lost 23 = SLD 20, BLU 3
-     lost  R1b Capablanca/2572 BLU35/277 | R5b SirBlunderi/1596 SLD
-           R6b Bartholomew/1551 BLU12/255 | R17b ms/1859 SLD | R19b AI Fellow/1913 SLD
-           R20w make_no_mis/1927 SLD | R21w Danya's Dis/1855 SLD | R25b Mate in One/2065 SLD
-           R26b Patzer 2.4/2053 SLD | R28w test_bot/2004 SLD | R30b AlphaFish/2387 SLD
-           R35w Patzer 2.4/2170 SLD | R36b AI Fellow/2155 SLD | R37b Blank Shoot/2079 SLD
-           R44w Fuzzydafool/2161 BLU48/316 | R45b Poincare co/2144 SLD
-           R62w PSL God Mat/2602 SLD | R63b crash/2492 SLD | R69w ms/2528 SLD
-           R70b Patzer 2.4/2455 SLD | R85b AlphaFish/2748 SLD | R86b Poincare co/2635 SLD
-           R87w ms/2640 SLD
-  #7 ms (ms) 2640 [new build]
-     band  2500+ 10/19 53% | 2300-2499 5/5 100% | 2100-2299 11.5/23 50% | <2100 23/32 72%
-     open  Sicilian 14/24 58% | English 5.5/7 79% | Petroff 4.5/7 64% | French 2/6 33%
-     game  160 ply, CPL 11.1, Bl 0.3%, 1.82 s/mv, 14 s left; lost 17 = SLD 17
+  #4 ms (ms) 2676
+     band  2500+ 10.5/20 52% | 2300-2499 5/5 100% | 2100-2299 11.5/23 50% | <2100 23/32 72%
+     open  Sicilian 13.5/23 59% | English 5.5/7 79% | French 2.5/7 36% | Petroff 4.5/7 64%
+     game  162 ply, CPL 11.1, Bl 0.3%, 1.81 s/mv, 14 s left; lost 17 = SLD 17
      lost  R7b Patzer 2.4/1831 SLD | R12b SoberPascho/1967 SLD | R16b R8int8v9/1849 SLD
            R20b AlphaFish/2221 SLD | R26w meowfish/1841 SLD | R34b Fuzzydafool/2084 SLD
            R36w make_no_mis/2077 SLD | R42w Loss Preven/2102 SLD | R43w Magnus Clau/2105 SLD
            R44b stockfih/2122 SLD | R45b PSL God Mat/2096 SLD | R49b Astral/2275 SLD
            R56b PSL God Mat/2259 SLD | R66w AlphaFish/2659 SLD | R75w stockfih/2574 SLD
            R81b Patzer 2.4/2672 SLD | R82b stockfih/2681 SLD
-  #8 SoberPaschoud (Sobriety) 2617
-     band  2500+ 15.5/32 48% | 2300-2499 10/17 59% | 2100-2299 2/5 40% | <2100 20/23 87%
-     open  Sicilian 12.5/18 69% | French 9/11 82% | Petroff 4.5/6 75% | English 2.5/6 42%
-     game  156 ply, CPL 10.5, Bl 0.3%, 1.65 s/mv, 27 s left; lost 15 = SLD 13, CLK 1, BLU 1
+  #5 SoberPaschoud (Sobriety) 2656
+     band  2500+ 15.5/33 47% | 2300-2499 10/17 59% | 2100-2299 2/5 40% | <2100 20/23 87%
+     open  Sicilian 11.5/17 68% | French 9.5/12 79% | Reti 2.5/7 36% | Petroff 4.5/6 75%
+     game  156 ply, CPL 10.5, Bl 0.3%, 1.66 s/mv, 27 s left; lost 15 = SLD 13, CLK 1, BLU 1
      lost  R4w Fuzzydafool/1671 CLK | R5w keep_kann_a/1688 BLU17/295 | R19w AlphaFish/2114 SLD
            R24w Loss Preven/1887 SLD | R37w test_bot/2272 SLD | R42w test_bot/2409 SLD
            R46w AlphaFish/2644 SLD | R51w AlphaFish/2517 SLD | R58b Anchoa/2474 SLD
            R59w PSL God Mat/2475 SLD | R61b AlphaFish/2641 SLD | R64b PSL God Mat/2603 SLD
            R69w PSL God Mat/2590 SLD | R77b ms/2606 SLD | R82b AlphaFish/2653 SLD
-  #9 PSL God Matt Bomer (JBG fam) 2615 [new build]
-     band  2500+ 15/28 54% | 2300-2499 1/2 50% | 2100-2299 7.5/12 62% | <2100 15/21 71%
-     open  Sicilian 6.5/11 59% | Caro-Kann 7/10 70% | Ruy Lopez 4/7 57% | London 2.5/6 42%
-     game  162 ply, CPL 10.6, Bl 0.5%, 1.67 s/mv, 27 s left; lost 13 = SLD 11, BLU 2
+  #6 Patzer 2.4 (Gijs Smit) 2625 [new build]
+     band  2500+ 10.5/20 52% | 2300-2499 7.5/14 54% | 2100-2299 10.5/20 52% | <2100 20/24 83%
+     open  Sicilian 16/27 59% | Caro-Kann 5.5/8 69% | Reti 4/8 50% | French 3.5/7 50%
+     game  167 ply, CPL 11.2, Bl 0.5%, 1.53 s/mv, 35 s left; lost 12 = SLD 8, BLU 4
+     lost  R8w Mate in One/1817 SLD | R10b SoberPascho/1800 SLD | R11w Anchoa/1841 BLU31/383
+           R21b AlphaFish/2256 BLU73/793 | R40w AlphaFish/2697 SLD | R47w Capablanca/2339 SLD
+           R50w test_bot/2495 BLU72/389 | R52w Poincare co/2288 SLD | R55b crash/2313 SLD
+           R56w Astral/2257 BLU102/363 | R60b BINI Alpha/2246 SLD | R87w SoberPascho/2617 SLD
+  #7 Loss Preventer (Lightning Tree) 2613
+     band  2500+ 7/16 44% | 2300-2499 13/23 57% | 2100-2299 6/11 55% | <2100 21/33 64%
+     open  Sicilian 11.5/24 48% | Reti 7.5/9 83% | Nimzo-Indian 5/8 62% | English 4/7 57%
+     game  137 ply, CPL 13.1, Bl 0.4%, 1.66 s/mv, 41 s left; lost 22 = SLD 19, BLU 3
+     lost  R1b Capablanca/2590 BLU35/277 | R5b SirBlunderi/1596 SLD
+           R6b Bartholomew/1551 BLU12/255 | R17b ms/1859 SLD | R19b AI Fellow/1913 SLD
+           R20w make_no_mis/1927 SLD | R21w Danya's Dis/1855 SLD | R25b Mate in One/2065 SLD
+           R26b Patzer 2.4/2053 SLD | R28w test_bot/2004 SLD | R30b AlphaFish/2387 SLD
+           R35w Patzer 2.4/2170 SLD | R36b AI Fellow/2155 SLD | R37b Blank Shoot/2079 SLD
+           R44w Fuzzydafool/2161 BLU48/316 | R45b Poincare co/2144 SLD
+           R62w PSL God Mat/2602 SLD | R63b crash/2492 SLD | R69w ms/2528 SLD
+           R70b Patzer 2.4/2455 SLD | R86b Poincare co/2635 SLD | R87w ms/2640 SLD
+  #8 PSL God Matt Bomer (JBG fam) 2603 [new build]
+     band  2500+ 15.5/29 53% | 2300-2499 1/2 50% | 2100-2299 7.5/12 62% | <2100 15/21 71%
+     open  Sicilian 7/12 58% | Caro-Kann 7/10 70% | Ruy Lopez 4/7 57% | London 2.5/6 42%
+     game  164 ply, CPL 10.6, Bl 0.5%, 1.67 s/mv, 25 s left; lost 13 = SLD 11, BLU 2
      lost  R25b spring_week/1599 BLU50/315 | R29w The Castle /1676 BLU33/294 | R35b dog/1930 SLD
-           R36w SirBlunderi/1887 SLD | R37w o2/1863 SLD | R49w Loss Preven/2234 SLD
+           R36w SirBlunderi/1887 SLD | R37w o2-1/1863 SLD | R49w Loss Preven/2234 SLD
            R54b Poincare co/2304 SLD | R65b AlphaFish/2618 SLD | R67w Capablanca/2525 SLD
            R76b stockfih/2649 SLD | R79b ms/2636 SLD | R82w Loss Preven/2693 SLD
            R86b stockfih/2802 SLD
-  #10 Capablanca (THE ROOOOOKKK!!!!) 2572
-     band  2500+ 16/32 50% | 2300-2499 7.5/18 42% | 2100-2299 2.5/3 83% | <2100 22/25 88%
-     open  Sicilian 11.5/19 61% | Caro-Kann 6/10 60% | Reti 4/7 57% | Petroff 4/7 57%
-     game  162 ply, CPL 10.5, Bl 0.3%, 1.66 s/mv, 26 s left; lost 17 = SLD 16, BLU 1
+  #9 Poincare conjecture (Gladiator) 2601 [new build]
+     band  2500+ 7.5/14 54% | 2300-2499 11/20 55% | 2100-2299 6/9 67% | <2100 11.5/17 68%
+     open  Sicilian 5/11 45% | Caro-Kann 2.5/5 50% | Reti 2.5/5 50% | Nimzo-Indian 3/5 60%
+     game  147 ply, CPL 11.7, Bl 0.2%, 1.63 s/mv, 37 s left; lost 10 = SLD 8, BLU 2
+     lost  R27b Latimer/1828 BLU70/267+clk | R34w SirBlunderi/1876 SLD
+           R36b ChittyChitt/1912 BLU20/348 | R47w stockfih/2226 SLD | R53w AI Fellow/2341 SLD
+           R56w crash/2370 SLD | R61b stockfih/2352 SLD | R69w Mite/2417 SLD
+           R82w Patzer 2.4/2789 SLD | R87b AlphaFish/2741 SLD
+  #10 Capablanca (THE ROOOOOKKK!!!!) 2590
+     band  2500+ 17/33 52% | 2300-2499 7.5/18 42% | 2100-2299 2.5/3 83% | <2100 22/25 88%
+     open  Sicilian 11.5/18 64% | Caro-Kann 6/10 60% | Reti 4.5/8 56% | Petroff 4/7 57%
+     game  163 ply, CPL 10.5, Bl 0.3%, 1.65 s/mv, 26 s left; lost 16 = SLD 15, BLU 1
      lost  R2b ms/1571 SLD | R7b Dark Sister/1622 BLU77/344 | R14b Mate in One/1885 SLD
            R34b AlphaFish/2478 SLD | R39b AlphaFish/2648 SLD | R41w test_bot/2350 SLD
            R45w Anchoa/2472 SLD | R46b test_bot/2430 SLD | R55w SoberPascho/2542 SLD
            R57b AI Fellow/2432 SLD | R58w PSL God Mat/2405 SLD | R72b PSL God Mat/2761 SLD
            R73w ms/2576 SLD | R77b PSL God Mat/2709 SLD | R79b Poincare co/2606 SLD
-           R80b ms/2661 SLD | R85w SoberPascho/2581 SLD
+           R80b ms/2661 SLD
 
-C. OUR GAMES SINCE ROUND 50  (BINI Alpha, rank 16, 2493, 27-20-13)
+C. OUR GAMES SINCE ROUND 50  (BINI Alpha, rank 17, 2511, 27-21-13)
   Rd  col  opponent            rat  res  sACPL us/opp  inacc/mist/blun  first < -100  term
   --------------------------------------------------------------------------------------------
   50  b    zak                2020  win     7/21       0/0/0      never        checkmate
@@ -131,7 +129,7 @@ C. OUR GAMES SINCE ROUND 50  (BINI Alpha, rank 16, 2493, 27-20-13)
   54  w    Dark Sister        2179  win    10/44       1/0/0      never        checkmate
   55  b    ms                 2208  LOSS   86/44       6/0/0      ply 47       checkmate
   56  w    Edward             2127  LOSS   62/30       4/0/0      ply 81       checkmate
-  57  b    o2                 2074  win     7/51       1/0/0      never        checkmate
+  57  b    o2-1               2074  win     7/51       1/0/0      never        checkmate
   58  b    Asmit Agrawal      2149  win     6/17       0/0/0      never        checkmate
   59  b    make_no_mistakes   2183  win    12/42       2/0/0      never        checkmate
   60  w    Patzer 2.4         2243  win     7/50       0/1/0      never        checkmate
@@ -157,11 +155,12 @@ C. OUR GAMES SINCE ROUND 50  (BINI Alpha, rank 16, 2493, 27-20-13)
   80  w    Challenger         2394  draw    2/2        1/0/0      never        fifty_moves
   81  b    lyra               2391  draw    7/8        1/0/0      never        insufficient_m
   82  w    Cornelius          2428  LOSS   58/23       2/1/0      never        checkmate
-  83  b    o2                 2385  win    17/37       1/0/0      never        checkmate
-  85  b    Astral             2501  draw    3/4        0/0/0      never        threefold_repe
+  83  b    o2-1               2385  win    17/37       1/0/0      never        checkmate
+  84  w    zak                2443  win    14/43       1/1/1      never        checkmate
   86  w    cory               2486  draw    7/7        1/0/0      never        threefold_repe
   87  b    Danya's Disciple   2523  draw    8/9        2/0/0      never        insufficient_m
-  Since R50: 20/36, mean sACPL 20 vs 21, CPL 11.8, Bl% 0.3, s/mv 1.80, clock left 21 s
+  88  w    o2-1               2505  draw    3/4        3/1/0      never        insufficient_m
+  Since R50: 21/37, mean sACPL 20 vs 22, CPL 11.8, Bl% 0.3, s/mv 1.71, clock left 20 s
   Losses: R55 ms/2208 SLD, worst 35.Rea6 -91 (-166->-257, 1.1s)
           R56 Edward/2127 SLD, worst 47.Nh2 -85 (-228->-313, 1.8s)
           R64 stockfih/2361 SLD, worst 21.f3 -134 (-15->-149, 5.0s)
@@ -173,10 +172,10 @@ D. NEW SINCE THE LAST BRIEF
   Bot failures in the whole cache (30 games): Flag 12, Illegal 10, Init 4, Crash 3, Ply cap 1
     who: Init The Good Team, fuzz, Emile Andrieu, f1shstock; Crash NajeebA x2, Vanish Onigiri;
     Illegal 0x88 x10; Flag Team7347 x4, rogo x2, Dominated Horses, Buddy's Grill Gambit, Sobriety +1
-  New in top 20 since 20260908_2345: Patzer 2.4, Poincare conjecture, Ultron Prime, Fuzzydafool,
-    Cornelius, Astral
-  Biggest climbs inside the top 20: Mite 13->2, Ultron Prime 26->14, Fuzzydafool 30->18
-  Bar now: top 3 2742, top 5 2670, top 10 2573; leader stockfih 2821; us 2493 (#16).
+  New in top 20 since 20260908_2345: Patzer 2.4, Poincare conjecture, Ultron Prime, o2-1, Astral,
+    Challenger
+  Biggest climbs inside the top 20: Mite 13->2, Ultron Prime 26->13, Challenger 28->20
+  Bar now: top 3 2775, top 5 2657, top 10 2591; leader stockfih 2817; us 2511 (#17).
   Site rules: 96 top-15 games were played out and then voided (threefold_repe 60, unterminated 21,
     fifty_moves 11, checkmate 2, insufficient_m 2); unrated, one-off on 6 Sept.
   Site layout (8 Sept): ranks 1-3 are now podium rows (medal SVG, some cells streamed in late by

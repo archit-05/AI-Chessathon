@@ -2,10 +2,10 @@
  "uuid": "0a121c61-60a7-4926-a0e7-024dffa6b185",
  "bot": "test_bot",
  "team": "pheanup",
- "rating": 2528,
+ "rating": 2526,
  "rank": 14,
- "record": "29-26-18",
- "rated_rounds": 83,
+ "record": "29-27-18",
+ "rated_rounds": 84,
  "history": [
   [
    5,
@@ -338,9 +338,23 @@
   [
    87,
    2528
+  ],
+  [
+   88,
+   2526
   ]
  ],
  "games": [
+  {
+   "game": "ea6c2096-316f-411e-ac6b-e9ca1e9b0b1a",
+   "kind": "Rated",
+   "round": 88,
+   "colour": "Black",
+   "opponent": "Lubina",
+   "opponent_uuid": "34fd9228-11bf-4e7a-ba8f-b452d96ad8c9",
+   "verdict": "draw",
+   "opening": "Sicilian Classical"
+  },
   {
    "game": "9f6c0066-81db-4444-be81-62c8678884c2",
    "kind": "Rated",
@@ -362,14 +376,14 @@
    "opening": "Sicilian Classical"
   },
   {
-   "game": "a8f6b1d1-2b0d-4446-bb7e-34feb5e28c76",
+   "game": "4d3b331d-9bd2-40b3-8f7f-15bac5b509f8",
    "kind": "Rated",
-   "round": 85,
-   "colour": "Black",
-   "opponent": "catfish",
-   "opponent_uuid": "4c4aa194-e507-4fb7-a863-46341205f08b",
-   "verdict": "win",
-   "opening": "Nimzo-Indian Defence"
+   "round": 84,
+   "colour": "White",
+   "opponent": "AI Fellows",
+   "opponent_uuid": "b574c0ea-e994-4a16-9918-7fbc989c4234",
+   "verdict": "loss",
+   "opening": "Sicilian Closed"
   },
   {
    "game": "2d31a940-1a03-42de-badb-433645f88156",
@@ -1162,5 +1176,5 @@
    "opening": "London System"
   }
  ],
- "fetched_at": "2026-09-09T18:47:39Z"
+ "fetched_at": "2026-09-09T19:50:01Z"
 }

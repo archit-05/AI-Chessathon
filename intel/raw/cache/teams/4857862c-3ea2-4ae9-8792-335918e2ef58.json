@@ -2,10 +2,10 @@
  "uuid": "4857862c-3ea2-4ae9-8792-335918e2ef58",
  "bot": "50CentRaise",
  "team": "50CentRaise",
- "rating": 2460,
- "rank": 21,
- "record": "29-18-27",
- "rated_rounds": 79,
+ "rating": 2434,
+ "rank": 22,
+ "record": "30-18-28",
+ "rated_rounds": 81,
  "history": [
   [
    8,
@@ -322,9 +322,37 @@
   [
    86,
    2460
+  ],
+  [
+   87,
+   2388
+  ],
+  [
+   88,
+   2434
   ]
  ],
  "games": [
+  {
+   "game": "9a4f8767-8fd1-48f2-90d7-ca71d0fe2270",
+   "kind": "Rated",
+   "round": 88,
+   "colour": "White",
+   "opponent": "Zugzwin",
+   "opponent_uuid": "2463d1f5-3e78-4dce-a254-be5983079ccc",
+   "verdict": "win",
+   "opening": "London System"
+  },
+  {
+   "game": "46699c99-c7b9-4a27-a57d-662165414699",
+   "kind": "Rated",
+   "round": 87,
+   "colour": "Black",
+   "opponent": "Stonkfish",
+   "opponent_uuid": "385a6db2-1c05-46db-ae91-7218700f83b3",
+   "verdict": "loss",
+   "opening": "London System"
+  },
   {
    "game": "7fab6cd7-cfd7-4022-865b-f7757bd0ca79",
    "kind": "Rated",
@@ -336,16 +364,6 @@
    "opening": "London System"
   },
   {
-   "game": "38283e84-02d7-496c-a292-5b06065fcdd3",
-   "kind": "Rated",
-   "round": 85,
-   "colour": "White",
-   "opponent": "checkers",
-   "opponent_uuid": "9e5e613a-ca80-4fd9-aa68-76f184ef7bac",
-   "verdict": "win",
-   "opening": "Catalan Opening"
-  },
-  {
    "game": "6f77b8da-21f1-46ce-8ff5-44d12d2b47c9",
    "kind": "Rated",
    "round": 84,
@@ -354,6 +372,16 @@
    "opponent_uuid": "9efa4b9d-296d-4ee0-b2e4-319dace8d318",
    "verdict": "win",
    "opening": "Petroff Defence"
+  },
+  {
+   "game": "f7b13f06-ebd9-43fc-bb78-3a6f138a00d1",
+   "kind": "Rated",
+   "round": 83,
+   "colour": "White",
+   "opponent": "JSP",
+   "opponent_uuid": "dab1e77e-ebb1-49f5-92d4-2a013e3288c4",
+   "verdict": "draw",
+   "opening": "Semi-Slav Defence"
   },
   {
    "game": "bf37167a-6288-432e-9bcc-a747b8a08723",
@@ -1106,5 +1134,5 @@
    "opening": "Caro-Kann Advance"
   }
  ],
- "fetched_at": "2026-09-09T17:55:17Z"
+ "fetched_at": "2026-09-09T19:56:34Z"
 }
