@@ -2,10 +2,10 @@
  "uuid": "0a121c61-60a7-4926-a0e7-024dffa6b185",
  "bot": "test_bot",
  "team": "pheanup",
- "rating": 2498,
- "rank": 13,
- "record": "27-22-15",
- "rated_rounds": 74,
+ "rating": 2559,
+ "rank": 10,
+ "record": "28-22-15",
+ "rated_rounds": 75,
  "history": [
   [
    5,
@@ -302,9 +302,23 @@
   [
    78,
    2498
+  ],
+  [
+   79,
+   2559
   ]
  ],
  "games": [
+  {
+   "game": "a160cc2a-729f-4ef4-9105-e2c6f6e32ee5",
+   "kind": "Rated",
+   "round": 79,
+   "colour": "Black",
+   "opponent": "AI Fellows",
+   "opponent_uuid": "b574c0ea-e994-4a16-9918-7fbc989c4234",
+   "verdict": "win",
+   "opening": "Petroff Defence"
+  },
   {
    "game": "af9cdfb1-e9d3-4f3b-bac9-0ee6e22243f3",
    "kind": "Rated",
@@ -326,14 +340,14 @@
    "opening": "Caro-Kann Advance"
   },
   {
-   "game": "5abf858d-d06e-464e-96ce-80a38632775c",
+   "game": "32bd56e4-5cc9-4f59-9d86-09d9bd5825a0",
    "kind": "Rated",
-   "round": 76,
-   "colour": "White",
-   "opponent": "catfish",
-   "opponent_uuid": "4c4aa194-e507-4fb7-a863-46341205f08b",
+   "round": 75,
+   "colour": "Black",
+   "opponent": "Lightning Tree",
+   "opponent_uuid": "c90df064-e8e8-4144-b1fd-2dd6096dd21a",
    "verdict": "draw",
-   "opening": "Ruy Lopez, Closed"
+   "opening": "Sicilian Closed"
   },
   {
    "game": "099df359-d6c8-4a33-8126-bc2271d95cf1",
@@ -1036,5 +1050,5 @@
    "opening": "London System"
   }
  ],
- "fetched_at": "2026-09-09T09:44:02Z"
+ "fetched_at": "2026-09-09T10:43:44Z"
 }

@@ -2,10 +2,10 @@
  "uuid": "e85fee09-4c17-4122-a6a1-67d09d9349bd",
  "bot": "Edward",
  "team": "Edward",
- "rating": 2339,
- "rank": 22,
- "record": "25-14-12",
- "rated_rounds": 52,
+ "rating": 2316,
+ "rank": 28,
+ "record": "25-14-13",
+ "rated_rounds": 53,
  "history": [
   [
    27,
@@ -214,9 +214,23 @@
   [
    78,
    2339
+  ],
+  [
+   79,
+   2316
   ]
  ],
  "games": [
+  {
+   "game": "dc06ab08-8a73-4ed4-969c-acabffaa9b01",
+   "kind": "Rated",
+   "round": 79,
+   "colour": "White",
+   "opponent": "DGS ELO",
+   "opponent_uuid": "5f8a69d7-73a8-4498-b322-861b557dffbd",
+   "verdict": "loss",
+   "opening": "Italian Game"
+  },
   {
    "game": "f870009b-ed32-48d6-9b33-06d4621b5c86",
    "kind": "Rated",
@@ -238,14 +252,14 @@
    "opening": "London System"
   },
   {
-   "game": "2924b91b-72e7-44f1-8140-d9faf7ea3a55",
+   "game": "baad6618-4fe2-4cf8-8193-e594e50eed4f",
    "kind": "Rated",
-   "round": 76,
+   "round": 75,
    "colour": "White",
-   "opponent": "Mate in One",
-   "opponent_uuid": "3be637a8-e78d-4da4-8016-d13e00170433",
-   "verdict": "draw",
-   "opening": "Sicilian Dragon"
+   "opponent": "AlphaBeta",
+   "opponent_uuid": "1f234cf3-2829-4107-8a5f-2d0e15e978da",
+   "verdict": "win",
+   "opening": "Reti Opening"
   },
   {
    "game": "d38b0b66-6b5d-4c5e-b258-c9c57232cadf",
@@ -728,5 +742,5 @@
    "opening": "London System"
   }
  ],
- "fetched_at": "2026-09-09T09:48:29Z"
+ "fetched_at": "2026-09-09T10:48:09Z"
 }

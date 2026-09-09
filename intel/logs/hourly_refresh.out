@@ -1436,3 +1436,72 @@ leaderboard: 418 rows
   not won), Challenger (2 of 29 winning positions not won). Keep lost positions alive.
 
 strategy report: /Users/architbhardwaj/Desktop/AI Chessathon/intel/STRATEGY.txt
+leaderboard: 418 rows
+  1 PSL God Matt Bomer     (JBG fam) games 56 missing 0 -> PSL_God_Matt_Bomer.pgn
+  2 AlphaFish              (Emile Andrieu) games 70 missing 0 -> AlphaFish.pgn
+  3 stockfih               (what even is en passant) games 70 missing 0 -> stockfih.pgn
+  4 Patzer 2.3             (Gijs Smit) games 78 missing 0 -> Patzer_2_3.pgn
+  5 ms                     (ms) games 77 missing 0 -> ms.pgn
+  6 Capablanca             (THE ROOOOOKKK!!!!) games 77 missing 0 -> Capablanca.pgn
+  7 Mite                   (Ryan Vincent) games 50 missing 0 -> Mite.pgn
+  8 Poincare               (Gladiator) games 52 missing 0 -> Poincare.pgn
+  9 Loss Preventer         (Lightning Tree) games 77 missing 0 -> Loss_Preventer.pgn
+ 10 SoberPaschoud          (Sobriety) games 78 missing 0 -> SoberPaschoud.pgn
+ 11 AI Fellow              (AI Fellows) games 78 missing 0 -> AI_Fellow.pgn
+ 12 Danya's Disciple       (Danya's Disciple) games 78 missing 0 -> Danya_s_Disciple.pgn
+ 13 test_bot               (pheanup) games 74 missing 0 -> test_bot.pgn
+ 14 cory                   (catfish) games 49 missing 0 -> cory.pgn
+ 15 Anchoa                 (Lubina) games 78 missing 0 -> Anchoa.pgn
+ 16 crash                  (LehmanBro) games 75 missing 0 -> crash.pgn
+ 17 BINI Alpha             (Opus Carlsen) games 55 missing 0 -> BINI_Alpha.pgn
+ 18 zak                    (zak) games 72 missing 0 -> zak.pgn
+ 19 Challenger             (Stonkfish) games 78 missing 0 -> Challenger.pgn
+ 20 Mate in One            (Mate in One) games 78 missing 0 -> Mate_in_One.pgn
+ 19 Challenger           analysed 61/78 games
+ 20 Mate in One          analysed 75/78 games
+2 game(s) had no embedded evaluation and were skipped
+  # Bot                Rating   Record   CPL sACPL   Bl%  s/mv Draw% RepA NonC Void
+-----------------------------------------------------------------------------------
+  1 PSL God Matt Bomer   2738 27-18-11  10.6    16   0.5  1.65    33    0    0    0
+  2 AlphaFish            2685  36-24-6   7.5    16   0.1  1.54    45    1    4    5
+  3 stockfih             2675 27-19-20  15.7    25   0.4  2.02    35    2    4    4
+  4 Patzer 2.3           2670 29-30-11  11.2    19   0.5  1.58    54    0    2    9  *
+  5 ms                   2636 35-22-15  11.0    20   0.3  1.84    37    1    3    4
+  6 Capablanca           2619 34-22-15  10.5    19   0.3  1.72    39    0    3    6
+  7 Mite                 2612  18-23-9  10.2    21   0.2  1.77    49    0    2    1  *
+  8 Poincare             2606  21-23-8  11.7    17   0.2  1.63    45    0    0    1
+  9 Loss Preventer       2598 31-24-20  13.1    22   0.4  1.67    35    0    1    2  *
+ 10 SoberPaschoud        2545 30-26-14  10.5    18   0.3  1.66    48    0    5    8  *
+ 11 AI Fellow            2524 28-30-11   8.7    20   0.2  1.96    56    5    7    8
+ 12 Danya's Disciple     2522 31-18-19  13.2    24   0.6  1.85    43    2    2   11  *
+ 13 test_bot             2498 28-22-15  12.5    22   0.5  1.98    44    0    2    8
+ 14 cory                 2464 21-15-14  14.0    23   0.6  1.69    29    0    1    0
+ 15 Anchoa               2463 27-27-14   9.4    18   0.3  1.67    52    0    0    8
+ 16 crash                2440 31-18-20  17.9    34   0.8  2.11    26    0    1    0  *
+ 17 BINI Alpha           2397 25-15-12  15.6    26   0.8  1.87    35    0    1    4
+ 18 zak                  2379 23-22-22  14.9    28   0.7  1.85    41    0    0    6  *
+ 19 Challenger           2371 32-24-19  17.7    26   0.7  1.74    32    1    2    1  *
+ 20 Mate in One          2371 32-23-16  12.4    20   0.3  1.94    43    0    0    8
+ 17 BINI Alpha           2397 25-15-12  15.6    26   0.8  1.87    35    0    1    4
+
+  1. Move quality spread: AlphaFish loses 7.5 cp per move, crash 17.9 cp; our current build measures
+  15.6 cp. Blunder rates run 0.1-0.8%.
+  2. Free half points: AlphaFish (1), stockfih (2), ms (1), AI Fellow (5), Danya's Disciple (2),
+  Challenger (1) accepted repetitions while more than +150. Against them, when worse, aim for
+  repetition.
+  3. Time trouble is real for PSL God Matt Bomer (7 games under 5 s), stockfih (8 games under 5 s),
+  ms (25 games under 5 s), Capablanca (2 games under 5 s), Mite (2 games under 5 s), AI Fellow (39
+  games under 5 s), test_bot (36 games under 5 s), cory (13 games under 5 s), Anchoa (7 games under
+  5 s), crash (30 games under 5 s), zak (13 games under 5 s), Mate in One (13 games under 5 s).
+  Long, complicated games punish them.
+  4. Clock left unused by Patzer 2.3 (36 s), Poincare (39 s), Loss Preventer (41 s), Anchoa (30 s),
+  BINI Alpha (38 s), Challenger (38 s): their depth is capped by a per-move budget, so our deeper
+  search in critical moments is a real edge.
+  5. Leaky conversion: AlphaFish (4 of 38 winning positions not won), stockfih (4 of 30 winning
+  positions not won), Patzer 2.3 (2 of 32 winning positions not won), ms (3 of 36 winning positions
+  not won), Capablanca (3 of 37 winning positions not won), Mite (2 of 19 winning positions not
+  won), SoberPaschoud (5 of 35 winning positions not won), AI Fellow (7 of 35 winning positions not
+  won), Danya's Disciple (2 of 31 winning positions not won), test_bot (2 of 27 winning positions
+  not won), Challenger (2 of 29 winning positions not won). Keep lost positions alive.
+
+strategy report: /Users/architbhardwaj/Desktop/AI Chessathon/intel/STRATEGY.txt
