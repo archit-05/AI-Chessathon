@@ -1299,3 +1299,71 @@ renamed files of LehmanBro: can_i_get_another_mango -> crash
   won). Keep lost positions alive.
 
 strategy report: /Users/architbhardwaj/Desktop/AI Chessathon/intel/STRATEGY.txt
+leaderboard: 417 rows
+  1 stockfih               (what even is en passant) games 68 missing 0 -> stockfih.pgn
+  2 PSL God Matt Bomer     (JBG fam) games 54 missing 0 -> PSL_God_Matt_Bomer.pgn
+  3 AlphaFish              (Emile Andrieu) games 68 missing 0 -> AlphaFish.pgn
+  4 Patzer 2.3             (Gijs Smit) games 76 missing 0 -> Patzer_2_3.pgn
+  5 SoberPaschoud          (Sobriety) games 76 missing 0 -> SoberPaschoud.pgn
+  6 Capablanca             (THE ROOOOOKKK!!!!) games 75 missing 0 -> Capablanca.pgn
+  7 ms                     (ms) games 75 missing 0 -> ms.pgn
+  8 Mite                   (Ryan Vincent) games 48 missing 0 -> Mite.pgn
+  9 Poincare               (Gladiator) games 50 missing 0 -> Poincare.pgn
+ 10 crash                  (LehmanBro) games 73 missing 0 -> crash.pgn
+ 11 AI Fellow              (AI Fellows) games 76 missing 0 -> AI_Fellow.pgn
+ 12 Loss Preventer         (Lightning Tree) games 75 missing 0 -> Loss_Preventer.pgn
+ 13 Anchoa                 (Lubina) games 76 missing 0 -> Anchoa.pgn
+ 14 Danya's Disciple       (Danya's Disciple) games 76 missing 0 -> Danya_s_Disciple.pgn
+ 15 cory                   (catfish) games 47 missing 0 -> cory.pgn
+ 16 test_bot               (pheanup) games 72 missing 0 -> test_bot.pgn
+ 17 BINI Alpha             (Opus Carlsen) games 53 missing 0 -> BINI_Alpha.pgn
+ 18 Dark Sister            (Abhi's chess demon) games 76 missing 0 -> Dark_Sister.pgn
+ 19 zak                    (zak) games 70 missing 0 -> zak.pgn
+ 20 Mate in One            (Mate in One) games 76 missing 0 -> Mate_in_One.pgn
+ 19 zak                  analysed 68/70 games
+ 20 Mate in One          analysed 74/76 games
+2 game(s) had no embedded evaluation and were skipped
+  # Bot                Rating   Record   CPL sACPL   Bl%  s/mv Draw% RepA NonC Void
+-----------------------------------------------------------------------------------
+  1 stockfih             2721 27-17-20  15.8    25   0.5  2.02    33    2    4    4  *
+  2 PSL God Matt Bomer   2709 27-17-10  11.0    16   0.5  1.68    30    0    0    0
+  3 AlphaFish            2664  36-22-6   7.8    16   0.1  1.58    41    1    4    5
+  4 Patzer 2.3           2646 29-28-11  11.5    19   0.6  1.59    52    0    2    9  *
+  5 SoberPaschoud        2625 30-24-14  10.7    19   0.3  1.67    46    0    5    8  *
+  6 Capablanca           2623 34-21-14  10.9    19   0.3  1.70    38    0    3    6
+  7 ms                   2606 34-21-15  11.2    21   0.3  1.85    36    1    3    4
+  8 Mite                 2588  18-21-9  10.4    22   0.2  1.77    45    0    2    1  *
+  9 Poincare             2556  20-22-8  11.8    17   0.2  1.63    45    0    0    1  *
+ 10 crash                2524 31-18-18  18.0    32   0.9  2.11    27    0    1    0  *
+ 11 AI Fellow            2517 28-29-10   8.7    21   0.2  1.94    55    5    7    8
+ 12 Loss Preventer       2505 30-23-20  13.3    23   0.5  1.68    33    0    1    2
+ 13 Anchoa               2480 26-27-13   9.3    17   0.3  1.66    54    0    0    8  *
+ 14 Danya's Disciple     2444 30-17-19  13.8    25   0.6  1.88    42    2    2   11  *
+ 15 cory                 2420 20-14-14  13.8    22   0.6  1.63    30    0    1    0
+ 16 test_bot             2408 26-22-15  12.5    21   0.5  1.92    45    0    2    8
+ 17 BINI Alpha           2374 25-14-11  15.7    27   0.8  1.86    33    0    1    4
+ 18 Dark Sister          2372 29-19-23  15.7    26   0.8  1.69    31    0    0    4  *
+ 19 zak                  2354 22-22-21  15.6    28   0.7  1.89    42    0    0    6
+ 20 Mate in One          2344 32-21-16  12.4    21   0.3  1.99    41    0    0    8
+ 17 BINI Alpha           2374 25-14-11  15.7    27   0.8  1.86    33    0    1    4
+
+  1. Move quality spread: AlphaFish loses 7.8 cp per move, crash 18.0 cp; our current build measures
+  15.7 cp. Blunder rates run 0.1-0.9%.
+  2. Free half points: stockfih (2), AlphaFish (1), ms (1), AI Fellow (5), Danya's Disciple (2)
+  accepted repetitions while more than +150. Against them, when worse, aim for repetition.
+  3. Time trouble is real for stockfih (8 games under 5 s), PSL God Matt Bomer (5 games under 5 s),
+  Capablanca (3 games under 5 s), ms (25 games under 5 s), Mite (2 games under 5 s), crash (30 games
+  under 5 s), AI Fellow (39 games under 5 s), Anchoa (7 games under 5 s), cory (12 games under 5 s),
+  test_bot (37 games under 5 s), Dark Sister (11 games under 5 s), zak (13 games under 5 s), Mate in
+  One (11 games under 5 s). Long, complicated games punish them.
+  4. Clock left unused by Patzer 2.3 (37 s), Poincare (40 s), Loss Preventer (40 s), BINI Alpha (38
+  s): their depth is capped by a per-move budget, so our deeper search in critical moments is a real
+  edge.
+  5. Leaky conversion: stockfih (4 of 29 winning positions not won), AlphaFish (4 of 38 winning
+  positions not won), Patzer 2.3 (2 of 32 winning positions not won), SoberPaschoud (5 of 35 winning
+  positions not won), Capablanca (3 of 37 winning positions not won), ms (3 of 35 winning positions
+  not won), Mite (2 of 19 winning positions not won), AI Fellow (7 of 35 winning positions not won),
+  Danya's Disciple (2 of 31 winning positions not won), test_bot (2 of 27 winning positions not
+  won). Keep lost positions alive.
+
+strategy report: /Users/architbhardwaj/Desktop/AI Chessathon/intel/STRATEGY.txt

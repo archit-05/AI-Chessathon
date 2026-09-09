@@ -2,10 +2,10 @@
  "uuid": "7af404ee-389f-427c-9433-40ebe5902fc6",
  "bot": "Dark Sister",
  "team": "Abhi's chess demon",
- "rating": 2372,
- "rank": 18,
- "record": "29-19-22",
- "rated_rounds": 76,
+ "rating": 2314,
+ "rank": 23,
+ "record": "29-19-23",
+ "rated_rounds": 77,
  "history": [
   [
    1,
@@ -310,9 +310,23 @@
   [
    76,
    2372
+  ],
+  [
+   77,
+   2314
   ]
  ],
  "games": [
+  {
+   "game": "f905dc33-1d8c-4fe5-9e1b-b89042b535ab",
+   "kind": "Rated",
+   "round": 77,
+   "colour": "Black",
+   "opponent": "pheanup",
+   "opponent_uuid": "0a121c61-60a7-4926-a0e7-024dffa6b185",
+   "verdict": "loss",
+   "opening": "Caro-Kann Advance"
+  },
   {
    "game": "49e23182-5ce3-4625-b3a9-9e841625a3a3",
    "kind": "Rated",
@@ -334,14 +348,14 @@
    "opening": "Sicilian Classical"
   },
   {
-   "game": "2acc3f24-2960-43c9-9266-21808d35926b",
+   "game": "e706f339-7464-4612-83f1-8a3b8c7979d3",
    "kind": "Rated",
-   "round": 74,
-   "colour": "White",
-   "opponent": "omega3 fish",
-   "opponent_uuid": "1daad2c3-adda-4ae6-945c-e82c4015ee72",
+   "round": 73,
+   "colour": "Black",
+   "opponent": "Something",
+   "opponent_uuid": "051edd6e-9a85-47c0-8c8f-4b3a87a2ec30",
    "verdict": "win",
-   "opening": "Two Knights Defence"
+   "opening": "Sicilian Closed"
   },
   {
    "game": "34a50977-d693-411f-93c9-ca85e6ed92a2",
@@ -1064,5 +1078,5 @@
    "opening": "Catalan Opening"
   }
  ],
- "fetched_at": "2026-09-09T07:45:49Z"
+ "fetched_at": "2026-09-09T08:44:14Z"
 }

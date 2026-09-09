@@ -2,10 +2,10 @@
  "uuid": "385a6db2-1c05-46db-ae91-7218700f83b3",
  "bot": "Challenger",
  "team": "Stonkfish",
- "rating": 2225,
- "rank": 28,
- "record": "30-18-19",
- "rated_rounds": 70,
+ "rating": 2326,
+ "rank": 22,
+ "record": "31-23-19",
+ "rated_rounds": 77,
  "history": [
   [
    1,
@@ -229,27 +229,27 @@
   ],
   [
    56,
-   2108
+   2109
   ],
   [
    57,
-   2132
+   2134
   ],
   [
    58,
-   2132
+   2134
   ],
   [
    59,
-   2142
+   2144
   ],
   [
    60,
-   2138
+   2137
   ],
   [
    61,
-   2193
+   2194
   ],
   [
    62,
@@ -265,30 +265,118 @@
   ],
   [
    65,
-   2168
+   2166
   ],
   [
    66,
-   2176
+   2178
   ],
   [
    67,
-   2219
+   2220
   ],
   [
    68,
-   2225
+   2223
   ],
   [
    69,
-   2224
+   2222
   ],
   [
    70,
+   2224
+  ],
+  [
+   71,
    2225
+  ],
+  [
+   72,
+   2235
+  ],
+  [
+   73,
+   2244
+  ],
+  [
+   74,
+   2246
+  ],
+  [
+   75,
+   2250
+  ],
+  [
+   76,
+   2260
+  ],
+  [
+   77,
+   2326
   ]
  ],
  "games": [
+  {
+   "game": "3a7861ae-0441-426d-943a-08155f35ba9a",
+   "kind": "Rated",
+   "round": 77,
+   "colour": "White",
+   "opponent": "TMS",
+   "opponent_uuid": "95773d45-c62c-4432-bee1-50a52d296f45",
+   "verdict": "win",
+   "opening": "English Symmetrical"
+  },
+  {
+   "game": "5099c3c1-825c-458e-b51f-75baa06cc042",
+   "kind": "Rated",
+   "round": 76,
+   "colour": "Black",
+   "opponent": "DGS ELO",
+   "opponent_uuid": "5f8a69d7-73a8-4498-b322-861b557dffbd",
+   "verdict": "draw",
+   "opening": "London System"
+  },
+  {
+   "game": "d18c4109-6920-4f9b-9091-0079c4995f7c",
+   "kind": "Rated",
+   "round": 75,
+   "colour": "Black",
+   "opponent": "Something",
+   "opponent_uuid": "051edd6e-9a85-47c0-8c8f-4b3a87a2ec30",
+   "verdict": "draw",
+   "opening": "Caro-Kann Classical"
+  },
+  {
+   "game": "f33c4931-88c9-482e-913b-b6ad0c33e780",
+   "kind": "Rated",
+   "round": 73,
+   "colour": "Black",
+   "opponent": "AlphaBeta",
+   "opponent_uuid": "1f234cf3-2829-4107-8a5f-2d0e15e978da",
+   "verdict": "draw",
+   "opening": "Caro-Kann Exchange"
+  },
+  {
+   "game": "28f8dda5-a9c0-4d0b-8d5e-b2821237ed84",
+   "kind": "Rated",
+   "round": 72,
+   "colour": "White",
+   "opponent": "slopfish",
+   "opponent_uuid": "1d137be0-3a3e-4cda-a7ba-b22d8d178e66",
+   "verdict": "draw",
+   "opening": "Dutch Stonewall"
+  },
+  {
+   "game": "d5a29706-4625-41e4-9a1a-4d871b5a9d39",
+   "kind": "Rated",
+   "round": 71,
+   "colour": "White",
+   "opponent": "RMFE",
+   "opponent_uuid": "8b991dda-4b49-46cc-900d-96c853154292",
+   "verdict": "draw",
+   "opening": "Nimzo-Indian Defence"
+  },
   {
    "game": "7b328661-f5bc-43d4-8061-aadec6ea217c",
    "kind": "Rated",
@@ -406,7 +494,7 @@
    "colour": "Black",
    "opponent": "FuzzyBot",
    "opponent_uuid": "3241cef5-6b1c-41f2-b275-f0e50fc52ed5",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "French Tarrasch"
   },
   {
@@ -990,5 +1078,5 @@
    "opening": "Queen's Gambit Accepted"
   }
  ],
- "fetched_at": "2026-09-08T16:46:27Z"
+ "fetched_at": "2026-09-09T08:46:56Z"
 }

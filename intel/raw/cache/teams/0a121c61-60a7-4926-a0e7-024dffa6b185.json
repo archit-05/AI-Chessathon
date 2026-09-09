@@ -2,11 +2,15 @@
  "uuid": "0a121c61-60a7-4926-a0e7-024dffa6b185",
  "bot": "test_bot",
  "team": "pheanup",
- "rating": 2398,
+ "rating": 2457,
  "rank": 15,
- "record": "25-22-15",
- "rated_rounds": 71,
+ "record": "26-22-15",
+ "rated_rounds": 73,
  "history": [
+  [
+   5,
+   1573
+  ],
   [
    6,
    1570
@@ -286,9 +290,27 @@
   [
    75,
    2398
+  ],
+  [
+   76,
+   2408
+  ],
+  [
+   77,
+   2457
   ]
  ],
  "games": [
+  {
+   "game": "f905dc33-1d8c-4fe5-9e1b-b89042b535ab",
+   "kind": "Rated",
+   "round": 77,
+   "colour": "White",
+   "opponent": "Abhi's chess demon",
+   "opponent_uuid": "7af404ee-389f-427c-9433-40ebe5902fc6",
+   "verdict": "win",
+   "opening": "Caro-Kann Advance"
+  },
   {
    "game": "5abf858d-d06e-464e-96ce-80a38632775c",
    "kind": "Rated",
@@ -310,14 +332,14 @@
    "opening": "Sicilian Closed"
   },
   {
-   "game": "099df359-d6c8-4a33-8126-bc2271d95cf1",
+   "game": "7e5c5f4f-9082-45b3-bf3e-7518297773e1",
    "kind": "Rated",
-   "round": 74,
-   "colour": "Black",
-   "opponent": "Opus Carlsen",
-   "opponent_uuid": "f0286356-626d-4dd2-86ab-fd6d779063cb",
-   "verdict": "draw",
-   "opening": "Catalan Opening"
+   "round": 73,
+   "colour": "White",
+   "opponent": "Lubina",
+   "opponent_uuid": "34fd9228-11bf-4e7a-ba8f-b452d96ad8c9",
+   "verdict": "loss",
+   "opening": "English Symmetrical"
   },
   {
    "game": "7262648a-91cb-4b38-b836-d81c81799b90",
@@ -1000,5 +1022,5 @@
    "opening": "London System"
   }
  ],
- "fetched_at": "2026-09-09T07:43:10Z"
+ "fetched_at": "2026-09-09T08:43:54Z"
 }
