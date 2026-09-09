@@ -2,10 +2,10 @@
  "uuid": "0a121c61-60a7-4926-a0e7-024dffa6b185",
  "bot": "test_bot",
  "team": "pheanup",
- "rating": 2542,
+ "rating": 2556,
  "rank": 11,
- "record": "28-24-16",
- "rated_rounds": 78,
+ "record": "28-25-16",
+ "rated_rounds": 79,
  "history": [
   [
    5,
@@ -318,9 +318,23 @@
   [
    82,
    2542
+  ],
+  [
+   83,
+   2556
   ]
  ],
  "games": [
+  {
+   "game": "2d31a940-1a03-42de-badb-433645f88156",
+   "kind": "Rated",
+   "round": 83,
+   "colour": "Black",
+   "opponent": "Sobriety",
+   "opponent_uuid": "258a9828-7442-4bea-97cb-eed1845ad2cc",
+   "verdict": "draw",
+   "opening": "Sicilian Closed"
+  },
   {
    "game": "9e3f8c7d-5278-4f7c-a63c-98602aca9a68",
    "kind": "Rated",
@@ -342,14 +356,14 @@
    "opening": "Sicilian Closed"
   },
   {
-   "game": "e201306d-c535-42e2-bd28-a62e3117aff8",
+   "game": "a160cc2a-729f-4ef4-9105-e2c6f6e32ee5",
    "kind": "Rated",
-   "round": 80,
-   "colour": "White",
-   "opponent": "Lightning Tree",
-   "opponent_uuid": "c90df064-e8e8-4144-b1fd-2dd6096dd21a",
-   "verdict": "loss",
-   "opening": "Sicilian Najdorf"
+   "round": 79,
+   "colour": "Black",
+   "opponent": "AI Fellows",
+   "opponent_uuid": "b574c0ea-e994-4a16-9918-7fbc989c4234",
+   "verdict": "win",
+   "opening": "Petroff Defence"
   },
   {
    "game": "af9cdfb1-e9d3-4f3b-bac9-0ee6e22243f3",
@@ -1092,5 +1106,5 @@
    "opening": "London System"
   }
  ],
- "fetched_at": "2026-09-09T13:44:35Z"
+ "fetched_at": "2026-09-09T14:45:18Z"
 }

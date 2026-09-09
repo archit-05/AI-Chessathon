@@ -2,10 +2,10 @@
  "uuid": "f0286356-626d-4dd2-86ab-fd6d779063cb",
  "bot": "BINI Alpha",
  "team": "Opus Carlsen",
- "rating": 2385,
- "rank": 25,
- "record": "25-17-13",
- "rated_rounds": 59,
+ "rating": 2449,
+ "rank": 19,
+ "record": "26-17-13",
+ "rated_rounds": 60,
  "history": [
   [
    24,
@@ -242,9 +242,23 @@
   [
    82,
    2385
+  ],
+  [
+   83,
+   2449
   ]
  ],
  "games": [
+  {
+   "game": "b1ef5d0a-7542-492d-8e7d-bc537da0cf43",
+   "kind": "Rated",
+   "round": 83,
+   "colour": "Black",
+   "opponent": "OMI",
+   "opponent_uuid": "f90aed5c-61db-4b3a-bbc1-9f40391e701a",
+   "verdict": "win",
+   "opening": "Queen's Gambit Declined"
+  },
   {
    "game": "f4b118ae-fabf-421b-829e-96fa3161df25",
    "kind": "Rated",
@@ -266,14 +280,14 @@
    "opening": "French Classical"
   },
   {
-   "game": "afbd18e7-529b-4852-9f08-700cf042c601",
+   "game": "6d091fd3-94c6-4e60-b1f2-ad8e99e389ad",
    "kind": "Rated",
-   "round": 80,
+   "round": 79,
    "colour": "White",
-   "opponent": "Stonkfish",
-   "opponent_uuid": "385a6db2-1c05-46db-ae91-7218700f83b3",
-   "verdict": "draw",
-   "opening": "Reti Opening"
+   "opponent": "zak",
+   "opponent_uuid": "0cebedbb-0376-4058-b6f4-0e11ef9dbeed",
+   "verdict": "loss",
+   "opening": "Pirc Defence"
   },
   {
    "game": "ff3c004a-296c-4479-a182-167815fce91a",
@@ -826,5 +840,5 @@
    "opening": "Four Knights Game"
   }
  ],
- "fetched_at": "2026-09-09T13:49:32Z"
+ "fetched_at": "2026-09-09T14:51:09Z"
 }

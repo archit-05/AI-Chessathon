@@ -2,10 +2,10 @@
  "uuid": "3be637a8-e78d-4da4-8016-d13e00170433",
  "bot": "Mate in One",
  "team": "Mate in One",
- "rating": 2373,
- "rank": 24,
- "record": "32-24-17",
- "rated_rounds": 81,
+ "rating": 2369,
+ "rank": 25,
+ "record": "32-25-18",
+ "rated_rounds": 83,
  "history": [
   [
    1,
@@ -330,9 +330,37 @@
   [
    81,
    2373
+  ],
+  [
+   82,
+   2362
+  ],
+  [
+   83,
+   2369
   ]
  ],
  "games": [
+  {
+   "game": "81370de5-3290-4d30-b390-48110f6cd916",
+   "kind": "Rated",
+   "round": 83,
+   "colour": "White",
+   "opponent": "Make_no_mistakes",
+   "opponent_uuid": "ba636320-7bda-41ab-835d-3799a11613d8",
+   "verdict": "draw",
+   "opening": "Queen's Gambit Declined"
+  },
+  {
+   "game": "7e926757-f322-4ced-993e-2485b271e0b3",
+   "kind": "Rated",
+   "round": 82,
+   "colour": "Black",
+   "opponent": "omega3 fish",
+   "opponent_uuid": "1daad2c3-adda-4ae6-945c-e82c4015ee72",
+   "verdict": "loss",
+   "opening": "Sicilian Dragon"
+  },
   {
    "game": "c07f71e2-c5a3-4e03-9df8-47ee0df7526c",
    "kind": "Rated",
@@ -344,16 +372,6 @@
    "opening": "Dutch Stonewall"
   },
   {
-   "game": "7fe9cb7d-203a-490b-ad4b-09aabc122487",
-   "kind": "Rated",
-   "round": 80,
-   "colour": "White",
-   "opponent": "slopfish",
-   "opponent_uuid": "1d137be0-3a3e-4cda-a7ba-b22d8d178e66",
-   "verdict": "draw",
-   "opening": "Reti Opening"
-  },
-  {
    "game": "92becd58-33cd-48b8-8ac8-65996d08fcac",
    "kind": "Rated",
    "round": 79,
@@ -362,6 +380,16 @@
    "opponent_uuid": "385a6db2-1c05-46db-ae91-7218700f83b3",
    "verdict": "draw",
    "opening": "Sicilian Sveshnikov"
+  },
+  {
+   "game": "ff3c004a-296c-4479-a182-167815fce91a",
+   "kind": "Rated",
+   "round": 78,
+   "colour": "Black",
+   "opponent": "Opus Carlsen",
+   "opponent_uuid": "f0286356-626d-4dd2-86ab-fd6d779063cb",
+   "verdict": "draw",
+   "opening": "Pirc Defence"
   },
   {
    "game": "a91cc4e9-b17a-4d07-b3b5-33b60e85d9da",
@@ -1134,5 +1162,5 @@
    "opening": "French Winawer"
   }
  ],
- "fetched_at": "2026-09-09T12:48:25Z"
+ "fetched_at": "2026-09-09T14:48:39Z"
 }

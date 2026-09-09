@@ -1,11 +1,11 @@
 {
  "uuid": "f90aed5c-61db-4b3a-bbc1-9f40391e701a",
- "bot": "o1-1",
+ "bot": "p1-1",
  "team": "OMI",
- "rating": 2385,
- "rank": 24,
- "record": "34-13-27",
- "rated_rounds": 76,
+ "rating": 2313,
+ "rank": 29,
+ "record": "34-13-28",
+ "rated_rounds": 77,
  "history": [
   [
    7,
@@ -310,9 +310,23 @@
   [
    82,
    2385
+  ],
+  [
+   83,
+   2313
   ]
  ],
  "games": [
+  {
+   "game": "b1ef5d0a-7542-492d-8e7d-bc537da0cf43",
+   "kind": "Rated",
+   "round": 83,
+   "colour": "White",
+   "opponent": "Opus Carlsen",
+   "opponent_uuid": "f0286356-626d-4dd2-86ab-fd6d779063cb",
+   "verdict": "loss",
+   "opening": "Queen's Gambit Declined"
+  },
   {
    "game": "6f427baa-a2e2-4ab0-ac7b-caefe080b93c",
    "kind": "Rated",
@@ -334,14 +348,14 @@
    "opening": "Sicilian Closed"
   },
   {
-   "game": "542b4660-1e5e-47aa-b91e-f56f15912f77",
+   "game": "9adb9062-0d64-4b0a-85ff-1299a5e05a32",
    "kind": "Rated",
-   "round": 80,
+   "round": 79,
    "colour": "White",
-   "opponent": "Abhi's chess demon",
-   "opponent_uuid": "7af404ee-389f-427c-9433-40ebe5902fc6",
-   "verdict": "draw",
-   "opening": "Sicilian Closed"
+   "opponent": "Team1",
+   "opponent_uuid": "9efa4b9d-296d-4ee0-b2e4-319dace8d318",
+   "verdict": "win",
+   "opening": "Two Knights Defence"
   },
   {
    "game": "6e866da4-a963-48eb-9852-1d8bada9609c",
@@ -1064,5 +1078,5 @@
    "opening": "Sicilian Sveshnikov"
   }
  ],
- "fetched_at": "2026-09-09T13:49:29Z"
+ "fetched_at": "2026-09-09T14:51:30Z"
 }
