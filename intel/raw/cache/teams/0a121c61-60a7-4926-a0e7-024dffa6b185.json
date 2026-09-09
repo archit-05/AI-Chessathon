@@ -2,10 +2,10 @@
  "uuid": "0a121c61-60a7-4926-a0e7-024dffa6b185",
  "bot": "test_bot",
  "team": "pheanup",
- "rating": 2544,
+ "rating": 2546,
  "rank": 13,
- "record": "29-25-17",
- "rated_rounds": 81,
+ "record": "29-26-17",
+ "rated_rounds": 82,
  "history": [
   [
    5,
@@ -330,9 +330,23 @@
   [
    85,
    2544
+  ],
+  [
+   86,
+   2546
   ]
  ],
  "games": [
+  {
+   "game": "e51af9dc-f948-4e37-923a-b1796058d1fe",
+   "kind": "Rated",
+   "round": 86,
+   "colour": "Black",
+   "opponent": "DGS ELO",
+   "opponent_uuid": "5f8a69d7-73a8-4498-b322-861b557dffbd",
+   "verdict": "draw",
+   "opening": "Sicilian Classical"
+  },
   {
    "game": "a8f6b1d1-2b0d-4446-bb7e-34feb5e28c76",
    "kind": "Rated",
@@ -354,14 +368,14 @@
    "opening": "Sicilian Closed"
   },
   {
-   "game": "2d31a940-1a03-42de-badb-433645f88156",
+   "game": "9e3f8c7d-5278-4f7c-a63c-98602aca9a68",
    "kind": "Rated",
-   "round": 83,
-   "colour": "Black",
-   "opponent": "Sobriety",
-   "opponent_uuid": "258a9828-7442-4bea-97cb-eed1845ad2cc",
+   "round": 82,
+   "colour": "White",
+   "opponent": "Ryan Vincent",
+   "opponent_uuid": "8c22f2a5-3bce-4b66-b93a-8f4ab4318b0f",
    "verdict": "draw",
-   "opening": "Sicilian Closed"
+   "opening": "Petroff Defence"
   },
   {
    "game": "61c5d85c-f907-4881-80c2-c93efae481af",
@@ -1134,5 +1148,5 @@
    "opening": "London System"
   }
  ],
- "fetched_at": "2026-09-09T16:46:32Z"
+ "fetched_at": "2026-09-09T17:47:33Z"
 }

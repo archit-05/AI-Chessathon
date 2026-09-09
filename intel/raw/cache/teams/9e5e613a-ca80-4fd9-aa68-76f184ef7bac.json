@@ -2,10 +2,10 @@
  "uuid": "9e5e613a-ca80-4fd9-aa68-76f184ef7bac",
  "bot": "checkers",
  "team": "checkers",
- "rating": 2405,
- "rank": 22,
- "record": "29-29-20",
- "rated_rounds": 82,
+ "rating": 2367,
+ "rank": 27,
+ "record": "30-30-22",
+ "rated_rounds": 86,
  "history": [
   [
    1,
@@ -334,9 +334,55 @@
   [
    82,
    2405
+  ],
+  [
+   83,
+   2369
+  ],
+  [
+   84,
+   2396
+  ],
+  [
+   85,
+   2370
+  ],
+  [
+   86,
+   2367
   ]
  ],
  "games": [
+  {
+   "game": "784c963f-0a86-4b15-b5bb-b9a813244055",
+   "kind": "Rated",
+   "round": 86,
+   "colour": "White",
+   "opponent": "Mate in One",
+   "opponent_uuid": "3be637a8-e78d-4da4-8016-d13e00170433",
+   "verdict": "draw",
+   "opening": "Caro-Kann Exchange"
+  },
+  {
+   "game": "38283e84-02d7-496c-a292-5b06065fcdd3",
+   "kind": "Rated",
+   "round": 85,
+   "colour": "Black",
+   "opponent": "50CentRaise",
+   "opponent_uuid": "4857862c-3ea2-4ae9-8792-335918e2ef58",
+   "verdict": "loss",
+   "opening": "Catalan Opening"
+  },
+  {
+   "game": "4ba5ff67-9ce0-499e-b181-7ace5354d491",
+   "kind": "Rated",
+   "round": 84,
+   "colour": "Black",
+   "opponent": "Zugzwin",
+   "opponent_uuid": "2463d1f5-3e78-4dce-a254-be5983079ccc",
+   "verdict": "win",
+   "opening": "Reti Opening"
+  },
   {
    "game": "b92bd1b8-5522-4099-9e3d-18d984d49ee4",
    "kind": "Rated",
@@ -366,6 +412,16 @@
    "opponent_uuid": "1daad2c3-adda-4ae6-945c-e82c4015ee72",
    "verdict": "win",
    "opening": "Ruy Lopez, Closed"
+  },
+  {
+   "game": "beeb1db8-e9c1-4765-9b11-b7b900ee0f02",
+   "kind": "Rated",
+   "round": 79,
+   "colour": "Black",
+   "opponent": "Abhi's chess demon",
+   "opponent_uuid": "7af404ee-389f-427c-9433-40ebe5902fc6",
+   "verdict": "draw",
+   "opening": "French Advance"
   },
   {
    "game": "0ce7ef34-56fd-4c84-8c96-c9cbafbced9d",
@@ -1148,5 +1204,5 @@
    "opening": "Sicilian Closed"
   }
  ],
- "fetched_at": "2026-09-09T13:46:11Z"
+ "fetched_at": "2026-09-09T17:53:10Z"
 }

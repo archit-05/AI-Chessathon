@@ -2,10 +2,10 @@
  "uuid": "c7c9afba-d0bd-44f0-add8-b177e17526b0",
  "bot": "Moltisanti",
  "team": "Thorp",
- "rating": 2033,
- "rank": 68,
- "record": "41-9-26",
- "rated_rounds": 85,
+ "rating": 2065,
+ "rank": 62,
+ "record": "42-9-26",
+ "rated_rounds": 86,
  "history": [
   [
    1,
@@ -346,9 +346,23 @@
   [
    85,
    2033
+  ],
+  [
+   86,
+   2065
   ]
  ],
  "games": [
+  {
+   "game": "976ad5e2-28b4-42e5-97e8-bc48a7f2d4e9",
+   "kind": "Rated",
+   "round": 86,
+   "colour": "White",
+   "opponent": "forced enpassant",
+   "opponent_uuid": "d3baf113-4023-4349-816a-8e6eb9236e6f",
+   "verdict": "win",
+   "opening": "Sicilian Dragon"
+  },
   {
    "game": "5443b83c-30a4-4ab5-94b5-e15b0442acb8",
    "kind": "Rated",
@@ -370,14 +384,14 @@
    "opening": "Petroff Defence"
   },
   {
-   "game": "3a747276-f068-46f9-8773-981495e54154",
+   "game": "b8dfa615-04ed-4e26-afc5-bcedb1422009",
    "kind": "Rated",
-   "round": 83,
-   "colour": "White",
-   "opponent": "Ransom",
-   "opponent_uuid": "4f71e103-0e8b-4287-af80-6d8b438eed01",
+   "round": 82,
+   "colour": "Black",
+   "opponent": "ChessML",
+   "opponent_uuid": "e152b64e-0c6d-4341-b02b-09c09b098f8c",
    "verdict": "draw",
-   "opening": "Italian Game"
+   "opening": "French Tarrasch"
   },
   {
    "game": "e7bd78dd-8726-4b92-8450-98afede52364",
@@ -1180,5 +1194,5 @@
    "opening": "English Symmetrical"
   }
  ],
- "fetched_at": "2026-09-09T16:44:19Z"
+ "fetched_at": "2026-09-09T17:44:48Z"
 }
