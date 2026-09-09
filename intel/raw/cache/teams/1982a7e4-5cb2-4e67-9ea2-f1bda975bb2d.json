@@ -2,10 +2,10 @@
  "uuid": "1982a7e4-5cb2-4e67-9ea2-f1bda975bb2d",
  "bot": "Hallucinated Gambits",
  "team": "Hallucinated Gambits",
- "rating": 1659,
- "rank": 192,
- "record": "35-11-33",
- "rated_rounds": 84,
+ "rating": 1636,
+ "rank": 201,
+ "record": "35-11-34",
+ "rated_rounds": 85,
  "history": [
   [
    5,
@@ -342,9 +342,23 @@
   [
    88,
    1659
+  ],
+  [
+   89,
+   1636
   ]
  ],
  "games": [
+  {
+   "game": "c043a43f-5528-49da-b5e0-6371dab25ba4",
+   "kind": "Rated",
+   "round": 89,
+   "colour": "Black",
+   "opponent": "NotLLM",
+   "opponent_uuid": "2e84d6ba-24da-4b6f-baa3-9af4f10179ee",
+   "verdict": "loss",
+   "opening": "Nimzo-Indian Defence"
+  },
   {
    "game": "697b913e-6f71-4cc4-a9eb-025c42b3e68a",
    "kind": "Rated",
@@ -366,14 +380,14 @@
    "opening": "Sicilian Closed"
   },
   {
-   "game": "8802472c-51a7-4466-a3a8-ba154ac03650",
+   "game": "1c3bcea7-042e-44e3-ae88-a001c334bd11",
    "kind": "Rated",
-   "round": 86,
+   "round": 85,
    "colour": "Black",
-   "opponent": "Shallow Blue 2.0",
-   "opponent_uuid": "16436a48-3e9c-40e7-915c-53ba083b3fb4",
-   "verdict": "draw",
-   "opening": "Caro-Kann Classical"
+   "opponent": "lefischer",
+   "opponent_uuid": "0900c279-5ede-4155-a850-436c28af6ea9",
+   "verdict": "loss",
+   "opening": "French Classical"
   },
   {
    "game": "9bc29cbf-ac0d-400f-b124-21180de49b84",
@@ -1176,5 +1190,5 @@
    "opening": "London System"
   }
  ],
- "fetched_at": "2026-09-09T19:50:01Z"
+ "fetched_at": "2026-09-09T20:49:31Z"
 }

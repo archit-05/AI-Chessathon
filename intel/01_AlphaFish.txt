@@ -1,27 +1,27 @@
-AlphaFish  (team: Emile Andrieu)  -  rank 3, rating 2774
+AlphaFish  (team: Emile Andrieu)  -  rank 1, rating 2806
 ========================================================
-Generated 2026-09-09 20:58 from 74 rated games (rounds 9-88, 67 of 79 with evaluations so far) plus
+Generated 2026-09-09 21:57 from 75 rated games (rounds 9-89, 67 of 80 with evaluations so far) plus
   5 played to a result but voided by the site later (R15 3fold, R22 50-move, R26 3fold, R28 3fold,
   R32 3fold): they count for move quality, clocks and draw behaviour, not for results.
 
 IDENTITY
   Bot AlphaFish; team Emile Andrieu; university International; team name reads like a personal name,
     probably solo.
-  Rank 3 of 432, rating 2774, record 40-28-7 in 74 rated games.
-  Rating trajectory: entered R9 at 1571, peak 2799 (R85), now 2774 (R87).
+  Rank 1 of 432, rating 2806, record 40-29-7 in 75 rated games.
+  Rating trajectory: entered R9 at 1571, peak 2806 (R88), now 2806 (R88).
   Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
     upload): R19 +107 -> 2221 (win vs SoberPaschoud); R48 -106 -> 2643 (loss vs test_bot)
 
 RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
-  vs top 10 : 16-21-4 (65%) over 41 games
-  vs 11-20  : 8-6-1 (73%) over 15 games
+  vs top 10 : 17-22-3 (67%) over 42 games
+  vs 11-20  : 9-6-1 (75%) over 16 games
   vs 21-50  : 9-0-1 (90%) over 10 games
-  vs rest   : 6-1-1 (81%) over 8 games
+  vs rest   : 5-1-1 (79%) over 7 games
   Games vs top-10 teams:
     R19  black vs SoberPaschoud      (#5 ) win  checkmate             English Symmetrical
     R20  white vs ms                 (#4 ) win  checkmate             Nimzo-Indian Defence
     R21  white vs Patzer 2.4         (#6 ) win  checkmate             Sicilian Closed
-    R30  white vs Loss Preventer     (#7 ) win  checkmate             Nimzo-Indian Defence
+    R30  white vs Loss Preventer     (#8 ) win  checkmate             Nimzo-Indian Defence
     R34  white vs Capablanca         (#10) win  checkmate             Petroff Defence
     R36  black vs SoberPaschoud      (#5 ) draw insufficient_material French Winawer
     R39  white vs Capablanca         (#10) win  checkmate             Reti Opening
@@ -34,37 +34,39 @@ RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
     R51  black vs SoberPaschoud      (#5 ) win  checkmate             Dutch Stonewall
     R54  black vs Capablanca         (#10) draw threefold_repetition  Sicilian Classical
     R56  black vs SoberPaschoud      (#5 ) draw threefold_repetition  French Tarrasch
-    R59  white vs Loss Preventer     (#7 ) draw fifty_moves           Sicilian Closed
-    R60  black vs PSL God Matt Bomer (#8 ) draw threefold_repetition  Ruy Lopez, Closed
+    R59  white vs Loss Preventer     (#8 ) draw fifty_moves           Sicilian Closed
+    R60  black vs PSL God Matt Bomer (#7 ) draw threefold_repetition  Ruy Lopez, Closed
     R61  white vs SoberPaschoud      (#5 ) win  checkmate             Sicilian Closed
     R63  black vs Capablanca         (#10) draw insufficient_material Sicilian Closed
-    R65  white vs PSL God Matt Bomer (#8 ) win  checkmate             Grunfeld Defence
+    R65  white vs PSL God Matt Bomer (#7 ) win  checkmate             Grunfeld Defence
     R66  black vs ms                 (#4 ) win  checkmate             Reti Opening
     R67  white vs SoberPaschoud      (#5 ) loss checkmate             London System
     R69  black vs Capablanca         (#10) draw insufficient_material Sicilian Dragon
-    R70  white vs PSL God Matt Bomer (#8 ) draw insufficient_material Semi-Slav Defence
+    R70  white vs PSL God Matt Bomer (#7 ) draw insufficient_material Semi-Slav Defence
     R71  black vs ms                 (#4 ) draw threefold_repetition  Two Knights Defence
     R72  white vs Patzer 2.4         (#6 ) loss checkmate             King's Indian Classical
     R73  white vs SoberPaschoud      (#5 ) draw threefold_repetition  King's Indian Classical
     R74  black vs Capablanca         (#10) draw insufficient_material Sicilian Classical
-    R75  black vs PSL God Matt Bomer (#8 ) draw threefold_repetition  Slav Defence
-    R77  black vs stockfih           (#1 ) win  checkmate             Dutch Stonewall
+    R75  black vs PSL God Matt Bomer (#7 ) draw threefold_repetition  Slav Defence
+    R77  black vs stockfih           (#2 ) win  checkmate             Dutch Stonewall
     R78  white vs ms                 (#4 ) draw threefold_repetition  Petroff Defence
     R79  white vs Patzer 2.4         (#6 ) draw fifty_moves           Italian Game
-    R80  black vs Mite               (#2 ) draw threefold_repetition  Sicilian Closed
+    R80  black vs Mite               (#3 ) draw threefold_repetition  Sicilian Closed
     R81  black vs Capablanca         (#10) draw threefold_repetition  Ruy Lopez, Closed
     R82  white vs SoberPaschoud      (#5 ) win  checkmate             Reti Opening
-    R83  black vs stockfih           (#1 ) draw insufficient_material Sicilian Sveshnikov
+    R83  black vs stockfih           (#2 ) draw insufficient_material Sicilian Sveshnikov
     R84  black vs Patzer 2.4         (#6 ) draw ply_cap               Nimzo-Indian Defence
-    R86  white vs Mite               (#2 ) loss checkmate             Sicilian Closed
+    R85  white vs Loss Preventer     (#8 ) win  checkmate             Nimzo-Indian Defence
     R87  white vs Poincare conjecture (#9 ) win  checkmate             Sicilian Closed
-    R88  black vs stockfih           (#1 ) win  checkmate             Catalan Opening
+    R88  black vs stockfih           (#2 ) win  checkmate             Catalan Opening
+    R89  black vs ms                 (#4 ) draw threefold_repetition  Queen's Gambit Declined
   Games vs ranks 11-20: R17 win vs Anchoa (#12, checkmate); R24 draw vs AI Fellow (#11, insuff); R27
-    win vs test_bot (#14, checkmate); R35 win vs Anchoa (#12, checkmate); R38 win vs test_bot (#14,
-    checkmate); R42 draw vs Anchoa (#12, insuff); R43 win vs test_bot (#14, checkmate); R47 win vs
-    Anchoa (#12, checkmate); R48 loss vs test_bot (#14, checkmate); R52 draw vs Anchoa (#12,
-    insuff); R53 win vs test_bot (#14, checkmate); R57 win vs Anchoa (#12, checkmate); R58 draw vs
-    AI Fellow (#11, 3fold); R62 draw vs Anchoa (#12, 3fold); R68 draw vs AI Fellow (#11, 3fold)
+    win vs test_bot (#14, checkmate); R35 win vs Anchoa (#12, checkmate); R37 win vs Fuzzydafool
+    (#20, checkmate); R38 win vs test_bot (#14, checkmate); R42 draw vs Anchoa (#12, insuff); R43
+    win vs test_bot (#14, checkmate); R47 win vs Anchoa (#12, checkmate); R48 loss vs test_bot (#14,
+    checkmate); R52 draw vs Anchoa (#12, insuff); R53 win vs test_bot (#14, checkmate); R57 win vs
+    Anchoa (#12, checkmate); R58 draw vs AI Fellow (#11, 3fold); R62 draw vs Anchoa (#12, 3fold);
+    R68 draw vs AI Fellow (#11, 3fold)
 
 MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
   positions inside +-800 only)
@@ -76,15 +78,15 @@ MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss c
   as white          : n 2615, mean 7.9 cp, median 0 cp, blunders 0.1%
   as black          : n 2652, mean 7.2 cp, median 0 cp, blunders 0.2%
   Worst moves: R10 44.a5 (+821 -> -688); R64 112.Nd4 (+9996 -> +0); R72 52.Qd4 (-63 -> -378)
-  Site's own review (Stockfish 16, depth 16): mean ACPL 15.4 over 74 games, accuracy 96.1%; its tags
+  Site's own review (Stockfish 16, depth 16): mean ACPL 14.6 over 75 games, accuracy 96.2%; its tags
     on their moves: 6 blunder, 10 mistake, 7 miss, 54 inaccuracy of 4773
 
 TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
-  Per move: mean 1.53 s, median 1.28 s, quartiles 0.65-2.24 s, max 4.4 s; instant (<50 ms) moves
-    8.8%
-  Clock at the end: mean 26.6 s, minimum 5.6 s; games under 10 s: 15, under 5 s: 1 (R24)
-  By clock before the move: >60s 2.9 s (n 1907), 30-60s 1.6 s (n 1832), 10-30s 0.8 s (n 2206), <10s
-    0.5 s (n 1124)
+  Per move: mean 1.53 s, median 1.27 s, quartiles 0.66-2.23 s, max 4.4 s; instant (<50 ms) moves
+    8.6%
+  Clock at the end: mean 26.3 s, minimum 5.6 s; games under 10 s: 16, under 5 s: 1 (R24)
+  By clock before the move: >60s 2.9 s (n 1933), 30-60s 1.6 s (n 1857), 10-30s 0.8 s (n 2267), <10s
+    0.5 s (n 1148)
   By own-move number: 1-15 3.2 s, 16-40 2.1 s, 41+ 0.8 s; when +300 or better 1.1 s, level 1.7 s,
     -300 or worse 0.9 s
   Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 4.1%,
@@ -95,8 +97,8 @@ TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
     the game goes on
 
 DRAW BEHAVIOUR
-  33 draws in 79 played games (42.0%): threefold_repetition 17, insufficient_material 12,
-    fifty_moves 3, ply_cap 1; 22 of them vs top-10 teams; 5 of these were voided by the site
+  34 draws in 80 played games (42.0%): threefold_repetition 18, insufficient_material 12,
+    fifty_moves 3, ply_cap 1; 23 of them vs top-10 teams; 5 of these were voided by the site
     afterwards and no longer count on the ladder
   Repetition while ahead (> +150 at the final position): 1 -> R32 vs zak at +9991
   Repetition while behind (< -150): 0; level repetitions: 13
@@ -113,28 +115,28 @@ ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
       material
 
 OPENINGS (curated start positions assigned by the platform)
-  By family: Sicilian 9-10-3 (64%); Ruy Lopez 3-4-0 (71%); Reti 4-0-1 (80%); London 3-1-1 (70%);
-    French 1-3-1 (50%); Italian 1-3-0 (62%); Caro-Kann 2-1-0 (83%); Grunfeld 2-1-0 (83%);
-    Nimzo-Indian 2-1-0 (83%); Semi-Slav 2-1-0 (83%); Dutch 2-1-0 (83%); King's Indian 0-2-1 (33%);
-    English 2-0-0 (100%); Petroff 1-1-0 (75%); Pirc 2-0-0 (100%); Two Knights 0-2-0 (50%); Four
-    Knights 1-0-0 (100%); Queen's Indian 1-0-0 (100%); Queen's Gambit 0-1-0 (50%); Slav 0-1-0 (50%);
+  By family: Sicilian 9-10-2 (67%); Ruy Lopez 3-4-0 (71%); Reti 4-0-1 (80%); London 3-1-1 (70%);
+    French 1-3-1 (50%); Nimzo-Indian 3-1-0 (88%); Italian 1-3-0 (62%); Caro-Kann 2-1-0 (83%);
+    Grunfeld 2-1-0 (83%); Semi-Slav 2-1-0 (83%); Dutch 2-1-0 (83%); King's Indian 0-2-1 (33%);
+    English 2-0-0 (100%); Petroff 1-1-0 (75%); Pirc 2-0-0 (100%); Two Knights 0-2-0 (50%); Queen's
+    Gambit 0-2-0 (50%); Four Knights 1-0-0 (100%); Queen's Indian 1-0-0 (100%); Slav 0-1-0 (50%);
     Catalan 1-0-0 (100%)
-  Positions seen more than once: Sicilian Closed x14 7-5-2 (68%); Ruy Lopez, Closed x7 3-4-0 (71%);
-    London System x5 3-1-1 (70%); Reti Opening x5 4-0-1 (80%); Italian Game x4 1-3-0 (62%); Sicilian
-    Classical x4 1-3-0 (62%); Dutch Stonewall x3 2-1-0 (83%); Grunfeld Defence x3 2-1-0 (83%);
-    King's Indian Classical x3 0-2-1 (33%); Nimzo-Indian Defence x3 2-1-0 (83%); Semi-Slav Defence
-    x3 2-1-0 (83%); Caro-Kann Classical x2 2-0-0 (100%); English Symmetrical x2 2-0-0 (100%); French
-    Tarrasch x2 1-1-0 (75%); Petroff Defence x2 1-1-0 (75%); Pirc Defence x2 2-0-0 (100%); Sicilian
-    Sveshnikov x2 0-1-1 (25%); Two Knights Defence x2 0-2-0 (50%); 11 positions seen once (4 won, 6
-    drawn, 1 lost).
+  Positions seen more than once: Sicilian Closed x13 7-5-1 (73%); Ruy Lopez, Closed x7 3-4-0 (71%);
+    London System x5 3-1-1 (70%); Reti Opening x5 4-0-1 (80%); Italian Game x4 1-3-0 (62%);
+    Nimzo-Indian Defence x4 3-1-0 (88%); Sicilian Classical x4 1-3-0 (62%); Dutch Stonewall x3 2-1-0
+    (83%); Grunfeld Defence x3 2-1-0 (83%); King's Indian Classical x3 0-2-1 (33%); Semi-Slav
+    Defence x3 2-1-0 (83%); Caro-Kann Classical x2 2-0-0 (100%); English Symmetrical x2 2-0-0
+    (100%); French Tarrasch x2 1-1-0 (75%); Petroff Defence x2 1-1-0 (75%); Pirc Defence x2 2-0-0
+    (100%); Queen's Gambit Declined x2 0-2-0 (50%); Sicilian Sveshnikov x2 0-1-1 (25%); Two Knights
+    Defence x2 0-2-0 (50%); 10 positions seen once (4 won, 5 drawn, 1 lost).
   Underperforms in: French 1-3-1 (50%), King's Indian 0-2-1 (33%)
   First six own moves: 61% match Stockfish's first choice (moves 7-20: 64%), mean loss 7.1 cp, 11%
     played instantly; first clear divergence (loss >= 20 cp) at own move 12.5 on average.
 
 STYLE
-  Captures on 14.3% of own moves, checks on 11.6%; average game 179 plies (89 own moves), longest
+  Captures on 14.3% of own moves, checks on 11.6%; average game 180 plies (90 own moves), longest
     588 plies (R84)
-  Wins: 39 (39 by checkmate, 0 by opponent failure); losses: 7 (6 by checkmate, 1 by own failure:
+  Wins: 40 (40 by checkmate, 0 by opponent failure); losses: 6 (5 by checkmate, 1 by own failure:
     R50 init)
   Sacrifices (gave >= 2 pawns of material without losing eval, then recovered): 8 -> R21 17.Rxf7,
     R25 3.Ne7, R33 19.Rxh6, R42 12.gxf4, R57 30.Rg4, R63 84.Kxf4
@@ -145,7 +147,7 @@ LIKELY ENGINE PROFILE
   Move quality is engine-grade (mean loss 7.5 cp against site evaluations: Stockfish 16, depth 16,
   one per position): a real alpha-beta searcher with a strong, probably NNUE-class or well-tuned
   evaluation. Confidence high.
-  Time allocation is a fixed share of the remaining clock (~4% per move; median 1.28 s, max 4.4 s),
+  Time allocation is a fixed share of the remaining clock (~4% per move; median 1.27 s, max 4.4 s),
   so depth shrinks as the game goes on and no extra time goes to critical positions (1.2 s after a
   >100 cp swing vs 1.6 s otherwise).
   Repeats while clearly ahead (1 games): no contempt or repetition avoidance in the search.

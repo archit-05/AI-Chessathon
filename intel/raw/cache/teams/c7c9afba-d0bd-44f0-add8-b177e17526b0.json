@@ -2,10 +2,10 @@
  "uuid": "c7c9afba-d0bd-44f0-add8-b177e17526b0",
  "bot": "Moltisanti",
  "team": "Thorp",
- "rating": 2072,
- "rank": 62,
- "record": "42-11-26",
- "rated_rounds": 87,
+ "rating": 2070,
+ "rank": 65,
+ "record": "42-12-26",
+ "rated_rounds": 88,
  "history": [
   [
    1,
@@ -354,9 +354,23 @@
   [
    87,
    2072
+  ],
+  [
+   88,
+   2070
   ]
  ],
  "games": [
+  {
+   "game": "a33d5cb7-33f7-4907-a04f-f5eff76717ce",
+   "kind": "Rated",
+   "round": 89,
+   "colour": "White",
+   "opponent": "adashima",
+   "opponent_uuid": "e356ff20-37e4-4fc4-bfef-00cf5957a82c",
+   "verdict": "draw",
+   "opening": "English Symmetrical"
+  },
   {
    "game": "49572c64-6739-431d-b77d-f0755d0df4b0",
    "kind": "Rated",
@@ -378,14 +392,14 @@
    "opening": "Reti Opening"
   },
   {
-   "game": "976ad5e2-28b4-42e5-97e8-bc48a7f2d4e9",
+   "game": "5443b83c-30a4-4ab5-94b5-e15b0442acb8",
    "kind": "Rated",
-   "round": 86,
-   "colour": "White",
-   "opponent": "forced enpassant",
-   "opponent_uuid": "d3baf113-4023-4349-816a-8e6eb9236e6f",
-   "verdict": "win",
-   "opening": "Sicilian Dragon"
+   "round": 85,
+   "colour": "Black",
+   "opponent": "Neural Gambit",
+   "opponent_uuid": "2d7385e9-dffa-4216-aeca-dd844e18c7db",
+   "verdict": "loss",
+   "opening": "Caro-Kann Classical"
   },
   {
    "game": "dad3d531-e7a5-4282-a903-90d170375a3e",
@@ -1218,5 +1232,5 @@
    "opening": "English Symmetrical"
   }
  ],
- "fetched_at": "2026-09-09T19:43:06Z"
+ "fetched_at": "2026-09-09T20:43:04Z"
 }

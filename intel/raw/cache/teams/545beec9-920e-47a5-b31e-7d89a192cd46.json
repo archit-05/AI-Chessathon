@@ -1,62 +1,836 @@
 {
  "uuid": "545beec9-920e-47a5-b31e-7d89a192cd46",
- "bot": "knight_srv2",
+ "bot": "reaper_legend",
  "team": "Check_Mate",
- "rating": 1295,
- "rank": 267,
- "record": "3-3-6",
- "rated_rounds": 12,
+ "rating": 1425,
+ "rank": 303,
+ "record": "27-13-25",
+ "rated_rounds": 68,
  "history": [
   [
    22,
-   1423
+   1429
   ],
   [
    23,
-   1334
+   1345
   ],
   [
    24,
-   1311
+   1338
   ],
   [
    25,
-   1326
+   1345
   ],
   [
    26,
-   1390
+   1437
   ],
   [
    27,
-   1320
+   1331
   ],
   [
    28,
-   1385
+   1396
   ],
   [
    29,
-   1375
+   1387
   ],
   [
    30,
-   1325
+   1330
   ],
   [
    31,
-   1282
+   1278
   ],
   [
    32,
-   1328
+   1334
   ],
   [
    33,
+   1301
+  ],
+  [
+   34,
+   1332
+  ],
+  [
+   35,
+   1355
+  ],
+  [
+   36,
+   1326
+  ],
+  [
+   37,
+   1319
+  ],
+  [
+   38,
+   1287
+  ],
+  [
+   39,
+   1308
+  ],
+  [
+   40,
+   1308
+  ],
+  [
+   41,
+   1285
+  ],
+  [
+   42,
+   1259
+  ],
+  [
+   43,
+   1276
+  ],
+  [
+   44,
+   1294
+  ],
+  [
+   45,
    1295
+  ],
+  [
+   46,
+   1276
+  ],
+  [
+   47,
+   1273
+  ],
+  [
+   48,
+   1254
+  ],
+  [
+   49,
+   1246
+  ],
+  [
+   50,
+   1261
+  ],
+  [
+   51,
+   1261
+  ],
+  [
+   52,
+   1275
+  ],
+  [
+   53,
+   1274
+  ],
+  [
+   54,
+   1262
+  ],
+  [
+   55,
+   1203
+  ],
+  [
+   56,
+   1254
+  ],
+  [
+   57,
+   1302
+  ],
+  [
+   58,
+   1258
+  ],
+  [
+   59,
+   1298
+  ],
+  [
+   60,
+   1268
+  ],
+  [
+   61,
+   1353
+  ],
+  [
+   62,
+   1289
+  ],
+  [
+   63,
+   1236
+  ],
+  [
+   64,
+   1302
+  ],
+  [
+   65,
+   1354
+  ],
+  [
+   66,
+   1309
+  ],
+  [
+   67,
+   1315
+  ],
+  [
+   68,
+   1307
+  ],
+  [
+   69,
+   1328
+  ],
+  [
+   70,
+   1339
+  ],
+  [
+   71,
+   1363
+  ],
+  [
+   72,
+   1334
+  ],
+  [
+   73,
+   1355
+  ],
+  [
+   74,
+   1376
+  ],
+  [
+   75,
+   1356
+  ],
+  [
+   76,
+   1377
+  ],
+  [
+   77,
+   1388
+  ],
+  [
+   78,
+   1406
+  ],
+  [
+   79,
+   1386
+  ],
+  [
+   80,
+   1409
+  ],
+  [
+   81,
+   1396
+  ],
+  [
+   82,
+   1413
+  ],
+  [
+   83,
+   1410
+  ],
+  [
+   84,
+   1427
+  ],
+  [
+   85,
+   1427
+  ],
+  [
+   86,
+   1413
+  ],
+  [
+   87,
+   1428
+  ],
+  [
+   88,
+   1440
+  ],
+  [
+   89,
+   1425
   ]
  ],
  "games": [
+  {
+   "game": "0ed1e79b-e7ff-40e4-ad93-2efa5ce8467f",
+   "kind": "Rated",
+   "round": 89,
+   "colour": "White",
+   "opponent": "Obligatory En Passant",
+   "opponent_uuid": "8e698790-5a73-4a34-889d-7e7619582cee",
+   "verdict": "loss",
+   "opening": "English Symmetrical"
+  },
+  {
+   "game": "bac143f2-11c7-4d49-8934-8dd65b47f422",
+   "kind": "Rated",
+   "round": 88,
+   "colour": "White",
+   "opponent": "Alpha",
+   "opponent_uuid": "5ac4980c-1ef0-45eb-a96a-cd83b3924005",
+   "verdict": "win",
+   "opening": "Ruy Lopez, Closed"
+  },
+  {
+   "game": "60400331-5a8b-44c6-b864-f92bf84cfb65",
+   "kind": "Rated",
+   "round": 87,
+   "colour": "Black",
+   "opponent": "Chelsea's very own JP Morgan",
+   "opponent_uuid": "29f23ff2-c603-4921-a3ad-4448b1c7e108",
+   "verdict": "win",
+   "opening": "Grunfeld Defence"
+  },
+  {
+   "game": "c39199aa-a33f-41b5-adfb-98bfce8da6e1",
+   "kind": "Rated",
+   "round": 85,
+   "colour": "Black",
+   "opponent": "Team Up",
+   "opponent_uuid": "a0f36c58-a49c-416f-9b6d-556c3c82e3f5",
+   "verdict": "draw",
+   "opening": "English Symmetrical"
+  },
+  {
+   "game": "5aa8ab19-91f9-456e-8127-7916dad45209",
+   "kind": "Rated",
+   "round": 84,
+   "colour": "White",
+   "opponent": "Entangled_99",
+   "opponent_uuid": "bba4513a-0222-4926-a7a2-6ef8206537ea",
+   "verdict": "win",
+   "opening": "Sicilian Taimanov"
+  },
+  {
+   "game": "afd1cd44-1c07-4c6a-a50a-d3d62110accc",
+   "kind": "Rated",
+   "round": 83,
+   "colour": "Black",
+   "opponent": "Fight Club",
+   "opponent_uuid": "edc3ae56-ebc8-4a39-9e46-11db2179faf8",
+   "verdict": "draw",
+   "opening": "Grunfeld Defence"
+  },
+  {
+   "game": "82a183e1-0aaf-431b-93ce-51f5885507ae",
+   "kind": "Rated",
+   "round": 82,
+   "colour": "Black",
+   "opponent": "Clanfinn",
+   "opponent_uuid": "4e97b85c-2525-46e4-bda7-f92e5733c9dc",
+   "verdict": "win",
+   "opening": "Ruy Lopez, Closed"
+  },
+  {
+   "game": "f828a354-e1a0-4313-b0f6-93b6fa9b5e65",
+   "kind": "Rated",
+   "round": 81,
+   "colour": "Black",
+   "opponent": "Blitz",
+   "opponent_uuid": "7a6d3886-a870-4efe-a04f-1c38e695851e",
+   "verdict": "loss",
+   "opening": "Pirc Defence"
+  },
+  {
+   "game": "ae6f7325-9e81-450a-91e3-450ff35b1336",
+   "kind": "Rated",
+   "round": 80,
+   "colour": "White",
+   "opponent": "Chosen",
+   "opponent_uuid": "b901b315-7250-456d-ab7a-f5c068a9b4d0",
+   "verdict": "win",
+   "opening": "Reti Opening"
+  },
+  {
+   "game": "73d0da05-419c-4add-b5d0-75e340f36253",
+   "kind": "Rated",
+   "round": 79,
+   "colour": "White",
+   "opponent": "Obligatory En Passant",
+   "opponent_uuid": "8e698790-5a73-4a34-889d-7e7619582cee",
+   "verdict": "loss",
+   "opening": "Queen's Gambit Accepted"
+  },
+  {
+   "game": "66a44d5a-4972-4d66-b745-4088a9416ebb",
+   "kind": "Rated",
+   "round": 78,
+   "colour": "Black",
+   "opponent": "Unnamed",
+   "opponent_uuid": "0a88de74-8258-46ef-a6d6-59403e343965",
+   "verdict": "win",
+   "opening": "Ruy Lopez, Closed"
+  },
+  {
+   "game": "c546e7e4-1902-4a1e-b8d3-bfbf83dbc5cf",
+   "kind": "Rated",
+   "round": 77,
+   "colour": "Black",
+   "opponent": "SearchMate",
+   "opponent_uuid": "9b28a4ca-3e56-4988-8b28-8057e03974c9",
+   "verdict": "draw",
+   "opening": "Sicilian Closed"
+  },
+  {
+   "game": "f0c24ae1-b012-4eef-94f0-9597a7b4e673",
+   "kind": "Rated",
+   "round": 76,
+   "colour": "White",
+   "opponent": "corundum.ai",
+   "opponent_uuid": "e3b6706d-d6a7-43d4-ba84-3db44ebe66b0",
+   "verdict": "win",
+   "opening": "Sicilian Dragon"
+  },
+  {
+   "game": "a0645518-972e-47db-9cf5-0f8f49eeea53",
+   "kind": "Rated",
+   "round": 75,
+   "colour": "Black",
+   "opponent": "Benko",
+   "opponent_uuid": "4884dad8-ada0-4018-8013-2b7050e24afb",
+   "verdict": "loss",
+   "opening": "Petroff Defence"
+  },
+  {
+   "game": "dbb6e6d3-4390-492b-90d8-7a7054781ad2",
+   "kind": "Rated",
+   "round": 74,
+   "colour": "White",
+   "opponent": "2 boys 1 Rook",
+   "opponent_uuid": "773bb554-31dc-47ec-922e-f6b62cdb456f",
+   "verdict": "win",
+   "opening": "French Winawer"
+  },
+  {
+   "game": "da1438de-7292-400e-94c3-8fd119f7c33e",
+   "kind": "Rated",
+   "round": 73,
+   "colour": "Black",
+   "opponent": "Kushan",
+   "opponent_uuid": "c8829426-a203-45f3-a0e7-5618d52ea3c6",
+   "verdict": "win",
+   "opening": "Caro-Kann Classical"
+  },
+  {
+   "game": "8e55aac1-0912-4e02-964b-0b7250ff5b7a",
+   "kind": "Rated",
+   "round": 72,
+   "colour": "White",
+   "opponent": "SOLO",
+   "opponent_uuid": "999978b3-38fa-469e-b5c4-e4d411433822",
+   "verdict": "loss",
+   "opening": "Two Knights Defence"
+  },
+  {
+   "game": "dfd6c37b-da14-4f37-ab13-54942a82934c",
+   "kind": "Rated",
+   "round": 71,
+   "colour": "Black",
+   "opponent": "A weapon to surpass Metal Gear",
+   "opponent_uuid": "fad00efc-5233-47db-a95d-8e927d3e7f9c",
+   "verdict": "win",
+   "opening": "Caro-Kann Exchange"
+  },
+  {
+   "game": "d42e4b88-ad68-4f27-ada1-febc7163e57c",
+   "kind": "Rated",
+   "round": 70,
+   "colour": "White",
+   "opponent": "Left Right",
+   "opponent_uuid": "e58ec8c3-93a2-4e05-9025-81642e76cc62",
+   "verdict": "draw",
+   "opening": "Sicilian Closed"
+  },
+  {
+   "game": "d83e0419-0555-4de1-9344-6f0780dfe667",
+   "kind": "Rated",
+   "round": 69,
+   "colour": "Black",
+   "opponent": "The Aura Farmers",
+   "opponent_uuid": "77949d59-a4c6-4c3f-a211-b5c3363bc65e",
+   "verdict": "win",
+   "opening": "Sicilian Sveshnikov"
+  },
+  {
+   "game": "7b63b85c-bbfb-41a0-b986-b65eee39a868",
+   "kind": "Rated",
+   "round": 68,
+   "colour": "White",
+   "opponent": "Team2",
+   "opponent_uuid": "33731895-4927-40e5-90f5-fad0442d196d",
+   "verdict": "draw",
+   "opening": "French Tarrasch"
+  },
+  {
+   "game": "35957896-b1aa-492b-be81-a65e13bd484f",
+   "kind": "Rated",
+   "round": 67,
+   "colour": "White",
+   "opponent": "Shashwat",
+   "opponent_uuid": "21c6a41e-3786-4bb2-873f-101def0df852",
+   "verdict": "draw",
+   "opening": "Dutch Stonewall"
+  },
+  {
+   "game": "c6aba401-37d8-4bde-8f03-db3c74ab46c6",
+   "kind": "Rated",
+   "round": 66,
+   "colour": "Black",
+   "opponent": "Knight Vision",
+   "opponent_uuid": "7d1fd6fd-784d-44e0-9fd3-ae04b5b33268",
+   "verdict": "loss",
+   "opening": "Sicilian Closed"
+  },
+  {
+   "game": "32f874dc-ff2a-4b7b-8140-e3fcb70c6689",
+   "kind": "Rated",
+   "round": 65,
+   "colour": "White",
+   "opponent": "Snake",
+   "opponent_uuid": "a8e6af7a-b443-4138-b85e-617392f0d199",
+   "verdict": "win",
+   "opening": "Dutch Stonewall"
+  },
+  {
+   "game": "18955c24-496b-4840-8426-07a7e7b7b1a6",
+   "kind": "Rated",
+   "round": 64,
+   "colour": "Black",
+   "opponent": "Nighty Knight",
+   "opponent_uuid": "0ad2d3da-9db9-4292-adf2-cc15bd1591b0",
+   "verdict": "win",
+   "opening": "Petroff Defence"
+  },
+  {
+   "game": "4c8e95fe-4547-4032-8ef7-299091320c60",
+   "kind": "Rated",
+   "round": 63,
+   "colour": "Black",
+   "opponent": "The Smart Guy(s)",
+   "opponent_uuid": "c93bf8b8-2043-4966-aeb4-8cae79678dbf",
+   "verdict": "loss",
+   "opening": "French Winawer"
+  },
+  {
+   "game": "31955fb5-f40f-456d-9ce4-340587079972",
+   "kind": "Rated",
+   "round": 62,
+   "colour": "White",
+   "opponent": "Chessbuster 9000",
+   "opponent_uuid": "c3c1b82f-b56c-443e-bff6-70471f454679",
+   "verdict": "loss",
+   "opening": "Queen's Gambit Accepted"
+  },
+  {
+   "game": "a6cf47b8-b99f-48a8-8ed3-8f4e03b1b4bd",
+   "kind": "Rated",
+   "round": 61,
+   "colour": "Black",
+   "opponent": "Fried Liver Defence",
+   "opponent_uuid": "7bc75a64-6091-44e1-8f01-64c3ef2bbd2c",
+   "verdict": "win",
+   "opening": "Queen's Indian Defence"
+  },
+  {
+   "game": "f32b0ac2-7b12-4a39-880e-d111666a1a4e",
+   "kind": "Rated",
+   "round": 60,
+   "colour": "White",
+   "opponent": "The W in Woxbridge",
+   "opponent_uuid": "764795d9-b636-488b-b976-1862b09bd4fd",
+   "verdict": "loss",
+   "opening": "Sicilian Closed"
+  },
+  {
+   "game": "9955b5e2-9de9-4af5-9068-3637efe14dc2",
+   "kind": "Rated",
+   "round": 59,
+   "colour": "Black",
+   "opponent": "KingsGuard",
+   "opponent_uuid": "2177d67e-4c17-444c-9a8d-0e803eef14be",
+   "verdict": "win",
+   "opening": "Semi-Slav Defence"
+  },
+  {
+   "game": "9c31bf71-f099-48ac-92d1-e019018e1bb3",
+   "kind": "Rated",
+   "round": 58,
+   "colour": "White",
+   "opponent": "Frisky",
+   "opponent_uuid": "14bba473-ca19-4bd9-b435-393adaa359fd",
+   "verdict": "loss",
+   "opening": "Grunfeld Defence"
+  },
+  {
+   "game": "d5f8efa9-3515-4cdf-867d-5b2ce5e72f94",
+   "kind": "Rated",
+   "round": 57,
+   "colour": "Black",
+   "opponent": "2sigbros",
+   "opponent_uuid": "5b500243-9807-4747-a843-5bf3facea567",
+   "verdict": "win",
+   "opening": "Sicilian Closed"
+  },
+  {
+   "game": "3c6b912d-7630-4f43-b0e0-f8f3450a8285",
+   "kind": "Rated",
+   "round": 56,
+   "colour": "White",
+   "opponent": "What the fork",
+   "opponent_uuid": "316a1575-5bae-420c-af1c-67a187016631",
+   "verdict": "win",
+   "opening": "Queen's Indian Defence"
+  },
+  {
+   "game": "122bb3c8-1e26-40cf-809e-51da74423f7e",
+   "kind": "Rated",
+   "round": 55,
+   "colour": "Black",
+   "opponent": "Wilson's",
+   "opponent_uuid": "b7a12bd9-9b42-4d3f-9db9-288b525cf74d",
+   "verdict": "loss",
+   "opening": "Ruy Lopez, Closed"
+  },
+  {
+   "game": "10c45778-b1f9-45dd-9219-d4490eb32420",
+   "kind": "Rated",
+   "round": 54,
+   "colour": "White",
+   "opponent": "DanyaTheGoat",
+   "opponent_uuid": "9848c884-3af4-43d5-bfa7-e23da74a5581",
+   "verdict": "loss",
+   "opening": "Sicilian Sveshnikov"
+  },
+  {
+   "game": "99c93e58-4723-4008-891d-d7af3de61ed3",
+   "kind": "Rated",
+   "round": 53,
+   "colour": "Black",
+   "opponent": "yung money",
+   "opponent_uuid": "0a01484c-ab06-4051-a634-4766c8d09c24",
+   "verdict": "draw",
+   "opening": "Sicilian Najdorf"
+  },
+  {
+   "game": "35c94f84-42cd-4f04-97a2-03ad95e8f816",
+   "kind": "Rated",
+   "round": 52,
+   "colour": "White",
+   "opponent": "Nighty Knight",
+   "opponent_uuid": "0ad2d3da-9db9-4292-adf2-cc15bd1591b0",
+   "verdict": "win",
+   "opening": "Sicilian Closed"
+  },
+  {
+   "game": "bbf0eeee-d855-4777-814b-bf604ab368fa",
+   "kind": "Rated",
+   "round": 51,
+   "colour": "White",
+   "opponent": "2sigbros",
+   "opponent_uuid": "5b500243-9807-4747-a843-5bf3facea567",
+   "verdict": "draw",
+   "opening": "Sicilian Sveshnikov"
+  },
+  {
+   "game": "1024dc6b-3028-4aa1-a582-685020232e02",
+   "kind": "Rated",
+   "round": 50,
+   "colour": "Black",
+   "opponent": "Knightmare",
+   "opponent_uuid": "2c2d97ec-fe35-4892-b822-da568f7534c8",
+   "verdict": "win",
+   "opening": "Sicilian Classical"
+  },
+  {
+   "game": "0c8870db-ec1c-478a-8cc8-7cf0f4dc71f2",
+   "kind": "Rated",
+   "round": 49,
+   "colour": "Black",
+   "opponent": "Zack",
+   "opponent_uuid": "9a5a6b18-36bb-46c6-a5a6-dac002c242a5",
+   "verdict": "draw",
+   "opening": "English Symmetrical"
+  },
+  {
+   "game": "8220890b-058f-424b-a7aa-d9fae05fa8b3",
+   "kind": "Rated",
+   "round": 48,
+   "colour": "White",
+   "opponent": "The Smart Guy(s)",
+   "opponent_uuid": "c93bf8b8-2043-4966-aeb4-8cae79678dbf",
+   "verdict": "loss",
+   "opening": "Sicilian Closed"
+  },
+  {
+   "game": "2b246bdc-091f-4e66-9942-b0614dc93dc8",
+   "kind": "Rated",
+   "round": 47,
+   "colour": "White",
+   "opponent": "yung money",
+   "opponent_uuid": "0a01484c-ab06-4051-a634-4766c8d09c24",
+   "verdict": "draw",
+   "opening": "Reti Opening"
+  },
+  {
+   "game": "4e198157-9c72-42d5-8959-dcbdee58d715",
+   "kind": "Rated",
+   "round": 46,
+   "colour": "Black",
+   "opponent": "Zugzwang Rickwar",
+   "opponent_uuid": "3b04ae91-3231-4840-b544-3960850f1972",
+   "verdict": "loss",
+   "opening": "French Classical"
+  },
+  {
+   "game": "32f90f1e-c599-4a1d-8736-6a86b0ec107c",
+   "kind": "Rated",
+   "round": 45,
+   "colour": "White",
+   "opponent": "CPAE",
+   "opponent_uuid": "3c1ea435-b36e-4dfc-b33a-4df31ae9df49",
+   "verdict": "draw",
+   "opening": "Semi-Slav Defence"
+  },
+  {
+   "game": "b3d36ee2-8f3b-4640-9b9b-c1fab7e21589",
+   "kind": "Rated",
+   "round": 44,
+   "colour": "Black",
+   "opponent": "Alpha",
+   "opponent_uuid": "5ac4980c-1ef0-45eb-a96a-cd83b3924005",
+   "verdict": "win",
+   "opening": "Ruy Lopez, Closed"
+  },
+  {
+   "game": "9b3dc80c-e324-4514-ba35-d62c98b741c7",
+   "kind": "Rated",
+   "round": 43,
+   "colour": "White",
+   "opponent": "kronos",
+   "opponent_uuid": "a2e51576-3e24-47b0-8562-48028bf257bb",
+   "verdict": "win",
+   "opening": "London System"
+  },
+  {
+   "game": "f9632abc-0905-45b1-b371-57c7b317aef4",
+   "kind": "Rated",
+   "round": 42,
+   "colour": "Black",
+   "opponent": "\u610f\u9762\u7c73\u52a9",
+   "opponent_uuid": "d8c1519e-4599-4470-96ec-dada4438927d",
+   "verdict": "loss",
+   "opening": "French Tarrasch"
+  },
+  {
+   "game": "ea6003fb-4251-413f-b569-14e373d21a8f",
+   "kind": "Rated",
+   "round": 41,
+   "colour": "Black",
+   "opponent": "corundum.ai",
+   "opponent_uuid": "e3b6706d-d6a7-43d4-ba84-3db44ebe66b0",
+   "verdict": "loss",
+   "opening": "Scotch Game"
+  },
+  {
+   "game": "3047f823-eedb-4a03-b338-38af961ea836",
+   "kind": "Rated",
+   "round": 40,
+   "colour": "White",
+   "opponent": "2sigbros",
+   "opponent_uuid": "5b500243-9807-4747-a843-5bf3facea567",
+   "verdict": "draw",
+   "opening": "Sicilian Dragon"
+  },
+  {
+   "game": "cb13a537-4c33-4f0f-a29e-a8622c4e328a",
+   "kind": "Rated",
+   "round": 39,
+   "colour": "Black",
+   "opponent": "Knightmare",
+   "opponent_uuid": "2c2d97ec-fe35-4892-b822-da568f7534c8",
+   "verdict": "win",
+   "opening": "Reti Opening"
+  },
+  {
+   "game": "c13ca8ae-1244-42a1-ae50-16e69f51d57c",
+   "kind": "Rated",
+   "round": 38,
+   "colour": "White",
+   "opponent": "Chessify",
+   "opponent_uuid": "2837cf75-e0e4-4d1d-8942-6d451aff5f0a",
+   "verdict": "loss",
+   "opening": "Sicilian Closed"
+  },
+  {
+   "game": "b658f9bf-b738-4bcb-9dda-ca33a40db747",
+   "kind": "Rated",
+   "round": 37,
+   "colour": "White",
+   "opponent": "The W in Woxbridge",
+   "opponent_uuid": "764795d9-b636-488b-b976-1862b09bd4fd",
+   "verdict": "draw",
+   "opening": "King's Indian Classical"
+  },
+  {
+   "game": "22033b49-665f-413d-b4ad-7536cf7d90f7",
+   "kind": "Rated",
+   "round": 36,
+   "colour": "Black",
+   "opponent": "Cagnus_Marlsen",
+   "opponent_uuid": "a1c2258e-a9c4-4b1d-a3d3-78425668d2ca",
+   "verdict": "loss",
+   "opening": "London System"
+  },
+  {
+   "game": "e97e3040-6bef-4933-afda-ed4885bce9bd",
+   "kind": "Rated",
+   "round": 35,
+   "colour": "White",
+   "opponent": "Vero",
+   "opponent_uuid": "12493549-e9e7-4304-834f-6a9d7d645c64",
+   "verdict": "win",
+   "opening": "Italian Game"
+  },
+  {
+   "game": "4eecec22-6ca6-4f00-8567-87a569572a60",
+   "kind": "Rated",
+   "round": 34,
+   "colour": "Black",
+   "opponent": "Pawn Stars",
+   "opponent_uuid": "7273119d-628e-410b-900a-83252e53eb52",
+   "verdict": "win",
+   "opening": "Sicilian Closed"
+  },
   {
    "game": "3cf1a044-2e6e-4e6f-b6de-b1a285a55b0f",
    "kind": "Rated",
@@ -104,7 +878,7 @@
    "colour": "Black",
    "opponent": "Entangled_99",
    "opponent_uuid": "bba4513a-0222-4926-a7a2-6ef8206537ea",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "Ruy Lopez, Closed"
   },
   {
@@ -144,7 +918,7 @@
    "colour": "White",
    "opponent": "Tunir",
    "opponent_uuid": "95aa042c-ccc3-4cf4-8e21-34062d6cee1a",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "French Classical"
   },
   {
@@ -154,7 +928,7 @@
    "colour": "Black",
    "opponent": "The W in Woxbridge",
    "opponent_uuid": "764795d9-b636-488b-b976-1862b09bd4fd",
-   "verdict": "draw",
+   "verdict": "void",
    "opening": "Italian Game"
   },
   {
@@ -178,5 +952,5 @@
    "opening": "Sicilian Sveshnikov"
   }
  ],
- "fetched_at": "2026-09-06T09:32:50Z"
+ "fetched_at": "2026-09-09T20:57:27Z"
 }

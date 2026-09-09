@@ -2,10 +2,10 @@
  "uuid": "0a121c61-60a7-4926-a0e7-024dffa6b185",
  "bot": "test_bot",
  "team": "pheanup",
- "rating": 2526,
- "rank": 14,
- "record": "29-27-18",
- "rated_rounds": 84,
+ "rating": 2528,
+ "rank": 16,
+ "record": "29-28-18",
+ "rated_rounds": 85,
  "history": [
   [
    5,
@@ -342,9 +342,23 @@
   [
    88,
    2526
+  ],
+  [
+   89,
+   2528
   ]
  ],
  "games": [
+  {
+   "game": "4d5a6cde-530d-4fb9-ba09-87d1561407fd",
+   "kind": "Rated",
+   "round": 89,
+   "colour": "White",
+   "opponent": "OMI",
+   "opponent_uuid": "f90aed5c-61db-4b3a-bbc1-9f40391e701a",
+   "verdict": "draw",
+   "opening": "Sicilian Sveshnikov"
+  },
   {
    "game": "ea6c2096-316f-411e-ac6b-e9ca1e9b0b1a",
    "kind": "Rated",
@@ -366,14 +380,14 @@
    "opening": "Semi-Slav Defence"
   },
   {
-   "game": "e51af9dc-f948-4e37-923a-b1796058d1fe",
+   "game": "a8f6b1d1-2b0d-4446-bb7e-34feb5e28c76",
    "kind": "Rated",
-   "round": 86,
+   "round": 85,
    "colour": "Black",
-   "opponent": "DGS ELO",
-   "opponent_uuid": "5f8a69d7-73a8-4498-b322-861b557dffbd",
-   "verdict": "draw",
-   "opening": "Sicilian Classical"
+   "opponent": "catfish",
+   "opponent_uuid": "4c4aa194-e507-4fb7-a863-46341205f08b",
+   "verdict": "win",
+   "opening": "Nimzo-Indian Defence"
   },
   {
    "game": "4d3b331d-9bd2-40b3-8f7f-15bac5b509f8",
@@ -1176,5 +1190,5 @@
    "opening": "London System"
   }
  ],
- "fetched_at": "2026-09-09T19:50:01Z"
+ "fetched_at": "2026-09-09T20:49:31Z"
 }
