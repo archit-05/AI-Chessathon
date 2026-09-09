@@ -2,10 +2,10 @@
  "uuid": "1d137be0-3a3e-4cda-a7ba-b22d8d178e66",
  "bot": "lyra",
  "team": "slopfish",
- "rating": 2399,
- "rank": 23,
- "record": "21-32-17",
- "rated_rounds": 80,
+ "rating": 2404,
+ "rank": 21,
+ "record": "22-32-18",
+ "rated_rounds": 82,
  "history": [
   [
    3,
@@ -326,9 +326,37 @@
   [
    82,
    2399
+  ],
+  [
+   83,
+   2433
+  ],
+  [
+   84,
+   2404
   ]
  ],
  "games": [
+  {
+   "game": "574b7b1a-5904-4abd-aeec-515d05999d20",
+   "kind": "Rated",
+   "round": 84,
+   "colour": "Black",
+   "opponent": "Cornelius",
+   "opponent_uuid": "acecd823-279a-4bf9-8321-0ee6ed68deda",
+   "verdict": "loss",
+   "opening": "Caro-Kann Exchange"
+  },
+  {
+   "game": "cedbb942-460a-4104-96d4-39e898a45ea4",
+   "kind": "Rated",
+   "round": 83,
+   "colour": "Black",
+   "opponent": "Rataturing",
+   "opponent_uuid": "08c1be91-20d4-4d43-9f63-d87894df1d3c",
+   "verdict": "win",
+   "opening": "Semi-Slav Defence"
+  },
   {
    "game": "6f427baa-a2e2-4ab0-ac7b-caefe080b93c",
    "kind": "Rated",
@@ -340,16 +368,6 @@
    "opening": "Queen's Indian Defence"
   },
   {
-   "game": "04a6e474-6e21-4788-8f77-457f827936a4",
-   "kind": "Rated",
-   "round": 81,
-   "colour": "White",
-   "opponent": "Opus Carlsen",
-   "opponent_uuid": "f0286356-626d-4dd2-86ab-fd6d779063cb",
-   "verdict": "draw",
-   "opening": "French Classical"
-  },
-  {
    "game": "7fe9cb7d-203a-490b-ad4b-09aabc122487",
    "kind": "Rated",
    "round": 80,
@@ -357,6 +375,16 @@
    "opponent": "Mate in One",
    "opponent_uuid": "3be637a8-e78d-4da4-8016-d13e00170433",
    "verdict": "draw",
+   "opening": "Reti Opening"
+  },
+  {
+   "game": "0badf7e6-dd8b-4083-932d-0672d5211db1",
+   "kind": "Rated",
+   "round": 79,
+   "colour": "Black",
+   "opponent": "Cornelius",
+   "opponent_uuid": "acecd823-279a-4bf9-8321-0ee6ed68deda",
+   "verdict": "win",
    "opening": "Reti Opening"
   },
   {
@@ -1120,5 +1148,5 @@
    "opening": "Two Knights Defence"
   }
  ],
- "fetched_at": "2026-09-09T13:48:25Z"
+ "fetched_at": "2026-09-09T15:50:44Z"
 }
