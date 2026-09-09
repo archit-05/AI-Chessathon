@@ -2,10 +2,10 @@
  "uuid": "1d137be0-3a3e-4cda-a7ba-b22d8d178e66",
  "bot": "lyra",
  "team": "slopfish",
- "rating": 2372,
- "rank": 26,
- "record": "22-32-19",
- "rated_rounds": 83,
+ "rating": 2339,
+ "rank": 30,
+ "record": "22-33-20",
+ "rated_rounds": 85,
  "history": [
   [
    3,
@@ -338,9 +338,37 @@
   [
    85,
    2372
+  ],
+  [
+   86,
+   2347
+  ],
+  [
+   87,
+   2339
   ]
  ],
  "games": [
+  {
+   "game": "b64d88d9-909e-42f1-b640-75f105f48e4a",
+   "kind": "Rated",
+   "round": 87,
+   "colour": "Black",
+   "opponent": "Mate in One",
+   "opponent_uuid": "3be637a8-e78d-4da4-8016-d13e00170433",
+   "verdict": "draw",
+   "opening": "French Classical"
+  },
+  {
+   "game": "1a24173c-75b1-4ec8-a242-79afb01fd4a7",
+   "kind": "Rated",
+   "round": 86,
+   "colour": "Black",
+   "opponent": "FuzzyBot",
+   "opponent_uuid": "3241cef5-6b1c-41f2-b275-f0e50fc52ed5",
+   "verdict": "loss",
+   "opening": "Sicilian Closed"
+  },
   {
    "game": "a2acbc89-f038-4bb4-b1ca-7df17d9dea52",
    "kind": "Rated",
@@ -352,16 +380,6 @@
    "opening": "Sicilian Closed"
   },
   {
-   "game": "574b7b1a-5904-4abd-aeec-515d05999d20",
-   "kind": "Rated",
-   "round": 84,
-   "colour": "Black",
-   "opponent": "Cornelius",
-   "opponent_uuid": "acecd823-279a-4bf9-8321-0ee6ed68deda",
-   "verdict": "loss",
-   "opening": "Caro-Kann Exchange"
-  },
-  {
    "game": "cedbb942-460a-4104-96d4-39e898a45ea4",
    "kind": "Rated",
    "round": 83,
@@ -370,6 +388,16 @@
    "opponent_uuid": "08c1be91-20d4-4d43-9f63-d87894df1d3c",
    "verdict": "win",
    "opening": "Semi-Slav Defence"
+  },
+  {
+   "game": "6f427baa-a2e2-4ab0-ac7b-caefe080b93c",
+   "kind": "Rated",
+   "round": 82,
+   "colour": "White",
+   "opponent": "OMI",
+   "opponent_uuid": "f90aed5c-61db-4b3a-bbc1-9f40391e701a",
+   "verdict": "draw",
+   "opening": "Queen's Indian Defence"
   },
   {
    "game": "04a6e474-6e21-4788-8f77-457f827936a4",
@@ -1162,5 +1190,5 @@
    "opening": "Two Knights Defence"
   }
  ],
- "fetched_at": "2026-09-09T16:50:19Z"
+ "fetched_at": "2026-09-09T18:50:55Z"
 }

@@ -2002,3 +2002,73 @@ leaderboard: 428 rows
   alive.
 
 strategy report: /Users/architbhardwaj/Desktop/AI Chessathon/intel/STRATEGY.txt
+leaderboard: 431 rows
+  1 stockfih               (what even is en passant) games 78 missing 0 -> stockfih.pgn
+  2 Mite                   (Ryan Vincent) games 58 missing 0 -> Mite.pgn
+  3 AlphaFish              (Emile Andrieu) games 78 missing 0 -> AlphaFish.pgn
+  4 Patzer 2.4             (Gijs Smit) games 86 missing 0 -> Patzer_2_4.pgn
+  5 Poincare conjecture    (Gladiator) games 60 missing 0 -> Poincare_conjecture.pgn
+  6 Loss Preventer         (Lightning Tree) games 85 missing 0 -> Loss_Preventer.pgn
+  7 ms                     (ms) games 85 missing 0 -> ms.pgn
+  8 SoberPaschoud          (Sobriety) games 86 missing 0 -> SoberPaschoud.pgn
+  9 PSL God Matt Bomer     (JBG fam) games 64 missing 0 -> PSL_God_Matt_Bomer.pgn
+ 10 Capablanca             (THE ROOOOOKKK!!!!) games 85 missing 0 -> Capablanca.pgn
+ 11 AI Fellow              (AI Fellows) games 86 missing 0 -> AI_Fellow.pgn
+ 12 Anchoa                 (Lubina) games 86 missing 0 -> Anchoa.pgn
+ 13 test_bot               (pheanup) games 82 missing 0 -> test_bot.pgn
+ 14 Ultron Prime           (DGS ELO) games 86 missing 0 -> Ultron_Prime.pgn
+ 15 Danya's Disciple       (Danya's Disciple) games 86 missing 0 -> Danya_s_Disciple.pgn
+ 16 BINI Alpha             (Opus Carlsen) games 63 missing 0 -> BINI_Alpha.pgn
+ 17 cory                   (catfish) games 57 missing 0 -> cory.pgn
+ 18 Fuzzydafool            (FuzzyBot) games 86 missing 0 -> Fuzzydafool.pgn
+ 19 Cornelius              (Cornelius) games 78 missing 0 -> Cornelius.pgn
+ 20 Astral                 (omega3 fish) games 86 missing 0 -> Astral.pgn
+ 19 Cornelius            analysed 58/78 games
+ 20 Astral               analysed 65/86 games
+2 game(s) had no embedded evaluation and were skipped
+  # Bot                Rating   Record   CPL sACPL   Bl%  s/mv Draw% RepA NonC Void
+-----------------------------------------------------------------------------------
+  1 stockfih             2821 30-24-20  15.7    23   0.4  2.02    37    2    4    4  *
+  2 Mite                 2771 20-28-10  10.2    20   0.2  1.77    49    0    2    1  *
+  3 AlphaFish            2741  39-28-7   7.5    16   0.1  1.56    44    1    4    5
+  4 Patzer 2.4           2700 31-34-13  11.2    18   0.5  1.56    53    0    2    9  *
+  5 Poincare conjectur   2669 22-28-10  11.7    17   0.2  1.63    47    0    0    1
+  6 Loss Preventer       2660 33-27-23  13.1    22   0.4  1.66    34    0    1    2
+  7 ms                   2640 37-26-17  11.1    21   0.3  1.84    37    1    3    4  *
+  8 SoberPaschoud        2617 33-30-15  10.5    18   0.3  1.66    48    0    5    8
+  9 PSL God Matt Bomer   2615 27-24-13  10.6    16   0.5  1.66    37    0    0    0  *
+ 10 Capablanca           2572 35-27-17  10.5    19   0.3  1.66    41    0    3    6
+ 11 AI Fellow            2556 31-35-11   8.7    20   0.2  1.93    57    5    7    8
+ 12 Anchoa               2555 29-33-14   9.4    17   0.3  1.66    55    0    0    8
+ 13 test_bot             2546 29-26-18  12.5    21   0.5  1.94    46    0    2    8
+ 14 Ultron Prime         2527 34-25-21  18.0    30   1.0  1.96    30    0    2    0  *
+ 15 Danya's Disciple     2523 32-23-21  13.2    23   0.6  1.82    45    2    2   11
+ 16 BINI Alpha           2493 27-20-13  15.6    25   0.8  1.84    39    0    1    4  *
+ 17 cory                 2490 23-20-15  14.0    21   0.6  1.63    33    0    1    0
+ 18 Fuzzydafool          2480 21-16-20  14.2    26   0.6  1.87    64    0    2   29  *
+ 19 Cornelius            2479 26-26-21  12.1    23   0.4  1.80    44    1    3    6
+ 20 Astral               2462 31-24-25  18.0    28   0.6  2.13    34    1    1    3
+ 16 BINI Alpha           2493 27-20-13  15.6    25   0.8  1.84    39    0    1    4  *
+
+  1. Move quality spread: AlphaFish loses 7.5 cp per move, Ultron Prime 18.0 cp; our current build
+  measures 15.6 cp. Blunder rates run 0.1-1.0%.
+  2. Free half points: stockfih (2), AlphaFish (1), ms (1), AI Fellow (5), Danya's Disciple (2),
+  Cornelius (1), Astral (1) accepted repetitions while more than +150. Against them, when worse, aim
+  for repetition.
+  3. Time trouble is real for stockfih (8 games under 5 s), Mite (2 games under 5 s), ms (27 games
+  under 5 s), PSL God Matt Bomer (9 games under 5 s), Capablanca (3 games under 5 s), AI Fellow (44
+  games under 5 s), Anchoa (11 games under 5 s), test_bot (41 games under 5 s), Ultron Prime (30
+  games under 5 s), cory (15 games under 5 s), Fuzzydafool (41 games under 5 s), Astral (46 games
+  under 5 s). Long, complicated games punish them.
+  4. Clock left unused by Patzer 2.4 (36 s), Poincare conjecture (38 s), Loss Preventer (41 s), BINI
+  Alpha (35 s): their depth is capped by a per-move budget, so our deeper search in critical moments
+  is a real edge.
+  5. Leaky conversion: stockfih (4 of 30 winning positions not won), Mite (2 of 19 winning positions
+  not won), AlphaFish (4 of 38 winning positions not won), Patzer 2.4 (2 of 32 winning positions not
+  won), ms (3 of 36 winning positions not won), SoberPaschoud (5 of 35 winning positions not won),
+  Capablanca (3 of 37 winning positions not won), AI Fellow (7 of 35 winning positions not won),
+  test_bot (2 of 27 winning positions not won), Ultron Prime (2 of 31 winning positions not won),
+  Danya's Disciple (2 of 31 winning positions not won), Fuzzydafool (2 of 26 winning positions not
+  won), Cornelius (3 of 20 winning positions not won). Keep lost positions alive.
+
+strategy report: /Users/architbhardwaj/Desktop/AI Chessathon/intel/STRATEGY.txt
