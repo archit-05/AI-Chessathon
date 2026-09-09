@@ -2,10 +2,10 @@
  "uuid": "8b991dda-4b49-46cc-900d-96c853154292",
  "bot": "RMFE",
  "team": "RMFE",
- "rating": 2349,
- "rank": 26,
- "record": "34-20-23",
- "rated_rounds": 83,
+ "rating": 2405,
+ "rank": 22,
+ "record": "35-21-23",
+ "rated_rounds": 85,
  "history": [
   [
    1,
@@ -338,9 +338,37 @@
   [
    83,
    2349
+  ],
+  [
+   84,
+   2401
+  ],
+  [
+   85,
+   2405
   ]
  ],
  "games": [
+  {
+   "game": "05f4a356-e59a-430e-a43f-5c9d06149839",
+   "kind": "Rated",
+   "round": 85,
+   "colour": "White",
+   "opponent": "Stonkfish",
+   "opponent_uuid": "385a6db2-1c05-46db-ae91-7218700f83b3",
+   "verdict": "draw",
+   "opening": "Sicilian Classical"
+  },
+  {
+   "game": "7caab013-eb3a-41f9-bfaa-8e3d0f66f53a",
+   "kind": "Rated",
+   "round": 84,
+   "colour": "Black",
+   "opponent": "Mate in One",
+   "opponent_uuid": "3be637a8-e78d-4da4-8016-d13e00170433",
+   "verdict": "win",
+   "opening": "London System"
+  },
   {
    "game": "881e9cab-6745-453f-8a39-393060e42abe",
    "kind": "Rated",
@@ -352,16 +380,6 @@
    "opening": "Petroff Defence"
   },
   {
-   "game": "e9fc7743-f308-452b-9380-4e78e9454726",
-   "kind": "Rated",
-   "round": 82,
-   "colour": "Black",
-   "opponent": "LehmanBro",
-   "opponent_uuid": "8d98448c-f28c-4552-b82d-cb657b33175d",
-   "verdict": "win",
-   "opening": "Italian Game"
-  },
-  {
    "game": "4015320a-d78c-43d8-88d6-0829217d3a28",
    "kind": "Rated",
    "round": 81,
@@ -370,6 +388,16 @@
    "opponent_uuid": "7af404ee-389f-427c-9433-40ebe5902fc6",
    "verdict": "draw",
    "opening": "Nimzo-Indian Defence"
+  },
+  {
+   "game": "8f545b96-8177-4bf2-bf95-5ad7e6be4b94",
+   "kind": "Rated",
+   "round": 80,
+   "colour": "White",
+   "opponent": "Edward",
+   "opponent_uuid": "e85fee09-4c17-4122-a6a1-67d09d9349bd",
+   "verdict": "draw",
+   "opening": "French Tarrasch"
   },
   {
    "game": "0049697e-d891-4d4b-8d1a-7a3e0c6f191e",
@@ -1162,5 +1190,5 @@
    "opening": "French Winawer"
   }
  ],
- "fetched_at": "2026-09-09T14:50:03Z"
+ "fetched_at": "2026-09-09T16:51:19Z"
 }
