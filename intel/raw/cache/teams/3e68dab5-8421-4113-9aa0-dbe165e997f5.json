@@ -2,10 +2,10 @@
  "uuid": "3e68dab5-8421-4113-9aa0-dbe165e997f5",
  "bot": "e=\u03c0=2",
  "team": "e=\u03c0=2",
- "rating": 2523,
- "rank": 16,
- "record": "38-26-24",
- "rated_rounds": 96,
+ "rating": 2499,
+ "rank": 20,
+ "record": "38-26-25",
+ "rated_rounds": 97,
  "history": [
   [
    1,
@@ -390,9 +390,33 @@
   [
    96,
    2523
+  ],
+  [
+   97,
+   2499
   ]
  ],
  "games": [
+  {
+   "game": "6f479cbe-8f7c-425d-aa95-e67a7224895d",
+   "kind": "Rated",
+   "round": 98,
+   "colour": "Black",
+   "opponent": "catfish",
+   "opponent_uuid": "4c4aa194-e507-4fb7-a863-46341205f08b",
+   "verdict": "live",
+   "opening": "Ruy Lopez, Closed"
+  },
+  {
+   "game": "8a4f57ed-3c23-433f-8a7b-79efedb35b73",
+   "kind": "Rated",
+   "round": 97,
+   "colour": "Black",
+   "opponent": "Gladiator",
+   "opponent_uuid": "429a581d-e7fc-41e3-a915-2895b01d7d0b",
+   "verdict": "loss",
+   "opening": "Queen's Gambit Accepted"
+  },
   {
    "game": "cc2a02f3-beeb-41c3-ba6f-8d5580e97858",
    "kind": "Rated",
@@ -404,16 +428,6 @@
    "opening": "Petroff Defence"
   },
   {
-   "game": "4b2d84c3-33c2-47a7-99ff-0def905abc3c",
-   "kind": "Rated",
-   "round": 95,
-   "colour": "White",
-   "opponent": "Make_no_mistakes",
-   "opponent_uuid": "ba636320-7bda-41ab-835d-3799a11613d8",
-   "verdict": "win",
-   "opening": "Nimzo-Indian Defence"
-  },
-  {
    "game": "3580f475-8bb6-444c-8de4-fb428db1eb37",
    "kind": "Rated",
    "round": 94,
@@ -422,6 +436,16 @@
    "opponent_uuid": "385a6db2-1c05-46db-ae91-7218700f83b3",
    "verdict": "draw",
    "opening": "Sicilian Closed"
+  },
+  {
+   "game": "3782bdc1-28ba-40ab-aff7-b586b13ce2b6",
+   "kind": "Rated",
+   "round": 93,
+   "colour": "White",
+   "opponent": "catfish",
+   "opponent_uuid": "4c4aa194-e507-4fb7-a863-46341205f08b",
+   "verdict": "draw",
+   "opening": "Caro-Kann Exchange"
   },
   {
    "game": "11299ce3-07d8-4a84-8864-1999e8ad5ed1",
@@ -1344,5 +1368,5 @@
    "opening": "French Winawer"
   }
  ],
- "fetched_at": "2026-09-10T13:00:12Z"
+ "fetched_at": "2026-09-10T14:10:38Z"
 }

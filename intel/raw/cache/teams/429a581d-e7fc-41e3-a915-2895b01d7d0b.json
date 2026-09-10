@@ -2,10 +2,10 @@
  "uuid": "429a581d-e7fc-41e3-a915-2895b01d7d0b",
  "bot": "Poincare conjecture",
  "team": "Gladiator",
- "rating": 2407,
- "rank": 22,
- "record": "23-32-12",
- "rated_rounds": 67,
+ "rating": 2622,
+ "rank": 9,
+ "record": "25-33-12",
+ "rated_rounds": 71,
  "history": [
   [
    27,
@@ -274,18 +274,54 @@
   [
    93,
    2407
+  ],
+  [
+   94,
+   2466
+  ],
+  [
+   95,
+   2470
+  ],
+  [
+   96,
+   2549
+  ],
+  [
+   97,
+   2622
   ]
  ],
  "games": [
   {
-   "game": "d556c233-774a-4783-b37a-3913dbfd87fd",
+   "game": "8a4f57ed-3c23-433f-8a7b-79efedb35b73",
    "kind": "Rated",
-   "round": 94,
+   "round": 97,
    "colour": "White",
-   "opponent": "AI Fellows",
-   "opponent_uuid": "b574c0ea-e994-4a16-9918-7fbc989c4234",
+   "opponent": "e=\u03c0=2",
+   "opponent_uuid": "3e68dab5-8421-4113-9aa0-dbe165e997f5",
+   "verdict": "win",
+   "opening": "Queen's Gambit Accepted"
+  },
+  {
+   "game": "013e5465-7fc9-469c-a70e-313c27cdabda",
+   "kind": "Rated",
+   "round": 96,
+   "colour": "Black",
+   "opponent": "Make_no_mistakes",
+   "opponent_uuid": "ba636320-7bda-41ab-835d-3799a11613d8",
    "verdict": "win",
    "opening": "London System"
+  },
+  {
+   "game": "c8f406d6-ad04-4cd6-b7c4-7ba6e030a5dd",
+   "kind": "Rated",
+   "round": 95,
+   "colour": "White",
+   "opponent": "slopfish",
+   "opponent_uuid": "1d137be0-3a3e-4cda-a7ba-b22d8d178e66",
+   "verdict": "draw",
+   "opening": "Caro-Kann Exchange"
   },
   {
    "game": "b791216a-cb46-4322-8281-5af5d25b206f",
@@ -306,6 +342,16 @@
    "opponent_uuid": "4c4aa194-e507-4fb7-a863-46341205f08b",
    "verdict": "loss",
    "opening": "Sicilian Closed"
+  },
+  {
+   "game": "af94027f-fc8a-4c39-9e2c-0c780db37806",
+   "kind": "Rated",
+   "round": 91,
+   "colour": "Black",
+   "opponent": "Opus Carlsen",
+   "opponent_uuid": "f0286356-626d-4dd2-86ab-fd6d779063cb",
+   "verdict": "loss",
+   "opening": "King's Indian Classical"
   },
   {
    "game": "9cb1a740-8242-4ff2-bc6a-7ea8e979621e",
@@ -948,5 +994,5 @@
    "opening": "Caro-Kann Exchange"
   }
  ],
- "fetched_at": "2026-09-10T10:15:31Z"
+ "fetched_at": "2026-09-10T14:00:22Z"
 }

@@ -1,26 +1,27 @@
 e=π=2  (team: e=π=2)  -  rank 16, rating 2523
 =============================================
-Generated 2026-09-10 14:08 from 87 rated games (rounds 1-96, 43 of 95 with evaluations so far); 8
+Generated 2026-09-10 15:10 from 88 rated games (rounds 1-97, 43 of 96 with evaluations so far); 8
   game(s) that never had a result ignored: R7, R13, R15, R17, R21, R31, R32, R33.
 
 IDENTITY
   Bot e=π=2; team e=π=2; university International; members not shown on the site.
-  Rank 16 of 442, rating 2523, record 38-26-24 in 87 rated games.
-  Rating trajectory: entered R1 at 1429, peak 2523 (R95), now 2523 (R96).
+  Rank 16 of 441, rating 2523, record 38-26-25 in 88 rated games.
+  Rating trajectory: entered R1 at 1429, peak 2523 (R95), now 2499 (R97).
   Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
     upload): R41 +107 -> 1649 (win vs Blunders central); R43 -107 -> 1531 (loss vs TheROOK); R45
     -103 -> 1524 (loss vs 72o); R46 +117 -> 1641 (win vs hyperfish); R76 +100 -> 1898 (win vs The
     Castle Gambit)
 
 RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
-  vs top 10 : 0-1-0 (50%) over 1 games
-  vs 11-20  : 0-3-0 (50%) over 3 games
-  vs 21-50  : 7-4-1 (75%) over 12 games
-  vs rest   : 31-17-23 (56%) over 71 games
+  vs top 10 : 0-2-0 (50%) over 2 games
+  vs 11-20  : 0-3-1 (38%) over 4 games
+  vs 21-50  : 5-5-1 (68%) over 11 games
+  vs rest   : 32-16-23 (56%) over 71 games
   Games vs top-10 teams:
-    R85  black vs c1                 (#4 ) draw threefold_repetition  Ruy Lopez, Closed
-  Games vs ranks 11-20: R82 draw vs 50CentRaise (#17, insuff); R94 draw vs Challenger (#14, 3fold);
-    R96 draw vs Ultron Prime (#15, fifty_moves)
+    R82  white vs 50CentRaise        (#10) draw insufficient_material French Classical
+    R85  black vs c1                 (#6 ) draw threefold_repetition  Ruy Lopez, Closed
+  Games vs ranks 11-20: R93 draw vs cory (#20, insuff); R94 draw vs Challenger (#18, 3fold); R96
+    draw vs Ultron Prime (#17, fifty_moves); R97 loss vs Poincare conje (#15, checkmate)
 
 MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
   positions inside +-800 only)
@@ -32,17 +33,17 @@ MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss c
   as white          : n  840, mean 38.1 cp, median 10 cp, blunders 2.7%
   as black          : n  963, mean 35.4 cp, median 7 cp, blunders 3.3%
   Worst moves: R23 35.g5 (-69 -> -9994); R23 60.Rd2 (+9997 -> +0); R24 29.Ng6 (+456 -> -454)
-  Site's own review (Stockfish 16, depth 16): mean ACPL 37.3 over 87 games, accuracy 93.2%; its tags
+  Site's own review (Stockfish 16, depth 16): mean ACPL 37.4 over 88 games, accuracy 93.2%; its tags
     on their moves: 51 blunder, 53 mistake, 3 miss, 171 inaccuracy of 2118
 
 TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
-  Per move: mean 2.14 s, median 2.22 s, quartiles 1.03-3.07 s, max 24.6 s; instant (<50 ms) moves
+  Per move: mean 2.13 s, median 2.2 s, quartiles 1.01-3.07 s, max 25.2 s; instant (<50 ms) moves
     7.0%
-  Clock at the end: mean 29.2 s, minimum 1.2 s; games under 10 s: 12, under 5 s: 4 (R9, R10, R12,
+  Clock at the end: mean 29.1 s, minimum 1.2 s; games under 10 s: 13, under 5 s: 4 (R9, R10, R12,
     R14)
-  By clock before the move: >60s 3.1 s (n 1976), 30-60s 2.1 s (n 1207), 10-30s 1.0 s (n 1414), <10s
-    0.6 s (n 230)
-  By own-move number: 1-15 3.4 s, 16-40 2.3 s, 41+ 0.9 s; when +300 or better 1.8 s, level 2.8 s,
+  By clock before the move: >60s 3.1 s (n 1990), 30-60s 2.1 s (n 1220), 10-30s 1.0 s (n 1465), <10s
+    0.6 s (n 242)
+  By own-move number: 1-15 3.4 s, 16-40 2.3 s, 41+ 0.8 s; when +300 or better 1.8 s, level 2.8 s,
     -300 or worse 1.5 s
   Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 4.5%,
     quartiles 3.2-6.0%
@@ -52,8 +53,8 @@ TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
     the game goes on; gets into time trouble
 
 DRAW BEHAVIOUR
-  25 draws in 87 played games (29.0%): threefold_repetition 18, fifty_moves 4, insufficient_material
-    2, stalemate 1; 1 of them vs top-10 teams
+  26 draws in 88 played games (30.0%): threefold_repetition 18, fifty_moves 4, insufficient_material
+    3, stalemate 1; 2 of them vs top-10 teams
   Repetition while ahead (> +150 at the final position): 2 -> R47 vs Pwn at +494, R50 vs ChEKmate at
     +173
   Repetition while behind (< -150): 0; level repetitions: 5
@@ -76,27 +77,27 @@ ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
 
 OPENINGS (curated start positions assigned by the platform)
   By family: Sicilian 9-4-10 (48%); French 4-3-3 (55%); London 2-3-1 (58%); English 1-1-3 (30%); Ruy
-    Lopez 3-2-0 (80%); Semi-Slav 3-1-0 (88%); King's Indian 1-1-2 (38%); Reti 2-2-0 (75%); Scotch
-    2-1-1 (62%); Petroff 2-2-0 (75%); Queen's Gambit 2-0-1 (67%); Nimzo-Indian 1-1-1 (50%);
-    Caro-Kann 2-1-0 (83%); Four Knights 0-2-0 (50%); Catalan 0-1-1 (25%); Grunfeld 1-0-0 (100%);
-    Queen's Indian 0-0-1 (0%); Pirc 1-0-0 (100%); Italian 1-0-0 (100%); Two Knights 1-0-0 (100%)
+    Lopez 3-2-0 (80%); Semi-Slav 3-1-0 (88%); Queen's Gambit 2-0-2 (50%); King's Indian 1-1-2 (38%);
+    Reti 2-2-0 (75%); Scotch 2-1-1 (62%); Caro-Kann 2-2-0 (75%); Petroff 2-2-0 (75%); Nimzo-Indian
+    0-1-1 (25%); Four Knights 0-2-0 (50%); Catalan 0-1-1 (25%); Grunfeld 1-0-0 (100%); Queen's
+    Indian 0-0-1 (0%); Pirc 1-0-0 (100%); Italian 1-0-0 (100%); Two Knights 1-0-0 (100%)
   Positions seen more than once: Sicilian Sveshnikov x7 2-1-4 (36%); London System x6 2-3-1 (58%);
     Sicilian Classical x6 2-1-3 (42%); Sicilian Closed x6 4-2-0 (83%); English Symmetrical x5 1-1-3
     (30%); Ruy Lopez, Closed x5 3-2-0 (80%); French Tarrasch x4 2-1-1 (62%); King's Indian Classical
     x4 1-1-2 (38%); Petroff Defence x4 2-2-0 (75%); Reti Opening x4 2-2-0 (75%); Scotch Game x4
-    2-1-1 (62%); Semi-Slav Defence x4 3-1-0 (88%); French Winawer x3 1-0-2 (33%); Nimzo-Indian
-    Defence x3 1-1-1 (50%); Caro-Kann Classical x2 1-1-0 (75%); Catalan Opening x2 0-1-1 (25%); Four
-    Knights Game x2 0-2-0 (50%); French Classical x2 0-2-0 (50%); Queen's Gambit Accepted x2 2-0-0
-    (100%); Sicilian Dragon x2 1-0-1 (50%); Sicilian Najdorf x2 0-0-2 (0%); 8 positions seen once (6
-    won, 0 drawn, 2 lost).
-  Underperforms in: English 1-1-3 (30%), King's Indian 1-1-2 (38%)
+    2-1-1 (62%); Semi-Slav Defence x4 3-1-0 (88%); French Winawer x3 1-0-2 (33%); Queen's Gambit
+    Accepted x3 2-0-1 (67%); Caro-Kann Classical x2 1-1-0 (75%); Catalan Opening x2 0-1-1 (25%);
+    Four Knights Game x2 0-2-0 (50%); French Classical x2 0-2-0 (50%); Nimzo-Indian Defence x2 0-1-1
+    (25%); Sicilian Dragon x2 1-0-1 (50%); Sicilian Najdorf x2 0-0-2 (0%); 9 positions seen once (6
+    won, 1 drawn, 2 lost).
+  Underperforms in: English 1-1-3 (30%)
   First six own moves: 38% match Stockfish's first choice (moves 7-20: 45%), mean loss 27.2 cp, 0%
     played instantly; first clear divergence (loss >= 20 cp) at own move 3.1 on average.
 
 STYLE
-  Captures on 20.7% of own moves, checks on 7.8%; average game 111 plies (55 own moves), longest 296
+  Captures on 20.7% of own moves, checks on 7.8%; average game 112 plies (56 own moves), longest 296
     plies (R86)
-  Wins: 38 (38 by checkmate, 0 by opponent failure); losses: 24 (24 by checkmate, 0 by own failure)
+  Wins: 37 (37 by checkmate, 0 by opponent failure); losses: 25 (25 by checkmate, 0 by own failure)
   Sacrifices (gave >= 2 pawns of material without losing eval, then recovered): 3 -> R3 21.Nc4, R14
     24.Kd2, R38 3.Qd6
   When ahead (> +150) material leaves the board at 1.08 pawns per own move (level: 1.07); capture
@@ -104,10 +105,10 @@ STYLE
 
 LIKELY ENGINE PROFILE
   Shallow or noisy engine (mean loss 36.7 cp, blunder rate 3.1%). Confidence high.
-  Time allocation is a fixed share of the remaining clock (~4% per move; median 2.22 s, max 24.6 s),
+  Time allocation is a fixed share of the remaining clock (~4% per move; median 2.2 s, max 25.2 s),
   so depth shrinks as the game goes on and no extra time goes to critical positions (2.2 s after a
   >100 cp swing vs 2.3 s otherwise).
-  Poor clock awareness: 4 of 87 games went under 5 s.
+  Poor clock awareness: 4 of 88 games went under 5 s.
   Repeats while clearly ahead (2 games): no contempt or repetition avoidance in the search.
 
 HOW TO PLAY THEM
