@@ -2,10 +2,10 @@
  "uuid": "b9cbed87-8a3a-437d-9333-1447f68200d1",
  "bot": "stockfih",
  "team": "what even is en passant",
- "rating": 2750,
- "rank": 2,
- "record": "30-27-21",
- "rated_rounds": 83,
+ "rating": 2735,
+ "rank": 3,
+ "record": "31-29-21",
+ "rated_rounds": 85,
  "history": [
   [
    9,
@@ -338,18 +338,46 @@
   [
    91,
    2750
+  ],
+  [
+   92,
+   2756
+  ],
+  [
+   93,
+   2735
   ]
  ],
  "games": [
   {
-   "game": "03a33efe-b4b4-4d77-b0c4-6acf455faf31",
+   "game": "cdf0624c-f012-41f4-9972-2043a4cba61a",
    "kind": "Rated",
-   "round": 91,
+   "round": 94,
    "colour": "White",
-   "opponent": "Lightning Tree",
-   "opponent_uuid": "c90df064-e8e8-4144-b1fd-2dd6096dd21a",
+   "opponent": "OMI",
+   "opponent_uuid": "f90aed5c-61db-4b3a-bbc1-9f40391e701a",
    "verdict": "draw",
-   "opening": "English Symmetrical"
+   "opening": "Sicilian Closed"
+  },
+  {
+   "game": "0ec26813-c54d-4fcd-a036-866fba27f107",
+   "kind": "Rated",
+   "round": 93,
+   "colour": "Black",
+   "opponent": "Emile Andrieu",
+   "opponent_uuid": "659a3020-8af7-4934-b753-3b7c5fd11184",
+   "verdict": "draw",
+   "opening": "Caro-Kann Classical"
+  },
+  {
+   "game": "4bc0fe21-8334-48ee-bbc5-c703fdfd67a9",
+   "kind": "Rated",
+   "round": 92,
+   "colour": "Black",
+   "opponent": "JBG fam",
+   "opponent_uuid": "10021bb5-71a5-4b10-bde5-14e1f667501a",
+   "verdict": "win",
+   "opening": "Caro-Kann Classical"
   },
   {
    "game": "e0a1d362-d6ff-4a1c-9e01-64602c5df89e",
@@ -370,6 +398,16 @@
    "opponent_uuid": "258a9828-7442-4bea-97cb-eed1845ad2cc",
    "verdict": "draw",
    "opening": "King's Indian Classical"
+  },
+  {
+   "game": "f64d9362-ec66-4646-8832-4d4aff95a868",
+   "kind": "Rated",
+   "round": 88,
+   "colour": "White",
+   "opponent": "Emile Andrieu",
+   "opponent_uuid": "659a3020-8af7-4934-b753-3b7c5fd11184",
+   "verdict": "loss",
+   "opening": "Catalan Opening"
   },
   {
    "game": "216a343d-fc0d-4c8c-a080-0f4797da07c0",
@@ -1162,5 +1200,5 @@
    "opening": "Queen's Gambit Accepted"
   }
  ],
- "fetched_at": "2026-09-10T07:59:59Z"
+ "fetched_at": "2026-09-10T10:20:09Z"
 }
