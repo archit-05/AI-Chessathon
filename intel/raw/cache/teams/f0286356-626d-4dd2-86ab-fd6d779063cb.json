@@ -2,10 +2,10 @@
  "uuid": "f0286356-626d-4dd2-86ab-fd6d779063cb",
  "bot": "BINI Alpha",
  "team": "Opus Carlsen",
- "rating": 2823,
- "rank": 2,
- "record": "35-25-17",
- "rated_rounds": 80,
+ "rating": 2805,
+ "rank": 3,
+ "record": "35-25-18",
+ "rated_rounds": 81,
  "history": [
   [
    24,
@@ -326,9 +326,23 @@
   [
    103,
    2823
+  ],
+  [
+   104,
+   2805
   ]
  ],
  "games": [
+  {
+   "game": "f0e55817-065e-4342-bc51-dfa885c32274",
+   "kind": "Rated",
+   "round": 105,
+   "colour": "White",
+   "opponent": "Lightning Tree",
+   "opponent_uuid": "c90df064-e8e8-4144-b1fd-2dd6096dd21a",
+   "verdict": "loss",
+   "opening": "English Symmetrical"
+  },
   {
    "game": "a5ca6f92-3690-40bb-b952-5ecbddc0ada7",
    "kind": "Rated",
@@ -350,14 +364,14 @@
    "opening": "London System"
   },
   {
-   "game": "2c7be703-45a4-4a3a-9e24-3a0ec326e519",
+   "game": "5423952f-469b-45e9-a41f-18f163c03142",
    "kind": "Rated",
-   "round": 102,
+   "round": 101,
    "colour": "Black",
-   "opponent": "Gijs Smit",
-   "opponent_uuid": "3f0e0e44-cdce-485f-b5b6-3691e34f9f44",
-   "verdict": "draw",
-   "opening": "Sicilian Dragon"
+   "opponent": "Lubina",
+   "opponent_uuid": "34fd9228-11bf-4e7a-ba8f-b452d96ad8c9",
+   "verdict": "win",
+   "opening": "Sicilian Closed"
   },
   {
    "game": "02d8057f-5e8f-4a00-b5c0-a19c46d6a654",
@@ -1130,5 +1144,5 @@
    "opening": "Four Knights Game"
   }
  ],
- "fetched_at": "2026-09-10T20:45:11Z"
+ "fetched_at": "2026-09-10T21:47:38Z"
 }

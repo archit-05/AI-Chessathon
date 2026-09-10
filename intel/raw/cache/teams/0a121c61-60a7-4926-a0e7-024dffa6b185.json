@@ -2,10 +2,10 @@
  "uuid": "0a121c61-60a7-4926-a0e7-024dffa6b185",
  "bot": "test_bot",
  "team": "pheanup",
- "rating": 2594,
- "rank": 16,
- "record": "32-38-20",
- "rated_rounds": 100,
+ "rating": 2590,
+ "rank": 15,
+ "record": "32-39-20",
+ "rated_rounds": 101,
  "history": [
   [
    5,
@@ -406,9 +406,23 @@
   [
    104,
    2594
+  ],
+  [
+   105,
+   2590
   ]
  ],
  "games": [
+  {
+   "game": "a5dfb4eb-8bef-4b60-89a2-0ff1c9c857d1",
+   "kind": "Rated",
+   "round": 105,
+   "colour": "White",
+   "opponent": "Danya's Disciple",
+   "opponent_uuid": "a4b26c08-0fa5-48ae-b15e-69a622ee81bb",
+   "verdict": "draw",
+   "opening": "Sicilian Najdorf"
+  },
   {
    "game": "336175c9-7128-428e-b186-41d76586f261",
    "kind": "Rated",
@@ -430,14 +444,14 @@
    "opening": "Sicilian Dragon"
   },
   {
-   "game": "93a25edd-af19-4beb-8d83-0145cc1e2f4a",
+   "game": "764086bd-954d-43e3-97ba-4539d92e488a",
    "kind": "Rated",
-   "round": 102,
-   "colour": "Black",
-   "opponent": "DGS ELO",
-   "opponent_uuid": "5f8a69d7-73a8-4498-b322-861b557dffbd",
-   "verdict": "draw",
-   "opening": "French Tarrasch"
+   "round": 101,
+   "colour": "White",
+   "opponent": "50CentRaise",
+   "opponent_uuid": "4857862c-3ea2-4ae9-8792-335918e2ef58",
+   "verdict": "win",
+   "opening": "Sicilian Dragon"
   },
   {
    "game": "2a560df4-032a-4040-a920-c71da6382721",
@@ -1400,5 +1414,5 @@
    "opening": "London System"
   }
  ],
- "fetched_at": "2026-09-10T20:52:01Z"
+ "fetched_at": "2026-09-10T22:03:54Z"
 }
