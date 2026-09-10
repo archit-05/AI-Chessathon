@@ -2,10 +2,10 @@
  "uuid": "3e68dab5-8421-4113-9aa0-dbe165e997f5",
  "bot": "e=\u03c0=2",
  "team": "e=\u03c0=2",
- "rating": 2566,
- "rank": 16,
- "record": "40-29-26",
- "rated_rounds": 103,
+ "rating": 2526,
+ "rank": 19,
+ "record": "40-30-27",
+ "rated_rounds": 104,
  "history": [
   [
    1,
@@ -418,9 +418,23 @@
   [
    103,
    2566
+  ],
+  [
+   104,
+   2526
   ]
  ],
  "games": [
+  {
+   "game": "b6283fab-cc04-4f9e-8a6f-8993e3021c55",
+   "kind": "Rated",
+   "round": 105,
+   "colour": "White",
+   "opponent": "Zugzwin",
+   "opponent_uuid": "2463d1f5-3e78-4dce-a254-be5983079ccc",
+   "verdict": "draw",
+   "opening": "Sicilian Closed"
+  },
   {
    "game": "d6f4bfac-ae2b-426f-abda-732adf278d23",
    "kind": "Rated",
@@ -428,7 +442,7 @@
    "colour": "Black",
    "opponent": "Gladiator",
    "opponent_uuid": "429a581d-e7fc-41e3-a915-2895b01d7d0b",
-   "verdict": "live",
+   "verdict": "loss",
    "opening": "Italian Game"
   },
   {
@@ -442,14 +456,14 @@
    "opening": "Petroff Defence"
   },
   {
-   "game": "8a5f508f-1e2f-4fb8-b827-01a880f5cd7a",
+   "game": "06e8fb7b-0a9f-402a-aa78-224c780ceac5",
    "kind": "Rated",
-   "round": 102,
-   "colour": "White",
-   "opponent": "50CentRaise",
-   "opponent_uuid": "4857862c-3ea2-4ae9-8792-335918e2ef58",
-   "verdict": "win",
-   "opening": "Sicilian Closed"
+   "round": 101,
+   "colour": "Black",
+   "opponent": "FuzzyBot",
+   "opponent_uuid": "3241cef5-6b1c-41f2-b275-f0e50fc52ed5",
+   "verdict": "draw",
+   "opening": "Petroff Defence"
   },
   {
    "game": "c60bc00d-0995-41f8-8e1a-2d77071a2dca",
@@ -1452,5 +1466,5 @@
    "opening": "French Winawer"
   }
  ],
- "fetched_at": "2026-09-10T20:07:52Z"
+ "fetched_at": "2026-09-10T21:14:18Z"
 }

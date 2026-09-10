@@ -2,10 +2,10 @@
  "uuid": "0a121c61-60a7-4926-a0e7-024dffa6b185",
  "bot": "test_bot",
  "team": "pheanup",
- "rating": 2629,
- "rank": 9,
- "record": "32-38-19",
- "rated_rounds": 99,
+ "rating": 2594,
+ "rank": 16,
+ "record": "32-38-20",
+ "rated_rounds": 100,
  "history": [
   [
    5,
@@ -402,9 +402,23 @@
   [
    103,
    2629
+  ],
+  [
+   104,
+   2594
   ]
  ],
  "games": [
+  {
+   "game": "336175c9-7128-428e-b186-41d76586f261",
+   "kind": "Rated",
+   "round": 104,
+   "colour": "Black",
+   "opponent": "BetaGo",
+   "opponent_uuid": "145e2e17-6316-4b84-911b-45f3258ec8c9",
+   "verdict": "loss",
+   "opening": "Caro-Kann Classical"
+  },
   {
    "game": "2ee4602b-1ba2-4d2a-972f-5d0dd496fa2c",
    "kind": "Rated",
@@ -426,14 +440,14 @@
    "opening": "French Tarrasch"
   },
   {
-   "game": "764086bd-954d-43e3-97ba-4539d92e488a",
+   "game": "2a560df4-032a-4040-a920-c71da6382721",
    "kind": "Rated",
-   "round": 101,
-   "colour": "White",
-   "opponent": "50CentRaise",
-   "opponent_uuid": "4857862c-3ea2-4ae9-8792-335918e2ef58",
-   "verdict": "win",
-   "opening": "Sicilian Dragon"
+   "round": 100,
+   "colour": "Black",
+   "opponent": "Sobriety",
+   "opponent_uuid": "258a9828-7442-4bea-97cb-eed1845ad2cc",
+   "verdict": "draw",
+   "opening": "Sicilian Najdorf"
   },
   {
    "game": "bd14c6d8-9e3f-4fc4-947a-802405076136",
@@ -1386,5 +1400,5 @@
    "opening": "London System"
   }
  ],
- "fetched_at": "2026-09-10T19:58:05Z"
+ "fetched_at": "2026-09-10T20:52:01Z"
 }

@@ -1,6 +1,6 @@
-Anchoa  (team: Lubina)  -  rank 17, rating 2546
+Anchoa  (team: Lubina)  -  rank 17, rating 2538
 ===============================================
-Generated 2026-09-10 21:20 from 92 rated games (rounds 1-104, 72 of 103 with evaluations so far)
+Generated 2026-09-10 22:13 from 92 rated games (rounds 1-104, 72 of 103 with evaluations so far)
   plus 8 played to a result but voided by the site later (R3 3fold, R6 3fold, R14 3fold, R16
   50-move, R18 3fold, R23 50-move, R32 50-move, R72 insufficient_material): they count for move
   quality, clocks and draw behaviour, not for results; 3 game(s) that never had a result ignored:
@@ -8,66 +8,65 @@ Generated 2026-09-10 21:20 from 92 rated games (rounds 1-104, 72 of 103 with eva
 
 IDENTITY
   Bot Anchoa; team Lubina; university Imperial; members not shown on the site.
-  Rank 17 of 447, rating 2546 (provisional: fewer than six games on the current build, i.e. a new
-    upload in the last five rounds), record 33-43-17 in 91 rated games.
-  Rating trajectory: entered R1 at 1571, peak 2692 (R100), now 2538 (R103).
+  Rank 17 of 448, rating 2538 (provisional: fewer than six games on the current build, i.e. a new
+    upload in the last five rounds), record 33-43-17 in 92 rated games.
+  Rating trajectory: entered R1 at 1571, peak 2692 (R100), now 2639 (R104).
   Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
     upload): R13 -114 -> 1787 (loss vs test_bot); R19 +158 -> 1987 (win vs SirBlunderiusThird); R37
     -126 -> 2233 (loss vs Patzer 2.4); R56 +103 -> 2561 (win vs checkers); R58 +113 -> 2587 (win vs
-    SoberCooper); R61 -107 -> 2443 (loss vs Comeback arc for PSL God)
+    SoberCooper); R61 -107 -> 2443 (loss vs Comeback arc for PSL God); R104 +101 -> 2639 (win vs
+    Fuzzydafool)
 
 RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
-  vs top 10 : 6-20-9 (46%) over 35 games
-  vs 11-20  : 7-11-4 (57%) over 22 games
-  vs 21-50  : 10-12-2 (67%) over 24 games
-  vs rest   : 10-0-1 (91%) over 11 games
+  vs top 10 : 5-19-8 (45%) over 32 games
+  vs 11-20  : 8-12-5 (56%) over 25 games
+  vs 21-50  : 9-12-2 (65%) over 23 games
+  vs rest   : 11-0-1 (92%) over 12 games
   Games vs top-10 teams:
-    R2   black vs Challenger         (#9 ) win  checkmate             London System
-    R11  black vs Patzer 2.4         (#5 ) win  checkmate             Reti Opening
-    R13  white vs test_bot           (#10) loss checkmate             Dutch Stonewall
+    R2   black vs Challenger         (#7 ) win  checkmate             London System
+    R11  black vs Patzer 2.4         (#4 ) win  checkmate             Reti Opening
+    R13  white vs test_bot           (#9 ) loss checkmate             Dutch Stonewall
     R17  black vs AlphaFish          (#3 ) loss checkmate             Grunfeld Defence
-    R29  white vs stockfih           (#7 ) win  checkmate             King's Indian Classical
-    R31  black vs c1                 (#6 ) win  checkmate             Slav Defence
+    R29  white vs stockfih           (#6 ) win  checkmate             King's Indian Classical
     R35  white vs AlphaFish          (#3 ) loss checkmate             Pirc Defence
-    R37  white vs Patzer 2.4         (#5 ) loss checkmate             Semi-Slav Defence
-    R39  black vs test_bot           (#10) draw threefold_repetition  Nimzo-Indian Defence
+    R37  white vs Patzer 2.4         (#4 ) loss checkmate             Semi-Slav Defence
+    R39  black vs test_bot           (#9 ) draw threefold_repetition  Nimzo-Indian Defence
     R42  black vs AlphaFish          (#3 ) draw insufficient_material King's Indian Classical
-    R44  white vs test_bot           (#10) draw threefold_repetition  Queen's Gambit Declined
+    R44  white vs test_bot           (#9 ) draw threefold_repetition  Queen's Gambit Declined
     R47  black vs AlphaFish          (#3 ) loss checkmate             Caro-Kann Classical
-    R49  black vs test_bot           (#10) draw threefold_repetition  Reti Opening
+    R49  black vs test_bot           (#9 ) draw threefold_repetition  Reti Opening
     R52  black vs AlphaFish          (#3 ) draw insufficient_material Sicilian Closed
-    R54  black vs test_bot           (#10) draw fifty_moves           Nimzo-Indian Defence
-    R55  white vs Loss Preventer     (#4 ) draw threefold_repetition  English Symmetrical
+    R54  black vs test_bot           (#9 ) draw fifty_moves           Nimzo-Indian Defence
+    R55  white vs Loss Preventer     (#5 ) draw threefold_repetition  English Symmetrical
     R57  white vs AlphaFish          (#3 ) loss checkmate             Semi-Slav Defence
-    R60  white vs Loss Preventer     (#4 ) draw fifty_moves           Nimzo-Indian Defence
+    R60  white vs Loss Preventer     (#5 ) draw fifty_moves           Nimzo-Indian Defence
     R62  white vs AlphaFish          (#3 ) draw threefold_repetition  Queen's Gambit Declined
-    R65  black vs Mite               (#2 ) draw insufficient_material French Classical
-    R68  white vs Loss Preventer     (#4 ) draw threefold_repetition  Reti Opening
-    R69  black vs Patzer 2.4         (#5 ) draw fifty_moves           Queen's Gambit Declined
-    R70  black vs Mite               (#2 ) draw threefold_repetition  Queen's Gambit Declined
-    R71  white vs stockfih           (#7 ) draw threefold_repetition  Grunfeld Defence
-    R73  black vs test_bot           (#10) win  checkmate             English Symmetrical
-    R76  white vs Mite               (#2 ) loss checkmate             Sicilian Najdorf
-    R77  black vs Loss Preventer     (#4 ) draw insufficient_material Sicilian Closed
-    R88  white vs test_bot           (#10) draw insufficient_material Sicilian Classical
-    R92  black vs Patzer 2.4         (#5 ) draw insufficient_material English Symmetrical
-    R93  white vs c1                 (#6 ) loss checkmate             Sicilian Closed
-    R94  white vs test_bot           (#10) draw threefold_repetition  Sicilian Najdorf
-    R96  white vs Challenger         (#9 ) win  checkmate             French Advance
+    R65  black vs Mite               (#1 ) draw insufficient_material French Classical
+    R68  white vs Loss Preventer     (#5 ) draw threefold_repetition  Reti Opening
+    R69  black vs Patzer 2.4         (#4 ) draw fifty_moves           Queen's Gambit Declined
+    R70  black vs Mite               (#1 ) draw threefold_repetition  Queen's Gambit Declined
+    R71  white vs stockfih           (#6 ) draw threefold_repetition  Grunfeld Defence
+    R73  black vs test_bot           (#9 ) win  checkmate             English Symmetrical
+    R76  white vs Mite               (#1 ) loss checkmate             Sicilian Najdorf
+    R77  black vs Loss Preventer     (#5 ) draw insufficient_material Sicilian Closed
+    R88  white vs test_bot           (#9 ) draw insufficient_material Sicilian Classical
+    R92  black vs Patzer 2.4         (#4 ) draw insufficient_material English Symmetrical
+    R94  white vs test_bot           (#9 ) draw threefold_repetition  Sicilian Najdorf
+    R96  white vs Challenger         (#7 ) win  checkmate             French Advance
     R98  white vs ms                 (#8 ) draw fifty_moves           Sicilian Najdorf
-    R99  black vs c1                 (#6 ) draw fifty_moves           Sicilian Sveshnikov
-    R102 black vs Challenger         (#9 ) loss checkmate             Caro-Kann Advance
+    R102 black vs Challenger         (#7 ) loss checkmate             Caro-Kann Advance
   Games vs ranks 11-20: R20 win vs Danya's Discip (#18, checkmate); R25 win vs Fuzzydafool (#19,
-    checkmate); R34 draw vs SoberCooper (#15, fifty_moves); R43 draw vs SoberCooper (#15,
-    fifty_moves); R48 draw vs SoberCooper (#15, 3fold); R50 draw vs Astral (#20, insuff); R53 loss
-    vs SoberCooper (#15, checkmate); R58 win vs SoberCooper (#15, checkmate); R61 loss vs Comeback
-    arc f (#14, checkmate); R63 loss vs SoberCooper (#15, checkmate); R67 draw vs Poincare conje
-    (#13, 3fold); R78 loss vs Danya's Discip (#18, checkmate); R81 win vs Ultron Prime (#12,
-    checkmate); R83 draw vs Astral (#20, fifty_moves); R84 win vs Danya's Discip (#18, checkmate);
-    R87 draw vs Ultron Prime (#12, insuff); R89 draw vs Danya's Discip (#18, fifty_moves); R90 draw
-    vs Poincare conje (#13, 3fold); R95 draw vs Ultron Prime (#12, insuff); R100 win vs Poincare
-    conje (#13, checkmate); R103 draw vs Danya's Discip (#18, 3fold); R104 win vs Fuzzydafool (#19,
-    checkmate)
+    checkmate); R31 win vs c1 (#12, checkmate); R34 draw vs SoberCooper (#15, fifty_moves); R43 draw
+    vs SoberCooper (#15, fifty_moves); R48 draw vs SoberCooper (#15, 3fold); R50 draw vs Astral
+    (#20, insuff); R53 loss vs SoberCooper (#15, checkmate); R58 win vs SoberCooper (#15,
+    checkmate); R61 loss vs Comeback arc f (#13, checkmate); R63 loss vs SoberCooper (#15,
+    checkmate); R67 draw vs Poincare conje (#14, 3fold); R78 loss vs Danya's Discip (#18,
+    checkmate); R81 win vs Ultron Prime (#11, checkmate); R83 draw vs Astral (#20, fifty_moves); R84
+    win vs Danya's Discip (#18, checkmate); R87 draw vs Ultron Prime (#11, insuff); R89 draw vs
+    Danya's Discip (#18, fifty_moves); R90 draw vs Poincare conje (#14, 3fold); R93 loss vs c1 (#12,
+    checkmate); R95 draw vs Ultron Prime (#11, insuff); R99 draw vs c1 (#12, fifty_moves); R100 win
+    vs Poincare conje (#14, checkmate); R103 draw vs Danya's Discip (#18, 3fold); R104 win vs
+    Fuzzydafool (#19, checkmate)
 
 MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
   positions inside +-800 only)
@@ -99,7 +98,7 @@ TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
 
 DRAW BEHAVIOUR
   51 draws in 100 played games (51.0%): threefold_repetition 22, fifty_moves 15,
-    insufficient_material 13, stalemate 1; 22 of them vs top-10 teams; 8 of these were voided by the
+    insufficient_material 13, stalemate 1; 21 of them vs top-10 teams; 8 of these were voided by the
     site afterwards and no longer count on the ladder
   Repetition while ahead (> +150 at the final position): 0
   Repetition while behind (< -150): 0; level repetitions: 16

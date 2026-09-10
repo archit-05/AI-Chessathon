@@ -2,10 +2,10 @@
  "uuid": "c90df064-e8e8-4144-b1fd-2dd6096dd21a",
  "bot": "Loss Preventer",
  "team": "Lightning Tree",
- "rating": 2752,
- "rank": 4,
- "record": "38-36-25",
- "rated_rounds": 102,
+ "rating": 2751,
+ "rank": 5,
+ "record": "38-37-25",
+ "rated_rounds": 104,
  "history": [
   [
    1,
@@ -414,9 +414,27 @@
   [
    102,
    2752
+  ],
+  [
+   103,
+   2757
+  ],
+  [
+   104,
+   2751
   ]
  ],
  "games": [
+  {
+   "game": "35d6ae6d-37cb-4674-994b-a26b08da2775",
+   "kind": "Rated",
+   "round": 104,
+   "colour": "White",
+   "opponent": "what even is en passant",
+   "opponent_uuid": "b9cbed87-8a3a-437d-9333-1447f68200d1",
+   "verdict": "draw",
+   "opening": "Queen's Indian Defence"
+  },
   {
    "game": "1592dda0-44d0-4b8c-8398-920d80e7d6e2",
    "kind": "Rated",
@@ -438,14 +456,14 @@
    "opening": "London System"
   },
   {
-   "game": "e103eb67-632b-4366-b691-909ab5b5fb6b",
+   "game": "02d8057f-5e8f-4a00-b5c0-a19c46d6a654",
    "kind": "Rated",
-   "round": 101,
-   "colour": "White",
-   "opponent": "Ryan Vincent",
-   "opponent_uuid": "8c22f2a5-3bce-4b66-b93a-8f4ab4318b0f",
-   "verdict": "draw",
-   "opening": "Sicilian Closed"
+   "round": 100,
+   "colour": "Black",
+   "opponent": "Opus Carlsen",
+   "opponent_uuid": "f0286356-626d-4dd2-86ab-fd6d779063cb",
+   "verdict": "win",
+   "opening": "Sicilian Najdorf"
   },
   {
    "game": "ecdb7b70-ff1c-4c1d-9174-d9476e7d511b",
@@ -1428,5 +1446,5 @@
    "opening": "Reti Opening"
   }
  ],
- "fetched_at": "2026-09-10T19:46:34Z"
+ "fetched_at": "2026-09-10T20:48:45Z"
 }

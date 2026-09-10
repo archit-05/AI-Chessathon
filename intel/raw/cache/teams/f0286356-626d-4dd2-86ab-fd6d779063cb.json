@@ -2,10 +2,10 @@
  "uuid": "f0286356-626d-4dd2-86ab-fd6d779063cb",
  "bot": "BINI Alpha",
  "team": "Opus Carlsen",
- "rating": 2847,
- "rank": 1,
- "record": "35-25-16",
- "rated_rounds": 79,
+ "rating": 2823,
+ "rank": 2,
+ "record": "35-25-17",
+ "rated_rounds": 80,
  "history": [
   [
    24,
@@ -322,9 +322,23 @@
   [
    102,
    2847
+  ],
+  [
+   103,
+   2823
   ]
  ],
  "games": [
+  {
+   "game": "a5ca6f92-3690-40bb-b952-5ecbddc0ada7",
+   "kind": "Rated",
+   "round": 104,
+   "colour": "White",
+   "opponent": "Emile Andrieu",
+   "opponent_uuid": "659a3020-8af7-4934-b753-3b7c5fd11184",
+   "verdict": "loss",
+   "opening": "Four Knights Game"
+  },
   {
    "game": "321ad141-6176-4515-a8ca-a336abed58aa",
    "kind": "Rated",
@@ -346,14 +360,14 @@
    "opening": "Sicilian Dragon"
   },
   {
-   "game": "5423952f-469b-45e9-a41f-18f163c03142",
+   "game": "02d8057f-5e8f-4a00-b5c0-a19c46d6a654",
    "kind": "Rated",
-   "round": 101,
-   "colour": "Black",
-   "opponent": "Lubina",
-   "opponent_uuid": "34fd9228-11bf-4e7a-ba8f-b452d96ad8c9",
-   "verdict": "win",
-   "opening": "Sicilian Closed"
+   "round": 100,
+   "colour": "White",
+   "opponent": "Lightning Tree",
+   "opponent_uuid": "c90df064-e8e8-4144-b1fd-2dd6096dd21a",
+   "verdict": "loss",
+   "opening": "Sicilian Najdorf"
   },
   {
    "game": "83ead515-c22f-4d24-9db4-028ce0dc6238",
@@ -1116,5 +1130,5 @@
    "opening": "Four Knights Game"
   }
  ],
- "fetched_at": "2026-09-10T19:44:58Z"
+ "fetched_at": "2026-09-10T20:45:11Z"
 }
