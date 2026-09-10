@@ -2,10 +2,10 @@
  "uuid": "0a121c61-60a7-4926-a0e7-024dffa6b185",
  "bot": "test_bot",
  "team": "pheanup",
- "rating": 2595,
+ "rating": 2593,
  "rank": 14,
- "record": "31-35-19",
- "rated_rounds": 95,
+ "record": "31-36-19",
+ "rated_rounds": 96,
  "history": [
   [
    5,
@@ -386,9 +386,23 @@
   [
    99,
    2595
+  ],
+  [
+   100,
+   2593
   ]
  ],
  "games": [
+  {
+   "game": "2a560df4-032a-4040-a920-c71da6382721",
+   "kind": "Rated",
+   "round": 100,
+   "colour": "Black",
+   "opponent": "Sobriety",
+   "opponent_uuid": "258a9828-7442-4bea-97cb-eed1845ad2cc",
+   "verdict": "draw",
+   "opening": "Sicilian Najdorf"
+  },
   {
    "game": "bd14c6d8-9e3f-4fc4-947a-802405076136",
    "kind": "Rated",
@@ -400,14 +414,14 @@
    "opening": "English Symmetrical"
   },
   {
-   "game": "cc30895a-a6f9-4943-9e8b-db172d89fe10",
+   "game": "6542b15a-d739-43b1-b0bd-4273dc844a09",
    "kind": "Rated",
-   "round": 98,
-   "colour": "Black",
-   "opponent": "Cornelius",
-   "opponent_uuid": "acecd823-279a-4bf9-8321-0ee6ed68deda",
-   "verdict": "win",
-   "opening": "Reti Opening"
+   "round": 97,
+   "colour": "White",
+   "opponent": "AI Fellows",
+   "opponent_uuid": "b574c0ea-e994-4a16-9918-7fbc989c4234",
+   "verdict": "draw",
+   "opening": "Sicilian Closed"
   },
   {
    "game": "d2fc0fc0-d11a-4430-a404-cc016283d2ca",
@@ -1330,5 +1344,5 @@
    "opening": "London System"
   }
  ],
- "fetched_at": "2026-09-10T16:01:24Z"
+ "fetched_at": "2026-09-10T17:02:46Z"
 }

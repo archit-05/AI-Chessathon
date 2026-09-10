@@ -2,10 +2,10 @@
  "uuid": "e0a34e4b-17e8-4e9d-a8bf-d145164b4bb1",
  "bot": "warriors of academia",
  "team": "Binvengers",
- "rating": 2308,
- "rank": 40,
- "record": "40-18-33",
- "rated_rounds": 99,
+ "rating": 2328,
+ "rank": 39,
+ "record": "40-19-34",
+ "rated_rounds": 100,
  "history": [
   [
    1,
@@ -402,9 +402,23 @@
   [
    99,
    2308
+  ],
+  [
+   100,
+   2328
   ]
  ],
  "games": [
+  {
+   "game": "ecb01ccd-0e4f-4ad5-b548-6486db8176b6",
+   "kind": "Rated",
+   "round": 101,
+   "colour": "White",
+   "opponent": "RMFE",
+   "opponent_uuid": "8b991dda-4b49-46cc-900d-96c853154292",
+   "verdict": "loss",
+   "opening": "Ruy Lopez, Closed"
+  },
   {
    "game": "7cae60fe-e694-4c67-be2c-ad87edbaa6e4",
    "kind": "Rated",
@@ -412,7 +426,7 @@
    "colour": "Black",
    "opponent": "JSP",
    "opponent_uuid": "dab1e77e-ebb1-49f5-92d4-2a013e3288c4",
-   "verdict": "live",
+   "verdict": "draw",
    "opening": "Ruy Lopez, Closed"
   },
   {
@@ -426,14 +440,14 @@
    "opening": "Sicilian Sveshnikov"
   },
   {
-   "game": "5eb51840-ea76-4d13-afac-6fe461ff42eb",
+   "game": "f7766b2b-ef7c-466c-b376-6f374b5f9d21",
    "kind": "Rated",
-   "round": 98,
-   "colour": "Black",
-   "opponent": "Thorp",
-   "opponent_uuid": "c7c9afba-d0bd-44f0-add8-b177e17526b0",
-   "verdict": "win",
-   "opening": "French Winawer"
+   "round": 97,
+   "colour": "White",
+   "opponent": "ChessML",
+   "opponent_uuid": "e152b64e-0c6d-4341-b02b-09c09b098f8c",
+   "verdict": "draw",
+   "opening": "French Tarrasch"
   },
   {
    "game": "e3181e6e-d982-4255-9422-eca77c9c9ddf",
@@ -1386,5 +1400,5 @@
    "opening": "Sicilian Dragon"
   }
  ],
- "fetched_at": "2026-09-10T16:08:40Z"
+ "fetched_at": "2026-09-10T17:23:06Z"
 }

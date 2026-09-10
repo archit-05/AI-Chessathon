@@ -2,10 +2,10 @@
  "uuid": "f0286356-626d-4dd2-86ab-fd6d779063cb",
  "bot": "BINI Alpha",
  "team": "Opus Carlsen",
- "rating": 2909,
- "rank": 2,
- "record": "34-24-14",
- "rated_rounds": 75,
+ "rating": 2826,
+ "rank": 1,
+ "record": "34-24-15",
+ "rated_rounds": 77,
  "history": [
   [
    24,
@@ -306,9 +306,27 @@
   [
    98,
    2909
+  ],
+  [
+   99,
+   2892
+  ],
+  [
+   100,
+   2826
   ]
  ],
  "games": [
+  {
+   "game": "02d8057f-5e8f-4a00-b5c0-a19c46d6a654",
+   "kind": "Rated",
+   "round": 100,
+   "colour": "White",
+   "opponent": "Lightning Tree",
+   "opponent_uuid": "c90df064-e8e8-4144-b1fd-2dd6096dd21a",
+   "verdict": "loss",
+   "opening": "Sicilian Najdorf"
+  },
   {
    "game": "83ead515-c22f-4d24-9db4-028ce0dc6238",
    "kind": "Rated",
@@ -330,14 +348,14 @@
    "opening": "Sicilian Dragon"
   },
   {
-   "game": "8b7bb682-b3de-433b-887d-b5f99533a4d5",
+   "game": "a6516847-e80f-422d-9d50-a85123c437b8",
    "kind": "Rated",
-   "round": 97,
+   "round": 96,
    "colour": "Black",
-   "opponent": "Gijs Smit",
-   "opponent_uuid": "3f0e0e44-cdce-485f-b5b6-3691e34f9f44",
+   "opponent": "OMI",
+   "opponent_uuid": "f90aed5c-61db-4b3a-bbc1-9f40391e701a",
    "verdict": "win",
-   "opening": "Reti Opening"
+   "opening": "French Classical"
   },
   {
    "game": "0bb8fc6a-e7a4-4cce-8833-2de3cc05bac6",
@@ -1060,5 +1078,5 @@
    "opening": "Four Knights Game"
   }
  ],
- "fetched_at": "2026-09-10T15:44:21Z"
+ "fetched_at": "2026-09-10T16:48:39Z"
 }

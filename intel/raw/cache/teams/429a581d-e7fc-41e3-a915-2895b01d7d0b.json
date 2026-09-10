@@ -2,11 +2,15 @@
  "uuid": "429a581d-e7fc-41e3-a915-2895b01d7d0b",
  "bot": "Poincare conjecture",
  "team": "Gladiator",
- "rating": 2625,
- "rank": 11,
- "record": "25-35-12",
- "rated_rounds": 73,
+ "rating": 2578,
+ "rank": 17,
+ "record": "25-36-13",
+ "rated_rounds": 74,
  "history": [
+  [
+   27,
+   1429
+  ],
   [
    28,
    1514
@@ -294,9 +298,33 @@
   [
    99,
    2625
+  ],
+  [
+   100,
+   2578
   ]
  ],
  "games": [
+  {
+   "game": "c6bb45fe-9a11-4a2a-ad30-44945b98ad7d",
+   "kind": "Rated",
+   "round": 101,
+   "colour": "White",
+   "opponent": "Sobriety",
+   "opponent_uuid": "258a9828-7442-4bea-97cb-eed1845ad2cc",
+   "verdict": "draw",
+   "opening": "Sicilian Closed"
+  },
+  {
+   "game": "b9d47d82-737c-4ff9-83aa-64ea8048ce9f",
+   "kind": "Rated",
+   "round": 100,
+   "colour": "Black",
+   "opponent": "Lubina",
+   "opponent_uuid": "34fd9228-11bf-4e7a-ba8f-b452d96ad8c9",
+   "verdict": "loss",
+   "opening": "Petroff Defence"
+  },
   {
    "game": "d8a8d2e2-e257-4c3e-8717-f01063006e6f",
    "kind": "Rated",
@@ -308,16 +336,6 @@
    "opening": "Caro-Kann Advance"
   },
   {
-   "game": "2517e6a9-5d72-4f1b-9d60-b3114110e5eb",
-   "kind": "Rated",
-   "round": 98,
-   "colour": "Black",
-   "opponent": "OMI",
-   "opponent_uuid": "f90aed5c-61db-4b3a-bbc1-9f40391e701a",
-   "verdict": "draw",
-   "opening": "Petroff Defence"
-  },
-  {
    "game": "8a4f57ed-3c23-433f-8a7b-79efedb35b73",
    "kind": "Rated",
    "round": 97,
@@ -326,6 +344,16 @@
    "opponent_uuid": "3e68dab5-8421-4113-9aa0-dbe165e997f5",
    "verdict": "win",
    "opening": "Queen's Gambit Accepted"
+  },
+  {
+   "game": "013e5465-7fc9-469c-a70e-313c27cdabda",
+   "kind": "Rated",
+   "round": 96,
+   "colour": "Black",
+   "opponent": "Make_no_mistakes",
+   "opponent_uuid": "ba636320-7bda-41ab-835d-3799a11613d8",
+   "verdict": "win",
+   "opening": "London System"
   },
   {
    "game": "c8f406d6-ad04-4cd6-b7c4-7ba6e030a5dd",
@@ -1018,5 +1046,5 @@
    "opening": "Caro-Kann Exchange"
   }
  ],
- "fetched_at": "2026-09-10T15:51:33Z"
+ "fetched_at": "2026-09-10T17:23:46Z"
 }

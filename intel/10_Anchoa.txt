@@ -1,66 +1,65 @@
-Anchoa  (team: Lubina)  -  rank 11, rating 2616
+Anchoa  (team: Lubina)  -  rank 10, rating 2633
 ===============================================
-Generated 2026-09-10 17:08 from 87 rated games (rounds 1-99, 72 of 98 with evaluations so far) plus
+Generated 2026-09-10 18:22 from 88 rated games (rounds 1-100, 72 of 99 with evaluations so far) plus
   8 played to a result but voided by the site later (R3 3fold, R6 3fold, R14 3fold, R16 50-move, R18
   3fold, R23 50-move, R32 50-move, R72 insufficient_material): they count for move quality, clocks
   and draw behaviour, not for results; 3 game(s) that never had a result ignored: R9, R12, R33.
 
 IDENTITY
   Bot Anchoa; team Lubina; university Imperial; members not shown on the site.
-  Rank 11 of 441, rating 2616 (provisional: fewer than six games on the current build, i.e. a new
-    upload in the last five rounds), record 31-42-15 in 87 rated games.
-  Rating trajectory: entered R1 at 1571, peak 2633 (R99), now 2633 (R99).
+  Rank 10 of 441, rating 2633 (provisional: fewer than six games on the current build, i.e. a new
+    upload in the last five rounds), record 32-42-15 in 88 rated games.
+  Rating trajectory: entered R1 at 1571, peak 2692 (R100), now 2692 (R100).
   Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
     upload): R13 -114 -> 1787 (loss vs test_bot); R19 +158 -> 1987 (win vs SirBlunderiusThird); R37
     -126 -> 2233 (loss vs Patzer 2.4); R56 +103 -> 2561 (win vs checkers); R58 +113 -> 2587 (win vs
     SoberCooper); R61 -107 -> 2443 (loss vs Malnourished Goatis)
 
 RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
-  vs top 10 : 3-16-8 (41%) over 27 games
-  vs 11-20  : 8-15-5 (55%) over 28 games
+  vs top 10 : 3-14-8 (40%) over 25 games
+  vs 11-20  : 11-16-5 (59%) over 32 games
   vs 21-50  : 9-11-1 (69%) over 21 games
-  vs rest   : 10-0-1 (91%) over 11 games
+  vs rest   : 9-0-1 (90%) over 10 games
   Games vs top-10 teams:
     R11  black vs Patzer 2.4         (#4 ) win  checkmate             Reti Opening
-    R17  black vs AlphaFish          (#3 ) loss checkmate             Grunfeld Defence
+    R17  black vs AlphaFish          (#2 ) loss checkmate             Grunfeld Defence
     R29  white vs stockfih           (#6 ) win  checkmate             King's Indian Classical
     R31  black vs c1                 (#9 ) win  checkmate             Slav Defence
-    R35  white vs AlphaFish          (#3 ) loss checkmate             Pirc Defence
+    R35  white vs AlphaFish          (#2 ) loss checkmate             Pirc Defence
     R37  white vs Patzer 2.4         (#4 ) loss checkmate             Semi-Slav Defence
-    R42  black vs AlphaFish          (#3 ) draw insufficient_material King's Indian Classical
-    R47  black vs AlphaFish          (#3 ) loss checkmate             Caro-Kann Classical
-    R52  black vs AlphaFish          (#3 ) draw insufficient_material Sicilian Closed
+    R42  black vs AlphaFish          (#2 ) draw insufficient_material King's Indian Classical
+    R47  black vs AlphaFish          (#2 ) loss checkmate             Caro-Kann Classical
+    R52  black vs AlphaFish          (#2 ) draw insufficient_material Sicilian Closed
     R55  white vs Loss Preventer     (#5 ) draw threefold_repetition  English Symmetrical
-    R57  white vs AlphaFish          (#3 ) loss checkmate             Semi-Slav Defence
+    R57  white vs AlphaFish          (#2 ) loss checkmate             Semi-Slav Defence
     R60  white vs Loss Preventer     (#5 ) draw fifty_moves           Nimzo-Indian Defence
     R61  black vs Malnourished Goatis (#7 ) loss checkmate             Queen's Indian Defence
-    R62  white vs AlphaFish          (#3 ) draw threefold_repetition  Queen's Gambit Declined
-    R65  black vs Mite               (#1 ) draw insufficient_material French Classical
-    R67  white vs Poincare conjecture (#10) draw threefold_repetition  Caro-Kann Classical
+    R62  white vs AlphaFish          (#2 ) draw threefold_repetition  Queen's Gambit Declined
+    R65  black vs Mite               (#3 ) draw insufficient_material French Classical
     R68  white vs Loss Preventer     (#5 ) draw threefold_repetition  Reti Opening
     R69  black vs Patzer 2.4         (#4 ) draw fifty_moves           Queen's Gambit Declined
-    R70  black vs Mite               (#1 ) draw threefold_repetition  Queen's Gambit Declined
+    R70  black vs Mite               (#3 ) draw threefold_repetition  Queen's Gambit Declined
     R71  white vs stockfih           (#6 ) draw threefold_repetition  Grunfeld Defence
-    R76  white vs Mite               (#1 ) loss checkmate             Sicilian Najdorf
+    R76  white vs Mite               (#3 ) loss checkmate             Sicilian Najdorf
     R77  black vs Loss Preventer     (#5 ) draw insufficient_material Sicilian Closed
-    R90  black vs Poincare conjecture (#10) draw threefold_repetition  Semi-Slav Defence
     R92  black vs Patzer 2.4         (#4 ) draw insufficient_material English Symmetrical
     R93  white vs c1                 (#9 ) loss checkmate             Sicilian Closed
     R98  white vs ms                 (#8 ) draw fifty_moves           Sicilian Najdorf
     R99  black vs c1                 (#9 ) draw fifty_moves           Sicilian Sveshnikov
-  Games vs ranks 11-20: R13 loss vs test_bot (#17, checkmate); R20 win vs Danya's Discip (#14,
-    checkmate); R21 loss vs Capablanca (#20, checkmate); R25 win vs Fuzzydafool (#16, checkmate);
-    R27 win vs 50CentRaise (#15, checkmate); R34 draw vs SoberCooper (#13, fifty_moves); R36 draw vs
-    Capablanca (#20, 3fold); R39 draw vs test_bot (#17, 3fold); R43 draw vs SoberCooper (#13,
-    fifty_moves); R44 draw vs test_bot (#17, 3fold); R45 win vs Capablanca (#20, checkmate); R48
-    draw vs SoberCooper (#13, 3fold); R49 draw vs test_bot (#17, 3fold); R53 loss vs SoberCooper
-    (#13, checkmate); R54 draw vs test_bot (#17, fifty_moves); R58 win vs SoberCooper (#13,
-    checkmate); R63 loss vs SoberCooper (#13, checkmate); R73 win vs test_bot (#17, checkmate); R78
-    loss vs Danya's Discip (#14, checkmate); R81 win vs Ultron Prime (#19, checkmate); R84 win vs
-    Danya's Discip (#14, checkmate); R86 draw vs Capablanca (#20, stalemate); R87 draw vs Ultron
-    Prime (#19, insuff); R88 draw vs test_bot (#17, insuff); R89 draw vs Danya's Discip (#14,
-    fifty_moves); R94 draw vs test_bot (#17, 3fold); R95 draw vs Ultron Prime (#19, insuff); R97
-    draw vs 50CentRaise (#15, fifty_moves)
+  Games vs ranks 11-20: R2 win vs Challenger (#17, checkmate); R13 loss vs test_bot (#14,
+    checkmate); R20 win vs Danya's Discip (#15, checkmate); R21 loss vs Capablanca (#20, checkmate);
+    R25 win vs Fuzzydafool (#18, checkmate); R27 win vs 50CentRaise (#16, checkmate); R34 draw vs
+    SoberCooper (#13, fifty_moves); R36 draw vs Capablanca (#20, 3fold); R39 draw vs test_bot (#14,
+    3fold); R43 draw vs SoberCooper (#13, fifty_moves); R44 draw vs test_bot (#14, 3fold); R45 win
+    vs Capablanca (#20, checkmate); R48 draw vs SoberCooper (#13, 3fold); R49 draw vs test_bot (#14,
+    3fold); R53 loss vs SoberCooper (#13, checkmate); R54 draw vs test_bot (#14, fifty_moves); R58
+    win vs SoberCooper (#13, checkmate); R63 loss vs SoberCooper (#13, checkmate); R67 draw vs
+    Poincare conje (#11, 3fold); R73 win vs test_bot (#14, checkmate); R78 loss vs Danya's Discip
+    (#15, checkmate); R81 win vs Ultron Prime (#19, checkmate); R84 win vs Danya's Discip (#15,
+    checkmate); R86 draw vs Capablanca (#20, stalemate); R87 draw vs Ultron Prime (#19, insuff); R88
+    draw vs test_bot (#14, insuff); R89 draw vs Danya's Discip (#15, fifty_moves); R90 draw vs
+    Poincare conje (#11, 3fold); R94 draw vs test_bot (#14, 3fold); R95 draw vs Ultron Prime (#19,
+    insuff); R96 win vs Challenger (#17, checkmate); R100 win vs Poincare conje (#11, checkmate)
 
 MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
   positions inside +-800 only)
@@ -72,27 +71,26 @@ MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss c
   as white          : n 2462, mean 9.1 cp, median 0 cp, blunders 0.2%
   as black          : n 2649, mean 9.6 cp, median 0 cp, blunders 0.3%
   Worst moves: R24 32.Ne4 (+938 -> +613); R13 14.Rxg7+ (+0 -> -295); R30 66.Rc4 (+479 -> +196)
-  Site's own review (Stockfish 16, depth 16): mean ACPL 15.8 over 87 games, accuracy 97.7%; its tags
+  Site's own review (Stockfish 16, depth 16): mean ACPL 16.4 over 88 games, accuracy 97.7%; its tags
     on their moves: 10 blunder, 12 mistake, 2 miss, 79 inaccuracy of 5144
 
 TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
-  Per move: mean 1.58 s, median 1.17 s, quartiles 0.59-2.26 s, max 12.6 s; instant (<50 ms) moves
-    7.4%
-  Clock at the end: mean 26.0 s, minimum 4.3 s; games under 10 s: 34, under 5 s: 19 (R54, R59, R60,
-    R65, R68, R69, R83, R85, R86, R87, R89, R90, R92, R93, R94, R97, R98, R99, R72)
-  By clock before the move: >60s 2.8 s (n 2447), 30-60s 1.6 s (n 1947), 10-30s 1.0 s (n 1881), <10s
-    0.6 s (n 1964)
+  Per move: mean 1.6 s, median 1.19 s, quartiles 0.6-2.29 s, max 12.6 s; instant (<50 ms) moves 7.6%
+  Clock at the end: mean 25.9 s, minimum 4.3 s; games under 10 s: 35, under 5 s: 19 (R54, R59, R60,
+    R65, R68, R69, R83, R85, R86, R87, R89, R90, R92, R93, R94, R98, R99, R100, R72)
+  By clock before the move: >60s 2.8 s (n 2463), 30-60s 1.6 s (n 1968), 10-30s 1.0 s (n 1911), <10s
+    0.6 s (n 1849)
   By own-move number: 1-15 3.2 s, 16-40 2.1 s, 41+ 0.8 s; when +300 or better 1.2 s, level 1.8 s,
     -300 or worse 1.0 s
   Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 4.7%,
-    quartiles 3.3-7.9%
+    quartiles 3.3-7.6%
   After a >100 cp swing on the opponent's move: 1.6 s (n 138) vs 1.6 s otherwise; on moves that
     themselves swing >100 cp: 1.7 s (n 134) vs 1.6 s
   Exploitable: gets into time trouble
 
 DRAW BEHAVIOUR
-  50 draws in 95 played games (53.0%): threefold_repetition 21, fifty_moves 15,
-    insufficient_material 13, stalemate 1; 18 of them vs top-10 teams; 8 of these were voided by the
+  49 draws in 96 played games (51.0%): threefold_repetition 21, fifty_moves 14,
+    insufficient_material 13, stalemate 1; 16 of them vs top-10 teams; 8 of these were voided by the
     site afterwards and no longer count on the ladder
   Repetition while ahead (> +150 at the final position): 0
   Repetition while behind (< -150): 0; level repetitions: 16
@@ -103,27 +101,27 @@ ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
     R69 vs Patzer 2.4 low -9998, draw by fifty_moves: opponent could not convert inside fifty moves
 
 OPENINGS (curated start positions assigned by the platform)
-  By family: Sicilian 6-13-3 (57%); English 3-6-0 (67%); Caro-Kann 2-4-1 (57%); French 2-3-1 (58%);
-    Reti 3-2-1 (67%); Nimzo-Indian 1-5-0 (58%); King's Indian 3-2-0 (80%); Petroff 2-3-0 (70%);
+  By family: Sicilian 6-13-3 (57%); English 3-6-0 (67%); French 3-3-1 (64%); Petroff 3-3-0 (75%);
+    Reti 3-2-1 (67%); Nimzo-Indian 1-5-0 (58%); Caro-Kann 2-3-1 (58%); King's Indian 3-2-0 (80%);
     London 3-1-0 (88%); Grunfeld 2-1-1 (62%); Queen's Gambit 0-4-0 (50%); Ruy Lopez 0-2-2 (25%);
     Semi-Slav 0-1-2 (17%); Catalan 2-0-0 (100%); Italian 0-2-0 (50%); Scotch 0-0-1 (0%); Dutch 0-0-1
     (0%); Slav 1-0-0 (100%); Pirc 0-0-1 (0%); Two Knights 0-1-0 (50%); Queen's Indian 0-0-1 (0%)
   Positions seen more than once: English Symmetrical x9 3-6-0 (67%); Sicilian Closed x9 3-5-1 (61%);
-    Nimzo-Indian Defence x6 1-5-0 (58%); Reti Opening x6 3-2-1 (67%); Caro-Kann Classical x5 0-4-1
-    (40%); King's Indian Classical x5 3-2-0 (80%); Petroff Defence x5 2-3-0 (70%); Sicilian
-    Sveshnikov x5 1-3-1 (50%); Grunfeld Defence x4 2-1-1 (62%); London System x4 3-1-0 (88%);
-    Queen's Gambit Declined x4 0-4-0 (50%); Ruy Lopez, Closed x4 0-2-2 (25%); Sicilian Najdorf x4
-    0-3-1 (38%); French Classical x3 1-1-1 (50%); Semi-Slav Defence x3 0-1-2 (17%); Sicilian
-    Classical x3 1-2-0 (67%); Catalan Opening x2 2-0-0 (100%); French Tarrasch x2 1-1-0 (75%);
-    Italian Game x2 0-2-0 (50%); 10 positions seen once (4 won, 2 drawn, 4 lost).
+    Nimzo-Indian Defence x6 1-5-0 (58%); Petroff Defence x6 3-3-0 (75%); Reti Opening x6 3-2-1
+    (67%); King's Indian Classical x5 3-2-0 (80%); Sicilian Sveshnikov x5 1-3-1 (50%); Caro-Kann
+    Classical x4 0-3-1 (38%); Grunfeld Defence x4 2-1-1 (62%); London System x4 3-1-0 (88%); Queen's
+    Gambit Declined x4 0-4-0 (50%); Ruy Lopez, Closed x4 0-2-2 (25%); Sicilian Najdorf x4 0-3-1
+    (38%); French Classical x3 1-1-1 (50%); Semi-Slav Defence x3 0-1-2 (17%); Sicilian Classical x3
+    1-2-0 (67%); Catalan Opening x2 2-0-0 (100%); French Advance x2 1-1-0 (75%); French Tarrasch x2
+    1-1-0 (75%); Italian Game x2 0-2-0 (50%); 9 positions seen once (4 won, 1 drawn, 4 lost).
   Underperforms in: Semi-Slav 0-1-2 (17%), Ruy Lopez 0-2-2 (25%)
   First six own moves: 66% match Stockfish's first choice (moves 7-20: 63%), mean loss 7.9 cp, 12%
     played instantly; first clear divergence (loss >= 20 cp) at own move 9.8 on average.
 
 STYLE
-  Captures on 14.9% of own moves, checks on 11.6%; average game 173 plies (87 own moves), longest
-    496 plies (R97)
-  Wins: 30 (30 by checkmate, 0 by opponent failure); losses: 15 (15 by checkmate, 0 by own failure)
+  Captures on 14.9% of own moves, checks on 11.6%; average game 171 plies (85 own moves), longest
+    495 plies (R99)
+  Wins: 32 (32 by checkmate, 0 by opponent failure); losses: 15 (15 by checkmate, 0 by own failure)
   Sacrifices (gave >= 2 pawns of material without losing eval, then recovered): 12 -> R11 10.Rxe3,
     R17 35.Qxc7, R19 4.Ng5+, R24 14.f3, R24 17.Rf6, R36 17.Rxe4
   When ahead (> +150) material leaves the board at 0.77 pawns per own move (level: 0.78); capture
@@ -133,9 +131,9 @@ LIKELY ENGINE PROFILE
   Move quality is engine-grade (mean loss 9.4 cp against site evaluations: Stockfish 16, depth 16,
   one per position): a real alpha-beta searcher with a strong, probably NNUE-class or well-tuned
   evaluation. Confidence high.
-  Adaptive time use (median 1.17 s, max 12.6 s, spends 1.6 s on moves after a >100 cp swing vs 1.6 s
+  Adaptive time use (median 1.19 s, max 12.6 s, spends 1.6 s on moves after a >100 cp swing vs 1.6 s
   otherwise).
-  Poor clock awareness: 19 of 87 games went under 5 s.
+  Poor clock awareness: 19 of 88 games went under 5 s.
 
 HOW TO PLAY THEM
   1. They convert (26 of 26 won positions turned into wins): do not rely on swindles; the game is

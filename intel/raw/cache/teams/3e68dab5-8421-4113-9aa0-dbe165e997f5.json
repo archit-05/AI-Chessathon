@@ -2,10 +2,10 @@
  "uuid": "3e68dab5-8421-4113-9aa0-dbe165e997f5",
  "bot": "e=\u03c0=2",
  "team": "e=\u03c0=2",
- "rating": 2506,
- "rank": 21,
- "record": "39-26-26",
- "rated_rounds": 99,
+ "rating": 2504,
+ "rank": 20,
+ "record": "39-28-26",
+ "rated_rounds": 100,
  "history": [
   [
    1,
@@ -402,9 +402,23 @@
   [
    99,
    2506
+  ],
+  [
+   100,
+   2504
   ]
  ],
  "games": [
+  {
+   "game": "06e8fb7b-0a9f-402a-aa78-224c780ceac5",
+   "kind": "Rated",
+   "round": 101,
+   "colour": "Black",
+   "opponent": "FuzzyBot",
+   "opponent_uuid": "3241cef5-6b1c-41f2-b275-f0e50fc52ed5",
+   "verdict": "draw",
+   "opening": "Petroff Defence"
+  },
   {
    "game": "c60bc00d-0995-41f8-8e1a-2d77071a2dca",
    "kind": "Rated",
@@ -412,7 +426,7 @@
    "colour": "White",
    "opponent": "slopfish",
    "opponent_uuid": "1d137be0-3a3e-4cda-a7ba-b22d8d178e66",
-   "verdict": "live",
+   "verdict": "draw",
    "opening": "English Symmetrical"
   },
   {
@@ -426,14 +440,14 @@
    "opening": "English Symmetrical"
   },
   {
-   "game": "6f479cbe-8f7c-425d-aa95-e67a7224895d",
+   "game": "8a4f57ed-3c23-433f-8a7b-79efedb35b73",
    "kind": "Rated",
-   "round": 98,
+   "round": 97,
    "colour": "Black",
-   "opponent": "catfish",
-   "opponent_uuid": "4c4aa194-e507-4fb7-a863-46341205f08b",
-   "verdict": "win",
-   "opening": "Ruy Lopez, Closed"
+   "opponent": "Gladiator",
+   "opponent_uuid": "429a581d-e7fc-41e3-a915-2895b01d7d0b",
+   "verdict": "loss",
+   "opening": "Queen's Gambit Accepted"
   },
   {
    "game": "cc2a02f3-beeb-41c3-ba6f-8d5580e97858",
@@ -1396,5 +1410,5 @@
    "opening": "French Winawer"
   }
  ],
- "fetched_at": "2026-09-10T16:09:13Z"
+ "fetched_at": "2026-09-10T17:23:40Z"
 }

@@ -2,10 +2,10 @@
  "uuid": "c90df064-e8e8-4144-b1fd-2dd6096dd21a",
  "bot": "Loss Preventer",
  "team": "Lightning Tree",
- "rating": 2682,
+ "rating": 2750,
  "rank": 5,
- "record": "37-33-25",
- "rated_rounds": 99,
+ "record": "38-34-25",
+ "rated_rounds": 100,
  "history": [
   [
    1,
@@ -402,9 +402,33 @@
   [
    99,
    2682
+  ],
+  [
+   100,
+   2750
   ]
  ],
  "games": [
+  {
+   "game": "e103eb67-632b-4366-b691-909ab5b5fb6b",
+   "kind": "Rated",
+   "round": 101,
+   "colour": "White",
+   "opponent": "Ryan Vincent",
+   "opponent_uuid": "8c22f2a5-3bce-4b66-b93a-8f4ab4318b0f",
+   "verdict": "draw",
+   "opening": "Sicilian Closed"
+  },
+  {
+   "game": "02d8057f-5e8f-4a00-b5c0-a19c46d6a654",
+   "kind": "Rated",
+   "round": 100,
+   "colour": "Black",
+   "opponent": "Opus Carlsen",
+   "opponent_uuid": "f0286356-626d-4dd2-86ab-fd6d779063cb",
+   "verdict": "win",
+   "opening": "Sicilian Najdorf"
+  },
   {
    "game": "ecdb7b70-ff1c-4c1d-9174-d9476e7d511b",
    "kind": "Rated",
@@ -416,14 +440,14 @@
    "opening": "Scotch Game"
   },
   {
-   "game": "4af25d45-d645-4e01-9d44-ae6e1975daeb",
+   "game": "167b250a-8b6f-4cd3-86cf-2713fb67af3f",
    "kind": "Rated",
-   "round": 98,
-   "colour": "Black",
-   "opponent": "Emile Andrieu",
-   "opponent_uuid": "659a3020-8af7-4934-b753-3b7c5fd11184",
-   "verdict": "loss",
-   "opening": "Reti Opening"
+   "round": 97,
+   "colour": "White",
+   "opponent": "what even is en passant",
+   "opponent_uuid": "b9cbed87-8a3a-437d-9333-1447f68200d1",
+   "verdict": "win",
+   "opening": "Sicilian Closed"
   },
   {
    "game": "b9017e16-d116-4252-8b78-326d585e225e",
@@ -1376,5 +1400,5 @@
    "opening": "Reti Opening"
   }
  ],
- "fetched_at": "2026-09-10T16:05:57Z"
+ "fetched_at": "2026-09-10T17:15:23Z"
 }

@@ -2,10 +2,10 @@
  "uuid": "f90aed5c-61db-4b3a-bbc1-9f40391e701a",
  "bot": "c1",
  "team": "OMI",
- "rating": 2651,
- "rank": 9,
- "record": "38-24-29",
- "rated_rounds": 93,
+ "rating": 2645,
+ "rank": 10,
+ "record": "38-25-29",
+ "rated_rounds": 94,
  "history": [
   [
    7,
@@ -378,9 +378,23 @@
   [
    99,
    2651
+  ],
+  [
+   100,
+   2645
   ]
  ],
  "games": [
+  {
+   "game": "8dcbd561-7658-4b9d-82c4-62f26008b391",
+   "kind": "Rated",
+   "round": 100,
+   "colour": "Black",
+   "opponent": "BetaGo",
+   "opponent_uuid": "145e2e17-6316-4b84-911b-45f3258ec8c9",
+   "verdict": "draw",
+   "opening": "Sicilian Classical"
+  },
   {
    "game": "d5e6648b-63e0-4afc-9825-82613f2bbcd6",
    "kind": "Rated",
@@ -402,14 +416,14 @@
    "opening": "Petroff Defence"
   },
   {
-   "game": "e3b9b2bf-5610-4c74-8df6-2b4e0b5a6d1d",
+   "game": "a6516847-e80f-422d-9d50-a85123c437b8",
    "kind": "Rated",
-   "round": 97,
-   "colour": "Black",
-   "opponent": "ms",
-   "opponent_uuid": "c3e1bc09-3d21-4279-ace0-16bb3742f5da",
-   "verdict": "draw",
-   "opening": "Sicilian Classical"
+   "round": 96,
+   "colour": "White",
+   "opponent": "Opus Carlsen",
+   "opponent_uuid": "f0286356-626d-4dd2-86ab-fd6d779063cb",
+   "verdict": "loss",
+   "opening": "French Classical"
   },
   {
    "game": "ac1f1a72-978b-4050-9dfa-c6dd6649df05",
@@ -1302,5 +1316,5 @@
    "opening": "Sicilian Sveshnikov"
   }
  ],
- "fetched_at": "2026-09-10T15:49:40Z"
+ "fetched_at": "2026-09-10T16:53:19Z"
 }
