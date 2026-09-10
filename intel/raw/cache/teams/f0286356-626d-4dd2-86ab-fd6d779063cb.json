@@ -2,15 +2,11 @@
  "uuid": "f0286356-626d-4dd2-86ab-fd6d779063cb",
  "bot": "BINI Alpha",
  "team": "Opus Carlsen",
- "rating": 2788,
+ "rating": 2808,
  "rank": 1,
- "record": "31-23-13",
- "rated_rounds": 70,
+ "record": "32-23-13",
+ "rated_rounds": 71,
  "history": [
-  [
-   24,
-   1440
-  ],
   [
    25,
    1445
@@ -286,9 +282,23 @@
   [
    93,
    2788
+  ],
+  [
+   94,
+   2808
   ]
  ],
  "games": [
+  {
+   "game": "0bb8fc6a-e7a4-4cce-8833-2de3cc05bac6",
+   "kind": "Rated",
+   "round": 95,
+   "colour": "Black",
+   "opponent": "what even is en passant",
+   "opponent_uuid": "b9cbed87-8a3a-437d-9333-1447f68200d1",
+   "verdict": "win",
+   "opening": "Sicilian Taimanov"
+  },
   {
    "game": "22d01154-b6c1-4e10-831d-1eb4388aa204",
    "kind": "Rated",
@@ -310,14 +320,14 @@
    "opening": "Caro-Kann Advance"
   },
   {
-   "game": "7c8a1949-5ffa-43d0-89ef-998ccfc2140c",
+   "game": "af94027f-fc8a-4c39-9e2c-0c780db37806",
    "kind": "Rated",
-   "round": 92,
-   "colour": "Black",
-   "opponent": "Sobriety",
-   "opponent_uuid": "258a9828-7442-4bea-97cb-eed1845ad2cc",
+   "round": 91,
+   "colour": "White",
+   "opponent": "Gladiator",
+   "opponent_uuid": "429a581d-e7fc-41e3-a915-2895b01d7d0b",
    "verdict": "win",
-   "opening": "French Tarrasch"
+   "opening": "King's Indian Classical"
   },
   {
    "game": "a788c806-d212-450e-b9fe-b9be2e294673",
@@ -990,5 +1000,5 @@
    "opening": "Four Knights Game"
   }
  ],
- "fetched_at": "2026-09-10T10:42:50Z"
+ "fetched_at": "2026-09-10T11:43:36Z"
 }

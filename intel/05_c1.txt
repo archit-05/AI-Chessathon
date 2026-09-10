@@ -1,34 +1,35 @@
-c1  (team: OMI)  -  rank 4, rating 2650
+c1  (team: OMI)  -  rank 5, rating 2672
 =======================================
-Generated 2026-09-10 12:02 from 85 rated games (rounds 7-94, 45 of 87 with evaluations so far); 2
+Generated 2026-09-10 13:03 from 86 rated games (rounds 7-95, 45 of 88 with evaluations so far); 2
   game(s) that never had a result ignored: R14, R27.
 
 IDENTITY
   Bot c1; team OMI; university Oxford; members not shown on the site.
-  Rank 4 of 440, rating 2650 (provisional: fewer than six games on the current build, i.e. a new
-    upload in the last five rounds), record 38-20-28 in 85 rated games.
-  Rating trajectory: entered R7 at 1573, peak 2650 (R93), now 2650 (R93).
+  Rank 5 of 442, rating 2672 (provisional: fewer than six games on the current build, i.e. a new
+    upload in the last five rounds), record 38-21-28 in 86 rated games.
+  Rating trajectory: entered R7 at 1573, peak 2672 (R94), now 2672 (R94).
   Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
     upload): R18 +112 -> 1629 (win vs OatMilk); R29 +104 -> 1827 (win vs Blunderbuss); R86 +121 ->
     2426 (win vs Edward)
 
 RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
-  vs top 10 : 1-2-3 (33%) over 6 games
-  vs 11-20  : 1-5-3 (39%) over 9 games
-  vs 21-50  : 11-6-13 (47%) over 30 games
-  vs rest   : 25-6-9 (70%) over 40 games
+  vs top 10 : 1-4-3 (38%) over 8 games
+  vs 11-20  : 1-4-3 (38%) over 8 games
+  vs 21-50  : 12-7-13 (48%) over 32 games
+  vs rest   : 24-5-9 (70%) over 38 games
   Games vs top-10 teams:
-    R37  black vs PSL God Matt Bomer (#6 ) win  checkmate             Sicilian Closed
+    R37  black vs PSL God Matt Bomer (#8 ) win  checkmate             Sicilian Closed
     R43  black vs stockfih           (#3 ) loss checkmate             Grunfeld Defence
     R57  white vs BINI Alpha         (#1 ) loss checkmate             Pirc Defence
     R83  white vs BINI Alpha         (#1 ) loss checkmate             Queen's Gambit Declined
     R88  black vs BINI Alpha         (#1 ) draw insufficient_material English Symmetrical
+    R91  white vs Patzer 2.4         (#10) draw insufficient_material English Symmetrical
     R94  black vs stockfih           (#3 ) draw insufficient_material Sicilian Closed
-  Games vs ranks 11-20: R31 loss vs Anchoa (#13, checkmate); R33 loss vs make_no_mistak (#15,
-    checkmate); R39 draw vs Challenger (#17, 3fold); R40 loss vs Danya's Discip (#12, checkmate);
-    R45 draw vs Danya's Discip (#12, fifty_moves); R85 draw vs e=π=2 (#19, 3fold); R89 draw vs
-    test_bot (#14, fifty_moves); R92 draw vs Danya's Discip (#12, 3fold); R93 win vs Anchoa (#13,
-    checkmate)
+    R95  white vs AlphaFish          (#2 ) draw insufficient_material Sicilian Dragon
+  Games vs ranks 11-20: R31 loss vs Anchoa (#14, checkmate); R33 loss vs make_no_mistak (#17,
+    checkmate); R39 draw vs Challenger (#18, 3fold); R40 loss vs Danya's Discip (#11, checkmate);
+    R45 draw vs Danya's Discip (#11, fifty_moves); R85 draw vs e=π=2 (#20, 3fold); R89 draw vs
+    test_bot (#16, fifty_moves); R93 win vs Anchoa (#14, checkmate)
 
 MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
   positions inside +-800 only)
@@ -40,28 +41,29 @@ MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss c
   as white          : n 1147, mean 27.2 cp, median 5 cp, blunders 1.5%
   as black          : n 1181, mean 20.3 cp, median 1 cp, blunders 1.1%
   Worst moves: R43 31.Rc7 (-142 -> -1080); R13 36.Nxh6 (-67 -> -614); R8 16.a3 (+0 -> -397)
-  Site's own review (Stockfish 16, depth 16): mean ACPL 28.4 over 85 games, accuracy 96.1%; its tags
+  Site's own review (Stockfish 16, depth 16): mean ACPL 28.1 over 86 games, accuracy 96.1%; its tags
     on their moves: 18 blunder, 29 mistake, 2 miss, 105 inaccuracy of 2720
 
 TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
-  Per move: mean 1.96 s, median 1.55 s, quartiles 0.68-2.82 s, max 11.5 s; instant (<50 ms) moves
-    8.1%
-  Clock at the end: mean 17.7 s, minimum 2.9 s; games under 10 s: 54, under 5 s: 40 (R16, R25, R28,
+  Per move: mean 1.94 s, median 1.52 s, quartiles 0.67-2.8 s, max 11.5 s; instant (<50 ms) moves
+    8.2%
+  Clock at the end: mean 17.5 s, minimum 2.9 s; games under 10 s: 56, under 5 s: 42 (R16, R25, R28,
     R33, R35, R36, R37, R38, R40, R41, R42, R45, R47, R48, R50, R51, R52, R53, R54, R56, R58, R62,
-    R63, R64, R65, R66, R68, R74, R75, R77, R81, R82, R83, R84, R86, R88, R89, R90, R93, R94)
-  By clock before the move: >60s 3.7 s (n 1596), 30-60s 2.3 s (n 1224), 10-30s 1.4 s (n 1325), <10s
-    0.6 s (n 1822)
+    R63, R64, R65, R66, R68, R74, R75, R77, R81, R82, R83, R84, R86, R88, R89, R90, R91, R93, R94,
+    R95)
+  By clock before the move: >60s 3.8 s (n 1604), 30-60s 2.3 s (n 1235), 10-30s 1.4 s (n 1346), <10s
+    0.6 s (n 1922)
   By own-move number: 1-15 4.0 s, 16-40 2.3 s, 41+ 0.8 s; when +300 or better 1.5 s, level 2.6 s,
     -300 or worse 1.2 s
-  Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 6.4%,
-    quartiles 4.0-12.2%
+  Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 6.5%,
+    quartiles 4.1-12.5%
   After a >100 cp swing on the opponent's move: 1.7 s (n 200) vs 2.1 s otherwise; on moves that
     themselves swing >100 cp: 1.7 s (n 191) vs 2.1 s
   Exploitable: gets into time trouble
 
 DRAW BEHAVIOUR
-  19 draws in 85 played games (22.0%): threefold_repetition 10, insufficient_material 7, fifty_moves
-    2; 2 of them vs top-10 teams
+  20 draws in 86 played games (23.0%): insufficient_material 9, threefold_repetition 9, fifty_moves
+    2; 4 of them vs top-10 teams
   Repetition while ahead (> +150 at the final position): 0
   Repetition while behind (< -150): 0; level repetitions: 2
 
@@ -70,24 +72,24 @@ ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
   Reached -300 or worse in 19 games, escaped with a half point or more in 0.
 
 OPENINGS (curated start positions assigned by the platform)
-  By family: Sicilian 11-6-8 (56%); Ruy Lopez 2-2-4 (38%); English 4-2-1 (71%); French 3-1-2 (58%);
-    Nimzo-Indian 5-0-0 (100%); Petroff 2-1-1 (62%); Queen's Indian 1-2-1 (50%); London 2-2-0 (75%);
-    Reti 2-0-2 (50%); Grunfeld 1-0-2 (33%); Two Knights 2-1-0 (83%); Caro-Kann 0-0-2 (0%); Italian
+  By family: Sicilian 11-7-8 (56%); Ruy Lopez 2-2-4 (38%); English 4-3-1 (69%); French 3-1-2 (58%);
+    Nimzo-Indian 5-0-0 (100%); Petroff 2-1-1 (62%); Queen's Indian 1-2-1 (50%); Reti 2-0-2 (50%);
+    Grunfeld 1-0-2 (33%); London 2-1-0 (83%); Two Knights 2-1-0 (83%); Caro-Kann 0-0-2 (0%); Italian
     1-0-1 (50%); King's Indian 1-0-0 (100%); Scotch 1-0-0 (100%); Slav 0-0-1 (0%); Semi-Slav 0-0-1
     (0%); Catalan 0-1-0 (50%); Pirc 0-0-1 (0%); Queen's Gambit 0-0-1 (0%); Dutch 0-1-0 (50%)
-  Positions seen more than once: Sicilian Closed x15 7-2-6 (53%); Ruy Lopez, Closed x8 2-2-4 (38%);
-    English Symmetrical x7 4-2-1 (71%); Nimzo-Indian Defence x5 5-0-0 (100%); London System x4 2-2-0
-    (75%); Petroff Defence x4 2-1-1 (62%); Queen's Indian Defence x4 1-2-1 (50%); Reti Opening x4
-    2-0-2 (50%); Sicilian Classical x4 1-3-0 (62%); Grunfeld Defence x3 1-0-2 (33%); Sicilian
-    Najdorf x3 2-0-1 (67%); Sicilian Sveshnikov x3 1-1-1 (50%); Two Knights Defence x3 2-1-0 (83%);
-    French Advance x2 1-0-1 (50%); French Classical x2 1-0-1 (50%); French Tarrasch x2 1-1-0 (75%);
-    Italian Game x2 1-0-1 (50%); 10 positions seen once (2 won, 2 drawn, 6 lost).
+  Positions seen more than once: Sicilian Closed x15 7-2-6 (53%); English Symmetrical x8 4-3-1
+    (69%); Ruy Lopez, Closed x8 2-2-4 (38%); Nimzo-Indian Defence x5 5-0-0 (100%); Petroff Defence
+    x4 2-1-1 (62%); Queen's Indian Defence x4 1-2-1 (50%); Reti Opening x4 2-0-2 (50%); Sicilian
+    Classical x4 1-3-0 (62%); Grunfeld Defence x3 1-0-2 (33%); London System x3 2-1-0 (83%);
+    Sicilian Najdorf x3 2-0-1 (67%); Sicilian Sveshnikov x3 1-1-1 (50%); Two Knights Defence x3
+    2-1-0 (83%); French Advance x2 1-0-1 (50%); French Classical x2 1-0-1 (50%); French Tarrasch x2
+    1-1-0 (75%); Italian Game x2 1-0-1 (50%); 11 positions seen once (2 won, 3 drawn, 6 lost).
   Underperforms in: Grunfeld 1-0-2 (33%)
   First six own moves: 54% match Stockfish's first choice (moves 7-20: 55%), mean loss 13.5 cp, 0%
     played instantly; first clear divergence (loss >= 20 cp) at own move 5.5 on average.
 
 STYLE
-  Captures on 18.5% of own moves, checks on 8.6%; average game 140 plies (70 own moves), longest 522
+  Captures on 18.5% of own moves, checks on 8.6%; average game 142 plies (71 own moves), longest 522
     plies (R88)
   Wins: 38 (38 by checkmate, 0 by opponent failure); losses: 28 (28 by checkmate, 0 by own failure)
   Sacrifices (gave >= 2 pawns of material without losing eval, then recovered): 6 -> R7 5.Bd7, R20
@@ -100,9 +102,9 @@ LIKELY ENGINE PROFILE
   evaluation. Confidence high.
   Quality drops late (phase 41+ mean 31.0 cp vs 17.6 cp in the first 15 moves): endgame evaluation
   or horizon problems.
-  Adaptive time use (median 1.55 s, max 11.5 s, spends 1.7 s on moves after a >100 cp swing vs 2.1 s
+  Adaptive time use (median 1.52 s, max 11.5 s, spends 1.7 s on moves after a >100 cp swing vs 2.1 s
   otherwise).
-  Poor clock awareness: 40 of 85 games went under 5 s.
+  Poor clock awareness: 42 of 86 games went under 5 s.
 
 HOW TO PLAY THEM
   1. They convert (21 of 21 won positions turned into wins): do not rely on swindles; the game is
@@ -110,7 +112,7 @@ HOW TO PLAY THEM
   2. Head for long games: their loss per move rises from 17.6 cp early to 31.0 cp after move 40.
   Avoid early mass exchanges only if we are not better; otherwise simplify into a queenless
   middlegame and outplay them late.
-  3. Time pressure works: 40 games dipped under 5 s (R16, R25, R28, R33, R35, R36). Keep games long
+  3. Time pressure works: 42 games dipped under 5 s (R16, R25, R28, R33, R35, R36). Keep games long
   and complicated; their play under 10 s averages 0.6 s a move.
   4. No extra time goes to critical positions (1.7 s after a big swing vs 2.1 s otherwise): our
   search can spend several times their budget on the few moves that decide a game, so prefer

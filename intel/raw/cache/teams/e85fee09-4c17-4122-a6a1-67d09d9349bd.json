@@ -2,10 +2,10 @@
  "uuid": "e85fee09-4c17-4122-a6a1-67d09d9349bd",
  "bot": "Edward",
  "team": "Edward",
- "rating": 2302,
- "rank": 38,
- "record": "28-22-17",
- "rated_rounds": 68,
+ "rating": 2304,
+ "rank": 37,
+ "record": "28-23-17",
+ "rated_rounds": 69,
  "history": [
   [
    27,
@@ -278,9 +278,23 @@
   [
    94,
    2302
+  ],
+  [
+   95,
+   2304
   ]
  ],
  "games": [
+  {
+   "game": "1edc92db-026a-4462-b940-f666327ad74f",
+   "kind": "Rated",
+   "round": 95,
+   "colour": "White",
+   "opponent": "Zugzwin",
+   "opponent_uuid": "2463d1f5-3e78-4dce-a254-be5983079ccc",
+   "verdict": "draw",
+   "opening": "Reti Opening"
+  },
   {
    "game": "03403a89-957e-48c1-b747-61722d06b766",
    "kind": "Rated",
@@ -290,16 +304,6 @@
    "opponent_uuid": "0cebedbb-0376-4058-b6f4-0e11ef9dbeed",
    "verdict": "loss",
    "opening": "Sicilian Taimanov"
-  },
-  {
-   "game": "0a49b21b-395a-4db1-ba7e-f22821a0ad7a",
-   "kind": "Rated",
-   "round": 93,
-   "colour": "White",
-   "opponent": "checkers",
-   "opponent_uuid": "9e5e613a-ca80-4fd9-aa68-76f184ef7bac",
-   "verdict": "draw",
-   "opening": "Ruy Lopez, Closed"
   },
   {
    "game": "6f3a53a7-8572-46c9-bb04-61a0188b2590",
@@ -962,5 +966,5 @@
    "opening": "London System"
   }
  ],
- "fetched_at": "2026-09-10T11:03:14Z"
+ "fetched_at": "2026-09-10T12:04:45Z"
 }

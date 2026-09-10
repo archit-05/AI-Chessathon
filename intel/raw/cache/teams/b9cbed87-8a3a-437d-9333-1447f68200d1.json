@@ -2,10 +2,10 @@
  "uuid": "b9cbed87-8a3a-437d-9333-1447f68200d1",
  "bot": "stockfih",
  "team": "what even is en passant",
- "rating": 2743,
+ "rating": 2719,
  "rank": 3,
- "record": "31-29-21",
- "rated_rounds": 86,
+ "record": "31-29-22",
+ "rated_rounds": 87,
  "history": [
   [
    9,
@@ -350,9 +350,23 @@
   [
    94,
    2743
+  ],
+  [
+   95,
+   2719
   ]
  ],
  "games": [
+  {
+   "game": "0bb8fc6a-e7a4-4cce-8833-2de3cc05bac6",
+   "kind": "Rated",
+   "round": 95,
+   "colour": "White",
+   "opponent": "Opus Carlsen",
+   "opponent_uuid": "f0286356-626d-4dd2-86ab-fd6d779063cb",
+   "verdict": "loss",
+   "opening": "Sicilian Taimanov"
+  },
   {
    "game": "cdf0624c-f012-41f4-9972-2043a4cba61a",
    "kind": "Rated",
@@ -364,13 +378,13 @@
    "opening": "Sicilian Closed"
   },
   {
-   "game": "0ec26813-c54d-4fcd-a036-866fba27f107",
+   "game": "4bc0fe21-8334-48ee-bbc5-c703fdfd67a9",
    "kind": "Rated",
-   "round": 93,
+   "round": 92,
    "colour": "Black",
-   "opponent": "Emile Andrieu",
-   "opponent_uuid": "659a3020-8af7-4934-b753-3b7c5fd11184",
-   "verdict": "draw",
+   "opponent": "JBG fam",
+   "opponent_uuid": "10021bb5-71a5-4b10-bde5-14e1f667501a",
+   "verdict": "win",
    "opening": "Caro-Kann Classical"
   },
   {
@@ -1204,5 +1218,5 @@
    "opening": "Queen's Gambit Accepted"
   }
  ],
- "fetched_at": "2026-09-10T11:03:28Z"
+ "fetched_at": "2026-09-10T12:05:02Z"
 }
