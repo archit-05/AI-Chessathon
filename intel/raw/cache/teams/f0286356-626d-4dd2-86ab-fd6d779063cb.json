@@ -2,10 +2,10 @@
  "uuid": "f0286356-626d-4dd2-86ab-fd6d779063cb",
  "bot": "BINI Alpha",
  "team": "Opus Carlsen",
- "rating": 2950,
- "rank": 1,
- "record": "34-23-14",
- "rated_rounds": 74,
+ "rating": 2909,
+ "rank": 2,
+ "record": "34-24-14",
+ "rated_rounds": 75,
  "history": [
   [
    24,
@@ -302,9 +302,23 @@
   [
    97,
    2950
+  ],
+  [
+   98,
+   2909
   ]
  ],
  "games": [
+  {
+   "game": "83ead515-c22f-4d24-9db4-028ce0dc6238",
+   "kind": "Rated",
+   "round": 99,
+   "colour": "White",
+   "opponent": "Emile Andrieu",
+   "opponent_uuid": "659a3020-8af7-4934-b753-3b7c5fd11184",
+   "verdict": "draw",
+   "opening": "Pirc Defence"
+  },
   {
    "game": "46def98a-5844-4edc-a62c-4bdb995c8741",
    "kind": "Rated",
@@ -326,14 +340,14 @@
    "opening": "Reti Opening"
   },
   {
-   "game": "a6516847-e80f-422d-9d50-a85123c437b8",
+   "game": "0bb8fc6a-e7a4-4cce-8833-2de3cc05bac6",
    "kind": "Rated",
-   "round": 96,
+   "round": 95,
    "colour": "Black",
-   "opponent": "OMI",
-   "opponent_uuid": "f90aed5c-61db-4b3a-bbc1-9f40391e701a",
+   "opponent": "what even is en passant",
+   "opponent_uuid": "b9cbed87-8a3a-437d-9333-1447f68200d1",
    "verdict": "win",
-   "opening": "French Classical"
+   "opening": "Sicilian Taimanov"
   },
   {
    "game": "22d01154-b6c1-4e10-831d-1eb4388aa204",
@@ -1046,5 +1060,5 @@
    "opening": "Four Knights Game"
   }
  ],
- "fetched_at": "2026-09-10T14:43:12Z"
+ "fetched_at": "2026-09-10T15:44:21Z"
 }

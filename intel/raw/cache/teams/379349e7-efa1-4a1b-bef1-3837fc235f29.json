@@ -2,10 +2,10 @@
  "uuid": "379349e7-efa1-4a1b-bef1-3837fc235f29",
  "bot": "PlayOps",
  "team": "PlayOps",
- "rating": 1148,
+ "rating": 1146,
  "rank": 411,
- "record": "26-24-36",
- "rated_rounds": 98,
+ "record": "26-25-36",
+ "rated_rounds": 99,
  "history": [
   [
    1,
@@ -398,9 +398,23 @@
   [
    98,
    1148
+  ],
+  [
+   99,
+   1146
   ]
  ],
  "games": [
+  {
+   "game": "f534d7a8-c3e8-4b82-9def-350304cb5e12",
+   "kind": "Rated",
+   "round": 99,
+   "colour": "White",
+   "opponent": "Team Chess",
+   "opponent_uuid": "fda9805b-d295-4153-a4e7-2aefccdc4ebe",
+   "verdict": "draw",
+   "opening": "Sicilian Classical"
+  },
   {
    "game": "c741f537-9395-454b-96d4-d641815723c0",
    "kind": "Rated",
@@ -422,14 +436,14 @@
    "opening": "Sicilian Closed"
   },
   {
-   "game": "759ce306-4aea-463d-b1b4-144136ae9fe2",
+   "game": "500b6c99-d8d8-4bfe-b86e-ef232420feb1",
    "kind": "Rated",
-   "round": 96,
+   "round": 95,
    "colour": "Black",
-   "opponent": "The Rook",
-   "opponent_uuid": "7c24d4b6-543f-4f4a-8eff-04ac48be40c1",
-   "verdict": "draw",
-   "opening": "Sicilian Classical"
+   "opponent": "kronos",
+   "opponent_uuid": "a2e51576-3e24-47b0-8562-48028bf257bb",
+   "verdict": "loss",
+   "opening": "Sicilian Closed"
   },
   {
    "game": "fad31856-8669-4d7a-bd42-cfdbdc2735dc",
@@ -1372,5 +1386,5 @@
    "opening": "Sicilian Closed"
   }
  ],
- "fetched_at": "2026-09-10T14:51:17Z"
+ "fetched_at": "2026-09-10T15:52:33Z"
 }

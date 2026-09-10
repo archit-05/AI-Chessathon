@@ -2,10 +2,10 @@
  "uuid": "9e5e613a-ca80-4fd9-aa68-76f184ef7bac",
  "bot": "checkers",
  "team": "checkers",
- "rating": 2303,
- "rank": 35,
- "record": "31-33-25",
- "rated_rounds": 93,
+ "rating": 2292,
+ "rank": 45,
+ "record": "31-37-27",
+ "rated_rounds": 99,
  "history": [
   [
    1,
@@ -378,9 +378,73 @@
   [
    93,
    2303
+  ],
+  [
+   94,
+   2312
+  ],
+  [
+   95,
+   2297
+  ],
+  [
+   96,
+   2299
+  ],
+  [
+   97,
+   2304
+  ],
+  [
+   98,
+   2288
+  ],
+  [
+   99,
+   2292
   ]
  ],
  "games": [
+  {
+   "game": "6bc79ab3-dbe8-48c2-8fd2-43480b28557f",
+   "kind": "Rated",
+   "round": 99,
+   "colour": "White",
+   "opponent": "Abhi's chess demon",
+   "opponent_uuid": "7af404ee-389f-427c-9433-40ebe5902fc6",
+   "verdict": "draw",
+   "opening": "Sicilian Closed"
+  },
+  {
+   "game": "94284fc4-d380-43d7-998a-97c8cb8438d1",
+   "kind": "Rated",
+   "round": 98,
+   "colour": "Black",
+   "opponent": "zak",
+   "opponent_uuid": "0cebedbb-0376-4058-b6f4-0e11ef9dbeed",
+   "verdict": "loss",
+   "opening": "Catalan Opening"
+  },
+  {
+   "game": "7945b2a2-a979-401d-a9b9-216f2ba75341",
+   "kind": "Rated",
+   "round": 96,
+   "colour": "White",
+   "opponent": "Zugzwin",
+   "opponent_uuid": "2463d1f5-3e78-4dce-a254-be5983079ccc",
+   "verdict": "draw",
+   "opening": "Slav Defence"
+  },
+  {
+   "game": "e3908f03-0162-4e04-9633-01ed66bdfc01",
+   "kind": "Rated",
+   "round": 95,
+   "colour": "Black",
+   "opponent": "No More Ammo",
+   "opponent_uuid": "b49586d0-218d-4491-a460-90d0d9cf321c",
+   "verdict": "loss",
+   "opening": "London System"
+  },
   {
    "game": "ba9ff1c5-1708-4256-94a6-775e32cb0d69",
    "kind": "Rated",
@@ -388,7 +452,7 @@
    "colour": "White",
    "opponent": "FuzzyBot",
    "opponent_uuid": "3241cef5-6b1c-41f2-b275-f0e50fc52ed5",
-   "verdict": "live",
+   "verdict": "draw",
    "opening": "Nimzo-Indian Defence"
   },
   {
@@ -409,6 +473,16 @@
    "opponent": "BetaGo",
    "opponent_uuid": "145e2e17-6316-4b84-911b-45f3258ec8c9",
    "verdict": "loss",
+   "opening": "Sicilian Taimanov"
+  },
+  {
+   "game": "2c2e5e64-10fa-4715-947c-6e665e482b67",
+   "kind": "Rated",
+   "round": 91,
+   "colour": "White",
+   "opponent": "Gators",
+   "opponent_uuid": "fb9b2a77-d376-4526-bfde-bc7d3cdf9524",
+   "verdict": "draw",
    "opening": "Sicilian Taimanov"
   },
   {
@@ -1312,5 +1386,5 @@
    "opening": "Sicilian Closed"
   }
  ],
- "fetched_at": "2026-09-10T10:13:36Z"
+ "fetched_at": "2026-09-10T16:01:09Z"
 }
