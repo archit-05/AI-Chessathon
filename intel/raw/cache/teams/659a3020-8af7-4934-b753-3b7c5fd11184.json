@@ -2,10 +2,10 @@
  "uuid": "659a3020-8af7-4934-b753-3b7c5fd11184",
  "bot": "AlphaFish",
  "team": "Emile Andrieu",
- "rating": 2778,
- "rank": 1,
- "record": "41-31-7",
- "rated_rounds": 84,
+ "rating": 2754,
+ "rank": 2,
+ "record": "41-33-7",
+ "rated_rounds": 85,
  "history": [
   [
    9,
@@ -342,9 +342,33 @@
   [
    92,
    2778
+  ],
+  [
+   93,
+   2754
   ]
  ],
  "games": [
+  {
+   "game": "22d01154-b6c1-4e10-831d-1eb4388aa204",
+   "kind": "Rated",
+   "round": 94,
+   "colour": "Black",
+   "opponent": "Opus Carlsen",
+   "opponent_uuid": "f0286356-626d-4dd2-86ab-fd6d779063cb",
+   "verdict": "draw",
+   "opening": "Ruy Lopez, Closed"
+  },
+  {
+   "game": "0ec26813-c54d-4fcd-a036-866fba27f107",
+   "kind": "Rated",
+   "round": 93,
+   "colour": "White",
+   "opponent": "what even is en passant",
+   "opponent_uuid": "b9cbed87-8a3a-437d-9333-1447f68200d1",
+   "verdict": "draw",
+   "opening": "Caro-Kann Classical"
+  },
   {
    "game": "b8333c49-a9a2-4cc2-bb73-1448994dcff6",
    "kind": "Rated",
@@ -356,16 +380,6 @@
    "opening": "Petroff Defence"
   },
   {
-   "game": "5a45a258-155b-4328-b04b-bf6b1f077ae8",
-   "kind": "Rated",
-   "round": 91,
-   "colour": "White",
-   "opponent": "JBG fam",
-   "opponent_uuid": "10021bb5-71a5-4b10-bde5-14e1f667501a",
-   "verdict": "draw",
-   "opening": "Sicilian Taimanov"
-  },
-  {
    "game": "0bd60ec5-19a1-4936-ba64-ff03a8fceb73",
    "kind": "Rated",
    "round": 90,
@@ -374,6 +388,16 @@
    "opponent_uuid": "258a9828-7442-4bea-97cb-eed1845ad2cc",
    "verdict": "win",
    "opening": "Ruy Lopez, Closed"
+  },
+  {
+   "game": "9d712633-15dc-4240-b80d-328dbeaef993",
+   "kind": "Rated",
+   "round": 89,
+   "colour": "Black",
+   "opponent": "ms",
+   "opponent_uuid": "c3e1bc09-3d21-4279-ace0-16bb3742f5da",
+   "verdict": "draw",
+   "opening": "Queen's Gambit Declined"
   },
   {
    "game": "f64d9362-ec66-4646-8832-4d4aff95a868",
@@ -1176,5 +1200,5 @@
    "opening": "Sicilian Closed"
   }
  ],
- "fetched_at": "2026-09-10T08:44:17Z"
+ "fetched_at": "2026-09-10T10:41:52Z"
 }

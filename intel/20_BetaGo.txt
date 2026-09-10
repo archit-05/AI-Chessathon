@@ -1,0 +1,101 @@
+BetaGo  (team: BetaGo)  -  rank 20, rating 2457
+===============================================
+Generated 2026-09-10 12:02 from 48 rated games (rounds 46-94, 12 of 48 with evaluations so far).
+
+IDENTITY
+  Bot BetaGo; team BetaGo; university Cambridge; members not shown on the site.
+  Rank 20 of 440, rating 2457 (provisional: fewer than six games on the current build, i.e. a new
+    upload in the last five rounds), record 22-7-10 in 38 rated games.
+  Rating trajectory: entered R46 at 1574, peak 2532 (R94), now 2532 (R94).
+  Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
+    upload): R48 -102 -> 1549 (loss vs UrCooked); R49 +101 -> 1650 (win vs hyperfish); R91 +100 ->
+    2318 (no game that round)
+
+RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
+  vs top 10 : 0-0-0 over 0 games
+  vs 11-20  : 1-0-0 (100%) over 1 games
+  vs 21-50  : 5-0-2 (71%) over 7 games
+  vs rest   : 24-8-8 (70%) over 40 games
+  Games vs ranks 11-20: R94 win vs cory (#18, checkmate)
+
+MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
+  positions inside +-800 only)
+  All own moves: n 527, mean loss 18.4 cp, median 4 cp, blunders (>= 200 cp) 2 = 0.4% (2 of them
+    from level or better positions)
+  own moves 1-15    : n  180, mean 20.2 cp, median 6 cp, blunders 0.6%
+  own moves 16-40   : n  245, mean 17.8 cp, median 3 cp, blunders 0.4%
+  own moves 41+     : n  102, mean 16.8 cp, median 3 cp, blunders 0.0%
+  as white          : n  301, mean 19.4 cp, median 5 cp, blunders 0.3%
+  as black          : n  226, mean 17.1 cp, median 3 cp, blunders 0.4%
+  Worst moves: R51 14.f6 (+396 -> +76); R50 35.Bd4 (-19 -> -222); R46 15.Rxa4 (+335 -> +138)
+  Site's own review (Stockfish 16, depth 16): mean ACPL 33.4 over 48 games, accuracy 95.6%; its tags
+    on their moves: 4 blunder, 4 mistake, 0 miss, 21 inaccuracy of 457
+
+TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
+  Per move: mean 2.16 s, median 1.36 s, quartiles 0.66-2.9 s, max 16.2 s; instant (<50 ms) moves
+    6.6%
+  Clock at the end: mean 12.7 s, minimum 2.4 s; games under 10 s: 38, under 5 s: 28 (R48, R49, R50,
+    R52, R53, R55, R56, R57, R59, R60, R62, R64, R68, R71, R72, R73, R74, R75, R77, R78, R80, R83,
+    R85, R88, R90, R92, R93, R94)
+  By clock before the move: >60s 5.2 s (n 631), 30-60s 3.0 s (n 517), 10-30s 1.5 s (n 800), <10s 0.6
+    s (n 1155)
+  By own-move number: 1-15 5.2 s, 16-40 1.9 s, 41+ 0.6 s; when +300 or better 1.2 s, level 3.8 s,
+    -300 or worse 0.9 s
+  Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 8.2%,
+    quartiles 5.9-13.3%
+  After a >100 cp swing on the opponent's move: 1.6 s (n 56) vs 2.3 s otherwise; on moves that
+    themselves swing >100 cp: 1.6 s (n 46) vs 2.3 s
+  Exploitable: gets into time trouble
+
+DRAW BEHAVIOUR
+  8 draws in 48 played games (17.0%): threefold_repetition 4, fifty_moves 3, insufficient_material 1
+  Repetition while ahead (> +150 at the final position): 0
+  Repetition while behind (< -150): 0; level repetitions: 1
+
+ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
+  Reached +300 or better in 10 games, failed to win 0.
+  Reached -300 or worse in 2 games, escaped with a half point or more in 1:
+    R50 vs Kingo Disco low -3581, draw by threefold_repetition: opponent allowed a repetition
+
+OPENINGS (curated start positions assigned by the platform)
+  By family: Sicilian 11-2-3 (75%); French 6-1-0 (93%); Italian 2-0-2 (50%); Ruy Lopez 0-2-1 (33%);
+    Dutch 2-0-1 (67%); Reti 2-0-1 (67%); Caro-Kann 1-1-0 (75%); Pirc 2-0-0 (100%); English 2-0-0
+    (100%); Grunfeld 1-1-0 (75%); Scotch 0-0-1 (0%); King's Indian 0-0-1 (0%); London 1-0-0 (100%);
+    Petroff 0-1-0 (50%)
+  Positions seen more than once: Sicilian Closed x5 3-1-1 (70%); Italian Game x4 2-0-2 (50%); Dutch
+    Stonewall x3 2-0-1 (67%); French Tarrasch x3 3-0-0 (100%); Reti Opening x3 2-0-1 (67%); Ruy
+    Lopez, Closed x3 0-2-1 (33%); Sicilian Najdorf x3 3-0-0 (100%); Sicilian Sveshnikov x3 1-1-1
+    (50%); English Symmetrical x2 2-0-0 (100%); French Classical x2 2-0-0 (100%); Grunfeld Defence
+    x2 1-1-0 (75%); Pirc Defence x2 2-0-0 (100%); Sicilian Dragon x2 2-0-0 (100%); Sicilian Taimanov
+    x2 2-0-0 (100%); 9 positions seen once (3 won, 3 drawn, 3 lost).
+  Underperforms in: Ruy Lopez 0-2-1 (33%), Italian 2-0-2 (50%)
+  First six own moves: 56% match Stockfish's first choice (moves 7-20: 62%), mean loss 15.3 cp, 0%
+    played instantly; first clear divergence (loss >= 20 cp) at own move 6.7 on average.
+
+STYLE
+  Captures on 22.5% of own moves, checks on 14.8%; average game 129 plies (65 own moves), longest
+    438 plies (R57)
+  Wins: 30 (30 by checkmate, 0 by opponent failure); losses: 10 (10 by checkmate, 0 by own failure)
+  Sacrifices (gave >= 2 pawns of material without losing eval, then recovered): 1 -> R50 36.Kh2
+  When ahead (> +150) material leaves the board at 0.98 pawns per own move (level: 1.25); capture
+    rate 22.6% vs 25.8% level -> no deliberate simplification
+
+LIKELY ENGINE PROFILE
+  Strong searcher (mean loss 18.4 cp): consistent with a bitboard alpha-beta engine at depth 8-12
+  with a decent evaluation. Confidence low.
+  Adaptive time use (median 1.36 s, max 16.2 s, spends 1.6 s on moves after a >100 cp swing vs 2.3 s
+  otherwise).
+  Poor clock awareness: 28 of 48 games went under 5 s.
+
+HOW TO PLAY THEM
+  1. They convert (10 of 10 won positions turned into wins): do not rely on swindles; the game is
+  decided before -300.
+  2. Time pressure works: 28 games dipped under 5 s (R48, R49, R50, R52, R53, R55). Keep games long
+  and complicated; their play under 10 s averages 0.6 s a move.
+  3. No extra time goes to critical positions (1.6 s after a big swing vs 2.3 s otherwise): our
+  search can spend several times their budget on the few moves that decide a game, so prefer
+  positions where one precise move matters over long manoeuvring.
+  4. Do not count on gifts: only 2 blunders in 527 measured moves. Keep our play sound; speculative
+  sacrifices will be refuted.
+  5. Opening families where they score badly: Ruy Lopez (0-2-1 (33%)), Italian (2-0-2 (50%)).
+  Nothing to choose here (positions are assigned), but expect our best chances there.

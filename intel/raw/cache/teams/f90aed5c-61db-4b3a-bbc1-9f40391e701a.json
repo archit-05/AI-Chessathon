@@ -1,11 +1,11 @@
 {
  "uuid": "f90aed5c-61db-4b3a-bbc1-9f40391e701a",
- "bot": "p1-1 tb2",
+ "bot": "c1",
  "team": "OMI",
- "rating": 2587,
- "rank": 11,
- "record": "37-19-28",
- "rated_rounds": 86,
+ "rating": 2650,
+ "rank": 4,
+ "record": "38-20-28",
+ "rated_rounds": 87,
  "history": [
   [
    7,
@@ -350,9 +350,33 @@
   [
    92,
    2587
+  ],
+  [
+   93,
+   2650
   ]
  ],
  "games": [
+  {
+   "game": "cdf0624c-f012-41f4-9972-2043a4cba61a",
+   "kind": "Rated",
+   "round": 94,
+   "colour": "Black",
+   "opponent": "what even is en passant",
+   "opponent_uuid": "b9cbed87-8a3a-437d-9333-1447f68200d1",
+   "verdict": "draw",
+   "opening": "Sicilian Closed"
+  },
+  {
+   "game": "a0e80c62-3911-41fd-a145-1cf8004eee95",
+   "kind": "Rated",
+   "round": 93,
+   "colour": "Black",
+   "opponent": "Lubina",
+   "opponent_uuid": "34fd9228-11bf-4e7a-ba8f-b452d96ad8c9",
+   "verdict": "win",
+   "opening": "Sicilian Closed"
+  },
   {
    "game": "d9ea4fc4-8bd2-448e-bc2d-40bf094615cb",
    "kind": "Rated",
@@ -364,16 +388,6 @@
    "opening": "London System"
   },
   {
-   "game": "96cb6f90-999e-4ae9-aa49-123382e82934",
-   "kind": "Rated",
-   "round": 91,
-   "colour": "White",
-   "opponent": "Gijs Smit",
-   "opponent_uuid": "3f0e0e44-cdce-485f-b5b6-3691e34f9f44",
-   "verdict": "draw",
-   "opening": "English Symmetrical"
-  },
-  {
    "game": "54965c10-4294-4e04-85da-c78c5c12a2f9",
    "kind": "Rated",
    "round": 90,
@@ -382,6 +396,16 @@
    "opponent_uuid": "3241cef5-6b1c-41f2-b275-f0e50fc52ed5",
    "verdict": "win",
    "opening": "English Symmetrical"
+  },
+  {
+   "game": "4d5a6cde-530d-4fb9-ba09-87d1561407fd",
+   "kind": "Rated",
+   "round": 89,
+   "colour": "Black",
+   "opponent": "pheanup",
+   "opponent_uuid": "0a121c61-60a7-4926-a0e7-024dffa6b185",
+   "verdict": "draw",
+   "opening": "Sicilian Sveshnikov"
   },
   {
    "game": "834e56ed-6a55-4291-a564-57e05394aca5",
@@ -1204,5 +1228,5 @@
    "opening": "Sicilian Sveshnikov"
   }
  ],
- "fetched_at": "2026-09-10T08:56:18Z"
+ "fetched_at": "2026-09-10T10:43:38Z"
 }

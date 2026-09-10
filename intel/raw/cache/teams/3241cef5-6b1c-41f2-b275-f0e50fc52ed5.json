@@ -2,10 +2,10 @@
  "uuid": "3241cef5-6b1c-41f2-b275-f0e50fc52ed5",
  "bot": "Fuzzydafool",
  "team": "FuzzyBot",
- "rating": 2453,
- "rank": 21,
- "record": "23-16-22",
- "rated_rounds": 91,
+ "rating": 2313,
+ "rank": 36,
+ "record": "23-17-24",
+ "rated_rounds": 94,
  "history": [
   [
    1,
@@ -370,18 +370,50 @@
   [
    91,
    2453
+  ],
+  [
+   92,
+   2367
+  ],
+  [
+   93,
+   2299
+  ],
+  [
+   94,
+   2313
   ]
  ],
  "games": [
   {
-   "game": "cddeb54a-91be-4da6-8ca9-9a2722ea8150",
+   "game": "ba9ff1c5-1708-4256-94a6-775e32cb0d69",
    "kind": "Rated",
-   "round": 91,
+   "round": 94,
+   "colour": "Black",
+   "opponent": "checkers",
+   "opponent_uuid": "9e5e613a-ca80-4fd9-aa68-76f184ef7bac",
+   "verdict": "draw",
+   "opening": "Nimzo-Indian Defence"
+  },
+  {
+   "game": "49c4a61e-1b5e-43f4-bc0b-4609948d5ceb",
+   "kind": "Rated",
+   "round": 93,
    "colour": "White",
-   "opponent": "Danya's Disciple",
-   "opponent_uuid": "a4b26c08-0fa5-48ae-b15e-69a622ee81bb",
+   "opponent": "BetaGo",
+   "opponent_uuid": "145e2e17-6316-4b84-911b-45f3258ec8c9",
    "verdict": "loss",
-   "opening": "English Symmetrical"
+   "opening": "French Classical"
+  },
+  {
+   "game": "11299ce3-07d8-4a84-8864-1999e8ad5ed1",
+   "kind": "Rated",
+   "round": 92,
+   "colour": "Black",
+   "opponent": "e=\u03c0=2",
+   "opponent_uuid": "3e68dab5-8421-4113-9aa0-dbe165e997f5",
+   "verdict": "loss",
+   "opening": "Two Knights Defence"
   },
   {
    "game": "54965c10-4294-4e04-85da-c78c5c12a2f9",
@@ -402,6 +434,16 @@
    "opponent_uuid": "4857862c-3ea2-4ae9-8792-335918e2ef58",
    "verdict": "win",
    "opening": "Sicilian Dragon"
+  },
+  {
+   "game": "673d25c5-4eff-4111-8580-0d006d6a0a8c",
+   "kind": "Rated",
+   "round": 88,
+   "colour": "Black",
+   "opponent": "omega3 fish",
+   "opponent_uuid": "1daad2c3-adda-4ae6-945c-e82c4015ee72",
+   "verdict": "win",
+   "opening": "Sicilian Closed"
   },
   {
    "game": "a5ec1241-a5c5-4975-bf4b-608eb8888f9c",
@@ -1274,5 +1316,5 @@
    "opening": "Petroff Defence"
   }
  ],
- "fetched_at": "2026-09-10T07:55:31Z"
+ "fetched_at": "2026-09-10T10:59:21Z"
 }

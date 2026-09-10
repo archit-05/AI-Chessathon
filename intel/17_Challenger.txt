@@ -1,33 +1,36 @@
-Challenger  (team: Stonkfish)  -  rank 20, rating 2469
+Challenger  (team: Stonkfish)  -  rank 17, rating 2498
 ======================================================
-Generated 2026-09-10 11:19 from 89 rated games (rounds 1-94, 61 of 93 with evaluations so far) plus
+Generated 2026-09-10 12:02 from 89 rated games (rounds 1-94, 61 of 93 with evaluations so far) plus
   1 played to a result but voided by the site later (R59 3fold): they count for move quality, clocks
   and draw behaviour, not for results; 3 game(s) that never had a result ignored: R7, R16, R29.
 
 IDENTITY
   Bot Challenger; team Stonkfish; university Warwick; members not shown on the site.
-  Rank 20 of 438, rating 2469, record 38-31-21 in 87 rated games.
-  Rating trajectory: entered R1 at 1575, peak 2498 (R93), now 2498 (R93).
+  Rank 17 of 440, rating 2498, record 38-31-21 in 89 rated games.
+  Rating trajectory: entered R1 at 1575, peak 2499 (R94), now 2499 (R94).
   Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
     upload): R12 +130 -> 1658 (win vs Attack)
 
 RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
-  vs top 10 : 0-1-5 (8%) over 6 games
-  vs 11-20  : 4-6-2 (58%) over 12 games
-  vs 21-50  : 15-19-4 (64%) over 38 games
-  vs rest   : 19-4-10 (64%) over 33 games
+  vs top 10 : 1-4-5 (30%) over 10 games
+  vs 11-20  : 2-4-2 (50%) over 8 games
+  vs 21-50  : 15-18-4 (65%) over 37 games
+  vs rest   : 20-4-10 (65%) over 34 games
   Games vs top-10 teams:
-    R2   white vs Anchoa             (#10) loss checkmate             London System
-    R11  black vs stockfih           (#2 ) loss checkmate             Sicilian Sveshnikov
-    R42  white vs stockfih           (#2 ) loss checkmate             Nimzo-Indian Defence
+    R11  black vs stockfih           (#3 ) loss checkmate             Sicilian Sveshnikov
+    R22  white vs Ultron Prime       (#10) loss checkmate             Slav Defence
+    R39  black vs c1                 (#4 ) draw threefold_repetition  Sicilian Classical
+    R41  black vs Ultron Prime       (#10) win  checkmate             Sicilian Closed
+    R42  white vs stockfih           (#3 ) loss checkmate             Nimzo-Indian Defence
     R62  black vs Patzer 2.4         (#9 ) loss checkmate             Caro-Kann Exchange
-    R80  black vs BINI Alpha         (#7 ) draw fifty_moves           Reti Opening
-    R89  black vs BINI Alpha         (#7 ) loss checkmate             English Symmetrical
-  Games vs ranks 11-20: R22 loss vs Ultron Prime (#14, checkmate); R36 win vs cory (#19, checkmate);
-    R39 draw vs p1-1 tb2 (#11, 3fold); R41 win vs Ultron Prime (#14, checkmate); R51 win vs cory
-    (#19, checkmate); R58 draw vs cory (#19, insuff); R60 loss vs make_no_mistak (#16, checkmate);
-    R76 draw vs Ultron Prime (#14, 3fold); R82 draw vs Ultron Prime (#14, fifty_moves); R83 draw vs
-    cory (#19, fifty_moves); R90 draw vs cory (#19, 3fold); R92 win vs AI Fellow (#18, checkmate)
+    R76  black vs Ultron Prime       (#10) draw threefold_repetition  London System
+    R80  black vs BINI Alpha         (#1 ) draw fifty_moves           Reti Opening
+    R82  white vs Ultron Prime       (#10) draw fifty_moves           Semi-Slav Defence
+    R89  black vs BINI Alpha         (#1 ) loss checkmate             English Symmetrical
+  Games vs ranks 11-20: R2 loss vs Anchoa (#13, checkmate); R36 win vs cory (#18, checkmate); R51
+    win vs cory (#18, checkmate); R58 draw vs cory (#18, insuff); R60 loss vs make_no_mistak (#15,
+    checkmate); R83 draw vs cory (#18, fifty_moves); R90 draw vs cory (#18, 3fold); R94 draw vs
+    e=π=2 (#19, 3fold)
 
 MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
   positions inside +-800 only)
@@ -58,7 +61,7 @@ TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
 
 DRAW BEHAVIOUR
   31 draws in 90 played games (34.0%): threefold_repetition 17, fifty_moves 10,
-    insufficient_material 4; 1 of them vs top-10 teams; 1 of these were voided by the site
+    insufficient_material 4; 4 of them vs top-10 teams; 1 of these were voided by the site
     afterwards and no longer count on the ladder
   Repetition while ahead (> +150 at the final position): 1 -> R50 vs SirBlunderiusThird at +278
   Repetition while behind (< -150): 0; level repetitions: 9

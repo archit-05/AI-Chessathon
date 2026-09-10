@@ -2,10 +2,10 @@
  "uuid": "379349e7-efa1-4a1b-bef1-3837fc235f29",
  "bot": "PlayOps",
  "team": "PlayOps",
- "rating": 1158,
- "rank": 408,
- "record": "25-22-33",
- "rated_rounds": 92,
+ "rating": 1155,
+ "rank": 412,
+ "record": "25-23-34",
+ "rated_rounds": 94,
  "history": [
   [
    1,
@@ -374,9 +374,37 @@
   [
    92,
    1158
+  ],
+  [
+   93,
+   1160
+  ],
+  [
+   94,
+   1155
   ]
  ],
  "games": [
+  {
+   "game": "fad31856-8669-4d7a-bd42-cfdbdc2735dc",
+   "kind": "Rated",
+   "round": 94,
+   "colour": "White",
+   "opponent": "stockfish111",
+   "opponent_uuid": "3d9f5b59-a569-4270-94ac-57aa82f95a31",
+   "verdict": "loss",
+   "opening": "Pirc Defence"
+  },
+  {
+   "game": "1090627b-94c1-4b80-8f00-bd7923ef4d32",
+   "kind": "Rated",
+   "round": 93,
+   "colour": "White",
+   "opponent": "Zack",
+   "opponent_uuid": "9a5a6b18-36bb-46c6-a5a6-dac002c242a5",
+   "verdict": "draw",
+   "opening": "Sicilian Closed"
+  },
   {
    "game": "7a4540cd-f315-4e48-8278-eaf6fe32e64c",
    "kind": "Rated",
@@ -388,16 +416,6 @@
    "opening": "Semi-Slav Defence"
   },
   {
-   "game": "46e8eaf1-7ba6-42dc-adb6-c315b9b3695b",
-   "kind": "Rated",
-   "round": 91,
-   "colour": "White",
-   "opponent": "#niche",
-   "opponent_uuid": "bf498a75-ad6f-4a43-a302-e046eaf5fa79",
-   "verdict": "win",
-   "opening": "Sicilian Alapin"
-  },
-  {
    "game": "63b6734c-bff0-488b-a5ce-f43436f7bf73",
    "kind": "Rated",
    "round": 90,
@@ -406,6 +424,16 @@
    "opponent_uuid": "28cb7468-aa2c-4887-82d1-89ffafeeed5e",
    "verdict": "loss",
    "opening": "Ruy Lopez, Closed"
+  },
+  {
+   "game": "3d27965c-12a6-4b8f-92f7-8145254309d0",
+   "kind": "Rated",
+   "round": 89,
+   "colour": "Black",
+   "opponent": "checkbot",
+   "opponent_uuid": "c3ca8283-1cb4-428f-b14d-57288b7eb5ea",
+   "verdict": "win",
+   "opening": "Sicilian Closed"
   },
   {
    "game": "32ed97b0-b1ad-496e-99f2-c3b93a01a732",
@@ -1288,5 +1316,5 @@
    "opening": "Sicilian Closed"
   }
  ],
- "fetched_at": "2026-09-10T08:48:05Z"
+ "fetched_at": "2026-09-10T10:51:59Z"
 }

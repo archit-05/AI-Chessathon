@@ -2,10 +2,10 @@
  "uuid": "f0286356-626d-4dd2-86ab-fd6d779063cb",
  "bot": "BINI Alpha",
  "team": "Opus Carlsen",
- "rating": 2716,
- "rank": 3,
- "record": "30-22-13",
- "rated_rounds": 69,
+ "rating": 2788,
+ "rank": 1,
+ "record": "31-23-13",
+ "rated_rounds": 70,
  "history": [
   [
    24,
@@ -282,9 +282,33 @@
   [
    92,
    2716
+  ],
+  [
+   93,
+   2788
   ]
  ],
  "games": [
+  {
+   "game": "22d01154-b6c1-4e10-831d-1eb4388aa204",
+   "kind": "Rated",
+   "round": 94,
+   "colour": "White",
+   "opponent": "Emile Andrieu",
+   "opponent_uuid": "659a3020-8af7-4934-b753-3b7c5fd11184",
+   "verdict": "draw",
+   "opening": "Ruy Lopez, Closed"
+  },
+  {
+   "game": "57bacaa3-3823-471c-af71-c9001b9d0de2",
+   "kind": "Rated",
+   "round": 93,
+   "colour": "White",
+   "opponent": "Ryan Vincent",
+   "opponent_uuid": "8c22f2a5-3bce-4b66-b93a-8f4ab4318b0f",
+   "verdict": "win",
+   "opening": "Caro-Kann Advance"
+  },
   {
    "game": "7c8a1949-5ffa-43d0-89ef-998ccfc2140c",
    "kind": "Rated",
@@ -296,16 +320,6 @@
    "opening": "French Tarrasch"
   },
   {
-   "game": "af94027f-fc8a-4c39-9e2c-0c780db37806",
-   "kind": "Rated",
-   "round": 91,
-   "colour": "White",
-   "opponent": "Gladiator",
-   "opponent_uuid": "429a581d-e7fc-41e3-a915-2895b01d7d0b",
-   "verdict": "win",
-   "opening": "King's Indian Classical"
-  },
-  {
    "game": "a788c806-d212-450e-b9fe-b9be2e294673",
    "kind": "Rated",
    "round": 90,
@@ -314,6 +328,16 @@
    "opponent_uuid": "3f0e0e44-cdce-485f-b5b6-3691e34f9f44",
    "verdict": "draw",
    "opening": "Sicilian Closed"
+  },
+  {
+   "game": "05744e90-7971-4c60-a461-bb84bbbc6d6e",
+   "kind": "Rated",
+   "round": 89,
+   "colour": "White",
+   "opponent": "Stonkfish",
+   "opponent_uuid": "385a6db2-1c05-46db-ae91-7218700f83b3",
+   "verdict": "win",
+   "opening": "English Symmetrical"
   },
   {
    "game": "834e56ed-6a55-4291-a564-57e05394aca5",
@@ -966,5 +990,5 @@
    "opening": "Four Knights Game"
   }
  ],
- "fetched_at": "2026-09-10T08:45:46Z"
+ "fetched_at": "2026-09-10T10:42:50Z"
 }

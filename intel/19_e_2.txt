@@ -1,0 +1,124 @@
+e=π=2  (team: e=π=2)  -  rank 19, rating 2464
+=============================================
+Generated 2026-09-10 12:02 from 85 rated games (rounds 1-94, 43 of 93 with evaluations so far); 8
+  game(s) that never had a result ignored: R7, R13, R15, R17, R21, R31, R32, R33.
+
+IDENTITY
+  Bot e=π=2; team e=π=2; university International; members not shown on the site.
+  Rank 19 of 440, rating 2464, record 37-25-24 in 85 rated games.
+  Rating trajectory: entered R1 at 1429, peak 2476 (R92), now 2475 (R94).
+  Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
+    upload): R41 +107 -> 1649 (win vs Blunders central); R43 -107 -> 1531 (loss vs TheROOK); R45
+    -103 -> 1524 (loss vs 72o); R46 +117 -> 1641 (win vs hyperfish); R76 +100 -> 1898 (win vs The
+    Castle Gambit)
+
+RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
+  vs top 10 : 0-1-0 (50%) over 1 games
+  vs 11-20  : 0-3-0 (50%) over 3 games
+  vs 21-50  : 4-4-2 (60%) over 10 games
+  vs rest   : 32-17-22 (57%) over 71 games
+  Games vs top-10 teams:
+    R85  black vs c1                 (#4 ) draw threefold_repetition  Ruy Lopez, Closed
+  Games vs ranks 11-20: R86 draw vs make_no_mistak (#15, fifty_moves); R93 draw vs cory (#18,
+    insuff); R94 draw vs Challenger (#17, 3fold)
+
+MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
+  positions inside +-800 only)
+  All own moves: n 1803, mean loss 36.7 cp, median 8 cp, blunders (>= 200 cp) 55 = 3.1% (39 of them
+    from level or better positions)
+  own moves 1-15    : n  641, mean 35.2 cp, median 13 cp, blunders 2.3%
+  own moves 16-40   : n  802, mean 39.6 cp, median 10 cp, blunders 3.4%
+  own moves 41+     : n  360, mean 32.9 cp, median 0 cp, blunders 3.6%
+  as white          : n  840, mean 38.1 cp, median 10 cp, blunders 2.7%
+  as black          : n  963, mean 35.4 cp, median 7 cp, blunders 3.3%
+  Worst moves: R23 35.g5 (-69 -> -9994); R23 60.Rd2 (+9997 -> +0); R24 29.Ng6 (+456 -> -454)
+  Site's own review (Stockfish 16, depth 16): mean ACPL 37.8 over 85 games, accuracy 93.1%; its tags
+    on their moves: 51 blunder, 53 mistake, 3 miss, 171 inaccuracy of 2118
+
+TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
+  Per move: mean 2.15 s, median 2.24 s, quartiles 1.06-3.08 s, max 25.2 s; instant (<50 ms) moves
+    7.1%
+  Clock at the end: mean 29.3 s, minimum 1.2 s; games under 10 s: 11, under 5 s: 4 (R9, R10, R12,
+    R14)
+  By clock before the move: >60s 3.1 s (n 1937), 30-60s 2.2 s (n 1166), 10-30s 1.0 s (n 1357), <10s
+    0.6 s (n 215)
+  By own-move number: 1-15 3.4 s, 16-40 2.4 s, 41+ 0.9 s; when +300 or better 1.8 s, level 2.8 s,
+    -300 or worse 1.5 s
+  Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 4.4%,
+    quartiles 3.2-6.0%
+  After a >100 cp swing on the opponent's move: 2.2 s (n 233) vs 2.3 s otherwise; on moves that
+    themselves swing >100 cp: 2.3 s (n 221) vs 2.3 s
+  Exploitable: spends a fixed ~4% of the remaining clock per move, so its thinking time shrinks as
+    the game goes on; gets into time trouble
+
+DRAW BEHAVIOUR
+  25 draws in 85 played games (29.0%): threefold_repetition 18, fifty_moves 3, insufficient_material
+    3, stalemate 1; 1 of them vs top-10 teams
+  Repetition while ahead (> +150 at the final position): 2 -> R47 vs Pwn at +494, R50 vs ChEKmate at
+    +173
+  Repetition while behind (< -150): 0; level repetitions: 5
+
+ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
+  Reached +300 or better in 25 games, failed to win 7:
+    R12 vs fischer peak +565, loss by checkmate: lost it: worst move 59.Ke5 cost 1000 cp
+    R22  vs Blundermaster      peak  +683, loss by checkmate: lost it: worst move 69.Kd6 cost 490 cp
+    R23 vs Samouneh peak +9997, draw by stalemate: threw it away: move 60.Rd2 (+9997 -> +0)
+    R24 vs move fish getoutdaway peak +577, loss by checkmate: lost it: worst move 29.Ng6 cost 910
+      cp
+    R25 vs The Pawnisher peak +486, loss by checkmate: lost it: worst move 24.Rb2 cost 1000 cp
+    R37 vs dinosaur peak +478, draw by threefold_repetition: threw it away: move 56.c6+ (+478 -> +8)
+    R47  vs Pwn                peak  +527, draw by threefold_repetition: repeated while +494
+  Reached -300 or worse in 20 games, escaped with a half point or more in 4:
+    R3 vs Tempo low -352, win by checkmate: opponent collapsed: Rxb1 at ply 92 lost 1000 cp
+    R20 vs blunderbussy low -507, win by checkmate: opponent collapsed: Kg5 at ply 81 lost 1000 cp
+    R23  vs Samouneh           low -9994, draw by stalemate: stalemate
+    R38 vs Traveling Salespawn low -330, draw by threefold_repetition: opponent allowed a repetition
+
+OPENINGS (curated start positions assigned by the platform)
+  By family: Sicilian 8-4-10 (45%); French 4-3-3 (55%); London 2-3-1 (58%); English 1-1-3 (30%); Ruy
+    Lopez 3-2-0 (80%); Semi-Slav 3-1-0 (88%); King's Indian 1-1-2 (38%); Reti 2-2-0 (75%); Scotch
+    2-1-1 (62%); Caro-Kann 2-2-0 (75%); Queen's Gambit 2-0-1 (67%); Petroff 2-1-0 (83%);
+    Nimzo-Indian 0-1-1 (25%); Four Knights 0-2-0 (50%); Catalan 0-1-1 (25%); Grunfeld 1-0-0 (100%);
+    Queen's Indian 0-0-1 (0%); Pirc 1-0-0 (100%); Italian 1-0-0 (100%); Two Knights 1-0-0 (100%)
+  Positions seen more than once: Sicilian Sveshnikov x7 2-1-4 (36%); London System x6 2-3-1 (58%);
+    Sicilian Closed x6 4-2-0 (83%); English Symmetrical x5 1-1-3 (30%); Ruy Lopez, Closed x5 3-2-0
+    (80%); Sicilian Classical x5 1-1-3 (30%); French Tarrasch x4 2-1-1 (62%); King's Indian
+    Classical x4 1-1-2 (38%); Reti Opening x4 2-2-0 (75%); Scotch Game x4 2-1-1 (62%); Semi-Slav
+    Defence x4 3-1-0 (88%); French Winawer x3 1-0-2 (33%); Petroff Defence x3 2-1-0 (83%); Caro-Kann
+    Classical x2 1-1-0 (75%); Catalan Opening x2 0-1-1 (25%); Four Knights Game x2 0-2-0 (50%);
+    French Classical x2 0-2-0 (50%); Nimzo-Indian Defence x2 0-1-1 (25%); Queen's Gambit Accepted x2
+    2-0-0 (100%); Sicilian Dragon x2 1-0-1 (50%); Sicilian Najdorf x2 0-0-2 (0%); 9 positions seen
+    once (6 won, 1 drawn, 2 lost).
+  Underperforms in: English 1-1-3 (30%)
+  First six own moves: 38% match Stockfish's first choice (moves 7-20: 45%), mean loss 27.2 cp, 0%
+    played instantly; first clear divergence (loss >= 20 cp) at own move 3.1 on average.
+
+STYLE
+  Captures on 20.7% of own moves, checks on 7.8%; average game 110 plies (55 own moves), longest 296
+    plies (R86)
+  Wins: 36 (36 by checkmate, 0 by opponent failure); losses: 24 (24 by checkmate, 0 by own failure)
+  Sacrifices (gave >= 2 pawns of material without losing eval, then recovered): 3 -> R3 21.Nc4, R14
+    24.Kd2, R38 3.Qd6
+  When ahead (> +150) material leaves the board at 1.08 pawns per own move (level: 1.07); capture
+    rate 24.7% vs 20.5% level -> no deliberate simplification
+
+LIKELY ENGINE PROFILE
+  Shallow or noisy engine (mean loss 36.7 cp, blunder rate 3.1%). Confidence high.
+  Time allocation is a fixed share of the remaining clock (~4% per move; median 2.24 s, max 25.2 s),
+  so depth shrinks as the game goes on and no extra time goes to critical positions (2.2 s after a
+  >100 cp swing vs 2.3 s otherwise).
+  Poor clock awareness: 4 of 85 games went under 5 s.
+  Repeats while clearly ahead (2 games): no contempt or repetition avoidance in the search.
+
+HOW TO PLAY THEM
+  1. When we are worse, steer for repetitions: they accepted threefolds while ahead in R47, R50.
+  Keep our own contempt positive so we never return the favour.
+  2. Their conversion is leaky (7 of 25 won positions not won): when losing, keep material on and
+  make them prove technique; the fifty-move and repetition rules are our friends.
+  3. Time pressure works: 4 games dipped under 5 s (R9, R10, R12, R14). Keep games long and
+  complicated; their play under 10 s averages 0.6 s a move.
+  4. No extra time goes to critical positions (2.2 s after a big swing vs 2.3 s otherwise): our
+  search can spend several times their budget on the few moves that decide a game, so prefer
+  positions where one precise move matters over long manoeuvring.
+  5. Tactics work: 39 blunders (>= 200 cp) came from level or better positions, so they can be
+  out-calculated. Keep the position sharp.
