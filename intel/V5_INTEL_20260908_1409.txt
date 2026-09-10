@@ -1,4 +1,4 @@
-V5 INTEL BRIEF  2026-09-10 03:59   (leaderboard fetched 2026-09-10T02:41:01Z)
+V5 INTEL BRIEF  2026-09-10 04:59   (leaderboard fetched 2026-09-10T03:41:01Z)
 ====================================================================================================
 Site evaluations throughout (Stockfish 16 depth 16, identical for every team). CPL = mean cp lost
 per own move (|eval| <= 800); Bl% = own moves losing >= 200 cp; sACPL = site review ACPL (all
@@ -17,7 +17,7 @@ A. TOP 15
   6  SoberPaschoud        2642  33-32-16  10.5    17  0.3  1.62    40  
   7  Patzer 2.4           2618  31-37-13  11.2    17  0.5  1.53    46  
   8  BINI Alpha           2610  28-22-13  15.6    26  0.8   1.8    34  NEW
-  9  o2-1                 2593  37-17-28  23.7    29  1.3  1.97    21  NEW
+  9  p1-1 tb2             2593  37-17-28  23.7    29  1.3  1.97    21  NEW
   10 Poincare conjecture  2588  22-31-10  11.7    16  0.2   1.6    50  NEW
   11 Capablanca           2572  35-29-18  10.5    18  0.3  1.65    36  
   12 Mite                 2559  20-30-11  10.2    20  0.2  1.78    48  NEW
@@ -49,7 +49,7 @@ B. TOP 10 IN DETAIL  (bands by the opponent's rating at the time)
      open  Sicilian 7/12 58% | Caro-Kann 7/10 70% | Ruy Lopez 4/7 57% | London 2.5/6 42%
      game  161 ply, CPL 10.6, Bl 0.5%, 1.68 s/mv, 26 s left; lost 13 = SLD 11, BLU 2
      lost  R25b spring_week/1599 BLU50/315 | R29w The Castle /1676 BLU33/294 | R35b dog/1930 SLD
-           R36w SirBlunderi/1887 SLD | R37w o2-1/1863 SLD | R49w Loss Preven/2234 SLD
+           R36w SirBlunderi/1887 SLD | R37w p1-1 tb2/1863 SLD | R49w Loss Preven/2234 SLD
            R54b Poincare co/2304 SLD | R65b AlphaFish/2618 SLD | R67w Capablanca/2525 SLD
            R76b stockfih/2649 SLD | R79b ms/2636 SLD | R82w Loss Preven/2693 SLD
            R86b stockfih/2802 SLD
@@ -101,7 +101,7 @@ B. TOP 10 IN DETAIL  (bands by the opponent's rating at the time)
            R30b citytrek/1358 SLD | R40b Sage/1779 SLD | R55b ms/2208 SLD | R56w Edward/2127 SLD
            R64w stockfih/2361 SLD | R65b Poincare co/2354 SLD | R68b cory/2340 SLD
            R76b Danya's Dis/2361 SLD | R79w zak/2379 SLD | R82w Cornelius/2428 SLD
-  #9 o2-1 (OMI) 2593 [new build]
+  #9 p1-1 tb2 (OMI) 2593 [new build]
      band  2500+ 2/3 67% | 2300-2499 3/6 50% | 2100-2299 7/12 58% | <2100 32.5/60 54%
      open  Sicilian 12.5/23 54% | Ruy Lopez 3/8 38% | English 5/7 71% | French 3.5/6 58%
      game  139 ply, CPL 23.7, Bl 1.3%, 1.97 s/mv, 19 s left; lost 28 = SLD 21, BLU 7
@@ -134,7 +134,7 @@ C. OUR GAMES SINCE ROUND 50  (BINI Alpha, rank 8, 2610, 28-22-13)
   54  w    Dark Sister        2179  win    10/44       1/0/0      never        checkmate
   55  b    ms                 2208  LOSS   86/44       6/0/0      ply 47       checkmate
   56  w    Edward             2127  LOSS   62/30       4/0/0      ply 81       checkmate
-  57  b    o2-1               2074  win     7/51       1/0/0      never        checkmate
+  57  b    p1-1 tb2           2074  win     7/51       1/0/0      never        checkmate
   58  b    Asmit Agrawal      2149  win     6/17       0/0/0      never        checkmate
   59  b    make_no_mistakes   2183  win    12/42       2/0/0      never        checkmate
   60  w    Patzer 2.4         2243  win     7/50       0/1/0      never        checkmate
@@ -160,11 +160,11 @@ C. OUR GAMES SINCE ROUND 50  (BINI Alpha, rank 8, 2610, 28-22-13)
   80  w    Challenger         2394  draw    2/2        1/0/0      never        fifty_moves
   81  b    lyra               2391  draw    7/8        1/0/0      never        insufficient_m
   82  w    Cornelius          2428  LOSS   58/23       2/1/0      never        checkmate
-  83  b    o2-1               2385  win    17/37       1/0/0      never        checkmate
+  83  b    p1-1 tb2           2385  win    17/37       1/0/0      never        checkmate
   84  w    zak                2443  win    14/43       1/1/1      never        checkmate
   85  b    Astral             2501  draw    3/4        0/0/0      never        threefold_repe
   86  w    cory               2486  draw    7/7        1/0/0      never        threefold_repe
-  88  w    o2-1               2505  draw    3/4        3/1/0      never        insufficient_m
+  88  w    p1-1 tb2           2505  draw    3/4        3/1/0      never        insufficient_m
   89  w    Challenger         2495  win    16/44       0/1/0      never        checkmate
   90  b    Patzer 2.4         2628  draw    2/2        0/0/0      never        insufficient_m
   Since R50: 22.5/39, mean sACPL 19 vs 22, CPL 11.8, Bl% 0.3, s/mv 1.74, clock left 21 s
@@ -179,7 +179,7 @@ D. NEW SINCE THE LAST BRIEF
   Bot failures in the whole cache (30 games): Flag 12, Illegal 10, Init 4, Crash 3, Ply cap 1
     who: Init The Good Team, fuzz, Emile Andrieu, f1shstock; Crash NajeebA x2, Vanish Onigiri;
     Illegal 0x88 x10; Flag Team7347 x4, rogo x2, Dominated Horses, Buddy's Grill Gambit, Sobriety +1
-  New in top 20 since 20260909_2359: none
+  New in top 20 since 20260909_2359: p1-1 tb2
   Bar now: top 3 2697, top 5 2684, top 10 2589; leader AlphaFish 2814; us 2610 (#8).
   Site rules: 81 top-15 games were played out and then voided (threefold_repe 46, unterminated 21,
     fifty_moves 10, checkmate 2, insufficient_m 2); unrated, one-off on 6 Sept.
