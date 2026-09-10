@@ -3617,3 +3617,73 @@ leaderboard: 443 rows
   won), e=π=2 (7 of 25 winning positions not won). Keep lost positions alive.
 
 strategy report: /Users/architbhardwaj/Desktop/AI Chessathon/intel/STRATEGY.txt
+leaderboard: 445 rows
+  1 BINI Alpha             (Opus Carlsen) games 78 missing 0 -> BINI_Alpha.pgn
+  2 AlphaFish              (Emile Andrieu) games 93 missing 0 -> AlphaFish.pgn
+  3 Loss Preventer         (Lightning Tree) games 100 missing 0 -> Loss_Preventer.pgn
+  4 Mite                   (Ryan Vincent) games 73 missing 0 -> Mite.pgn
+  5 Patzer 2.4             (Gijs Smit) games 101 missing 0 -> Patzer_2_4.pgn
+  6 c1                     (OMI) games 95 missing 0 -> c1.pgn
+  7 ms                     (ms) games 100 missing 0 -> ms.pgn
+  8 stockfih               (what even is en passant) games 93 missing 0 -> stockfih.pgn
+  9 test_bot               (pheanup) games 97 missing 0 -> test_bot.pgn
+ 10 Ultron Prime           (DGS ELO) games 101 missing 0 -> Ultron_Prime.pgn
+ 11 Challenger             (Stonkfish) games 101 missing 0 -> Challenger.pgn
+ 12 Anchoa                 (Lubina) games 101 missing 0 -> Anchoa.pgn
+ 13 BetaGo                 (BetaGo) games 56 missing 0 -> BetaGo.pgn
+ 14 Malnourished Goatis    (JBG fam) games 79 missing 0 -> Malnourished_Goatis.pgn
+ 15 SoberCooper            (Sobriety) games 101 missing 0 -> SoberCooper.pgn
+ 16 Poincare conjecture    (Gladiator) games 75 missing 0 -> Poincare_conjecture.pgn
+ 17 Danya's Disciple       (Danya's Disciple) games 101 missing 0 -> Danya_s_Disciple.pgn
+ 18 Fuzzydafool            (FuzzyBot) games 101 missing 0 -> Fuzzydafool.pgn
+ 19 e=π=2                  (e=π=2) games 101 missing 0 -> e_2.pgn
+ 20 50CentRaise            (50CentRaise) games 94 missing 0 -> 50CentRaise.pgn
+ 19 e=π=2                analysed 43/101 games
+ 20 50CentRaise          analysed 43/94 games
+2 game(s) had no embedded evaluation and were skipped
+  # Bot                Rating   Record   CPL sACPL   Bl%  s/mv Draw% RepA NonC Void
+-----------------------------------------------------------------------------------
+  1 BINI Alpha           2857 35-25-15  15.6    23   0.8  1.80    36    0    1    4
+  2 AlphaFish            2846  43-38-8   7.5    15   0.1  1.52    48    1    4    5
+  3 Loss Preventer       2755 38-35-25  13.1    21   0.4  1.64    37    0    1    2
+  4 Mite                 2750 25-35-13  10.2    19   0.2  1.73    50    0    2    1  *
+  5 Patzer 2.4           2744 34-44-15  11.2    17   0.5  1.52    57    0    2    9
+  6 c1                   2692 39-26-29  23.7    27   1.3  1.96    27    0    0    0
+  7 ms                   2686 38-39-18  11.1    19   0.3  1.84    45    1    3    4
+  8 stockfih             2662 32-31-26  15.7    23   0.4  1.96    39    2    4    4
+  9 test_bot             2643 32-37-19  12.5    20   0.5  1.87    51    0    2    8  *
+ 10 Ultron Prime         2637 36-37-22  18.0    29   1.0  1.88    38    0    2    0  *
+ 11 Challenger           2632 42-33-23  17.7    26   0.7  1.72    35    1    2    1  *
+ 12 Anchoa               2629 32-42-17   9.4    17   0.3  1.61    54    0    0    8  *
+ 13 BetaGo               2624 23-14-10  18.4    29   0.4  2.13    25    0    0    0  *
+ 14 Malnourished Goati   2609 29-34-16  10.6    16   0.5  1.70    42    0    0    0  *
+ 15 SoberCooper          2595 35-40-18  10.5    17   0.3  1.65    51    0    5    8
+ 16 Poincare conjectur   2590 26-36-13  11.7    17   0.2  1.63    50    0    0    1
+ 17 Danya's Disciple     2564 33-34-24  13.2    21   0.6  1.80    49    2    2   11
+ 18 Fuzzydafool          2561 26-21-25  14.2    26   0.6  1.80    56    0    2   29
+ 19 e=π=2                2525 40-28-26  36.7    36   3.1  2.11    29    2    7    0  *
+ 20 50CentRaise          2522 33-25-32  19.6    27   0.7  1.76    30    0    2    4  *
+  1 BINI Alpha           2857 35-25-15  15.6    23   0.8  1.80    36    0    1    4
+
+  1. Move quality spread: AlphaFish loses 7.5 cp per move, e=π=2 36.7 cp; our current build measures
+  15.6 cp. Blunder rates run 0.1-3.1%.
+  2. Free half points: AlphaFish (1), ms (1), stockfih (2), Challenger (1), Danya's Disciple (2),
+  e=π=2 (2) accepted repetitions while more than +150. Against them, when worse, aim for repetition.
+  3. Time trouble is real for AlphaFish (4 games under 5 s), Mite (2 games under 5 s), c1 (45 games
+  under 5 s), ms (32 games under 5 s), stockfih (8 games under 5 s), test_bot (53 games under 5 s),
+  Ultron Prime (33 games under 5 s), Anchoa (19 games under 5 s), BetaGo (33 games under 5 s),
+  Malnourished Goatis (10 games under 5 s), Danya's Disciple (3 games under 5 s), Fuzzydafool (43
+  games under 5 s), e=π=2 (4 games under 5 s), 50CentRaise (11 games under 5 s). Long, complicated
+  games punish them.
+  4. Clock left unused by BINI Alpha (33 s), Loss Preventer (43 s), Patzer 2.4 (34 s), Challenger
+  (34 s), Poincare conjecture (35 s): their depth is capped by a per-move budget, so our deeper
+  search in critical moments is a real edge.
+  5. Leaky conversion: AlphaFish (4 of 38 winning positions not won), Mite (2 of 19 winning
+  positions not won), Patzer 2.4 (2 of 32 winning positions not won), ms (3 of 36 winning positions
+  not won), stockfih (4 of 30 winning positions not won), test_bot (2 of 27 winning positions not
+  won), Ultron Prime (2 of 31 winning positions not won), Challenger (2 of 29 winning positions not
+  won), SoberCooper (5 of 35 winning positions not won), Danya's Disciple (2 of 31 winning positions
+  not won), Fuzzydafool (2 of 26 winning positions not won), e=π=2 (7 of 25 winning positions not
+  won), 50CentRaise (2 of 17 winning positions not won). Keep lost positions alive.
+
+strategy report: /Users/architbhardwaj/Desktop/AI Chessathon/intel/STRATEGY.txt

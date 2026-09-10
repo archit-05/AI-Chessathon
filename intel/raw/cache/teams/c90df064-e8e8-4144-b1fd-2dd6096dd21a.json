@@ -2,10 +2,10 @@
  "uuid": "c90df064-e8e8-4144-b1fd-2dd6096dd21a",
  "bot": "Loss Preventer",
  "team": "Lightning Tree",
- "rating": 2750,
- "rank": 5,
- "record": "38-34-25",
- "rated_rounds": 100,
+ "rating": 2752,
+ "rank": 4,
+ "record": "38-35-25",
+ "rated_rounds": 102,
  "history": [
   [
    1,
@@ -406,9 +406,27 @@
   [
    100,
    2750
+  ],
+  [
+   101,
+   2755
+  ],
+  [
+   102,
+   2752
   ]
  ],
  "games": [
+  {
+   "game": "e58bf13a-933a-4630-a64b-77706b24c045",
+   "kind": "Rated",
+   "round": 102,
+   "colour": "Black",
+   "opponent": "OMI",
+   "opponent_uuid": "f90aed5c-61db-4b3a-bbc1-9f40391e701a",
+   "verdict": "draw",
+   "opening": "London System"
+  },
   {
    "game": "e103eb67-632b-4366-b691-909ab5b5fb6b",
    "kind": "Rated",
@@ -430,14 +448,14 @@
    "opening": "Sicilian Najdorf"
   },
   {
-   "game": "ecdb7b70-ff1c-4c1d-9174-d9476e7d511b",
+   "game": "4af25d45-d645-4e01-9d44-ae6e1975daeb",
    "kind": "Rated",
-   "round": 99,
-   "colour": "White",
-   "opponent": "ms",
-   "opponent_uuid": "c3e1bc09-3d21-4279-ace0-16bb3742f5da",
-   "verdict": "draw",
-   "opening": "Scotch Game"
+   "round": 98,
+   "colour": "Black",
+   "opponent": "Emile Andrieu",
+   "opponent_uuid": "659a3020-8af7-4934-b753-3b7c5fd11184",
+   "verdict": "loss",
+   "opening": "Reti Opening"
   },
   {
    "game": "167b250a-8b6f-4cd3-86cf-2713fb67af3f",
@@ -1400,5 +1418,5 @@
    "opening": "Reti Opening"
   }
  ],
- "fetched_at": "2026-09-10T17:46:03Z"
+ "fetched_at": "2026-09-10T18:49:12Z"
 }

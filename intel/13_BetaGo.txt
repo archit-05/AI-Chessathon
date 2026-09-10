@@ -1,27 +1,26 @@
-BetaGo  (team: BetaGo)  -  rank 12, rating 2612
+BetaGo  (team: BetaGo)  -  rank 13, rating 2624
 ===============================================
-Generated 2026-09-10 19:09 from 55 rated games (rounds 46-101, 12 of 55 with evaluations so far).
+Generated 2026-09-10 20:15 from 56 rated games (rounds 46-102, 12 of 56 with evaluations so far).
 
 IDENTITY
   Bot BetaGo; team BetaGo; university Cambridge; members not shown on the site.
-  Rank 12 of 443, rating 2612 (provisional: fewer than six games on the current build, i.e. a new
-    upload in the last five rounds), record 23-13-10 in 45 rated games.
-  Rating trajectory: entered R46 at 1574, peak 2624 (R101), now 2624 (R101).
+  Rank 13 of 445, rating 2624 (provisional: fewer than six games on the current build, i.e. a new
+    upload in the last five rounds), record 23-14-10 in 46 rated games.
+  Rating trajectory: entered R46 at 1574, peak 2630 (R102), now 2630 (R102).
   Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
     upload): R48 -102 -> 1549 (loss vs UrCooked); R49 +101 -> 1650 (win vs hyperfish); R91 +100 ->
     2318 (win vs R8int8v9)
 
 RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
-  vs top 10 : 0-2-0 (50%) over 2 games
-  vs 11-20  : 1-4-0 (60%) over 5 games
-  vs 21-50  : 6-0-1 (86%) over 7 games
-  vs rest   : 24-8-9 (68%) over 41 games
+  vs top 10 : 0-1-0 (50%) over 1 games
+  vs 11-20  : 1-5-0 (58%) over 6 games
+  vs 21-50  : 8-1-1 (85%) over 10 games
+  vs rest   : 23-7-9 (68%) over 39 games
   Games vs top-10 teams:
-    R96  white vs Malnourished Goatis (#7 ) draw threefold_repetition  Caro-Kann Exchange
-    R100 white vs c1                 (#10) draw insufficient_material Sicilian Classical
-  Games vs ranks 11-20: R93 win vs Fuzzydafool (#18, checkmate); R95 draw vs Danya's Discip (#16,
-    3fold); R97 draw vs SoberCooper (#13, 3fold); R99 draw vs Poincare conje (#17, insuff); R101
-    draw vs Challenger (#11, 3fold)
+    R100 white vs c1                 (#6 ) draw insufficient_material Sicilian Classical
+  Games vs ranks 11-20: R93 win vs Fuzzydafool (#18, checkmate); R95 draw vs Danya's Discip (#17,
+    3fold); R96 draw vs Malnourished G (#14, 3fold); R97 draw vs SoberCooper (#15, 3fold); R101 draw
+    vs Challenger (#11, 3fold); R102 draw vs Malnourished G (#14, insuff)
 
 MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
   positions inside +-800 only)
@@ -33,28 +32,28 @@ MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss c
   as white          : n  301, mean 19.4 cp, median 5 cp, blunders 0.3%
   as black          : n  226, mean 17.1 cp, median 3 cp, blunders 0.4%
   Worst moves: R51 14.f6 (+396 -> +76); R50 35.Bd4 (-19 -> -222); R46 15.Rxa4 (+335 -> +138)
-  Site's own review (Stockfish 16, depth 16): mean ACPL 29.8 over 55 games, accuracy 95.9%; its tags
+  Site's own review (Stockfish 16, depth 16): mean ACPL 29.3 over 56 games, accuracy 95.9%; its tags
     on their moves: 4 blunder, 4 mistake, 0 miss, 21 inaccuracy of 457
 
 TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
-  Per move: mean 2.14 s, median 1.34 s, quartiles 0.64-2.86 s, max 17.5 s; instant (<50 ms) moves
+  Per move: mean 2.13 s, median 1.31 s, quartiles 0.64-2.83 s, max 17.5 s; instant (<50 ms) moves
     6.0%
-  Clock at the end: mean 11.9 s, minimum 2.4 s; games under 10 s: 45, under 5 s: 32 (R48, R49, R50,
+  Clock at the end: mean 11.7 s, minimum 2.4 s; games under 10 s: 46, under 5 s: 33 (R48, R49, R50,
     R52, R53, R55, R56, R57, R59, R60, R62, R64, R68, R71, R72, R73, R74, R75, R77, R78, R80, R83,
-    R85, R88, R90, R92, R93, R94, R95, R97, R99, R100)
-  By clock before the move: >60s 5.3 s (n 709), 30-60s 3.0 s (n 603), 10-30s 1.5 s (n 921), <10s 0.6
-    s (n 1383)
+    R85, R88, R90, R92, R93, R94, R95, R97, R98, R100, R102)
+  By clock before the move: >60s 5.3 s (n 717), 30-60s 3.0 s (n 609), 10-30s 1.5 s (n 944), <10s 0.6
+    s (n 1446)
   By own-move number: 1-15 5.2 s, 16-40 1.9 s, 41+ 0.6 s; when +300 or better 1.2 s, level 3.8 s,
     -300 or worse 0.9 s
-  Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 8.3%,
-    quartiles 5.9-13.1%
+  Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 8.4%,
+    quartiles 5.9-13.4%
   After a >100 cp swing on the opponent's move: 1.6 s (n 56) vs 2.3 s otherwise; on moves that
     themselves swing >100 cp: 1.6 s (n 46) vs 2.3 s
   Exploitable: gets into time trouble
 
 DRAW BEHAVIOUR
-  14 draws in 55 played games (25.0%): threefold_repetition 8, fifty_moves 3, insufficient_material
-    3; 2 of them vs top-10 teams
+  14 draws in 56 played games (25.0%): threefold_repetition 8, fifty_moves 3, insufficient_material
+    3; 1 of them vs top-10 teams
   Repetition while ahead (> +150 at the final position): 0
   Repetition while behind (< -150): 0; level repetitions: 1
 
@@ -64,25 +63,25 @@ ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
     R50 vs Kingo Disco low -3581, draw by threefold_repetition: opponent allowed a repetition
 
 OPENINGS (curated start positions assigned by the platform)
-  By family: Sicilian 12-4-3 (74%); French 6-1-0 (93%); Caro-Kann 1-4-0 (60%); Italian 2-0-2 (50%);
+  By family: Sicilian 12-4-3 (74%); French 6-1-0 (93%); Italian 3-0-2 (60%); Caro-Kann 1-3-0 (62%);
     Ruy Lopez 0-2-1 (33%); Dutch 2-0-1 (67%); Reti 2-0-1 (67%); Pirc 2-0-0 (100%); English 2-0-0
-    (100%); Grunfeld 1-1-0 (75%); Scotch 0-0-1 (0%); King's Indian 0-0-1 (0%); London 1-0-0 (100%);
+    (100%); Grunfeld 1-1-0 (75%); London 1-1-0 (75%); Scotch 0-0-1 (0%); King's Indian 0-0-1 (0%);
     Petroff 0-1-0 (50%); Semi-Slav 0-1-0 (50%)
-  Positions seen more than once: Sicilian Closed x5 3-1-1 (70%); Italian Game x4 2-0-2 (50%);
+  Positions seen more than once: Italian Game x5 3-0-2 (60%); Sicilian Closed x5 3-1-1 (70%);
     Sicilian Najdorf x4 4-0-0 (100%); Dutch Stonewall x3 2-0-1 (67%); French Tarrasch x3 3-0-0
     (100%); Reti Opening x3 2-0-1 (67%); Ruy Lopez, Closed x3 0-2-1 (33%); Sicilian Classical x3
-    0-2-1 (33%); Sicilian Sveshnikov x3 1-1-1 (50%); Caro-Kann Advance x2 0-2-0 (50%); Caro-Kann
-    Exchange x2 1-1-0 (75%); English Symmetrical x2 2-0-0 (100%); French Classical x2 2-0-0 (100%);
-    Grunfeld Defence x2 1-1-0 (75%); Pirc Defence x2 2-0-0 (100%); Sicilian Dragon x2 2-0-0 (100%);
-    Sicilian Taimanov x2 2-0-0 (100%); 8 positions seen once (2 won, 4 drawn, 2 lost).
+    0-2-1 (33%); Sicilian Sveshnikov x3 1-1-1 (50%); Caro-Kann Exchange x2 1-1-0 (75%); English
+    Symmetrical x2 2-0-0 (100%); French Classical x2 2-0-0 (100%); Grunfeld Defence x2 1-1-0 (75%);
+    London System x2 1-1-0 (75%); Pirc Defence x2 2-0-0 (100%); Sicilian Dragon x2 2-0-0 (100%);
+    Sicilian Taimanov x2 2-0-0 (100%); 8 positions seen once (1 won, 5 drawn, 2 lost).
   Underperforms in: Ruy Lopez 0-2-1 (33%)
   First six own moves: 56% match Stockfish's first choice (moves 7-20: 62%), mean loss 15.3 cp, 0%
     played instantly; first clear divergence (loss >= 20 cp) at own move 6.7 on average.
 
 STYLE
-  Captures on 22.5% of own moves, checks on 14.8%; average game 131 plies (66 own moves), longest
+  Captures on 22.5% of own moves, checks on 14.8%; average game 133 plies (66 own moves), longest
     438 plies (R57)
-  Wins: 31 (31 by checkmate, 0 by opponent failure); losses: 10 (10 by checkmate, 0 by own failure)
+  Wins: 32 (32 by checkmate, 0 by opponent failure); losses: 10 (10 by checkmate, 0 by own failure)
   Sacrifices (gave >= 2 pawns of material without losing eval, then recovered): 1 -> R50 36.Kh2
   When ahead (> +150) material leaves the board at 0.98 pawns per own move (level: 1.25); capture
     rate 22.6% vs 25.8% level -> no deliberate simplification
@@ -90,14 +89,14 @@ STYLE
 LIKELY ENGINE PROFILE
   Strong searcher (mean loss 18.4 cp): consistent with a bitboard alpha-beta engine at depth 8-12
   with a decent evaluation. Confidence low.
-  Adaptive time use (median 1.34 s, max 17.5 s, spends 1.6 s on moves after a >100 cp swing vs 2.3 s
+  Adaptive time use (median 1.31 s, max 17.5 s, spends 1.6 s on moves after a >100 cp swing vs 2.3 s
   otherwise).
-  Poor clock awareness: 32 of 55 games went under 5 s.
+  Poor clock awareness: 33 of 56 games went under 5 s.
 
 HOW TO PLAY THEM
   1. They convert (10 of 10 won positions turned into wins): do not rely on swindles; the game is
   decided before -300.
-  2. Time pressure works: 32 games dipped under 5 s (R48, R49, R50, R52, R53, R55). Keep games long
+  2. Time pressure works: 33 games dipped under 5 s (R48, R49, R50, R52, R53, R55). Keep games long
   and complicated; their play under 10 s averages 0.6 s a move.
   3. No extra time goes to critical positions (1.6 s after a big swing vs 2.3 s otherwise): our
   search can spend several times their budget on the few moves that decide a game, so prefer

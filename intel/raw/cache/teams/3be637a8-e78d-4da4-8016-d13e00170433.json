@@ -2,10 +2,10 @@
  "uuid": "3be637a8-e78d-4da4-8016-d13e00170433",
  "bot": "Mate In One",
  "team": "Mate in One",
- "rating": 2412,
- "rank": 30,
- "record": "35-37-21",
- "rated_rounds": 101,
+ "rating": 2386,
+ "rank": 34,
+ "record": "35-37-22",
+ "rated_rounds": 102,
  "history": [
   [
    1,
@@ -410,9 +410,23 @@
   [
    101,
    2412
+  ],
+  [
+   102,
+   2386
   ]
  ],
  "games": [
+  {
+   "game": "0c86740e-cdec-498e-a296-f0de432795c7",
+   "kind": "Rated",
+   "round": 102,
+   "colour": "Black",
+   "opponent": "RMFE",
+   "opponent_uuid": "8b991dda-4b49-46cc-900d-96c853154292",
+   "verdict": "loss",
+   "opening": "Caro-Kann Exchange"
+  },
   {
    "game": "8c03bc26-961a-4cfe-91a8-e0001168c722",
    "kind": "Rated",
@@ -424,16 +438,6 @@
    "opening": "French Classical"
   },
   {
-   "game": "79f3be6c-51d6-4451-a80d-a5eb73729c7e",
-   "kind": "Rated",
-   "round": 100,
-   "colour": "White",
-   "opponent": "Kirkification",
-   "opponent_uuid": "ea5d87d0-f5b2-435e-b524-e6292de6cebb",
-   "verdict": "draw",
-   "opening": "Sicilian Dragon"
-  },
-  {
    "game": "d3b17fe5-2101-488c-b9a7-a1ceb84e8657",
    "kind": "Rated",
    "round": 99,
@@ -442,6 +446,16 @@
    "opponent_uuid": "08c1be91-20d4-4d43-9f63-d87894df1d3c",
    "verdict": "draw",
    "opening": "Dutch Stonewall"
+  },
+  {
+   "game": "1b506660-6935-4d96-83ff-8233aeed2a49",
+   "kind": "Rated",
+   "round": 98,
+   "colour": "Black",
+   "opponent": "Miskeen",
+   "opponent_uuid": "51ed01b7-c113-4321-91c7-c6c2fc422807",
+   "verdict": "loss",
+   "opening": "Grunfeld Defence"
   },
   {
    "game": "60b430a5-258e-4e6b-b1a3-726629dbf905",
@@ -1414,5 +1428,5 @@
    "opening": "French Winawer"
   }
  ],
- "fetched_at": "2026-09-10T18:06:21Z"
+ "fetched_at": "2026-09-10T19:06:14Z"
 }

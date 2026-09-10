@@ -2,10 +2,10 @@
  "uuid": "429a581d-e7fc-41e3-a915-2895b01d7d0b",
  "bot": "Poincare conjecture",
  "team": "Gladiator",
- "rating": 2590,
- "rank": 16,
- "record": "25-36-13",
- "rated_rounds": 75,
+ "rating": 2622,
+ "rank": 13,
+ "record": "26-37-13",
+ "rated_rounds": 76,
  "history": [
   [
    27,
@@ -306,9 +306,33 @@
   [
    101,
    2590
+  ],
+  [
+   102,
+   2622
   ]
  ],
  "games": [
+  {
+   "game": "6c2078e7-1f55-4e79-8f3a-014d64cfee92",
+   "kind": "Rated",
+   "round": 103,
+   "colour": "Black",
+   "opponent": "JBG fam",
+   "opponent_uuid": "10021bb5-71a5-4b10-bde5-14e1f667501a",
+   "verdict": "draw",
+   "opening": "Reti Opening"
+  },
+  {
+   "game": "efb54b9f-2f28-45e4-9019-762219f3d6b7",
+   "kind": "Rated",
+   "round": 102,
+   "colour": "White",
+   "opponent": "Danya's Disciple",
+   "opponent_uuid": "a4b26c08-0fa5-48ae-b15e-69a622ee81bb",
+   "verdict": "win",
+   "opening": "English Symmetrical"
+  },
   {
    "game": "c6bb45fe-9a11-4a2a-ad30-44945b98ad7d",
    "kind": "Rated",
@@ -320,16 +344,6 @@
    "opening": "Sicilian Closed"
   },
   {
-   "game": "b9d47d82-737c-4ff9-83aa-64ea8048ce9f",
-   "kind": "Rated",
-   "round": 100,
-   "colour": "Black",
-   "opponent": "Lubina",
-   "opponent_uuid": "34fd9228-11bf-4e7a-ba8f-b452d96ad8c9",
-   "verdict": "loss",
-   "opening": "Petroff Defence"
-  },
-  {
    "game": "d8a8d2e2-e257-4c3e-8717-f01063006e6f",
    "kind": "Rated",
    "round": 99,
@@ -338,6 +352,16 @@
    "opponent_uuid": "145e2e17-6316-4b84-911b-45f3258ec8c9",
    "verdict": "draw",
    "opening": "Caro-Kann Advance"
+  },
+  {
+   "game": "2517e6a9-5d72-4f1b-9d60-b3114110e5eb",
+   "kind": "Rated",
+   "round": 98,
+   "colour": "Black",
+   "opponent": "OMI",
+   "opponent_uuid": "f90aed5c-61db-4b3a-bbc1-9f40391e701a",
+   "verdict": "draw",
+   "opening": "Petroff Defence"
   },
   {
    "game": "8a4f57ed-3c23-433f-8a7b-79efedb35b73",
@@ -1050,5 +1074,5 @@
    "opening": "Caro-Kann Exchange"
   }
  ],
- "fetched_at": "2026-09-10T18:02:57Z"
+ "fetched_at": "2026-09-10T19:16:03Z"
 }

@@ -2,10 +2,10 @@
  "uuid": "8c22f2a5-3bce-4b66-b93a-8f4ab4318b0f",
  "bot": "Mite",
  "team": "Ryan Vincent",
- "rating": 2750,
- "rank": 4,
- "record": "24-35-13",
- "rated_rounds": 73,
+ "rating": 2836,
+ "rank": 2,
+ "record": "26-35-13",
+ "rated_rounds": 74,
  "history": [
   [
    29,
@@ -298,9 +298,23 @@
   [
    101,
    2750
+  ],
+  [
+   102,
+   2836
   ]
  ],
  "games": [
+  {
+   "game": "321ad141-6176-4515-a8ca-a336abed58aa",
+   "kind": "Rated",
+   "round": 103,
+   "colour": "White",
+   "opponent": "Opus Carlsen",
+   "opponent_uuid": "f0286356-626d-4dd2-86ab-fd6d779063cb",
+   "verdict": "win",
+   "opening": "London System"
+  },
   {
    "game": "d457b9ac-1b4d-456c-948e-8801b1c0105f",
    "kind": "Rated",
@@ -308,7 +322,7 @@
    "colour": "Black",
    "opponent": "Emile Andrieu",
    "opponent_uuid": "659a3020-8af7-4934-b753-3b7c5fd11184",
-   "verdict": "live",
+   "verdict": "win",
    "opening": "Scotch Game"
   },
   {
@@ -322,14 +336,14 @@
    "opening": "Sicilian Closed"
   },
   {
-   "game": "4d89c5c4-d652-45c9-85e3-e2e39f3927f8",
+   "game": "4ea350d2-c70f-4234-90cb-1a5d8efa2559",
    "kind": "Rated",
-   "round": 100,
-   "colour": "White",
-   "opponent": "JBG fam",
-   "opponent_uuid": "10021bb5-71a5-4b10-bde5-14e1f667501a",
-   "verdict": "draw",
-   "opening": "Sicilian Classical"
+   "round": 99,
+   "colour": "Black",
+   "opponent": "Gijs Smit",
+   "opponent_uuid": "3f0e0e44-cdce-485f-b5b6-3691e34f9f44",
+   "verdict": "loss",
+   "opening": "French Tarrasch"
   },
   {
    "game": "46def98a-5844-4edc-a62c-4bdb995c8741",
@@ -1032,5 +1046,5 @@
    "opening": "French Advance"
   }
  ],
- "fetched_at": "2026-09-10T18:10:12Z"
+ "fetched_at": "2026-09-10T19:15:44Z"
 }

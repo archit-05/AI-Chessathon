@@ -2,10 +2,10 @@
  "uuid": "e85fee09-4c17-4122-a6a1-67d09d9349bd",
  "bot": "Edward",
  "team": "Edward",
- "rating": 2330,
- "rank": 40,
- "record": "30-26-18",
- "rated_rounds": 75,
+ "rating": 2315,
+ "rank": 42,
+ "record": "31-26-19",
+ "rated_rounds": 76,
  "history": [
   [
    27,
@@ -306,9 +306,23 @@
   [
    101,
    2330
+  ],
+  [
+   102,
+   2315
   ]
  ],
  "games": [
+  {
+   "game": "3a73c474-188e-4bb8-a148-54817541fee7",
+   "kind": "Rated",
+   "round": 103,
+   "colour": "White",
+   "opponent": "Solo Man",
+   "opponent_uuid": "1324cfd4-b352-45e9-9224-44ee141ae158",
+   "verdict": "win",
+   "opening": "Nimzo-Indian Defence"
+  },
   {
    "game": "2ac019a4-bae9-4f36-b041-6bf9dbc7b454",
    "kind": "Rated",
@@ -316,7 +330,7 @@
    "colour": "Black",
    "opponent": "checkers",
    "opponent_uuid": "9e5e613a-ca80-4fd9-aa68-76f184ef7bac",
-   "verdict": "live",
+   "verdict": "loss",
    "opening": "Scotch Game"
   },
   {
@@ -330,14 +344,14 @@
    "opening": "Caro-Kann Classical"
   },
   {
-   "game": "3951b8fc-9807-44d4-b72b-1d1c8074e5bf",
+   "game": "05de77e9-482e-4940-ae17-9401e50babf4",
    "kind": "Rated",
-   "round": 100,
+   "round": 99,
    "colour": "Black",
-   "opponent": "Oleh Patsan",
-   "opponent_uuid": "903ef64f-be95-4968-a15b-5c7876108e7f",
-   "verdict": "win",
-   "opening": "Sicilian Classical"
+   "opponent": "Talos",
+   "opponent_uuid": "25ec4daa-f0e9-4af7-8c68-c07709ced4fb",
+   "verdict": "draw",
+   "opening": "Sicilian Closed"
   },
   {
    "game": "21533f72-5816-4e48-a9cb-5c3211080ea6",
@@ -1060,5 +1074,5 @@
    "opening": "London System"
   }
  ],
- "fetched_at": "2026-09-10T18:10:16Z"
+ "fetched_at": "2026-09-10T19:15:50Z"
 }

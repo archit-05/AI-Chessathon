@@ -2,10 +2,10 @@
  "uuid": "b9cbed87-8a3a-437d-9333-1447f68200d1",
  "bot": "stockfih",
  "team": "what even is en passant",
- "rating": 2662,
- "rank": 8,
- "record": "31-31-26",
- "rated_rounds": 93,
+ "rating": 2679,
+ "rank": 7,
+ "record": "32-32-26",
+ "rated_rounds": 94,
  "history": [
   [
    9,
@@ -378,9 +378,33 @@
   [
    101,
    2662
+  ],
+  [
+   102,
+   2679
   ]
  ],
  "games": [
+  {
+   "game": "6d0690b6-6438-433c-a869-926eccb1b51b",
+   "kind": "Rated",
+   "round": 103,
+   "colour": "White",
+   "opponent": "Stonkfish",
+   "opponent_uuid": "385a6db2-1c05-46db-ae91-7218700f83b3",
+   "verdict": "draw",
+   "opening": "Sicilian Closed"
+  },
+  {
+   "game": "7cfbd57d-fa0b-47b8-8da5-dbb681149bab",
+   "kind": "Rated",
+   "round": 102,
+   "colour": "Black",
+   "opponent": "ms",
+   "opponent_uuid": "c3e1bc09-3d21-4279-ace0-16bb3742f5da",
+   "verdict": "win",
+   "opening": "Sicilian Closed"
+  },
   {
    "game": "198919d1-b0ce-4010-b6e5-ad7c26d0d591",
    "kind": "Rated",
@@ -392,16 +416,6 @@
    "opening": "Sicilian Closed"
   },
   {
-   "game": "a16b5f76-291f-4713-9aab-434c37e06621",
-   "kind": "Rated",
-   "round": 100,
-   "colour": "Black",
-   "opponent": "Emile Andrieu",
-   "opponent_uuid": "659a3020-8af7-4934-b753-3b7c5fd11184",
-   "verdict": "draw",
-   "opening": "English Symmetrical"
-  },
-  {
    "game": "9e3e9e13-e0bb-4a85-9811-d9c1d3be7173",
    "kind": "Rated",
    "round": 99,
@@ -410,6 +424,16 @@
    "opponent_uuid": "10021bb5-71a5-4b10-bde5-14e1f667501a",
    "verdict": "draw",
    "opening": "French Winawer"
+  },
+  {
+   "game": "6a320c2b-c334-4926-a91b-995eac531745",
+   "kind": "Rated",
+   "round": 98,
+   "colour": "White",
+   "opponent": "Gijs Smit",
+   "opponent_uuid": "3f0e0e44-cdce-485f-b5b6-3691e34f9f44",
+   "verdict": "loss",
+   "opening": "Ruy Lopez, Closed"
   },
   {
    "game": "167b250a-8b6f-4cd3-86cf-2713fb67af3f",
@@ -1302,5 +1326,5 @@
    "opening": "Queen's Gambit Accepted"
   }
  ],
- "fetched_at": "2026-09-10T17:49:34Z"
+ "fetched_at": "2026-09-10T19:16:08Z"
 }

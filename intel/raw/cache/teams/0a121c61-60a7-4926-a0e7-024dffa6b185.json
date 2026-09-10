@@ -2,10 +2,10 @@
  "uuid": "0a121c61-60a7-4926-a0e7-024dffa6b185",
  "bot": "test_bot",
  "team": "pheanup",
- "rating": 2643,
- "rank": 9,
- "record": "32-36-19",
- "rated_rounds": 97,
+ "rating": 2634,
+ "rank": 10,
+ "record": "32-37-19",
+ "rated_rounds": 98,
  "history": [
   [
    5,
@@ -394,9 +394,23 @@
   [
    101,
    2643
+  ],
+  [
+   102,
+   2634
   ]
  ],
  "games": [
+  {
+   "game": "93a25edd-af19-4beb-8d83-0145cc1e2f4a",
+   "kind": "Rated",
+   "round": 102,
+   "colour": "Black",
+   "opponent": "DGS ELO",
+   "opponent_uuid": "5f8a69d7-73a8-4498-b322-861b557dffbd",
+   "verdict": "draw",
+   "opening": "French Tarrasch"
+  },
   {
    "game": "764086bd-954d-43e3-97ba-4539d92e488a",
    "kind": "Rated",
@@ -418,14 +432,14 @@
    "opening": "Sicilian Najdorf"
   },
   {
-   "game": "bd14c6d8-9e3f-4fc4-947a-802405076136",
+   "game": "cc30895a-a6f9-4943-9e8b-db172d89fe10",
    "kind": "Rated",
-   "round": 99,
-   "colour": "White",
-   "opponent": "e=\u03c0=2",
-   "opponent_uuid": "3e68dab5-8421-4113-9aa0-dbe165e997f5",
+   "round": 98,
+   "colour": "Black",
+   "opponent": "Cornelius",
+   "opponent_uuid": "acecd823-279a-4bf9-8321-0ee6ed68deda",
    "verdict": "win",
-   "opening": "English Symmetrical"
+   "opening": "Reti Opening"
   },
   {
    "game": "6542b15a-d739-43b1-b0bd-4273dc844a09",
@@ -1358,5 +1372,5 @@
    "opening": "London System"
   }
  ],
- "fetched_at": "2026-09-10T17:58:22Z"
+ "fetched_at": "2026-09-10T18:51:35Z"
 }

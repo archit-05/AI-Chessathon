@@ -2,10 +2,10 @@
  "uuid": "f0286356-626d-4dd2-86ab-fd6d779063cb",
  "bot": "BINI Alpha",
  "team": "Opus Carlsen",
- "rating": 2857,
+ "rating": 2847,
  "rank": 1,
- "record": "35-24-15",
- "rated_rounds": 78,
+ "record": "35-25-15",
+ "rated_rounds": 79,
  "history": [
   [
    24,
@@ -318,9 +318,23 @@
   [
    101,
    2857
+  ],
+  [
+   102,
+   2847
   ]
  ],
  "games": [
+  {
+   "game": "2c7be703-45a4-4a3a-9e24-3a0ec326e519",
+   "kind": "Rated",
+   "round": 102,
+   "colour": "Black",
+   "opponent": "Gijs Smit",
+   "opponent_uuid": "3f0e0e44-cdce-485f-b5b6-3691e34f9f44",
+   "verdict": "draw",
+   "opening": "Sicilian Dragon"
+  },
   {
    "game": "5423952f-469b-45e9-a41f-18f163c03142",
    "kind": "Rated",
@@ -342,14 +356,14 @@
    "opening": "Sicilian Najdorf"
   },
   {
-   "game": "83ead515-c22f-4d24-9db4-028ce0dc6238",
+   "game": "46def98a-5844-4edc-a62c-4bdb995c8741",
    "kind": "Rated",
-   "round": 99,
+   "round": 98,
    "colour": "White",
-   "opponent": "Emile Andrieu",
-   "opponent_uuid": "659a3020-8af7-4934-b753-3b7c5fd11184",
-   "verdict": "draw",
-   "opening": "Pirc Defence"
+   "opponent": "Ryan Vincent",
+   "opponent_uuid": "8c22f2a5-3bce-4b66-b93a-8f4ab4318b0f",
+   "verdict": "loss",
+   "opening": "Sicilian Dragon"
   },
   {
    "game": "8b7bb682-b3de-433b-887d-b5f99533a4d5",
@@ -1092,5 +1106,5 @@
    "opening": "Four Knights Game"
   }
  ],
- "fetched_at": "2026-09-10T17:48:30Z"
+ "fetched_at": "2026-09-10T18:47:16Z"
 }
