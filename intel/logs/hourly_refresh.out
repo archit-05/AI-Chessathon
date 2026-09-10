@@ -3687,3 +3687,75 @@ leaderboard: 445 rows
   won), 50CentRaise (2 of 17 winning positions not won). Keep lost positions alive.
 
 strategy report: /Users/architbhardwaj/Desktop/AI Chessathon/intel/STRATEGY.txt
+leaderboard: 447 rows
+renamed files of JBG fam: Malnourished_Goatis -> Comeback_arc_for_PSL_God
+  1 BINI Alpha             (Opus Carlsen) games 79 missing 0 -> BINI_Alpha.pgn
+  2 Mite                   (Ryan Vincent) games 74 missing 0 -> Mite.pgn
+  3 AlphaFish              (Emile Andrieu) games 94 missing 0 -> AlphaFish.pgn
+  4 Loss Preventer         (Lightning Tree) games 101 missing 0 -> Loss_Preventer.pgn
+  5 Patzer 2.4             (Gijs Smit) games 102 missing 0 -> Patzer_2_4.pgn
+  6 c1                     (OMI) games 96 missing 0 -> c1.pgn
+  7 stockfih               (what even is en passant) games 94 missing 0 -> stockfih.pgn
+  8 ms                     (ms) games 101 missing 0 -> ms.pgn
+  9 Challenger             (Stonkfish) games 102 missing 0 -> Challenger.pgn
+ 10 test_bot               (pheanup) games 98 missing 0 -> test_bot.pgn
+ 11 BetaGo                 (BetaGo) games 57 missing 0 -> BetaGo.pgn
+ 12 Ultron Prime           (DGS ELO) games 102 missing 0 -> Ultron_Prime.pgn
+ 13 Poincare conjecture    (Gladiator) games 76 missing 0 -> Poincare_conjecture.pgn
+ 14 Comeback arc for PSL God (JBG fam) games 81 missing 0 -> Comeback_arc_for_PSL_God.pgn
+ 15 SoberCooper            (Sobriety) games 102 missing 0 -> SoberCooper.pgn
+ 16 e=π=2                  (e=π=2) games 102 missing 1 -> e_2.pgn
+ 17 Anchoa                 (Lubina) games 103 missing 0 -> Anchoa.pgn
+ 18 Danya's Disciple       (Danya's Disciple) games 102 missing 0 -> Danya_s_Disciple.pgn
+ 19 Fuzzydafool            (FuzzyBot) games 103 missing 0 -> Fuzzydafool.pgn
+ 20 Astral                 (omega3 fish) games 103 missing 0 -> Astral.pgn
+ 19 Fuzzydafool          analysed 72/103 games
+ 20 Astral               analysed 65/103 games
+2 game(s) had no embedded evaluation and were skipped
+  # Bot                Rating   Record   CPL sACPL   Bl%  s/mv Draw% RepA NonC Void
+-----------------------------------------------------------------------------------
+  1 BINI Alpha           2847 35-25-16  15.6    23   0.8  1.80    37    0    1    4
+  2 Mite                 2836 26-35-13  10.2    19   0.2  1.73    48    0    2    1  *
+  3 AlphaFish            2809  43-39-8   7.5    15   0.1  1.53    48    1    4    5
+  4 Loss Preventer       2752 38-36-25  13.1    21   0.4  1.64    39    0    1    2
+  5 Patzer 2.4           2746 35-44-15  11.2    17   0.5  1.53    55    0    2    9
+  6 c1                   2694 39-26-30  23.7    27   1.3  1.93    27    0    0    0
+  7 stockfih             2679 32-32-26  15.7    23   0.4  1.97    39    2    4    4
+  8 ms                   2670 38-40-18  11.1    19   0.3  1.84    45    1    3    4
+  9 Challenger           2670 42-34-23  17.7    25   0.7  1.72    36    1    2    1  *
+ 10 test_bot             2634 32-38-19  12.5    20   0.5  1.88    50    0    2    8
+ 11 BetaGo               2630 23-15-10  18.4    29   0.4  2.16    26    0    0    0  *
+ 12 Ultron Prime         2628 36-38-22  18.0    28   1.0  1.88    40    0    2    0  *
+ 13 Poincare conjectur   2622 26-37-13  11.7    17   0.2  1.64    49    0    0    1
+ 14 Comeback arc for P   2621 29-35-16  10.6    16   0.5  1.71    44    0    0    0  *
+ 15 SoberCooper          2616 35-41-18  10.5    17   0.3  1.65    52    0    5    8
+ 16 e=π=2                2566 40-29-26  36.7    36   3.1  2.12    30    2    7    0  *
+ 17 Anchoa               2546 33-43-17   9.4    17   0.3  1.60    55    0    0    8  *
+ 18 Danya's Disciple     2538 33-35-24  13.2    21   0.6  1.81    49    2    2   11
+ 19 Fuzzydafool          2527 26-22-26  14.2    26   0.6  1.79    56    0    2   29
+ 20 Astral               2517 35-32-30  18.0    27   0.6  2.06    36    1    1    3  *
+  1 BINI Alpha           2847 35-25-16  15.6    23   0.8  1.80    37    0    1    4
+
+  1. Move quality spread: AlphaFish loses 7.5 cp per move, e=π=2 36.7 cp; our current build measures
+  15.6 cp. Blunder rates run 0.1-3.1%.
+  2. Free half points: AlphaFish (1), stockfih (2), ms (1), Challenger (1), e=π=2 (2), Danya's
+  Disciple (2), Astral (1) accepted repetitions while more than +150. Against them, when worse, aim
+  for repetition.
+  3. Time trouble is real for Mite (2 games under 5 s), AlphaFish (3 games under 5 s), c1 (46 games
+  under 5 s), stockfih (8 games under 5 s), ms (31 games under 5 s), test_bot (54 games under 5 s),
+  BetaGo (33 games under 5 s), Ultron Prime (34 games under 5 s), Comeback arc for PSL God (10 games
+  under 5 s), e=π=2 (4 games under 5 s), Anchoa (20 games under 5 s), Danya's Disciple (3 games
+  under 5 s), Fuzzydafool (44 games under 5 s), Astral (47 games under 5 s). Long, complicated games
+  punish them.
+  4. Clock left unused by BINI Alpha (33 s), Loss Preventer (44 s), Patzer 2.4 (34 s), Challenger
+  (34 s), Poincare conjecture (35 s): their depth is capped by a per-move budget, so our deeper
+  search in critical moments is a real edge.
+  5. Leaky conversion: Mite (2 of 19 winning positions not won), AlphaFish (4 of 38 winning
+  positions not won), Patzer 2.4 (2 of 32 winning positions not won), stockfih (4 of 30 winning
+  positions not won), ms (3 of 36 winning positions not won), Challenger (2 of 29 winning positions
+  not won), test_bot (2 of 27 winning positions not won), Ultron Prime (2 of 31 winning positions
+  not won), SoberCooper (5 of 35 winning positions not won), e=π=2 (7 of 25 winning positions not
+  won), Danya's Disciple (2 of 31 winning positions not won), Fuzzydafool (2 of 26 winning positions
+  not won). Keep lost positions alive.
+
+strategy report: /Users/architbhardwaj/Desktop/AI Chessathon/intel/STRATEGY.txt

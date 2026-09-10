@@ -2,10 +2,10 @@
  "uuid": "0a121c61-60a7-4926-a0e7-024dffa6b185",
  "bot": "test_bot",
  "team": "pheanup",
- "rating": 2634,
- "rank": 10,
- "record": "32-37-19",
- "rated_rounds": 98,
+ "rating": 2629,
+ "rank": 9,
+ "record": "32-38-19",
+ "rated_rounds": 99,
  "history": [
   [
    5,
@@ -398,9 +398,23 @@
   [
    102,
    2634
+  ],
+  [
+   103,
+   2629
   ]
  ],
  "games": [
+  {
+   "game": "2ee4602b-1ba2-4d2a-972f-5d0dd496fa2c",
+   "kind": "Rated",
+   "round": 103,
+   "colour": "White",
+   "opponent": "ms",
+   "opponent_uuid": "c3e1bc09-3d21-4279-ace0-16bb3742f5da",
+   "verdict": "draw",
+   "opening": "Sicilian Dragon"
+  },
   {
    "game": "93a25edd-af19-4beb-8d83-0145cc1e2f4a",
    "kind": "Rated",
@@ -422,14 +436,14 @@
    "opening": "Sicilian Dragon"
   },
   {
-   "game": "2a560df4-032a-4040-a920-c71da6382721",
+   "game": "bd14c6d8-9e3f-4fc4-947a-802405076136",
    "kind": "Rated",
-   "round": 100,
-   "colour": "Black",
-   "opponent": "Sobriety",
-   "opponent_uuid": "258a9828-7442-4bea-97cb-eed1845ad2cc",
-   "verdict": "draw",
-   "opening": "Sicilian Najdorf"
+   "round": 99,
+   "colour": "White",
+   "opponent": "e=\u03c0=2",
+   "opponent_uuid": "3e68dab5-8421-4113-9aa0-dbe165e997f5",
+   "verdict": "win",
+   "opening": "English Symmetrical"
   },
   {
    "game": "cc30895a-a6f9-4943-9e8b-db172d89fe10",
@@ -1372,5 +1386,5 @@
    "opening": "London System"
   }
  ],
- "fetched_at": "2026-09-10T18:51:35Z"
+ "fetched_at": "2026-09-10T19:58:05Z"
 }

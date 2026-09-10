@@ -1,4 +1,4 @@
-AI CHESSATHON TOP-20 INTEL SUMMARY  (2026-09-10 20:15; leaderboard fetched 2026-09-10T18:41:01Z)
+AI CHESSATHON TOP-20 INTEL SUMMARY  (2026-09-10 21:20; leaderboard fetched 2026-09-10T19:41:03Z)
 ====================================================================================================
 CPL = our mean centipawn loss per own move from site evaluations: Stockfish 16, depth 16, one per
   position, positions inside +-800 only;
@@ -13,171 +13,172 @@ s/mv = mean seconds per own move; RepA = draws by repetition while more than +15
 LEAGUE TABLE
   # Bot                Rating   Record   CPL sACPL   Bl%  s/mv Draw% RepA NonC Void
 -----------------------------------------------------------------------------------
-  1 BINI Alpha           2857 35-25-15  15.6    23   0.8  1.80    36    0    1    4
-  2 AlphaFish            2846  43-38-8   7.5    15   0.1  1.52    48    1    4    5
-  3 Loss Preventer       2755 38-35-25  13.1    21   0.4  1.64    37    0    1    2
-  4 Mite                 2750 25-35-13  10.2    19   0.2  1.73    50    0    2    1  *
-  5 Patzer 2.4           2744 34-44-15  11.2    17   0.5  1.52    57    0    2    9
-  6 c1                   2692 39-26-29  23.7    27   1.3  1.96    27    0    0    0
-  7 ms                   2686 38-39-18  11.1    19   0.3  1.84    45    1    3    4
-  8 stockfih             2662 32-31-26  15.7    23   0.4  1.96    39    2    4    4
-  9 test_bot             2643 32-37-19  12.5    20   0.5  1.87    51    0    2    8  *
- 10 Ultron Prime         2637 36-37-22  18.0    29   1.0  1.88    38    0    2    0  *
- 11 Challenger           2632 42-33-23  17.7    26   0.7  1.72    35    1    2    1  *
- 12 Anchoa               2629 32-42-17   9.4    17   0.3  1.61    54    0    0    8  *
- 13 BetaGo               2624 23-14-10  18.4    29   0.4  2.13    25    0    0    0  *
- 14 Malnourished Goati   2609 29-34-16  10.6    16   0.5  1.70    42    0    0    0  *
- 15 SoberCooper          2595 35-40-18  10.5    17   0.3  1.65    51    0    5    8
- 16 Poincare conjectur   2590 26-36-13  11.7    17   0.2  1.63    50    0    0    1
- 17 Danya's Disciple     2564 33-34-24  13.2    21   0.6  1.80    49    2    2   11
- 18 Fuzzydafool          2561 26-21-25  14.2    26   0.6  1.80    56    0    2   29
- 19 e=π=2                2525 40-28-26  36.7    36   3.1  2.11    29    2    7    0  *
- 20 50CentRaise          2522 33-25-32  19.6    27   0.7  1.76    30    0    2    4  *
-  Evaluations still incomplete for: BINI Alpha (50/78 games), AlphaFish (67/93 games), Loss
-    Preventer (73/100 games), Mite (47/73 games), Patzer 2.4 (75/101 games), c1 (45/95 games), ms
-    (73/100 games), stockfih (66/93 games), test_bot (69/97 games), Ultron Prime (67/101 games),
-    Challenger (61/101 games), Anchoa (72/101 games), BetaGo (12/56 games), Malnourished Goatis
-    (52/79 games), SoberCooper (74/101 games), Poincare conjecture (49/75 games), Danya's Disciple
-    (75/101 games), Fuzzydafool (72/101 games), e=π=2 (43/101 games), 50CentRaise (43/94 games).
-    Re-run ./refresh.sh to finish.
+  1 BINI Alpha           2847 35-25-16  15.6    23   0.8  1.80    37    0    1    4
+  2 Mite                 2836 26-35-13  10.2    19   0.2  1.73    48    0    2    1  *
+  3 AlphaFish            2809  43-39-8   7.5    15   0.1  1.53    48    1    4    5
+  4 Loss Preventer       2752 38-36-25  13.1    21   0.4  1.64    39    0    1    2
+  5 Patzer 2.4           2746 35-44-15  11.2    17   0.5  1.53    55    0    2    9
+  6 c1                   2694 39-26-30  23.7    27   1.3  1.93    27    0    0    0
+  7 stockfih             2679 32-32-26  15.7    23   0.4  1.97    39    2    4    4
+  8 ms                   2670 38-40-18  11.1    19   0.3  1.84    45    1    3    4
+  9 Challenger           2670 42-34-23  17.7    25   0.7  1.72    36    1    2    1  *
+ 10 test_bot             2634 32-38-19  12.5    20   0.5  1.88    50    0    2    8
+ 11 BetaGo               2630 23-15-10  18.4    29   0.4  2.16    26    0    0    0  *
+ 12 Ultron Prime         2628 36-38-22  18.0    28   1.0  1.88    40    0    2    0  *
+ 13 Poincare conjectur   2622 26-37-13  11.7    17   0.2  1.64    49    0    0    1
+ 14 Comeback arc for P   2621 29-35-16  10.6    16   0.5  1.71    44    0    0    0  *
+ 15 SoberCooper          2616 35-41-18  10.5    17   0.3  1.65    52    0    5    8
+ 16 e=π=2                2566 40-29-26  36.7    36   3.1  2.12    30    2    7    0  *
+ 17 Anchoa               2546 33-43-17   9.4    17   0.3  1.60    55    0    0    8  *
+ 18 Danya's Disciple     2538 33-35-24  13.2    21   0.6  1.81    49    2    2   11
+ 19 Fuzzydafool          2527 26-22-26  14.2    26   0.6  1.79    56    0    2   29
+ 20 Astral               2517 35-32-30  18.0    27   0.6  2.06    36    1    1    3  *
+  Evaluations still incomplete for: BINI Alpha (50/79 games), Mite (47/74 games), AlphaFish (67/94
+    games), Loss Preventer (73/101 games), Patzer 2.4 (75/102 games), c1 (45/96 games), stockfih
+    (66/94 games), ms (73/101 games), Challenger (61/102 games), test_bot (69/98 games), BetaGo
+    (12/57 games), Ultron Prime (67/102 games), Poincare conjecture (49/76 games), Comeback arc for
+    PSL God (52/81 games), SoberCooper (74/102 games), e=π=2 (43/102 games), Anchoa (72/103 games),
+    Danya's Disciple (75/102 games), Fuzzydafool (72/103 games), Astral (65/103 games). Re-run
+    ./refresh.sh to finish.
 
 OUR ROW
-  1 BINI Alpha           2857 35-25-15  15.6    23   0.8  1.80    36    0    1    4
-  Pairing: our 73 rated opponents were rated -17 relative to us on average at the time (range -221
-    to +63); current ranks 63, 329, 386, 406, 422, 348, 361, 227, 274, 244, 164, 203, 150, 75, 157,
-    152, 68, 87, 100, 91, 48, 49, 64, 28, 51, 50, 21, 55, 7, 40, 6, 42, 33, 5, 17, 27, 39, 8, 16, 9,
-    24, 33, 30, 28, 3, 10, 9, 4, 17, 24, 30, 28, 11, 21, 31, 6, 28, 27, 24, 17, 6, 11, 5, 16, 15, 4,
-    2, 8, 6, 5, 4, 3, 12, 5. Pairings track rating, so a fresh build climbs through weaker teams
+  1 BINI Alpha           2847 35-25-16  15.6    23   0.8  1.80    37    0    1    4
+  Pairing: our 74 rated opponents were rated -15 relative to us on average at the time (range -221
+    to +63); current ranks 62, 328, 390, 405, 425, 345, 363, 231, 268, 249, 164, 185, 160, 67, 157,
+    169, 65, 86, 98, 87, 55, 53, 63, 30, 38, 51, 24, 57, 8, 42, 6, 48, 23, 5, 18, 20, 40, 7, 13, 10,
+    25, 23, 34, 30, 4, 12, 10, 2, 18, 25, 34, 30, 9, 24, 35, 6, 30, 20, 25, 18, 6, 9, 5, 13, 15, 2,
+    3, 7, 6, 5, 2, 3, 17, 5, 2. Pairings track rating, so a fresh build climbs through weaker teams
     first.
 
 KEY FINDINGS
   1. Move quality spread: AlphaFish loses 7.5 cp per move, e=π=2 36.7 cp; our current build measures
   15.6 cp. Blunder rates run 0.1-3.1%.
-  2. Free half points: AlphaFish (1), ms (1), stockfih (2), Challenger (1), Danya's Disciple (2),
-  e=π=2 (2) accepted repetitions while more than +150. Against them, when worse, aim for repetition.
-  3. Time trouble is real for AlphaFish (4 games under 5 s), Mite (2 games under 5 s), c1 (45 games
-  under 5 s), ms (32 games under 5 s), stockfih (8 games under 5 s), test_bot (53 games under 5 s),
-  Ultron Prime (33 games under 5 s), Anchoa (19 games under 5 s), BetaGo (33 games under 5 s),
-  Malnourished Goatis (10 games under 5 s), Danya's Disciple (3 games under 5 s), Fuzzydafool (43
-  games under 5 s), e=π=2 (4 games under 5 s), 50CentRaise (11 games under 5 s). Long, complicated
-  games punish them.
-  4. Clock left unused by BINI Alpha (33 s), Loss Preventer (43 s), Patzer 2.4 (34 s), Challenger
+  2. Free half points: AlphaFish (1), stockfih (2), ms (1), Challenger (1), e=π=2 (2), Danya's
+  Disciple (2), Astral (1) accepted repetitions while more than +150. Against them, when worse, aim
+  for repetition.
+  3. Time trouble is real for Mite (2 games under 5 s), AlphaFish (3 games under 5 s), c1 (46 games
+  under 5 s), stockfih (8 games under 5 s), ms (31 games under 5 s), test_bot (54 games under 5 s),
+  BetaGo (33 games under 5 s), Ultron Prime (34 games under 5 s), Comeback arc for PSL God (10 games
+  under 5 s), e=π=2 (4 games under 5 s), Anchoa (20 games under 5 s), Danya's Disciple (3 games
+  under 5 s), Fuzzydafool (44 games under 5 s), Astral (47 games under 5 s). Long, complicated games
+  punish them.
+  4. Clock left unused by BINI Alpha (33 s), Loss Preventer (44 s), Patzer 2.4 (34 s), Challenger
   (34 s), Poincare conjecture (35 s): their depth is capped by a per-move budget, so our deeper
   search in critical moments is a real edge.
-  5. Leaky conversion: AlphaFish (4 of 38 winning positions not won), Mite (2 of 19 winning
-  positions not won), Patzer 2.4 (2 of 32 winning positions not won), ms (3 of 36 winning positions
-  not won), stockfih (4 of 30 winning positions not won), test_bot (2 of 27 winning positions not
-  won), Ultron Prime (2 of 31 winning positions not won), Challenger (2 of 29 winning positions not
-  won), SoberCooper (5 of 35 winning positions not won), Danya's Disciple (2 of 31 winning positions
-  not won), Fuzzydafool (2 of 26 winning positions not won), e=π=2 (7 of 25 winning positions not
-  won), 50CentRaise (2 of 17 winning positions not won). Keep lost positions alive.
+  5. Leaky conversion: Mite (2 of 19 winning positions not won), AlphaFish (4 of 38 winning
+  positions not won), Patzer 2.4 (2 of 32 winning positions not won), stockfih (4 of 30 winning
+  positions not won), ms (3 of 36 winning positions not won), Challenger (2 of 29 winning positions
+  not won), test_bot (2 of 27 winning positions not won), Ultron Prime (2 of 31 winning positions
+  not won), SoberCooper (5 of 35 winning positions not won), e=π=2 (7 of 25 winning positions not
+  won), Danya's Disciple (2 of 31 winning positions not won), Fuzzydafool (2 of 26 winning positions
+  not won). Keep lost positions alive.
   (further observations)
   6. Endgame fade: c1 (17.6 -> 31.0 cp), stockfih (11.4 -> 18.2 cp) lose far more per move after own
   move 40.
-  7. New builds in the last five rounds (provisional ratings): Mite, test_bot, Ultron Prime,
-  Challenger, Anchoa, BetaGo, Malnourished Goatis, e=π=2, 50CentRaise. Their older games may not
-  describe the bot we will face.
-  8. Drawishness: Patzer 2.4 57.0%, Fuzzydafool 56.0%, Anchoa 54.0% draw most often; threefold is
+  7. New builds in the last five rounds (provisional ratings): Mite, Challenger, BetaGo, Ultron
+  Prime, Comeback arc for PSL God, e=π=2, Anchoa, Astral. Their older games may not describe the bot
+  we will face.
+  8. Drawishness: Fuzzydafool 56.0%, Patzer 2.4 55.0%, Anchoa 55.0% draw most often; threefold is
   the dominant draw type across the field.
 
-LOSSES OF THE LEADER (BINI Alpha, 35-25-15)
-  R24 as white vs Moltisanti (#63, rated 1601 at the time): lost by checkmate after 67 plies, Four
+LOSSES OF THE LEADER (BINI Alpha, 35-25-16)
+  R24 as white vs Moltisanti (#62, rated 1601 at the time): lost by checkmate after 67 plies, Four
     Knights Game.
     Loss per move 60.8 cp (1 blunders) vs opponent 22.9 cp (0 blunders); best moment +72, first
       clearly worse at own move 8 (clock 94 s).
     Decisive own error: 25.g4 lost 1000 cp from -4057; final clock 39.9 s; game
       https://aichessathon.com/game/6a8e7087-c001-490f-ae41-c8ab59a81d4c
-  R27 as black vs Martin (#329, rated 1467 at the time): lost by checkmate after 68 plies, English
+  R27 as black vs Martin (#328, rated 1467 at the time): lost by checkmate after 68 plies, English
     Symmetrical.
     Loss per move 72.7 cp (1 blunders) vs opponent 27.2 cp (0 blunders); best moment +7, first
       clearly worse at own move 4 (clock 106 s).
     Decisive own error: 20.dxc4 lost 1000 cp from -1069; final clock 32.5 s; game
       https://aichessathon.com/game/2a2890ea-06f5-4c96-805c-dd323fb07d03
-  R29 as black vs limlamlom (#386, rated 1295 at the time): lost by checkmate after 48 plies,
+  R29 as black vs limlamlom (#390, rated 1295 at the time): lost by checkmate after 48 plies,
     Caro-Kann Classical.
     Loss per move 131.2 cp (4 blunders) vs opponent 69.6 cp (2 blunders); best moment +118, first
       clearly worse at own move 6 (clock 87 s).
     Decisive own error: 20.Qxb1 lost 1000 cp from -1510; final clock 41.6 s; game
       https://aichessathon.com/game/21bc9f1b-68f7-46b3-82d2-75b7bfd0159b
-  R30 as black vs citytrek (#406, rated 1358 at the time): lost by checkmate after 82 plies, Petroff
+  R30 as black vs citytrek (#405, rated 1358 at the time): lost by checkmate after 82 plies, Petroff
     Defence.
     Loss per move 75.8 cp (1 blunders) vs opponent 35.9 cp (0 blunders); best moment +35, first
       clearly worse at own move 10 (clock 80 s).
     Decisive own error: 30.Rd8 lost 1000 cp from -1016; final clock 24.3 s; game
       https://aichessathon.com/game/98200ff8-1b83-467a-aac6-2e99196d0fe5
-  R40 as black vs Sage (#75, rated 1779 at the time): lost by checkmate after 82 plies, Grunfeld
+  R40 as black vs Sage (#67, rated 1779 at the time): lost by checkmate after 82 plies, Grunfeld
     Defence.
     Loss per move 25.5 cp (0 blunders) vs opponent 12.9 cp (0 blunders); best moment -11, first
       clearly worse at own move 11 (clock 111 s).
     Decisive own error: 32.Kd8 lost 1000 cp from -1846; final clock 70.0 s; game
       https://aichessathon.com/game/41b7f780-bc58-4b75-b894-f00695ebb143
-  R55 as black vs ms (#7, rated 2208 at the time): lost by checkmate after 136 plies, Ruy Lopez,
+  R55 as black vs ms (#8, rated 2208 at the time): lost by checkmate after 136 plies, Ruy Lopez,
     Closed.
     Loss per move 18.3 cp (0 blunders) vs opponent 7.5 cp (0 blunders); best moment +29, first
       clearly worse at own move 35 (clock 38 s).
     Decisive own error: 55.Nh2 lost 1000 cp from -870; final clock 11.8 s; game
       https://aichessathon.com/game/57a2c2c9-a340-44e0-9284-1c347b3fdd0a
-  R56 as white vs Edward (#40, rated 2127 at the time): lost by checkmate after 149 plies, Ruy
+  R56 as white vs Edward (#42, rated 2127 at the time): lost by checkmate after 149 plies, Ruy
     Lopez, Closed.
     Loss per move 46.9 cp (2 blunders) vs opponent 9.4 cp (0 blunders); best moment +20, first
       clearly worse at own move 46 (clock 23 s).
     Decisive own error: 59.Kg1 lost 1000 cp from -654; final clock 12.8 s; game
       https://aichessathon.com/game/22f68e6d-02f5-4a3f-a536-1c4114512f53
-  R64 as white vs stockfih (#8, rated 2361 at the time): lost by checkmate after 95 plies, Italian
+  R64 as white vs stockfih (#7, rated 2361 at the time): lost by checkmate after 95 plies, Italian
     Game.
     Loss per move 33.4 cp (1 blunders) vs opponent 11.9 cp (0 blunders); best moment +17, first
       clearly worse at own move 24 (clock 48 s).
     Decisive own error: 38.Qd8 lost 1000 cp from -994; final clock 21.1 s; game
       https://aichessathon.com/game/80493c3f-dcc5-42c0-9b99-3614fa56c224
-  R65 as black vs Poincare conjecture (#16, rated 2354 at the time): lost by checkmate after 112
+  R65 as black vs Poincare conjecture (#13, rated 2354 at the time): lost by checkmate after 112
     plies, London System.
     Loss per move 31.5 cp (0 blunders) vs opponent 13.8 cp (0 blunders); best moment +24, first
       clearly worse at own move 17 (clock 75 s).
     Decisive own error: 50.g5 lost 1000 cp from -1048; final clock 16.7 s; game
       https://aichessathon.com/game/6677bb85-bb36-4e22-8213-35da28019338
-  R68 as black vs cory (#24, rated 2340 at the time): lost by checkmate after 163 plies, French
+  R68 as black vs cory (#25, rated 2340 at the time): lost by checkmate after 163 plies, French
     Tarrasch.
     Loss per move 31.6 cp (1 blunders) vs opponent 9.0 cp (0 blunders); best moment +10, first
       clearly worse at own move 36 (clock 33 s).
     Decisive own error: 71.Ne2+ lost 1000 cp from -765; final clock 10.2 s; game
       https://aichessathon.com/game/6e61d991-f16d-4127-9bae-ac9595c363e6
-  R76 as black vs Danya's Disciple (#17, rated 2361 at the time): lost by checkmate after 114 plies,
+  R76 as black vs Danya's Disciple (#18, rated 2361 at the time): lost by checkmate after 114 plies,
     Grunfeld Defence.
-  R79 as white vs zak (#28, rated 2379 at the time): lost by checkmate after 179 plies, Pirc
+  R79 as white vs zak (#30, rated 2379 at the time): lost by checkmate after 179 plies, Pirc
     Defence.
-  R82 as white vs Cornelius (#31, rated 2428 at the time): lost by checkmate after 151 plies,
+  R82 as white vs Cornelius (#35, rated 2428 at the time): lost by checkmate after 151 plies,
     Sicilian Closed.
-  R98 as white vs Mite (#4, rated 2770 at the time): lost by checkmate after 179 plies, Sicilian
+  R98 as white vs Mite (#2, rated 2770 at the time): lost by checkmate after 179 plies, Sicilian
     Dragon.
-  R100 as white vs Loss Preventer (#3, rated 2682 at the time): lost by checkmate after 157 plies,
-    Sicilian Najdorf.
+  R103 as black vs Mite (#2, rated 2836 at the time): lost by checkmate after 126 plies, London
+    System.
 
 HEAD-TO-HEAD AMONG THE TOP 20
-  BIN=BINI Alpha; Alp=AlphaFish; Los=Loss Preventer; Mit=Mite; Pat=Patzer 2.4; c1=c1; ms=ms;
-    sto=stockfih; tes=test_bot; Ult=Ultron Prime; Cha=Challenger; Anc=Anchoa; Bet=BetaGo;
-    Mal=Malnourished Goatis; Sob=SoberCooper; Poi=Poincare conjecture; Dan=Danya's Disciple;
-    Fuz=Fuzzydafool; e2=e=π=2; 50C=50CentRaise
-         BIN Alp Los Mit Pat  c1  ms sto tes Ult Cha Anc Bet Mal Sob Poi Dan Fuz  e2 50C
-BIN        -   D  DL DWLWDWDWWDW   L  LW  WD   W  DW   W   .   .   W  LW DLD   .   .   .
-Alp D -WDWWDLDDLWWDLDDDW DWWDDDWDWDDWWWLW . .WWDWDWD .DWDDDWDDWWDWLDWW W . W . .
-Los       DWLDLL   -DDDDLLDLDD   DLWLLD DDWLWDW   W   .DDDD   .WLWDW WDL LDL LWD  WL   .   .
-Mit      DLWDWDDWDDDD   - DDD   . DDDLDDW   D   .   . DDW   .LDLDLD LLDDDDWDWDDWW   D   .   D
-Pat     LDLDLLDWDDDLWWDWDD DDD   -   DWDDWDDDWDDDLW  DL   .   WLWDD   . DDDLDDLW  LW  DD   W   .   W
-c1      LLDL   D   D   .   D   -   D LDW   D   .   D  LW   D   W   .  DD LDD   W   D   D
-ms         WLLDDDWLWWD DDDLDDLDDD   D   -LDWLLDL  WW   .   .   D   .LLDWDDWLWDDD   D   .  LD   .   W
-sto       WLLDLDD DDLWDDLLDDDWL WDLWDLWWDW   -   L   W  WW  LD   .DWDWW   D WWD  WW   .   .   .
-tes       LDLLLWLWLDL   D  DW   D  LL   W   -DDDDD   .WDDDDLDD   .   .LWWDLDD   DWDDD   D   . WLW
-Ult        L   .   L   .   .   .   .   LDDDDD   -WLDDD LDD   .   .   .   D  DW  WD   D   .
-Cha       DL   .   .   .   L   D   .  LL   .LWDDD   - LLW   D   .   .   .   .  DL   D  WW
-Anc        LLLDLDLDDDDD DDLWLDD  WL   D  WDLDDDDWDD WDD WWL   -   .   LDDDLWL DDWWLWD   W   .  WD
-Bet        .   .   .   .   .   D   .   .   .   .   D   .   -  DD   D   .   D   W   .   .
-Mal        .DLDDDLWLDLWDWDWD DDD   LWWDLDDLDLDLL   .   .   .   W  DD   -WWWDD LDD   D   .   . DWW
-Sob LLDDLLDLWDLL LDW WWDWDDWL .WLDDD DWLLDWDD . .DDDWLW DLLLDD - DDD DD LWW . W
-Poi       WL   L WDWDDDLD  WL  DD   D LLD   D   D   .  DD   D WDD DDD   - DDW   W   W   W
-Dan      DWD   . WLDLDDLL  DD WDD   .  LLLDDD  DL   .LWLD   D   D  DD DDL   -WLWD   .   .
-Fuz        .   L  LW   D   L   L  WD   .   D   L  DW   L   L   . WLL   LLWLD   - DLD LDW
-e2         .   .   .   .   .   D   .   .   L   D   D   .   .   .   .   L   . DWD   -  DW
-50C        .   .   .   D   L   D   L   . LWL   .  LL  LD   . DLL  LD   L   . WDL  DL   -
+  BIN=BINI Alpha; Mit=Mite; Alp=AlphaFish; Los=Loss Preventer; Pat=Patzer 2.4; c1=c1; sto=stockfih;
+    ms=ms; Cha=Challenger; tes=test_bot; Bet=BetaGo; Ult=Ultron Prime; Poi=Poincare conjecture;
+    Com=Comeback arc for PSL God; Sob=SoberCooper; e2=e=π=2; Anc=Anchoa; Dan=Danya's Disciple;
+    Fuz=Fuzzydafool; Ast=Astral
+         BIN Mit Alp Los Pat  c1 sto  ms Cha tes Bet Ult Poi Com Sob  e2 Anc Dan Fuz Ast
+BIN        -DWLL  DD   DWDWDWWDW  LW   L  DW  WD   .   W  LW   .   W   .   W DLD   .  WD
+Mit     DLWW   -DWDDWDDDDDDDL   .LDDW DDD   .   D   .   .DDDWDLDLDL LLD   . DDWWDDWW   D  LW
+Alp DDDLDDL -WDWWDWWDLDDDW DWDWDWWDDD .WWWLW . . WDWDDDWDDWWDWLDWW .WWDWDWD . W .
+Los        DDDDDLDLLD   -LLDLDD   D DDWLWLLDD   .LWDW   .   W LDLWLWDW WDL   .DDDD LWD  WL   W
+Pat     LDLDDDDWLLDWDDDLWWDWDD   -  DWWDDDLWWDDWDD   W  DL   .   .  LW DDDLDDLW   .LWDD  DD   W  DL
+c1      LLDL   .   D   D  DL   - LDW   D   D   D   .   .  DD   W   .   D LWD LDD   W   .
+sto       WLWDDLLDLD DDLLDDDWL WDL   -WDLWWDW WWD   L   .   W WWDDWDWWD   D   .  LD  WW   .WDDD
+ms         W DDDLLDDDWLWWDDLDDLDD   DLDWLLDL   -   . WWD   .   .   DLLDWDDWLWDDD   .   D   .  LD  DL
+Cha       DL   .   .   .   L   D LLD   .   -   .   DLWDDD   .   .   .   D LLW   .  DL  LD
+tes       LD   DLLLWLWLDL  DW   D   W LLD   .   -   .DDDDD   D   .LWWDLD   WWDDDDLDDWDDD   D   W
+Bet        .   .   .   .   .   .   .   .   D   .   -   D   D  DD   D   .   .   D   W   .
+Ult        L   .   .   L   .   .   L   .WLDDDDDDDD   D   -   D   .   .   D LDD   D  WD   .
+Poi       WLDDDLD   L WDW  WL  DD LLD   D   .   D   D   D   -WDDD  DD   W DDL DDW   W DDD
+Com        .WDWDWDDLDDDLWLDL DDD   LDLDLLDWWDLDDL   .   .  DD   .LDDD   -WWWDD   .   W   D   .   D
+Sob L WWDLDDLLDLWDLL LDWWDDWL . DWLDDD .WLLDWDD D . DDLLLDD - DDDDWLW DD LWW W
+e2         .   .   .   .   .   D   .   .   D   L   .   D   L   .   D   -   .   .  DW   .
+Anc        . DDLLLDLDLDDDDDWLDD WLD  WD   D WWLLDDDDWDD   . WDD DDW   LDDDLWL   .   -WLWDD  WW  DD
+Dan      DWDLDDLL   . WLD  DD WDD  LL   .   .LDDD   D  DL DDL   D  DD   .LWLDD   -WLWD  LW
+Fuz        .   D   L  LW   L   L   .  WD  DW   D   L  LD   L   . WLL  DL  LLLWLD   -LWWD
+Ast       LD  WL   .   L  DW   .LDDD  DW  WD   L   .   . DDD   D   L   .  DD  WLWLLD   -
   Row's result vs column, oldest game first (W/D/L). Games between top-20 teams:
   R2 Challenger (white) vs Anchoa: Anchoa won by checkmate, London System, 101 plies (loss/move 40.5
     vs 9.6)
@@ -185,10 +186,10 @@ e2         .   .   .   .   .   D   .   .   L   D   D   .   .   .   .   L   . DWD
     (loss/move 12.9 vs 29.9)
   R7 Patzer 2.4 (white) vs ms: Patzer 2.4 won by checkmate, French Tarrasch, 104 plies (loss/move
     21.4 vs 27.8)
+  R8 SoberCooper (black) vs Astral: SoberCooper won by checkmate, Sicilian Sveshnikov, 108 plies
+    (loss/move 15.8 vs 28.5)
   R10 Patzer 2.4 (black) vs SoberCooper: SoberCooper won by checkmate, Sicilian Najdorf, 150 plies
     (loss/move 23.8 vs 13.8)
-  R10 Fuzzydafool (white) vs 50CentRaise: 50CentRaise won by checkmate, King's Indian Classical, 137
-    plies (loss/move 33.6 vs 12.3)
   R11 Patzer 2.4 (white) vs Anchoa: Anchoa won by checkmate, Reti Opening, 115 plies (loss/move 28.8
     vs 13.3)
   R11 stockfih (white) vs Challenger: stockfih won by checkmate, Sicilian Sveshnikov, 92 plies
@@ -212,34 +213,26 @@ e2         .   .   .   .   .   D   .   .   L   D   D   .   .   .   .   L   . DWD
     (loss/move 9.0 vs 13.5)
   R20 AlphaFish (white) vs ms: AlphaFish won by checkmate, Nimzo-Indian Defence, 217 plies
     (loss/move 5.8 vs 15.4)
-  R20 Patzer 2.4 (black) vs 50CentRaise: Patzer 2.4 won by checkmate, Scotch Game, 159 plies
-    (loss/move 11.2 vs 20.9)
   R20 Anchoa (black) vs Danya's Disciple: Anchoa won by checkmate, Sicilian Dragon, 143 plies
     (loss/move 10.9 vs 33.2)
   R21 AlphaFish (white) vs Patzer 2.4: AlphaFish won by checkmate, Sicilian Closed, 172 plies
     (loss/move 12.3 vs 23.1)
   R21 Loss Preventer (white) vs Danya's Disciple: Danya's Disciple won by checkmate, Italian Game,
     137 plies (loss/move 19.1 vs 7.1)
-  R21 ms (white) vs 50CentRaise: ms won by checkmate, Reti Opening, 134 plies (loss/move 14.5 vs
-    24.7)
-  R22 Ultron Prime (black) vs Challenger: Ultron Prime won by checkmate, Slav Defence, 107 plies
-    (loss/move 9.1 vs 39.3)
-  R23 SoberCooper (white) vs 50CentRaise: SoberCooper won by checkmate, Ruy Lopez, Closed, 117 plies
-    (loss/move 8.2 vs 19.7)
+  R22 Challenger (white) vs Ultron Prime: Ultron Prime won by checkmate, Slav Defence, 107 plies
+    (loss/move 39.3 vs 9.1)
   R24 Loss Preventer (black) vs SoberCooper: Loss Preventer won by checkmate, Sicilian Dragon, 147
     plies (loss/move 8.6 vs 28.7)
+  R24 stockfih (white) vs Astral: stockfih won by checkmate, Petroff Defence, 108 plies (loss/move
+    14.7 vs 34.6)
   R25 Anchoa (black) vs Fuzzydafool: Anchoa won by checkmate, Nimzo-Indian Defence, 143 plies
     (loss/move 5.7 vs 27.5)
   R26 Loss Preventer (black) vs Patzer 2.4: Patzer 2.4 won by checkmate, Sicilian Closed, 113 plies
     (loss/move 24.1 vs 10.9)
-  R26 test_bot (white) vs 50CentRaise: test_bot won by checkmate, Grunfeld Defence, 84 plies
-    (loss/move 7.7 vs 30.8)
   R27 AlphaFish (white) vs test_bot: AlphaFish won by checkmate, Italian Game, 132 plies (loss/move
     9.3 vs 36.1)
   R27 Loss Preventer (white) vs Fuzzydafool: Loss Preventer won by checkmate, Pirc Defence, 62 plies
     (loss/move 3.7 vs 33.2)
-  R27 Anchoa (white) vs 50CentRaise: Anchoa won by checkmate, Catalan Opening, 83 plies (loss/move
-    11.4 vs 39.8)
   R28 Loss Preventer (white) vs test_bot: test_bot won by checkmate, French Tarrasch, 179 plies
     (loss/move 17.8 vs 8.9)
   R28 Patzer 2.4 (white) vs stockfih: Patzer 2.4 won by checkmate, Two Knights Defence, 100 plies
@@ -253,13 +246,11 @@ e2         .   .   .   .   .   D   .   .   L   D   D   .   .   .   .   L   . DWD
   R31 c1 (white) vs Anchoa: Anchoa won by checkmate, Slav Defence, 81 plies (loss/move 26.0 vs 10.4)
   R31 Danya's Disciple (black) vs Fuzzydafool: Danya's Disciple won by checkmate, London System, 224
     plies (loss/move 2.4 vs 7.6)
-  R32 Malnourished Goatis (white) vs 50CentRaise: draw by insufficient_material, French Winawer, 203
-    plies (loss/move 18.7 vs 20.1)
   R34 ms (black) vs Fuzzydafool: Fuzzydafool won by checkmate, Petroff Defence, 153 plies (loss/move
     27.1 vs 18.1)
   R34 test_bot (black) vs Danya's Disciple: test_bot won by checkmate, Sicilian Sveshnikov, 195
     plies (loss/move 12.6 vs 28.1)
-  R34 Anchoa (white) vs SoberCooper: draw by fifty_moves, English Symmetrical, 263 plies (loss/move
+  R34 SoberCooper (black) vs Anchoa: draw by fifty_moves, English Symmetrical, 263 plies (loss/move
     5.1 vs 5.1)
   R35 AlphaFish (black) vs Anchoa: AlphaFish won by checkmate, Pirc Defence, 103 plies (loss/move
     13.0 vs 26.1)
@@ -267,12 +258,8 @@ e2         .   .   .   .   .   D   .   .   L   D   D   .   .   .   .   L   . DWD
     (loss/move 47.2 vs 15.2)
   R35 test_bot (white) vs Fuzzydafool: draw by threefold_repetition, Sicilian Closed, 152 plies
     (loss/move 10.4 vs 11.3)
-  R35 Poincare conjecture (white) vs 50CentRaise: Poincare conjecture won by checkmate, Reti
-    Opening, 156 plies (loss/move 11.3 vs 21.5)
   R36 AlphaFish (black) vs SoberCooper: draw by insufficient_material, French Winawer, 183 plies
     (loss/move 27.5 vs 30.2)
-  R36 Mite (white) vs 50CentRaise: draw by fifty_moves, Reti Opening, 196 plies (loss/move 14.1 vs
-    12.7)
   R36 Patzer 2.4 (black) vs test_bot: draw by threefold_repetition, Sicilian Sveshnikov, 95 plies
     (loss/move 4.3 vs 3.5)
   R36 Danya's Disciple (black) vs Fuzzydafool: Fuzzydafool won by checkmate, Nimzo-Indian Defence,
@@ -281,14 +268,14 @@ e2         .   .   .   .   .   D   .   .   L   D   D   .   .   .   .   L   . DWD
     plies (loss/move 12.8 vs 20.8)
   R37 Patzer 2.4 (black) vs Anchoa: Patzer 2.4 won by checkmate, Semi-Slav Defence, 139 plies
     (loss/move 11.9 vs 37.9)
-  R37 c1 (black) vs Malnourished Goatis: c1 won by checkmate, Sicilian Closed, 247 plies (loss/move
-    11.0 vs 18.8)
+  R37 c1 (black) vs Comeback arc for PSL God: c1 won by checkmate, Sicilian Closed, 247 plies
+    (loss/move 11.0 vs 18.8)
   R37 test_bot (black) vs SoberCooper: test_bot won by checkmate, Reti Opening, 201 plies (loss/move
     11.8 vs 17.4)
+  R38 Mite (white) vs Comeback arc for PSL God: Comeback arc for PSL God won by checkmate, Ruy
+    Lopez, Closed, 121 plies (loss/move 15.6 vs 5.5)
   R38 AlphaFish (white) vs test_bot: AlphaFish won by checkmate, Sicilian Closed, 168 plies
     (loss/move 7.2 vs 17.7)
-  R38 Mite (white) vs Malnourished Goatis: Malnourished Goatis won by checkmate, Ruy Lopez, Closed,
-    121 plies (loss/move 15.6 vs 5.5)
   R38 Patzer 2.4 (white) vs SoberCooper: draw by threefold_repetition, Caro-Kann Classical, 142
     plies (loss/move 2.1 vs 1.5)
   R38 c1 (black) vs Poincare conjecture: draw by insufficient_material, Two Knights Defence, 152
@@ -299,16 +286,18 @@ e2         .   .   .   .   .   D   .   .   L   D   D   .   .   .   .   L   . DWD
     (loss/move 3.8 vs 3.9)
   R39 SoberCooper (white) vs Fuzzydafool: SoberCooper won by checkmate, French Tarrasch, 118 plies
     (loss/move 11.2 vs 21.7)
+  R39 Danya's Disciple (black) vs Astral: Astral won by checkmate, Caro-Kann Classical, 54 plies
+    (loss/move 33.9 vs 8.1)
   R40 AlphaFish (black) vs Patzer 2.4: AlphaFish won by checkmate, Reti Opening, 108 plies
     (loss/move 10.5 vs 25.4)
   R40 c1 (black) vs Danya's Disciple: Danya's Disciple won by checkmate, French Advance, 136 plies
     (loss/move 22.1 vs 14.1)
+  R40 ms (black) vs Astral: draw by threefold_repetition, Sicilian Closed, 95 plies (loss/move 14.2
+    vs 14.7)
   R41 AlphaFish (black) vs SoberCooper: draw by insufficient_material, Dutch Stonewall, 252 plies
     (loss/move 2.9 vs 3.3)
-  R41 Ultron Prime (white) vs Challenger: Challenger won by checkmate, Sicilian Closed, 87 plies
-    (loss/move 89.2 vs 55.6)
-  R41 Malnourished Goatis (black) vs 50CentRaise: Malnourished Goatis won by checkmate, Italian
-    Game, 119 plies (loss/move 14.4 vs 24.4)
+  R41 Challenger (black) vs Ultron Prime: Challenger won by checkmate, Sicilian Closed, 87 plies
+    (loss/move 55.6 vs 89.2)
   R42 AlphaFish (white) vs Anchoa: draw by insufficient_material, King's Indian Classical, 136 plies
     (loss/move 5.2 vs 4.8)
   R42 Loss Preventer (black) vs ms: Loss Preventer won by checkmate, Two Knights Defence, 123 plies
@@ -317,50 +306,58 @@ e2         .   .   .   .   .   D   .   .   L   D   D   .   .   .   .   L   . DWD
     (loss/move 9.9 vs 19.5)
   R42 test_bot (black) vs SoberCooper: test_bot won by checkmate, Sicilian Dragon, 163 plies
     (loss/move 10.4 vs 17.9)
+  R42 Poincare conjecture (white) vs Astral: draw by insufficient_material, Scotch Game, 142 plies
+    (loss/move 6.0 vs 8.8)
   R43 AlphaFish (black) vs test_bot: AlphaFish won by checkmate, Ruy Lopez, Closed, 165 plies
     (loss/move 9.4 vs 14.0)
   R43 c1 (black) vs stockfih: stockfih won by checkmate, Grunfeld Defence, 76 plies (loss/move 42.3
     vs 8.7)
-  R43 Anchoa (white) vs SoberCooper: draw by fifty_moves, English Symmetrical, 248 plies (loss/move
-    4.6 vs 4.3)
-  R44 Loss Preventer (white) vs Fuzzydafool: Fuzzydafool won by checkmate, Caro-Kann Advance, 161
-    plies (loss/move 33.5 vs 23.5)
+  R43 SoberCooper (black) vs Anchoa: draw by fifty_moves, English Symmetrical, 248 plies (loss/move
+    4.3 vs 4.6)
   R44 Mite (white) vs Danya's Disciple: Mite won by checkmate, Petroff Defence, 176 plies (loss/move
     10.6 vs 15.6)
-  R44 ms (black) vs stockfih: stockfih won by checkmate, London System, 150 plies (loss/move 23.4 vs
-    12.3)
+  R44 Loss Preventer (white) vs Fuzzydafool: Fuzzydafool won by checkmate, Caro-Kann Advance, 161
+    plies (loss/move 33.5 vs 23.5)
+  R44 stockfih (white) vs ms: stockfih won by checkmate, London System, 150 plies (loss/move 12.3 vs
+    23.4)
   R44 test_bot (black) vs Anchoa: draw by threefold_repetition, Queen's Gambit Declined, 100 plies
     (loss/move 2.6 vs 3.1)
+  R45 Mite (black) vs Astral: Astral won by checkmate, Queen's Gambit Accepted, 140 plies (loss/move
+    32.9 vs 10.6)
   R45 AlphaFish (white) vs Patzer 2.4: draw by insufficient_material, Italian Game, 111 plies
     (loss/move 2.3 vs 1.8)
   R45 Loss Preventer (black) vs Poincare conjecture: Poincare conjecture won by checkmate, Caro-Kann
     Advance, 162 plies (loss/move 41.6 vs 12.0)
   R45 c1 (black) vs Danya's Disciple: draw by fifty_moves, English Symmetrical, 209 plies (loss/move
     3.3 vs 3.9)
-  R45 ms (black) vs Malnourished Goatis: Malnourished Goatis won by checkmate, Sicilian Dragon, 174
-    plies (loss/move 28.6 vs 8.3)
+  R45 ms (black) vs Comeback arc for PSL God: Comeback arc for PSL God won by checkmate, Sicilian
+    Dragon, 174 plies (loss/move 28.6 vs 8.3)
   R46 AlphaFish (black) vs SoberCooper: AlphaFish won by checkmate, Pirc Defence, 157 plies
     (loss/move 6.8 vs 15.0)
-  R46 Challenger (black) vs 50CentRaise: Challenger won by checkmate, Two Knights Defence, 119 plies
-    (loss/move 20.1 vs 32.6)
-  R47 AlphaFish (white) vs Anchoa: AlphaFish won by checkmate, Caro-Kann Classical, 146 plies
-    (loss/move 11.1 vs 32.9)
+  R46 stockfih (white) vs Astral: draw by threefold_repetition, Two Knights Defence, 123 plies
+    (loss/move 6.1 vs 4.7)
   R47 Mite (white) vs Fuzzydafool: draw by threefold_repetition, Sicilian Sveshnikov, 253 plies
     (loss/move 0.7 vs 0.6)
+  R47 AlphaFish (white) vs Anchoa: AlphaFish won by checkmate, Caro-Kann Classical, 146 plies
+    (loss/move 11.1 vs 32.9)
   R47 stockfih (black) vs Poincare conjecture: stockfih won by checkmate, Nimzo-Indian Defence, 153
     plies (loss/move 11.8 vs 19.9)
   R47 test_bot (white) vs SoberCooper: draw by insufficient_material, Reti Opening, 143 plies
     (loss/move 2.1 vs 2.6)
+  R48 Mite (white) vs Comeback arc for PSL God: draw by insufficient_material, Ruy Lopez, Closed,
+    116 plies (loss/move 3.0 vs 2.9)
   R48 AlphaFish (white) vs test_bot: test_bot won by checkmate, Sicilian Sveshnikov, 181 plies
     (loss/move 18.0 vs 16.5)
-  R48 Mite (white) vs Malnourished Goatis: draw by insufficient_material, Ruy Lopez, Closed, 116
-    plies (loss/move 3.0 vs 2.9)
   R48 Patzer 2.4 (white) vs stockfih: draw by threefold_repetition, Caro-Kann Advance, 115 plies
     (loss/move 7.1 vs 6.9)
-  R48 Anchoa (white) vs SoberCooper: draw by threefold_repetition, Caro-Kann Classical, 135 plies
-    (loss/move 2.3 vs 2.5)
-  R49 Loss Preventer (black) vs Malnourished Goatis: Loss Preventer won by checkmate, English
+  R48 SoberCooper (black) vs Anchoa: draw by threefold_repetition, Caro-Kann Classical, 135 plies
+    (loss/move 2.5 vs 2.3)
+  R48 Fuzzydafool (black) vs Astral: Astral won by checkmate, Italian Game, 172 plies (loss/move
+    30.8 vs 9.1)
+  R49 Loss Preventer (black) vs Comeback arc for PSL God: Loss Preventer won by checkmate, English
     Symmetrical, 137 plies (loss/move 9.4 vs 23.7)
+  R49 ms (black) vs Astral: Astral won by checkmate, French Tarrasch, 188 plies (loss/move 20.8 vs
+    6.1)
   R49 test_bot (white) vs Anchoa: draw by threefold_repetition, Reti Opening, 227 plies (loss/move
     0.7 vs 1.0)
   R50 Mite (black) vs Poincare conjecture: draw by fifty_moves, English Symmetrical, 284 plies
@@ -369,154 +366,174 @@ e2         .   .   .   .   .   D   .   .   L   D   D   .   .   .   .   L   . DWD
     (loss/move 34.4 vs 14.9)
   R50 ms (white) vs Fuzzydafool: draw by threefold_repetition, Ruy Lopez, Closed, 474 plies
     (loss/move 0.8 vs 0.8)
+  R50 Anchoa (white) vs Astral: draw by insufficient_material, King's Indian Classical, 182 plies
+    (loss/move 1.3 vs 1.3)
   R51 AlphaFish (black) vs SoberCooper: AlphaFish won by checkmate, Dutch Stonewall, 209 plies
     (loss/move 13.2 vs 29.9)
-  R51 ms (white) vs stockfih: draw by threefold_repetition, French Winawer, 68 plies (loss/move 18.4
-    vs 14.0)
+  R51 Patzer 2.4 (black) vs Astral: draw by fifty_moves, Four Knights Game, 290 plies (loss/move 1.1
+    vs 1.2)
+  R51 stockfih (black) vs ms: draw by threefold_repetition, French Winawer, 68 plies (loss/move 14.0
+    vs 18.4)
   R51 Poincare conjecture (white) vs Fuzzydafool: Poincare conjecture won by checkmate, Nimzo-Indian
     Defence, 150 plies (loss/move 9.3 vs 20.5)
   R52 AlphaFish (white) vs Anchoa: draw by insufficient_material, Sicilian Closed, 255 plies
     (loss/move 5.0 vs 5.0)
+  R52 Loss Preventer (white) vs Astral: Loss Preventer won by checkmate, French Winawer, 122 plies
+    (loss/move 10.5 vs 24.8)
   R52 Patzer 2.4 (white) vs Poincare conjecture: Poincare conjecture won by checkmate, Ruy Lopez,
     Closed, 101 plies (loss/move 45.1 vs 11.3)
-  R52 stockfih (black) vs Malnourished Goatis: draw by threefold_repetition, London System, 140
+  R52 stockfih (black) vs Comeback arc for PSL God: draw by threefold_repetition, London System, 140
     plies (loss/move 3.8 vs 3.4)
+  R53 Mite (white) vs Loss Preventer: draw by threefold_repetition, Sicilian Closed, 48 plies
+    (loss/move 20.0 vs 17.9)
   R53 AlphaFish (white) vs test_bot: AlphaFish won by checkmate, London System, 110 plies (loss/move
     11.7 vs 53.1)
-  R53 Loss Preventer (black) vs Mite: draw by threefold_repetition, Sicilian Closed, 48 plies
-    (loss/move 17.9 vs 20.0)
-  R53 Patzer 2.4 (black) vs Malnourished Goatis: draw by threefold_repetition, Sicilian Sveshnikov,
-    10 plies (loss/move 1.2 vs 1.2)
-  R53 Anchoa (white) vs SoberCooper: SoberCooper won by checkmate, Ruy Lopez, Closed, 169 plies
-    (loss/move 29.7 vs 13.7)
+  R53 Patzer 2.4 (black) vs Comeback arc for PSL God: draw by threefold_repetition, Sicilian
+    Sveshnikov, 10 plies (loss/move 1.2 vs 1.2)
+  R53 stockfih (white) vs Astral: draw by threefold_repetition, London System, 142 plies (loss/move
+    10.5 vs 34.6)
+  R53 SoberCooper (black) vs Anchoa: SoberCooper won by checkmate, Ruy Lopez, Closed, 169 plies
+    (loss/move 13.7 vs 29.7)
   R54 Patzer 2.4 (white) vs stockfih: draw by insufficient_material, Caro-Kann Exchange, 155 plies
     (loss/move 7.8 vs 8.2)
   R54 test_bot (white) vs Anchoa: draw by fifty_moves, Nimzo-Indian Defence, 277 plies (loss/move
     3.7 vs 3.9)
-  R54 Malnourished Goatis (black) vs Poincare conjecture: Poincare conjecture won by checkmate,
-    French Classical, 28 plies (loss/move 32.3 vs 4.6)
+  R54 Poincare conjecture (white) vs Comeback arc for PSL God: Poincare conjecture won by checkmate,
+    French Classical, 28 plies (loss/move 4.6 vs 32.3)
   R55 BINI Alpha (black) vs ms: ms won by checkmate, Ruy Lopez, Closed, 136 plies (loss/move 18.3 vs
     7.5)
-  R55 Loss Preventer (black) vs Anchoa: draw by threefold_repetition, English Symmetrical, 69 plies
-    (loss/move 12.7 vs 14.5)
   R55 Mite (white) vs Poincare conjecture: draw by fifty_moves, Ruy Lopez, Closed, 494 plies
     (loss/move 6.4 vs 6.4)
-  R56 AlphaFish (black) vs SoberCooper: draw by threefold_repetition, French Tarrasch, 154 plies
-    (loss/move 3.4 vs 3.0)
+  R55 Loss Preventer (black) vs Anchoa: draw by threefold_repetition, English Symmetrical, 69 plies
+    (loss/move 12.7 vs 14.5)
+  R55 Comeback arc for PSL God (black) vs Astral: draw by threefold_repetition, Caro-Kann Advance,
+    86 plies (loss/move 11.3 vs 10.6)
   R56 Mite (white) vs stockfih: stockfih won by checkmate, Dutch Stonewall, 143 plies (loss/move
     28.6 vs 18.5)
-  R56 ms (black) vs Malnourished Goatis: Malnourished Goatis won by checkmate, Sicilian Sveshnikov,
-    220 plies (loss/move 16.6 vs 11.3)
+  R56 AlphaFish (black) vs SoberCooper: draw by threefold_repetition, French Tarrasch, 154 plies
+    (loss/move 3.4 vs 3.0)
+  R56 Patzer 2.4 (white) vs Astral: Astral won by checkmate, Sicilian Najdorf, 255 plies (loss/move
+    20.7 vs 14.9)
+  R56 ms (black) vs Comeback arc for PSL God: Comeback arc for PSL God won by checkmate, Sicilian
+    Sveshnikov, 220 plies (loss/move 16.6 vs 11.3)
   R57 BINI Alpha (black) vs c1: BINI Alpha won by checkmate, Pirc Defence, 117 plies (loss/move 8.6
     vs 23.6)
+  R57 Mite (black) vs Comeback arc for PSL God: Comeback arc for PSL God won by checkmate, Dutch
+    Stonewall, 124 plies (loss/move 23.0 vs 11.7)
   R57 AlphaFish (black) vs Anchoa: AlphaFish won by checkmate, Semi-Slav Defence, 159 plies
     (loss/move 13.4 vs 23.2)
-  R57 Mite (black) vs Malnourished Goatis: Malnourished Goatis won by checkmate, Dutch Stonewall,
-    124 plies (loss/move 23.0 vs 11.7)
   R57 Patzer 2.4 (black) vs ms: draw by threefold_repetition, French Tarrasch, 157 plies (loss/move
     43.5 vs 11.7)
   R57 test_bot (black) vs SoberCooper: SoberCooper won by checkmate, Queen's Gambit Accepted, 82
     plies (loss/move 33.2 vs 9.6)
-  R58 Loss Preventer (white) vs test_bot: Loss Preventer won by checkmate, French Winawer, 102 plies
-    (loss/move 13.1 vs 27.9)
+  R57 Poincare conjecture (black) vs Astral: draw by insufficient_material, Caro-Kann Advance, 110
+    plies (loss/move 6.8 vs 7.1)
   R58 Mite (white) vs ms: draw by threefold_repetition, Dutch Stonewall, 213 plies (loss/move 5.2 vs
     5.0)
-  R58 Anchoa (white) vs SoberCooper: Anchoa won by checkmate, London System, 134 plies (loss/move
-    8.1 vs 20.3)
-  R59 AlphaFish (white) vs Loss Preventer: draw by fifty_moves, Sicilian Closed, 218 plies
-    (loss/move 4.7 vs 4.7)
+  R58 Loss Preventer (white) vs test_bot: Loss Preventer won by checkmate, French Winawer, 102 plies
+    (loss/move 13.1 vs 27.9)
+  R58 stockfih (white) vs Astral: draw by threefold_repetition, English Symmetrical, 96 plies
+    (loss/move 7.3 vs 7.0)
+  R58 SoberCooper (black) vs Anchoa: Anchoa won by checkmate, London System, 134 plies (loss/move
+    20.3 vs 8.1)
   R59 Mite (black) vs Danya's Disciple: draw by threefold_repetition, Nimzo-Indian Defence, 71 plies
     (loss/move 11.1 vs 12.4)
+  R59 AlphaFish (white) vs Loss Preventer: draw by fifty_moves, Sicilian Closed, 218 plies
+    (loss/move 4.7 vs 4.7)
   R59 test_bot (white) vs Poincare conjecture: draw by insufficient_material, Semi-Slav Defence, 216
     plies (loss/move 7.8 vs 7.5)
-  R59 Malnourished Goatis (black) vs SoberCooper: Malnourished Goatis won by checkmate, Pirc
-    Defence, 153 plies (loss/move 12.0 vs 32.9)
+  R59 Comeback arc for PSL God (black) vs SoberCooper: Comeback arc for PSL God won by checkmate,
+    Pirc Defence, 153 plies (loss/move 12.0 vs 32.9)
   R60 BINI Alpha (white) vs Patzer 2.4: BINI Alpha won by checkmate, Caro-Kann Exchange, 110 plies
     (loss/move 8.8 vs 16.5)
-  R60 AlphaFish (black) vs Malnourished Goatis: draw by threefold_repetition, Ruy Lopez, Closed, 392
-    plies (loss/move 1.8 vs 2.0)
-  R60 Loss Preventer (black) vs Anchoa: draw by fifty_moves, Nimzo-Indian Defence, 281 plies
-    (loss/move 0.3 vs 0.3)
   R60 Mite (black) vs Poincare conjecture: draw by threefold_repetition, Scotch Game, 57 plies
     (loss/move 3.1 vs 3.3)
+  R60 AlphaFish (black) vs Comeback arc for PSL God: draw by threefold_repetition, Ruy Lopez,
+    Closed, 392 plies (loss/move 1.8 vs 2.0)
+  R60 Loss Preventer (black) vs Anchoa: draw by fifty_moves, Nimzo-Indian Defence, 281 plies
+    (loss/move 0.3 vs 0.3)
+  R60 test_bot (white) vs Astral: test_bot won by checkmate, London System, 102 plies (loss/move
+    19.0 vs 53.5)
   R61 BINI Alpha (white) vs Danya's Disciple: draw by threefold_repetition, Caro-Kann Advance, 141
     plies (loss/move 11.7 vs 11.2)
   R61 AlphaFish (white) vs SoberCooper: AlphaFish won by checkmate, Sicilian Closed, 89 plies
     (loss/move 9.1 vs 40.5)
   R61 stockfih (white) vs Poincare conjecture: stockfih won by checkmate, Sicilian Sveshnikov, 146
     plies (loss/move 9.1 vs 16.0)
-  R61 Anchoa (black) vs Malnourished Goatis: Malnourished Goatis won by checkmate, Queen's Indian
-    Defence, 114 plies (loss/move 25.5 vs 9.0)
+  R61 Comeback arc for PSL God (white) vs Anchoa: Comeback arc for PSL God won by checkmate, Queen's
+    Indian Defence, 114 plies (loss/move 9.0 vs 25.5)
+  R62  BINI Alpha (white) vs Astral: BINI Alpha won by checkmate, Pirc Defence, 144 plies
   R62 AlphaFish (black) vs Anchoa: draw by threefold_repetition, Queen's Gambit Declined, 98 plies
     (loss/move 3.9 vs 4.5)
-  R62 Loss Preventer (white) vs Malnourished Goatis: Malnourished Goatis won by checkmate, Caro-Kann
-    Classical, 123 plies (loss/move 38.6 vs 11.9)
+  R62 Loss Preventer (white) vs Comeback arc for PSL God: Comeback arc for PSL God won by checkmate,
+    Caro-Kann Classical, 123 plies (loss/move 38.6 vs 11.9)
   R62 Patzer 2.4 (white) vs Challenger: Patzer 2.4 won by checkmate, Caro-Kann Exchange, 140 plies
     (loss/move 8.4 vs 18.2)
+  R63 Mite (white) vs Astral: Mite won by checkmate, French Winawer, 192 plies (loss/move 9.9 vs
+    71.9)
   R63 Patzer 2.4 (black) vs Danya's Disciple: draw by insufficient_material, French Classical, 277
     plies (loss/move 1.7 vs 1.9)
   R63  ms (black) vs test_bot: ms won by checkmate, Scotch Game, 201 plies (loss/move 9.9 vs 16.0)
-  R63 Anchoa (black) vs SoberCooper: SoberCooper won by checkmate, Sicilian Sveshnikov, 310 plies
-    (loss/move 34.2 vs 15.7)
+  R63 SoberCooper (white) vs Anchoa: SoberCooper won by checkmate, Sicilian Sveshnikov, 310 plies
+    (loss/move 15.7 vs 34.2)
   R64 BINI Alpha (white) vs stockfih: stockfih won by checkmate, Italian Game, 95 plies (loss/move
     33.4 vs 11.9)
-  R64 Loss Preventer (white) vs Mite: draw by threefold_repetition, Pirc Defence, 194 plies
-    (loss/move 3.0 vs 2.9)
+  R64 Mite (black) vs Loss Preventer: draw by threefold_repetition, Pirc Defence, 194 plies
+    (loss/move 2.9 vs 3.0)
   R64 test_bot (black) vs Ultron Prime: draw by threefold_repetition, Sicilian Closed, 87 plies
     (loss/move 5.2 vs 6.0)
-  R64 Malnourished Goatis (white) vs SoberCooper: Malnourished Goatis won by checkmate, Ruy Lopez,
-    Closed, 172 plies (loss/move 8.2 vs 16.9)
   R64 Poincare conjecture (white) vs Danya's Disciple: draw by threefold_repetition, London System,
     99 plies (loss/move 4.8 vs 4.5)
+  R64 Comeback arc for PSL God (white) vs SoberCooper: Comeback arc for PSL God won by checkmate,
+    Ruy Lopez, Closed, 172 plies (loss/move 8.2 vs 16.9)
   R65 BINI Alpha (black) vs Poincare conjecture: Poincare conjecture won by checkmate, London
     System, 112 plies (loss/move 31.5 vs 13.8)
-  R65 AlphaFish (white) vs Malnourished Goatis: AlphaFish won by checkmate, Grunfeld Defence, 126
-    plies (loss/move 19.1 vs 29.5)
-  R65 Loss Preventer (black) vs Patzer 2.4: draw by threefold_repetition, Petroff Defence, 215 plies
-    (loss/move 4.7 vs 4.6)
   R65 Mite (white) vs Anchoa: draw by insufficient_material, French Classical, 389 plies (loss/move
     0.6 vs 0.5)
-  R65 ms (white) vs stockfih: ms won by checkmate, Sicilian Closed, 243 plies (loss/move 16.9 vs
-    36.1)
+  R65 AlphaFish (white) vs Comeback arc for PSL God: AlphaFish won by checkmate, Grunfeld Defence,
+    126 plies (loss/move 19.1 vs 29.5)
+  R65 Loss Preventer (black) vs Patzer 2.4: draw by threefold_repetition, Petroff Defence, 215 plies
+    (loss/move 4.7 vs 4.6)
+  R65 stockfih (black) vs ms: ms won by checkmate, Sicilian Closed, 243 plies (loss/move 36.1 vs
+    16.9)
   R65 test_bot (black) vs Danya's Disciple: draw by insufficient_material, English Symmetrical, 285
     plies (loss/move 2.7 vs 2.8)
   R66 BINI Alpha (black) vs test_bot: BINI Alpha won by checkmate, Sicilian Closed, 111 plies
     (loss/move 8.6 vs 26.5)
   R66 AlphaFish (black) vs ms: AlphaFish won by checkmate, Reti Opening, 189 plies (loss/move 9.8 vs
     17.1)
-  R66 SoberCooper (white) vs Poincare conjecture: draw by threefold_repetition, Italian Game, 201
-    plies (loss/move 3.2 vs 3.3)
-  R67 AlphaFish (white) vs SoberCooper: SoberCooper won by checkmate, London System, 201 plies
-    (loss/move 17.8 vs 11.9)
+  R66 Poincare conjecture (black) vs SoberCooper: draw by threefold_repetition, Italian Game, 201
+    plies (loss/move 3.3 vs 3.2)
   R67 Mite (white) vs Patzer 2.4: draw by threefold_repetition, Sicilian Dragon, 21 plies (loss/move
     3.3 vs 3.4)
-  R67 Anchoa (white) vs Poincare conjecture: draw by threefold_repetition, Caro-Kann Classical, 161
-    plies (loss/move 8.2 vs 8.4)
-  R68 Loss Preventer (black) vs Anchoa: draw by threefold_repetition, Reti Opening, 250 plies
-    (loss/move 0.5 vs 0.6)
+  R67 AlphaFish (white) vs SoberCooper: SoberCooper won by checkmate, London System, 201 plies
+    (loss/move 17.8 vs 11.9)
+  R67 Poincare conjecture (black) vs Anchoa: draw by threefold_repetition, Caro-Kann Classical, 161
+    plies (loss/move 8.4 vs 8.2)
   R68 Mite (white) vs Danya's Disciple: draw by threefold_repetition, London System, 137 plies
     (loss/move 6.7 vs 6.2)
-  R68  c1 (black) vs 50CentRaise: draw by threefold_repetition, Queen's Indian Defence, 128 plies
-  R68 ms (black) vs Malnourished Goatis: draw by insufficient_material, Petroff Defence, 348 plies
-    (loss/move 5.0 vs 4.7)
+  R68 Loss Preventer (black) vs Anchoa: draw by threefold_repetition, Reti Opening, 250 plies
+    (loss/move 0.5 vs 0.6)
   R68 stockfih (black) vs Poincare conjecture: draw by threefold_repetition, French Tarrasch, 75
     plies (loss/move 5.8 vs 4.9)
-  R69 Loss Preventer (white) vs ms: ms won by checkmate, Sicilian Closed, 134 plies (loss/move 36.9
-    vs 9.7)
+  R68 ms (black) vs Comeback arc for PSL God: draw by insufficient_material, Petroff Defence, 348
+    plies (loss/move 5.0 vs 4.7)
   R69 Mite (black) vs Poincare conjecture: Mite won by checkmate, Reti Opening, 190 plies (loss/move
     13.5 vs 44.6)
+  R69 Loss Preventer (white) vs ms: ms won by checkmate, Sicilian Closed, 134 plies (loss/move 36.9
+    vs 9.7)
   R69 Patzer 2.4 (white) vs Anchoa: draw by fifty_moves, Queen's Gambit Declined, 327 plies
     (loss/move 6.4 vs 9.1)
   R69 test_bot (white) vs Ultron Prime: draw by fifty_moves, English Symmetrical, 326 plies
     (loss/move 4.0 vs 4.0)
-  R69 Malnourished Goatis (black) vs SoberCooper: Malnourished Goatis won by checkmate, Dutch
-    Stonewall, 263 plies (loss/move 8.9 vs 23.7)
-  R70 AlphaFish (white) vs Malnourished Goatis: draw by insufficient_material, Semi-Slav Defence,
-    538 plies (loss/move 1.3 vs 1.2)
-  R70 Loss Preventer (black) vs Patzer 2.4: Patzer 2.4 won by checkmate, Sicilian Sveshnikov, 204
-    plies (loss/move 15.2 vs 7.4)
+  R69 Comeback arc for PSL God (black) vs SoberCooper: Comeback arc for PSL God won by checkmate,
+    Dutch Stonewall, 263 plies (loss/move 8.9 vs 23.7)
   R70 Mite (white) vs Anchoa: draw by threefold_repetition, Queen's Gambit Declined, 80 plies
     (loss/move 7.3 vs 6.5)
+  R70 AlphaFish (white) vs Comeback arc for PSL God: draw by insufficient_material, Semi-Slav
+    Defence, 538 plies (loss/move 1.3 vs 1.2)
+  R70 Loss Preventer (black) vs Patzer 2.4: Patzer 2.4 won by checkmate, Sicilian Sveshnikov, 204
+    plies (loss/move 15.2 vs 7.4)
   R70 stockfih (black) vs Danya's Disciple: stockfih won by checkmate, Two Knights Defence, 89 plies
     (loss/move 8.3 vs 27.2)
   R70 Ultron Prime (white) vs Poincare conjecture: draw by threefold_repetition, Nimzo-Indian
@@ -529,10 +546,10 @@ e2         .   .   .   .   .   D   .   .   L   D   D   .   .   .   .   L   . DWD
     plies (loss/move 4.4 vs 4.5)
   R72 BINI Alpha (white) vs Loss Preventer: draw by threefold_repetition, Sicilian Classical, 112
     plies (loss/move 14.7 vs 15.9)
-  R72 AlphaFish (white) vs Patzer 2.4: Patzer 2.4 won by checkmate, King's Indian Classical, 129
-    plies (loss/move 42.0 vs 13.4)
   R72 Mite (black) vs SoberCooper: SoberCooper won by checkmate, French Winawer, 130 plies
     (loss/move 19.8 vs 8.1)
+  R72 AlphaFish (white) vs Patzer 2.4: Patzer 2.4 won by checkmate, King's Indian Classical, 129
+    plies (loss/move 42.0 vs 13.4)
   R72 stockfih (white) vs Ultron Prime: stockfih won by checkmate, Pirc Defence, 114 plies
     (loss/move 11.8 vs 39.1)
   R72 Poincare conjecture (white) vs Danya's Disciple: draw by threefold_repetition, Sicilian
@@ -543,161 +560,162 @@ e2         .   .   .   .   .   D   .   .   L   D   D   .   .   .   .   L   . DWD
     plies (loss/move 4.5 vs 4.3)
   R73 Loss Preventer (black) vs Danya's Disciple: Loss Preventer won by checkmate, Reti Opening, 151
     plies (loss/move 15.8 vs 45.2)
-  R73 Patzer 2.4 (black) vs Malnourished Goatis: draw by fifty_moves, Sicilian Taimanov, 209 plies
-    (loss/move 3.9 vs 4.0)
+  R73 Patzer 2.4 (black) vs Comeback arc for PSL God: draw by fifty_moves, Sicilian Taimanov, 209
+    plies (loss/move 3.9 vs 4.0)
   R73 test_bot (white) vs Anchoa: Anchoa won by checkmate, English Symmetrical, 109 plies (loss/move
     46.3 vs 11.4)
   R74 BINI Alpha (white) vs test_bot: draw by threefold_repetition, Catalan Opening, 67 plies
     (loss/move 9.6 vs 7.6)
-  R74 Loss Preventer (black) vs Mite: draw by insufficient_material, Ruy Lopez, Closed, 219 plies
+  R74 Mite (white) vs Loss Preventer: draw by insufficient_material, Ruy Lopez, Closed, 219 plies
     (loss/move 3.7 vs 3.7)
   R74 Patzer 2.4 (white) vs ms: draw by fifty_moves, Sicilian Closed, 346 plies (loss/move 2.6 vs
     2.9)
   R74 Challenger (white) vs Fuzzydafool: draw by insufficient_material, Nimzo-Indian Defence, 120
     plies
-  R74 Malnourished Goatis (black) vs SoberCooper: draw by threefold_repetition, Ruy Lopez, Closed,
-    264 plies (loss/move 1.8 vs 1.5)
+  R74 Comeback arc for PSL God (black) vs SoberCooper: draw by threefold_repetition, Ruy Lopez,
+    Closed, 264 plies (loss/move 1.8 vs 1.5)
   R75 BINI Alpha (black) vs Mite: draw by insufficient_material, Pirc Defence, 204 plies (loss/move
     6.2 vs 6.8)
-  R75 AlphaFish (black) vs Malnourished Goatis: draw by threefold_repetition, Slav Defence, 456
+  R75 AlphaFish (black) vs Comeback arc for PSL God: draw by threefold_repetition, Slav Defence, 456
     plies (loss/move 10.8 vs 10.1)
   R75 Loss Preventer (white) vs test_bot: draw by threefold_repetition, Sicilian Closed, 194 plies
     (loss/move 8.1 vs 8.4)
   R75 Patzer 2.4 (white) vs SoberCooper: draw by insufficient_material, Sicilian Closed, 202 plies
     (loss/move 5.8 vs 6.3)
-  R75 ms (white) vs stockfih: stockfih won by checkmate, Sicilian Closed, 113 plies (loss/move 26.0
-    vs 10.8)
+  R75 stockfih (black) vs ms: stockfih won by checkmate, Sicilian Closed, 113 plies (loss/move 10.8
+    vs 26.0)
   R76 BINI Alpha (black) vs Danya's Disciple: Danya's Disciple won by checkmate, Grunfeld Defence,
     114 plies
   R76  Mite (black) vs Anchoa: Mite won by checkmate, Sicilian Najdorf, 185 plies
-  R76 stockfih (white) vs Malnourished Goatis: stockfih won by checkmate, Caro-Kann Advance, 102
-    plies
-  R76  Ultron Prime (white) vs Challenger: draw by threefold_repetition, London System, 72 plies
-  R76 SoberCooper (white) vs Poincare conjecture: draw by threefold_repetition, King's Indian
+  R76 stockfih (white) vs Comeback arc for PSL God: stockfih won by checkmate, Caro-Kann Advance,
+    102 plies
+  R76  Challenger (black) vs Ultron Prime: draw by threefold_repetition, London System, 72 plies
+  R76 Poincare conjecture (black) vs SoberCooper: draw by threefold_repetition, King's Indian
     Classical, 69 plies
+  R77  Mite (white) vs Patzer 2.4: draw by insufficient_material, Grunfeld Defence, 157 plies
   R77  AlphaFish (black) vs stockfih: AlphaFish won by checkmate, Dutch Stonewall, 183 plies
   R77  Loss Preventer (white) vs Anchoa: draw by insufficient_material, Sicilian Closed, 128 plies
-  R77  Mite (white) vs Patzer 2.4: draw by insufficient_material, Grunfeld Defence, 157 plies
   R77  ms (white) vs SoberCooper: ms won by checkmate, English Symmetrical, 148 plies
   R77 Ultron Prime (white) vs Fuzzydafool: Ultron Prime won by checkmate, Sicilian Sveshnikov, 96
     plies
-  R78  AlphaFish (white) vs ms: draw by threefold_repetition, Petroff Defence, 171 plies
   R78 Mite (white) vs Poincare conjecture: draw by insufficient_material, Sicilian Taimanov, 233
     plies
-  R78 Patzer 2.4 (white) vs Malnourished Goatis: draw by threefold_repetition, Reti Opening, 315
-    plies
+  R78  AlphaFish (white) vs ms: draw by threefold_repetition, Petroff Defence, 171 plies
+  R78 Patzer 2.4 (white) vs Comeback arc for PSL God: draw by threefold_repetition, Reti Opening,
+    315 plies
   R78 Anchoa (white) vs Danya's Disciple: Danya's Disciple won by checkmate, Ruy Lopez, Closed, 128
     plies
+  R79  Mite (black) vs stockfih: draw by threefold_repetition, Nimzo-Indian Defence, 114 plies
   R79  AlphaFish (white) vs Patzer 2.4: draw by fifty_moves, Italian Game, 437 plies
   R79 Loss Preventer (white) vs SoberCooper: draw by insufficient_material, French Tarrasch, 139
     plies
-  R79  Mite (black) vs stockfih: draw by threefold_repetition, Nimzo-Indian Defence, 114 plies
-  R79  ms (white) vs Malnourished Goatis: ms won by checkmate, London System, 192 plies
+  R79  ms (white) vs Comeback arc for PSL God: ms won by checkmate, London System, 192 plies
   R80  BINI Alpha (white) vs Challenger: draw by fifty_moves, Reti Opening, 305 plies
-  R80  AlphaFish (black) vs Mite: draw by threefold_repetition, Sicilian Closed, 116 plies
+  R80  Mite (white) vs AlphaFish: draw by threefold_repetition, Sicilian Closed, 116 plies
   R80 Loss Preventer (black) vs test_bot: Loss Preventer won by checkmate, Sicilian Najdorf, 143
     plies
   R80  Patzer 2.4 (white) vs stockfih: draw by threefold_repetition, Sicilian Closed, 93 plies
-  R80 Malnourished Goatis (black) vs Poincare conjecture: draw by insufficient_material, Caro-Kann
-    Classical, 297 plies
+  R80 Poincare conjecture (white) vs Comeback arc for PSL God: draw by insufficient_material,
+    Caro-Kann Classical, 297 plies
   R80  SoberCooper (white) vs Danya's Disciple: draw by fifty_moves, Reti Opening, 277 plies
+  R81  Mite (white) vs SoberCooper: SoberCooper won by checkmate, English Symmetrical, 120 plies
   R81 Loss Preventer (white) vs Poincare conjecture: draw by threefold_repetition, Two Knights
     Defence, 118 plies
-  R81  Mite (white) vs SoberCooper: SoberCooper won by checkmate, English Symmetrical, 120 plies
   R81  Patzer 2.4 (white) vs ms: Patzer 2.4 won by checkmate, Two Knights Defence, 150 plies
-  R81 stockfih (black) vs Malnourished Goatis: draw by threefold_repetition, Caro-Kann Advance, 96
-    plies
+  R81 stockfih (black) vs Comeback arc for PSL God: draw by threefold_repetition, Caro-Kann Advance,
+    96 plies
   R81 test_bot (black) vs Danya's Disciple: draw by threefold_repetition, Sicilian Closed, 178 plies
   R81  Ultron Prime (black) vs Anchoa: Anchoa won by checkmate, Caro-Kann Exchange, 152 plies
-  R81 Fuzzydafool (black) vs 50CentRaise: draw by threefold_repetition, King's Indian Classical, 198
-    plies
-  R82  AlphaFish (white) vs SoberCooper: AlphaFish won by checkmate, Reti Opening, 228 plies
-  R82 Loss Preventer (black) vs Malnourished Goatis: Loss Preventer won by checkmate, London System,
-    229 plies
   R82  Mite (black) vs test_bot: draw by stalemate, Petroff Defence, 146 plies
+  R82  AlphaFish (white) vs SoberCooper: AlphaFish won by checkmate, Reti Opening, 228 plies
+  R82 Loss Preventer (black) vs Comeback arc for PSL God: Loss Preventer won by checkmate, London
+    System, 229 plies
   R82 Patzer 2.4 (black) vs Poincare conjecture: Patzer 2.4 won by checkmate, Reti Opening, 155
     plies
-  R82  ms (black) vs stockfih: stockfih won by checkmate, Sicilian Closed, 130 plies
-  R82  Ultron Prime (black) vs Challenger: draw by fifty_moves, Semi-Slav Defence, 203 plies
-  R82  e=π=2 (white) vs 50CentRaise: draw by insufficient_material, French Classical, 218 plies
+  R82  stockfih (white) vs ms: stockfih won by checkmate, Sicilian Closed, 130 plies
+  R82  Challenger (white) vs Ultron Prime: draw by fifty_moves, Semi-Slav Defence, 203 plies
   R83  BINI Alpha (black) vs c1: BINI Alpha won by checkmate, Queen's Gambit Declined, 176 plies
+  R83  Mite (black) vs Danya's Disciple: Mite won by checkmate, Queen's Indian Defence, 227 plies
   R83  AlphaFish (black) vs stockfih: draw by insufficient_material, Sicilian Sveshnikov, 122 plies
   R83  Loss Preventer (white) vs Patzer 2.4: draw by threefold_repetition, Sicilian Closed, 71 plies
-  R83  Mite (black) vs Danya's Disciple: Mite won by checkmate, Queen's Indian Defence, 227 plies
   R83  ms (white) vs Poincare conjecture: draw by fifty_moves, Queen's Indian Defence, 222 plies
   R83  test_bot (black) vs SoberCooper: draw by threefold_repetition, Sicilian Closed, 112 plies
-  R83  Fuzzydafool (black) vs e=π=2: draw by threefold_repetition, French Classical, 75 plies
+  R83  e=π=2 (white) vs Fuzzydafool: draw by threefold_repetition, French Classical, 75 plies
+  R83  Anchoa (white) vs Astral: draw by fifty_moves, French Advance, 238 plies
+  R84  Mite (black) vs Comeback arc for PSL God: draw by fifty_moves, Sicilian Sveshnikov, 179 plies
   R84  AlphaFish (black) vs Patzer 2.4: draw by ply_cap, Nimzo-Indian Defence, 588 plies
   R84  Loss Preventer (white) vs stockfih: draw by stalemate, Nimzo-Indian Defence, 131 plies
-  R84  Mite (black) vs Malnourished Goatis: draw by fifty_moves, Sicilian Sveshnikov, 179 plies
   R84  ms (black) vs SoberCooper: draw by threefold_repetition, French Advance, 152 plies
+  R84  Challenger (black) vs Astral: Astral won by checkmate, Dutch Stonewall, 228 plies
   R84  Anchoa (white) vs Danya's Disciple: Anchoa won by checkmate, Sicilian Closed, 192 plies
+  R85  BINI Alpha (black) vs Astral: draw by threefold_repetition, Ruy Lopez, Closed, 63 plies
+  R85  Mite (white) vs ms: draw by threefold_repetition, Sicilian Closed, 78 plies
   R85 AlphaFish (white) vs Loss Preventer: AlphaFish won by checkmate, Nimzo-Indian Defence, 134
     plies
-  R85  Mite (white) vs ms: draw by threefold_repetition, Sicilian Closed, 78 plies
   R85  Patzer 2.4 (white) vs stockfih: stockfih won by checkmate, Pirc Defence, 157 plies
   R85  c1 (white) vs e=π=2: draw by threefold_repetition, Ruy Lopez, Closed, 115 plies
-  R85 Malnourished Goatis (white) vs Poincare conjecture: draw by threefold_repetition, Grunfeld
-    Defence, 28 plies
-  R86  AlphaFish (white) vs Mite: Mite won by checkmate, Sicilian Closed, 125 plies
+  R85 Poincare conjecture (black) vs Comeback arc for PSL God: draw by threefold_repetition,
+    Grunfeld Defence, 28 plies
+  R86  Mite (black) vs AlphaFish: Mite won by checkmate, Sicilian Closed, 125 plies
   R86 Loss Preventer (black) vs Poincare conjecture: Poincare conjecture won by checkmate,
     Nimzo-Indian Defence, 228 plies
   R86  Patzer 2.4 (black) vs ms: draw by fifty_moves, Sicilian Dragon, 319 plies
-  R86 stockfih (white) vs Malnourished Goatis: stockfih won by checkmate, Sicilian Taimanov, 146
-    plies
+  R86 stockfih (white) vs Comeback arc for PSL God: stockfih won by checkmate, Sicilian Taimanov,
+    146 plies
   R86  test_bot (black) vs Ultron Prime: draw by threefold_repetition, Sicilian Classical, 118 plies
+  R86  Danya's Disciple (black) vs Astral: Danya's Disciple won by checkmate, Reti Opening, 96 plies
   R87 BINI Alpha (black) vs Danya's Disciple: draw by insufficient_material, Pirc Defence, 262 plies
+  R87  Mite (white) vs stockfih: draw by threefold_repetition, Sicilian Classical, 208 plies
   R87 AlphaFish (white) vs Poincare conjecture: AlphaFish won by checkmate, Sicilian Closed, 146
     plies
   R87  Loss Preventer (white) vs ms: ms won by checkmate, Sicilian Taimanov, 117 plies
-  R87  Mite (white) vs stockfih: draw by threefold_repetition, Sicilian Classical, 208 plies
   R87  Patzer 2.4 (white) vs SoberCooper: SoberCooper won by checkmate, French Advance, 117 plies
   R87  Ultron Prime (white) vs Anchoa: draw by insufficient_material, Sicilian Classical, 287 plies
-  R87  Challenger (white) vs 50CentRaise: Challenger won by checkmate, London System, 181 plies
   R88  BINI Alpha (white) vs c1: draw by insufficient_material, English Symmetrical, 522 plies
+  R88  Mite (white) vs SoberCooper: draw by fifty_moves, Reti Opening, 192 plies
   R88  AlphaFish (black) vs stockfih: AlphaFish won by checkmate, Catalan Opening, 152 plies
   R88 Loss Preventer (white) vs Patzer 2.4: draw by threefold_repetition, Semi-Slav Defence, 150
     plies
-  R88  Mite (white) vs SoberCooper: draw by fifty_moves, Reti Opening, 192 plies
-  R88 ms (white) vs Malnourished Goatis: draw by insufficient_material, Two Knights Defence, 182
-    plies
+  R88 ms (white) vs Comeback arc for PSL God: draw by insufficient_material, Two Knights Defence,
+    182 plies
   R88  test_bot (black) vs Anchoa: draw by insufficient_material, Sicilian Classical, 230 plies
+  R88  Fuzzydafool (black) vs Astral: Fuzzydafool won by checkmate, Sicilian Closed, 102 plies
   R89  BINI Alpha (white) vs Challenger: BINI Alpha won by checkmate, English Symmetrical, 106 plies
-  R89  AlphaFish (black) vs ms: draw by threefold_repetition, Queen's Gambit Declined, 263 plies
-  R89 Loss Preventer (black) vs Malnourished Goatis: draw by threefold_repetition, Italian Game, 147
-    plies
   R89  Mite (white) vs Patzer 2.4: draw by fifty_moves, Sicilian Taimanov, 212 plies
+  R89  AlphaFish (black) vs ms: draw by threefold_repetition, Queen's Gambit Declined, 263 plies
+  R89 Loss Preventer (black) vs Comeback arc for PSL God: draw by threefold_repetition, Italian
+    Game, 147 plies
   R89  c1 (black) vs test_bot: draw by fifty_moves, Sicilian Sveshnikov, 243 plies
   R89  stockfih (black) vs SoberCooper: draw by fifty_moves, King's Indian Classical, 333 plies
   R89  Anchoa (black) vs Danya's Disciple: draw by fifty_moves, Nimzo-Indian Defence, 270 plies
-  R89  Fuzzydafool (white) vs 50CentRaise: Fuzzydafool won by checkmate, Sicilian Dragon, 112 plies
   R90  BINI Alpha (black) vs Patzer 2.4: draw by insufficient_material, Sicilian Closed, 193 plies
+  R90 Mite (black) vs Comeback arc for PSL God: Comeback arc for PSL God won by checkmate, King's
+    Indian Classical, 126 plies
   R90  AlphaFish (white) vs SoberCooper: AlphaFish won by checkmate, Ruy Lopez, Closed, 348 plies
-  R90 Mite (black) vs Malnourished Goatis: Malnourished Goatis won by checkmate, King's Indian
-    Classical, 126 plies
   R90  c1 (white) vs Fuzzydafool: c1 won by checkmate, English Symmetrical, 156 plies
-  R90  ms (black) vs stockfih: draw by threefold_repetition, Sicilian Classical, 125 plies
+  R90  stockfih (white) vs ms: draw by threefold_repetition, Sicilian Classical, 125 plies
   R90 test_bot (black) vs Danya's Disciple: draw by threefold_repetition, Sicilian Najdorf, 95 plies
-  R90 Anchoa (black) vs Poincare conjecture: draw by threefold_repetition, Semi-Slav Defence, 317
+  R90 Poincare conjecture (white) vs Anchoa: draw by threefold_repetition, Semi-Slav Defence, 317
     plies
   R91 BINI Alpha (white) vs Poincare conjecture: BINI Alpha won by checkmate, King's Indian
     Classical, 106 plies
-  R91 AlphaFish (white) vs Malnourished Goatis: draw by threefold_repetition, Sicilian Taimanov, 134
-    plies
+  R91 AlphaFish (white) vs Comeback arc for PSL God: draw by threefold_repetition, Sicilian
+    Taimanov, 134 plies
   R91  Loss Preventer (black) vs stockfih: draw by fifty_moves, English Symmetrical, 211 plies
   R91  Patzer 2.4 (black) vs c1: draw by insufficient_material, English Symmetrical, 223 plies
   R91  ms (black) vs SoberCooper: draw by threefold_repetition, Petroff Defence, 101 plies
+  R91  Challenger (white) vs Astral: draw by threefold_repetition, London System, 82 plies
   R91  test_bot (black) vs Ultron Prime: draw by fifty_moves, Caro-Kann Classical, 406 plies
   R91 Danya's Disciple (black) vs Fuzzydafool: Danya's Disciple won by checkmate, English
     Symmetrical, 251 plies
   R92  BINI Alpha (black) vs SoberCooper: BINI Alpha won by checkmate, French Tarrasch, 125 plies
-  R92  AlphaFish (black) vs Mite: draw by fifty_moves, Petroff Defence, 426 plies
+  R92  Mite (white) vs AlphaFish: draw by fifty_moves, Petroff Defence, 426 plies
   R92  Loss Preventer (black) vs ms: draw by threefold_repetition, Caro-Kann Exchange, 68 plies
   R92  Patzer 2.4 (white) vs Anchoa: draw by insufficient_material, English Symmetrical, 251 plies
   R92  c1 (white) vs Danya's Disciple: draw by threefold_repetition, London System, 97 plies
-  R92 stockfih (black) vs Malnourished Goatis: stockfih won by checkmate, Caro-Kann Classical, 129
-    plies
-  R92  Fuzzydafool (black) vs e=π=2: e=π=2 won by checkmate, Two Knights Defence, 174 plies
+  R92 stockfih (black) vs Comeback arc for PSL God: stockfih won by checkmate, Caro-Kann Classical,
+    129 plies
+  R92  e=π=2 (white) vs Fuzzydafool: e=π=2 won by checkmate, Two Knights Defence, 174 plies
   R93  BINI Alpha (white) vs Mite: BINI Alpha won by checkmate, Caro-Kann Advance, 150 plies
   R93  AlphaFish (white) vs stockfih: draw by fifty_moves, Caro-Kann Classical, 212 plies
   R93 Loss Preventer (white) vs SoberCooper: SoberCooper won by checkmate, Sicilian Classical, 81
@@ -705,170 +723,179 @@ e2         .   .   .   .   .   D   .   .   L   D   D   .   .   .   .   L   . DWD
   R93 Patzer 2.4 (black) vs Danya's Disciple: draw by threefold_repetition, Sicilian Closed, 70
     plies
   R93  c1 (black) vs Anchoa: c1 won by checkmate, Sicilian Closed, 279 plies
-  R93 ms (white) vs Malnourished Goatis: draw by insufficient_material, English Symmetrical, 170
-    plies
+  R93 ms (white) vs Comeback arc for PSL God: draw by insufficient_material, English Symmetrical,
+    170 plies
   R93  BetaGo (black) vs Fuzzydafool: BetaGo won by checkmate, French Classical, 160 plies
+  R93 Poincare conjecture (black) vs Astral: draw by threefold_repetition, Grunfeld Defence, 202
+    plies
   R94  BINI Alpha (white) vs AlphaFish: draw by threefold_repetition, Ruy Lopez, Closed, 86 plies
+  R94  Mite (white) vs Danya's Disciple: Mite won by checkmate, Sicilian Taimanov, 144 plies
   R94 Loss Preventer (black) vs Ultron Prime: Loss Preventer won by checkmate, Catalan Opening, 148
     plies
-  R94  Mite (white) vs Danya's Disciple: Mite won by checkmate, Sicilian Taimanov, 144 plies
   R94  Patzer 2.4 (white) vs ms: draw by fifty_moves, Caro-Kann Advance, 225 plies
   R94  c1 (black) vs stockfih: draw by insufficient_material, Sicilian Closed, 181 plies
-  R94  test_bot (black) vs Anchoa: draw by threefold_repetition, Sicilian Najdorf, 266 plies
   R94  Challenger (white) vs e=π=2: draw by threefold_repetition, Sicilian Closed, 119 plies
-  R94 Malnourished Goatis (white) vs SoberCooper: draw by threefold_repetition, Sicilian Closed, 217
-    plies
+  R94  test_bot (black) vs Anchoa: draw by threefold_repetition, Sicilian Najdorf, 266 plies
+  R94 Comeback arc for PSL God (white) vs SoberCooper: draw by threefold_repetition, Sicilian
+    Closed, 217 plies
   R95  BINI Alpha (black) vs stockfih: BINI Alpha won by checkmate, Sicilian Taimanov, 111 plies
-  R95  AlphaFish (black) vs c1: draw by insufficient_material, Sicilian Dragon, 157 plies
-  R95 Loss Preventer (white) vs Malnourished Goatis: Loss Preventer won by checkmate, Sicilian
-    Sveshnikov, 172 plies
   R95  Mite (black) vs ms: draw by threefold_repetition, Grunfeld Defence, 309 plies
+  R95  AlphaFish (black) vs c1: draw by insufficient_material, Sicilian Dragon, 157 plies
+  R95 Loss Preventer (white) vs Comeback arc for PSL God: Loss Preventer won by checkmate, Sicilian
+    Sveshnikov, 172 plies
   R95  Patzer 2.4 (black) vs SoberCooper: Patzer 2.4 won by checkmate, Petroff Defence, 134 plies
-  R95  Ultron Prime (white) vs Anchoa: draw by insufficient_material, Sicilian Closed, 186 plies
   R95 BetaGo (white) vs Danya's Disciple: draw by threefold_repetition, Sicilian Classical, 130
     plies
+  R95  Ultron Prime (white) vs Anchoa: draw by insufficient_material, Sicilian Closed, 186 plies
   R96  BINI Alpha (black) vs c1: BINI Alpha won by checkmate, French Classical, 113 plies
+  R96  Mite (white) vs stockfih: Mite won by checkmate, Dutch Stonewall, 164 plies
   R96  AlphaFish (white) vs Patzer 2.4: draw by threefold_repetition, Ruy Lopez, Closed, 275 plies
   R96 Loss Preventer (black) vs Danya's Disciple: draw by threefold_repetition, Two Knights Defence,
     93 plies
-  R96  Mite (white) vs stockfih: Mite won by checkmate, Dutch Stonewall, 164 plies
   R96  ms (black) vs SoberCooper: draw by threefold_repetition, Queen's Indian Defence, 101 plies
-  R96  test_bot (black) vs 50CentRaise: 50CentRaise won by checkmate, Sicilian Closed, 112 plies
-  R96  Ultron Prime (black) vs e=π=2: draw by fifty_moves, Petroff Defence, 203 plies
   R96  Challenger (black) vs Anchoa: Anchoa won by checkmate, French Advance, 148 plies
-  R96 BetaGo (white) vs Malnourished Goatis: draw by threefold_repetition, Caro-Kann Exchange, 110
-    plies
+  R96 BetaGo (white) vs Comeback arc for PSL God: draw by threefold_repetition, Caro-Kann Exchange,
+    110 plies
+  R96  Ultron Prime (black) vs e=π=2: draw by fifty_moves, Petroff Defence, 203 plies
+  R96  Fuzzydafool (white) vs Astral: Fuzzydafool won by checkmate, Grunfeld Defence, 142 plies
   R97  BINI Alpha (black) vs Patzer 2.4: BINI Alpha won by checkmate, Reti Opening, 108 plies
-  R97  AlphaFish (black) vs Mite: draw by fifty_moves, Reti Opening, 296 plies
+  R97  Mite (white) vs AlphaFish: draw by fifty_moves, Reti Opening, 296 plies
   R97 Loss Preventer (white) vs stockfih: Loss Preventer won by checkmate, Sicilian Closed, 49 plies
   R97  c1 (black) vs ms: draw by threefold_repetition, Sicilian Classical, 127 plies
-  R97  Ultron Prime (black) vs Challenger: draw by threefold_repetition, Sicilian Closed, 71 plies
-  R97  Anchoa (black) vs 50CentRaise: draw by fifty_moves, Caro-Kann Classical, 496 plies
+  R97  Challenger (white) vs Ultron Prime: draw by threefold_repetition, Sicilian Closed, 71 plies
   R97  BetaGo (white) vs SoberCooper: draw by threefold_repetition, Semi-Slav Defence, 192 plies
-  R97 Malnourished Goatis (white) vs Danya's Disciple: draw by threefold_repetition, Ruy Lopez,
-    Closed, 205 plies
   R97 Poincare conjecture (white) vs e=π=2: Poincare conjecture won by checkmate, Queen's Gambit
     Accepted, 208 plies
+  R97 Comeback arc for PSL God (white) vs Danya's Disciple: draw by threefold_repetition, Ruy Lopez,
+    Closed, 205 plies
   R98  BINI Alpha (white) vs Mite: Mite won by checkmate, Sicilian Dragon, 179 plies
   R98  AlphaFish (white) vs Loss Preventer: AlphaFish won by checkmate, Reti Opening, 150 plies
   R98  Patzer 2.4 (black) vs stockfih: Patzer 2.4 won by checkmate, Ruy Lopez, Closed, 263 plies
   R98  c1 (white) vs Poincare conjecture: draw by threefold_repetition, Petroff Defence, 138 plies
   R98  ms (black) vs Anchoa: draw by fifty_moves, Sicilian Najdorf, 230 plies
   R98  Challenger (white) vs Fuzzydafool: Fuzzydafool won by checkmate, Sicilian Closed, 122 plies
-  R98 Malnourished Goatis (white) vs 50CentRaise: Malnourished Goatis won by checkmate, Caro-Kann
-    Advance, 148 plies
   R98 SoberCooper (black) vs Danya's Disciple: draw by threefold_repetition, London System, 91 plies
+  R99  BINI Alpha (white) vs AlphaFish: draw by insufficient_material, Pirc Defence, 128 plies
+  R99  Mite (black) vs Patzer 2.4: Patzer 2.4 won by checkmate, French Tarrasch, 126 plies
+  R99  Loss Preventer (white) vs ms: draw by threefold_repetition, Scotch Game, 47 plies
+  R99  c1 (white) vs Anchoa: draw by fifty_moves, Sicilian Sveshnikov, 495 plies
+  R99 stockfih (white) vs Comeback arc for PSL God: draw by threefold_repetition, French Winawer, 37
+    plies
+  R99  test_bot (white) vs e=π=2: test_bot won by checkmate, English Symmetrical, 152 plies
+  R99 BetaGo (black) vs Poincare conjecture: draw by insufficient_material, Caro-Kann Advance, 152
+    plies
   R99  Danya's Disciple (white) vs Fuzzydafool: draw by fifty_moves, Reti Opening, 324 plies
-  R100 BINI Alpha (white) vs Loss Preventer: Loss Preventer won by checkmate, Sicilian Najdorf, 157
-    plies
-  R100 AlphaFish (white) vs stockfih: draw by threefold_repetition, English Symmetrical, 202 plies
-  R100 Mite (white) vs Malnourished Goatis: draw by threefold_repetition, Sicilian Classical, 60
-    plies
-  R100 Patzer 2.4 (black) vs ms: draw by insufficient_material, Reti Opening, 174 plies
-  R100 c1 (black) vs BetaGo: draw by insufficient_material, Sicilian Classical, 227 plies
-  R100 test_bot (black) vs SoberCooper: draw by fifty_moves, Sicilian Najdorf, 193 plies
   R100 Ultron Prime (black) vs Fuzzydafool: draw by threefold_repetition, Sicilian Dragon, 170 plies
-  R100 Anchoa (white) vs Poincare conjecture: Anchoa won by checkmate, Petroff Defence, 251 plies
+  R100 Poincare conjecture (black) vs Anchoa: Anchoa won by checkmate, Petroff Defence, 251 plies
   R101 BINI Alpha (black) vs Anchoa: BINI Alpha won by checkmate, Sicilian Closed, 137 plies
+  R101 Mite (black) vs Loss Preventer: draw by fifty_moves, Sicilian Closed, 162 plies
   R101 AlphaFish (black) vs Patzer 2.4: AlphaFish won by checkmate, Nimzo-Indian Defence, 191 plies
-  R101 Loss Preventer (white) vs Mite: draw by fifty_moves, Sicilian Closed, 162 plies
   R101 c1 (black) vs stockfih: c1 won by checkmate, Sicilian Closed, 133 plies
-  R101 ms (black) vs Malnourished Goatis: ms won by checkmate, French Classical, 162 plies
-  R101 test_bot (white) vs 50CentRaise: test_bot won by checkmate, Sicilian Dragon, 180 plies
-  R101 Ultron Prime (black) vs Danya's Disciple: Ultron Prime won by checkmate, French Tarrasch, 147
-    plies
+  R101 ms (black) vs Comeback arc for PSL God: ms won by checkmate, French Classical, 162 plies
   R101 Challenger (white) vs BetaGo: draw by threefold_repetition, Caro-Kann Advance, 121 plies
-  R101 SoberCooper (black) vs Poincare conjecture: draw by fifty_moves, Sicilian Closed, 253 plies
-  R101 Fuzzydafool (white) vs e=π=2: draw by threefold_repetition, Petroff Defence, 134 plies
   R102 BINI Alpha (black) vs Patzer 2.4: draw by insufficient_material, Sicilian Dragon, 237 plies
-  R102 AlphaFish (white) vs Mite: Mite won by checkmate, Scotch Game, 145 plies
+  R102 Mite (black) vs AlphaFish: Mite won by checkmate, Scotch Game, 145 plies
   R102 Loss Preventer (black) vs c1: draw by threefold_repetition, London System, 84 plies
-  R102 ms (white) vs stockfih: stockfih won by checkmate, Sicilian Closed, 145 plies
-  R102 test_bot (black) vs Ultron Prime: draw by threefold_repetition, French Tarrasch, 23 plies
+  R102 stockfih (black) vs ms: stockfih won by checkmate, Sicilian Closed, 145 plies
   R102 Challenger (white) vs Anchoa: Challenger won by checkmate, Caro-Kann Advance, 140 plies
-  R102 BetaGo (white) vs Malnourished Goatis: draw by insufficient_material, London System, 145
-    plies
-  R102 SoberCooper (white) vs Fuzzydafool: SoberCooper won by checkmate, English Symmetrical, 198
+  R102 test_bot (black) vs Ultron Prime: draw by threefold_repetition, French Tarrasch, 23 plies
+  R102 BetaGo (white) vs Comeback arc for PSL God: draw by insufficient_material, London System, 145
     plies
   R102 Poincare conjecture (white) vs Danya's Disciple: Poincare conjecture won by checkmate,
     English Symmetrical, 92 plies
-  R102 e=π=2 (white) vs 50CentRaise: e=π=2 won by checkmate, Sicilian Closed, 154 plies
+  R102 SoberCooper (white) vs Fuzzydafool: SoberCooper won by checkmate, English Symmetrical, 198
+    plies
+  R103 BINI Alpha (black) vs Mite: Mite won by checkmate, London System, 126 plies
+  R103 AlphaFish (black) vs Loss Preventer: draw by threefold_repetition, Sicilian Taimanov, 60
+    plies
+  R103 Patzer 2.4 (white) vs c1: Patzer 2.4 won by checkmate, French Classical, 139 plies
+  R103 stockfih (white) vs Challenger: draw by threefold_repetition, Sicilian Closed, 144 plies
+  R103 ms (black) vs test_bot: draw by threefold_repetition, Sicilian Dragon, 130 plies
+  R103 BetaGo (black) vs Ultron Prime: draw by threefold_repetition, Scotch Game, 94 plies
+  R103 Poincare conjecture (black) vs Comeback arc for PSL God: draw by threefold_repetition, Reti
+    Opening, 106 plies
+  R103 SoberCooper (black) vs e=π=2: draw by threefold_repetition, Petroff Defence, 127 plies
+  R103 Anchoa (black) vs Danya's Disciple: draw by threefold_repetition, Ruy Lopez, Closed, 122
+    plies
+  R103 Fuzzydafool (white) vs Astral: draw by insufficient_material, Grunfeld Defence, 365 plies
+  R104 Anchoa (white) vs Fuzzydafool: Anchoa won by checkmate, Semi-Slav Defence, 116 plies
 
 TIME MANAGEMENT (top 20)
 Bot                 mean   med   max       q1-q3   end   min  <5s inst%  swing   calm
-BINI Alpha           1.8  1.53  14.9   0.78-2.40    33   6.2    0   6.1   1.87   1.90
-AlphaFish           1.52  1.25   6.3   0.65-2.21    25   3.4    4   8.9   1.25   1.55
-Loss Preventer      1.64   1.3  11.6   0.83-2.02    43   6.5    1   4.5   1.98   1.65
-Mite                1.73  1.35  13.7   0.55-2.47    22   3.1    2   8.9   1.57   1.78
-Patzer 2.4          1.52  1.28   8.6   0.72-1.97    34   9.3    0   3.9   1.24   1.62
-c1                  1.96  1.54  11.5   0.67-2.81    17   2.9   45   8.3   1.69   2.06
-ms                  1.84  1.27  13.6   0.59-2.90    14   3.8   32   7.6   1.29   1.84
-stockfih            1.96  1.56  12.6   0.85-2.68    22   1.5    8   8.0   1.33   2.04
-test_bot            1.87  1.12  11.8   0.53-2.69    11   1.2   53   4.4   1.39   1.95
-Ultron Prime        1.88  1.37  12.7   0.66-2.64    18   2.9   33   5.5   1.82   1.98
-Challenger          1.72  1.55   8.3   0.85-2.37    34   6.3    1   4.8   1.65   1.78
-Anchoa              1.61   1.2  12.6   0.60-2.30    26   4.3   19   7.5   1.57   1.64
-BetaGo              2.13  1.31  17.5   0.64-2.83    12   2.4   33   6.0   1.62   2.27
-Malnourished Goati   1.7   1.4  13.0   0.67-2.45    24   5.5   10   8.8   1.36   1.65
-SoberCooper         1.65  1.23  12.9   0.57-2.31    26   0.9    1   8.7   1.12   1.68
-Poincare conjectur  1.63   1.6   7.7   0.92-2.09    35   7.9    0   4.2   1.50   1.62
-Danya's Disciple     1.8  1.42   9.5   0.75-2.63    22   4.3    3   5.2   1.44   1.81
-Fuzzydafool          1.8  1.49  13.1   0.59-2.58    17   1.0   43   9.3   1.66   1.89
-e=π=2               2.11  2.15  25.2   0.98-3.05    28   1.2    4   7.4   2.16   2.28
-50CentRaise         1.76  1.35  10.0   0.65-2.32    23   5.6   11   6.2   1.73   1.76
+BINI Alpha           1.8  1.54  14.9   0.79-2.42    33   6.2    0   6.0   1.87   1.90
+Mite                1.73  1.35  13.7   0.55-2.48    22   3.1    2   9.1   1.57   1.78
+AlphaFish           1.53  1.26   6.3   0.65-2.23    25   3.4    3   9.1   1.25   1.55
+Loss Preventer      1.64   1.3  11.6   0.84-2.03    44   6.5    1   4.3   1.98   1.65
+Patzer 2.4          1.53  1.28   8.6   0.73-1.98    34   9.3    0   3.9   1.24   1.62
+c1                  1.93  1.51  11.5   0.65-2.79    17   2.9   46   8.0   1.69   2.06
+stockfih            1.97  1.57  12.6   0.86-2.70    23   1.5    8   8.0   1.33   2.04
+ms                  1.84  1.29  13.6   0.59-2.90    14   3.8   31   7.6   1.29   1.84
+Challenger          1.72  1.55   8.3   0.85-2.37    34   6.3    1   4.7   1.65   1.78
+test_bot            1.88  1.13  11.8   0.53-2.71    10   1.2   54   4.4   1.39   1.95
+BetaGo              2.16  1.36  17.5   0.66-2.88    12   2.4   33   5.8   1.62   2.27
+Ultron Prime        1.88  1.38  12.7   0.66-2.63    18   2.9   34   5.4   1.82   1.98
+Poincare conjectur  1.64   1.6   7.7   0.93-2.10    35   7.9    0   4.3   1.50   1.62
+Comeback arc for P  1.71  1.42  13.0   0.67-2.46    24   5.5   10   8.7   1.36   1.65
+SoberCooper         1.65  1.23  12.9   0.57-2.31    26   0.9    1   9.2   1.12   1.68
+e=π=2               2.12  2.16  25.2   0.98-3.05    28   1.2    4   7.1   2.16   2.28
+Anchoa               1.6  1.18  12.6   0.59-2.28    25   4.3   20   7.3   1.57   1.64
+Danya's Disciple    1.81  1.42   9.5   0.76-2.64    21   4.3    3   5.2   1.44   1.81
+Fuzzydafool         1.79  1.48  13.1   0.59-2.56    16   1.0   44   8.9   1.66   1.89
+Astral              2.06   1.6  15.6   0.65-3.09    13   2.9   47   8.7   1.20   2.16
   seconds per own move; end/min = clock left at the end (mean/min); swing/calm = s per move after a
     >100 cp swing vs otherwise
 
 DRAWS AND CONVERSION (top 20)
 Bot                draws 3fold fifty insuf  repA  repB  won+  nonC lost- saved
-BINI Alpha            27    14     5     8     0     0    25     1    16     5
-AlphaFish             42    22     6    13     1     0    38     4     6     1
-Loss Preventer        36    23     4     8     0     1    30     1    21     1
-Mite                  36    19    10     6     0     0    19     2    10     1
-Patzer 2.4            52    24    14    12     0     2    32     2    14     3
-c1                    25    13     2    10     0     0    21     0    19     0
-ms                    42    27     5    10     1     0    36     3    15     0
-stockfih              34    23     4     6     2     0    30     4    20     1
-test_bot              44    28     8     7     0     2    27     2    18     2
-Ultron Prime          36    17    13     5     0     1    31     2    23     3
-Challenger            34    20    10     4     1     0    29     2    20     1
-Anchoa                49    21    14    13     0     0    26     0    13     1
-BetaGo                14     8     3     3     0     0    10     0     2     1
-Malnourished Goati    33    22     2     9     0     0    26     0    11     2
-SoberCooper           47    25    12     9     0     1    35     5    15     3
-Poincare conjectur    37    19     6    12     0     0    19     0     9     1
-Danya's Disciple      44    33     5     6     2     1    31     2    20     1
-Fuzzydafool           40    22     7    10     0     1    26     2    25     5
-e=π=2                 27    19     4     3     2     0    25     7    20     4
-50CentRaise           27    19     4     4     0     1    17     2    24     4
+BINI Alpha            28    14     5     9     0     0    25     1    16     5
+Mite                  35    18    10     6     0     0    19     2    10     1
+AlphaFish             43    22     6    14     1     0    38     4     6     1
+Loss Preventer        38    25     4     8     0     1    30     1    21     1
+Patzer 2.4            51    24    14    11     0     2    32     2    14     3
+c1                    25    13     3     9     0     0    21     0    19     0
+stockfih              35    24     4     6     2     0    30     4    20     1
+ms                    43    29     5     9     1     0    36     3    15     0
+Challenger            35    21    10     4     1     0    29     2    20     1
+test_bot              44    29     7     7     0     2    27     2    18     2
+BetaGo                15     9     3     3     0     0    10     0     2     1
+Ultron Prime          38    18    14     5     0     1    31     2    23     3
+Poincare conjectur    37    20     5    12     0     0    19     0     9     1
+Comeback arc for P    35    24     2     9     0     0    26     0    11     2
+SoberCooper           48    26    12     9     0     1    35     5    15     3
+e=π=2                 28    20     4     3     2     0    25     7    20     4
+Anchoa                51    22    15    13     0     0    26     0    13     1
+Danya's Disciple      45    34     5     6     2     1    31     2    20     1
+Fuzzydafool           41    22     7    11     0     1    26     2    25     5
+Astral                35    24     2     9     1     0    24     1    23     2
   repA/repB = repetition draws while ahead/behind by 150+; won+ = games that reached +300; nonC =
     those not won; lost- = games at -300; saved = those not lost
 
 WHAT CHANGED SINCE LAST REFRESH
-Compared with history/summary_20260910_1909.txt:
-  BINI Alpha: rating 2826 -> 2857, games 73 -> 74 (35-25-15)
-  AlphaFish: rating 2807 -> 2846, games 87 -> 88 (43-38-8)
-  Loss Preventer: rank 5 -> 3, rating 2750 -> 2755, games 96 -> 97 (38-35-25)
-  Mite: rating 2761 -> 2750, games 71 -> 72 (25-35-13)
-  Patzer 2.4: rank 3 -> 5, rating 2772 -> 2744, games 91 -> 92 (34-44-15)
-  c1: rank 10 -> 6, rating 2645 -> 2692, games 92 -> 93 (39-26-29)
-  ms: rank 9 -> 7, rating 2671 -> 2686, games 93 -> 94 (38-39-18)
-  stockfih: rating 2677 -> 2662, games 87 -> 88 (32-31-26)
-  test_bot: rank 14 -> 9, rating 2593 -> 2643, games 86 -> 87 (32-37-19)
-  Ultron Prime: rank 19 -> 10, rating 2527 -> 2637, games 93 -> 94 (36-37-22)
-  Challenger: rating 2624 -> 2632, games 96 -> 97 (42-33-23)
-  Anchoa: rank 6 -> 12, rating 2692 -> 2629, games 89 -> 90 (32-42-17)
-  BetaGo: rank 12 -> 13, rating 2612 -> 2624, games 55 -> 56 (23-14-10)
-  Malnourished Goatis: rank 7 -> 14, rating 2691 -> 2609, games 77 -> 78 (29-34-16)
-  SoberCooper: rank 13 -> 15, rating 2597 -> 2595, games 91 -> 92 (35-40-18)
-  Poincare conjecture: rank 17 -> 16, rating 2578 -> 2590, games 73 -> 74 (26-36-13)
-  Danya's Disciple: rank 16 -> 17, rating 2586 -> 2564, games 89 -> 90 (33-34-24)
-  Fuzzydafool: rating 2555 -> 2561, games 70 -> 71 (26-21-25)
-  e=π=2: rank 20 -> 19, rating 2504 -> 2525, games 92 -> 93 (40-28-26)
-  50CentRaise: rank 15 -> 20, rating 2587 -> 2522, games 88 -> 89 (33-25-32)
+Compared with history/summary_20260910_2015.txt:
+  new in the table: Astral (rank 20)
+  dropped out: 50CentRaise (was rank 20)
+  BINI Alpha: rating 2857 -> 2847, games 74 -> 75 (35-25-16)
+  Mite: rank 4 -> 2, rating 2750 -> 2836, games 72 -> 73 (26-35-13)
+  AlphaFish: rank 2 -> 3, rating 2846 -> 2809, games 88 -> 89 (43-39-8)
+  Loss Preventer: rank 3 -> 4, rating 2755 -> 2752, games 97 -> 98 (38-36-25)
+  Patzer 2.4: rating 2744 -> 2746, games 92 -> 93 (35-44-15)
+  c1: rating 2692 -> 2694, games 93 -> 94 (39-26-30)
+  stockfih: rank 8 -> 7, rating 2662 -> 2679, games 88 -> 89 (32-32-26)
+  ms: rank 7 -> 8, rating 2686 -> 2670, games 94 -> 95 (38-40-18)
+  Challenger: rank 11 -> 9, rating 2632 -> 2670, games 97 -> 98 (42-34-23)
+  test_bot: rank 9 -> 10, rating 2643 -> 2634, games 87 -> 88 (32-38-19)
+  BetaGo: rank 13 -> 11, rating 2624 -> 2630, games 56 -> 57 (23-15-10)
+  Ultron Prime: rank 10 -> 12, rating 2637 -> 2628, games 94 -> 95 (36-38-22)
+  Poincare conjecture: rank 16 -> 13, rating 2590 -> 2622, games 74 -> 75 (26-37-13)
+  Comeback arc for PSL God: rating 2609 -> 2621, games 78 -> 80 (29-35-16)
+  SoberCooper: rating 2595 -> 2616, games 92 -> 93 (35-41-18)
+  e=π=2: rank 19 -> 16, rating 2525 -> 2566, games 93 -> 94 (40-29-26)
+  Anchoa: rank 12 -> 17, rating 2629 -> 2546, games 90 -> 92 (33-43-17)
+  Danya's Disciple: rank 17 -> 18, rating 2564 -> 2538, games 90 -> 91 (33-35-24)
+  Fuzzydafool: rank 18 -> 19, rating 2561 -> 2527, games 71 -> 73 (26-22-26)
 
-FILES: 01_BINI_Alpha.txt, 02_AlphaFish.txt, 03_Loss_Preventer.txt, 04_Mite.txt, 05_Patzer_2_4.txt,
-  06_c1.txt, 07_ms.txt, 08_stockfih.txt, 09_test_bot.txt, 10_Ultron_Prime.txt, 11_Challenger.txt,
-  12_Anchoa.txt, 13_BetaGo.txt, 14_Malnourished_Goatis.txt, 15_SoberCooper.txt,
-  16_Poincare_conjecture.txt, 17_Danya_s_Disciple.txt, 18_Fuzzydafool.txt, 19_e_2.txt,
-  20_50CentRaise.txt
+FILES: 01_BINI_Alpha.txt, 02_Mite.txt, 03_AlphaFish.txt, 04_Loss_Preventer.txt, 05_Patzer_2_4.txt,
+  06_c1.txt, 07_stockfih.txt, 08_ms.txt, 09_Challenger.txt, 10_test_bot.txt, 11_BetaGo.txt,
+  12_Ultron_Prime.txt, 13_Poincare_conjecture.txt, 14_Comeback_arc_for_PSL_God.txt,
+  15_SoberCooper.txt, 16_e_2.txt, 17_Anchoa.txt, 18_Danya_s_Disciple.txt, 19_Fuzzydafool.txt,
+  20_Astral.txt

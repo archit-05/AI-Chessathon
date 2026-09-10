@@ -2,10 +2,10 @@
  "uuid": "385a6db2-1c05-46db-ae91-7218700f83b3",
  "bot": "Challenger",
  "team": "Stonkfish",
- "rating": 2670,
- "rank": 9,
- "record": "42-33-23",
- "rated_rounds": 102,
+ "rating": 2671,
+ "rank": 7,
+ "record": "42-35-23",
+ "rated_rounds": 103,
  "history": [
   [
    1,
@@ -414,9 +414,33 @@
   [
    102,
    2670
+  ],
+  [
+   103,
+   2671
   ]
  ],
  "games": [
+  {
+   "game": "29ae339f-b1f0-4b66-8f3a-7b8a0c437a38",
+   "kind": "Rated",
+   "round": 104,
+   "colour": "Black",
+   "opponent": "ms",
+   "opponent_uuid": "c3e1bc09-3d21-4279-ace0-16bb3742f5da",
+   "verdict": "draw",
+   "opening": "Sicilian Sveshnikov"
+  },
+  {
+   "game": "6d0690b6-6438-433c-a869-926eccb1b51b",
+   "kind": "Rated",
+   "round": 103,
+   "colour": "Black",
+   "opponent": "what even is en passant",
+   "opponent_uuid": "b9cbed87-8a3a-437d-9333-1447f68200d1",
+   "verdict": "draw",
+   "opening": "Sicilian Closed"
+  },
   {
    "game": "191beb7a-cd1a-4a2c-8b50-83a9cbe25923",
    "kind": "Rated",
@@ -428,16 +452,6 @@
    "opening": "Caro-Kann Advance"
   },
   {
-   "game": "578f5641-f0e0-4b65-94bb-309f80564848",
-   "kind": "Rated",
-   "round": 101,
-   "colour": "White",
-   "opponent": "BetaGo",
-   "opponent_uuid": "145e2e17-6316-4b84-911b-45f3258ec8c9",
-   "verdict": "draw",
-   "opening": "Caro-Kann Advance"
-  },
-  {
    "game": "cddb47e4-49f6-4aa1-ae00-05007a140167",
    "kind": "Rated",
    "round": 100,
@@ -446,6 +460,16 @@
    "opponent_uuid": "c7fad433-1020-4b2a-a0e3-8e86720d23de",
    "verdict": "win",
    "opening": "Reti Opening"
+  },
+  {
+   "game": "1f49e59a-f819-4b48-b6ce-057aff4defe8",
+   "kind": "Rated",
+   "round": 99,
+   "colour": "Black",
+   "opponent": "catfish",
+   "opponent_uuid": "4c4aa194-e507-4fb7-a863-46341205f08b",
+   "verdict": "win",
+   "opening": "Sicilian Dragon"
   },
   {
    "game": "5360f7a5-05d2-43eb-9cf0-1004fe05e7e4",
@@ -1428,5 +1452,5 @@
    "opening": "Queen's Gambit Accepted"
   }
  ],
- "fetched_at": "2026-09-10T18:54:22Z"
+ "fetched_at": "2026-09-10T20:21:18Z"
 }
