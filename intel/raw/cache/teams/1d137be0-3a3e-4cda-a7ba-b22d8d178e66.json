@@ -2,10 +2,10 @@
  "uuid": "1d137be0-3a3e-4cda-a7ba-b22d8d178e66",
  "bot": "lyra",
  "team": "slopfish",
- "rating": 2501,
- "rank": 22,
- "record": "28-37-22",
- "rated_rounds": 97,
+ "rating": 2513,
+ "rank": 21,
+ "record": "28-39-22",
+ "rated_rounds": 99,
  "history": [
   [
    3,
@@ -394,18 +394,36 @@
   [
    99,
    2501
+  ],
+  [
+   100,
+   2502
+  ],
+  [
+   101,
+   2513
   ]
  ],
  "games": [
   {
-   "game": "04619c37-48ee-4a5a-9cd0-9280947b5f26",
+   "game": "a74278ce-0642-4a76-8905-69591d9957f2",
    "kind": "Rated",
-   "round": 99,
-   "colour": "Black",
-   "opponent": "DGS ELO",
-   "opponent_uuid": "5f8a69d7-73a8-4498-b322-861b557dffbd",
+   "round": 101,
+   "colour": "White",
+   "opponent": "Miskeen",
+   "opponent_uuid": "51ed01b7-c113-4321-91c7-c6c2fc422807",
    "verdict": "draw",
-   "opening": "Sicilian Closed"
+   "opening": "Dutch Stonewall"
+  },
+  {
+   "game": "c60bc00d-0995-41f8-8e1a-2d77071a2dca",
+   "kind": "Rated",
+   "round": 100,
+   "colour": "Black",
+   "opponent": "e=\u03c0=2",
+   "opponent_uuid": "3e68dab5-8421-4113-9aa0-dbe165e997f5",
+   "verdict": "draw",
+   "opening": "English Symmetrical"
   },
   {
    "game": "43bed0d9-7c8c-4c68-9286-d789eec108aa",
@@ -416,6 +434,16 @@
    "opponent_uuid": "145e2e17-6316-4b84-911b-45f3258ec8c9",
    "verdict": "loss",
    "opening": "Italian Game"
+  },
+  {
+   "game": "bd0f3b11-d380-4056-87df-a8042a3519f8",
+   "kind": "Rated",
+   "round": 97,
+   "colour": "Black",
+   "opponent": "catfish",
+   "opponent_uuid": "4c4aa194-e507-4fb7-a863-46341205f08b",
+   "verdict": "win",
+   "opening": "English Symmetrical"
   },
   {
    "game": "eaa07b18-3c2d-4e18-859f-c21270abf206",
@@ -1358,5 +1386,5 @@
    "opening": "Two Knights Defence"
   }
  ],
- "fetched_at": "2026-09-10T16:05:55Z"
+ "fetched_at": "2026-09-10T18:08:10Z"
 }

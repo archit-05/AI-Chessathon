@@ -2,10 +2,10 @@
  "uuid": "b9cbed87-8a3a-437d-9333-1447f68200d1",
  "bot": "stockfih",
  "team": "what even is en passant",
- "rating": 2677,
+ "rating": 2662,
  "rank": 8,
- "record": "31-31-25",
- "rated_rounds": 92,
+ "record": "31-31-26",
+ "rated_rounds": 93,
  "history": [
   [
    9,
@@ -374,9 +374,23 @@
   [
    100,
    2677
+  ],
+  [
+   101,
+   2662
   ]
  ],
  "games": [
+  {
+   "game": "198919d1-b0ce-4010-b6e5-ad7c26d0d591",
+   "kind": "Rated",
+   "round": 101,
+   "colour": "White",
+   "opponent": "OMI",
+   "opponent_uuid": "f90aed5c-61db-4b3a-bbc1-9f40391e701a",
+   "verdict": "loss",
+   "opening": "Sicilian Closed"
+  },
   {
    "game": "a16b5f76-291f-4713-9aab-434c37e06621",
    "kind": "Rated",
@@ -398,14 +412,14 @@
    "opening": "French Winawer"
   },
   {
-   "game": "6a320c2b-c334-4926-a91b-995eac531745",
+   "game": "167b250a-8b6f-4cd3-86cf-2713fb67af3f",
    "kind": "Rated",
-   "round": 98,
-   "colour": "White",
-   "opponent": "Gijs Smit",
-   "opponent_uuid": "3f0e0e44-cdce-485f-b5b6-3691e34f9f44",
+   "round": 97,
+   "colour": "Black",
+   "opponent": "Lightning Tree",
+   "opponent_uuid": "c90df064-e8e8-4144-b1fd-2dd6096dd21a",
    "verdict": "loss",
-   "opening": "Ruy Lopez, Closed"
+   "opening": "Sicilian Closed"
   },
   {
    "game": "7a726ec3-ac02-45c2-b6d2-79f6811f7114",
@@ -1288,5 +1302,5 @@
    "opening": "Queen's Gambit Accepted"
   }
  ],
- "fetched_at": "2026-09-10T16:48:40Z"
+ "fetched_at": "2026-09-10T17:49:34Z"
 }

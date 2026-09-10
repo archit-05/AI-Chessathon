@@ -1,4 +1,4 @@
-V5 INTEL BRIEF  2026-09-10 18:23   (leaderboard fetched 2026-09-10T16:41:04Z)
+V5 INTEL BRIEF  2026-09-10 19:10   (leaderboard fetched 2026-09-10T17:41:02Z)
 ====================================================================================================
 Site evaluations throughout (Stockfish 16 depth 16, identical for every team). CPL = mean cp lost
 per own move (|eval| <= 800); Bl% = own moves losing >= 200 cp; sACPL = site review ACPL (all
@@ -9,62 +9,62 @@ slide, CLK flag, INIT/CRSH/ILL no legal move; +clk = decisive move under 10 s or
 A. TOP 15
   #  Bot                 Rating  W- D- L   CPL sACPL  Bl%  s/mv Draw%  New
   --------------------------------------------------------------------------
-  1  BINI Alpha           2892  34-24-14  15.6    24  0.8   1.8    33  
-  2  AlphaFish            2829  42-37- 7   7.5    14  0.1  1.52    43  NEW
-  3  Mite                 2809  24-33-13  10.2    20  0.2  1.74    47  NEW
-  4  Patzer 2.4           2794  34-42-14  11.2    16  0.5  1.52    48  
-  5  Loss Preventer       2682  37-33-25  13.1    21  0.4  1.65    35  NEW
-  6  stockfih             2670  31-30-25  15.7    22  0.4  1.95    36  
-  7  Malnourished Goatis  2667  29-32-15  10.6    16  0.5  1.71    42  NEW
-  8  ms                   2662  37-38-17  11.1    18  0.3  1.82    41  
-  9  c1                   2651  38-24-29  23.7    27  1.3  1.92    26  
-  10 Anchoa               2633  31-42-15   9.4    15  0.3  1.59    47  NEW
-  11 Poincare conjecture  2625  25-35-12  11.7    17  0.2  1.63    49  NEW
-  12 BetaGo               2613  23-11-10  18.4    30  0.4  2.14    22  NEW
-  13 SoberCooper          2597  34-38-18  10.5    17  0.3  1.64    42  
-  14 test_bot             2595  31-35-19  12.5    19  0.5  1.85    42  NEW
-  15 Danya's Disciple     2583  33-33-22  13.2    20  0.6  1.79    38  
+  1  BINI Alpha           2826  34-24-15  15.6    24  0.8  1.81    33  
+  2  AlphaFish            2807  42-38- 7   7.5    14  0.1  1.52    44  NEW
+  3  Patzer 2.4           2772  34-43-14  11.2    17  0.5  1.53    47  
+  4  Mite                 2761  24-34-13  10.2    19  0.2  1.73    49  NEW
+  5  Loss Preventer       2750  38-33-25  13.1    20  0.4  1.64    35  NEW
+  6  Anchoa               2692  32-42-15   9.4    15  0.3  1.57    46  NEW
+  7  Malnourished Goatis  2691  29-33-15  10.6    16  0.5   1.7    43  NEW
+  8  stockfih             2677  31-31-25  15.7    22  0.4  1.97    36  
+  9  ms                   2671  37-39-17  11.1    18  0.3  1.82    41  
+  10 c1                   2645  38-25-29  23.7    27  1.3  1.92    26  
+  11 Challenger           2624  41-32-23  17.7    25  0.7  1.73    34  NEW
+  12 BetaGo               2612  23-12-10  18.4    30  0.4  2.14    25  NEW
+  13 SoberCooper          2597  34-39-18  10.5    16  0.3  1.63    43  
+  14 test_bot             2593  31-36-19  12.5    19  0.5  1.85    42  NEW
+  15 50CentRaise          2587  33-25-30  19.6    26  0.7  1.74    28  NEW
 
 B. TOP 10 IN DETAIL  (bands by the opponent's rating at the time)
-  #1 BINI Alpha (Opus Carlsen) 2892
-     band  2500+ 8/13 62% | 2300-2499 11/23 48% | 2100-2299 7/10 70% | <2100 19/26 73%
-     open  Sicilian 6.5/12 54% | French 5.5/7 79% | Pirc 4/7 57% | Caro-Kann 4/6 67%
-     game  135 ply, CPL 15.6, Bl 0.8%, 1.80 s/mv, 33 s left; lost 15 = SLD 14, BLU 1
+  #1 BINI Alpha (Opus Carlsen) 2826
+     band  2500+ 10/14 71% | 2300-2499 11/23 48% | 2100-2299 7/10 70% | <2100 19/26 73%
+     open  Sicilian 7.5/12 62% | French 5.5/7 79% | Pirc 4/7 57% | Caro-Kann 4/6 67%
+     game  134 ply, CPL 15.6, Bl 0.8%, 1.81 s/mv, 33 s left; lost 14 = SLD 13, BLU 1
      lost  R24w Moltisanti/1601 SLD | R27b Martin/1467 BLU5/253 | R29b limlamlom/1295 SLD
            R30b citytrek/1358 SLD | R40b Sage/1779 SLD | R55b ms/2208 SLD | R56w Edward/2127 SLD
            R64w stockfih/2361 SLD | R65b Poincare co/2354 SLD | R68b cory/2340 SLD
            R76b Danya's Dis/2361 SLD | R79w zak/2379 SLD | R82w Cornelius/2428 SLD
-           R98w Mite/2770 SLD | R100w Loss Preven/2682 SLD
-  #2 AlphaFish (Emile Andrieu) 2829 [new build]
-     band  2500+ 27.5/44 62% | 2300-2499 13.5/21 64% | 2100-2299 3/3 100% | <2100 16.5/18 92%
-     open  Sicilian 14.5/23 63% | Ruy Lopez 6/8 75% | Reti 5/6 83% | London 3.5/5 70%
-     game  188 ply, CPL 7.5, Bl 0.1%, 1.52 s/mv, 25 s left; lost 7 = SLD 4, BLU 2, INIT 1
+           R100w Loss Preven/2682 SLD
+  #2 AlphaFish (Emile Andrieu) 2807 [new build]
+     band  2500+ 28/45 62% | 2300-2499 13.5/21 64% | 2100-2299 3/3 100% | <2100 16.5/18 92%
+     open  Sicilian 14.5/23 63% | Ruy Lopez 6/8 75% | Reti 4.5/6 75% | London 3.5/5 70%
+     game  189 ply, CPL 7.5, Bl 0.1%, 1.52 s/mv, 25 s left; lost 7 = SLD 4, BLU 2, INIT 1
      lost  R10b Oyinda/1571 BLU44/1000 | R48w test_bot/2464 SLD | R49b Capablanca/2420 SLD
            R50b checkers/2353 INIT | R67w SoberCooper/2505 SLD | R72w Patzer 2.4/2543 BLU52/315
            R86w Mite/2637 SLD
-  #3 Mite (Ryan Vincent) 2809 [new build]
-     band  2500+ 14.5/27 54% | 2300-2499 6.5/16 41% | 2100-2299 7/11 64% | <2100 12.5/16 78%
-     open  Sicilian 12/17 71% | Reti 3.5/6 58% | French 1.5/5 30% | Nimzo-Indian 1.5/5 30%
-     game  158 ply, CPL 10.2, Bl 0.2%, 1.74 s/mv, 23 s left; lost 13 = SLD 13
-     lost  R29w dattebayo/2308 SLD | R35b R8int8v9/1894 SLD | R38w Malnourishe/1845 SLD
-           R41w apt install/1926 SLD | R45b Astral/2156 SLD | R54b AI Fellow/2385 SLD
-           R56w stockfih/2344 SLD | R57b Malnourishe/2351 SLD | R72b SoberCooper/2522 SLD
-           R81w SoberCooper/2565 SLD | R90b Malnourishe/2613 SLD | R93b BINI Alpha/2716 SLD
-           R99b Patzer 2.4/2733 SLD
-  #4 Patzer 2.4 (Gijs Smit) 2794
-     band  2500+ 17.5/32 55% | 2300-2499 7.5/14 54% | 2100-2299 10.5/20 52% | <2100 20/24 83%
-     open  Sicilian 17.5/30 58% | Caro-Kann 6/9 67% | Reti 4.5/9 50% | French 4.5/8 56%
-     game  171 ply, CPL 11.2, Bl 0.5%, 1.52 s/mv, 34 s left; lost 13 = SLD 9, BLU 4
+  #3 Patzer 2.4 (Gijs Smit) 2772
+     band  2500+ 16.5/33 50% | 2300-2499 7.5/14 54% | 2100-2299 10.5/20 52% | <2100 20/24 83%
+     open  Sicilian 17.5/30 58% | Reti 4.5/10 45% | Caro-Kann 6/9 67% | French 4.5/8 56%
+     game  169 ply, CPL 11.2, Bl 0.5%, 1.53 s/mv, 34 s left; lost 15 = SLD 11, BLU 4
      lost  R8w Mate In One/1817 SLD | R10b SoberCooper/1800 SLD | R11w Anchoa/1841 BLU31/383
            R21b AlphaFish/2256 BLU73/793 | R40w AlphaFish/2697 SLD | R47w Capablanca/2339 SLD
            R50w test_bot/2495 BLU72/389 | R52w Poincare co/2288 SLD | R55b crash/2313 SLD
            R56w Astral/2257 BLU102/363 | R60b BINI Alpha/2246 SLD | R85w stockfih/2753 SLD
-           R87w SoberCooper/2617 SLD
-  #5 Loss Preventer (Lightning Tree) 2682 [new build]
-     band  2500+ 13.5/28 48% | 2300-2499 13/23 57% | 2100-2299 6/11 55% | <2100 21/33 64%
-     open  Sicilian 13.5/27 50% | Reti 7.5/10 75% | Nimzo-Indian 5/9 56% | English 4.5/8 56%
-     game  136 ply, CPL 13.1, Bl 0.4%, 1.65 s/mv, 42 s left; lost 25 = SLD 22, BLU 3
-     lost  R1b Capablanca/2508 BLU35/277 | R5b SirBlunderi/1596 SLD
+           R87w SoberCooper/2617 SLD | R97w BINI Alpha/2916 SLD | R101w AlphaFish/2807 SLD
+  #4 Mite (Ryan Vincent) 2761 [new build]
+     band  2500+ 14.5/28 52% | 2300-2499 6.5/15 43% | 2100-2299 7/12 58% | <2100 12.5/16 78%
+     open  Sicilian 11.5/17 68% | Reti 4/7 57% | French 1.5/5 30% | Nimzo-Indian 1.5/5 30%
+     game  160 ply, CPL 10.2, Bl 0.2%, 1.73 s/mv, 22 s left; lost 13 = SLD 13
+     lost  R29w dattebayo/2297 SLD | R35b R8int8v9/1894 SLD | R38w Malnourishe/1845 SLD
+           R41w apt install/1926 SLD | R45b Astral/2156 SLD | R54b AI Fellow/2385 SLD
+           R56w stockfih/2344 SLD | R57b Malnourishe/2351 SLD | R72b SoberCooper/2522 SLD
+           R81w SoberCooper/2565 SLD | R90b Malnourishe/2613 SLD | R93b BINI Alpha/2716 SLD
+           R99b Patzer 2.4/2733 SLD
+  #5 Loss Preventer (Lightning Tree) 2750 [new build]
+     band  2500+ 15/28 54% | 2300-2499 13/24 54% | 2100-2299 6/11 55% | <2100 21/33 64%
+     open  Sicilian 15/29 52% | Reti 7.5/9 83% | Nimzo-Indian 5/9 56% | English 4.5/8 56%
+     game  135 ply, CPL 13.1, Bl 0.4%, 1.64 s/mv, 43 s left; lost 24 = SLD 21, BLU 3
+     lost  R1b Capablanca/2498 BLU35/277 | R5b SirBlunderi/1596 SLD
            R6b Bartholomew/1551 BLU12/255 | R17b ms/1859 SLD | R19b AI Fellow/1913 SLD
            R20w make_no_mis/1927 SLD | R21w Danya's Dis/1855 SLD | R25b Mate In One/2065 SLD
            R26b Patzer 2.4/2053 SLD | R28w test_bot/2004 SLD | R30b AlphaFish/2387 SLD
@@ -72,11 +72,31 @@ B. TOP 10 IN DETAIL  (bands by the opponent's rating at the time)
            R44w Fuzzydafool/2161 BLU48/316 | R45b Poincare co/2144 SLD
            R62w Malnourishe/2602 SLD | R63b crash/2492 SLD | R69w ms/2528 SLD
            R70b Patzer 2.4/2455 SLD | R85b AlphaFish/2748 SLD | R86b Poincare co/2635 SLD
-           R87w ms/2640 SLD | R93w SoberCooper/2608 SLD | R98b AlphaFish/2747 SLD
-  #6 stockfih (what even is en passant) 2670
-     band  2500+ 14/27 52% | 2300-2499 10.5/20 52% | 2100-2299 6/11 55% | <2100 16/28 57%
-     open  Sicilian 10/19 53% | Caro-Kann 6/12 50% | French 5.5/10 55% | English 4.5/8 56%
-     game  135 ply, CPL 15.7, Bl 0.4%, 1.95 s/mv, 23 s left; lost 24 = SLD 22, BLU 2
+           R87w ms/2640 SLD | R93w SoberCooper/2608 SLD
+  #6 Anchoa (Lubina) 2692 [new build]
+     band  2500+ 15.5/33 47% | 2300-2499 16/29 55% | 2100-2299 2.5/4 62% | <2100 18.5/23 80%
+     open  Sicilian 11/20 55% | English 5/7 71% | Caro-Kann 4/7 57% | French 4/6 67%
+     game  173 ply, CPL 9.4, Bl 0.3%, 1.57 s/mv, 25 s left; lost 16 = SLD 15, BLU 1
+     lost  R7w checkers/1720 SLD | R13w test_bot/1702 BLU14/295 | R17b AlphaFish/1933 SLD
+           R21w Capablanca/2057 SLD | R35w AlphaFish/2576 SLD | R37w Patzer 2.4/2211 SLD
+           R47b AlphaFish/2696 SLD | R53w SoberCooper/2490 SLD | R57w AlphaFish/2658 SLD
+           R61b Malnourishe/2558 SLD | R63b SoberCooper/2516 SLD | R74w crash/2580 SLD
+           R76w Mite/2416 SLD | R78w Danya's Dis/2467 SLD | R93w c1/2587 SLD
+           R101w BINI Alpha/2826 SLD
+  #7 Malnourished Goatis (JBG fam) 2691 [new build]
+     band  2500+ 21/42 50% | 2300-2499 1/2 50% | 2100-2299 7.5/12 62% | <2100 15/21 71%
+     open  Sicilian 8.5/16 53% | Caro-Kann 7.5/12 62% | Ruy Lopez 4.5/8 56% | French 2.5/7 36%
+     game  159 ply, CPL 10.6, Bl 0.5%, 1.70 s/mv, 25 s left; lost 16 = SLD 14, BLU 2
+     lost  R25b spring_week/1599 BLU50/315 | R29w The Castle /1676 BLU33/294 | R35b dog/1930 SLD
+           R36w SirBlunderi/1887 SLD | R37w c1/1863 SLD | R49w Loss Preven/2234 SLD
+           R54b Poincare co/2304 SLD | R65b AlphaFish/2618 SLD | R67w Capablanca/2525 SLD
+           R76b stockfih/2649 SLD | R79b ms/2636 SLD | R82w Loss Preven/2693 SLD
+           R86b stockfih/2802 SLD | R92w stockfih/2750 SLD | R95b Loss Preven/2647 SLD
+           R101w ms/2671 SLD
+  #8 stockfih (what even is en passant) 2677
+     band  2500+ 14/28 50% | 2300-2499 10.5/20 52% | 2100-2299 6/11 55% | <2100 16/28 57%
+     open  Sicilian 10/21 48% | Caro-Kann 6/12 50% | French 5.5/10 55% | English 4.5/8 56%
+     game  133 ply, CPL 15.7, Bl 0.4%, 1.97 s/mv, 23 s left; lost 25 = SLD 23, BLU 2
      lost  R16b AI Fellow/1851 SLD+clk | R18w checkers/1865 SLD | R19b Blank Shoot/1811 SLD
            R21w dog/1914 SLD | R27w Capablanca/2274 SLD | R28b Patzer 2.4/2084 SLD
            R29b Anchoa/2250 SLD | R30b test_bot/2060 SLD | R32w RMFE/1893 SLD
@@ -84,29 +104,21 @@ B. TOP 10 IN DETAIL  (bands by the opponent's rating at the time)
            R39w SirBlunderi/1886 SLD | R50w AI Fellow/2339 SLD | R57w crash/2410 SLD
            R60b Capablanca/2454 SLD | R63b cory/2388 SLD | R65b ms/2493 SLD
            R69w cory/2434 BLU97/265+clk | R77w AlphaFish/2664 SLD | R88w AlphaFish/2774 SLD
-           R95w BINI Alpha/2808 SLD | R96b Mite/2687 SLD | R98w Patzer 2.4/2663 SLD
-  #7 Malnourished Goatis (JBG fam) 2667 [new build]
-     band  2500+ 21.5/41 52% | 2300-2499 1/2 50% | 2100-2299 7.5/12 62% | <2100 15/21 71%
-     open  Sicilian 8.5/16 53% | Caro-Kann 8.5/13 65% | Ruy Lopez 4/7 57% | London 2.5/6 42%
-     game  158 ply, CPL 10.6, Bl 0.5%, 1.71 s/mv, 25 s left; lost 15 = SLD 13, BLU 2
-     lost  R25b spring_week/1599 BLU50/315 | R29w The Castle /1676 BLU33/294 | R35b dog/1930 SLD
-           R36w SirBlunderi/1887 SLD | R37w c1/1863 SLD | R49w Loss Preven/2234 SLD
-           R54b Poincare co/2304 SLD | R65b AlphaFish/2618 SLD | R67w Capablanca/2525 SLD
-           R76b stockfih/2649 SLD | R79b ms/2636 SLD | R82w Loss Preven/2693 SLD
-           R86b stockfih/2802 SLD | R92w stockfih/2750 SLD | R95b Loss Preven/2647 SLD
-  #8 ms (ms) 2662
-     band  2500+ 16.5/32 52% | 2300-2499 5/5 100% | 2100-2299 12.5/24 52% | <2100 22/31 71%
-     open  Sicilian 15/26 58% | English 6/8 75% | Petroff 5/8 62% | French 2.5/7 36%
-     game  161 ply, CPL 11.1, Bl 0.3%, 1.82 s/mv, 14 s left; lost 17 = SLD 17
+           R95w BINI Alpha/2808 SLD | R96b Mite/2687 SLD | R97b Loss Preven/2647 SLD
+           R101w c1/2645 SLD
+  #9 ms (ms) 2671
+     band  2500+ 17.5/33 53% | 2300-2499 5/5 100% | 2100-2299 12.5/24 52% | <2100 22/31 71%
+     open  Sicilian 15/26 58% | English 6/8 75% | French 3.5/8 44% | Petroff 5/8 62%
+     game  160 ply, CPL 11.1, Bl 0.3%, 1.82 s/mv, 14 s left; lost 17 = SLD 17
      lost  R7b Patzer 2.4/1831 SLD | R12b SoberCooper/1967 SLD | R16b R8int8v9/1849 SLD
            R20b AlphaFish/2221 SLD | R26w meowfish/1841 SLD | R34b Fuzzydafool/2084 SLD
            R36w make_no_mis/2077 SLD | R42w Loss Preven/2102 SLD | R43w Magnus Clau/2105 SLD
            R44b stockfih/2122 SLD | R45b Malnourishe/2096 SLD | R49b Astral/2275 SLD
            R56b Malnourishe/2259 SLD | R66w AlphaFish/2659 SLD | R75w stockfih/2574 SLD
            R81b Patzer 2.4/2672 SLD | R82b stockfih/2681 SLD
-  #9 c1 (OMI) 2651
-     band  2500+ 6.5/12 54% | 2300-2499 4/7 57% | 2100-2299 7/12 58% | <2100 32.5/60 54%
-     open  Sicilian 15.5/28 55% | Ruy Lopez 3/8 38% | English 5.5/8 69% | French 3.5/7 50%
+  #10 c1 (OMI) 2645
+     band  2500+ 7.5/13 58% | 2300-2499 4/7 57% | 2100-2299 7/12 58% | <2100 32.5/60 54%
+     open  Sicilian 17/30 57% | Ruy Lopez 3/8 38% | English 5.5/8 69% | French 3.5/7 50%
      game  146 ply, CPL 23.7, Bl 1.3%, 1.92 s/mv, 18 s left; lost 29 = SLD 22, BLU 7
      lost  R8w LSE4-E5/1551 BLU16/397 | R9b Winnerz/1531 SLD | R11w Gaydant/1553 BLU17/321
            R13b FableEngine/1578 BLU36/547 | R16w Clore Bot X/1580 SLD+clk | R24w RMFE/1796 SLD
@@ -118,17 +130,8 @@ B. TOP 10 IN DETAIL  (bands by the opponent's rating at the time)
            R61b RMFE/2076 SLD | R62b TMS/2154 SLD+clk | R65b Blank Shoot/2090 SLD+clk
            R66w Drake De Pr/2071 SLD | R73b bot1/2140 SLD | R76b Chudless/2206 SLD
            R83w BINI Alpha/2385 SLD | R96w BINI Alpha/2870 SLD
-  #10 Anchoa (Lubina) 2633 [new build]
-     band  2500+ 15.5/32 48% | 2300-2499 16/29 55% | 2100-2299 2.5/4 62% | <2100 18.5/23 80%
-     open  Sicilian 11.5/20 58% | English 5/7 71% | French 4/6 67% | Reti 4/6 67%
-     game  171 ply, CPL 9.4, Bl 0.3%, 1.59 s/mv, 25 s left; lost 15 = SLD 14, BLU 1
-     lost  R7w checkers/1720 SLD | R13w test_bot/1702 BLU14/295 | R17b AlphaFish/1933 SLD
-           R21w Capablanca/2057 SLD | R35w AlphaFish/2576 SLD | R37w Patzer 2.4/2211 SLD
-           R47b AlphaFish/2696 SLD | R53w SoberCooper/2490 SLD | R57w AlphaFish/2658 SLD
-           R61b Malnourishe/2558 SLD | R63b SoberCooper/2516 SLD | R74w crash/2580 SLD
-           R76w Mite/2416 SLD | R78w Danya's Dis/2467 SLD | R93w c1/2587 SLD
 
-C. OUR GAMES SINCE ROUND 50  (BINI Alpha, rank 1, 2892, 34-24-15)
+C. OUR GAMES SINCE ROUND 50  (BINI Alpha, rank 1, 2826, 35-24-15)
   Rd  col  opponent            rat  res  sACPL us/opp  inacc/mist/blun  first < -100  term
   --------------------------------------------------------------------------------------------
   50  b    zak                2020  win     7/21       0/0/0      never        checkmate
@@ -178,26 +181,27 @@ C. OUR GAMES SINCE ROUND 50  (BINI Alpha, rank 1, 2892, 34-24-15)
   94  w    AlphaFish          2754  draw   11/10       0/1/0      never        threefold_repe
   95  b    stockfih           2743  win    11/42       1/0/0      never        checkmate
   96  b    c1                 2692  win     4/53       0/0/0      never        checkmate
-  98  w    Mite               2770  LOSS   42/24       1/0/0      never        checkmate
+  97  b    Patzer 2.4         2695  win    30/78       1/0/0      never        checkmate
   99  w    AlphaFish          2820  draw    9/9        0/0/0      never        insufficient_m
   100 w    Loss Preventer     2682  LOSS   40/7        1/1/0      never        checkmate
-  Since R50: 29/49, mean sACPL 19 vs 23, CPL 11.8, Bl% 0.3, s/mv 1.76, clock left 21 s
+  101 b    Anchoa             2692  win     6/44       0/0/0      never        checkmate
+  Since R50: 31/50, mean sACPL 18 vs 25, CPL 11.8, Bl% 0.3, s/mv 1.77, clock left 22 s
   Losses: R55 ms/2208 SLD, worst 35.Rea6 -91 (-166->-257, 1.1s)
           R56 Edward/2127 SLD, worst 47.Nh2 -85 (-228->-313, 1.8s)
           R64 stockfih/2361 SLD, worst 21.f3 -134 (-15->-149, 5.0s)
           R65 Poincare con/2354 SLD, worst 16.Bxh3 -191 (-80->-271, 7.4s)
           R68 cory/2340 SLD, worst 47.Nf5 -90 (-209->-299, 1.5s) | R76 Danya's Disc/2361 SLD
-          R79 zak/2379 SLD | R82 Cornelius/2428 SLD | R98 Mite/2770 SLD
-          R100 Loss Prevent/2682 SLD
+          R79 zak/2379 SLD | R82 Cornelius/2428 SLD | R100 Loss Prevent/2682 SLD
 
 D. NEW SINCE THE LAST BRIEF
   Bot failures in the whole cache (30 games): Flag 12, Illegal 10, Init 4, Crash 3, Ply cap 1
     who: Init The Good Team, fuzz, Emile Andrieu, f1shstock; Crash NajeebA x2, Vanish Onigiri;
     Illegal 0x88 x10; Flag Team7347 x4, rogo x2, Dominated Horses, Buddy's Grill Gambit, Sobriety +1
-  New in top 20 since 20260909_2359: Malnourished Goatis, c1, BetaGo, SoberCooper, 50CentRaise
-  Biggest climbs inside the top 20: Mite 12->3, BetaGo 45->12
-  Bar now: top 3 2810, top 5 2683, top 10 2634; leader BINI Alpha 2892; us 2892 (#1).
-  Site rules: 78 top-15 games were played out and then voided (threefold_repe 51, unterminated 13,
-    fifty_moves 9, checkmate 3, insufficient_m 2); unrated, one-off on 6 Sept.
+  New in top 20 since 20260909_2359: Malnourished Goatis, c1, BetaGo, SoberCooper, 50CentRaise,
+    e=π=2
+  Biggest climbs inside the top 20: Mite 12->4, Anchoa 14->6, Challenger 20->11, BetaGo 45->12
+  Bar now: top 3 2773, top 5 2751, top 10 2646; leader BINI Alpha 2826; us 2826 (#1).
+  Site rules: 75 top-15 games were played out and then voided (threefold_repe 45, unterminated 17,
+    fifty_moves 8, checkmate 4, insufficient_m 1); unrated, one-off on 6 Sept.
   Site layout (8 Sept): ranks 1-3 are now podium rows (medal SVG, some cells streamed in late by
     React); scrape.py patched to read them - unpatched, the whole top 3 vanishes from the tables.
