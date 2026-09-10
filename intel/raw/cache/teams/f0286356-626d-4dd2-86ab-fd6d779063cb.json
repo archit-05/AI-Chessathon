@@ -2,11 +2,15 @@
  "uuid": "f0286356-626d-4dd2-86ab-fd6d779063cb",
  "bot": "BINI Alpha",
  "team": "Opus Carlsen",
- "rating": 2808,
+ "rating": 2916,
  "rank": 1,
- "record": "32-23-13",
- "rated_rounds": 71,
+ "record": "33-23-13",
+ "rated_rounds": 73,
  "history": [
+  [
+   24,
+   1440
+  ],
   [
    25,
    1445
@@ -286,9 +290,27 @@
   [
    94,
    2808
+  ],
+  [
+   95,
+   2870
+  ],
+  [
+   96,
+   2916
   ]
  ],
  "games": [
+  {
+   "game": "a6516847-e80f-422d-9d50-a85123c437b8",
+   "kind": "Rated",
+   "round": 96,
+   "colour": "Black",
+   "opponent": "OMI",
+   "opponent_uuid": "f90aed5c-61db-4b3a-bbc1-9f40391e701a",
+   "verdict": "win",
+   "opening": "French Classical"
+  },
   {
    "game": "0bb8fc6a-e7a4-4cce-8833-2de3cc05bac6",
    "kind": "Rated",
@@ -310,14 +332,14 @@
    "opening": "Ruy Lopez, Closed"
   },
   {
-   "game": "57bacaa3-3823-471c-af71-c9001b9d0de2",
+   "game": "7c8a1949-5ffa-43d0-89ef-998ccfc2140c",
    "kind": "Rated",
-   "round": 93,
-   "colour": "White",
-   "opponent": "Ryan Vincent",
-   "opponent_uuid": "8c22f2a5-3bce-4b66-b93a-8f4ab4318b0f",
+   "round": 92,
+   "colour": "Black",
+   "opponent": "Sobriety",
+   "opponent_uuid": "258a9828-7442-4bea-97cb-eed1845ad2cc",
    "verdict": "win",
-   "opening": "Caro-Kann Advance"
+   "opening": "French Tarrasch"
   },
   {
    "game": "af94027f-fc8a-4c39-9e2c-0c780db37806",
@@ -1000,5 +1022,5 @@
    "opening": "Four Knights Game"
   }
  ],
- "fetched_at": "2026-09-10T11:43:36Z"
+ "fetched_at": "2026-09-10T12:47:04Z"
 }

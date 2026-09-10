@@ -2,10 +2,10 @@
  "uuid": "c90df064-e8e8-4144-b1fd-2dd6096dd21a",
  "bot": "Loss Preventer",
  "team": "Lightning Tree",
- "rating": 2670,
+ "rating": 2647,
  "rank": 7,
- "record": "36-31-24",
- "rated_rounds": 95,
+ "record": "36-32-24",
+ "rated_rounds": 96,
  "history": [
   [
    1,
@@ -386,9 +386,33 @@
   [
    95,
    2670
+  ],
+  [
+   96,
+   2647
   ]
  ],
  "games": [
+  {
+   "game": "167b250a-8b6f-4cd3-86cf-2713fb67af3f",
+   "kind": "Rated",
+   "round": 97,
+   "colour": "White",
+   "opponent": "what even is en passant",
+   "opponent_uuid": "b9cbed87-8a3a-437d-9333-1447f68200d1",
+   "verdict": "live",
+   "opening": "Sicilian Closed"
+  },
+  {
+   "game": "b9017e16-d116-4252-8b78-326d585e225e",
+   "kind": "Rated",
+   "round": 96,
+   "colour": "Black",
+   "opponent": "Danya's Disciple",
+   "opponent_uuid": "a4b26c08-0fa5-48ae-b15e-69a622ee81bb",
+   "verdict": "draw",
+   "opening": "Two Knights Defence"
+  },
   {
    "game": "98d22425-38e2-4312-ae95-c71e68e75b7d",
    "kind": "Rated",
@@ -400,16 +424,6 @@
    "opening": "Sicilian Sveshnikov"
   },
   {
-   "game": "1dbdddf7-ef6e-410e-af68-63055fa2fc79",
-   "kind": "Rated",
-   "round": 94,
-   "colour": "Black",
-   "opponent": "DGS ELO",
-   "opponent_uuid": "5f8a69d7-73a8-4498-b322-861b557dffbd",
-   "verdict": "win",
-   "opening": "Catalan Opening"
-  },
-  {
    "game": "53edda0f-9415-470d-b8a7-3c8e6edbbf42",
    "kind": "Rated",
    "round": 93,
@@ -418,6 +432,16 @@
    "opponent_uuid": "258a9828-7442-4bea-97cb-eed1845ad2cc",
    "verdict": "loss",
    "opening": "Sicilian Classical"
+  },
+  {
+   "game": "c6844969-8f36-44f3-9603-29842f3e1464",
+   "kind": "Rated",
+   "round": 92,
+   "colour": "Black",
+   "opponent": "ms",
+   "opponent_uuid": "c3e1bc09-3d21-4279-ace0-16bb3742f5da",
+   "verdict": "draw",
+   "opening": "Caro-Kann Exchange"
   },
   {
    "game": "03a33efe-b4b4-4d77-b0c4-6acf455faf31",
@@ -1320,5 +1344,5 @@
    "opening": "Reti Opening"
   }
  ],
- "fetched_at": "2026-09-10T11:54:55Z"
+ "fetched_at": "2026-09-10T13:04:51Z"
 }
