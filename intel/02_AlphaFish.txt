@@ -1,68 +1,73 @@
-AlphaFish  (team: Emile Andrieu)  -  rank 2, rating 2850
+AlphaFish  (team: Emile Andrieu)  -  rank 2, rating 2829
 ========================================================
-Generated 2026-09-10 23:15 from 91 rated games (rounds 9-105, 67 of 96 with evaluations so far) plus
+Generated 2026-09-11 00:23 from 91 rated games (rounds 9-105, 67 of 96 with evaluations so far) plus
   5 played to a result but voided by the site later (R15 3fold, R22 50-move, R26 3fold, R28 3fold,
   R32 3fold): they count for move quality, clocks and draw behaviour, not for results.
 
 IDENTITY
   Bot AlphaFish; team Emile Andrieu; university International; team name reads like a personal name,
     probably solo.
-  Rank 2 of 452, rating 2850, record 44-40-8 in 91 rated games.
-  Rating trajectory: entered R9 at 1571, peak 2850 (R104), now 2850 (R104).
+  Rank 2 of 452, rating 2829, record 44-40-8 in 92 rated games.
+  Rating trajectory: entered R9 at 1571, peak 2850 (R104), now 2829 (R105).
   Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
     upload): R19 +107 -> 2221 (win vs SoberCooper); R48 -106 -> 2643 (loss vs test_bot)
 
 RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
-  vs top 10 : 12-18-2 (66%) over 32 games
-  vs 11-20  : 15-12-2 (72%) over 29 games
-  vs 21-50  : 10-9-2 (69%) over 21 games
-  vs rest   : 7-1-1 (83%) over 9 games
+  vs top 10 : 17-22-3 (67%) over 42 games
+  vs 11-20  : 10-8-1 (74%) over 19 games
+  vs 21-50  : 9-9-2 (68%) over 20 games
+  vs rest   : 8-1-1 (85%) over 10 games
   Games vs top-10 teams:
-    R20  white vs ms                 (#9 ) win  checkmate             Nimzo-Indian Defence
-    R21  white vs Patzer 2.4         (#4 ) win  checkmate             Sicilian Closed
-    R30  white vs Loss Preventer     (#5 ) win  checkmate             Nimzo-Indian Defence
-    R40  black vs Patzer 2.4         (#4 ) win  checkmate             Reti Opening
-    R45  white vs Patzer 2.4         (#4 ) draw insufficient_material Italian Game
-    R59  white vs Loss Preventer     (#5 ) draw fifty_moves           Sicilian Closed
-    R66  black vs ms                 (#9 ) win  checkmate             Reti Opening
-    R71  black vs ms                 (#9 ) draw threefold_repetition  Two Knights Defence
-    R72  white vs Patzer 2.4         (#4 ) loss checkmate             King's Indian Classical
-    R77  black vs stockfih           (#6 ) win  checkmate             Dutch Stonewall
-    R78  white vs ms                 (#9 ) draw threefold_repetition  Petroff Defence
-    R79  white vs Patzer 2.4         (#4 ) draw fifty_moves           Italian Game
+    R19  black vs SoberCooper        (#9 ) win  checkmate             English Symmetrical
+    R20  white vs ms                 (#10) win  checkmate             Nimzo-Indian Defence
+    R21  white vs Patzer 2.4         (#5 ) win  checkmate             Sicilian Closed
+    R30  white vs Loss Preventer     (#3 ) win  checkmate             Nimzo-Indian Defence
+    R36  black vs SoberCooper        (#9 ) draw insufficient_material French Winawer
+    R40  black vs Patzer 2.4         (#5 ) win  checkmate             Reti Opening
+    R41  black vs SoberCooper        (#9 ) draw insufficient_material Dutch Stonewall
+    R45  white vs Patzer 2.4         (#5 ) draw insufficient_material Italian Game
+    R46  black vs SoberCooper        (#9 ) win  checkmate             Pirc Defence
+    R51  black vs SoberCooper        (#9 ) win  checkmate             Dutch Stonewall
+    R56  black vs SoberCooper        (#9 ) draw threefold_repetition  French Tarrasch
+    R59  white vs Loss Preventer     (#3 ) draw fifty_moves           Sicilian Closed
+    R61  white vs SoberCooper        (#9 ) win  checkmate             Sicilian Closed
+    R66  black vs ms                 (#10) win  checkmate             Reti Opening
+    R67  white vs SoberCooper        (#9 ) loss checkmate             London System
+    R71  black vs ms                 (#10) draw threefold_repetition  Two Knights Defence
+    R72  white vs Patzer 2.4         (#5 ) loss checkmate             King's Indian Classical
+    R73  white vs SoberCooper        (#9 ) draw threefold_repetition  King's Indian Classical
+    R77  black vs stockfih           (#7 ) win  checkmate             Dutch Stonewall
+    R78  white vs ms                 (#10) draw threefold_repetition  Petroff Defence
+    R79  white vs Patzer 2.4         (#5 ) draw fifty_moves           Italian Game
     R80  black vs Mite               (#1 ) draw threefold_repetition  Sicilian Closed
-    R83  black vs stockfih           (#6 ) draw insufficient_material Sicilian Sveshnikov
-    R84  black vs Patzer 2.4         (#4 ) draw ply_cap               Nimzo-Indian Defence
-    R85  white vs Loss Preventer     (#5 ) win  checkmate             Nimzo-Indian Defence
+    R82  white vs SoberCooper        (#9 ) win  checkmate             Reti Opening
+    R83  black vs stockfih           (#7 ) draw insufficient_material Sicilian Sveshnikov
+    R84  black vs Patzer 2.4         (#5 ) draw ply_cap               Nimzo-Indian Defence
+    R85  white vs Loss Preventer     (#3 ) win  checkmate             Nimzo-Indian Defence
     R86  white vs Mite               (#1 ) loss checkmate             Sicilian Closed
-    R87  white vs Poincare conjecture (#10) win  checkmate             Sicilian Closed
-    R88  black vs stockfih           (#6 ) win  checkmate             Catalan Opening
-    R89  black vs ms                 (#9 ) draw threefold_repetition  Queen's Gambit Declined
+    R88  black vs stockfih           (#7 ) win  checkmate             Catalan Opening
+    R89  black vs ms                 (#10) draw threefold_repetition  Queen's Gambit Declined
+    R90  white vs SoberCooper        (#9 ) win  checkmate             Ruy Lopez, Closed
     R92  black vs Mite               (#1 ) draw fifty_moves           Petroff Defence
-    R93  white vs stockfih           (#6 ) draw fifty_moves           Caro-Kann Classical
-    R94  black vs BINI Alpha         (#3 ) draw threefold_repetition  Ruy Lopez, Closed
-    R96  white vs Patzer 2.4         (#4 ) draw threefold_repetition  Ruy Lopez, Closed
+    R93  white vs stockfih           (#7 ) draw fifty_moves           Caro-Kann Classical
+    R94  black vs BINI Alpha         (#4 ) draw threefold_repetition  Ruy Lopez, Closed
+    R96  white vs Patzer 2.4         (#5 ) draw threefold_repetition  Ruy Lopez, Closed
     R97  black vs Mite               (#1 ) draw fifty_moves           Reti Opening
-    R98  white vs Loss Preventer     (#5 ) win  checkmate             Reti Opening
-    R99  black vs BINI Alpha         (#3 ) draw insufficient_material Pirc Defence
-    R100 white vs stockfih           (#6 ) draw threefold_repetition  English Symmetrical
-    R101 black vs Patzer 2.4         (#4 ) win  checkmate             Nimzo-Indian Defence
-    R103 black vs Loss Preventer     (#5 ) draw threefold_repetition  Sicilian Taimanov
-    R104 black vs BINI Alpha         (#3 ) win  checkmate             Four Knights Game
-    R105 white vs Challenger         (#7 ) draw insufficient_material French Tarrasch
-  Games vs ranks 11-20: R17 win vs Anchoa (#11, checkmate); R19 win vs SoberCooper (#15, checkmate);
-    R27 win vs test_bot (#16, checkmate); R35 win vs Anchoa (#11, checkmate); R36 draw vs
-    SoberCooper (#15, insuff); R38 win vs test_bot (#16, checkmate); R41 draw vs SoberCooper (#15,
-    insuff); R42 draw vs Anchoa (#11, insuff); R43 win vs test_bot (#16, checkmate); R46 win vs
-    SoberCooper (#15, checkmate); R47 win vs Anchoa (#11, checkmate); R48 loss vs test_bot (#16,
-    checkmate); R51 win vs SoberCooper (#15, checkmate); R52 draw vs Anchoa (#11, insuff); R53 win
-    vs test_bot (#16, checkmate); R56 draw vs SoberCooper (#15, 3fold); R57 win vs Anchoa (#11,
-    checkmate); R60 draw vs Comeback arc f (#12, 3fold); R61 win vs SoberCooper (#15, checkmate);
-    R62 draw vs Anchoa (#11, 3fold); R65 win vs Comeback arc f (#12, checkmate); R67 loss vs
-    SoberCooper (#15, checkmate); R70 draw vs Comeback arc f (#12, insuff); R73 draw vs SoberCooper
-    (#15, 3fold); R75 draw vs Comeback arc f (#12, 3fold); R82 win vs SoberCooper (#15, checkmate);
-    R90 win vs SoberCooper (#15, checkmate); R91 draw vs Comeback arc f (#12, 3fold); R95 draw vs c1
-    (#13, insuff)
+    R98  white vs Loss Preventer     (#3 ) win  checkmate             Reti Opening
+    R99  black vs BINI Alpha         (#4 ) draw insufficient_material Pirc Defence
+    R100 white vs stockfih           (#7 ) draw threefold_repetition  English Symmetrical
+    R101 black vs Patzer 2.4         (#5 ) win  checkmate             Nimzo-Indian Defence
+    R103 black vs Loss Preventer     (#3 ) draw threefold_repetition  Sicilian Taimanov
+    R104 black vs BINI Alpha         (#4 ) win  checkmate             Four Knights Game
+    R105 white vs Challenger         (#6 ) draw insufficient_material French Tarrasch
+  Games vs ranks 11-20: R17 win vs Anchoa (#13, checkmate); R27 win vs test_bot (#15, checkmate);
+    R35 win vs Anchoa (#13, checkmate); R38 win vs test_bot (#15, checkmate); R42 draw vs Anchoa
+    (#13, insuff); R43 win vs test_bot (#15, checkmate); R47 win vs Anchoa (#13, checkmate); R48
+    loss vs test_bot (#15, checkmate); R52 draw vs Anchoa (#13, insuff); R53 win vs test_bot (#15,
+    checkmate); R57 win vs Anchoa (#13, checkmate); R60 draw vs Comeback arc f (#12, 3fold); R62
+    draw vs Anchoa (#13, 3fold); R65 win vs Comeback arc f (#12, checkmate); R70 draw vs Comeback
+    arc f (#12, insuff); R75 draw vs Comeback arc f (#12, 3fold); R87 win vs Poincare conje (#11,
+    checkmate); R91 draw vs Comeback arc f (#12, 3fold); R95 draw vs c1 (#18, insuff)
 
 MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
   positions inside +-800 only)
@@ -95,7 +100,7 @@ TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
 
 DRAW BEHAVIOUR
   45 draws in 96 played games (47.0%): threefold_repetition 23, insufficient_material 15,
-    fifty_moves 6, ply_cap 1; 18 of them vs top-10 teams; 5 of these were voided by the site
+    fifty_moves 6, ply_cap 1; 22 of them vs top-10 teams; 5 of these were voided by the site
     afterwards and no longer count on the ladder
   Repetition while ahead (> +150 at the final position): 1 -> R32 vs zak at +9991
   Repetition while behind (< -150): 0; level repetitions: 13

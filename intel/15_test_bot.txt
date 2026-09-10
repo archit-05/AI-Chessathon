@@ -1,55 +1,58 @@
-test_bot  (team: pheanup)  -  rank 16, rating 2594
+test_bot  (team: pheanup)  -  rank 15, rating 2590
 ==================================================
-Generated 2026-09-10 23:15 from 90 rated games (rounds 5-105, 69 of 100 with evaluations so far)
+Generated 2026-09-11 00:23 from 90 rated games (rounds 5-105, 69 of 100 with evaluations so far)
   plus 8 played to a result but voided by the site later (R8 3fold, R9 3fold, R11 3fold, R16 3fold,
   R20 3fold, R24 3fold, R29 3fold, R70 checkmate): they count for move quality, clocks and draw
   behaviour, not for results; 2 game(s) that never had a result ignored: R6, R18.
 
 IDENTITY
   Bot test_bot; team pheanup; university KCL; members not shown on the site.
-  Rank 16 of 452, rating 2594, record 32-39-20 in 90 rated games.
+  Rank 15 of 452, rating 2590, record 32-39-20 in 91 rated games.
   Rating trajectory: entered R5 at 1573, peak 2643 (R101), now 2590 (R105).
   Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
     upload): R7 +110 -> 1680 (win vs Loki 3.0); R68 +144 -> 2382 (win vs checkers)
 
 RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
-  vs top 10 : 4-6-10 (35%) over 20 games
-  vs 11-20  : 6-18-3 (56%) over 27 games
+  vs top 10 : 6-8-12 (38%) over 26 games
+  vs 11-20  : 4-16-1 (57%) over 21 games
   vs 21-50  : 14-14-7 (60%) over 35 games
   vs rest   : 8-0-0 (100%) over 8 games
   Games vs top-10 teams:
-    R15  white vs ms                 (#9 ) loss checkmate             Reti Opening
+    R14  white vs SoberCooper        (#9 ) loss checkmate             Petroff Defence
+    R15  white vs ms                 (#10) loss checkmate             Reti Opening
     R27  black vs AlphaFish          (#2 ) loss checkmate             Italian Game
-    R28  black vs Loss Preventer     (#5 ) win  checkmate             French Tarrasch
-    R30  white vs stockfih           (#6 ) win  checkmate             Petroff Defence
-    R36  white vs Patzer 2.4         (#4 ) draw threefold_repetition  Sicilian Sveshnikov
+    R28  black vs Loss Preventer     (#3 ) win  checkmate             French Tarrasch
+    R30  white vs stockfih           (#7 ) win  checkmate             Petroff Defence
+    R36  white vs Patzer 2.4         (#5 ) draw threefold_repetition  Sicilian Sveshnikov
+    R37  black vs SoberCooper        (#9 ) win  checkmate             Reti Opening
     R38  black vs AlphaFish          (#2 ) loss checkmate             Sicilian Closed
+    R42  black vs SoberCooper        (#9 ) win  checkmate             Sicilian Dragon
     R43  white vs AlphaFish          (#2 ) loss checkmate             Ruy Lopez, Closed
+    R47  white vs SoberCooper        (#9 ) draw insufficient_material Reti Opening
     R48  black vs AlphaFish          (#2 ) win  checkmate             Sicilian Sveshnikov
-    R50  black vs Patzer 2.4         (#4 ) win  checkmate             Sicilian Taimanov
+    R50  black vs Patzer 2.4         (#5 ) win  checkmate             Sicilian Taimanov
     R53  black vs AlphaFish          (#2 ) loss checkmate             London System
-    R58  black vs Loss Preventer     (#5 ) loss checkmate             French Winawer
-    R59  white vs Poincare conjecture (#10) draw insufficient_material Semi-Slav Defence
-    R63  white vs ms                 (#9 ) loss checkmate             Scotch Game
-    R66  white vs BINI Alpha         (#3 ) loss checkmate             Sicilian Closed
-    R74  black vs BINI Alpha         (#3 ) draw threefold_repetition  Catalan Opening
-    R75  black vs Loss Preventer     (#5 ) draw threefold_repetition  Sicilian Closed
-    R80  white vs Loss Preventer     (#5 ) loss checkmate             Sicilian Najdorf
+    R57  black vs SoberCooper        (#9 ) loss checkmate             Queen's Gambit Accepted
+    R58  black vs Loss Preventer     (#3 ) loss checkmate             French Winawer
+    R63  white vs ms                 (#10) loss checkmate             Scotch Game
+    R66  white vs BINI Alpha         (#4 ) loss checkmate             Sicilian Closed
+    R74  black vs BINI Alpha         (#4 ) draw threefold_repetition  Catalan Opening
+    R75  black vs Loss Preventer     (#3 ) draw threefold_repetition  Sicilian Closed
+    R80  white vs Loss Preventer     (#3 ) loss checkmate             Sicilian Najdorf
     R82  white vs Mite               (#1 ) draw stalemate             Petroff Defence
-    R103 white vs ms                 (#9 ) draw threefold_repetition  Sicilian Dragon
+    R83  black vs SoberCooper        (#9 ) draw threefold_repetition  Sicilian Closed
+    R100 black vs SoberCooper        (#9 ) draw fifty_moves           Sicilian Najdorf
+    R103 white vs ms                 (#10) draw threefold_repetition  Sicilian Dragon
     R104 black vs BetaGo             (#8 ) loss checkmate             Caro-Kann Classical
-  Games vs ranks 11-20: R13 win vs Anchoa (#11, checkmate); R14 loss vs SoberCooper (#15,
-    checkmate); R34 win vs Danya's Discip (#18, checkmate); R37 win vs SoberCooper (#15, checkmate);
-    R39 draw vs Anchoa (#11, 3fold); R42 win vs SoberCooper (#15, checkmate); R44 draw vs Anchoa
-    (#11, 3fold); R47 draw vs SoberCooper (#15, insuff); R49 draw vs Anchoa (#11, 3fold); R54 draw
-    vs Anchoa (#11, fifty_moves); R57 loss vs SoberCooper (#15, checkmate); R60 win vs Astral (#17,
-    checkmate); R64 draw vs Ultron Prime (#14, 3fold); R65 draw vs Danya's Discip (#18, insuff); R69
-    draw vs Ultron Prime (#14, fifty_moves); R73 loss vs Anchoa (#11, checkmate); R81 draw vs
-    Danya's Discip (#18, 3fold); R83 draw vs SoberCooper (#15, 3fold); R86 draw vs Ultron Prime
-    (#14, 3fold); R88 draw vs Anchoa (#11, insuff); R89 draw vs c1 (#13, fifty_moves); R90 draw vs
-    Danya's Discip (#18, 3fold); R91 draw vs Ultron Prime (#14, fifty_moves); R94 draw vs Anchoa
-    (#11, 3fold); R99 win vs e=π=2 (#19, checkmate); R100 draw vs SoberCooper (#15, fifty_moves);
-    R105 draw vs Danya's Discip (#18, insuff)
+  Games vs ranks 11-20: R13 win vs Anchoa (#13, checkmate); R34 win vs Danya's Discip (#17,
+    checkmate); R39 draw vs Anchoa (#13, 3fold); R44 draw vs Anchoa (#13, 3fold); R49 draw vs Anchoa
+    (#13, 3fold); R54 draw vs Anchoa (#13, fifty_moves); R59 draw vs Poincare conje (#11, insuff);
+    R60 win vs Astral (#16, checkmate); R64 draw vs Ultron Prime (#14, 3fold); R65 draw vs Danya's
+    Discip (#17, insuff); R69 draw vs Ultron Prime (#14, fifty_moves); R73 loss vs Anchoa (#13,
+    checkmate); R81 draw vs Danya's Discip (#17, 3fold); R86 draw vs Ultron Prime (#14, 3fold); R88
+    draw vs Anchoa (#13, insuff); R89 draw vs c1 (#18, fifty_moves); R90 draw vs Danya's Discip
+    (#17, 3fold); R91 draw vs Ultron Prime (#14, fifty_moves); R94 draw vs Anchoa (#13, 3fold); R99
+    win vs e=π=2 (#19, checkmate); R105 draw vs Danya's Discip (#17, insuff)
 
 MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
   positions inside +-800 only)
@@ -83,7 +86,7 @@ TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
 
 DRAW BEHAVIOUR
   45 draws in 98 played games (46.0%): threefold_repetition 28, insufficient_material 8, fifty_moves
-    8, stalemate 1; 7 of them vs top-10 teams; 7 of these were voided by the site afterwards and no
+    8, stalemate 1; 9 of them vs top-10 teams; 7 of these were voided by the site afterwards and no
     longer count on the ladder
   Repetition while ahead (> +150 at the final position): 0
   Repetition while behind (< -150): 2 -> R55 at -9995, R20 at -3783; level repetitions: 17
@@ -91,7 +94,7 @@ DRAW BEHAVIOUR
 ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
   Reached +300 or better in 27 games, failed to win 2:
     R67 vs Edward peak +537, draw by insufficient_material: traded down into a dead draw
-    R70 vs Fuzzydafool peak +364, loss by checkmate: lost it: worst move 151.Rg1 cost 510 cp
+    R70 vs Fuzzy 7.0 peak +364, loss by checkmate: lost it: worst move 151.Rg1 cost 510 cp
   Reached -300 or worse in 18 games, escaped with a half point or more in 2:
     R55 vs AI Fellow low -9995, draw by threefold_repetition: opponent allowed a repetition
     R20 vs Blank Shooter low -3783, draw by threefold_repetition: opponent allowed a repetition

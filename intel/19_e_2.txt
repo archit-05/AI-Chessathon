@@ -1,12 +1,12 @@
-e=π=2  (team: e=π=2)  -  rank 19, rating 2526
+e=π=2  (team: e=π=2)  -  rank 19, rating 2523
 =============================================
-Generated 2026-09-10 23:15 from 96 rated games (rounds 1-105, 43 of 104 with evaluations so far); 8
+Generated 2026-09-11 00:23 from 96 rated games (rounds 1-105, 43 of 104 with evaluations so far); 8
   game(s) that never had a result ignored: R7, R13, R15, R17, R21, R31, R32, R33.
 
 IDENTITY
   Bot e=π=2; team e=π=2; university International; members not shown on the site.
-  Rank 19 of 452, rating 2526 (provisional: fewer than six games on the current build, i.e. a new
-    upload in the last five rounds), record 40-30-27 in 96 rated games.
+  Rank 19 of 452, rating 2523 (provisional: fewer than six games on the current build, i.e. a new
+    upload in the last five rounds), record 40-30-27 in 97 rated games.
   Rating trajectory: entered R1 at 1429, peak 2566 (R102), now 2523 (R105).
   Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
     upload): R41 +107 -> 1649 (win vs Blunders central); R43 -107 -> 1531 (loss vs TheROOK); R45
@@ -14,17 +14,17 @@ IDENTITY
     Castle Gambit)
 
 RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
-  vs top 10 : 0-1-2 (17%) over 3 games
-  vs 11-20  : 1-4-1 (50%) over 6 games
-  vs 21-50  : 5-8-2 (60%) over 15 games
-  vs rest   : 33-17-22 (58%) over 72 games
+  vs top 10 : 0-2-0 (50%) over 2 games
+  vs 11-20  : 1-3-3 (36%) over 7 games
+  vs 21-50  : 5-9-2 (59%) over 16 games
+  vs rest   : 33-16-22 (58%) over 71 games
   Games vs top-10 teams:
-    R94  black vs Challenger         (#7 ) draw threefold_repetition  Sicilian Closed
-    R97  black vs Poincare conjecture (#10) loss checkmate             Queen's Gambit Accepted
-    R104 black vs Poincare conjecture (#10) loss checkmate             Italian Game
-  Games vs ranks 11-20: R85 draw vs c1 (#13, 3fold); R90 win vs Chudless (#20, checkmate); R96 draw
-    vs Ultron Prime (#14, fifty_moves); R99 loss vs test_bot (#16, checkmate); R103 draw vs
-    SoberCooper (#15, 3fold); R105 draw vs Chudless (#20, fifty_moves)
+    R94  black vs Challenger         (#6 ) draw threefold_repetition  Sicilian Closed
+    R103 white vs SoberCooper        (#9 ) draw threefold_repetition  Petroff Defence
+  Games vs ranks 11-20: R85 draw vs c1 (#18, 3fold); R90 win vs Chudless (#20, checkmate); R96 draw
+    vs Ultron Prime (#14, fifty_moves); R97 loss vs Poincare conje (#11, checkmate); R99 loss vs
+    test_bot (#15, checkmate); R104 loss vs Poincare conje (#11, checkmate); R105 draw vs Chudless
+    (#20, fifty_moves)
 
 MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
   positions inside +-800 only)
@@ -57,7 +57,7 @@ TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
 
 DRAW BEHAVIOUR
   30 draws in 96 played games (31.0%): threefold_repetition 21, fifty_moves 5, insufficient_material
-    3, stalemate 1; 1 of them vs top-10 teams
+    3, stalemate 1; 2 of them vs top-10 teams
   Repetition while ahead (> +150 at the final position): 2 -> R47 vs Pwn at +494, R50 vs ChEKmate at
     +173
   Repetition while behind (< -150): 0; level repetitions: 5
