@@ -1,21 +1,21 @@
 SoberPaschoud  (team: Sobriety)  -  rank 6, rating 2642
 =======================================================
-Generated 2026-09-10 07:58 from 80 rated games (rounds 1-90, 74 of 89 with evaluations so far) plus
+Generated 2026-09-10 08:59 from 81 rated games (rounds 1-91, 74 of 90 with evaluations so far) plus
   8 played to a result but voided by the site later (R13 50-move, R16 3fold, R17 3fold, R20 3fold,
   R25 3fold, R26 3fold, R28 3fold, R29 50-move): they count for move quality, clocks and draw
   behaviour, not for results; 1 game(s) that never had a result ignored: R9.
 
 IDENTITY
   Bot SoberPaschoud; team Sobriety; university Mixed; members not shown on the site.
-  Rank 6 of 435, rating 2642, record 33-32-16 in 81 rated games.
+  Rank 6 of 434, rating 2642, record 33-33-16 in 81 rated games.
   Rating trajectory: entered R1 at 1575, peak 2665 (R89), now 2642 (R90).
   Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
     upload): R2 +110 -> 1685 (win vs Loki 3.0); R10 +111 -> 1911 (win vs Patzer 2.4); R24 -138 ->
     2113 (loss vs Loss Preventer); R37 -112 -> 2285 (loss vs test_bot)
 
 RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
-  vs top 10 : 3-12-11 (35%) over 26 games
-  vs 11-20  : 10-17-4 (60%) over 31 games
+  vs top 10 : 4-13-11 (38%) over 28 games
+  vs 11-20  : 10-16-4 (60%) over 30 games
   vs 21-50  : 12-1-0 (96%) over 13 games
   vs rest   : 7-2-1 (80%) over 10 games
   Games vs top-10 teams:
@@ -43,8 +43,10 @@ RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
     R79  black vs Loss Preventer     (#4 ) draw insufficient_material French Tarrasch
     R82  black vs AlphaFish          (#1 ) loss checkmate             Reti Opening
     R84  white vs ms                 (#5 ) draw threefold_repetition  French Advance
+    R87  black vs Patzer 2.4         (#7 ) win  checkmate             French Advance
     R89  white vs stockfih           (#2 ) draw fifty_moves           King's Indian Classical
     R90  black vs AlphaFish          (#1 ) loss checkmate             Ruy Lopez, Closed
+    R91  white vs ms                 (#5 ) draw threefold_repetition  Petroff Defence
   Games vs ranks 11-20: R4 loss vs Fuzzydafool (#19, flag); R14 win vs test_bot (#16, checkmate);
     R34 draw vs Anchoa (#14, fifty_moves); R35 draw vs Capablanca (#11, stalemate); R37 loss vs
     test_bot (#16, checkmate); R39 win vs Fuzzydafool (#19, checkmate); R40 draw vs Capablanca (#11,
@@ -57,7 +59,7 @@ RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
     insuff); R71 draw vs cory (#18, fifty_moves); R72 win vs Mite (#12, checkmate); R78 draw vs AI
     Fellow (#13, 3fold); R80 draw vs Danya's Discip (#17, fifty_moves); R81 win vs Mite (#12,
     checkmate); R83 draw vs test_bot (#16, 3fold); R85 win vs Capablanca (#11, checkmate); R86 draw
-    vs AI Fellow (#13, insuff); R88 draw vs Mite (#12, fifty_moves)
+    vs AI Fellow (#13, insuff)
 
 MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
   positions inside +-800 only)
@@ -69,14 +71,14 @@ MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss c
   as white          : n 2824, mean 12.6 cp, median 0 cp, blunders 0.4%
   as black          : n 2588, mean 8.2 cp, median 0 cp, blunders 0.2%
   Worst moves: R16 87.Bg7 (+9987 -> +0); R5 16.Rf5 (+387 -> +35); R5 17.Ka1 (+0 -> -295)
-  Site's own review (Stockfish 16, depth 16): mean ACPL 17.6 over 80 games, accuracy 97.5%; its tags
+  Site's own review (Stockfish 16, depth 16): mean ACPL 17.5 over 81 games, accuracy 97.5%; its tags
     on their moves: 10 blunder, 22 mistake, 2 miss, 89 inaccuracy of 5226
 
 TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
-  Per move: mean 1.63 s, median 1.21 s, quartiles 0.56-2.29 s, max 12.9 s; instant (<50 ms) moves
-    9.0%
-  Clock at the end: mean 26.6 s, minimum 0.9 s; games under 10 s: 1, under 5 s: 1 (R4)
-  By clock before the move: >60s 2.9 s (n 2250), 30-60s 1.7 s (n 1851), 10-30s 0.7 s (n 3138), <10s
+  Per move: mean 1.64 s, median 1.22 s, quartiles 0.57-2.3 s, max 12.9 s; instant (<50 ms) moves
+    9.2%
+  Clock at the end: mean 26.7 s, minimum 0.9 s; games under 10 s: 1, under 5 s: 1 (R4)
+  By clock before the move: >60s 2.9 s (n 2275), 30-60s 1.7 s (n 1868), 10-30s 0.7 s (n 3109), <10s
     1.3 s (n 11)
   By own-move number: 1-15 3.1 s, 16-40 2.2 s, 41+ 0.8 s; when +300 or better 1.0 s, level 1.9 s,
     -300 or worse 0.8 s
@@ -88,9 +90,9 @@ TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
     the game goes on
 
 DRAW BEHAVIOUR
-  40 draws in 88 played games (45.0%): threefold_repetition 20, fifty_moves 10,
-    insufficient_material 9, stalemate 1; 13 of them vs top-10 teams; 8 of these were voided by the
-    site afterwards and no longer count on the ladder
+  40 draws in 89 played games (45.0%): threefold_repetition 21, fifty_moves 9, insufficient_material
+    9, stalemate 1; 14 of them vs top-10 teams; 8 of these were voided by the site afterwards and no
+    longer count on the ladder
   Repetition while ahead (> +150 at the final position): 0
   Repetition while behind (< -150): 1 -> R17 at -9992; level repetitions: 15
 
@@ -110,27 +112,27 @@ ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
     R17 vs AI Fellow low -9992, draw by threefold_repetition: opponent allowed a repetition
 
 OPENINGS (curated start positions assigned by the platform)
-  By family: Sicilian 11-5-4 (68%); French 6-5-0 (77%); Ruy Lopez 3-3-2 (56%); Reti 0-5-2 (36%);
-    Petroff 3-3-0 (75%); English 1-3-2 (42%); Caro-Kann 1-4-0 (60%); Dutch 0-2-2 (25%); King's
-    Indian 0-4-0 (50%); Nimzo-Indian 1-2-0 (67%); London 2-0-1 (67%); Four Knights 0-1-1 (25%); Pirc
-    0-0-2 (0%); Queen's Gambit 2-0-0 (100%); Queen's Indian 1-0-0 (100%); Catalan 1-0-0 (100%); Slav
-    0-1-0 (50%); Grunfeld 0-1-0 (50%); Italian 0-1-0 (50%)
-  Positions seen more than once: Ruy Lopez, Closed x8 3-3-2 (56%); Reti Opening x7 0-5-2 (36%);
-    Sicilian Closed x7 3-3-1 (64%); English Symmetrical x6 1-3-2 (42%); Petroff Defence x6 3-3-0
-    (75%); French Tarrasch x5 2-3-0 (70%); Sicilian Sveshnikov x5 4-1-0 (90%); Dutch Stonewall x4
-    0-2-2 (25%); King's Indian Classical x4 0-4-0 (50%); Sicilian Dragon x4 0-1-3 (12%); Caro-Kann
+  By family: Sicilian 11-5-4 (68%); French 7-5-0 (79%); Ruy Lopez 3-3-2 (56%); Petroff 3-4-0 (71%);
+    English 1-3-2 (42%); Reti 0-4-2 (33%); Caro-Kann 1-4-0 (60%); Dutch 0-2-2 (25%); King's Indian
+    0-4-0 (50%); Nimzo-Indian 1-2-0 (67%); London 2-0-1 (67%); Four Knights 0-1-1 (25%); Pirc 0-0-2
+    (0%); Queen's Gambit 2-0-0 (100%); Queen's Indian 1-0-0 (100%); Catalan 1-0-0 (100%); Slav 0-1-0
+    (50%); Grunfeld 0-1-0 (50%); Italian 0-1-0 (50%)
+  Positions seen more than once: Ruy Lopez, Closed x8 3-3-2 (56%); Petroff Defence x7 3-4-0 (71%);
+    Sicilian Closed x7 3-3-1 (64%); English Symmetrical x6 1-3-2 (42%); Reti Opening x6 0-4-2 (33%);
+    French Tarrasch x5 2-3-0 (70%); Sicilian Sveshnikov x5 4-1-0 (90%); Dutch Stonewall x4 0-2-2
+    (25%); King's Indian Classical x4 0-4-0 (50%); Sicilian Dragon x4 0-1-3 (12%); Caro-Kann
     Classical x3 0-3-0 (50%); French Classical x3 3-0-0 (100%); London System x3 2-0-1 (67%);
     Nimzo-Indian Defence x3 1-2-0 (67%); Sicilian Najdorf x3 3-0-0 (100%); Caro-Kann Exchange x2
-    1-1-0 (75%); Four Knights Game x2 0-1-1 (25%); French Winawer x2 1-1-0 (75%); Pirc Defence x2
-    0-0-2 (0%); 9 positions seen once (5 won, 4 drawn, 0 lost).
-  Underperforms in: Dutch 0-2-2 (25%), Reti 0-5-2 (36%)
+    1-1-0 (75%); Four Knights Game x2 0-1-1 (25%); French Advance x2 1-1-0 (75%); French Winawer x2
+    1-1-0 (75%); Pirc Defence x2 0-0-2 (0%); 8 positions seen once (5 won, 3 drawn, 0 lost).
+  Underperforms in: Dutch 0-2-2 (25%), Reti 0-4-2 (33%)
   First six own moves: 66% match Stockfish's first choice (moves 7-20: 65%), mean loss 6.9 cp, 17%
     played instantly; first clear divergence (loss >= 20 cp) at own move 9.1 on average.
 
 STYLE
-  Captures on 15.2% of own moves, checks on 9.2%; average game 165 plies (82 own moves), longest 370
+  Captures on 15.2% of own moves, checks on 9.2%; average game 163 plies (82 own moves), longest 370
     plies (R29)
-  Wins: 32 (32 by checkmate, 0 by opponent failure); losses: 16 (15 by checkmate, 1 by own failure:
+  Wins: 33 (33 by checkmate, 0 by opponent failure); losses: 16 (15 by checkmate, 1 by own failure:
     R4 flag)
   Sacrifices (gave >= 2 pawns of material without losing eval, then recovered): 19 -> R1 20.Nc6, R10
     19.Ne4, R12 15.Qd3, R22 25.Nxg3+, R23 20.Qxd2, R32 24.g5
@@ -140,7 +142,7 @@ STYLE
 LIKELY ENGINE PROFILE
   Strong searcher (mean loss 10.5 cp): consistent with a bitboard alpha-beta engine at depth 8-12
   with a decent evaluation. Confidence high.
-  Time allocation is a fixed share of the remaining clock (~4% per move; median 1.21 s, max 12.9 s),
+  Time allocation is a fixed share of the remaining clock (~4% per move; median 1.22 s, max 12.9 s),
   so depth shrinks as the game goes on and no extra time goes to critical positions (1.1 s after a
   >100 cp swing vs 1.7 s otherwise).
   Instant early moves (17% of the first six played in under 50 ms): an opening book covers part of
@@ -154,5 +156,5 @@ HOW TO PLAY THEM
   positions where one precise move matters over long manoeuvring.
   3. Tactics work: 7 blunders (>= 200 cp) came from level or better positions, so they can be
   out-calculated. Keep the position sharp.
-  4. Opening families where they score badly: Dutch (0-2-2 (25%)), Reti (0-5-2 (36%)). Nothing to
+  4. Opening families where they score badly: Dutch (0-2-2 (25%)), Reti (0-4-2 (33%)). Nothing to
   choose here (positions are assigned), but expect our best chances there.

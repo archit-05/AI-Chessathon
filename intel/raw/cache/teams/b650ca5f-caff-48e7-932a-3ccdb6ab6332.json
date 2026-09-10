@@ -2,18 +2,14 @@
  "uuid": "b650ca5f-caff-48e7-932a-3ccdb6ab6332",
  "bot": "Chessity",
  "team": "The Veritys",
- "rating": 1677,
- "rank": 188,
- "record": "25-8-22",
- "rated_rounds": 55,
+ "rating": 1632,
+ "rank": 209,
+ "record": "25-8-23",
+ "rated_rounds": 56,
  "history": [
   [
    36,
    1500
-  ],
-  [
-   37,
-   1489
   ],
   [
    38,
@@ -226,9 +222,23 @@
   [
    90,
    1677
+  ],
+  [
+   91,
+   1632
   ]
  ],
  "games": [
+  {
+   "game": "e23b7e3a-77a6-4b12-a07f-21068efb68d0",
+   "kind": "Rated",
+   "round": 91,
+   "colour": "White",
+   "opponent": "Stockfish's Nightmare",
+   "opponent_uuid": "c3d8b5c4-e521-4341-8130-34d7e73234e5",
+   "verdict": "loss",
+   "opening": "Sicilian Taimanov"
+  },
   {
    "game": "2c191487-2f65-45ce-8822-0972ebd46749",
    "kind": "Rated",
@@ -250,14 +260,14 @@
    "opening": "Caro-Kann Classical"
   },
   {
-   "game": "c37c9f4b-6cff-4539-9691-edf3f90d5ed4",
+   "game": "2aac9d88-6bd8-476b-aa6b-aa2c2f3590b4",
    "kind": "Rated",
-   "round": 88,
-   "colour": "White",
-   "opponent": "SearchMate",
-   "opponent_uuid": "9b28a4ca-3e56-4988-8b28-8057e03974c9",
-   "verdict": "win",
-   "opening": "Scotch Game"
+   "round": 87,
+   "colour": "Black",
+   "opponent": "Team7347",
+   "opponent_uuid": "1f20a852-ae0c-44f5-aed7-8be8a5e699b0",
+   "verdict": "loss",
+   "opening": "King's Indian Classical"
   },
   {
    "game": "1d2df53f-aa3c-48ff-8388-45f43b1c8f08",
@@ -770,5 +780,5 @@
    "opening": "Sicilian Sveshnikov"
   }
  ],
- "fetched_at": "2026-09-10T06:58:53Z"
+ "fetched_at": "2026-09-10T07:59:36Z"
 }
