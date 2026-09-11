@@ -2,10 +2,10 @@
  "uuid": "3e68dab5-8421-4113-9aa0-dbe165e997f5",
  "bot": "e=\u03c0=2",
  "team": "e=\u03c0=2",
- "rating": 2523,
- "rank": 19,
- "record": "40-31-27",
- "rated_rounds": 105,
+ "rating": 2596,
+ "rank": 15,
+ "record": "41-32-28",
+ "rated_rounds": 108,
  "history": [
   [
    1,
@@ -426,18 +426,50 @@
   [
    105,
    2523
+  ],
+  [
+   106,
+   2534
+  ],
+  [
+   107,
+   2598
+  ],
+  [
+   108,
+   2596
   ]
  ],
  "games": [
   {
-   "game": "d71e320f-d07c-4774-b9f7-133adb1c2010",
+   "game": "c915a2a1-3d27-4f6e-9077-7462db623bb0",
    "kind": "Rated",
-   "round": 106,
+   "round": 109,
+   "colour": "Black",
+   "opponent": "Gladiator",
+   "opponent_uuid": "429a581d-e7fc-41e3-a915-2895b01d7d0b",
+   "verdict": "loss",
+   "opening": "Italian Game"
+  },
+  {
+   "game": "19594095-f2d6-4dc0-9c6c-5b5e56b96547",
+   "kind": "Rated",
+   "round": 108,
    "colour": "White",
-   "opponent": "FuzzyBot",
-   "opponent_uuid": "3241cef5-6b1c-41f2-b275-f0e50fc52ed5",
+   "opponent": "pheanup",
+   "opponent_uuid": "0a121c61-60a7-4926-a0e7-024dffa6b185",
    "verdict": "draw",
-   "opening": "Sicilian Sveshnikov"
+   "opening": "Caro-Kann Exchange"
+  },
+  {
+   "game": "d0f9305e-da75-4524-86f1-ca0722af3977",
+   "kind": "Rated",
+   "round": 107,
+   "colour": "Black",
+   "opponent": "OMI",
+   "opponent_uuid": "f90aed5c-61db-4b3a-bbc1-9f40391e701a",
+   "verdict": "win",
+   "opening": "Queen's Gambit Accepted"
   },
   {
    "game": "b6283fab-cc04-4f9e-8a6f-8993e3021c55",
@@ -458,6 +490,16 @@
    "opponent_uuid": "429a581d-e7fc-41e3-a915-2895b01d7d0b",
    "verdict": "loss",
    "opening": "Italian Game"
+  },
+  {
+   "game": "e139bb76-1398-4476-a296-e99fba645550",
+   "kind": "Rated",
+   "round": 103,
+   "colour": "White",
+   "opponent": "Sobriety",
+   "opponent_uuid": "258a9828-7442-4bea-97cb-eed1845ad2cc",
+   "verdict": "draw",
+   "opening": "Petroff Defence"
   },
   {
    "game": "8a5f508f-1e2f-4fb8-b827-01a880f5cd7a",
@@ -1480,5 +1522,5 @@
    "opening": "French Winawer"
   }
  ],
- "fetched_at": "2026-09-11T07:11:40Z"
+ "fetched_at": "2026-09-11T10:20:16Z"
 }

@@ -1,20 +1,20 @@
 Danya's Disciple  (team: Danya's Disciple)  -  rank 17, rating 2540
 ===================================================================
-Generated 2026-09-11 08:11 from 92 rated games (rounds 1-105, 75 of 103 with evaluations so far)
+Generated 2026-09-11 09:18 from 93 rated games (rounds 1-106, 75 of 104 with evaluations so far)
   plus 11 played to a result but voided by the site later (R5 3fold, R11 3fold, R17 3fold, R18
   3fold, R23 3fold, R24 3fold, R26 3fold, R28 3fold, R29 3fold, R32 50-move, R69 3fold): they count
   for move quality, clocks and draw behaviour, not for results.
 
 IDENTITY
   Bot Danya's Disciple; team Danya's Disciple; university Leeds; members not shown on the site.
-  Rank 17 of 450, rating 2540, record 33-36-24 in 93 rated games.
-  Rating trajectory: entered R1 at 1575, peak 2586 (R100), now 2540 (R105).
+  Rank 17 of 450, rating 2540, record 33-37-24 in 93 rated games.
+  Rating trajectory: entered R1 at 1575, peak 2586 (R100), now 2541 (R106).
   Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
     upload): R13 +125 -> 1836 (win vs ChittyChittyBangBang); R25 +125 -> 2043 (win vs checkers)
 
 RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
   vs top 10 : 2-10-6 (39%) over 18 games
-  vs 11-20  : 3-12-5 (45%) over 20 games
+  vs 11-20  : 3-13-5 (45%) over 21 games
   vs 21-50  : 15-12-10 (57%) over 37 games
   vs rest   : 13-2-2 (82%) over 17 games
   Games vs top-10 teams:
@@ -44,7 +44,7 @@ RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
     win vs Astral (#16, checkmate); R89 draw vs Anchoa (#13, fifty_moves); R90 draw vs test_bot
     (#15, 3fold); R92 draw vs c1 (#18, 3fold); R97 draw vs Comeback arc f (#12, 3fold); R101 loss vs
     Ultron Prime (#14, checkmate); R103 draw vs Anchoa (#13, 3fold); R105 draw vs test_bot (#15,
-    insuff)
+    insuff); R106 draw vs c1 (#18, fifty_moves)
 
 MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
   positions inside +-800 only)
@@ -56,27 +56,28 @@ MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss c
   as white          : n 2463, mean 14.4 cp, median 0 cp, blunders 0.6%
   as black          : n 2414, mean 12.0 cp, median 1 cp, blunders 0.5%
   Worst moves: R30 19.Bd2 (+73 -> -319); R57 53.Kf3 (+964 -> +651); R7 30.R7d6 (-59 -> -342)
-  Site's own review (Stockfish 16, depth 16): mean ACPL 20.3 over 92 games, accuracy 97.2%; its tags
+  Site's own review (Stockfish 16, depth 16): mean ACPL 20.2 over 93 games, accuracy 97.2%; its tags
     on their moves: 9 blunder, 26 mistake, 2 miss, 135 inaccuracy of 4806
 
 TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
-  Per move: mean 1.79 s, median 1.4 s, quartiles 0.74-2.6 s, max 9.5 s; instant (<50 ms) moves 5.0%
-  Clock at the end: mean 21.0 s, minimum 4.3 s; games under 10 s: 34, under 5 s: 3 (R51, R89, R99)
-  By clock before the move: >60s 3.7 s (n 1931), 30-60s 1.9 s (n 1950), 10-30s 0.9 s (n 2579), <10s
-    0.6 s (n 1445)
+  Per move: mean 1.78 s, median 1.38 s, quartiles 0.72-2.6 s, max 9.5 s; instant (<50 ms) moves 4.9%
+  Clock at the end: mean 20.9 s, minimum 4.3 s; games under 10 s: 35, under 5 s: 4 (R51, R89, R99,
+    R106)
+  By clock before the move: >60s 3.7 s (n 1950), 30-60s 1.9 s (n 1967), 10-30s 0.9 s (n 2618), <10s
+    0.6 s (n 1544)
   By own-move number: 1-15 3.9 s, 16-40 2.1 s, 41+ 0.8 s; when +300 or better 1.1 s, level 2.1 s,
     -300 or worse 1.1 s
   Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 4.8%,
-    quartiles 4.3-6.1%
+    quartiles 4.3-6.2%
   After a >100 cp swing on the opponent's move: 1.4 s (n 213) vs 1.8 s otherwise; on moves that
     themselves swing >100 cp: 1.3 s (n 201) vs 1.9 s
   Exploitable: spends a fixed ~5% of the remaining clock per move, so its thinking time shrinks as
     the game goes on; gets into time trouble
 
 DRAW BEHAVIOUR
-  47 draws in 103 played games (46.0%): threefold_repetition 34, insufficient_material 7,
-    fifty_moves 6; 14 of them vs top-10 teams; 11 of these were voided by the site afterwards and no
-    longer count on the ladder
+  48 draws in 104 played games (46.0%): threefold_repetition 34, fifty_moves 7,
+    insufficient_material 7; 14 of them vs top-10 teams; 11 of these were voided by the site
+    afterwards and no longer count on the ladder
   Repetition while ahead (> +150 at the final position): 2 -> R17 vs Dark Sister at +542, R18 vs
     meowfish at +593
   Repetition while behind (< -150): 1 -> R5 at -3713; level repetitions: 19
@@ -89,7 +90,7 @@ ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
     R5 vs APEX low -9988, draw by threefold_repetition: opponent allowed a repetition
 
 OPENINGS (curated start positions assigned by the platform)
-  By family: Sicilian 7-11-7 (50%); Reti 3-5-2 (55%); Caro-Kann 3-4-1 (62%); French 3-3-2 (56%);
+  By family: Sicilian 7-12-7 (50%); Reti 3-5-2 (55%); Caro-Kann 3-4-1 (62%); French 3-3-2 (56%);
     English 4-2-1 (71%); London 3-4-0 (71%); Nimzo-Indian 0-4-2 (33%); Ruy Lopez 2-2-1 (60%);
     Petroff 2-2-1 (60%); Italian 1-3-1 (50%); Queen's Indian 2-0-2 (50%); Grunfeld 1-1-1 (50%);
     Queen's Gambit 1-2-0 (67%); Two Knights 1-1-1 (50%); Scotch 0-2-0 (50%); King's Indian 0-0-1
@@ -97,9 +98,9 @@ OPENINGS (curated start positions assigned by the platform)
   Positions seen more than once: Sicilian Closed x13 6-5-2 (65%); Reti Opening x10 3-5-2 (55%);
     English Symmetrical x7 4-2-1 (71%); London System x7 3-4-0 (71%); Nimzo-Indian Defence x6 0-4-2
     (33%); Caro-Kann Classical x5 2-2-1 (60%); Italian Game x5 1-3-1 (50%); Petroff Defence x5 2-2-1
-    (60%); Ruy Lopez, Closed x5 2-2-1 (60%); Queen's Indian Defence x4 2-0-2 (50%); French Advance
-    x3 2-1-0 (83%); French Tarrasch x3 0-1-2 (17%); Grunfeld Defence x3 1-1-1 (50%); Queen's Gambit
-    Accepted x3 1-2-0 (67%); Sicilian Dragon x3 1-0-2 (33%); Sicilian Sveshnikov x3 0-2-1 (33%); Two
+    (60%); Ruy Lopez, Closed x5 2-2-1 (60%); Queen's Indian Defence x4 2-0-2 (50%); Sicilian Dragon
+    x4 1-1-2 (38%); French Advance x3 2-1-0 (83%); French Tarrasch x3 0-1-2 (17%); Grunfeld Defence
+    x3 1-1-1 (50%); Queen's Gambit Accepted x3 1-2-0 (67%); Sicilian Sveshnikov x3 0-2-1 (33%); Two
     Knights Defence x3 1-1-1 (50%); Caro-Kann Exchange x2 1-1-0 (75%); French Classical x2 1-1-0
     (75%); Scotch Game x2 0-2-0 (50%); Sicilian Classical x2 0-2-0 (50%); Sicilian Najdorf x2 0-2-0
     (50%); Sicilian Taimanov x2 0-0-2 (0%); 3 positions seen once (0 won, 2 drawn, 1 lost).
@@ -108,7 +109,7 @@ OPENINGS (curated start positions assigned by the platform)
     played instantly; first clear divergence (loss >= 20 cp) at own move 6.8 on average.
 
 STYLE
-  Captures on 15.6% of own moves, checks on 9.5%; average game 154 plies (77 own moves), longest 441
+  Captures on 15.6% of own moves, checks on 9.5%; average game 155 plies (78 own moves), longest 441
     plies (R74)
   Wins: 33 (33 by checkmate, 0 by opponent failure); losses: 23 (23 by checkmate, 0 by own failure)
   Sacrifices (gave >= 2 pawns of material without losing eval, then recovered): 9 -> R16 23.Rdd7,
@@ -119,17 +120,17 @@ STYLE
 LIKELY ENGINE PROFILE
   Strong searcher (mean loss 13.2 cp): consistent with a bitboard alpha-beta engine at depth 8-12
   with a decent evaluation. Confidence high.
-  Time allocation is a fixed share of the remaining clock (~5% per move; median 1.4 s, max 9.5 s),
+  Time allocation is a fixed share of the remaining clock (~5% per move; median 1.38 s, max 9.5 s),
   so depth shrinks as the game goes on and no extra time goes to critical positions (1.4 s after a
   >100 cp swing vs 1.8 s otherwise).
-  Poor clock awareness: 3 of 92 games went under 5 s.
+  Poor clock awareness: 4 of 93 games went under 5 s.
   Repeats while clearly ahead (2 games): no contempt or repetition avoidance in the search.
 
 HOW TO PLAY THEM
   1. When we are worse, steer for repetitions: they accepted threefolds while ahead in R17, R18.
   Keep our own contempt positive so we never return the favour.
-  2. Time pressure works: 3 games dipped under 5 s (R51, R89, R99). Keep games long and complicated;
-  their play under 10 s averages 0.6 s a move.
+  2. Time pressure works: 4 games dipped under 5 s (R51, R89, R99, R106). Keep games long and
+  complicated; their play under 10 s averages 0.6 s a move.
   3. No extra time goes to critical positions (1.4 s after a big swing vs 1.8 s otherwise): our
   search can spend several times their budget on the few moves that decide a game, so prefer
   positions where one precise move matters over long manoeuvring.

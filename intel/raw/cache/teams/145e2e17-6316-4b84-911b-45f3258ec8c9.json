@@ -2,10 +2,10 @@
  "uuid": "145e2e17-6316-4b84-911b-45f3258ec8c9",
  "bot": "BetaGo",
  "team": "BetaGo",
- "rating": 2679,
- "rank": 8,
- "record": "24-16-10",
- "rated_rounds": 60,
+ "rating": 2683,
+ "rank": 11,
+ "record": "24-17-10",
+ "rated_rounds": 61,
  "history": [
   [
    46,
@@ -246,9 +246,23 @@
   [
    105,
    2679
+  ],
+  [
+   106,
+   2683
   ]
  ],
  "games": [
+  {
+   "game": "23e9bb70-0ded-4505-86bc-c6fda3559910",
+   "kind": "Rated",
+   "round": 106,
+   "colour": "Black",
+   "opponent": "what even is en passant",
+   "opponent_uuid": "b9cbed87-8a3a-437d-9333-1447f68200d1",
+   "verdict": "draw",
+   "opening": "Sicilian Classical"
+  },
   {
    "game": "f8109ac1-d1da-431c-b652-dfdde86b0ce7",
    "kind": "Rated",
@@ -270,14 +284,14 @@
    "opening": "Caro-Kann Classical"
   },
   {
-   "game": "d5e4d627-66a0-480e-bc29-5caba9139ee7",
+   "game": "c7dc3b5b-7a18-4c55-9445-ff0b1ec856f7",
    "kind": "Rated",
-   "round": 103,
-   "colour": "Black",
-   "opponent": "DGS ELO",
-   "opponent_uuid": "5f8a69d7-73a8-4498-b322-861b557dffbd",
+   "round": 102,
+   "colour": "White",
+   "opponent": "JBG fam",
+   "opponent_uuid": "10021bb5-71a5-4b10-bde5-14e1f667501a",
    "verdict": "draw",
-   "opening": "Scotch Game"
+   "opening": "London System"
   },
   {
    "game": "578f5641-f0e0-4b65-94bb-309f80564848",
@@ -840,5 +854,5 @@
    "opening": "Sicilian Sveshnikov"
   }
  ],
- "fetched_at": "2026-09-11T06:49:56Z"
+ "fetched_at": "2026-09-11T07:51:36Z"
 }
