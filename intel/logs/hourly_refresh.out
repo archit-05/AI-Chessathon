@@ -4830,3 +4830,73 @@ Traceback (most recent call last):
   File "/Users/architbhardwaj/Desktop/AI Chessathon/intel/scrape.py", line 65, in fetch
     raise RuntimeError(f"fetch failed for {url}: {last}")
 RuntimeError: fetch failed for https://aichessathon.com/game/c6690615-c8ad-4f91-af82-13a6152135e6: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+leaderboard: 334 rows
+  1 PSL God Matt Bomer     (JBG fam) games 99 missing 0 -> PSL_God_Matt_Bomer.pgn
+  2 Miskeen                (Miskeen) games 91 missing 0 -> Miskeen.pgn
+  3 Loss Preventer         (Lightning Tree) games 120 missing 0 -> Loss_Preventer.pgn
+  4 AlphaFish              (Gladiator) games 95 missing 0 -> AlphaFish.pgn
+  5 Rataturing             (Rataturing) games 64 missing 0 -> Rataturing.pgn
+  6 BINI Alpha             (Opus Carlsen) games 98 missing 0 -> BINI_Alpha.pgn
+  7 SoberCooper            (Sobriety) games 121 missing 0 -> SoberCooper.pgn
+  8 BetaGo                 (BetaGo) games 76 missing 0 -> BetaGo.pgn
+  9 Mite                   (Ryan Vincent) games 93 missing 0 -> Mite.pgn
+ 10 Anchoa                 (Lubina) games 121 missing 0 -> Anchoa.pgn
+ 11 Capablanca             (THE ROOOOOKKK!!!!) games 120 missing 0 -> Capablanca.pgn
+ 12 make_no_mistakes       (Make_no_mistakes) games 120 missing 0 -> make_no_mistakes.pgn
+ 13 cory                   (catfish) games 92 missing 0 -> cory.pgn
+ 14 stockfih               (what even is en passant) games 113 missing 0 -> stockfih.pgn
+ 15 Fuzzy 7.0              (FuzzyBot) games 121 missing 0 -> Fuzzy_7_0.pgn
+ 16 Astral                 (omega3 fish) games 121 missing 0 -> Astral.pgn
+ 17 Challenger             (Stonkfish) games 121 missing 0 -> Challenger.pgn
+ 18 ms                     (ms) games 120 missing 0 -> ms.pgn
+ 19 lyra                   (slopfish) games 119 missing 0 -> lyra.pgn
+ 20 dumps to recycling     (Binvengers) games 120 missing 0 -> dumps_to_recycling.pgn
+ 19 lyra                 analysed 56/119 games
+ 20 dumps to recycling   analysed 47/120 games
+2 game(s) had no embedded evaluation and were skipped
+  # Bot                Rating   Record   CPL sACPL   Bl%  s/mv Draw% RepA NonC Void
+-----------------------------------------------------------------------------------
+  1 PSL God Matt Bomer   2885 38-43-18  10.6    15   0.5  1.79    44    0    0    0
+  2 Miskeen              2744 45-26-21  41.9    31   3.7  2.10    29    0    3    0
+  3 Loss Preventer       2925 46-46-26  13.1    19   0.4  1.61    41    0    1    2
+  4 AlphaFish            2941 35-46-14  11.7    16   0.2  1.66    50    0    0    1
+  5 Rataturing           2853 30-22-12   n/a    22   n/a  1.72    34    0    0    0
+  6 BINI Alpha           2899 45-30-20  15.6    21   0.8  1.78    34    0    1    4
+  7 SoberCooper          2850 43-51-19  10.5    16   0.3  1.63    53    0    5    8
+  8 BetaGo               2851 31-25-11  18.4    25   0.4  2.06    34    0    0    0
+  9 Mite                 2844 35-43-15  10.2    18   0.2  1.74    48    0    2    1
+ 10 Anchoa               2794 41-50-20   9.4    17   0.3  1.62    53    0    0    8
+ 11 Capablanca           2758 45-43-26  10.5    19   0.3  1.67    43    0    3    6
+ 12 make_no_mistakes     2680 41-36-35  13.1    23   0.5  1.80    40    1    2    8
+ 13 cory                 2664 35-34-24  14.0    20   0.6  1.64    37    0    1    0
+ 14 stockfih             2727 40-39-30  15.7    22   0.4  1.93    40    2    4    4
+ 15 Fuzzy 7.0            2719 35-29-28  14.2    24   0.6  1.76    54    0    2   29
+ 16 Astral               2844 43-41-31  18.0    24   0.6  2.02    39    1    1    3
+ 17 Challenger           2851 50-43-25  17.7    24   0.7  1.73    37    1    2    1
+ 18 ms                   2847 47-49-19  11.1    18   0.3  1.82    46    1    3    4
+ 19 lyra                 2708 35-49-26  12.0    22   0.6  1.76    54    0    3   10
+ 20 dumps to recycling   2719 50-28-36  24.4    31   1.1  2.02    25    0    2    1
+  6 BINI Alpha           2899 45-30-20  15.6    21   0.8  1.78    34    0    1    4
+
+  1. Move quality spread: Anchoa loses 9.4 cp per move, Miskeen 41.9 cp; our current build measures
+  15.6 cp. Blunder rates run 0.2-3.7%.
+  2. Free half points: make_no_mistakes (1), stockfih (2), Astral (1), Challenger (1), ms (1)
+  accepted repetitions while more than +150. Against them, when worse, aim for repetition.
+  3. Time trouble is real for PSL God Matt Bomer (17 games under 5 s), Miskeen (22 games under 5 s),
+  Loss Preventer (2 games under 5 s), AlphaFish (3 games under 5 s), BetaGo (51 games under 5 s),
+  Mite (2 games under 5 s), Anchoa (25 games under 5 s), Capablanca (6 games under 5 s), cory (24
+  games under 5 s), stockfih (8 games under 5 s), Fuzzy 7.0 (46 games under 5 s), Astral (49 games
+  under 5 s), ms (38 games under 5 s), lyra (36 games under 5 s), dumps to recycling (3 games under
+  5 s). Long, complicated games punish them.
+  4. Clock left unused by Loss Preventer (46 s), AlphaFish (33 s), BINI Alpha (32 s), Challenger (31
+  s): their depth is capped by a per-move budget, so our deeper search in critical moments is a real
+  edge.
+  5. Leaky conversion: Miskeen (3 of 14 winning positions not won), SoberCooper (5 of 35 winning
+  positions not won), Mite (2 of 19 winning positions not won), Capablanca (3 of 37 winning
+  positions not won), make_no_mistakes (2 of 26 winning positions not won), stockfih (4 of 30
+  winning positions not won), Fuzzy 7.0 (2 of 26 winning positions not won), Challenger (2 of 29
+  winning positions not won), ms (3 of 36 winning positions not won), lyra (3 of 20 winning
+  positions not won), dumps to recycling (2 of 23 winning positions not won). Keep lost positions
+  alive.
+
+strategy report: /Users/architbhardwaj/Desktop/AI Chessathon/intel/STRATEGY.txt

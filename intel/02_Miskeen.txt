@@ -1,28 +1,28 @@
-Miskeen  (team: Miskeen)  -  rank 1, rating 2730
+Miskeen  (team: Miskeen)  -  rank 2, rating 2744
 ================================================
-Generated 2026-09-11 16:35 from 90 rated games (rounds 31-121, 22 of 90 with evaluations so far).
+Generated 2026-09-11 18:32 from 91 rated games (rounds 31-122, 22 of 91 with evaluations so far).
 
 IDENTITY
   Bot Miskeen; team Miskeen; university Warwick; members not shown on the site.
-  Rank 1 of 334, rating 2730, record 45-25-21 in 11 rated games.
+  Rank 2 of 334, rating 2744, record 45-26-21 in 13 rated games.
   Rating trajectory: entered R31 at 1430, peak 2508 (R106), now 2502 (R109).
   No 100+ point jump between consecutive rounds.
 
 RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
-  vs top 10 : 1-4-1 (50%) over 6 games
-  vs 11-20  : 2-5-0 (64%) over 7 games
-  vs 21-50  : 7-3-1 (77%) over 11 games
-  vs rest   : 34-13-19 (61%) over 66 games
+  vs top 10 : 1-3-1 (50%) over 5 games
+  vs 11-20  : 2-6-1 (56%) over 9 games
+  vs 21-50  : 6-4-1 (73%) over 11 games
+  vs rest   : 35-13-18 (63%) over 66 games
   Games vs top-10 teams:
-    R102 white vs cory               (#3 ) draw fifty_moves           Sicilian Closed
-    R104 black vs Rataturing         (#10) draw threefold_repetition  Caro-Kann Exchange
-    R115 white vs Comeback arc for PSL God (#2 ) draw threefold_repetition  Nimzo-Indian Defence
+    R104 black vs Rataturing         (#5 ) draw threefold_repetition  Caro-Kann Exchange
+    R115 white vs PSL God Matt Bomer (#1 ) draw threefold_repetition  Nimzo-Indian Defence
     R116 black vs BetaGo             (#8 ) win  checkmate             Pirc Defence
-    R120 white vs ms                 (#4 ) draw threefold_repetition  Sicilian Closed
-    R121 black vs Comeback arc for PSL God (#2 ) loss checkmate             Italian Game
-  Games vs ranks 11-20: R94 draw vs Astral (#12, 3fold); R101 draw vs lyra (#19, insuff); R103 draw
-    vs Capablanca (#15, 3fold); R106 draw vs make_no_mistak (#20, fifty_moves); R108 draw vs c1
-    (#13, fifty_moves); R109 win vs lyra (#19, checkmate); R114 win vs c1 (#13, checkmate)
+    R121 black vs PSL God Matt Bomer (#1 ) loss checkmate             Italian Game
+    R122 black vs Loss Preventer     (#3 ) draw insufficient_material Sicilian Closed
+  Games vs ranks 11-20: R94 draw vs Astral (#16, 3fold); R101 draw vs lyra (#19, insuff); R102 draw
+    vs cory (#13, fifty_moves); R103 draw vs Capablanca (#11, 3fold); R106 draw vs make_no_mistak
+    (#12, fifty_moves); R107 loss vs Fuzzy 7.0 (#15, checkmate); R109 win vs lyra (#19, checkmate);
+    R117 win vs dumps to recyc (#20, checkmate); R120 draw vs ms (#18, 3fold)
 
 MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
   positions inside +-800 only)
@@ -34,26 +34,26 @@ MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss c
   as white          : n  429, mean 42.7 cp, median 13 cp, blunders 4.7%
   as black          : n  498, mean 41.3 cp, median 13 cp, blunders 2.8%
   Worst moves: R31 22.Rxd3 (+59 -> -582); R42 68.Qd4+ (+583 -> +0); R45 49.Re2 (+816 -> +302)
-  Site's own review (Stockfish 16, depth 16): mean ACPL 31.6 over 90 games, accuracy 94.2%; its tags
+  Site's own review (Stockfish 16, depth 16): mean ACPL 31.3 over 91 games, accuracy 94.3%; its tags
     on their moves: 30 blunder, 37 mistake, 0 miss, 93 inaccuracy of 1072
 
 TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
-  Per move: mean 2.1 s, median 1.6 s, quartiles 0.82-2.89 s, max 9.3 s; instant (<50 ms) moves 7.1%
+  Per move: mean 2.1 s, median 1.6 s, quartiles 0.82-2.88 s, max 9.3 s; instant (<50 ms) moves 7.0%
   Clock at the end: mean 24.0 s, minimum 1.7 s; games under 10 s: 31, under 5 s: 22 (R37, R38, R39,
     R42, R44, R45, R47, R48, R49, R51, R52, R53, R55, R56, R59, R61, R62, R65, R66, R68, R73, R77)
-  By clock before the move: >60s 3.6 s (n 1734), 30-60s 1.9 s (n 1580), 10-30s 1.1 s (n 1327), <10s
+  By clock before the move: >60s 3.6 s (n 1758), 30-60s 1.9 s (n 1612), 10-30s 1.1 s (n 1345), <10s
     0.7 s (n 748)
-  By own-move number: 1-15 4.2 s, 16-40 2.0 s, 41+ 0.8 s; when +300 or better 1.1 s, level 3.9 s,
+  By own-move number: 1-15 4.1 s, 16-40 2.0 s, 41+ 0.8 s; when +300 or better 1.1 s, level 3.9 s,
     -300 or worse 1.6 s
-  Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 4.9%,
-    quartiles 3.0-7.9%
+  Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 4.8%,
+    quartiles 3.0-7.8%
   After a >100 cp swing on the opponent's move: 2.1 s (n 154) vs 2.5 s otherwise; on moves that
     themselves swing >100 cp: 2.6 s (n 146) vs 2.6 s
   Exploitable: gets into time trouble
 
 DRAW BEHAVIOUR
-  25 draws in 90 played games (28.0%): threefold_repetition 17, insufficient_material 4, fifty_moves
-    3, stalemate 1; 4 of them vs top-10 teams
+  26 draws in 91 played games (29.0%): threefold_repetition 17, insufficient_material 5, fifty_moves
+    3, stalemate 1; 3 of them vs top-10 teams
   Repetition while ahead (> +150 at the final position): 0
   Repetition while behind (< -150): 0; level repetitions: 2
 
@@ -74,13 +74,13 @@ ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
     R50  vs Esther             low -3401, draw by stalemate: stalemate
 
 OPENINGS (curated start positions assigned by the platform)
-  By family: Sicilian 14-7-10 (56%); Ruy Lopez 3-3-1 (64%); Scotch 2-1-2 (50%); Nimzo-Indian 4-1-0
+  By family: Sicilian 14-8-10 (56%); Ruy Lopez 3-3-1 (64%); Scotch 2-1-2 (50%); Nimzo-Indian 4-1-0
     (90%); Caro-Kann 2-2-1 (60%); Queen's Gambit 3-2-0 (80%); Petroff 1-2-1 (50%); French 1-0-2
     (33%); English 1-1-1 (50%); Two Knights 2-1-0 (83%); London 2-0-0 (100%); Reti 2-0-0 (100%);
     Queen's Indian 1-0-1 (50%); Grunfeld 1-1-0 (75%); Italian 1-0-1 (50%); Slav 1-1-0 (75%); Pirc
     1-1-0 (75%); King's Indian 0-0-1 (0%); Catalan 1-0-0 (100%); Four Knights 1-0-0 (100%);
     Semi-Slav 0-1-0 (50%); Dutch 0-1-0 (50%)
-  Positions seen more than once: Sicilian Closed x12 4-4-4 (50%); Ruy Lopez, Closed x7 3-3-1 (64%);
+  Positions seen more than once: Sicilian Closed x13 4-5-4 (50%); Ruy Lopez, Closed x7 3-3-1 (64%);
     Sicilian Sveshnikov x6 4-0-2 (67%); Nimzo-Indian Defence x5 4-1-0 (90%); Scotch Game x5 2-1-2
     (50%); Sicilian Najdorf x5 2-1-2 (50%); Petroff Defence x4 1-2-1 (50%); English Symmetrical x3
     1-1-1 (50%); Queen's Gambit Declined x3 2-1-0 (83%); Sicilian Classical x3 2-1-0 (83%); Sicilian
@@ -107,7 +107,7 @@ LIKELY ENGINE PROFILE
   Weakest early (moves 1-15 mean 43.6 cp vs 23.5 cp later): no book and a thin opening evaluation.
   Adaptive time use (median 1.6 s, max 9.3 s, spends 2.1 s on moves after a >100 cp swing vs 2.5 s
   otherwise).
-  Poor clock awareness: 22 of 90 games went under 5 s.
+  Poor clock awareness: 22 of 91 games went under 5 s.
 
 HOW TO PLAY THEM
   1. Their conversion is leaky (3 of 14 won positions not won): when losing, keep material on and
