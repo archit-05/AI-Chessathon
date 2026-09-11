@@ -2,10 +2,10 @@
  "uuid": "e152b64e-0c6d-4341-b02b-09c09b098f8c",
  "bot": "ChessML",
  "team": "ChessML",
- "rating": 2204,
- "rank": 56,
- "record": "36-24-32",
- "rated_rounds": 102,
+ "rating": 2177,
+ "rank": 63,
+ "record": "43-31-37",
+ "rated_rounds": 109,
  "history": [
   [
    1,
@@ -414,9 +414,217 @@
   [
    102,
    2204
+  ],
+  [
+   103,
+   2177
+  ],
+  [
+   104,
+   2158
+  ],
+  [
+   105,
+   2141
+  ],
+  [
+   106,
+   2153
+  ],
+  [
+   107,
+   2169
+  ],
+  [
+   108,
+   2172
+  ],
+  [
+   109,
+   2177
   ]
  ],
  "games": [
+  {
+   "game": "4871e634-06a8-4256-ad34-9df783f6dc1d",
+   "kind": "Final",
+   "round": 122,
+   "colour": "White",
+   "opponent": "The Sandbox",
+   "opponent_uuid": "0cd61874-4eb7-47b3-9f71-a8fd87147dfb",
+   "verdict": "draw",
+   "opening": "French Advance"
+  },
+  {
+   "game": "6c56e553-37a2-4018-9fe0-4b265dedf106",
+   "kind": "Final",
+   "round": 121,
+   "colour": "Black",
+   "opponent": "Endgame",
+   "opponent_uuid": "d5050e68-6cbe-49cc-8b70-1b1559dbdcb6",
+   "verdict": "draw",
+   "opening": "Sicilian Closed"
+  },
+  {
+   "game": "9399d1c9-7aab-4e24-bc03-b14d5245f51b",
+   "kind": "Final",
+   "round": 120,
+   "colour": "White",
+   "opponent": "Oxchess",
+   "opponent_uuid": "e11cad31-ab8f-46ee-bf00-056881752046",
+   "verdict": "win",
+   "opening": "Dutch Stonewall"
+  },
+  {
+   "game": "af6fe430-09af-499f-b8b6-d0dc20758bab",
+   "kind": "Final",
+   "round": 118,
+   "colour": "White",
+   "opponent": "MeshPotato",
+   "opponent_uuid": "2a6799a8-ccc7-45d6-a342-701ce3b923b6",
+   "verdict": "win",
+   "opening": "Caro-Kann Exchange"
+  },
+  {
+   "game": "77fbbc36-1412-4950-8a60-688a651b08d0",
+   "kind": "Final",
+   "round": 117,
+   "colour": "Black",
+   "opponent": "Zugzwin",
+   "opponent_uuid": "2463d1f5-3e78-4dce-a254-be5983079ccc",
+   "verdict": "loss",
+   "opening": "Four Knights Game"
+  },
+  {
+   "game": "71c5e093-a108-4857-b77a-ad516a27e369",
+   "kind": "Final",
+   "round": 116,
+   "colour": "White",
+   "opponent": "OatMilk",
+   "opponent_uuid": "14064084-720f-4dba-8764-9b3f77784d40",
+   "verdict": "win",
+   "opening": "Catalan Opening"
+  },
+  {
+   "game": "b0e4f1a7-4d92-4520-97ff-546b78126be1",
+   "kind": "Final",
+   "round": 115,
+   "colour": "White",
+   "opponent": "Yumo",
+   "opponent_uuid": "5aa0e1ef-c640-45f9-b4b4-1389de2a609b",
+   "verdict": "win",
+   "opening": "Sicilian Taimanov"
+  },
+  {
+   "game": "fe8d5292-24cc-443f-9685-6e8534e1732b",
+   "kind": "Final",
+   "round": 114,
+   "colour": "Black",
+   "opponent": "Rudra",
+   "opponent_uuid": "d44726a1-2c96-4cca-99dc-bfecf2dfee7a",
+   "verdict": "draw",
+   "opening": "King's Indian Classical"
+  },
+  {
+   "game": "cc46d53d-3885-4009-a52e-659ba5c3e698",
+   "kind": "Final",
+   "round": 113,
+   "colour": "White",
+   "opponent": "DGS ELO",
+   "opponent_uuid": "5f8a69d7-73a8-4498-b322-861b557dffbd",
+   "verdict": "loss",
+   "opening": "London System"
+  },
+  {
+   "game": "8890ee9b-d566-4679-bce6-84e8257a5535",
+   "kind": "Final",
+   "round": 112,
+   "colour": "Black",
+   "opponent": "lefischer",
+   "opponent_uuid": "0900c279-5ede-4155-a850-436c28af6ea9",
+   "verdict": "win",
+   "opening": "Ruy Lopez, Closed"
+  },
+  {
+   "game": "df0382e1-91a8-4366-b575-05e8d981300d",
+   "kind": "Final",
+   "round": 111,
+   "colour": "White",
+   "opponent": "Fishy Fischer",
+   "opponent_uuid": "8087333f-5959-4d33-8fce-16347b93344b",
+   "verdict": "draw",
+   "opening": "Semi-Slav Defence"
+  },
+  {
+   "game": "51426136-f29b-4880-abad-2f9c1da9752e",
+   "kind": "Final",
+   "round": 110,
+   "colour": "White",
+   "opponent": "Magnus.AI",
+   "opponent_uuid": "fd604223-8da1-4c1f-aff5-c5916b25ad96",
+   "verdict": "win",
+   "opening": "Sicilian Sveshnikov"
+  },
+  {
+   "game": "9900c9b9-b025-41b6-8a6f-0c60e9ac646b",
+   "kind": "Rated",
+   "round": 109,
+   "colour": "White",
+   "opponent": "pgn",
+   "opponent_uuid": "8b738da9-e5bb-4122-89ce-0caf6466ba80",
+   "verdict": "draw",
+   "opening": "Ruy Lopez, Closed"
+  },
+  {
+   "game": "b9387e49-5f6c-4e4c-b51c-60817c1138bf",
+   "kind": "Rated",
+   "round": 108,
+   "colour": "Black",
+   "opponent": "mangodogo",
+   "opponent_uuid": "1eabeb57-6e3c-46bd-902b-e3b7b5aacc73",
+   "verdict": "draw",
+   "opening": "Nimzo-Indian Defence"
+  },
+  {
+   "game": "045e5dfd-c7aa-42ef-831c-29404c8eb7ce",
+   "kind": "Rated",
+   "round": 107,
+   "colour": "White",
+   "opponent": "adashima",
+   "opponent_uuid": "e356ff20-37e4-4fc4-bfef-00cf5957a82c",
+   "verdict": "win",
+   "opening": "Sicilian Dragon"
+  },
+  {
+   "game": "106506f0-6482-484c-8d92-bd2208831459",
+   "kind": "Rated",
+   "round": 106,
+   "colour": "Black",
+   "opponent": "Rhythm of the Knight",
+   "opponent_uuid": "582b54d8-b8f5-4b66-ae3e-f724e3b18572",
+   "verdict": "draw",
+   "opening": "Sicilian Closed"
+  },
+  {
+   "game": "12bbd05c-4275-47b6-aa95-d1b462bca21d",
+   "kind": "Rated",
+   "round": 105,
+   "colour": "Black",
+   "opponent": "Queen Mary's Gambit",
+   "opponent_uuid": "70a2953e-ca6b-470e-b9d7-562e9e800dc9",
+   "verdict": "loss",
+   "opening": "Sicilian Closed"
+  },
+  {
+   "game": "0cfd70a9-e27a-4714-b5fa-fbd75dfc30fa",
+   "kind": "Rated",
+   "round": 104,
+   "colour": "White",
+   "opponent": "BitsEntangled",
+   "opponent_uuid": "b227e85c-08e6-489b-ae9a-77e6e856ace0",
+   "verdict": "loss",
+   "opening": "Queen's Indian Defence"
+  },
   {
    "game": "4dd1fae9-0b5a-4d24-b26e-15ad1f36a7c8",
    "kind": "Rated",
@@ -446,6 +654,16 @@
    "opponent_uuid": "e2a3a86e-7b1b-4926-8873-b396674733fb",
    "verdict": "win",
    "opening": "Reti Opening"
+  },
+  {
+   "game": "64e6011a-f2fa-4b47-bb6f-ef62ece48796",
+   "kind": "Rated",
+   "round": 100,
+   "colour": "White",
+   "opponent": "Thorp",
+   "opponent_uuid": "c7c9afba-d0bd-44f0-add8-b177e17526b0",
+   "verdict": "draw",
+   "opening": "Dutch Stonewall"
   },
   {
    "game": "831f0fdc-bd2b-4569-896c-1d18e9b20f41",
@@ -1428,5 +1646,5 @@
    "opening": "English Symmetrical"
   }
  ],
- "fetched_at": "2026-09-10T19:15:17Z"
+ "fetched_at": "2026-09-11T15:26:14Z"
 }

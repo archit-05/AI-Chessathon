@@ -4739,3 +4739,72 @@ leaderboard: 334 rows
   winning positions not won). Keep lost positions alive.
 
 strategy report: /Users/architbhardwaj/Desktop/AI Chessathon/intel/STRATEGY.txt
+leaderboard: 334 rows
+  1 Miskeen                (Miskeen) games 90 missing 0 -> Miskeen.pgn
+  2 Comeback arc for PSL God (JBG fam) games 98 missing 0 -> Comeback_arc_for_PSL_God.pgn
+  3 cory                   (catfish) games 91 missing 0 -> cory.pgn
+  4 ms                     (ms) games 120 missing 0 -> ms.pgn
+  5 Loss Preventer         (Lightning Tree) games 120 missing 0 -> Loss_Preventer.pgn
+  6 AlphaFish              (Gladiator) games 95 missing 0 -> AlphaFish.pgn
+  7 Challenger             (Stonkfish) games 121 missing 0 -> Challenger.pgn
+  8 BetaGo                 (BetaGo) games 76 missing 0 -> BetaGo.pgn
+  9 SoberCooper            (Sobriety) games 121 missing 0 -> SoberCooper.pgn
+ 10 Rataturing             (Rataturing) games 64 missing 0 -> Rataturing.pgn
+ 11 BINI Alpha             (Opus Carlsen) games 98 missing 0 -> BINI_Alpha.pgn
+ 12 Astral                 (omega3 fish) games 121 missing 0 -> Astral.pgn
+ 13 c1                     (OMI) games 115 missing 0 -> c1.pgn
+ 14 Mite                   (Ryan Vincent) games 93 missing 0 -> Mite.pgn
+ 15 Capablanca             (THE ROOOOOKKK!!!!) games 120 missing 0 -> Capablanca.pgn
+ 16 Anchoa                 (Lubina) games 121 missing 0 -> Anchoa.pgn
+ 17 Ultron Prime           (DGS ELO) games 121 missing 0 -> Ultron_Prime.pgn
+ 18 stockfih               (what even is en passant) games 113 missing 0 -> stockfih.pgn
+ 19 lyra                   (slopfish) games 119 missing 0 -> lyra.pgn
+ 20 make_no_mistakes       (Make_no_mistakes) games 120 missing 0 -> make_no_mistakes.pgn
+ 19 lyra                 analysed 56/119 games
+ 20 make_no_mistakes     analysed 70/120 games
+2 game(s) had no embedded evaluation and were skipped
+  # Bot                Rating   Record   CPL sACPL   Bl%  s/mv Draw% RepA NonC Void
+-----------------------------------------------------------------------------------
+  1 Miskeen              2730 45-25-21  41.9    32   3.7  2.10    28    0    3    0
+  2 Comeback arc for P   2878 38-42-18  10.6    16   0.5  1.78    43    0    0    0
+  3 cory                 2652 35-33-24  14.0    20   0.6  1.64    36    0    1    0
+  4 ms                   2845 47-49-19  11.1    18   0.3  1.82    46    1    3    4
+  5 Loss Preventer       2930 46-46-26  13.1    19   0.4  1.61    41    0    1    2
+  6 AlphaFish            2942 35-46-14  11.7    16   0.2  1.66    50    0    0    1
+  7 Challenger           2853 50-43-25  17.7    24   0.7  1.73    37    1    2    1
+  8 BetaGo               2856 31-25-11  18.4    25   0.4  2.06    34    0    0    0
+  9 SoberCooper          2851 43-51-19  10.5    16   0.3  1.63    53    0    5    8
+ 10 Rataturing           2830 30-22-12   n/a    22   n/a  1.72    34    0    0    0
+ 11 BINI Alpha           2889 45-30-20  15.6    21   0.8  1.78    34    0    1    4
+ 12 Astral               2847 43-41-31  18.0    24   0.6  2.02    39    1    1    3
+ 13 c1                   2670 46-34-34  23.7    26   1.3  1.87    29    0    0    0
+ 14 Mite                 2815 35-43-15  10.2    18   0.2  1.74    48    0    2    1
+ 15 Capablanca           2746 45-43-26  10.5    19   0.3  1.67    43    0    3    6
+ 16 Anchoa               2796 41-50-20   9.4    17   0.3  1.62    53    0    0    8
+ 17 Ultron Prime         2696 45-44-26  18.0    27   1.0  1.88    38    0    2    0
+ 18 stockfih             2703 40-39-30  15.7    22   0.4  1.93    40    2    4    4
+ 19 lyra                 2712 35-49-26  12.0    22   0.6  1.76    54    0    3   10
+ 20 make_no_mistakes     2668 41-36-35  13.1    23   0.5  1.80    40    1    2    8
+ 11 BINI Alpha           2889 45-30-20  15.6    21   0.8  1.78    34    0    1    4
+
+  1. Move quality spread: Anchoa loses 9.4 cp per move, Miskeen 41.9 cp; our current build measures
+  15.6 cp. Blunder rates run 0.2-3.7%.
+  2. Free half points: ms (1), Challenger (1), Astral (1), stockfih (2), make_no_mistakes (1)
+  accepted repetitions while more than +150. Against them, when worse, aim for repetition.
+  3. Time trouble is real for Miskeen (22 games under 5 s), Comeback arc for PSL God (17 games under
+  5 s), cory (24 games under 5 s), ms (38 games under 5 s), Loss Preventer (2 games under 5 s),
+  AlphaFish (3 games under 5 s), BetaGo (51 games under 5 s), Astral (49 games under 5 s), c1 (58
+  games under 5 s), Mite (2 games under 5 s), Capablanca (6 games under 5 s), Anchoa (25 games under
+  5 s), Ultron Prime (36 games under 5 s), stockfih (8 games under 5 s), lyra (36 games under 5 s).
+  Long, complicated games punish them.
+  4. Clock left unused by Loss Preventer (46 s), AlphaFish (33 s), Challenger (31 s), BINI Alpha (32
+  s): their depth is capped by a per-move budget, so our deeper search in critical moments is a real
+  edge.
+  5. Leaky conversion: Miskeen (3 of 14 winning positions not won), ms (3 of 36 winning positions
+  not won), Challenger (2 of 29 winning positions not won), SoberCooper (5 of 35 winning positions
+  not won), Mite (2 of 19 winning positions not won), Capablanca (3 of 37 winning positions not
+  won), Ultron Prime (2 of 31 winning positions not won), stockfih (4 of 30 winning positions not
+  won), lyra (3 of 20 winning positions not won), make_no_mistakes (2 of 26 winning positions not
+  won). Keep lost positions alive.
+
+strategy report: /Users/architbhardwaj/Desktop/AI Chessathon/intel/STRATEGY.txt
