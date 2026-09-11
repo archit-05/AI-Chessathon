@@ -1,0 +1,26 @@
+[PASS] A.qsearch_stalemate                qsearch on a stalemate returns the draw utility   score=-20 oracle=stalemate
+[PASS] A.state_preserved                  qsearch restores board state exactly   changed=[]
+[PASS] A.gen_stalemate_qsearch            stalemate set through qsearch with poisoned correction history   failures=0
+[PASS] A.recursive_frontier               qsearch at a node reached through a capture sees the stalemate   score=20 note=the parent takes a max, so this value only propagates when the stalemate is best
+[PASS] A.probe_leaves_no_trace            the legality probe restores undo slots and move lists   changed=[]
+[PASS] B.mate_at_half100_nonroot          non-root mate on the 100th halfmove returns a mate score   score=-29999 expected=< -29872
+[PASS] B.parent_transition                parent search sees the mate rather than a fifty-move draw   score=29999 halfmove_after_mate=100
+[PASS] B.negative_real_fifty              genuine fifty-move position still returns the draw utility   score=-20
+[PASS] B.negative_stalemate_at_100        stalemate on the 100th halfmove is a draw, not a mate   score=-20
+[PASS] C.even_ply_history_boundary        second occurrence straddling the root at even ply   kind=1 expected=0 occurrences=2 matched_in=game history, 2 occurrence(s) only ply=2 halfmove=4
+[PASS] C.odd_ply_history_boundary         occurrence at odd ply reaching back into game history   kind=1 expected=0 occurrences=2 matched_in=game history, 2 occurrence(s) only ply=3 halfmove=6
+[PASS] C.cycle_inside_tree                four-ply cycle entirely inside the search tree   kind=1 expected=1 occurrences=1 matched_in=search tree ply=4 halfmove=4
+[PASS] C.cycle_in_game_history            occurrence reached through pre-root game history   kind=1 expected=2 occurrences=3 matched_in=game history, third occurrence ply=3 halfmove=8
+[PASS] C.third_occurrence_claim           third occurrence through game history is a real claim   kind=1 expected=2 occurrences=3 matched_in=game history, third occurrence ply=2 halfmove=8
+[PASS] C.negative_after_pawn_move         no repetition claimed across a pawn move   kind=0 expected=0 occurrences=1 matched_in=game history, 1 occurrence(s) only ply=1 halfmove=0
+[PASS] C.negative_distinct_position       no repetition on a first occurrence   kind=0 expected=0 occurrences=1 matched_in=game history, 1 occurrence(s) only ply=1 halfmove=2
+[PASS] C.after_rights_spent               cycle straddling the root once castling rights are gone   kind=1 expected=0 occurrences=2 matched_in=game history, 2 occurrence(s) only ply=3 halfmove=8
+[PASS] C.negative_rights_changed          same placement but spent castling rights is not a repetition   kind=0 expected=0 occurrences=1 matched_in=game history, 1 occurrence(s) only ply=4 halfmove=4
+[PASS] C.deep_cycle_empty_history         eight-ply double cycle with no pre-root history   kind=1 expected=1 occurrences=1 matched_in=search tree ply=8 halfmove=8
+[info] D.oracle_bn_mate                   python-chess: KB vs KN is a legal checkmate here   valid=True checkmate=True insufficient=False
+[PASS] D.bn_mate_recognised               engine returns a mate score for the KB-vs-KN mate   score=-29999
+[info] D.correction_moves_zero            saturated correction history shifts a static zero   static_zero_corrected_to=64 raw_eval=3
+[PASS] D.dead_material_scores_zero        python-chess dead-material classes score the draw utility   failures=0
+[PASS] D.winnable_material_not_zeroed     winnable pawnless/pawn material is not forced to zero   failures=0 note=reported for information: heuristic scaling may still damp these
+{"label": "/root/astra/builds/bini_astra_v5_noc2b", "total": 24, "passed": 22, "failed": 0, "info": 2}
+written /root/astra/astra_reports/repro_x86_bini_astra_v5_noc2b.json

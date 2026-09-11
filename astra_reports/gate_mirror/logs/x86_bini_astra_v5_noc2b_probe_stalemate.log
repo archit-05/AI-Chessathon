@@ -1,0 +1,17 @@
+build /root/astra/builds/bini_astra_v5_noc2b   contempt=20
+stalemate FEN k7/8/1QK5/8/8/8/8/8 b - - 0 1
+exact draw utility expected at ply 1: -20
+
+  condition                      depth         window     got  verdict
+  poisoned TT, null window           4         [-1,0]     -20  ok
+  poisoned TT, wide window           4           wide     -20  ok
+  empty TT, null window d2           2         [-1,0]     -20  ok
+  empty TT, null window d4           4         [-1,0]     -20  ok
+  empty TT, null window d6           6         [-1,0]     -20  ok
+  empty TT, RFP window d3            3      [400,401]     -20  ok
+  empty TT, RFP window d5            5    [-600,-599]     -20  ok
+  empty TT, NMP window d8            8         [-1,0]     -20  ok
+  empty TT, ProbCut window d6        6    [-300,-299]     -20  ok
+  empty TT, wide d6                  6           wide     -20  ok
+
+  violations: 0 of 10

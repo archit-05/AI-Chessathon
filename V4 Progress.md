@@ -3,20 +3,16 @@
 Running status of the V4 build. Newest entries at the bottom of each section; the board at the
 top is always current. Plan and rationale: [PLAN_V4.md](PLAN_V4.md). Times are London.
 
-## Board (updated Mon 7 Sept, 12:20)
+## Board (updated Tue 8 Sept, 11:10)
 
 | Track | State | Next |
 |---|---|---|
-| Live on the platform | V3 (leap clock + v3b net), uploaded ~13:15. Rank 17 after R55 (32 games); R55 lost to ms (rank 12) by an evaluation slide | V4 Tuesday evening |
-| Mac | v4a done 23:29 (6 epochs; epoch 4 grade 14.5 cp / 2 blunders = v3b level). Chain: v4b (running) → scale-matched export → 2-worker gate vs V3 → whole-site refresh → v4d 20 epochs (~04:30–10:30) | Tue: grade v4b/v4d exports, SPSA theta gate, clock proxy, both proxy matches, assembly, battery, hand-over (best case 20:00, never compressed) |
-| Oracle VM | SPSA (2 workers, 2 s games, 70 iterations, overnight) + resolved endgame worker (d12) + rook-and-knight endings worker (d16); curated and Bini streams paused for the night (21 chunks banked) | SPSA theta gated at 10 s vs V3 on Tuesday; endgame chunks pulled every 15 min |
-| Data | site-labelled 109k train + 18.7k held-out (SF16 d16); Lichess quiet 155M; Elite 1.05M; self-play 4 chunks (800k) and counting; hard set 62 positions (our tagged errors + neighbours); whole-site scrape running | self-play 10M+ by Tue morning; site-labelled to 600k+ after the scrape |
-| Net | V4 candidate = v4o2: v3b fine-tuned on the mild tournament mix (old architecture). 51.7% vs V3 over 270 clean games; grader 14.0 cp / 1 blunder / 69% exact (v3b 14.2 / 1 / 65%); site-chunk error 135 vs 145, 9-12 pieces 189 vs 215. New-architecture and full-mix nets lost in play and are out | real-clock proxies (20k, 40k) vs V3's net decide; then battery |
-| Trainer | rewritten: torch features on device, screlu, out-buckets, factoriser, WDL, per-source scale, per-source validation; consistency 0.9 cp | run on MPS when the Mac is free |
-| Search | quiet checks in qsearch (fixes WAC.001), ProbCut, improving flag, behind switches (off by default); -5% speed all on; each flips an R43 regression position at VM depth | 300-game gate + grader + blunder set per switch on the Mac |
-| Engine safety items | check mask, root-guard cap, pawnless-draw rule, TT 256 MB; draw-when-behind OFF | bundle gate: 50.0% clean over 229 games (neutral); real-clock battery judges the table and the pawnless rule |
-| Measurement | curated.epd (288 positions, weighted), grade.py (400 ladder positions), net_diag.py, gate.sh on curated openings | grader baseline of v3b on the VM |
-| Telemetry | wrapper logs opponent think time and score drift per move (`ot`, `sd`, `og`) | feeds the adaptive draw policy decision |
+| V4 | HANDED OVER: `submission_v4_0908_1053.zip` (sha256 00fe9eae6b5cc356..., 8 files, 6.40 MB unzipped) = V4 engine (safety bundle, real fallback engine, book hook, telemetry stripped) + V3's net (v3b), no book. Battery all green, byte-check identical, extracted zip mates the minimax baseline in 19 | Archit uploads; the site's first rated games become the post-mortem input |
+| Net decision | real-clock proxies: 20k V3 46.3% / v4o2 40.0%; 40k V3 27.5% / v4o2 20.0%. v4o2 wins every static test and holds V3 at 10 s (51.7% over 270) but is not clearly positive in play, so it does not ship | V4.5 net on decisive self-play (PLAN s23, s24.1) |
+| Live on the platform | V3 (leap clock + v3b net). Rank 17 after R56 (33 games) | V4 once uploaded |
+| Oracle VM | 4 curated workers at depth 9 (~70 pos/s each) + endgame streams; SPSA finished flat; book built (not shipped) | switch generators to decisive-game mode for V4.5 data |
+| Data | site-labelled ~660k train / 85k held-out; self-play 29 chunks; hard set 7 chunks (140 positions); harvest 37 tagged errors | V4.5 mix: decisive self-play, no result blend, site x4 |
+| V4.5 | Wednesday, freeze 22:00: net on fixed data, 768 candidate, SPSA at the new scale, clock softening (clean build this time), speed pass, drawishness scaling (23.8), 1,000-game regression vs V4; uploads only if >= +30 with the interval clear of zero and no proxy regression | starts now |
 
 ## Key numbers so far
 
@@ -143,6 +139,13 @@ Trainer validation is on quiet positions of the held-out site chunk (the diagnos
 - 09:54 V3 vs the 20k proxy: 46.25% over 40 (+6 =25 -9; min end clock 5.6 s in one game, flagged for the V4.5 clock work). Real-clock table: 20k proxy V3 46.3% / v4o2 40.0%; 40k proxy V3 27.5% / v4o2 20.0%. Each gap is within noise, both point the same way, and the gating rule needs a clearly positive gate. DECISION: V4 ships with V3's net (v3b) inside the V4 engine. The book stays out (no organiser confirmation). bini_v4final reassembled (net = v3b byte-identical, no book.json); battery + package started at 09:55 on a quiet Mac.
 - 10:53 Battery on bini_v4final (v3b net, no book) all green: init 19.1-19.2 s x2; wrapper state ok; NNUE incremental == reference on 3,958 positions; perft + 5,000-position differential ok; mate-in-1/2 80/80, gate 2 passed; puzzles 40/40; blunder set 2/3 (repeats 15.Rad1?! of R43, a slow slide not a blunder; V3 itself scores 1/3 today and also repeats 17.Rd4??, which the V4 build avoids); harvest 27/37; torture 10/10 mates, 10/10 with the fallback forced; real-clock pressure 0-4-6, min clock 8.3 s, unclear 2.37 s vs decided 1.23 s (V3 record: 0-3-7, 7.3 s). Packaged submission_v4_0908_1053.zip (8 files, 6.40 MB unzipped, sha256 00fe9eae6b5cc356...), every file byte-identical to the sources. The fresh-extraction game step had a wrong flag (fixed); rerun by hand: the extracted zip beats the minimax baseline by mate in 19 moves at 30 s + 0.5 s.
 - 11:05 HAND-OVER: submission_v4_0908_1053.zip is the V4 upload (Archit uploads; nothing here uploads). Book not included (no organiser confirmation). V4.5 work starts per PLAN_V4 s23.
+- 11:35 V4.5 step 1, the data fix (s24.1): selfplay_sf.py gained `--random-open P` (a 2-6 ply uniformly random walk before recording, so half the games start imbalanced and Stockfish plays them out) and `--balance` (near-zero positions thinned: |cp|<40 kept at 0.3, <120 at 0.6). Local smoke: median |cp| 128 (old stream: 32), results 144 W / 54 B / 137 D over 335 rows. VM: rook-knight stream stopped (27k positions in 16 h at depth 14, no chunk) and structures stream stopped (2 chunks banked); two decisive workers started at depth 9 into data/selfplay/dec, endgame stream eg2 kept.
+- 12:30 V4.5 step 4 (speed): profile on the quiet Mac: perft 4.8 M leaves/s, static NNUE eval 1.09 us (Python call overhead included; the inner loop alone is 179 ns), make+update 2.7 us (same caveat), search 782 knps. Tried an int32-blocked output layer (micro-benchmark 106 vs 179 ns, exact): slower inside the engine (582 knps), reverted; node counts identical throughout. The remaining speed candidates (lazy accumulator update, TT static-eval cache) are deeper changes and wait behind the net.
+- 12:35 V4.5 step 3 (clock): the dev soft-stop clock (predictive stop at 1.5x the last iteration, 1.6x extension when the best move changed) ported into bini_v4 behind BINI_SOFT_STOP=1 (off by default), for a real-clock proxy gate later today.
+- 12:40 V4.5 step 23.8 (drawishness): endgame_scale gained the three rules (one rook each with equal pawns x0.5; opposite bishops alone within two pawns x0.5; one minor each with <= 2 pawns each x0.6; only for |score| <= 150, no queens) behind BINI_DRAWISH (compile-time, off by default). Node counts at depth 10 unchanged with it off; with it on only the KRP ending changes (18,345 -> 15,596). Gate started 12:40: bini_v45_draw (rule on) vs V4 (bini_v4final), 300 games at 10 s + 0.1 s, 2 workers (~2 h). Then, on a quiet Mac: drawn.epd must not lose and marginal.epd (the 40 "small edge" site positions, +51..+150) must convert at least as often as V4, both via tests/test_conversion2.py.
+- 13:15 First two decisive chunks (400k rows): median |cp| 301 (old stream 32), 64% above 150 cp, results 30% W / 41% D / 29% B, median 15 pieces (games ran to 1,500 cp before adjudication, so long conversion tails dominate). Adjudication made a flag (`--adj-cp`) and the two workers restarted at 800 cp; the first two chunks stay in the set (the held-out one is worker 50's first chunk).
+- 13:00 Rounds 57-64 came in for the live V3 build: 5 wins, 2 draws, 1 loss (R64 to "what even is en passant"); the post-mortem harvested them (hard set 8 chunks, 152 positions; 40 tagged errors).
+- 13:20 Post-mortem written (PLAN_V4 s26) and the GCP question answered (trial: no GPUs, 8 vCPUs, no quota changes; upgrade keeps the credit; GPU quota may be refused; Colab Pro as insurance). Afternoon queue started (`tools/afternoon.sh`, log data/afternoon.log): draw gate (50/300 at 50.0%) -> drawn.epd + marginal.epd conversion tests for the rule and for V4 -> soft-clock 20k proxy (bini_v45_soft, 40 games) -> when 8 decisive chunks are local: 1-epoch pilot on the decisive mix (run_v45.sh), slope + out-scale export, VM grade, 40-game 20k proxy. Decision rule for the full run: pilot proxy >= V3's 46% within noise and no middlegame flattening in the diagnostic.
 
 ## Rules that shape the build (from the docs, 7 Sept)
 
@@ -169,3 +172,13 @@ move 30. Acceptance: AlphaFish proxy match >= 50% over 40 real-clock games.
   one bundle against V3 before anything is measured on top of them.
 - Dropped: KPK bitbase (search converts KPK; low value), repetition-history start-position fix
   (position never seen when we move second; cannot be reconstructed).
+
+## Live build correction (Tue 8 Sept, 17:05)
+
+Every platform log from rounds 64 to 69 prints `bini-2.0`; the V4 zip prints `bini-4.0`. **V3
+(dashboard v6, `submission_v3_0907_1258.zip`, leap clock + v3b net) is the live build and the
+rollback.** V4 was handed over but never uploaded. V5 candidates are gated against
+`bini_v4final` (V4 engine + V3's net), which is V3's playing strength with the safety items; no
+result assumes V4 is on the platform. Draw-policy dry run (28 logged rated games, trigger −100
+after our 20th move): fires in 9 games, 7 of them losses where the site agreed we were worse
+(−67 to −470), 2 draws (one false alarm at site −5), no wins affected.

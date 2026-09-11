@@ -1,0 +1,2 @@
+read data/ckpt/kb16b-96/raw.bin: l0w[12288, 512], l0b[512], l1w[8, 1024], l1b[8], l0f[768, 512]
+exported /root/chess/data/nnue_kb16b.safetensors (12.60 MB): 16x768x512x2->8 crelu; qb 32 |w1|max 1.980 |b1|max 1.021 |w2|max 1.980 |b2|max 0.149

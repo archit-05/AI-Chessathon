@@ -1,0 +1,210 @@
+{
+  "summary": {
+    "label": "bini_astra_correctness",
+    "total": 23,
+    "passed": 21,
+    "failed": 0,
+    "info": 2
+  },
+  "environment": {
+    "build_dir": "/Users/architbhardwaj/Desktop/AI Chessathon/bini_astra_correctness",
+    "python": "3.13.2",
+    "numpy": "2.5.3",
+    "numba": "0.67.0",
+    "llvmlite": "0.49.0",
+    "python_chess": "1.11.2",
+    "platform": "macOS-26.0-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "tt_bits": "16"
+  },
+  "build_hashes": {
+    "agent.py": "5bff736371872bc5688fd59d0c1cc74c",
+    "bini_board.py": "39304f6ae518e221a8df45d27f195e8e",
+    "bini_calib.py": "18210c5b3f8d7109151da461ee3b74f8",
+    "bini_engine.py": "4f4de482c28eca01e47cff5d6380a2c2",
+    "bini_eval.py": "d44763ba4ad0465a9257bfb32cd9c990",
+    "bini_magics.py": "3c2ab7807a87e0f31fb4d889367870e2",
+    "bini_nnue.py": "e06453c8a7a9a34b1e9405b309b071c2",
+    "bini_search.py": "9e409ed2ec715cd0ffd141e1ceb2372d",
+    "book.json": "51c97f3f4e8ab4c1801543945d749906",
+    "nnue.safetensors": "182c8fc8fb60b96fdb51f231cbe9c0e9"
+  },
+  "rows": [
+    {
+      "id": "A.qsearch_stalemate",
+      "title": "qsearch on a stalemate returns the draw utility",
+      "status": "PASS",
+      "score": -20,
+      "oracle": "stalemate"
+    },
+    {
+      "id": "A.state_preserved",
+      "title": "qsearch restores board state exactly",
+      "status": "PASS",
+      "changed": []
+    },
+    {
+      "id": "A.gen_stalemate_qsearch",
+      "title": "stalemate set through qsearch with poisoned correction history",
+      "status": "PASS",
+      "failures": 0,
+      "detail": []
+    },
+    {
+      "id": "A.recursive_frontier",
+      "title": "qsearch at a node reached through a capture sees the stalemate",
+      "status": "PASS",
+      "score": 20,
+      "note": "the parent takes a max, so this value only propagates when the stalemate is best"
+    },
+    {
+      "id": "A.probe_leaves_no_trace",
+      "title": "the legality probe restores undo slots and move lists",
+      "status": "PASS",
+      "changed": []
+    },
+    {
+      "id": "B.mate_at_half100_nonroot",
+      "title": "non-root mate on the 100th halfmove returns a mate score",
+      "status": "PASS",
+      "score": -29999,
+      "expected": "< -29872"
+    },
+    {
+      "id": "B.parent_transition",
+      "title": "parent search sees the mate rather than a fifty-move draw",
+      "status": "PASS",
+      "score": 29999,
+      "halfmove_after_mate": 100
+    },
+    {
+      "id": "B.negative_real_fifty",
+      "title": "genuine fifty-move position still returns the draw utility",
+      "status": "PASS",
+      "score": -20
+    },
+    {
+      "id": "B.negative_stalemate_at_100",
+      "title": "stalemate on the 100th halfmove is a draw, not a mate",
+      "status": "PASS",
+      "score": -20
+    },
+    {
+      "id": "C.even_ply_history_boundary",
+      "title": "second occurrence straddling the root at even ply",
+      "status": "PASS",
+      "engine": true,
+      "expected": true,
+      "ply": 2,
+      "halfmove": 4
+    },
+    {
+      "id": "C.odd_ply_history_boundary",
+      "title": "occurrence at odd ply reaching back into game history",
+      "status": "PASS",
+      "engine": true,
+      "expected": true,
+      "ply": 3,
+      "halfmove": 6
+    },
+    {
+      "id": "C.cycle_inside_tree",
+      "title": "four-ply cycle entirely inside the search tree",
+      "status": "PASS",
+      "engine": true,
+      "expected": true,
+      "ply": 4,
+      "halfmove": 4
+    },
+    {
+      "id": "C.cycle_in_game_history",
+      "title": "occurrence entirely inside pre-root game history",
+      "status": "PASS",
+      "engine": true,
+      "expected": true,
+      "ply": 3,
+      "halfmove": 8
+    },
+    {
+      "id": "C.negative_after_pawn_move",
+      "title": "no repetition claimed across a pawn move",
+      "status": "PASS",
+      "engine": false,
+      "expected": false,
+      "ply": 1,
+      "halfmove": 0
+    },
+    {
+      "id": "C.negative_distinct_position",
+      "title": "no repetition on a first occurrence",
+      "status": "PASS",
+      "engine": false,
+      "expected": false,
+      "ply": 1,
+      "halfmove": 2
+    },
+    {
+      "id": "C.after_rights_spent",
+      "title": "cycle straddling the root once castling rights are gone",
+      "status": "PASS",
+      "engine": true,
+      "expected": true,
+      "ply": 3,
+      "halfmove": 8
+    },
+    {
+      "id": "C.negative_rights_changed",
+      "title": "same placement but spent castling rights is not a repetition",
+      "status": "PASS",
+      "engine": false,
+      "expected": false,
+      "ply": 4,
+      "halfmove": 4
+    },
+    {
+      "id": "C.deep_cycle_empty_history",
+      "title": "eight-ply double cycle with no pre-root history",
+      "status": "PASS",
+      "engine": true,
+      "expected": true,
+      "ply": 8,
+      "halfmove": 8
+    },
+    {
+      "id": "D.oracle_bn_mate",
+      "title": "python-chess: KB vs KN is a legal checkmate here",
+      "status": "INFO",
+      "valid": true,
+      "checkmate": true,
+      "insufficient": false
+    },
+    {
+      "id": "D.bn_mate_recognised",
+      "title": "engine returns a mate score for the KB-vs-KN mate",
+      "status": "PASS",
+      "score": -29999
+    },
+    {
+      "id": "D.correction_moves_zero",
+      "title": "saturated correction history shifts a static zero",
+      "status": "INFO",
+      "static_zero_corrected_to": 64,
+      "raw_eval": 3
+    },
+    {
+      "id": "D.dead_material_scores_zero",
+      "title": "python-chess dead-material classes score the draw utility",
+      "status": "PASS",
+      "failures": 0,
+      "detail": []
+    },
+    {
+      "id": "D.winnable_material_not_zeroed",
+      "title": "winnable pawnless/pawn material is not forced to zero",
+      "status": "PASS",
+      "failures": 0,
+      "detail": [],
+      "note": "reported for information: heuristic scaling may still damp these"
+    }
+  ]
+}

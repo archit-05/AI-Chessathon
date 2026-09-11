@@ -1,0 +1,39 @@
+[
+  {
+    "test": "qsearch_stalemate",
+    "fen": "k7/8/1QK5/8/8/8/8/8 b - - 0 1",
+    "oracle": true,
+    "score": -1719
+  },
+  {
+    "test": "mate_at_halfmove_100_nonroot",
+    "fen": "7k/6Q1/5K2/8/8/8/8/8 b - - 100 1",
+    "oracle": true,
+    "score": -20
+  },
+  {
+    "test": "repetition_at_even_ply_history_boundary",
+    "expected": true,
+    "actual": false,
+    "halfmove": 4,
+    "ply": 2
+  },
+  {
+    "test": "bishop_vs_knight_can_mate",
+    "fen": "kn6/1B6/1K6/8/8/8/8/8 b - - 0 1",
+    "valid": true,
+    "checkmate": true,
+    "insufficient": false
+  },
+  {
+    "test": "correction_can_change_zero",
+    "corrected": 64
+  },
+  {
+    "test": "network_metadata",
+    "hidden": 1024,
+    "buckets": 8,
+    "acc_dtype": "<class 'numpy.int16'>",
+    "bound": 16355
+  }
+]

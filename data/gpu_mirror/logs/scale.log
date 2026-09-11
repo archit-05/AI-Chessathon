@@ -1,0 +1,25 @@
+Traceback (most recent call last):
+  File "/root/chess/bini_v5/tools/static_dump.py", line 5, in <module>
+    shard, out, n = sys.argv[1], sys.argv[2], int(sys.argv[3])
+                                                  ~~~~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/root/chess/bini_v5/tools/static_dump.py", line 5, in <module>
+    shard, out, n = sys.argv[1], sys.argv[2], int(sys.argv[3])
+                                                  ~~~~~~~~^^^
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/venv/main/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 454, in load
+    fid = stack.enter_context(open(os.fspath(file), "rb"))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/static_r1.npy'
+2026-09-09 10:53:34 slope v3b/r1 = '' on 
+2026-09-09 10:53:34 no slope: abort
+dumped 3000 nnue True 512
+dumped 3000 nnue True 512
+2026-09-09 10:56:22 slope v3b/r1 = '0.982' on /root/chess/data/labelled/shard_005007.npz
+read data/ckpt/r1-6/raw.bin: l0w[6144, 512], l0b[512], l1w[8, 1024], l1b[8]
+exported /root/chess/data/nnue_r1s2.safetensors (6.31 MB): 8x768x512x2->8 crelu; qb 32 |w1|max 1.365 |b1|max 0.399 |w2|max 1.980 |b2|max 0.196
+2026-09-09 10:56:22 r1s2 export rc 0
+2026-09-09 10:59:42 RESULT r1s2 (scale 0.982) vs r1: 10:59:42 [576/576] +153 =278 -145 score 50.7% elo +5 ±20 (pentanomial [21, 63, 111, 73, 20])

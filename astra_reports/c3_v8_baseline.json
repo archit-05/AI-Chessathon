@@ -1,0 +1,85 @@
+{
+  "summary": {
+    "label": "bini_v8_ship",
+    "total": 4,
+    "passed": 2,
+    "failed": 1,
+    "info": 1
+  },
+  "environment": {
+    "build_dir": "/Users/architbhardwaj/Desktop/AI Chessathon/bini_v8_ship",
+    "python": "3.13.2",
+    "numpy": "2.5.3",
+    "numba": "0.67.0",
+    "llvmlite": "0.49.0",
+    "python_chess": "1.11.2",
+    "platform": "macOS-26.0-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "tt_bits": "16"
+  },
+  "build_hashes": {
+    "agent.py": "5bff736371872bc5688fd59d0c1cc74c",
+    "bini_board.py": "861d5989e13dc1938cbeeb7d6e045366",
+    "bini_calib.py": "18210c5b3f8d7109151da461ee3b74f8",
+    "bini_engine.py": "4f4de482c28eca01e47cff5d6380a2c2",
+    "bini_eval.py": "d44763ba4ad0465a9257bfb32cd9c990",
+    "bini_magics.py": "3c2ab7807a87e0f31fb4d889367870e2",
+    "bini_nnue.py": "e06453c8a7a9a34b1e9405b309b071c2",
+    "bini_search.py": "163cda13023d7d5aa89cc4b523c6b576",
+    "book.json": "51c97f3f4e8ab4c1801543945d749906",
+    "nnue.safetensors": "182c8fc8fb60b96fdb51f231cbe9c0e9"
+  },
+  "rows": [
+    {
+      "id": "C3.pinned_ep_no_legal_capture",
+      "title": "a pinned en-passant capture is correctly illegal",
+      "status": "PASS",
+      "detail": [
+        {
+          "fen": "8/8/8/8/k1pP3R/8/8/4K3 b - d3 0 1",
+          "ep_captures_legal": [],
+          "identical_legal_moves": true,
+          "identical_key": false
+        },
+        {
+          "fen": "8/8/8/2k5/3Pp3/8/8/4K1B1 b - d3 0 1",
+          "ep_captures_legal": [],
+          "identical_legal_moves": true,
+          "identical_key": false
+        }
+      ]
+    },
+    {
+      "id": "C3.ep_over_distinction",
+      "title": "identical legal-move sets that hash differently (missed transposition)",
+      "status": "INFO",
+      "count": 2,
+      "of": 2,
+      "note": "wasteful, not wrong: it splits one position across two table entries"
+    },
+    {
+      "id": "C3.no_key_aliasing",
+      "title": "no two positions with different legal moves share a Zobrist key",
+      "status": "PASS",
+      "positions": 3562,
+      "ep_positions": 522,
+      "collisions": 0,
+      "detail": []
+    },
+    {
+      "id": "C3.book_key_ep_aliasing",
+      "title": "book key omits en passant, so two positions can share one entry",
+      "status": "FAIL",
+      "aliased": 1,
+      "detail": [
+        [
+          "rnbqkbnr/ppp1p1pp/8/3pPp2/8/8/PPPP1PPP/RNBQKBNR w KQkq f6 0 3",
+          [
+            "e5f6"
+          ]
+        ]
+      ],
+      "note": "agent.py legality-checks the book move, so the worst case is a suboptimal move, never an illegal one"
+    }
+  ]
+}

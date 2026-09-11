@@ -1,0 +1,13 @@
+--- bini_v8_ship/bini_board.py	2026-09-10 03:13:54
++++ bini_astra_correctness/bini_board.py	2026-09-10 18:40:52
+@@ -641,7 +641,9 @@
+         st[S_EP] = -1
+     key ^= ZOB_SIDE
+     st[S_SIDE] = 1 - st[S_SIDE]
+-    st[S_HALF] += 1
++    # the halfmove clock is deliberately NOT advanced: a pass is not a move, so it must not
++    # age the fifty-move counter (which would manufacture draws inside null subtrees) nor
++    # widen the repetition window past the pass.  unmake_null restores it either way.
+     st[S_PLY] = ply + 1
+     bb[15] = key
+ 

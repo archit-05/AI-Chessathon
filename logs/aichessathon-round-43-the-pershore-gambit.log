@@ -1,0 +1,80 @@
+AI CHESSATHON MATCH LOG
+=======================
+
+MATCH
+  Round          Rated 43
+  Team           Opus Carlsen
+  Colour         White
+  Opponent       The Pershore Gambit
+  Opening        Sicilian Najdorf
+  Start FEN      rnbqkb1r/1p3ppp/p2p1n2/4p3/4P3/1NN5/PPP1BPPP/R1BQK2R b KQkq - 1 7
+  You moved      Second
+  Machine        w-f7e9db
+  Finished       2026-09-06 19:09:50 UTC
+  Match ID       0ebbf02c-5390-43e2-aa59-51e1ff02b27f
+
+INIT
+  Ready in       28.1 s
+  Budget         90.0 s
+  Used           31 percent
+
+CLOCK
+  Base           120.0 s plus 0.5 s per move
+  Moves          19
+  Time used      31.6 s
+  Slowest        3.6 s on move 9
+  Fastest        1.0 s on move 4
+  Average        1.7 s
+  Left at end    97.9 s
+
+RESULT
+  Drawn by threefold repetition
+  Game lasted 84.7 s
+
+MOVES
+    #  move          time     clock left
+    1  O-O           1.3 s      119.2 s
+    2  Nd2           1.7 s      118.1 s
+    3  Nc4           2.3 s      116.3 s
+    4  Nxe4          1.0 s      115.7 s
+    5  Be3           1.5 s      114.7 s
+    6  Bxc4          1.2 s      114.0 s
+    7  Qf3           1.1 s      113.4 s
+    8  Rad1          1.0 s      112.9 s
+    9  Qg3           3.6 s      109.8 s
+   10  Rxd1          2.1 s      108.2 s
+   11  Rd4           2.8 s      106.0 s
+   12  Bxd4          1.7 s      104.8 s
+   13  Bd3           1.4 s      103.8 s
+   14  Nc5           2.5 s      101.8 s
+   15  Qg6           1.3 s      101.0 s
+   16  Bc4+          1.1 s      100.5 s
+   17  Bd3           1.3 s       99.6 s
+   18  Bc4+          1.4 s       98.8 s
+   19  Bd3           1.4 s       97.9 s
+
+OUTPUT
+  1,465 bytes on stderr
+
+  bini-2.0 ready: import+compile 27.6s (compile 26.8s), nnue=on
+  bini-2.0 m1 d15 e1g1 31cp 926832n 1275ms left 120000ms sx513/405/42312
+  bini-2.0 m2 d15 b3d2 28cp 1240508n 1663ms left 119223ms sx682/554/57241
+  bini-2.0 m3 d17 d2c4 16cp 1724276n 2302ms left 118058ms sx912/1107/76113
+  bini-2.0 m4 d14 c3e4 58cp 764796n 1016ms left 116255ms sx654/729/29587
+  bini-2.0 m5 d15 c1e3 39cp 1092289n 1496ms left 115738ms sx916/1095/41799
+  bini-2.0 m6 d16 e2c4 50cp 903880n 1237ms left 114741ms sx666/735/36694
+  bini-2.0 m7 d13 d1f3 62cp 764317n 1092ms left 114002ms sx588/562/22096
+  bini-2.0 m8 d14 a1d1 69cp 702275n 1031ms left 113409ms sx664/566/21924
+  bini-2.0 m9 d17 f3g3 16cp 2525376n 3577ms left 112877ms sx3065/2899/65387
+  bini-2.0 m10 d14 f1d1 167cp 1399983n 2051ms left 109798ms sx1765/1431/31070
+  bini-2.0 m11 d15 d1d4 51cp 1934985n 2761ms left 108246ms sx4455/4317/25959
+  bini-2.0 m12 d17 e3d4 -1cp 1280865n 1727ms left 105983ms sx3771/3894/25560
+  bini-2.0 m13 d16 c4d3 -105cp 1037414n 1424ms left 104755ms sx2315/2335/19842
+  bini-2.0 m14 d17 e4c5 -138cp 1882450n 2533ms left 103829ms sx3833/3692/49880
+  bini-2.0 m15 d20 g3g6 -20cp 937333n 1258ms left 101795ms sx6235/4350/12786
+  bini-2.0 m16 d21 d3c4 -20cp 795816n 1063ms left 101036ms sx2923/2588/11997
+  bini-2.0 m17 d29 c4d3 -20cp 1099217n 1344ms left 100472ms sx5650/3875/16582
+  bini-2.0 m18 d23 d3c4 -20cp 1048235n 1351ms left 99627ms sx3961/3483/16639
+  bini-2.0 m19 d31 c4d3 -20cp 1101037n 1413ms left 98775ms sx6029/4757/19547
+
+Email hello@aichessathon.com with this file if anything here is unclear.

@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bini Build Board</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#f4f5f2; --panel:#ffffff; --ink:#1c2a24; --muted:#5b6b64; --line:#d9ddd6;
+  --accent:#1f6f5b; --accent-ink:#ffffff; --good:#2e7d4f; --warn:#b26a00; --bad:#b3261e; --soft:#e7eee9;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace; --sans:"IBM Plex Sans",system-ui,-apple-system,Segoe UI,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#101614; --panel:#182019; --ink:#e6ebe7; --muted:#9aa8a0; --line:#2a352f;
+    --accent:#4fb08f; --accent-ink:#0d1512; --good:#5cc08a; --warn:#e0a640; --bad:#f07268; --soft:#1f2a24;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#101614; --panel:#182019; --ink:#e6ebe7; --muted:#9aa8a0; --line:#2a352f;
+  --accent:#4fb08f; --accent-ink:#0d1512; --good:#5cc08a; --warn:#e0a640; --bad:#f07268; --soft:#1f2a24;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.45 var(--sans)}
+header{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:18px 28px 10px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+header h1{margin:0;font-size:20px;font-weight:600;letter-spacing:.2px}
+header .stamp{color:var(--muted);font-family:var(--mono);font-size:12px}
+main{display:grid;grid-template-columns:repeat(12,1fr);gap:16px;padding:18px 28px 40px;max-width:1700px;margin:0 auto}
+section{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:14px 16px;min-width:0}
+section h2{margin:0 0 10px;font-size:12px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:var(--muted)}
+.span12{grid-column:span 12}.span8{grid-column:span 8}.span6{grid-column:span 6}.span4{grid-column:span 4}
+@media (max-width:1100px){.span8,.span6,.span4{grid-column:span 12}}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+th,td{padding:4px 8px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap;vertical-align:top}
+th{font-weight:500;color:var(--muted);font-size:12px}
+td.num,th.num{text-align:right}
+.mono{font-family:var(--mono);font-size:12.5px}
+.wrap{white-space:normal}
+.scroll{overflow-x:auto}
+.pill{display:inline-block;padding:1px 8px;border-radius:10px;font-size:12px;font-weight:500;background:var(--soft);color:var(--ink)}
+.pill.good{background:color-mix(in srgb,var(--good) 18%,transparent);color:var(--good)}
+.pill.warn{background:color-mix(in srgb,var(--warn) 18%,transparent);color:var(--warn)}
+.pill.bad{background:color-mix(in srgb,var(--bad) 18%,transparent);color:var(--bad)}
+.pill.accent{background:var(--accent);color:var(--accent-ink)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:12px}
+.kpi{padding:10px 12px;border:1px solid var(--line);border-radius:6px;background:var(--soft)}
+.kpi .l{font-size:11px;letter-spacing:.6px;text-transform:uppercase;color:var(--muted)}
+.kpi .v{font-size:22px;font-weight:600;font-family:var(--mono);margin-top:2px}
+.kpi .s{font-size:12px;color:var(--muted)}
+.bar{height:8px;background:var(--soft);border-radius:4px;overflow:hidden;margin-top:4px}
+.bar>span{display:block;height:100%;background:var(--accent)}
+.stages{display:flex;gap:6px;flex-wrap:wrap}
+.stage{flex:1 1 120px;padding:8px 10px;border-radius:6px;border:1px solid var(--line);font-size:12px;background:var(--soft)}
+.stage.done{border-color:var(--good)}.stage.running{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 14%,transparent)}
+.stage .t{font-family:var(--mono);color:var(--muted)}
+.banner{grid-column:span 12;padding:10px 14px;border-radius:6px;background:color-mix(in srgb,var(--bad) 14%,transparent);color:var(--bad);font-weight:500}
+.banner[hidden]{display:none}
+svg{width:100%;height:170px;display:block}
+.legend{display:flex;gap:14px;font-size:12px;color:var(--muted);margin-top:4px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+ul.log{margin:0;padding-left:18px;font-size:12.5px}
+ul.log li{margin:3px 0}
+.res-Win{color:var(--good);font-weight:600}.res-Loss{color:var(--bad);font-weight:600}.res-Draw{color:var(--warn);font-weight:600}
+.muted{color:var(--muted)}
+a{color:var(--accent)}
+</style>
+</head>
+<body>
+<header>
+  <h1>Bini Build Board</h1>
+  <div class="stamp" id="stamp">loading…</div>
+</header>
+<main id="main">
+  <div class="banner" id="banner" hidden></div>
+  <section class="span12" id="ladder"><h2>Ladder</h2></section>
+  <section class="span8" id="training"><h2>Training runs</h2></section>
+  <section class="span4" id="machines"><h2>Machines</h2></section>
+  <section class="span6" id="gates"><h2>Gates and battery</h2></section>
+  <section class="span6" id="pipeline"><h2>Data pipeline</h2></section>
+  <section class="span12" id="chain"><h2>Overnight chain</h2></section>
+  <section class="span8" id="board"><h2>Progress board</h2></section>
+  <section class="span4" id="ship"><h2>Ship panel</h2></section>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;","&gt;":"&gt;",'"':"&quot;"}[c]||c));
+const fmt=(x,d=1)=>x==null||x===""?"–":Number(x).toFixed(d);
+function h2(sec,title){return `<h2>${title}</h2>`}
+
+function renderLadder(p){
+  const el=$("ladder"); if(!p||!p.games){el.innerHTML=h2(el,"Ladder")+'<p class="muted">no platform data</p>';return}
+  const rec=p.record_by_build||{}; const order=["V3","V2.2","V2.1","V2","HCE","V1"];
+  const kpis=order.filter(b=>rec[b]).map(b=>`<div class="kpi"><div class="l">${b}</div><div class="v">${rec[b].W}-${rec[b].D}-${rec[b].L}</div><div class="s">W-D-L on the ladder</div></div>`).join("");
+  const rows=p.games.slice(0,14).map(g=>{
+    const flags=(g.flags||[]).map(f=>`<span class="pill warn">${esc(f)}</span>`).join(" ");
+    return `<tr><td class="mono">R${g.round}</td><td><span class="pill">${esc(g.build)}</span></td><td>${esc(g.colour)}</td><td class="wrap">${esc(g.opponent)}</td>
+      <td class="res-${esc(g.result)}">${esc(g.result)}</td><td class="muted">${esc(g.termination)}</td>
+      <td class="num mono">${fmt(g.init_s)}</td><td class="num mono">${g.moves||"–"}</td><td class="num mono">${fmt(g.first_move_s)}</td>
+      <td class="num mono">${fmt(g.avg_s)}</td><td class="num mono">${fmt(g.clk20)}</td><td class="num mono">${fmt(g.clk40)}</td>
+      <td class="num mono">${fmt(g.clock_left_s)}</td><td>${flags}</td></tr>`}).join("");
+  el.innerHTML=h2(el,"Ladder")+`<div class="kpis">${kpis}</div><div class="scroll"><table><thead><tr>
+    <th>Round</th><th>Build</th><th>Colour</th><th>Opponent</th><th>Result</th><th>How</th><th class="num">Init s</th><th class="num">Moves</th>
+    <th class="num">1st move s</th><th class="num">Avg s</th><th class="num">Clock @20</th><th class="num">Clock @40</th><th class="num">End clock</th><th>Flags</th></tr></thead>
+    <tbody>${rows}</tbody></table></div><div class="muted" style="margin-top:6px;font-size:12px">Source: ${esc(p.source)} plus the round logs in logs/. Flags: ended under 5 s, old-build first move (&lt;1.8 s), under 20 s or over 60 s unused at move 40, init over 45 s.</div>`;
+}
+
+function chart(series,opts){
+  // series: [{name,color,points:[[x,y],...]}]; simple SVG line chart with axes
+  const W=720,H=170,L=42,R=12,T=10,B=24;
+  const xs=series.flatMap(s=>s.points.map(p=>p[0])), ys=series.flatMap(s=>s.points.map(p=>p[1]));
+  if(!xs.length) return '<p class="muted">no epoch data yet</p>';
+  const x0=Math.min(...xs,1), x1=Math.max(...xs, opts.xmax||1), y0=Math.floor(Math.min(...ys, opts.ymin??Infinity)/10)*10, y1=Math.ceil(Math.max(...ys)/10)*10||10;
+  const sx=x=>L+(x-x0)/(x1-x0||1)*(W-L-R), sy=y=>T+(1-(y-y0)/(y1-y0||1))*(H-T-B);
+  let g=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(opts.title)}">`;
+  for(let k=0;k<=4;k++){const y=y0+(y1-y0)*k/4;g+=`<line x1="${L}" x2="${W-R}" y1="${sy(y)}" y2="${sy(y)}" stroke="var(--line)" stroke-width="1"/><text x="${L-6}" y="${sy(y)+4}" font-size="10" text-anchor="end" fill="var(--muted)" font-family="var(--mono)">${Math.round(y)}</text>`}
+  for(let x=x0;x<=x1;x++){g+=`<text x="${sx(x)}" y="${H-8}" font-size="10" text-anchor="middle" fill="var(--muted)" font-family="var(--mono)">${x}</text>`}
+  if(opts.target!=null){g+=`<line x1="${L}" x2="${W-R}" y1="${sy(opts.target)}" y2="${sy(opts.target)}" stroke="var(--good)" stroke-dasharray="4 4"/><text x="${W-R}" y="${sy(opts.target)-4}" font-size="10" text-anchor="end" fill="var(--good)">target ${opts.target}</text>`}
+  if(opts.ref!=null){g+=`<line x1="${L}" x2="${W-R}" y1="${sy(opts.ref)}" y2="${sy(opts.ref)}" stroke="var(--muted)" stroke-dasharray="2 4"/><text x="${L+4}" y="${sy(opts.ref)-4}" font-size="10" fill="var(--muted)">shipped ${opts.ref}</text>`}
+  for(const s of series){
+    const d=s.points.map((p,i)=>(i?"L":"M")+sx(p[0]).toFixed(1)+" "+sy(p[1]).toFixed(1)).join(" ");
+    g+=`<path d="${d}" fill="none" stroke="${s.color}" stroke-width="2"/>`+s.points.map(p=>`<circle cx="${sx(p[0])}" cy="${sy(p[1])}" r="3" fill="${s.color}"/>`).join("");
+  }
+  return g+"</svg>";
+}
+
+function renderTraining(runs,tables){
+  const el=$("training"); let html=h2(el,"Training runs");
+  if(!runs||!runs.length){html+='<p class="muted">no training logs yet</p>'}
+  html+='<div class="kpis">';
+  for(const r of (runs||[])){
+    const c=r.current; const pct=c&&r.epochs_planned?Math.min(100,100*((c.epoch-1)*c.chunks+c.chunk)/(r.epochs_planned*c.chunks)):(r.finished?100:0);
+    const state=r.finished?'<span class="pill good">finished</span>':r.active?'<span class="pill accent">training</span>':'<span class="pill warn">idle '+r.age_min+' min</span>';
+    html+=`<div class="kpi"><div class="l">${esc(r.tag)} ${state}</div><div class="v">${c?`ep ${c.epoch}/${r.epochs_planned??"?"}`:(r.finished?`${r.epochs_done.length} ep`:"–")}</div>
+      <div class="s">${c?`chunk ${c.chunk}/${c.chunks} · ${c.sec_per_chunk}s/chunk · loss ${c.loss}`:esc(r.last_line).slice(0,60)}</div>
+      <div class="s">${r.eta_min!=null&&!r.finished?`ETA ${Math.floor(r.eta_min/60)}h ${r.eta_min%60}m`:""}</div><div class="bar"><span style="width:${pct}%"></span></div></div>`;
+  }
+  html+='</div>';
+  // epoch table(s) from the progress file + chart of diag-all and grader
+  for(const t of (tables||[])){
+    const hi=t.header.findIndex(h=>/diag all/i.test(h)), gi=t.header.findIndex(h=>/grader cp/i.test(h)), ei=t.header.findIndex(h=>/5.16/i.test(h));
+    const pts=[],gp=[],ep=[]; let ref=null,refG=null;
+    for(const row of t.rows){
+      const n=parseInt(row[0]); const d=parseFloat(row[hi]), g=parseFloat(row[gi]), e=parseFloat(row[ei]);
+      if(/v3b|shipped|reference/i.test(row[0])){ref=d;refG=g;continue}
+      if(!isNaN(n)){ if(!isNaN(d))pts.push([n,d]); if(!isNaN(g))gp.push([n,g]); if(!isNaN(e))ep.push([n,e]); }
+    }
+    html+=`<div style="margin-top:8px"><div class="muted" style="font-size:12px;margin-bottom:2px">${esc(t.header[0])}: held-out site-chunk error (cp), all positions and 5–16 pieces</div>`+
+      chart([{name:"diag all",color:"var(--accent)",points:pts},{name:"5–16 pieces",color:"var(--warn)",points:ep}],{title:"site chunk error",target:110,ref:ref,xmax:Math.max(6,...pts.map(p=>p[0]))})+
+      `<div class="legend"><span><i style="background:var(--accent)"></i>all positions</span><span><i style="background:var(--warn)"></i>5–16 pieces (target 130)</span></div>`+
+      `<div class="muted" style="font-size:12px;margin:8px 0 2px">grader loss on 300 ladder positions (cp); shipped net ${refG??"–"}</div>`+
+      chart([{name:"grader",color:"var(--good)",points:gp}],{title:"grader",ref:refG,ymin:10,xmax:Math.max(6,...gp.map(p=>p[0]))})+
+      `<div class="scroll" style="margin-top:8px"><table><thead><tr>${t.header.map(h=>`<th>${esc(h)}</th>`).join("")}</tr></thead><tbody>${t.rows.map(r=>`<tr>${r.map(c=>`<td class="mono">${esc(c)}</td>`).join("")}</tr>`).join("")}</tbody></table></div></div>`;
+  }
+  el.innerHTML=html;
+}
+
+function renderMachines(m,v){
+  const el=$("machines"); const l=m&&m.load||[0,0,0];
+  const rule=m&&m.over_rule?'<span class="pill bad">over the two-worker rule</span>':'<span class="pill good">within rule</span>';
+  let html=h2(el,"Machines")+`<div class="kpis"><div class="kpi"><div class="l">Mac load 1/5/15 min</div><div class="v">${l.map(x=>x.toFixed(1)).join(" · ")}</div><div class="s">${rule}</div></div>
+    <div class="kpi"><div class="l">Mac memory</div><div class="v">${m?m.free_mb:"–"} MB free</div><div class="s">swap used ${m?m.swap_used_mb:"–"} MB · busy python ${m?m.busy_python:"–"}</div></div>`;
+  if(v&&v.reachable){html+=`<div class="kpi"><div class="l">Oracle VM load</div><div class="v">${v.load.map(x=>x.toFixed(1)).join(" · ")}</div><div class="s">${v.cores} cores · ${v.stockfish_procs} stockfish · ${v.mem_used_mb}/${v.mem_total_mb} MB · ${v.chunks_on_vm} chunks</div></div>`}
+  else html+=`<div class="kpi"><div class="l">Oracle VM</div><div class="v">unreachable</div><div class="s">ssh failed this pass</div></div>`;
+  html+='</div>';
+  if(m&&m.top&&m.top.length){html+=`<table><thead><tr><th>Process</th><th class="num">CPU %</th><th class="num">RSS MB</th></tr></thead><tbody>${m.top.map(p=>`<tr><td class="mono">${esc(p.name)}</td><td class="num mono">${p.cpu}</td><td class="num mono">${p.rss_mb}</td></tr>`).join("")}</tbody></table>`}
+  el.innerHTML=html;
+}
+
+function renderGates(gs){
+  const el=$("gates"); let html=h2(el,"Gates and battery");
+  if(!gs||!gs.length){el.innerHTML=html+'<p class="muted">no gate logs in the last 40 hours</p>';return}
+  html+='<div class="scroll"><table><thead><tr><th>Gate</th><th>Progress</th><th class="num">W-D-L</th><th class="num">Score</th><th class="num">Elo</th><th>Clean</th><th></th></tr></thead><tbody>';
+  for(const g of gs){
+    const pct=100*g.n/g.total; const st=g.running?'<span class="pill accent">running</span>':(g.n>=g.total?'<span class="pill">done</span>':`<span class="pill warn">stopped ${g.age_min>90?Math.round(g.age_min/60)+"h":Math.round(g.age_min)+"m"} ago</span>`);
+    const clean=(g.failures?`<span class="pill bad">${g.failures} failure</span> `:"")+(g.fallback_games?`<span class="pill warn">${g.fallback_games} fallback</span>`:'<span class="pill good">clean</span>');
+    const elo=`${g.elo>0?"+":""}${g.elo} ±${g.pm}`; const sign=g.elo-g.pm>0?"good":(g.elo+g.pm<0?"bad":"");
+    html+=`<tr><td class="mono wrap">${esc(g.name)}</td><td><span class="mono">${g.n}/${g.total}</span><div class="bar"><span style="width:${pct}%"></span></div></td>
+      <td class="num mono">${g.W}-${g.D}-${g.L}</td><td class="num mono">${g.score}%</td><td class="num mono"><span class="pill ${sign}">${elo}</span></td><td>${clean}</td><td>${st}</td></tr>`;
+  }
+  el.innerHTML=html+'</tbody></table></div><div class="muted" style="font-size:12px;margin-top:6px">Interval from the arena (draw-blind); fallback games are the compile-starved ones to exclude.</div>';
+}
+
+function renderPipeline(p){
+  const el=$("pipeline"); let html=h2(el,"Data pipeline");
+  if(!p){el.innerHTML=html+'<p class="muted">no data</p>';return}
+  const rate=(p.streams||[]).reduce((a,s)=>a+(s.rate||0),0);
+  html+=`<div class="kpis"><div class="kpi"><div class="l">Self-play positions</div><div class="v">${(p.selfplay_positions/1e6).toFixed(2)}M</div><div class="s">${rate}/s live · ${(rate*3600/1e6).toFixed(2)}M per hour</div></div>
+    <div class="kpi"><div class="l">Hard set</div><div class="v">${p.hard_fens}</div><div class="s">positions from our tagged errors</div></div>
+    <div class="kpi"><div class="l">Book</div><div class="v">${p.book_entries??"–"}</div><div class="s">${esc((p.book_log||[""])[0]).slice(0,60)}</div></div></div>`;
+  html+='<table><thead><tr><th>Stream</th><th class="num">Chunks</th><th class="num">Positions</th><th class="num">Rate /s</th><th>Workers</th></tr></thead><tbody>';
+  for(const s of (p.streams||[])){
+    html+=`<tr><td class="wrap">${esc(s.name)} ${s.active?'<span class="pill accent">live</span>':""}</td><td class="num mono">${s.chunks}</td><td class="num mono">${s.positions.toLocaleString()}</td><td class="num mono">${s.rate||"–"}</td><td class="mono muted">${s.workers.map(w=>`w${w.id}${w.active?"":"·idle"}`).join(" ")}</td></tr>`;
+  }
+  html+='</tbody></table><table style="margin-top:8px"><thead><tr><th>Labelled set</th><th class="num">Chunks</th><th class="num">Updated</th></tr></thead><tbody>';
+  for(const s of (p.sets||[])){html+=`<tr><td class="mono">${esc(s.name)}</td><td class="num mono">${s.chunks}</td><td class="num mono muted">${s.age_min>120?Math.round(s.age_min/60)+" h ago":s.age_min+" min ago"}</td></tr>`}
+  el.innerHTML=html+'</tbody></table>';
+}
+
+function renderChain(c){
+  const el=$("chain"); let html=h2(el,"Overnight chain")+'<div class="stages">';
+  for(const s of (c||[])){html+=`<div class="stage ${s.state}"><div>${esc(s.stage)}</div><div class="t">${s.started?"started "+s.started:s.state}</div></div>`}
+  el.innerHTML=html+'</div>';
+}
+
+function renderBoard(b){
+  const el=$("board"); let html=h2(el,"Progress board"+(b&&b.updated?` <span class="muted" style="text-transform:none;letter-spacing:0">(${esc(b.updated)})</span>`:""));
+  if(!b||!b.rows){el.innerHTML=html+'<p class="muted">V4 Progress.md not found</p>';return}
+  html+='<div class="scroll"><table><thead><tr><th>Track</th><th>State</th><th>Next</th></tr></thead><tbody>';
+  for(const r of b.rows){html+=`<tr><td>${esc(r.track)}</td><td class="wrap">${esc(r.state)}</td><td class="wrap">${esc(r.next)}</td></tr>`}
+  html+='</tbody></table></div><div class="muted" style="font-size:12px;margin:10px 0 4px">Latest log entries</div><ul class="log">'+(b.log||[]).slice().reverse().map(l=>`<li>${esc(l)}</li>`).join("")+'</ul>';
+  el.innerHTML=html;
+}
+
+function renderShip(s){
+  const el=$("ship"); let html=h2(el,"Ship panel");
+  if(!s){el.innerHTML=html;return}
+  html+=`<p style="margin:0 0 8px"><span class="pill accent">live</span> ${esc(s.live)}</p><table><thead><tr><th>Release zip</th><th class="num">MB</th><th class="num">Packaged</th></tr></thead><tbody>`;
+  for(const z of s.zips){html+=`<tr><td class="mono wrap">${esc(z.name)}</td><td class="num mono">${z.mb}</td><td class="num mono muted">${esc(z.when)}</td></tr>`}
+  html+='</tbody></table><div class="muted" style="font-size:12px;margin:10px 0 4px">Tags</div><div class="mono" style="font-size:12px">'+s.tags.map(t=>esc(t)).join("<br>")+'</div>';
+  el.innerHTML=html;
+}
+
+async function refresh(){
+  try{
+    const r=await fetch("status.json?ts="+Date.now(),{cache:"no-store"}); const s=await r.json();
+    $("stamp").textContent="collected "+s.generated+" · page refreshes every 30 s";
+    const b=$("banner"); const m=s.mac||{};
+    if(m.over_rule){b.hidden=false;b.textContent=`Mac load ${m.load[0].toFixed(1)}: above the two-worker rule; gates running now are being contaminated.`}
+    else if(s.vm&&s.vm.reachable===false){b.hidden=false;b.textContent="Oracle VM unreachable on this pass."} else b.hidden=true;
+    renderLadder(s.platform); renderTraining(s.training,s.epoch_tables); renderMachines(s.mac,s.vm);
+    renderGates(s.gates); renderPipeline(s.pipeline); renderChain(s.chain); renderBoard(s.board); renderShip(s.ship);
+  }catch(e){$("stamp").textContent="status.json not readable yet: "+e}
+}
+refresh(); setInterval(refresh,30000);
+</script>
+</body>
+</html>

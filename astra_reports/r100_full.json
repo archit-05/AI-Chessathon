@@ -1,0 +1,412 @@
+{
+ "arm": "full",
+ "build": "/Users/architbhardwaj/Desktop/AI Chessathon/bini_v8_ship",
+ "target_move": 23,
+ "target_game_played": "f1a1",
+ "target_replay_played": "d2b2",
+ "target_reproduced": false,
+ "moves_replayed": 25,
+ "moves_agreeing": 20,
+ "rows": [
+  {
+   "our_move": 1,
+   "fen": "rnbqkb1r/1p3ppp/p2ppn2/8/4P3/1NN5/PPP2PPP/R1BQKB1R w KQkq - 0 7",
+   "clock_ms": 120000,
+   "game_played": "a2a4",
+   "replay_played": "a2a4",
+   "agree": true,
+   "logged": {
+    "depth": 16,
+    "uci": "a2a4",
+    "cp": 34,
+    "spent": 2133,
+    "left": 120000
+   },
+   "telemetry": "bini-5.0 m1 d13 a2a4 47cp 222870n 2118ms left 120000ms sx197/61/6632 rg0"
+  },
+  {
+   "our_move": 2,
+   "fen": "r1bqkb1r/1p3ppp/p1nppn2/8/P3P3/1NN5/1PP2PPP/R1BQKB1R w KQkq - 1 8",
+   "clock_ms": 118365,
+   "game_played": "f1e2",
+   "replay_played": "f1e2",
+   "agree": true,
+   "logged": {
+    "depth": 17,
+    "uci": "f1e2",
+    "cp": 27,
+    "spent": 2778,
+    "left": 118365
+   },
+   "telemetry": "bini-5.0 m2 d15 f1e2 21cp 426761n 3340ms left 118365ms sx419/229/12092 rg0"
+  },
+  {
+   "our_move": 3,
+   "fen": "r1bqkb1r/5ppp/ppnppn2/8/P3P3/1NN5/1PP1BPPP/R1BQK2R w KQkq - 0 9",
+   "clock_ms": 116086,
+   "game_played": "b3d4",
+   "replay_played": "c1f4",
+   "agree": false,
+   "logged": {
+    "depth": 17,
+    "uci": "b3d4",
+    "cp": 37,
+    "spent": 1938,
+    "left": 116086
+   },
+   "telemetry": "bini-5.0 m3 d13 c1f4 4cp 353631n 2782ms left 116086ms sx275/72/9404 rg0"
+  },
+  {
+   "our_move": 4,
+   "fen": "r2qkb1r/1b3ppp/ppnppn2/8/P2NP3/2N5/1PP1BPPP/R1BQK2R w KQkq - 2 10",
+   "clock_ms": 114646,
+   "game_played": "d4c6",
+   "replay_played": "d4c6",
+   "agree": true,
+   "logged": {
+    "depth": 19,
+    "uci": "d4c6",
+    "cp": 7,
+    "spent": 4246,
+    "left": 114646
+   },
+   "telemetry": "bini-5.0 m1 d14 d4c6 -38cp 325312n 2467ms left 114646ms sx535/143/10847 rg0"
+  },
+  {
+   "our_move": 5,
+   "fen": "r2qkb1r/5ppp/ppbppn2/8/P3P3/2N5/1PP1BPPP/R1BQK2R w KQkq - 0 11",
+   "clock_ms": 110899,
+   "game_played": "e1g1",
+   "replay_played": "e1g1",
+   "agree": true,
+   "logged": {
+    "depth": 18,
+    "uci": "e1g1",
+    "cp": -13,
+    "spent": 2610,
+    "left": 110899
+   },
+   "telemetry": "bini-5.0 m2 d17 e1g1 -26cp 651001n 2920ms left 110899ms sx1253/535/22373 rg0"
+  },
+  {
+   "our_move": 6,
+   "fen": "r2qk2r/4bppp/ppbppn2/8/P3P3/2N5/1PP1BPPP/R1BQ1RK1 w kq - 2 12",
+   "clock_ms": 108788,
+   "game_played": "e2d3",
+   "replay_played": "d1d3",
+   "agree": false,
+   "logged": {
+    "depth": 18,
+    "uci": "e2d3",
+    "cp": -10,
+    "spent": 2638,
+    "left": 108788
+   },
+   "telemetry": "bini-5.0 m3 d17 d1d3 -34cp 1003532n 7686ms left 108788ms sx1264/536/31372 rg0"
+  },
+  {
+   "our_move": 7,
+   "fen": "r2q1rk1/4bppp/ppbppn2/8/P3P3/2NB4/1PP2PPP/R1BQ1RK1 w - - 4 13",
+   "clock_ms": 106648,
+   "game_played": "d1e2",
+   "replay_played": "d1e2",
+   "agree": true,
+   "logged": {
+    "depth": 17,
+    "uci": "d1e2",
+    "cp": -24,
+    "spent": 1866,
+    "left": 106648
+   },
+   "telemetry": "bini-5.0 m1 d14 d1e2 -9cp 457669n 3960ms left 106648ms sx337/128/11669 rg0"
+  },
+  {
+   "our_move": 8,
+   "fen": "r1q2rk1/4bppp/ppbppn2/8/P3P3/2NB4/1PP1QPPP/R1B2RK1 w - - 6 14",
+   "clock_ms": 105281,
+   "game_played": "c1g5",
+   "replay_played": "c1g5",
+   "agree": true,
+   "logged": {
+    "depth": 17,
+    "uci": "c1g5",
+    "cp": -17,
+    "spent": 3234,
+    "left": 105281
+   },
+   "telemetry": "bini-5.0 m2 d14 c1g5 2cp 468926n 2229ms left 105281ms sx404/143/11784 rg0"
+  },
+  {
+   "our_move": 9,
+   "fen": "r1q2rk1/4bpp1/ppbppn1p/6B1/P3P3/2NB4/1PP1QPPP/R4RK1 w - - 0 15",
+   "clock_ms": 102546,
+   "game_played": "g5e3",
+   "replay_played": "g5h4",
+   "agree": false,
+   "logged": {
+    "depth": 17,
+    "uci": "g5e3",
+    "cp": -24,
+    "spent": 4509,
+    "left": 102546
+   },
+   "telemetry": "bini-5.0 m3 d15 g5h4 -11cp 631773n 2387ms left 102546ms sx790/281/15459 rg0"
+  },
+  {
+   "our_move": 10,
+   "fen": "r4rk1/1q2bpp1/ppbppn1p/8/P3P3/2NBB3/1PP1QPPP/R4RK1 w - - 2 16",
+   "clock_ms": 98535,
+   "game_played": "f2f3",
+   "replay_played": "f2f3",
+   "agree": true,
+   "logged": {
+    "depth": 18,
+    "uci": "f2f3",
+    "cp": -33,
+    "spent": 1915,
+    "left": 98535
+   },
+   "telemetry": "bini-5.0 m1 d15 f2f3 -17cp 498961n 1866ms left 98535ms sx530/213/12893 rg0"
+  },
+  {
+   "our_move": 11,
+   "fen": "r4rk1/1q1nbpp1/ppbpp2p/8/P3P3/2NBBP2/1PP1Q1PP/R4RK1 w - - 1 17",
+   "clock_ms": 97118,
+   "game_played": "e3d4",
+   "replay_played": "e3d4",
+   "agree": true,
+   "logged": {
+    "depth": 18,
+    "uci": "e3d4",
+    "cp": -44,
+    "spent": 2579,
+    "left": 97118
+   },
+   "telemetry": "bini-5.0 m2 d16 e3d4 -25cp 609942n 2863ms left 97118ms sx571/295/17081 rg0"
+  },
+  {
+   "our_move": 12,
+   "fen": "r4rk1/1q2bpp1/ppbpp2p/2n5/P2BP3/2NB1P2/1PP1Q1PP/R4RK1 w - - 3 18",
+   "clock_ms": 95038,
+   "game_played": "f3f4",
+   "replay_played": "f3f4",
+   "agree": true,
+   "logged": {
+    "depth": 17,
+    "uci": "f3f4",
+    "cp": 7,
+    "spent": 2016,
+    "left": 95038
+   },
+   "telemetry": "bini-5.0 m3 d12 f3f4 -3cp 235291n 2712ms left 95038ms sx197/92/4626 rg0"
+  },
+  {
+   "our_move": 13,
+   "fen": "r4rk1/1q2bpp1/ppbpp2p/8/P2BPP2/2Nn4/1PP1Q1PP/R4RK1 w - - 0 19",
+   "clock_ms": 93521,
+   "game_played": "c2d3",
+   "replay_played": "c2d3",
+   "agree": true,
+   "logged": {
+    "depth": 19,
+    "uci": "c2d3",
+    "cp": -23,
+    "spent": 4757,
+    "left": 93521
+   },
+   "telemetry": "bini-5.0 m4 d13 c2d3 -11cp 228258n 2243ms left 93521ms sx189/69/4138 rg0"
+  },
+  {
+   "our_move": 14,
+   "fen": "r4rk1/1q2b1p1/ppbpp2p/5p2/P2BPP2/2NP4/1P2Q1PP/R4RK1 w - - 0 20",
+   "clock_ms": 89262,
+   "game_played": "e4f5",
+   "replay_played": "e4f5",
+   "agree": true,
+   "logged": {
+    "depth": 18,
+    "uci": "e4f5",
+    "cp": -13,
+    "spent": 1827,
+    "left": 89262
+   },
+   "telemetry": "bini-5.0 m5 d15 e4f5 12cp 580833n 4635ms left 89262ms sx1069/394/10999 rg0"
+  },
+  {
+   "our_move": 15,
+   "fen": "r4rk1/1q2b1p1/ppbp3p/5p2/P2B1P2/2NP4/1P2Q1PP/R4RK1 w - - 0 21",
+   "clock_ms": 87934,
+   "game_played": "b2b4",
+   "replay_played": "b2b4",
+   "agree": true,
+   "logged": {
+    "depth": 21,
+    "uci": "b2b4",
+    "cp": -20,
+    "spent": 4363,
+    "left": 87934
+   },
+   "telemetry": "bini-5.0 m6 d16 b2b4 23cp 185911n 1627ms left 87934ms sx512/277/6467 rg0"
+  },
+  {
+   "our_move": 16,
+   "fen": "r4rk1/1q4p1/ppbp1b1p/5p2/PP1B1P2/2NP4/4Q1PP/R4RK1 w - - 1 22",
+   "clock_ms": 84070,
+   "game_played": "d4f6",
+   "replay_played": "d4f6",
+   "agree": true,
+   "logged": {
+    "depth": 20,
+    "uci": "d4f6",
+    "cp": -20,
+    "spent": 1915,
+    "left": 84070
+   },
+   "telemetry": "bini-5.0 m7 d18 d4f6 -53cp 1188898n 4480ms left 84070ms sx1902/856/43432 rg0"
+  },
+  {
+   "our_move": 17,
+   "fen": "r5k1/1q4p1/ppbp1r1p/5p2/PP3P2/2NP4/4Q1PP/R4RK1 w - - 0 23",
+   "clock_ms": 82654,
+   "game_played": "b4b5",
+   "replay_played": "b4b5",
+   "agree": true,
+   "logged": {
+    "depth": 23,
+    "uci": "b4b5",
+    "cp": -20,
+    "spent": 2585,
+    "left": 82654
+   },
+   "telemetry": "bini-5.0 m8 d18 b4b5 -31cp 581390n 2132ms left 82654ms sx913/511/26006 rg0"
+  },
+  {
+   "our_move": 18,
+   "fen": "r5k1/1q4p1/1pbp1r1p/1p3p2/P4P2/2NP4/4Q1PP/R4RK1 w - - 0 24",
+   "clock_ms": 80567,
+   "game_played": "a4b5",
+   "replay_played": "a4b5",
+   "agree": true,
+   "logged": {
+    "depth": 23,
+    "uci": "a4b5",
+    "cp": -24,
+    "spent": 3994,
+    "left": 80567
+   },
+   "telemetry": "bini-5.0 m9 d17 a4b5 -31cp 326612n 1761ms left 80567ms sx602/399/19627 rg0"
+  },
+  {
+   "our_move": 19,
+   "fen": "r5k1/1q4p1/1p1p1r1p/1P1b1p2/5P2/2NP4/4Q1PP/R4RK1 w - - 1 25",
+   "clock_ms": 77072,
+   "game_played": "h2h3",
+   "replay_played": "h2h3",
+   "agree": true,
+   "logged": {
+    "depth": 22,
+    "uci": "h2h3",
+    "cp": -20,
+    "spent": 1604,
+    "left": 77072
+   },
+   "telemetry": "bini-5.0 m10 d17 h2h3 -20cp 491934n 3104ms left 77072ms sx1054/457/29574 rg0"
+  },
+  {
+   "our_move": 20,
+   "fen": "2r3k1/1q4p1/1p1p1r1p/1P1b1p2/5P2/2NP3P/4Q1P1/R4RK1 w - - 1 26",
+   "clock_ms": 75966,
+   "game_played": "a1a3",
+   "replay_played": "a1a3",
+   "agree": true,
+   "logged": {
+    "depth": 18,
+    "uci": "a1a3",
+    "cp": -20,
+    "spent": 1828,
+    "left": 75966
+   },
+   "telemetry": "bini-5.0 m11 d15 a1a3 -29cp 430082n 2404ms left 75966ms sx553/200/19841 rg0"
+  },
+  {
+   "our_move": 21,
+   "fen": "2r3k1/1q4p1/1p1pr2p/1P1b1p2/5P2/R1NP3P/4Q1P1/5RK1 w - - 3 27",
+   "clock_ms": 74636,
+   "game_played": "e2d2",
+   "replay_played": "e2b2",
+   "agree": false,
+   "logged": {
+    "depth": 21,
+    "uci": "e2d2",
+    "cp": -20,
+    "spent": 1962,
+    "left": 74636
+   },
+   "telemetry": "bini-5.0 m12 d18 e2b2 -20cp 359029n 3021ms left 74636ms sx1333/549/16746 rg0"
+  },
+  {
+   "our_move": 22,
+   "fen": "2r3k1/2q3p1/1p1pr2p/1P1b1p2/5P2/R1NP3P/3Q2P1/5RK1 w - - 5 28",
+   "clock_ms": 73173,
+   "game_played": "g1h2",
+   "replay_played": "g1h2",
+   "agree": true,
+   "logged": {
+    "depth": 19,
+    "uci": "g1h2",
+    "cp": -20,
+    "spent": 2969,
+    "left": 73173
+   },
+   "telemetry": "bini-5.0 m1 d12 g1h2 -45cp 169820n 1761ms left 73173ms sx272/110/4172 rg0"
+  },
+  {
+   "our_move": 23,
+   "fen": "2r3k1/6p1/1p1pr2p/1Pqb1p2/5P2/R1NP3P/3Q2PK/5R2 w - - 7 29",
+   "clock_ms": 70702,
+   "game_played": "f1a1",
+   "replay_played": "d2b2",
+   "agree": false,
+   "logged": {
+    "depth": 18,
+    "uci": "f1a1",
+    "cp": -39,
+    "spent": 1742,
+    "left": 70702
+   },
+   "telemetry": "bini-5.0 m2 d14 d2b2 -25cp 243167n 2206ms left 70702ms sx829/201/6788 rg0"
+  },
+  {
+   "our_move": 24,
+   "fen": "2r3k1/6p1/1p1pr2p/1P1b1p2/1q3P2/R1NP3P/3Q2PK/R7 w - - 9 30",
+   "clock_ms": 69459,
+   "game_played": "h3h4",
+   "replay_played": "h3h4",
+   "agree": true,
+   "logged": {
+    "depth": 20,
+    "uci": "h3h4",
+    "cp": -170,
+    "spent": 4602,
+    "left": 69459
+   },
+   "telemetry": "bini-5.0 m1 d13 h3h4 -164cp 221535n 2222ms left 69459ms sx580/206/2884 rg0"
+  },
+  {
+   "our_move": 25,
+   "fen": "2r5/6pk/1p1pr2p/1P1b1p2/1q3P1P/R1NP4/3Q2PK/R7 w - - 1 31",
+   "clock_ms": 65355,
+   "game_played": "h4h5",
+   "replay_played": "h4h5",
+   "agree": true,
+   "logged": {
+    "depth": 20,
+    "uci": "h4h5",
+    "cp": -398,
+    "spent": 6118,
+    "left": 65355
+   },
+   "telemetry": "bini-5.0 m2 d14 h4h5 -313cp 299796n 2839ms left 65355ms sx1134/288/5786 rg0"
+  }
+ ]
+}

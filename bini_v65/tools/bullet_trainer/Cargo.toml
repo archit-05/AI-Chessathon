@@ -1,0 +1,20 @@
+[package]
+name = "bini_bullet_trainer"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.87"
+description = "Trains the Bini NNUE (8 king buckets, mirrored, 8 output buckets) with jw1912/bullet"
+
+# bullet is not on crates.io; pin the exact revision whose source the export layout was derived from
+# (main as of 2026-08-29, "Larger batch size in advanced example (#543)").
+[dependencies]
+bullet_lib = { git = "https://github.com/jw1912/bullet", rev = "629ee50000b2afb7b3337595401c830d3b1e0f42" }
+
+[features]
+default = []
+cuda = ["bullet_lib/cuda"]
+rocm = ["bullet_lib/rocm"]
+metal = ["bullet_lib/metal"]
+
+[profile.release]
+opt-level = 3

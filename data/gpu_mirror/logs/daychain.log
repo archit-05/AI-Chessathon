@@ -1,0 +1,26 @@
+2026-09-09 10:07:28 day chain started
+2026-09-09 11:15:00 train a512 on GPU0 (1134 shards): --buckets 16 --factorise --hidden 512 --act crelu --epochs 6 --lr 2e-3
+2026-09-09 11:15:00 train a1024 on GPU1 (1134 shards): --buckets 16 --factorise --hidden 1024 --act screlu --out-buckets 8 --epochs 6 --lr 2e-3
+2026-09-09 12:08:36 train a512 done: epoch 5 val labelled/shard_006818.npz: loss 0.00793 MAE 128cp
+2026-09-09 12:08:36 judge a512 vs v3b (576 @30k)
+2026-09-09 12:10:05 train a1024 done: epoch 5 val labelled/shard_006818.npz: loss 0.00747 MAE 123cp
+2026-09-09 12:10:05 judge a1024 vs v3b (576 @30k)
+2026-09-09 12:12:14 RESULT a512 vs v3b: 12:12:14 [576/576] +238 =203 -135 score 58.9% elo +63 ±22 (pentanomial [12, 53, 89, 88, 46])
+2026-09-09 12:12:14 judge a512 vs p1 (576 @30k)
+2026-09-09 12:16:00 RESULT a1024 vs v3b: 12:16:00 [576/576] +273 =184 -119 score 63.4% elo +95 ±24 (pentanomial [9, 41, 94, 75, 69])
+2026-09-09 12:16:00 judge a1024 vs p1 (576 @30k)
+2026-09-09 12:19:28 RESULT a512 vs p1: 12:19:28 [576/576] +204 =225 -147 score 54.9% elo +34 ±23 (pentanomial [22, 55, 95, 76, 40])
+2026-09-09 12:23:17 RESULT a1024 vs p1: 12:23:16 [576/576] +229 =232 -115 score 59.9% elo +70 ±22 (pentanomial [10, 49, 93, 89, 47])
+2026-09-09 13:15:00 train b512 on GPU0 (2502 shards): --buckets 16 --factorise --hidden 512 --act crelu --epochs 6 --lr 2e-3
+2026-09-09 13:15:00 train b1024 on GPU1 (2502 shards): --buckets 16 --factorise --hidden 1024 --act screlu --out-buckets 8 --epochs 6 --lr 2e-3
+2026-09-09 15:38:52 train b1024 done: epoch 5 val labelled/shard_007398.npz: loss 0.00718 MAE 126cp
+2026-09-09 15:38:52 judge b1024 vs v3b (576 @30k)
+2026-09-09 15:42:12 RESULT b1024 vs v3b: 15:42:11 [576/576] +279 =199 -98 score 65.7% elo +113 ±23 (pentanomial [7, 35, 82, 98, 66])
+2026-09-09 15:42:12 judge b1024 vs p1 (576 @30k)
+2026-09-09 15:45:35 RESULT b1024 vs p1: 15:45:34 [576/576] +216 =236 -124 score 58.0% elo +56 ±23 (pentanomial [20, 42, 96, 86, 44])
+2026-09-09 15:52:16 train b512 done: epoch 5 val labelled/shard_007398.npz: loss 0.00829 MAE 135cp
+2026-09-09 15:52:16 judge b512 vs v3b (576 @30k)
+2026-09-09 15:55:14 RESULT b512 vs v3b: 15:55:13 [576/576] +272 =173 -131 score 62.2% elo +87 ±24 (pentanomial [18, 30, 99, 75, 66])
+2026-09-09 15:55:14 judge b512 vs p1 (576 @30k)
+2026-09-09 15:58:15 RESULT b512 vs p1: 15:58:14 [576/576] +202 =225 -149 score 54.6% elo +32 ±22 (pentanomial [21, 55, 96, 82, 34])
+2026-09-09 15:58:15 day chain done

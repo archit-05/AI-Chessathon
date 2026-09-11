@@ -1,0 +1,10 @@
+[info] T0.corpus                          terminal corpus assembled and confirmed by python-chess   checkmate=30 stalemate=9 dead_material=7 fifty_move=3 curated_fens_dropped_as_not_terminal=3
+[PASS] T1.checkmate                       checkmate returns a mate score from every entry point and table state   positions=30 states_each=64 failing_states=0
+[PASS] T2.stalemate                       stalemate returns the draw utility from every entry point and table state   positions=9 states_each=64 failing_states=0
+[PASS] T3.dead_material                   dead material returns the draw utility from every entry point and table state   positions=7 states_each=64 failing_states=0
+[PASS] T4.fifty_move                      the fifty-move rule returns the draw utility from every entry point and table state   positions=3 states_each=64 failing_states=0
+[PASS] T5.through_parent_move             terminal reached by making a real move, with a poisoned TT entry   transitions=13
+[PASS] T6.dead_material_matches_oracle    dead_material agrees with python-chess is_insufficient_material on random positions   positions=4000 mismatches=0
+[PASS] T7.material_classes                every material class the brief names is classified correctly   classes=13
+{"label": "/root/astra/builds/bini_astra_v5", "total": 8, "passed": 7, "failed": 0, "info": 1}
+written /root/astra/astra_reports/terminal_x86_bini_astra_v5.json

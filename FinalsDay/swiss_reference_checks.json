@@ -1,0 +1,90 @@
+{
+  "engine": {
+    "name": "Stockfish 19",
+    "author": "the Stockfish developers (see AUTHORS file)"
+  },
+  "nodes": 600000,
+  "history": "complete from PGN start FEN",
+  "rows": [
+    {
+      "round": 113,
+      "move": 39,
+      "san": "Rc2",
+      "fen": "6k1/4Qpp1/p3p2p/qrNb4/7P/1PR2PP1/4P1K1/8 w - - 9 39",
+      "best": {
+        "cp": 783,
+        "depth": 25,
+        "pv": "39. Qe8+ Kh7 40. Nd7 Rb8 41. Qxb8 Qb5 42. Nf8+ Kg8 43. Qxb5 axb5 44. Rc8 g5 45. Nxe6+ Kh7 46. Nd4 gxh4 47. gxh4 Bb7"
+      },
+      "played": {
+        "cp": 74,
+        "depth": 19,
+        "pv": "39. Rc2 Rb8"
+      }
+    },
+    {
+      "round": 114,
+      "move": 39,
+      "san": "exd4",
+      "fen": "7r/3bk3/1p1p4/p1pPp1qr/P1PBBpP1/1P1Q1PbP/6K1/5RNR b - - 0 39",
+      "best": {
+        "cp": 19,
+        "depth": 20,
+        "pv": "39...exd4 40. Qd1"
+      },
+      "played": {
+        "cp": 10,
+        "depth": 21,
+        "pv": "39...exd4 40. Rc1"
+      }
+    },
+    {
+      "round": 114,
+      "move": 40,
+      "san": "Qh6",
+      "fen": "7r/3bk3/1p1p4/p1pP2qr/P1PpBpP1/1P3PbP/6K1/3Q1RNR b - - 1 40",
+      "best": {
+        "cp": 19,
+        "depth": 21,
+        "pv": "40...Bh4 41. Qd3"
+      },
+      "played": {
+        "cp": -154,
+        "depth": 20,
+        "pv": "40...Qh6 41. gxh5"
+      }
+    },
+    {
+      "round": 114,
+      "move": 41,
+      "san": "Qg5",
+      "fen": "7r/3bk3/1p1p3q/p1pP3P/P1PpBp2/1P3PbP/6K1/3Q1RNR b - - 0 41",
+      "best": {
+        "cp": -170,
+        "depth": 20,
+        "pv": "41...Qg5 42. Rf2"
+      },
+      "played": {
+        "cp": -169,
+        "depth": 20,
+        "pv": "41...Qg5 42. Rf2"
+      }
+    },
+    {
+      "round": 116,
+      "move": 29,
+      "san": "Qg3",
+      "fen": "4r1k1/1p2rp2/6p1/p2p3p/P2P1q2/3R1B1P/1PR5/3Q1K2 b - - 1 29",
+      "best": {
+        "cp": 79,
+        "depth": 20,
+        "pv": "29...Qf5 30. Rcd2"
+      },
+      "played": {
+        "cp": -4,
+        "depth": 23,
+        "pv": "29...Qg3 30. Re2"
+      }
+    }
+  ]
+}

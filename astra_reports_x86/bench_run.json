@@ -1,0 +1,97 @@
+{
+  "summary": {
+    "depth": 12,
+    "reps": 3,
+    "total_seconds": 2.0287,
+    "total_nodes": 1366088,
+    "knps": 673.4
+  },
+  "rows": [
+    {
+      "name": "opening",
+      "seconds": 0.4476,
+      "nodes": 288306,
+      "score": -26,
+      "knps": 644.1
+    },
+    {
+      "name": "kiwipete",
+      "seconds": 0.0674,
+      "nodes": 42008,
+      "score": -116,
+      "knps": 623.1
+    },
+    {
+      "name": "middlegame",
+      "seconds": 0.3732,
+      "nodes": 253689,
+      "score": 263,
+      "knps": 679.8
+    },
+    {
+      "name": "tactical",
+      "seconds": 0.417,
+      "nodes": 268831,
+      "score": 522,
+      "knps": 644.7
+    },
+    {
+      "name": "rook_endg",
+      "seconds": 0.0737,
+      "nodes": 55115,
+      "score": 199,
+      "knps": 747.6
+    },
+    {
+      "name": "pawn_endg",
+      "seconds": 0.0387,
+      "nodes": 29437,
+      "score": -500,
+      "knps": 761.3
+    },
+    {
+      "name": "minor_endg",
+      "seconds": 0.1443,
+      "nodes": 112152,
+      "score": 60,
+      "knps": 777.0
+    },
+    {
+      "name": "queenless",
+      "seconds": 0.4237,
+      "nodes": 281854,
+      "score": 61,
+      "knps": 665.3
+    },
+    {
+      "name": "late_half",
+      "seconds": 0.0431,
+      "nodes": 34696,
+      "score": 871,
+      "knps": 805.9
+    }
+  ],
+  "environment": {
+    "build_dir": "/root/astra/builds/bini_v8_ship",
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "numba": "0.67.0",
+    "llvmlite": "0.49.0",
+    "python_chess": "1.11.2",
+    "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "tt_bits": "16"
+  },
+  "build_hashes": {
+    "agent.py": "5bff736371872bc5688fd59d0c1cc74c",
+    "bini_board.py": "861d5989e13dc1938cbeeb7d6e045366",
+    "bini_calib.py": "18210c5b3f8d7109151da461ee3b74f8",
+    "bini_engine.py": "4f4de482c28eca01e47cff5d6380a2c2",
+    "bini_eval.py": "d44763ba4ad0465a9257bfb32cd9c990",
+    "bini_magics.py": "3c2ab7807a87e0f31fb4d889367870e2",
+    "bini_nnue.py": "e06453c8a7a9a34b1e9405b309b071c2",
+    "bini_search.py": "163cda13023d7d5aa89cc4b523c6b576",
+    "book.json": "51c97f3f4e8ab4c1801543945d749906",
+    "nnue.safetensors": "182c8fc8fb60b96fdb51f231cbe9c0e9"
+  }
+}

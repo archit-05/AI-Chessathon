@@ -1,0 +1,34 @@
+bini_bullet_trainer: 8x768 -> 512x2 -> 8 (crelu), factoriser false, eval scale 400
+king buckets (bucket*2+mirror per square from the perspective's own view, a1 = 0):
+  rank 8 : 12 12 14 14 15 15 13 13
+  rank 7 : 12 12 14 14 15 15 13 13
+  rank 6 : 12 12 14 14 15 15 13 13
+  rank 5 : 12 12 14 14 15 15 13 13
+  rank 4 :  8  8 10 10 11 11  9  9
+  rank 3 :  8  8 10 10 11 11  9  9
+  rank 2 :  4  4  6  6  7  7  5  5
+  rank 1 :  0  0  2  2  3  3  1  1
+output bucket by piece count: 2->0 3->0 4->0 5->1 6->1 7->1 8->1 9->2 10->2 11->2 12->2 13->3 14->3 15->3 16->3 17->4 18->4 19->4 20->4 21->5 22->5 23->5 24->5 25->6 26->6 27->6 28->6 29->7 30->7 31->7 32->7
+[34;1mTraining Preamble[0m
+Net Name               : [32;1msmoke[0m
+Batch Size             : [31m16384[0m
+Batches / Superbatch   : [31m64[0m
+Positions / Superbatch : [31m1048576[0m
+Start Superbatch       : [31m1[0m
+End Superbatch         : [31m1[0m
+Eval Scale             : [31m400[0m
+Save Rate              : [31m1[0m
+WDL Scheduler          : wdl (result weight) 0 -> 0
+LR Scheduler           : Cosine lr 0.001 -> 0.0000024300007 over 1 superbatches (gamma 0.1, step 18, warmup 0 batches)
+Threads                : [31m8[0m
+Output Path            : [32;1mdata/ckpt[0m
+[34;1mTraining on NVIDIA GeForce RTX 5090 (sm_120)[0m
+superbatch [36m1[0m [[35m0.0[0m% ([36m0[0m/[36m64[0m batches, [36m169888[0m pos/sec)]
+Estimated time to end of superbatch: [36minf[0ms     [Fsuperbatch [36m1[0m | time [36m0.2[0ms | running loss [36m0.028256[0m | [36m5879861[0m pos/sec | total time [36m1.3[0ms
+Estimated time remaining in training: [36m0[0mh [36m0[0mm [36m0[0ms
+Saved [[31msmoke-1[0m]
+Total Training Time: [36m0[0mh [36m0[0mm [36m1[0ms
+eval     -7.7 cp  rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+eval    -13.1 cp  rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKB1R w KQkq - 0 1
+eval      8.8 cp  8/8/4k3/8/8/4K3/4P3/8 w - - 0 1
+done: checkpoints in data/ckpt/smoke-<superbatch>/ (raw.bin -> tools/bullet_export.py)

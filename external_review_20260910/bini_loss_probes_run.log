@@ -1,0 +1,16 @@
+{"round": 104, "number": 60, "arm": "baseline", "raw": 687, "got": "d5d4", "score": 417, "depth": 14, "nodes": 1000448, "played": "d5c6", "pv": ["d5d4", "a5a4", "b3a4", "e7h7", "f6d6", "h6h4", "d4d5", "d8e7", "d6f6", "b4b3", "a2b3", "e7f6"]}
+Traceback (most recent call last):
+  File "/private/tmp/chess-external-review-venv/lib/python3.13/site-packages/numba/core/serialize.py", line 30, in _numba_unpickle
+    def _numba_unpickle(address, bytedata, hashed):
+    
+KeyboardInterrupt
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/architbhardwaj/Desktop/AI Chessathon/external_review_20260910/bini_loss_probes.py", line 28, in <module>
+    got,score,depth=p.e.think(300000,300000,max_nodes=1000000,log=False)
+                    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/architbhardwaj/Desktop/AI Chessathon/bini_v8_ship/bini_engine.py", line 189, in think
+    score = S.search(self.bb, self.st, self.pcs, self.mv, self.ub, self.ui, self.acc, self.tt_key, self.tt_data, self.killers, self.history, self.counters, self.scores, info, self.tlim, self.hist, self.w1, self.b1, self.w2, self.b2, depth, alpha, beta, self.age)
+SystemError: <built-in method check_time of _dynfunc._Closure object at 0x10acdec80> returned a result with an exception set

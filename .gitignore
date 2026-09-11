@@ -35,3 +35,16 @@ bini_v22/
 bini_leap/
 bini_leap_b/
 bini_v3b/
+dashboard_v4/status.json
+dashboard_v4/*.log
+dashboard_v4/collect_loop.sh
+
+# Local bulk training shards exceed GitHub regular-file limits.
+/data/gpu_mirror/bullet_shuf/shuffled_0.bin
+/data/gpu_mirror/bullet_shuf/shuffled_1.bin
+/data/gpu_mirror/bullet_shuf/shuffled_2.bin
+/data/gpu_mirror/bullet_shuf/shuffled_3.bin
+/data/gpu_mirror/bullet_shuf/shuffled_4.bin
+/data/gpu_mirror/bullet_shuf/shuffled_5.bin
+/data/gpu_mirror/bullet_shuf/shuffled_6.bin
+/data/gpu_mirror/bullet_shuf/shuffled_7.bin

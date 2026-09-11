@@ -1,0 +1,29 @@
+2026-09-09 16:17:14 === ROUTE A: building 16-bucket trainer ===
+2026-09-09 16:23:42 === ROUTE A: building 16-bucket trainer ===
+2026-09-09 16:23:49 kb16 build rc 0 -> 1 binary
+2026-09-09 16:23:49 kb16 train: 512 crelu 48 sb, 16 king buckets, factoriser, on 22G
+2026-09-09 16:30:35 kb16 train rc 0
+2026-09-09 16:30:35 kb16 export rc 0 from data/ckpt/kb16-48
+2026-09-09 16:33:34 RESULT(v7) kb16 vs s48 (both LMR 1.6): 16:33:34 [576/576] +146 =262 -168 score 48.1% elo -13 ±21 (pentanomial [28, 68, 113, 56, 23])
+2026-09-09 16:34:25 kb16b train: 512 crelu 96 sb, 16 buckets + factoriser
+2026-09-09 16:43:17 RESULT(v7) corrhist: 16:43:16 [576/576] +157 =294 -125 score 52.8% elo +19 ±20 (pentanomial [11, 73, 103, 75, 26])
+2026-09-09 16:47:08 RESULT(v7) conthist: 16:47:08 [576/576] +141 =303 -132 score 50.8% elo +5 ±20 (pentanomial [18, 66, 112, 73, 19])
+2026-09-09 16:48:24 kb16b train rc 0
+2026-09-09 16:48:24 kb16b export rc 0
+2026-09-09 16:50:47 RESULT(v7) bothhist: 16:50:46 [576/576] +171 =300 -105 score 55.7% elo +40 ±19 (pentanomial [8, 55, 110, 93, 22])
+2026-09-09 16:50:47 === history gates done ===
+2026-09-09 16:51:28 RESULT(v7) kb16b(96sb) vs s48: 16:51:28 [576/576] +167 =266 -143 score 52.1% elo +14 ±21 (pentanomial [19, 61, 112, 69, 27])
+2026-09-09 16:54:37 RESULT(v7) probcut (BINI_PROBCUT=1): 16:54:37 [576/576] +139 =284 -153 score 48.8% elo -8 ±19 (pentanomial [14, 81, 112, 67, 14])
+2026-09-09 16:58:22 RESULT(v7) qschecks (BINI_QS_CHECKS=1): 16:58:21 [576/576] +132 =296 -148 score 48.6% elo -10 ±21 (pentanomial [26, 72, 103, 66, 21])
+2026-09-09 17:02:05 RESULT(v7) improving (BINI_IMPROVING=1): 17:02:05 [576/576] +132 =301 -143 score 49.0% elo -7 ±19 (pentanomial [11, 82, 116, 65, 14])
+2026-09-09 17:02:05 === feature gates done ===
+2026-09-09 17:02:39 k96 train: 1024 screlu 96 sb on 712M rows (the budget the 512 curve peaked at)
+2026-09-09 17:10:33 RESULT(v7) bothhist CONFIRM (1728 games): 17:10:31 [1728/1728] +513 =900 -315 score 55.7% elo +40 ±11 (pentanomial [24, 165, 330, 279, 66])
+2026-09-09 17:14:14 RESULT(v7) asp12 (BINI_ASP=12, on V7 config): 17:14:13 [576/576] +125 =300 -151 score 47.7% elo -16 ±19 (pentanomial [21, 71, 123, 59, 14])
+2026-09-09 17:17:54 RESULT(v7) asp50 (BINI_ASP=50, on V7 config): 17:17:54 [576/576] +113 =321 -142 score 47.5% elo -18 ±18 (pentanomial [12, 90, 112, 63, 11])
+2026-09-09 17:17:54 === aspiration sweep done ===
+2026-09-09 17:17:57 k96 train rc 0
+2026-09-09 17:17:57 k96 export rc 0
+2026-09-09 17:21:12 RESULT(v7) k96(1024,96sb) vs s48 FIXED NODES: 17:21:11 [576/576] +212 =264 -100 score 59.7% elo +68 ±22 (pentanomial [11, 46, 101, 80, 50])
+2026-09-09 17:21:51 RESULT(v7) calib (v3b-fitted table on s48): 17:21:51 [576/576] +123 =279 -174 score 45.6% elo -31 ±21 (pentanomial [33, 70, 113, 59, 13])
+2026-09-09 17:23:05 k96 vs s48 at 30+0.125 (platform-like clock) starting

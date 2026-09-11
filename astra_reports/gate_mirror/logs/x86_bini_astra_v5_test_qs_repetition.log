@@ -1,0 +1,5 @@
+[PASS] Q1.quiescence_depth_bounded        quiescence terminates well inside MAX_PLY on check-heavy positions   max_seldepth=3 max_ply=128 samples=12
+[info] Q2.cycle_reachability              can a position repeat inside the move classes quiescence generates?   positions=6 cycles_found=0 note=quiet checks exist only at qdepth 0; every deeper node generates captures or evasions, and captures are irreversible - so a cycle cannot be sustained
+[info] Q3.status                          quiescence repetition detection   implemented=False resolution=EXPLICITLY UNRESOLVED - see Report 02. Quiescence does not test repetition. It is bounded (Q1) and a sustained cycle is not reachable through its move classes (Q2), so this is a known approximation, not a demonstrated defect. No patch is proposed for it before the lock.
+{"label": "/root/astra/builds/bini_astra_v5", "total": 3, "passed": 1, "failed": 0, "info": 2}
+written /root/astra/astra_reports/qsrep_x86_bini_astra_v5.json

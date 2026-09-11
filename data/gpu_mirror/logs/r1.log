@@ -1,0 +1,25 @@
+2026-09-09 10:17:27 R1 start: 8 shuffled files, 3.0G
+2026-09-09 10:17:28 smoke rc 101: thread 'main' (95947) panicked at /root/.cargo/git/checkouts/bullet-8a69ed9a26c6f599/629ee50/crates/bullet_lib/src/value.rs:210:10: called `Result::unwrap()` on an `Err` value: GradientCalculationErro
+2026-09-09 10:17:28 no smoke checkpoint; abort
+2026-09-09 10:20:27 R1 start: 8 shuffled files, 3.0G
+2026-09-09 10:20:30 smoke rc 0: eval      8.8 cp  8/8/4k3/8/8/4K3/4P3/8 w - - 0 1 done: checkpoints in data/ckpt/smoke-<superbatch>/ (raw.bin -> tools/bullet_export.py) 
+smoke-1
+2026-09-09 10:20:30 export rc 0:     -6.9 cp  r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3      0.5 cp  8/5k2/8/3K4/8/8/4R3/8 b - - 0 1    -14.1 cp  r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 1 
+engine static -10 r1bqkbnr/pppp1ppp/2n5/4p3/4P3/
+engine static -1 8/5k2/8/3K4/8/8/4R3/8 b - - 0 
+engine static -16 r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p
+nnue incremental == reference on 3958 positions across 60 random games: ok
+2026-09-09 10:21:16 real run: 512 crelu, 6 superbatches x 100M
+2026-09-09 10:22:08 train rc 0: eval    177.7 cp  8/8/4k3/8/8/4K3/4P3/8 w - - 0 1 done: checkpoints in data/ckpt/r1-<superbatch>/ (raw.bin -> tools/bullet_export.py) 
+2026-09-09 10:22:08 export r1 rc 0 from data/ckpt/r1-6
+2026-09-09 10:25:10 bullet r1b: 512 crelu 12 superbatches on 8 files
+2026-09-09 10:25:14 RESULT r1 vs v3b: 10:25:14 [576/576] +256 =182 -138 score 60.2% elo +72 ±23 (pentanomial [15, 45, 90, 83, 55])
+2026-09-09 10:26:46 r1b train rc 0
+2026-09-09 10:26:46 r1b export rc 0 from data/ckpt/r1b-12
+2026-09-09 10:30:10 RESULT r1b vs v3b: 10:30:10 [576/576] +217 =205 -154 score 55.5% elo +38 ±23 (pentanomial [20, 56, 97, 71, 44])
+2026-09-09 10:33:30 RESULT r1b vs p1: 10:33:29 [576/576] +172 =238 -166 score 50.5% elo +4 ±22 (pentanomial [26, 63, 109, 59, 31])
+2026-09-09 10:33:30 bullet r1e: 1024 screlu 12 superbatches on 8 files
+2026-09-09 10:35:36 r1e train rc 0
+2026-09-09 10:35:36 r1e export rc 0 from data/ckpt/r1e-12
+2026-09-09 10:39:03 RESULT r1e vs v3b: 10:39:03 [576/576] +201 =189 -186 score 51.3% elo +9 ±23 (pentanomial [30, 63, 92, 68, 35])
+2026-09-09 10:39:03 variants done

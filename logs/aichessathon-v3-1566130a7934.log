@@ -1,0 +1,50 @@
+[05:31:35Z] building
+[05:31:36Z] upload expands to 6,383,712 bytes
+[05:31:36Z] docker build
+Sending build context to Docker daemon  6.391MB
+
+Step 1/2 : FROM aichessathon/agent-base:latest
+ ---> eeaf64b96a67
+Step 2/2 : COPY . /agent
+ ---> 375683d0fa79
+Successfully built 375683d0fa79
+Successfully tagged aichessathon/agent:3d2acbb0-ef5f-46ea-a377-4e556cf4015d
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+[05:32:00Z] pushed aichessathon.azurecr.io/agents:3d2acbb0-ef5f-46ea-a377-4e556cf4015d
+[05:32:00Z] image aichessathon.azurecr.io/agents@sha256:375683d0fa79dd4b17e2e148e5d57cd9394b6a94cba73186124e282b1c5972a1
+[05:32:00Z] smoke
+[05:32:00Z] your process is suspended while your opponent moves, so anything you compute between your own moves does not run
+[05:32:00Z] smoke game: 20 plies as white from r1bqk2r/ppp2ppp/2np1n2/2b1p3/2B1P3/2PP1N2/PP1N1PPP/R1BQK2R b KQkq - 1 6
+[05:32:50Z] ready in 30.6 s of the 90 s init budget
+[05:32:50Z] played 9 moves, slowest 3.9 s
+[05:32:50Z] game ended white by checkmate
+[05:32:50Z] your agent wrote to stderr
+bini-2.0 ready: import+compile 30.0s (compile 29.2s), nnue=on
+bini-2.0 m1 d16 c4e6 42cp 1505878n 2269ms left 120000ms
+bini-2.0 m2 d16 e6b3 428cp 1480436n 2140ms left 118228ms
+bini-2.0 m3 d14 a2a4 622cp 1332869n 2116ms left 116586ms
+bini-2.0 m4 d15 a4b5 894cp 2249841n 3853ms left 114969ms
+bini-2.0 m5 d16 b5c6 1130cp 1118469n 1879ms left 111614ms
+bini-2.0 m6 d17 f3e5 1194cp 2332559n 3854ms left 110233ms
+bini-2.0 m7 d17 d1h5 1592cp 1134164n 1893ms left 106877ms
+bini-2.0 m8 d3 h5f7 29997cp 209n 4ms left 105483ms
+bini-2.0 m9 d1 f7d7 29999cp 48n 1ms left 105977ms
+[05:32:50Z] smoke game: 20 plies as black from r2qkbnr/pp1n1ppp/4p3/1BppPb2/3P4/5N2/PPPN1PPP/R1BQ1RK1 b kq - 3 7
+[05:33:47Z] ready in 30.9 s of the 90 s init budget
+[05:33:47Z] played 10 moves, slowest 5.1 s
+[05:33:47Z] game ended draw by ply_cap
+[05:33:47Z] your agent wrote to stderr
+bini-2.0 ready: import+compile 30.4s (compile 29.6s), nnue=on
+bini-2.0 m1 d17 a7a6 -33cp 1951004n 2736ms left 120000ms
+bini-2.0 m2 d17 b7b5 96cp 1618119n 2347ms left 117761ms
+bini-2.0 m3 d15 d7b6 207cp 1732067n 2332ms left 115912ms
+bini-2.0 m4 d16 d8h4 416cp 1377525n 1901ms left 114078ms
+bini-2.0 m5 d17 h4g4 1232cp 3607126n 5145ms left 112675ms
+bini-2.0 m6 d15 b5a4 1204cp 1510920n 2137ms left 108029ms
+bini-2.0 m7 d15 f8c5 1395cp 1683846n 2468ms left 106390ms
+bini-2.0 m8 d15 g8e7 1456cp 1368288n 2002ms left 104420ms
+bini-2.0 m9 d16 e8g8 1525cp 1435664n 2071ms left 102917ms
+bini-2.0 m10 d16 b6c4 1750cp 1547339n 2259ms left 101344ms
+[05:33:47Z] valid

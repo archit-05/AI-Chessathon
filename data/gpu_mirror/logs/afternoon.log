@@ -1,0 +1,30 @@
+2026-09-09 10:39:39 scale: slope of v3b static vs r1 static =  (out-scale to put r1 on v3b's scale)
+2026-09-09 10:39:39 r1s export rc 2
+2026-09-09 10:41:52 RESULT r1s vs r1: 10:41:52 [576/576] +25 =27 -524 score 6.7% elo -458 ±51 (pentanomial [237, 27, 23, 0, 1])
+2026-09-09 10:41:52 bullet r1c: 512 crelu 12 sb lr 0.002 on 8 files (3.0G)
+2026-09-09 10:43:41 r1c train rc 0
+2026-09-09 10:43:41 r1c export rc 0 from data/ckpt/r1c-12
+2026-09-09 10:46:56 RESULT r1c vs v3b: 10:46:55 [576/576] +192 =206 -178 score 51.2% elo +8 ±22 (pentanomial [30, 52, 105, 76, 25])
+2026-09-09 10:46:56 bullet r1d: 512 crelu 24 sb lr 0.001 on 8 files (3.0G)
+2026-09-09 10:50:23 r1d train rc 0
+2026-09-09 10:50:23 r1d export rc 0 from data/ckpt/r1d-24
+2026-09-09 10:53:33 RESULT r1d vs v3b: 10:53:32 [576/576] +244 =176 -156 score 57.6% elo +53 ±23 (pentanomial [20, 47, 96, 75, 50])
+2026-09-09 13:03:26 reprep: rows 490012245 wrote 8 files 13:03:26 shuffle done 
+2026-09-09 13:03:26 bullet r1_1303: 512 crelu 12 sb lr 0.001 on 8 files (15G)
+2026-09-09 13:05:16 r1_1303 train rc 0
+2026-09-09 13:05:16 r1_1303 export rc 0 from data/ckpt/r1_1303-12
+2026-09-09 13:08:27 RESULT r1_1303 vs v3b: 13:08:27 [576/576] +246 =225 -105 score 62.2% elo +87 ±22 (pentanomial [9, 35, 101, 92, 51])
+2026-09-09 13:11:34 RESULT r1_1303 vs r1: 13:11:34 [576/576] +205 =228 -143 score 55.4% elo +38 ±22 (pentanomial [18, 54, 98, 84, 34])
+2026-09-09 15:02:32 reprep: rows 712492857 wrote 8 files 15:02:32 shuffle done 
+2026-09-09 15:02:32 bullet r1_1502: 512 crelu 12 sb lr 0.001 on 8 files (22G)
+2026-09-09 15:05:44 r1_1502 train rc 0
+2026-09-09 15:05:44 r1_1502 export rc 0 from data/ckpt/r1_1502-12
+2026-09-09 15:08:41 RESULT r1_1502 vs v3b: 15:08:40 [576/576] +266 =193 -117 score 62.9% elo +92 ±23 (pentanomial [9, 42, 90, 85, 62])
+2026-09-09 15:11:35 RESULT r1_1502 vs r1: 15:11:34 [576/576] +230 =219 -127 score 58.9% elo +63 ±23 (pentanomial [14, 50, 92, 83, 49])
+2026-09-09 17:02:00 reprep: rows 712492857 wrote 8 files 17:02:00 shuffle done 
+2026-09-09 17:02:00 bullet r1_1702: 512 crelu 12 sb lr 0.001 on 8 files (22G)
+2026-09-09 17:04:34 r1_1702 train rc 0
+2026-09-09 17:04:34 r1_1702 export rc 0 from data/ckpt/r1_1702-12
+2026-09-09 17:07:43 RESULT r1_1702 vs v3b: 17:07:43 [576/576] +253 =209 -114 score 62.1% elo +86 ±24 (pentanomial [9, 48, 91, 75, 65])
+2026-09-09 17:10:50 RESULT r1_1702 vs r1: 17:10:49 [576/576] +226 =220 -130 score 58.3% elo +58 ±22 (pentanomial [16, 40, 109, 78, 45])
+2026-09-09 17:10:50 afternoon chain done

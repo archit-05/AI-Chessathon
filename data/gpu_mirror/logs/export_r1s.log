@@ -1,0 +1,7 @@
+usage: bullet_export.py [-h]
+                        (--checkpoint CHECKPOINT | --raw RAW | --weights WEIGHTS)
+                        [--hidden HIDDEN] --act {crelu,screlu}
+                        [--king-buckets KING_BUCKETS]
+                        [--out-buckets OUT_BUCKETS] --out OUT
+                        [--out-scale OUT_SCALE] [--check CHECK]
+bullet_export.py: error: argument --out-scale: expected one argument

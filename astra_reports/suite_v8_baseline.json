@@ -1,0 +1,241 @@
+{
+  "summary": {
+    "label": "bini_v8_ship",
+    "total": 20,
+    "passed": 19,
+    "failed": 1,
+    "info": 0
+  },
+  "environment": {
+    "build_dir": "/Users/architbhardwaj/Desktop/AI Chessathon/bini_v8_ship",
+    "python": "3.13.2",
+    "numpy": "2.5.3",
+    "numba": "0.67.0",
+    "llvmlite": "0.49.0",
+    "python_chess": "1.11.2",
+    "platform": "macOS-26.0-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "tt_bits": "16"
+  },
+  "build_hashes": {
+    "agent.py": "5bff736371872bc5688fd59d0c1cc74c",
+    "bini_board.py": "861d5989e13dc1938cbeeb7d6e045366",
+    "bini_calib.py": "18210c5b3f8d7109151da461ee3b74f8",
+    "bini_engine.py": "4f4de482c28eca01e47cff5d6380a2c2",
+    "bini_eval.py": "d44763ba4ad0465a9257bfb32cd9c990",
+    "bini_magics.py": "3c2ab7807a87e0f31fb4d889367870e2",
+    "bini_nnue.py": "e06453c8a7a9a34b1e9405b309b071c2",
+    "bini_search.py": "163cda13023d7d5aa89cc4b523c6b576",
+    "book.json": "51c97f3f4e8ab4c1801543945d749906",
+    "nnue.safetensors": "182c8fc8fb60b96fdb51f231cbe9c0e9"
+  },
+  "rows": [
+    {
+      "id": "S1.perft_vs_python_chess",
+      "title": "perft matches python-chess on ten positions",
+      "status": "PASS",
+      "positions": 10,
+      "failures": 0,
+      "detail": []
+    },
+    {
+      "id": "S1b.published_counts_agree",
+      "title": "published perft constants agree with python-chess",
+      "status": "PASS",
+      "detail": [],
+      "note": "guards the test itself: a wrong constant must not be reported as an engine bug"
+    },
+    {
+      "id": "S2.perft_random_games",
+      "title": "differential perft(1,2) against python-chess on random games",
+      "status": "PASS",
+      "positions": 623,
+      "failures": 0,
+      "detail": [],
+      "seed": 20260910
+    },
+    {
+      "id": "S3.make_unmake_restores",
+      "title": "make/unmake restores bitboards, state and piece array",
+      "status": "PASS",
+      "failures": 0,
+      "detail": []
+    },
+    {
+      "id": "S4.zobrist_incremental",
+      "title": "incrementally maintained key equals a full recompute",
+      "status": "PASS",
+      "failures": 0,
+      "detail": []
+    },
+    {
+      "id": "S5.illegal_make_intact",
+      "title": "a rejected move leaves the caller state intact",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "id": "S6.null_make_unmake",
+      "title": "nested null moves restore key, side, rights and halfmove clock",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "id": "N0.nnue_active",
+      "title": "the network is loaded and in use (not a silent handcrafted fallback)",
+      "status": "PASS",
+      "use_nnue": 1,
+      "hidden": 1024,
+      "buckets": 8,
+      "acc_dtype": "<class 'numpy.int16'>",
+      "acc_bound": 16355
+    },
+    {
+      "id": "N1.incremental_equals_refresh",
+      "title": "incremental accumulator and evaluation equal a full refresh",
+      "status": "PASS",
+      "failures": 0,
+      "move_classes": {
+        "quiet": 23880,
+        "capture": 2497,
+        "promo": 56,
+        "castle": 55,
+        "ep": 4
+      },
+      "buckets_reached": [
+        5,
+        6,
+        7
+      ],
+      "detail": []
+    },
+    {
+      "id": "N2.accumulator_range",
+      "title": "observed accumulator magnitude stays inside the stored dtype",
+      "status": "PASS",
+      "observed_max": 3485,
+      "dtype_max": 32767,
+      "declared_bound": 16355,
+      "note": "declared bound is a worst case; observed is what these positions actually reached"
+    },
+    {
+      "id": "N3.search_state_preserved",
+      "title": "a full search restores the board and the root accumulator",
+      "status": "PASS",
+      "changed": [],
+      "score": -33,
+      "note": "ub, ui and acc[1:] are the search working storage and are expected to be dirty"
+    },
+    {
+      "id": "N4.colour_mirror_symmetry",
+      "title": "evaluation of a colour-mirrored position agrees within 40cp",
+      "status": "PASS",
+      "detail": [],
+      "note": "a trained net is only approximately symmetric; this catches orientation bugs, not noise"
+    },
+    {
+      "id": "T1.terminal_beats_poisoned_tt",
+      "title": "terminals outrank a poisoned TT entry and correction history",
+      "status": "FAIL",
+      "cases": 5,
+      "detail": [
+        [
+          "KB-K dead",
+          "8/8/4k3/8/8/4K3/8/5B2 w - - 0 1",
+          119
+        ],
+        [
+          "KN-K dead",
+          "8/8/4k3/8/8/4K3/8/5N2 w - - 0 1",
+          129
+        ],
+        [
+          "same-colour bishops dead",
+          "6b1/8/4k3/8/8/4K3/8/5B2 w - - 0 1",
+          95
+        ]
+      ]
+    },
+    {
+      "id": "T2.mate_normalisation",
+      "title": "mate scores carry the correct distance at every ply",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "id": "T3.tt_round_trip",
+      "title": "transposition entries survive pack/unpack, mate scores included",
+      "status": "PASS",
+      "trials": 4000,
+      "failures": 0,
+      "detail": []
+    },
+    {
+      "id": "T4.excluded_move_search",
+      "title": "excluded-move search terminates and restores the exclusion slot",
+      "status": "PASS",
+      "legal_moves": 1
+    },
+    {
+      "id": "T5.reduced_feature_agreement",
+      "title": "full and reduced-pruning searches agree on quiet positions",
+      "status": "PASS",
+      "worst_cp": 15,
+      "detail": [
+        [
+          "r1bqkbnr/pppp1ppp/2n5/4p3/2B",
+          -33,
+          -44,
+          11
+        ],
+        [
+          "8/2p5/3p4/KP5r/1R3p1k/8/4P1P",
+          161,
+          162,
+          1
+        ],
+        [
+          "r4rk1/1pp1qppp/p1np1n2/2b1p1",
+          178,
+          178,
+          0
+        ],
+        [
+          "4rrk1/pp1n1ppp/2pb1q2/3p4/3P",
+          495,
+          480,
+          15
+        ]
+      ],
+      "note": "a consistency check, not a claim that selective search returns exact minimax"
+    },
+    {
+      "id": "T6.abort_restores_state",
+      "title": "a search aborted mid-tree restores the board and root accumulator",
+      "status": "PASS",
+      "caps": [
+        2000,
+        20000,
+        200000
+      ],
+      "detail": []
+    },
+    {
+      "id": "T7.tt_replacement",
+      "title": "depth-preferred replacement holds and a colliding key is never a hit",
+      "status": "PASS",
+      "same_index": true,
+      "deep_entry_survived_shallow_store": true,
+      "shallow_probe_was_a_miss": true,
+      "deeper_store_took_slot": true,
+      "old_key_now_misses": true
+    },
+    {
+      "id": "T8.aspiration_bounds",
+      "title": "null windows above and below the score fail on the correct side",
+      "status": "PASS",
+      "true_score": -27,
+      "detail": []
+    }
+  ]
+}

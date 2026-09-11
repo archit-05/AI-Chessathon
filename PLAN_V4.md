@@ -655,3 +655,64 @@ check-mask fix, root-guard cap, pawnless-draw scaling, 256 MB TT, telemetry stri
 fallback engine (python-chess alpha-beta on a board copy) instead of a random mover, and the book
 hook. The leap (net on decisive self-play, 768 candidate, SPSA at the new scale, clock softening,
 speed pass, drawishness scaling) is V4.5, Wednesday, freeze 22:00, per section 23.
+
+## 26. Post-mortem of the V4 run and the rules for the next run (Tue 8 Sept, 13:10)
+
+Why V4 is a hardened V3 and not the system section 0 promised:
+
+1. The metric that chose candidates does not predict strength. Site-chunk MAE, the grader and the
+   endgame error all improved on every retrained net; every one of them lost or tied in games. A
+   draw-heavy label distribution (70% draws, median |cp| 32) rewards a net that shrinks its
+   magnitudes; MAE falls while the search loses the decisiveness that wins. Nothing in the plan
+   checked, before the compute was spent, that the metric orders the nets we already know the
+   Elo of (v2.1, v2.2, v3b). It does not.
+2. The data fix was the whole lever and it was wrong at source. Stockfish self-play from balanced
+   curated positions with near-best moves is a draw generator. Random-walk openings and
+   score-balanced sampling (built today) were needed on Sunday.
+3. No pilot. Every data change went straight to a 6-20 epoch run and a 300-game gate; the
+   flattening surfaced at 01:00 Tuesday instead of Monday afternoon. A one-epoch fine-tune plus
+   40 real-clock proxy games (2 hours) answers the direction question.
+4. The measurement budget was too small for the effect size: 10 s gates resolve +-40 Elo, 40-game
+   proxies +-15 points; the differences we were choosing between were 10-20 Elo.
+5. One 8 GB machine did training, gates and proxies; it thrashed, and the "training + one 2-worker
+   gate" rule made the gates the bottleneck. The VM ran generators only, although the engine runs
+   there.
+6. Process losses of roughly eight hours: the working-copy deletion (case-insensitive rm), the
+   shell-pattern self-kills, a broken soft-clock build, misnamed flags. Each is a missing check.
+7. SPSA and the speed pass were the wrong tools at this scale: SPSA needs tens of thousands of
+   games; the profile shows a per-node cost spread across TT, ordering, update and eval with no
+   single hot loop.
+
+Rules for the next run (V4.5 and beyond):
+
+- Calibrate first: any metric used to pick a net must order v2.1 < v2.2 < v3b correctly; otherwise
+  only games count.
+- Pilot before scale: one epoch, scale-matched export, 40 proxy games at the real clock; the full
+  run starts only if the pilot is at V3's level or better.
+- Machines by job: 10 s gates on the VM (4 workers); the Mac trains and plays the real-clock
+  proxies; never more than one job per machine at a time.
+- Effect-size budget: 300 games at 10 s AND 80 real-clock proxy games per shipped change.
+- Every destructive shell step goes through a script that lists its target before acting.
+
+## 27. V5: a net from scratch on our own three machines (proposed Tue 8 Sept, 14:30)
+
+Premise: the shipped net's failures are systematic (material deficits read 3-5x too small,
+drift in heavy-piece middlegames, endgame error 3x the average), and a fine-tune cannot move a
+net that far. A from-scratch run on the corrected data is the one lever left that can be large,
+and it needs no GPU if the trainer streams chunks at >= 50k rows/s on the Mac.
+
+Data (all local or streaming): Lichess deep-labelled quiet 155M; site-labelled 750k (x4);
+decisive self-play (target 5-8M by Wed night); resolved endgames 2M+; hard set + harvest (x10);
+a "our distribution" stream where the V4 engine plays one side against Stockfish.
+Candidates: 512 from scratch (same speed as today) and 1024 from scratch (about -20% nps),
+judged only by real-clock proxy games and 300-game gates; static metrics used only after they
+are shown to order v2.1 < v2.2 < v3b correctly (calibration first, PLAN s26).
+Search track in parallel on the cloud VM: correction history, continuation history, ProbCut and
+improving switches, KPK bitbase, clock softening, each gated alone at 300 games.
+Schedule: Tue night the decisive-mix pilot decides which run gets the Mac overnight (fine-tune
+for V4.5 if the pilot is positive, else 512 from scratch); Wed V4.5 as in s23; Wed night 1024
+from scratch; Thu gates, proxies, battery; Fri 09:00 upload only if V5 beats V4.5 by >= +30
+with the interval clear of zero and no proxy regression.
+Honest ceiling: +150 to +200 over V4 if everything lands, i.e. the 2200-2300 band and a top-5
+seed. First place needs AlphaFish (2500+) to lose a knockout game to someone; the Swiss
+tie-break and a blunder-free, endgame-solid engine are what put us in position to benefit.

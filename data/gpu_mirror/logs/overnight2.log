@@ -1,0 +1,22 @@
+2026-09-09 01:03:05 overnight chain started
+2026-09-09 01:10:05 stage0 done: 01:09:41 [560/576] +181 =165 -214 score 47.1% elo -20 ±24 (pentanomial [42, 58, 94, 63, 23]) 01:09:42 [570/576] +184 =167 -219 score 46.9% elo -21 ±24 (pentanomial [44, 58, 95, 65, 23]) 01:09:50 [576/576] +185 =171 -220 score 47.0% elo -21 ±23 (pentanomial [44, 59, 96, 66, 23]) 
+2026-09-09 01:15:05 C0 finished: epoch 5 val lichessq3/chunk_0036.npz: loss 0.01332 MAE 178cp
+2026-09-09 01:15:05 judge c0 vs v3b (576 @30k) on 314 shards
+2026-09-09 01:18:07 RESULT c0 vs v3b: 01:18:06 [576/576] +85 =169 -322 score 29.4% elo -152 ±25 (pentanomial [90, 91, 78, 24, 5])
+2026-09-09 01:18:07 train p3 on GPU0 (331 shards): --hidden 512 --act crelu --epochs 6 --lr 2e-3 --wdl 0.75
+2026-09-09 01:28:34 train p3 done: epoch 5 val labelled/shard_005131.npz: loss 0.01356 MAE 163cp
+2026-09-09 01:28:34 judge p3 vs v3b (576 @30k) on 381 shards
+2026-09-09 01:31:30 RESULT p3 vs v3b: 01:31:29 [576/576] +99 =145 -332 score 29.8% elo -149 ±27 (pentanomial [100, 81, 68, 30, 9])
+2026-09-09 02:35:00 train p1 on GPU1 (482 shards): --hidden 512 --act crelu --epochs 6 --lr 2e-3
+2026-09-09 02:50:08 train p1 done: epoch 5 val labelled/shard_005760.npz: loss 0.01279 MAE 169cp
+2026-09-09 02:50:08 judge p1 vs v3b (576 @30k) on 486 shards
+2026-09-09 02:53:08 RESULT p1 vs v3b: 02:53:07 [576/576] +240 =187 -149 score 57.9% elo +55 ±23 (pentanomial [18, 54, 82, 87, 47])
+2026-09-09 03:30:00 train p2 on GPU1 (488 shards): --hidden 1024 --act screlu --out-buckets 8 --epochs 6 --lr 2e-3
+2026-09-09 03:43:35 train p2 done: epoch 5 val labelled/shard_006543.npz: loss 0.01006 MAE 135cp
+2026-09-09 03:43:35 judge p2 vs v3b (576 @30k) on 498 shards
+2026-09-09 03:46:39 RESULT p2 vs v3b: 03:46:38 [576/576] +235 =177 -164 score 56.2% elo +43 ±24 (pentanomial [25, 47, 91, 82, 43])
+2026-09-09 04:30:00 train p2b on GPU0 (498 shards): --hidden 1024 --act screlu --out-buckets 8 --epochs 6 --lr 2e-3 --wdl 0.75
+2026-09-09 04:43:54 train p2b done: epoch 5 val labelled/shard_006818.npz: loss 0.01138 MAE 154cp
+2026-09-09 04:43:54 judge p2b vs v3b (576 @30k) on 498 shards
+2026-09-09 04:46:51 RESULT p2b vs v3b: 04:46:50 [576/576] +97 =132 -347 score 28.3% elo -162 ±27 (pentanomial [104, 82, 72, 20, 10])
+2026-09-09 04:46:51 overnight chain done

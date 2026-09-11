@@ -1,0 +1,14 @@
+[PASS] V1.qsearch_at_max_ply              quiescence decides terminals at ply MAX_PLY-1, not by evaluation   ply=127
+[PASS] V2.search_at_max_ply               main search decides terminals at ply MAX_PLY-1   ply=127
+[PASS] V3.max_ply_negative                an ordinary position at max ply still returns an evaluation   score=-14
+[PASS] V4.tree_cycle_is_heuristic         a cycle inside the search tree is the named search heuristic   kind=1 expected=1 ply=4 halfmove=4
+[skip] V5.second_occurrence_not_a_claim   a bare second occurrence in game history is NOT a draw   kind=1 expected=0 ply=2 halfmove=4 note=asserted only on builds that separate the two readings; the baseline has no such concept, and the 0 it returns here comes from its indexing bug, not from correct semantics
+[skip] V6.third_occurrence_is_a_claim     a third occurrence reached through game history is a real claim   kind=1 expected=2 ply=2 halfmove=8 note=also proves the distance indexing still reaches pre-root history: a build that cannot index past the root cannot count two occurrences there
+[PASS] V7.no_repetition_negative          a first occurrence is not a draw under either reading   kind=0
+[PASS] V8.irreversible_negative           no draw claimed across a pawn move   kind=0
+[PASS] V9.referee_agrees                  the engine now agrees with the referee about which line is a draw   after_second=None after_third=THREEFOLD_REPETITION note=referee = board.outcome(claim_draw=True), the local harness rule
+[PASS] V10.bucket_mapping                 out_bucket agrees with the documented piece-count mapping
+[PASS] V11.all_eight_buckets              incremental accumulator equals refresh in ALL eight output buckets   buckets_reached=[0, 1, 2, 3, 4, 5, 6, 7] accumulator_failures=0
+[PASS] V12.bucket_transitions             captures that cross an output-bucket boundary stay consistent   positions=40 transitions=206
+{"label": "/root/astra/builds/bini_astra_v5_noc2b", "total": 12, "passed": 10, "failed": 0, "info": 0}
+written /root/astra/astra_reports/v2_x86_bini_astra_v5_noc2b.json

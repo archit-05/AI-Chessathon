@@ -1,0 +1,37 @@
+2026-09-09 13:18:35 === v65 sweep start (baseline r1_1303 = +87 vs v3b, +38 vs r1) ===
+2026-09-09 13:18:35 bullet s24: 512 crelu 24 sb on 8 files (15G)
+2026-09-09 13:24:57 s24 train rc 0
+2026-09-09 13:24:57 s24 export rc 0 from data/ckpt/s24-24
+2026-09-09 13:28:14 RESULT s24 vs r1_1303: 13:28:14 [576/576] +170 =258 -148 score 51.9% elo +13 ±20 (pentanomial [15, 70, 104, 76, 23])
+2026-09-09 13:28:14 bullet s48: 512 crelu 48 sb on 8 files (15G)
+2026-09-09 13:40:53 s48 train rc 0
+2026-09-09 13:40:53 s48 export rc 0 from data/ckpt/s48-48
+2026-09-09 13:44:52 RESULT s48 vs r1_1303: 13:44:51 [576/576] +210 =228 -138 score 56.2% elo +44 ±23 (pentanomial [21, 53, 90, 81, 43])
+2026-09-09 13:44:52 bullet k24: 1024 screlu 24 sb on 8 files (15G)
+2026-09-09 13:45:27 bullet s96: 512 crelu 96 sb (GPU0)
+2026-09-09 13:53:39 k24 train rc 0
+2026-09-09 13:53:39 k24 export rc 0 from data/ckpt/k24-24
+2026-09-09 13:57:08 RESULT k24 vs r1_1303: 13:57:07 [576/576] +243 =239 -94 score 62.9% elo +92 ±22 (pentanomial [8, 38, 95, 91, 56])
+2026-09-09 13:57:08 bullet k48: 1024 screlu 48 sb on 8 files (15G)
+2026-09-09 14:02:05 RESULT k24 vs s48 (fixed nodes): 14:02:05 [576/576] +189 =244 -143 score 54.0% elo +28 ±22 (pentanomial [16, 63, 103, 71, 35])
+2026-09-09 14:12:03 s96 train rc 0
+2026-09-09 14:12:03 s96 export rc 0 from data/ckpt/s96-96
+2026-09-09 14:14:23 k48 train rc 0
+2026-09-09 14:14:23 k48 export rc 0 from data/ckpt/k48-48
+2026-09-09 14:15:34 RESULT s96 vs s48: 14:15:34 [576/576] +173 =255 -148 score 52.2% elo +15 ±21 (pentanomial [15, 71, 106, 66, 30])
+2026-09-09 14:15:34 bullet s144: 512 crelu 144 sb (GPU0)
+2026-09-09 14:18:52 RESULT k48 vs r1_1303: 14:18:51 [576/576] +246 =223 -107 score 62.1% elo +86 ±21 (pentanomial [7, 37, 98, 102, 44])
+2026-09-09 14:18:52 === v65 sweep done ===
+2026-09-09 14:54:55 s144 train rc 0
+2026-09-09 14:54:55 s144 export rc 0 from data/ckpt/s144-144
+2026-09-09 14:58:20 RESULT s144 vs s96: 14:58:19 [576/576] +143 =286 -147 score 49.7% elo -2 ±20 (pentanomial [21, 67, 116, 63, 21])
+2026-09-09 14:58:20 === deep sweep done ===
+2026-09-09 15:03:00 bullet t48: 512 crelu 48 sb on 712M rows (GPU0)
+2026-09-09 15:16:04 t48 train rc 0
+2026-09-09 15:16:04 t48 export rc 0
+2026-09-09 15:19:27 RESULT(thu) t48 vs s48 (on LMR 1.6): 15:19:26 [576/576] +162 =255 -159 score 50.3% elo +2 ±22 (pentanomial [23, 71, 100, 68, 26])
+2026-09-09 15:19:27 bullet t96: 512 crelu 96 sb on 712M rows (GPU0)
+2026-09-09 15:45:21 t96 train rc 0
+2026-09-09 15:45:21 t96 export rc 0
+2026-09-09 15:49:00 RESULT(thu) t96 vs s48 (on LMR 1.6): 15:48:59 [576/576] +164 =277 -135 score 52.5% elo +18 ±21 (pentanomial [19, 66, 93, 87, 23])
+2026-09-09 15:49:00 === thursday net runs done ===

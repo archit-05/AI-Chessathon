@@ -1,0 +1,134 @@
+{
+  "summary": {
+    "label": "/root/astra/builds/bini_astra_v5",
+    "total": 12,
+    "passed": 12,
+    "failed": 0,
+    "info": 0
+  },
+  "environment": {
+    "build_dir": "/root/astra/builds/bini_astra_v5",
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "numba": "0.67.0",
+    "llvmlite": "0.49.0",
+    "python_chess": "1.11.2",
+    "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "tt_bits": "16"
+  },
+  "build_hashes": {
+    "agent.py": "5bff736371872bc5688fd59d0c1cc74c",
+    "bini_board.py": "39304f6ae518e221a8df45d27f195e8e",
+    "bini_calib.py": "18210c5b3f8d7109151da461ee3b74f8",
+    "bini_engine.py": "4f4de482c28eca01e47cff5d6380a2c2",
+    "bini_eval.py": "d44763ba4ad0465a9257bfb32cd9c990",
+    "bini_magics.py": "3c2ab7807a87e0f31fb4d889367870e2",
+    "bini_nnue.py": "e06453c8a7a9a34b1e9405b309b071c2",
+    "bini_search.py": "2f9f4d717c6ac2609e40f8dc9a65d4c3",
+    "book.json": "51c97f3f4e8ab4c1801543945d749906",
+    "nnue.safetensors": "182c8fc8fb60b96fdb51f231cbe9c0e9"
+  },
+  "rows": [
+    {
+      "id": "V1.qsearch_at_max_ply",
+      "title": "quiescence decides terminals at ply MAX_PLY-1, not by evaluation",
+      "status": "PASS",
+      "ply": 127,
+      "detail": []
+    },
+    {
+      "id": "V2.search_at_max_ply",
+      "title": "main search decides terminals at ply MAX_PLY-1",
+      "status": "PASS",
+      "ply": 127,
+      "detail": []
+    },
+    {
+      "id": "V3.max_ply_negative",
+      "title": "an ordinary position at max ply still returns an evaluation",
+      "status": "PASS",
+      "score": -14
+    },
+    {
+      "id": "V4.tree_cycle_is_heuristic",
+      "title": "a cycle inside the search tree is the named search heuristic",
+      "status": "PASS",
+      "kind": 1,
+      "expected": 1,
+      "ply": 4,
+      "halfmove": 4
+    },
+    {
+      "id": "V5.second_occurrence_not_a_claim",
+      "title": "a bare second occurrence in game history is NOT a draw",
+      "status": "PASS",
+      "kind": 0,
+      "expected": 0,
+      "ply": 2,
+      "halfmove": 4,
+      "note": "asserted only on builds that separate the two readings; the baseline has no such concept, and the 0 it returns here comes from its indexing bug, not from correct semantics"
+    },
+    {
+      "id": "V6.third_occurrence_is_a_claim",
+      "title": "a third occurrence reached through game history is a real claim",
+      "status": "PASS",
+      "kind": 2,
+      "expected": 2,
+      "ply": 2,
+      "halfmove": 8,
+      "note": "also proves the distance indexing still reaches pre-root history: a build that cannot index past the root cannot count two occurrences there"
+    },
+    {
+      "id": "V7.no_repetition_negative",
+      "title": "a first occurrence is not a draw under either reading",
+      "status": "PASS",
+      "kind": 0
+    },
+    {
+      "id": "V8.irreversible_negative",
+      "title": "no draw claimed across a pawn move",
+      "status": "PASS",
+      "kind": 0
+    },
+    {
+      "id": "V9.referee_agrees",
+      "title": "the engine now agrees with the referee about which line is a draw",
+      "status": "PASS",
+      "after_second": null,
+      "after_third": "THREEFOLD_REPETITION",
+      "note": "referee = board.outcome(claim_draw=True), the local harness rule"
+    },
+    {
+      "id": "V10.bucket_mapping",
+      "title": "out_bucket agrees with the documented piece-count mapping",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "id": "V11.all_eight_buckets",
+      "title": "incremental accumulator equals refresh in ALL eight output buckets",
+      "status": "PASS",
+      "buckets_reached": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "accumulator_failures": 0,
+      "detail": []
+    },
+    {
+      "id": "V12.bucket_transitions",
+      "title": "captures that cross an output-bucket boundary stay consistent",
+      "status": "PASS",
+      "positions": 40,
+      "transitions": 206,
+      "detail": []
+    }
+  ]
+}

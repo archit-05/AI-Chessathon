@@ -1,0 +1,15 @@
+Round 94 largest estimated losses [{'round': 94, 'move': 20, 'san': 'Nd5', 'uci': 'e3d5', 'fen': 'r2qrb2/5p1k/3pbnpp/p1p1p3/1pP1P3/1P1PNRNP/1P3PP1/R1BQ2K1 w - - 0 20', 'best': 'g3f1', 'best_cp': -53, 'played_cp': -122, 'loss_cp': 69, 'depth': 14}, {'round': 94, 'move': 18, 'san': 'Rf3', 'uci': 'e3f3', 'fen': 'r2qrbk1/5pp1/3pbn1p/p1p1p3/1pP1P3/1P1PR1NP/1P3PP1/R1BQ1NK1 w - - 0 18', 'best': 'e3e2', 'best_cp': -39, 'played_cp': -94, 'loss_cp': 55, 'depth': 18}, {'round': 94, 'move': 41, 'san': 'h6', 'uci': 'h5h6', 'fen': '5kr1/3n1q2/3R4/2pPpP1P/rp6/3P1Q2/1P3P2/5K1R w - - 0 41', 'best': 'f1e2', 'best_cp': 84, 'played_cp': 29, 'loss_cp': 55, 'depth': 14}, {'round': 94, 'move': 26, 'san': 'g5', 'uci': 'g4g5', 'fen': 'rn1q1r2/5pbk/3pb1pp/p1pNp3/1pP1P1PP/1P1PNR2/1P3PK1/R1BQ4 w - - 1 26', 'best': 'f3g3', 'best_cp': -12, 'played_cp': -50, 'loss_cp': 38, 'depth': 16}, {'round': 94, 'move': 29, 'san': 'exf5', 'uci': 'e4f5', 'fen': 'rn1q3r/5pbk/3pb3/p1pNppPp/1pP1P2P/1P1P2R1/1P3PK1/R1BQ4 w - - 0 29', 'best': 'e4f5', 'best_cp': 81, 'played_cp': 57, 'loss_cp': 24, 'depth': 16}]
+Round 98 largest estimated losses [{'round': 98, 'move': 91, 'san': 'Kf6', 'uci': 'g6f6', 'fen': '8/8/6K1/8/8/3k4/8/4q3 w - - 0 91', 'best': 'g6f6', 'best_cp': -692, 'played_cp': -31990, 'loss_cp': 31298, 'depth': 18}, {'round': 98, 'move': 81, 'san': 'Na5+', 'uci': 'c6a5', 'fen': '8/8/2N4r/8/2k1p3/6K1/8/8 w - - 4 81', 'best': 'g3f4', 'best_cp': -429, 'played_cp': -772, 'loss_cp': 343, 'depth': 17}, {'round': 98, 'move': 86, 'san': 'Nf5', 'uci': 'd4f5', 'fen': '8/8/7r/8/3N4/3kp1K1/8/8 w - - 6 86', 'best': 'd4f3', 'best_cp': -684, 'played_cp': -1022, 'loss_cp': 338, 'depth': 20}, {'round': 98, 'move': 83, 'san': 'Nc1+', 'uci': 'b3c1', 'fen': '8/8/7r/8/8/1N1kp1K1/8/8 w - - 0 83', 'best': 'b3c5', 'best_cp': -600, 'played_cp': -795, 'loss_cp': 195, 'depth': 20}, {'round': 98, 'move': 82, 'san': 'Nb3', 'uci': 'a5b3', 'fen': '8/8/7r/N7/4p3/3k2K1/8/8 w - - 6 82', 'best': 'a5b7', 'best_cp': -789, 'played_cp': -980, 'loss_cp': 191, 'depth': 22}]
+Traceback (most recent call last):
+  File "/Users/architbhardwaj/Desktop/AI Chessathon/external_review_20260910/grade_games.py", line 22, in <module>
+    played = engine.analyse(board, chess.engine.Limit(nodes=150000), root_moves=[move])
+  File "/private/tmp/chess-external-review-venv/lib/python3.13/site-packages/chess/engine.py", line 2994, in analyse
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.2/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/_base.py", line 451, in result
+    self._condition.wait(timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.2/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 359, in wait
+    waiter.acquire()
+    ~~~~~~~~~~~~~~^^
+KeyboardInterrupt

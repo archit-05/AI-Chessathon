@@ -1,0 +1,70 @@
+AI CHESSATHON MATCH LOG
+=======================
+
+MATCH
+  Round          Final 122
+  Team           Opus Carlsen
+  Colour         Black
+  Opponent       JBG fam
+  Opening        Queen's Gambit Accepted
+  Start FEN      r1bqkb1r/pp3ppp/2n1pn2/2p5/3P4/2N1PN2/PP2BPPP/R1BQK2R b KQkq - 3 7
+  You moved      First
+  Machine        w-463339
+  Finished       2026-09-11 14:41:14 UTC
+  Match ID       80ea7363-5ef4-4732-abbc-3dea2ecdddfc
+
+INIT
+  Ready in       39.5 s
+  Budget         90.0 s
+  Used           44 percent
+
+CLOCK
+  Base           120.0 s plus 0.5 s per move
+  Moves          14
+  Time used      35.9 s
+  Slowest        3.7 s on move 3
+  Fastest        1.9 s on move 7
+  Average        2.6 s
+  Left at end    91.1 s
+
+RESULT
+  Drawn by threefold repetition
+  Game lasted 97.7 s
+
+MOVES
+    #  move          time     clock left
+    1  cxd4          2.8 s      117.7 s
+    2  Nxd4          2.8 s      115.4 s
+    3  Bd7           3.7 s      112.1 s
+    4  Be7           3.4 s      109.2 s
+    5  O-O           3.5 s      106.2 s
+    6  a6            2.2 s      104.6 s
+    7  Qc7           1.9 s      103.2 s
+    8  Rfd8          2.5 s      101.2 s
+    9  e5            1.9 s       99.8 s
+   10  Qxc1          2.1 s       98.2 s
+   11  Kf8           2.3 s       96.4 s
+   12  Kg8           2.0 s       94.9 s
+   13  Kf8           2.4 s       93.1 s
+   14  Kg8           2.4 s       91.1 s
+
+OUTPUT
+  1,152 bytes on stderr
+
+  bini-5.0 ready: import+compile 39.0s (compile 38.2s), nnue=on
+  bini-5.0 m1 d16 c5d4 5cp 1438862n 2813ms left 120000ms sx883/384/34798 rg0
+  bini-5.0 m2 d19 c6d4 30cp 1441971n 2833ms left 117685ms sx1909/1006/46235 rg0
+  bini-5.0 m3 d20 c8d7 -14cp 1926627n 3726ms left 115351ms sx1831/937/67834 rg0
+  bini-5.0 m4 d18 f8e7 35cp 1737387n 3383ms left 112123ms sx1787/837/57032 rg0
+  bini-5.0 m5 d18 e8g8 27cp 1834845n 3495ms left 109238ms sx1926/988/63216 rg0
+  bini-5.0 m6 d16 a7a6 25cp 1114073n 2152ms left 106242ms sx1494/618/27251 rg0
+  bini-5.0 m7 d17 d8c7 2cp 976287n 1858ms left 104588ms sx1607/697/23606 rg0
+  bini-5.0 m8 d18 f8d8 -20cp 1342664n 2532ms left 103228ms sx2860/1156/35186 rg0
+  bini-5.0 m9 d19 e6e5 -20cp 1016564n 1908ms left 101195ms sx2635/1477/27461 rg0
+  bini-5.0 m10 d23 c7c1 -20cp 1196479n 2131ms left 99786ms sx3683/3534/20974 rg2
+  bini-5.0 m11 d26 g8f8 -20cp 1302421n 2265ms left 98154ms sx4447/4232/20770 rg0
+  bini-5.0 m12 d28 f8g8 -20cp 1138513n 1975ms left 96388ms sx3151/3025/24274 rg0
+  bini-5.0 m13 d34 g8f8 -20cp 1370771n 2352ms left 94911ms sx4264/3533/19544 rg0
+  bini-5.0 m14 d33 f8g8 -20cp 1370890n 2419ms left 93058ms sx4166/2676/40429 rg0
+
+Email hello@aichessathon.com with this file if anything here is unclear.

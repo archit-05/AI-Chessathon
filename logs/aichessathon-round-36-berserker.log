@@ -1,0 +1,138 @@
+AI CHESSATHON MATCH LOG
+=======================
+
+MATCH
+  Round          Rated 36
+  Team           Opus Carlsen
+  Colour         Black
+  Opponent       berserker
+  Opening        Ruy Lopez, Closed
+  Start FEN      r2qk2r/2pbbppp/p1np1n2/1p2p3/P3P3/1BP2N2/1P1P1PPP/RNBQR1K1 b kq - 0 9
+  You moved      First
+  Machine        w-d88909
+  Finished       2026-09-06 12:21:00 UTC
+  Match ID       78ce0a94-fee5-4802-bc81-c7d061d169ea
+
+INIT
+  Ready in       25.2 s
+  Budget         90.0 s
+  Used           28 percent
+
+CLOCK
+  Base           120.0 s plus 0.5 s per move
+  Moves          48
+  Time used      112.5 s
+  Slowest        5.1 s on move 11
+  Fastest        0.0 s on move 48
+  Average        2.3 s
+  Left at end    31.5 s
+
+RESULT
+  Won by checkmate
+  Game lasted 240.8 s
+
+MOVES
+    #  move          time     clock left
+    1  Na5           3.1 s      117.4 s
+    2  c5            2.8 s      115.2 s
+    3  Qb8           2.8 s      112.9 s
+    4  axb5          2.8 s      110.6 s
+    5  O-O           3.0 s      108.1 s
+    6  h6            1.9 s      106.7 s
+    7  Bxf6          2.4 s      104.7 s
+    8  Bxe5          2.9 s      102.3 s
+    9  dxe5          4.5 s       98.3 s
+   10  Be6           2.2 s       96.6 s
+   11  Qc7           5.1 s       92.0 s
+   12  Rfb8          4.8 s       87.7 s
+   13  Qb7           2.0 s       86.2 s
+   14  Nc4           2.2 s       84.5 s
+   15  Bxc4          1.8 s       83.2 s
+   16  Rxa1          4.5 s       79.2 s
+   17  Ra8           2.1 s       77.6 s
+   18  Qb5           1.8 s       76.3 s
+   19  Ra2           2.8 s       74.1 s
+   20  Qb8           1.6 s       72.9 s
+   21  cxb4          1.9 s       71.6 s
+   22  Qb6           2.0 s       70.1 s
+   23  Qa5           3.3 s       67.3 s
+   24  Ra3           1.7 s       66.1 s
+   25  Rxb3          1.6 s       65.0 s
+   26  Qa3           3.5 s       62.0 s
+   27  Qc3           3.0 s       59.5 s
+   28  b3            1.8 s       58.3 s
+   29  b2            1.6 s       57.1 s
+   30  Qxc2+         1.5 s       56.1 s
+   31  b1=Q          1.8 s       54.8 s
+   32  Qd1+          1.4 s       53.9 s
+   33  Qf3+          3.7 s       50.7 s
+   34  Qxf2          3.2 s       48.0 s
+   35  Qxh2          1.6 s       46.9 s
+   36  Qxe5          2.7 s       44.8 s
+   37  Kh7           2.3 s       43.0 s
+   38  Kg6           1.8 s       41.7 s
+   39  Kg5           2.0 s       40.2 s
+   40  Kf4           1.4 s       39.3 s
+   41  Kxg4          1.4 s       38.4 s
+   42  h5            2.2 s       36.7 s
+   43  h4            1.8 s       35.5 s
+   44  h3            1.3 s       34.7 s
+   45  g5            2.5 s       32.7 s
+   46  h2            2.7 s       30.5 s
+   47  h1=Q          0.0 s       31.0 s
+   48  Qd1#          0.0 s       31.5 s
+
+OUTPUT
+  2,799 bytes on stderr
+
+  bini-2.0 ready: import+compile 24.6s (compile 23.9s), nnue=on
+  bini-2.0 m1 d17 c6a5 -42cp 2524263n 3055ms left 120000ms
+  bini-2.0 m2 d18 c7c5 -49cp 2285186n 2788ms left 117443ms
+  bini-2.0 m3 d17 d8b8 -47cp 2251255n 2766ms left 115154ms
+  bini-2.0 m4 d16 a6b5 -36cp 2155080n 2790ms left 112886ms
+  bini-2.0 m5 d15 e8g8 -7cp 2408104n 3008ms left 110595ms
+  bini-2.0 m6 d16 h7h6 14cp 1559872n 1922ms left 108086ms
+  bini-2.0 m7 d19 e7f6 22cp 2062090n 2434ms left 106662ms
+  bini-2.0 m8 d17 f6e5 41cp 2391457n 2895ms left 104727ms
+  bini-2.0 m9 d18 d6e5 25cp 3585297n 4535ms left 102331ms
+  bini-2.0 m10 d17 d7e6 12cp 1813273n 2213ms left 98294ms
+  bini-2.0 m11 d17 b8c7 42cp 3993612n 5084ms left 96580ms
+  bini-2.0 m12 d19 f8b8 88cp 3753498n 4785ms left 91995ms
+  bini-2.0 m13 d20 c7b7 180cp 1753654n 2042ms left 87709ms
+  bini-2.0 m14 d20 a5c4 176cp 1814023n 2164ms left 86165ms
+  bini-2.0 m15 d22 e6c4 200cp 1478639n 1780ms left 84500ms
+  bini-2.0 m16 d22 a8a1 210cp 3704171n 4514ms left 83219ms
+  bini-2.0 m17 d21 b8a8 193cp 1674004n 2106ms left 79204ms
+  bini-2.0 m18 d21 b7b5 197cp 1470300n 1767ms left 77597ms
+  bini-2.0 m19 d18 a8a2 226cp 2157594n 2763ms left 76328ms
+  bini-2.0 m20 d17 b5b8 319cp 1305182n 1618ms left 74064ms
+  bini-2.0 m21 d18 c5b4 430cp 1458446n 1871ms left 72945ms
+  bini-2.0 m22 d16 b8b6 445cp 1479351n 1965ms left 71573ms
+  bini-2.0 m23 d21 b6a5 517cp 2603102n 3324ms left 70107ms
+  bini-2.0 m24 d20 a2a3 641cp 1485035n 1695ms left 67282ms
+  bini-2.0 m25 d21 a3b3 726cp 1352067n 1616ms left 66086ms
+  bini-2.0 m26 d23 a5a3 760cp 3009926n 3495ms left 64969ms
+  bini-2.0 m27 d21 a3c3 779cp 2520745n 2966ms left 61973ms
+  bini-2.0 m28 d20 b4b3 820cp 1483882n 1750ms left 59505ms
+  bini-2.0 m29 d25 b3b2 1226cp 1390722n 1615ms left 58255ms
+  bini-2.0 m30 d26 c3c2 1330cp 1285792n 1490ms left 57139ms
+  bini-2.0 m31 d25 b2b1q 1391cp 1611137n 1847ms left 56148ms
+  bini-2.0 m32 d23 b1d1 1397cp 1231938n 1423ms left 54800ms
+  bini-2.0 m33 d22 d1f3 1478cp 3172561n 3715ms left 53875ms
+  bini-2.0 m34 d22 f3f2 1489cp 2674054n 3181ms left 50659ms
+  bini-2.0 m35 d20 f2h2 1532cp 1341871n 1558ms left 47977ms
+  bini-2.0 m36 d18 h2e5 1597cp 2278117n 2655ms left 46918ms
+  bini-2.0 m37 d19 g8h7 1896cp 1946741n 2264ms left 44762ms
+  bini-2.0 m38 d20 h7g6 2061cp 1562610n 1773ms left 42997ms
+  bini-2.0 m39 d19 g6g5 2610cp 1764769n 1990ms left 41724ms
+  bini-2.0 m40 d21 g5f4 2829cp 1259931n 1409ms left 40232ms
+  bini-2.0 m41 d19 f4g4 2827cp 1283313n 1406ms left 39322ms
+  bini-2.0 m42 d21 h6h5 3222cp 1988795n 2170ms left 38415ms
+  bini-2.0 m43 d20 h5h4 3749cp 1621735n 1763ms left 36744ms
+  bini-2.0 m44 d19 h4h3 4003cp 1117988n 1250ms left 35480ms
+  bini-2.0 m45 d22 g7g5 4565cp 2352423n 2517ms left 34728ms
+  bini-2.0 m46 d20 h3h2 29985cp 2515494n 2683ms left 32710ms
+  bini-2.0 m47 d7 h2h1q 29993cp 2325n 4ms left 30526ms
+  bini-2.0 m48 d1 h1d1 29999cp 67n 1ms left 31021ms
+
+Email hello@aichessathon.com with this file if anything here is unclear.

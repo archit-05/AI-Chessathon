@@ -1,0 +1,30 @@
+== 2026-09-08 21:31:53 start
+apt ok
+Note: switching to 'edb0d9db6731067ec50ce619ff372b463bc4dd5d'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+SF_BUILD_DONE
+bench:
+Total time (ms) : 1063
+Nodes/second    : 1413444
+rust ok
+bullet src ok
+platform venv ok
+torch venv extras ok
+torch 2.11.0+cu128 cuda True 2 numba 0.67.0
+platform venv numba 0.67.0 numpy 2.5.2 chess 1.11.2
+== 2026-09-08 21:33:55 provision done (downloads continue: logs/elite_dl.log, logs/eval_dl.log)

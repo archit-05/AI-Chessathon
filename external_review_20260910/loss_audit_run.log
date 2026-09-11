@@ -1,0 +1,19 @@
+{"round": 104, "top": [{"move": 134, "san": "Ka1", "best": -471, "played": -686, "loss": 215}, {"move": 60, "san": "Qc6", "best": 370, "played": 240, "loss": 130}, {"move": 83, "san": "Qd5+", "best": -108, "played": -234, "loss": 126}, {"move": 81, "san": "Qe6+", "best": -69, "played": -184, "loss": 115}, {"move": 120, "san": "Qg1", "best": -268, "played": -373, "loss": 105}, {"move": 35, "san": "Nxf6", "best": 93, "played": 19, "loss": 74}, {"move": 62, "san": "Rd6", "best": 206, "played": 132, "loss": 74}, {"move": 73, "san": "Rh8+", "best": 108, "played": 37, "loss": 71}]}
+{"round": 105, "top": [{"move": 35, "san": "Kh2", "best": -111, "played": -343, "loss": 232}, {"move": 41, "san": "Rfe2", "best": -11, "played": -176, "loss": 165}, {"move": 58, "san": "Rc7", "best": -413, "played": -548, "loss": 135}, {"move": 45, "san": "Kg2", "best": -185, "played": -301, "loss": 116}, {"move": 38, "san": "Bg5", "best": -22, "played": -123, "loss": 101}, {"move": 33, "san": "Rf2", "best": -56, "played": -152, "loss": 96}, {"move": 68, "san": "Nh4+", "best": -486, "played": -561, "loss": 75}, {"move": 17, "san": "Ng4", "best": -16, "played": -64, "loss": 48}]}
+{"round": 103, "top": [{"move": 42, "san": "Kd6", "best": -331, "played": -408, "loss": 77}, {"move": 34, "san": "f6", "best": -13, "played": -66, "loss": 53}, {"move": 30, "san": "Bc8+", "best": -19, "played": -61, "loss": 42}, {"move": 25, "san": "Bc8", "best": 38, "played": 0, "loss": 38}, {"move": 36, "san": "g6", "best": -262, "played": -298, "loss": 36}, {"move": 33, "san": "Ra6", "best": -75, "played": -84, "loss": 9}, {"move": 8, "san": "Bxc5", "best": 13, "played": 13, "loss": 0}, {"move": 9, "san": "O-O", "best": 16, "played": 16, "loss": 0}]}
+Traceback (most recent call last):
+  File "/Users/architbhardwaj/Desktop/AI Chessathon/external_review_20260910/loss_audit.py", line 36, in <module>
+    best=analyse(b); played=best if best['pv'] and best['pv'][0]==move.uci() else analyse(b,move)
+                                                                                  ~~~~~~~^^^^^^^^
+  File "/Users/architbhardwaj/Desktop/AI Chessathon/external_review_20260910/loss_audit.py", line 15, in analyse
+    z = sf.analyse(b, chess.engine.Limit(nodes=nodes), **kw)
+  File "/private/tmp/chess-external-review-venv/lib/python3.13/site-packages/chess/engine.py", line 2994, in analyse
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.2/Frameworks/Python.framework/Versions/3.13/lib/python3.13/concurrent/futures/_base.py", line 451, in result
+    self._condition.wait(timeout)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.2/Frameworks/Python.framework/Versions/3.13/lib/python3.13/threading.py", line 359, in wait
+    waiter.acquire()
+    ~~~~~~~~~~~~~~^^
+KeyboardInterrupt

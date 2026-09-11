@@ -1,0 +1,129 @@
+device cuda
+173 training chunks, validation ['chunk_0036.npz']
+start val lichessq3/chunk_0036.npz: loss 0.04592 MAE 331cp
+epoch 0 chunk 1/173 loss 0.04589 2s
+epoch 0 chunk 11/173 loss 0.02987 18s
+epoch 0 chunk 21/173 loss 0.02457 34s
+epoch 0 chunk 31/173 loss 0.02200 50s
+epoch 0 chunk 41/173 loss 0.02037 66s
+epoch 0 chunk 51/173 loss 0.01929 82s
+epoch 0 chunk 61/173 loss 0.01866 99s
+epoch 0 chunk 71/173 loss 0.01817 115s
+epoch 0 chunk 81/173 loss 0.01773 131s
+epoch 0 chunk 91/173 loss 0.01734 147s
+epoch 0 chunk 101/173 loss 0.01708 163s
+epoch 0 chunk 111/173 loss 0.01682 179s
+epoch 0 chunk 121/173 loss 0.01658 195s
+epoch 0 chunk 131/173 loss 0.01637 211s
+epoch 0 chunk 141/173 loss 0.01618 227s
+epoch 0 chunk 151/173 loss 0.01605 243s
+epoch 0 chunk 161/173 loss 0.01589 259s
+epoch 0 chunk 171/173 loss 0.01574 275s
+epoch 0 done: train 0.01572  279s
+epoch 0 val lichessq3/chunk_0036.npz: loss 0.01520 MAE 194cp
+exported ../data/nnue_c0.safetensors (6.30 MB); qb 32 |w1|max 1.816 |w2|max 1.451
+epoch 1 chunk 1/173 loss 0.01319 2s
+epoch 1 chunk 11/173 loss 0.01311 18s
+epoch 1 chunk 21/173 loss 0.01296 34s
+epoch 1 chunk 31/173 loss 0.01311 50s
+epoch 1 chunk 41/173 loss 0.01308 66s
+epoch 1 chunk 51/173 loss 0.01310 82s
+epoch 1 chunk 61/173 loss 0.01313 98s
+epoch 1 chunk 71/173 loss 0.01315 114s
+epoch 1 chunk 81/173 loss 0.01315 131s
+epoch 1 chunk 91/173 loss 0.01315 147s
+epoch 1 chunk 101/173 loss 0.01313 163s
+epoch 1 chunk 111/173 loss 0.01313 179s
+epoch 1 chunk 121/173 loss 0.01314 196s
+epoch 1 chunk 131/173 loss 0.01312 212s
+epoch 1 chunk 141/173 loss 0.01314 228s
+epoch 1 chunk 151/173 loss 0.01314 244s
+epoch 1 chunk 161/173 loss 0.01313 261s
+epoch 1 chunk 171/173 loss 0.01313 277s
+epoch 1 done: train 0.01314  280s
+epoch 1 val lichessq3/chunk_0036.npz: loss 0.01459 MAE 190cp
+exported ../data/nnue_c0.safetensors (6.30 MB); qb 32 |w1|max 2.362 |w2|max 1.491
+epoch 2 chunk 1/173 loss 0.01372 2s
+epoch 2 chunk 11/173 loss 0.01239 18s
+epoch 2 chunk 21/173 loss 0.01240 34s
+epoch 2 chunk 31/173 loss 0.01244 50s
+epoch 2 chunk 41/173 loss 0.01246 66s
+epoch 2 chunk 51/173 loss 0.01244 82s
+epoch 2 chunk 61/173 loss 0.01241 99s
+epoch 2 chunk 71/173 loss 0.01243 115s
+epoch 2 chunk 81/173 loss 0.01243 131s
+epoch 2 chunk 91/173 loss 0.01243 147s
+epoch 2 chunk 101/173 loss 0.01247 163s
+epoch 2 chunk 111/173 loss 0.01247 180s
+epoch 2 chunk 121/173 loss 0.01249 197s
+epoch 2 chunk 131/173 loss 0.01250 213s
+epoch 2 chunk 141/173 loss 0.01251 230s
+epoch 2 chunk 151/173 loss 0.01253 246s
+epoch 2 chunk 161/173 loss 0.01253 263s
+epoch 2 chunk 171/173 loss 0.01252 280s
+epoch 2 done: train 0.01253  283s
+epoch 2 val lichessq3/chunk_0036.npz: loss 0.01388 MAE 183cp
+exported ../data/nnue_c0.safetensors (6.30 MB); qb 32 |w1|max 2.817 |w2|max 1.418
+epoch 3 chunk 1/173 loss 0.01156 2s
+epoch 3 chunk 11/173 loss 0.01216 18s
+epoch 3 chunk 21/173 loss 0.01198 34s
+epoch 3 chunk 31/173 loss 0.01196 51s
+epoch 3 chunk 41/173 loss 0.01200 67s
+epoch 3 chunk 51/173 loss 0.01197 83s
+epoch 3 chunk 61/173 loss 0.01204 99s
+epoch 3 chunk 71/173 loss 0.01209 115s
+epoch 3 chunk 81/173 loss 0.01209 132s
+epoch 3 chunk 91/173 loss 0.01211 148s
+epoch 3 chunk 101/173 loss 0.01211 164s
+epoch 3 chunk 111/173 loss 0.01209 181s
+epoch 3 chunk 121/173 loss 0.01209 197s
+epoch 3 chunk 131/173 loss 0.01209 214s
+epoch 3 chunk 141/173 loss 0.01209 230s
+epoch 3 chunk 151/173 loss 0.01210 246s
+epoch 3 chunk 161/173 loss 0.01209 263s
+epoch 3 chunk 171/173 loss 0.01210 279s
+epoch 3 done: train 0.01210  282s
+epoch 3 val lichessq3/chunk_0036.npz: loss 0.01352 MAE 180cp
+exported ../data/nnue_c0.safetensors (6.30 MB); qb 32 |w1|max 2.843 |w2|max 1.563
+epoch 4 chunk 1/173 loss 0.01283 2s
+epoch 4 chunk 11/173 loss 0.01178 18s
+epoch 4 chunk 21/173 loss 0.01183 34s
+epoch 4 chunk 31/173 loss 0.01169 50s
+epoch 4 chunk 41/173 loss 0.01172 67s
+epoch 4 chunk 51/173 loss 0.01168 83s
+epoch 4 chunk 61/173 loss 0.01164 100s
+epoch 4 chunk 71/173 loss 0.01167 116s
+epoch 4 chunk 81/173 loss 0.01168 132s
+epoch 4 chunk 91/173 loss 0.01172 148s
+epoch 4 chunk 101/173 loss 0.01171 164s
+epoch 4 chunk 111/173 loss 0.01173 180s
+epoch 4 chunk 121/173 loss 0.01173 197s
+epoch 4 chunk 131/173 loss 0.01175 213s
+epoch 4 chunk 141/173 loss 0.01173 229s
+epoch 4 chunk 151/173 loss 0.01172 245s
+epoch 4 chunk 161/173 loss 0.01175 262s
+epoch 4 chunk 171/173 loss 0.01175 278s
+epoch 4 done: train 0.01174  281s
+epoch 4 val lichessq3/chunk_0036.npz: loss 0.01334 MAE 178cp
+exported ../data/nnue_c0.safetensors (6.30 MB); qb 32 |w1|max 2.965 |w2|max 1.669
+epoch 5 chunk 1/173 loss 0.01101 2s
+epoch 5 chunk 11/173 loss 0.01136 18s
+epoch 5 chunk 21/173 loss 0.01150 34s
+epoch 5 chunk 31/173 loss 0.01154 50s
+epoch 5 chunk 41/173 loss 0.01151 66s
+epoch 5 chunk 51/173 loss 0.01154 82s
+epoch 5 chunk 61/173 loss 0.01151 98s
+epoch 5 chunk 71/173 loss 0.01153 115s
+epoch 5 chunk 81/173 loss 0.01151 131s
+epoch 5 chunk 91/173 loss 0.01150 147s
+epoch 5 chunk 101/173 loss 0.01148 163s
+epoch 5 chunk 111/173 loss 0.01149 179s
+epoch 5 chunk 121/173 loss 0.01146 195s
+epoch 5 chunk 131/173 loss 0.01146 211s
+epoch 5 chunk 141/173 loss 0.01147 227s
+epoch 5 chunk 151/173 loss 0.01147 244s
+epoch 5 chunk 161/173 loss 0.01147 260s
+epoch 5 chunk 171/173 loss 0.01147 276s
+epoch 5 done: train 0.01147  279s
+epoch 5 val lichessq3/chunk_0036.npz: loss 0.01332 MAE 178cp
+exported ../data/nnue_c0.safetensors (6.30 MB); qb 32 |w1|max 2.974 |w2|max 1.694

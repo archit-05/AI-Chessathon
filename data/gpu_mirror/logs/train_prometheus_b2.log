@@ -1,0 +1,8 @@
+device cuda
+Traceback (most recent call last):
+  File "/root/chess/bini_v5/tools/train_nnue.py", line 366, in <module>
+    main()
+  File "/root/chess/bini_v5/tools/train_nnue.py", line 266, in main
+    val_files, train_files = [files[-1]], files[:-1][: a.chunks]
+                              ~~~~~^^^^
+IndexError: list index out of range

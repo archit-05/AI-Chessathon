@@ -1,0 +1,110 @@
+{"a": "/root/astra/builds/bini_astra_v5_noc2b", "b": "/root/astra/builds/bini_v8_ship", "games": 400, "base_ms": 120000, "inc_ms": 500, "workers": 18, "seed": 22, "openings": "/root/astra/tests/curated.epd", "manifest_offset": 0, "unique_openings": 200, "manifest_md5": "c3ec09087ed34140fdee3b71de114a74", "host": "d434edfad599", "cpus": 112, "started": "2026-09-10T23:37:14Z", "env": {}}
+resuming: 180 games already recorded, 220 still to play
+[190/400] valid 190  score 48.2%  elo -13 ±20  pairs 43
+[200/400] valid 200  score 48.5%  elo -10 ±19  pairs 50
+[210/400] valid 210  score 48.6%  elo -10 ±18  pairs 54
+[220/400] valid 220  score 48.6%  elo -9 ±18  pairs 58
+[230/400] valid 230  score 48.5%  elo -11 ±18  pairs 63
+[240/400] valid 240  score 48.5%  elo -10 ±18  pairs 71
+[250/400] valid 250  score 48.8%  elo -8 ±18  pairs 76
+[260/400] valid 260  score 48.5%  elo -11 ±17  pairs 82
+[270/400] valid 270  score 48.7%  elo -9 ±17  pairs 87
+[280/400] valid 280  score 48.8%  elo -9 ±16  pairs 93
+[290/400] valid 290  score 48.8%  elo -8 ±16  pairs 101
+[300/400] valid 300  score 48.8%  elo -8 ±16  pairs 109
+[310/400] valid 310  score 48.7%  elo -9 ±15  pairs 118
+[320/400] valid 320  score 48.6%  elo -10 ±15  pairs 126
+[330/400] valid 330  score 48.8%  elo -8 ±14  pairs 135
+[340/400] valid 340  score 48.8%  elo -8 ±14  pairs 143
+[350/400] valid 350  score 48.7%  elo -9 ±14  pairs 151
+[360/400] valid 360  score 49.0%  elo -7 ±15  pairs 161
+[370/400] valid 370  score 49.2%  elo -6 ±15  pairs 171
+[380/400] valid 380  score 49.2%  elo -5 ±15  pairs 180
+[390/400] valid 390  score 49.4%  elo -4 ±15  pairs 190
+[400/400] valid 400  score 49.4%  elo -4 ±14  pairs 200
+
+=== FINAL ===
+{
+ "config": {
+  "a": "/root/astra/builds/bini_astra_v5_noc2b",
+  "b": "/root/astra/builds/bini_v8_ship",
+  "games": 400,
+  "base_ms": 120000,
+  "inc_ms": 500,
+  "workers": 18,
+  "seed": 22,
+  "openings": "/root/astra/tests/curated.epd",
+  "manifest_offset": 0,
+  "unique_openings": 200,
+  "manifest_md5": "c3ec09087ed34140fdee3b71de114a74",
+  "host": "d434edfad599",
+  "cpus": 112,
+  "started": "2026-09-10T23:37:14Z",
+  "a_hashes": {
+   "agent.py": "5bff736371872bc5688fd59d0c1cc74c",
+   "bini_board.py": "39304f6ae518e221a8df45d27f195e8e",
+   "bini_calib.py": "18210c5b3f8d7109151da461ee3b74f8",
+   "bini_engine.py": "4f4de482c28eca01e47cff5d6380a2c2",
+   "bini_eval.py": "d44763ba4ad0465a9257bfb32cd9c990",
+   "bini_magics.py": "3c2ab7807a87e0f31fb4d889367870e2",
+   "bini_nnue.py": "e06453c8a7a9a34b1e9405b309b071c2",
+   "bini_search.py": "56ead3446ea7a7e482cea91a67083995",
+   "book.json": "51c97f3f4e8ab4c1801543945d749906",
+   "nnue.safetensors": "182c8fc8fb60b96fdb51f231cbe9c0e9"
+  },
+  "b_hashes": {
+   "agent.py": "5bff736371872bc5688fd59d0c1cc74c",
+   "bini_board.py": "861d5989e13dc1938cbeeb7d6e045366",
+   "bini_calib.py": "18210c5b3f8d7109151da461ee3b74f8",
+   "bini_engine.py": "4f4de482c28eca01e47cff5d6380a2c2",
+   "bini_eval.py": "d44763ba4ad0465a9257bfb32cd9c990",
+   "bini_magics.py": "3c2ab7807a87e0f31fb4d889367870e2",
+   "bini_nnue.py": "e06453c8a7a9a34b1e9405b309b071c2",
+   "bini_search.py": "163cda13023d7d5aa89cc4b523c6b576",
+   "book.json": "51c97f3f4e8ab4c1801543945d749906",
+   "nnue.safetensors": "182c8fc8fb60b96fdb51f231cbe9c0e9"
+  },
+  "env": {}
+ },
+ "requested": 400,
+ "completed": 400,
+ "valid": 400,
+ "rejected": 0,
+ "reject_reasons": {},
+ "W": 31,
+ "D": 333,
+ "L": 36,
+ "terminations": {
+  "threefold_repetition": 195,
+  "checkmate": 67,
+  "fifty_moves": 61,
+  "insufficient_material": 77
+ },
+ "stats": {
+  "score": 0.49375,
+  "se": 0.010399902758532633,
+  "elo": -4.343171035283276,
+  "elo_lo": -18.524600417930266,
+  "elo_hi": 9.823793846146112,
+  "elo_pm": 14.174197132038188,
+  "pairs": 200,
+  "unpaired": 0,
+  "pentanomial": {
+   "0.0": 3,
+   "0.5": 27,
+   "1.0": 143,
+   "1.5": 26,
+   "2.0": 1
+  },
+  "openings": 200,
+  "repeated_openings": 0,
+  "se_by_pair": 0.010399902758532633,
+  "se_by_opening": 0.010399902758532633
+ },
+ "flags": 0,
+ "a_fallback": 0,
+ "b_fallback": 0,
+ "a_nnue_off": 0,
+ "b_nnue_off": 0,
+ "finished": "2026-09-11T00:55:33Z"
+}

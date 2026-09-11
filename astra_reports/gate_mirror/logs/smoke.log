@@ -1,0 +1,87 @@
+{"a": "/root/astra/builds/bini_astra_v2", "b": "/root/astra/builds/bini_v8_ship", "games": 8, "base_ms": 120000, "inc_ms": 500, "workers": 4, "seed": 1, "openings": "/root/astra/tests/curated.epd", "manifest_offset": 0, "unique_openings": 4, "manifest_md5": "df74c9e85e5b899b1ee6e9cd886ad026", "host": "d434edfad599", "cpus": 112, "started": "2026-09-10T19:59:11Z", "env": {}}
+
+=== FINAL ===
+{
+ "config": {
+  "a": "/root/astra/builds/bini_astra_v2",
+  "b": "/root/astra/builds/bini_v8_ship",
+  "games": 8,
+  "base_ms": 120000,
+  "inc_ms": 500,
+  "workers": 4,
+  "seed": 1,
+  "openings": "/root/astra/tests/curated.epd",
+  "manifest_offset": 0,
+  "unique_openings": 4,
+  "manifest_md5": "df74c9e85e5b899b1ee6e9cd886ad026",
+  "host": "d434edfad599",
+  "cpus": 112,
+  "started": "2026-09-10T19:59:11Z",
+  "a_hashes": {
+   "agent.py": "5bff736371872bc5688fd59d0c1cc74c",
+   "bini_board.py": "39304f6ae518e221a8df45d27f195e8e",
+   "bini_calib.py": "18210c5b3f8d7109151da461ee3b74f8",
+   "bini_engine.py": "4f4de482c28eca01e47cff5d6380a2c2",
+   "bini_eval.py": "d44763ba4ad0465a9257bfb32cd9c990",
+   "bini_magics.py": "3c2ab7807a87e0f31fb4d889367870e2",
+   "bini_nnue.py": "e06453c8a7a9a34b1e9405b309b071c2",
+   "bini_search.py": "cafa3df29a76d6a0015fd2f8bf398da3",
+   "book.json": "51c97f3f4e8ab4c1801543945d749906",
+   "nnue.safetensors": "182c8fc8fb60b96fdb51f231cbe9c0e9"
+  },
+  "b_hashes": {
+   "agent.py": "5bff736371872bc5688fd59d0c1cc74c",
+   "bini_board.py": "861d5989e13dc1938cbeeb7d6e045366",
+   "bini_calib.py": "18210c5b3f8d7109151da461ee3b74f8",
+   "bini_engine.py": "4f4de482c28eca01e47cff5d6380a2c2",
+   "bini_eval.py": "d44763ba4ad0465a9257bfb32cd9c990",
+   "bini_magics.py": "3c2ab7807a87e0f31fb4d889367870e2",
+   "bini_nnue.py": "e06453c8a7a9a34b1e9405b309b071c2",
+   "bini_search.py": "163cda13023d7d5aa89cc4b523c6b576",
+   "book.json": "51c97f3f4e8ab4c1801543945d749906",
+   "nnue.safetensors": "182c8fc8fb60b96fdb51f231cbe9c0e9"
+  },
+  "env": {}
+ },
+ "requested": 8,
+ "completed": 8,
+ "valid": 8,
+ "rejected": 0,
+ "reject_reasons": {},
+ "W": 0,
+ "D": 7,
+ "L": 1,
+ "terminations": {
+  "threefold_repetition": 3,
+  "checkmate": 1,
+  "fifty_moves": 2,
+  "insufficient_material": 2
+ },
+ "stats": {
+  "score": 0.4375,
+  "se": 0.0625,
+  "elo": -43.6577877700272,
+  "elo_lo": -134.95200708113003,
+  "elo_hi": 41.89414020800522,
+  "elo_pm": 88.42307364456762,
+  "pairs": 4,
+  "unpaired": 0,
+  "pentanomial": {
+   "0.0": 0,
+   "0.5": 1,
+   "1.0": 3,
+   "1.5": 0,
+   "2.0": 0
+  },
+  "openings": 4,
+  "repeated_openings": 0,
+  "se_by_pair": 0.0625,
+  "se_by_opening": 0.0625
+ },
+ "flags": 0,
+ "a_fallback": 0,
+ "b_fallback": 0,
+ "a_nnue_off": 0,
+ "b_nnue_off": 0,
+ "finished": "2026-09-10T20:12:01Z"
+}

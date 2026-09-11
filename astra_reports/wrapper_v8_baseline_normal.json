@@ -1,0 +1,163 @@
+{
+  "summary": {
+    "mode": "normal",
+    "build": "/Users/architbhardwaj/Desktop/AI Chessathon/bini_v8_ship",
+    "total": 13,
+    "passed": 13,
+    "failed": 0,
+    "import_seconds": 26.9
+  },
+  "rows": [
+    {
+      "id": "W1.cold_init",
+      "title": "import + compile inside the 90 s platform init budget",
+      "status": "PASS",
+      "seconds": 26.9,
+      "ready": true,
+      "join_s": 75.0,
+      "build_error": null
+    },
+    {
+      "id": "W1b.nnue_on",
+      "title": "the compiled engine is using the network, not the handcrafted fallback",
+      "status": "PASS",
+      "mode": "normal",
+      "engine": true,
+      "use_nnue": true
+    },
+    {
+      "id": "W2.import_stdout_clean",
+      "title": "import writes nothing to stdout",
+      "status": "PASS",
+      "captured": "''"
+    },
+    {
+      "id": "W3.selfplay_all_legal",
+      "title": "every move of a self-played game is legal",
+      "status": "PASS",
+      "plies": 80,
+      "detail": [],
+      "result": "*",
+      "seconds": 52.5
+    },
+    {
+      "id": "W4.stdout_clean_in_play",
+      "title": "get_move writes nothing to stdout during play",
+      "status": "PASS",
+      "detail": []
+    },
+    {
+      "id": "W5.clock_respected",
+      "title": "no move exceeds its own hard budget by more than 400 ms",
+      "status": "PASS",
+      "breaches": 0,
+      "detail": [],
+      "min_clock_left": 13651
+    },
+    {
+      "id": "W6.forced_move",
+      "title": "a position with one legal move returns it immediately",
+      "status": "PASS",
+      "move": "h1g2",
+      "ms": 0,
+      "legal": [
+        "h1g2"
+      ]
+    },
+    {
+      "id": "W7.no_legal_move",
+      "title": "a finished position returns the null move",
+      "status": "PASS",
+      "move": "0000"
+    },
+    {
+      "id": "W8.low_clock_legal",
+      "title": "a legal move comes back at every low clock value",
+      "status": "PASS",
+      "detail": [
+        [
+          2000,
+          "g8f6",
+          97,
+          true
+        ],
+        [
+          800,
+          "g8f6",
+          28,
+          true
+        ],
+        [
+          300,
+          "g8f6",
+          18,
+          true
+        ],
+        [
+          120,
+          "g8f6",
+          5,
+          true
+        ],
+        [
+          40,
+          "g8f6",
+          11,
+          true
+        ]
+      ]
+    },
+    {
+      "id": "W9.book_move",
+      "title": "the start position is answered from the book with a legal move",
+      "status": "PASS",
+      "move": "e2e4",
+      "start_in_book": false,
+      "book_entries": 6105,
+      "ms": 2287
+    },
+    {
+      "id": "W10.history_grows",
+      "title": "GameState accumulates a key for every earlier position",
+      "status": "PASS",
+      "key_counts": [
+        1,
+        3,
+        5,
+        7
+      ]
+    },
+    {
+      "id": "W11.failure_recovery",
+      "title": "engine exception and illegal candidate both recover to a legal move",
+      "status": "PASS",
+      "detail": [
+        [
+          "exception",
+          "g8f6",
+          true,
+          true,
+          true
+        ],
+        [
+          "illegal_candidate",
+          "g8f6",
+          true,
+          true,
+          true
+        ]
+      ]
+    },
+    {
+      "id": "W12.no_background_work",
+      "title": "no worker thread is still running between moves",
+      "status": "PASS",
+      "threads": [],
+      "note": "the platform suspends the process between moves; anything still running is wasted"
+    }
+  ],
+  "environment": {
+    "python": "3.13.2",
+    "platform": "macOS-26.0-arm64-arm-64bit-Mach-O"
+  }
+}

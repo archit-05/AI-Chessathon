@@ -1,0 +1,22 @@
+[PASS] S1.perft_vs_python_chess           perft matches python-chess on ten positions   positions=10 failures=0
+[PASS] S1b.published_counts_agree         published perft constants agree with python-chess   note=guards the test itself: a wrong constant must not be reported as an engine bug
+[PASS] S2.perft_random_games              differential perft(1,2) against python-chess on random games   positions=623 failures=0 seed=20260910
+[PASS] S3.make_unmake_restores            make/unmake restores bitboards, state and piece array   failures=0
+[PASS] S4.zobrist_incremental             incrementally maintained key equals a full recompute   failures=0
+[PASS] S5.illegal_make_intact             a rejected move leaves the caller state intact
+[PASS] S6.null_make_unmake                nested null moves restore key, side, rights and halfmove clock
+[PASS] N0.nnue_active                     the network is loaded and in use (not a silent handcrafted fallback)   use_nnue=1 hidden=1024 buckets=8 acc_dtype=<class 'numpy.int16'> acc_bound=16355
+[PASS] N1.incremental_equals_refresh      incremental accumulator and evaluation equal a full refresh   failures=0 move_classes={'quiet': 23880, 'capture': 2497, 'promo': 56, 'castle': 55, 'ep': 4} buckets_reached=[5, 6, 7]
+[PASS] N2.accumulator_range               observed accumulator magnitude stays inside the stored dtype   observed_max=3485 dtype_max=32767 declared_bound=16355 note=declared bound is a worst case; observed is what these positions actually reached
+[PASS] N3.search_state_preserved          a full search restores the board and the root accumulator   changed=[] score=-33 note=ub, ui and acc[1:] are the search working storage and are expected to be dirty
+[PASS] N4.colour_mirror_symmetry          evaluation of a colour-mirrored position agrees within 40cp   note=a trained net is only approximately symmetric; this catches orientation bugs, not noise
+[PASS] T1.terminal_beats_poisoned_tt      terminals outrank a poisoned TT entry and correction history   cases=5
+[PASS] T2.mate_normalisation              mate scores carry the correct distance at every ply
+[PASS] T3.tt_round_trip                   transposition entries survive pack/unpack, mate scores included   trials=4000 failures=0
+[PASS] T4.excluded_move_search            excluded-move search terminates and restores the exclusion slot   legal_moves=1
+[PASS] T5.reduced_feature_agreement       full and reduced-pruning searches agree on quiet positions   worst_cp=15 note=a consistency check, not a claim that selective search returns exact minimax
+[PASS] T6.abort_restores_state            a search aborted mid-tree restores the board and root accumulator   caps=[2000, 20000, 200000]
+[PASS] T7.tt_replacement                  depth-preferred replacement holds and a colliding key is never a hit   same_index=True deep_entry_survived_shallow_store=True shallow_probe_was_a_miss=True deeper_store_took_slot=True old_key_now_misses=True
+[PASS] T8.aspiration_bounds               null windows above and below the score fail on the correct side   true_score=-27
+{"label": "/root/astra/builds/bini_astra_v5", "total": 20, "passed": 20, "failed": 0, "info": 0}
+written /root/astra/astra_reports/suite_x86_bini_astra_v5.json
