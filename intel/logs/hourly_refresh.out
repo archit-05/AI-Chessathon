@@ -4808,3 +4808,25 @@ leaderboard: 334 rows
   won). Keep lost positions alive.
 
 strategy report: /Users/architbhardwaj/Desktop/AI Chessathon/intel/STRATEGY.txt
+leaderboard: 334 rows
+renamed files of JBG fam: Comeback_arc_for_PSL_God -> PSL_God_Matt_Bomer
+  1 PSL God Matt Bomer     (JBG fam) games 99 missing 0 -> PSL_God_Matt_Bomer.pgn
+  2 Miskeen                (Miskeen) games 91 missing 0 -> Miskeen.pgn
+  3 Loss Preventer         (Lightning Tree) games 120 missing 0 -> Loss_Preventer.pgn
+  4 AlphaFish              (Gladiator) games 95 missing 0 -> AlphaFish.pgn
+  5 Rataturing             (Rataturing) games 64 missing 0 -> Rataturing.pgn
+  6 BINI Alpha             (Opus Carlsen) games 98 missing 0 -> BINI_Alpha.pgn
+  7 SoberCooper            (Sobriety) games 121 missing 0 -> SoberCooper.pgn
+  8 BetaGo                 (BetaGo) games 76 missing 0 -> BetaGo.pgn
+Traceback (most recent call last):
+  File "/Users/architbhardwaj/Desktop/AI Chessathon/intel/scrape.py", line 466, in <module>
+    main()
+  File "/Users/architbhardwaj/Desktop/AI Chessathon/intel/scrape.py", line 425, in main
+    gdata = get_game(row["game"])
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/architbhardwaj/Desktop/AI Chessathon/intel/scrape.py", line 283, in get_game
+    data = parse_game(fetch(f"{BASE}/game/{gid}"), gid)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/architbhardwaj/Desktop/AI Chessathon/intel/scrape.py", line 65, in fetch
+    raise RuntimeError(f"fetch failed for {url}: {last}")
+RuntimeError: fetch failed for https://aichessathon.com/game/c6690615-c8ad-4f91-af82-13a6152135e6: <urlopen error [Errno 8] nodename nor servname provided, or not known>
