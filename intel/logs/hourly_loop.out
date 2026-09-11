@@ -248,3 +248,12 @@ Traceback (most recent call last):
     f"{cpl if cpl is None else round(cpl, 1):>5} {'' if sacpl is None else round(sacpl):>5} "
       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 TypeError: unsupported format string passed to NoneType.__format__
+committed
+=== 2026-09-11 21:41:00 refresh ===
+Traceback (most recent call last):
+  File "/Users/architbhardwaj/Desktop/AI Chessathon/intel/v5_brief.py", line 377, in <module>
+    main()
+  File "/Users/architbhardwaj/Desktop/AI Chessathon/intel/v5_brief.py", line 207, in main
+    f"{cpl if cpl is None else round(cpl, 1):>5} {'' if sacpl is None else round(sacpl):>5} "
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported format string passed to NoneType.__format__
