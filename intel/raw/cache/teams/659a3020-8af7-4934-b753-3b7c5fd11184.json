@@ -2,10 +2,10 @@
  "uuid": "659a3020-8af7-4934-b753-3b7c5fd11184",
  "bot": "AlphaFish",
  "team": "Emile Andrieu",
- "rating": 2801,
- "rank": 3,
- "record": "44-40-9",
- "rated_rounds": 98,
+ "rating": 2808,
+ "rank": 2,
+ "record": "44-42-9",
+ "rated_rounds": 101,
  "history": [
   [
    9,
@@ -398,9 +398,41 @@
   [
    106,
    2801
+  ],
+  [
+   107,
+   2814
+  ],
+  [
+   108,
+   2824
+  ],
+  [
+   109,
+   2808
   ]
  ],
  "games": [
+  {
+   "game": "01baceda-3418-491f-bac9-973a7eab918c",
+   "kind": "Rated",
+   "round": 108,
+   "colour": "White",
+   "opponent": "Lightning Tree",
+   "opponent_uuid": "c90df064-e8e8-4144-b1fd-2dd6096dd21a",
+   "verdict": "draw",
+   "opening": "Sicilian Classical"
+  },
+  {
+   "game": "1e977be9-1abf-49f3-a5c1-907d078c93ea",
+   "kind": "Rated",
+   "round": 107,
+   "colour": "Black",
+   "opponent": "Ryan Vincent",
+   "opponent_uuid": "8c22f2a5-3bce-4b66-b93a-8f4ab4318b0f",
+   "verdict": "draw",
+   "opening": "Grunfeld Defence"
+  },
   {
    "game": "606ce6c3-40b6-4c09-a232-c602066ef921",
    "kind": "Rated",
@@ -412,16 +444,6 @@
    "opening": "Sicilian Closed"
   },
   {
-   "game": "7cd95cae-ace3-4094-9681-644216f10a2f",
-   "kind": "Rated",
-   "round": 105,
-   "colour": "White",
-   "opponent": "Stonkfish",
-   "opponent_uuid": "385a6db2-1c05-46db-ae91-7218700f83b3",
-   "verdict": "draw",
-   "opening": "French Tarrasch"
-  },
-  {
    "game": "a5ca6f92-3690-40bb-b952-5ecbddc0ada7",
    "kind": "Rated",
    "round": 104,
@@ -430,6 +452,16 @@
    "opponent_uuid": "f0286356-626d-4dd2-86ab-fd6d779063cb",
    "verdict": "win",
    "opening": "Four Knights Game"
+  },
+  {
+   "game": "1592dda0-44d0-4b8c-8398-920d80e7d6e2",
+   "kind": "Rated",
+   "round": 103,
+   "colour": "Black",
+   "opponent": "Lightning Tree",
+   "opponent_uuid": "c90df064-e8e8-4144-b1fd-2dd6096dd21a",
+   "verdict": "draw",
+   "opening": "Sicilian Taimanov"
   },
   {
    "game": "d457b9ac-1b4d-456c-948e-8801b1c0105f",
@@ -1372,5 +1404,5 @@
    "opening": "Sicilian Closed"
   }
  ],
- "fetched_at": "2026-09-11T07:48:09Z"
+ "fetched_at": "2026-09-11T11:28:55Z"
 }

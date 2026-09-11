@@ -2,10 +2,10 @@
  "uuid": "0a121c61-60a7-4926-a0e7-024dffa6b185",
  "bot": "test_bot",
  "team": "pheanup",
- "rating": 2558,
- "rank": 16,
- "record": "32-39-21",
- "rated_rounds": 102,
+ "rating": 2497,
+ "rank": 24,
+ "record": "32-41-22",
+ "rated_rounds": 105,
  "history": [
   [
    5,
@@ -414,18 +414,50 @@
   [
    106,
    2558
+  ],
+  [
+   107,
+   2568
+  ],
+  [
+   108,
+   2573
+  ],
+  [
+   109,
+   2497
   ]
  ],
  "games": [
   {
-   "game": "7408d948-3fc1-46ea-9ef6-8e90be6cb3d0",
+   "game": "8a50f0e1-8b80-490c-b1d7-ea0de54007e5",
    "kind": "Rated",
-   "round": 106,
-   "colour": "White",
-   "opponent": "omega3 fish",
-   "opponent_uuid": "1daad2c3-adda-4ae6-945c-e82c4015ee72",
+   "round": 109,
+   "colour": "Black",
+   "opponent": "AI Fellows",
+   "opponent_uuid": "b574c0ea-e994-4a16-9918-7fbc989c4234",
    "verdict": "loss",
-   "opening": "Pirc Defence"
+   "opening": "Sicilian Classical"
+  },
+  {
+   "game": "19594095-f2d6-4dc0-9c6c-5b5e56b96547",
+   "kind": "Rated",
+   "round": 108,
+   "colour": "Black",
+   "opponent": "e=\u03c0=2",
+   "opponent_uuid": "3e68dab5-8421-4113-9aa0-dbe165e997f5",
+   "verdict": "draw",
+   "opening": "Caro-Kann Exchange"
+  },
+  {
+   "game": "0954e5cb-bc6e-4957-be88-ad97f132e213",
+   "kind": "Rated",
+   "round": 107,
+   "colour": "Black",
+   "opponent": "Gladiator",
+   "opponent_uuid": "429a581d-e7fc-41e3-a915-2895b01d7d0b",
+   "verdict": "draw",
+   "opening": "Caro-Kann Classical"
   },
   {
    "game": "a5dfb4eb-8bef-4b60-89a2-0ff1c9c857d1",
@@ -446,6 +478,16 @@
    "opponent_uuid": "145e2e17-6316-4b84-911b-45f3258ec8c9",
    "verdict": "loss",
    "opening": "Caro-Kann Classical"
+  },
+  {
+   "game": "2ee4602b-1ba2-4d2a-972f-5d0dd496fa2c",
+   "kind": "Rated",
+   "round": 103,
+   "colour": "White",
+   "opponent": "ms",
+   "opponent_uuid": "c3e1bc09-3d21-4279-ace0-16bb3742f5da",
+   "verdict": "draw",
+   "opening": "Sicilian Dragon"
   },
   {
    "game": "93a25edd-af19-4beb-8d83-0145cc1e2f4a",
@@ -1428,5 +1470,5 @@
    "opening": "London System"
   }
  ],
- "fetched_at": "2026-09-11T08:02:31Z"
+ "fetched_at": "2026-09-11T11:38:10Z"
 }

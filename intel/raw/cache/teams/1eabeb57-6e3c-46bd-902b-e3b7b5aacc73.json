@@ -2,10 +2,10 @@
  "uuid": "1eabeb57-6e3c-46bd-902b-e3b7b5aacc73",
  "bot": "dog",
  "team": "mangodogo",
- "rating": 2181,
- "rank": 62,
- "record": "45-19-37",
- "rated_rounds": 106,
+ "rating": 2175,
+ "rank": 64,
+ "record": "45-21-38",
+ "rated_rounds": 109,
  "history": [
   [
    1,
@@ -430,18 +430,50 @@
   [
    106,
    2181
+  ],
+  [
+   107,
+   2179
+  ],
+  [
+   108,
+   2179
+  ],
+  [
+   109,
+   2175
   ]
  ],
  "games": [
   {
-   "game": "62594e58-6fc0-48d2-8293-c5af55fb0750",
+   "game": "04566cc9-0466-4b7c-aca9-c728ff38d848",
    "kind": "Rated",
-   "round": 106,
+   "round": 109,
+   "colour": "White",
+   "opponent": "Queen Mary's Gambit",
+   "opponent_uuid": "70a2953e-ca6b-470e-b9d7-562e9e800dc9",
+   "verdict": "loss",
+   "opening": "Italian Game"
+  },
+  {
+   "game": "b9387e49-5f6c-4e4c-b51c-60817c1138bf",
+   "kind": "Rated",
+   "round": 108,
+   "colour": "White",
+   "opponent": "ChessML",
+   "opponent_uuid": "e152b64e-0c6d-4341-b02b-09c09b098f8c",
+   "verdict": "draw",
+   "opening": "Nimzo-Indian Defence"
+  },
+  {
+   "game": "271bc807-8a60-4391-a29a-1b259efcb92c",
+   "kind": "Rated",
+   "round": 107,
    "colour": "Black",
-   "opponent": "zachFree-zone_sponsorPhanty",
-   "opponent_uuid": "09c7947c-52dc-434b-81ab-20959b6b0d62",
-   "verdict": "win",
-   "opening": "Petroff Defence"
+   "opponent": "pgn",
+   "opponent_uuid": "8b738da9-e5bb-4122-89ce-0caf6466ba80",
+   "verdict": "draw",
+   "opening": "London System"
   },
   {
    "game": "5a56c98a-2881-4ada-b4c0-24ce5dd2fcd4",
@@ -462,6 +494,16 @@
    "opponent_uuid": "d5a49e55-5b7b-4794-9c4b-40fc286d6e35",
    "verdict": "draw",
    "opening": "French Tarrasch"
+  },
+  {
+   "game": "14b8861d-e44f-4aff-b410-0a4f4354f03f",
+   "kind": "Rated",
+   "round": 103,
+   "colour": "White",
+   "opponent": "LeetBeaters",
+   "opponent_uuid": "683eb648-7443-471d-a54e-daa6f51d042c",
+   "verdict": "loss",
+   "opening": "Reti Opening"
   },
   {
    "game": "dbca298f-9f25-4f27-b4fe-970ec6e967c5",
@@ -1484,5 +1526,5 @@
    "opening": "Scotch Game"
   }
  ],
- "fetched_at": "2026-09-11T08:04:17Z"
+ "fetched_at": "2026-09-11T11:35:11Z"
 }

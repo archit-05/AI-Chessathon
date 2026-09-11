@@ -2,10 +2,10 @@
  "uuid": "4347a2f7-a4d4-4cca-9541-51fd69f6ba56",
  "bot": "Sage",
  "team": "The Good Boys",
- "rating": 2322,
- "rank": 40,
- "record": "41-18-34",
- "rated_rounds": 96,
+ "rating": 2302,
+ "rank": 49,
+ "record": "42-19-36",
+ "rated_rounds": 100,
  "history": [
   [
    10,
@@ -390,18 +390,54 @@
   [
    105,
    2322
+  ],
+  [
+   106,
+   2465
+  ],
+  [
+   107,
+   2340
+  ],
+  [
+   108,
+   2370
+  ],
+  [
+   109,
+   2302
   ]
  ],
  "games": [
   {
-   "game": "69cc79b7-b3e1-4438-8de3-7dc05143e0bf",
+   "game": "8fdcfef2-f1e0-4b98-9aa0-147a7eb31b5c",
    "kind": "Rated",
-   "round": 106,
+   "round": 109,
+   "colour": "White",
+   "opponent": "checkers",
+   "opponent_uuid": "9e5e613a-ca80-4fd9-aa68-76f184ef7bac",
+   "verdict": "loss",
+   "opening": "London System"
+  },
+  {
+   "game": "27a1b84c-6d41-444f-bb1b-45bd989161a3",
+   "kind": "Rated",
+   "round": 108,
    "colour": "Black",
-   "opponent": "Kirkification",
-   "opponent_uuid": "ea5d87d0-f5b2-435e-b524-e6292de6cebb",
-   "verdict": "live",
-   "opening": "French Tarrasch"
+   "opponent": "Neural Gambit",
+   "opponent_uuid": "2d7385e9-dffa-4216-aeca-dd844e18c7db",
+   "verdict": "draw",
+   "opening": "King's Indian Classical"
+  },
+  {
+   "game": "747a1580-75ca-426c-b762-010b4a033905",
+   "kind": "Rated",
+   "round": 107,
+   "colour": "White",
+   "opponent": "AI Fellows",
+   "opponent_uuid": "b574c0ea-e994-4a16-9918-7fbc989c4234",
+   "verdict": "loss",
+   "opening": "English Symmetrical"
   },
   {
    "game": "c63d9968-e8ea-450e-934e-a2af2f818dee",
@@ -422,6 +458,16 @@
    "opponent_uuid": "4f71e103-0e8b-4287-af80-6d8b438eed01",
    "verdict": "draw",
    "opening": "Nimzo-Indian Defence"
+  },
+  {
+   "game": "d1868861-ef83-4280-a74f-56506127c47a",
+   "kind": "Rated",
+   "round": 103,
+   "colour": "Black",
+   "opponent": "The Pershore Gambit",
+   "opponent_uuid": "9a6b1efe-c8f3-449d-8255-d973ca3104bf",
+   "verdict": "win",
+   "opening": "Two Knights Defence"
   },
   {
    "game": "07c45142-db81-48c6-8662-b21dbfc50cdc",
@@ -1354,5 +1400,5 @@
    "opening": "Reti Opening"
   }
  ],
- "fetched_at": "2026-09-11T07:11:16Z"
+ "fetched_at": "2026-09-11T11:47:21Z"
 }

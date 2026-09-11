@@ -2,10 +2,10 @@
  "uuid": "4237d690-d43f-4933-8fc0-f2189234ad37",
  "bot": "Latimer",
  "team": "Kaamuli",
- "rating": 1905,
- "rank": 114,
- "record": "37-10-33",
- "rated_rounds": 80,
+ "rating": 1889,
+ "rank": 123,
+ "record": "38-10-35",
+ "rated_rounds": 83,
  "history": [
   [
    27,
@@ -326,18 +326,50 @@
   [
    106,
    1905
+  ],
+  [
+   107,
+   1914
+  ],
+  [
+   108,
+   1903
+  ],
+  [
+   109,
+   1889
   ]
  ],
  "games": [
   {
-   "game": "adb13e8b-0eb7-472d-9bea-abb422e30424",
+   "game": "e8fd7410-1e2b-4981-a01c-f120d74d687f",
    "kind": "Rated",
-   "round": 106,
+   "round": 109,
+   "colour": "White",
+   "opponent": "Skill Issue",
+   "opponent_uuid": "e1211e74-ce5e-4528-8064-27b219991585",
+   "verdict": "loss",
+   "opening": "Petroff Defence"
+  },
+  {
+   "game": "73646b64-bf92-4fbc-b0be-b33b5684a07f",
+   "kind": "Rated",
+   "round": 108,
    "colour": "Black",
-   "opponent": "Zugzwang_123",
-   "opponent_uuid": "f26d8a14-2c8e-468e-96d0-e5157eb6bcc1",
-   "verdict": "draw",
-   "opening": "Italian Game"
+   "opponent": "2 Pawns and a Queen",
+   "opponent_uuid": "6ff2c372-16f2-4690-9598-19be64a46421",
+   "verdict": "loss",
+   "opening": "Sicilian Closed"
+  },
+  {
+   "game": "fee5a370-318d-4319-85e7-feefc03ccab4",
+   "kind": "Rated",
+   "round": 107,
+   "colour": "White",
+   "opponent": "Mate Me Maybe",
+   "opponent_uuid": "73a2c216-4a33-4e98-826e-e019c4788783",
+   "verdict": "win",
+   "opening": "Sicilian Najdorf"
   },
   {
    "game": "a8af3572-def2-4563-8902-6758e4e05f11",
@@ -358,6 +390,16 @@
    "opponent_uuid": "5973fa8f-2ce2-4b89-b56e-5ebcbfdcdd1c",
    "verdict": "loss",
    "opening": "London System"
+  },
+  {
+   "game": "aebe9a40-0f87-4eb2-b43d-da7115a9bcf1",
+   "kind": "Rated",
+   "round": 103,
+   "colour": "White",
+   "opponent": "MeshPotato",
+   "opponent_uuid": "2a6799a8-ccc7-45d6-a342-701ce3b923b6",
+   "verdict": "win",
+   "opening": "English Symmetrical"
   },
   {
    "game": "a9e54d90-9f53-4311-8360-69b6b3a3c172",
@@ -1120,5 +1162,5 @@
    "opening": "Caro-Kann Exchange"
   }
  ],
- "fetched_at": "2026-09-11T07:56:44Z"
+ "fetched_at": "2026-09-11T11:36:45Z"
 }

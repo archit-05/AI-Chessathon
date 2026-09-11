@@ -2,10 +2,10 @@
  "uuid": "c90df064-e8e8-4144-b1fd-2dd6096dd21a",
  "bot": "Loss Preventer",
  "team": "Lightning Tree",
- "rating": 2820,
- "rank": 3,
- "record": "39-38-25",
- "rated_rounds": 105,
+ "rating": 2736,
+ "rank": 5,
+ "record": "39-40-26",
+ "rated_rounds": 109,
  "history": [
   [
    1,
@@ -426,18 +426,54 @@
   [
    105,
    2820
+  ],
+  [
+   106,
+   2830
+  ],
+  [
+   107,
+   2826
+  ],
+  [
+   108,
+   2835
+  ],
+  [
+   109,
+   2736
   ]
  ],
  "games": [
   {
-   "game": "076efa93-790a-46bf-bc07-34caa9ae1eb5",
+   "game": "a3cf2e09-fafb-45cd-848a-31ce408e5f8f",
    "kind": "Rated",
-   "round": 106,
+   "round": 109,
    "colour": "White",
-   "opponent": "Ryan Vincent",
-   "opponent_uuid": "8c22f2a5-3bce-4b66-b93a-8f4ab4318b0f",
+   "opponent": "ms",
+   "opponent_uuid": "c3e1bc09-3d21-4279-ace0-16bb3742f5da",
+   "verdict": "loss",
+   "opening": "Four Knights Game"
+  },
+  {
+   "game": "01baceda-3418-491f-bac9-973a7eab918c",
+   "kind": "Rated",
+   "round": 108,
+   "colour": "Black",
+   "opponent": "Emile Andrieu",
+   "opponent_uuid": "659a3020-8af7-4934-b753-3b7c5fd11184",
    "verdict": "draw",
-   "opening": "Sicilian Taimanov"
+   "opening": "Sicilian Classical"
+  },
+  {
+   "game": "a8ea5445-92a6-4910-924f-045feb7168ca",
+   "kind": "Rated",
+   "round": 107,
+   "colour": "Black",
+   "opponent": "Gijs Smit",
+   "opponent_uuid": "3f0e0e44-cdce-485f-b5b6-3691e34f9f44",
+   "verdict": "draw",
+   "opening": "Scotch Game"
   },
   {
    "game": "f0e55817-065e-4342-bc51-dfa885c32274",
@@ -458,6 +494,16 @@
    "opponent_uuid": "b9cbed87-8a3a-437d-9333-1447f68200d1",
    "verdict": "draw",
    "opening": "Queen's Indian Defence"
+  },
+  {
+   "game": "1592dda0-44d0-4b8c-8398-920d80e7d6e2",
+   "kind": "Rated",
+   "round": 103,
+   "colour": "White",
+   "opponent": "Emile Andrieu",
+   "opponent_uuid": "659a3020-8af7-4934-b753-3b7c5fd11184",
+   "verdict": "draw",
+   "opening": "Sicilian Taimanov"
   },
   {
    "game": "e58bf13a-933a-4630-a64b-77706b24c045",
@@ -1470,5 +1516,5 @@
    "opening": "Reti Opening"
   }
  ],
- "fetched_at": "2026-09-11T07:44:03Z"
+ "fetched_at": "2026-09-11T11:54:50Z"
 }

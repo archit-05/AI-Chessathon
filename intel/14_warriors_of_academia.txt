@@ -1,0 +1,123 @@
+warriors of academia  (team: Binvengers)  -  rank 14, rating 2597
+=================================================================
+Generated 2026-09-11 13:06 from 100 rated games (rounds 1-109, 47 of 107 with evaluations so far)
+  plus 1 played to a result but voided by the site later (R7 3fold): they count for move quality,
+  clocks and draw behaviour, not for results; 6 game(s) that never had a result ignored: R6, R9,
+  R13, R15, R16, R19.
+
+IDENTITY
+  Bot warriors of academia; team Binvengers; university Mixed; members not shown on the site.
+  Rank 14 of 465, rating 2597 (provisional: fewer than six games on the current build, i.e. a new
+    upload in the last five rounds), record 44-22-35 in 101 rated games.
+  Rating trajectory: entered R1 at 1575, peak 2597 (R109), now 2597 (R109).
+  Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
+    upload): R31 +102 -> 1700 (win vs Pershore-8); R54 -118 -> 1678 (loss vs MateX); R61 +112 ->
+    1957 (win vs Chimera); R106 +135 -> 2428 (no game that round)
+
+RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
+  vs top 10 : 0-0-2 (0%) over 2 games
+  vs 11-20  : 0-0-2 (0%) over 2 games
+  vs 21-50  : 6-9-11 (40%) over 26 games
+  vs rest   : 37-13-20 (62%) over 70 games
+  Games vs top-10 teams:
+    R22  black vs Astral             (#7 ) loss checkmate             London System
+    R47  black vs BINI Alpha         (#3 ) loss checkmate             Queen's Indian Defence
+  Games vs ranks 11-20: R55 loss vs e=π=2 (#19, checkmate); R101 loss vs RMFE (#20, checkmate)
+
+MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
+  positions inside +-800 only)
+  All own moves: n 2123, mean loss 24.4 cp, median 6 cp, blunders (>= 200 cp) 23 = 1.1% (11 of them
+    from level or better positions)
+  own moves 1-15    : n  705, mean 22.7 cp, median 10 cp, blunders 0.7%
+  own moves 16-40   : n  966, mean 27.3 cp, median 7 cp, blunders 1.2%
+  own moves 41+     : n  452, mean 20.7 cp, median 0 cp, blunders 1.3%
+  as white          : n 1148, mean 20.4 cp, median 3 cp, blunders 0.9%
+  as black          : n  975, mean 29.1 cp, median 11 cp, blunders 1.3%
+  Worst moves: R44 111.Kc7 (+9997 -> +0); R30 24.a4 (-65 -> -505); R17 56.Kc4 (+128 -> -260)
+  Site's own review (Stockfish 16, depth 16): mean ACPL 33.2 over 100 games, accuracy 95.2%; its
+    tags on their moves: 17 blunder, 30 mistake, 7 miss, 142 inaccuracy of 2379
+
+TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
+  Per move: mean 2.05 s, median 1.99 s, quartiles 1.05-3.03 s, max 11.2 s; instant (<50 ms) moves
+    8.0%
+  Clock at the end: mean 29.0 s, minimum 7.5 s; games under 10 s: 9, under 5 s: 3 (R34, R44, R50)
+  By clock before the move: >60s 3.0 s (n 2514), 30-60s 1.9 s (n 1770), 10-30s 0.9 s (n 1407), <10s
+    0.5 s (n 226)
+  By own-move number: 1-15 2.9 s, 16-40 2.5 s, 41+ 0.9 s; when +300 or better 1.5 s, level 2.6 s,
+    -300 or worse 1.7 s
+  Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 4.0%,
+    quartiles 2.8-5.6%
+  After a >100 cp swing on the opponent's move: 1.9 s (n 213) vs 2.1 s otherwise; on moves that
+    themselves swing >100 cp: 1.9 s (n 196) vs 2.1 s
+  Exploitable: spends a fixed ~4% of the remaining clock per move, so its thinking time shrinks as
+    the game goes on; gets into time trouble
+
+DRAW BEHAVIOUR
+  23 draws in 101 played games (23.0%): threefold_repetition 15, insufficient_material 5,
+    fifty_moves 2, stalemate 1; 1 of these were voided by the site afterwards and no longer count on
+    the ladder
+  Repetition while ahead (> +150 at the final position): 0
+  Repetition while behind (< -150): 1 -> R7 at -317; level repetitions: 3
+  Fifty-move draws while ahead: 1 (R71 at +3584); while behind: 0; other draws while ahead: 0
+
+ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
+  Reached +300 or better in 23 games, failed to win 2:
+    R2 vs ChessML peak +351, draw by insufficient_material: traded down into a dead draw
+    R44 vs Pershore-8 peak +9997, draw by threefold_repetition: threw it away: move 111.Kc7 (+9997
+      -> +0)
+  Reached -300 or worse in 23 games, escaped with a half point or more in 4:
+    R2 vs ChessML low -396, draw by insufficient_material: opponent traded into insufficient
+      material
+    R35 vs HAL9000 low -756, win by checkmate: opponent collapsed: Rh7 at ply 104 lost 1000 cp
+    R71 vs FoidMaxxed low -3371, draw by fifty_moves: opponent could not convert inside fifty moves
+    R7 vs Magnus Claudeson low -375, draw by threefold_repetition: opponent allowed a repetition
+
+OPENINGS (curated start positions assigned by the platform)
+  By family: Sicilian 13-5-3 (74%); French 2-5-6 (35%); Ruy Lopez 3-4-4 (45%); English 4-1-2 (64%);
+    Caro-Kann 3-1-3 (50%); Petroff 3-1-2 (58%); Queen's Indian 2-1-2 (50%); Reti 1-2-2 (40%); Two
+    Knights 3-0-1 (75%); London 0-1-3 (12%); Queen's Gambit 2-0-1 (67%); Nimzo-Indian 2-1-0 (83%);
+    Scotch 2-1-0 (83%); Catalan 1-0-1 (50%); King's Indian 0-0-2 (0%); Italian 1-0-1 (50%); Dutch
+    1-0-0 (100%); Slav 0-0-1 (0%); Pirc 0-0-1 (0%)
+  Positions seen more than once: Ruy Lopez, Closed x11 3-4-4 (45%); English Symmetrical x7 4-1-2
+    (64%); French Winawer x7 2-0-5 (29%); Petroff Defence x6 3-1-2 (58%); Caro-Kann Classical x5
+    2-1-2 (50%); Queen's Indian Defence x5 2-1-2 (50%); Reti Opening x5 1-2-2 (40%); Sicilian Closed
+    x5 3-1-1 (70%); Sicilian Sveshnikov x5 3-1-1 (70%); London System x4 0-1-3 (12%); Sicilian
+    Classical x4 2-1-1 (62%); Two Knights Defence x4 3-0-1 (75%); Nimzo-Indian Defence x3 2-1-0
+    (83%); Scotch Game x3 2-1-0 (83%); Sicilian Najdorf x3 2-1-0 (83%); Caro-Kann Exchange x2 1-0-1
+    (50%); Catalan Opening x2 1-0-1 (50%); French Advance x2 0-2-0 (50%); French Classical x2 0-2-0
+    (50%); French Tarrasch x2 0-1-1 (25%); Italian Game x2 1-0-1 (50%); King's Indian Classical x2
+    0-0-2 (0%); Queen's Gambit Accepted x2 1-0-1 (50%); Sicilian Dragon x2 2-0-0 (100%); Sicilian
+    Taimanov x2 1-1-0 (75%); 4 positions seen once (2 won, 0 drawn, 2 lost).
+  Underperforms in: London 0-1-3 (12%)
+  First six own moves: 51% match Stockfish's first choice (moves 7-20: 54%), mean loss 18 cp, 0%
+    played instantly; first clear divergence (loss >= 20 cp) at own move 4.2 on average.
+
+STYLE
+  Captures on 19.7% of own moves, checks on 14.3%; average game 117 plies (59 own moves), longest
+    263 plies (R50)
+  Wins: 43 (43 by checkmate, 0 by opponent failure); losses: 35 (35 by checkmate, 0 by own failure)
+  Sacrifices (gave >= 2 pawns of material without losing eval, then recovered): 12 -> R1 2.Nxe4, R2
+    31.Nd2, R2 89.Rxf6, R8 3.Qd3, R39 4.e5, R41 12.fxe5
+  When ahead (> +150) material leaves the board at 0.82 pawns per own move (level: 1.16); capture
+    rate 19.6% vs 21.8% level -> no deliberate simplification
+
+LIKELY ENGINE PROFILE
+  Mid-strength engine (mean loss 24.4 cp): plausible python alpha-beta at depth 4-7, hand-crafted
+  evaluation. Confidence high.
+  Time allocation is a fixed share of the remaining clock (~4% per move; median 1.99 s, max 11.2 s),
+  so depth shrinks as the game goes on and no extra time goes to critical positions (1.9 s after a
+  >100 cp swing vs 2.1 s otherwise).
+  Poor clock awareness: 3 of 100 games went under 5 s.
+
+HOW TO PLAY THEM
+  1. They only repeat when worse (1 games), so when ahead avoid any repetition and keep pieces on;
+  do not expect gifts.
+  2. Time pressure works: 3 games dipped under 5 s (R34, R44, R50). Keep games long and complicated;
+  their play under 10 s averages 0.5 s a move.
+  3. No extra time goes to critical positions (1.9 s after a big swing vs 2.1 s otherwise): our
+  search can spend several times their budget on the few moves that decide a game, so prefer
+  positions where one precise move matters over long manoeuvring.
+  4. Tactics work: 11 blunders (>= 200 cp) came from level or better positions, so they can be
+  out-calculated. Keep the position sharp.
+  5. Opening families where they score badly: London (0-1-3 (12%)). Nothing to choose here
+  (positions are assigned), but expect our best chances there.

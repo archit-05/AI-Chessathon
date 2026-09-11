@@ -2,10 +2,10 @@
  "uuid": "0ad2d3da-9db9-4292-adf2-cc15bd1591b0",
  "bot": "Bot Knighty Night",
  "team": "Nighty Knight",
- "rating": 1172,
- "rank": 423,
- "record": "27-18-35",
- "rated_rounds": 81,
+ "rating": 1163,
+ "rank": 430,
+ "record": "28-18-37",
+ "rated_rounds": 84,
  "history": [
   [
    26,
@@ -330,18 +330,50 @@
   [
    106,
    1172
+  ],
+  [
+   107,
+   1170
+  ],
+  [
+   108,
+   1172
+  ],
+  [
+   109,
+   1163
   ]
  ],
  "games": [
   {
-   "game": "3a003b88-252b-4f74-9b89-2b15d5d0a220",
+   "game": "7b772b1f-090f-44e0-824e-4f9e521fcd90",
    "kind": "Rated",
-   "round": 106,
+   "round": 109,
    "colour": "White",
-   "opponent": "_r.rf_",
-   "opponent_uuid": "bebd63ff-cc0e-4d57-8565-f42f2587b31a",
-   "verdict": "draw",
-   "opening": "Nimzo-Indian Defence"
+   "opponent": "Zack",
+   "opponent_uuid": "9a5a6b18-36bb-46c6-a5a6-dac002c242a5",
+   "verdict": "loss",
+   "opening": "Semi-Slav Defence"
+  },
+  {
+   "game": "ca157018-1ccd-4056-a2c4-56b874675b37",
+   "kind": "Rated",
+   "round": 108,
+   "colour": "Black",
+   "opponent": "reflex",
+   "opponent_uuid": "0cf13235-e3a6-40c8-bdfe-26ea9a56706e",
+   "verdict": "win",
+   "opening": "Petroff Defence"
+  },
+  {
+   "game": "57297971-14bf-4a00-a291-0c412263840d",
+   "kind": "Rated",
+   "round": 107,
+   "colour": "Black",
+   "opponent": "stockfish111",
+   "opponent_uuid": "3d9f5b59-a569-4270-94ac-57aa82f95a31",
+   "verdict": "loss",
+   "opening": "Reti Opening"
   },
   {
    "game": "bdb0a8e9-3895-4049-96d3-a78437119c18",
@@ -362,6 +394,16 @@
    "opponent_uuid": "31c5f5ea-78a2-4fea-8910-596530f5a153",
    "verdict": "loss",
    "opening": "Petroff Defence"
+  },
+  {
+   "game": "29b14596-2996-4786-8f94-32981f991e55",
+   "kind": "Rated",
+   "round": 103,
+   "colour": "Black",
+   "opponent": "Fried Liver Defence",
+   "opponent_uuid": "7bc75a64-6091-44e1-8f01-64c3ef2bbd2c",
+   "verdict": "win",
+   "opening": "French Tarrasch"
   },
   {
    "game": "c5a98317-858a-49ab-8637-9caf8cbe8d10",
@@ -1134,5 +1176,5 @@
    "opening": "Dutch Stonewall"
   }
  ],
- "fetched_at": "2026-09-11T07:58:12Z"
+ "fetched_at": "2026-09-11T11:42:22Z"
 }
