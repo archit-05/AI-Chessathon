@@ -1,0 +1,119 @@
+Knight you will remember  (team: Imperial Knights)  -  rank 15, rating 1802
+===========================================================================
+Generated 2026-09-11 14:43 from 103 rated games (rounds 1-114, 42 of 112 with evaluations so far); 9
+  game(s) that never had a result ignored: R4, R5, R6, R8, R24, R25, R26, R27, R31.
+
+IDENTITY
+  Bot Knight you will remember; team Imperial Knights; university Mixed; members not shown on the
+    site.
+  Rank 15 of 334, rating 1802, record 41-19-44 in 1 rated games.
+  Rating trajectory: entered R1 at 1575, peak 1914 (R37), now 1791 (R109).
+  Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
+    upload): R10 +101 -> 1492 (win vs Cagnus_Marlsen); R32 -111 -> 1668 (loss vs Mesh Potato)
+
+RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
+  vs top 10 : 5-1-2 (69%) over 8 games
+  vs 11-20  : 2-0-2 (50%) over 4 games
+  vs 21-50  : 2-6-6 (36%) over 14 games
+  vs rest   : 31-12-34 (48%) over 77 games
+  Games vs top-10 teams:
+    R32  white vs Mesh Potato        (#10) loss checkmate             Sicilian Taimanov
+    R50  white vs Sirloin v3         (#8 ) loss checkmate             Caro-Kann Classical
+    R67  white vs Sirloin v3         (#8 ) win  checkmate             Ruy Lopez, Closed
+    R70  black vs The Castle Gambit  (#1 ) win  checkmate             Sicilian Sveshnikov
+    R81  white vs keep_kann_and_caro_on (#9 ) win  checkmate             Two Knights Defence
+    R87  black vs keep_kann_and_caro_on (#9 ) win  checkmate             Sicilian Closed
+    R92  white vs SaucyBeans         (#3 ) win  checkmate             Sicilian Dragon
+    R108 black vs keep_kann_and_caro_on (#9 ) draw threefold_repetition  Ruy Lopez, Closed
+  Games vs ranks 11-20: R36 win vs Vengeance (#11, checkmate); R45 win vs DegreeGambit (#17,
+    checkmate); R62 loss vs The Magician (#20, checkmate); R78 loss vs The Magician (#20, checkmate)
+
+MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
+  positions inside +-800 only)
+  All own moves: n 1744, mean loss 36.1 cp, median 10 cp, blunders (>= 200 cp) 43 = 2.5% (20 of them
+    from level or better positions)
+  own moves 1-15    : n  615, mean 36.4 cp, median 14 cp, blunders 2.1%
+  own moves 16-40   : n  750, mean 41.1 cp, median 13 cp, blunders 3.1%
+  own moves 41+     : n  379, mean 25.7 cp, median 0 cp, blunders 1.8%
+  as white          : n  776, mean 30.5 cp, median 10 cp, blunders 1.7%
+  as black          : n  968, mean 40.5 cp, median 11 cp, blunders 3.1%
+  Worst moves: R43 40.Qf2 (-192 -> -961); R15 21.e6 (+490 -> -133); R19 30.Ra8 (+161 -> -347)
+  Site's own review (Stockfish 16, depth 16): mean ACPL 41.0 over 103 games, accuracy 92.9%; its
+    tags on their moves: 43 blunder, 45 mistake, 3 miss, 162 inaccuracy of 2126
+
+TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
+  Per move: mean 2.08 s, median 2.06 s, quartiles 0.57-3.57 s, max 4.5 s; instant (<50 ms) moves
+    4.5%
+  Clock at the end: mean 22.3 s, minimum 10.8 s; games under 10 s: 0, under 5 s: 0
+  By clock before the move: >60s 3.7 s (n 1921), 30-60s 2.9 s (n 1136), 10-30s 0.8 s (n 3298), <10s
+    n/a s (n 0)
+  By own-move number: 1-15 3.9 s, 16-40 2.5 s, 41+ 0.6 s; when +300 or better 1.7 s, level 2.7 s,
+    -300 or worse 1.9 s
+  Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 5.1%,
+    quartiles 4.5-6.6%
+  After a >100 cp swing on the opponent's move: 2.2 s (n 223) vs 2.2 s otherwise; on moves that
+    themselves swing >100 cp: 2.2 s (n 209) vs 2.3 s
+  Exploitable: spends a fixed ~5% of the remaining clock per move, so its thinking time shrinks as
+    the game goes on
+
+DRAW BEHAVIOUR
+  19 draws in 103 played games (18.0%): threefold_repetition 11, fifty_moves 8; 1 of them vs top-10
+    teams
+  Repetition while ahead (> +150 at the final position): 0
+  Repetition while behind (< -150): 0; level repetitions: 1
+
+ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
+  Reached +300 or better in 20 games, failed to win 0.
+  Reached -300 or worse in 24 games, escaped with a half point or more in 3:
+    R1 vs Defense low -1174, win by checkmate: opponent collapsed: Rxe8 at ply 83 lost 1000 cp
+    R15 vs Dr. DrunkenstAIn low -378, win by checkmate: opponent collapsed: Kb3 at ply 95 lost 1000
+      cp
+    R19 vs Naveen Ragav low -434, win by checkmate: opponent collapsed: Kh6 at ply 90 lost 1000 cp
+
+OPENINGS (curated start positions assigned by the platform)
+  By family: Sicilian 10-7-4 (64%); French 5-1-3 (61%); Petroff 2-1-5 (31%); London 2-1-5 (31%);
+    English 0-1-6 (7%); King's Indian 2-1-3 (42%); Ruy Lopez 4-2-0 (83%); Queen's Gambit 1-0-4
+    (20%); Caro-Kann 2-0-3 (40%); Italian 4-0-1 (80%); Dutch 2-0-1 (67%); Reti 1-1-1 (50%); Four
+    Knights 1-2-0 (67%); Two Knights 1-1-1 (50%); Nimzo-Indian 0-1-2 (17%); Pirc 1-0-1 (50%); Scotch
+    0-0-2 (0%); Grunfeld 1-0-1 (50%); Queen's Indian 1-0-1 (50%)
+  Positions seen more than once: London System x8 2-1-5 (31%); Petroff Defence x8 2-1-5 (31%);
+    English Symmetrical x7 0-1-6 (7%); Sicilian Closed x7 5-1-1 (79%); King's Indian Classical x6
+    2-1-3 (42%); Ruy Lopez, Closed x6 4-2-0 (83%); Italian Game x5 4-0-1 (80%); French Classical x4
+    2-1-1 (62%); Queen's Gambit Accepted x4 1-0-3 (25%); Sicilian Dragon x4 1-3-0 (62%); Caro-Kann
+    Classical x3 2-0-1 (67%); Dutch Stonewall x3 2-0-1 (67%); Four Knights Game x3 1-2-0 (67%);
+    French Tarrasch x3 2-0-1 (67%); Nimzo-Indian Defence x3 0-1-2 (17%); Reti Opening x3 1-1-1
+    (50%); Sicilian Sveshnikov x3 2-1-0 (83%); Sicilian Taimanov x3 0-0-3 (0%); Two Knights Defence
+    x3 1-1-1 (50%); Caro-Kann Exchange x2 0-0-2 (0%); Grunfeld Defence x2 1-0-1 (50%); Pirc Defence
+    x2 1-0-1 (50%); Queen's Indian Defence x2 1-0-1 (50%); Scotch Game x2 0-0-2 (0%); Sicilian
+    Classical x2 2-0-0 (100%); Sicilian Najdorf x2 0-2-0 (50%); 3 positions seen once (1 won, 0
+    drawn, 2 lost).
+  Underperforms in: Queen's Gambit 1-0-4 (20%), English 0-1-6 (7%), Nimzo-Indian 0-1-2 (17%)
+  First six own moves: 40% match Stockfish's first choice (moves 7-20: 48%), mean loss 29.6 cp, 0%
+    played instantly; first clear divergence (loss >= 20 cp) at own move 2.6 on average.
+
+STYLE
+  Captures on 20.4% of own moves, checks on 7.5%; average game 123 plies (62 own moves), longest 353
+    plies (R59)
+  Wins: 40 (40 by checkmate, 0 by opponent failure); losses: 44 (44 by checkmate, 0 by own failure)
+  Sacrifices (gave >= 2 pawns of material without losing eval, then recovered): 4 -> R19 28.Nxd5,
+    R29 6.bxc6, R38 20.Rg4, R48 14.Nxf4
+  When ahead (> +150) material leaves the board at 0.95 pawns per own move (level: 1.09); capture
+    rate 25.5% vs 20.8% level -> no deliberate simplification
+
+LIKELY ENGINE PROFILE
+  Shallow or noisy engine (mean loss 36.1 cp, blunder rate 2.5%). Confidence high.
+  Time allocation is a fixed share of the remaining clock (~5% per move; median 2.06 s, max 4.5 s),
+  so depth shrinks as the game goes on and no extra time goes to critical positions (2.2 s after a
+  >100 cp swing vs 2.2 s otherwise).
+
+HOW TO PLAY THEM
+  1. They convert (20 of 20 won positions turned into wins): do not rely on swindles; the game is
+  decided before -300.
+  2. No extra time goes to critical positions (2.2 s after a big swing vs 2.2 s otherwise): our
+  search can spend several times their budget on the few moves that decide a game, so prefer
+  positions where one precise move matters over long manoeuvring.
+  3. Tactics work: 20 blunders (>= 200 cp) came from level or better positions, so they can be
+  out-calculated. Keep the position sharp.
+  4. Opening families where they score badly: Queen's Gambit (1-0-4 (20%)), English (0-1-6 (7%)),
+  Nimzo-Indian (0-1-2 (17%)). Nothing to choose here (positions are assigned), but expect our best
+  chances there.

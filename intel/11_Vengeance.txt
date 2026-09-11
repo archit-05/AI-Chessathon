@@ -1,0 +1,121 @@
+Vengeance  (team: Waterside Research)  -  rank 11, rating 2027
+==============================================================
+Generated 2026-09-11 14:43 from 107 rated games (rounds 1-114, 47 of 112 with evaluations so far)
+  plus 2 played to a result but voided by the site later (R8 3fold, R17 3fold): they count for move
+  quality, clocks and draw behaviour, not for results; 3 game(s) that never had a result ignored:
+  R19, R28, R31.
+
+IDENTITY
+  Bot Vengeance; team Waterside Research; university Durham; members not shown on the site.
+  Rank 11 of 334, rating 2027, record 40-25-42 in 1 rated games.
+  Rating trajectory: entered R1 at 1571, peak 2024 (R100), now 2007 (R109).
+  Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
+    upload): R9 +112 -> 1818 (win vs apt install stockfish); R24 +108 -> 1693 (win vs TheROOK)
+
+RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
+  vs top 10 : 1-0-0 (100%) over 1 games
+  vs 11-20  : 0-0-2 (0%) over 2 games
+  vs 21-50  : 7-7-9 (46%) over 23 games
+  vs rest   : 31-18-32 (49%) over 81 games
+  Games vs top-10 teams:
+    R68  white vs stockfish out of water (#6 ) win  checkmate             Ruy Lopez, Closed
+  Games vs ranks 11-20: R23 loss vs Magnus Claudes (#16, checkmate); R36 loss vs Knight you wil
+    (#15, checkmate)
+
+MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
+  positions inside +-800 only)
+  All own moves: n 2844, mean loss 22.0 cp, median 4 cp, blunders (>= 200 cp) 35 = 1.2% (26 of them
+    from level or better positions)
+  own moves 1-15    : n  695, mean 20.4 cp, median 8 cp, blunders 0.4%
+  own moves 16-40   : n 1078, mean 23.6 cp, median 8 cp, blunders 1.1%
+  own moves 41+     : n 1071, mean 21.5 cp, median 0 cp, blunders 1.9%
+  as white          : n 1477, mean 22.4 cp, median 6 cp, blunders 1.2%
+  as black          : n 1367, mean 21.5 cp, median 3 cp, blunders 1.2%
+  Worst moves: R27 155.Qf5 (+292 -> -504); R40 153.g2+ (+527 -> +55); R38 51.Rf6 (+468 -> +0)
+  Site's own review (Stockfish 16, depth 16): mean ACPL 38.5 over 107 games, accuracy 94.9%; its
+    tags on their moves: 28 blunder, 36 mistake, 4 miss, 170 inaccuracy of 3417
+
+TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
+  Per move: mean 1.82 s, median 0.91 s, quartiles 0.5-2.41 s, max 20.7 s; instant (<50 ms) moves
+    6.3%
+  Clock at the end: mean 17.5 s, minimum 2.0 s; games under 10 s: 75, under 5 s: 71 (R2, R3, R4, R5,
+    R6, R7, R9, R10, R11, R12, R13, R14, R45, R46, R47, R48, R50, R51, R52, R53, R54, R55, R56, R57,
+    R58, R59, R60, R61, R62, R63, R64, R65, R66, R67, R69, R70, R71, R72, R74, R75, R76, R77, R78,
+    R79, R80, R82, R83, R84, R86, R88, R89, R90, R91, R94, R95, R96, R97, R98, R99, R100, R101,
+    R102, R103, R104, R105, R107, R108, R109, R112, R114, R8)
+  By clock before the move: >60s 3.6 s (n 2160), 30-60s 2.8 s (n 1153), 10-30s 1.8 s (n 1146), <10s
+    0.6 s (n 4004)
+  By own-move number: 1-15 4.7 s, 16-40 2.0 s, 41+ 0.6 s; when +300 or better 1.0 s, level 2.4 s,
+    -300 or worse 1.1 s
+  Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median
+    13.6%, quartiles 5.7-24.5%
+  After a >100 cp swing on the opponent's move: 1.3 s (n 257) vs 1.7 s otherwise; on moves that
+    themselves swing >100 cp: 1.2 s (n 238) vs 1.7 s
+  Exploitable: gets into time trouble
+
+DRAW BEHAVIOUR
+  27 draws in 109 played games (25.0%): fifty_moves 11, threefold_repetition 9,
+    insufficient_material 7; 2 of these were voided by the site afterwards and no longer count on
+    the ladder
+  Repetition while ahead (> +150 at the final position): 0
+  Repetition while behind (< -150): 0; level repetitions: 2
+  Fifty-move draws while ahead: 1 (R38 at +501); while behind: 0; other draws while ahead: 0
+
+ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
+  Reached +300 or better in 24 games, failed to win 4:
+    R27 vs BlockShark peak +3649, loss by checkmate: lost it: worst move 73.Kf6 cost 1000 cp
+    R35 vs Clore Bot XX peak +571, draw by fifty_moves: threw it away: move 112.Qd4 (+571 -> +223)
+    R38  vs Imperial Larper    peak  +521, draw by fifty_moves: fifty-move drift while still +501
+    R40 vs Alien Gambit peak +568, loss by checkmate: lost it: worst move 158.Rb1 cost 1000 cp
+  Reached -300 or worse in 20 games, escaped with a half point or more in 1:
+    R35 vs Clore Bot XX low -339, draw by fifty_moves: opponent could not convert inside fifty moves
+
+OPENINGS (curated start positions assigned by the platform)
+  By family: Sicilian 5-7-9 (40%); Ruy Lopez 5-0-6 (45%); French 4-5-2 (59%); Caro-Kann 4-2-2 (62%);
+    Reti 3-0-3 (50%); English 2-1-3 (42%); London 2-1-2 (50%); Nimzo-Indian 2-0-2 (50%); Petroff
+    0-1-3 (12%); Italian 2-0-2 (50%); Queen's Gambit 1-3-0 (62%); King's Indian 0-1-3 (12%); Dutch
+    0-2-2 (25%); Pirc 2-0-1 (67%); Queen's Indian 1-0-2 (33%); Scotch 2-0-0 (100%); Catalan 1-0-1
+    (50%); Grunfeld 2-0-0 (100%); Slav 1-1-0 (75%); Semi-Slav 0-1-0 (50%); Two Knights 0-1-0 (50%);
+    Four Knights 0-1-0 (50%)
+  Positions seen more than once: Ruy Lopez, Closed x11 5-0-6 (45%); Sicilian Closed x10 2-5-3 (45%);
+    English Symmetrical x6 2-1-3 (42%); Reti Opening x6 3-0-3 (50%); London System x5 2-1-2 (50%);
+    Caro-Kann Classical x4 2-1-1 (62%); Dutch Stonewall x4 0-2-2 (25%); French Tarrasch x4 0-3-1
+    (38%); Italian Game x4 2-0-2 (50%); King's Indian Classical x4 0-1-3 (12%); Nimzo-Indian Defence
+    x4 2-0-2 (50%); Petroff Defence x4 0-1-3 (12%); Sicilian Classical x4 2-2-0 (75%); Sicilian
+    Taimanov x4 1-0-3 (25%); French Winawer x3 2-1-0 (83%); Pirc Defence x3 2-0-1 (67%); Queen's
+    Indian Defence x3 1-0-2 (33%); Caro-Kann Advance x2 2-0-0 (100%); Caro-Kann Exchange x2 0-1-1
+    (25%); Catalan Opening x2 1-0-1 (50%); French Advance x2 1-1-0 (75%); French Classical x2 1-0-1
+    (50%); Grunfeld Defence x2 2-0-0 (100%); Queen's Gambit Accepted x2 1-1-0 (75%); Queen's Gambit
+    Declined x2 0-2-0 (50%); Scotch Game x2 2-0-0 (100%); Slav Defence x2 1-1-0 (75%); 6 positions
+    seen once (0 won, 3 drawn, 3 lost).
+  Underperforms in: Petroff 0-1-3 (12%), King's Indian 0-1-3 (12%), Dutch 0-2-2 (25%)
+  First six own moves: 55% match Stockfish's first choice (moves 7-20: 55%), mean loss 14.4 cp, 7%
+    played instantly; first clear divergence (loss >= 20 cp) at own move 5.3 on average.
+
+STYLE
+  Captures on 16.5% of own moves, checks on 13.7%; average game 155 plies (78 own moves), longest
+    490 plies (R56)
+  Wins: 39 (38 by checkmate, 1 by opponent failure); losses: 43 (43 by checkmate, 0 by own failure)
+  Sacrifices (gave >= 2 pawns of material without losing eval, then recovered): 5 -> R15 32.Qd4, R35
+    13.O-O, R45 27.Nxd4, R45 46.Nxh7, R49 3.Nxf7
+  When ahead (> +150) material leaves the board at 0.57 pawns per own move (level: 1.01); capture
+    rate 14.4% vs 18.2% level -> no deliberate simplification
+
+LIKELY ENGINE PROFILE
+  Mid-strength engine (mean loss 22.0 cp): plausible python alpha-beta at depth 4-7, hand-crafted
+  evaluation. Confidence high.
+  Adaptive time use (median 0.91 s, max 20.7 s, spends 1.3 s on moves after a >100 cp swing vs 1.7 s
+  otherwise).
+  Poor clock awareness: 71 of 107 games went under 5 s.
+
+HOW TO PLAY THEM
+  1. Time pressure works: 71 games dipped under 5 s (R2, R3, R4, R5, R6, R7). Keep games long and
+  complicated; their play under 10 s averages 0.6 s a move.
+  2. No extra time goes to critical positions (1.3 s after a big swing vs 1.7 s otherwise): our
+  search can spend several times their budget on the few moves that decide a game, so prefer
+  positions where one precise move matters over long manoeuvring.
+  3. Tactics work: 26 blunders (>= 200 cp) came from level or better positions, so they can be
+  out-calculated. Keep the position sharp.
+  4. Opening families where they score badly: Petroff (0-1-3 (12%)), King's Indian (0-1-3 (12%)),
+  Dutch (0-2-2 (25%)). Nothing to choose here (positions are assigned), but expect our best chances
+  there.

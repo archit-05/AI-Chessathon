@@ -4671,3 +4671,71 @@ renamed files of Gladiator: Poincare_conjecture -> AlphaFish
   positions not won), RMFE (3 of 28 winning positions not won). Keep lost positions alive.
 
 strategy report: /Users/architbhardwaj/Desktop/AI Chessathon/intel/STRATEGY.txt
+leaderboard: 334 rows
+  1 The Castle Gambit      (The Castle Gambit) games 110 missing 0 -> The_Castle_Gambit.pgn
+  2 slopabot v2            (archierayteam) games 106 missing 0 -> slopabot_v2.pgn
+  3 SaucyBeans             (SaucyBeans) games 111 missing 0 -> SaucyBeans.pgn
+  4 OptiFish               (NotLLM) games 111 missing 0 -> OptiFish.pgn
+  5 LSE4-E5                (jlu) games 110 missing 0 -> LSE4_E5.pgn
+  6 stockfish out of water (krishthefish) games 81 missing 0 -> stockfish_out_of_water.pgn
+  7 Noxy 1                 (Neophyte Doge) games 80 missing 0 -> Noxy_1.pgn
+  8 Sirloin v3             (Elbow Grease) games 112 missing 0 -> Sirloin_v3.pgn
+  9 keep_kann_and_caro_on  (keep kann and caro on) games 111 missing 0 -> keep_kann_and_caro_on.pgn
+ 10 Mesh Potato            (MeshPotato) games 112 missing 1 -> Mesh_Potato.pgn
+ 11 Vengeance              (Waterside Research) games 112 missing 0 -> Vengeance.pgn
+ 12 WashedMech             (TheWinners) games 68 missing 0 -> WashedMech.pgn
+ 13 Kingo Disco            (Makina) games 68 missing 0 -> Kingo_Disco.pgn
+ 14 The W in Woxbridge     (The W in Woxbridge) games 103 missing 0 -> The_W_in_Woxbridge.pgn
+ 15 Knight you will remember (Imperial Knights) games 112 missing 0 -> Knight_you_will_remember.pgn
+ 16 Magnus Claudeson       (AlphaBeta) games 114 missing 0 -> Magnus_Claudeson.pgn
+ 17 DegreeGambit           (Gambit) games 113 missing 0 -> DegreeGambit.pgn
+ 18 Tempo                  (Tempo) games 114 missing 0 -> Tempo.pgn
+ 19 humphrey               (Humphrey) games 55 missing 0 -> humphrey.pgn
+ 20 The Magician           (Magician from Riga) games 75 missing 0 -> The_Magician.pgn
+112 BINI Alpha             (Opus Carlsen) games 92 missing 0 -> BINI_Alpha.pgn
+ 20 The Magician         analysed 13/75 games
+112 BINI Alpha           analysed 50/92 games
+2 game(s) had no embedded evaluation and were skipped
+  # Bot                Rating   Record   CPL sACPL   Bl%  s/mv Draw% RepA NonC Void
+-----------------------------------------------------------------------------------
+  1 The Castle Gambit    1798 50-12-46  29.3    42   1.3  2.40    10    0    0    0
+  2 slopabot v2          1792 46-17-40  31.8    43   3.1  2.42    16    0    5    0
+  3 SaucyBeans           1762 39-25-38  26.0    39   1.5  1.90    25    0    1    1
+  4 OptiFish             1674 47-13-45  44.8    52   3.3  2.29    12    0    1    0
+  5 LSE4-E5              1774 46-10-52  31.9    55   2.3  2.15     9    0    1    0
+  6 stockfish out of w   1988 35-18-29  17.5    35   0.3  1.77    22    0    0    0
+  7 Noxy 1               1692 33-22-26  33.3    44   2.1  2.47    28    1    4    0
+  8 Sirloin v3           1779 46-13-48  37.0    44   3.1  2.08    12    0    3    0
+  9 keep_kann_and_caro   1820 42-19-44  28.8    38   1.4  2.32    18    0    1    0
+ 10 Mesh Potato          1946 51-16-40  23.1    32   1.8  2.02    15    0    2    0
+ 11 Vengeance            2027 40-25-42  22.0    38   1.2  1.82    25    0    4    2
+ 12 WashedMech           1658 24-17-28  29.8    42   0.7  2.89    25    0    0    0
+ 13 Kingo Disco          1693 32-11-26  28.8    43   2.8  2.19    16    0    1    0
+ 14 The W in Woxbridge   1877 44-19-36  38.4    50   2.6  2.47    19    0    2    0
+ 15 Knight you will re   1802 41-19-44  36.1    41   2.5  2.08    18    0    0    0
+ 16 Magnus Claudeson     2270 39-33-34  16.2    26   0.6  1.76    38    2    3    8
+ 17 DegreeGambit         1861 51-14-45  30.2    40   2.2  1.52    13    0    1    0
+ 18 Tempo                1690 51-14-45  46.0    54   4.1  2.57    13    0    8    0
+ 19 humphrey             1718 24-12-19   n/a    37   n/a  2.23    22    0    0    0
+ 20 The Magician         1956 37-12-27  22.0    37   0.9  1.94    16    0    1    0
+112 BINI Alpha           2850 41-28-20  15.6    21   0.8  1.77    35    0    1    4
+
+  1. Move quality spread: Magnus Claudeson loses 16.2 cp per move, Tempo 46.0 cp; our current build
+  measures 15.6 cp. Blunder rates run 0.3-4.1%.
+  2. Free half points: Noxy 1 (1), Magnus Claudeson (2) accepted repetitions while more than +150.
+  Against them, when worse, aim for repetition.
+  3. Time trouble is real for The Castle Gambit (86 games under 5 s), slopabot v2 (14 games under 5
+  s), LSE4-E5 (9 games under 5 s), Sirloin v3 (10 games under 5 s), keep_kann_and_caro_on (39 games
+  under 5 s), Vengeance (71 games under 5 s), WashedMech (68 games under 5 s), The W in Woxbridge (5
+  games under 5 s), Tempo (27 games under 5 s), The Magician (2 games under 5 s). Long, complicated
+  games punish them.
+  4. Clock left unused by SaucyBeans (39 s), OptiFish (32 s), LSE4-E5 (31 s), stockfish out of water
+  (38 s), DegreeGambit (59 s), The Magician (32 s): their depth is capped by a per-move budget, so
+  our deeper search in critical moments is a real edge.
+  5. Leaky conversion: slopabot v2 (5 of 26 winning positions not won), Noxy 1 (4 of 11 winning
+  positions not won), Sirloin v3 (3 of 25 winning positions not won), Mesh Potato (2 of 24 winning
+  positions not won), Vengeance (4 of 24 winning positions not won), The W in Woxbridge (2 of 11
+  winning positions not won), Magnus Claudeson (3 of 25 winning positions not won), Tempo (8 of 31
+  winning positions not won). Keep lost positions alive.
+
+strategy report: /Users/architbhardwaj/Desktop/AI Chessathon/intel/STRATEGY.txt

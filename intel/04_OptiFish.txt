@@ -1,0 +1,121 @@
+OptiFish  (team: NotLLM)  -  rank 4, rating 1674
+================================================
+Generated 2026-09-11 14:43 from 104 rated games (rounds 1-112, 44 of 111 with evaluations so far); 7
+  game(s) that never had a result ignored: R6, R13, R14, R20, R28, R29, R31.
+
+IDENTITY
+  Bot OptiFish; team NotLLM; university Strathclyde; members not shown on the site.
+  Rank 4 of 334, rating 1674, record 47-13-45 in 1 rated games.
+  Rating trajectory: entered R1 at 1571, peak 1746 (R17), now 1669 (R109).
+  Jumps of 100+ in one round (early rounds swing anyway; a jump against the result hints at a new
+    upload): R7 +132 -> 1589 (win vs Shallow Blue 2.0)
+
+RESULTS BY OPPONENT TIER (tier = opponent's rank on the leaderboard now)
+  vs top 10 : 0-1-3 (12%) over 4 games
+  vs 11-20  : 2-0-4 (33%) over 6 games
+  vs 21-50  : 4-1-5 (45%) over 10 games
+  vs rest   : 41-11-32 (55%) over 84 games
+  Games vs top-10 teams:
+    R18  white vs Sirloin v3         (#8 ) loss checkmate             French Winawer
+    R85  black vs Noxy 1             (#7 ) draw threefold_repetition  Ruy Lopez, Closed
+    R99  white vs Noxy 1             (#7 ) loss checkmate             Queen's Gambit Declined
+    R104 black vs Noxy 1             (#7 ) loss checkmate             Sicilian Closed
+  Games vs ranks 11-20: R32 loss vs DegreeGambit (#17, checkmate); R69 loss vs WashedMech (#12,
+    checkmate); R77 loss vs WashedMech (#12, checkmate); R78 win vs Kingo Disco (#13, checkmate);
+    R87 loss vs Tempo (#18, checkmate); R107 win vs Tempo (#18, checkmate)
+
+MOVE QUALITY (site evaluations: Stockfish 16, depth 16, one per position; loss clipped at 1000;
+  positions inside +-800 only)
+  All own moves: n 1707, mean loss 44.8 cp, median 12 cp, blunders (>= 200 cp) 57 = 3.3% (24 of them
+    from level or better positions)
+  own moves 1-15    : n  635, mean 32.4 cp, median 13 cp, blunders 1.4%
+  own moves 16-40   : n  814, mean 46.6 cp, median 13 cp, blunders 3.8%
+  own moves 41+     : n  258, mean 69.4 cp, median 4 cp, blunders 6.6%
+  as white          : n  888, mean 44.8 cp, median 13 cp, blunders 3.3%
+  as black          : n  819, mean 44.7 cp, median 11 cp, blunders 3.4%
+  Worst moves: R33 33.Qc5 (+408 -> -9999); R39 19.exd4 (+141 -> -435); R35 34.Rxf4 (+706 -> +151)
+  Site's own review (Stockfish 16, depth 16): mean ACPL 51.7 over 104 games, accuracy 90.9%; its
+    tags on their moves: 46 blunder, 52 mistake, 8 miss, 167 inaccuracy of 2024
+
+TIME MANAGEMENT (120 s + 0.5 s; seconds per own move from the PGN clocks)
+  Per move: mean 2.29 s, median 2.26 s, quartiles 1.3-3.17 s, max 7.3 s; instant (<50 ms) moves 8.8%
+  Clock at the end: mean 31.9 s, minimum 10.2 s; games under 10 s: 9, under 5 s: 0
+  By clock before the move: >60s 3.2 s (n 2252), 30-60s 2.1 s (n 1500), 10-30s 1.1 s (n 1278), <10s
+    0.5 s (n 100)
+  By own-move number: 1-15 3.5 s, 16-40 2.2 s, 41+ 0.9 s; when +300 or better 1.6 s, level 2.9 s,
+    -300 or worse 1.4 s
+  Share of the remaining clock spent per move (positions inside +-800, moves >= 50 ms): median 4.3%,
+    quartiles 3.5-6.0%
+  After a >100 cp swing on the opponent's move: 2.1 s (n 248) vs 2.2 s otherwise; on moves that
+    themselves swing >100 cp: 2.2 s (n 236) vs 2.2 s
+  Exploitable: spends a fixed ~4% of the remaining clock per move, so its thinking time shrinks as
+    the game goes on
+
+DRAW BEHAVIOUR
+  13 draws in 104 played games (12.0%): threefold_repetition 11, insufficient_material 2; 1 of them
+    vs top-10 teams
+  Repetition while ahead (> +150 at the final position): 0
+  Repetition while behind (< -150): 0; level repetitions: 5
+
+ENDGAME CONVERSION (+300 = winning, -300 = losing, own point of view)
+  Reached +300 or better in 22 games, failed to win 1:
+    R33 vs Defense peak +408, loss by checkmate: lost it: worst move 33.Qc5 cost 1000 cp
+  Reached -300 or worse in 24 games, escaped with a half point or more in 6:
+    R5 vs BlunderBot low -369, win by checkmate: opponent collapsed: Qxb6 at ply 49 lost 1000 cp
+    R10 vs fishy low -381, win by checkmate: opponent collapsed: Kf4 at ply 136 lost 1000 cp
+    R19 vs Tobias Carlsen low -751, win by checkmate: opponent collapsed: Rf2 at ply 90 lost 1000 cp
+    R27 vs Zagreus 2.3.1 low -302, win by checkmate: opponent collapsed: Rc3+ at ply 87 lost 1000 cp
+    R43 vs Team Anay low -417, draw by threefold_repetition: opponent allowed a repetition
+    R47 vs blundered my queen 💔 low -4072, draw by threefold_repetition: opponent allowed a
+      repetition
+
+OPENINGS (curated start positions assigned by the platform)
+  By family: Sicilian 13-0-8 (62%); English 6-0-3 (67%); Ruy Lopez 3-3-3 (50%); Nimzo-Indian 4-1-3
+    (56%); French 2-2-2 (50%); Caro-Kann 1-1-4 (25%); Petroff 1-0-4 (20%); London 3-0-2 (60%); Dutch
+    0-2-3 (20%); Pirc 1-2-1 (50%); Catalan 1-1-2 (38%); Reti 0-1-3 (12%); Grunfeld 2-0-1 (67%);
+    King's Indian 3-0-0 (100%); Scotch 2-0-1 (67%); Semi-Slav 1-0-1 (50%); Two Knights 1-0-1 (50%);
+    Italian 2-0-0 (100%); Queen's Gambit 0-0-2 (0%); Slav 1-0-0 (100%)
+  Positions seen more than once: Sicilian Closed x10 5-0-5 (50%); English Symmetrical x9 6-0-3
+    (67%); Ruy Lopez, Closed x9 3-3-3 (50%); Nimzo-Indian Defence x8 4-1-3 (56%); Sicilian
+    Sveshnikov x7 5-0-2 (71%); Caro-Kann Exchange x6 1-1-4 (25%); Dutch Stonewall x5 0-2-3 (20%);
+    London System x5 3-0-2 (60%); Petroff Defence x5 1-0-4 (20%); Catalan Opening x4 1-1-2 (38%);
+    Pirc Defence x4 1-2-1 (50%); Reti Opening x4 0-1-3 (12%); Grunfeld Defence x3 2-0-1 (67%);
+    King's Indian Classical x3 3-0-0 (100%); Scotch Game x3 2-0-1 (67%); French Tarrasch x2 2-0-0
+    (100%); French Winawer x2 0-0-2 (0%); Italian Game x2 2-0-0 (100%); Semi-Slav Defence x2 1-0-1
+    (50%); Sicilian Classical x2 2-0-0 (100%); Sicilian Taimanov x2 1-0-1 (50%); Two Knights Defence
+    x2 1-0-1 (50%); 5 positions seen once (1 won, 2 drawn, 2 lost).
+  Underperforms in: Petroff 1-0-4 (20%), Dutch 0-2-3 (20%), Caro-Kann 1-1-4 (25%), Reti 0-1-3 (12%)
+  First six own moves: 41% match Stockfish's first choice (moves 7-20: 53%), mean loss 27.3 cp, 0%
+    played instantly; first clear divergence (loss >= 20 cp) at own move 3.1 on average.
+
+STYLE
+  Captures on 22.0% of own moves, checks on 7.6%; average game 99 plies (49 own moves), longest 193
+    plies (R38)
+  Wins: 47 (47 by checkmate, 0 by opponent failure); losses: 44 (44 by checkmate, 0 by own failure)
+  Sacrifices (gave >= 2 pawns of material without losing eval, then recovered): 3 -> R4 10.Rf2, R25
+    36.Ra2, R33 11.Nxd4
+  When ahead (> +150) material leaves the board at 1.15 pawns per own move (level: 1.13); capture
+    rate 25.9% vs 23.5% level -> no deliberate simplification
+
+LIKELY ENGINE PROFILE
+  Shallow or noisy engine (mean loss 44.8 cp, blunder rate 3.3%). Confidence high.
+  Quality drops late (phase 41+ mean 69.4 cp vs 32.4 cp in the first 15 moves): endgame evaluation
+  or horizon problems.
+  Time allocation is a fixed share of the remaining clock (~4% per move; median 2.26 s, max 7.3 s),
+  so depth shrinks as the game goes on and no extra time goes to critical positions (2.1 s after a
+  >100 cp swing vs 2.2 s otherwise).
+
+HOW TO PLAY THEM
+  1. They convert (21 of 22 won positions turned into wins): do not rely on swindles; the game is
+  decided before -300.
+  2. Head for long games: their loss per move rises from 32.4 cp early to 69.4 cp after move 40.
+  Avoid early mass exchanges only if we are not better; otherwise simplify into a queenless
+  middlegame and outplay them late.
+  3. No extra time goes to critical positions (2.1 s after a big swing vs 2.2 s otherwise): our
+  search can spend several times their budget on the few moves that decide a game, so prefer
+  positions where one precise move matters over long manoeuvring.
+  4. Tactics work: 24 blunders (>= 200 cp) came from level or better positions, so they can be
+  out-calculated. Keep the position sharp.
+  5. Opening families where they score badly: Petroff (1-0-4 (20%)), Dutch (0-2-3 (20%)), Caro-Kann
+  (1-1-4 (25%)), Reti (0-1-3 (12%)). Nothing to choose here (positions are assigned), but expect our
+  best chances there.
