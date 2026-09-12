@@ -1,4 +1,4 @@
-# GrigoryMorning — handover, 12 September 2026, written at 04:51 BST, 12 September 2026
+# GrigoryMorning — handover, 12 September 2026, written at 07:50 BST, 12 September 2026
 
 Everything below was produced overnight by the engine/packaging side. Nothing has been uploaded to the
 platform. V8.5 (`bini_astra_v5_noc2b`, `submission_V8.5.zip`, sha256 `26828c24…`) is untouched and
@@ -7,8 +7,9 @@ remains the control and the fallback. Full evidence: `FinalsDay/Finals Night Cau
 
 ## 0. Read this first (five lines)
 
-1. **Stockfish opening book** built for the 1,226 curated roots, guards verified, exact package frozen and
-   smoked, **300-game real-clock gate running on `gcp-x86`** (status at push time in §6). Report command:
+1. **Stockfish opening book — gate PASSED (07:35)**: 300 games 120+0.5 vs V8.5, **+40 =235 −25, pair-level Elo
+   +17.4 [−1.9, +36.8]**, zero failures/fallbacks, ~4 book hits and ~15 s saved per game, exit at move 12 (max 16).
+   Built for the 1,226 curated roots, guards verified, exact package frozen and smoked. Report command:
    `~/chess/venv/bin/python ~/chess/bookbuild/book_gate_report.py ~/chess/gates/sfbook_real.log ~/chess/gates/sfbook_real.stats.jsonl`
 2. **Your preflight is done on `gcp-x86`**: instrument gate +27 ±19 (fc_b vs k96 @30k), determinism clean, k96
    re-export tensor-identical, **`~/chess/data/stage/clean_d10_shuf.bin` built (35,458,988 rows, |cp|>800 3.68 %)**,
@@ -22,6 +23,31 @@ remains the control and the fallback. Full evidence: `FinalsDay/Finals Night Cau
 5. **The speed lever is closed**: `nnue_eval` is already AVX2-vectorised on x86 (assembly inspected); two exact
    rewrites ran at 1.00×. 1536/2048 stay too slow. The check-pruning search candidate is neutral (+5 ±18). Do not
    spend the morning on either.
+6. **Screens are in (30k, 576 games, vs fc_b)**: fcb_re −10, a2lite +1, k96b_ft −9, a3site −4, bp_d7_ft −13, bp96_d7_ft +5,
+   **bp144_d7_ft +12 ±21** (+160 =276 −140), bp144_soft −7; bp144_ftd screening. +12 is exactly the chain threshold, so
+   `gcp-x86` runs `combo_gate.sh bp144_d7_ft … C` (net + book vs V8.5, 150 games at 120+0.5) automatically after the
+   book gate, then A. Treat the screen as an upper bound; only the real-clock combo result can ship a net.
+   The screens rise monotonically with binpack exposure (48 → 96 → 144 sb: −13 → +5 → +12), so **Lane C4 is running
+   on the pod from 06:42**: `bp240` = bp144 checkpoint + 96 more superbatches on the six binpacks (same schedule
+   shape), then the same d7 shuffle pass and fc_b fine-tune → `bp240_d7_ft`, exported, mirrored, and screened by
+   `screen_one.sh bp240_d7_ft` (≈ 08:50). Lane C5 (`bp336` = bp240 + 96 more sb, then the same d7 + fc_b steps →
+   `bp336_d7_ft`, screen armed) is queued behind it so the GPU never idles; keep it only if bp240 holds the trend. `bp144_ftd` (fc_b schedule with no shuffle pass) is far negative
+   (−111 at 210 games): the shuffle alignment pass is required, not optional. Width ladder done: `nnue_w768_ft`
+   (9.5 MB) and `nnue_w512_ft` (6.3 MB) in `data/nets/` and `nets_night/`; the engine reads the width from the
+   file (`bini_nnue.py` `hidden = w1.shape[1]`), so they load with no code change if size is the revealed constraint.
+7. **Must-win build under gate** (`priorcrypto-vm:~/chess/gates/c40_vm.log`, 100 games 120+0.5): the frozen book
+   candidate with contempt 20 → 40 (`cand_sfbook_c40`, one line in `bini_engine.py`), against the book candidate. Why:
+   the London bracket is an eight-team knockout with ties going to the higher seed and we are seeded 6th, so every
+   match we can play is a must-win against a higher seed; at equal strength, a higher decisive rate raises the odds of
+   taking such a match (see Cause Table §17, `match_odds.py`). Ship rule: expected score not worse than −10 Elo at the
+   pair-level lower bound, losses not up, decisive rate up, zero fallbacks. Otherwise contempt stays 20.
+8. **Why the Swiss games drew — read from the platform logs (Cause Table §18).** Round 122 vs JBG fam: our engine
+   took a forced perpetual at −20 in a position Stockfish calls dead level (pessimism + contempt 20 → the c40 build).
+   Rounds 113/116/119: dead-drawn rook endings (Stockfish 0) held for 50–75 moves at a phantom "+60" that is the
+   **correction history saturating at its ±64 cp cap in pawnless positions** (proven: `BINI_CORR=0` → 0/−1). Fix
+   built: `cand_sfbook_eg` / `cand_sfbook_c40eg` (dead pawnless draws score 0; no correction history without pawns;
+   switch `BINI_EG_DRAW`, 0 = old behaviour exactly), verified on the positions from those games; 576-game shape
+   screen queued on the pod (`screen_eg.sh`), real-clock gate to run in the morning (`eg_gate.sh` on gcp-x86).
 
 ## 1. Machines and paths
 
@@ -137,6 +163,33 @@ Checkpoints are saved every 16 superbatches inside the binpack runs and a mirror
 `gates/sfbook_report.json`, picks the best 30k-screened net (needs ≥ +12), runs `combo_gate.sh … C` (net + book vs V8.5,
 150 games, the shipping check) then `… A` (net vs V8.5); reports in `gates/combo_<net>_{C,A}_report.json`. Nothing uploads.
 
+**Lane C outcome so far**: bp48 → aligned net `bp_d7_ft` screened **−13 ±20** vs fc_b (one pass is not a gain); bp96 and
+bp144 aligned nets screened next; the hot 12-sb shuffle alignment is the suspect, so two variants from bp144 were added
+(`bp144_ftd` direct fc_b schedule; `bp144_soft` gentle lr 0.0001 shuffle pass then fc_b schedule), all in
+`~/chess/data/nets/` on the pod and `nets_night/` on gcp-x86, screens in `screen_queue.status`. Checkpoints for every stage
+(bp48-16/32/48, bp96-64/80/96, bp144-112/128/144, all `_d7`/`_ft`) are in `ckpt_night/` on gcp-x86: any of them can be
+re-aligned differently in minutes with `run_onday_ft.sh`.
+
+**Width ladder** (`width_ladder.status`): `w768_ft` and `w512_ft` (from scratch on the shuffle, 96 sb, then the fc_b-style
+continuation), exported with size and bound — the insurance nets if the brief caps package size or memory (the 1024 net
+is 12.6 MB, the book 13 MB). They are not screened (cross-width screens mislead); judge at the clock only if needed.
+
+## 4b. Everything runs on the boxes; the Mac is offline from ~08:00 (Archit in transit)
+
+Nothing depends on the Mac. Where each result appears, with its report generated on the box itself:
+
+| what | box | progress | report |
+|---|---|---|---|
+| contempt-40 gate (100 games, book vs book) | priorcrypto-vm | `~/chess/gates/c40_vm.log` | `~/chess/gates/c40_vm_report.json` + match odds in `gates/vm_chain.status` |
+| endgame-fix gate (100 games, eg vs book) — runs automatically after the above | priorcrypto-vm | `~/chess/gates/eg_vm.log` | `~/chess/gates/eg_vm_report.json` |
+| combo C: bp144_d7_ft + book vs V8.5 (150) | gcp-x86 | `~/chess/gates/combo_bp144_d7_ft_C.log` | `~/chess/gates/combo_bp144_d7_ft_C_report.json` |
+| then automatically (`gcp_after_C.sh`, stops combo A): full package on the current net `cand_sfbook_c40eg` vs V8.5 (120) | gcp-x86 | `~/chess/gates/final_c40eg_vs_v85.log` | `…_report.json`, `gates/after_chain.status` |
+| then, if combo C > 0: `cand_final_bp144` (bp144_d7_ft + book + contempt 40 + endgame fix) vs V8.5 (120); package `submission_V9_bp144_book_c40eg.zip` | gcp-x86 | `~/chess/gates/final_bp144_vs_v85.log` | `…_report.json` |
+| shape screens (30k, 576): contempt 40 vs 20 = −1 ±19 (done); endgame fix eg=1 vs eg=0 (running); bp240_d7_ft vs fc_b; bp336 later | pod | `~/chess/logs/screen_queue.status` | mirrored to `gcp-x86:~/chess/data/stage/nets_night/` |
+
+Read any report with: `python3 -c "import json;r=json.load(open('<report>'));print(r['W'],r['D'],r['L'],r['pair_elo'],r['pair_elo_95'],r['failures'])"`.
+The Mac's endgame-fix arena was stopped at 10 games (partial, not for decisions) and continues on the VM as `eg_vm`.
+
 ## 5. Morning sequence (recommended)
 
 1. Read §6, then run the gate report; apply the decision rule with Archit.
@@ -144,15 +197,31 @@ Checkpoints are saved every 16 superbatches inside the binpack runs and a mirror
    exists; the leaf pilot and error set as ≤ 5 % spice in A3-style arms only.
 3. Any net: `net_gate.sh` first; if it passes the screen and the ladder, `combo_gate.sh … C` is the shipping check.
 4. On the brief: `FinalsDay/Finals Night Cause Table.md` §5 (hard-coded assumptions) and §8 (runbook).
+5. Must-win contempt: read `FinalsDay/night_evidence/c40_vm_report.json` (pair-level) and the match odds in §6 below;
+   apply the ship rule in §0.7. If it passes and the book passes, the shipping package is book + contempt 40
+   (`cand_sfbook_c40`); if only the book passes, `cand_sfbook`; otherwise V8.5 unchanged. Every package must go through
+   `pkg_smoke.py` on gcp-x86 before upload; nothing is uploaded without Archit's explicit go.
+6. **Ready-made packages** (`gcp-x86:~/chess/packages/`, sha256s in `MANIFEST.txt` and
+   `FinalsDay/night_evidence/packages_manifest.txt`), all in the 10-file layout of `submission_V8.5.zip`:
+   `submission_V9_book.zip` (V8.5 + book + guards = `cand_sfbook`), `submission_V9_book_c40.zip` (+ contempt 40),
+   `submission_V9_book_eg.zip` (+ endgame honesty, §0.8), `submission_V9_book_c40eg.zip` (book + contempt 40 +
+   endgame honesty = the full candidate). Real-clock gate for any pair of build dirs, with smoke and stats:
+   `bash ~/chess/pair_gate.sh <cand_dir> <opp_dir> <tag> [games] [workers]` (e.g. `cand_sfbook_c40eg
+   bini_astra_v5_noc2b final_vs_v85 150`); report with `book_gate_report.py <tag>.log <tag>.stats.jsonl`.
+   Suggested order on gcp-x86 once the automatic chain's combo C is in: kill combo A if time is short, then
+   `pair_gate.sh cand_sfbook_c40eg bini_astra_v5_noc2b final_vs_v85 150`. Before uploading anything, smoke the exact bytes on a quiet box:
+   `~/chess/venv/bin/python ~/chess/smoke_zip.py ~/chess/packages/<zip>` (fresh interpreter, no BINI_* env, init
+   seconds, legal move in and out of book, peak RSS). If a net passes its combo gate, build its package with
+   `pkg_smoke.py cand_netbook_<tag> <tag>` (writes `gates/<tag>.zip`) and smoke that zip the same way.
 
 ## 6. Live status at push time (auto-filled)
 
-Written 2026-09-12 04:51 BST.
+Written 2026-09-12 07:50 BST.
 
 /private/tmp/claude-501/-Users-architbhardwaj-Desktop-AI-Chessathon/edc9c181-8258-4c54-8a6f-0a83813055f3/scratchpad/morning_push.sh: line 9: gcp-x86:~/chess/gates/sfbook_real.log: No such file or directory
 **Book gate ()** — read as partial unless it says 300/300:
 ```
-[144/300] +17 =113 -14  score 51.0%  elo +7 ±57  last: draw by threefold_repetition
+[300/300] +40 =235 -25  score 52.5%  elo +17 ±40  last: draw by insufficient_material
 0
   wall=30.0s rc=0
 72f24cd95d6329158a411863d8857aba21c6abe43824dbf3d3b4b0360f2b4b0f  /home/forge/chess/gates/sfbook.zip
@@ -163,60 +232,60 @@ Sat Sep 12 01:24:23 UTC 2026 finish_book2 done
 **Gate report so far**:
 ```
 {
- "games": 144,
+ "games": 300,
  "of": 300,
- "W": 17,
- "D": 113,
- "L": 14,
- "score": 0.5104,
- "terminations": null,
+ "W": 40,
+ "D": 235,
+ "L": 25,
+ "score": 0.525,
+ "terminations": "checkmate 65, fifty_moves 43, insufficient_material 45, threefold_repetition 147",
  "failures": {
   "still_compiling": 0,
   "agent_failure": 0,
   "engine_error": 0,
   "illegal": 0
  },
- "pairs": 39,
+ "pairs": 150,
  "pentanomial": [
-  0,
-  7,
-  24,
-  7,
-  1
+  1,
+  21,
+  95,
+  28,
+  5
  ],
- "pair_elo": 8.9,
+ "pair_elo": 17.4,
  "pair_elo_95": [
-  -28.6,
-  46.6
+  -1.9,
+  36.8
  ],
  "book": {
-  "games_without_hit": 4,
+  "games_without_hit": 5,
   "hits_white": {
-   "n": 70,
-   "mean": 3.46,
-   "median": 3.0,
+   "n": 150,
+   "mean": 3.67,
+   "median": 4.0,
    "max": 7
   },
   "hits_black": {
-   "n": 74,
-   "mean": 4.23,
+   "n": 150,
+   "mean": 4.05,
    "median": 4.0,
    "max": 8
   },
   "saved_s_white": {
-   "n": 66,
-   "mean": 14.0,
-   "median": 11.659,
-   "max": 28.045
+   "n": 145,
+   "mean": 14.71,
+   "median": 15.662,
+   "max": 28.046
   },
   "saved_s_black": {
-   "n": 74,
-   "mean": 16.65,
+   "n": 150,
+   "mean": 15.89,
    "median": 15.663,
    "max": 32.304
   },
   "exit_fullmove_white": {
-   "n": 66,
+   "n": 144,
    "mean": 11.73,
    "median": 12.0,
    "max": 16
@@ -364,12 +433,54 @@ bp96_d7_ft ACC_BOUND 14861 int16 OK
 == c3_lane
 2026-09-12 01:40:20 waiting for C2
 2026-09-12 03:28:20 ARM bp144: resume /root/chess/data/ckpt/bp96-96, 48 more sb at eval-scale 249.8
+2026-09-12 04:00:06 bp144 trained
+2026-09-12 04:06:09 bp144_d7 trained
+2026-09-12 04:10:16 bp144_d7_ft trained
+read /root/chess/data/ckpt/bp144_d7_ft-104/raw.bin: l0w[6144, 1024], l0b[1024], l1w[8, 2048], l1b[8]
+exported /root/chess/data/nets/nnue_bp144_d7_ft.safetensors (12.62 MB): 8x768x1024x2->8 screlu; qb 32 |w1|max 1.815 |b1|max 0.846 |w2|max 1.980 |b2|max 0.105
+bp144_d7_ft ACC_BOUND 15032 int16 OK
+2026-09-12 04:10:26 C3-lane done
+== align_variants
+2026-09-12 04:12:33 ARM bp144_ftd: fc_b schedule directly from bp144
+2026-09-12 04:16:32 bp144_ftd trained
+read /root/chess/data/ckpt/bp144_ftd-104/raw.bin: l0w[6144, 1024], l0b[1024], l1w[8, 2048], l1b[8]
+exported /root/chess/data/nets/nnue_bp144_ftd.safetensors (12.62 MB): 8x768x1024x2->8 screlu; qb 32 |w1|max 1.863 |b1|max 0.750 |w2|max 1.980 |b2|max 0.113
+bp144_ftd ACC_BOUND 15391 int16 OK
+2026-09-12 04:16:33 ARM bp144_soft: 12 sb on the shuffle at lr 0.0001 from bp144, then fc_b schedule
+2026-09-12 04:22:37 bp144_s7 trained
+2026-09-12 04:26:46 bp144_soft trained
+read /root/chess/data/ckpt/bp144_soft-104/raw.bin: l0w[6144, 1024], l0b[1024], l1w[8, 2048], l1b[8]
+exported /root/chess/data/nets/nnue_bp144_soft.safetensors (12.62 MB): 8x768x1024x2->8 screlu; qb 32 |w1|max 1.845 |b1|max 0.768 |w2|max 1.980 |b2|max 0.122
+bp144_soft ACC_BOUND 15236 int16 OK
+2026-09-12 04:26:50 align variants done
+== width_ladder
+2026-09-12 05:02:21 w768 trained
+2026-09-12 05:05:23 w768_ft trained
+read /root/chess/data/ckpt/w768_ft-104/raw.bin: l0w[6144, 768], l0b[768], l1w[8, 1536], l1b[8]
+exported /root/chess/data/nets/nnue_w768_ft.safetensors (9.47 MB): 8x768x768x2->8 screlu; qb 32 |w1|max 1.974 |b1|max 0.570 |w2|max 1.980 |b2|max 0.165
+w768_ft ACC_BOUND 16241 int16 OK size 9465500 bytes
+2026-09-12 05:05:24 ARM w512: from scratch on the shuffle, 96 sb
+2026-09-12 05:28:15 w512 trained
+2026-09-12 05:30:23 w512_ft trained
+read /root/chess/data/ckpt/w512_ft-104/raw.bin: l0w[6144, 512], l0b[512], l1w[8, 1024], l1b[8]
+exported /root/chess/data/nets/nnue_w512_ft.safetensors (6.31 MB): 8x768x512x2->8 screlu; qb 32 |w1|max 1.980 |b1|max 0.565 |w2|max 1.980 |b2|max 0.204
+w512_ft ACC_BOUND 16304 int16 OK size 6310556 bytes
+2026-09-12 05:30:30 width ladder done
 == screen_queue
 2026-09-12 02:33:22 SCREEN k96b_ft vs fc_b: 02:33:21 [576/576] +128 =305 -143 score 48.7% elo -9 ±18 (pentanomial [16, 67, 135, 56, 14])
 2026-09-12 03:12:45 SCREEN a3site vs fc_b: 03:12:10 [576/576] +117 =335 -124 score 49.4% elo -4 ±18 (pentanomial [12, 73, 122, 72, 9])
 2026-09-12 03:50:16 SCREEN bp_d7_ft vs fc_b: 03:50:15 [576/576] +131 =293 -152 score 48.2% elo -13 ±20 (pentanomial [20, 74, 121, 53, 20])
+2026-09-12 04:22:09 SCREEN bp96_d7_ft vs fc_b: 04:22:08 [576/576] +150 =284 -142 score 50.7% elo +5 ±20 (pentanomial [19, 67, 110, 71, 21])
+2026-09-12 04:51:16 SCREEN bp144_d7_ft vs fc_b: 04:51:15 [576/576] +160 =276 -140 score 51.7% elo +12 ±21 (pentanomial [15, 73, 102, 73, 25])
+2026-09-12 05:20:14 SCREEN bp144_soft vs fc_b: 05:20:13 [576/576] +142 =280 -154 score 49.0% elo -7 ±21 (pentanomial [22, 83, 88, 75, 20])
+2026-09-12 05:52:22 SCREEN bp144_ftd vs fc_b: 05:52:21 [576/576] +99 =219 -258 score 36.2% elo -98 ±23 (pentanomial [63, 90, 86, 41, 8])
+2026-09-12 06:37:28 SHAPE contempt40 vs contempt20 (same net, 30k): 06:37:27 [576/576] +139 =297 -140 score 49.9% elo -1 ±19 (pentanomial [17, 69, 115, 72, 15])
 nnue_a2lite.safetensors
 nnue_a3site.safetensors
+nnue_bp144_d7_ft.safetensors
+nnue_bp144_ftd.safetensors
+nnue_bp144_soft.safetensors
+nnue_bp240_d7_ft.safetensors
 nnue_bp48.safetensors
 nnue_bp96_d7_ft.safetensors
 nnue_bp_d7.safetensors
@@ -380,11 +491,25 @@ nnue_fcb_re.safetensors
 nnue_k96.safetensors
 nnue_k96b.safetensors
 nnue_k96b_ft.safetensors
+nnue_w512_ft.safetensors
+nnue_w768_ft.safetensors
 
 gcp morning chain:
 2026-09-12 01:40:22 waiting for the book gate to finish
 2026-09-12 01:42:26 waiting for the book gate to reach 200 games
 2026-09-12 02:12:06 waiting for the book gate: 300 games or 07:00 UTC
+2026-09-12 06:34:07 book gate at read point: [300/300] +40 =235 -25  score 52.5%  elo +17 ±40  last: draw by insufficient_material
+2026-09-12 06:34:15 book gate stopped after 300/300 games (pre-declared read: 300 games or 07:00 UTC)
+2026-09-12 06:34:15 book report written (/home/forge/chess/gates/sfbook_report.json)
+2026-09-12 06:34:15 best screened net: bp144_d7_ft (++12)
+guards + book instrumentation applied to cand_netbook_bp144_d7_ft/agent.py
+  print(f'SMOKE init={t1:.1f}s nnue_ready={ok} move={m} legal={chess.Move.from_uci(m) in chess.Board(fen).legal_moves} move_secs={dt:.2f}', file=sys.stderr, flush=True)
+  Maximum resident set size (kbytes): 786324
+  wall=31.1s rc=0
+  print(f'SMOKE init={t1:.1f}s nnue_ready={ok} move={m} legal={chess.Move.from_uci(m) in chess.Board(fen).legal_moves} move_secs={dt:.2f}', file=sys.stderr, flush=True)
+  Maximum resident set size (kbytes): 822768
+  wall=31.1s rc=0
+started gate C for bp144_d7_ft at Sat Sep 12 06:35:20 UTC 2026
 ```
 
 /private/tmp/claude-501/-Users-architbhardwaj-Desktop-AI-Chessathon/edc9c181-8258-4c54-8a6f-0a83813055f3/scratchpad/morning_push.sh: line 26: /Users/architbhardwaj/chess/data/stage/nets_night/: No such file or directory
@@ -407,8 +532,30 @@ gcp morning chain:
 549693 a3site_30k.stdout
 2110 a_lane.out
 2262 a_lane.status
+977 align_variants.out
+977 align_variants.status
 981 b_lane.out
 981 b_lane.status
+0 bp144_d7_ft_30k.err
+10751790 bp144_d7_ft_30k.json
+511844 bp144_d7_ft_30k.log
+3312076 bp144_d7_ft_30k.pgn
+511844 bp144_d7_ft_30k.stdout
+0 bp144_ftd_30k.err
+10138384 bp144_ftd_30k.json
+484450 bp144_ftd_30k.log
+3144262 bp144_ftd_30k.pgn
+484450 bp144_ftd_30k.stdout
+0 bp144_soft_30k.err
+10745575 bp144_soft_30k.json
+511534 bp144_soft_30k.log
+3311050 bp144_soft_30k.pgn
+511534 bp144_soft_30k.stdout
+0 bp96_d7_ft_30k.err
+10940162 bp96_d7_ft_30k.json
+519430 bp96_d7_ft_30k.log
+3374724 bp96_d7_ft_30k.pgn
+519430 bp96_d7_ft_30k.stdout
 0 bp_d7_ft_30k.err
 11311475 bp_d7_ft_30k.json
 534498 bp_d7_ft_30k.log
@@ -416,8 +563,17 @@ gcp morning chain:
 534498 bp_d7_ft_30k.stdout
 714 c2_lane.out
 714 c2_lane.status
-135 c3_lane.out
-135 c3_lane.status
+575 c3_lane.out
+575 c3_lane.status
+0 c40_30k.err
+12146756 c40_30k.json
+568604 c40_30k.log
+3716364 c40_30k.pgn
+568604 c40_30k.stdout
+509 c4_lane.out
+509 c4_lane.status
+35 c5_lane.out
+35 c5_lane.status
 2037 c_lane.out
 2037 c_lane.status
 0 fcb_re_30k.err
@@ -436,9 +592,13 @@ gcp morning chain:
 3475732 k96b_ft_30k.pgn
 530031 k96b_ft_30k.stdout
 0 ladder_best.out
-720 mirror.log
+1818 mirror.log
 12620460 nnue_a2lite.safetensors
 12620460 nnue_a3site.safetensors
+12620460 nnue_bp144_d7_ft.safetensors
+12620460 nnue_bp144_ftd.safetensors
+12620460 nnue_bp144_soft.safetensors
+12620460 nnue_bp240_d7_ft.safetensors
 12620452 nnue_bp48.safetensors
 12620460 nnue_bp96_d7_ft.safetensors
 12620452 nnue_bp_d7.safetensors
@@ -449,15 +609,31 @@ gcp morning chain:
 12620444 nnue_k96.safetensors
 12620452 nnue_k96b.safetensors
 12620460 nnue_k96b_ft.safetensors
+6310556 nnue_w512_ft.safetensors
+9465500 nnue_w768_ft.safetensors
 0 screen_bp.out
 0 screen_bp144.out
+0 screen_bp240.out
+0 screen_bp336.out
 0 screen_bp96.out
+0 screen_c40.out
+0 screen_eg.out
+0 screen_ftd.out
 138 screen_queue.out
-274 screen_queue.status
+1138 screen_queue.status
+0 screen_soft.out
 35967 sf_build.log
 66320 train_a2lite.log
 66319 train_a3site.log
-253045 train_bp144.log
+390007 train_bp144.log
+97713 train_bp144_d7.log
+66360 train_bp144_d7_ft.log
+66347 train_bp144_ftd.log
+97718 train_bp144_s7.log
+66358 train_bp144_soft.log
+778766 train_bp240.log
+97714 train_bp240_d7.log
+66360 train_bp240_d7_ft.log
 387273 train_bp48.log
 387775 train_bp96.log
 97708 train_bp96_d7.log
@@ -468,8 +644,14 @@ gcp morning chain:
 66328 train_fcb_re.log
 772990 train_k96b.log
 66344 train_k96b_ft.log
+771285 train_w512.log
+66221 train_w512_ft.log
+772385 train_w768.log
+66296 train_w768_ft.log
 3425 trainer_build.log
 145 trainer_build_c.log
+904 width_ladder.out
+904 width_ladder.status
 errors_all.jsonl
 errors_mac.jsonl
 errors_mac2.jsonl
@@ -483,5 +665,38 @@ site_spice.log
 site_spice_12_23.bin
 site_spice_12_23.jsonl
 site_spice_12_23.npz
+```
+
+/private/tmp/claude-501/-Users-architbhardwaj-Desktop-AI-Chessathon/edc9c181-8258-4c54-8a6f-0a83813055f3/scratchpad/morning_push.sh: line 27: /Users/architbhardwaj/chess/gates/c40_vm.log: No such file or directory
+**Must-win gate on the VM (V8.5 + book + contempt 40 vs V8.5 + book, 120+0.5, 100 games, )**:
+```
+[50/100] +4 =41 -5  score 49.0%  elo -7 ±99  last: draw by insufficient_material
+0
+
+pod draw-shape screen (contempt 40 vs 20, same net, 30k, 576 games, upper bound for strength):
+Warning: Permanently added '[63.141.33.33]:22018' (ED25519) to the list of known hosts.
+2026-09-12 06:37:28 SHAPE contempt40 vs contempt20 (same net, 30k): 06:37:27 [576/576] +139 =297 -140 score 49.9% elo -1 ±19 (pentanomial [17, 69, 115, 72, 15])
+06:37:27 [576/576] +139 =297 -140 score 49.9% elo -1 ±19 (pentanomial [17, 69, 115, 72, 15])
+```
+
+/private/tmp/claude-501/-Users-architbhardwaj-Desktop-AI-Chessathon/edc9c181-8258-4c54-8a6f-0a83813055f3/scratchpad/morning_push.sh: line 30: scratchpad/gates/eg_mac.log: No such file or directory
+**Endgame-honesty build at the real clock on the Mac (cand_sfbook_eg vs cand_sfbook, 120+0.5, 2 workers, )**:
+```
+[14/60] +1 =10 -3  score 42.9%  elo -50 ±207  last: draw by threefold_repetition
+0
+```
+
+/private/tmp/claude-501/-Users-architbhardwaj-Desktop-AI-Chessathon/edc9c181-8258-4c54-8a6f-0a83813055f3/scratchpad/morning_push.sh: line 31: /Users/architbhardwaj/chess/gates/morning_chain.status: No such file or directory
+**Morning chain on gcp-x86 ()**:
+```
+guards + book instrumentation applied to cand_netbook_bp144_d7_ft/agent.py
+  print(f'SMOKE init={t1:.1f}s nnue_ready={ok} move={m} legal={chess.Move.from_uci(m) in chess.Board(fen).legal_moves} move_secs={dt:.2f}', file=sys.stderr, flush=True)
+  Maximum resident set size (kbytes): 786324
+  wall=31.1s rc=0
+  print(f'SMOKE init={t1:.1f}s nnue_ready={ok} move={m} legal={chess.Move.from_uci(m) in chess.Board(fen).legal_moves} move_secs={dt:.2f}', file=sys.stderr, flush=True)
+  Maximum resident set size (kbytes): 822768
+  wall=31.1s rc=0
+started gate C for bp144_d7_ft at Sat Sep 12 06:35:20 UTC 2026
+combo_bp144_d7_ft_C.log: [12/150] +2 =10 -0  score 58.3%  elo +58 ±231  last: draw by threefold_repetition
 ```
 

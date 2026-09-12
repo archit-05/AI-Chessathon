@@ -1,0 +1,15 @@
+2026-09-12 01:40:22 waiting for the book gate to finish
+2026-09-12 01:42:26 waiting for the book gate to reach 200 games
+2026-09-12 02:12:06 waiting for the book gate: 300 games or 07:00 UTC
+2026-09-12 06:34:07 book gate at read point: [300/300] +40 =235 -25  score 52.5%  elo +17 ±40  last: draw by insufficient_material
+2026-09-12 06:34:15 book gate stopped after 300/300 games (pre-declared read: 300 games or 07:00 UTC)
+2026-09-12 06:34:15 book report written (/home/forge/chess/gates/sfbook_report.json)
+2026-09-12 06:34:15 best screened net: bp144_d7_ft (++12)
+guards + book instrumentation applied to cand_netbook_bp144_d7_ft/agent.py
+  print(f'SMOKE init={t1:.1f}s nnue_ready={ok} move={m} legal={chess.Move.from_uci(m) in chess.Board(fen).legal_moves} move_secs={dt:.2f}', file=sys.stderr, flush=True)
+  Maximum resident set size (kbytes): 786324
+  wall=31.1s rc=0
+  print(f'SMOKE init={t1:.1f}s nnue_ready={ok} move={m} legal={chess.Move.from_uci(m) in chess.Board(fen).legal_moves} move_secs={dt:.2f}', file=sys.stderr, flush=True)
+  Maximum resident set size (kbytes): 822768
+  wall=31.1s rc=0
+started gate C for bp144_d7_ft at Sat Sep 12 06:35:20 UTC 2026

@@ -7,8 +7,9 @@ remains the control and the fallback. Full evidence: `FinalsDay/Finals Night Cau
 
 ## 0. Read this first (five lines)
 
-1. **Stockfish opening book** built for the 1,226 curated roots, guards verified, exact package frozen and
-   smoked, **300-game real-clock gate running on `gcp-x86`** (status at push time in §6). Report command:
+1. **Stockfish opening book — gate PASSED (07:35)**: 300 games 120+0.5 vs V8.5, **+40 =235 −25, pair-level Elo
+   +17.4 [−1.9, +36.8]**, zero failures/fallbacks, ~4 book hits and ~15 s saved per game, exit at move 12 (max 16).
+   Built for the 1,226 curated roots, guards verified, exact package frozen and smoked. Report command:
    `~/chess/venv/bin/python ~/chess/bookbuild/book_gate_report.py ~/chess/gates/sfbook_real.log ~/chess/gates/sfbook_real.stats.jsonl`
 2. **Your preflight is done on `gcp-x86`**: instrument gate +27 ±19 (fc_b vs k96 @30k), determinism clean, k96
    re-export tensor-identical, **`~/chess/data/stage/clean_d10_shuf.bin` built (35,458,988 rows, |cp|>800 3.68 %)**,
@@ -22,6 +23,31 @@ remains the control and the fallback. Full evidence: `FinalsDay/Finals Night Cau
 5. **The speed lever is closed**: `nnue_eval` is already AVX2-vectorised on x86 (assembly inspected); two exact
    rewrites ran at 1.00×. 1536/2048 stay too slow. The check-pruning search candidate is neutral (+5 ±18). Do not
    spend the morning on either.
+6. **Screens are in (30k, 576 games, vs fc_b)**: fcb_re −10, a2lite +1, k96b_ft −9, a3site −4, bp_d7_ft −13, bp96_d7_ft +5,
+   **bp144_d7_ft +12 ±21** (+160 =276 −140), bp144_soft −7; bp144_ftd screening. +12 is exactly the chain threshold, so
+   `gcp-x86` runs `combo_gate.sh bp144_d7_ft … C` (net + book vs V8.5, 150 games at 120+0.5) automatically after the
+   book gate, then A. Treat the screen as an upper bound; only the real-clock combo result can ship a net.
+   The screens rise monotonically with binpack exposure (48 → 96 → 144 sb: −13 → +5 → +12), so **Lane C4 is running
+   on the pod from 06:42**: `bp240` = bp144 checkpoint + 96 more superbatches on the six binpacks (same schedule
+   shape), then the same d7 shuffle pass and fc_b fine-tune → `bp240_d7_ft`, exported, mirrored, and screened by
+   `screen_one.sh bp240_d7_ft` (≈ 08:50). Lane C5 (`bp336` = bp240 + 96 more sb, then the same d7 + fc_b steps →
+   `bp336_d7_ft`, screen armed) is queued behind it so the GPU never idles; keep it only if bp240 holds the trend. `bp144_ftd` (fc_b schedule with no shuffle pass) is far negative
+   (−111 at 210 games): the shuffle alignment pass is required, not optional. Width ladder done: `nnue_w768_ft`
+   (9.5 MB) and `nnue_w512_ft` (6.3 MB) in `data/nets/` and `nets_night/`; the engine reads the width from the
+   file (`bini_nnue.py` `hidden = w1.shape[1]`), so they load with no code change if size is the revealed constraint.
+7. **Must-win build under gate** (`priorcrypto-vm:~/chess/gates/c40_vm.log`, 100 games 120+0.5): the frozen book
+   candidate with contempt 20 → 40 (`cand_sfbook_c40`, one line in `bini_engine.py`), against the book candidate. Why:
+   the London bracket is an eight-team knockout with ties going to the higher seed and we are seeded 6th, so every
+   match we can play is a must-win against a higher seed; at equal strength, a higher decisive rate raises the odds of
+   taking such a match (see Cause Table §17, `match_odds.py`). Ship rule: expected score not worse than −10 Elo at the
+   pair-level lower bound, losses not up, decisive rate up, zero fallbacks. Otherwise contempt stays 20.
+8. **Why the Swiss games drew — read from the platform logs (Cause Table §18).** Round 122 vs JBG fam: our engine
+   took a forced perpetual at −20 in a position Stockfish calls dead level (pessimism + contempt 20 → the c40 build).
+   Rounds 113/116/119: dead-drawn rook endings (Stockfish 0) held for 50–75 moves at a phantom "+60" that is the
+   **correction history saturating at its ±64 cp cap in pawnless positions** (proven: `BINI_CORR=0` → 0/−1). Fix
+   built: `cand_sfbook_eg` / `cand_sfbook_c40eg` (dead pawnless draws score 0; no correction history without pawns;
+   switch `BINI_EG_DRAW`, 0 = old behaviour exactly), verified on the positions from those games; 576-game shape
+   screen queued on the pod (`screen_eg.sh`), real-clock gate to run in the morning (`eg_gate.sh` on gcp-x86).
 
 ## 1. Machines and paths
 
@@ -137,6 +163,33 @@ Checkpoints are saved every 16 superbatches inside the binpack runs and a mirror
 `gates/sfbook_report.json`, picks the best 30k-screened net (needs ≥ +12), runs `combo_gate.sh … C` (net + book vs V8.5,
 150 games, the shipping check) then `… A` (net vs V8.5); reports in `gates/combo_<net>_{C,A}_report.json`. Nothing uploads.
 
+**Lane C outcome so far**: bp48 → aligned net `bp_d7_ft` screened **−13 ±20** vs fc_b (one pass is not a gain); bp96 and
+bp144 aligned nets screened next; the hot 12-sb shuffle alignment is the suspect, so two variants from bp144 were added
+(`bp144_ftd` direct fc_b schedule; `bp144_soft` gentle lr 0.0001 shuffle pass then fc_b schedule), all in
+`~/chess/data/nets/` on the pod and `nets_night/` on gcp-x86, screens in `screen_queue.status`. Checkpoints for every stage
+(bp48-16/32/48, bp96-64/80/96, bp144-112/128/144, all `_d7`/`_ft`) are in `ckpt_night/` on gcp-x86: any of them can be
+re-aligned differently in minutes with `run_onday_ft.sh`.
+
+**Width ladder** (`width_ladder.status`): `w768_ft` and `w512_ft` (from scratch on the shuffle, 96 sb, then the fc_b-style
+continuation), exported with size and bound — the insurance nets if the brief caps package size or memory (the 1024 net
+is 12.6 MB, the book 13 MB). They are not screened (cross-width screens mislead); judge at the clock only if needed.
+
+## 4b. Everything runs on the boxes; the Mac is offline from ~08:00 (Archit in transit)
+
+Nothing depends on the Mac. Where each result appears, with its report generated on the box itself:
+
+| what | box | progress | report |
+|---|---|---|---|
+| contempt-40 gate (100 games, book vs book) | priorcrypto-vm | `~/chess/gates/c40_vm.log` | `~/chess/gates/c40_vm_report.json` + match odds in `gates/vm_chain.status` |
+| endgame-fix gate (100 games, eg vs book) — runs automatically after the above | priorcrypto-vm | `~/chess/gates/eg_vm.log` | `~/chess/gates/eg_vm_report.json` |
+| combo C: bp144_d7_ft + book vs V8.5 (150) | gcp-x86 | `~/chess/gates/combo_bp144_d7_ft_C.log` | `~/chess/gates/combo_bp144_d7_ft_C_report.json` |
+| then automatically (`gcp_after_C.sh`, stops combo A): full package on the current net `cand_sfbook_c40eg` vs V8.5 (120) | gcp-x86 | `~/chess/gates/final_c40eg_vs_v85.log` | `…_report.json`, `gates/after_chain.status` |
+| then, if combo C > 0: `cand_final_bp144` (bp144_d7_ft + book + contempt 40 + endgame fix) vs V8.5 (120); package `submission_V9_bp144_book_c40eg.zip` | gcp-x86 | `~/chess/gates/final_bp144_vs_v85.log` | `…_report.json` |
+| shape screens (30k, 576): contempt 40 vs 20 = −1 ±19 (done); endgame fix eg=1 vs eg=0 (running); bp240_d7_ft vs fc_b; bp336 later | pod | `~/chess/logs/screen_queue.status` | mirrored to `gcp-x86:~/chess/data/stage/nets_night/` |
+
+Read any report with: `python3 -c "import json;r=json.load(open('<report>'));print(r['W'],r['D'],r['L'],r['pair_elo'],r['pair_elo_95'],r['failures'])"`.
+The Mac's endgame-fix arena was stopped at 10 games (partial, not for decisions) and continues on the VM as `eg_vm`.
+
 ## 5. Morning sequence (recommended)
 
 1. Read §6, then run the gate report; apply the decision rule with Archit.
@@ -144,6 +197,22 @@ Checkpoints are saved every 16 superbatches inside the binpack runs and a mirror
    exists; the leaf pilot and error set as ≤ 5 % spice in A3-style arms only.
 3. Any net: `net_gate.sh` first; if it passes the screen and the ladder, `combo_gate.sh … C` is the shipping check.
 4. On the brief: `FinalsDay/Finals Night Cause Table.md` §5 (hard-coded assumptions) and §8 (runbook).
+5. Must-win contempt: read `FinalsDay/night_evidence/c40_vm_report.json` (pair-level) and the match odds in §6 below;
+   apply the ship rule in §0.7. If it passes and the book passes, the shipping package is book + contempt 40
+   (`cand_sfbook_c40`); if only the book passes, `cand_sfbook`; otherwise V8.5 unchanged. Every package must go through
+   `pkg_smoke.py` on gcp-x86 before upload; nothing is uploaded without Archit's explicit go.
+6. **Ready-made packages** (`gcp-x86:~/chess/packages/`, sha256s in `MANIFEST.txt` and
+   `FinalsDay/night_evidence/packages_manifest.txt`), all in the 10-file layout of `submission_V8.5.zip`:
+   `submission_V9_book.zip` (V8.5 + book + guards = `cand_sfbook`), `submission_V9_book_c40.zip` (+ contempt 40),
+   `submission_V9_book_eg.zip` (+ endgame honesty, §0.8), `submission_V9_book_c40eg.zip` (book + contempt 40 +
+   endgame honesty = the full candidate). Real-clock gate for any pair of build dirs, with smoke and stats:
+   `bash ~/chess/pair_gate.sh <cand_dir> <opp_dir> <tag> [games] [workers]` (e.g. `cand_sfbook_c40eg
+   bini_astra_v5_noc2b final_vs_v85 150`); report with `book_gate_report.py <tag>.log <tag>.stats.jsonl`.
+   Suggested order on gcp-x86 once the automatic chain's combo C is in: kill combo A if time is short, then
+   `pair_gate.sh cand_sfbook_c40eg bini_astra_v5_noc2b final_vs_v85 150`. Before uploading anything, smoke the exact bytes on a quiet box:
+   `~/chess/venv/bin/python ~/chess/smoke_zip.py ~/chess/packages/<zip>` (fresh interpreter, no BINI_* env, init
+   seconds, legal move in and out of book, peak RSS). If a net passes its combo gate, build its package with
+   `pkg_smoke.py cand_netbook_<tag> <tag>` (writes `gates/<tag>.zip`) and smoke that zip the same way.
 
 ## 6. Live status at push time (auto-filled)
 

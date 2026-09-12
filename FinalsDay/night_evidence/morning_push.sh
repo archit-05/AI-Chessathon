@@ -21,9 +21,15 @@ g() { perl -e 'alarm 45; exec @ARGV' ssh -o BatchMode=yes gcp-x86 "$1" 2>/dev/nu
   cat "$SP/out/mac_chain.status" 2>/dev/null; g 'cat ~/chess/bookbuild/vm_chain.status 2>/dev/null; ls -la ~/chess/data/stage/leaf/ 2>/dev/null'
   echo '```'
   echo; echo "**A-lane on the RunPod A40 (`ssh root@63.141.33.33 -p 22018`, `~/chess/logs/a_lane.status`)**:"; echo '```'
-  perl -e 'alarm 45; exec @ARGV' ssh -o BatchMode=yes runpod 'for f in a_lane b_lane a3_site c_lane c2_lane c3_lane screen_queue; do echo "== $f"; cut -c1-200 ~/chess/logs/$f.status 2>/dev/null | tail -12; done; ls ~/chess/data/nets/ 2>/dev/null' 2>/dev/null; echo; echo "gcp morning chain:"; g 'cut -c1-200 ~/chess/gates/morning_chain.status 2>/dev/null'
+  perl -e 'alarm 45; exec @ARGV' ssh -o BatchMode=yes runpod 'for f in a_lane b_lane a3_site c_lane c2_lane c3_lane align_variants width_ladder screen_queue; do echo "== $f"; cut -c1-200 ~/chess/logs/$f.status 2>/dev/null | tail -12; done; ls ~/chess/data/nets/ 2>/dev/null' 2>/dev/null; echo; echo "gcp morning chain:"; g 'cut -c1-200 ~/chess/gates/morning_chain.status 2>/dev/null'
   echo '```'
   echo; echo "**Mirrored nets on gcp-x86** (`~/chess/data/stage/nets_night/`):"; echo '```'; g 'ls -la ~/chess/data/stage/nets_night/ 2>/dev/null | awk "{print \$5, \$9}"; ls ~/chess/data/stage/leaf/ 2>/dev/null'; echo '```'
+  echo; echo "**Must-win gate on the VM (V8.5 + book + contempt 40 vs V8.5 + book, 120+0.5, 100 games, `~/chess/gates/c40_vm.log`)**:"; echo '```'
+  perl -e 'alarm 40; exec @ARGV' ssh -o BatchMode=yes priorcrypto-vm 'grep -E "^\[" ~/chess/gates/c40_vm.log | tail -1; grep -c "AGENT FAILURE\|engine error\|ILLEGAL\|still compiling" ~/chess/gates/c40_vm.log' 2>&1
+  cat "$SP/out/wait_c40.log" 2>/dev/null | grep -A12 "final:" ; echo; echo "pod draw-shape screen (contempt 40 vs 20, same net, 30k, 576 games, upper bound for strength):"; perl -e 'alarm 40; exec @ARGV' ssh -o BatchMode=yes runpod 'grep SHAPE ~/chess/logs/screen_queue.status | tail -3; grep -E \"^\\\\S+ \\\\[\" ~/chess/gates/eg_30k.log 2>/dev/null | tail -1; grep -E "^\\S+ \\[" ~/chess/gates/c40_30k.log 2>/dev/null | tail -1' 2>&1; echo '```'
+  echo; echo "**Endgame-honesty build at the real clock on the Mac (cand_sfbook_eg vs cand_sfbook, 120+0.5, 2 workers, `scratchpad/gates/eg_mac.log`)**:"; echo '```'; grep -E "^\\[" "$SP/gates/eg_mac.log" | tail -1; grep -c "AGENT FAILURE\\|engine error\\|ILLEGAL\\|still compiling" "$SP/gates/eg_mac.log"; echo '```'
+  echo; echo "**Morning chain on gcp-x86 (`~/chess/gates/morning_chain.status`)**:"; echo '```'
+  g 'cat ~/chess/gates/morning_chain.status | tail -8; for f in ~/chess/gates/combo_*_C.log ~/chess/gates/combo_*_A.log; do [ -f $f ] && echo "$(basename $f): $(grep -E "^\[" $f | tail -1)"; done'; echo '```'
 } > "$SP/out/status_block.md" 2>&1
 python3 - "$SP/GrigoryMorning.template.md" "$SP/out/status_block.md" "$R/GrigoryMorning.md" <<'PY'
 import sys; t=open(sys.argv[1]).read(); s=open(sys.argv[2]).read(); import time

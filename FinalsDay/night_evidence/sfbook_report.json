@@ -1,0 +1,67 @@
+{
+ "games": 300,
+ "of": 300,
+ "W": 40,
+ "D": 235,
+ "L": 25,
+ "score": 0.525,
+ "terminations": "checkmate 65, fifty_moves 43, insufficient_material 45, threefold_repetition 147",
+ "failures": {
+  "still_compiling": 0,
+  "agent_failure": 0,
+  "engine_error": 0,
+  "illegal": 0
+ },
+ "pairs": 150,
+ "pentanomial": [
+  1,
+  21,
+  95,
+  28,
+  5
+ ],
+ "pair_elo": 17.4,
+ "pair_elo_95": [
+  -1.9,
+  36.8
+ ],
+ "book": {
+  "games_without_hit": 5,
+  "hits_white": {
+   "n": 150,
+   "mean": 3.67,
+   "median": 4.0,
+   "max": 7
+  },
+  "hits_black": {
+   "n": 150,
+   "mean": 4.05,
+   "median": 4.0,
+   "max": 8
+  },
+  "saved_s_white": {
+   "n": 145,
+   "mean": 14.71,
+   "median": 15.662,
+   "max": 28.046
+  },
+  "saved_s_black": {
+   "n": 150,
+   "mean": 15.89,
+   "median": 15.663,
+   "max": 32.304
+  },
+  "exit_fullmove_white": {
+   "n": 144,
+   "mean": 11.73,
+   "median": 12.0,
+   "max": 16
+  },
+  "exit_fullmove_black": {
+   "n": 150,
+   "mean": 11.28,
+   "median": 11.0,
+   "max": 16
+  }
+ }
+}

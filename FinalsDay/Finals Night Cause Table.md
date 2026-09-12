@@ -414,3 +414,163 @@ The Mac now mines the last 176 self-play games (a pattern bug had left that job 
 bp96_d7_ft and bp144_d7_ft (two and three passes) are still to be screened; the ladder runs for the best complete screen.
 04:50 push: landed on `night/finals-evidence` first (the intel cron's unstaged files blocked the rebase); main pushed
 at 04:55 with an autostash rebase.
+
+05:12 **C3 done**: bp144 (04:28–05:00), bp144_d7, bp144_d7_ft exported (ACC_BOUND 15,032 int16), mirrored. GPU idle
+from 05:12 → two alignment variants from the bp144 checkpoint (`run_align_variants.sh`): `bp144_ftd` = fc_b schedule
+applied directly (no hot shuffle pass) and `bp144_soft` = 12 sb on the shuffle at lr 0.0001 then the fc_b schedule.
+Hypothesis: the 12-sb shuffle pass at lr 0.0005 overwrote the pretrain (bp_d7_ft −13). The ladder for a +1 net was
+dropped; screens for bp96_d7_ft, bp144_d7_ft, bp144_ftd, bp144_soft follow in that order on the pod's cores.
+
+05:20 **Calibration of the aligned Lane C nets** (net_diag on a depth-10 chunk, 10k rows): bp144_d7_ft MAE 93.1 cp,
+slope 0.768; bp_d7_ft MAE 94.2, slope 0.763; fc_b slope 0.781 (from the pilot run). The aligned nets are calibrated like
+fc_b and screen like fc_b (bp96_d7_ft −2 ±24 at 440/576): the 12-sb shuffle pass at lr 0.0005 followed by the fc_b
+schedule dominates whatever the binpack pretrain added. Hence the two variants now training from the bp144 checkpoint
+(direct fc_b schedule; gentle lr 0.0001 shuffle pass). If those are also flat, the honest conclusion is that at this net
+size and search depth the public pretrain does not transfer within one night, and the book is the night's edge.
+
+05:30: screen `bp96_d7_ft` vs fc_b **+5 ±20** (576; +150 =284 −142). Alignment variants exported: `bp144_ftd`
+(ACC_BOUND 15,391) and `bp144_soft` (15,236); their screens follow bp144_d7_ft's. GPU idle → **width ladder**
+(`run_width_ladder.sh`): w768 and w512 from scratch on the shuffle (96 sb) + fc_b-style continuation, exported with size
+and bound — insurance if the revealed constraint caps package size or memory (1024 net 12.6 MB + book 13 MB).
+
+06:20 **Screens complete for the queue** (30k, 576 games, vs fc_b): `bp144_d7_ft` **+12 ±21** (+160 =276 −140,
+pentanomial [15, 73, 102, 73, 25]) — the first Lane C net at the chain's threshold; `bp144_soft` −7 ±21 (+142 =280 −154).
+`bp144_ftd` screening (started 06:20). The morning chain on gcp-x86 therefore runs `combo_gate.sh bp144_d7_ft … C`
+(net + book vs V8.5, 150 games, 120+0.5) after the book gate, then A (net alone vs V8.5). Width ladder: w768 and
+w768_ft exported (9.5 MB); w512 training. Screen ranking across the night: bp144_d7_ft +12 > bp96_d7_ft +5 > a2lite +1 >
+a3site −4 > bp144_soft −7 > k96b_ft −9 > fcb_re −10 > bp_d7_ft −13 — a monotone trend with binpack exposure
+(48 → 96 → 144 sb: −13 → +5 → +12), which is the one systematic signal in the set; every point estimate is within
+its own ±20 band, so only the real-clock combo gate can confirm it.
+
+## 17. Must-win policy (06:25) — "win, don't draw", measured rather than assumed
+
+**Why it is specific to this bracket.** The London final is an eight-team knockout (quarter, semi, final), best of two
+with one game per colour, and a tied match goes to the better Swiss finisher. We are seeded 6th: every match we can
+play is against a higher seed (3rd, then 2nd, then 1st), so a level match eliminates us every time. For a two-game
+match with independent games, the probability of *winning outright* (score ≥ 1.5) and of *holding* a match where
+the tie is ours (score ≥ 1.0) are (`night_evidence/match_odds.py`):
+
+| per-game W/D/L | expected score | P(win a must-win match) | P(hold as higher seed) |
+|---|---|---|---|
+| 10 / 80 / 10 | 0.500 | 0.170 | 0.830 |
+| 20 / 55 / 25 | 0.475 | 0.260 | 0.662 |
+| book gate at 238 games (28 / 188 / 22) | 0.518 | 0.212 | 0.852 |
+
+At equal strength, a higher decisive rate is worth more to the lower seed than a tenth of a pawn of evaluation:
+the second row is *weaker* by expected score and still wins the must-win match 9 points more often. It would cost us
+as the higher seed, but we will not be the higher seed in any match. So declining draws is arithmetically right for
+this bracket, provided strength does not fall by more than the variance gains. That trade-off has to be measured;
+the earlier contempt experiments (Swiss Review) measured strength against a weaker field, not match odds against a
+peer, which is the quantity that decides a knockout.
+
+**Build.** `cand_sfbook_c40` = the frozen book candidate with the default `BINI_CONTEMPT` raised from 20 to 40; the
+only changed line is `bini_engine.py:44` (sha256 agent.py dfb38cd5…, bini_engine.py afe5d319…, book.json 13ce997a…).
+Semantics (engine lines 157–161, unchanged): a repetition or fifty-move draw is scored −contempt for the root side
+while level or better; once our previous root score is ≤ −100 after the draw-move threshold, a draw scores 0
+(`draw_behind`). So 40 means "decline draws unless clearly worse", not "avoid draws at any cost".
+
+**Gate.** priorcrypto-vm, 120+0.5, 100 games, 4 workers, curated openings, `cand_sfbook_c40` vs `cand_sfbook` (book
+vs book, isolating the contempt change), stats sidecar, `~/chess/gates/c40_vm.{log,stats.jsonl,pgn}`; started 06:26,
+expected to finish ~08:30. Read by `wait_c40.sh` → `night_evidence/c40_vm_report.json` (pair-level) + match odds.
+**Pre-declared rule**: ship contempt 40 only if the pair-level expected score is not worse than −10 Elo at the lower
+bound, the loss count is not higher than the win count by more than the noise, the decisive rate (W+L) is higher
+than the book candidate's own 21 %, and there are zero fallbacks or timeouts. A positive 100-game read is a reason
+for a 200-game confirmation on gcp-x86 after the chain, not a shipping decision on its own.
+
+**Not attempted (on purpose)**: match-state awareness (win game 1 → play for the draw in game 2) is impossible because
+the agent receives only the FEN; opponent-specific books likewise. A sharper *book* (preferring sound unbalanced
+lines over Stockfish's drawish top move) is the other decisive-rate lever, but it needs a rebuild and a fresh
+300-game gate, which does not fit before the morning.
+
+06:42 **Lane C4 (bp240)** launched on the idle A40: the screen ranking rises monotonically with binpack exposure
+(48 → 96 → 144 sb: −13 → +5 → +12), so the bp144 checkpoint continues for 96 more superbatches on the six binpacks
+(`run_c4_lane.sh`, derived from `run_c3_lane.sh`: `--resume bp144-144 --start-superbatch 145 --superbatches 240`,
+same eval-scale, then the identical 12-sb shuffle pass and fc_b fine-tune → `bp240_d7_ft`, export with bound check,
+mirror). ETA: training 07:40, screen ~08:15 (`screen_one.sh bp240_d7_ft`, case added). **bp144_ftd** (the fc_b
+schedule applied directly to the pretrain, no shuffle pass) is running at −111 ±37 after 210 games: the shuffle
+alignment pass is required. **Width ladder done** at 06:30: `nnue_w768_ft` 9.5 MB (ACC_BOUND 16,241) and
+`nnue_w512_ft` 6.3 MB (16,304); the engine reads the width from the file, so they load without a code change.
+**Packages built** on gcp-x86 (`~/chess/packages/`, deterministic timestamps): `submission_V9_book.zip` sha256
+467087fb… (cand_sfbook) and `submission_V9_book_c40.zip` sha256 75820f3f… (cand_sfbook_c40); same ten-file layout as
+`submission_V8.5.zip`; `smoke_zip.py <zip>` smokes the exact bytes (fresh interpreter, no BINI_* env, one move in
+and one out of book, peak RSS) and must run on a quiet box before any upload.
+
+## 18. Why the Swiss games drew (07:05) — read from the platform logs in Downloads, verified with Stockfish
+
+Archit's observation ("the engine leads to a draw, it doesn't work towards winning") checked against the four Swiss
+draws (rounds 113, 116, 119, 122) and every log from rounds 98–122 (`~/Downloads/aichessathon-round-*.{log,pgn}`).
+
+**Round 122 vs JBG fam (the winner), draw by repetition at move 21.** Our engine, Black, scored every move from its
+8th onward at exactly −20 cp = the draw score, i.e. it saw a forced perpetual as its best line and steered into it
+(15…e5 16.Nd5 Qxc1 17.Nxe7+ perpetual). Stockfish depth 26 on the same positions: at move 14 e5 +5, Rfd8 0 (our
+move, the one that allows the perpetual), Rad8 −4; at move 15 Qb8 0, e5 0. The position was dead level; our net
+called the non-drawing alternatives worse than −20 (the per-position pessimism of §13, here about 25 cp), so with
+contempt 20 the forced draw won the comparison. It used 36 of 120 seconds in the game. **This is the pattern the
+must-win contempt build (§17) addresses**: at contempt 40 the same comparison keeps playing.
+
+**Rounds 113, 116, 119: fifty moves / repetition after 50–75 moves at a flat "+58…+61".** All three ended in
+king+rook vs king+rook (four pieces), reached through rook+pawn vs rook. Stockfish depth 30 on the positions where
+the plateau began: R119 R+P vs R **0**, R116 R+P vs R+B **−5**, R119 R+P vs R+P **0**, R113 R+P vs R+P **0**; and
+earlier in R113, where our engine said +189, Stockfish says +77 at move 42 and +6 by move 52. So these were not
+blown wins: the engine over-read equal endings and then held dead draws at a phantom +60.
+
+**Where the phantom +60 comes from (measured, not guessed).** The static evaluation of those rook endings is
+already ~0 (the existing `endgame_scale` divides pawnless near-equal material by 8): base build static 0 / −4 / +2
+on the three final positions. The *search* nonetheless returns ±60 at every node budget, with contempt 20 or 0, with
+continuation history off, with a wide aspiration window — and **exactly 0 / −1 with `BINI_CORR=0`**. The
+correction history (V5) learns "static vs search" offsets per pawn structure and per material configuration; with
+no pawns every position shares one pawn-structure slot, so in a pawnless ending the two slots saturate at their
+cap (±32 cp each, ±64 total) within one search and every score is shifted by ~60. The same saturation produces the
+flat +58 plateau in rook+pawn vs rook (material slot). Effects: the absolute score is wrong (so the draw policy and
+`draw_behind` act on a fiction), not the move ranking (all lines share the shift).
+
+**Fix built and verified (`cand_sfbook_eg`, `cand_sfbook_c40eg`; switch `BINI_EG_DRAW`, default 1, 0 = old
+behaviour exactly):** (1) `bini_eval.endgame_scale`: pawnless dead draws score 0 — identical piece sets (KRvKR,
+KQvKQ, KBvKB…), at most one minor each, two knights vs bare king; the "less than a rook ahead → /8" rule stays;
+(2) `bini_search.corrected` / `corr_update`: no correction history in pawnless positions **or with at most six
+pieces on the board** — the same saturation drives the pawned plateaus: on the games' own rook+pawn endings
+(Stockfish 0 / 0 / 0) the base search says +72 / +60 / −38 and the same search with the correction off says
++22 / +15 / −7. Static probe: KBvK −20 → 0, KNNvK −19 → 0, KBvKN −3 → 0, KRvKR 0; KQvKR 253 unchanged, R+P vs R 64
+unchanged, the R122 middlegame −7 unchanged. Search probe (300k nodes): KRvKR plateau positions base −60/−62/+61 →
+patched 0 (d24–26); the three rook+pawn endings → +20 / +17 / −4; the R122 middlegame position identical to the base
+(+1, d13, same move); an 11-piece ending +64 vs +65. `BINI_EG_DRAW=0` reproduces every base number exactly, and
+`patch_endgame.py` regenerates the candidate from `cand_sfbook` byte for byte. Screen queued on the pod (`screen_eg.sh`, 576 games at
+30k, eg=1 vs eg=0, same net) for the W/D/L shape; real-clock gate script ready for the morning.
+
+**What this does and does not buy.** It makes the engine honest in simple endings: it will take a draw it cannot
+avoid instead of shuffling at +60, and it will not trade a real edge into a dead ending believing it is still +60.
+It does not create wins from equal positions — that is the net (Lane C combo gate) and the book; and it does not
+teach the engine to convert rook+pawn vs rook (Syzygy tables would; not shippable tonight: the 5-piece files are
+hundreds of MB).
+
+07:20 **Clock usage is not a lever** (from the same logs): in every lost game the engine used the clock down to
+10–18 s left (rounds 100, 103, 104, 105, 108, 114); the large leftovers (30–90 s) are only in games that ended early
+by checkmate (wins) or by the round-122 perpetual. Slowest single move 3.7–8.0 s. The time manager is spending what
+it has; more depth per move would need a faster engine, and §7 closed that lever. **Lane C5** (`bp336`) queued on the
+A40 behind C4 with its screen armed, so the GPU is never idle; it is discarded unless bp240's screen holds the trend.
+
+## 19. Book gate result (07:35) — PASSED the pre-declared rule
+
+`cand_sfbook` (V8.5 + Stockfish book + guards) vs V8.5, 120+0.5, real wrapper, 300 games (150 colour-paired
+openings), gcp-x86, 6 workers: **+40 =235 −25, score 52.5 %, pair-level Elo +17.4, 95 % interval [−1.9, +36.8]**,
+pentanomial [1, 21, 95, 28, 5]. **Zero** still-compiling, agent-failure, engine-error or illegal-move events; 0
+fallbacks. Terminations: checkmate 65, fifty-move 43, insufficient material 45, repetition 147. Book usage: 3.7 hits
+per game as White and 4.1 as Black, 5 of 300 games without a hit, about 15 s of clock saved per game on each side,
+average exit at move 12 (maximum 16, under the move-20 legal limit and the move-12 own-move guard).
+Pre-declared rule (§9): lower bound ≥ −10 ✓, losses not higher than wins ✓ (25 vs 40), zero fallbacks/timeouts ✓.
+**Decision: the book ships** (as `submission_V9_book.zip` or inside any combined package), subject to Archit's go.
+The morning chain then started `combo_gate.sh bp144_d7_ft … C` (net + book vs V8.5, 150 games) automatically.
+
+07:40 **Contempt 40 vs 20, fixed-node shape screen (pod, same net, 30k nodes, 576 games): +139 =297 −140, −1 ±19**,
+pentanomial [17, 69, 115, 72, 15]. At fixed nodes the higher draw penalty costs nothing measurable in strength; the
+draw share (51.6 %) is only slightly below the same-net baseline screens (~53 %), because at 30k nodes few games reach
+the repetition decisions where contempt acts. The real-clock gate on the VM is the one that counts (44/100 so far,
++4 =36 −4). bp240 finished training at 07:38 (alignment steps and export follow; screen after the endgame-fix screen).
+
+07:50 **Mac offline soon (Archit in transit)**: the Mac's endgame-fix arena was stopped at 10 games (partial log kept,
+not for decisions) and re-queued on the VM (`vm_after_c40.sh`: after the contempt gate, 100 games eg vs book candidate,
+reports written on the VM). On gcp-x86 `gcp_after_C.sh` waits for the bp144 combo-C report, stops the attribution-only
+combo A, and runs the shipping-relevant gates instead: `cand_sfbook_c40eg` vs V8.5 (120 games), then, if combo C is
+positive, `cand_final_bp144` = bp144_d7_ft + book + contempt 40 + endgame fix vs V8.5 (120 games) with its package
+`submission_V9_bp144_book_c40eg.zip`. Every report is generated on the box that ran the gate. The 08:05 push was
+replaced by an immediate push.
