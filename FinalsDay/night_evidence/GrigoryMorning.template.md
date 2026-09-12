@@ -5,6 +5,13 @@ platform. V8.5 (`bini_astra_v5_noc2b`, `submission_V8.5.zip`, sha256 `26828c24�
 remains the control and the fallback. Full evidence: `FinalsDay/Finals Night Cause Table.md` and
 `FinalsDay/night_evidence/` (every script, log and manifest named here lives there or at the box paths given).
 
+## LAST UPLOAD (13:45) — V18: V17 + 25 % more middlegame time + draw-when-losing threshold at −150
+
+`submission_V18_bp336_book_c80eg_r50_nocorr_dcp150_mb125_init_fastcompile2.zip`, sha256 **6ff2ee09…**. Battery clean;
+constants verified in the zip. If its validation passes it is the frozen build; otherwise **V17 (23d02925…, validated:
+ready 23.8–23.9 s, first move 2.7–4.5 s)** plays. Correction-history screen final: corr off vs on −13 ±26 at fixed
+nodes — accepted against the plateau/draw-loop harm measured at the real clock (§29).
+
 ## FINAL CALL (13:36) — V17: V16 with the correction history switched off
 
 `submission_V17_bp336_book_c80eg_r50_nocorr_init_fastcompile2.zip`, sha256 **23d02925…** (Cause Table §29). Why: the

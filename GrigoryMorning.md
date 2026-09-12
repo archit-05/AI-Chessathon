@@ -1,9 +1,16 @@
-# GrigoryMorning — handover, 12 September 2026, written at 13:34 BST, 12 September 2026
+# GrigoryMorning — handover, 12 September 2026, written at 13:45 BST, 12 September 2026
 
 Everything below was produced overnight by the engine/packaging side. Nothing has been uploaded to the
 platform. V8.5 (`bini_astra_v5_noc2b`, `submission_V8.5.zip`, sha256 `26828c24…`) is untouched and
 remains the control and the fallback. Full evidence: `FinalsDay/Finals Night Cause Table.md` and
 `FinalsDay/night_evidence/` (every script, log and manifest named here lives there or at the box paths given).
+
+## LAST UPLOAD (13:45) — V18: V17 + 25 % more middlegame time + draw-when-losing threshold at −150
+
+`submission_V18_bp336_book_c80eg_r50_nocorr_dcp150_mb125_init_fastcompile2.zip`, sha256 **6ff2ee09…**. Battery clean;
+constants verified in the zip. If its validation passes it is the frozen build; otherwise **V17 (23d02925…, validated:
+ready 23.8–23.9 s, first move 2.7–4.5 s)** plays. Correction-history screen final: corr off vs on −13 ±26 at fixed
+nodes — accepted against the plateau/draw-loop harm measured at the real clock (§29).
 
 ## FINAL CALL (13:36) — V17: V16 with the correction history switched off
 
@@ -359,7 +366,7 @@ The Mac's endgame-fix arena was stopped at 10 games (partial, not for decisions)
 
 ## 6. Live status at push time (auto-filled)
 
-Written 2026-09-12 13:34 BST.
+Written 2026-09-12 13:45 BST.
 
 /private/tmp/claude-501/-Users-architbhardwaj-Desktop-AI-Chessathon/edc9c181-8258-4c54-8a6f-0a83813055f3/scratchpad/morning_push.sh: line 9: gcp-x86:~/chess/gates/sfbook_real.log: No such file or directory
 **Book gate ()** — read as partial unless it says 300/300:
@@ -763,7 +770,7 @@ started gate A for bp144_d7_ft at Sat Sep 12 09:16:26 UTC 2026
 3475732 k96b_ft_30k.pgn
 530031 k96b_ft_30k.stdout
 0 ladder_best.out
-3892 mirror.log
+3953 mirror.log
 12620460 nnue_a2lite.safetensors
 12620460 nnue_a3site.safetensors
 12620460 nnue_bp144_d7_ft.safetensors

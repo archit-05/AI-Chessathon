@@ -989,3 +989,20 @@ saturation is now producing both the accepted draws and a loss. **Decision 13:36
 32/32, the switch is a pre-existing runtime flag) so it validates by ≈ 13:40 and plays the 13:40/13:50 practice
 rounds; the 288-game corr-off-vs-on screen (10/288 at 13:34) is the safety check — if it shows a disaster (< −30 Elo)
 by 13:46, re-upload V16 (validated) before the freeze.
+
+13:43 **Correction-history screen (off vs on, contempt 80, bp336, 30k): 270/288 at −13 ±26** — no disaster; a small
+fixed-node cost for switching the corrections off, which the fixed-node setting cannot weigh against the plateau/draw-loop
+harm seen at the real clock (four draws and a loss today). **V17 stands as the frozen build unless its validation log
+shows a problem.** V16 (b237926f…) is the validated fallback.
+**V18 (Archit: "work on the final build now")** = V17 + two policy constants, both in the direction of winning rather
+than holding: `BINI_MIDGAME_BOOST` 1.0 → 1.25 (25 % more time on moves 16–35, where the evaluation is weakest and where
+today's games were decided; the budget adapts to the remaining clock, so no flag risk) and `BINI_DRAW_CP` −100 → −150
+(the draw-when-losing rule engages only when the previous read was ≤ −150 ≈ −1.1 pawn true; between −80 and −150 the
+engine keeps fighting). Unmeasured beyond the battery; an invalid upload leaves V17 in place, a valid one replaces it.
+
+13:45 **V17 validated on the platform** (`aichessathon-v19-23d02925999b.log`): ready 23.9 s / 23.8 s; book move first
+as White then `m2 d19 … 2701ms`; as Black `m1 d18 f8d6 67cp … 4474ms` and a checkmate of the house agent inside the
+20-ply smoke. **V18** `submission_V18_bp336_book_c80eg_r50_nocorr_dcp150_mb125_init_fastcompile2.zip` (sha256
+6ff2ee097f9d7e3298bcac74d4fc5817fb82df1b0beb4c2f546e5a660f74b745): exact-zip battery all legal (the first-call compile
+wait flag only), constants confirmed inside the zip (boost 1.25, draw_cp −150, corr 0, contempt 80). Upload call made
+at 13:45; if it validates it is the frozen build, otherwise V17 (23d02925…) remains.
