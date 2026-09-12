@@ -5,6 +5,15 @@ platform. V8.5 (`bini_astra_v5_noc2b`, `submission_V8.5.zip`, sha256 `26828c24�
 remains the control and the fallback. Full evidence: `FinalsDay/Finals Night Cause Table.md` and
 `FinalsDay/night_evidence/` (every script, log and manifest named here lives there or at the box paths given).
 
+## 14:00 FREEZE — what plays and what was verified last (Cause Table §30)
+
+Frozen build: **V18** (6ff2ee09…) if its upload validated before 14:00, else **V17** (23d02925…). A final four-lens
+adversarial review of the exact V18 source found no self-inflicted loss mode; two residuals for the next build: anchor the
+21 s join to import start (the eager signature compiles moved the ready line to 23.7–24.4 s, margin ≈ 6 s), and make
+`nnue_refresh_persp`'s accumulator signature follow ACC_DTYPE. Everything else — book, contempt 80, draw_cp −150,
+corrections off, fifty-move scaling, midgame boost, init and first-move fixes — is documented with its evidence in
+§§ 9–30. After the final: terminate the three RunPod pods; keep gcp-x86 and the VM; the next-event programme is § 27.
+
 ## LAST UPLOAD (13:45) — V18: V17 + 25 % more middlegame time + draw-when-losing threshold at −150
 
 `submission_V18_bp336_book_c80eg_r50_nocorr_dcp150_mb125_init_fastcompile2.zip`, sha256 **6ff2ee09…**. Battery clean;

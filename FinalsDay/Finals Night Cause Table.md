@@ -1006,3 +1006,22 @@ as White then `m2 d19 … 2701ms`; as Black `m1 d18 f8d6 67cp … 4474ms` and a 
 6ff2ee097f9d7e3298bcac74d4fc5817fb82df1b0beb4c2f546e5a660f74b745): exact-zip battery all legal (the first-call compile
 wait flag only), constants confirmed inside the zip (boost 1.25, draw_cp −150, corr 0, contempt 80). Upload call made
 at 13:45; if it validates it is the frozen build, otherwise V17 (23d02925…) remains.
+
+## 30. Final adversarial review of the shipped V18 source (13:48–13:54, four independent reviewers + two refuters)
+
+Lenses: fifty-move scaling; the ten explicit numba signatures; time management and init; runtime constants (contempt 80,
+draw_cp −150, corrections off, endgame_scale, HCE stub). **Result: no way for the build to lose a game by itself was
+found.** Fifty-move block: int64 throughout, sign-symmetric, clock clamped, mate scores never pass through it, TT stores
+search scores only. Signatures: every call site type-checks, Python-level callers pass convertible types. Constants: every
+draw site sign-consistent from the root side; corrections-off path clean; the HCE stub unreachable with the net on and
+harmless in the warm-up. The one "high" claim (the review directory lacked the net and book) was refuted twice: it was
+an artefact of the review copy — the shipped zips have all ten members (verified per zip). Two residuals recorded for
+the future: (a) `nnue_refresh_persp`'s signature hard-codes an int16 accumulator; a net whose bound needs int32 would
+fail the build and drop to the fallback — bp336's bound is < 32767 and every V13–V18 platform validation played with the
+compiled engine, so it is not triggered today; (b) the explicit signatures compile eagerly on the main thread before the
+21 s join starts, so the ready line moved from 22.3 s (V11/V12) to 23.7–24.4 s (V13–V18): the margin is ≈ 6 s, and a
+machine 2.4× slower than any observed on that part would be needed to breach 30 s; the clean fix is to anchor the join
+to import start (`join(timeout=21 − elapsed)`), one line, for the next build.
+**Frozen at 14:00: V18 if its upload validated in time, otherwise V17 (23d02925…, validated 13:37).** V17 vs V16 at the
+real clock on pods 1–2: 16 games, zero failures, zero init losses. All arenas stopped at 13:58 (`stop_all.sh`); the three
+RunPod pods are to be terminated in the console.

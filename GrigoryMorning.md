@@ -1,9 +1,18 @@
-# GrigoryMorning — handover, 12 September 2026, written at 13:45 BST, 12 September 2026
+# GrigoryMorning — handover, 12 September 2026, written at 13:55 BST, 12 September 2026
 
 Everything below was produced overnight by the engine/packaging side. Nothing has been uploaded to the
 platform. V8.5 (`bini_astra_v5_noc2b`, `submission_V8.5.zip`, sha256 `26828c24…`) is untouched and
 remains the control and the fallback. Full evidence: `FinalsDay/Finals Night Cause Table.md` and
 `FinalsDay/night_evidence/` (every script, log and manifest named here lives there or at the box paths given).
+
+## 14:00 FREEZE — what plays and what was verified last (Cause Table §30)
+
+Frozen build: **V18** (6ff2ee09…) if its upload validated before 14:00, else **V17** (23d02925…). A final four-lens
+adversarial review of the exact V18 source found no self-inflicted loss mode; two residuals for the next build: anchor the
+21 s join to import start (the eager signature compiles moved the ready line to 23.7–24.4 s, margin ≈ 6 s), and make
+`nnue_refresh_persp`'s accumulator signature follow ACC_DTYPE. Everything else — book, contempt 80, draw_cp −150,
+corrections off, fifty-move scaling, midgame boost, init and first-move fixes — is documented with its evidence in
+§§ 9–30. After the final: terminate the three RunPod pods; keep gcp-x86 and the VM; the next-event programme is § 27.
 
 ## LAST UPLOAD (13:45) — V18: V17 + 25 % more middlegame time + draw-when-losing threshold at −150
 
@@ -366,7 +375,7 @@ The Mac's endgame-fix arena was stopped at 10 games (partial, not for decisions)
 
 ## 6. Live status at push time (auto-filled)
 
-Written 2026-09-12 13:45 BST.
+Written 2026-09-12 13:55 BST.
 
 /private/tmp/claude-501/-Users-architbhardwaj-Desktop-AI-Chessathon/edc9c181-8258-4c54-8a6f-0a83813055f3/scratchpad/morning_push.sh: line 9: gcp-x86:~/chess/gates/sfbook_real.log: No such file or directory
 **Book gate ()** — read as partial unless it says 300/300:
@@ -770,7 +779,7 @@ started gate A for bp144_d7_ft at Sat Sep 12 09:16:26 UTC 2026
 3475732 k96b_ft_30k.pgn
 530031 k96b_ft_30k.stdout
 0 ladder_best.out
-3953 mirror.log
+4014 mirror.log
 12620460 nnue_a2lite.safetensors
 12620460 nnue_a3site.safetensors
 12620460 nnue_bp144_d7_ft.safetensors
