@@ -1,0 +1,58 @@
+--- bini_astra_v5_noc2b/bini_search.py	2026-09-10 21:11:51
++++ /private/tmp/claude-501/-Users-architbhardwaj-Desktop-AI-Chessathon/edc9c181-8258-4c54-8a6f-0a83813055f3/scratchpad/bini_cand_chk/bini_search.py	2026-09-11 19:10:10
+@@ -64,6 +64,7 @@
+ 
+ # info[] slots
+ I_NODES, I_ABORT, I_ROOT_MOVE, I_ROOT_SCORE, I_ROOT_DONE, I_SELDEPTH, I_ROOT_SIDE, I_CONTEMPT, I_USE_NNUE, I_TT_HITS, I_HIST_N, I_ROOT_MOVES, I_NMP_OFF, I_NO_NULL, I_SINGULAR, I_MULTICUT, I_QS_TTCUT, I_EXCL_NODES, I_CHECK_MASK, I_QS_CHECKS, I_PROBCUT, I_IMPROVING, I_CORR, I_CONT, I_SEEP, I_CALIB = range(26)
++I_CHK_EXEMPT = 27  # candidate CHK: direct checks exempt from quiet-move pruning (0 = baseline)
+ I_MAX_NODES = 26  # fixed-node gates (tools/node_gate.py): abort once I_NODES reaches it; 0 = off
+ INFO_SIZE = 32
+ 
+@@ -886,6 +887,15 @@
+     base = ply * MOVES_PER_PLY
+     n = gen_moves(bb, st, pcs, mv, base, False)
+     side = st[S_SIDE]
++    # candidate CHK: checking squares for the side to move, so a quiet move that gives direct
++    # check (destination in the checking set of its piece; discovered checks not detected) is
++    # exempt from the quiet-move prunes below.  Same masks as the quiescence quiet-check filter.
++    chk_on = info[I_CHK_EXEMPT] != 0
++    eksq = lsb(bb[5 + (1 - side) * 6])
++    chk_n = KNIGHT_ATT[eksq]
++    chk_b = bishop_att(eksq, bb[14])
++    chk_r = rook_att(eksq, bb[14])
++    chk_p = PAWN_ATT[1 - side, eksq]
+     prev_mv = ui[ply - 1, 4] if ply > 0 else 0
+     cm = counters[side * 4096 + (prev_mv & 4095)] if prev_mv != 0 else 0
+     k0 = killers[ply, 0]
+@@ -907,13 +917,30 @@
+         is_cap = (m & MF_CAPTURE) != 0
+         promo = (m >> 12) & 7
+         quiet = (not is_cap) and promo == 0
++        direct_check = False
++        if quiet and chk_on:
++            to_c = (m >> 6) & 63
++            pt_c = pcs[m & 63]
++            if pt_c > 6:
++                pt_c -= 6
++            tb_c = SQBB[to_c]
++            if pt_c == PAWN:
++                direct_check = (chk_p & tb_c) != ZERO
++            elif pt_c == KNIGHT:
++                direct_check = (chk_n & tb_c) != ZERO
++            elif pt_c == BISHOP:
++                direct_check = (chk_b & tb_c) != ZERO
++            elif pt_c == ROOK:
++                direct_check = (chk_r & tb_c) != ZERO
++            elif pt_c == QUEEN:
++                direct_check = ((chk_b | chk_r) & tb_c) != ZERO
+         # late move pruning and futility pruning of quiet moves
+         hsum = 0
+         if quiet:
+             hsum = history[side * 4096 + (m & 4095)]
+             if cont >= 0:
+                 hsum += history[CONT_BASE + cont + (pcs[m & 63] - 1) * 64 + ((m >> 6) & 63)]
+-        if quiet and not pv_node and not in_chk and legal > 0 and best > -MATE_IN_MAX:
++        if quiet and not direct_check and not pv_node and not in_chk and legal > 0 and best > -MATE_IN_MAX:
+             if depth <= 5 and quiets_tried >= (LMP_TABLE[depth] if improving != 0 else LMP_TABLE[depth] // 2):
+                 continue
+             if futile and m != k0 and m != k1 and m != cm:

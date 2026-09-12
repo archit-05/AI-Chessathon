@@ -1,0 +1,10 @@
+--- bini_astra_v5_noc2b/bini_engine.py	2026-09-10 03:13:56
++++ /private/tmp/claude-501/-Users-architbhardwaj-Desktop-AI-Chessathon/edc9c181-8258-4c54-8a6f-0a83813055f3/scratchpad/bini_cand_chk/bini_engine.py	2026-09-11 19:10:27
+@@ -61,6 +61,7 @@
+         self.info[S.I_CONT] = int(os.environ.get("BINI_CONT", "1"))
+         self.info[S.I_SEEP] = int(os.environ.get("BINI_SEEP", "1"))
+         self.info[S.I_CALIB] = int(os.environ.get("BINI_CALIB", "0"))  # V5 calibration table (bini_calib), gated alone
++        self.info[S.I_CHK_EXEMPT] = int(os.environ.get("BINI_CHK_EXEMPT", "1"))  # candidate CHK: direct checks exempt from quiet-move pruning
+ 
+     # ------------------------------------------------------------------ position handling
+     def set_position(self, fen: str, history_keys: list[int]) -> None:

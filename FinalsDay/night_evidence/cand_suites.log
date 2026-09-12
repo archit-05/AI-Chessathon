@@ -1,0 +1,47 @@
+=== test_suite ===
+[PASS] T5.reduced_feature_agreement       full and reduced-pruning searches agree on quiet positions   worst_cp=37 note=a consistency check, not a claim that selective search returns exact minimax
+[PASS] T6.abort_restores_state            a search aborted mid-tree restores the board and root accumulator   caps=[2000, 20000, 200000]
+[PASS] T7.tt_replacement                  depth-preferred replacement holds and a colliding key is never a hit   same_index=True deep_entry_survived_shallow_store=True shallow_probe_was_a_miss=True deeper_store_took_slot
+[PASS] T8.aspiration_bounds               null windows above and below the score fail on the correct side   true_score=-31
+{"label": "/private/tmp/claude-501/-Users-architbhardwaj-Desktop-AI-Chessathon/edc9c181-8258-4c54-8a6f-0a83813055f3/scratchpad/bini_cand_chk", "total": 20, "passed": 20, "failed": 0, "xfail": 0, "info": 0}
+written /Users/architbhardwaj/Desktop/AI Chessathon/astra_reports/suite_run.json
+exit 
+=== test_repro ===
+[PASS] D.bn_mate_recognised               engine returns a mate score for the KB-vs-KN mate   score=-29999
+[info] D.correction_moves_zero            saturated correction history shifts a static zero   static_zero_corrected_to=64 raw_eval=3
+[PASS] D.dead_material_scores_zero        python-chess dead-material classes score the draw utility   failures=0
+[PASS] D.winnable_material_not_zeroed     winnable pawnless/pawn material is not forced to zero   failures=0 note=reported for information: heuristic scaling may still damp these
+{"label": "/private/tmp/claude-501/-Users-architbhardwaj-Desktop-AI-Chessathon/edc9c181-8258-4c54-8a6f-0a83813055f3/scratchpad/bini_cand_chk", "total": 24, "passed": 22, "failed": 0, "xfail": 0, "info": 2}
+written /Users/architbhardwaj/Desktop/AI Chessathon/astra_reports/repro_run.json
+exit 
+=== test_v2 ===
+[PASS] V9.referee_agrees                  the engine now agrees with the referee about which line is a draw   after_second=None after_third=THREEFOLD_REPETITION note=referee = board.outcome(claim_draw=True), the local ha
+[PASS] V10.bucket_mapping                 out_bucket agrees with the documented piece-count mapping
+[PASS] V11.all_eight_buckets              incremental accumulator equals refresh in ALL eight output buckets   buckets_reached=[0, 1, 2, 3, 4, 5, 6, 7] accumulator_failures=0
+[PASS] V12.bucket_transitions             captures that cross an output-bucket boundary stay consistent   positions=40 transitions=206
+{"label": "/private/tmp/claude-501/-Users-architbhardwaj-Desktop-AI-Chessathon/edc9c181-8258-4c54-8a6f-0a83813055f3/scratchpad/bini_cand_chk", "total": 12, "passed": 10, "failed": 0, "xfail": 0, "info": 0}
+written /Users/architbhardwaj/Desktop/AI Chessathon/astra_reports/v2_run.json
+exit 
+=== test_terminal_audit ===
+[PASS] T4.fifty_move                      the fifty-move rule returns the draw utility from every entry point and table state   positions=3 states_each=64 failing_states=0
+[PASS] T5.through_parent_move             terminal reached by making a real move, with a poisoned TT entry   transitions=13
+[PASS] T6.dead_material_matches_oracle    dead_material agrees with python-chess is_insufficient_material on random positions   positions=4000 mismatches=0
+[PASS] T7.material_classes                every material class the brief names is classified correctly   classes=13
+{"label": "/private/tmp/claude-501/-Users-architbhardwaj-Desktop-AI-Chessathon/edc9c181-8258-4c54-8a6f-0a83813055f3/scratchpad/bini_cand_chk", "total": 8, "passed": 7, "failed": 0, "xfail": 0, "info": 1}
+written /Users/architbhardwaj/Desktop/AI Chessathon/astra_reports/terminal_run.json
+exit 
+=== test_qs_repetition ===
+[PASS] Q1.quiescence_depth_bounded        quiescence terminates well inside MAX_PLY on check-heavy positions   max_seldepth=3 max_ply=128 samples=12
+[info] Q2.cycle_reachability              can a position repeat inside the move classes quiescence generates?   positions=6 cycles_found=0 note=quiet checks exist only at qdepth 0; every deeper node generates captures or
+[info] Q3.status                          quiescence repetition detection   implemented=False resolution=EXPLICITLY UNRESOLVED - see Report 02. Quiescence does not test repetition. It is bounded (Q1) and a sustained cycl
+{"label": "/private/tmp/claude-501/-Users-architbhardwaj-Desktop-AI-Chessathon/edc9c181-8258-4c54-8a6f-0a83813055f3/scratchpad/bini_cand_chk", "total": 3, "passed": 1, "failed": 0, "xfail": 0, "info": 2}
+written /Users/architbhardwaj/Desktop/AI Chessathon/astra_reports/qsrep_run.json
+exit 
+=== probe_stalemate ===
+  empty TT, RFP window d5            5    [-600,-599]     -20  ok
+  empty TT, NMP window d8            8         [-1,0]     -20  ok
+  empty TT, ProbCut window d6        6    [-300,-299]     -20  ok
+  empty TT, wide d6                  6           wide     -20  ok
+
+  violations: 0 of 10
+exit 

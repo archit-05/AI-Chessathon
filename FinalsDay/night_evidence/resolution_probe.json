@@ -1,0 +1,126 @@
+{
+ "build": "bini_astra_v5_noc2b",
+ "games": 400,
+ "positions": 34600,
+ "overall": {
+  "n": 34600,
+  "mean_abs_sf": 351.6,
+  "mean_abs_net": 257.5,
+  "slope_net_on_sf": 0.359,
+  "mae": 202.0,
+  "sign_disagree_pct": 4.1
+ },
+ "by_sf_band": {
+  "150-299": {
+   "n": 4074,
+   "mean_abs_sf": 220.2,
+   "mean_abs_net": 207.0,
+   "slope_net_on_sf": 0.873,
+   "mae": 104.7,
+   "sign_disagree_pct": 7.4
+  },
+  "50-149": {
+   "n": 5688,
+   "mean_abs_sf": 90.3,
+   "mean_abs_net": 105.9,
+   "slope_net_on_sf": 0.975,
+   "mae": 71.2,
+   "sign_disagree_pct": 10.0
+  },
+  "0-49": {
+   "n": 13189,
+   "mean_abs_sf": 13.8,
+   "mean_abs_net": 64.6,
+   "slope_net_on_sf": 1.238,
+   "mae": 61.3,
+   "sign_disagree_pct": 0.0
+  },
+  "300-599": {
+   "n": 6825,
+   "mean_abs_sf": 461.6,
+   "mean_abs_net": 404.8,
+   "slope_net_on_sf": 0.874,
+   "mae": 144.1,
+   "sign_disagree_pct": 2.8
+  },
+  "600-999": {
+   "n": 3114,
+   "mean_abs_sf": 712.4,
+   "mean_abs_net": 733.6,
+   "slope_net_on_sf": 1.028,
+   "mae": 195.6,
+   "sign_disagree_pct": 0.6
+  },
+  "1000+": {
+   "n": 1710,
+   "mean_abs_sf": 3042.4,
+   "mean_abs_net": 913.9,
+   "slope_net_on_sf": 0.249,
+   "mae": 2196.6,
+   "sign_disagree_pct": 0.4
+  }
+ },
+ "by_piece_count": {
+  "0": {
+   "n": 1516,
+   "mean_abs_sf": 726.2,
+   "mean_abs_net": 205.1,
+   "slope_net_on_sf": 0.171,
+   "mae": 599.4,
+   "sign_disagree_pct": 0.4
+  },
+  "6": {
+   "n": 6782,
+   "mean_abs_sf": 700.6,
+   "mean_abs_net": 350.1,
+   "slope_net_on_sf": 0.282,
+   "mae": 450.9,
+   "sign_disagree_pct": 1.1
+  },
+  "12": {
+   "n": 7334,
+   "mean_abs_sf": 383.9,
+   "mean_abs_net": 357.9,
+   "slope_net_on_sf": 0.576,
+   "mae": 170.3,
+   "sign_disagree_pct": 3.5
+  },
+  "18": {
+   "n": 7593,
+   "mean_abs_sf": 266.9,
+   "mean_abs_net": 274.1,
+   "slope_net_on_sf": 0.866,
+   "mae": 125.8,
+   "sign_disagree_pct": 5.9
+  },
+  "24": {
+   "n": 7737,
+   "mean_abs_sf": 162.9,
+   "mean_abs_net": 169.5,
+   "slope_net_on_sf": 0.975,
+   "mae": 87.7,
+   "sign_disagree_pct": 5.7
+  },
+  "30": {
+   "n": 3638,
+   "mean_abs_sf": 57.4,
+   "mean_abs_net": 56.5,
+   "slope_net_on_sf": 0.783,
+   "mae": 38.3,
+   "sign_disagree_pct": 6.2
+  }
+ },
+ "resolution_failures": {
+  "n": 519,
+  "of_positions_with_abs_sf_ge_300": 11649,
+  "rate_pct": 4.5,
+  "by_piece_count": {
+   "0": 4,
+   "6": 92,
+   "12": 160,
+   "18": 160,
+   "24": 96,
+   "30": 7
+  }
+ }
+}

@@ -1,0 +1,10 @@
+machine arm64 variant 1
+nnue_eval_v0         lines= 1030 zmm=   0 ymm=   0 xmm=   0 neon_v=   0 {'smull': 8, 'mul': 34, 'add': 58}
+nnue_after_make      lines= 2037 zmm=   0 ymm=   0 xmm=   0 neon_v=   0 {'mul': 31, 'add': 189}
+nnue_refresh_persp   lines=  992 zmm=   0 ymm=   0 xmm=   0 neon_v=   0 {'mul': 10, 'add': 87}
+nnue_refresh_persp   lines=  866 zmm=   0 ymm=   0 xmm=   0 neon_v=   0 {'mul': 5, 'add': 55}
+nnue_refresh_persp   lines=  821 zmm=   0 ymm=   0 xmm=   0 neon_v=   0 {'mul': 4, 'add': 42}
+nnue_eval_v1         lines= 1053 zmm=   0 ymm=   0 xmm=   0 neon_v=   0 {'smull': 8, 'mul': 36, 'add': 62}
+nnue_eval_v2         lines= 1053 zmm=   0 ymm=   0 xmm=   0 neon_v=   0 {'smull': 8, 'mul': 36, 'add': 62}
+_sq_dot64            lines=  549 zmm=   0 ymm=   0 xmm=   0 neon_v=   0 {'smull': 4, 'mul': 16, 'add': 31}
+_sq_dot32            lines=  549 zmm=   0 ymm=   0 xmm=   0 neon_v=   0 {'smull': 4, 'mul': 16, 'add': 31}

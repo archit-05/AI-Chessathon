@@ -1,0 +1,7 @@
+build=bini_cand_vec variant=2 HIDDEN=1024 NO=8 ACT_SQ=1 ACC_DTYPE=int16 |w2|max=25344
+identity check on 600 positions: mismatches=0
+  v0   1694.1 ns/eval  (checksum 33882300)
+  sel  1703.0 ns/eval  (checksum 33882300)
+  v0   1696.7 ns/eval  (checksum 33882300)
+  sel  1717.1 ns/eval  (checksum 33882300)
+RESULT bini_cand_vec variant=2: v0 1694 ns, selected 1703 ns, speedup x0.99, mismatches=0

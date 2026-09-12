@@ -1,0 +1,95 @@
+{
+ "build": "/Users/architbhardwaj/Desktop/AI Chessathon/bini_astra_v5_noc2b",
+ "fen": "r7/4B3/4pPk1/8/p1b2KPR/4r3/5P2/8 w - - 0 39",
+ "nodes": 2000000,
+ "rows": [
+  {
+   "move": "f2e3",
+   "san": "fxe3",
+   "score_for_us": -43,
+   "depth": 21,
+   "reply": "a4a3",
+   "static_after_for_us": 39,
+   "pv": [
+    "a4a3",
+    "e7a3",
+    "a8a3",
+    "g4g5",
+    "e6e5",
+    "f4e5",
+    "a3a5",
+    "e5d4",
+    "c4f7",
+    "h4f4",
+    "g6g5",
+    "f4f1"
+   ]
+  },
+  {
+   "move": "g4g5",
+   "san": "g5",
+   "score_for_us": 20,
+   "depth": 21,
+   "reply": "e6e5",
+   "static_after_for_us": -514,
+   "pv": [
+    "e6e5",
+    "f4e3",
+    "c4d5",
+    "f6f7",
+    "g6f7",
+    "e7a3",
+    "f7g6",
+    "f2f4",
+    "a8e8",
+    "h4h6",
+    "g6f5",
+    "f4e5"
+   ]
+  },
+  {
+   "move": "h4h7",
+   "san": "Rh7",
+   "score_for_us": -765,
+   "depth": 19,
+   "reply": "g6h7",
+   "static_after_for_us": -588,
+   "pv": [
+    "g6h7",
+    "f4e3",
+    "a4a3",
+    "e7c5",
+    "a3a2",
+    "c5d4",
+    "a8a3",
+    "e3e4",
+    "h7g6",
+    "f2f4",
+    "c4d3",
+    "e4e5"
+   ]
+  },
+  {
+   "move": "e7d8",
+   "san": "Bd8",
+   "score_for_us": -933,
+   "depth": 20,
+   "reply": "e3e1",
+   "static_after_for_us": -624,
+   "pv": [
+    "e3e1",
+    "d8c7",
+    "c4d5",
+    "g4g5",
+    "e6e5",
+    "c7e5",
+    "e1e4",
+    "f4g3",
+    "e4e5",
+    "f2f4",
+    "e5e3",
+    "g3f2"
+   ]
+  }
+ ]
+}

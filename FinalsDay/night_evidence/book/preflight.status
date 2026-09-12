@@ -1,0 +1,30 @@
+Fri Sep 11 19:11:16 UTC 2026 start
+-- determinism: same net both sides, 16 games @30k
+19:13:11 [16/16] +5 =6 -5 score 50.0% elo -0 ±0 (pentanomial [0, 0, 8, 0, 0])
+-- export parity 1024 screlu
+    import bullet_export as X  # noqa: E402
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'bullet_export'
+-- k96 re-export vs stored net
+read /home/forge/chess/data/stage/ckpt/k96-96/raw.bin: l0w[6144, 1024], l0b[1024], l1w[8, 2048], l1b[8]
+exported /tmp/k96_re.safetensors (12.62 MB): 8x768x1024x2->8 screlu; qb 32 |w1|max 1.980 |b1|max 0.763 |w2|max 1.980 |b2|max 0.257
+k96 re-export tensors identical: True {'w1': (6144, 1024), 'b1': (1024,), 'w2': (8, 2048), 'b2': (9,)}
+-- instrument: fc_b vs k96 @30k, 576 games (plan expects about +29 +-22)
+19:41:16 [576/576] +155 =311 -110 score 53.9% elo +27 ±19 (pentanomial [7, 73, 97, 90, 21])
+-- clean d10 corpus
+178 clean shards
+  1/178 converted, 199,996 rows, 1s
+  21/178 converted, 4,199,900 rows, 15s
+  41/178 converted, 8,199,763 rows, 29s
+  61/178 converted, 12,199,642 rows, 43s
+  81/178 converted, 16,199,586 rows, 57s
+  101/178 converted, 20,199,495 rows, 71s
+  121/178 converted, 24,199,420 rows, 85s
+  141/178 converted, 28,059,184 rows, 98s
+  161/178 converted, 32,059,048 rows, 112s
+WROTE /home/forge/chess/data/stage/clean_d10_shuf.bin rows=35,458,988 |cp|>800=3.68% mean|cp|=224.0 bytes=1,134,687,616
+/home/forge/chess/data/stage/clean_d10_shuf.bin: 35458988 rows, black-to-move 0.0%, quiet 78.3%, depth 10-10, cp mean +61 |cp| mean 224 |cp|>=1500 1.1%, result +1/0/-1 0/35458988/0
+Fri Sep 11 19:44:25 UTC 2026 preflight done; relaunching CHK real gate
+started chk_real
+Fri Sep 11 19:44:25 UTC 2026 chain done
+Fri Sep 11 19:45:22 UTC 2026 CHK relaunch killed

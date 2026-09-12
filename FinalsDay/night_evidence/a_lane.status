@@ -1,0 +1,29 @@
+2026-09-12 00:40:54 start on b34cb0b7590a nproc=96 gpu=NVIDIA A40
+2026-09-12 00:40:57 apt ok
+2026-09-12 00:41:08 code pulled
+2026-09-12 00:41:15 data pulled
+2026-09-12 00:41:17 no leaf labels yet
+base /root/chess/data/ft/clean_d10_shuf.bin: 35,458,988 rows
+spice /root/chess/data/ft/site_spice_12_23.bin: 118,266 rows x9 (target 3.0% = 1,096,669)
+mix: 36,523,382 rows, |cp|>800 3.57%, mean|cp| 228.6
+wrote /root/chess/data/ft/a2lite.bin
+2026-09-12 00:41:23 trainer built
+2026-09-12 00:41:23 ARM fcb_re: data=/root/chess/data/ft/clean_d10_shuf.bin superbatches=104 start=97 
+2026-09-12 00:45:13 ARM fcb_re trained
+read /root/chess/data/ckpt/fcb_re-104/raw.bin: l0w[6144, 1024], l0b[1024], l1w[8, 2048], l1b[8]
+exported /root/chess/data/nets/nnue_fcb_re.safetensors (12.62 MB): 8x768x1024x2->8 screlu; qb 32 |w1|max 1.980 |b1|max 0.766 |w2|max 1.980 |b2|max 0.258
+fcb_re ACC_BOUND 16355 int16 OK
+fcb_re sanity rnbqkbnr/pppppppp/8/8/8/ 25 cp (stm view; expect ~0, positive, negative)
+fcb_re sanity 8/8/4k3/8/8/4K3/4P3/8 w  243 cp (stm view; expect ~0, positive, negative)
+fcb_re sanity rnbqkbnr/pppppppp/8/8/8/ -480 cp (stm view; expect ~0, positive, negative)
+2026-09-12 00:45:42 ARM a2lite: data=/root/chess/data/ft/a2lite.bin superbatches=104 start=97 
+2026-09-12 00:49:32 ARM a2lite trained
+read /root/chess/data/ckpt/a2lite-104/raw.bin: l0w[6144, 1024], l0b[1024], l1w[8, 2048], l1b[8]
+exported /root/chess/data/nets/nnue_a2lite.safetensors (12.62 MB): 8x768x1024x2->8 screlu; qb 32 |w1|max 1.980 |b1|max 0.766 |w2|max 1.980 |b2|max 0.258
+a2lite ACC_BOUND 16355 int16 OK
+a2lite sanity rnbqkbnr/pppppppp/8/8/8/ 22 cp (stm view; expect ~0, positive, negative)
+a2lite sanity 8/8/4k3/8/8/4K3/4P3/8 w  243 cp (stm view; expect ~0, positive, negative)
+a2lite sanity rnbqkbnr/pppppppp/8/8/8/ -479 cp (stm view; expect ~0, positive, negative)
+2026-09-12 01:21:04 SCREEN fcb_re vs fc_b: 01:21:03 [576/576] +110 =339 -127 score 48.5% elo -10 ±18 (pentanomial [15, 71, 126, 68, 8])
+2026-09-12 01:51:22 SCREEN a2lite vs fc_b: 01:51:21 [576/576] +124 =330 -122 score 50.2% elo +1 ±18 (pentanomial [13, 63, 129, 75, 8])
+2026-09-12 01:52:09 A-lane done (5+0.05 ladders skipped: screens of k96b_ft / a3site / Lane C take priority; ladder runs for the best via screen_queue)

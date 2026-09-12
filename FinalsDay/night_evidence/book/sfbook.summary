@@ -1,0 +1,9 @@
+== Sat Sep 12 01:23:48 UTC 2026 candidate = V8.5 + book 13ce997aafa9b7c8 + wrapper guards
+{"entries": 58206, "bad_keys": 0, "illegal_moves": 0, "provenance": {"SF19": 58206}, "root_coverage": {"SF19": 1226}, "sf_per_ply": {"0": 1225, "1": 2579, "2": 3887, "3": 8232, "4": 12037, "5": 12051, "6": 18195}}
+sfbook: zip sha256 72f24cd95d632915 files=10 unzipped=25,733,859 bytes (OK)
+  bini-5.0 ready: import+compile 27.8s (compile 27.2s), nnue=on
+  SMOKE init=27.9s nnue_ready=True move=d2d3 legal=True move_secs=2.08
+  print(f'SMOKE init={t1:.1f}s nnue_ready={ok} move={m} legal={chess.Move.from_uci(m) in chess.Board(fen).legal_moves} move_secs={dt:.2f}', file=sys.stderr, flush=True)
+  Maximum resident set size (kbytes): 818204
+  wall=30.0s rc=0
+gate started Sat Sep 12 01:24:23 UTC 2026 games=300 workers=6

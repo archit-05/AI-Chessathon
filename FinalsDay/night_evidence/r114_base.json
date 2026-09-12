@@ -1,0 +1,89 @@
+{
+ "build": "/Users/architbhardwaj/Desktop/AI Chessathon/bini_astra_v5_noc2b",
+ "env": {
+  "BINI_DIR": "/Users/architbhardwaj/Desktop/AI Chessathon/bini_astra_v5_noc2b",
+  "BINI_TT_BITS": "24"
+ },
+ "pgn": "Swiss Round 13/aichessathon-round-114-slopfish.pgn",
+ "fullmove": 40,
+ "own_move": 33,
+ "fen": "7r/3bk3/1p1p4/p1pP2qr/P1PpBpP1/1P3PbP/6K1/3Q1RNR b - - 1 40",
+ "played": "g5h6",
+ "hashes": {
+  "agent.py": "5bff736371872bc5688fd59d0c1cc74c",
+  "bini_board.py": "39304f6ae518e221a8df45d27f195e8e",
+  "bini_calib.py": "18210c5b3f8d7109151da461ee3b74f8",
+  "bini_engine.py": "4f4de482c28eca01e47cff5d6380a2c2",
+  "bini_eval.py": "d44763ba4ad0465a9257bfb32cd9c990",
+  "bini_magics.py": "3c2ab7807a87e0f31fb4d889367870e2",
+  "bini_nnue.py": "e06453c8a7a9a34b1e9405b309b071c2",
+  "bini_search.py": "56ead3446ea7a7e482cea91a67083995",
+  "book.json": "51c97f3f4e8ab4c1801543945d749906",
+  "nnue.safetensors": "182c8fc8fb60b96fdb51f231cbe9c0e9"
+ },
+ "rows": [
+  {
+   "nodes": 702464,
+   "move": "h5h4",
+   "score": 105,
+   "depth": 14,
+   "seldepth": 24,
+   "secs": 9.4,
+   "pv": [
+    "g5h4",
+    "g1e2",
+    "h8e8",
+    "d1c1",
+    "e8h8",
+    "e2f4",
+    "g3f4",
+    "c1f4",
+    "e7d8"
+   ]
+  },
+  {
+   "nodes": 2106368,
+   "move": "g5h4",
+   "score": 121,
+   "depth": 19,
+   "seldepth": 32,
+   "secs": 28.5,
+   "pv": [
+    "g5h4",
+    "g1e2",
+    "h5e5",
+    "d1c2",
+    "e7d8",
+    "c2d2",
+    "h8f8",
+    "d2d3",
+    "e5e8",
+    "g2g1",
+    "d8c7",
+    "g1g2"
+   ]
+  },
+  {
+   "nodes": 5000192,
+   "move": "g5h4",
+   "score": 121,
+   "depth": 20,
+   "seldepth": 34,
+   "secs": 71.2,
+   "pv": [
+    "g5h4",
+    "g4h5",
+    "h8h5",
+    "d1e2",
+    "e7f8",
+    "f1a1",
+    "h5e5",
+    "g2f1",
+    "e5e7",
+    "e2c2",
+    "e7e5",
+    "c2g2"
+   ]
+  }
+ ]
+}

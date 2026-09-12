@@ -1,0 +1,92 @@
+{
+ "build": "/private/tmp/claude-501/-Users-architbhardwaj-Desktop-AI-Chessathon/edc9c181-8258-4c54-8a6f-0a83813055f3/scratchpad/bini_cand_chk",
+ "env": {
+  "BINI_DIR": "/private/tmp/claude-501/-Users-architbhardwaj-Desktop-AI-Chessathon/edc9c181-8258-4c54-8a6f-0a83813055f3/scratchpad/bini_cand_chk",
+  "BINI_TT_BITS": "24"
+ },
+ "pgn": "/Users/architbhardwaj/Downloads/aichessathon-round-108-ryan-vincent.pgn",
+ "fullmove": 39,
+ "own_move": 31,
+ "fen": "r7/4B3/4pPk1/8/p1b2KPR/4r3/5P2/8 w - - 0 39",
+ "played": "g4g5",
+ "hashes": {
+  "agent.py": "5bff736371872bc5688fd59d0c1cc74c",
+  "bini_board.py": "39304f6ae518e221a8df45d27f195e8e",
+  "bini_calib.py": "18210c5b3f8d7109151da461ee3b74f8",
+  "bini_engine.py": "b381e5760d01734ce71c7727c1332522",
+  "bini_eval.py": "d44763ba4ad0465a9257bfb32cd9c990",
+  "bini_magics.py": "3c2ab7807a87e0f31fb4d889367870e2",
+  "bini_nnue.py": "e06453c8a7a9a34b1e9405b309b071c2",
+  "bini_search.py": "a77dab8a180bdacb8ff1bd9c8add2503",
+  "book.json": "51c97f3f4e8ab4c1801543945d749906",
+  "nnue.safetensors": "182c8fc8fb60b96fdb51f231cbe9c0e9"
+ },
+ "rows": [
+  {
+   "nodes": 868352,
+   "move": "g4g5",
+   "score": 30,
+   "depth": 17,
+   "seldepth": 29,
+   "secs": 12.1,
+   "pv": [
+    "g4g5",
+    "e6e5",
+    "f4e3",
+    "c4d5",
+    "f6f7",
+    "g6f7",
+    "e7a3",
+    "f7g6",
+    "h4b4",
+    "a8a5",
+    "f2f4",
+    "g6f5"
+   ]
+  },
+  {
+   "nodes": 2605056,
+   "move": "g4g5",
+   "score": -20,
+   "depth": 23,
+   "seldepth": 33,
+   "secs": 32.3,
+   "pv": [
+    "g4g5",
+    "e6e5",
+    "f4e3",
+    "c4d5",
+    "h4h6",
+    "g6g5",
+    "h6h7",
+    "g5f5",
+    "f6f7",
+    "f5g6",
+    "f7f8q",
+    "a8f8"
+   ]
+  },
+  {
+   "nodes": 8000512,
+   "move": "g4g5",
+   "score": -20,
+   "depth": 25,
+   "seldepth": 40,
+   "secs": 84.5,
+   "pv": [
+    "g4g5",
+    "e3e1",
+    "h4h6",
+    "g6f7",
+    "h6h7",
+    "f7g8",
+    "h7g7",
+    "g8h8",
+    "g5g6",
+    "e6e5",
+    "f4f5",
+    "e1h1"
+   ]
+  }
+ ]
+}

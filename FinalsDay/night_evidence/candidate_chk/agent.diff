@@ -1,0 +1,13 @@
+--- bini_astra_v5_noc2b/agent.py	2026-09-10 03:13:56
++++ /private/tmp/claude-501/-Users-architbhardwaj-Desktop-AI-Chessathon/edc9c181-8258-4c54-8a6f-0a83813055f3/scratchpad/bini_cand_chk/agent.py	2026-09-11 19:25:12
+@@ -259,7 +259,9 @@
+         return uci
+     soft, hard = _budget(time_left_ms, _state.move_number)
+     uci = None
+-    if _BOOK and _state.move_number < 12:
++    # book only inside the published opening window: our own move count is not the PGN move
++    # number (games start mid-opening), so the absolute fullmove guard is the one the rule names
++    if _BOOK and _state.move_number < 12 and board.fullmove_number <= 20:
+         entry = _BOOK.get(_book_key(board))
+         if entry:
+             bm = entry.get("move", "")

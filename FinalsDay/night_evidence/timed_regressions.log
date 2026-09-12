@@ -1,0 +1,27 @@
+=== bini_base_copy tactics ===
+MISS  5qrk/5b1r/5pPb/p1p2P2/1pP1P1Q1/1P2pK1R/1P6/7R b - - 0 35  expected f8g7 got e3e2 (73cp d15)
+tactics: 39/40 = 98%
+=== bini_base_copy blunders ===
+ok       2Rn1k2/7p/1p1qPb2/4p3/1p4Q1/4p1P1/P7/6K1 played g4f5  -202 d17  (avoid c8a8)  R67 vs FuzzyBot: move 39.Ra8 lost 185 cp (site best g4f5, eval before -232)
+ok       R2n1k2/7p/1p1qPb2/8/1p2p1Q1/4p1P1/P7/6K1 played g1g2  -451 d15  (avoid g1h2)  R67 vs FuzzyBot: move 40.Kh2 lost 42 cp (site best g1h2, eval before -424)
+ok       3n4/7p/1p4k1/3q4/Rp1bp3/4Q1P1/P5K1/8 w - played e3e2  -554 d16  (avoid e3b3)  R67 vs FuzzyBot: move 47.Qb3 lost 73 cp (site best e3e2, eval before -483)
+blunder regression: 12/12 avoided
+=== bini_base_copy search ===
+ok   g4e3   got g4e3      618cp d15  rnbqkb1r/pppp1ppp/8/4P3/6n1/7P/PPPNPPP1/R1BQKBNR b KQkq - 0 1
+tactics: 9/11
+repetition test: winning side plays b1b8 (29999cp); score must be clearly positive: ok
+gate 2 passed
+=== bini_cand_chk tactics ===
+MISS  5qrk/5b1r/5pPb/p1p2P2/1pP1P1Q1/1P2pK1R/1P6/7R b - - 0 35  expected f8g7 got a5a4 (102cp d17)
+MISS  r3r1k1/5pp1/p1nq4/2Np1n1b/Pp5P/3Q1N1R/1PP2P2/2KR1B2 b - - 1 22  expected d6c5 got f5d4 (374cp d16)
+tactics: 38/40 = 95%
+=== bini_cand_chk blunders ===
+ok       2Rn1k2/7p/1p1qPb2/4p3/1p4Q1/4p1P1/P7/6K1 played g4f5  -220 d17  (avoid c8a8)  R67 vs FuzzyBot: move 39.Ra8 lost 185 cp (site best g4f5, eval before -232)
+ok       R2n1k2/7p/1p1qPb2/8/1p2p1Q1/4p1P1/P7/6K1 played g1g2  -479 d16  (avoid g1h2)  R67 vs FuzzyBot: move 40.Kh2 lost 42 cp (site best g1h2, eval before -424)
+REPEATED 3n4/7p/1p4k1/3q4/Rp1bp3/4Q1P1/P5K1/8 w - played e3b3  -641 d16  (avoid e3b3)  R67 vs FuzzyBot: move 47.Qb3 lost 73 cp (site best e3e2, eval before -483)
+blunder regression: 11/12 avoided
+=== bini_cand_chk search ===
+ok   g4e3   got g4e3      607cp d15  rnbqkb1r/pppp1ppp/8/4P3/6n1/7P/PPPNPPP1/R1BQKBNR b KQkq - 0 1
+tactics: 10/11
+repetition test: winning side plays b1b8 (29999cp); score must be clearly positive: ok
+gate 2 passed

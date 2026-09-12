@@ -1,0 +1,504 @@
+{
+ "pgn": "/Users/architbhardwaj/Downloads/aichessathon-round-108-ryan-vincent.pgn",
+ "ours": "white",
+ "target_fullmove": 39,
+ "moves_replayed": 27,
+ "moves_agreeing": 22,
+ "secs": 342.2,
+ "target": {
+  "own": 31,
+  "fullmove": 39,
+  "fen": "r7/4B3/4pPk1/8/p1b2KPR/4r3/5P2/8 w - - 0 39",
+  "game": "g4g5",
+  "logged": {
+   "depth": 21,
+   "uci": "g4g5",
+   "cp": -20,
+   "nodes": 868190,
+   "ms": 1583,
+   "left": 49479
+  },
+  "arms": {
+   "1.0": {
+    "move": "g4g5",
+    "score": -20,
+    "depth": 21,
+    "nodes": 868352,
+    "pv": [
+     "g4g5",
+     "e3e4",
+     "f4e4",
+     "a4a3",
+     "h4h6",
+     "g6g5",
+     "f6f7",
+     "g5h6",
+     "f7f8q",
+     "a8f8",
+     "e7f8",
+     "h6g6"
+    ]
+   },
+   "3.0": {
+    "move": "g4g5",
+    "score": -20,
+    "depth": 24,
+    "nodes": 2605056,
+    "pv": [
+     "g4g5",
+     "e3e4",
+     "f4e4",
+     "a4a3",
+     "h4h6",
+     "g6g5",
+     "f6f7",
+     "g5h6",
+     "f7f8q",
+     "a8f8",
+     "e7f8",
+     "h6g6"
+    ]
+   },
+   "10.0": {
+    "move": "g4g5",
+    "score": -20,
+    "depth": 28,
+    "nodes": 8682496,
+    "pv": [
+     "g4g5",
+     "e3e4",
+     "f4e4",
+     "a4a3",
+     "h4h6",
+     "g6g5",
+     "f6f7",
+     "g5h6",
+     "f7f8q",
+     "a8f8",
+     "e7f8",
+     "h6g6"
+    ]
+   }
+  }
+ },
+ "rows": [
+  {
+   "own": 1,
+   "fullmove": 9,
+   "book": "g1f3",
+   "game": "g1f3"
+  },
+  {
+   "own": 2,
+   "fullmove": 10,
+   "book": "c3d4",
+   "game": "c3d4"
+  },
+  {
+   "own": 3,
+   "fullmove": 11,
+   "book": "d1d2",
+   "game": "d1d2"
+  },
+  {
+   "own": 4,
+   "fullmove": 12,
+   "game": "c1d2",
+   "replay": "c1d2",
+   "agree": true,
+   "score": 15,
+   "depth": 18,
+   "logged_cp": 15,
+   "logged_depth": 18,
+   "nodes": 1112182
+  },
+  {
+   "own": 5,
+   "fullmove": 13,
+   "game": "h2h4",
+   "replay": "e1g1",
+   "agree": false,
+   "score": 20,
+   "depth": 17,
+   "logged_cp": 22,
+   "logged_depth": 17,
+   "nodes": 1352835
+  },
+  {
+   "own": 6,
+   "fullmove": 14,
+   "game": "d2e3",
+   "replay": "d2e3",
+   "agree": true,
+   "score": 18,
+   "depth": 19,
+   "logged_cp": 28,
+   "logged_depth": 18,
+   "nodes": 1676390
+  },
+  {
+   "own": 7,
+   "fullmove": 15,
+   "game": "e3g5",
+   "replay": "e3g5",
+   "agree": true,
+   "score": 38,
+   "depth": 19,
+   "logged_cp": -10,
+   "logged_depth": 21,
+   "nodes": 3004437
+  },
+  {
+   "own": 8,
+   "fullmove": 16,
+   "game": "e4e5",
+   "replay": "e4e5",
+   "agree": true,
+   "score": 1,
+   "depth": 18,
+   "logged_cp": 13,
+   "logged_depth": 20,
+   "nodes": 1242992
+  },
+  {
+   "own": 9,
+   "fullmove": 17,
+   "game": "e2b5",
+   "replay": "e2b5",
+   "agree": true,
+   "score": 8,
+   "depth": 18,
+   "logged_cp": 20,
+   "logged_depth": 19,
+   "nodes": 1442404
+  },
+  {
+   "own": 10,
+   "fullmove": 18,
+   "game": "g5e3",
+   "replay": "g5e3",
+   "agree": true,
+   "score": -11,
+   "depth": 17,
+   "logged_cp": 13,
+   "logged_depth": 19,
+   "nodes": 1518457
+  },
+  {
+   "own": 11,
+   "fullmove": 19,
+   "game": "e1e2",
+   "replay": "e1e2",
+   "agree": true,
+   "score": 10,
+   "depth": 16,
+   "logged_cp": 19,
+   "logged_depth": 17,
+   "nodes": 1212975
+  },
+  {
+   "own": 12,
+   "fullmove": 20,
+   "game": "b5c6",
+   "replay": "b5c6",
+   "agree": true,
+   "score": 38,
+   "depth": 18,
+   "logged_cp": 69,
+   "logged_depth": 18,
+   "nodes": 1027229
+  },
+  {
+   "own": 13,
+   "fullmove": 21,
+   "game": "f3d2",
+   "replay": "f3d2",
+   "agree": true,
+   "score": 62,
+   "depth": 21,
+   "logged_cp": 68,
+   "logged_depth": 20,
+   "nodes": 3321424
+  },
+  {
+   "own": 14,
+   "fullmove": 22,
+   "game": "e2f3",
+   "replay": "e2f3",
+   "agree": true,
+   "score": 58,
+   "depth": 18,
+   "logged_cp": 44,
+   "logged_depth": 19,
+   "nodes": 949129
+  },
+  {
+   "own": 15,
+   "fullmove": 23,
+   "game": "d4c5",
+   "replay": "d4c5",
+   "agree": true,
+   "score": 78,
+   "depth": 19,
+   "logged_cp": 74,
+   "logged_depth": 18,
+   "nodes": 2436790
+  },
+  {
+   "own": 16,
+   "fullmove": 24,
+   "game": "e3c5",
+   "replay": "e3c5",
+   "agree": true,
+   "score": 91,
+   "depth": 20,
+   "logged_cp": 96,
+   "logged_depth": 18,
+   "nodes": 1693134
+  },
+  {
+   "own": 17,
+   "fullmove": 25,
+   "game": "c5e3",
+   "replay": "c5e3",
+   "agree": true,
+   "score": 79,
+   "depth": 20,
+   "logged_cp": 85,
+   "logged_depth": 19,
+   "nodes": 852360
+  },
+  {
+   "own": 18,
+   "fullmove": 26,
+   "game": "e3h6",
+   "replay": "e3h6",
+   "agree": true,
+   "score": 124,
+   "depth": 16,
+   "logged_cp": 62,
+   "logged_depth": 17,
+   "nodes": 1620332
+  },
+  {
+   "own": 19,
+   "fullmove": 27,
+   "game": "b1e1",
+   "replay": "b1e1",
+   "agree": true,
+   "score": 66,
+   "depth": 18,
+   "logged_cp": 66,
+   "logged_depth": 19,
+   "nodes": 1574732
+  },
+  {
+   "own": 20,
+   "fullmove": 28,
+   "game": "h4h5",
+   "replay": "h6g5",
+   "agree": false,
+   "score": 77,
+   "depth": 18,
+   "logged_cp": 64,
+   "logged_depth": 18,
+   "nodes": 2160477
+  },
+  {
+   "own": 21,
+   "fullmove": 29,
+   "game": "h5g6",
+   "replay": "h5g6",
+   "agree": true,
+   "score": 139,
+   "depth": 15,
+   "logged_cp": 57,
+   "logged_depth": 15,
+   "nodes": 806570
+  },
+  {
+   "own": 22,
+   "fullmove": 30,
+   "game": "h6g5",
+   "replay": "h6g5",
+   "agree": true,
+   "score": 27,
+   "depth": 19,
+   "logged_cp": 36,
+   "logged_depth": 19,
+   "nodes": 2475662
+  },
+  {
+   "own": 23,
+   "fullmove": 31,
+   "game": "g5e7",
+   "replay": "g5e7",
+   "agree": true,
+   "score": -6,
+   "depth": 19,
+   "logged_cp": -6,
+   "logged_depth": 20,
+   "nodes": 1885336
+  },
+  {
+   "own": 24,
+   "fullmove": 32,
+   "game": "h1h3",
+   "replay": "h1h4",
+   "agree": false,
+   "score": -9,
+   "depth": 21,
+   "logged_cp": -20,
+   "logged_depth": 21,
+   "nodes": 2434346
+  },
+  {
+   "own": 25,
+   "fullmove": 33,
+   "game": "e1e3",
+   "replay": "e1e3",
+   "agree": true,
+   "score": -20,
+   "depth": 21,
+   "logged_cp": -20,
+   "logged_depth": 23,
+   "nodes": 1096734
+  },
+  {
+   "own": 26,
+   "fullmove": 34,
+   "game": "f3f4",
+   "replay": "f3f4",
+   "agree": true,
+   "score": -20,
+   "depth": 24,
+   "logged_cp": -20,
+   "logged_depth": 24,
+   "nodes": 959875
+  },
+  {
+   "own": 27,
+   "fullmove": 35,
+   "game": "g2g4",
+   "replay": "h3g3",
+   "agree": false,
+   "score": -20,
+   "depth": 22,
+   "logged_cp": -20,
+   "logged_depth": 21,
+   "nodes": 1391294
+  },
+  {
+   "own": 28,
+   "fullmove": 36,
+   "game": "h3h5",
+   "replay": "h3h5",
+   "agree": true,
+   "score": -20,
+   "depth": 20,
+   "logged_cp": -5,
+   "logged_depth": 19,
+   "nodes": 2603115
+  },
+  {
+   "own": 29,
+   "fullmove": 37,
+   "game": "h5h4",
+   "replay": "h5h2",
+   "agree": false,
+   "score": -20,
+   "depth": 22,
+   "logged_cp": -20,
+   "logged_depth": 21,
+   "nodes": 819481
+  },
+  {
+   "own": 30,
+   "fullmove": 38,
+   "game": "e5f6",
+   "replay": "e5f6",
+   "agree": true,
+   "score": -17,
+   "depth": 19,
+   "logged_cp": -1,
+   "logged_depth": 20,
+   "nodes": 950665
+  },
+  {
+   "own": 31,
+   "fullmove": 39,
+   "fen": "r7/4B3/4pPk1/8/p1b2KPR/4r3/5P2/8 w - - 0 39",
+   "game": "g4g5",
+   "logged": {
+    "depth": 21,
+    "uci": "g4g5",
+    "cp": -20,
+    "nodes": 868190,
+    "ms": 1583,
+    "left": 49479
+   },
+   "arms": {
+    "1.0": {
+     "move": "g4g5",
+     "score": -20,
+     "depth": 21,
+     "nodes": 868352,
+     "pv": [
+      "g4g5",
+      "e3e4",
+      "f4e4",
+      "a4a3",
+      "h4h6",
+      "g6g5",
+      "f6f7",
+      "g5h6",
+      "f7f8q",
+      "a8f8",
+      "e7f8",
+      "h6g6"
+     ]
+    },
+    "3.0": {
+     "move": "g4g5",
+     "score": -20,
+     "depth": 24,
+     "nodes": 2605056,
+     "pv": [
+      "g4g5",
+      "e3e4",
+      "f4e4",
+      "a4a3",
+      "h4h6",
+      "g6g5",
+      "f6f7",
+      "g5h6",
+      "f7f8q",
+      "a8f8",
+      "e7f8",
+      "h6g6"
+     ]
+    },
+    "10.0": {
+     "move": "g4g5",
+     "score": -20,
+     "depth": 28,
+     "nodes": 8682496,
+     "pv": [
+      "g4g5",
+      "e3e4",
+      "f4e4",
+      "a4a3",
+      "h4h6",
+      "g6g5",
+      "f6f7",
+      "g5h6",
+      "f7f8q",
+      "a8f8",
+      "e7f8",
+      "h6g6"
+     ]
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,112 @@
+{
+ "build": "/private/tmp/claude-501/-Users-architbhardwaj-Desktop-AI-Chessathon/edc9c181-8258-4c54-8a6f-0a83813055f3/scratchpad/bini_cand_chk",
+ "env": {
+  "BINI_DIR": "/private/tmp/claude-501/-Users-architbhardwaj-Desktop-AI-Chessathon/edc9c181-8258-4c54-8a6f-0a83813055f3/scratchpad/bini_cand_chk",
+  "BINI_TT_BITS": "24"
+ },
+ "pgn": "Swiss Round 13/aichessathon-round-113-omi.pgn",
+ "fullmove": 39,
+ "own_move": 34,
+ "fen": "6k1/4Qpp1/p3p2p/qrNb4/7P/1PR2PP1/4P1K1/8 w - - 9 39",
+ "played": "c3c2",
+ "hashes": {
+  "agent.py": "5bff736371872bc5688fd59d0c1cc74c",
+  "bini_board.py": "39304f6ae518e221a8df45d27f195e8e",
+  "bini_calib.py": "18210c5b3f8d7109151da461ee3b74f8",
+  "bini_engine.py": "b381e5760d01734ce71c7727c1332522",
+  "bini_eval.py": "d44763ba4ad0465a9257bfb32cd9c990",
+  "bini_magics.py": "3c2ab7807a87e0f31fb4d889367870e2",
+  "bini_nnue.py": "e06453c8a7a9a34b1e9405b309b071c2",
+  "bini_search.py": "a77dab8a180bdacb8ff1bd9c8add2503",
+  "book.json": "51c97f3f4e8ab4c1801543945d749906",
+  "nnue.safetensors": "182c8fc8fb60b96fdb51f231cbe9c0e9"
+ },
+ "rows": [
+  {
+   "nodes": 1000448,
+   "move": "c5e4",
+   "score": 117,
+   "depth": 16,
+   "seldepth": 32,
+   "secs": 7.2,
+   "pv": [
+    "e7e8",
+    "g8h7",
+    "c5d7",
+    "a5a2",
+    "g2f2",
+    "b5b8",
+    "e8b8",
+    "d5f3",
+    "c3f3",
+    "a2c2"
+   ]
+  },
+  {
+   "nodes": 2646016,
+   "move": "e7e8",
+   "score": 851,
+   "depth": 18,
+   "seldepth": 33,
+   "secs": 17.3,
+   "pv": [
+    "e7e8",
+    "g8h7",
+    "c5d7",
+    "b5b8",
+    "e8b8",
+    "a5b5",
+    "b8b5",
+    "a6b5",
+    "b3b4",
+    "d5c4",
+    "g2f2",
+    "f7f6"
+   ]
+  },
+  {
+   "nodes": 5000192,
+   "move": "e7e8",
+   "score": 882,
+   "depth": 21,
+   "seldepth": 37,
+   "secs": 33.1,
+   "pv": [
+    "e7e8",
+    "g8h7",
+    "c5d7",
+    "b5b8",
+    "e8b8",
+    "a5b5",
+    "b8b5",
+    "a6b5",
+    "b3b4",
+    "d5a2",
+    "c3c8",
+    "h6h5"
+   ]
+  },
+  {
+   "nodes": 10000384,
+   "move": "e7e8",
+   "score": 910,
+   "depth": 23,
+   "seldepth": 42,
+   "secs": 75.3,
+   "pv": [
+    "e7e8",
+    "g8h7",
+    "c5d7",
+    "b5b7",
+    "d7f8",
+    "h7g8",
+    "f8g6",
+    "g8h7",
+    "h4h5",
+    "b7b8",
+    "g6f8",
+    "h7g8"
+   ]
+  }
+ ]
+}
