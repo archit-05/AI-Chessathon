@@ -688,3 +688,39 @@ gcp-x86 150 games (seed 3, 6 workers), pod 120 games (seed 11), VM 100 games aft
 ship_bp336 vs ship_v85 shows pair-level Elo ≥ +5 with lower bound ≥ −10 over ≥ 200 games by 13:20; otherwise
 ship_v85.** The V10 zips are in the project root (`submission_V10_v85_book_c40eg_init.zip` 039f0c12…,
 `submission_V10_bp336_book_c40eg_init.zip` 969e5da3…), flat layout verified.
+
+11:30 **V10 (V8.5 net) uploaded by Archit.** PrometheusBuild = `submission_V10_bp336_book_c40eg_init.zip` (copy named
+`PrometheusBuild.zip` in the repo root, sha256 969e5da3…). FEN battery on its exact bytes on the pod, under a
+4-worker load: 31/32 legal and on time; the one flag is the *first* call, which waited 7.7 s for the compile remainder
+against the battery's artificial 5 s budget and then let the pure-Python fallback answer (g1h3, legal). Not a defect:
+on the platform the first move has 120 s and the agent waits up to 42 s (0.35 × clock) for the compile, which covers
+the slowest platform compile seen (60 s − 21 s = 39 s) — with little margin on a machine slower than any observed.
+Left as is (a change would mean re-validating and re-uploading both builds); noted for the future: wait up to 0.4 ×
+clock on move one. In the earlier pod smoke the old V8.5 build lost 7 of 14 games by init under the 30 s harness
+budget while V10 passed the ready line in all 14 (14/14 "still compiling" warnings, as designed).
+
+## 22. V10 on the real platform (validation log 11:20) and the V11 first-move fix
+
+**Validation passed:** "ready in 22.3 s of the 30 s init budget" in both smoke games (exactly the wall-clock join +
+1.3 s predicted); the book fired on the platform (`m1 book b8c6 … soft3829ms`, `bookexit` at fullmove 8); both 20-ply
+smoke games ended at the ply cap with us at +26 to +40 pawns against the house agent. **But the log also shows the
+cost of the compile remainder landing in the wrong place:** the first engine move was `m1 d6 d2d4 40cp 4096n 18103ms`
+— 18.1 s of waiting for the compile, then a search of 4,096 nodes at depth 6. Cause: after the wait the soft budget
+is recomputed correctly, but the hard cap is `hard − overhead` with `overhead` measured from the start of `get_move`,
+so the 18 s wait was charged twice and the hard cap collapsed to the 8 ms minimum; the search aborted at its first clock
+check (4,096 nodes). Every game under the 30 s regime would have opened with a depth-6 move in a curated middlegame.
+**Fix (`patch_firstmove.py`, one variable):** measure the overhead from the moment the wait ended. Applied to both
+shipping builds → **V11**: `submission_V11_v85_book_c40eg_init.zip` (sha256 95897ef6…) and
+`submission_V11_bp336_book_c40eg_init.zip` = `PrometheusBuild.zip` (0cd05c03…); engine files byte-identical to V10 and
+to the gated builds, agent.py is the only change. The running ship_bp336-vs-ship_v85 comparison has the flaw on both
+sides symmetrically, so it remains a valid net comparison. Validation of V11 on the pod recorded below; V11 (V8.5 net)
+to be re-uploaded on Archit's go, then its validation log checked for `m1 d1x … ~3000ms` instead of `d6 … 4096n`.
+
+11:50 **V11 validated on the pod (exact zips, zipfile extraction, read-only, no env, under a 4-worker load):** ready
+line 21.8 s in both builds; first engine move now `m1 d16 e2e4 46cp 924046n 11797ms` (V8.5 net) and `m1 d15 e2e4
+53cp 744687n 11051ms` (bp336): ≈ 9 s of compile wait then a normal ≈ 2.8 s search at depth 15–16, instead of V10's
+depth-6 / 4,096-node move; following moves 2.0–2.8 s at depth 15–17. FEN battery: all legal; the single timing flag is
+again the first call's compile wait against the battery's 5 s budget (designed behaviour). Comparison at 11:45:
+gcp 7/150 (+2 =5 −0), pod 5/120, VM starts after its endgame gate (82/100). **Next action: Archit re-uploads
+`submission_V11_v85_book_c40eg_init.zip` (95897ef6…); its validation log must show `m1 d1x … ≈ 2–4 s` after the
+wait, not `d6 … 4096n`.**

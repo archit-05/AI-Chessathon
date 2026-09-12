@@ -36,6 +36,13 @@ night); its full package is in a 120-game real-clock gate vs V8.5 on gcp-x86 (ET
 35 games, zero failures. Stockfish UCI_Elo 2400: 60/60 wins, uninformative. Opponent book coverage (Miskeen,
 Rataturing PGNs): 36 % of our-move positions in their lines, no repeated gap → no extension worth building.
 
+**V10 on the platform (validation log 11:20):** ready in 22.3 s of 30 in both smoke games; the book fired; but the
+first engine move ran only 4,096 nodes at depth 6 (`m1 d6 … 4096n 18103ms`): after the compile wait the hard time cap
+was charged for the wait a second time and collapsed to 8 ms. **Fixed in V11** (`patch_firstmove.py`, one variable;
+engine files unchanged): validated on the pod, move one is now a normal depth-16 search after the wait. **V11 is the
+build to have on the platform**: `submission_V11_v85_book_c40eg_init.zip` (sha256 95897ef6…); the bp336 alternative is
+`submission_V11_bp336_book_c40eg_init.zip` = `PrometheusBuild.zip` (0cd05c03…). The V10 zips remain only as history.
+
 **Packages (gcp-x86 `~/chess/packages/` and copied to the repo root; sha256 in `MANIFEST.txt`; same flat layout as `submission_V8.5.zip`):**
 - `submission_V10_v85_book_c40eg_init.zip` — sha256 **039f0c12…** — V8.5 net + book + contempt 40 + endgame fix +
   21 s join. Differs from the gated `cand_sfbook_c40eg` only in agent.py (engine files byte-identical). **This is the

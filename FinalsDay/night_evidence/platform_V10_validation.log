@@ -1,0 +1,52 @@
+[10:18:43Z] building
+[10:18:48Z] upload expands to 25,735,146 bytes
+[10:18:48Z] docker build
+Sending build context to Docker daemon  25.74MB
+
+Step 1/2 : FROM aichessathon/agent-base:latest
+ ---> eeaf64b96a67
+Step 2/2 : COPY . /agent
+ ---> 359305163ff1
+Successfully built 359305163ff1
+Successfully tagged aichessathon/agent:53f3821b-0b72-4c54-9f53-42bbeb397fb6
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+[10:18:59Z] pushed aichessathon.azurecr.io/agents:53f3821b-0b72-4c54-9f53-42bbeb397fb6
+[10:18:59Z] image aichessathon.azurecr.io/agents@sha256:359305163ff13cd66bc55a16c5884c04f47488e765c85ea83b77c48493869d65
+[10:18:59Z] smoke
+[10:18:59Z] your process is suspended while your opponent moves, so anything you compute between your own moves does not run
+[10:18:59Z] smoke game: 20 plies as white from rnbqk2r/ppp1bppp/4pn2/3p4/2P5/1P3NP1/P2PPPBP/RNBQK2R b KQkq - 0 5
+[10:20:00Z] ready in 22.3 s of the 30 s init budget
+[10:20:00Z] played 10 moves, slowest 18.1 s
+[10:20:00Z] game ended draw by ply_cap
+[10:20:00Z] your agent wrote to stderr
+bini-5.0 WARNING: still compiling after 21s, fallback engine active until it finishes
+bini-5.0 m1 d6 d2d4 40cp 4096n 18103ms left 120000ms sx0/0/73 rg0
+bini-5.0 m2 d17 e1g1 95cp 1780042n 3113ms left 102394ms sx1529/562/38535 rg0
+bini-5.0 m3 d16 c1a3 89cp 1097236n 1912ms left 99779ms sx1099/507/32246 rg0
+bini-5.0 m4 d16 e2e3 135cp 987411n 1717ms left 98366ms sx1155/377/20310 rg0
+bini-5.0 m5 d16 d1c2 137cp 1235944n 2164ms left 97147ms sx1757/417/29459 rg0
+bini-5.0 m6 d16 c2d2 568cp 1526736n 2593ms left 95481ms sx1993/414/13626 rg0
+bini-5.0 m7 d17 f3e5 827cp 1310141n 2242ms left 93387ms sx2681/782/9455 rg0
+bini-5.0 m8 d17 e5d7 1250cp 1072724n 1826ms left 91644ms sx3195/776/7273 rg0
+bini-5.0 m9 d16 d7e5 2202cp 1368371n 2303ms left 90317ms sx3346/419/3320 rg0
+bini-5.0 m10 d16 e5c6 2684cp 968805n 1684ms left 88512ms sx2815/427/1701 rg0
+[10:20:00Z] smoke game: 20 plies as black from rnbq1rk1/ppp2pbp/3p1np1/4p3/2PPP3/2N2N2/PP2BPPP/1RBQK2R b K - 1 7
+[10:21:04Z] ready in 22.3 s of the 30 s init budget
+[10:21:04Z] played 10 moves, slowest 17.3 s
+[10:21:04Z] game ended draw by ply_cap
+[10:21:04Z] your agent wrote to stderr
+bini-5.0 WARNING: still compiling after 21s, fallback engine active until it finishes
+bini-5.0 m1 book b8c6 d17 -1cp left 120000ms soft3829ms
+bini-5.0 bookexit m2 hits=1 saved=3829ms fullmove=8 left=120329ms fen=r1bq1rk1/ppp2pbp/2np1np1/4p3/2PPP3/2NB1N2/PP3PPP/1RBQK2R b K - 3 8
+bini-5.0 m2 d6 e5d4 179cp 4096n 17286ms left 120329ms sx0/0/32 rg0
+bini-5.0 m3 d16 d4c3 628cp 1855001n 3267ms left 103536ms sx1975/823/16319 rg0
+bini-5.0 m4 d15 c3d2 1117cp 896268n 1541ms left 100768ms sx1622/376/3000 rg0
+bini-5.0 m5 d16 d2c1r 1551cp 1445548n 2444ms left 99726ms sx3894/1108/5293 rg0
+bini-5.0 m6 d16 c1d1 3082cp 917254n 1580ms left 97780ms sx1894/334/1578 rg0
+bini-5.0 m7 d16 f6g4 2888cp 1675258n 2812ms left 96698ms sx4050/662/3143 rg0
+bini-5.0 m8 d16 g4h2 3401cp 1717495n 3196ms left 94384ms sx4634/975/2842 rg0
+bini-5.0 m9 d16 h2g4 3496cp 2094037n 3709ms left 91687ms sx5746/1016/3874 rg0
+bini-5.0 m10 d17 d8h4 3986cp 2221728n 4027ms left 88477ms sx7049/1733/6369 rg0
+[10:21:04Z] valid
