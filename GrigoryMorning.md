@@ -1,10 +1,69 @@
-# GrigoryMorning — handover, 12 September 2026, written at 09:06 BST, 12 September 2026
+# GrigoryMorning — handover, 12 September 2026, written at 11:12 BST, 12 September 2026
 
 Everything below was produced overnight by the engine/packaging side. Nothing has been uploaded to the
 platform. V8.5 (`bini_astra_v5_noc2b`, `submission_V8.5.zip`, sha256 `26828c24…`) is untouched and
 remains the control and the fallback. Full evidence: `FinalsDay/Finals Night Cause Table.md` and
 `FinalsDay/night_evidence/` (every script, log and manifest named here lives there or at the box paths given).
 
+## FINALS DAY — constraint, decisions and the plan to 14:00 (written 12:00, Archit + Claude)
+
+**The constraint (announced 10:41):** init budget **30 s** (was 90 s). Uploads are open 10:30–14:00; every upload
+validates against the 30 s init with two smoke games at the match clock against a house agent (verbatim log on the
+dashboard, including our init time and per-move times); **practice rounds run every ten minutes 10:40–13:50 on the
+latest valid build** (they count for nothing); **the build we have at 14:00 plays the knockout.** Hardware: one core of
+an AMD EPYC 9V74 at 2.60 GHz, 2 GB, /tmp 256 MB scratch that starts empty every game, process suspended while the
+opponent thinks. Knockout ties are two positions each played with both colours (4 games), three in the semis (6), four
+in the final (8); a level tie goes to the better Swiss standing (we are 6th); top seeds get a first-round bye.
+
+**What "init" means for us.** The runner imports `agent.py` and only then prints its ready line; "no ready line within
+the init budget" is a loss. Our import blocked on the numba compile (join up to 75 s): the Swiss logs show
+"Ready in" 36.8–43.8 s in 28 of 30 games and 51.2 s / 60.3 s twice — all losses under 30 s. Measured and decided
+(Cause Table §21): shipping numba's compiled cache is illegal ("native binaries are rejected … each jitted function pays
+that compile cost the first time it runs"), lowering `NUMBA_OPT` saves 2 s of compile for 11–15 % of speed
+(rejected), unifying the 4–11 specialisations of some functions might save ~5 s but means editing search call sites
+today (deferred). **Fix shipped: `COMPILE_JOIN_S` 75 → 21.** Verified platform-faithfully on the pod (zip extracted
+with Python's zipfile, read-only files, no env, fresh interpreter): ready line 21.8 s, engine ready ~8 s into the first
+move, FEN battery 32/32. Cost accepted: the compile remainder (≈ 16–23 s on the platform's machine, up to ≈ 39 s on
+its slow outlier) is paid from our clock on the first move, because the process is suspended during the opponent's turn.
+
+**Gate results (all real clock 120+0.5 unless stated).** Book vs V8.5, 300 games: **+40 =235 −25, +17.4 [−1.9, +36.8]**,
+0 failures → ships. Contempt 40 vs book candidate, 100 games: +10 =83 −7, **+10.4 [−16.1, +37.0]**, 0 failures, and −1 ±19
+over 576 fixed-node games → ships. Endgame honesty fix (dead pawnless draws = 0; no correction history ≤ 6 pieces):
+576-game screen −3 ±8, real-clock gate 66/100 level, running → ships (behaviour-neutral outside tiny endings, fixes the
+phantom +60 of rounds 113/116/119). bp144_d7_ft + book vs V8.5, 150 games: +9.3 [−16.5, +35.2] vs +17.4 for the book
+alone → **the net adds nothing; V8.5's net stays.** bp240 screen +9 ±18. **bp336_d7_ft screen +23 ±19** (best of the
+night); its full package is in a 120-game real-clock gate vs V8.5 on gcp-x86 (ETA 13:10). Short-clock stress 30 s + 0.3 s:
+35 games, zero failures. Stockfish UCI_Elo 2400: 60/60 wins, uninformative. Opponent book coverage (Miskeen,
+Rataturing PGNs): 36 % of our-move positions in their lines, no repeated gap → no extension worth building.
+
+**Packages (gcp-x86 `~/chess/packages/`, sha256 in `MANIFEST.txt`, same flat layout as `submission_V8.5.zip`):**
+- `submission_V10_v85_book_c40eg_init.zip` — sha256 **039f0c12…** — V8.5 net + book + contempt 40 + endgame fix +
+  21 s join. Differs from the gated `cand_sfbook_c40eg` only in agent.py (engine files byte-identical). **This is the
+  upload-now build.** 40-game real-clock smoke vs V8.5 running on the pod with the harness init budget set to 30 s.
+- `submission_V10_bp336_book_c40eg_init.zip` — sha256 **969e5da3…** — the same with the bp336 net. Ships only if its gate
+  clears the rule below.
+- Rollback: `submission_V8.5.zip` (26828c24…) and `submission_V9_book.zip` (467087fb…, book only).
+
+**The plan to 14:00.**
+1. **Now (on Archit's go): upload the V10 V8.5-net build.** It validates the 30 s init on the real EPYC core, plays the
+   practice rounds (free logs: init time, per-move times, real opponents), and is a complete gated build to be frozen
+   with if nothing else happens. Read the validation log: init well under 30 s, no fallback warnings after move one.
+2. **In parallel: measure bp336 at the real clock with every box** — gcp-x86 (120 games), the VM after its endgame gate
+   (~12:05), the pod after its smoke (~12:45), and any extra RunPod pods Archit fires up (`gate_worker.sh` turns a pod into
+   a 120+0.5 worker on an opening slice; `status_all.sh` shows everything). Target 250–300 games by 13:20. bp336 cannot
+   be made stronger before 14:00 (training + alignment + gates take 4–5 h); the question is only whether the existing
+   bp336 beats V8.5's net at the real clock, which the screen cannot answer (bp144 screened +12 and added nothing).
+3. **13:20 decision, pre-declared:** ship the bp336 package if its pair-level Elo vs V8.5 is **≥ +8 with the lower bound
+   ≥ −8**; otherwise the V10 V8.5-net build already on the platform stays. Stop reading gates at 13:20.
+4. **13:30 final upload** (if bp336 clears): `smoke_zip.py` on the exact zip on a quiet box, sha256 against
+   `MANIFEST.txt`, upload, read the validation log, confirm the practice round after it. Buffer to 14:00.
+5. If the practice logs show a bigger first-move compile cost than expected, the rebuild-and-reupload path stays open
+   until 14:00 (`patch_init.py <build> 3`, `build_packages.py`, `smoke_zip.py`).
+
+**Nothing is uploaded without Archit's explicit go.** Grigory: `bash ~/chess/status_all.sh` on gcp-x86 prints every
+result; the practice-round logs on the dashboard are the ground truth for init and clock use.
+
+---
 ## 0. Read this first (five lines)
 
 1. **Stockfish opening book — gate PASSED (07:35)**: 300 games 120+0.5 vs V8.5, **+40 =235 −25, pair-level Elo
@@ -229,7 +288,7 @@ The Mac's endgame-fix arena was stopped at 10 games (partial, not for decisions)
 
 ## 6. Live status at push time (auto-filled)
 
-Written 2026-09-12 09:05 BST.
+Written 2026-09-12 11:12 BST.
 
 /private/tmp/claude-501/-Users-architbhardwaj-Desktop-AI-Chessathon/edc9c181-8258-4c54-8a6f-0a83813055f3/scratchpad/morning_push.sh: line 9: gcp-x86:~/chess/gates/sfbook_real.log: No such file or directory
 **Book gate ()** — read as partial unless it says 300/300:
@@ -490,6 +549,7 @@ w512_ft ACC_BOUND 16304 int16 OK size 6310556 bytes
 2026-09-12 06:37:28 SHAPE contempt40 vs contempt20 (same net, 30k): 06:37:27 [576/576] +139 =297 -140 score 49.9% elo -1 ±19 (pentanomial [17, 69, 115, 72, 15])
 2026-09-12 07:20:41 SHAPE eg_draw=1 vs eg_draw=0 (same net, 30k): 07:20:40 [576/576] +114 =343 -119 score 49.6% elo -3 ±8 (pentanomial [0, 26, 242, 19, 1])
 2026-09-12 07:59:59 SCREEN bp240_d7_ft vs fc_b: 07:59:58 [576/576] +149 =293 -134 score 51.3% elo +9 ±18 (pentanomial [10, 66, 125, 73, 14])
+2026-09-12 08:32:41 SCREEN bp336_d7_ft vs fc_b: 08:32:40 [576/576] +162 =290 -124 score 53.3% elo +23 ±19 (pentanomial [9, 62, 115, 86, 16])
 nnue_a2lite.safetensors
 nnue_a3site.safetensors
 nnue_bp144_d7_ft.safetensors
@@ -526,13 +586,22 @@ guards + book instrumentation applied to cand_netbook_bp144_d7_ft/agent.py
   Maximum resident set size (kbytes): 822768
   wall=31.1s rc=0
 started gate C for bp144_d7_ft at Sat Sep 12 06:35:20 UTC 2026
+2026-09-12 09:15:20 combo C (bp144_d7_ft + book vs V8.5): [150/150] +18 =118 -14  score 51.3%  elo +9 ±56  last: white by checkmate
+guards + book instrumentation applied to cand_netbook_bp144_d7_ft/agent.py
+  print(f'SMOKE init={t1:.1f}s nnue_ready={ok} move={m} legal={chess.Move.from_uci(m) in chess.Board(fen).legal_moves} move_secs={dt:.2f}', file=sys.stderr, flush=True)
+  Maximum resident set size (kbytes): 783888
+  wall=31.4s rc=0
+  print(f'SMOKE init={t1:.1f}s nnue_ready={ok} move={m} legal={chess.Move.from_uci(m) in chess.Board(fen).legal_moves} move_secs={dt:.2f}', file=sys.stderr, flush=True)
+  Maximum resident set size (kbytes): 823368
+  wall=31.4s rc=0
+started gate A for bp144_d7_ft at Sat Sep 12 09:16:26 UTC 2026
 ```
 
 /private/tmp/claude-501/-Users-architbhardwaj-Desktop-AI-Chessathon/edc9c181-8258-4c54-8a6f-0a83813055f3/scratchpad/morning_push.sh: line 26: /Users/architbhardwaj/chess/data/stage/nets_night/: No such file or directory
 **Mirrored nets on gcp-x86** ():
 ```
  
-4096 .
+12288 .
 4096 ..
 0 a2lite_30k.err
 11544769 a2lite_30k.json
@@ -572,6 +641,11 @@ started gate C for bp144_d7_ft at Sat Sep 12 06:35:20 UTC 2026
 525796 bp240_d7_ft_30k.log
 3444342 bp240_d7_ft_30k.pgn
 525796 bp240_d7_ft_30k.stdout
+0 bp336_d7_ft_30k.err
+10868225 bp336_d7_ft_30k.json
+516990 bp336_d7_ft_30k.log
+3344658 bp336_d7_ft_30k.pgn
+516990 bp336_d7_ft_30k.stdout
 0 bp96_d7_ft_30k.err
 10940162 bp96_d7_ft_30k.json
 519430 bp96_d7_ft_30k.log
@@ -593,8 +667,8 @@ started gate C for bp144_d7_ft at Sat Sep 12 06:35:20 UTC 2026
 568604 c40_30k.stdout
 542 c4_lane.out
 542 c4_lane.status
-544 c5_lane.out
-544 c5_lane.status
+577 c5_lane.out
+577 c5_lane.status
 2037 c_lane.out
 2037 c_lane.status
 0 eg_30k.err
@@ -618,7 +692,7 @@ started gate C for bp144_d7_ft at Sat Sep 12 06:35:20 UTC 2026
 3475732 k96b_ft_30k.pgn
 530031 k96b_ft_30k.stdout
 0 ladder_best.out
-2306 mirror.log
+2977 mirror.log
 12620460 nnue_a2lite.safetensors
 12620460 nnue_a3site.safetensors
 12620460 nnue_bp144_d7_ft.safetensors
@@ -638,6 +712,8 @@ started gate C for bp144_d7_ft at Sat Sep 12 06:35:20 UTC 2026
 12620460 nnue_k96b_ft.safetensors
 6310556 nnue_w512_ft.safetensors
 9465500 nnue_w768_ft.safetensors
+386 pod_queue.out
+386 pod_queue.status
 0 screen_bp.out
 0 screen_bp144.out
 0 screen_bp240.out
@@ -647,7 +723,7 @@ started gate C for bp144_d7_ft at Sat Sep 12 06:35:20 UTC 2026
 0 screen_eg.out
 0 screen_ftd.out
 138 screen_queue.out
-1437 screen_queue.status
+1579 screen_queue.status
 0 screen_soft.out
 35967 sf_build.log
 66320 train_a2lite.log
@@ -700,7 +776,7 @@ site_spice_12_23.npz
 /private/tmp/claude-501/-Users-architbhardwaj-Desktop-AI-Chessathon/edc9c181-8258-4c54-8a6f-0a83813055f3/scratchpad/morning_push.sh: line 27: /Users/architbhardwaj/chess/gates/c40_vm.log: No such file or directory
 **Must-win gate on the VM (V8.5 + book + contempt 40 vs V8.5 + book, 120+0.5, 100 games, )**:
 ```
-[96/100] +10 =79 -7  score 51.6%  elo +11 ±70  last: draw by fifty_moves
+[100/100] +10 =83 -7  score 51.5%  elo +10 ±69  last: draw by insufficient_material
 0
 
 pod draw-shape screen (contempt 40 vs 20, same net, 30k, 576 games, upper bound for strength):
@@ -722,12 +798,13 @@ Warning: Permanently added '[63.141.33.33]:22018' (ED25519) to the list of known
 ```
 guards + book instrumentation applied to cand_netbook_bp144_d7_ft/agent.py
   print(f'SMOKE init={t1:.1f}s nnue_ready={ok} move={m} legal={chess.Move.from_uci(m) in chess.Board(fen).legal_moves} move_secs={dt:.2f}', file=sys.stderr, flush=True)
-  Maximum resident set size (kbytes): 786324
-  wall=31.1s rc=0
+  Maximum resident set size (kbytes): 783888
+  wall=31.4s rc=0
   print(f'SMOKE init={t1:.1f}s nnue_ready={ok} move={m} legal={chess.Move.from_uci(m) in chess.Board(fen).legal_moves} move_secs={dt:.2f}', file=sys.stderr, flush=True)
-  Maximum resident set size (kbytes): 822768
-  wall=31.1s rc=0
-started gate C for bp144_d7_ft at Sat Sep 12 06:35:20 UTC 2026
-combo_bp144_d7_ft_C.log: [82/150] +10 =65 -7  score 51.8%  elo +13 ±76  last: draw by threefold_repetition
+  Maximum resident set size (kbytes): 823368
+  wall=31.4s rc=0
+started gate A for bp144_d7_ft at Sat Sep 12 09:16:26 UTC 2026
+combo_bp144_d7_ft_C.log: [150/150] +18 =118 -14  score 51.3%  elo +9 ±56  last: white by checkmate
+combo_bp144_d7_ft_A.log: 
 ```
 

@@ -615,3 +615,65 @@ fixed-Elo opponent agent; `pod_queue.sh` runs the full package vs UCI_Elo 2400 (
 test (40 games) after the bp336 screen. Screens: **bp240_d7_ft +9 ±18** (576; flat vs bp144's +12, the exposure trend
 has plateaued); bp336 exported and screening. Gates at 09:04: contempt 40 at 96/100 (+10 =79 −7), bp144 + book vs V8.5
 at 82/150 (+10 =65 −7).
+
+## 21. Finals-day constraint (announced 10:41): init must be under 30 s (was 90 s); freeze 14:00
+
+**What "init" is.** The official runner imports `agent` and only then writes its ready line (`harness/runner.py` lines
+11–13); "no ready line within the init budget → loss". Our platform logs show "Ready in" 36.8–43.8 s in 28 of 30
+games and **51.2 s and 60.3 s** in two (rounds 91, 110): the import blocks on `_thread.join(COMPILE_JOIN_S)` with the
+default 75 s, so the ready line comes when the compile finishes. Under a 30 s budget every one of those games is a loss.
+
+**Measured on gcp-x86 (`init_probe.py`, join 20 s):** ready line at 20.9 s with the engine still compiling; but the
+first `get_move` (a book move) then took 18.7 s — the compile thread holds the GIL, so the main thread is starved until
+the compile ends. Shortening the join alone therefore keeps us legal but moves the cost onto the clock of our first
+move (15–40 s on the platform's machines). Two-part fix: (1) `COMPILE_JOIN_S` 75 → 21 (ready line at ≈ 22–23 s on
+any machine, since the join is wall-clock); (2) ship numba's compiled cache so the compile disappears: numba's
+`UserProvidedCacheLocator` keys the cache on the source file's (mtime, size) and on a "magic tuple" (target triple,
+CPU name, CPU features); with `NUMBA_CPU_NAME`/`NUMBA_CPU_FEATURES` pinned to a Haswell-level target (AVX2, no
+AVX-512, runs on every EPYC) and the sources staged at a fixed path `/tmp/bini_pkg` with a fixed mtime, a cache built
+on gcp-x86 is valid on the platform (same numba 0.67.0, Python 3.12). The package dir is read-only on the platform;
+`/tmp` (256 MB scratch) is writable, which is why the staging goes there. Acceptance test: extract with Python's
+zipfile (mtimes not preserved) into a read-only directory on a *different* CPU (the pod's Xeon Gold), fresh `/tmp`,
+fresh interpreter: ready line < 10 s with the engine ready, then the FEN battery, node-identical search vs the
+uncached build, NPS check, and a real-clock smoke.
+
+**Gate results read at 11:00.** Contempt 40 (VM, 100 games): +10 =83 −7, pair Elo **+10.4 [−16.1, +37.0]**, 0 failures;
+with the 576-game fixed-node screen at −1 ±19 there is no evidence of harm and weak evidence of gain — ships (the
+±10 lower-bound clause of §17 was unattainable at 100 games; the decision rests on 676 games all ≥ −1).
+bp144_d7_ft + book vs V8.5 (gcp, 150 games): +18 =118 −14, **+9.3 [−16.5, +35.2]** vs the book alone at +17.4 —
+the net adds nothing measurable at the real clock; **the shipped net stays V8.5's**. Endgame fix (VM): 59/100,
++6 =48 −5, running. **bp336_d7_ft screen +23 ±19** (576; +162 =290 −124) — the best screen of the night and the only
+one with a lower bound above zero (bp144 +12, bp240 +9). Its full package (bp336 + book + contempt 40 + endgame fix)
+is now in a 120-game real-clock gate vs V8.5 on gcp-x86 (`final_bp336_vs_v85`, ETA ≈ 13:10) in place of the
+redundant c40eg-on-V8.5 gate (its parts are individually gated). Pre-declared rule: ship bp336 only if pair Elo ≥ +15
+with lower bound ≥ −5; otherwise the V8.5 net. Stockfish at UCI_Elo 2400 lost all 60 games to the package: far too
+weak to calibrate anything (the Elo limiter at 4 s/move is not a 2400 opponent); no information gained.
+
+11:15 **Shipped numba cache rejected on the rules, before building it.** Info.md: "Native binaries inside the zip are
+rejected. What you ship has to be source a judge can read … each jitted function pays that compile cost the first time
+it runs", and "/tmp … starts empty for every game and is deleted with it, so it is scratch space, not a cache between
+games". A shipped `.nbc` cache is compiled machine code — exactly what the rule forbids — so `patch_cache.py` /
+`build_cache.sh` stay in the evidence directory as a record of the idea only. Second fact from the same page: "your
+process is suspended while your opponent moves", so any compile left after the ready line is paid entirely from our own
+clock on our first move. The lever that remains is a shorter compile: `NUMBA_OPT` (LLVM optimisation level, default 3)
+set inside agent.py before numba is imported, chosen from a measured compile-time vs nodes-per-second trade-off on the
+pod (quiet, single-target), with a fixed-node identity check across levels. Ship rule for the init patch: ready line
+≤ 23 s on the pod and gcp-x86, FEN battery pass, fixed-node search identical to the unpatched build, zero failures in a
+real-clock smoke of the exact package.
+
+11:20 **Short-clock stress (pod, 30 s + 0.3 s, full package vs book candidate): 35 games, +9 =23 −3, zero failures,
+timeouts or forfeits** — the time manager stays safe at a quarter of the tournament clock (stopped at 35/40 to free the
+pod for the init measurements). The Stockfish-2400 run (60/60 wins) is recorded as uninformative.
+
+11:40 **Compile-time measurements (pod, quiet, Xeon Gold 6342, `opt_matrix.py`):** NUMBA_OPT 3 → compile 28.5 s,
+489 knps; OPT 2 → 27.6 s, 436 knps (−11 %); OPT 1 → 26.3 s, 418 knps (−15 %); fixed-node search identical across
+levels (a2a4, −114, depth 13). A lower optimisation level buys 2 s of compile for 11–15 % of speed: **rejected, OPT 3
+stays.** Specialisation census (`sig_census.py`): 73 jitted dispatchers, 186 specialisations; the small attack helpers
+compile 11 signatures each and `gen_moves` (bytecode 4458) compiles 4 — unifying argument types could save perhaps
+5 s, but it means touching search call sites two hours before the freeze: **deferred, noted for the future.**
+**Decision: `COMPILE_JOIN_S = 21`** (ready line ≈ 22–23 s: the platform's measured non-compile overhead is ≈ 1.3 s, and
+the join is wall-clock, so the slow-machine outliers that produced 51 s and 60 s inits cannot push the ready line
+past 30 s). Cost accepted: the compile remainder (platform ≈ 16–23 s typical, ≈ 39 s on the slow outlier) is paid
+from our clock on the first move because the process is suspended during the opponent's turn. Ship candidates built:
+`submission_V10_v85_book_c40eg_init.zip` (V8.5 net; `ship_v85` differs from the gated `cand_sfbook_c40eg` only in
+agent.py) and `submission_V10_bp336_book_c40eg_init.zip` (bp336 net, pending its real-clock gate).

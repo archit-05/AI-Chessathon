@@ -5,6 +5,65 @@ platform. V8.5 (`bini_astra_v5_noc2b`, `submission_V8.5.zip`, sha256 `26828c24�
 remains the control and the fallback. Full evidence: `FinalsDay/Finals Night Cause Table.md` and
 `FinalsDay/night_evidence/` (every script, log and manifest named here lives there or at the box paths given).
 
+## FINALS DAY — constraint, decisions and the plan to 14:00 (written 12:00, Archit + Claude)
+
+**The constraint (announced 10:41):** init budget **30 s** (was 90 s). Uploads are open 10:30–14:00; every upload
+validates against the 30 s init with two smoke games at the match clock against a house agent (verbatim log on the
+dashboard, including our init time and per-move times); **practice rounds run every ten minutes 10:40–13:50 on the
+latest valid build** (they count for nothing); **the build we have at 14:00 plays the knockout.** Hardware: one core of
+an AMD EPYC 9V74 at 2.60 GHz, 2 GB, /tmp 256 MB scratch that starts empty every game, process suspended while the
+opponent thinks. Knockout ties are two positions each played with both colours (4 games), three in the semis (6), four
+in the final (8); a level tie goes to the better Swiss standing (we are 6th); top seeds get a first-round bye.
+
+**What "init" means for us.** The runner imports `agent.py` and only then prints its ready line; "no ready line within
+the init budget" is a loss. Our import blocked on the numba compile (join up to 75 s): the Swiss logs show
+"Ready in" 36.8–43.8 s in 28 of 30 games and 51.2 s / 60.3 s twice — all losses under 30 s. Measured and decided
+(Cause Table §21): shipping numba's compiled cache is illegal ("native binaries are rejected … each jitted function pays
+that compile cost the first time it runs"), lowering `NUMBA_OPT` saves 2 s of compile for 11–15 % of speed
+(rejected), unifying the 4–11 specialisations of some functions might save ~5 s but means editing search call sites
+today (deferred). **Fix shipped: `COMPILE_JOIN_S` 75 → 21.** Verified platform-faithfully on the pod (zip extracted
+with Python's zipfile, read-only files, no env, fresh interpreter): ready line 21.8 s, engine ready ~8 s into the first
+move, FEN battery 32/32. Cost accepted: the compile remainder (≈ 16–23 s on the platform's machine, up to ≈ 39 s on
+its slow outlier) is paid from our clock on the first move, because the process is suspended during the opponent's turn.
+
+**Gate results (all real clock 120+0.5 unless stated).** Book vs V8.5, 300 games: **+40 =235 −25, +17.4 [−1.9, +36.8]**,
+0 failures → ships. Contempt 40 vs book candidate, 100 games: +10 =83 −7, **+10.4 [−16.1, +37.0]**, 0 failures, and −1 ±19
+over 576 fixed-node games → ships. Endgame honesty fix (dead pawnless draws = 0; no correction history ≤ 6 pieces):
+576-game screen −3 ±8, real-clock gate 66/100 level, running → ships (behaviour-neutral outside tiny endings, fixes the
+phantom +60 of rounds 113/116/119). bp144_d7_ft + book vs V8.5, 150 games: +9.3 [−16.5, +35.2] vs +17.4 for the book
+alone → **the net adds nothing; V8.5's net stays.** bp240 screen +9 ±18. **bp336_d7_ft screen +23 ±19** (best of the
+night); its full package is in a 120-game real-clock gate vs V8.5 on gcp-x86 (ETA 13:10). Short-clock stress 30 s + 0.3 s:
+35 games, zero failures. Stockfish UCI_Elo 2400: 60/60 wins, uninformative. Opponent book coverage (Miskeen,
+Rataturing PGNs): 36 % of our-move positions in their lines, no repeated gap → no extension worth building.
+
+**Packages (gcp-x86 `~/chess/packages/`, sha256 in `MANIFEST.txt`, same flat layout as `submission_V8.5.zip`):**
+- `submission_V10_v85_book_c40eg_init.zip` — sha256 **039f0c12…** — V8.5 net + book + contempt 40 + endgame fix +
+  21 s join. Differs from the gated `cand_sfbook_c40eg` only in agent.py (engine files byte-identical). **This is the
+  upload-now build.** 40-game real-clock smoke vs V8.5 running on the pod with the harness init budget set to 30 s.
+- `submission_V10_bp336_book_c40eg_init.zip` — sha256 **969e5da3…** — the same with the bp336 net. Ships only if its gate
+  clears the rule below.
+- Rollback: `submission_V8.5.zip` (26828c24…) and `submission_V9_book.zip` (467087fb…, book only).
+
+**The plan to 14:00.**
+1. **Now (on Archit's go): upload the V10 V8.5-net build.** It validates the 30 s init on the real EPYC core, plays the
+   practice rounds (free logs: init time, per-move times, real opponents), and is a complete gated build to be frozen
+   with if nothing else happens. Read the validation log: init well under 30 s, no fallback warnings after move one.
+2. **In parallel: measure bp336 at the real clock with every box** — gcp-x86 (120 games), the VM after its endgame gate
+   (~12:05), the pod after its smoke (~12:45), and any extra RunPod pods Archit fires up (`gate_worker.sh` turns a pod into
+   a 120+0.5 worker on an opening slice; `status_all.sh` shows everything). Target 250–300 games by 13:20. bp336 cannot
+   be made stronger before 14:00 (training + alignment + gates take 4–5 h); the question is only whether the existing
+   bp336 beats V8.5's net at the real clock, which the screen cannot answer (bp144 screened +12 and added nothing).
+3. **13:20 decision, pre-declared:** ship the bp336 package if its pair-level Elo vs V8.5 is **≥ +8 with the lower bound
+   ≥ −8**; otherwise the V10 V8.5-net build already on the platform stays. Stop reading gates at 13:20.
+4. **13:30 final upload** (if bp336 clears): `smoke_zip.py` on the exact zip on a quiet box, sha256 against
+   `MANIFEST.txt`, upload, read the validation log, confirm the practice round after it. Buffer to 14:00.
+5. If the practice logs show a bigger first-move compile cost than expected, the rebuild-and-reupload path stays open
+   until 14:00 (`patch_init.py <build> 3`, `build_packages.py`, `smoke_zip.py`).
+
+**Nothing is uploaded without Archit's explicit go.** Grigory: `bash ~/chess/status_all.sh` on gcp-x86 prints every
+result; the practice-round logs on the dashboard are the ground truth for init and clock use.
+
+---
 ## 0. Read this first (five lines)
 
 1. **Stockfish opening book — gate PASSED (07:35)**: 300 games 120+0.5 vs V8.5, **+40 =235 −25, pair-level Elo
