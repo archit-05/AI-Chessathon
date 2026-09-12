@@ -5,6 +5,15 @@ platform. V8.5 (`bini_astra_v5_noc2b`, `submission_V8.5.zip`, sha256 `26828c24�
 remains the control and the fallback. Full evidence: `FinalsDay/Finals Night Cause Table.md` and
 `FinalsDay/night_evidence/` (every script, log and manifest named here lives there or at the box paths given).
 
+## THE FROZEN BUILD (deployed 12:55) — PrometheusBuild V15
+
+`submission_V15_bp336_book_c70eg_init_fastcompile2.zip`, sha256 **e56c96b0…** (full hash and the component-by-component
+evidence in Cause Table §25). bp336 net + Stockfish book + contempt 70 (draw_behind −100) + endgame honesty + 21 s join +
+fast compile + first-move fix. Platform: ready line 22–24 s in every upload; V14 (same but contempt 60) won both of its
+practice games. Net comparison at the real clock: bp336 +15 [−12, +43] over 313 games vs V8.5's net in identical
+packages. Fallbacks (validated): V14 bp336 c60 (c859f498…), V14/V13 with the V8.5 net, `submission_V9_book.zip`,
+`submission_V8.5.zip`. **After 14:00: stop the arenas and terminate the three RunPod pods** (`stop_all.sh`).
+
 ## FINALS DAY — constraint, decisions and the plan to 14:00 (written 11:15, Archit + Claude)
 
 **The constraint (announced 10:41):** init budget **30 s** (was 90 s). Uploads are open 10:30–14:00; every upload

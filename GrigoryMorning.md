@@ -1,9 +1,18 @@
-# GrigoryMorning — handover, 12 September 2026, written at 12:26 BST, 12 September 2026
+# GrigoryMorning — handover, 12 September 2026, written at 12:59 BST, 12 September 2026
 
 Everything below was produced overnight by the engine/packaging side. Nothing has been uploaded to the
 platform. V8.5 (`bini_astra_v5_noc2b`, `submission_V8.5.zip`, sha256 `26828c24…`) is untouched and
 remains the control and the fallback. Full evidence: `FinalsDay/Finals Night Cause Table.md` and
 `FinalsDay/night_evidence/` (every script, log and manifest named here lives there or at the box paths given).
+
+## THE FROZEN BUILD (deployed 12:55) — PrometheusBuild V15
+
+`submission_V15_bp336_book_c70eg_init_fastcompile2.zip`, sha256 **e56c96b0…** (full hash and the component-by-component
+evidence in Cause Table §25). bp336 net + Stockfish book + contempt 70 (draw_behind −100) + endgame honesty + 21 s join +
+fast compile + first-move fix. Platform: ready line 22–24 s in every upload; V14 (same but contempt 60) won both of its
+practice games. Net comparison at the real clock: bp336 +15 [−12, +43] over 313 games vs V8.5's net in identical
+packages. Fallbacks (validated): V14 bp336 c60 (c859f498…), V14/V13 with the V8.5 net, `submission_V9_book.zip`,
+`submission_V8.5.zip`. **After 14:00: stop the arenas and terminate the three RunPod pods** (`stop_all.sh`).
 
 ## FINALS DAY — constraint, decisions and the plan to 14:00 (written 11:15, Archit + Claude)
 
@@ -314,7 +323,7 @@ The Mac's endgame-fix arena was stopped at 10 games (partial, not for decisions)
 
 ## 6. Live status at push time (auto-filled)
 
-Written 2026-09-12 12:26 BST.
+Written 2026-09-12 12:59 BST.
 
 /private/tmp/claude-501/-Users-architbhardwaj-Desktop-AI-Chessathon/edc9c181-8258-4c54-8a6f-0a83813055f3/scratchpad/morning_push.sh: line 9: gcp-x86:~/chess/gates/sfbook_real.log: No such file or directory
 **Book gate ()** — read as partial unless it says 300/300:
@@ -718,7 +727,7 @@ started gate A for bp144_d7_ft at Sat Sep 12 09:16:26 UTC 2026
 3475732 k96b_ft_30k.pgn
 530031 k96b_ft_30k.stdout
 0 ladder_best.out
-3465 mirror.log
+3648 mirror.log
 12620460 nnue_a2lite.safetensors
 12620460 nnue_a3site.safetensors
 12620460 nnue_bp144_d7_ft.safetensors

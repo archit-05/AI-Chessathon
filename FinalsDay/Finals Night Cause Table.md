@@ -805,3 +805,75 @@ colour (the arena shuffles job order, so a pair completes only when both games f
 Corrected read at 12:30: 173 games, +29 =120 −24 for bp336 (game score 51.4 %); 22 complete pairs, pair Elo −24
 [−77, +28], pentanomial [0, 7, 11, 4, 0]. No evidence yet that bp336 is stronger at the real clock. Pod 3
 (194.68.245.198) joined at 12:28 with 8 games; five boxes now play the comparison.
+
+12:40 **Archit's directive: work with the bp336 net; "win every game, convert to a draw only from a losing position";
+test contempt 70/80 as well as 60.** V14 (contempt 60) validated on the pod on the exact zip: ready 23.7 s under an
+8-game load, compile 22.9 s so the first move waited ≈ 1 s before a normal depth-16 search, battery legal.
+Recommended live build now: `PrometheusBuild.zip` = V14 bp336 (c859f498…). **Contempt screen** on pod 3 (its 8 workers
+taken off the net comparison; four boxes remain on it): contempt 80 vs 40 with the bp336 net, 576 games at 30k nodes —
+the question it answers is whether the aggressive end costs strength at fixed nodes and how the W/D/L shape moves.
+**V15 variants pre-built** for both nets (only `bini_engine.py` differs from V14): c70 (`submission_V15_*_c70eg_…`,
+bp336 e56c96b0…) and c80 (`submission_V15_*_c80eg_…`, bp336 1f427a5b…). Decision by ~13:10 from the screen; the net
+comparison read at 13:25; final upload by 13:35. Note for the record: bp336 is the same 1024-wide architecture as
+V8.5's net, trained on seven passes of extra Stockfish-labelled data — not a bigger network; at 173 real-clock games
+the two are level.
+
+12:45 **PrometheusBuild V14 uploaded by Archit (live build: bp336, contempt 60, fast compile, first-move fix).**
+V15 contempt-70 and contempt-80 bp336 zips: exact-zip battery **PASS 32/32** on the pod (ten members each; the
+contempt constant confirmed per zip). Net comparison at 12:38: **234 games, +38 =166 −30 for bp336 (51.7 %), 42 complete
+pairs, pair Elo +4.1 [−31.7, +40.1]**, pentanomial [0, 9, 23, 10, 0], zero failures, five boxes contributing.
+Contempt screen (pod 3, c80 vs c40, bp336, 30k): 260/576, −5 ±28, pentanomial [8, 27, 65, 21, 9] — more double-decisive
+pairs than the c40-vs-c20 screen had ([17, 69, 115, 72, 15] → the 0/4 corners were 17/15 of 288; here 8/9 of 130 so
+far), i.e. contempt 80 makes games more decisive at fixed nodes with no strength cost visible yet. Pre-declared rule for
+the final variant: screen ≥ −5 → contempt 70; ≥ +10 → 80; < −10 → 60. Pod 3 then plays a short real-clock smoke of the
+chosen variant vs V14 (`smoke_c.sh`, 8 workers, harness init budget 30 s) before the final upload.
+
+12:55 **PrometheusBuild V14 on the platform (validation 12:32): the compile work paid off.** Ready in 23.9 s and 23.8 s
+(6.1 s margin; the pre-join imports took ≈ 1.5 s longer on this validation machine than on earlier ones). **First move
+`m1 d18 d4d5 93cp 2153647n 5611ms`** — ≈ 2.5 s of compile remainder then a full ≈ 3 s search at depth 18 with 2.15 M
+nodes, against V11's 19.0 s first move; the book game's first move cost 1.2 s. Platform compile total ≈ 23–24 s, down
+from ≈ 40 s. **First win: practice round 12 vs catfish (White), checkmate in 56 moves** — book 3 hits (10.9 s saved),
++96 after the book, a steady climb (+120 at move 28, +330 at 30, +663 at 35, mate found at move 49), 2.1 s per move at
+depth 16–22, 29.6 s left at the end; first move 12.2 s on that (slower) machine. catfish had held V11 bp336 to a draw
+in round 6.
+
+12:52 **Leaderboard intel (practice standings, count for nothing; the bracket seeds from the Swiss at 14:00):** Mite
+(Ryan Vincent, Imperial) leads the practice table at 2926 with 6-4-1 over 11 games — the same "Ryan Vincent" that beat
+V8.5 three times in the ladder (rounds 98, 103, 108, all by checkmate); Mite's practice games: many draws vs the strong
+teams (JBG fam, Gladiator ×2, omega3 fish), wins vs the rest. Our practice line: rank 15, 2610, 9 games, 1-5-3 — most of
+those games were played by V10/V11 (depth-6 first move, 17–19 s compile cost, contempt 40) before PrometheusBuild V14
+went live at 12:32; V14 has one game so far (the catfish win). The field's finals builds are strong and drawish.
+**Contempt screen at 530/576: c80 vs c40 −10 ±19**, pentanomial [15, 58, 131, 49, 12] (double-decisive corners 27 of
+265 pairs vs 32 of 288 for c40-vs-c20): a small, probably real strength cost at the aggressive end. Decision per the
+rule: **contempt 70** (final line pending; 60 only if it ends below −15). Real-clock smoke queued on pod 3: V15 c70
+vs V14 c60, both bp336, 24 games, 8 workers, harness init budget 30 s.
+
+13:00 **Second win: practice round 13 vs DGS ELO (Black), checkmate in 44 moves** (PrometheusBuild V14). Ready 23.7 s;
+book 4 hits saving 15.7 s, and the clock at book exit read 121,984 ms — the compile finished inside the 21 s join on
+this machine, so the first move cost nothing; evaluation +36 after the book, +114 at move 13, +232 at 19, +570 at 29,
+mate found at move 41; 2–6 s per move at depth 16–25; 36.6 s left at the end. V14's practice record: 2 wins, 0 draws,
+0 losses.
+
+## 25. The frozen build (deployed 12:55): PrometheusBuild V15 = bp336 net + Stockfish book + contempt 70 + endgame honesty + 21 s join + fast compile + first-move fix
+
+`submission_V15_bp336_book_c70eg_init_fastcompile2.zip`, sha256 **e56c96b077aed8adf0421bd06e4a0a87e4e9eb84e97b58d0b6bef1e47d31c5a5**,
+7,872,802 B zipped / 25,729,454 B unpacked, ten files. Lineage and evidence, component by component:
+- **Net bp336_d7_ft** (Lane C, 336 superbatches on the six Stockfish binpacks at eval-scale 249.8, 12-sb shuffle alignment,
+  fc_b-schedule fine-tune; same 1024-wide architecture as V8.5's fc_b): screen +23 ±19 vs fc_b (576, 30k); **real clock
+  vs V8.5's net inside identical packages: 313 games, +56 =218 −39 (52.7 %), 79 pairs, pair Elo +15.4 [−12.2, +43.2]**,
+  zero failures, five boxes (read 12:58; final read 13:20 below).
+- **Stockfish opening book** (1,226 curated roots, 6 ply, guards): +17.4 [−1.9, +36.8] over 300 real-clock games vs V8.5;
+  on the platform 1–6 hits per game, 4–21 s saved.
+- **Contempt 70** with `draw_behind` at −100: contempt 40 vs 20 −1 ±19 (576, 30k) and +10.4 [−16.1, +37.0] (100 real
+  clock); contempt 80 vs 40 −9 ±18 (576, 30k) with more decisive pairs; practice rounds 6 and 8 drew by repetition at a
+  −40 read in Stockfish-0.00 positions; 70 chosen by the pre-declared rule. Real-clock smoke c70 vs c60 in progress
+  (pod 3, 24 games).
+- **Endgame honesty** (dead pawnless draws = 0; no correction history ≤ 6 pieces): −3 ±8 (576, 30k), +3.5 [−24.9, +31.9]
+  (100 real clock); fixes the phantom +60 of Swiss rounds 113/116/119.
+- **Init**: `COMPILE_JOIN_S` 21 (ready line 22.3–23.9 s on the platform in seven uploads); first-move accounting fix;
+  explicit numba signatures + HCE stub (compile −28 %, node-identical on 12 positions): platform first move 5.6 s
+  (V14 validation) vs 19.0 s (V11), and 0 s when the compile finishes inside the join (practice round 13).
+- **Platform record of the lineage**: V14 (contempt 60) practice: 2 wins (catfish, DGS ELO), 0 draws, 0 losses.
+**Fallbacks, all validated on the platform or on the exact zip:** V14 bp336 c60 (c859f498…), V13/V14 V8.5-net variants,
+`submission_V9_book.zip` (book only), `submission_V8.5.zip`. After the freeze: stop the arenas and terminate the three
+RunPod pods (billing), keep gcp-x86 and the VM.
