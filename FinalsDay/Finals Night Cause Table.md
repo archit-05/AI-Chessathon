@@ -877,3 +877,22 @@ mate found at move 41; 2–6 s per move at depth 16–25; 36.6 s left at the end
 **Fallbacks, all validated on the platform or on the exact zip:** V14 bp336 c60 (c859f498…), V13/V14 V8.5-net variants,
 `submission_V9_book.zip` (book only), `submission_V8.5.zip`. After the freeze: stop the arenas and terminate the three
 RunPod pods (billing), keep gcp-x86 and the VM.
+
+## 26. Practice round 14 vs Lubina (V14, White): the plateau again, in a bigger ending — and V16's answer
+
+Draw by fifty moves in 107 moves. Book 4 hits (15.7 s saved; compile inside the join). Our evaluation rose to +113 by
+move 10 and +150…+202 through moves 23–32, then decayed to +130 (44), +100 (46–51) and sat at **exactly +95/+96 from
+move 54 to move 95** while the king and bishop shuffled (b4–c5–a7–e3–g5–d2–e3–b6–d4–…); the fifty-move rule ended it.
+The material was larger than the ≤ 6-piece rule of §18 (a rook, a bishop and pawns each): the correction history
+saturated again and, worse, it *penalises progress*: a pawn push or capture changes the pawn-structure/material key to
+an unsaturated slot, so the line looks ~60 cp worse than shuffling in the saturated one. A general cap on the correction
+would need a gate there is no time for. **V16 adds the classical counter instead** (`patch_rule50.py`, switch
+`BINI_RULE50`, default on): after `endgame_scale`, the static evaluation is scaled by (200 − halfmove_clock)/200, exactly
+Stockfish's rule — the longer nothing irreversible happens, the closer the score moves to 0; a pawn move or capture
+resets the clock and restores the full score, so a side that believes it is better is rewarded for making progress, and
+a side that believes it is worse is drawn toward the fifty-move draw. Symmetric in sign, no effect at clock 0, half the
+score at clock 100. `submission_V16_bp336_book_c70eg_r50_init_fastcompile2.zip` (2a409da8…); only `bini_search.py`
+differs from V15. Verification: exact-zip battery; static-eval sanity (same position at clock 0 vs 90); 576-game
+fixed-node screen on vs off on pod 3 (8 workers); ship only if the screen is ≥ −5 and the platform validation is clean,
+by 13:40; otherwise V15 stays. Contempt-70 real-clock smoke stopped at 13/24 to free pod 3: +2 =9 −2, zero failures,
+zero init losses.

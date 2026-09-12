@@ -1,9 +1,20 @@
-# GrigoryMorning — handover, 12 September 2026, written at 12:59 BST, 12 September 2026
+# GrigoryMorning — handover, 12 September 2026, written at 13:10 BST, 12 September 2026
 
 Everything below was produced overnight by the engine/packaging side. Nothing has been uploaded to the
 platform. V8.5 (`bini_astra_v5_noc2b`, `submission_V8.5.zip`, sha256 `26828c24…`) is untouched and
 remains the control and the fallback. Full evidence: `FinalsDay/Finals Night Cause Table.md` and
 `FinalsDay/night_evidence/` (every script, log and manifest named here lives there or at the box paths given).
+
+## FINAL STATE (13:15) — V15 live; V16 (fifty-move scaling) decided by its screen at 13:25
+
+Live build: **V15** `submission_V15_bp336_book_c70eg_init_fastcompile2.zip` (e56c96b0…). Net read at 13:09: bp336 vs
+V8.5's net, **358 real-clock games, +60 =252 −46, 101 pairs, pair Elo +13.8 [−9.6, +37.2]**, zero failures → bp336 stays.
+Practice round 14 (V14) drew by fifty moves after 40 moves at a flat +95 (Cause Table §26: the correction-history plateau
+in a rook+bishop ending, which also penalises progress moves). **V16** = V15 + Stockfish's fifty-move scaling of the
+static evaluation (`patch_rule50.py`, switch `BINI_RULE50`): `submission_V16_bp336_book_c70eg_r50_init_fastcompile2.zip`
+(2a409da8…), battery 32/32, scaling verified (−88 → −49 at clock 90). It replaces V15 only if the 576-game on-vs-off
+screen on pod 3 is ≥ −5 and its platform validation is clean, uploaded by 13:40; otherwise V15 is the frozen build.
+After 14:00: `stop_all.sh`, terminate the three RunPod pods.
 
 ## THE FROZEN BUILD (deployed 12:55) — PrometheusBuild V15
 
@@ -323,7 +334,7 @@ The Mac's endgame-fix arena was stopped at 10 games (partial, not for decisions)
 
 ## 6. Live status at push time (auto-filled)
 
-Written 2026-09-12 12:59 BST.
+Written 2026-09-12 13:10 BST.
 
 /private/tmp/claude-501/-Users-architbhardwaj-Desktop-AI-Chessathon/edc9c181-8258-4c54-8a6f-0a83813055f3/scratchpad/morning_push.sh: line 9: gcp-x86:~/chess/gates/sfbook_real.log: No such file or directory
 **Book gate ()** — read as partial unless it says 300/300:
@@ -727,7 +738,7 @@ started gate A for bp144_d7_ft at Sat Sep 12 09:16:26 UTC 2026
 3475732 k96b_ft_30k.pgn
 530031 k96b_ft_30k.stdout
 0 ladder_best.out
-3648 mirror.log
+3709 mirror.log
 12620460 nnue_a2lite.safetensors
 12620460 nnue_a3site.safetensors
 12620460 nnue_bp144_d7_ft.safetensors
