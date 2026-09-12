@@ -5,7 +5,7 @@ platform. V8.5 (`bini_astra_v5_noc2b`, `submission_V8.5.zip`, sha256 `26828c24�
 remains the control and the fallback. Full evidence: `FinalsDay/Finals Night Cause Table.md` and
 `FinalsDay/night_evidence/` (every script, log and manifest named here lives there or at the box paths given).
 
-## FINALS DAY — constraint, decisions and the plan to 14:00 (written 12:00, Archit + Claude)
+## FINALS DAY — constraint, decisions and the plan to 14:00 (written 11:15, Archit + Claude)
 
 **The constraint (announced 10:41):** init budget **30 s** (was 90 s). Uploads are open 10:30–14:00; every upload
 validates against the 30 s init with two smoke games at the match clock against a house agent (verbatim log on the
@@ -36,7 +36,7 @@ night); its full package is in a 120-game real-clock gate vs V8.5 on gcp-x86 (ET
 35 games, zero failures. Stockfish UCI_Elo 2400: 60/60 wins, uninformative. Opponent book coverage (Miskeen,
 Rataturing PGNs): 36 % of our-move positions in their lines, no repeated gap → no extension worth building.
 
-**Packages (gcp-x86 `~/chess/packages/`, sha256 in `MANIFEST.txt`, same flat layout as `submission_V8.5.zip`):**
+**Packages (gcp-x86 `~/chess/packages/` and copied to the repo root; sha256 in `MANIFEST.txt`; same flat layout as `submission_V8.5.zip`):**
 - `submission_V10_v85_book_c40eg_init.zip` — sha256 **039f0c12…** — V8.5 net + book + contempt 40 + endgame fix +
   21 s join. Differs from the gated `cand_sfbook_c40eg` only in agent.py (engine files byte-identical). **This is the
   upload-now build.** 40-game real-clock smoke vs V8.5 running on the pod with the harness init budget set to 30 s.
@@ -53,8 +53,12 @@ Rataturing PGNs): 36 % of our-move positions in their lines, no repeated gap →
    a 120+0.5 worker on an opening slice; `status_all.sh` shows everything). Target 250–300 games by 13:20. bp336 cannot
    be made stronger before 14:00 (training + alignment + gates take 4–5 h); the question is only whether the existing
    bp336 beats V8.5's net at the real clock, which the screen cannot answer (bp144 screened +12 and added nothing).
-3. **13:20 decision, pre-declared:** ship the bp336 package if its pair-level Elo vs V8.5 is **≥ +8 with the lower bound
-   ≥ −8**; otherwise the V10 V8.5-net build already on the platform stays. Stop reading gates at 13:20.
+3. **13:20 decision, pre-declared (revised 11:35):** the comparison is **`ship_bp336` vs `ship_v85`** — identical
+   packages except the net, both with the 21 s join, so it isolates the net and both sides pass a 30 s init (bare V8.5
+   cannot, and "vs bare V8.5" would be confounded by the book's own +17). Runs on gcp-x86 (150, seed 3), pod (120, seed
+   11), VM (100 after its endgame gate, seed 7); combine with `merge_gate.py <stats.jsonl>...`. **Ship bp336 if pair Elo
+   ≥ +5 with lower bound ≥ −10 over ≥ 200 games**; otherwise the V10 V8.5-net build already on the platform stays. Stop
+   reading gates at 13:20.
 4. **13:30 final upload** (if bp336 clears): `smoke_zip.py` on the exact zip on a quiet box, sha256 against
    `MANIFEST.txt`, upload, read the validation log, confirm the practice round after it. Buffer to 14:00.
 5. If the practice logs show a bigger first-move compile cost than expected, the rebuild-and-reupload path stays open

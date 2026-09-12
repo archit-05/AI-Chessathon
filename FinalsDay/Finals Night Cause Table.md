@@ -677,3 +677,14 @@ past 30 s). Cost accepted: the compile remainder (platform ≈ 16–23 s typical
 from our clock on the first move because the process is suspended during the opponent's turn. Ship candidates built:
 `submission_V10_v85_book_c40eg_init.zip` (V8.5 net; `ship_v85` differs from the gated `cand_sfbook_c40eg` only in
 agent.py) and `submission_V10_bp336_book_c40eg_init.zip` (bp336 net, pending its real-clock gate).
+
+11:35 **bp336 decision redesigned as a direct comparison.** The first bp336 gate (bp336 package vs bare V8.5) answered
+the wrong question: the book alone is worth +17 against bare V8.5, so a "+8 vs V8.5" rule would have shipped a net that
+is *worse* than the V8.5-net package. Also, in the pod smoke with the harness init budget at 30 s, bare V8.5 (join 75 s)
+loses by init, which invalidates it as an opponent under the finals rule. All three boxes now run **`ship_bp336` vs
+`ship_v85`** — identical packages except the net, both with the 21 s join, harness init budget 30 s on the pod —
+gcp-x86 150 games (seed 3, 6 workers), pod 120 games (seed 11), VM 100 games after its endgame gate (seed 7);
+`merge_gate.py` combines the stats sidecars pair-wise. **Pre-declared rule (replaces §21's): ship the bp336 package if
+ship_bp336 vs ship_v85 shows pair-level Elo ≥ +5 with lower bound ≥ −10 over ≥ 200 games by 13:20; otherwise
+ship_v85.** The V10 zips are in the project root (`submission_V10_v85_book_c40eg_init.zip` 039f0c12…,
+`submission_V10_bp336_book_c40eg_init.zip` 969e5da3…), flat layout verified.
