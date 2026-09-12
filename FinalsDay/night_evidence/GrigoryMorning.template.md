@@ -43,6 +43,14 @@ engine files unchanged): validated on the pod, move one is now a normal depth-16
 build to have on the platform**: `submission_V11_v85_book_c40eg_init.zip` (sha256 95897ef6…); the bp336 alternative is
 `submission_V11_bp336_book_c40eg_init.zip` = `PrometheusBuild.zip` (0cd05c03…). The V10 zips remain only as history.
 
+**V12/V13 (12:15) — the compile itself shortened, behaviour-identical (Cause Table §23):** numba was compiling a
+separate specialisation per constant argument (60 of 109 were literal duplicates of ten helpers) — explicit signatures
+fix that (`patch_sigs.py`); the never-executed 193-line classical evaluation is stubbed (`patch_hce.py`). Verified on the
+pod: compile −28 %, fixed-node search identical on 12 positions, battery clean. **Current ship files:**
+`submission_V13_v85_book_c40eg_init_fastcompile2.zip` (V8.5 net, sha256 6d546cfd…) and
+`submission_V13_bp336_book_c40eg_init_fastcompile2.zip` = `PrometheusBuild.zip` (bp336 net, f03394d6…). Gate results
+complete: book +17.4 (300), contempt 40 +10.4 (100), endgame fix +3.5 (100), all zero failures.
+
 **Packages (gcp-x86 `~/chess/packages/` and copied to the repo root; sha256 in `MANIFEST.txt`; same flat layout as `submission_V8.5.zip`):**
 - `submission_V10_v85_book_c40eg_init.zip` — sha256 **039f0c12…** — V8.5 net + book + contempt 40 + endgame fix +
   21 s join. Differs from the gated `cand_sfbook_c40eg` only in agent.py (engine files byte-identical). **This is the

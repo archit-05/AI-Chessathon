@@ -1,4 +1,4 @@
-# GrigoryMorning — handover, 12 September 2026, written at 11:29 BST, 12 September 2026
+# GrigoryMorning — handover, 12 September 2026, written at 12:06 BST, 12 September 2026
 
 Everything below was produced overnight by the engine/packaging side. Nothing has been uploaded to the
 platform. V8.5 (`bini_astra_v5_noc2b`, `submission_V8.5.zip`, sha256 `26828c24…`) is untouched and
@@ -42,6 +42,14 @@ was charged for the wait a second time and collapsed to 8 ms. **Fixed in V11** (
 engine files unchanged): validated on the pod, move one is now a normal depth-16 search after the wait. **V11 is the
 build to have on the platform**: `submission_V11_v85_book_c40eg_init.zip` (sha256 95897ef6…); the bp336 alternative is
 `submission_V11_bp336_book_c40eg_init.zip` = `PrometheusBuild.zip` (0cd05c03…). The V10 zips remain only as history.
+
+**V12/V13 (12:15) — the compile itself shortened, behaviour-identical (Cause Table §23):** numba was compiling a
+separate specialisation per constant argument (60 of 109 were literal duplicates of ten helpers) — explicit signatures
+fix that (`patch_sigs.py`); the never-executed 193-line classical evaluation is stubbed (`patch_hce.py`). Verified on the
+pod: compile −28 %, fixed-node search identical on 12 positions, battery clean. **Current ship files:**
+`submission_V13_v85_book_c40eg_init_fastcompile2.zip` (V8.5 net, sha256 6d546cfd…) and
+`submission_V13_bp336_book_c40eg_init_fastcompile2.zip` = `PrometheusBuild.zip` (bp336 net, f03394d6…). Gate results
+complete: book +17.4 (300), contempt 40 +10.4 (100), endgame fix +3.5 (100), all zero failures.
 
 **Packages (gcp-x86 `~/chess/packages/` and copied to the repo root; sha256 in `MANIFEST.txt`; same flat layout as `submission_V8.5.zip`):**
 - `submission_V10_v85_book_c40eg_init.zip` — sha256 **039f0c12…** — V8.5 net + book + contempt 40 + endgame fix +
@@ -299,7 +307,7 @@ The Mac's endgame-fix arena was stopped at 10 games (partial, not for decisions)
 
 ## 6. Live status at push time (auto-filled)
 
-Written 2026-09-12 11:29 BST.
+Written 2026-09-12 12:06 BST.
 
 /private/tmp/claude-501/-Users-architbhardwaj-Desktop-AI-Chessathon/edc9c181-8258-4c54-8a6f-0a83813055f3/scratchpad/morning_push.sh: line 9: gcp-x86:~/chess/gates/sfbook_real.log: No such file or directory
 **Book gate ()** — read as partial unless it says 300/300:
@@ -703,7 +711,7 @@ started gate A for bp144_d7_ft at Sat Sep 12 09:16:26 UTC 2026
 3475732 k96b_ft_30k.pgn
 530031 k96b_ft_30k.stdout
 0 ladder_best.out
-3099 mirror.log
+3343 mirror.log
 12620460 nnue_a2lite.safetensors
 12620460 nnue_a3site.safetensors
 12620460 nnue_bp144_d7_ft.safetensors

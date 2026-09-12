@@ -724,3 +724,59 @@ again the first call's compile wait against the battery's 5 s budget (designed b
 gcp 7/150 (+2 =5 −0), pod 5/120, VM starts after its endgame gate (82/100). **Next action: Archit re-uploads
 `submission_V11_v85_book_c40eg_init.zip` (95897ef6…); its validation log must show `m1 d1x … ≈ 2–4 s` after the
 wait, not `d6 … 4096n`.**
+
+12:00 **V11 on the real platform (validation log 11:32): behaves exactly as designed.** Ready in 22.4 s and 22.3 s of
+the 30 s budget (7.6 s margin; the join is wall-clock). Game 1 (White): `m1 d17 d2d4 16cp 1019039n 19005ms` — ≈ 16 s of
+compile wait then a real ≈ 3 s search at depth 17 (V10 had depth 6 / 4,096 nodes here); m2 1.8 s d16; m3 7.3 s d16
+with 4.15 M nodes (a normal instability extension up to the hard cap). Game 2 (Black): the book answered move one
+(`book b8c6`), but the clock shows it cost 17.2 s — the main thread cannot return even a dictionary lookup while numba
+compiles (GIL), so the first move costs the compile remainder whether it is a book move or a search; then `m2 d18 …
+3729ms`, `m3 d15 … 2041ms`. Platform compile total ≈ 22.3 + 17.5 ≈ 40 s, in line with the Swiss logs. No fallback
+moves, no warnings other than the designed "still compiling" line, no errors. **V11 (V8.5 net) is the build on the
+platform and the safe freeze.** Residual: on the slowest platform machine seen (60 s compile) the first move would cost
+≈ 38 s against the 42 s wait cap — survivable, no fallback.
+
+12:20 **PrometheusBuild (V11 bp336) validated on the platform (log 11:45): identical behaviour to V11.** Ready in
+22.3 s of 30 in both smoke games. Game 1 (White): `m1 d16 d1e2 151cp 1959544n 20168ms` — ≈ 17 s compile wait, then a
+real ≈ 3 s search at depth 16 with 1.96 M nodes; m2 1.9 s d17, m3 2.1 s d18. Game 2 (Black): book move first
+(`book d8d7`, cost 15.7 s of compile wait as expected), then `m2 d16 … 3312ms`, `m3 d16 … 3593ms`. No errors, no fallback
+moves. Both candidate packages are now proven on the real hardware; the choice between them rests only on the
+real-clock comparison (rule: bp336 ≥ +5, lower bound ≥ −10, ≥ 200 games, read 13:25). Sequence agreed with Archit:
+PrometheusBuild plays two or three practice rounds, **V11 is re-uploaded by 12:50 regardless**, and PrometheusBuild goes
+back up at 13:35 only if it clears the rule.
+
+## 23. V12 — the compile itself made shorter (12:10), behaviour-identical
+
+`sig_detail.py` showed *why* the compile takes 37–40 s: numba compiles a separate specialisation for every distinct
+constant argument, so `_add` had 18 signatures (promotion codes, flag constants, castling squares), `rook_att`,
+`bishop_att` and `attacked` 11 each (the castling squares 2–6 and 58–62 as literals), `gen_moves` 4 (literal
+`captures_only`, literal base), plus 2–3 for `king_id`, `_feature`, `nnue_refresh_persp`, `corr_index`, `tt_store`:
+60 of 109 specialisations were literal duplicates of ten small helpers. **Fix (`patch_sigs.py`): an explicit numba
+signature on each of the ten** (e.g. `@njit("uint64(int64, uint64)")` for `rook_att`); a dispatcher with a declared
+signature cannot compile literal variants, so every call resolves to the one overload and literal ints convert to
+int64. No logic touched. **Verified on the pod (`verify_v12.sh`, under an 8-game load):** specialisations 109 → 49,
+compile 36.9 s → 29.4 s (−20 %); **fixed-node search identical on all 12 positions** (same move, score and depth,
+including mate and promotion cases); FEN battery all legal. Expected on the platform: compile ≈ 40 → ≈ 32 s, so the
+first-move clock cost falls from ≈ 19 s to ≈ 11 s. Packages: `submission_V12_v85_book_c40eg_init_fastcompile.zip`
+(V8.5 net, the new safe default once its platform validation is read) and
+`submission_V12_bp336_book_c40eg_init_fastcompile.zip` = `PrometheusBuild.zip`; agent.py, nets and book byte-identical
+to V11; the two V12 builds share identical engine files. The running comparison (V10/V11 engine code) stays valid for
+the net decision because the change is behaviour-neutral by construction and by test. Pod 2 (69.30.85.95, 7.65 vCPU
+quota) joined the comparison at 12:05 with 8 concurrent games (seed 17); a third pod is coming. RunPod balance $4.42 —
+Archit asked to top up.
+
+12:05 **Endgame-fix gate complete (VM, 100 games, eg vs book candidate, 120+0.5): +14 =73 −13, pair Elo +3.5
+[−24.9, +31.9], zero failures** — neutral in strength, as the 576-game screen predicted; it ships for what it fixes (the
+phantom +60 in simple endings) at no measurable cost. All three draw-related components are now gated: book +17.4
+(300), contempt 40 +10.4 (100), endgame fix +3.5 (100). Comparison ship_bp336 vs ship_v85 at 12:01: 84 games,
++14 =61 −9, +23.7 [−22.8, +71.1], four boxes contributing (gcp 36, pod 29 + 12, pod 2 7), VM joining.
+**V13** = V12 + the never-executed 193-line classical evaluation stubbed (`patch_hce.py`): both nets' packages built
+(`submission_V13_*_fastcompile2.zip`, engine files identical between them); verification on the pod recorded below.
+
+12:15 **V13 verified on the pod (`verify_v13.sh`, 8-game load):** compile 29.2 s → 26.5 s vs V12 (V11 was 36.9 s on the
+same box: −28 % in total), 48 specialisations, **fixed-node search identical on all 12 positions**, battery all legal
+(first-call wait flag as designed). Compile profile (`compile_profile.py`): `search` 14.2 s and `qsearch` 9.7 s
+(inclusive), then `has_legal_move` 2.1 s, `make` 1.5 s, `evaluate` 1.3 s — the rest is the search itself; compile-time
+work stops here. Expected platform compile ≈ 40 s → ≈ 29 s; first-move clock cost ≈ 19 s → ≈ 8 s. **Ship files:
+`submission_V13_v85_book_c40eg_init_fastcompile2.zip` (6d546cfd…) = the default to upload now;
+`submission_V13_bp336_book_c40eg_init_fastcompile2.zip` = `PrometheusBuild.zip` (f03394d6…) if bp336 clears the rule.**
