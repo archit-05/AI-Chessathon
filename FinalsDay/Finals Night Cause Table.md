@@ -780,3 +780,28 @@ same box: −28 % in total), 48 specialisations, **fixed-node search identical o
 work stops here. Expected platform compile ≈ 40 s → ≈ 29 s; first-move clock cost ≈ 19 s → ≈ 8 s. **Ship files:
 `submission_V13_v85_book_c40eg_init_fastcompile2.zip` (6d546cfd…) = the default to upload now;
 `submission_V13_bp336_book_c40eg_init_fastcompile2.zip` = `PrometheusBuild.zip` (f03394d6…) if bp336 clears the rule.**
+
+## 24. Practice rounds 6–9 (PrometheusBuild V11 live, 11:45–12:10) and the contempt decision
+
+Results: catfish (W) draw by repetition; Miskeen (B) draw by fifty moves; Sobriety (W) draw by repetition; Rataturing (B)
+loss by checkmate. Init 22.3–22.5 s in all four; first move 11.6–16.9 s; then 1.5–2.1 s/move at depth 16–25; book 2–6
+hits, 7–21 s saved; clock used to 9–20 s left; no fallbacks. **Miskeen**: we were −100…−150 by our own evaluation from
+move 22 to 60, `draw_behind` switched contempt to 0 and the engine held a fortress for 48 moves at exactly 0 → half a
+point saved against the 2nd seed, as designed. **Rataturing**: no blunder, a slow grind from +48 (move 17) to −40
+(22), −128 (44), −340 (74), mate at 98 — a rook-and-knight ending converted patiently; a strength gap, no code fix.
+**catfish and Sobriety**: our evaluation read exactly −40 for 15–30 moves and the engine steered into repetitions
+(bishop b2–b3–b2 shuffles in game 8). **Stockfish depth 22 on those positions: 0.00 in every case** (catfish moves
+59–73: ours −16/−15/−40/−40/−40 vs SF 0/0/0/0/0; Sobriety moves 19–33: ours −40/+31/−40/−40/−40 vs SF 0/0/0/0/−15),
+with our played moves matching or equalling Stockfish's best. The engine agreed to draws in level positions because
+the net's ~25–40 cp pessimism meets the −40 draw score. **Decision: contempt 40 → 60**, `draw_behind` at −100
+unchanged (clearly worse positions still take the draw, cf. Miskeen). Evidence base: contempt 40 vs 20 cost nothing at
+fixed nodes (−1 ±19, 576 games) and scored +10.4 [−16.1, +37.0] at the real clock; two of four practice games were
+drawn at −40 in Stockfish-level positions. Risk accepted: more losses where a −40…−60 read is a true deficit; the
+knockout format (a level tie goes to the higher seed) makes a level draw worth nothing to us in every must-win round.
+**V14** = V13 + that one constant: `submission_V14_v85_book_c60eg_init_fastcompile2.zip` (31ca0e4e…) and
+`submission_V14_bp336_book_c60eg_init_fastcompile2.zip` = `PrometheusBuild.zip` (c859f498…); only `bini_engine.py`
+differs from V13. **Merger fixed** (`merge_gate.py`): pairs are the same opening within the same run with one game per
+colour (the arena shuffles job order, so a pair completes only when both games finish); voids listed, never scored.
+Corrected read at 12:30: 173 games, +29 =120 −24 for bp336 (game score 51.4 %); 22 complete pairs, pair Elo −24
+[−77, +28], pentanomial [0, 7, 11, 4, 0]. No evidence yet that bp336 is stronger at the real clock. Pod 3
+(194.68.245.198) joined at 12:28 with 8 games; five boxes now play the comparison.

@@ -51,6 +51,13 @@ pod: compile −28 %, fixed-node search identical on 12 positions, battery clean
 `submission_V13_bp336_book_c40eg_init_fastcompile2.zip` = `PrometheusBuild.zip` (bp336 net, f03394d6…). Gate results
 complete: book +17.4 (300), contempt 40 +10.4 (100), endgame fix +3.5 (100), all zero failures.
 
+**V14 (12:30, Cause Table §24) — contempt 40 → 60.** Practice rounds 6–9 on the platform: two draws by repetition
+taken at a −40 read in positions Stockfish scores 0.00, one fortress draw from a worse position (the draw_behind rule
+working), one grind loss to Rataturing. Contempt 60 with draw_behind at −100 unchanged. **Current ship files:**
+`submission_V14_v85_book_c60eg_init_fastcompile2.zip` (V8.5 net, 31ca0e4e…) and
+`submission_V14_bp336_book_c60eg_init_fastcompile2.zip` = `PrometheusBuild.zip` (bp336 net, c859f498…). The net
+comparison (bp336 vs V8.5 net, five boxes) is read at 13:25 with the corrected pair-wise merger.
+
 **Packages (gcp-x86 `~/chess/packages/` and copied to the repo root; sha256 in `MANIFEST.txt`; same flat layout as `submission_V8.5.zip`):**
 - `submission_V10_v85_book_c40eg_init.zip` — sha256 **039f0c12…** — V8.5 net + book + contempt 40 + endgame fix +
   21 s join. Differs from the gated `cand_sfbook_c40eg` only in agent.py (engine files byte-identical). **This is the
