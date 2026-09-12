@@ -1,4 +1,4 @@
-# GrigoryMorning — handover, 12 September 2026, written at 07:50 BST, 12 September 2026
+# GrigoryMorning — handover, 12 September 2026, written at 09:06 BST, 12 September 2026
 
 Everything below was produced overnight by the engine/packaging side. Nothing has been uploaded to the
 platform. V8.5 (`bini_astra_v5_noc2b`, `submission_V8.5.zip`, sha256 `26828c24…`) is untouched and
@@ -190,6 +190,19 @@ Nothing depends on the Mac. Where each result appears, with its report generated
 Read any report with: `python3 -c "import json;r=json.load(open('<report>'));print(r['W'],r['D'],r['L'],r['pair_elo'],r['pair_elo_95'],r['failures'])"`.
 The Mac's endgame-fix arena was stopped at 10 games (partial, not for decisions) and continues on the VM as `eg_vm`.
 
+## 4c. Added at 09:00 — the five things we were not focusing on (Cause Table §20)
+
+1. Rehearse the revealed constraint: clock (`patch_clock.py` + short-clock stress test on the pod), size (no-book
+   packages, w768/w512 nets), memory (RSS ~800 MB), init cap (fallback plays until the compile joins), odd inputs.
+2. Robustness through the package, not the engine: `fen_battery.py` — **PASS** on the exact c40eg zip (32 checks).
+3. A non-clone opponent: Stockfish 19 at UCI_Elo 2400 in the agent interface (`sf_agent/`), 60 games vs the full
+   package on the pod (`gates/sf2400.log` / `_report.json`) — absolute level and decisive rate vs a different style.
+4. Opponent-aware book: `opp_book_cov.py` on Miskeen/Rataturing PGNs — 36 % coverage of our-move positions in their
+   lines, no repeated uncovered position, so no extension is worth building; the book's value is the hits it has.
+5. The freeze protocol: `status_all.sh` (one command, every result), manifests + `smoke_zip.py` on the exact bytes,
+   sha256 of the uploaded file vs `packages/MANIFEST.txt`, `submission_V8.5.zip` for rollback, stop reading gates 45 min
+   before the freeze, ssh to the three boxes is all the venue needs.
+
 ## 5. Morning sequence (recommended)
 
 1. Read §6, then run the gate report; apply the decision rule with Archit.
@@ -216,7 +229,7 @@ The Mac's endgame-fix arena was stopped at 10 games (partial, not for decisions)
 
 ## 6. Live status at push time (auto-filled)
 
-Written 2026-09-12 07:50 BST.
+Written 2026-09-12 09:05 BST.
 
 /private/tmp/claude-501/-Users-architbhardwaj-Desktop-AI-Chessathon/edc9c181-8258-4c54-8a6f-0a83813055f3/scratchpad/morning_push.sh: line 9: gcp-x86:~/chess/gates/sfbook_real.log: No such file or directory
 **Book gate ()** — read as partial unless it says 300/300:
@@ -475,12 +488,15 @@ w512_ft ACC_BOUND 16304 int16 OK size 6310556 bytes
 2026-09-12 05:20:14 SCREEN bp144_soft vs fc_b: 05:20:13 [576/576] +142 =280 -154 score 49.0% elo -7 ±21 (pentanomial [22, 83, 88, 75, 20])
 2026-09-12 05:52:22 SCREEN bp144_ftd vs fc_b: 05:52:21 [576/576] +99 =219 -258 score 36.2% elo -98 ±23 (pentanomial [63, 90, 86, 41, 8])
 2026-09-12 06:37:28 SHAPE contempt40 vs contempt20 (same net, 30k): 06:37:27 [576/576] +139 =297 -140 score 49.9% elo -1 ±19 (pentanomial [17, 69, 115, 72, 15])
+2026-09-12 07:20:41 SHAPE eg_draw=1 vs eg_draw=0 (same net, 30k): 07:20:40 [576/576] +114 =343 -119 score 49.6% elo -3 ±8 (pentanomial [0, 26, 242, 19, 1])
+2026-09-12 07:59:59 SCREEN bp240_d7_ft vs fc_b: 07:59:58 [576/576] +149 =293 -134 score 51.3% elo +9 ±18 (pentanomial [10, 66, 125, 73, 14])
 nnue_a2lite.safetensors
 nnue_a3site.safetensors
 nnue_bp144_d7_ft.safetensors
 nnue_bp144_ftd.safetensors
 nnue_bp144_soft.safetensors
 nnue_bp240_d7_ft.safetensors
+nnue_bp336_d7_ft.safetensors
 nnue_bp48.safetensors
 nnue_bp96_d7_ft.safetensors
 nnue_bp_d7.safetensors
@@ -551,6 +567,11 @@ started gate C for bp144_d7_ft at Sat Sep 12 06:35:20 UTC 2026
 511534 bp144_soft_30k.log
 3311050 bp144_soft_30k.pgn
 511534 bp144_soft_30k.stdout
+0 bp240_d7_ft_30k.err
+11112866 bp240_d7_ft_30k.json
+525796 bp240_d7_ft_30k.log
+3444342 bp240_d7_ft_30k.pgn
+525796 bp240_d7_ft_30k.stdout
 0 bp96_d7_ft_30k.err
 10940162 bp96_d7_ft_30k.json
 519430 bp96_d7_ft_30k.log
@@ -570,12 +591,17 @@ started gate C for bp144_d7_ft at Sat Sep 12 06:35:20 UTC 2026
 568604 c40_30k.log
 3716364 c40_30k.pgn
 568604 c40_30k.stdout
-509 c4_lane.out
-509 c4_lane.status
-35 c5_lane.out
-35 c5_lane.status
+542 c4_lane.out
+542 c4_lane.status
+544 c5_lane.out
+544 c5_lane.status
 2037 c_lane.out
 2037 c_lane.status
+0 eg_30k.err
+12679669 eg_30k.json
+592122 eg_30k.log
+3855931 eg_30k.pgn
+592122 eg_30k.stdout
 0 fcb_re_30k.err
 11497519 fcb_re_30k.json
 543735 fcb_re_30k.log
@@ -592,13 +618,14 @@ started gate C for bp144_d7_ft at Sat Sep 12 06:35:20 UTC 2026
 3475732 k96b_ft_30k.pgn
 530031 k96b_ft_30k.stdout
 0 ladder_best.out
-1818 mirror.log
+2306 mirror.log
 12620460 nnue_a2lite.safetensors
 12620460 nnue_a3site.safetensors
 12620460 nnue_bp144_d7_ft.safetensors
 12620460 nnue_bp144_ftd.safetensors
 12620460 nnue_bp144_soft.safetensors
 12620460 nnue_bp240_d7_ft.safetensors
+12620460 nnue_bp336_d7_ft.safetensors
 12620452 nnue_bp48.safetensors
 12620460 nnue_bp96_d7_ft.safetensors
 12620452 nnue_bp_d7.safetensors
@@ -620,7 +647,7 @@ started gate C for bp144_d7_ft at Sat Sep 12 06:35:20 UTC 2026
 0 screen_eg.out
 0 screen_ftd.out
 138 screen_queue.out
-1138 screen_queue.status
+1437 screen_queue.status
 0 screen_soft.out
 35967 sf_build.log
 66320 train_a2lite.log
@@ -634,6 +661,9 @@ started gate C for bp144_d7_ft at Sat Sep 12 06:35:20 UTC 2026
 778766 train_bp240.log
 97714 train_bp240_d7.log
 66360 train_bp240_d7_ft.log
+778790 train_bp336.log
+97714 train_bp336_d7.log
+66360 train_bp336_d7_ft.log
 387273 train_bp48.log
 387775 train_bp96.log
 97708 train_bp96_d7.log
@@ -670,12 +700,13 @@ site_spice_12_23.npz
 /private/tmp/claude-501/-Users-architbhardwaj-Desktop-AI-Chessathon/edc9c181-8258-4c54-8a6f-0a83813055f3/scratchpad/morning_push.sh: line 27: /Users/architbhardwaj/chess/gates/c40_vm.log: No such file or directory
 **Must-win gate on the VM (V8.5 + book + contempt 40 vs V8.5 + book, 120+0.5, 100 games, )**:
 ```
-[50/100] +4 =41 -5  score 49.0%  elo -7 ±99  last: draw by insufficient_material
+[96/100] +10 =79 -7  score 51.6%  elo +11 ±70  last: draw by fifty_moves
 0
 
 pod draw-shape screen (contempt 40 vs 20, same net, 30k, 576 games, upper bound for strength):
 Warning: Permanently added '[63.141.33.33]:22018' (ED25519) to the list of known hosts.
 2026-09-12 06:37:28 SHAPE contempt40 vs contempt20 (same net, 30k): 06:37:27 [576/576] +139 =297 -140 score 49.9% elo -1 ±19 (pentanomial [17, 69, 115, 72, 15])
+2026-09-12 07:20:41 SHAPE eg_draw=1 vs eg_draw=0 (same net, 30k): 07:20:40 [576/576] +114 =343 -119 score 49.6% elo -3 ±8 (pentanomial [0, 26, 242, 19, 1])
 06:37:27 [576/576] +139 =297 -140 score 49.9% elo -1 ±19 (pentanomial [17, 69, 115, 72, 15])
 ```
 
@@ -697,6 +728,6 @@ guards + book instrumentation applied to cand_netbook_bp144_d7_ft/agent.py
   Maximum resident set size (kbytes): 822768
   wall=31.1s rc=0
 started gate C for bp144_d7_ft at Sat Sep 12 06:35:20 UTC 2026
-combo_bp144_d7_ft_C.log: [12/150] +2 =10 -0  score 58.3%  elo +58 ±231  last: draw by threefold_repetition
+combo_bp144_d7_ft_C.log: [82/150] +10 =65 -7  score 51.8%  elo +13 ±76  last: draw by threefold_repetition
 ```
 

@@ -190,6 +190,19 @@ Nothing depends on the Mac. Where each result appears, with its report generated
 Read any report with: `python3 -c "import json;r=json.load(open('<report>'));print(r['W'],r['D'],r['L'],r['pair_elo'],r['pair_elo_95'],r['failures'])"`.
 The Mac's endgame-fix arena was stopped at 10 games (partial, not for decisions) and continues on the VM as `eg_vm`.
 
+## 4c. Added at 09:00 — the five things we were not focusing on (Cause Table §20)
+
+1. Rehearse the revealed constraint: clock (`patch_clock.py` + short-clock stress test on the pod), size (no-book
+   packages, w768/w512 nets), memory (RSS ~800 MB), init cap (fallback plays until the compile joins), odd inputs.
+2. Robustness through the package, not the engine: `fen_battery.py` — **PASS** on the exact c40eg zip (32 checks).
+3. A non-clone opponent: Stockfish 19 at UCI_Elo 2400 in the agent interface (`sf_agent/`), 60 games vs the full
+   package on the pod (`gates/sf2400.log` / `_report.json`) — absolute level and decisive rate vs a different style.
+4. Opponent-aware book: `opp_book_cov.py` on Miskeen/Rataturing PGNs — 36 % coverage of our-move positions in their
+   lines, no repeated uncovered position, so no extension is worth building; the book's value is the hits it has.
+5. The freeze protocol: `status_all.sh` (one command, every result), manifests + `smoke_zip.py` on the exact bytes,
+   sha256 of the uploaded file vs `packages/MANIFEST.txt`, `submission_V8.5.zip` for rollback, stop reading gates 45 min
+   before the freeze, ssh to the three boxes is all the venue needs.
+
 ## 5. Morning sequence (recommended)
 
 1. Read §6, then run the gate report; apply the decision rule with Archit.

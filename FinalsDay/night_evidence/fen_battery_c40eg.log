@@ -1,0 +1,36 @@
+bini-5.0 ready: import+compile 35.6s (compile 34.6s), nnue=on
+OK  budget  5000ms      363ms  d2d4       legal=True  start
+OK  budget  5000ms      642ms  c2c3       legal=True  ep square set (book must skip)
+OK  budget  5000ms      346ms  d2d4       legal=True  ep capture legal
+OK  budget  5000ms      414ms  e4d5       legal=True  no castling rights
+OK  budget  5000ms      528ms  a7a8q      legal=True  promotion available
+OK  budget  5000ms      238ms  a8b7       legal=True  black promotes with check
+OK  budget  5000ms       38ms  a1b1       legal=True  halfmove 99
+OK  budget  5000ms      264ms  a3a1       legal=True  KRvKR dead draw
+OK  budget  5000ms       37ms  d1d8       legal=True  mate in one
+OK  budget  5000ms      459ms  e2e4       legal=True  only pawns
+OK  budget  5000ms      472ms  d7d5       legal=True  black to move, book range
+OK  budget  5000ms      283ms  a2a4       legal=True  fullmove 20 boundary
+OK  budget  5000ms      282ms  a2a4       legal=True  fullmove 21 (book must be off)
+  skip invalid fen: 960-like layout, standard castling letters
+OK  budget  5000ms      417ms  d2d4       legal=True  960-like layout, no castling
+  skip invalid fen: many queens
+OK  budget  5000ms       37ms  f7g7       legal=True  stalemate trap avoid
+OK  budget   300ms       47ms  d2d4       legal=True  start
+OK  budget   300ms       48ms  c2c3       legal=True  ep square set (book must skip)
+OK  budget   300ms       46ms  d2d4       legal=True  ep capture legal
+OK  budget   300ms       48ms  e4d5       legal=True  no castling rights
+OK  budget   300ms       48ms  a7a8q      legal=True  promotion available
+OK  budget   300ms       46ms  a8b7       legal=True  black promotes with check
+OK  budget   300ms       38ms  a1b1       legal=True  halfmove 99
+OK  budget   300ms       43ms  a3a1       legal=True  KRvKR dead draw
+OK  budget   300ms       36ms  d1d8       legal=True  mate in one
+OK  budget   300ms       47ms  e2e4       legal=True  only pawns
+OK  budget   300ms       45ms  d7d5       legal=True  black to move, book range
+OK  budget   300ms       50ms  a2a4       legal=True  fullmove 20 boundary
+OK  budget   300ms       46ms  a2a4       legal=True  fullmove 21 (book must be off)
+  skip invalid fen: 960-like layout, standard castling letters
+OK  budget   300ms       47ms  d1e3       legal=True  960-like layout, no castling
+  skip invalid fen: many queens
+OK  budget   300ms       37ms  f7g7       legal=True  stalemate trap avoid
+import 35.6s; BATTERY PASS (0 bad)

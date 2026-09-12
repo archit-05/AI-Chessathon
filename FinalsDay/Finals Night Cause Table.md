@@ -574,3 +574,44 @@ combo A, and runs the shipping-relevant gates instead: `cand_sfbook_c40eg` vs V8
 positive, `cand_final_bp144` = bp144_d7_ft + book + contempt 40 + endgame fix vs V8.5 (120 games) with its package
 `submission_V9_bp144_book_c40eg.zip`. Every report is generated on the box that ran the gate. The 08:05 push was
 replaced by an immediate push.
+
+## 20. Step back (09:00) — the five things we were not focusing on, now provisioned on the boxes
+
+1. **The revealed constraint is the day's real test; rehearse it, don't guess it.** Everything so far assumes 120+0.5,
+   50 MB, 2 GB, 90 s init and standard chess. Prepared answers: time control → `patch_clock.py` (one constant, proven
+   identical) plus a short-clock stress gate now queued on the pod (30 s + 0.3 s, 40 games, zero timeouts required);
+   size → packages without the book (13 MB) and the width nets w768 (9.5 MB) / w512 (6.3 MB) that load with no code
+   change; memory → RSS 790–820 MB measured, TT size is a constructor knob; init cap → import is fast and the pure-Python
+   fallback plays until the compile joins (`BINI_JOIN_S`), so a shorter init budget degrades, it does not crash;
+   odd inputs → the end-to-end FEN battery (§ below) through the exact package.
+2. **A crash or timeout loses a knockout game outright; robustness must be tested through the package, not the engine.**
+   `fen_battery.py`: 18 odd-but-legal positions (en-passant squares, no castling, promotions, halfmove 99, dead draws,
+   checks, mate-in-one, book boundary at move 20/21, Chess960-like layouts) × two budgets (5 s and 300 ms), legality and
+   timing checked, fresh interpreter, no BINI_* env. Result recorded below.
+3. **Every gate so far is self-play; a clone opponent hides style-dependent failures and flatters draws.** A Stockfish
+   opponent at fixed UCI_Elo (2400) wrapped in the platform agent interface (`sf_agent/agent.py`) is now on the pod;
+   `pod_queue.sh` plays the full package against it for 60 games at 120+0.5 after the screens: absolute level and the
+   decisive rate against a different engine, which is what the final actually is.
+4. **Prepare the book for the opponents we will actually meet.** The intel folder holds the top-5 teams' Swiss games as
+   PGN. `opp_book_cov.py` walks their lines and asks, at every position where we would be to move against them, whether
+   the book answers; uncovered positions seen twice or more become roots for a targeted Stockfish extension (legal:
+   opening tables ≤ move 20). Coverage numbers below; the extension runs on the pod's CPU once Stockfish is there.
+5. **The freeze itself is an engineering step with its own failure modes.** One command shows every result
+   (`status_all.sh`, on gcp-x86 and in the evidence dir) so nothing is misread under pressure; each package has a
+   manifest and `smoke_zip.py` checks the exact bytes; the uploaded file's sha256 must match `packages/MANIFEST.txt`;
+   `submission_V8.5.zip` stays at hand for rollback; stop reading new gates 45 minutes before the freeze; the venue
+   needs only ssh to the three boxes (phone hotspot fallback). Known residual risk: a Chess960 constraint would need
+   castling work no one has done; the battery tells us whether the engine at least stays legal on such layouts.
+
+09:05 **Results of the five items so far.** (2) FEN battery through the exact `submission_V9_book_c40eg.zip` on gcp-x86:
+**PASS, 0 bad of 32 checks** (16 positions × 5 s and 300 ms budgets; import 35.6 s; en-passant, no-castling, promotion,
+halfmove-99, dead-draw, check, mate-in-one, book-boundary and a Chess960-like layout all answered legally and on time;
+two of my test FENs were themselves invalid and were skipped). (4) Book coverage of the opponents' real lines (only
+Miskeen, 91 games, and Rataturing, 64 games, have PGNs in `intel/raw`): at positions where we would be to move
+against them, the book answers 73 % at move 6, 55 % at move 8, 34 % at move 10, 9 % at move 12, 36 % overall; **no
+uncovered position occurs twice**, so a targeted extension has nothing frequent to target — their repertoires are wide,
+and the book's value is the ~4 hits and ~15 s it already delivers. (3) Stockfish 19 installed on the pod with the
+fixed-Elo opponent agent; `pod_queue.sh` runs the full package vs UCI_Elo 2400 (60 games) then the 30 s + 0.3 s stress
+test (40 games) after the bp336 screen. Screens: **bp240_d7_ft +9 ±18** (576; flat vs bp144's +12, the exposure trend
+has plateaued); bp336 exported and screening. Gates at 09:04: contempt 40 at 96/100 (+10 =79 −7), bp144 + book vs V8.5
+at 82/150 (+10 =65 −7).
