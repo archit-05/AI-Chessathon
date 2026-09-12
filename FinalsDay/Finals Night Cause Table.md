@@ -1025,3 +1025,8 @@ to import start (`join(timeout=21 − elapsed)`), one line, for the next build.
 **Frozen at 14:00: V18 if its upload validated in time, otherwise V17 (23d02925…, validated 13:37).** V17 vs V16 at the
 real clock on pods 1–2: 16 games, zero failures, zero init losses. All arenas stopped at 13:58 (`stop_all.sh`); the three
 RunPod pods are to be terminated in the console.
+
+13:58 **All arenas stopped on the five boxes.** Final lines: V17 vs V16 at the real clock — pod 1 23 games +3 =18 −2,
+pod 2 23 games +3 =16 −4 (46 games, zero failures, zero init losses); bp336 vs V8.5-net packages — gcp-x86 137 games
++21 =99 −17, VM 69 games +10 =50 −9 (with the pods' earlier runs: bp336 ahead throughout, never clearly, never behind).
+The three RunPod pods remain to be terminated in the console.
