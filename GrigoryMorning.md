@@ -1,4 +1,4 @@
-# GrigoryMorning — handover, 12 September 2026, written at 04:50 BST, 12 September 2026
+# GrigoryMorning — handover, 12 September 2026, written at 04:51 BST, 12 September 2026
 
 Everything below was produced overnight by the engine/packaging side. Nothing has been uploaded to the
 platform. V8.5 (`bini_astra_v5_noc2b`, `submission_V8.5.zip`, sha256 `26828c24…`) is untouched and
@@ -147,12 +147,12 @@ Checkpoints are saved every 16 superbatches inside the binpack runs and a mirror
 
 ## 6. Live status at push time (auto-filled)
 
-Written 2026-09-12 04:50 BST.
+Written 2026-09-12 04:51 BST.
 
 /private/tmp/claude-501/-Users-architbhardwaj-Desktop-AI-Chessathon/edc9c181-8258-4c54-8a6f-0a83813055f3/scratchpad/morning_push.sh: line 9: gcp-x86:~/chess/gates/sfbook_real.log: No such file or directory
 **Book gate ()** — read as partial unless it says 300/300:
 ```
-[143/300] +17 =112 -14  score 51.0%  elo +7 ±57  last: draw by threefold_repetition
+[144/300] +17 =113 -14  score 51.0%  elo +7 ±57  last: draw by threefold_repetition
 0
   wall=30.0s rc=0
 72f24cd95d6329158a411863d8857aba21c6abe43824dbf3d3b4b0360f2b4b0f  /home/forge/chess/gates/sfbook.zip
@@ -163,12 +163,12 @@ Sat Sep 12 01:24:23 UTC 2026 finish_book2 done
 **Gate report so far**:
 ```
 {
- "games": 143,
+ "games": 144,
  "of": 300,
  "W": 17,
- "D": 112,
+ "D": 113,
  "L": 14,
- "score": 0.5105,
+ "score": 0.5104,
  "terminations": null,
  "failures": {
   "still_compiling": 0,
@@ -198,9 +198,9 @@ Sat Sep 12 01:24:23 UTC 2026 finish_book2 done
    "max": 7
   },
   "hits_black": {
-   "n": 73,
+   "n": 74,
    "mean": 4.23,
-   "median": 4,
+   "median": 4.0,
    "max": 8
   },
   "saved_s_white": {
@@ -210,8 +210,8 @@ Sat Sep 12 01:24:23 UTC 2026 finish_book2 done
    "max": 28.045
   },
   "saved_s_black": {
-   "n": 73,
-   "mean": 16.67,
+   "n": 74,
+   "mean": 16.65,
    "median": 15.663,
    "max": 32.304
   },
@@ -393,7 +393,6 @@ gcp morning chain:
  
 4096 .
 4096 ..
-786432 .bp_d7_ft_30k.json.j8pZHb
 0 a2lite_30k.err
 11544769 a2lite_30k.json
 545728 a2lite_30k.log
@@ -411,9 +410,10 @@ gcp morning chain:
 981 b_lane.out
 981 b_lane.status
 0 bp_d7_ft_30k.err
-388 bp_d7_ft_30k.log
-0 bp_d7_ft_30k.pgn
-388 bp_d7_ft_30k.stdout
+11311475 bp_d7_ft_30k.json
+534498 bp_d7_ft_30k.log
+3496715 bp_d7_ft_30k.pgn
+534498 bp_d7_ft_30k.stdout
 714 c2_lane.out
 714 c2_lane.status
 135 c3_lane.out

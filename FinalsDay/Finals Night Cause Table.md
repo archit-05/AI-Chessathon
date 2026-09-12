@@ -408,3 +408,9 @@ of zero; `bp_d7_ft` screening now, `bp96_d7_ft` and `bp144_d7_ft` queued; ladder
 04:35: leaf labelling pilot finished at 02:50: **100,000 search-leaf positions labelled at depth 12** (stratified; 28 pos/s
 on three Mac workers), `leaf_labels_mac_000.npz` + `.labels.jsonl` (net score next to the label), staged on GCP and the pod.
 The Mac now mines the last 176 self-play games (a pattern bug had left that job unstarted).
+
+04:52 **Lane C first screen**: `bp_d7_ft` (48 sb on the binpacks + alignments) vs fc_b = **−13 ±20** (576 games,
++131 =293 −152): one pass over the public data, re-aligned, is not better than the deployed net at fixed nodes.
+bp96_d7_ft and bp144_d7_ft (two and three passes) are still to be screened; the ladder runs for the best complete screen.
+04:50 push: landed on `night/finals-evidence` first (the intel cron's unstaged files blocked the rebase); main pushed
+at 04:55 with an autostash rebase.

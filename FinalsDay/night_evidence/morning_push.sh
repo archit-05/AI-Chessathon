@@ -42,6 +42,6 @@ git add GrigoryMorning.md "FinalsDay/Finals Night Cause Table.md" FinalsDay/nigh
 git commit -q -m "Finals night: Stockfish book candidate, gate, leaf corpus, error mining, preflight for the pretrain lane; GrigoryMorning.md handover
 
 Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>" >>"$ST" 2>&1
-if git pull -q --rebase origin main >>"$ST" 2>&1 && git push -q origin main >>"$ST" 2>&1; then echo "$(date) pushed to origin/main" >>"$ST"
+if git pull -q --rebase --autostash origin main >>"$ST" 2>&1 && git push -q origin main >>"$ST" 2>&1; then echo "$(date) pushed to origin/main" >>"$ST"
 else git rebase --abort 2>/dev/null; git checkout -q -b night/finals-evidence 2>/dev/null || git checkout -q night/finals-evidence; git push -q -u origin night/finals-evidence >>"$ST" 2>&1 && echo "$(date) pushed to origin/night/finals-evidence (main rebase failed)" >>"$ST"; git checkout -q main; fi
 cat "$ST"
