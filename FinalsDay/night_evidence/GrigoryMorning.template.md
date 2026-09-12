@@ -5,7 +5,22 @@ platform. V8.5 (`bini_astra_v5_noc2b`, `submission_V8.5.zip`, sha256 `26828c24�
 remains the control and the fallback. Full evidence: `FinalsDay/Finals Night Cause Table.md` and
 `FinalsDay/night_evidence/` (every script, log and manifest named here lives there or at the box paths given).
 
+## FINAL UPLOAD (13:27) — V16: bp336 + book + contempt 80 + endgame honesty + fifty-move scaling + init fixes
+
+`submission_V16_bp336_book_c80eg_r50_init_fastcompile2.zip`, sha256 **b237926f…** (Cause Table §28). Fifty-move
+scaling screen +7 ±20 at 520/576 (behaviour otherwise identical to V15); contempt 80 on Archit's "draw only when
+genuinely losing" directive (a −80 read ≈ −0.5 pawn true; draw_behind −100 kept). Battery 32/32 on the exact zip.
+Fallbacks: V15 (e56c96b0…), V14 (c859f498…). After 14:00: `stop_all.sh`, terminate the three RunPod pods.
+
 ## FINAL STATE (13:15) — V15 live; V16 (fifty-move scaling) decided by its screen at 13:25
+
+**Autopsy and the road to a winning engine: Cause Table §27** — flat/cautious evaluation in level positions and
+optimism when ahead (the net), correction-history plateaus (the search), a draw policy that sat where the pessimism
+bites (fixed), speed, and self-play-only measurement. The next-event programme, in Elo-per-day order: decision-grade
+labels + plan-ranking objective + calibration; search tuning at the real clock (correction cap, fifty-move scaling,
+SPSA on the pod fleet); numba-only speed work; 3–4-piece Syzygy and a deeper book; an opponent panel tracking decisive
+rate. All tooling for it is in `FinalsDay/night_evidence/`.
+
 
 Live build: **V15** `submission_V15_bp336_book_c70eg_init_fastcompile2.zip` (e56c96b0…). Net read at 13:09: bp336 vs
 V8.5's net, **358 real-clock games, +60 =252 −46, 101 pairs, pair Elo +13.8 [−9.6, +37.2]**, zero failures → bp336 stays.

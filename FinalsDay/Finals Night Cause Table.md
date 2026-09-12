@@ -896,3 +896,56 @@ differs from V15. Verification: exact-zip battery; static-eval sanity (same posi
 fixed-node screen on vs off on pod 3 (8 workers); ship only if the screen is ≥ −5 and the platform validation is clean,
 by 13:40; otherwise V15 stays. Contempt-70 real-clock smoke stopped at 13/24 to free pod 3: +2 =9 −2, zero failures,
 zero init losses.
+
+13:14 **Practice round 15 vs Miskeen (Black, V15 contempt 70): draw by repetition, our choice was the least bad, the
+repetition was Miskeen's.** Book 3 hits; level (0…+14) through move 12; then a steady slide as Black against the 2nd seed:
+−20 (13), −50 (20), −80/−100 (30–33), −80 flat from move 35 with king shuffles h8–g8 while Miskeen repeated. The root
+score is −80, not the −70 draw value, i.e. the engine saw that Miskeen could keep pressing (−80) but they chose to
+repeat; with our alternatives at −80 or worse, going along with the repetition is exactly the "convert to a draw from a
+losing position" behaviour. Cause: outplayed from a level start (evaluation flatness, §autopsy point 1), not draw policy.
+Clock fine (30.9 s left), ready 23.8 s.
+
+## 27. Autopsy (13:15) — why we draw, and what the winning engine looks like
+
+**Why we draw so much and win less than the top builds, ranked by explanatory weight.**
+1. *Flat, cautious evaluation where games are decided.* Near Stockfish on full boards; in quiet level positions ±30 cp
+   noise and 25–40 cp pessimism (§13, §18, §24). Plans that differ by half a pawn for Stockfish look alike to us, so the
+   search chooses among them by noise, the position drifts, and drift against a competent defender is a draw. A training
+   problem: the labels never graded quiet continuations against each other.
+2. *Optimistic when ahead.* Ours +189 vs Stockfish +77 (R113); +200 evaporating (Lubina). Most "winning positions that
+   drew" were half-pawn edges any decent engine holds.
+3. *The correction history manufactures plateaus* (±64 cp saturation; §18, §26) and penalises progress moves. Half of
+   our own real-clock games end by the fifty-move rule. Countered in tiny endings (§18) and generally by V16's
+   fifty-move scaling (§26) if it ships; the proper fix is a cap or decay on the correction, gated.
+4. *Draw policy sat where the pessimism bites* (§17, §24): fixed to contempt 70 with draw_behind −100.
+5. *Speed and refinement:* ≈ 500 knps, depth 16–20 in complex middlegames; Mite/Rataturing outplay us in long technical
+   games. No setting closes that today.
+6. *We measured ourselves against ourselves:* self-play gates cannot show a drawish style; the platform's init and
+   first-move behaviour was first exercised today (§21–22).
+
+**The winning engine for the next event (in order of Elo per day of work).**
+- Net trained to decide: depth-18–22 labels on search-visited positions, dense in quiet level positions and technical
+  endings, a plan-ranking objective, a calibration step for "ahead" scores; same 1024 width (inference-bound). Worth
+  30–60 Elo and most of the decisiveness. Assets ready: leaf corpus + labeller (§10, §14), `label_leaf.py`, pods
+  provisioned in 10 min (`provision_gate_pod.sh`), trainer patched for binpacks, bp336 checkpoints on gcp-x86.
+- Search tuned at the real clock: correction-history cap/decay, fifty-move scaling, checking-move exemption and probcut
+  revisited, then SPSA on reductions/margins with the pod fleet. 20–40 Elo.
+- Speed inside the rules (numba only): profile the ≈ 1.5 µs of non-evaluation work per node; 1.5× ≈ 35 Elo.
+- Knowledge at both ends: 3–4-piece Syzygy plus selected 5-piece within the 50 MB cap; a book 8–10 plies deep with several
+  sound alternatives on the curated position family. 10–20 Elo and more conversions.
+- Instruments: a standing opponent panel (archived engines + Stockfish at calibrated node limits) tracking the decisive
+  rate alongside Elo; SPRT instead of interval-peeking; every candidate through the real harness at the real budgets
+  (`fen_battery.py`, `init_probe.py`, `smoke_zip.py`, `pair_gate.sh`, `merge_gate.py`, `status_all.sh`).
+- Policy as now: contempt ≈ 70 with the draw-when-losing rule; the knockout gives ties to the higher seed.
+
+## 28. Final upload call (13:27): V16 = bp336 + book + contempt 80 + endgame honesty + fifty-move scaling + init fixes
+
+`submission_V16_bp336_book_c80eg_r50_init_fastcompile2.zip`, sha256 **b237926fb527b09c477dc671d8c6405fae79449b010cde9fbe7114b404379486**.
+Differences from the live V15 (c70): `bini_search.py` (fifty-move scaling, §26) and `bini_engine.py` (contempt 70 → 80).
+Evidence for the two changes: fifty-move scaling on vs off, 30k nodes, bp336: **520/576 at +7 ±20** when the call was
+made (the remaining games cannot move it below −5), static-eval sanity verified; contempt 80 vs 40 −9 ±18 (576) with
+more decisive pairs, chosen on Archit's directive ("draw only when genuinely losing": a −80 read is ≈ −0.5 pawn true,
+a losing trajectory against this field; the draw_behind rule at −100 still accepts draws when clearly lost). Exact-zip
+battery 32/32 (contempt and RULE50 constants confirmed inside the zip). V16 (c70) vs V15 (c70) at the real clock on
+pods 1–2: 8 games, zero failures, zero init losses at a 30 s harness budget. Fallbacks: V15 (e56c96b0…, live until this
+upload validates), V14 (c859f498…).
