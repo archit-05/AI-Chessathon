@@ -5,6 +5,16 @@ platform. V8.5 (`bini_astra_v5_noc2b`, `submission_V8.5.zip`, sha256 `26828c24�
 remains the control and the fallback. Full evidence: `FinalsDay/Finals Night Cause Table.md` and
 `FinalsDay/night_evidence/` (every script, log and manifest named here lives there or at the box paths given).
 
+## FINAL CALL (13:36) — V17: V16 with the correction history switched off
+
+`submission_V17_bp336_book_c80eg_r50_nocorr_init_fastcompile2.zip`, sha256 **23d02925…** (Cause Table §29). Why: the
+correction history saturates at ±64 cp whenever nothing irreversible happens, learns the repetition draw score as if it
+were an evaluation error, and produces the flat −40/−60/−70/−80/+95 plateaus behind every draw we analysed today and
+the round-17 loss (king walk chosen among moves that all read −70). Switching it off (pre-existing runtime flag) removes
+the mechanism; battery 32/32; a 288-game fixed-node screen (off vs on at contempt 80) runs as the safety check. V16
+(b237926f…, validated on the platform: ready 23.7–23.9 s, first move 4.6–5.7 s) is the fallback if that screen shows a
+disaster before the freeze.
+
 ## FINAL UPLOAD (13:27) — V16: bp336 + book + contempt 80 + endgame honesty + fifty-move scaling + init fixes
 
 `submission_V16_bp336_book_c80eg_r50_init_fastcompile2.zip`, sha256 **b237926f…** (Cause Table §28). Fifty-move

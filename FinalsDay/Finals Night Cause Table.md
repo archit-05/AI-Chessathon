@@ -949,3 +949,43 @@ a losing trajectory against this field; the draw_behind rule at −100 still acc
 battery 32/32 (contempt and RULE50 constants confirmed inside the zip). V16 (c70) vs V15 (c70) at the real clock on
 pods 1–2: 8 games, zero failures, zero init losses at a 30 s harness budget. Fallbacks: V15 (e56c96b0…, live until this
 upload validates), V14 (c859f498…).
+
+13:29 **Fifty-move scaling screen final (pod 3, on vs off, bp336, 30k, 576 games): +141 =310 −125, +10 ±19**,
+pentanomial [14, 63, 119, 77, 15] — not merely harmless: a small gain with more decisive pairs, exactly the intended
+direction. V16 real-clock check vs V15 on pods 1–2: zero failures, zero init losses (all draws so far in self-play, as
+expected). The V16 (contempt 80) upload call stands.
+
+## 29. Practice round 16 vs FuzzyBot (V15, Black): the draw loop made visible — and V17
+
+Draw by repetition at move 42 with a full middlegame on the board. Our read: level (0…+11) through move 9, −20…−39
+(10–16), then **exactly −80 for moves 20–23 and 33–42**, and the engine accepted the repetition (draw score −70 > −80).
+−80 is not a −80 position: it is the correction history saturated at −64 on top of a −16 static. And the search results it
+"learned" from were the repetition lines themselves: with contempt, a repetition scores −70, the correction history
+records "static is ~55 too high" for that pawn structure and material, saturates, and the corrected score sinks below the
+draw score — at which point the engine agrees to the draw it was trying to avoid. **Higher contempt feeds this loop**;
+that is why the plateaus appeared at −80 today and at −40/−60 earlier. The clean fix is to switch the correction history
+off (runtime flag `BINI_CORR`, already present): it removes every plateau seen this week (Swiss R113/116/119, Lubina,
+FuzzyBot) and the loop with contempt, at the price of whatever middlegame benefit the corrections carried (unmeasured
+today). **V17** = V16 (contempt 80, fifty-move scaling) + `BINI_CORR` default 0:
+`submission_V17_bp336_book_c80eg_r50_nocorr_init_fastcompile2.zip` (23d02925…); only `bini_engine.py` differs from
+V16. Verification within the clock: exact-zip battery; a 288-game fixed-node screen corr-off vs corr-on at contempt 80
+on pod 3 (rule: ship V17 if ≥ −10, i.e. no measurable regression; the plateau benefit is mechanism-proven). V16 is the
+baseline upload either way.
+
+13:33 V17 exact-zip battery: **PASS 32/32** (constants inside the zip: BINI_CORR default 0, contempt 80, RULE50 on).
+Correction-history screen (corr off vs on, contempt 80, bp336, 30k, 288 games, 8 workers) started 13:32 on pod 3;
+decision at ~13:44: ship V17 if ≥ −10 (no measurable regression; the plateau/draw-loop benefit is mechanism-proven),
+else V16 stays. Lesson re-learned at 13:31: a kill pattern in the same command line as a literal start line matches the
+caller — start jobs from a script file instead.
+
+13:36 **V16 (contempt 80 + fifty-move scaling) validated on the platform** (`aichessathon-v18-b237926fb527.log`):
+ready 23.9 s / 23.7 s, first move 4.6 s / 5.7 s with full depth-16/18 searches. **Practice round 17 vs "what even is
+en passant" (V16, White): loss by checkmate — the plateau mechanism again, now costing a game.** Book 6 hits (23.9 s
+saved); level through move 36 (−30…+33); then **exactly −70 for moves 37–42** while the search chose a king walk
+g2–f3–g4–f5–g6 into the middlegame — with the correction history saturated, every quiet move read the same −70 and the
+choice degenerated to noise; from move 43 the position collapsed (−139, −248 by 53, −413 by 60, mate at 96). Not a time
+or init problem (24.4 s ready, 9.2 s left). This is the strongest evidence yet for V17 (correction history off): the
+saturation is now producing both the accepted draws and a loss. **Decision 13:36: upload V17 now** (23d02925…, battery
+32/32, the switch is a pre-existing runtime flag) so it validates by ≈ 13:40 and plays the 13:40/13:50 practice
+rounds; the 288-game corr-off-vs-on screen (10/288 at 13:34) is the safety check — if it shows a disaster (< −30 Elo)
+by 13:46, re-upload V16 (validated) before the freeze.

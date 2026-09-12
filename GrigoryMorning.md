@@ -1,9 +1,19 @@
-# GrigoryMorning — handover, 12 September 2026, written at 13:27 BST, 12 September 2026
+# GrigoryMorning — handover, 12 September 2026, written at 13:34 BST, 12 September 2026
 
 Everything below was produced overnight by the engine/packaging side. Nothing has been uploaded to the
 platform. V8.5 (`bini_astra_v5_noc2b`, `submission_V8.5.zip`, sha256 `26828c24…`) is untouched and
 remains the control and the fallback. Full evidence: `FinalsDay/Finals Night Cause Table.md` and
 `FinalsDay/night_evidence/` (every script, log and manifest named here lives there or at the box paths given).
+
+## FINAL CALL (13:36) — V17: V16 with the correction history switched off
+
+`submission_V17_bp336_book_c80eg_r50_nocorr_init_fastcompile2.zip`, sha256 **23d02925…** (Cause Table §29). Why: the
+correction history saturates at ±64 cp whenever nothing irreversible happens, learns the repetition draw score as if it
+were an evaluation error, and produces the flat −40/−60/−70/−80/+95 plateaus behind every draw we analysed today and
+the round-17 loss (king walk chosen among moves that all read −70). Switching it off (pre-existing runtime flag) removes
+the mechanism; battery 32/32; a 288-game fixed-node screen (off vs on at contempt 80) runs as the safety check. V16
+(b237926f…, validated on the platform: ready 23.7–23.9 s, first move 4.6–5.7 s) is the fallback if that screen shows a
+disaster before the freeze.
 
 ## FINAL UPLOAD (13:27) — V16: bp336 + book + contempt 80 + endgame honesty + fifty-move scaling + init fixes
 
@@ -349,7 +359,7 @@ The Mac's endgame-fix arena was stopped at 10 games (partial, not for decisions)
 
 ## 6. Live status at push time (auto-filled)
 
-Written 2026-09-12 13:27 BST.
+Written 2026-09-12 13:34 BST.
 
 /private/tmp/claude-501/-Users-architbhardwaj-Desktop-AI-Chessathon/edc9c181-8258-4c54-8a6f-0a83813055f3/scratchpad/morning_push.sh: line 9: gcp-x86:~/chess/gates/sfbook_real.log: No such file or directory
 **Book gate ()** — read as partial unless it says 300/300:
@@ -753,7 +763,7 @@ started gate A for bp144_d7_ft at Sat Sep 12 09:16:26 UTC 2026
 3475732 k96b_ft_30k.pgn
 530031 k96b_ft_30k.stdout
 0 ladder_best.out
-3831 mirror.log
+3892 mirror.log
 12620460 nnue_a2lite.safetensors
 12620460 nnue_a3site.safetensors
 12620460 nnue_bp144_d7_ft.safetensors
